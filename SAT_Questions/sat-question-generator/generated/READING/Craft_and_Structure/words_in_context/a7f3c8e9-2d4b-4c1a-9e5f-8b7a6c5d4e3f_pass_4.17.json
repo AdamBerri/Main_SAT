@@ -1,0 +1,61 @@
+{
+  "id": "a7f3c8e9-2d4b-4c1a-9e5f-8b7a6c5d4e3f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "stem": "As used in the passage, \"catholic\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "relating to the Roman Catholic Church",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "broad-minded and inclusive",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "orthodox and traditional",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "morally principled and virtuous",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In this context, \"catholic\" (with a lowercase 'c') means broad-minded, comprehensive, or inclusive. The passage emphasizes how the historian's methodology embraces \"diverse primary sources\" and incorporates multiple types of evidence without privileging any single type. The word \"catholic\" here derives from the Greek \"katholikos\" meaning \"universal\" or \"general,\" and in academic contexts refers to an approach that is wide-ranging and all-encompassing rather than narrow or selective.",
+  "distractorRationale": {
+    "A": "This choice confuses the lowercase 'catholic' (meaning broad or universal) with the capitalized 'Catholic' referring to the Roman Catholic Church. The passage context about historical methodology has no religious connection.",
+    "C": "This choice misinterprets the meaning. While 'catholic' can sometimes suggest established or universal principles, the context emphasizes innovation and inclusivity rather than adherence to orthodox approaches.",
+    "D": "This choice incorrectly associates 'catholic' with moral virtue. While the word can have positive connotations, the passage specifically discusses methodological breadth rather than ethical principles."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:23:27.860Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "e64d6ee7-6991-4c9c-99f4-168d9e7b7882"
+  },
+  "passage": "The historian's methodology was particularly **catholic** in its embrace of diverse primary sources, incorporating not only traditional governmental documents and personal correspondence but also archaeological artifacts, oral histories from marginalized communities, and even ephemeral materials like broadsheets and advertisements. This comprehensive approach allowed her to construct a nuanced narrative that challenged prevailing historiographical assumptions about the period. By refusing to privilege any single type of evidence over others, she demonstrated how a truly inclusive scholarly framework could illuminate previously obscured aspects of historical experience, revealing the complex interplay between official policies and grassroots responses that conventional accounts had overlooked.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 112,
+    "source": "Academic text on historical methodology"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T14:29:15.161Z"
+  }
+}

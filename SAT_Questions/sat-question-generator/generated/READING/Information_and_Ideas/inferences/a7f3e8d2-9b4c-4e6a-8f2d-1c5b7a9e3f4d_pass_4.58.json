@@ -1,0 +1,61 @@
+{
+  "id": "a7f3e8d2-9b4c-4e6a-8f2d-1c5b7a9e3f4d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.1,
+    "linguistic": 4.1
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred about art historical scholarship prior to the 1980s restoration?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It was primarily based on direct examination of Michelangelo's preliminary sketches and drawings.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "It had developed theories about Michelangelo's artistic choices that were inadvertently influenced by the ceiling's deteriorated condition.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "It consistently argued that Michelangelo had intentionally used bright, vivid colors in his religious works.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It was generally skeptical of the authenticity of the Sistine Chapel ceiling paintings.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage indicates that art historians had 'long-held assumptions about Michelangelo's artistic intentions' that were actually 'shaped not by the artist's original vision, but by centuries of environmental damage.' This directly implies that their scholarly theories about his deliberate use of 'muted palette' and 'subdued hues' were based on observing the deteriorated artwork rather than Michelangelo's actual intentions. The passage shows that scholars had to revise their understanding once the true colors were revealed, suggesting their previous scholarship was inadvertently influenced by the ceiling's damaged state.",
+  "distractorRationale": {
+    "A": "The passage makes no mention of scholars examining sketches or drawings; it focuses entirely on their interpretation of the ceiling itself.",
+    "C": "This contradicts the passage, which states that historians believed Michelangelo used a 'deliberately muted palette' and 'subdued hues,' not bright colors.",
+    "D": "The passage indicates no skepticism about authenticity; rather, scholars had developed specific theories about Michelangelo's artistic choices based on what they observed."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:24:45.575Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "44563e68-28a7-4c25-8db7-166093f0a39b"
+  },
+  "passage": "The restoration of the Sistine Chapel ceiling in the 1980s revealed colors so vivid and unexpected that many art historians initially questioned whether the cleaning had been too aggressive. For centuries, visitors had admired what they believed to be Michelangelo's deliberately muted palette—earth tones and subdued hues that seemed to reflect the solemnity of the sacred space. The restoration team, led by chief restorer Gianluigi Colalucci, methodically removed layers of grime, candle soot, and previous restoration attempts that had accumulated over four and a half centuries. What emerged was a riot of brilliant blues, vibrant oranges, and luminous flesh tones that seemed almost jarring to eyes accustomed to the darkened masterpiece. Some critics argued that the cleaning had stripped away subtle glazes that Michelangelo himself had applied to achieve specific atmospheric effects. However, extensive analysis of paint samples and comparison with Michelangelo's other works from the same period—particularly his paintings on wood panels that had been better preserved—revealed remarkably similar color choices and techniques. The controversy gradually subsided as scholars recognized that their long-held assumptions about Michelangelo's artistic intentions had been shaped not by the artist's original vision, but by centuries of environmental damage and well-intentioned but misguided previous restoration efforts.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 218,
+    "source": "Adapted from art history documentation"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.583333333333333,
+    "evaluatedAt": "2026-01-08T14:30:02.788Z"
+  }
+}

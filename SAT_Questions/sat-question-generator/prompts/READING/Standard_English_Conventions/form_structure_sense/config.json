@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "currentVersion": "1.4.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Writing question about grammar, usage, or sentence structure.\n\nThis may test:\n- Subject-verb agreement\n- Pronoun reference and agreement\n- Verb tense and mood\n- Modifier placement\n- Parallel structure\n- Possessives\n\nThe passage should:\n- Contain a clear grammatical issue (or test correct usage)\n- Use the construction naturally in context\n\nThe question should:\n- Ask which option is grammatically correct\n- Have the correct answer follow standard English conventions\n- Include distractors with common grammatical errors\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.313Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/READING/Standard_English_Conventions/form_structure_sense/schema.json"
+}

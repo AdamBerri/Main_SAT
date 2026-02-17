@@ -1,0 +1,62 @@
+{
+  "id": "f47b8c9e-2d3a-4e5f-9b1c-7a8d6e4f2b9c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.2,
+    "linguistic": 3.7
+  },
+  "stem": "Which choice best describes the overall structure of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A chronological account of how urban heat islands developed over time",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "A comparison between urban and rural temperature patterns",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "An analysis that moves from problem identification to causes to effects to solutions",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "An argument that weighs the benefits and drawbacks of urban development",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage follows a clear problem-solution organizational structure that moves systematically through four distinct phases. It begins by identifying urban heat islands as a pressing environmental challenge (problem identification), then explains the multiple causes of this phenomenon in the second paragraph, examines the various negative effects in the third paragraph, and concludes by presenting mitigation strategies in the final paragraph. This logical progression from problem to causes to effects to solutions represents a classic expository structure designed to provide comprehensive understanding of a complex issue.",
+  "distractorRationale": {
+    "A": "While the passage mentions that urban heat islands have 'emerged' as a challenge, it does not trace their historical development chronologically or discuss how they evolved over different time periods.",
+    "B": "Although the passage does mention that urban areas are warmer than rural regions, this comparison serves only as an introductory detail rather than organizing the entire passage structure.",
+    "D": "The passage does not present urban development as having benefits that need to be weighed against drawbacks; instead, it focuses specifically on the heat island problem and does not discuss positive aspects of urbanization."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:57:55.462Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "0417494e-e82c-41a5-88a7-cda7c7b2ee94"
+  },
+  "passage": "The phenomenon of urban heat islands has emerged as one of the most pressing environmental challenges facing modern cities. Urban areas consistently experience temperatures 2-5 degrees Celsius higher than surrounding rural regions, creating localized zones of elevated heat that can have far-reaching consequences for both human health and energy consumption.\n\nThis temperature differential arises from several interconnected factors. First, the prevalence of dark, heat-absorbing surfaces such as asphalt and concrete replaces natural vegetation that would otherwise provide cooling through evapotranspiration. Additionally, the geometric configuration of tall buildings creates \"urban canyons\" that trap heat and reduce wind circulation. Furthermore, anthropogenic heat sources—including vehicles, air conditioning systems, and industrial processes—contribute substantial thermal energy to the urban environment.\n\nThe ramifications of urban heat islands extend well beyond mere discomfort. Elevated temperatures exacerbate air quality problems by accelerating the formation of ground-level ozone, a key component of smog. Moreover, the increased demand for air conditioning during heat waves strains electrical grids and increases greenhouse gas emissions from power generation. Most critically, vulnerable populations, particularly the elderly and those with pre-existing health conditions, face heightened risks of heat-related illness and mortality.\n\nFortunately, urban planners and policymakers have developed several promising mitigation strategies. Green infrastructure initiatives, such as expanding tree canopy coverage and creating green roofs, can significantly reduce surface temperatures through natural cooling processes. Similarly, the implementation of cool roofing materials and reflective pavements helps redirect solar radiation rather than absorbing it. Finally, strategic urban design that promotes air circulation and incorporates water features can create microclimates that moderate extreme temperatures.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 287,
+    "source": "Adapted from environmental science research"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.7916666666666665,
+    "evaluatedAt": "2026-01-08T15:02:56.818Z"
+  }
+}

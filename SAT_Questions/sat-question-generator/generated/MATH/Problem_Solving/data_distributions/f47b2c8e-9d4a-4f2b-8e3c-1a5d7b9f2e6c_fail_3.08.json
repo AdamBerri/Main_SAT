@@ -1,0 +1,59 @@
+{
+  "id": "f47b2c8e-9d4a-4f2b-8e3c-1a5d7b9f2e6c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 4.8
+  },
+  "stem": "A data set consists of 12 values. When arranged in order, the values are: $a_1, a_2, a_3, ..., a_{12}$ where $a_1 \\leq a_2 \\leq a_3 \\leq ... \\leq a_{12}$. The median of this data set is 15, and the mean is 18. If the smallest value $a_1$ is increased by 6 and the largest value $a_{12}$ is decreased by 6, which of the following statements about the new data set is true?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The median increases and the mean stays the same.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The median stays the same and the mean increases.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Both the median and mean stay the same.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The median decreases and the mean stays the same.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let's analyze what happens to each measure when we modify the data set.\n\nOriginal data set: For 12 values, the median is the average of the 6th and 7th values: $\\frac{a_6 + a_7}{2} = 15$, so $a_6 + a_7 = 30$.\n\nThe mean is 18, so the sum of all values is $12 \\times 18 = 216$.\n\nAfter the changes:\n- $a_1$ becomes $a_1 + 6$\n- $a_{12}$ becomes $a_{12} - 6$\n- All other values remain unchanged\n\nFor the mean: The new sum is $216 + 6 - 6 = 216$, so the new mean is $\\frac{216}{12} = 18$. The mean stays the same.\n\nFor the median: We need to determine the new ordering. Originally $a_1 \\leq a_2 \\leq ... \\leq a_{12}$.\n\nAfter changes:\n- The new smallest value is $a_1 + 6$\n- The new largest value is $a_{12} - 6$\n\nSince we're increasing the minimum and decreasing the maximum, the data becomes more compressed toward the center. The key insight is that $a_1 + 6$ might now be larger than some of the middle values, and $a_{12} - 6$ might now be smaller than some middle values.\n\nGiven that the original median is 15 and the mean is 18 (mean > median suggests right skew), increasing $a_1$ by 6 will likely move it closer to or above the current 6th value, while decreasing $a_{12}$ by 6 will move it closer to the current 7th value.\n\nThis compression effect will increase the median because the middle values are now more tightly clustered around a higher value than the original median of 15.",
+  "distractorRationale": {
+    "A": "Correct. The mean remains constant due to equal and opposite changes, while the median increases due to the compression of extreme values toward the center.",
+    "B": "Incorrect. Students might think the mean increases because they focus on the increase in $a_1$ without considering the equal decrease in $a_{12}$.",
+    "C": "Incorrect. This assumes both statistics are unaffected, missing the impact of data compression on the median position.",
+    "D": "Incorrect. Students might incorrectly think the median decreases due to the decrease in the maximum value, not recognizing the net effect of compressing the distribution."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:46:05.947Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "9b7d9202-61a7-485b-80f3-368ca765dd8f"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.0833333333333335,
+    "evaluatedAt": "2026-01-08T15:50:58.924Z"
+  }
+}

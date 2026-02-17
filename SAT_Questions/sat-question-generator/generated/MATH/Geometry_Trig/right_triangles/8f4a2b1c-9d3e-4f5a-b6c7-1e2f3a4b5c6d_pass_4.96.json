@@ -1,0 +1,59 @@
+{
+  "id": "8f4a2b1c-9d3e-4f5a-b6c7-1e2f3a4b5c6d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "In a right triangle, one of the acute angles measures $30°$. If the side opposite to this angle has length 5, what is the length of the hypotenuse?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "5",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "10",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$5\\sqrt{3}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$10\\sqrt{3}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In a right triangle with a $30°$ angle, we can use the sine ratio to find the hypotenuse. We know that $\\sin(30°) = \\frac{1}{2}$.\n\nUsing the sine ratio: $\\sin(30°) = \\frac{\\text{opposite}}{\\text{hypotenuse}}$\n\nSubstituting the known values: $\\frac{1}{2} = \\frac{5}{\\text{hypotenuse}}$\n\nSolving for the hypotenuse: $\\text{hypotenuse} = \\frac{5}{\\frac{1}{2}} = 5 \\times 2 = 10$\n\nTherefore, the length of the hypotenuse is 10.",
+  "distractorRationale": {
+    "A": "This represents the error of confusing the given side length with the hypotenuse, not recognizing that the hypotenuse must be longer than any other side in a right triangle.",
+    "B": "This is the correct answer obtained by properly applying the sine ratio with sin(30°) = 1/2.",
+    "C": "This represents the error of using cosine instead of sine, or confusing this with the length of the adjacent side in a 30-60-90 triangle.",
+    "D": "This represents a computational error, possibly multiplying by √3 instead of dividing by 1/2, or confusing the relationships in a 30-60-90 triangle."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:58:17.082Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "fa607418-93e1-4332-9c3a-35083bdf3406"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.958333333333333,
+    "evaluatedAt": "2026-01-08T16:02:23.112Z"
+  }
+}

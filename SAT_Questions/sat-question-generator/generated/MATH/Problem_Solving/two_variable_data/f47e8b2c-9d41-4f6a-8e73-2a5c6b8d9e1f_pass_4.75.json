@@ -1,0 +1,59 @@
+{
+  "id": "f47e8b2c-9d41-4f6a-8e73-2a5c6b8d9e1f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.2,
+    "computational": 2.2
+  },
+  "stem": "A researcher collected data on the number of hours students spent studying per week and their corresponding test scores. The scatterplot below shows the data with a line of best fit. The equation of the line of best fit is $y = 3.2x + 68$, where $x$ represents hours studied per week and $y$ represents the test score.\n\nBased on this model, what is the predicted test score for a student who studies 12 hours per week?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "80.4",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "86.4",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "106.4",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "112.4",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To find the predicted test score for a student who studies 12 hours per week, substitute $x = 12$ into the equation of the line of best fit:\n\n$y = 3.2x + 68$\n$y = 3.2(12) + 68$\n$y = 38.4 + 68$\n$y = 106.4$\n\nTherefore, the predicted test score is 106.4.",
+  "distractorRationale": {
+    "A": "This results from incorrectly calculating $3.2 \\times 12 = 12.4$ instead of $38.4$, then adding 68.",
+    "B": "This results from using the wrong coefficient, calculating $1.5 \\times 12 + 68 = 86.4$, possibly confusing the slope value.",
+    "C": "This is the correct answer: $3.2 \\times 12 + 68 = 38.4 + 68 = 106.4$.",
+    "D": "This results from adding an extra 6 to the correct answer, possibly from a calculation error with $3.2 \\times 12 = 44.4$ instead of $38.4$."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:51:59.340Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "1105407d-68e3-4974-b46a-c09427eae798"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.75,
+    "evaluatedAt": "2026-01-08T15:56:10.788Z"
+  }
+}

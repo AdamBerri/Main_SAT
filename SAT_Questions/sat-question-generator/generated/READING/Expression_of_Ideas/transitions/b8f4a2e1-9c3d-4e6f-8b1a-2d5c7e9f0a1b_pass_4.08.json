@@ -1,0 +1,60 @@
+{
+  "id": "b8f4a2e1-9c3d-4e6f-8b1a-2d5c7e9f0a1b",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "stem": "Which choice completes the text with the most logical transition?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Furthermore,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Consequently,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Conversely,",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Subsequently,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage presents a clear contrast between two perspectives on AI: the first sentence describes technologists' 'unprecedented optimism' and 'euphoria' about AI's revolutionary potential, while the second sentence introduces philosophers' and ethicists' 'profound epistemological concerns' and skepticism about AI-generated knowledge. 'Conversely' is the only transition that accurately signals this opposition between optimistic and pessimistic viewpoints on the same phenomenon.",
+  "distractorRationale": {
+    "A": "'Furthermore' indicates addition or continuation of the same line of thinking, but the second sentence introduces contrasting concerns rather than additional support for AI optimism.",
+    "B": "'Consequently' suggests a cause-and-effect relationship, but the philosophers' concerns are not a result of the technologists' optimism—they are independent, opposing perspectives on AI's implications.",
+    "D": "'Subsequently' indicates temporal sequence, but the passage is not describing events that occurred one after another; instead, it presents simultaneous but conflicting viewpoints on AI development."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:32:45.668Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "40e75447-ff60-41d6-ba01-eb9bfbd56cbe"
+  },
+  "passage": "The advent of artificial intelligence has precipitated unprecedented optimism among technologists, who envision AI systems revolutionizing everything from medical diagnostics to climate modeling. This euphoria stems from AI's demonstrated capacity to process vast datasets and identify patterns imperceptible to human cognition, suggesting imminent breakthroughs across multiple scientific domains. _____ the proliferation of AI applications has engendered profound epistemological concerns among philosophers and ethicists, who question whether machine-generated insights can constitute genuine knowledge or merely sophisticated pattern recognition devoid of understanding.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 89
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T14:36:06.853Z"
+  }
+}

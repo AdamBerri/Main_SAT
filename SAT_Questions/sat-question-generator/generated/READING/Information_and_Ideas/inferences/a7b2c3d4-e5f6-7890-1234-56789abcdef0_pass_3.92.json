@@ -1,0 +1,63 @@
+{
+  "id": "a7b2c3d4-e5f6-7890-1234-56789abcdef0",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.9,
+    "linguistic": 2.8
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred about the monarch butterflies' early arrival in 2019?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The butterflies encountered unusually favorable weather conditions during their migration.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The butterflies likely departed from their breeding grounds earlier than in previous years.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The butterflies' improved physical condition was due to better food sources along the migration route.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The butterflies were responding to warmer temperatures in central Mexico.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage states that Dr. Rodriguez began to wonder if the monarchs were 'adapting their behavior in response to something entirely different—perhaps the increasingly unpredictable timing of seasonal changes was forcing them to depart earlier from their northern breeding grounds to ensure they reached their destination before winter weather set in.' This directly suggests that the butterflies departed earlier than usual. Additionally, since they arrived three weeks early despite encountering more challenging weather conditions (storms and headwinds), the most logical explanation is that they must have started their journey earlier to compensate for both the difficult conditions and their need to arrive before winter.",
+  "distractorRationale": {
+    "A": "This contradicts the passage, which explicitly states that the butterflies 'encountered more storms and headwinds than in typical years,' indicating unfavorable rather than favorable weather conditions.",
+    "B": "This is the correct answer.",
+    "C": "The passage does not mention anything about food sources along the migration route. The improved physical condition is presented as part of the mystery that Rodriguez is trying to solve, not as something with an established cause.",
+    "D": "The passage does not mention temperatures in central Mexico as a factor. Rodriguez's hypothesis focuses on the butterflies departing earlier from their northern breeding grounds, not on conditions at their destination."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:50:35.165Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "686bf776-a7b9-4dba-8355-1bb9f1c146db"
+  },
+  "passage": "Dr. Elena Rodriguez had been studying the migration patterns of monarch butterflies for over two decades when she noticed something peculiar in her 2019 data. The butterflies that typically arrived at the overwintering sites in central Mexico by late October were appearing nearly three weeks earlier than usual. More intriguingly, these early arrivals seemed to be in better physical condition—their wing coloration was more vibrant, and they carried more fat reserves than the monarchs from previous years. Rodriguez initially suspected that favorable weather conditions along the migration route might explain the phenomenon. However, when she examined meteorological data from the same period, she found that the butterflies had actually encountered more storms and headwinds than in typical years. The mystery deepened when she discovered that several other research teams across different flyways were reporting similar observations. Rodriguez began to wonder if the monarchs were adapting their behavior in response to something entirely different—perhaps the increasingly unpredictable timing of seasonal changes was forcing them to depart earlier from their northern breeding grounds to ensure they reached their destination before winter weather set in.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 189,
+    "source": "Adapted from a scientific research narrative"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T14:57:20.287Z"
+  }
+}

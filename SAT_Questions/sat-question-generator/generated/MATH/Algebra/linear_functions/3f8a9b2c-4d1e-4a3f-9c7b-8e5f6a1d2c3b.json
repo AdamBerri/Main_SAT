@@ -1,0 +1,54 @@
+{
+  "id": "3f8a9b2c-4d1e-4a3f-9c7b-8e5f6a1d2c3b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "computational": 1.1
+  },
+  "stem": "A linear function $f$ is defined by $f(x) = 3x + 7$. What is the value of $f(4)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$10$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$15$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$19$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$28$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To find $f(4)$, substitute $x = 4$ into the function:\n\n$$f(4) = 3(4) + 7$$\n\nFirst, multiply: $3(4) = 12$\n\nThen add: $12 + 7 = 19$\n\nTherefore, $f(4) = 19$.",
+  "distractorRationale": {
+    "A": "Adds 3 and 7 first, then substitutes: $f(4) = (3 + 7) \\times 1 = 10$, incorrectly treating the function as if x doesn't multiply the coefficient",
+    "B": "Adds 4 and 7, then multiplies by 3 incorrectly: Computes $3 + 4 + 7 = 14$ or similar arithmetic error leading to 15",
+    "C": "Correct answer: $f(4) = 3(4) + 7 = 12 + 7 = 19$",
+    "D": "Multiplies 4 by 7 instead of adding: $f(4) = 3(4) + (4)(7) = 12 + 16 = 28$, treating the constant term as another coefficient"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:35:50.309Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "c64211ea-5dc4-4079-8ce2-3d38918191cc"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

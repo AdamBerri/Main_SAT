@@ -1,0 +1,61 @@
+{
+  "id": "f47b8e12-3c9d-4a6b-8f2e-1d5a7c9b4e8f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "linguistic": 2.8
+  },
+  "stem": "Based on the passages, how do the authors' perspectives on AI's impact on creative fields relate to each other?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Both authors agree that AI will eventually replace human artists entirely.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The authors present contrasting viewpoints, with Passage 1 emphasizing threats to artists while Passage 2 focuses on collaborative potential.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Both authors dismiss concerns about AI's impact on traditional artistic practices.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The authors agree that AI lacks the technical skills necessary to create meaningful art.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passages present contrasting perspectives on AI's impact on creative fields. Passage 1 focuses on the threats AI poses to traditional artists, emphasizing concerns about market flooding, devaluation of human creativity, and unclear value propositions for human artists. In contrast, Passage 2 acknowledges AI's capabilities but argues for its collaborative potential, emphasizing irreplaceable human qualities and the successful integration of AI as a tool rather than a replacement. This represents a clear contrast between a threat-focused and opportunity-focused perspective on the same technological development.",
+  "distractorRationale": {
+    "A": "This mischaracterizes both passages. Passage 1 expresses concern about replacement but doesn't definitively state it will happen, while Passage 2 explicitly argues against replacement, emphasizing collaboration instead.",
+    "C": "This is incorrect because Passage 1 explicitly acknowledges and validates concerns about AI's impact, describing them as 'not unfounded.' Only Passage 2 could be seen as dismissive of certain concerns.",
+    "D": "This misrepresents both passages. Passage 1 actually acknowledges AI's impressive technical capabilities, while Passage 2 recognizes AI's technical abilities but emphasizes that human creativity involves more than technical skills."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:32:58.956Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "ea84777e-ae2b-4e62-925d-0ab6460346fe"
+  },
+  "passage": "Passage 1\n\nThe rise of artificial intelligence in creative fields has sparked concern among traditional artists. Many painters, writers, and musicians worry that AI-generated content will flood the market, devaluing human creativity and making it impossible for artists to earn a living. These concerns are not unfounded—AI can now produce paintings in the style of famous masters, compose symphonies, and write poetry in minutes. As AI becomes more sophisticated, the unique value proposition of human artists becomes increasingly unclear, potentially threatening centuries-old artistic traditions.\n\nPassage 2\n\nWhile AI's capabilities in creative domains are impressive, human artists possess irreplaceable qualities that no algorithm can replicate. Human creativity stems from lived experience, emotional depth, and cultural understanding that AI simply mimics without truly comprehending. Rather than replacing artists, AI tools are becoming powerful collaborators, helping creators overcome technical barriers and explore new possibilities. Many successful contemporary artists now integrate AI into their workflows, using it to enhance rather than replace their human insight and imagination.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 175,
+    "source": "Adapted from contemporary discussions on AI and creativity"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.375,
+    "evaluatedAt": "2026-01-08T14:36:36.508Z"
+  }
+}

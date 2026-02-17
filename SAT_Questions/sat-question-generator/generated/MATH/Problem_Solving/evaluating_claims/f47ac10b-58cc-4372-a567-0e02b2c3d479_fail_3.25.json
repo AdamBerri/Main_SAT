@@ -1,0 +1,59 @@
+{
+  "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "computational": 1
+  },
+  "stem": "A school survey asked 200 students whether they prefer pizza or sandwiches for lunch. The results showed that 120 students prefer pizza and 80 students prefer sandwiches. Based on these results, the student council concluded that \"All students in our school prefer pizza over sandwiches.\" Which of the following best describes this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The conclusion is valid because more students chose pizza than sandwiches.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The conclusion is invalid because not all surveyed students chose pizza.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The conclusion is valid because 120 is greater than 80.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is invalid because the sample size is too small.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The conclusion states that \"All students in our school prefer pizza over sandwiches.\" However, the survey results show that 80 out of 200 students (40%) actually prefer sandwiches, not pizza. Since not all surveyed students chose pizza, the conclusion that ALL students prefer pizza is clearly false. A valid conclusion would be that \"Most students surveyed prefer pizza\" or \"60% of surveyed students prefer pizza.\"",
+  "distractorRationale": {
+    "A": "This choice confuses having a majority preference with having universal preference. While more students did choose pizza, this doesn't support the claim that ALL students prefer pizza.",
+    "B": "This is correct. The conclusion claims ALL students prefer pizza, but 80 students actually prefer sandwiches, making the conclusion false.",
+    "C": "This choice makes the same error as choice A, focusing on the numerical comparison rather than the logical validity of claiming ALL students have the same preference.",
+    "D": "This choice incorrectly identifies the problem as sample size rather than the logical error in the conclusion. The sample size of 200 is reasonable for a school survey."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:51:34.589Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "8a00cd0b-8ad1-4541-9b10-083d1520eafc"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.25,
+    "evaluatedAt": "2026-01-08T15:55:56.254Z"
+  }
+}

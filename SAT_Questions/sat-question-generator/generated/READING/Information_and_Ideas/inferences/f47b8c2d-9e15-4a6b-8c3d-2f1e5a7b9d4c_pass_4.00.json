@@ -1,0 +1,62 @@
+{
+  "id": "f47b8c2d-9e15-4a6b-8c3d-2f1e5a7b9d4c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1.1
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred about Maria?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "She significantly improved her baking skills through practice and experience.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "She was hired because of her previous experience in cake decorating.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "She plans to leave the bakery to start her own business.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "She received formal training at a culinary school before working at the bakery.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage provides clear evidence of Maria's progression from a beginner who 'could barely crack an egg without making a mess' and needed others to 'redo her work' to someone trusted with 'delicate pastries' and eventually chosen to create an 'elaborate wedding cake.' This progression, combined with her staying 'late to practice basic techniques,' strongly supports the inference that she improved her skills through practice and experience.",
+  "distractorRationale": {
+    "A": "This is the correct answer supported by the evidence of Maria's clear progression from beginner to skilled baker.",
+    "B": "This contradicts the passage, which states she 'could barely crack an egg' when she started, indicating she was a beginner, not someone with previous decorating experience.",
+    "C": "The passage provides no information about Maria's future career plans or any dissatisfaction with her current job.",
+    "D": "The passage gives no indication of formal culinary training; instead, it suggests she learned on the job through practice and experience."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:50:51.438Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "29f13536-e627-4947-889f-26b3d66945ef"
+  },
+  "passage": "When Maria first started working at the neighborhood bakery, she could barely crack an egg without making a mess. The other bakers would often have to redo her work, and she frequently stayed late to practice basic techniques. However, after six months on the job, the head baker began assigning her the more delicate pastries that required precise timing and temperature control. Last week, when the bakery's most experienced decorator called in sick, Maria was chosen to create the elaborate wedding cake that had been ordered months in advance. The bride later called to say it was the most beautiful cake she had ever seen.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 118
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4,
+    "evaluatedAt": "2026-01-08T14:57:20.287Z"
+  }
+}

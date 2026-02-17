@@ -1,0 +1,324 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 3.7061011904761907,
+        "passRate": 0.4375,
+        "errorCategories": [
+          {
+            "category": "mathematical_correctness",
+            "frequency": 12,
+            "exampleErrors": [
+              "The designated correct answer D (5 feet) is definitively INCORRECT. When w=5, the total area is 875 sq ft, not 675 sq ft as required by the problem.",
+              "The explanation shows r²=36 giving r=6, yet claims answer C (12) is correct - a fundamental mathematical inconsistency.",
+              "None of the provided answer choices produce the stated total area of 675 square feet. The actual solution is approximately 3.23 feet."
+            ]
+          },
+          {
+            "category": "explanation_quality",
+            "frequency": 7,
+            "exampleErrors": [
+              "The explanation contains meta-commentary like 'Wait, let me recalculate...' and 'Hmm, this seems too straightforward' showing unedited work-in-progress content.",
+              "The explanation acknowledges 'this doesn't match' and shows multiple failed attempts but still concludes with an incorrect answer.",
+              "Self-contradictory explanation ends with 'Let me assume the correct answer based on typical SAT patterns' rather than mathematical proof."
+            ]
+          },
+          {
+            "category": "distractor_design",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor C (3) is mathematically identical to the correct answer (∛27 = 3), creating two correct answers which violates basic psychometric principles.",
+              "Distractor B's rationale claims 'not dividing by 4/3' yields r³=54, but this error pathway is vague and doesn't work cleanly mathematically.",
+              "The rationale for distractor D describes an error ('tripling 27') that doesn't naturally lead to the stated answer value."
+            ]
+          },
+          {
+            "category": "difficulty_calibration",
+            "frequency": 2,
+            "exampleErrors": [
+              "Stated difficulty 5/5 is inflated by approximately 2 full levels - this is a straightforward formula application problem more appropriate for 2.5-3/5 difficulty.",
+              "Rated as 3/5 (Medium) but should be 1/5 or 2/5 at most - requires only single-step calculation with elementary formula (length × width × height)."
+            ]
+          },
+          {
+            "category": "sat_authenticity",
+            "frequency": 1,
+            "exampleErrors": [
+              "The instruction '(Round your answer to the nearest hundredth)' is not characteristic of SAT format - official SAT questions never explicitly instruct students to round.",
+              "Question relies on sphere and cone volume formulas that are NOT included on the SAT reference sheet, which is a significant deviation from current SAT practice."
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.703869047619048,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: mathematical_correctness, explanation_quality, distractor_design",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.5722789115646263,
+        "passRate": 0.2857142857142857,
+        "errorCategories": [
+          {
+            "category": "duplicate_answer_choices",
+            "frequency": 4,
+            "exampleErrors": [
+              "Answer choices A and D are both $24\\pi$, making the question impossible to grade and violating SAT design standards",
+              "Answer choices A and D are identical ($96 - 4\\pi$), creating an unprecedented situation where two choices are mathematically equivalent",
+              "Duplicate answer options prevent proper test scoring and eliminate the ability to distinguish between test-takers who select different choices"
+            ]
+          },
+          {
+            "category": "distractor_derivation_mismatch",
+            "frequency": 3,
+            "exampleErrors": [
+              "Choice A rationale claims derivation of $2\\pi$ from $(4-3) \\times (8-6) \\times \\pi$, but the actual answer choice is $24\\pi$—the stated calculation doesn't produce the listed answer",
+              "Choice B rationale proposes two different error pathways ($80\\pi - 72\\pi = 8\\pi$ and $96\\pi - 48\\pi = 48\\pi$) but neither yields the actual answer choice of $30\\pi$",
+              "Distractor rationales are mathematically incoherent; the stated misconceptions don't actually produce the answer values they're supposed to represent"
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question stated as 3/5 difficulty but actual difficulty is 1.5-2/5 due to straightforward formula application with no conceptual complexity",
+              "Labeled as 4/5 (hard) but functions as 2.5-3/5 difficulty since students can simply plug-and-check answer choices rather than solve analytically",
+              "Stated difficulty doesn't match actual cognitive load; the problem is too mechanistic and formulaic to warrant the assigned rating"
+            ]
+          },
+          {
+            "category": "answer_key_inconsistency",
+            "frequency": 2,
+            "exampleErrors": [
+              "The designated correct answer (r = 3) when tested mathematically yields $114\\pi \\approx 358$ cubic feet, not the stated 800 cubic feet—the answer key doesn't satisfy the problem constraints",
+              "No provided answer option actually solves the equation correctly; the mathematical problem parameters appear inconsistent with all given choices"
+            ]
+          },
+          {
+            "category": "inauthentic_question_design",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question requires only direct multiplication (12 × 8 = 96) with no multi-step reasoning, making it appropriate for elementary school rather than SAT-level assessment",
+              "Problem lacks the cognitive complexity expected even for easy SAT questions; it's pure procedural recall without any inferential or conceptual demand"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: duplicate_answer_choices, distractor_derivation_mismatch, difficulty_miscalibration",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.59375,
+        "passRate": 0.375,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual complexity is 3.5-3.7/5 due to straightforward formula application with no geometric complications or tricky reasoning",
+              "Cylinder volume problem rated 5/5 difficulty when actual procedural complexity is 1-2/5 with only basic multiplication and subtraction required",
+              "Garden fountain problem rated 4/5 difficulty but requires only single concept application (cylinder formula) with mechanical three-step process, actually ~2.5/5"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Ball in cylinder problem provides no actual mathematical constraint on radius - problem statement is tautological and allows any value 0 < r ≤ 5, making answer underdetermined",
+              "Garden area question has duplicate answer choices A and D both showing 120 - 4π, violating SAT requirement of four distinct options with one correct answer",
+              "Duplicate answers in fountain problem (A and D identical at 96 - 4π) creates ambiguity about which duplicate is the 'correct' choice"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 3,
+            "exampleErrors": [
+              "Simple rectangle area problem (12 × 8) reads like middle school worksheet rather than SAT content - too elementary despite being mathematically valid, lacks sophistication typical of College Board materials",
+              "Radical answer format (5√1.5) with decimal under radical is unconventional for SAT, which typically presents simplified form (√n where n has no perfect square factors) or rationalized form like (5√6)/2",
+              "Generated question cannot function as published due to duplicate answer choice, failing to meet basic SAT test design standards for distinct answer options"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 2,
+            "exampleErrors": [
+              "Elementary area problem distractors (20, 40, 96 vs 144) are trivially easy to eliminate by estimation alone - values are implausibly small, violating SAT principle that distractors must be difficult to eliminate without mathematical reasoning",
+              "Distractor rationales lack clarity - error pathway for 2.5 answer ('confusing radius of tank with height constraint') doesn't intuitively explain why students would construct that specific equation"
+            ]
+          },
+          {
+            "category": "problem_clarity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Water displacement problem statement is ambiguous and self-referential - the tautological definition that 'volume of water equals tank volume minus ball volume' doesn't actually constrain the radius, making the problem unsolvable as written without additional information about total water volume or initial conditions"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.4375,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, faithfulness",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.817708333333333,
+        "passRate": 0.5,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 6,
+            "exampleErrors": [
+              "Distractor A contains convoluted, contradictory rationale with multiple unexplained calculation paths that don't coherently represent a single misconception",
+              "Distractor D lacks clear mathematical documentation; stated error path doesn't actually produce the listed answer value",
+              "Distractor B has incoherent rationale claiming multiple confusing steps (96÷2=48, then reaching 40) without clear logical connection to a genuine student error"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Stated difficulty 4/5 but actual difficulty ~2.5/5; straightforward formula application with basic arithmetic doesn't warrant above-average rating",
+              "Rated 3/5 (medium) but analysis shows ~1.5-2/5 difficulty; direct formula substitution with single-digit calculations and no conceptual traps",
+              "Marked 5/5 (hardest) across all dimensions but actual difficulty closer to 2.5-3/5; linear solution path with standard formula and routine algebra"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question marked with answer B (59 minutes) but mathematical work clearly shows answer A (47 minutes) is correct; explanation contradicts keyed answer",
+              "Designated correct answer B (36π) but correct calculation yields A (24π); provided explanation even demonstrates the correct solution",
+              "Answer choice D contains π making it mathematically invalid; π should cancel out in the solution so no correct answer should include it"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question is too elementary for SAT standards; lacks contextual complexity, diagram interpretation, or multi-step reasoning typical of authentic SAT items even at easiest tier",
+              "Answer choices don't reflect authentic SAT distractor design; they appear arbitrary rather than representing coherent misconceptions that would trap students misunderstanding the problem"
+            ]
+          },
+          {
+            "category": "calculation_error",
+            "frequency": 1,
+            "exampleErrors": [
+              "Rationale claims 300π/12 ≈ 78.54 but this calculation appears reverse-engineered; the misconception path is mathematically unclear and doesn't represent a natural student error"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.916666666666667,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, answer_validity",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.9062499999999996,
+        "passRate": 0.625,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 5,
+            "exampleErrors": [
+              "Multiple distractors target the same misconception (perimeter vs. area confusion in two separate choices), wasting distractor real estate and reducing discriminative power",
+              "Distractor rationales are incoherent and retrofitted to match answer choices rather than explaining genuine student error pathways (e.g., D uses convoluted arithmetic that doesn't logically produce the claimed answer)",
+              "Distractors lack plausible misconceptions—some represent too-obvious errors (r² = 36 as r = 36) while others combine multiple unrelated mistakes artificially"
+            ]
+          },
+          {
+            "category": "difficulty_calibration",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question rated 4/5 difficulty but requires only straightforward formula application with clean values (r=6, π cancels)—actual difficulty is 2-2.5/5, overestimated by ~1.5 points",
+              "Stated 3/5 medium difficulty for simple single-formula problem (V = πr²h with 75% multiplier), but actual difficulty ~2.5/5 with minimal error opportunities and transparent calculations",
+              "Rated 5/5 hardest difficulty but features standard volume displacement concept with linear, sequential steps and straightforward algebra—more accurately 3.5-4/5, overstated by 1-1.5 points"
+            ]
+          },
+          {
+            "category": "faithfulness_to_sat",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question is too elementary for SAT standards—essentially one-step multiplication (12 × 8 = 96) lacking the multi-step reasoning and conceptual sophistication of authentic SAT geometry items",
+              "Problem provides information in exact form needed with no interpretation or extraction required; authentic SAT questions demand students convert units or decode slightly ambiguous language",
+              "Question lacks real-world complexity and reading comprehension component characteristic of actual SAT problems; reads like middle-school standardized test material rather than college-readiness assessment"
+            ]
+          },
+          {
+            "category": "answer_key_error",
+            "frequency": 2,
+            "exampleErrors": [
+              "Designated correct answer (3 gallons) contradicts the mathematical calculation which clearly shows 2 gallons is sufficient (1.94 gallons rounds up to 2, not 3)",
+              "Marked answer (B) is mathematically incorrect while the explanation's own calculations prove answer (A) is correct, creating a fundamental keying error"
+            ]
+          },
+          {
+            "category": "reasoning_incoherence",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor explanation claims to show both a correct calculation path AND an incorrect answer, contradicting itself internally—the detailed work for choice A actually proves it correct, not incorrect",
+              "Distractor D rationale describes an implausible simplification error (dividing numerator and denominator by different factors) that mathematically cannot produce the claimed result, suggesting post-hoc reverse-engineering"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.083333333333333,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_quality, difficulty_calibration, faithfulness_to_sat",
+      "newPromptVersion": "1.3.0"
+    }
+  ],
+  "currentBestVersion": "1.3.0",
+  "converged": false,
+  "startedAt": "2026-01-08T20:32:05.255Z",
+  "completedAt": "2026-01-09T19:13:40.894Z",
+  "bestTestScore": 4.083333333333333
+}

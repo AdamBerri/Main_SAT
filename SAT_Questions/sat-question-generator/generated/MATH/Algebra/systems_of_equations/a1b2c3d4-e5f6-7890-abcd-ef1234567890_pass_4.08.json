@@ -1,0 +1,59 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "computational": 1
+  },
+  "stem": "At a school fundraiser, tickets cost $3 for adults and $2 for students. If 50 tickets were sold for a total of $120, how many adult tickets were sold?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "20",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "25",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "30",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "40",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let $a$ = number of adult tickets and $s$ = number of student tickets.\n\nFrom the given information, we can write two equations:\n- Total tickets: $a + s = 50$\n- Total revenue: $3a + 2s = 120$\n\nFrom the first equation: $s = 50 - a$\n\nSubstituting into the second equation:\n$3a + 2(50 - a) = 120$\n$3a + 100 - 2a = 120$\n$a + 100 = 120$\n$a = 20$\n\nTherefore, 20 adult tickets were sold.",
+  "distractorRationale": {
+    "A": "Correct answer obtained by properly setting up and solving the system of equations.",
+    "B": "This results from incorrectly assuming equal numbers of adult and student tickets (25 each).",
+    "C": "This comes from solving $3a + 2s = 120$ with $a + s = 50$ but making an arithmetic error, such as $3a + 2(50-a) = 3a + 100 - a = 2a + 100 = 120$, giving $a = 10$, then doubling to get 20 but writing 30.",
+    "D": "This results from setting up the equations incorrectly, such as using $2a + 3s = 120$ instead of $3a + 2s = 120$."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:32:25.782Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "ce387c9a-fa97-41d5-aae6-1e7f647334ab"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T15:40:09.672Z"
+  }
+}

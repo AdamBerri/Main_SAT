@@ -1,0 +1,242 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.520833333333333,
+        "passRate": 0.6875,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question rated 4/5 difficulty but only requires straightforward mean calculations appropriate for 2.5/5",
+              "Stated difficulty of 3/5 when actual cognitive load is 2.0/5 with minimal computational complexity",
+              "Question rated 5/5 (hardest) but tests single formula application solvable in 30-45 seconds, appropriate for 2.5-3/5"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor rationales are vague or unsystematic (e.g., 'computational error' without specifying which calculation)",
+              "Distractors target implausible error paths that don't represent coherent misconceptions",
+              "Mathematical errors in distractor justifications (e.g., claiming mode changes from 18 to 24 when it remains 18)"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Designated correct answer contradicts the mathematical calculations shown in the explanation itself",
+              "Answer key claims variance = 66 but verification shows actual variance = 52 for the given dataset",
+              "Question asks 'could be' but explanation only proves one example without establishing the range of possible values"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question focuses on standard deviation computation, which rarely appears on actual SAT exams",
+              "Computational complexity and optimization requirements exceed typical SAT problem scope",
+              "Missing real-world context that characterizes modern SAT statistics questions"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.458333333333333,
+        "passRate": 0.75
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, distractor_quality, answer_validity",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.927083333333333,
+        "passRate": 0.5,
+        "errorCategories": [
+          {
+            "category": "answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Designated answer C (42) is not unambiguously correct; multiple valid answers (38, 40, 42, 44) satisfy all given constraints, indicating the problem is underconstrained",
+              "Answer key marked B as correct, but calculations in the explanation prove answer A is correct (mean decreases and median remains the same), creating a direct contradiction",
+              "Answer C (15) is achievable but not the only possible answer; counterexample shows answer B (14) also satisfies all constraints with a valid dataset"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 2,
+            "exampleErrors": [
+              "Stated difficulty 4/5 is slightly overstated; actual difficulty is 3.5/4 because mean component (2-3/5) and range component (1-2/5) are straightforward, with only median providing genuine challenge",
+              "Stated difficulty 5/5 is significantly overrated; actual difficulty is 3.5-4/5 since the concepts are straightforward (mean, median, sum relationships), arithmetic is elementary, and top students would achieve 70-80% success rate"
+            ]
+          },
+          {
+            "category": "explanation_quality",
+            "frequency": 2,
+            "exampleErrors": [
+              "Explanation becomes vague at Step 5 with incomplete justification; tries two scenarios without explaining why one configuration is correct over another, leaving the reasoning incomplete and unconvincing",
+              "Step 5 lacks rigorous proof that the median must be 15; explanation doesn't explain why $v_5$ must equal 15 given only that $v_4 + v_5 = 28$, failing to demonstrate unambiguity"
+            ]
+          },
+          {
+            "category": "authenticity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question is too direct and computational for authentic SAT style; it asks for simple calculation of basic statistic rather than embedding concept in complex scenario, with weak distractors that don't reflect plausible student errors, reading more like middle school assessment than SAT-level reasoning"
+            ]
+          },
+          {
+            "category": "constraint_incompleteness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Problem is mathematically underconstrained; without additional constraints like 'all values are distinct' or specification of value distribution, multiple valid answers emerge, preventing unique determination of the answer"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.125,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_validity, difficulty_accuracy, explanation_quality",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.770833333333333,
+        "passRate": 0.625,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Stated 5/5 difficulty but actual difficulty is 3.5/5; problem is straightforward arithmetic with clear procedure, not genuinely hard",
+              "Claimed 3/5 medium difficulty but actual difficulty is 2.1/5 below average; question would be solved correctly by 70-80% of students, not 50%",
+              "Rated 4/5 (hard) but actual difficulty is 3.5/4; lacks computational complexity and multi-layered reasoning typical of level 4 problems",
+              "Labeled 5/5 but actual difficulty 3.5-4/5; problem applies definitions rather than synthesizing complex ideas; straightforward arithmetic without genuine conceptual challenge"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Designated answer is mathematically incorrect for the given dataset; correct answer should be A (both mean and median decrease) not B (mean decreases, median stays same)",
+              "For dataset {12, 18, 20, 24, 26}, removing 26 causes both mean and median to decrease, making answer B factually wrong",
+              "Problem assumes a specific data distribution without stating it, making the answer indeterminate rather than unambiguously correct"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question includes excessive hand-holding with explicit notation about ordered data (a₁ ≤ a₂...) that is atypical for SAT; feels like teaching scaffolding rather than assessment; also fails to provide actual data values needed to determine median uniquely"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 1,
+            "exampleErrors": [
+              "Options B and D target overlapping misconceptions; Option B and D both involve median calculation errors; Option D lacks specificity about concrete computational error; Option C may attract fewer students than intended due to being conceptually implausible"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.25,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, faithfulness",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.6510416666666665,
+        "passRate": 0.5,
+        "errorCategories": [
+          {
+            "category": "answer_validity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Designated correct answer is mathematically incorrect - calculated answer should be A (mean decreases, median stays same) but answer key shows C",
+              "Arithmetic error in explanation - states 360 - 301 = 59 but answer given is 57, which doesn't satisfy the mean constraint of 43",
+              "Designated answer D (14) is correct but explanation lacks rigorous justification for why a₄ must equal 14 rather than a smaller value satisfying a₄ + a₅ = 28"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractor A is ineffective - represents mixed correct/incorrect reasoning rather than a clean distinct misconception, making it difficult to distinguish from correct understanding",
+              "Distractors A and D are too obvious and easily eliminable through mechanical position-counting in short datasets, failing to meaningfully discriminate between understanding levels",
+              "Distractor C has internally contradictory rationale - states (4+5+6)/3 = 15/3 = 5 but then claims this produces 4.5, undermining plausibility and coherence"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Stated difficulty 3/5 is overestimated - question only requires single arithmetic operation (120-6=114) with minimal conceptual demand and ~30-45 seconds to solve",
+              "Stated difficulty 4/5 is overestimated by 0.5-1.5 points - straightforward sum manipulation pathway and removed value is so far outside distribution that reconstruction is unambiguous",
+              "Stated difficulty 5/5 is significantly overrated - while multi-step reasoning exists, the solution path is mechanically algorithmic once key insight is recognized, actual difficulty closer to 3.5/4"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question has critical mathematical error in answer key and oversimplified conceptual demand - removing the largest number will always decrease mean, making pattern too obvious and failing to test deeper understanding typical of authentic SAT questions"
+            ]
+          },
+          {
+            "category": "explanation_clarity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Explanation for answer validity contains muddled internal logic - rationale becomes contradictory when explaining alternative misconceptions, unclear how student would systematically arrive at stated answer through described reasoning pathway"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.083333333333333,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_validity, distractor_quality, difficulty_accuracy",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:32:05.223Z",
+  "completedAt": "2026-01-09T21:11:23.312Z",
+  "bestTestScore": 4.458333333333333
+}

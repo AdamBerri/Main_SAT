@@ -1,0 +1,245 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 10,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.9791666666666665,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question stated as 5/5 difficulty but analysis shows it's actually 3.5-4/5 due to straightforward algebra and minimal computational complexity",
+              "Question rated 4/5 difficulty but actual cognitive demand is only 2.5-3/5 since it's primarily a mechanical constraint-matching task with no calculations required",
+              "Question calibrated at 3/5 medium difficulty but actual analysis indicates 2-2.2/5 below-average difficulty due to single-step inequality setup and clean arithmetic with no ambiguity"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractors B and D are cognitively similar (both require reversal errors), reducing discriminative power between different misconception types; insufficient diversity in error patterns targeted",
+              "Choice C contains internal logical contradiction claiming complex boundary interaction 'allows a = 6' when the correct analysis actually restricts to a < 4.5; rationales use vague language like 'full geometric constraint' without clear mechanistic explanation of student errors"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Explanation contradicts itself by deriving 'a < 4.5' but designating answer as 6; mathematical verification shows correct answer is 4, not 6; distractor analysis reveals the provided answer is definitively incorrect"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question requires feasible region and geometric reasoning about constraint separation, which exceeds typical SAT algebraic focus; problem structure and conceptual demands are atypical for College Board style, resembling post-AP linear programming rather than standard SAT algebra"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.458333333333334,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, distractor_quality, answer_validity",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.6197916666666665,
+        "passRate": 0.625,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Question stated as 3/5 difficulty but actual difficulty is 2.3/5 - straightforward constraint translation with minimal cognitive load and no higher-order reasoning required",
+              "Question stated as 5/5 difficulty but actual difficulty is 3/5 - involves only simple substitution and single-step inequality solving with transparent word-to-symbol mapping",
+              "Question stated as 2/5 difficulty but actual difficulty is 1.5-1.8/5 - solvable in under 1 minute with well-separated answer choices and no significant pitfalls"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Designated answer B (k < 12) is mathematically equivalent to choice C (k ≤ 11), but explanation proves C is correct - contradiction between stated answer and derived logic",
+              "Designated answer D (44) contradicts the constraint mathematics - labor constraint gives d ≤ 30 which is binding, making answer A (30) correct, not D",
+              "System of inequalities has no value of k that produces no solution - both inequalities impose lower bounds on x, so solution always exists regardless of k, making all answer choices incorrect"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 3,
+            "exampleErrors": [
+              "Answer choices A and D both listed as '44' - duplicate answer choices violate test construction principles and create ambiguity about correct answer",
+              "Distractor C (27) targets implausible arithmetic error - 220 ÷ 5 cannot plausibly yield 27, so error path is unclear and misconception is not properly targeted",
+              "Distractors fail to target major misconceptions - no distractors address coefficient confusion, inequality direction errors, or constraint interpretation failures despite these being predictable errors"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question structure deviates from SAT format - presents system setup as one component then asks separate follow-up question, when official SAT uses single unified question structure with self-contained objectives"
+            ]
+          },
+          {
+            "category": "internal_consistency",
+            "frequency": 1,
+            "exampleErrors": [
+              "Explanation contradicts itself - correctly identifies binding constraint as d ≤ 30 from labor constraint but then concludes answer is 44 from non-binding material constraint without justifying why non-binding constraint should be selected"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 2.5416666666666665,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.5729166666666665,
+        "passRate": 0.5,
+        "errorCategories": [
+          {
+            "category": "answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Designated correct answer (B) mathematically incorrect; solving 5x ≥ 25 yields x ≥ 5, not x = 4. With x = 4, student scores only 80 points, below required 85.",
+              "Problem infeasible under stated constraints. Minimum standard s ≥ 15 with p ≥ 2s requires labor 3(15) + 5(30) = 195, exceeding limit of 180. No answer choice satisfies all constraints.",
+              "Designated answer C is not unambiguously correct due to constraint violation. Answer validity compromised by infeasible problem design."
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Stated 5/5 difficulty for straightforward substitution problem. Only requires substituting x = 40 into inequalities and comparing results. Actual difficulty 2.5-3/5.",
+              "Compound inequality problem marked 4/5 (hard) is actually 2-3/5 (basic). Takes 1-2 minutes with elementary arithmetic; no conceptual trap or distractor sophistication.",
+              "Manufacturing constraint problem claimed 4/5 but involves only straightforward constraint setup and algebra. More appropriately 3/5 given cognitive demand."
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 2,
+            "exampleErrors": [
+              "Duplicate answer choices: Options B and D both listed as 46, with unclear which is intended as correct. Violates basic test construction principles.",
+              "Distractor B incoherent: Rationale claims 46 results from 'faulty arithmetic' (computational error), yet 46 is marked as the correct answer. Explanation contradicts choice value."
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 2,
+            "exampleErrors": [
+              "Multi-constraint optimization problem with four simultaneous constraints exceeds typical SAT complexity. Authentic SAT linear inequality questions use 2-3 constraints maximum; this approaches AP Calculus or operations research level.",
+              "Question structure misaligned with SAT style. Ambiguous optimization target combined with ratio constraint creates logical confusion not typical of College Board questions."
+            ]
+          },
+          {
+            "category": "logical_ambiguity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor D (x < 15) is mathematically valid but creates ambiguity. Since x < 5 logically implies x < 15, both options A and D are defensibly correct from strict logical standpoint, violating SAT unambiguous correctness standard."
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.0625,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: answer_validity, difficulty_accuracy, distractor_quality",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.901041666666667,
+        "passRate": 0.625,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractor B ($30) lacks clear conceptual grounding—the rationale 'adding an extra $5' is vague and doesn't represent a systematic misconception",
+              "Distractors A and D both target reciprocal errors, creating redundancy rather than distinct misconception categories",
+              "Distractor C's sign error explanation doesn't clearly trace how a student arrives at exactly k = -3/2; the connection between the misconception and numerical answer is tenuous"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question rated 5/5 (Hard) but actual difficulty is 2.5-3/5; the task is straightforward constraint-to-inequality translation with minimal cognitive load and zero computational demands",
+              "Question rated 2/5 (Below Average) but actual difficulty is 1.5-1.8/5; requires only single-step inequality setup from obvious real-world context with transparent distractors"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Designated answer (k = 24) is mathematically incorrect; the system has solutions when k = 24. The correct answer should be k ≤ -24, which doesn't match any choice given",
+              "Explanation contains logical contradiction—acknowledges that solutions DO exist when k = 3/2 but still affirms the answer as correct, indicating a fundamental error in the answer key"
+            ]
+          },
+          {
+            "category": "reasoning_clarity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Explanation for why k = 3/2 produces no solutions is missing entirely; students cannot understand the correct answer's justification or how parallel lines with this slope configuration create an impossible system"
+            ]
+          },
+          {
+            "category": "problem_design",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question lacks real-world context typical of SAT problems; embedding as pure algebraic abstraction rather than realistic scenario reduces authenticity and engagement for lower-difficulty problems"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.75,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, answer_validity",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "bestTestScore": 4.458333333333334,
+  "converged": true,
+  "startedAt": "2026-01-09T19:33:25.392Z",
+  "completedAt": "2026-01-09T20:49:03.028Z"
+}

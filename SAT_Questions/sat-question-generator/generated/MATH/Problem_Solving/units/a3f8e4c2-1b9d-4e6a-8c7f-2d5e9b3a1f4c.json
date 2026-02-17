@@ -1,0 +1,54 @@
+{
+  "id": "a3f8e4c2-1b9d-4e6a-8c7f-2d5e9b3a1f4c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "computational": 1
+  },
+  "stem": "A water tank is being filled at a rate of 15 gallons per minute. How many gallons of water will be in the tank after 3 hours? (1 hour = 60 minutes)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "45",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "180",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "900",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "2,700",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "To find the total gallons, we need to convert the time to minutes and multiply by the rate.\n\nStep 1: Convert 3 hours to minutes:\n$$3 \\text{ hours} \\times \\frac{60 \\text{ minutes}}{1 \\text{ hour}} = 180 \\text{ minutes}$$\n\nStep 2: Calculate total gallons using the rate:\n$$180 \\text{ minutes} \\times \\frac{15 \\text{ gallons}}{1 \\text{ minute}} = 2,700 \\text{ gallons}$$\n\nTherefore, the tank will contain 2,700 gallons after 3 hours.",
+  "distractorRationale": {
+    "A": "**A) 45**: Multiplies the rate by the number of hours without converting to minutes: 15 gallons/minute × 3 hours = 45. This error treats hours and minutes as if they were the same unit.",
+    "B": "**B) 180**: Converts hours to minutes correctly (3 × 60 = 180) but forgets to multiply by the filling rate of 15 gallons per minute. This represents only the time in minutes, not the volume.",
+    "C": "**C) 900**: Divides the correct answer by 3 instead of multiplying: (3 × 60 ÷ 15 = 12, then incorrectly calculates) or uses the conversion factor incorrectly as 15 × 60 = 900, forgetting to multiply by the 3 hours.",
+    "D": "**D) 2,700**: Correct. Converts 3 hours to 180 minutes, then multiplies by the rate of 15 gallons per minute to get 2,700 gallons."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:15.983Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "15a05e27-758b-4c1a-9efd-03d3ff4d155f"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

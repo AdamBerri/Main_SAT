@@ -1,0 +1,63 @@
+{
+  "id": "a7f8b2c4-9e1d-4f3a-8b5c-6d2e9f1a3b7c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.7,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "stem": "Which quotation from the passage best supports the claim that guilds actively embraced rather than resisted economic change?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"The prevailing narrative surrounding the decline of medieval guilds attributes their demise primarily to the rise of capitalist markets and industrial production.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"German metalworking guilds in Nuremberg actively recruited foreign artisans with specialized knowledge, leading to innovations in precision instruments that dominated European markets for decades.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"Contemporary records from the guild's archive show that membership fees increased sevenfold during this period of expansion, indicating robust financial health rather than decline.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"These examples suggest that guild dissolution resulted less from inherent structural inadequacies than from specific political pressures and changing legal frameworks.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B provides the strongest evidence that guilds actively embraced economic change by showing concrete action: German guilds \"actively recruited foreign artisans with specialized knowledge.\" This demonstrates proactive behavior that led to innovation and market dominance, directly supporting the claim that guilds embraced rather than resisted change. The phrase \"actively recruited\" explicitly shows initiative and openness to new ideas, while the successful outcome (\"dominated European markets\") proves this strategy was effective.",
+  "distractorRationale": {
+    "A": "This quote describes the traditional narrative that the passage argues against, not evidence supporting the claim about guilds embracing change.",
+    "B": "This is the correct answer as it shows guilds taking proactive steps to innovate and adapt.",
+    "C": "While this shows guild success, it demonstrates financial outcomes rather than evidence of actively embracing change through specific actions.",
+    "D": "This explains why guilds ultimately declined but doesn't provide evidence of them actively embracing economic change during their adaptive period."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:51:29.986Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "f2f277d5-0fff-4a1a-b475-a3dd7ca0b1ab"
+  },
+  "passage": "The prevailing narrative surrounding the decline of medieval guilds attributes their demise primarily to the rise of capitalist markets and industrial production. However, recent archival research reveals a more nuanced picture: guilds demonstrated remarkable adaptability and often facilitated, rather than hindered, economic transformation. In fifteenth-century Florence, the wool guild (Arte di Lana) successfully integrated new spinning technologies while maintaining its regulatory framework, increasing production by 340% between 1450 and 1480. Similarly, German metalworking guilds in Nuremberg actively recruited foreign artisans with specialized knowledge, leading to innovations in precision instruments that dominated European markets for decades. The Venetian glassmakers' guild on Murano island exemplifies this adaptive capacity most clearly—rather than resisting change, guild masters strategically relocated their operations to maintain trade secrets while expanding into new markets across the Ottoman Empire. Contemporary records from the guild's archive show that membership fees increased sevenfold during this period of expansion, indicating robust financial health rather than decline. These examples suggest that guild dissolution resulted less from inherent structural inadequacies than from specific political pressures and changing legal frameworks that undermined their traditional autonomy.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 189,
+    "source": "Academic analysis of medieval economic history"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.375,
+    "evaluatedAt": "2026-01-08T14:56:47.942Z"
+  }
+}

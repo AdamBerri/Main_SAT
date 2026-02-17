@@ -1,0 +1,62 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "stem": "Which choice most logically completes the text with a transition that accurately reflects the relationship between the ideas?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Consequently,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Similarly,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Nevertheless,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Tragically,",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The correct answer is 'Tragically,' because it accurately captures the ironic and devastating nature of the relationship between the two ideas. The first part celebrates the Mayans' remarkable intellectual achievements and sophisticated texts, while the second part describes how these invaluable works were systematically destroyed. The transition needs to convey not just contrast, but the profound loss and irony that such advanced knowledge was deliberately eliminated. 'Tragically' uniquely expresses both the unfortunate nature of this destruction and the speaker's evaluative stance toward this historical loss.",
+  "distractorRationale": {
+    "A": "'Consequently' suggests a logical cause-and-effect relationship, implying that the destruction followed naturally from the Mayans' achievements, which misrepresents the historical reality and creates an inappropriate causal connection.",
+    "B": "'Similarly' indicates that the destruction parallels or resembles the achievements described earlier, which makes no logical sense since destruction and creation are opposite processes.",
+    "C": "'Nevertheless' shows contrast but lacks the emotional weight and evaluative judgment needed to properly characterize this historical tragedy; it treats the destruction as merely contradictory rather than devastating."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:28:51.031Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "83cf18ee-4c2d-465b-8837-950a19da9f4c"
+  },
+  "passage": "The ancient Mayan civilization developed one of the most sophisticated writing systems in pre-Columbian America, with hieroglyphic inscriptions that recorded complex historical narratives, astronomical calculations, and religious ceremonies. Their codices contained mathematical concepts that wouldn't be rediscovered in Europe for centuries, including the use of zero as a placeholder and advanced understanding of cyclical time. _______ many of these invaluable texts were systematically destroyed by Spanish conquistadors and missionaries who viewed them as pagan artifacts, leaving modern scholars with only fragments of what was once a vast literary tradition.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 89,
+    "source": "Passage about Mayan civilization and historical preservation"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.7916666666666665,
+    "evaluatedAt": "2026-01-08T15:32:14.487Z"
+  }
+}

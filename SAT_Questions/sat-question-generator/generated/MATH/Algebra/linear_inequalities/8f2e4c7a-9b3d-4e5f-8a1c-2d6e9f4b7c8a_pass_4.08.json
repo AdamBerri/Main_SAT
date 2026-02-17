@@ -1,0 +1,59 @@
+{
+  "id": "8f2e4c7a-9b3d-4e5f-8a1c-2d6e9f4b7c8a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.1,
+    "computational": 3.9
+  },
+  "stem": "A company manufactures two types of widgets: standard and premium. Each standard widget requires 2 hours of labor and 3 units of material. Each premium widget requires 4 hours of labor and 2 units of material. The company has at most 240 hours of labor and 180 units of material available per week. If $s$ represents the number of standard widgets and $p$ represents the number of premium widgets produced per week, which of the following systems of inequalities represents all the constraints on production?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2s + 4p \\leq 240$ and $3s + 2p \\leq 180$ and $s \\geq 0$ and $p \\geq 0$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$2s + 3p \\leq 240$ and $4s + 2p \\leq 180$ and $s \\geq 0$ and $p \\geq 0$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$4s + 2p \\leq 240$ and $2s + 3p \\leq 180$ and $s \\geq 0$ and $p \\geq 0$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$3s + 2p \\leq 240$ and $2s + 4p \\leq 180$ and $s \\geq 0$ and $p \\geq 0$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "We need to translate the constraints into mathematical inequalities. For labor: Each standard widget requires 2 hours and each premium widget requires 4 hours, with at most 240 hours available. This gives us $2s + 4p \\leq 240$. For material: Each standard widget requires 3 units and each premium widget requires 2 units, with at most 180 units available. This gives us $3s + 2p \\leq 180$. Since we cannot produce negative quantities of widgets, we also need $s \\geq 0$ and $p \\geq 0$. Therefore, the complete system is: $2s + 4p \\leq 240$, $3s + 2p \\leq 180$, $s \\geq 0$, and $p \\geq 0$.",
+  "distractorRationale": {
+    "A": "This is the correct answer with proper constraint formulation.",
+    "B": "This incorrectly switches the labor and material coefficients for standard widgets (uses 2s + 3p for labor instead of material).",
+    "C": "This incorrectly switches the labor requirements between standard and premium widgets (4s + 2p for labor instead of 2s + 4p).",
+    "D": "This incorrectly switches both the labor and material coefficients, using material coefficients for labor constraint and vice versa."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:38:54.940Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "2c88b87b-a2cc-400c-b6be-a58480c333df"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T15:43:41.754Z"
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 3.8474702380952377,
+        "passRate": 0.4375,
+        "errorCategories": [
+          {
+            "category": "weak_distractor_design",
+            "frequency": 10,
+            "exampleErrors": [
+              "Distractors require multiple compounding errors to reach (e.g., conceptual misconception PLUS arithmetic mistake), which is psychometrically implausible",
+              "Error pathways are vague or contrived - rationales mention 'arithmetic errors' without specifying how students would naturally arrive at the value",
+              "Distractor values appear to be reverse-engineered from desired wrong answers rather than representing genuine student misconceptions"
+            ]
+          },
+          {
+            "category": "ambiguous_problem_setup",
+            "frequency": 9,
+            "exampleErrors": [
+              "Problem states angles are 'consecutive interior angles' but solution treats them as 'alternate interior angles' - these have different mathematical properties",
+              "Angle descriptions like 'the angle formed by line t and line m' are imprecise as two lines form four angles at intersection",
+              "Phrase 'above line m on the left side' is insufficient to uniquely identify which of four angles at intersection point is referenced"
+            ]
+          },
+          {
+            "category": "missing_or_invalid_figure",
+            "frequency": 8,
+            "exampleErrors": [
+              "Question explicitly references 'In the figure' but no figure is provided, making geometric relationships ambiguous and creating multiple valid interpretations",
+              "Without the actual diagram, students cannot determine whether angles are alternate interior, corresponding, or consecutive interior angles",
+              "Geometric configuration described is unclear or potentially impossible without visual representation (e.g., point P allegedly on multiple lines simultaneously)"
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 8,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but only requires basic parallel line properties and simple linear equation solving - actual difficulty closer to 2-3/5",
+              "Computational difficulty rated 4.2/5 for solving '8x + 8 = 180' which is straightforward middle-school algebra",
+              "Stated difficulty of 3/5 expects ~50% correct rate but straightforward two-step solution would likely achieve 65-75% accuracy"
+            ]
+          },
+          {
+            "category": "explanation_inconsistencies",
+            "frequency": 7,
+            "exampleErrors": [
+              "Explanation attempts multiple solution approaches, gets different results, then settles on answer without rigorous justification showing uncertainty",
+              "Arithmetic in rationale doesn't match claimed result (e.g., '5(23.75) - 25 = 93.75°' but distractor claims 105°)",
+              "Explanation uses phrases like 'depending on interpretation' and 're-examining' which signal fundamental ambiguity in problem construction"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.144345238095238,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: weak_distractor_design, ambiguous_problem_setup, missing_or_invalid_figure",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.7507440476190474,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 2.5-3/5; overrated by ~1 point due to straightforward single-concept application and minimal algebraic demand",
+              "Question stated as 5/5 (hardest) but actual difficulty closer to 3.5-4/5; overstated due to standard parallel line concepts and simple linear algebra despite wordy problem statement",
+              "Question stated as 3/5 but actual difficulty closer to 2.5/5; below-average difficulty with single theorem application and elementary arithmetic (3x + 15 = 5x - 25)"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor D (295°) has incoherent rationale with unexplained '+50°' component; distractor implausibly exceeds 180° and doesn't represent plausible student error pathway",
+              "Distractor A lacks documented error chain; rationale describes path yielding 23.75 but answer is 10, suggesting arbitrary distractor unrelated to genuine misconception",
+              "Distractors C and D rely on arbitrary multiplication/division operations (22° from dividing by 3; 136° from doubling) lacking geometric justification and not reflecting recognizable misconceptions",
+              "Distractor D has unclear pathway (23.75 → 35); rationale mentions 'rounding or computing incorrectly' without specifying exact arithmetic error; possible redundancy with distractor B both using x = 37"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Answer marked correct but geometric relationship is wrong; explanation incorrectly identifies angles as 'alternate interior' when they are actually 'alternate exterior' based on stated positions, contradicting the angle relationship being taught",
+              "Multiple contradictory constraints yield different x-values (x = 19 from complementary condition; x = 20 from parallel lines); final answer uses x = 24 without justification; verification shows no value satisfies all conditions (parallel line geometry violated)"
+            ]
+          },
+          {
+            "category": "image_quality",
+            "frequency": 1,
+            "exampleErrors": [
+              "Angle positions contradict stated relationship; description claims 'alternate interior angles' but specified positions (angle a above line m on left; angle b below line n on right) place both angles as exterior, not interior, creating fundamental geometric inconsistency that would confuse students about angle relationships"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question deviates significantly from authentic SAT style through excessive complexity (multiple overlapping lines), ambiguous language ('the acute angle formed by line t and line m'), convoluted circular logic, missing figure despite reference to 'In the figure', and unnecessarily close answer spacing without clear trap answers representing predictable misconceptions"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.208333333333333,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, distractor_quality, answer_validity",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.6011904761904763,
+        "passRate": 0.375,
+        "errorCategories": [
+          {
+            "category": "answer_key_mismatch",
+            "frequency": 4,
+            "exampleErrors": [
+              "Provided explanation yields y = 32.5, but designated answer is C (52.5); no answer choice matches the calculated value",
+              "Mathematical solution produces y = 47.5, which does not appear in any of the four answer choices",
+              "When x = 25 (making answer 90°), the stated alternate interior angle relationships are not satisfied"
+            ]
+          },
+          {
+            "category": "difficulty_inflation",
+            "frequency": 4,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but requires only straightforward application of explicitly stated angle relationships with basic algebra",
+              "Stated difficulty 4/5 but actual difficulty is 2.5-3/5; straightforward single-variable equations with minimal conceptual demand",
+              "Overstated as above-average when problem has low error opportunity and explicit scaffolding that reduces geometric reasoning requirement",
+              "Claimed 3/5 difficulty but this is a direct two-step calculation (identify relationship, then solve) appropriate for level 2/5"
+            ]
+          },
+          {
+            "category": "geometric_inconsistency",
+            "frequency": 3,
+            "exampleErrors": [
+              "Alternate interior angles are equal, but problem requires them to be supplementary, creating mathematical contradiction",
+              "States ABC and BCD are alternate interior angles while also treating them as supplementary (180°), which cannot both be true",
+              "Over-constrained problem where three simultaneous angle relationships cannot all be satisfied (yields x = 40, x = 17.5, and x = -5)"
+            ]
+          },
+          {
+            "category": "distractor_quality_issues",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractor B (90°) has internally contradictory rationale claiming 180° - 65° = 90°, which is arithmetically false",
+              "Distractor D (125°) rationale is convoluted with non-intuitive error pattern; doesn't represent a coherent student misconception",
+              "Distractor B offers multiple competing explanations without committing to single misconception, reducing discriminatory power"
+            ]
+          },
+          {
+            "category": "presentation_and_clarity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question stem is excessively verbose and convoluted with unnecessarily complex positioning descriptions; lacks the conciseness typical of authentic SAT questions; references 'In the figure...' without providing an actual figure"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 2.642857142857143,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_key_mismatch, difficulty_inflation, geometric_inconsistency",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.926339285714286,
+        "passRate": 0.625,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 6,
+            "exampleErrors": [
+              "Distractor rationales lack coherent error pathways; arithmetic jumps are unexplained (e.g., claiming x = -5 becomes x = 30 through unclear steps)",
+              "Multiple distractors target identical misconceptions (e.g., two distractors both stem from supplementary angle confusion), reducing discriminatory power",
+              "Distractor explanations acknowledge they don't work or provide multiple incompatible error paths without clarifying which is primary"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question contains mathematically contradictory constraints (alternate interior angles vs. supplementary angle relationships) that cannot be simultaneously satisfied",
+              "Designated answer does not satisfy all stated conditions; when verified, the angle measures fail to meet the given relationship C = 2A + 40",
+              "Problem is over-constrained with incompatible conditions, making it impossible to find a single correct answer that satisfies every requirement"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Stated difficulty of 4-5/5 is significantly overstated; actual difficulty is 2-3/5 based on straightforward algebra and explicitly provided relationships",
+              "Over-constrained problem with redundant conditions means first constraint fully determines answer, eliminating procedural complexity that would justify higher difficulty ratings",
+              "Simple linear equation solving and standard geometry concepts require only 1-2 minutes and ~70-80% success rate, inconsistent with claimed medium-to-high difficulty"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question references 'the figure' but no diagram is provided; authentic SAT geometry requires visual references for angle position clarity",
+              "Problem structure feels like textbook exercise with stacked independent constraints rather than integrated SAT-style problem with elegant simplicity and single-focused skill"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.25,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: distractor_quality, answer_validity, difficulty_accuracy",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.7261904761904763,
+        "passRate": 0.5,
+        "errorCategories": [
+          {
+            "category": "answer_validity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Designated correct answer (C: 90°) contradicts the mathematical explanation which correctly solves to 105°",
+              "Problem setup yields non-integer solution (x ≈ 26.14) but all answer choices are integers, with answer B being closest but technically incorrect",
+              "Mathematical discrepancy: consecutive interior angles sum to 179° instead of 180° when x=26, violating the geometric constraint"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractor A lacks coherent misconception targeting—rationale jumps from correctly finding angle B (94°) to selecting 70° without clear logical error pathway",
+              "Internal inconsistency: Choice D labeled as correct in rationale explanation while C is listed as the answer key, creating confusion about proper answer",
+              "Distractor C (125°) is trivially eliminable by verification (125° + 65° = 190°), failing to discriminate meaningful conceptual misunderstanding"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 2,
+            "exampleErrors": [
+              "Stated difficulty of 4/5 is approximately 0.5-0.75 points inflated; actual difficulty is 3.5/5 due to straightforward linear algebra and standard angle relationship recognition",
+              "Stated difficulty of 2/5 is slightly optimistic (60-70% actual success rate vs. expected 70-80%) due to angle relationship identification requiring precise spatial reasoning"
+            ]
+          },
+          {
+            "category": "image_quality",
+            "frequency": 1,
+            "exampleErrors": [
+              "Figure not provided for evaluation; cannot verify angle positioning as alternate interior angles and confirm visual clarity of algebraic expressions near angle markings"
+            ]
+          },
+          {
+            "category": "missing_information",
+            "frequency": 1,
+            "exampleErrors": [
+              "Critical geometric figure absent from question, making it impossible to verify whether angles are correctly positioned as consecutive interior angles or if answer validity can be confirmed"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_validity, distractor_quality, difficulty_accuracy",
+      "newPromptVersion": "1.3.0"
+    }
+  ],
+  "currentBestVersion": "1.2.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:32:05.322Z",
+  "completedAt": "2026-01-09T20:57:20.254Z",
+  "bestTestScore": 4.208333333333333
+}

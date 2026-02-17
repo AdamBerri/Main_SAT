@@ -1,0 +1,55 @@
+{
+  "id": "a7f3c4b2-8e9d-4a1c-b5e6-7d8c9e0f1a2b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "In the figure, lines $m$ and $n$ are parallel, and line $t$ is a transversal. The measure of angle $a$ is $(4x - 12)°$ and the measure of angle $b$ is $(2x + 36)°$, where angles $a$ and $b$ are alternate interior angles. What is the measure, in degrees, of angle $b$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "24",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "60",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "84",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "96",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Since lines $m$ and $n$ are parallel and line $t$ is a transversal, alternate interior angles are congruent. Therefore, angle $a$ equals angle $b$.\n\nSetting up the equation:\n$$4x - 12 = 2x + 36$$\n\nSubtracting $2x$ from both sides:\n$$2x - 12 = 36$$\n\nAdding $12$ to both sides:\n$$2x = 48$$\n\nDividing both sides by $2$:\n$$x = 24$$\n\nThe question asks for the measure of angle $b$:\n$$b = 2x + 36 = 2(24) + 36 = 48 + 36 = 84°$$\n\nVerification: Angle $a = 4(24) - 12 = 96 - 12 = 84°$, which confirms that angles $a$ and $b$ are equal, as required for alternate interior angles. The answer to the question is 84 degrees which corresponds to choice C.",
+  "distractorRationale": {
+    "A": "Student who solves for the variable $x$ instead of the measure of angle $b$: correctly finds $x = 24$ but provides this value instead of calculating $2(24) + 36 = 84$",
+    "B": "Student who incorrectly assumes the angles are supplementary instead of congruent: sets up $4x - 12 + 2x + 36 = 180$, which gives $6x + 24 = 180$, so $6x = 156$ and $x = 26$, but then makes an arithmetic error and calculates $2(26) + 36 = 52 + 36 = 88$, or alternatively correctly gets $x = 26$ but then miscalculates as $2(24) + 12 = 60$",
+    "C": "Correct answer: alternate interior angles are congruent, so $4x - 12 = 2x + 36$ gives $x = 24$, and $b = 2(24) + 36 = 84°$",
+    "D": "Student who correctly solves for $x = 24$ but then calculates the measure of angle $a$ instead of angle $b$: $a = 4(24) - 12 = 96 - 12 = 96°$ (note: this contains an arithmetic error; correct calculation gives 84°, so this distractor represents solving for $x$ correctly but then using the wrong expression: $4x$ instead of $2x + 36$, giving $4(24) = 96$)"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:35:59.272Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "5f73bd40-5da5-4bf5-834b-22c9191b4c4f"
+  },
+  "hasImage": true,
+  "imageDescription": "A geometric diagram showing two parallel horizontal lines labeled $m$ (top) and $n$ (bottom), with a transversal line $t$ crossing both lines from lower left to upper right at an angle. At the intersection of line $t$ and line $m$, label the acute angle on the right side of the transversal (between the two parallel lines) as angle $a$. At the intersection of line $t$ and line $n$, label the acute angle on the left side of the transversal (between the two parallel lines) as angle $b$. These angles should be positioned to clearly show they are alternate interior angles (on opposite sides of the transversal, both between the parallel lines). Include arrows on the ends of all three lines to indicate they extend infinitely.",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

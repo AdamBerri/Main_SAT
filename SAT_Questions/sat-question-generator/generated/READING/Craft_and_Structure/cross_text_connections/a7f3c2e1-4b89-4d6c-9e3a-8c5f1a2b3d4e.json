@@ -1,0 +1,58 @@
+{
+  "id": "a7f3c2e1-4b89-4d6c-9e3a-8c5f1a2b3d4e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 3.1,
+    "linguistic": 3.1
+  },
+  "stem": "Based on the texts, how would the author of Text 2 most likely respond to the findings discussed in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "By acknowledging that ceremonial uses preceded agricultural applications but maintaining that practical storage needs better explain pottery's widespread adoption.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "By arguing that the decorative elements on vessels at Göbekli Tepe actually served functional purposes related to food preservation.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "By suggesting that the Göbekli Tepe vessels were likely used for grain storage despite the site's pre-agricultural status.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "By questioning whether communities would invest resources in pottery production without the agricultural surplus that made such labor possible.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Text 2's author emphasizes that pottery production was labor-intensive and would only be undertaken when practical needs exceeded what simpler containers could provide. The author specifically argues that agriculture created demands that necessitated pottery's 'rapid proliferation.' This reasoning allows for pottery's initial emergence in ceremonial contexts (as Text 1 describes) while maintaining that practical agricultural needs drove its widespread adoption. The phrase 'proliferated rapidly across agricultural societies' in Text 2 is key—it explains pottery's expansion rather than its origin, making this response consistent with both the Göbekli Tepe findings and Text 2's emphasis on practical necessity driving widespread use.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This misrepresents Text 2's argument. Text 2 does not dispute that decorative or ceremonial functions exist; rather, it argues that practical storage needs explain pottery's development and spread. The author would not need to reinterpret ceremonial decorations as functional to maintain their position about what drove pottery's proliferation.",
+    "C": "This contradicts both texts' factual claims. Text 1 explicitly states the site is 'pre-agricultural,' and Text 2's argument depends on agriculture creating new storage demands. The author of Text 2 would not deny established archaeological facts about the site's chronology.",
+    "D": "This represents a tempting but incorrect reading. While Text 2 emphasizes resource investment, the author's logic is that communities invest in pottery when practical needs justify the effort. The Göbekli Tepe evidence shows communities did invest in pottery for ceremonial purposes, which would prompt Text 2's author to refine their explanation (as in choice A) rather than simply question the archaeological evidence. Text 2's focus on 'proliferation' across agricultural societies suggests concern with widespread adoption, not initial invention."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:59.593Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "4838cc94-58d9-4f4d-a3b7-c1c51c5108d1"
+  },
+  "passage": "Text 1\n\nArchaeologists studying Neolithic settlements have long attributed the development of pottery primarily to the need for storing surplus grain following the agricultural revolution. Recent excavations at Göbekli Tepe, a pre-agricultural site in Turkey, reveal sophisticated ceramic vessels predating farming by nearly two millennia. These findings suggest that pottery emerged from ritual practices rather than practical storage needs. The elaborate decorations and placement of vessels near ceremonial structures indicate their use in communal feasting and religious ceremonies, activities that required durable containers for preparing and serving food to large gatherings.\n\nText 2\n\nPottery production in early human societies demanded significant investments of time and resources. Creating functional vessels required locating suitable clay deposits, mastering firing techniques, and dedicating hours to shaping and decorating each piece. Communities would have undertaken such labor-intensive activities only when existing alternatives—such as gourds, baskets, or animal skins—proved inadequate. The emergence of agriculture created unprecedented demands for waterproof, pest-resistant storage that organic containers could not meet. Ceramic vessels addressed these practical challenges, explaining why pottery proliferated rapidly across agricultural societies.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 187,
+    "source": "Original passages on archaeological theories of pottery development"
+  },
+  "hasImage": false
+}

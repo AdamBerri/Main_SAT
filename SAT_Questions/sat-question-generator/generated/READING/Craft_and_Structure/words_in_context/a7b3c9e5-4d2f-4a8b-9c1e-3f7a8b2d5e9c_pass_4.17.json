@@ -1,0 +1,63 @@
+{
+  "id": "a7b3c9e5-4d2f-4a8b-9c1e-3f7a8b2d5e9c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.3,
+    "linguistic": 3.8
+  },
+  "stem": "As used in the passage, \"temper\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "strengthen by heating and cooling",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "moderate or restrain",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "lose one's patience",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "mix with another substance",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In this context, \"temper\" means to moderate or restrain. Dr. Martinez is resolving to control her enthusiasm by balancing it with rigorous scientific methodology. The passage establishes that she needs to move away from initial excitement toward a more measured, careful approach. The phrase 'temper her enthusiasm with rigorous scientific methodology' indicates she is moderating her excitement by combining it with disciplined analysis.",
+  "distractorRationale": {
+    "A": "This refers to the metallurgical process of tempering metal, which involves heating and cooling to increase strength and durability. While 'temper' can mean this in other contexts, it doesn't fit the passage's focus on moderating enthusiasm.",
+    "B": "This is correct - the context shows Dr. Martinez restraining her excitement with scientific discipline.",
+    "C": "This refers to losing one's temper or becoming angry, which contradicts the passage's portrayal of Dr. Martinez as maintaining professional composure and adopting a measured approach.",
+    "D": "This refers to tempering as mixing substances (like tempering chocolate or paint), but the passage isn't about combining physical materials - it's about balancing emotional responses with methodological rigor."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:50:34.123Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "63acb73d-d56b-4c58-9993-89a47ad3ee7c"
+  },
+  "passage": "The archaeologist's initial excitement about the newly discovered artifacts quickly gave way to a more measured assessment. While the pottery fragments were undeniably ancient, their condition was far from pristine. Years of exposure to groundwater had compromised the structural integrity of many pieces, and the acidic soil had leached away much of the original pigmentation. Dr. Martinez knew that any hasty conclusions about the civilization that created these objects would be premature. Instead, she resolved to **temper** her enthusiasm with rigorous scientific methodology, subjecting each fragment to careful analysis before drawing any definitive conclusions about their cultural significance.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 118,
+    "source": "Archaeological research methodology"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T14:56:08.865Z"
+  }
+}

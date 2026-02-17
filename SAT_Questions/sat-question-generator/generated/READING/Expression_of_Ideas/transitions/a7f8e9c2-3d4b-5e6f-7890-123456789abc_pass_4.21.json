@@ -1,0 +1,63 @@
+{
+  "id": "a7f8e9c2-3d4b-5e6f-7890-123456789abc",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "stem": "Which choice completes the text with the most logical transition?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Furthermore,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "However,",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Subsequently,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "For instance,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The correct answer is 'However,' because it signals the contrast between the positive environmental claims about electric vehicles in the first part of the passage and the qualifying information that follows about how these benefits may be reduced in certain circumstances. The passage establishes electric vehicles as environmentally beneficial, then introduces a significant limitation to that benefit, requiring a contrasting transition to show this shift in perspective.",
+  "distractorRationale": {
+    "A": "'Furthermore' indicates addition or continuation of the same idea, but the second part of the passage contradicts rather than supports the initial positive claims about electric vehicles.",
+    "B": "This is the correct answer as it properly signals the contrast between the initial positive claims and the qualifying limitation.",
+    "C": "'Subsequently' indicates a chronological or sequential relationship, but the passage is not describing events in time order—it's presenting contrasting perspectives on the same issue.",
+    "D": "'For instance' introduces a specific example, but the second part of the passage presents a general limitation rather than a specific example of the benefits mentioned earlier."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:57:35.125Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "bae2917d-6fc4-4b1a-83db-89bfb564d802"
+  },
+  "passage": "The widespread adoption of electric vehicles has been heralded as a crucial step toward reducing greenhouse gas emissions from transportation. Electric cars produce zero direct emissions and can run on electricity generated from renewable sources like solar and wind power. _______ the environmental benefits of electric vehicles may be significantly diminished in regions where electricity is primarily generated from coal-fired power plants, as the indirect emissions from coal combustion can rival or even exceed those of conventional gasoline engines.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 78,
+    "source": "Environmental policy analysis"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.208333333333333,
+    "evaluatedAt": "2026-01-08T15:02:04.058Z"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "a7f3c2d1-8e9b-4a5c-b3d2-1f6e8a9c0d4e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1.1
+  },
+  "stem": "A student wants to determine the favorite type of music among all students at her high school. She surveys 50 of her friends and finds that 60% prefer pop music. Which of the following statements about this survey is accurate?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The survey method may not give accurate information about all students at the school because the sample was not randomly selected.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The survey provides accurate information about all students at the school because 50 students is a large enough sample size.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The survey provides accurate information about all students at the school because 60% is greater than half.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The survey method is valid because the student surveyed people she knows well.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To draw valid conclusions about ALL students at the high school, the sample must be randomly selected from the entire student population. In this survey, the student only surveyed her friends, which is a convenience sample. Friends often share similar interests, including music preferences, so this sample is likely biased and does not represent all students at the school. Therefore, the results cannot be used to make accurate claims about the entire school population.\n\nThe sample size of 50 students and the 60% result are irrelevant to the validity issue - the fundamental problem is the non-random sampling method that introduces bias.",
+  "distractorRationale": {
+    "A": "This is the correct answer. It identifies the critical flaw: the sample was not randomly selected, which means it may not represent the entire school population.",
+    "B": "This represents the common misconception that sample size alone determines validity. While 50 may seem like a reasonable number, a large sample size does not overcome bias from non-random selection. A biased sample of any size cannot provide accurate information about the population.",
+    "C": "This represents confusion about what makes a survey valid. The percentage result (60%) has no bearing on whether the sampling method was appropriate. A biased sample can produce any percentage, but that doesn't make the conclusion valid for the whole population.",
+    "D": "This represents a misunderstanding of sampling principles. Surveying people you know well actually makes the sample MORE biased, not more valid, because friends tend to have similar characteristics and preferences. Random selection is necessary precisely to avoid this type of bias."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:19.525Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "09f367ee-96b1-4205-b6a7-408e59fabb4e"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

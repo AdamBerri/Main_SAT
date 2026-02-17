@@ -1,0 +1,54 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "computational": 1.3
+  },
+  "stem": "At a school fundraiser, adult tickets cost $5 each and student tickets cost $3 each. If a total of 80 tickets were sold and the total amount collected was $300, how many adult tickets were sold?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "30",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "35",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "45",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "50",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let $a$ represent the number of adult tickets sold and $s$ represent the number of student tickets sold.\n\nFrom the given information, we can write two equations:\n- Total tickets: $a + s = 80$\n- Total revenue: $5a + 3s = 300$\n\nFrom the first equation, solve for $s$:\n$s = 80 - a$\n\nSubstitute this into the second equation:\n$5a + 3(80 - a) = 300$\n$5a + 240 - 3a = 300$\n$2a + 240 = 300$\n$2a = 60$\n$a = 30$\n\nVerification:\n- Check first equation: $30 + 50 = 80$ ✓\n- Check second equation: $5(30) + 3(50) = 150 + 150 = 300$ ✓\n\nTherefore, 30 adult tickets were sold.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This results from incorrectly solving $2a = 60$ as $a = 70$, then subtracting from 80 to get $80 - 70 = 10$, and then confusing which variable represents adults. Alternatively, from an arithmetic error: $2a + 240 = 300$ → $2a = 70$ → $a = 35$.",
+    "C": "This results from solving for the number of student tickets instead of adult tickets. Using the correct system: $s = 80 - 30 = 50$, but then making a sign error or computational mistake to get 45.",
+    "D": "This results from solving for student tickets ($s = 50$) and then reporting that value as the number of adult tickets, confusing which variable was which."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:38:05.610Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "e49364a3-1305-400a-9717-cf768c6f543f"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

@@ -1,0 +1,230 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "config": {
+    "maxIterations": 5,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.794270833333333,
+        "passRate": 0.8125,
+        "errorCategories": [
+          {
+            "category": "difficulty_calibration_errors",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question rated 4/5 difficulty but uses explicit verbatim language matching (\"makes it difficult to assess\") requiring minimal inference, should be 2.5-3/5",
+              "Question rated 5/5 difficulty but answer D contains near-identical restatement of question stem making it too obvious, actual difficulty 2.5-3/5",
+              "Question rated 5/5 with weak distractors that are easily eliminated; concrete employment data in correct answer makes it straightforward, should be 3-3.5/5"
+            ]
+          },
+          {
+            "category": "answer_ambiguity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Both choices A (explains mechanism) and B (provides employment data) defensibly support 'economic relevance' claim, creating ambiguity about what 'most directly' means",
+              "Choice B shows conscious competence but doesn't directly prove purposeful change, while Choice D explicitly mentions 'coordinated linguistic pressure' which more directly addresses purposefulness",
+              "Question asks for 'quotation from passage' but correct answer D is meta-commentary about Carson's work rather than Carson's own words, failing the quotation requirement"
+            ]
+          },
+          {
+            "category": "passage_authenticity_violations",
+            "frequency": 1,
+            "exampleErrors": [
+              "Answer choice D presents third-person meta-analytical commentary ('Her work catalyzed...') as quotable evidence, mixing authorial analysis with source material in a way authentic SAT passages never do",
+              "Passage blurs boundaries between direct Carson quotations, unmarked paraphrase, and editorial synthesis without clear attribution",
+              "Final sentence lacks quotation marks but appears as quotable evidence option, violating SAT standards for evidence source clarity"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.375,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: difficulty_calibration_errors, answer_ambiguity, passage_authenticity_violations",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.78125,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 7,
+            "exampleErrors": [
+              "Stated difficulty 5/5 but actual difficulty 3.0-3.5/5: question has obvious correct answer with clear vocabulary matching ('borrowed' = 'pre-existing cultural concepts') and weak distractors",
+              "Rated 4/5 but functions at 2.5-3/5: correct answer explicitly states 'eliminated import competition' with no inferential leap required, distractors easily eliminated",
+              "Calibrated at 4/5 but actually 3.5/5: correct answer contains direct negation ('not a frontier, but a place') of concept being challenged, lacking complex reasoning chains typical of difficulty 4"
+            ]
+          },
+          {
+            "category": "distractor_weakness",
+            "frequency": 4,
+            "exampleErrors": [
+              "Options A and D don't even attempt to show measurable harm; only one option contains quantitative population data making correct answer too obvious",
+              "Three distractors easily eliminated: Option B about morality (irrelevant), Option C about pre-sidewalk conditions (wrong timeframe), Option D contradicts claim by showing separation",
+              "Distractors lack sophistication: B is direct striker quote not analytical statement, C about production control not legitimization, D is incomplete fragment"
+            ]
+          },
+          {
+            "category": "calibration_methodology",
+            "frequency": 3,
+            "exampleErrors": [
+              "Stated difficulty 2/5 slightly underestimates actual 2.3-2.5/5 due to lack of quotation marks around correct answer and inference required to connect juvenile mimicry with generational transmission",
+              "Individual component ratings (Conceptual: 2.8, Procedural: 3.2, Linguistic: 2.8) more accurate than overall 3/5 rating, suggesting aggregation method issue",
+              "Expected performance of 60-70% success rate contradicts stated 3/5 difficulty which implies ~50% success rate"
+            ]
+          },
+          {
+            "category": "answer_key_ambiguity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question designates Choice A as correct, but Choice B provides more direct analytical support from the historian explicitly connecting ordinary goods to economic stability through 'predictable revenue streams' and 'weathering volatility'",
+              "Answer C ('younger whales produce vocalizations similar to adult whales') more directly demonstrates generational transmission than Answer B, which relies on analogy to human accents requiring inferential reasoning"
+            ]
+          },
+          {
+            "category": "task_clarity_mismatch",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question asks for 'most directly supports' but tension exists between most explicit analytical statement (Choice B) versus most direct primary source evidence (Choice A), creating ambiguity in what 'direct' means"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.59375,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, distractor_weakness, calibration_methodology",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.71875,
+        "passRate": 0.8125,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but actual difficulty is 3.5/5 - lacks ambiguity and multi-step reasoning that characterize true hardest SAT questions",
+              "Question rated 4/5 but actual difficulty is 2.5-3/5 - single-step matching task with explicit answer and weak distractors",
+              "Question rated 3/5 but actual difficulty is 2.3-2.5/5 - clear direct evidence with obvious eliminations makes it more accessible than stated"
+            ]
+          },
+          {
+            "category": "answer_ambiguity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Choice C is potentially defensible alongside correct answer A - both demonstrate landscape alteration affecting sustainability, requiring different inference levels",
+              "Choice A could be argued as more direct than designated correct answer B - explicitly addresses force mechanism vs. providing height measurements",
+              "Choice A uses prescriptive collective language from manifesto essay while Choice B is personal practice description - ambiguity in what 'should' means"
+            ]
+          },
+          {
+            "category": "conceptual_difficulty_mismatch",
+            "frequency": 3,
+            "exampleErrors": [
+              "Core concept of identifying self-interested behavior is straightforward, rated 4.7/5 but actually ~3/5 - no advanced theory required",
+              "Concept rated 4.1/5 for finding evidence of warming at multiple depths, but direct restatement makes it ~2.5/5",
+              "Straightforward internal vs. external dichotomy rated 4.8/5 conceptual difficulty but explicit textual matching makes it ~3.5/5"
+            ]
+          },
+          {
+            "category": "procedural_difficulty_inflation",
+            "frequency": 2,
+            "exampleErrors": [
+              "Elimination process is clean with only one answer describing internal organizational failure - rated 5/5 procedural difficulty but should be ~3/5",
+              "Standard single-step command of evidence matching rated 4.2/5 procedural difficulty when no synthesis or complex inference required - should be ~2/5"
+            ]
+          },
+          {
+            "category": "claim_answer_misalignment",
+            "frequency": 2,
+            "exampleErrors": [
+              "Claim specifies 'force' of waves but correct answer provides 'height' data - requires inference that height equals force",
+              "Claim uses normative 'should' term but designated correct answer describes personal practice rather than prescriptive beliefs for writers generally"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.9375,
+        "passRate": 0.25
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, answer_ambiguity, conceptual_difficulty_mismatch",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.864583333333333,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question stated as 2/5 difficulty but actual difficulty is 1.5/5 due to direct textual matching requiring no inference or synthesis",
+              "Question stated as 3/5 difficulty but actual difficulty is 2.3/5 because passage explicitly states the thesis, making the answer a simple matching task",
+              "Question stated as 4/5 difficulty but actual difficulty is 2.5/3 because answer choice B is unambiguously correct with poor distractor effectiveness"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Designated answer A is defensible but Choice D provides more direct behavioral evidence (fees rising + training shortening) versus A's secondary interpretation from a historical observer",
+              "Designated answer B establishes elk behavioral change but requires inference to connect it to vegetation effects, while Choice A more directly demonstrates the complete causal chain by explicitly stating vegetation regenerated in wolf-present areas"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor C is too easy to eliminate (timing vs. resources are conceptually distant) and distractor D requires domain knowledge, creating uneven discrimination across answer choices",
+              "Distractors C and D are too weak—C is obviously supporting data rather than explicit claims, and D doesn't mention the core actor (sea otters) at all, making them trivially eliminable"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.75,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
+      "newPromptVersion": "1.3.0"
+    }
+  ],
+  "currentBestVersion": "1.2.0",
+  "converged": true,
+  "startedAt": "2026-01-08T18:49:18.644Z",
+  "completedAt": "2026-01-09T20:42:43.775Z",
+  "bestTestScore": 3.9375
+}

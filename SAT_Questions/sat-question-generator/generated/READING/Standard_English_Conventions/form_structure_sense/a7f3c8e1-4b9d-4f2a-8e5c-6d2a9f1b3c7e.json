@@ -1,0 +1,58 @@
+{
+  "id": "a7f3c8e1-4b9d-4f2a-8e5c-6d2a9f1b3c7e",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 3.8,
+    "linguistic": 4.1
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "have demonstrated",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "demonstrates",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "demonstrating",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "demonstrate",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement with a complex intervening phrase. The subject of the sentence is 'analysis' (singular), not 'footage' or 'vehicles' or 'expeditions' or 'basins'—all of which appear in the long prepositional phrase 'of footage from remotely operated vehicles, spanning over fifteen years of expeditions across multiple ocean basins.' The singular subject 'analysis' requires the singular verb 'demonstrates.' Choice A ('have demonstrated') incorrectly treats the subject as plural. Choice C ('demonstrating') is a participle that cannot serve as the main verb of the sentence. Choice D ('demonstrate') is plural and does not agree with the singular subject 'analysis.'",
+  "distractorRationale": {
+    "A": "This choice incorrectly uses the plural verb form 'have demonstrated,' likely due to proximity error—the test-taker may incorrectly identify 'expeditions' or 'basins' as the subject rather than recognizing that 'analysis' is the true subject.",
+    "B": "CORRECT: This singular verb 'demonstrates' correctly agrees with the singular subject 'analysis.'",
+    "C": "This choice uses a present participle 'demonstrating' which cannot function as the main verb of an independent clause, creating a sentence fragment.",
+    "D": "This choice uses the plural verb form 'demonstrate' which does not agree with the singular subject 'analysis,' representing a fundamental subject-verb agreement error."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:44.533Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "877d779f-2300-4039-81ab-bf262d7cdce3"
+  },
+  "passage": "The phenomenon of bioluminescence has fascinated marine biologists for decades. Recent studies conducted by researchers at the Monterey Bay Aquarium Research Institute have revealed that deep-sea organisms use light production not only for predation but also for complex communication. The team's analysis of footage from remotely operated vehicles, spanning over fifteen years of expeditions across multiple ocean basins, [1]_____ that approximately 76% of observed deep-sea species possess some form of light-emitting capability.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 78,
+    "source": "Original scientific passage about marine biology research"
+  },
+  "hasImage": false
+}

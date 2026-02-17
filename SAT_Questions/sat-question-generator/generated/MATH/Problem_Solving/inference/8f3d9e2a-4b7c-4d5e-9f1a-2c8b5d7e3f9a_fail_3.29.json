@@ -1,0 +1,58 @@
+{
+  "id": "8f3d9e2a-4b7c-4d5e-9f1a-2c8b5d7e3f9a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.1,
+    "computational": 3.3
+  },
+  "stem": "A polling organization wants to estimate the proportion of voters in a city who support a particular ballot measure. They survey a random sample of 400 voters and find that 240 support the measure. The organization reports that they are 95% confident that between 55% and 65% of all voters in the city support the measure. Which of the following best explains what this confidence interval means?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "There is a 95% probability that between 55% and 65% of the 400 voters surveyed support the measure.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "95% of all possible samples of 400 voters would produce a sample proportion between 55% and 65%.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "If the same sampling method were used many times, 95% of the resulting confidence intervals would contain the true proportion of all voters who support the measure.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "There is a 95% probability that the true proportion of all voters who support the measure is between 55% and 65%.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "A 95% confidence interval means that if we repeated the same sampling process many times and calculated a confidence interval each time, about 95% of those intervals would contain the true population parameter. The confidence level refers to the long-run behavior of the method, not the probability that any specific interval contains the true value. In this case, we know the sample proportion is $\\frac{240}{400} = 0.60$ or 60%, and the confidence interval [55%, 65%] was constructed around this sample statistic using methods that capture the true population proportion 95% of the time when applied repeatedly.",
+  "distractorRationale": {
+    "A": "This incorrectly interprets the confidence interval as describing the sample data we already have, rather than making an inference about the population.",
+    "B": "This confuses the confidence interval with the sampling distribution of sample proportions, which would be centered around the true population proportion.",
+    "D": "This is the most common misconception - treating the confidence interval as a probability statement about the parameter, when the parameter is fixed and the interval is random."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:48:43.534Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "ed144d1b-fc4a-4e7f-8995-d352450dc761"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.2916666666666665,
+    "evaluatedAt": "2026-01-08T15:52:50.688Z"
+  }
+}

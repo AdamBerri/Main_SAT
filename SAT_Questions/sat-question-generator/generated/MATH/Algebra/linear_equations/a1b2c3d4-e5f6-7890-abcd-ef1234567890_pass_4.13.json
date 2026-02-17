@@ -1,0 +1,59 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3,
+    "computational": 3.2
+  },
+  "stem": "A cell phone plan charges a monthly fee of $25 plus $0.15 for each text message sent. If Maria's bill for one month was $43, how many text messages did she send that month?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "120",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "118",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "180",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "287",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let $t$ represent the number of text messages Maria sent. The total cost is the monthly fee plus the cost of text messages: $25 + 0.15t = 43$. To solve for $t$, subtract 25 from both sides: $0.15t = 43 - 25 = 18$. Then divide both sides by 0.15: $t = \\frac{18}{0.15} = \\frac{18}{\\frac{15}{100}} = 18 \\times \\frac{100}{15} = \\frac{1800}{15} = 120$. Therefore, Maria sent 120 text messages.",
+  "distractorRationale": {
+    "A": "Correct answer obtained by properly setting up and solving the linear equation.",
+    "B": "Results from computational error when dividing 18 by 0.15, possibly calculating 18 ÷ 0.153 or similar mistake.",
+    "C": "Results from incorrectly setting up the equation as 25t + 0.15 = 43, then solving for t.",
+    "D": "Results from adding instead of subtracting: (43 + 25) ÷ 0.15, misunderstanding the problem structure."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:32:45.381Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "d91161cf-0393-464f-9551-6228957e2275"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.125,
+    "evaluatedAt": "2026-01-08T15:37:57.112Z"
+  }
+}

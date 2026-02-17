@@ -1,0 +1,63 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.7,
+    "procedural": 2.8,
+    "linguistic": 3
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "is",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "are",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "were",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "have been",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The correct answer is 'is' because the subject of the verb is the singular noun phrase 'rising ocean temperatures,' which requires a singular verb. Although 'temperatures' is plural, the subject is the gerund phrase 'rising ocean temperatures' functioning as a single concept. The sentence is in present tense, describing ongoing research findings, so 'is' is the appropriate singular present tense verb form.",
+  "distractorRationale": {
+    "A": "This is correct - 'is' agrees with the singular subject 'rising ocean temperatures' as a unified concept.",
+    "B": "This is incorrect because 'are' is plural, but the subject 'rising ocean temperatures' functions as a singular concept in this context.",
+    "C": "This is incorrect because 'were' is past tense, but the context indicates present ongoing effects ('Their latest findings suggest').",
+    "D": "This is incorrect because 'have been' creates an awkward construction and doesn't properly complete the meaning of the sentence in this context."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:33:57.925Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "95d69d75-5b0f-4027-9c14-3a5b0774a075"
+  },
+  "passage": "The marine biologist and her research team have been studying coral reef ecosystems for over a decade. Their latest findings suggest that rising ocean temperatures _______ significantly affecting the symbiotic relationship between coral polyps and the algae that live within them. This disruption has led to widespread coral bleaching events, which threatens the biodiversity of these underwater habitats.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 62,
+    "source": "Scientific research context"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "fail",
+    "score": 2.7142857142857144,
+    "evaluatedAt": "2026-01-08T15:37:44.165Z"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "currentVersion": "1.3.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Math question involving nonlinear equations.\n\nThis may include:\n- Quadratic equations (factoring, quadratic formula, completing the square)\n- Radical equations\n- Rational equations\n- Absolute value equations\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.314Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/MATH/Advanced_Math/nonlinear_equations/schema.json"
+}

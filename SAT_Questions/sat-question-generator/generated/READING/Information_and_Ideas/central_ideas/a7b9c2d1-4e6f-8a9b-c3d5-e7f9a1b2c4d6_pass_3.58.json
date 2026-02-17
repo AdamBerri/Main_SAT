@@ -1,0 +1,61 @@
+{
+  "id": "a7b9c2d1-4e6f-8a9b-c3d5-e7f9a1b2c4d6",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.1,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "stem": "Which choice best describes the central claim of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Technological disruption inevitably leads to widespread unemployment and social problems that cannot be effectively addressed.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The unequal distribution of benefits from technological advancement results from policy choices and can be remedied through deliberate interventions.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Working-class communities suffer disproportionately from technological change because they lack adequate retraining programs.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The celebration of technological innovation as inherently beneficial reflects a misunderstanding of its true economic impact.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage's central claim is that the unequal distribution of technological benefits is not inevitable but results from specific policy choices, and that this inequality can be addressed through deliberate interventions like retraining programs, progressive taxation, and strengthened safety nets. The author argues against fatalistic acceptance and advocates for recognizing the political dimensions of technological change to enable meaningful reform. Choice B accurately captures this main argument by identifying both the cause (policy choices) and the solution (deliberate interventions).",
+  "distractorRationale": {
+    "A": "This choice is too fatalistic and contradicts the author's argument that the problems can be addressed through policy interventions. The passage explicitly argues against accepting these outcomes as inevitable.",
+    "C": "This choice focuses too narrowly on one specific cause (lack of retraining programs) and one affected group, missing the broader argument about policy choices and the range of interventions needed.",
+    "D": "While the passage does critique the celebration of innovation, this choice is too narrow and doesn't capture the main argument about policy solutions and the political nature of technological change's effects."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:25:09.252Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "3565b76f-6928-4ff7-addb-68b215e53088"
+  },
+  "passage": "The prevailing narrative surrounding technological disruption typically celebrates innovation as an unqualified good, portraying displaced workers as temporary casualties in an inevitable march toward progress. This framing, however, obscures a more troubling reality: the benefits of technological advancement are increasingly concentrated among a narrow elite, while the costs—unemployment, deskilling, and social fragmentation—are borne disproportionately by working-class communities. Rather than accepting this distribution as natural or inevitable, we must recognize it as the product of specific policy choices that prioritize capital efficiency over human welfare. The challenge is not to halt technological progress, but to ensure that its fruits are shared more equitably through deliberate interventions such as retraining programs, progressive taxation of automation, and strengthened social safety nets. Only by acknowledging the political dimensions of technological change can we move beyond fatalistic acceptance toward meaningful reform.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 162,
+    "source": "Contemporary economic policy analysis"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.5833333333333335,
+    "evaluatedAt": "2026-01-08T14:28:51.355Z"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 3.9947916666666665,
+        "passRate": 0.375,
+        "errorCategories": [
+          {
+            "category": "incorrect_answer_key",
+            "frequency": 8,
+            "exampleErrors": [
+              "Question designates B) $12 as correct, but solving the system yields a = $14 (Choice C). The explanation even verifies that B doesn't satisfy both equations.",
+              "Correct answer should be C) $150 based on solving f + 25p = 400 and f + 40p = 550, but answer key marks B) $100 as correct.",
+              "System of equations yields x - y = -15, which doesn't appear in answer choices. Designated answer D) 30 is mathematically incorrect for the given problem."
+            ]
+          },
+          {
+            "category": "distractor_design_flaws",
+            "frequency": 5,
+            "exampleErrors": [
+              "Distractor rationales are vague ('arithmetic error' or 'sign error') without specifying which computational step produces that value.",
+              "Distractor B ($2.75) claims to result from 'averaging incorrectly' but the rationale doesn't explain what students would average or demonstrate the calculation path.",
+              "Distractor A ($50) requires error of '400 - 350 = 50' but it's unclear where $350 originates, making this an implausible error pathway."
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 4,
+            "exampleErrors": [
+              "Question rated 4/5 difficulty but is actually standard textbook system of equations (2.5-3/5). Clean numbers, straightforward setup, no conceptual tricks.",
+              "Rated 5/5 across all dimensions but requires only basic substitution/elimination with manageable arithmetic—appropriate for 2/5 difficulty level.",
+              "Stated as 3/5 (medium) but is below-average difficulty (2.3-2.5/5) due to standard template, clean numbers, and multiple choice format allowing verification."
+            ]
+          },
+          {
+            "category": "explanation_quality_issues",
+            "frequency": 3,
+            "exampleErrors": [
+              "Explanation shows trial-and-error process with phrases like 'Wait, let me recalculate' and 'I need to reconsider', revealing unfinished work inappropriate for student-facing content.",
+              "Explanation correctly calculates a = 37 multiple times, then inexplicably tries to 'adjust' problem values to force answer to be $3.00, changing 67.50 to 75.",
+              "Explanation demonstrates correct solution yields $150, then attempts to rationalize $100 answer by suggesting 'problem values would need adjusting'—mathematical dishonesty."
+            ]
+          },
+          {
+            "category": "sat_authenticity_concerns",
+            "frequency": 1,
+            "exampleErrors": [
+              "While structure and context match SAT style, mathematical error in answer key is disqualifying—College Board questions undergo rigorous verification and computational errors are extremely rare.",
+              "Question format and difficulty calibration appropriate for SAT, but the designated correct answer being mathematically wrong would never occur in official materials."
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.555555555555556,
+        "passRate": 0.3333333333333333
+      },
+      "improvementMade": "Addressed: incorrect_answer_key, distractor_design_flaws, difficulty_miscalibration",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.1,
+        "passRate": 0.8,
+        "errorCategories": [
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 2.5-3/5; problem uses straightforward system of equations with clean numbers and no conceptual traps",
+              "Question stated as 5/5 difficulty but actual difficulty is 3.5/5; mixture problem has basic algebraic manipulation and lacks the sophisticated structures found in true elite-level SAT items"
+            ]
+          },
+          {
+            "category": "answer_key_error",
+            "frequency": 1,
+            "exampleErrors": [
+              "Designated correct answer (B: 90) does not match mathematical solution; correct answer is 114 (verified: 114 adult tickets at $12 + 66 child tickets at $7 = $1,830), which is not among the answer choices, making the question unsolvable as stated"
+            ]
+          },
+          {
+            "category": "distractor_quality_weakness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor D (126) has convoluted and poorly motivated rationale with no clear pedagogical misconception being targeted; rationale about arithmetic errors is vague and doesn't correspond to a plausible solving path, making this option unlikely to discriminate meaningfully between strong and weak students"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: difficulty_miscalibration, answer_key_error, distractor_quality_weakness",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.3809523809523805,
+        "passRate": 0.2857142857142857,
+        "errorCategories": [
+          {
+            "category": "answer_validity",
+            "frequency": 6,
+            "exampleErrors": [
+              "Designated correct answer is mathematically incorrect; actual answer should be $55 not $40",
+              "Answer key designates C ($81) as correct but actual mathematical result is approximately $55.29",
+              "System of equations is overconstrained with incompatible constraints; answer choice A fails to satisfy volume and concentration requirements"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Stated difficulty of 5/5 is overstated; actual difficulty is approximately 3.5-4/5 with straightforward setup and mechanical execution",
+              "Difficulty rated 4/5 but should be 2.5-3/5 given clean coefficients and highly guided problem structure with very low arithmetic complexity",
+              "Difficulty rated 3/5 but is slightly overestimated at approximately 2.8-2.9/5 due to straightforward procedure with no conceptual subtlety"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor rationales contain unverifiable arithmetic; Choice A explanation doesn't coherently explain how student arrives at value of 63",
+              "Distractor rationales are internally contradictory; explanation for Choice D claims $\\frac{609}{7} = 87$ but pathway to this answer is unclear"
+            ]
+          },
+          {
+            "category": "frontend_convertibility",
+            "frequency": 1,
+            "exampleErrors": [
+              "Explanation field contains self-contradictory work showing correct answer is $55 but then lists $40 as correct; includes unresolved revisions and incomplete problem data that would display incorrectly to students"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question contains three incompatible mathematical constraints (volume, relationship, and acid concentration) that cannot be simultaneously satisfied, creating an impossible scenario that violates authentic SAT problem design"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_validity, difficulty_accuracy, distractor_quality",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:32:05.317Z",
+  "completedAt": "2026-01-09T21:05:19.733Z",
+  "bestTestScore": 3.555555555555556
+}

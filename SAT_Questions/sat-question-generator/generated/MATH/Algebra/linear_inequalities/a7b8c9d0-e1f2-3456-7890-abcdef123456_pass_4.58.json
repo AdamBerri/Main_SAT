@@ -1,0 +1,59 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A manufacturing company produces two types of widgets: Type A and Type B. The company has the following constraints:\n\n• The total number of widgets produced cannot exceed 500 per day\n• Type A widgets require 3 hours of labor each, Type B widgets require 2 hours of labor each, and the company has at most 1200 hours of labor available per day\n• The company must produce at least twice as many Type B widgets as Type A widgets\n• The company must produce at least 50 Type A widgets per day\n\nLet $x$ represent the number of Type A widgets and $y$ represent the number of Type B widgets produced per day. Which of the following systems of inequalities correctly represents all the constraints?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$x + y \\leq 500$\n$3x + 2y \\leq 1200$\n$y \\geq 2x$\n$x \\geq 50$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$x + y \\leq 500$\n$2x + 3y \\leq 1200$\n$y \\geq 2x$\n$x \\geq 50$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$x + y \\leq 500$\n$3x + 2y \\leq 1200$\n$x \\geq 2y$\n$x \\geq 50$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$x + y \\geq 500$\n$3x + 2y \\leq 1200$\n$y \\geq 2x$\n$x \\geq 50$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let's translate each constraint into mathematical inequalities:\n\n1) \"The total number of widgets cannot exceed 500 per day\": This means $x + y \\leq 500$\n\n2) \"Type A widgets require 3 hours each, Type B widgets require 2 hours each, with at most 1200 hours available\": This means $3x + 2y \\leq 1200$\n\n3) \"The company must produce at least twice as many Type B widgets as Type A widgets\": This means $y \\geq 2x$\n\n4) \"The company must produce at least 50 Type A widgets per day\": This means $x \\geq 50$\n\nTherefore, the correct system is:\n$x + y \\leq 500$\n$3x + 2y \\leq 1200$\n$y \\geq 2x$\n$x \\geq 50$",
+  "distractorRationale": {
+    "A": "This is the correct answer with all constraints properly translated.",
+    "B": "This incorrectly switches the labor coefficients, using $2x + 3y \\leq 1200$ instead of $3x + 2y \\leq 1200$.",
+    "C": "This incorrectly interprets the production ratio constraint as $x \\geq 2y$ instead of $y \\geq 2x$, reversing the relationship between Type A and Type B widgets.",
+    "D": "This incorrectly uses $x + y \\geq 500$ instead of $x + y \\leq 500$, suggesting a minimum rather than maximum total production constraint."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:38:26.019Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "8dc61964-b6d9-4789-946c-3249f19c2b06"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.583333333333333,
+    "evaluatedAt": "2026-01-08T15:43:41.753Z"
+  }
+}

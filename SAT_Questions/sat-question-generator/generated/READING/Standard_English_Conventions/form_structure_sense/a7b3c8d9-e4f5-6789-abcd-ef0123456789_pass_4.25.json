@@ -1,0 +1,61 @@
+{
+  "id": "a7b3c8d9-e4f5-6789-abcd-ef0123456789",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 3,
+    "linguistic": 3
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Solar panels, wind turbines, and hydroelectric dams each offer unique advantages, but they also present distinct challenges.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Solar panels, wind turbines, and hydroelectric dams each offers unique advantages, but they also present distinct challenges.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Solar panels, wind turbines, and hydroelectric dams all offers unique advantages, but they also present distinct challenges.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Solar panels, wind turbines, and hydroelectric dams each are offering unique advantages, but they also present distinct challenges.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A is correct because it maintains proper subject-verb agreement. The compound subject 'Solar panels, wind turbines, and hydroelectric dams' is plural, so it requires the plural verb 'offer.' The word 'each' is used as an adverb here, modifying the verb phrase, and does not change the plurality of the subject. The sentence structure is parallel and grammatically sound throughout.",
+  "distractorRationale": {
+    "A": "This is the correct answer with proper subject-verb agreement.",
+    "B": "This choice incorrectly uses the singular verb 'offers' with a plural compound subject. The presence of 'each' does not make the subject singular when it appears after the compound subject.",
+    "C": "This choice incorrectly uses the singular verb 'offers' with a plural compound subject. Additionally, 'all' is inconsistent with the individual consideration implied by the context.",
+    "D": "This choice uses an unnecessarily complex progressive tense 'are offering' where the simple present 'offer' is more appropriate and natural in this context about general characteristics."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:37:16.038Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "fc0d1657-1494-4cd3-b368-0a03f91f282d"
+  },
+  "passage": "The debate over renewable energy sources has intensified as governments worldwide grapple with climate change. Solar panels, wind turbines, and hydroelectric dams each offer unique advantages, but they also present distinct challenges. While solar energy is abundant and increasingly cost-effective, its efficiency depends heavily on weather conditions and geographic location. Wind power, similarly, can generate substantial electricity but requires consistent wind patterns to be viable. Hydroelectric systems, though reliable, often disrupt local ecosystems and require significant initial investment. As policymakers weigh these options, they must consider not only the environmental benefits but also the economic feasibility of transitioning from fossil fuels to cleaner alternatives.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 118
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.25,
+    "evaluatedAt": "2026-01-08T14:42:52.080Z"
+  }
+}

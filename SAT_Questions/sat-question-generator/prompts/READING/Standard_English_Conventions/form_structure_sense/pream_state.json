@@ -1,0 +1,334 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.703125000000001,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 6,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but actually tests simple subject-verb agreement with 50% immediate elimination rate - more accurately 2.5-3/5",
+              "Question calibrated at 4/5 but resolves in 20-30 seconds using basic grammar rules - actually 2.5-3/5 difficulty",
+              "Question rated 3/5 but has straightforward elimination process and strong contextual clues - actually 2/5 difficulty"
+            ]
+          },
+          {
+            "category": "missing_question_context",
+            "frequency": 5,
+            "exampleErrors": [
+              "No sentence provided for evaluation - SAT questions always show complete sentence with blank in context",
+              "Question asks to 'complete the text' but no actual text is shown, making validation impossible",
+              "Cannot assess answer validity or distractor quality without seeing the full sentence structure"
+            ]
+          },
+          {
+            "category": "incorrect_answer_key",
+            "frequency": 4,
+            "exampleErrors": [
+              "Correct answer listed as 'have' for collective noun 'team' but should be singular 'has' per American English conventions",
+              "Answer key shows A but grammatical analysis indicates B is correct due to subject-verb agreement rules",
+              "Stated correct answer creates subject-verb disagreement while designated distractor would be grammatically correct"
+            ]
+          },
+          {
+            "category": "flawed_grammatical_reasoning",
+            "frequency": 3,
+            "exampleErrors": [
+              "Explanation claims 'team' takes plural verb for collective action, contradicting standard American English conventions",
+              "Rationale discusses parallel structure and correlative conjunctions not actually tested by the question",
+              "Explanation contradicts itself by stating 'coupled with' doesn't create compound subject but then requires plural verb"
+            ]
+          },
+          {
+            "category": "structural_ambiguity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Sentence structure allows two valid parses: 'discovery' or 'fragments' as subject, making both A and B defensible",
+              "Pronoun 'their' in stem conflicts with singular collective noun treatment, creating internal inconsistency",
+              "Question contains genuine grammatical ambiguity allowing knowledgeable students to justify multiple answers"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.035714285714286,
+        "passRate": 0.25
+      },
+      "improvementMade": "Addressed: difficulty_miscalibration, missing_question_context, incorrect_answer_key",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.834821428571429,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty tests basic subject-verb agreement that should be 2.5-3/5; requires only 2-3 linear reasoning steps with straightforward error patterns",
+              "Stated difficulty 3/5 for 'organization' singular agreement is actually 2/5—the subject is proximate and unambiguous with low cognitive demand",
+              "Difficulty 4/5 for inverted structure agreement question overstated by ~0.8 points; once subject identified, answer is relatively clear (actual: 3.5/5)"
+            ]
+          },
+          {
+            "category": "missing_context",
+            "frequency": 4,
+            "exampleErrors": [
+              "Complete sentence not provided—cannot verify subject-verb pairing, proper antecedent identification, or whether answer choice actually fits natural phrasing",
+              "No full passage context given; tense consistency relative to surrounding sentences cannot be evaluated without complete sentence",
+              "Question stem references 'the text' but provides only answer choices—impossible to assess grammatical validity without seeing actual sentence",
+              "Subject-verb agreement verification impossible without complete sentence structure showing intervening clauses and true subject position"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Designated correct answer (B) violates subject-verb agreement rules—plural subject 'findings' paired with singular verb 'has transformed' cannot be justified by semantic 'unified impact'",
+              "Answer choice A (bioaccumulate) may have tense ambiguity—present progressive form (are bioaccumulating) could be equally defensible for describing ongoing processes"
+            ]
+          },
+          {
+            "category": "explanation_inconsistency",
+            "frequency": 2,
+            "exampleErrors": [
+              "Explanation claims 'findings' is plural subject but then justifies singular verb by appealing to 'unified body of work'—contradicts standard grammar rules that don't permit semantic interpretation to override grammatical number",
+              "Tense justification invokes 'timeless, general nature' to defend simple present, but present progressive could equally describe ongoing biological processes with equivalent validity"
+            ]
+          },
+          {
+            "category": "insufficient_authenticity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question conflates subject-verb agreement with tense selection as separate testing objectives; lacks the integrated, single-concept focus typical of authentic SAT items"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.017857142857143,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, missing_context, answer_validity",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.8883928571428577,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "incomplete_presentation",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question stem provides only answer choices without the actual complete sentence text; missing full SAT-format presentation with blank marked",
+              "No complete sentence context provided; shows only verb form options without the full grammatical environment needed for proper evaluation",
+              "Missing full sentence and surrounding context; explanation references a semicolon and related clause structure not visible in the question stem",
+              "Question presents isolated verb options without showing the complete sentence containing the blank; lacks proper SAT formatting",
+              "Answer choices shown without the complete sentence context; cannot verify that distractors are authentically tempting or that sentence structure flows naturally"
+            ]
+          },
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 4,
+            "exampleErrors": [
+              "Question rated 4/5 difficulty but tests basic subject-verb agreement resolvable in <30 seconds with minimal cognitive load; should be 2-3/5",
+              "Question rated 5/5 difficulty but only requires identifying singular vs. plural agreement for a straightforward subject-verb pair; actual difficulty 2-3/5",
+              "Question rated 3/5 but features obvious incorrect pluralizations ('bleachings') that eliminate 50% of options immediately; should be 2/5",
+              "Question rated 3/5 despite testing formulaic subject-verb agreement with clear subject identification and transparent distractors; should be 2/5"
+            ]
+          },
+          {
+            "category": "weak_distractors",
+            "frequency": 2,
+            "exampleErrors": [
+              "Option D ('welcomes') breaks predicate structure entirely with plural subject 'Students'; creates nonsensical distractor rather than testing actual grammar misconception",
+              "Options use 'bleachings' (incorrect pluralization of uncountable noun) making them obviously wrong; eliminates 50% of choices immediately rather than requiring grammatical reasoning"
+            ]
+          },
+          {
+            "category": "authenticity_concerns",
+            "frequency": 2,
+            "exampleErrors": [
+              "Tests elementary subject-verb agreement (Students are/is) without the nuanced complexity typical of SAT; lacks intervening clauses, collective nouns, or compound subjects that create authentic difficulty",
+              "Explanation uses overly technical language and mentions missing sentence components; presentation deviates from straightforward SAT style and format conventions"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Designated correct answer (A: suggests) is grammatically incorrect; actual correct answer should be (B: suggest) due to plural subject-verb disagreement with 'fragments'",
+              "Explanation misidentifies the sentence subject, claiming 'discovery' is singular when 'fragments' is the true plural subject requiring plural verb agreement"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.071428571428571,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: incomplete_presentation, difficulty_overestimation, weak_distractors",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.8348214285714284,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "missing_sentence_context",
+            "frequency": 7,
+            "exampleErrors": [
+              "Question provides only answer choices without showing the complete sentence; SAT grammar questions must always include the full sentence with a blank clearly marked",
+              "Explanation references a 'previous sentence with has yielded' but this context is not provided, making it impossible to verify tense consistency or grammatical appropriateness",
+              "Explanation mentions phrases like 'which had been passed down orally' and 'she collected' but the complete sentence structure is missing, preventing proper evaluation of subject-verb relationships"
+            ]
+          },
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 6,
+            "exampleErrors": [
+              "Question states 4/5 difficulty but actual performance is 2.5-3/5; subject-verb agreement is a foundational grammar rule taught in elementary school, not advanced content",
+              "Stated 5/5 difficulty for basic compound subject agreement; procedure is straightforward with crystal-clear subject identification and immediate answer revelation",
+              "Calibrated at 3/5 but performs at 2.5/5; subject-verb agreement with collective nouns requires only basic plural recognition without semantic ambiguity or complex parsing"
+            ]
+          },
+          {
+            "category": "weak_distractor_design",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractors C and D both use present progressive/perfect constructions creating redundancy; bundles 'wrong number' errors together making them predictable rather than genuinely challenging",
+              "Option C appears oddly weak and obviously incorrect; SAT typically includes more competitive distractors that genuinely tempt test-takers before elimination",
+              "Answer choice 'was possessing' (past progressive) seems like weak distractor; past progressive rarely appears in formal writing about historical facts, reducing its authenticity as a plausible error"
+            ]
+          },
+          {
+            "category": "flawed_grammatical_explanations",
+            "frequency": 3,
+            "exampleErrors": [
+              "Explanation confuses tense ('possessed') with number agreement, claiming plural verb is needed when 'possessed' is actually simple past for both singular and plural subjects",
+              "Rationale for answer A invokes 'modal auxiliary structure' and 'interrogative construction' as red herrings; actual reason 'challenges' is wrong is straightforward subject-verb agreement, not complex syntactic features",
+              "Explanation states 'construction challenges would treat extent as plural' which is backwards; adding -s to verbs marks third-person singular, not plurality"
+            ]
+          },
+          {
+            "category": "incorrect_answer_key",
+            "frequency": 2,
+            "exampleErrors": [
+              "Designated answer B 'challenge' violates subject-verb agreement; the singular subject 'the extent' requires singular verb 'challenges' not base form 'challenge'",
+              "Answer key error in subject-verb agreement explanation; confusion between singular verb marking (adding -s for third-person singular) and plurality indicators"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.1607142857142865,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: missing_sentence_context, difficulty_overestimation, weak_distractor_design",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.459821428571429,
+        "passRate": 0.25,
+        "errorCategories": [
+          {
+            "category": "answer_validity",
+            "frequency": 6,
+            "exampleErrors": [
+              "Designated correct answer (B) is problematic due to contradictory explanation about collective noun rules; Answer A appears more defensible under standard conventions",
+              "Answer A (data as singular) is linguistically contentious; Answer B (data as plural) follows scientific writing conventions and is equally defensible",
+              "Designated answer B 'have created' contradicts the explanation's own rule that collective nouns take singular verbs; Answer A 'has created' better conforms to standard American English"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractors B, C, and D all violate the same plural agreement rule, creating redundancy instead of testing distinct misconceptions; only plural vs. singular is isolated",
+              "Distractor B is too obvious to eliminate; proximity error weak because 'center' appears several clauses earlier, making it ineffective for discrimination",
+              "Three distractors are clearly wrong without testing realistic student errors; missing option testing present progressive vs. simple present tense confusion",
+              "Distractor C is 'doubly wrong' with both plural and past tense, making it easy to eliminate through partial understanding rather than testing specific grammar knowledge"
+            ]
+          },
+          {
+            "category": "grammar_authenticity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Missing complete sentence context; question provides only explanation, not the actual sentence with blank—SAT always presents full context upfront for evaluation",
+              "Explanation contains internal contradiction claiming collective nouns take singular verbs, then justifying plural verb choice without proper grammatical justification",
+              "Subject-verb agreement issue is textbook-level (singular subject + prepositional phrase), not authentic SAT complexity which tests collective nouns and less obvious constructions",
+              "Awkward sentence construction 'director _____ planning to expand' creates incomplete predicate regardless of verb choice; authentic SAT ensures all answer options create grammatically coherent sentences"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Stated difficulty 3/5 but actual difficulty is 2.2/5; subject-verb agreement with 'data' is straightforward foundational skill tested with minimal distraction",
+              "Stated difficulty 2/5 but actual is 1.5/5; identifying singular 'data' as subject is basic grammar with obvious elimination of three plural options",
+              "Stated difficulty 4/5 but actual is 3.5-4/5 (slightly inflated); while sentence is complex, core subject-verb agreement concept is well-established and not linguistically sophisticated"
+            ]
+          },
+          {
+            "category": "missing_context",
+            "frequency": 3,
+            "exampleErrors": [
+              "Full sentence not provided in question stem; only answer explanation references complete sentence structure, preventing students from verifying grammar in actual context",
+              "No surrounding passage context given; real SAT questions embed grammar errors within longer passages with distracting information to increase authenticity",
+              "Answer choice formatting unclear for multiple blanks; question doesn't specify which word fills which blank position or show complete sentence with blank marked"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.0357142857142856,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_validity, distractor_quality, grammar_authenticity",
+      "newPromptVersion": "1.4.0"
+    }
+  ],
+  "currentBestVersion": "1.3.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:55:29.385Z",
+  "completedAt": "2026-01-09T21:03:52.718Z",
+  "bestTestScore": 4.1607142857142865
+}

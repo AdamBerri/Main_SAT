@@ -1,0 +1,63 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "linguistic": 1
+  },
+  "stem": "Which choice best describes the overall structure of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It presents problems caused by an invention, then describes solutions to those problems.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "It compares the advantages and disadvantages of the printing press.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "It traces the chronological development of printing technology.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It argues for the importance of the printing press by providing evidence.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage follows a clear problem-solution structure. The first paragraph identifies specific problems caused by the printing press (information overload and threats to scribes). The second paragraph then presents solutions to these problems (new organizational systems, job adaptation, and regulations). The final sentence reinforces this structure by describing the positive outcomes that resulted from these solutions.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "While the passage mentions both negative and positive aspects, it doesn't compare them directly. Instead, it shows how problems were solved, making this a problem-solution structure rather than a comparison.",
+    "C": "The passage mentions the 15th century invention but doesn't trace technological development over time. It focuses on problems and solutions rather than chronological progression.",
+    "D": "Although the passage concludes positively about the printing press, its primary purpose is not to argue for its importance but to explain how society addressed the problems it created."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:28:14.218Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "ad4659a4-aa1c-427a-81e4-4ce2fbaf8daf"
+  },
+  "passage": "The invention of the printing press in the 15th century created numerous problems for society. First, the rapid spread of books led to information overload, as people struggled to process the sudden abundance of available texts. Additionally, the printing press threatened traditional scribes and copyists, who found their livelihoods at risk as machines could produce books far more quickly and cheaply than human hands.\n\nHowever, solutions to these challenges gradually emerged. To address information overload, scholars developed new systems for organizing and categorizing knowledge, including improved library catalogs and academic disciplines. Meanwhile, many displaced scribes adapted by becoming editors, proofreaders, or book sellers, finding new roles in the expanding publishing industry. Furthermore, governments and institutions established regulations to ensure the quality and accuracy of printed materials.\n\nAs a result of these adaptations, the printing press ultimately transformed society in positive ways, making knowledge more accessible to ordinary people and accelerating the spread of literacy throughout Europe.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 165,
+    "source": "Educational text on historical technology"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T15:32:06.430Z"
+  }
+}

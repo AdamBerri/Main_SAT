@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "currentVersion": "1.3.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Writing question about transitions between ideas.\n\nThe passage should:\n- Have two sentences or paragraphs that need connection\n- Require a specific type of transition (contrast, cause, addition, etc.)\n- Make the relationship between ideas clear from context\n\nThe question should:\n- Ask which transition \"most logically\" connects the ideas\n- Have the correct answer precisely match the logical relationship\n- Include distractors that are valid transitions but wrong for this relationship\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.313Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/READING/Expression_of_Ideas/transitions/schema.json"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 3.2
+  },
+  "stem": "The author's main purpose in this passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "explain how artificial intelligence systems work in hiring processes.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "challenge the claim that AI hiring systems eliminate bias from recruitment.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "describe the various types of bias that exist in traditional hiring practices.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "propose solutions for making AI hiring algorithms more transparent.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The author's main purpose is to challenge the claim that AI hiring systems eliminate bias from recruitment. The passage begins by acknowledging that AI systems are 'hailed as a breakthrough in eliminating human bias' and 'touted as objective evaluators,' but then systematically argues against this claim. The author presents evidence that these systems 'often perpetuate and even amplify existing biases' and concludes that 'the promise of algorithmic objectivity in hiring is not just unfulfilled—it may be fundamentally flawed.' The entire passage is structured as a counterargument to the prevailing narrative about AI's objectivity in hiring.",
+  "distractorRationale": {
+    "A": "While the passage mentions how AI hiring systems work, this is not the main purpose. The author only briefly describes their function to set up the argument against their supposed objectivity.",
+    "C": "The passage mentions traditional hiring bias only as context for understanding how AI systems perpetuate these same biases. Describing traditional bias is not the author's primary focus.",
+    "D": "The author mentions the opacity of algorithms as a problem but does not propose any solutions for making them more transparent. The passage is focused on critiquing, not solving."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:30:22.975Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "5d869242-ff3c-46c3-9c77-3ad50f19f772"
+  },
+  "passage": "The widespread adoption of artificial intelligence in hiring processes has been hailed as a breakthrough in eliminating human bias from recruitment. Companies tout AI systems as objective evaluators that can assess candidates based purely on merit, free from the prejudices that plague traditional hiring. However, this technological solution may be creating new problems while failing to solve the old ones. Recent studies reveal that AI hiring algorithms often perpetuate and even amplify existing biases, particularly against women and minorities. These systems learn from historical hiring data that reflects decades of discriminatory practices, essentially encoding past prejudices into seemingly neutral code. Moreover, the opacity of these algorithms makes it nearly impossible for candidates to understand why they were rejected or for regulators to ensure fair treatment. Rather than eliminating bias, we may simply be making it less visible and more difficult to challenge. The promise of algorithmic objectivity in hiring is not just unfulfilled—it may be fundamentally flawed.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 162,
+    "source": "Contemporary technology and society analysis"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.541666666666667,
+    "evaluatedAt": "2026-01-08T14:36:04.551Z"
+  }
+}

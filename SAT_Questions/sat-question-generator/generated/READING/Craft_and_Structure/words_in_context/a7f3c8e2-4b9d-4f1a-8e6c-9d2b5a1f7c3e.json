@@ -1,0 +1,58 @@
+{
+  "id": "a7f3c8e2-4b9d-4f1a-8e6c-9d2b5a1f7c3e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 2.8,
+    "linguistic": 3.1
+  },
+  "stem": "As used in the text, what does the word \"command\" most nearly mean?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "demand",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "control",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "overlook",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "deserve",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The correct answer is \"demand\" because the passage describes how architectural features were designed to \"command the attention\" of people approaching the buildings. In this context, \"command\" means to compel or demand attention—the structures force people to notice them through their imposing design. The phrase \"command attention\" is a standard collocation meaning to forcefully attract notice. While the passage discusses authority and hierarchy, the specific phrase refers to how the buildings capture people's focus, not how they exercise control over people or deserve their regard.",
+  "distractorRationale": {
+    "A": "This is the correct answer. 'Command' here means to demand or compel attention through the imposing architectural features.",
+    "B": "'Control' is incorrect because while the passage discusses projecting authority and hierarchical relationships, the specific phrase 'command the attention' refers to compelling notice, not exercising ongoing control. The buildings demand attention through their design, rather than controlling the attention itself.",
+    "C": "'Overlook' is incorrect because it represents the military/strategic meaning of 'command' (as in 'the fortress commands the valley'), referring to a position that provides a view over an area. While the buildings have 'elevated entrances,' the text focuses on compelling attention rather than providing a strategic vantage point.",
+    "D": "'Deserve' is incorrect because it represents a different sense of 'command' (as in 'command respect'), meaning to be worthy of something. The passage emphasizes how the buildings were deliberately designed to force attention through imposing features, not that they merit attention through inherent quality."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:35:56.217Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "6ace8cd3-800d-457f-b089-cf6e708f9339"
+  },
+  "passage": "In her analysis of colonial architecture, historian Maria Chen argues that the ornate facades of government buildings were designed to project authority over the local population. These structures deliberately incorporated imposing columns and elevated entrances that would command the attention of anyone approaching, reinforcing the hierarchical relationship between the colonial administration and the governed.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 54,
+    "source": "Original passage about colonial architecture"
+  },
+  "hasImage": false
+}

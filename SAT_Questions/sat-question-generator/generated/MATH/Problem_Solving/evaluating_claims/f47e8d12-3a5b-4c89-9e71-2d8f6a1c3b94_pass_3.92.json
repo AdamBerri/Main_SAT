@@ -1,0 +1,59 @@
+{
+  "id": "f47e8d12-3a5b-4c89-9e71-2d8f6a1c3b94",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "A researcher conducted a study to determine if a new study method improves test scores. The researcher randomly selected 200 students from a large university and randomly assigned 100 students to use the new method (treatment group) and 100 students to use the traditional method (control group). After 6 weeks, the mean test score for the treatment group was 78.5 with a standard deviation of 12.3, while the mean test score for the control group was 74.2 with a standard deviation of 11.8. The researcher concluded that \"the new study method significantly improves test scores for all college students.\"\n\nWhich of the following best describes a limitation of this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The sample size is too small to draw any meaningful conclusions.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The conclusion cannot be generalized to all college students because the sample was drawn from only one university.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The difference in means is too small to be considered significant.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The study design does not allow for causal conclusions because students were not randomly assigned to groups.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The main limitation is that the sample was drawn from only one university, which limits the generalizability of the results. While the researcher used proper randomization within the study (random selection and random assignment), the population sampled (students from one university) may not be representative of all college students. Different universities may have students with varying academic backgrounds, study habits, socioeconomic factors, and other characteristics that could affect how they respond to the new study method. Therefore, the conclusion \"for all college students\" is not supported by this study design. The sample size of 200 is actually quite reasonable for this type of study, and the researcher did use random assignment, which does allow for causal conclusions within the sampled population.",
+  "distractorRationale": {
+    "A": "This choice incorrectly suggests the sample size is inadequate. A sample of 200 students (100 per group) is generally sufficient for detecting meaningful differences in educational interventions.",
+    "B": "This is correct - the sample being drawn from only one university limits generalizability to all college students.",
+    "C": "This choice incorrectly focuses on the magnitude of the difference without considering statistical significance testing, which wasn't provided in the problem.",
+    "D": "This choice incorrectly states that students weren't randomly assigned. The problem clearly states that students were randomly assigned to treatment and control groups."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:51:22.157Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "593b3629-cc5e-489a-bae3-e24987307e1a"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T15:55:56.254Z"
+  }
+}

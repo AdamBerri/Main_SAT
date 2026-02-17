@@ -1,0 +1,59 @@
+{
+  "id": "f47a8c9d-2e1b-4f6a-9d3c-8e7b5a4c3d2e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2.3,
+    "computational": 2
+  },
+  "stem": "The function $f(x) = 2x^2 - 8x + 6$ has a minimum value. What is the $x$-coordinate of the vertex of the parabola represented by this function?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$x = -2$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$x = 2$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$x = 4$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$x = 6$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "For a quadratic function in the form $f(x) = ax^2 + bx + c$, the $x$-coordinate of the vertex is given by $x = -\\frac{b}{2a}$.\n\nIn the function $f(x) = 2x^2 - 8x + 6$, we have:\n- $a = 2$\n- $b = -8$\n- $c = 6$\n\nSubstituting into the vertex formula:\n$x = -\\frac{b}{2a} = -\\frac{(-8)}{2(2)} = -\\frac{-8}{4} = \\frac{8}{4} = 2$\n\nTherefore, the $x$-coordinate of the vertex is $x = 2$.\n\nWe can verify this is a minimum since $a = 2 > 0$, which means the parabola opens upward.",
+  "distractorRationale": {
+    "A": "This results from incorrectly using $x = \\frac{b}{2a}$ instead of $x = -\\frac{b}{2a}$, giving $\\frac{-8}{2(2)} = -2$.",
+    "B": "This is the correct answer using the vertex formula $x = -\\frac{b}{2a} = 2$.",
+    "C": "This results from using $x = -\\frac{b}{a}$ instead of $x = -\\frac{b}{2a}$, giving $-\\frac{(-8)}{2} = 4$.",
+    "D": "This results from confusing the constant term $c = 6$ with the vertex $x$-coordinate."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:38:54.999Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "0b8c6319-9174-4aff-9ced-0a2022abcc37"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.458333333333333,
+    "evaluatedAt": "2026-01-08T15:45:11.435Z"
+  }
+}

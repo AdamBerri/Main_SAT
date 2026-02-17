@@ -1,0 +1,59 @@
+{
+  "id": "a7b3c9d2-e8f1-4a6b-9c2d-8e7f3a1b5c4d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "probability"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 4.8
+  },
+  "stem": "A bag contains 12 marbles: 5 red, 4 blue, and 3 green. Sarah draws 3 marbles without replacement. Given that at least one of the drawn marbles is red, what is the probability that exactly two of the drawn marbles are red?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\frac{30}{71}$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{1}{2}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{25}{66}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{3}{11}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "This is a conditional probability problem. We need to find P(exactly 2 red | at least 1 red).\n\nUsing the formula: P(A|B) = P(A ∩ B) / P(B)\n\nFirst, find P(at least 1 red):\nP(at least 1 red) = 1 - P(no red) = 1 - P(all from 7 non-red marbles)\nP(no red) = $\\frac{\\binom{7}{3}}{\\binom{12}{3}} = \\frac{35}{220} = \\frac{7}{44}$\nSo P(at least 1 red) = $1 - \\frac{7}{44} = \\frac{37}{44}$\n\nNext, find P(exactly 2 red AND at least 1 red):\nSince \"exactly 2 red\" is a subset of \"at least 1 red\", this equals P(exactly 2 red).\nP(exactly 2 red) = $\\frac{\\binom{5}{2} \\cdot \\binom{7}{1}}{\\binom{12}{3}} = \\frac{10 \\cdot 7}{220} = \\frac{70}{220} = \\frac{7}{22}$\n\nTherefore: P(exactly 2 red | at least 1 red) = $\\frac{\\frac{7}{22}}{\\frac{37}{44}} = \\frac{7}{22} \\cdot \\frac{44}{37} = \\frac{308}{814} = \\frac{30}{71}$",
+  "distractorRationale": {
+    "A": "Correct answer using proper conditional probability formula.",
+    "B": "Results from incorrectly assuming equal likelihood of all outcomes given the condition.",
+    "C": "Results from using P(exactly 2 red) / P(exactly 1 or 2 red) instead of the correct conditional probability.",
+    "D": "Results from computing P(exactly 2 red) / P(exactly 3 red) or similar incorrect ratio."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:46:45.819Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "1f0c0ab5-f157-420e-a69f-fe12a2a98519"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 2.75,
+    "evaluatedAt": "2026-01-08T15:51:31.646Z"
+  }
+}

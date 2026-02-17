@@ -1,0 +1,62 @@
+{
+  "id": "7a8b9c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "stem": "The author argues that technological innovation does not necessarily lead to social progress. Which quotation from the passage best supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"A longitudinal study conducted by the Institute for Digital Wellbeing revealed that adolescents who spent more than three hours daily on social media platforms exhibited a 47% increase in symptoms of depression and anxiety compared to their less digitally engaged peers.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "\"The architectural design of these platforms, with their dopamine-triggering notification systems and infinite scroll mechanisms, deliberately exploits neurological vulnerabilities to maximize user engagement.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Consider the paradoxical trajectory of social media platforms: while ostensibly designed to foster human connection, they have arguably engendered unprecedented levels of alienation and psychological distress.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"We have created technologies that connect us to everyone and yet leave us feeling more isolated than ever before.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A provides the most concrete and quantifiable evidence supporting the claim that technological innovation doesn't necessarily lead to social progress. The longitudinal study offers empirical data showing a 47% increase in depression and anxiety symptoms among heavy social media users, directly demonstrating how a technological innovation (social media) has led to measurable negative social outcomes rather than progress. This statistical evidence most effectively substantiates the author's argument against the conventional wisdom that innovation invariably brings progress.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "While this describes problematic design features, it focuses on the mechanism of harm rather than providing evidence of actual negative social outcomes that contradict the notion of progress.",
+    "C": "This presents the paradox conceptually but lacks the concrete evidence needed to definitively support the claim. It's more of a thesis statement than supporting evidence.",
+    "D": "This is an expert's observation that supports the argument, but it's qualitative rather than quantitative and less concrete than the empirical study data in choice A."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:24:11.067Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "7e214848-7b15-428e-847a-1f02e66436c3"
+  },
+  "passage": "The conventional wisdom holds that technological innovation invariably precipitates social progress, yet this axiom warrants rigorous scrutiny. Consider the paradoxical trajectory of social media platforms: while ostensibly designed to foster human connection, they have arguably engendered unprecedented levels of alienation and psychological distress. A longitudinal study conducted by the Institute for Digital Wellbeing revealed that adolescents who spent more than three hours daily on social media platforms exhibited a 47% increase in symptoms of depression and anxiety compared to their less digitally engaged peers. Moreover, the phenomenon of \"social comparison theory\" has been exacerbated by curated online personas, leading to what psychologist Dr. Elena Vasquez terms \"aspirational inadequacy\"—the persistent feeling that one's authentic life pales in comparison to the idealized representations encountered online. The architectural design of these platforms, with their dopamine-triggering notification systems and infinite scroll mechanisms, deliberately exploits neurological vulnerabilities to maximize user engagement, often at the expense of genuine human flourishing. As digital anthropologist Marcus Chen observes, \"We have created technologies that connect us to everyone and yet leave us feeling more isolated than ever before.\" This technological determinism, wherein innovation proceeds without adequate consideration of its broader societal implications, suggests that progress in one domain may inadvertently precipitate regression in another.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 203,
+    "source": "Adapted from a contemporary essay on technology and society"
+  },
+  "_evaluation": {
+    "status": "fail",
+    "score": 2.875,
+    "evaluatedAt": "2026-01-08T14:29:43.290Z"
+  }
+}

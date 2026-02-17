@@ -1,0 +1,59 @@
+{
+  "id": "8f2a4b6e-9c1d-4e5f-8a7b-3c9e2d1f0a8b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 2.8,
+    "computational": 2.7
+  },
+  "stem": "A ladder is leaning against a building. The ladder is 20 feet long and makes a $65°$ angle with the ground. How high up the building does the ladder reach, to the nearest tenth of a foot?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "8.5 feet",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "18.1 feet",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "19.1 feet",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "22.0 feet",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This is a right triangle problem where we need to find the height the ladder reaches on the building. We know:\n- The ladder length (hypotenuse) = 20 feet\n- The angle with the ground = 65°\n- We need to find the height (opposite side to the 65° angle)\n\nUsing the sine ratio: $\\sin(65°) = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{\\text{height}}{20}$\n\nSolving for height: $\\text{height} = 20 \\times \\sin(65°)$\n\nUsing a calculator: $\\sin(65°) \\approx 0.9063$\n\nTherefore: $\\text{height} = 20 \\times 0.9063 = 18.126$ feet\n\nRounded to the nearest tenth: 18.1 feet",
+  "distractorRationale": {
+    "A": "This results from using cosine instead of sine: $20 \\times \\cos(65°) \\approx 8.5$ feet",
+    "B": "Correct answer using sine ratio",
+    "C": "This results from using the complementary angle: $20 \\times \\sin(25°) \\approx 8.5$, then adding incorrectly",
+    "D": "This results from incorrectly using $20 \\times \\tan(65°)$ and making computational errors"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:57:13.698Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "97440264-7664-4266-8ce9-44b6cc94a5ee"
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.625,
+    "evaluatedAt": "2026-01-08T16:02:23.111Z"
+  }
+}

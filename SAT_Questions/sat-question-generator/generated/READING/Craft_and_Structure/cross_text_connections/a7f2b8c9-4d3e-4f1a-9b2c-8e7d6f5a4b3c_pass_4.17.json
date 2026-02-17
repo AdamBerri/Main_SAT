@@ -1,0 +1,62 @@
+{
+  "id": "a7f2b8c9-4d3e-4f1a-9b2c-8e7d6f5a4b3c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.1,
+    "procedural": 4,
+    "linguistic": 4.3
+  },
+  "stem": "Based on the passages, how do the authors' perspectives on social media's impact on political discourse relate to each other?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Both authors agree that social media has enhanced democratic participation but disagree about its long-term sustainability.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The authors present contrasting evaluations of the same phenomenon, with Text 1 emphasizing benefits and Text 2 focusing on drawbacks.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 1 discusses social media's role in organizing movements while Text 2 examines its effect on information quality, addressing entirely different aspects.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The authors complement each other by proposing different solutions to the same problem of political disengagement.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The correct answer is B. Both texts address the same central phenomenon—social media's impact on political discourse—but offer opposing evaluations. Text 1 presents an optimistic view, highlighting democratization, empowerment, and increased civic engagement. Text 2 presents a pessimistic view, emphasizing fragmentation, polarization, and misinformation. This creates a clear contrast where the authors are examining the same subject matter but reaching fundamentally different conclusions about its effects.",
+  "distractorRationale": {
+    "A": "This mischaracterizes the relationship. While Text 1 does emphasize enhanced participation, Text 2 doesn't agree with this premise—it argues that social media has actually harmed democratic discourse rather than enhanced it.",
+    "C": "This incorrectly suggests the texts address different aspects. Both texts directly address social media's overall impact on political discourse and democratic participation, not separate, unrelated aspects.",
+    "D": "This is incorrect because neither text proposes solutions to political disengagement. Text 1 argues social media has solved disengagement, while Text 2 argues it has created different problems entirely."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:27:57.768Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "0e538d0c-cd44-4ac6-9b42-609bfe174c82"
+  },
+  "passage": "Text 1\nThe proliferation of social media platforms has fundamentally altered the landscape of political discourse, creating unprecedented opportunities for civic engagement. Citizens can now participate directly in political conversations, organize grassroots movements with remarkable efficiency, and hold elected officials accountable through real-time communication. This democratization of political participation has empowered previously marginalized voices, allowing diverse perspectives to enter mainstream political dialogue. The immediacy and accessibility of these platforms have transformed passive observers into active participants, fostering a more inclusive democratic process.\n\nText 2\nWhile digital platforms have expanded access to political information, they have simultaneously fragmented public discourse into isolated echo chambers. Algorithmic curation reinforces existing beliefs by presenting users with information that confirms their preconceptions, effectively polarizing political opinions rather than fostering meaningful dialogue. The speed at which information spreads on these platforms often prioritizes sensationalism over accuracy, contributing to the dissemination of misinformation. Rather than creating a more informed electorate, social media's influence on politics has arguably undermined the shared factual foundation necessary for productive democratic deliberation.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 184,
+    "source": "Adapted from contemporary political communication research"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T15:31:39.609Z"
+  }
+}

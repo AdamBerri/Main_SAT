@@ -1,0 +1,62 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2,
+    "linguistic": 2.1
+  },
+  "stem": "Which quotation from the passage best supports the claim that goldfish have longer memories than commonly believed?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"The goldfish were able to recall the maze layout and consistently choose the correct route even after a month-long break from training.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "\"Pet goldfish often recognize their owners' faces and will swim excitedly toward the glass when their regular caretaker approaches.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Additionally, goldfish have been observed responding to different musical tones, with some fish showing preferences for classical music over rock.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"The three-second memory myth likely persists because it conveniently justifies keeping these animals in small, unstimulating environments.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A provides the most direct and specific evidence that goldfish have longer memories than the commonly believed three seconds. The quote describes goldfish remembering maze layouts for \"a month-long break from training,\" which is concrete evidence of memory lasting far beyond three seconds. This experimental evidence directly contradicts the three-second memory myth by providing a specific timeframe (one month) that demonstrates extended memory capability.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it provides specific evidence of long-term memory.",
+    "B": "While this shows recognition abilities, it doesn't specifically address the duration of memory or contradict the three-second claim as directly as choice A.",
+    "C": "This demonstrates cognitive abilities and preferences but doesn't provide specific evidence about memory duration.",
+    "D": "This explains why the myth persists but doesn't provide evidence that goldfish actually have longer memories."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:25:04.200Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "97961b57-d98a-4181-8242-e40e29c6f512"
+  },
+  "passage": "The common belief that goldfish have three-second memories is not only false but also harmful to these intelligent creatures. Recent scientific studies have demonstrated that goldfish possess far more sophisticated cognitive abilities than previously thought. In a landmark experiment conducted at Plymouth University, researchers trained goldfish to navigate through underwater mazes, with the fish successfully remembering the correct path for weeks after initial training. \"The goldfish were able to recall the maze layout and consistently choose the correct route even after a month-long break from training,\" reported Dr. Sarah Chen, the lead researcher. Additionally, goldfish have been observed responding to different musical tones, with some fish showing preferences for classical music over rock. Pet goldfish often recognize their owners' faces and will swim excitedly toward the glass when their regular caretaker approaches, while remaining still when strangers are present. These behaviors clearly indicate that goldfish can form lasting memories and develop emotional attachments. The three-second memory myth likely persists because it conveniently justifies keeping these animals in small, unstimulating environments.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 185,
+    "source": "Science education article"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T14:29:43.292Z"
+  }
+}

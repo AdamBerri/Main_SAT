@@ -1,0 +1,55 @@
+{
+  "id": "a7f3c9d2-8e4b-4c1a-9f5e-2d6b8a3c7e91",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 2.8,
+    "computational": 2.7
+  },
+  "stem": "In triangle $ABC$, the altitude from vertex $C$ to side $AB$ intersects $AB$ at point $D$. If $AD = 9$, $DB = 16$, and $CD = 12$, what is the length of side $AC$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$15$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$20$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$21$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$25$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Since $CD$ is an altitude from $C$ to side $AB$, it forms a right angle with $AB$ at point $D$. This creates two right triangles: $\\triangle ACD$ and $\\triangle BCD$.\n\nTo find $AC$, we focus on right triangle $\\triangle ACD$, where:\n- $AD = 9$ (one leg)\n- $CD = 12$ (other leg)\n- $AC$ is the hypotenuse\n\nUsing the Pythagorean theorem:\n$$AC^2 = AD^2 + CD^2$$\n$$AC^2 = 9^2 + 12^2$$\n$$AC^2 = 81 + 144$$\n$$AC^2 = 225$$\n$$AC = 15$$\n\nWe can verify this makes sense by checking triangle $\\triangle BCD$:\n$$BC^2 = BD^2 + CD^2 = 16^2 + 12^2 = 256 + 144 = 400$$\n$$BC = 20$$\n\nBoth results are consistent with a valid triangle configuration.",
+  "distractorRationale": {
+    "A": "This is the correct answer, obtained by applying the Pythagorean theorem to right triangle ACD with legs 9 and 12.",
+    "B": "This results from incorrectly using $BD = 16$ instead of $AD = 9$ when calculating $AC$, giving $\\sqrt{16^2 + 12^2} = \\sqrt{256 + 144} = \\sqrt{400} = 20$. This is actually the length of $BC$, not $AC$.",
+    "C": "This results from incorrectly adding the segments instead of using the Pythagorean theorem: $9 + 12 = 21$. Students might confuse the altitude construction with finding a perimeter or mistakenly think the hypotenuse equals the sum of the legs.",
+    "D": "This results from incorrectly using the entire base $AB = 9 + 16 = 25$ as if it were one leg of a right triangle with $AC$ as the hypotenuse, misunderstanding where point $D$ divides the base and the role of the altitude."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:14.887Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "9f2cd17e-f3c0-450e-b166-f3f2e8911f3c"
+  },
+  "hasImage": true,
+  "imageDescription": "A triangle ABC with vertices labeled. Point D is on side AB between A and B. A dashed line segment CD is drawn perpendicular to AB, representing the altitude. The segment AD is labeled '9', segment DB is labeled '16', and the altitude CD is labeled '12'. A small square symbol at point D indicates the right angle. The triangle should be drawn so that C is above the base AB, with the altitude creating two right triangles.",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

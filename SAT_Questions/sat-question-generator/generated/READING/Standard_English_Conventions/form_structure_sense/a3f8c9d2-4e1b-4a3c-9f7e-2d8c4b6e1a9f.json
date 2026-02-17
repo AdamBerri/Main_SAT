@@ -1,0 +1,58 @@
+{
+  "id": "a3f8c9d2-4e1b-4a3c-9f7e-2d8c4b6e1a9f",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "linguistic": 1
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "weighs",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "weigh",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "have weighed",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "are weighing",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "This question tests basic subject-verb agreement. The subject is 'Each whale,' which is singular (the word 'each' always takes a singular verb). Therefore, the verb must be the singular form 'weighs.' Choice B ('weigh') is the plural form and does not agree with the singular subject. Choice C ('have weighed') uses the plural auxiliary 'have' and creates an unnecessary perfect tense. Choice D ('are weighing') uses the plural auxiliary 'are' and creates an awkward progressive tense for a permanent characteristic.",
+  "distractorRationale": {
+    "A": "This is the correct answer. 'Weighs' is the singular present tense form that agrees with the singular subject 'Each whale.'",
+    "B": "This is incorrect because 'weigh' is the plural form. Students might choose this by mistakenly matching the verb to the nearby plural noun 'whales' in the previous sentence rather than to the actual subject 'Each whale.'",
+    "C": "This is incorrect because 'have weighed' uses the plural auxiliary verb 'have' instead of the singular 'has,' failing to agree with 'Each whale.' Additionally, the present perfect tense is unnecessary for describing a permanent characteristic.",
+    "D": "This is incorrect because 'are weighing' uses the plural auxiliary 'are' instead of the singular 'is.' Additionally, the present progressive tense is inappropriate for expressing a stable, permanent characteristic like weight."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:10.854Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a4e481ad-c347-4fd9-9358-14c03ba062b0"
+  },
+  "passage": "Marine biologists have long studied the migration patterns of humpback whales. These massive creatures travel thousands of miles between their feeding grounds in polar waters and their breeding areas in tropical seas. The annual journey requires enormous energy reserves. Each whale [1]_____ up to 40 tons and can swim at speeds of 15 miles per hour during migration.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 62,
+    "source": "Original educational content about marine biology"
+  },
+  "hasImage": false
+}

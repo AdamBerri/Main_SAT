@@ -1,0 +1,58 @@
+{
+  "id": "3f8a2d1e-9b4c-4f29-8e6d-7c5b3a9f1e2d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 2.2,
+    "linguistic": 2.1
+  },
+  "stem": "Which quotation from the text most directly supports the claim that the printing press made books more affordable?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"The price of books fell by approximately two-thirds within fifty years of the press's introduction\"",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "\"printing presses had produced an estimated 20 million volumes across Europe, compared to the roughly 30,000 handwritten manuscripts that existed in 1440\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"reduced the time required to produce a single book from months to mere weeks\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"books were painstakingly copied by hand in monastery scriptoriums, with a single manuscript often requiring an entire year of labor\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A directly states that book prices decreased by two-thirds, which is explicit quantitative evidence that books became more affordable. This quotation requires no inference—it explicitly describes a reduction in price, which is the definition of increased affordability. The claim asks specifically about affordability, and this choice provides direct numerical evidence of price reduction.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it directly addresses price reduction.",
+    "B": "While this shows increased book production volume, it addresses availability/quantity rather than affordability. A reader must infer that increased supply might reduce prices—this requires an additional logical step that the correct answer does not.",
+    "C": "This addresses production efficiency and speed, which could potentially affect cost, but requires the reader to infer the connection between faster production and lower prices. It does not directly mention affordability or price.",
+    "D": "This describes the labor-intensive nature of pre-printing book production, which might suggest why books were expensive before the press, but it does not directly state anything about the affordability change that occurred after the printing press was introduced. It addresses the 'before' state without confirming the 'after' change in affordability."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:34.268Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "ddb823b9-7ff1-4286-aaeb-5063603b80ed"
+  },
+  "passage": "Many historians have argued that the introduction of the printing press in the mid-15th century fundamentally transformed European literacy rates by making books more affordable and accessible to the general population. Johannes Gutenberg's invention of movable type printing around 1440 reduced the time required to produce a single book from months to mere weeks. Prior to this innovation, books were painstakingly copied by hand in monastery scriptoriums, with a single manuscript often requiring an entire year of labor. By 1500, printing presses had produced an estimated 20 million volumes across Europe, compared to the roughly 30,000 handwritten manuscripts that existed in 1440. \"The price of books fell by approximately two-thirds within fifty years of the press's introduction,\" notes economic historian Robert Finlay. However, the immediate impact on general literacy remained limited; church records from German cities show that in 1500, only about 10% of the urban population could read, a figure that had increased from roughly 8% in 1450.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 168,
+    "source": "Historical analysis of printing press impact"
+  },
+  "hasImage": false
+}

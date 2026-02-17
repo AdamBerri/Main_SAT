@@ -1,0 +1,62 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.1,
+    "procedural": 3.8,
+    "linguistic": 4
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "is",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "are",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "was",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "has been",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The correct answer is 'are' because the subject of the clause is the compound phrase 'rising ocean temperatures, increased acidity levels, and pollution from coastal development,' which consists of three separate elements connected by 'and.' This compound subject is plural and requires the plural verb form 'are.' The verb must agree with the true subject of the clause, not with the singular noun 'development' that appears immediately before the blank.",
+  "distractorRationale": {
+    "A": "Incorrect because 'is' is a singular verb form, but the subject is a compound subject consisting of three elements (temperatures, levels, and pollution), making it plural.",
+    "B": "Correct - 'are' agrees with the plural compound subject.",
+    "C": "Incorrect because 'was' is both singular (disagreeing with the compound subject) and in the wrong tense, as the present tense is needed to match 'suggest' in the main clause.",
+    "D": "Incorrect because 'has been' is singular and doesn't agree with the plural compound subject. Additionally, the perfect tense is unnecessary here since the main clause uses simple present tense."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:36:20.206Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "08e5dbdc-92ad-4b3a-96af-bce3f219fa5d"
+  },
+  "passage": "The marine biologist's research team has been studying coral reef ecosystems for over a decade, and their findings suggest that rising ocean temperatures, increased acidity levels, and pollution from coastal development _______ the primary factors contributing to widespread coral bleaching events in tropical waters.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 45,
+    "source": "Academic writing sample"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.7142857142857144,
+    "evaluatedAt": "2026-01-08T14:42:52.079Z"
+  }
+}

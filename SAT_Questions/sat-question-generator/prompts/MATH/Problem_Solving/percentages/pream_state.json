@@ -1,0 +1,247 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 10,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.994791666666667,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 6,
+            "exampleErrors": [
+              "Question stated as 3/5 difficulty but actual difficulty is 2/5 - straightforward two-step discount calculation with simple arithmetic and clear problem structure",
+              "Question stated as 5/5 difficulty but actual difficulty is 3.5/5 - algebra setup is transparent and linear with methodical execution rather than requiring insight",
+              "Question stated as 4/5 difficulty but actual difficulty is 2.5/5 - follows simple sequential markup/discount pattern with standard familiar procedures and minimal cognitive load"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Designated correct answer is C ($80) but mathematical verification proves answer B ($60) is correct - working backward from $72 sale price through 25% discount and 60% markup yields $60 wholesale, not $80"
+            ]
+          },
+          {
+            "category": "procedural_clarity",
+            "frequency": 0,
+            "exampleErrors": []
+          },
+          {
+            "category": "computational_complexity",
+            "frequency": 0,
+            "exampleErrors": []
+          },
+          {
+            "category": "conceptual_foundation",
+            "frequency": 0,
+            "exampleErrors": []
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.979166666666667,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, procedural_clarity",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.119791666666667,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "weak_misconception_targeting",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor targets arithmetic failure rather than genuine misconception (e.g., calculating 25% of 40 as 25 instead of 10—an unusually large error that doesn't generalize well)",
+              "Distractor requires multiple simultaneous errors to reach the answer, reducing its diagnostic power (e.g., both miscalculating percentage AND adding instead of subtracting)",
+              "Error pathway is implausible or would require students to make inconsistent mistakes (e.g., 'rounding without mathematical justification' or 'selecting the nearest option')"
+            ]
+          },
+          {
+            "category": "unclear_distractor_rationale",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractor rationale claims mathematical pathway that doesn't actually produce the stated answer value (e.g., $408 ÷ 0.65 ≈ $627.69, not $500)",
+              "Error explanation is vague or speculative without clear algebraic steps (e.g., 'incorrectly solving by assuming a linear relationship' for distractor A)",
+              "Multiple contradictory error pathways provided for same distractor without clarity on which produces the answer (e.g., two different computational methods both described but neither yielding the actual distractor value)"
+            ]
+          },
+          {
+            "category": "missing_distractor_coverage",
+            "frequency": 3,
+            "exampleErrors": [
+              "No distractor targets an obvious common misconception that students would naturally make (e.g., no option for students who add percentages instead of compounding them)",
+              "Missing distractor that captures students who correctly set up the problem but make arithmetic/computational errors in execution",
+              "Gap in pedagogical coverage—distractor set doesn't address all major error types relevant to the question's learning objectives"
+            ]
+          },
+          {
+            "category": "excessive_difficulty_inflation",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question difficulty rated 5/5 but multiple-choice format substantially reduces actual difficulty since answer choices can be tested efficiently",
+              "Stated computational complexity overstates the cognitive demand when algebraic setup is relatively straightforward and algebra is fundamentally simple once understood"
+            ]
+          },
+          {
+            "category": "fundamental_answer_validity_issues",
+            "frequency": 1,
+            "exampleErrors": [
+              "Correct answer doesn't actually satisfy the mathematical constraint (e.g., x=40, y=30 yields 0.98 instead of the required 0.91), rendering the entire question invalid for assessment purposes"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.291666666666667,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: weak_misconception_targeting, unclear_distractor_rationale, missing_distractor_coverage",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.059523809523809,
+        "passRate": 0.8571428571428571,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor A has convoluted, multi-step rationales that don't clearly show how students naturally arrive at the answer; lacks coherent misconception targeting",
+              "Distractor C contains arithmetic inconsistencies where stated calculation paths don't actually produce the claimed value (e.g., $63 ÷ 1.15 ≈ $54.78, not $73.50)",
+              "Distractor D rationale explores multiple possible error paths without settling on a single clear misconception, appearing to be post-hoc rationalization rather than genuine student error"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 2.5/3.0; problem involves straightforward two-step percentage operations with minimal conceptual barriers or strategic decision-making",
+              "Stated 5/5 difficulty lacks sufficient conceptual depth, computational trap-potential, or procedural ambiguity; actual difficulty approximately 3.5-3.8/5 with overestimation of ~1.3 points",
+              "Stated 3/5 medium difficulty is higher than actual; problem features clean arithmetic, single obvious solution pathway, and minimal error opportunities, placing it in 2.5/5 range with ~65-70% expected success rate rather than 50%"
+            ]
+          },
+          {
+            "category": "arithmetic_validation",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor values don't emerge from stated error pathways; for example, Choice C calculation of $63 ÷ 0.75 ÷ 0.60 = 140, not 73.50, indicating distractor wasn't derived from actual misconception",
+              "Distractor D rationale contains computational inconsistencies where the described error sequence ($113.40 ÷ 1.23 ≈ $92.20) doesn't actually produce the claimed answer of $120"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question lacks authentic SAT difficulty calibration and weak distractor design; uses arbitrary answer choices that don't reflect common student errors, with only single-operation calculation required (0.5/5 actual vs 1/5 stated), falling below SAT cognitive load standards"
+            ]
+          },
+          {
+            "category": "misconception_clarity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Multiple distractors (A and C) have overlapping or unclear error patterns with multiple competing rationales, making it ambiguous which single misconception each distractor targets and preventing clear diagnostic interpretation of student errors"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, arithmetic_validation",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.119791666666666,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_incoherence",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor rationale contains multiple conflicting error paths that don't clearly lead to the stated answer (e.g., explanations proposing different calculations like '$63 ÷ 1.15' and 'rounding $54.78' that don't coherently justify the final distractor value)",
+              "Internal contradictions in distractor logic where the mathematical work shown doesn't match the answer choice (e.g., explanation states '$40 - $15 = $25' but concludes answer is $15, or rationale describes calculation path that yields different value than the distractor)",
+              "Confusing multi-path rationales that propose several different misconceptions for a single distractor without clarifying which error students would actually make (e.g., listing 'net percentage', 'percentage reversal', and 'division error' as explanations for one distractor value)"
+            ]
+          },
+          {
+            "category": "weak_misconception_targeting",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractor targets an uncommon or non-obvious error that students wouldn't naturally make (e.g., 'halving the percentage specifically from 25% to 12.5%' or rounding $54.78 to exactly $50/$45 when other rounding would be more natural)",
+              "Missing better alternative distractors that target more common student errors (e.g., no distractor for the frequent 'adding instead of subtracting' sign error, or 'applying operations in wrong order')",
+              "Distractor represents careless arithmetic rather than a coherent conceptual misunderstanding (e.g., arriving at an answer through vague non-systematic error rather than a specific misconception pathway)"
+            ]
+          },
+          {
+            "category": "difficulty_calibration_error",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but is actually 2.5-3/5, being straightforward sequential percentage application with clean numbers and linear workflow rather than complex reasoning",
+              "Stated difficulty of 4/5 but actual difficulty is 2.5-3/5; problem involves simple algebraic setup and single-step arithmetic without multi-step complexity or unexpected conceptual inversions"
+            ]
+          },
+          {
+            "category": "answer_validity_mathematical_error",
+            "frequency": 2,
+            "exampleErrors": [
+              "Correct answer provided contradicts the mathematical work shown in the explanation (e.g., derivation shows cost should equal $60 but answer key states $50; verification shows if cost=$50 then sale price=$50 not $60 as stated)",
+              "Problem parameters and answer key are mismatched, with explanation containing arithmetic that doesn't produce the designated correct answer (e.g., $0.80 × 1.25c = 1.00c$ but then answer is given as $50 instead of derived value)"
+            ]
+          },
+          {
+            "category": "distractor_redundancy_overlap",
+            "frequency": 1,
+            "exampleErrors": [
+              "Multiple distractors map to same misconception without distinct errors, or answer choices converge on same value through different faulty paths (e.g., both distractor A and B calculations yield $150, making them conceptually redundant rather than discriminating different error types)"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: distractor_quality_incoherence, weak_misconception_targeting, difficulty_calibration_error",
+      "newPromptVersion": "1.3.0"
+    }
+  ],
+  "currentBestVersion": "1.2.0",
+  "bestTestScore": 4.291666666666667,
+  "converged": true,
+  "startedAt": "2026-01-09T19:33:25.358Z",
+  "completedAt": "2026-01-09T20:33:25.563Z"
+}

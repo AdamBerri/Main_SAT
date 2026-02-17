@@ -1,0 +1,54 @@
+{
+  "id": "a3f7b2c1-4d89-4e6f-9b3a-7c8d5e2f1a9b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 1.8,
+    "computational": 2
+  },
+  "stem": "A school club is selling tickets to a fundraiser. Student tickets cost $8 each and adult tickets cost $12 each. The club needs to raise at least $480 from ticket sales. If $s$ represents the number of student tickets sold and $a$ represents the number of adult tickets sold, which inequality represents this constraint?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$8s + 12a \\geq 480$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$8s + 12a \\leq 480$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$12s + 8a \\geq 480$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$8s + 12a > 480$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The club needs to raise **at least** $480, which means the total revenue must be greater than or equal to 480.\n\nRevenue from student tickets: $8s$ (since each student ticket costs $8)\nRevenue from adult tickets: $12a$ (since each adult ticket costs $12)\nTotal revenue: $8s + 12a$\n\nSince this total must be at least $480, we need: $8s + 12a \\geq 480$\n\nVerification with test values:\n- If $s = 30$ and $a = 20$: $8(30) + 12(20) = 240 + 240 = 480$ ✓ (exactly meets goal)\n- If $s = 40$ and $a = 20$: $8(40) + 12(20) = 320 + 240 = 560$ ✓ (exceeds goal)\n- If $s = 20$ and $a = 20$: $8(20) + 12(20) = 160 + 240 = 400$ ✗ (below goal, should not satisfy inequality)\n\nThe correct answer is A.",
+  "distractorRationale": {
+    "A": "This is the correct answer. It properly translates 'at least $480' to $\\geq 480$ and correctly assigns the costs to each ticket type.",
+    "B": "This reverses the inequality direction, representing 'at most $480' instead of 'at least $480'. Students who confuse these phrases or misread the constraint would select this.",
+    "C": "This swaps the coefficients, assigning $12 to student tickets and $8 to adult tickets. Students who don't carefully track which variable corresponds to which ticket type would make this error.",
+    "D": "This uses a strict inequality (>) instead of the correct non-strict inequality (≥). Students who don't recognize that 'at least' includes the boundary value of exactly $480 would select this."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:55.428Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "5dd97e19-cf5f-4d41-a326-1e80faab1602"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

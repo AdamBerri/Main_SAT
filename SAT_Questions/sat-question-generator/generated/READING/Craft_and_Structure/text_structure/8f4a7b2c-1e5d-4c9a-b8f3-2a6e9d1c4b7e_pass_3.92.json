@@ -1,0 +1,62 @@
+{
+  "id": "8f4a7b2c-1e5d-4c9a-b8f3-2a6e9d1c4b7e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 2.7,
+    "linguistic": 2.8
+  },
+  "stem": "Which choice best describes the overall structure of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It presents a problem, analyzes multiple causes, and proposes corresponding solutions.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "It compares the benefits and drawbacks of different approaches to bee conservation.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "It traces the chronological development of bee population decline over time.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It argues for one primary solution by refuting alternative approaches.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage follows a clear problem-causes-solutions structure. It opens by establishing bee population decline as a significant environmental problem. The middle paragraphs systematically analyze three major causes: pesticide exposure, habitat loss, and climate change. The final paragraph then proposes multiple solutions that correspond to these causes, including pesticide regulation, agricultural policy changes, and habitat creation. This organizational pattern is reinforced by transitional phrases like 'This crisis stems from,' 'Equally damaging,' 'Furthermore,' and 'Addressing this multifaceted crisis requires.'",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "The passage does not compare benefits and drawbacks of different approaches. Instead, it identifies causes of a problem and suggests solutions without weighing competing conservation strategies against each other.",
+    "C": "While the passage mentions that colony losses have occurred 'over the past decade,' it does not organize information chronologically. The structure focuses on analyzing causes rather than tracing historical development.",
+    "D": "The passage proposes multiple coordinated solutions rather than arguing for one primary solution. It does not refute alternative approaches but instead presents complementary strategies that address different aspects of the problem."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:30:08.981Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "580de9ef-cd64-4f1a-b5c4-0b150231a81f"
+  },
+  "passage": "The decline of bee populations has become one of the most pressing environmental concerns of our time. Over the past decade, beekeepers have reported colony losses of 30% or more annually, a phenomenon that threatens not only honey production but also the pollination services essential to agriculture. This crisis stems from multiple interconnected factors that work together to weaken bee colonies.\n\nPesticide exposure represents perhaps the most significant threat to bee health. Neonicotinoids, a class of insecticides widely used in agriculture, impair bees' navigation abilities and weaken their immune systems. When bees forage on treated crops, they carry these toxins back to the hive, where the chemicals accumulate and affect the entire colony.\n\nEqually damaging is the loss of natural habitat. As agricultural practices have intensified and urban development has expanded, the diverse wildflower meadows that once sustained bee populations have largely disappeared. This habitat destruction forces bees to travel greater distances for food, depleting their energy reserves and making them more vulnerable to disease.\n\nFurthermore, climate change has disrupted the delicate timing between flowering plants and bee activity. Warmer temperatures cause plants to bloom earlier, often before bees emerge from winter dormancy. This mismatch reduces the availability of nectar and pollen during critical periods of colony development.\n\nAddressing this multifaceted crisis requires coordinated action on several fronts. Governments must regulate pesticide use more strictly, particularly during flowering seasons when bees are most active. Agricultural policies should incentivize farmers to create pollinator-friendly buffer zones around their fields. Additionally, urban planners and homeowners can contribute by incorporating native flowering plants into landscapes, creating corridors of habitat that support bee populations throughout their range.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 287,
+    "source": "Environmental science article"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T14:35:53.856Z"
+  }
+}

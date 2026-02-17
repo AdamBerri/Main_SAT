@@ -1,0 +1,54 @@
+{
+  "id": "a7f3c8e1-2b4d-4f29-9a3e-6d8b2c1f5e93",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "probability"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "A bag contains 5 red marbles, 3 blue marbles, and 4 green marbles. If two marbles are drawn from the bag at random without replacement, what is the probability that both marbles are red?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\frac{5}{33}$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{25}{144}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{5}{24}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{1}{6}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find the probability that both marbles drawn are red, we need to use the multiplication principle for dependent events.\n\nFirst, find the total number of marbles: $5 + 3 + 4 = 12$ marbles.\n\nFor the first draw:\n- Probability of drawing a red marble = $\\frac{5}{12}$\n\nFor the second draw (without replacement):\n- After removing one red marble, there are 4 red marbles left and 11 total marbles\n- Probability of drawing a red marble = $\\frac{4}{11}$\n\nThe probability that both events occur:\n$$P(\\text{both red}) = \\frac{5}{12} \\times \\frac{4}{11} = \\frac{20}{132}$$\n\nSimplifying to lowest terms by dividing both numerator and denominator by 4:\n$$\\frac{20}{132} = \\frac{5}{33}$$\n\nThe answer is $\\frac{5}{33}$.",
+  "distractorRationale": {
+    "A": "This is the correct answer: (5/12) × (4/11) = 20/132 = 5/33",
+    "B": "METHOD ERROR - Student treats the draws as independent events with replacement, calculating (5/12) × (5/12) = 25/144 instead of adjusting for the second draw without replacement",
+    "C": "COMPUTATIONAL ERROR - Student correctly sets up (5/12) × (4/11) but makes an arithmetic error in multiplication, getting 20/120 = 5/24 instead of 20/132",
+    "D": "SETUP ERROR - Student uses only the count of red marbles without considering the changing total, calculating 4/24 = 1/6, perhaps thinking of it as 4 remaining red out of some incorrect denominator"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:46.204Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "3f7079c7-801c-4af5-95fc-56fa82c4490b"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

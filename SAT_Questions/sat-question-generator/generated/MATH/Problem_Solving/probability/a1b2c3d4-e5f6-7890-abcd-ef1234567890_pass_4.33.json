@@ -1,0 +1,59 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "probability"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "A bag contains 8 red marbles and 12 blue marbles. If one marble is selected at random from the bag, what is the probability that the marble is red?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\frac{2}{5}$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{3}{5}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{8}{12}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{12}{20}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find the probability of selecting a red marble, we need to divide the number of red marbles by the total number of marbles.\n\nNumber of red marbles = 8\nNumber of blue marbles = 12\nTotal number of marbles = 8 + 12 = 20\n\nProbability of selecting a red marble = $\\frac{\\text{Number of red marbles}}{\\text{Total number of marbles}} = \\frac{8}{20}$\n\nSimplifying the fraction: $\\frac{8}{20} = \\frac{8 \\div 4}{20 \\div 4} = \\frac{2}{5}$\n\nTherefore, the probability is $\\frac{2}{5}$.",
+  "distractorRationale": {
+    "A": "This is the correct answer: $\\frac{8}{20} = \\frac{2}{5}$",
+    "B": "This represents the probability of selecting a blue marble: $\\frac{12}{20} = \\frac{3}{5}$",
+    "C": "This incorrectly uses only the red and blue marbles as if comparing them directly, ignoring the total",
+    "D": "This represents the probability of selecting a blue marble without simplifying the fraction"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:46:03.897Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "d5f5d84c-f241-433e-a207-4740926785ae"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.333333333333333,
+    "evaluatedAt": "2026-01-08T15:51:31.645Z"
+  }
+}

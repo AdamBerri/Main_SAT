@@ -1,0 +1,59 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.1,
+    "procedural": 4,
+    "computational": 4.2
+  },
+  "stem": "A polling organization conducted a survey to estimate the proportion of registered voters in a state who support a particular ballot measure. The organization surveyed 800 randomly selected registered voters and found that 448 support the measure. The margin of error for this survey is $\\pm 3.5$ percentage points at a 95% confidence level.\n\nBased on this information, which of the following statements is most accurate?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "We can be 95% confident that between 52.5% and 59.5% of all registered voters in the state support the measure.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Exactly 56% of all registered voters in the state support the measure.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "We can be 95% confident that between 448 and 504 registered voters in the state support the measure.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "There is a 95% probability that the true proportion of supporters is exactly 56%.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "First, calculate the sample proportion: $\\frac{448}{800} = 0.56 = 56\\%$.\n\nThe margin of error is $\\pm 3.5$ percentage points, so the confidence interval is:\n$56\\% - 3.5\\% = 52.5\\%$ to $56\\% + 3.5\\% = 59.5\\%$\n\nThis means we can be 95% confident that the true proportion of all registered voters in the state who support the measure is between 52.5% and 59.5%. The confidence interval provides a range of plausible values for the population parameter, not the sample statistic.",
+  "distractorRationale": {
+    "A": "This is correct - it properly interprets the confidence interval as a range for the population proportion.",
+    "B": "This incorrectly treats the sample proportion as the exact population proportion, ignoring uncertainty.",
+    "C": "This confuses the confidence interval for proportions with raw counts, and misapplies the concept to a finite population.",
+    "D": "This misinterprets confidence intervals as giving the probability that the parameter equals a specific value, rather than providing a range of plausible values."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:47:18.343Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "ebb7ffba-953f-46c8-b7df-4f982dd026bd"
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.583333333333333,
+    "evaluatedAt": "2026-01-08T15:52:50.686Z"
+  }
+}

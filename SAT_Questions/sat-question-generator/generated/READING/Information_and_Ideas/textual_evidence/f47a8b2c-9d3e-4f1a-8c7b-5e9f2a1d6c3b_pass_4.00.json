@@ -1,0 +1,63 @@
+{
+  "id": "f47a8b2c-9d3e-4f1a-8c7b-5e9f2a1d6c3b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.1,
+    "linguistic": 4
+  },
+  "stem": "Based on the texts and data, which statement best describes the relationship between urban heat island effects and mitigation strategies?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Individual green infrastructure interventions can completely eliminate urban heat island effects in most cities.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The temperature reductions achieved through comprehensive policy integration exceed the typical temperature increases caused by urban heat islands.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Urban tree canopy coverage is less effective than reflective pavements for reducing urban temperatures.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Green roofs provide the most significant temperature reduction among all individual intervention strategies.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B correctly integrates information from both texts and the data. Text 1 establishes that urban heat islands typically raise temperatures by 2-5°C above rural areas. The data shows that comprehensive policy integration can achieve a 4.1°C reduction, which falls within and can exceed the lower end of the typical UHI temperature increase range. This demonstrates that well-coordinated mitigation strategies can effectively counteract urban heat island effects, supporting the research findings in Text 2 about the importance of combining multiple approaches with policy coordination.",
+  "distractorRationale": {
+    "A": "This overstates the effectiveness of individual interventions. The data shows individual strategies (green roofs: 1.2°C, reflective pavements: 0.8°C) provide modest reductions that wouldn't completely eliminate UHI effects of 2-5°C.",
+    "B": "This is the correct answer.",
+    "C": "This contradicts the data, which shows urban tree canopy (2.1°C reduction) is more effective than reflective pavements (0.8°C reduction).",
+    "D": "This misreads the data. Green roofs (1.2°C) provide less temperature reduction than urban tree canopy (2.1°C) among individual strategies."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:22:11.396Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "460aef4f-e0ca-4e46-966a-94c8760250d6"
+  },
+  "passage": "Text 1\nUrban heat islands (UHIs) represent one of the most significant environmental challenges facing modern cities. These phenomena occur when urban areas experience significantly higher temperatures than their surrounding rural counterparts, primarily due to human activities and the built environment. The proliferation of concrete, asphalt, and other heat-absorbing materials, combined with reduced vegetation and increased energy consumption, creates localized warming effects that can raise urban temperatures by 2-5°C above rural areas. This temperature differential has profound implications for energy consumption, air quality, and public health, particularly during extreme heat events when vulnerable populations face increased risks of heat-related illnesses.\n\nText 2\nA comprehensive analysis of urban heat island mitigation strategies reveals that green infrastructure implementation shows remarkable promise for temperature reduction. Dr. Sarah Chen's research team at Metropolitan University conducted a five-year study examining the effectiveness of various cooling interventions across twelve major cities. Their findings indicate that strategic placement of green roofs, urban forests, and reflective surfaces can significantly ameliorate UHI effects. The study emphasizes that the most successful mitigation efforts combine multiple approaches rather than relying on single interventions. Furthermore, the research demonstrates that community engagement and policy coordination are essential factors in achieving sustained temperature reductions in urban environments.\n\nData from Dr. Chen's Study: Average Temperature Reduction by Intervention Type\n• Green roofs: 1.2°C reduction\n• Urban tree canopy (>30% coverage): 2.1°C reduction\n• Reflective pavements: 0.8°C reduction\n• Combined green infrastructure: 3.4°C reduction\n• Comprehensive policy integration: 4.1°C reduction",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 267,
+    "source": "Urban Environmental Studies Research"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4,
+    "evaluatedAt": "2026-01-08T15:25:22.324Z"
+  }
+}

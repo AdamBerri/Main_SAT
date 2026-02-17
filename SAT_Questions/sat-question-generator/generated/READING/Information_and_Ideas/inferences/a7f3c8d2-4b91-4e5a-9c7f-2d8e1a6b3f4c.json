@@ -1,0 +1,58 @@
+{
+  "id": "a7f3c8d2-4b91-4e5a-9c7f-2d8e1a6b3f4c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "stem": "Based on the passage, which can most reasonably be inferred about second-generation immigrants' attitudes toward language?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Their linguistic rigidity reflected anxiety about eroding community boundaries.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Their concern for language purity stemmed from traditional cultural values.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Their behavior contradicted their parents' expectations regarding cultural preservation.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Their English fluency reduced their need to maintain ethnic identity.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage establishes a causal relationship between the dissolution of ethnic enclaves and the intensification of second-generation linguistic policing, while noting that this behavior 'paradoxically diminished in areas where such enclaves remained geographically intact and socially cohesive.' Park explicitly states that their preoccupation with linguistic purity 'emerged not from tradition but from a profound uncertainty about their position between two worlds—an uncertainty that manifested most acutely when the external markers of community were disappearing.' This directly connects their linguistic rigidity to anxiety about disappearing community boundaries. The inference requires synthesizing the inverse relationship between enclave stability and linguistic anxiety with Park's explanation about uncertainty and vanishing external markers.",
+  "distractorRationale": {
+    "A": "This is the correct answer, as explained above.",
+    "B": "The passage explicitly contradicts this by stating the preoccupation 'emerged not from tradition,' and notes that first-generation immigrants (who would be most connected to traditional values) showed 'remarkable linguistic flexibility' rather than rigidity about language purity.",
+    "C": "While the passage notes behavioral differences between generations, it never suggests that second-generation behavior contradicted parental expectations. The first generation's linguistic flexibility is presented as their own practice, not as an expectation they held for their children. This requires an unsupported assumption about intergenerational conflict.",
+    "D": "This reverses the passage's logic. The passage indicates that despite English fluency and adoption of American customs, second-generation immigrants experienced 'heightened anxiety about cultural authenticity' and became more rigid about ethnic identity markers (language), not less concerned with maintaining them. Their fluency correlates with increased, not reduced, identity concerns."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:01.168Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a8feb0b7-4a51-4465-a36b-6578649bdebc"
+  },
+  "passage": "In the 1920s, sociologist Robert Park observed that immigrant communities in Chicago exhibited what he termed \"social distance\"—a psychological remoteness maintained even amid physical proximity. Park noted that second-generation immigrants, despite fluency in English and adoption of American customs, often experienced heightened anxiety about cultural authenticity. They policed linguistic boundaries within their households with unexpected severity, correcting younger siblings who mixed languages and expressing discomfort when elders used English words. Meanwhile, first-generation immigrants showed remarkable linguistic flexibility, freely code-switching and borrowing terms across languages without apparent concern. Park documented that this reversal intensified in neighborhoods where ethnic enclaves were dissolving due to urban development, yet paradoxically diminished in areas where such enclaves remained geographically intact and socially cohesive. The second generation's preoccupation with linguistic purity, Park suggested, emerged not from tradition but from a profound uncertainty about their position between two worlds—an uncertainty that manifested most acutely when the external markers of community were disappearing.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 162,
+    "source": "Adapted from sociological research on immigrant communities"
+  },
+  "hasImage": false
+}

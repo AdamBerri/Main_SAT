@@ -1,0 +1,62 @@
+{
+  "id": "a7b3c9d2-4e5f-6789-abc1-234567890def",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.1,
+    "linguistic": 1.7
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "has contributed",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "have contributed",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "is contributing",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "was contributing",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The correct answer is B because the subject of the sentence is the compound subject 'Rising ocean temperatures, pollution, and overfishing,' which consists of three separate elements joined by 'and.' This compound subject is plural and therefore requires the plural verb form 'have contributed' rather than the singular 'has contributed.' The verb must agree in number with its subject according to standard subject-verb agreement rules.",
+  "distractorRationale": {
+    "A": "This choice incorrectly uses the singular verb 'has' with a compound plural subject. Students might choose this if they mistakenly identify 'overfishing' as the sole subject rather than recognizing the entire compound subject.",
+    "B": "This is the correct answer - 'have contributed' properly agrees with the compound plural subject.",
+    "C": "This choice uses the wrong tense (present progressive) and the singular form 'is,' which doesn't match the compound plural subject or the context of completed actions.",
+    "D": "This choice uses the wrong tense (past progressive) and the singular form 'was,' which doesn't agree with the compound plural subject and suggests ongoing action in the past rather than completed contribution to current conditions."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:38:27.755Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "0f271cd7-8e1c-4490-8cf4-305e72dad568"
+  },
+  "passage": "Marine biologists studying coral reefs have discovered that these ecosystems, which support approximately 25% of all marine species, are facing unprecedented challenges. Rising ocean temperatures, pollution, and overfishing has contributed to widespread coral bleaching events. Researchers emphasize that immediate conservation efforts are essential to preserve these vital underwater habitats for future generations.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 58,
+    "source": "Marine biology research context"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.071428571428571,
+    "evaluatedAt": "2026-01-08T14:42:52.081Z"
+  }
+}

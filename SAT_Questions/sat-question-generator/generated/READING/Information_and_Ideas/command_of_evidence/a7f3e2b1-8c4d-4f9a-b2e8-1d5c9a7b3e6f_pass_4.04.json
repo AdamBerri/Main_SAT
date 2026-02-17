@@ -1,0 +1,61 @@
+{
+  "id": "a7f3e2b1-8c4d-4f9a-b2e8-1d5c9a7b3e6f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3,
+    "linguistic": 2.9
+  },
+  "stem": "Which quotation from the passage best supports the claim that creativity can improve rather than decline with age?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"certain cognitive abilities like processing speed may decline over time\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"participants over 60 produced work that was rated as more emotionally resonant and technically sophisticated than their earlier pieces\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"older adults often exhibit increased bilateral brain activation during creative tasks\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"The stereotype of the young, tortured artist may make for compelling narratives\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B provides the most direct evidence that creativity can improve with age by presenting specific research findings that older artists produced work rated as superior to their earlier pieces. This concrete evidence of improved quality ('more emotionally resonant and technically sophisticated') directly supports the claim that creativity can improve rather than decline with age.",
+  "distractorRationale": {
+    "A": "This quote actually supports the opposite view by acknowledging that some cognitive abilities do decline with age, making it evidence against rather than for the claim.",
+    "C": "While this describes a neurological difference in older adults during creative tasks, it doesn't provide evidence that creativity actually improves - it only explains a mechanism that might support creativity.",
+    "D": "This quote critiques stereotypes about young artists but doesn't provide evidence that older artists are more creative or that creativity improves with age."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:26:00.638Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "56e8a2a2-e057-40b1-be57-f564565e09af"
+  },
+  "passage": "The notion that creativity diminishes with age has been largely debunked by recent psychological research. While it's true that certain cognitive abilities like processing speed may decline over time, the creative process itself often becomes more refined and purposeful in later years. Dr. Sarah Chen's longitudinal study of 500 artists over two decades found that participants over 60 produced work that was rated as more emotionally resonant and technically sophisticated than their earlier pieces. \"The artists in our study didn't lose their creative edge,\" Chen notes. \"Instead, they developed a deeper understanding of their craft and a clearer vision of what they wanted to express.\" Furthermore, neurological studies reveal that older adults often exhibit increased bilateral brain activation during creative tasks, suggesting they draw upon a broader network of neural resources. The stereotype of the young, tortured artist may make for compelling narratives, but it doesn't reflect the reality of how creativity actually develops across the human lifespan. As Chen's research demonstrates, age can be an asset rather than an obstacle in the creative process.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 187,
+    "source": "Adapted from research on creativity and aging"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.041666666666667,
+    "evaluatedAt": "2026-01-08T14:29:43.293Z"
+  }
+}

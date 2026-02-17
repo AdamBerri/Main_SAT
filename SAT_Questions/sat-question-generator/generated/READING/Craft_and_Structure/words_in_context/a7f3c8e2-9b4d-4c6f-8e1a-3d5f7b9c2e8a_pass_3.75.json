@@ -1,0 +1,63 @@
+{
+  "id": "a7f3c8e2-9b4d-4c6f-8e1a-3d5f7b9c2e8a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 3.9,
+    "linguistic": 4.1
+  },
+  "stem": "As used in the passage, \"plastic\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "synthetic",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "adaptable",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "artificial",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "moldable",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In this context, \"plastic\" means \"adaptable\" or \"flexible.\" The passage describes the historian's analysis as \"adapting fluidly to new archaeological evidence\" and contrasts it with a \"rigid interpretation.\" The word is used in its less common meaning of being capable of change or modification, particularly in response to new circumstances or information. The surrounding context—phrases like \"intellectual flexibility,\" \"readily incorporated,\" and \"malleability of thought\"—all support this interpretation of adaptability rather than any literal, physical meaning of the word.",
+  "distractorRationale": {
+    "A": "\"Synthetic\" refers to something artificially made or manufactured, which doesn't fit the context of describing an intellectual approach to historical analysis.",
+    "B": "This is correct—\"adaptable\" captures the intended meaning of being flexible and capable of change in response to new evidence.",
+    "C": "\"Artificial\" means fake or not genuine, which contradicts the passage's positive portrayal of the historian's approach as strengthening her scholarship.",
+    "D": "While \"moldable\" relates to the physical property of being shaped, the context requires the figurative meaning of intellectual flexibility, making \"adaptable\" more precise."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:20:38.532Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "a06b599b-2f6a-4814-a84e-69e35617c55f"
+  },
+  "passage": "The historian's analysis of the medieval manuscript was remarkably **plastic**, adapting fluidly to new archaeological evidence that emerged during her research. Unlike her predecessor's rigid interpretation, which had remained unchanged for decades despite mounting contradictory findings, her approach demonstrated intellectual flexibility. When carbon dating revealed that certain illuminated pages were created centuries later than previously thought, she readily incorporated this revelation into her thesis, allowing her conclusions to evolve organically. This malleability of thought, rather than representing weakness or indecision, actually strengthened her scholarship by ensuring that her historical narrative remained grounded in the most current and comprehensive understanding of the evidence.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 112,
+    "source": "Academic writing sample"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.75,
+    "evaluatedAt": "2026-01-08T15:24:56.988Z"
+  }
+}

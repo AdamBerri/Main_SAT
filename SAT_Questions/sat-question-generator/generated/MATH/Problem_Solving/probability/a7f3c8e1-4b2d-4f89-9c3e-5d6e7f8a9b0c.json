@@ -1,0 +1,54 @@
+{
+  "id": "a7f3c8e1-4b2d-4f89-9c3e-5d6e7f8a9b0c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "probability"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 2.8,
+    "computational": 3.2
+  },
+  "stem": "A bag contains 5 red marbles, 3 blue marbles, and 2 green marbles. If two marbles are drawn from the bag at random without replacement, what is the probability that both marbles are red?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\frac{1}{9}$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{2}{9}$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{1}{4}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{5}{18}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To find the probability that both marbles drawn are red, we need to calculate the probability of drawing a red marble first, then another red marble.\n\nTotal marbles: $5 + 3 + 2 = 10$\n\nProbability first marble is red: $\\frac{5}{10} = \\frac{1}{2}$\n\nAfter drawing one red marble, there are 4 red marbles left and 9 total marbles remaining.\n\nProbability second marble is red (given first was red): $\\frac{4}{9}$\n\nSince both events must occur, we multiply the probabilities:\n\n$$P(\\text{both red}) = \\frac{5}{10} \\times \\frac{4}{9} = \\frac{20}{90} = \\frac{2}{9}$$\n\nThe answer is $\\frac{2}{9}$.",
+  "distractorRationale": {
+    "A": "CONCEPTUAL ERROR: Student incorrectly adds probabilities instead of multiplying them, calculating 5/10 - 4/9 = 1/9, treating this as if the events were mutually exclusive rather than sequential dependent events.",
+    "B": "CORRECT ANSWER: Properly multiplies (5/10) × (4/9) = 20/90 = 2/9 for dependent events without replacement.",
+    "C": "METHOD ERROR: Student treats the draws as independent events with replacement, calculating (5/10) × (5/10) = 25/100 = 1/4, failing to account for the reduced number of red marbles and total marbles on the second draw.",
+    "D": "SETUP ERROR: Student uses the initial probability of drawing red (5/10) but forgets to account for the second draw entirely, or incorrectly calculates 5/10 × 5/9 = 25/90 = 5/18 by not reducing the numerator after the first draw."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:35:52.916Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "3d63c0fb-6971-4bfb-bf89-d703c2314237"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

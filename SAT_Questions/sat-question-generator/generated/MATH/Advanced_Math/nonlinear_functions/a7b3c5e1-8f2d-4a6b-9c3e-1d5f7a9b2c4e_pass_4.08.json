@@ -1,0 +1,59 @@
+{
+  "id": "a7b3c5e1-8f2d-4a6b-9c3e-1d5f7a9b2c4e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 2.8,
+    "computational": 2.8
+  },
+  "stem": "The function $f$ is defined by $f(x) = 2x^2 - 8x + 6$. Which of the following is equivalent to $f(x + 3)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2x^2 + 4x$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$2x^2 + 4x + 12$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$2x^2 - 2x - 12$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$2x^2 + 12x + 24$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find $f(x + 3)$, substitute $(x + 3)$ for $x$ in the original function:\n\n$f(x + 3) = 2(x + 3)^2 - 8(x + 3) + 6$\n\nExpand $(x + 3)^2$:\n$(x + 3)^2 = x^2 + 6x + 9$\n\nSubstitute:\n$f(x + 3) = 2(x^2 + 6x + 9) - 8(x + 3) + 6$\n$= 2x^2 + 12x + 18 - 8x - 24 + 6$\n$= 2x^2 + 12x - 8x + 18 - 24 + 6$\n$= 2x^2 + 4x + 0$\n$= 2x^2 + 4x$\n\nTherefore, $f(x + 3) = 2x^2 + 4x$.",
+  "distractorRationale": {
+    "A": "This is the correct answer obtained by properly substituting and expanding.",
+    "B": "This results from correctly expanding but making an arithmetic error when combining the constant terms (getting +12 instead of 0).",
+    "C": "This results from an error in expanding $(x + 3)^2$ or incorrectly distributing the coefficient 2.",
+    "D": "This results from incorrectly expanding $(x + 3)^2$ as $x^2 + 9$ instead of $x^2 + 6x + 9$, missing the middle term."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:41:30.983Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "a6e18827-77eb-4490-b36a-1bb7cbd3cf3a"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T15:45:11.436Z"
+  }
+}

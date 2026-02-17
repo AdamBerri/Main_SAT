@@ -1,0 +1,54 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.7,
+    "procedural": 3.7,
+    "computational": 4.2
+  },
+  "stem": "A water storage tank consists of a cylinder with a hemisphere attached to the top. The cylindrical portion has a radius of 6 feet and a height of 15 feet. The hemisphere has the same radius as the cylinder. What is the total volume, in cubic feet, of the water storage tank? (The volume of a sphere is $V = \\frac{4}{3}\\pi r^3$.)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$540\\pi + 144\\pi = 684\\pi$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$540\\pi + 288\\pi = 828\\pi$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$540\\pi + 72\\pi = 612\\pi$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$540\\pi + 144\\pi = 684\\pi$",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "To find the total volume of the water storage tank, I need to calculate the volume of the cylindrical portion and the hemispherical portion separately, then add them together.\n\n**Step 1: Calculate the volume of the cylindrical portion**\n\nThe volume of a cylinder is $V = \\pi r^2 h$, where $r$ is the radius and $h$ is the height.\n\nGiven: $r = 6$ feet and $h = 15$ feet\n\n$V_{\\text{cylinder}} = \\pi (6)^2 (15) = \\pi (36)(15) = 540\\pi$ cubic feet\n\n**Step 2: Calculate the volume of the hemispherical portion**\n\nA hemisphere is half of a sphere. The volume of a sphere is $V = \\frac{4}{3}\\pi r^3$.\n\nTherefore, the volume of a hemisphere is $V = \\frac{1}{2} \\cdot \\frac{4}{3}\\pi r^3 = \\frac{2}{3}\\pi r^3$\n\nGiven: $r = 6$ feet\n\n$V_{\\text{hemisphere}} = \\frac{2}{3}\\pi (6)^3 = \\frac{2}{3}\\pi (216) = \\frac{432\\pi}{3} = 144\\pi$ cubic feet\n\n**Step 3: Calculate the total volume**\n\n$V_{\\text{total}} = V_{\\text{cylinder}} + V_{\\text{hemisphere}} = 540\\pi + 144\\pi = 684\\pi$ cubic feet\n\nCalculated answer: $684\\pi$. This corresponds to choice D: $540\\pi + 144\\pi = 684\\pi$. Therefore, the answer is D.",
+  "distractorRationale": {
+    "A": "This choice is a duplicate of choice D and represents the correct calculation. It shows $540\\pi + 144\\pi = 684\\pi$, which is the sum of the cylinder volume and hemisphere volume.",
+    "B": "Single error: Uses the full sphere volume instead of hemisphere volume. Calculation: Cylinder volume is $\\pi(6)^2(15) = 540\\pi$. Full sphere volume is $\\frac{4}{3}\\pi(6)^3 = \\frac{4}{3}\\pi(216) = \\frac{864\\pi}{3} = 288\\pi$. Total: $540\\pi + 288\\pi = 828\\pi$. Verification: This produces the stated value of $828\\pi$.",
+    "C": "Single error: Calculates hemisphere volume as $\\frac{1}{3}\\pi r^3$ instead of $\\frac{2}{3}\\pi r^3$ (uses cone volume formula coefficient). Calculation: Cylinder volume is $540\\pi$. Incorrect hemisphere: $\\frac{1}{3}\\pi(6)^3 = \\frac{1}{3}\\pi(216) = 72\\pi$. Total: $540\\pi + 72\\pi = 612\\pi$. Verification: This produces the stated value of $612\\pi$.",
+    "D": "This is the correct answer. The cylinder volume is $540\\pi$ cubic feet and the hemisphere volume is $144\\pi$ cubic feet, giving a total of $684\\pi$ cubic feet."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:56.821Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "25eaf5a9-758e-43c3-931a-14d9f7439401"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

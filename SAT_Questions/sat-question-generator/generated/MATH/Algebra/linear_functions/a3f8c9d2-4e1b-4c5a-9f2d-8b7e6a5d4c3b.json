@@ -1,0 +1,54 @@
+{
+  "id": "a3f8c9d2-4e1b-4c5a-9f2d-8b7e6a5d4c3b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 3.1,
+    "computational": 2.7
+  },
+  "stem": "A water tank contains 150 gallons of water. Water is being drained from the tank at a constant rate of 5 gallons per minute. Which of the following functions gives the amount of water $w(t)$, in gallons, remaining in the tank $t$ minutes after draining begins?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$w(t) = 150 - 5t$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$w(t) = 150 + 5t$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$w(t) = 5t - 150$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$w(t) = 5 - 150t$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Since the tank starts with 150 gallons and water is being drained at 5 gallons per minute, the amount remaining decreases over time.\n\nThe initial amount (y-intercept) is 150 gallons when $t = 0$.\n\nThe rate of change (slope) is $-5$ gallons per minute (negative because water is being drained).\n\nUsing the linear function form $w(t) = w_0 + rt$ where $w_0$ is the initial amount and $r$ is the rate:\n$$w(t) = 150 + (-5)t = 150 - 5t$$\n\nWe can verify: After 10 minutes, $w(10) = 150 - 5(10) = 150 - 50 = 100$ gallons, which makes sense.\n\nThe correct answer is A.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "Uses positive slope instead of negative slope: $w(t) = 150 + 5t$. This error occurs when the student fails to recognize that draining water means the amount decreases, so the rate should be negative.",
+    "C": "Reverses the order of the y-intercept and rate term: $w(t) = 5t - 150$. This produces negative values immediately (e.g., at $t=0$, $w(0) = -150$), which is physically impossible and results from confusing the structure of the linear equation.",
+    "D": "Swaps the coefficients, using 5 as the y-intercept and -150 as the coefficient of $t$: $w(t) = 5 - 150t$. This error comes from confusing which value represents the initial amount versus the rate of change."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:44.777Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "c5864895-8138-4174-b524-9f1f86ff185d"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "f47d8e2a-9b3c-4f1a-8d6e-2c5a7b9f1e3d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 3.1,
+    "linguistic": 2.9
+  },
+  "stem": "Which choice best describes the central idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The reintroduction of wolves to Yellowstone National Park demonstrates the effectiveness of species restoration programs.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Rewilding represents an innovative conservation approach that aims to restore large-scale ecosystems through species reintroduction, though it faces certain challenges.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Traditional conservation methods are insufficient for addressing modern environmental problems and should be abandoned.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Critics of rewilding raise valid concerns about conflicts between restored ecosystems and human communities.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B correctly captures the passage's central idea by identifying rewilding as an innovative conservation approach and acknowledging both its goals (restoring ecosystems through species reintroduction) and its challenges. The passage presents rewilding as a new paradigm, explains how it works, provides supporting evidence, and addresses criticisms, making this the most comprehensive and accurate summary of the main argument.",
+  "distractorRationale": {
+    "A": "This choice is too narrow, focusing only on the Yellowstone example, which serves as supporting evidence rather than the central idea of the entire passage.",
+    "B": "This is the correct answer.",
+    "C": "This choice is too extreme and misrepresents the passage's tone. The passage contrasts rewilding with traditional methods but doesn't argue that traditional methods should be abandoned.",
+    "D": "This choice focuses only on the criticisms mentioned in the passage, which represent just one aspect of the discussion rather than the central idea."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:24:36.873Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "e1ef950d-ad5d-4223-ab57-01676571ea50"
+  },
+  "passage": "The concept of \"rewilding\" has gained significant traction among conservationists as a bold approach to environmental restoration. Unlike traditional conservation methods that focus on preserving existing ecosystems, rewilding aims to restore large-scale wilderness areas by reintroducing native species that have been locally extinct. Proponents argue that this strategy can revive natural processes, enhance biodiversity, and create self-sustaining ecosystems that require minimal human intervention. The reintroduction of wolves to Yellowstone National Park serves as a compelling example: their return triggered a cascade of ecological changes, from controlling deer populations to allowing vegetation recovery along riverbanks. Critics, however, worry about potential conflicts with human communities and question whether rewilding projects can succeed in today's fragmented landscapes. Despite these concerns, rewilding represents a paradigm shift toward more ambitious and holistic conservation strategies.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 157,
+    "source": "Environmental science text"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T14:28:51.354Z"
+  }
+}

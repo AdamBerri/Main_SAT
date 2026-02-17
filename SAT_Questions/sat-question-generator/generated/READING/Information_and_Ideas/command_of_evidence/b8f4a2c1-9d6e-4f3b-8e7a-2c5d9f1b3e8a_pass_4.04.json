@@ -1,0 +1,61 @@
+{
+  "id": "b8f4a2c1-9d6e-4f3b-8e7a-2c5d9f1b3e8a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 1.8,
+    "linguistic": 1.7
+  },
+  "stem": "Which quotation best supports the claim that urban gardens strengthen community relationships in Detroit?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"We've turned 200 empty lots into productive green spaces that feed over 1,500 families.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"Before the garden, I barely knew my neighbors. Now we work together every weekend, sharing tools, recipes, and stories.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"A recent study found that urban gardens in Detroit generate an average of $600 worth of produce per plot annually.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"Children learn where food comes from, teenagers gain job skills through our youth programs, and seniors share their agricultural knowledge.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B best supports the claim about strengthening community relationships because it directly describes how the garden transformed a resident's relationship with neighbors from isolation (\"I barely knew my neighbors\") to active collaboration (\"we work together every weekend, sharing tools, recipes, and stories\"). This quotation provides concrete evidence of how urban gardens create social connections and community bonds.",
+  "distractorRationale": {
+    "A": "This quote focuses on the scale and food production benefits of the gardens but doesn't address community relationships or social connections.",
+    "C": "This quote discusses the economic benefits of urban gardens but doesn't provide evidence about strengthening community relationships.",
+    "D": "While this quote mentions intergenerational interaction, it focuses more on educational benefits and knowledge transfer rather than specifically supporting the claim about strengthening community relationships."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:21:19.271Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "6690e515-894b-4d53-832a-0991d3ad233f"
+  },
+  "passage": "The rise of urban gardening has transformed how city residents approach food production and community building. In Detroit, where vacant lots once symbolized economic decline, neighborhood gardens now flourish in spaces that were previously abandoned. \"We've turned 200 empty lots into productive green spaces that feed over 1,500 families,\" reports Maria Santos, coordinator of the Detroit Urban Garden Initiative. These gardens do more than provide fresh produce; they create social connections that strengthen communities. Local resident James Thompson notes, \"Before the garden, I barely knew my neighbors. Now we work together every weekend, sharing tools, recipes, and stories.\" The economic benefits are equally impressive. A recent study found that urban gardens in Detroit generate an average of $600 worth of produce per plot annually, significantly reducing grocery expenses for participating families. Additionally, property values in neighborhoods with community gardens have increased by an average of 8% over the past five years. \"The gardens have become gathering places where people of all ages come together,\" observes community leader Angela Davis. \"Children learn where food comes from, teenagers gain job skills through our youth programs, and seniors share their agricultural knowledge.\" This intergenerational exchange has proven particularly valuable in preserving traditional farming techniques while adapting them to urban environments.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 218
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.041666666666667,
+    "evaluatedAt": "2026-01-08T15:25:06.893Z"
+  }
+}

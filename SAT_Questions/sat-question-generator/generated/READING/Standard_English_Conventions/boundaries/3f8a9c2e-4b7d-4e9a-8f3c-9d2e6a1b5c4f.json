@@ -1,0 +1,58 @@
+{
+  "id": "3f8a9c2e-4b7d-4e9a-8f3c-9d2e6a1b5c4f",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.2,
+    "linguistic": 4.2
+  },
+  "stem": "Which choice best maintains the sentence boundaries in the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "whale songs; these patterns suggest",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "whale songs: these patterns suggest",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "whale songs, and these patterns suggest",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it uses a semicolon to properly join two independent clauses that express parallel, related ideas. The first clause ('Recent advances in acoustic analysis technology have revealed unexpected patterns in whale songs') and the second clause ('these patterns suggest that individual whales may modify their calls based on environmental noise levels') are both complete sentences that present closely related information of equal grammatical weight. A semicolon is the appropriate punctuation mark to connect two independent clauses without a coordinating conjunction when the ideas are parallel and closely related. The relationship here is not one of explanation or elaboration (which would require a colon) but rather of continuation and parallel development of the research findings.",
+  "distractorRationale": {
+    "A": "This choice creates a comma splice, which is an error in Standard English. A comma alone cannot join two independent clauses without a coordinating conjunction (and, but, or, nor, for, so, yet). Both 'Recent advances in acoustic analysis technology have revealed unexpected patterns in whale songs' and 'these patterns suggest that individual whales may modify their calls based on environmental noise levels' are complete independent clauses with subjects and predicates, so they require stronger punctuation than a comma.",
+    "B": "This is the correct answer.",
+    "C": "While a colon can join two independent clauses, it should only be used when the second clause explains, elaborates on, or provides a specific example of what's stated in the first clause. Here, the second clause doesn't explain or elaborate on 'unexpected patterns'—instead, it presents a parallel finding about what those patterns suggest. The relationship is one of continuation rather than explanation, making the semicolon (Choice B) more appropriate than the colon.",
+    "D": "While this choice correctly uses a comma with the coordinating conjunction 'and,' it creates a slightly awkward construction. The demonstrative pronoun 'these' combined with 'and' creates redundancy in the connection between clauses. Additionally, the use of 'and' suggests a simple additive relationship, when the logical flow of ideas (patterns revealed → what patterns suggest) is better served by the more sophisticated parallel structure created by a semicolon. Though grammatically acceptable, this choice is less effective than Choice B for maintaining the professional, academic tone and logical progression of the passage."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:35:58.943Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a0d12428-67cc-4aa6-942d-180e6735c641"
+  },
+  "passage": "Marine biologists have long studied the complex communication systems of cetaceans, particularly focusing on the sophisticated vocalizations of humpback whales. Recent advances in acoustic analysis technology have revealed unexpected patterns in whale songs, these patterns suggest that individual whales may modify their calls based on environmental noise levels. The implications for understanding cetacean cognition are profound, as such adaptive behavior indicates a level of acoustic awareness previously attributed only to humans and certain primates.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 71,
+    "source": "Original passage on marine biology research"
+  },
+  "hasImage": false
+}

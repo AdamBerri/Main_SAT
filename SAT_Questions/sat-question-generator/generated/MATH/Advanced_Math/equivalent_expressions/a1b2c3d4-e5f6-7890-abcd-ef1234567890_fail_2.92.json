@@ -1,0 +1,59 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.1,
+    "procedural": 1,
+    "computational": 1
+  },
+  "stem": "Which of the following expressions is equivalent to $3(x + 4) - 2x$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$x + 12$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$x + 4$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$5x + 4$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$3x + 12 - 2x$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To simplify $3(x + 4) - 2x$, first distribute the 3: $3(x + 4) = 3x + 12$. The expression becomes $3x + 12 - 2x$. Combining like terms: $3x - 2x + 12 = x + 12$. Therefore, the equivalent expression is $x + 12$.",
+  "distractorRationale": {
+    "A": "This is the correct answer obtained by properly distributing and combining like terms.",
+    "B": "This results from incorrectly thinking that $3(x + 4) = 3x + 4$ instead of $3x + 12$.",
+    "C": "This results from adding coefficients instead of subtracting: $3x + 2x = 5x$ rather than $3x - 2x = x$.",
+    "D": "This shows the intermediate step after distribution but before combining like terms, which is not fully simplified."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:39:19.804Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "c30384be-d9de-4025-8707-1ef0eeb4a1b8"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 2.9166666666666665,
+    "evaluatedAt": "2026-01-08T15:44:42.616Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "a7b2c8d5-9f3e-4a1b-8c6d-2e5f7a9b1c3d",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3,
+    "linguistic": 2.9
+  },
+  "stem": "The student wants to emphasize that despite public concerns, coexistence with urban coyotes is both beneficial and achievable. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Although urban coyote populations have surged 300% in recent decades and some residents worry about pet safety, these animals provide valuable rodent control services and can coexist safely with humans through simple preventive measures like securing garbage cans.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Urban coyote populations have increased dramatically, growing by 300% over twenty years, while costly relocation programs have proven ineffective and wildlife experts instead recommend removing food sources.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "While coyotes generally avoid human contact and help control disease-carrying rodents, residents remain concerned about threats to small pets, making wildlife management a complex urban challenge.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Despite resident concerns about pet safety, urban coyotes pose minimal direct threat to people, and relocation efforts have been both expensive and unsuccessful in comparable cities.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A most effectively accomplishes the goal by presenting a balanced structure that acknowledges concerns (population growth and pet safety worries) while emphasizing the benefits (rodent control) and practical solutions (simple preventive measures). This structure supports the thesis that coexistence is both beneficial and achievable by showing that the benefits outweigh the concerns and that solutions exist.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "This choice focuses primarily on population growth and failed relocation efforts without mentioning the benefits of coexistence or addressing how coexistence can be achieved, failing to support the intended emphasis.",
+    "C": "While this mentions benefits (rodent control) and concerns (pet threats), it concludes that wildlife management is 'complex' rather than emphasizing that coexistence is achievable, undermining the intended message.",
+    "D": "This choice addresses concerns and mentions failed relocation but doesn't include the key benefits (rodent control) or practical solutions (preventive measures) that would support the coexistence argument."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:32:36.839Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "f68f15c7-cd2f-41fa-9aef-b4275c4757ac"
+  },
+  "passage": "While researching a report on urban wildlife management, a student has gathered the following information:\n\n• Urban coyote populations have increased by 300% in major cities over the past two decades\n• These animals typically avoid human contact and pose minimal direct threat to people\n• Coyotes help control rodent populations that can spread disease and damage property\n• Some residents express concern about pet safety, particularly for small dogs and cats\n• Wildlife experts recommend securing garbage cans and removing food sources rather than relocation programs\n• Relocation efforts have proven costly and largely ineffective in similar urban environments",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 89,
+    "source": "Student research notes on urban wildlife management"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.291666666666667,
+    "evaluatedAt": "2026-01-08T14:36:32.451Z"
+  }
+}

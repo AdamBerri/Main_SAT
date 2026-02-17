@@ -1,0 +1,57 @@
+{
+  "id": "3f8b4d2a-9c1e-4f3b-8a7d-6e2f1c9b5a4d",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.9,
+    "linguistic": 5
+  },
+  "stem": "Which choice best maintains the sentence boundaries in the underlined portion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "jaws; others use",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "jaws: others use",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "jaws, and others use",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B correctly uses a semicolon to join two independent clauses that express parallel, coordinate ideas about how different species use bioluminescence. The first clause ('Certain species employ luminescent displays to attract prey toward their jaws') and the second clause ('others use light patterns to confuse predators during escape maneuvers') are both complete independent clauses presenting equivalent examples of bioluminescent functions. A semicolon is the appropriate punctuation to connect two closely related independent clauses without a coordinating conjunction, especially when presenting parallel structures or lists of examples. The use of 'others' as the subject of the second clause creates a balanced parallel construction with 'Certain species' in the first clause.",
+  "distractorRationale": {
+    "A": "This choice creates a comma splice, which is a sentence boundary error. A comma alone cannot join two independent clauses unless accompanied by a coordinating conjunction (and, but, or, nor, for, so, yet). Both clauses are complete sentences with their own subjects and predicates, so the comma is insufficient punctuation.",
+    "C": "While a colon can join two independent clauses, it is used when the second clause explains, elaborates on, or provides a specific example of the first clause. Here, the clauses present two parallel examples of different species' behaviors rather than an explanation or elaboration. The relationship is coordinate (equal examples) rather than subordinate (explanation), making the semicolon more appropriate than the colon.",
+    "D": "Though adding the coordinating conjunction 'and' with the comma creates a grammatically correct compound sentence, this choice subtly changes the rhetorical effect and parallel structure. The original construction emphasizes the contrast between different species' strategies through the pronoun 'others' without a conjunction. Adding 'and' makes the connection more additive and less contrastive, and the comma-conjunction combination is less elegant than the semicolon for presenting a series of parallel scientific observations. More importantly, while grammatically acceptable, it's less precise than the semicolon for this particular academic context where parallel examples are being enumerated."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:38.919Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "006a2c2f-c289-42c4-829d-3c04d08a546d"
+  },
+  "passage": "The phenomenon of bioluminescence in deep-sea organisms serves multiple adaptive functions in an environment devoid of sunlight. Certain species employ luminescent displays to attract prey toward their jaws, others use light patterns to confuse predators during escape maneuvers. The anglerfish, perhaps the most iconic example, dangles a bioluminescent lure that contains symbiotic bacteria capable of producing light through chemical reactions. Research has revealed that these bacterial colonies are not merely passive participants; they actively regulate their light output in response to the host organism's metabolic signals.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 89,
+    "source": "Marine biology research summary"
+  },
+  "hasImage": false
+}

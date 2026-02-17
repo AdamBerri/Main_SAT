@@ -1,0 +1,62 @@
+{
+  "id": "a7f3c8d2-9e4b-4c7a-8f1d-2b6e5a9c3d8f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 4.9,
+    "linguistic": 5
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the relationship between early and contemporary research on linguistic relativity?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Contemporary researchers have definitively proven that early theories of linguistic relativity were entirely incorrect.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Modern studies have revealed that language has no measurable impact on cognitive processes, contradicting all previous assumptions.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Current research methods have enabled more sophisticated analysis, leading to qualified rather than absolute conclusions about language's cognitive influence.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Recent investigations have confirmed the original deterministic view but expanded it to include bidirectional effects.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage describes a clear evolution from early \"deterministic assertions\" to contemporary \"nuanced investigations\" that yield \"more circumspect conclusions.\" The text emphasizes that modern researchers use \"sophisticated methodologies\" and have found \"subtle, domain-specific\" effects rather than the broad cognitive disparities proposed by early theorists. The phrase \"current scholarly consensus acknowledges that while language is undeniably influential\" suggests qualified acceptance rather than absolute conclusions, indicating that better research methods have led to more nuanced, conditional findings about linguistic relativity.",
+  "distractorRationale": {
+    "A": "The passage does not suggest early theories were \"entirely incorrect\"—rather, it indicates they were overly deterministic. The text acknowledges language is \"undeniably influential,\" suggesting some validity to earlier ideas.",
+    "B": "This contradicts the passage, which states that language effects are \"subtle\" and \"domain-specific\" but still present. The text explicitly says language \"may influence certain aspects of perception and categorization.\"",
+    "D": "While the passage mentions bidirectional effects, it does not suggest this confirms the \"original deterministic view.\" Instead, it presents a more complex, qualified understanding that moves away from deterministic claims."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:52:12.452Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "95a5e91b-9172-423e-a041-db052f73d0d0"
+  },
+  "passage": "The phenomenon of \"linguistic relativity\" has undergone a remarkable metamorphosis in scholarly discourse, evolving from Sapir and Whorf's deterministic assertions to contemporary nuanced investigations. While early proponents posited that language inexorably shapes cognition—rendering speakers of different languages cognitively disparate—recent empirical studies have yielded more circumspect conclusions. Researchers now employ sophisticated methodologies, including neuroimaging and cross-linguistic behavioral experiments, to disentangle the intricate relationship between linguistic structures and cognitive processes. These investigations have revealed that while language may influence certain aspects of perception and categorization, the effects are often subtle, domain-specific, and subject to individual variation. Moreover, the bidirectional nature of the language-cognition relationship has become increasingly apparent: just as linguistic structures may influence thought patterns, cognitive predispositions appear to shape linguistic evolution. This reciprocal dynamic suggests that the human capacity for abstract reasoning transcends linguistic boundaries, even as specific linguistic features may facilitate or constrain particular cognitive operations. The current scholarly consensus acknowledges that while language is undeniably influential in shaping human experience, it operates within the broader context of universal cognitive architecture.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 186,
+    "source": "Academic discourse on linguistic relativity"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.041666666666667,
+    "evaluatedAt": "2026-01-08T14:57:20.288Z"
+  }
+}

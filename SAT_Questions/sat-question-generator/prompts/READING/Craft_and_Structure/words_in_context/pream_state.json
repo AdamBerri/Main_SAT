@@ -1,0 +1,230 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "config": {
+    "maxIterations": 5,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 0,
+        "passRate": 0,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "No significant errors found",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 0,
+        "passRate": 0,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "No significant errors found",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.864583333333333,
+        "passRate": 0.625,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 5,
+            "exampleErrors": [
+              "Distractors are too easily eliminable through passage context alone rather than testing genuine vocabulary knowledge; choices lack semantic similarity to the correct answer and don't represent plausible student misconceptions",
+              "Distractor B (suffocate) is too plausible and semantically proximate to the correct answer, potentially creating validity concerns; distractor D (overwhelm) is too semantically distant and provides minimal discriminatory power",
+              "Answer choices lack the subtlety and strategic difficulty of official SAT items; B and D are obviously wrong while C and D fail to represent common student errors or genuine misconceptions about word meaning"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Stated difficulty of 4/5 is overestimated; actual difficulty is 2-2.5/5 due to transparent contextual support and easily eliminable distractors that don't create genuine cognitive challenge",
+              "Marked as 5/5 difficulty but actual difficulty is approximately 3-3.5/5; strong contextual clues and straightforward process of elimination make the question easier than stated",
+              "Stated difficulty of 2/5 is miscalibrated upward; actual difficulty is closer to 1/5 (Easy) with weak distractors and excessive contextual support reducing cognitive demand significantly"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Designated answer A (affirm/moderate) is defensible but not unambiguously correct; answer B (found) appears equally or more valid given the passage's emphasis on establishing/instituting authority, creating validity concerns",
+              "Answer key appears incorrect or demonstrably problematic; answer D (use up) may be more defensible than stated answer A (eat) when considering the passage's emphasis on algae depletion and ecological balance"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question format and style match SAT conventions, but deviates significantly in answer choice sophistication, distractor quality, and potential answer key error—answer choices differ too dramatically in meaning rather than representing nuanced synonyms as in official College Board items"
+            ]
+          },
+          {
+            "category": "contextual_scaffolding",
+            "frequency": 1,
+            "exampleErrors": [
+              "Excessive context support and redundant passage confirmation reduce cognitive demand; the surrounding language ('could reinforce, problematize, or undermine') provides such direct scaffolding that context becomes the primary discriminator rather than vocabulary understanding"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.7291666666666665,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, answer_validity",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.703125,
+        "passRate": 0.625,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 5,
+            "exampleErrors": [
+              "All four choices are semantically proximate synonyms for 'sustained' (support/continue/maintain), with none representing a clearly wrong interpretation or common misconception",
+              "Distractors (B: 'notice', D: 'celebrate') rely on subtle semantic parsing rather than targeting genuine student misconceptions about word meaning",
+              "Distractor (B: 'fasten') is too obviously wrong in abstract context ('jazz's place'), barely requiring passage comprehension to eliminate; creates weak discriminative power",
+              "Three of four answer choices (develop, refine, promote, nurture) are virtually identical near-synonyms, clustering semantically similar options that don't effectively separate understanding levels",
+              "Distractors fail to target high-probability student errors like confusing 'productive' with 'abundant' or 'profitable' rather than testing 'yield/output' comprehension"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question stated at 4/5 difficulty but actual difficulty is 2.5/3; passage phrase 'for generations' makes one answer choice substantially more obvious, reducing challenge by ~1.5 points",
+              "Stated 1/5 (easy) is actually easier at 0.5-0.8/5; weak distractors and transparent context create minimal ambiguity, yielding ~95%+ success rate",
+              "Stated 2/5 difficulty but actual difficulty 1.5-1.7/5; phrase 'secure its place' is an idiom with obvious meaning, weak distractors, minimal inference required",
+              "Stated 3/5 but actual difficulty 2.2/5; straightforward synonym task with strong contextual support and obvious answer, ignoring weak distractor (C: 'harvest') that's easily eliminated",
+              "Stated 5/5 but actual difficulty 3-4/5; passage provides exceptionally strong context ('temper the destabilizing effects'), transparent distractors, and minimal problem-solving steps required"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Designated correct answer (C: 'upheld') is not unambiguously superior to alternatives (B: 'prolonged', A: 'nourished'), which are equally defensible given the passage's emphasis on generational duration and cultivation",
+              "Designated answer (A: 'develop') is defensible but not clearly superior to (D: 'nurture') which is directly supported by the synonym 'fostering' in the adjacent sentence",
+              "Correct answer (A: 'examine') lacks unambiguous contextual support; (C: 'control') is arguably more defensible for 'command' in the phrase 'command widespread attention'"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question structure is authentically SAT-like but the answer key is problematic for official College Board standards; context allows reasonable debate between 'attract' and 'control' as meanings for 'command', whereas official SAT items feature unambiguous contextual support for one answer"
+            ]
+          },
+          {
+            "category": "cognitive_load_calibration",
+            "frequency": 0,
+            "exampleErrors": []
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.9583333333333335,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, answer_validity",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.8072916666666665,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 4,
+            "exampleErrors": [
+              "Question rated 4/5 but actual difficulty is 3.2-3.5/5 due to strong contextual clues that compensate for sophisticated vocabulary",
+              "Question rated 5/5 but actual difficulty is 2.5-3/5 because passage explicitly defines the word through parallel structure and synonyms",
+              "Question rated 5/5 but actual difficulty is 3.5-4/5 with too much contextual support and clear elimination paths for true top-percentile difficulty"
+            ]
+          },
+          {
+            "category": "answer_key_errors",
+            "frequency": 2,
+            "exampleErrors": [
+              "Stated correct answer is A (transport) but should be B (communicate) based on passage usage; answer key creates redundancy with adjacent sentence",
+              "Designated answer A (restrict) is problematic; answer choice B (encircle) is arguably more accurate as the primary literal meaning supported by passage language about surrounding and enclosing"
+            ]
+          },
+          {
+            "category": "distractor_design_flaws",
+            "frequency": 1,
+            "exampleErrors": [
+              "Answer choices B and C (seize/capture) are too semantically similar and redundant, wasting opportunity to target distinct misconceptions; missing distractor for stop/cease confusion"
+            ]
+          },
+          {
+            "category": "contextual_scaffolding_excess",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question includes 62-word passage with multiple contextual anchors and explicit parallel structures (e.g., 'arrest the economic autonomy = prevented independent commercial development') that over-support the answer and reduce actual cognitive demand"
+            ]
+          },
+          {
+            "category": "format_authenticity_issues",
+            "frequency": 1,
+            "exampleErrors": [
+              "Answer choices are overly similar in meaning with poor discrimination; lacks sophisticated distractors that represent plausible alternate interpretations, violating SAT principle of testing semantic distinction between related words"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.895833333333333,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, answer_key_errors, distractor_design_flaws",
+      "newPromptVersion": "1.4.0"
+    }
+  ],
+  "currentBestVersion": "1.3.0",
+  "converged": true,
+  "startedAt": "2026-01-08T15:10:22.295Z",
+  "completedAt": "2026-01-09T21:17:40.299Z",
+  "bestTestScore": 3.9583333333333335
+}

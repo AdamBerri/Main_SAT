@@ -1,0 +1,59 @@
+{
+  "id": "f47b8e2d-9c3a-4f1e-b8d7-2e5a9f1c8b6d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "A water tank is being filled at a constant rate. The function $h(t) = 12t + 85$ models the height of water in the tank, in centimeters, after $t$ minutes of filling. At the same time, a second tank with the same capacity is being drained. The height of water in the second tank is given by $g(t) = -8t + 245$, where $t$ is the time in minutes since the filling of the first tank began. If both processes continue at their respective constant rates, at what time will the difference in water heights between the two tanks be exactly 60 centimeters, with the second tank having the greater height?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "4 minutes",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "5 minutes",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "6 minutes",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "8 minutes",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "We need to find when the second tank has a height that is exactly 60 cm greater than the first tank.\n\nThe height difference is: $g(t) - h(t) = (-8t + 245) - (12t + 85) = -8t + 245 - 12t - 85 = -20t + 160$\n\nWe want this difference to equal 60:\n$-20t + 160 = 60$\n$-20t = 60 - 160$\n$-20t = -100$\n$t = 5$\n\nLet's verify: At $t = 5$:\n- First tank: $h(5) = 12(5) + 85 = 60 + 85 = 145$ cm\n- Second tank: $g(5) = -8(5) + 245 = -40 + 245 = 205$ cm\n- Difference: $205 - 145 = 60$ cm ✓\n\nTherefore, at 5 minutes, the second tank will have exactly 60 cm more water than the first tank.",
+  "distractorRationale": {
+    "A": "This results from solving $h(t) - g(t) = 60$ instead of $g(t) - h(t) = 60$, confusing which tank should have the greater height.",
+    "B": "This is the correct answer.",
+    "C": "This results from an algebraic error when combining like terms, getting $-18t + 160 = 60$ instead of $-20t + 160 = 60$.",
+    "D": "This results from setting up the equation as $20t + 160 = 60$, making a sign error when distributing the negative sign."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:33:08.519Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "5dc5d0a8-1fba-4940-b91d-2eb3c59d20ea"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T15:38:30.247Z"
+  }
+}

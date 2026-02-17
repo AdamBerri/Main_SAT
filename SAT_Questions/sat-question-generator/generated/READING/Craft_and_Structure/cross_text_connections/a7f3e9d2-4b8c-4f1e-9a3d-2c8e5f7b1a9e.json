@@ -1,0 +1,58 @@
+{
+  "id": "a7f3e9d2-4b8c-4f1e-9a3d-2c8e5f7b1a9e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.2,
+    "linguistic": 3.8
+  },
+  "stem": "Based on the texts, how would Chen (Text 2) most likely respond to Fernández's argument in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "By proposing that irrigation terminology's shared origins indicate coordinated development of hydrological techniques rather than independent innovation.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "By acknowledging that experimental adaptation produced the technical expertise but questioning whether environmental constraints alone drove this development.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "By agreeing that each community solved water scarcity independently but noting that linguistic evidence reveals subsequent cultural contact.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "By challenging the dating of irrigation networks and suggesting that ceremonial gatherings preceded agricultural innovation.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Chen's evidence directly contradicts Fernández's claim of independent development. Chen shows that shared etymological roots in irrigation terminology and evidence of knowledge-exchange forums indicate these communities coordinated and transmitted technical knowledge rather than each independently solving water challenges through isolated trial and error. The linguistic patterns Chen identifies—shared roots specifically in agricultural/irrigation terms while other vocabulary diverged—demonstrate systematic knowledge transfer, which fundamentally challenges Fernández's independent innovation hypothesis.",
+  "distractorRationale": {
+    "A": "This is the correct answer. Chen's linguistic evidence of shared terminology roots and knowledge-exchange forums directly contradicts Fernández's argument that communities independently developed irrigation expertise.",
+    "B": "This distractor mischaracterizes the disagreement. Chen doesn't accept Fernández's experimental adaptation premise while adding nuance about causes—he provides evidence that challenges the core claim of independent development entirely. His linguistic data suggests coordination, not just different drivers of innovation.",
+    "C": "This distractor is tempting but incorrect. It suggests Chen accepts independent innovation followed by contact, but Chen's evidence of shared etymological roots in irrigation terminology indicates the technical knowledge itself was transmitted between communities, not that they innovated separately and then met. The shared roots suggest coordinated development.",
+    "D": "This distractor invents a challenge not present in Chen's text. Chen makes no claims about the chronology of irrigation networks versus gatherings, nor does he question Fernández's dating. His argument concerns the mechanism of knowledge development (coordinated versus independent), not temporal sequence."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:05.857Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "93e26c88-bc60-480d-89f5-a52b25cc1fec"
+  },
+  "passage": "Text 1\n\nArchaeologist Maria Fernández's excavation of pre-Columbian settlements in coastal Peru has revealed extensive irrigation networks dating to 1500 BCE. These sophisticated channels diverted mountain runoff to agricultural terraces, enabling cultivation in otherwise arid terrain. The engineering precision evident in gradient calculations and water distribution systems suggests these communities possessed advanced hydrological knowledge. Fernández argues that this technical expertise developed through generations of experimental adaptation to environmental constraints, with each community independently solving local water scarcity challenges through trial and error.\n\nText 2\n\nLinguistic anthropologist James Chen has documented striking similarities in agricultural terminology across geographically isolated pre-Columbian societies along South America's Pacific coast. Words for \"irrigation channel,\" \"terrace construction,\" and \"water distribution\" share common etymological roots despite significant phonetic divergence in other vocabulary domains. Chen's comparative analysis of ceremonial texts reveals that these societies participated in periodic gatherings where agricultural innovations were demonstrated and technical knowledge was formally transmitted. Architectural evidence of large amphitheaters near regional boundaries supports the existence of these knowledge-exchange forums.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 186,
+    "source": "Original content based on archaeological and anthropological research"
+  },
+  "hasImage": false
+}

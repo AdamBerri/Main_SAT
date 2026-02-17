@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "probability"
+  },
+  "currentVersion": "1.2.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Math question about probability.\n\nTopics may include:\n- Basic probability calculations\n- Compound events\n- Conditional probability\n- Expected value\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.315Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/MATH/Problem_Solving/probability/schema.json"
+}

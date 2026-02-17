@@ -1,0 +1,185 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "config": {
+    "maxIterations": 5,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 0,
+        "passRate": 0,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "No significant errors found",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 0,
+        "passRate": 0,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "No significant errors found",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.255208333333333,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question stated as 3/5 difficulty but actually 2.2/5 due to explicit thesis statement and clear answer differentiation with minimal inference required",
+              "Question stated as 3/5 difficulty but actually 2.5/5 due to explicit authorial intent signaled by clear directional cues and straightforward answer mapping without nuance"
+            ]
+          },
+          {
+            "category": "authenticity_mismatch",
+            "frequency": 1,
+            "exampleErrors": [
+              "Passage uses specialized academic terminology ('epistemic violence,' 'incommensurable,' 'ideological framework') that exceeds typical SAT vocabulary level and reads more like graduate-level critical theory than authentic College Board material"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.020833333333333,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, authenticity_mismatch",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.166666666666666,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Stated difficulty 3/5 but actual difficulty assessed at 2.5/5 due to explicit signal phrases ('Yet,' 'obscures') that directly highlight author's intent and formulaic argumentative structure",
+              "Stated difficulty 4/5 but actual difficulty closer to 3.5-3.7/5 because clear signal words and strong topic sentence reduce cognitive load despite sophisticated linguistics",
+              "Stated difficulty 2/5 but actual difficulty assessed at 1.5/5 due to explicit thesis in opening paragraphs, minimal inference required, and weak distractors"
+            ]
+          },
+          {
+            "category": "passage_authenticity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Answer choice (29 words) exceeds SAT conventions (10-18 words typical); uses graduate-seminar vocabulary ('ideological apparatus,' 'instruments of legitimation') inappropriate for SAT reading level; lacks the ambiguity balance of authentic SAT questions where multiple options are genuinely competitive"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.3125,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, passage_authenticity",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.161458333333334,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 3.2/5 due to exceptionally clear thesis statement and unambiguous correct answer that requires only surface-level comprehension",
+              "Question stated as 5/5 difficulty but actual difficulty is 3/5 because main purpose is explicitly stated in opening, making it a recognition task rather than complex reasoning",
+              "Question stated as 3/5 difficulty but actual difficulty is 2/5 because passage explicitly signals purpose with clear topic sentence and weak distractors allow easy elimination"
+            ]
+          },
+          {
+            "category": "explicit_thesis_problem",
+            "frequency": 3,
+            "exampleErrors": [
+              "Passage opens with explicit roadmap ('This framing...obscures a more complex reality') and closing reinforces purpose, eliminating need for inference",
+              "Author's thesis is stated explicitly in opening and reinforced throughout, making it a straightforward recognition task rather than inference",
+              "Passage has minimal inference required because purpose is directly stated ('This account...overlooks crucial contributions')"
+            ]
+          },
+          {
+            "category": "weak_answer_discrimination",
+            "frequency": 3,
+            "exampleErrors": [
+              "Correct answer B is substantially superior to all alternatives with nearly verbatim match to passage statements, while other choices are easily eliminated",
+              "Answer A mirrors thesis almost verbatim with minimal gap between surface reading and correct answer, creating dramatic superiority over weak distractors",
+              "Only one viable answer remains after elimination, with distractors that focus on narrow details, are too extreme, or contradict the author's purpose"
+            ]
+          },
+          {
+            "category": "insufficient_cognitive_demand",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question requires only single step (identify main claim) with no multi-step logical reasoning or need to synthesize competing interpretations",
+              "Students can answer by identifying topic and concluding sentences alone without evaluating multiple competing purposes",
+              "Cognitive load reality shows 75-85% success rate when question was calibrated for 60-70%, indicating insufficient difficulty for claimed level"
+            ]
+          },
+          {
+            "category": "transparent_passage_structure",
+            "frequency": 3,
+            "exampleErrors": [
+              "Sophisticated academic context creates appearance of difficulty that passage's linguistic clarity and transparent meaning undermine",
+              "Passage uses clear, accessible vocabulary with linear argument structure that is explicit rather than embedded or implicit",
+              "Technical vocabulary is present but context-dependent, with complex sentence structures but transparent meaning that is not obscured by dense prose"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.270833333333333,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, explicit_thesis_problem, weak_answer_discrimination",
+      "newPromptVersion": "1.4.0"
+    }
+  ],
+  "currentBestVersion": "1.3.0",
+  "converged": true,
+  "startedAt": "2026-01-08T15:11:32.771Z",
+  "completedAt": "2026-01-09T21:03:49.907Z",
+  "bestTestScore": 4.3125
+}

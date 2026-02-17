@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "currentVersion": "1.3.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Math question about lines, angles, and their properties.\n\nTopics may include:\n- Parallel lines cut by transversals\n- Angle relationships (complementary, supplementary, vertical)\n- Angle measures in geometric figures\n\nConsider whether an image is needed.\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.316Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/MATH/Geometry_Trig/lines_angles/schema.json"
+}

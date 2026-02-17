@@ -1,0 +1,62 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.1,
+    "procedural": 1,
+    "linguistic": 1
+  },
+  "stem": "The author's main purpose in this passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "explain the historical origins of the 8x8 water rule.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "challenge a widely accepted health recommendation.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "describe the importance of staying properly hydrated.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "compare different methods for monitoring water intake.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The author's main purpose is to challenge the widely accepted belief that drinking eight glasses of water daily is necessary. The passage begins by stating that this popular advice \"lacks scientific support\" and goes on to explain why the 8x8 rule is an \"oversimplification.\" The author's intent is clearly to question and debunk this common health recommendation by providing evidence against it.",
+  "distractorRationale": {
+    "A": "While the author mentions the 1945 origins of the rule, this historical information serves as supporting evidence rather than the main purpose of the passage.",
+    "C": "The author acknowledges that hydration is important, but this is not the main focus. The passage is primarily concerned with questioning the specific eight-glass recommendation.",
+    "D": "The passage briefly mentions monitoring urine color as one indicator, but comparing different monitoring methods is not the central purpose of the text."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:26:03.280Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "acd89e7f-e9e1-40e1-8d1f-7da22ae20aa5"
+  },
+  "passage": "Many people believe that drinking eight glasses of water daily is essential for good health, but this popular advice lacks scientific support. The \"8x8 rule\"—eight 8-ounce glasses per day—appears to have originated from a 1945 recommendation that has been misinterpreted over time. The original guidance included water from all sources, including food, which provides about 20% of our daily fluid intake. Most healthy adults can simply drink when thirsty and monitor their urine color as an indicator of hydration. While staying hydrated is important, the rigid eight-glass requirement is an oversimplification that doesn't account for individual differences in body size, activity level, or climate.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 118,
+    "source": "Health and wellness article"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.666666666666667,
+    "evaluatedAt": "2026-01-08T15:31:39.361Z"
+  }
+}

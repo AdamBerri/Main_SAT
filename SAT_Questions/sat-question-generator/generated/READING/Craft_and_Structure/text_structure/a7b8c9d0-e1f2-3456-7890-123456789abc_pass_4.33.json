@@ -1,0 +1,62 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-123456789abc",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 1.9,
+    "linguistic": 2.2
+  },
+  "stem": "Which choice best describes the overall structure of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It presents a problem, analyzes multiple causes, and describes potential solutions.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "It compares the effects of different environmental threats on bee populations.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "It traces the chronological development of bee conservation efforts over time.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It argues for one primary cause of bee decline while dismissing alternative explanations.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage follows a clear problem-cause-solution structure. It begins by identifying the problem (decline of bee populations), then systematically analyzes multiple contributing causes (habitat loss, pesticides, climate change, and parasites/diseases), and concludes by describing various solutions being implemented (conservation efforts, habitat creation, scientific research). The organizational markers include 'First,' 'Additionally,' 'Finally,' and 'To address this crisis,' which signal the transitions between causes and from problems to solutions.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it accurately identifies the problem-cause-solution structure.",
+    "B": "This is incorrect because the passage doesn't compare different threats; instead, it lists multiple causes that work together to create the problem.",
+    "C": "This is incorrect because the passage doesn't present information in chronological order or trace historical development over time.",
+    "D": "This is incorrect because the passage presents multiple causes rather than arguing for one primary cause, and it doesn't dismiss any explanations."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:56:49.608Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "1c10d98d-7de5-40e3-9d4b-e63868f4b4a2"
+  },
+  "passage": "The decline of bee populations worldwide has become an urgent environmental concern, with potentially devastating consequences for agriculture and ecosystems. Scientists have identified several interconnected factors contributing to this alarming trend. First, habitat loss due to urban development and industrial farming has eliminated many of the wildflower meadows and diverse plant communities that bees depend on for food. Additionally, the widespread use of pesticides, particularly neonicotinoids, has been shown to impair bees' navigation abilities and weaken their immune systems. Climate change further compounds these problems by disrupting flowering schedules and creating unpredictable weather patterns that interfere with bees' foraging cycles. Finally, parasites and diseases, such as the varroa mite and various viral infections, have spread rapidly through weakened bee colonies, often proving fatal. To address this crisis, researchers and policymakers are implementing a multi-pronged approach. Conservation efforts focus on creating pollinator-friendly habitats by establishing wildflower corridors and reducing pesticide use in agricultural areas. Meanwhile, scientists are developing more resistant bee breeds and improved treatment methods for parasites and diseases. These combined strategies offer hope for reversing the decline and ensuring the survival of these crucial pollinators.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 198
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.333333333333333,
+    "evaluatedAt": "2026-01-08T15:02:56.818Z"
+  }
+}

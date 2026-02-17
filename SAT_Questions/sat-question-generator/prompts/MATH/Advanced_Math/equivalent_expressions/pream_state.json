@@ -1,0 +1,201 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 3.984374999999999,
+        "passRate": 0.4375,
+        "errorCategories": [
+          {
+            "category": "incorrect_answer_key",
+            "frequency": 9,
+            "exampleErrors": [
+              "The designated correct answer C (6) is INCORRECT. The correct answer should be 4, which is not among the given options.",
+              "The designated correct answer (A: $x^2 - 2x - 14$) is mathematically INCORRECT based on the given expression. The correct answer should be $x^2 - 14$.",
+              "The correct answer is B) 21, not C) 27. The calculation $(a+b)^c - abc = 27 - 6 = 21$ is correct but contradicts the answer key."
+            ]
+          },
+          {
+            "category": "missing_correct_answer",
+            "frequency": 4,
+            "exampleErrors": [
+              "None of the answer choices match the correct simplification of $x^2 - 18$. A knowledgeable student performing correct algebra would not find their answer among the choices.",
+              "The correct answer should be $x^2 - 12$, which does not appear among the choices.",
+              "The algebraically correct answer is $2x - 19$, which is NOT among the given choices."
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 4,
+            "exampleErrors": [
+              "Stated difficulty 5/5 vs Actual 2.5-3/5. This is a routine factoring problem with small integers, not a hard question. The rating is off by approximately 2 full difficulty points.",
+              "The stated difficulty of 3/5 is slightly higher than actual. This is more appropriately calibrated at 2.5/5 as it involves straightforward algebraic manipulation.",
+              "SIGNIFICANTLY MISCALIBRATED. Stated 5/5 suggests top 10-15% success rate, but actual difficulty is 2.5/5 where 60-70% would answer correctly."
+            ]
+          },
+          {
+            "category": "authenticity_issues",
+            "frequency": 1,
+            "exampleErrors": [
+              "Authenticity Score: 4/10. This reads more like computational algebra drill than an SAT question. Excessive computational complexity and nested factorization steps don't match SAT style.",
+              "The question relies too heavily on mechanical calculation rather than mathematical reasoning, which is the hallmark of authentic difficult SAT questions.",
+              "The expression $(a+b)^c - abc$ feels artificially constructed. SAT questions typically have more natural mathematical contexts."
+            ]
+          },
+          {
+            "category": "distractor_quality_issues",
+            "frequency": 1,
+            "exampleErrors": [
+              "Mathematical errors in rationales: Choice A claims $abc + (a+b+c) = 15$ but actually equals 12. Choice D second rationale gives 15 not 33.",
+              "Weak error targeting - none of the distractors target common factoring errors like wrong root identification or order of operations mistakes.",
+              "Implausible error paths - why would students calculate $(a+b+c)^2 - 3$? This has no connection to the given expression."
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.90625,
+        "passRate": 0.75
+      },
+      "improvementMade": "Addressed: incorrect_answer_key, missing_correct_answer, difficulty_miscalibration",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 3.752777777777778,
+        "passRate": 0.3333333333333333,
+        "errorCategories": [
+          {
+            "category": "mathematical_correctness_errors",
+            "frequency": 10,
+            "exampleErrors": [
+              "The correct simplification yields x² - 14, but the designated answer A (x² - 2x - 14) includes an erroneous -2x term that cannot appear since -5x + 5x = 0",
+              "None of the provided answer choices match the correct answer of x² - 14, making the question invalid",
+              "The explanation calculates b + c = 1 + (-6) = -3, but this is arithmetically incorrect: 1 + (-6) = -5"
+            ]
+          },
+          {
+            "category": "answer_key_validity_failures",
+            "frequency": 7,
+            "exampleErrors": [
+              "The designated correct answer is mathematically incorrect for the question as written - a knowledgeable student would find no matching answer choice",
+              "The explanation itself acknowledges the error multiple times, noting 'this doesn't match choice A' and suggesting the question should be corrected",
+              "Answer Choice A is definitively INCORRECT and should be removed from any test bank or corrected because it does not have a valid correct answer"
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 4,
+            "exampleErrors": [
+              "Stated difficulty 3/5 is overcalibrated - this straightforward algebraic simplification should be rated 2.0-2.3/5 as it requires only basic Algebra I skills",
+              "Difficulty 5/5 rating is dramatically inflated for a routine problem that 70-80% of test-takers would answer correctly - should be 2/5",
+              "The stated difficulty overestimates the challenge as there are no conceptual hurdles, just straightforward algebra that well-prepared students execute routinely"
+            ]
+          },
+          {
+            "category": "distractor_construction_flaws",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractor B has a compound, unclear error pathway - to get -3x requires a convoluted error path that's not explained consistently",
+              "Distractor D has extremely convoluted rationale involving multiple compounding errors that are inconsistent and implausible - no student would make this specific sequence of mistakes",
+              "The rationale is arithmetically inconsistent with the distractor provided - the error path described doesn't actually lead to the stated answer choice"
+            ]
+          },
+          {
+            "category": "explanation_quality_issues",
+            "frequency": 2,
+            "exampleErrors": [
+              "The explanation contains self-referential metacommentary like 'I need to correct my answer choices' and multiple visible recalculation attempts that should never appear in student-facing content",
+              "The explanation shows visible confusion with multiple restarts ('Wait, let me recalculate') and ends with unresolved contradictions, breaking the fourth wall"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: mathematical_correctness_errors, answer_key_validity_failures, difficulty_miscalibration",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.863095238095238,
+        "passRate": 0.5714285714285714,
+        "errorCategories": [
+          {
+            "category": "difficulty_calibration",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 2.5/5 because both factorizations are provided explicitly, requiring only mechanical substitution and cancellation rather than independent factorization",
+              "Question stated as 3/5 difficulty but actual difficulty is 2.5/5 because it involves only straightforward FOIL expansion and distribution with no conceptual obstacles or strategic choices required",
+              "Question stated as 4/5 difficulty but actual difficulty is 3.5/4.0 because while it requires pattern transfer and algebraic manipulation, the steps are relatively sequential and transparent to strong algebra students"
+            ]
+          },
+          {
+            "category": "answer_key_mismatch",
+            "frequency": 3,
+            "exampleErrors": [
+              "The explanation correctly calculates answer as x² - 14 (x terms cancel: -5x + 5x = 0), but designated correct answer is A) x² - 2x - 14, which contains an unexplained -2x term that has no mathematical basis",
+              "The correct simplification of (x+3)(x-2) - (x-1)(x+4) equals -2x - 2, but designated answer is A) -2x - 10, which would require a completely different expression to be correct",
+              "The explanation's own work produces x² - 14 and correctly shows that x terms cancel, yet still selects answer choice A) x² - 2x - 14, directly contradicting its own calculation"
+            ]
+          },
+          {
+            "category": "distractor_analysis",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor choice C targets sign-distribution errors but requires multiple independent errors (both wrong x² coefficient AND wrong constant term -10 vs -14), making it lack pedagogical clarity; Distractor D has similarly vague rationale stating 'another error leading to +8x' without specifying what went wrong, reducing discriminative value"
+            ]
+          },
+          {
+            "category": "explanation_clarity",
+            "frequency": 1,
+            "exampleErrors": [
+              "The explanation states 'Wait, let me recalculate...' suggesting recognition of an inconsistency between the calculated work (x² - 14) and the selected answer (x² - 2x - 14), but then fails to resolve the contradiction properly, leaving the mathematical error unaddressed"
+            ]
+          },
+          {
+            "category": "procedural_correctness",
+            "frequency": 0,
+            "exampleErrors": []
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: difficulty_calibration, answer_key_mismatch, distractor_analysis",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T19:49:18.366Z",
+  "completedAt": "2026-01-09T20:17:43.236Z",
+  "bestTestScore": 0
+}

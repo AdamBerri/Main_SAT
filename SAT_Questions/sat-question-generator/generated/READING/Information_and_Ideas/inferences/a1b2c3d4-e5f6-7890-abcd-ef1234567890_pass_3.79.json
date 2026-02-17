@@ -1,0 +1,62 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.7,
+    "procedural": 2,
+    "linguistic": 2.1
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about Maria?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "She has previous experience working with animals from another job.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "She is Dr. Peterson's relative, which explains her rapid advancement.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "She applied for the assistant coordinator position that was announced.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "She is the only volunteer who has worked at the shelter for less than six months.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage provides several clues that support the inference that Maria has previous animal experience. She was promoted from administrative work to animal care in just three weeks (when the typical requirement is six months), was trusted with medical treatments and facility keys by her second month, and became someone that experienced volunteers sought out for advice about handling difficult animals. This rapid progression and the trust placed in her by both the director and other volunteers strongly suggests she brought relevant experience from elsewhere, as her exceptional advancement cannot be explained by her brief time at this particular shelter alone.",
+  "distractorRationale": {
+    "A": "This is the correct answer - Maria's unusually rapid advancement strongly suggests prior experience.",
+    "B": "There is no evidence in the passage to suggest any family relationship between Maria and Dr. Peterson.",
+    "C": "The passage states that staff members suggested Maria should apply, but does not indicate whether she actually applied.",
+    "D": "The passage doesn't provide information about how long other volunteers have worked there, only that 'some' have been there over a year."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:22:14.245Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "dc68b4e8-9a65-4e7f-9703-6c6fb13b12e7"
+  },
+  "passage": "When Maria first started working at the local animal shelter, she was assigned to the administrative office, filing paperwork and answering phones. The shelter director, Dr. Peterson, mentioned that volunteers typically needed at least six months of experience before being allowed to work directly with the animals. However, after just three weeks, Dr. Peterson asked Maria to help with the evening feeding routine. By her second month, she was assisting with medical treatments and had been given her own set of keys to the facility. The other volunteers, some of whom had been there for over a year, began asking Maria for advice about handling difficult animals. Last week, Dr. Peterson announced that the shelter would be hiring a new assistant coordinator position, and several staff members suggested that Maria should apply.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 142
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.7916666666666665,
+    "evaluatedAt": "2026-01-08T15:26:29.812Z"
+  }
+}

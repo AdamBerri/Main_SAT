@@ -1,0 +1,61 @@
+{
+  "id": "a7b8c9d0-1234-5678-9abc-def012345678",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 1.8,
+    "linguistic": 2.1
+  },
+  "stem": "Which choice best describes the central claim of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Multitasking reduces productivity despite popular beliefs to the contrary.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Digital culture has fundamentally changed how people approach work tasks.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Cognitive research has revealed new insights about brain function during task-switching.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "People who focus on individual tasks complete their work with higher accuracy.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage's central claim is that multitasking actually reduces productivity, contrary to the widespread belief that it enhances it. The author begins by stating this belief has been 'thoroughly debunked,' then explains the mechanism (task-switching creates cognitive overhead), provides evidence (studies showing focused work is faster and more accurate), and concludes by reinforcing that sustained attention to individual tasks is most effective. Choice A captures this main argument perfectly.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it captures the passage's main argument.",
+    "B": "This choice is too broad and focuses on a supporting detail rather than the central claim about multitasking's ineffectiveness.",
+    "C": "This choice is too narrow, focusing only on the research findings rather than the broader argument about multitasking and productivity.",
+    "D": "This choice presents a supporting detail from the studies mentioned, but misses the main point about multitasking being counterproductive."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:24:50.964Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "b5691870-55f3-4fd9-9c80-1e348851d942"
+  },
+  "passage": "The widespread belief that multitasking enhances productivity has been thoroughly debunked by cognitive research. When people attempt to perform multiple tasks simultaneously, their brains actually engage in rapid task-switching rather than true parallel processing. This constant switching creates a \"cognitive overhead\" that reduces efficiency and increases error rates. Studies consistently show that individuals who focus on one task at a time complete their work faster and with higher accuracy than those who divide their attention. The evidence is clear: despite our digital culture's emphasis on doing more at once, sustained attention to individual tasks remains the most effective approach to complex work.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 112
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.208333333333333,
+    "evaluatedAt": "2026-01-08T14:28:51.355Z"
+  }
+}

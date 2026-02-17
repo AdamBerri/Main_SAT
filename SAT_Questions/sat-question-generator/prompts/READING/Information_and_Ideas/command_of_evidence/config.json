@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "currentVersion": "1.3.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Reading question that tests the student's ability to identify textual evidence supporting a claim.\n\nThe passage should:\n- Make a claim or support a particular interpretation\n- Contain specific evidence (quotes, data, examples) that supports the main point\n\nThe question should:\n- Ask which quote/evidence \"best supports\" a given claim\n- Require students to evaluate which evidence is most relevant\n- Have distractors that are from the passage but don't support the specific claim\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.312Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/READING/Information_and_Ideas/command_of_evidence/schema.json"
+}

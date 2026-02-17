@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "currentVersion": "1.2.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Math question about linear functions and their properties.\n\nThe question may test:\n- Slope and y-intercept interpretation\n- Rate of change in context\n- Linear function notation f(x)\n- Graphical representation of linear functions\n\nThe scenario should be realistic and the function properties should be clear.\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.314Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/MATH/Algebra/linear_functions/schema.json"
+}

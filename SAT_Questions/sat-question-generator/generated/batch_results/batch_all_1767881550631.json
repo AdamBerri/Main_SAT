@@ -1,0 +1,171 @@
+{
+  "batchId": "batch_all_1767881550631",
+  "startedAt": "2026-01-08T14:12:30.631Z",
+  "completedAt": "2026-01-08T14:21:32.905Z",
+  "totalGenerated": 0,
+  "totalPassed": 0,
+  "byTopic": {
+    "READING/Standard_English_Conventions/boundaries": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Standard_English_Conventions/form_structure_sense": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Algebra/linear_equations": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Algebra/linear_functions": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Algebra/systems_of_equations": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Algebra/linear_inequalities": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Advanced_Math/equivalent_expressions": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Advanced_Math/nonlinear_equations": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Advanced_Math/nonlinear_functions": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/ratios_rates": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/percentages": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/units": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/data_distributions": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/probability": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/inference": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/evaluating_claims": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/two_variable_data": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Geometry_Trig/area_volume": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Geometry_Trig/lines_angles": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Geometry_Trig/triangles": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Geometry_Trig/circles": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Geometry_Trig/right_triangles": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    }
+  },
+  "errors": [
+    {
+      "topic": "READING/Information_and_Ideas/command_of_evidence",
+      "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed the rate limit for your organization (64df730b-2da2-465c-94f0-82b8a0b6ab76) of 8,000 output tokens per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CWv44FXthpvzSbiMq2nxC\"}",
+      "timestamp": "2026-01-08T14:16:50.658Z"
+    },
+    {
+      "topic": "READING/Information_and_Ideas/inferences",
+      "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed the rate limit for your organization (64df730b-2da2-465c-94f0-82b8a0b6ab76) of 8,000 output tokens per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CWv46grwr1B1b2qe1ApYx\"}",
+      "timestamp": "2026-01-08T14:17:23.711Z"
+    },
+    {
+      "topic": "READING/Craft_and_Structure/words_in_context",
+      "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"Number of concurrent connections has exceeded your rate limit. Please try again later or contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CWv4D3rvNkCfCmQSbNiEm\"}",
+      "timestamp": "2026-01-08T14:18:49.987Z"
+    },
+    {
+      "topic": "READING/Information_and_Ideas/central_ideas",
+      "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed the rate limit for your organization (64df730b-2da2-465c-94f0-82b8a0b6ab76) of 8,000 output tokens per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CWv4Fbk8E1Eej1icXBEQw\"}",
+      "timestamp": "2026-01-08T14:19:25.223Z"
+    },
+    {
+      "topic": "READING/Information_and_Ideas/textual_evidence",
+      "error": "429 {\"type\":\"error\",\"error\":{\"type\":\"rate_limit_error\",\"message\":\"This request would exceed the rate limit for your organization (64df730b-2da2-465c-94f0-82b8a0b6ab76) of 8,000 output tokens per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.\"},\"request_id\":\"req_011CWv4GUSN2vcoftMFjSkJ4\"}",
+      "timestamp": "2026-01-08T14:19:36.433Z"
+    },
+    {
+      "topic": "READING/Craft_and_Structure/text_structure",
+      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CWv4Q93GtopPAxPEMnwRH\"}",
+      "timestamp": "2026-01-08T14:21:20.391Z"
+    },
+    {
+      "topic": "READING/Expression_of_Ideas/rhetorical_synthesis",
+      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CWv4QHzXjBZk3WbTUdcSn\"}",
+      "timestamp": "2026-01-08T14:21:22.499Z"
+    },
+    {
+      "topic": "READING/Expression_of_Ideas/transitions",
+      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CWv4QP5sNet1jsdHZMaK3\"}",
+      "timestamp": "2026-01-08T14:21:23.664Z"
+    },
+    {
+      "topic": "READING/Craft_and_Structure/cross_text_connections",
+      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CWv4QxwqE42cVJwR7fzN8\"}",
+      "timestamp": "2026-01-08T14:21:31.591Z"
+    },
+    {
+      "topic": "READING/Craft_and_Structure/overall_purpose",
+      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CWv4R4ZBFxpDQ1m1abZwX\"}",
+      "timestamp": "2026-01-08T14:21:32.905Z"
+    }
+  ]
+}

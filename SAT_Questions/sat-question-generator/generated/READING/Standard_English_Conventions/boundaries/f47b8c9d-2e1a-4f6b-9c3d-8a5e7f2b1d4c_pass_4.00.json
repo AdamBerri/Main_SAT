@@ -1,0 +1,63 @@
+{
+  "id": "f47b8c9d-2e1a-4f6b-9c3d-8a5e7f2b1d4c",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.7,
+    "procedural": 3.1,
+    "linguistic": 3
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Therefore,",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Therefore;",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Therefore",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Therefore, however,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A is correct because it properly begins a new sentence with 'Therefore,' followed by a comma. The passage contains a comma splice error in the first sentence ('Marine biologists have long studied the migration patterns of humpback whales, these massive creatures travel thousands of miles'). The blank requires a transitional word that logically connects the previous information about whales deviating from routes to the researchers' beliefs about why this occurs. 'Therefore,' correctly introduces this causal relationship and begins an independent clause.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This choice incorrectly uses a semicolon after 'Therefore.' Semicolons are used to separate independent clauses, not to follow introductory words or transitional phrases.",
+    "C": "This choice lacks proper punctuation after 'Therefore.' When a transitional word begins a sentence, it should be followed by a comma to separate it from the main clause.",
+    "D": "This choice creates redundancy and awkward phrasing by using both 'Therefore' and 'however,' which express contradictory logical relationships (causation vs. contrast)."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:32:09.724Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "6c6cb001-e5e1-44dd-b332-a9e533193fec"
+  },
+  "passage": "Marine biologists have long studied the migration patterns of humpback whales, these massive creatures travel thousands of miles between feeding and breeding grounds. Recent satellite tracking technology has revealed that some whales deviate significantly from traditional routes. _____ researchers believe this behavioral change may be linked to rising ocean temperatures and shifting food sources.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 58,
+    "source": "Academic writing sample"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4,
+    "evaluatedAt": "2026-01-08T15:37:57.405Z"
+  }
+}

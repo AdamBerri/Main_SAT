@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "currentVersion": "1.2.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Reading question with paired texts or a text with notes/data.\n\nThe passage should include:\n- Primary text with supplementary information (chart, graph, or additional text)\n- A clear relationship between the elements\n\nThe question should:\n- Ask how information from different sources relates\n- Test integration of textual and quantitative evidence\n- Have distractors that misinterpret the relationship\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.312Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/READING/Information_and_Ideas/textual_evidence/schema.json"
+}

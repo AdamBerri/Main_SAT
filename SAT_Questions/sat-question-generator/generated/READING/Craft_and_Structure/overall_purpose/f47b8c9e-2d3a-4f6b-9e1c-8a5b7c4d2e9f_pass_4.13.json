@@ -1,0 +1,62 @@
+{
+  "id": "f47b8c9e-2d3a-4f6b-9e1c-8a5b7c4d2e9f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "linguistic": 1
+  },
+  "stem": "The main purpose of this passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "explain the benefits of organic farming methods.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "challenge a widely held assumption about organic food.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "describe different types of environmental problems.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "promote conventional farming over organic farming.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The author's main purpose is to challenge the common assumption that organic food is always better for the environment. The passage begins by identifying this widespread belief and then systematically presents evidence that contradicts it, including issues with land use, water pollution, and carbon emissions. The author concludes by suggesting alternative approaches, demonstrating that the intent is to question and complicate the simple assumption rather than to promote one farming method over another.",
+  "distractorRationale": {
+    "A": "This choice confuses the topic (organic farming) with the purpose. While the passage discusses organic farming, it actually points out problems with it rather than explaining benefits.",
+    "C": "This choice focuses on what the passage contains (environmental problems) rather than why the author wrote it. The environmental problems are evidence used to support the main purpose of challenging assumptions.",
+    "D": "This choice misidentifies the author's intent. The passage critiques organic farming but doesn't actively promote conventional farming as superior; instead, it suggests considering multiple factors when making food choices."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:58:02.465Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "feed3d35-88ad-406e-9ed6-c89ecf581f2e"
+  },
+  "passage": "Many people assume that eating organic food is always better for the environment, but this common belief deserves closer examination. While organic farming does avoid synthetic pesticides and fertilizers, it often requires more land to produce the same amount of food as conventional farming. This means that organic agriculture can actually lead to more deforestation and habitat destruction. Additionally, organic farms frequently rely on natural fertilizers like manure, which can create water pollution problems when not managed properly. The transportation of organic products over long distances also generates significant carbon emissions. Rather than automatically choosing organic, consumers should consider factors like local sourcing, seasonal eating, and reduced food waste as equally important ways to minimize their environmental impact.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 132,
+    "source": "Environmental science article"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.125,
+    "evaluatedAt": "2026-01-08T15:03:16.758Z"
+  }
+}

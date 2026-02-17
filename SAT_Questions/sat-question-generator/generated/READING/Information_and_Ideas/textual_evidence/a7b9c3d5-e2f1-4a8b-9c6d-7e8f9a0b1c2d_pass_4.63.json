@@ -1,0 +1,61 @@
+{
+  "id": "a7b9c3d5-e2f1-4a8b-9c6d-7e8f9a0b1c2d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 3.8,
+    "linguistic": 4
+  },
+  "stem": "Based on the texts, Castellanos's research most directly supports which aspect of the argument presented in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The claim that technological innovation was the primary driver of industrial transformation.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The assertion that social networks and cultural attitudes were crucial for converting innovations into economic success.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The idea that mechanical inventions would have succeeded regardless of social conditions.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The suggestion that patent applications were more important than business formation rates.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 argues that social and cultural factors (social networks, family structures, attitudes toward risk) were essential for technological innovations to become economically successful. Castellanos's research in Text 2 provides concrete evidence supporting this claim by showing that regions with established social networks, access to capital, and cultural acceptance of risk-taking (industrial centers) had much higher success rates (73%) in converting patents to viable businesses compared to regions lacking these social conditions (31% and 45%). This data directly validates Text 1's argument that social transformations were necessary for innovations to become 'engines of economic change' rather than mere 'curiosities.'",
+  "distractorRationale": {
+    "A": "This contradicts both texts. Text 1 explicitly challenges the narrative that technological innovation was the primary driver, and Text 2's data shows that innovation alone (patents) wasn't sufficient without supportive social conditions.",
+    "C": "This misrepresents Text 1's argument, which specifically states that without social transformations, inventions might have remained curiosities rather than drivers of change. Text 2's varying success rates support this conditional relationship.",
+    "D": "This misinterprets the significance of Castellanos's findings. The research emphasizes that patent applications increased everywhere, but the key insight was about differential success rates in business formation, which depended on social conditions."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:24:58.697Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "e1adf88f-bf5a-48dc-9efc-4ab83206be26"
+  },
+  "passage": "Text 1\n\nThe prevailing narrative surrounding the Industrial Revolution often emphasizes technological innovation as the primary catalyst for economic transformation. However, recent scholarship has begun to challenge this mechanistic interpretation, arguing that social and cultural factors were equally instrumental in facilitating industrial growth. The emergence of new social networks, changes in family structures, and evolving attitudes toward risk and entrepreneurship created the necessary conditions for technological innovations to flourish. Without these underlying social transformations, even the most ingenious mechanical inventions might have remained curiosities rather than engines of economic change.\n\nText 2\n\nHistorian Maria Castellanos examined patent records and business formation data from 1750-1850 across three regions: industrial centers, agricultural areas, and port cities. Her analysis reveals that while patent applications increased dramatically in all regions during this period, the rate of successful business formation based on these patents varied significantly. Industrial centers showed a 73% success rate in converting patents to viable businesses, compared to 31% in agricultural areas and 45% in port cities. Castellanos notes that industrial centers possessed established networks of skilled craftsmen, access to capital through merchant relationships, and cultural acceptance of commercial risk-taking that facilitated the translation of innovation into economic activity.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 198,
+    "source": "Academic analysis of Industrial Revolution historiography"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.625,
+    "evaluatedAt": "2026-01-08T14:30:21.316Z"
+  }
+}

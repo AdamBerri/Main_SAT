@@ -1,0 +1,59 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1.1
+  },
+  "stem": "A store is offering a 20% discount on all items. If a jacket originally costs $80, what is the sale price of the jacket?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$60",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$64",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$68",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$96",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To find the sale price after a 20% discount, we need to calculate 20% of the original price and subtract it from the original price.\n\nStep 1: Calculate the discount amount.\n20% of $80 = 0.20 × $80 = $16\n\nStep 2: Subtract the discount from the original price.\nSale price = Original price - Discount\nSale price = $80 - $16 = $64\n\nAlternatively, we can calculate the sale price directly by finding 80% of the original price (since 100% - 20% = 80%):\n80% of $80 = 0.80 × $80 = $64",
+  "distractorRationale": {
+    "A": "This represents finding 75% of the original price ($80 × 0.75 = $60), which would be a 25% discount instead of 20%.",
+    "B": "This is the correct answer: $80 - (20% of $80) = $80 - $16 = $64.",
+    "C": "This represents finding 85% of the original price ($80 × 0.85 = $68), which would be a 15% discount instead of 20%.",
+    "D": "This represents adding 20% to the original price ($80 + $16 = $96) instead of subtracting the discount."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:45:15.769Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "30b415d4-6801-4101-a64d-3510cd61e8d7"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 4.625,
+    "evaluatedAt": "2026-01-08T15:49:58.152Z"
+  }
+}

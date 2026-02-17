@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c8e1-2b4d-4c9a-8f6e-1d5a9c3b7e2f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1.1
+  },
+  "stem": "A researcher collected data on the number of hours students spent studying and their test scores. The equation $y = 5x + 60$ models the relationship between hours studied, $x$, and predicted test score, $y$. According to this model, what is the predicted test score for a student who studied for 4 hours?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "65",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "75",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "80",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "85",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To find the predicted test score for a student who studied 4 hours, substitute $x = 4$ into the equation:\n\n$$y = 5x + 60$$\n$$y = 5(4) + 60$$\n$$y = 20 + 60$$\n$$y = 80$$\n\nTherefore, the predicted test score is 80.",
+  "distractorRationale": {
+    "A": "This results from adding 5 to 60 instead of multiplying 5 by 4 first (incorrect order of operations: 5 + 60 = 65).",
+    "B": "This results from using 3 hours instead of 4 hours in the calculation: 5(3) + 60 = 15 + 60 = 75.",
+    "C": "This is the correct answer: 5(4) + 60 = 20 + 60 = 80.",
+    "D": "This results from using 5 hours instead of 4 hours in the calculation: 5(5) + 60 = 25 + 60 = 85."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:14.357Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "dd482f04-b24d-4f5f-b673-56794e025a10"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

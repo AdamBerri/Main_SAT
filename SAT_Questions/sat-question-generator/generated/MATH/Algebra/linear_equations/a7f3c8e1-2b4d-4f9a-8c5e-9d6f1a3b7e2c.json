@@ -1,0 +1,54 @@
+{
+  "id": "a7f3c8e1-2b4d-4f9a-8c5e-9d6f1a3b7e2c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.1,
+    "procedural": 4.1,
+    "computational": 4
+  },
+  "stem": "Working together, two machines can complete a production job in 4 hours. Working alone, Machine A takes 8 hours longer to complete the job than the two machines working together. How many hours does it take Machine B, working alone, to complete the job?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "3",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "4",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "6",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "12",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let Machine A take $a$ hours and Machine B take $b$ hours to complete the job working alone.\n\nFrom the problem, Machine A takes 8 hours longer than when both machines work together:\n$$a = 4 + 8 = 12 \\text{ hours}$$\n\nThe rate at which Machine A works is $\\frac{1}{12}$ of the job per hour, and Machine B works at $\\frac{1}{b}$ of the job per hour. Together, they complete the job in 4 hours, so their combined rate is $\\frac{1}{4}$ of the job per hour:\n$$\\frac{1}{12} + \\frac{1}{b} = \\frac{1}{4}$$\n\nSolving for $b$:\n$$\\frac{1}{b} = \\frac{1}{4} - \\frac{1}{12}$$\n$$\\frac{1}{b} = \\frac{3}{12} - \\frac{1}{12}$$\n$$\\frac{1}{b} = \\frac{2}{12} = \\frac{1}{6}$$\n$$b = 6$$\n\nVerification: Machine A's rate is $\\frac{1}{12}$ and Machine B's rate is $\\frac{1}{6}$. Combined rate: $\\frac{1}{12} + \\frac{1}{6} = \\frac{1}{12} + \\frac{2}{12} = \\frac{3}{12} = \\frac{1}{4}$, which means they complete the job together in 4 hours. ✓\n\nThe answer is 6 hours.",
+  "distractorRationale": {
+    "A": "This results from an arithmetic error when computing $\\frac{3}{12} - \\frac{1}{12}$, incorrectly getting $\\frac{4}{12} = \\frac{1}{3}$, leading to $b = 3$.",
+    "B": "This results from misidentifying what the question asks for and giving the combined working time instead of Machine B's individual time.",
+    "C": "This is the correct answer: Machine B takes 6 hours working alone.",
+    "D": "This results from solving for Machine A's time instead of Machine B's time, confusing which variable the question asks for."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:13.737Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "5d106ce3-aeb2-48c1-94e3-560add737f8a"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

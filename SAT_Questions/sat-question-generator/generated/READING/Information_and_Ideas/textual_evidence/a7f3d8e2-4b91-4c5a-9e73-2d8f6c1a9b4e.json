@@ -1,0 +1,58 @@
+{
+  "id": "a7f3d8e2-4b91-4c5a-9e73-2d8f6c1a9b4e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "stem": "Based on the texts, how would Rothwell most likely respond to Castellanos's interpretation?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "By arguing that enforcement of guild privileges mattered more than industrialization.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "By questioning whether her factory data accurately represents the timeline.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "By proposing that population growth accelerated factory construction rates.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "By suggesting that guild membership losses preceded economic obsolescence.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Rothwell's evidence directly challenges Castellanos's causal claim about industrialization. His finding that guild membership remained stable in cities with strict enforcement—even after factories appeared—demonstrates that institutional factors (enforcement of monopolies) had greater causal significance than technological factors (mechanization). This suggests the primary driver of guild decline was not industrialization itself, but rather the weakening of legal protections that allowed non-guild competition. The key synthesis requires recognizing that Rothwell's data about enforcement effects contradicts Castellanos's mechanization-centered explanation.",
+  "distractorRationale": {
+    "A": "This is correct because it identifies the core mechanism in Rothwell's argument: institutional enforcement of guild privileges, not industrialization, determined guild survival.",
+    "B": "This is tempting because Rothwell does provide timeline evidence (decline preceded factories), but his response wouldn't focus on questioning her data accuracy—rather, he'd argue her causal interpretation is wrong because enforcement patterns, not factory timing, explain the outcomes. This misidentifies the nature of his challenge.",
+    "C": "This attempts to reconcile both accounts but reverses the causal logic Rothwell presents. He shows population growth correlating with guild decline through market competition, not through accelerating industrialization. This represents a sophisticated misreading of how the two factors relate in his argument.",
+    "D": "This is highly tempting because Rothwell does show temporal precedence (losses before factories), but this merely establishes timing—it doesn't capture his actual explanatory mechanism about enforcement. A student might select this thinking temporal sequence constitutes his main counterargument, missing that he's making a deeper claim about causation through institutional factors."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:27.381Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "6f73cb96-71b3-4df9-89e7-b0688e816128"
+  },
+  "passage": "Text 1\n\nHistorian Maria Castellanos argues that the decline of traditional craft guilds in eighteenth-century Europe resulted primarily from industrial mechanization displacing skilled artisans. Her analysis emphasizes how factories' mass production capabilities rendered guild-protected craftsmanship economically obsolete, forcing guild members into wage labor. Castellanos supports this interpretation by documenting the correlation between factory construction and guild membership losses across major manufacturing centers.\n\nText 2\n\nEconomist James Rothwell examined guild membership records from 1720-1800 across twelve European cities. His data reveal that guild membership began declining decades before significant factory construction in most locations. Rothwell notes that this decline coincided with urban population growth and the emergence of unregulated market districts where non-guild craftspeople sold goods at lower prices. In cities where authorities strictly enforced guild monopolies, membership remained stable even after factories appeared.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 156,
+    "source": "Paired texts on European guild decline"
+  },
+  "hasImage": false
+}

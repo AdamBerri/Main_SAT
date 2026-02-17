@@ -1,0 +1,62 @@
+{
+  "id": "a7f3c2d1-8e9b-4c5a-9f1d-2e3b4c5d6e7f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.7,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred about Wallace's contemporaries in the scientific establishment?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "They questioned Wallace's empirical methods in his evolutionary research as well as his spiritualist investigations.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "They applied inconsistent standards when evaluating what constituted legitimate scientific methodology.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "They were primarily concerned about Wallace's reputation rather than the validity of his research methods.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "They eventually accepted Wallace's spiritualist research after reviewing his documentation.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage establishes that Wallace used the same empirical methodology for both his evolutionary work (which was accepted) and his spiritualist research (which was rejected). His contemporaries celebrated his evolutionary work, which used careful observation, controlled variables, and reproducible results. However, they rejected his spiritualist research despite his use of identical methods, dismissing it 'on methodological grounds' and claiming such phenomena were beyond 'legitimate scientific inquiry.' This reveals an inconsistency: they accepted empirical methodology when applied to evolution but rejected the same methodology when applied to spiritualism, suggesting they applied different standards based on the subject matter rather than the rigor of the methods themselves.",
+  "distractorRationale": {
+    "A": "The passage indicates that Wallace's evolutionary work was accepted and celebrated, showing his contemporaries did not question his empirical methods in that domain—only in spiritualism.",
+    "C": "The passage focuses on methodological objections ('methodological grounds') rather than concerns about reputation or personal standing.",
+    "D": "The passage states that 'institutional resistance persisted,' indicating ongoing rejection rather than eventual acceptance of his spiritualist work."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:20:22.807Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "aff6d79e-4441-42d0-a5c1-c3ff32422f8c"
+  },
+  "passage": "The correspondence between Victorian naturalist Alfred Russel Wallace and his contemporaries reveals a fascinating paradox. While Wallace is celebrated today for independently conceiving the theory of evolution by natural selection, his letters from the 1860s onward increasingly focused on spiritualism and psychic phenomena. Critics have long dismissed this later work as an unfortunate departure from scientific rigor. However, recent scholarship suggests that Wallace's embrace of spiritualism was not a betrayal of his scientific method but rather its logical extension. Wallace applied the same empirical approach to investigating séances and mediums that he had used to study beetles in the Amazon. He meticulously documented observations, controlled for variables, and sought reproducible results. His contemporaries in the scientific establishment, however, refused to engage with his spiritualist research on methodological grounds, arguing that such phenomena lay beyond the purview of legitimate scientific inquiry. This institutional resistance persisted despite Wallace's insistence that he was merely following evidence wherever it led—the very principle that had guided his revolutionary work in evolutionary biology.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 178,
+    "source": "Academic analysis of Victorian scientific correspondence"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.5,
+    "evaluatedAt": "2026-01-08T15:26:29.810Z"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "a7f3e8d2-4b1c-4e9a-9c7f-2d8e5b9a1c3f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.1,
+    "linguistic": 3.1
+  },
+  "stem": "Which choice best describes the overall purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To present research findings that challenge current institutional practices regarding personal autonomy",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "To explain the methodology and results of Langer's nursing home studies from the 1970s",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "To document the health benefits of decision-making across multiple institutional settings",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "To argue that nursing homes should allow residents to care for plants and choose activities",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage's primary purpose is to present research evidence that implicitly challenges institutional practices. While the author devotes significant space to explaining Langer's research and documenting health benefits across settings, these elements serve a larger rhetorical goal. The passage establishes a pattern of evidence (initial study, replications, consistent findings) and then positions this evidence against current practices that 'prioritize efficiency and standardization' despite 'decades of evidence.' The author's choice to end by noting institutions 'continue' problematic practices frames the entire passage as presenting research that stands in tension with the status quo, making the overall purpose one of implicit critique through evidence presentation rather than mere documentation or explanation.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This choice identifies a significant component of the passage (the detailed description of Langer's studies), but mistakes a supporting element for the overall purpose. The Langer research serves as the foundation for a broader point about institutional practices rather than being the endpoint itself. The passage extends beyond explaining one study to show patterns across settings and contrast findings with current practices.",
+    "C": "This choice accurately describes much of what the passage does—it does document health benefits across nursing homes, hospitals, schools, and workplaces. However, this is the vehicle for the author's purpose rather than the purpose itself. The passage doesn't merely catalog benefits; it uses this documentation to create tension with institutional practices that ignore these findings.",
+    "D": "While the passage does suggest that facilities should consider resident autonomy, this choice is too specific and prescriptive. The author doesn't explicitly advocate for particular policy changes or focus narrowly on nursing homes and plant care. The passage presents evidence and notes its disconnect from practice, but stops short of direct argumentation for specific solutions."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:17.827Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "73b4e35a-9cc6-4bfb-9ef8-11058f4f2037"
+  },
+  "passage": "In the 1970s, psychologist Ellen Langer conducted studies showing that elderly residents in nursing homes who were given small responsibilities—such as caring for a plant or choosing when to watch a movie—experienced measurable improvements in health and longevity compared to residents who had these decisions made for them. The residents who selected their own movie times and watered their own plants showed increased alertness and engagement in facility activities. Within eighteen months, the mortality rate among those given decision-making opportunities was half that of the comparison group. Langer's findings have since been replicated in hospitals, schools, and workplaces, with similar patterns emerging: individuals who exercise control over even minor aspects of their environment demonstrate better cognitive function and emotional well-being. These results stand in tension with institutional practices that prioritize efficiency and standardization. Many facilities continue to structure schedules and routines around staff convenience rather than resident autonomy, despite decades of evidence linking personal agency to health outcomes.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 162,
+    "source": "Adapted from a psychology research summary"
+  },
+  "hasImage": false
+}

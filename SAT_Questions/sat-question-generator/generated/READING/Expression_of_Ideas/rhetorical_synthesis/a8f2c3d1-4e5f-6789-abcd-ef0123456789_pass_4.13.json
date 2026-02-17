@@ -1,0 +1,62 @@
+{
+  "id": "a8f2c3d1-4e5f-6789-abcd-ef0123456789",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2,
+    "linguistic": 2.1
+  },
+  "stem": "Which choice most effectively combines the underlined information to emphasize the coyotes' behavioral adaptation to urban environments?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Urban coyotes have demonstrated remarkable behavioral flexibility by learning to navigate city streets using traffic patterns, expanding their diet to include urban food sources, and timing their hunting activities to avoid human contact.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Coyote populations in cities have grown significantly over the past two decades, and these animals have learned to navigate city streets using traffic patterns while hunting during early morning hours.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Urban coyotes typically hunt during early morning hours when human activity is minimal, and their diet has expanded to include pet food, garbage, and small urban animals found in cities.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "These animals show remarkable behavioral flexibility in urban environments and have learned to navigate city streets, though their populations have grown significantly over the past two decades.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A most effectively combines the information to emphasize behavioral adaptation by using 'demonstrated remarkable behavioral flexibility' as the main clause and then providing three specific examples of adaptive behaviors (navigation, diet expansion, and timing of activities). This structure clearly connects the concept of flexibility to concrete behavioral changes, creating a cohesive argument about successful urban adaptation.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "This choice emphasizes population growth rather than behavioral adaptation and only mentions two specific behaviors, failing to create a comprehensive picture of adaptation.",
+    "C": "This choice focuses on only two behavioral changes (hunting timing and diet) without connecting them to the broader concept of behavioral flexibility or adaptation.",
+    "D": "While this choice mentions behavioral flexibility, it awkwardly combines adaptation with population growth and provides fewer specific examples of adaptive behaviors, making the emphasis less clear."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:32:53.406Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "18be9d9e-a9be-47c0-9137-e6a6a296fd23"
+  },
+  "passage": "While researching a report on urban wildlife adaptation, a student has gathered the following notes:\n\n• Urban coyotes have learned to navigate city streets using traffic patterns\n• They typically hunt during early morning hours when human activity is minimal\n• Their diet has expanded to include pet food, garbage, and small urban animals\n• Coyote populations in cities have grown significantly over the past two decades\n• These animals show remarkable behavioral flexibility in urban environments\n\nThe student wants to emphasize how coyotes have successfully adapted their behavior to city life.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 95,
+    "source": "Student research notes on urban wildlife"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.125,
+    "evaluatedAt": "2026-01-08T14:36:32.451Z"
+  }
+}

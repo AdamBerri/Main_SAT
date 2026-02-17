@@ -1,0 +1,59 @@
+{
+  "id": "f47b2e8c-9d41-4f2a-8e7b-3c5d9a1b6e4f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "circles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 1.8,
+    "computational": 2.1
+  },
+  "stem": "In the coordinate plane, a circle has center $(3, -2)$ and passes through the point $(7, 1)$. What is the equation of this circle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$(x - 3)^2 + (y + 2)^2 = 5$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$(x - 3)^2 + (y + 2)^2 = 25$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$(x + 3)^2 + (y - 2)^2 = 25$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$(x - 3)^2 + (y + 2)^2 = 7$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The standard form of a circle with center $(h, k)$ and radius $r$ is $(x - h)^2 + (y - k)^2 = r^2$. Given that the center is $(3, -2)$, we have $h = 3$ and $k = -2$. To find the radius, we calculate the distance from the center $(3, -2)$ to the point $(7, 1)$ on the circle: $r = \\sqrt{(7-3)^2 + (1-(-2))^2} = \\sqrt{4^2 + 3^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5$. Therefore, $r^2 = 25$, and the equation is $(x - 3)^2 + (y - (-2))^2 = 25$, which simplifies to $(x - 3)^2 + (y + 2)^2 = 25$.",
+  "distractorRationale": {
+    "A": "This results from correctly finding the center but using $r = 5$ instead of $r^2 = 25$ in the equation.",
+    "B": "This is the correct answer.",
+    "C": "This results from incorrectly using $(x + 3)^2 + (y - 2)^2$ instead of $(x - 3)^2 + (y + 2)^2$ for the center $(3, -2)$.",
+    "D": "This results from using the sum of the coordinate differences $(4 + 3 = 7)$ instead of the proper distance formula."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:58:05.252Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "724e4413-37ce-476f-bd9f-f90ba0957ad0"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T16:01:55.633Z"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "f47b8c2e-9d4a-4b6f-8e3c-1a2b3c4d5e6f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.1,
+    "linguistic": 3
+  },
+  "stem": "As used in the passage, \"uniform\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "consistent",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "military clothing",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "single-colored",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "official dress",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this context, 'uniform' means 'consistent' or 'the same throughout.' The passage describes decorative patterns that were 'remarkably uniform across different sites,' and the following sentences reinforce this meaning by mentioning 'consistency,' 'no deviation from a common template,' and 'conformity.' The archaeological context makes it clear that the pottery patterns were consistent and unchanging across different locations and time periods.",
+  "distractorRationale": {
+    "A": "This is the correct answer - 'consistent' matches the contextual meaning perfectly.",
+    "B": "This refers to military clothing, which is a common meaning of 'uniform' as a noun, but doesn't fit the archaeological context about pottery patterns.",
+    "C": "While 'uniform' can sometimes refer to something being one color, the passage discusses decorative patterns, not colors, making this meaning inappropriate.",
+    "D": "This is another noun form of 'uniform' referring to official clothing, but the passage uses 'uniform' as an adjective describing pottery patterns, not clothing."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:52:53.831Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "5139bc00-0f0a-461f-ad8d-06bab5836a3f"
+  },
+  "passage": "The archaeologist carefully examined the ancient pottery fragments, noting that the decorative patterns were remarkably **uniform** across different sites in the region. This consistency suggested that the civilization had developed standardized artistic traditions that were maintained over several centuries. Unlike the varied burial practices found elsewhere, these ceramic designs showed no deviation from a common template, indicating a highly organized cultural system that prioritized conformity in artistic expression.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 78,
+    "source": "Archaeological research context"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.875,
+    "evaluatedAt": "2026-01-08T14:56:08.867Z"
+  }
+}

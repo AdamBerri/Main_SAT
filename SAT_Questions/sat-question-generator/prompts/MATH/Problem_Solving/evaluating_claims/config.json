@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "currentVersion": "1.2.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Math question about evaluating statistical claims.\n\nThe question should present:\n- A study or survey scenario\n- Claims based on data\n- Need to evaluate validity of conclusions\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.315Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/MATH/Problem_Solving/evaluating_claims/schema.json"
+}

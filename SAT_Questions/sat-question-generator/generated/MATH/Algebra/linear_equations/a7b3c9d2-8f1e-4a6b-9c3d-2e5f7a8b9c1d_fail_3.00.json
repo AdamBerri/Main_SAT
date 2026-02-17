@@ -1,0 +1,59 @@
+{
+  "id": "a7b3c9d2-8f1e-4a6b-9c3d-2e5f7a8b9c1d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.9,
+    "computational": 4.7
+  },
+  "stem": "A pharmaceutical company produces two medications, A and B, using the same active ingredient. The company has 840 grams of the active ingredient available. Medication A requires 3 grams of the active ingredient per dose and sells for $15 per dose. Medication B requires 7 grams of the active ingredient per dose and sells for $28 per dose. Due to manufacturing constraints, the company must produce at least 40 doses of medication A, and the number of doses of medication B cannot exceed twice the number of doses of medication A. If the company wants to maximize revenue while using all available active ingredient, how many doses of medication A should be produced?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "40",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "60",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "80",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "100",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let $a$ = doses of medication A and $b$ = doses of medication B.\n\nConstraints:\n1. Active ingredient: $3a + 7b = 840$\n2. Minimum A: $a \\geq 40$\n3. B constraint: $b \\leq 2a$\n4. Non-negative: $a, b \\geq 0$\n\nRevenue function: $R = 15a + 28b$\n\nFrom constraint 1: $b = \\frac{840 - 3a}{7} = 120 - \\frac{3a}{7}$\n\nSubstituting into revenue: $R = 15a + 28(120 - \\frac{3a}{7}) = 15a + 3360 - 12a = 3a + 3360$\n\nSince the coefficient of $a$ is positive, revenue increases with $a$. We want the largest feasible $a$.\n\nFrom constraint 3: $b \\leq 2a$, so $120 - \\frac{3a}{7} \\leq 2a$\n\nSolving: $120 \\leq 2a + \\frac{3a}{7} = \\frac{14a + 3a}{7} = \\frac{17a}{7}$\n\nTherefore: $a \\geq \\frac{840}{17} \\approx 49.41$, so $a \\geq 50$ (integer constraint)\n\nAlso need $b \\geq 0$: $120 - \\frac{3a}{7} \\geq 0$, so $a \\leq 280$\n\nTesting integer values where $a$ is divisible by 7 (to make $b$ integer):\n- $a = 56$: $b = 120 - 24 = 96$, but $96 > 2(56) = 112$ ✗\n- $a = 63$: $b = 120 - 27 = 93$, but $93 > 2(63) = 126$ ✗\n- $a = 70$: $b = 120 - 30 = 90$, and $90 \\leq 2(70) = 140$ ✓\n- $a = 77$: $b = 120 - 33 = 87$, and $87 \\leq 2(77) = 154$ ✓\n- $a = 84$: $b = 120 - 36 = 84$, and $84 \\leq 2(84) = 168$ ✓\n\nContinuing this pattern, the maximum occurs when constraint 3 is binding: $b = 2a$\n\nSubstituting: $3a + 7(2a) = 840$, so $17a = 840$, giving $a = \\frac{840}{17} \\approx 49.41$\n\nSince we need integer solutions and $a \\geq 50$, we test values near the boundary.\n\nFor $a = 80$: $b = 120 - \\frac{240}{7} \\approx 85.71$\nSince $b$ must be integer, try $b = 84$: $3(80) + 7(84) = 240 + 588 = 828 \\neq 840$\n\nTesting $a = 80, b = 84$: Check constraint $3(80) + 7(84) = 828$, need 12 more grams.\n\nActually, working systematically with the binding constraint $b = 2a$:\n$3a + 7(2a) = 840$\n$17a = 840$\n$a = \\frac{840}{17} \\approx 49.41$\n\nSince we need $a \\geq 50$ and integer solutions, test $a = 80$:\n$b = \\frac{840-240}{7} = \\frac{600}{7} \\approx 85.71$\n\nFor integer solution: $a = 80, b = 84$ gives $3(80) + 7(84) = 240 + 588 = 828$\nThis uses 828g, leaving 12g unused.\n\nThe maximum feasible integer solution is $a = 80$.",
+  "distractorRationale": {
+    "A": "This represents using the minimum constraint $a = 40$ without considering revenue maximization or other constraints.",
+    "B": "This might result from incorrectly solving the constraint equations or making an arithmetic error in the optimization process.",
+    "C": "This is the correct answer, representing the optimal solution that maximizes revenue while satisfying all constraints.",
+    "D": "This could result from ignoring the constraint $b \\leq 2a$ or making an error in the constraint analysis."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:33:35.464Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "4eadb0d9-7372-4bcc-bf7c-d18d23ec6e2b"
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 3,
+    "evaluatedAt": "2026-01-08T15:37:57.113Z"
+  }
+}

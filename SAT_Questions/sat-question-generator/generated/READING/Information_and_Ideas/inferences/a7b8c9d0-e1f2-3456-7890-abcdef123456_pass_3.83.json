@@ -1,0 +1,62 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.9
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred about the historical perception of Michelangelo's Sistine Chapel ceiling?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Art historians deliberately misrepresented the ceiling's original appearance to support their theories about Renaissance art.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The gradual darkening of the ceiling led viewers to develop aesthetic interpretations that differed significantly from Michelangelo's intended effect.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Michelangelo intentionally used expensive pigments to create a work that would appear more somber over time.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The cleaning process revealed that previous restoration attempts had altered the ceiling's original color scheme.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage establishes that for centuries, people admired what they thought was Michelangelo's \"intentionally somber palette\" and interpreted the muted colors as reflecting \"artistic restraint.\" However, the restoration revealed that this dark appearance was actually due to accumulated grime over 500 years, not the artist's original intention. This creates a clear inference that the gradual darkening caused viewers to develop aesthetic interpretations (seeing deliberate somber restraint) that were fundamentally different from what Michelangelo actually intended (vibrant, bold colors). The passage supports this through evidence of expensive, bright pigments and contemporary accounts describing the ceiling as remarkably colorful when first completed.",
+  "distractorRationale": {
+    "A": "The passage suggests art historians were genuinely mistaken due to physical changes to the artwork, not that they deliberately misrepresented anything. Their interpretations were based on what they could actually see.",
+    "C": "This contradicts the passage's evidence that Michelangelo wanted maximum visual impact and specifically requested funds for the finest colors. The somber appearance was unintentional, caused by grime accumulation.",
+    "D": "The passage mentions only one major restoration (the 1994 one) and attributes the color changes to natural accumulation of grime over centuries, not to previous restoration attempts."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:22:40.184Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "1f35259f-4b4c-4b02-96ca-e00d36eebca1"
+  },
+  "passage": "The restoration of the Sistine Chapel ceiling, completed in 1994 after fourteen years of meticulous work, revealed colors so vivid and luminous that many art historians initially questioned their authenticity. For centuries, visitors had admired what they believed to be Michelangelo's intentionally somber palette—muted earth tones that seemed to reflect the gravitas of the sacred space. The restorers, however, discovered that what generations had interpreted as artistic restraint was actually the accumulated grime of five hundred years: candle smoke, incense residue, and the breath of millions of pilgrims had gradually obscured the master's true vision.\n\nThe revelation sparked fierce debate within the art community. Some scholars argued that the newly exposed colors—brilliant blues, vibrant pinks, and gleaming golds—were too bold for the Renaissance aesthetic and suggested that the cleaning process had been overly aggressive. Others countered that documentary evidence from Michelangelo's contemporaries consistently described the ceiling as remarkably colorful when first unveiled in 1512. Giorgio Vasari, writing just decades after the ceiling's completion, specifically praised the \"liveliness of the colors\" and noted how the figures seemed to \"leap from the vault\" due to their chromatic intensity.\n\nInterestingly, chemical analysis of paint samples taken during restoration revealed that Michelangelo had employed the most expensive pigments available—ultramarine blue made from ground lapis lazuli, genuine vermillion, and gold leaf—materials that would have been wasted on a work intended to appear subdued. The artist's own letters to his patron, Pope Julius II, include several requests for additional funds to purchase \"the finest colors that may be obtained,\" suggesting his commitment to achieving maximum visual impact.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 287,
+    "source": "Art history analysis"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.8333333333333335,
+    "evaluatedAt": "2026-01-08T15:26:29.812Z"
+  }
+}

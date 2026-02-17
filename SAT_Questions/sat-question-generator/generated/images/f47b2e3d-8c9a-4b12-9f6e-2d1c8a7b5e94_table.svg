@@ -1,0 +1,57 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .table {
+      font-family: sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .table th, .table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+      font-size: 10px;
+    }
+
+    .table th {
+      background-color: #f2f2f2;
+    }
+  </style>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Strategy Type</th>
+        <th>Avg. Temp. Reduction (°C)</th>
+        <th>Cities Implementing</th>
+        <th>Success Rate (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Green Roofs</td>
+        <td>1.5</td>
+        <td>Toronto, Chicago</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <td>Reflective Pavement</td>
+        <td>2.0</td>
+        <td>Phoenix, Los Angeles</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>Urban Forestry</td>
+        <td>1.0</td>
+        <td>New York, London</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Cool Roofs</td>
+        <td>1.2</td>
+        <td>Sydney, Melbourne</td>
+        <td>85</td>
+      </tr>
+    </tbody>
+  </table>
+</svg>

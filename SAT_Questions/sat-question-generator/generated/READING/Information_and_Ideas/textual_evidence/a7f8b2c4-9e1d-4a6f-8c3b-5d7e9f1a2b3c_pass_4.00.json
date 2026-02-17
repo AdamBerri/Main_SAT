@@ -1,0 +1,62 @@
+{
+  "id": "a7f8b2c4-9e1d-4a6f-8c3b-5d7e9f1a2b3c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "stem": "Based on the information in both texts, which statement best describes the relationship between the theoretical framework discussed in Text 1 and the empirical findings presented in Text 2?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 2 provides empirical validation for the neoclassical assumptions outlined in Text 1, demonstrating that markets do achieve equilibrium despite temporary fluctuations.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 2 offers concrete evidence supporting the behavioral economists' critique mentioned in Text 1 by documenting systematic deviations from rational market behavior.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 2 presents findings that are largely irrelevant to the theoretical debate described in Text 1, focusing on technical market mechanics rather than fundamental economic principles.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 2 demonstrates that while behavioral factors influence short-term market movements, the long-term trends support the equilibrium theory discussed in Text 1.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 establishes a theoretical debate between neoclassical economics (rational actors, perfect information, market equilibrium) and behavioral economics (cognitive biases, systematic distortions). Text 2 provides empirical evidence that directly supports the behavioral economists' position by documenting herding behavior, persistent market anomalies, momentum effects, and mean reversion patterns—all of which contradict the efficient market hypothesis and rational actor assumptions of neoclassical theory. The Federal Reserve study's findings of systematic deviations from fundamental valuations and psychological factors influencing market dynamics serve as concrete validation of the behavioral critique mentioned in Text 1.",
+  "distractorRationale": {
+    "A": "This choice misinterprets the empirical findings. Text 2 documents systematic deviations from equilibrium and market inefficiencies, which actually contradict rather than validate neoclassical assumptions.",
+    "C": "This choice incorrectly suggests the texts are unrelated. The empirical findings in Text 2 directly address the theoretical debate about market efficiency and rational behavior discussed in Text 1.",
+    "D": "This choice mischaracterizes the study's findings. Text 2 documents 'persistent anomalies' and systematic patterns that contradict equilibrium theory, not temporary deviations that ultimately support it."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:22:32.862Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "ed32574a-275f-4480-bdb9-2290b47d19f8"
+  },
+  "passage": "Text 1\n\nThe prevailing orthodoxy in economic theory has long held that markets naturally tend toward equilibrium, with prices adjusting to clear supply and demand imbalances. This neoclassical framework assumes rational actors operating with perfect information, leading to optimal resource allocation. However, behavioral economists have increasingly challenged these foundational assumptions, arguing that cognitive biases and heuristics systematically distort decision-making processes. The implications of this paradigm shift extend far beyond academic discourse, potentially undermining the theoretical justification for laissez-faire economic policies that have dominated policy frameworks for decades.\n\nText 2\n\nA longitudinal study conducted by the Federal Reserve Bank examined market volatility patterns across multiple asset classes from 1990 to 2020. The research methodology involved analyzing price movements, trading volumes, and correlation coefficients during periods of economic uncertainty. The findings revealed that market participants consistently exhibited herding behavior during crisis periods, with asset prices deviating significantly from fundamental valuations. Moreover, the study documented persistent anomalies in market efficiency, including momentum effects and mean reversion patterns that contradict the efficient market hypothesis. These empirical observations suggest that psychological factors play a more substantial role in market dynamics than traditional economic models acknowledge.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 198,
+    "source": "Academic economic research compilation"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4,
+    "evaluatedAt": "2026-01-08T15:25:22.324Z"
+  }
+}

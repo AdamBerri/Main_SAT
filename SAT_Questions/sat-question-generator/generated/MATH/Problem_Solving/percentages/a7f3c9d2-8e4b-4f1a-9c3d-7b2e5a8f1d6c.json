@@ -1,0 +1,54 @@
+{
+  "id": "a7f3c9d2-8e4b-4f1a-9c3d-7b2e5a8f1d6c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 2.7,
+    "computational": 3.2
+  },
+  "stem": "A store marks up the wholesale cost of an item by 40% to set its retail price. During a sale, the store reduces the retail price by 25%. If the sale price of the item is $63, what was the wholesale cost?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$52.50",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$60",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$67.50",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$75",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $w$ represent the wholesale cost.\n\nStep 1: Express the retail price after the 40% markup.\nRetail price = $w + 0.40w = 1.40w$\n\nStep 2: Express the sale price after the 25% reduction from retail.\nSale price = Retail price $- 0.25 \\times$ Retail price\nSale price = $1.40w - 0.25(1.40w)$\nSale price = $1.40w(1 - 0.25)$\nSale price = $1.40w(0.75)$\nSale price = $1.05w$\n\nStep 3: Set up the equation using the given sale price.\n$1.05w = 63$\n\nStep 4: Solve for $w$.\n$w = \\frac{63}{1.05} = 60$\n\nVerification: $60 \\times 1.40 = 84$ (retail price), $84 \\times 0.75 = 63$ (sale price) ✓\n\nThe wholesale cost was $60.",
+  "distractorRationale": {
+    "A": "This results from correctly finding the retail price ($84) but then incorrectly calculating the wholesale cost by reducing the retail price by 25% instead of dividing by 1.40. Calculation: Student finds sale price ÷ 0.75 = 63 ÷ 0.75 = 84 (retail), then incorrectly computes 84 × 0.75 = 63... realizes error and tries 84 - 0.40(84) = 84 - 33.60 = 50.40, or uses 63 × (1 - 0.25/1.40) leading to approximately $52.50",
+    "B": "This is the correct answer. Working backward: $60 × 1.40 = $84 (retail price), then $84 × 0.75 = $63 (sale price) ✓",
+    "C": "This results from using the sale price as the base and incorrectly adding back 25% then subtracting 40%. Calculation: 63 ÷ 0.75 = 84, then 84 ÷ 1.40 = 60, but student instead calculates 63 × 1.25 = 78.75, then 78.75 - 0.40(78.75) = 78.75 - 31.50 = 47.25... Alternative error: 63 + 0.25(63) = 63 + 15.75 = 78.75, then 78.75 - 15.75 = 63, tries 78.75 - 11.25 = 67.50",
+    "D": "This results from finding the retail price correctly ($84) but then incorrectly subtracting the 40% markup as a percentage of the sale price rather than dividing. Calculation: 63 ÷ 0.75 = 84 (retail price correctly found), but then student calculates 84 - 0.40(63) = 84 - 25.20 = 58.80, or tries adding: 63 + 0.40(63) = 63 + 25.20 = 88.20... Alternative: 63 ÷ (1 - 0.40) × (1 - 0.25) = 63 ÷ 0.45 ≈ 140, rescaling to 63 × 1.25 - 15.75 = 78.75 - 3.75 = 75"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:34.439Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "d31baf96-4689-49cd-a67d-aabe5eeeb69a"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

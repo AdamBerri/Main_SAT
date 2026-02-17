@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "currentVersion": "1.2.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Writing question about sentence boundaries (run-ons, fragments, comma splices).\n\nThe passage should:\n- Contain a sentence boundary issue (or test correct boundary usage)\n- Be in academic writing context\n- Have clear subjects and predicates that can be analyzed\n\nThe question should:\n- Ask which option correctly handles sentence boundaries\n- Test understanding of complete sentences vs. fragments\n- Have distractors with common boundary errors (comma splice, run-on, incorrect semicolon)\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.313Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/READING/Standard_English_Conventions/boundaries/schema.json"
+}

@@ -1,0 +1,170 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "config": {
+    "maxIterations": 5,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 0,
+        "passRate": 0,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "No significant errors found",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 0,
+        "passRate": 0,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "No significant errors found",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.8229166666666665,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 6,
+            "exampleErrors": [
+              "Question stated as 5/5 difficulty but analysis shows actual difficulty of 2.5-3/5 due to transparent logical structure and limited viable options",
+              "Question rated 4/5 but actual difficulty is 2.5-3/5 because passage explicitly signals contrast and process of elimination is trivial",
+              "Question calibrated at 3/5 but actual difficulty is 2.5/5 with straightforward contrast identification and obvious elimination of three incorrect answers"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Designated answer (B: However) is defensible but not unambiguously correct; distractor (D: Similarly) has legitimate support based on explicit 'also possess' language in passage",
+              "Semantic accuracy issue where correct answer (C: Additionally) misrepresents relationship; (D: Consequently) is actually more logically sound as water system causally enabled city's success"
+            ]
+          },
+          {
+            "category": "semantic_clarity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question conflates linguistic sophistication with cognitive difficulty; advanced biological terminology (ornamentation, iridescent eyespots) is decorative rather than central to solving the transition logic problem"
+            ]
+          },
+          {
+            "category": "authenticity_fidelity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Generated question has ambiguous answer key where 'Additionally' doesn't distinctly represent relationship between clauses better than 'Consequently,' violating SAT standard that correct answer must be unambiguously superior"
+            ]
+          },
+          {
+            "category": "passage_construction",
+            "frequency": 1,
+            "exampleErrors": [
+              "Passage structure provides explicit logical signposting that makes the needed transition relationship unmistakable rather than requiring careful reasoning or inference"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.1875,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, semantic_clarity",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.9947916666666665,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question rated 5/5 but actual difficulty ~3.5/5 due to transparent logical relationship and straightforward elimination process",
+              "Question rated 5/5 but actual difficulty ~3.5/5 because direct contradiction between old and new evidence is unmistakable with clear semantic signaling",
+              "Question rated 3/5 but actual difficulty ~2.5/5 because contrast relationship is explicit and answer choices are clearly differentiated"
+            ]
+          },
+          {
+            "category": "linguistic_vs_task_complexity_confusion",
+            "frequency": 2,
+            "exampleErrors": [
+              "High linguistic complexity (sophisticated vocabulary, complex syntax) conflated with high question difficulty despite straightforward transition task",
+              "Dense prose and technical terminology (86°F, algae populations) inflate perceived difficulty without matching actual cognitive demand of transition identification"
+            ]
+          },
+          {
+            "category": "weak_distractor_design",
+            "frequency": 2,
+            "exampleErrors": [
+              "Answer choices create obvious logical breaks rather than functioning as plausible traps (e.g., 'Additionally' clearly wrong direction, not subtly tempting)",
+              "Only one semantically viable option with no trap answers that exploit common student mistakes or false synonyms"
+            ]
+          },
+          {
+            "category": "transparent_elimination_paths",
+            "frequency": 2,
+            "exampleErrors": [
+              "High elimination capability where 3 of 4 choices are clearly wrong, leaving only one logical choice with minimal comparative reasoning required",
+              "Students can succeed through straightforward logic and process of elimination rather than nuanced comprehension or inference"
+            ]
+          },
+          {
+            "category": "insufficient_procedural_complexity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Single-step decision making (recognize contrast → match transition word) without multi-step reasoning or synthesis required",
+              "No complex inference, subtle distinctions between answer choices, or need to weigh multiple valid interpretations"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.145833333333334,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, linguistic_vs_task_complexity_confusion, weak_distractor_design",
+      "newPromptVersion": "1.3.0"
+    }
+  ],
+  "currentBestVersion": "1.2.0",
+  "converged": true,
+  "startedAt": "2026-01-08T15:12:15.198Z",
+  "completedAt": "2026-01-09T20:55:49.412Z",
+  "bestTestScore": 4.1875
+}

@@ -1,0 +1,259 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 3.7760416666666665,
+        "passRate": 0.3125,
+        "errorCategories": [
+          {
+            "category": "mathematical_errors",
+            "frequency": 9,
+            "exampleErrors": [
+              "The designated correct answer B (372) is demonstrably incorrect. The mathematically correct answer is approximately 391 mL, which is not among the answer choices.",
+              "The designated correct answer A (1.5 hours) is incorrect. Following the given parameters, the actual answer is 3 hours, which is not among the choices.",
+              "The designated correct answer C (950) is incorrect due to an arithmetic error. The solution correctly calculates 500 + 550 but states it as 950 instead of 1,050."
+            ]
+          },
+          {
+            "category": "answer_choice_problems",
+            "frequency": 5,
+            "exampleErrors": [
+              "Answer choices A, C, and D are all identical (750), making the question unsolvable since students cannot meaningfully choose between identical options.",
+              "The mathematically correct answer (19.6 hours) is not among the answer choices. The designated answer B (20) requires unjustified rounding.",
+              "None of the provided answer choices yields the correct total of $61.00. The actual answer should be 920 pages, which is not available."
+            ]
+          },
+          {
+            "category": "weak_distractors",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor A lacks plausible misconception - the rationale 'adding 1 to original amount' is too arbitrary and doesn't represent a recognizable student error pattern.",
+              "Distractor A's rationale is vague ('computational error') without specifying the exact error path. The value seems arbitrary rather than emerging from a natural error.",
+              "The distractor set fails to target additive thinking (most common error). Missing: 2 + 36 = 38 cups for students thinking 60 - 24 = 36 more cookies needs 36 more cups."
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 2,
+            "exampleErrors": [
+              "Stated difficulty 4/5 but actual difficulty 2/5. This is a straightforward two-step rate calculation that should take 1-2 minutes, not the 2.5-3 minutes expected for difficulty 5.",
+              "Significantly overcalibrated at 5/5. The procedural difficulty (4.9/5) and computational difficulty (4.7/5) are inflated - this is basic ratio calculation with simple arithmetic. Actual difficulty: 3/5."
+            ]
+          },
+          {
+            "category": "authenticity_deviations",
+            "frequency": 2,
+            "exampleErrors": [
+              "Too elementary for current SAT - feels like a middle school problem. Modern SAT questions, even at difficulty 1/5, typically require multi-step reasoning and integration of concepts, not just direct proportion (2/24 = x/60).",
+              "The scenario is slightly more complex than typical SAT problems. While SAT uses real-world contexts, this chemical solution mixing with cost calculation across three components is somewhat convoluted."
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.71875,
+        "passRate": 0.75
+      },
+      "improvementMade": "Addressed: mathematical_errors, answer_choice_problems, weak_distractors",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.125,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "answer_key_error",
+            "frequency": 2,
+            "exampleErrors": [
+              "Designated correct answer is C (680 mL), but mathematical verification confirms the correct answer is D (800 mL). The provided explanation actually works through the problem correctly and arrives at 800 mL, creating a disconnect between the answer key and the solution rationale.",
+              "Answer key lists D (800) as correct, but question stem designates C (680) as correct. Mathematical verification confirms 640 mL + 160 mL (25% of 640) = 800 mL, indicating an error in the answer key designation."
+            ]
+          },
+          {
+            "category": "distractor_clarity_and_rationale",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor C (680) has no rationale provided, making evaluation impossible. Not an obvious intermediate calculation and lacks documented misconception pathway, appearing arbitrary without explicit error explanation.",
+              "Distractor B's rationale 'setting $0.15x + 0.35y = 25$' is confusing and doesn't clearly explain how a student arrives at the value of 300. The error description lacks clear algebraic missteps showing the natural pathway to this distractor."
+            ]
+          },
+          {
+            "category": "distractor_quality_and_design",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor A requires two independent errors (inverting ratio AND making unit conversion error) simultaneously, violating SAT principles. This is too contrived and less discriminative than single-error distractors, and magnitude is so far removed (0.27 vs 0.75) that students can eliminate it through estimation.",
+              "Distractor spacing shows consecutive 100-unit intervals (200, 300, 400, 500) creating arithmetic symmetry. Options are equidistant from correct answer (±200 mL), allowing weak students to guess the middle value or detect a pattern rather than demonstrate conceptual understanding."
+            ]
+          },
+          {
+            "category": "difficulty_calibration_mismatch",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question is stated as 3/5 (Medium) difficulty but actual difficulty is 2.5/5 (Below Average to Medium). Straightforward ratio setup, simple algebra, minimal conceptual barriers, and clear answer differentiation suggest success rate likely >60% rather than ~50% for a true medium-difficulty question."
+            ]
+          },
+          {
+            "category": "distractor_conceptual_targeting",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor C (2.7) lacks coherent error pathway—rationale describes 'realizing the error is too large and arbitrarily dividing by some factor,' which represents fixing an error rather than making a consistent misconception. This doesn't reflect genuine student thinking and lacks a clear, reproducible error strategy."
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_key_error, distractor_clarity_and_rationale, distractor_quality_and_design",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.578125,
+        "passRate": 0.375,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor A lacks coherent misconception pathway; setup is internally contradictory and doesn't naturally arise from specific error pattern",
+              "Distractors A and B in rates problem contain vague or circular rationales; unclear what calculation actually produces stated answers",
+              "Distractor D rationale contains mathematical error in cross-multiplication; explanation doesn't coherently justify why answer is 36",
+              "Multiple distractors appear generated without verification; rationales contain inconsistencies suggesting problems weren't worked backward from answer"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Designated correct answer (45g) doesn't match mathematical solution (42.857g); no answer choice is unambiguously correct",
+              "Correct answer (15L) contradicts problem statement; total cost $294 yields ~12.89L, but answer C requires cost of $342",
+              "Calculated answer (~156g) doesn't match any provided choice; answer C (135g) fails backward verification against 400mL constraint"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 3,
+            "exampleErrors": [
+              "Pharmaceutical concentration problem requires AP Chemistry/Biology half-life exponential decay formulas, not typical SAT scope; problem is solvable but cumbersome for timed testing",
+              "Chemical solution mixing problem requires density-volume-mass integration and physics/chemistry expertise beyond SAT's typical mathematical reasoning focus",
+              "Rates problem is oversimplified and lacks sophisticated distractor design; reads more like middle school diagnostic than actual SAT item"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 2,
+            "exampleErrors": [
+              "Stated difficulty 3/5 is overestimated; actual difficulty ~2.5/5 with straightforward structure, low computational burden, and linear logical flow",
+              "Stated difficulty 4/5 overestimates actual complexity; density-volume-mass integration combined with calculation errors places problem beyond typical Level 4 difficulty boundaries"
+            ]
+          },
+          {
+            "category": "frontend_convertibility",
+            "frequency": 1,
+            "exampleErrors": [
+              "Content accuracy problem creates fundamental contradiction: explanation derives answer from total cost $342 while problem states $294; mathematical error undermines entire question validity for production deployment"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.4166666666666665,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: distractor_quality, answer_validity, faithfulness",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.7023809523809526,
+        "passRate": 0.5714285714285714,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor A rationale is convoluted and self-contradictory; calls itself 'the correct answer' in its own description instead of clearly explaining the misconception it represents",
+              "Distractor C lacks clear error pathway; explanation doesn't transparently explain how student would arrive at this wrong answer or what specific misconception it targets",
+              "Distractor rationales appear reverse-engineered from answer choices rather than representing authentic student thinking; explanations feel post-hoc and lack logical necessity",
+              "Multiple distractors lack distinct, identifiable misconceptions; error pathways are vague (e.g., 'confusing with...' or 'making an arithmetic error') without specifying exact student reasoning"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Designated correct answer (B: 200 mL) is mathematically incorrect; correct answer should be A: 100 mL based on ratio calculations (3/8 × 2.4 = 0.9L needed, minus 0.8L available = 0.1L = 100mL)",
+              "Designated answer (A: 720 pages) contains arithmetic error in explanation; shows '500 + 420 = 720' which is false; correct answer should be 920 pages, which doesn't appear in answer choices",
+              "Answer key contains direct contradiction: lists B (200) as correct but distractor A rationale states 'This is the correct answer... 100 mL is required,' creating impossible situation"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Stated difficulty 3/5 (Medium) is overestimated; actual difficulty approximately 2.5-2.7/5 because ratio application is straightforward without unusual twists or multiple compounding layers",
+              "Stated difficulty 5/5 (Hard) significantly overstated; actual difficulty 3.5-4/5 because once setup is identified, solution path is linear and computational complexity is basic",
+              "Stated difficulty 2/5 contradicts question construction; calculated correct answer (920 pages) doesn't appear in answer choices, making question fundamentally flawed and harder to rate accurately"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question deviates significantly from authentic SAT standards (35/100 match); requires specialized chemistry knowledge (density, mass-volume relationships) that conflicts with SAT's focus on mathematical reasoning over domain expertise; problem setup is artificially constrained with contrived numerical relationships and conflates chemistry understanding with math testing"
+            ]
+          },
+          {
+            "category": "missing_answer_choices",
+            "frequency": 1,
+            "exampleErrors": [
+              "Correct calculated answer (920 pages) does not appear among provided answer choices (720, 762, 820, 1220), indicating either flawed problem statement, incorrect answer key, or missing correct choice option, making question unanswerable as presented"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: distractor_quality, answer_validity, difficulty_accuracy",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:55:29.421Z",
+  "completedAt": "2026-01-09T20:50:22.871Z",
+  "bestTestScore": 4.71875
+}

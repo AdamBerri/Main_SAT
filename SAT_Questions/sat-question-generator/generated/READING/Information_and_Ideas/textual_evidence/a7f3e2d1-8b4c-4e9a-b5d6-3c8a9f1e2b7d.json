@@ -1,0 +1,58 @@
+{
+  "id": "a7f3e2d1-8b4c-4e9a-b5d6-3c8a9f1e2b7d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 3.3,
+    "linguistic": 2.7
+  },
+  "stem": "Based on the texts, how would Martinez (Text 2) most likely respond to Chen's argument in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "By acknowledging price volatility but emphasizing farms' prior financial conditions.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "By disputing that international competition affected grain prices at all.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "By agreeing that subsidized foreign producers caused most farm failures.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "By arguing that crop yields mattered more than debt levels.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Martinez's research confirms that price volatility existed (consistent with Chen's observation about market pressures) but identifies debt-to-asset ratios as the 'most significant predictor' of farm survival. His conclusion that 'internal financial decisions, rather than external market forces alone' determined outcomes suggests he would acknowledge Chen's market observations while redirecting emphasis to farms' pre-existing financial vulnerabilities. Choice A captures this nuanced response: accepting the market context Chen describes while reframing the primary cause.",
+  "distractorRationale": {
+    "A": "This is the correct answer. Martinez validates the existence of price volatility (supporting Chen's market observations) while arguing that debt levels were the crucial determining factor.",
+    "B": "This overstates Martinez's position. He acknowledges that 'grain prices did experience volatility'—he doesn't dispute the market effects Chen describes, but rather argues they weren't the primary cause of failures.",
+    "C": "This contradicts Martinez's argument. He explicitly states that farms failed 'regardless of their crop yields or market prices,' suggesting external competition wasn't the determining factor. This choice represents misreading Martinez as agreeing with Chen.",
+    "D": "This reverses Martinez's actual finding. He specifically notes that farms were likely to fail 'regardless of their crop yields,' indicating that production success couldn't overcome poor financial positioning. This distractor appeals to students who conflate agricultural productivity with financial survival."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:00.714Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "262a8de9-7377-433d-a56b-89561657f99e"
+  },
+  "passage": "Text 1\n\nHistorian Maria Chen argues that the decline of small-scale farming in the American Midwest during the 1980s resulted primarily from international economic pressures. As global grain markets became increasingly interconnected, Midwestern farmers faced competition from subsidized agricultural producers in other countries. Chen notes that many family farms, operating on thin profit margins, could not absorb the price fluctuations that accompanied this new market reality. The loss of these farms, she contends, fundamentally altered rural communities that had been built around agricultural economies for generations.\n\nText 2\n\nEconomist Robert Martinez examined financial data from Midwestern agricultural regions between 1975 and 1990. His analysis reveals that while grain prices did experience volatility during this period, the most significant predictor of farm survival was debt-to-asset ratio at the start of the 1980s. Farms with higher borrowing levels in the late 1970s—often the result of expansion encouraged by favorable lending policies—were substantially more likely to fail regardless of their crop yields or market prices. Martinez suggests that internal financial decisions, rather than external market forces alone, determined which operations could weather economic turbulence.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 187,
+    "source": "Paired texts on agricultural economics"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,62 @@
+{
+  "id": "f47b2c8d-9e1a-4f2b-8c7d-3a5e9b2f1d8c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3,
+    "linguistic": 2.8
+  },
+  "stem": "Based on the texts, which statement best describes how the Phoenix study findings relate to the general urban heat island concept discussed in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The study contradicts Text 1 by showing that urban heat islands affect all neighborhoods equally.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The study provides specific evidence supporting Text 1's claim that infrastructure and human activities create temperature variations.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The study demonstrates that Phoenix is unique among cities in experiencing urban heat island effects.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The study focuses solely on socioeconomic factors, which Text 1 does not mention as relevant to urban heat islands.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because the Phoenix study provides concrete, measurable evidence that supports the general principles outlined in Text 1. Text 1 explains that urban heat islands result from replacing natural vegetation with concrete/asphalt surfaces and from energy consumption activities. The Phoenix study confirms this by showing that areas with minimal vegetation and higher building density are significantly warmer, while areas with extensive tree coverage and those near parks (which preserve natural vegetation) are cooler. The study's findings about industrial zones being the hottest also supports Text 1's point about industrial activities contributing waste heat. The Phoenix data serves as a real-world validation of the theoretical framework presented in Text 1.",
+  "distractorRationale": {
+    "A": "This choice misrepresents the study's findings. The Phoenix study actually shows significant temperature disparities between different neighborhoods (3-8°F differences), which supports rather than contradicts the urban heat island concept.",
+    "C": "This choice incorrectly suggests Phoenix is unique. Text 1 states that urban heat islands are challenges facing 'modern cities' and 'cities worldwide,' indicating this is a widespread phenomenon, not unique to Phoenix.",
+    "D": "This choice mischaracterizes both texts. While the Phoenix study does reveal socioeconomic disparities in heat exposure, Text 1 does discuss the underlying causes (infrastructure, human activities) that create these disparities, making socioeconomic factors a consequence rather than an unrelated topic."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:51:07.810Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "40dcb478-7a55-4063-8c9b-88b291b5520f"
+  },
+  "passage": "Text 1\n\nUrban heat islands represent one of the most significant environmental challenges facing modern cities. These phenomena occur when urban areas experience significantly warmer temperatures than their rural surroundings, primarily due to human activities and infrastructure. The replacement of natural vegetation with concrete and asphalt surfaces creates areas that absorb and retain heat more effectively than natural landscapes. Additionally, energy consumption from buildings, transportation, and industrial activities contributes substantial waste heat to the urban environment. The consequences extend beyond mere discomfort, affecting energy consumption, air quality, and public health. Cities worldwide are implementing various mitigation strategies, including increasing green spaces, using reflective building materials, and promoting energy-efficient technologies.\n\nText 2\n\nA recent study examined temperature variations across different neighborhoods in Phoenix, Arizona, during summer months. Researchers measured average daily maximum temperatures at multiple locations throughout the metropolitan area. The findings revealed striking disparities: affluent neighborhoods with extensive tree coverage and larger lot sizes averaged 3-5°F cooler than low-income areas with minimal vegetation and higher building density. Industrial zones showed the most extreme temperatures, reaching up to 8°F above the regional average. Conversely, areas near large parks and the few remaining agricultural zones within the city limits recorded temperatures nearly matching those of rural areas outside Phoenix. The study concluded that socioeconomic factors significantly influence exposure to urban heat island effects.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 248,
+    "source": "Environmental research study on urban heat islands"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.125,
+    "evaluatedAt": "2026-01-08T14:57:15.171Z"
+  }
+}

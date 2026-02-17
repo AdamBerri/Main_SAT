@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c9d2-4e8b-4a1c-9f6e-2d8a5c7b3e9f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2.1,
+    "computational": 1.9
+  },
+  "stem": "A researcher surveyed 800 students who visited the school library during lunch periods over two weeks. Of those surveyed, 65% reported studying for at least 5 hours per week outside of school. Based on this information, which conclusion is valid?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Approximately 65% of all students at the school study for at least 5 hours per week outside of school.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Of the 800 students surveyed at the library, 65% study for at least 5 hours per week outside of school.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Students who use the library are more likely to study at least 5 hours per week than students who do not use the library.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The sample size of 800 students is large enough to make valid conclusions about all students at the school.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The survey only collected data from students who visited the library during lunch periods. This is not a random sample of all students at the school - it specifically targets students who choose to use the library.\n\nChoice B is correct because it only describes what was found in the actual sample surveyed. The researcher surveyed 800 library users and found that 65% of them reported studying at least 5 hours per week. This is a factual statement about the sample itself.\n\nTo make valid conclusions about ALL students at the school (choice A), the researcher would need to randomly select students from the entire school population. Students who visit the library may have different study habits than students who don't, so this sample cannot represent all students.\n\nChoice C makes a comparison claim that would require data from both library users and non-library users, but the survey only included library users.\n\nChoice D incorrectly suggests that sample size alone determines validity. While 800 is a large number, a large non-random sample still cannot be used to make valid generalizations about the full population.",
+  "distractorRationale": {
+    "A": "This distractor targets the common misconception that any survey result can be generalized to the entire population, ignoring the sampling method. Students who select this fail to recognize that the sample (library users) is not representative of all students at the school.",
+    "B": "This is the correct answer - it only describes the sample itself without making invalid generalizations.",
+    "C": "This distractor appeals to students who recognize the sample is limited to library users but then incorrectly assume this allows comparison between library users and non-users. The study provides no data about non-library users, so no comparison can be made.",
+    "D": "This distractor targets the misconception that large sample size alone ensures validity, regardless of how the sample was selected. Students who choose this recognize 800 is a large number but fail to consider whether the sampling method was appropriate for generalization."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:35:56.922Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "47f00b50-4057-4637-a2a5-b4c72f68e731"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "3f8b2d1e-4c9a-4f2b-8e3d-7a6c5b4d3e2f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 2.8,
+    "computational": 3.1
+  },
+  "stem": "A water tank contains 150 gallons of water. Water is being drained from the tank at a constant rate. After 5 minutes, the tank contains 120 gallons. Which function $w$ gives the number of gallons of water in the tank $t$ minutes after draining begins?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$w(t) = -6t + 150$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$w(t) = 6t + 150$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$w(t) = -30t + 150$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$w(t) = -6t + 120$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find the linear function, we need to determine the rate of change (slope) and the initial value (y-intercept).\n\nStep 1: Find the rate of change.\nThe tank starts with 150 gallons and has 120 gallons after 5 minutes.\nChange in water: $120 - 150 = -30$ gallons\nChange in time: $5 - 0 = 5$ minutes\nRate of change (slope): $m = \\frac{-30}{5} = -6$ gallons per minute\n\nStep 2: Identify the initial value.\nAt $t = 0$ (when draining begins), the tank contains 150 gallons.\nSo the y-intercept is $b = 150$.\n\nStep 3: Write the function.\nUsing the slope-intercept form $w(t) = mt + b$:\n$w(t) = -6t + 150$\n\nStep 4: Verify.\nCheck at $t = 5$: $w(5) = -6(5) + 150 = -30 + 150 = 120$ ✓\n\nThe answer is A.",
+  "distractorRationale": {
+    "A": "This is the correct answer: slope = -6 gallons/minute, y-intercept = 150 gallons.",
+    "B": "Uses positive slope instead of negative: calculates slope as $\\frac{120-150}{5} = \\frac{-30}{5}$ but writes $+6$ instead of $-6$, giving $w(t) = 6t + 150$. This represents water being added rather than drained.",
+    "C": "Uses the total change in water (-30 gallons) as the slope instead of dividing by time: writes $w(t) = -30t + 150$ instead of $w(t) = -6t + 150$. Verification: at $t=5$, this gives $w(5) = -30(5) + 150 = -150 + 150 = 0$.",
+    "D": "Uses the final amount (120) as the y-intercept instead of the initial amount (150): writes $w(t) = -6t + 120$. Correctly finds slope as -6 but confuses which data point represents $t=0$. Verification: at $t=0$, this gives $w(0) = 120$ instead of 150."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:08.306Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "99893bf4-a4d6-48b0-9d3f-71a81ec38365"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

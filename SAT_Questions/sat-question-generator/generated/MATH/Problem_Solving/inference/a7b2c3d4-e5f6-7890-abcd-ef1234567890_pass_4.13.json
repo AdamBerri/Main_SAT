@@ -1,0 +1,58 @@
+{
+  "id": "a7b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 3.1,
+    "computational": 3
+  },
+  "stem": "A polling organization surveyed a random sample of 400 registered voters in a state to estimate the proportion who support a particular ballot measure. The poll found that 52% of the sample supported the measure, with a margin of error of ±4 percentage points at the 95% confidence level. Which of the following statements is the most appropriate conclusion based on this poll?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Exactly 52% of all registered voters in the state support the ballot measure.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Between 48% and 56% of all registered voters in the state support the ballot measure.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "We can be 95% confident that between 48% and 56% of all registered voters in the state support the ballot measure.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "If the poll were repeated 100 times, exactly 95 of the polls would show support between 48% and 56%.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The correct interpretation of a confidence interval is that we can be 95% confident that the true population parameter (the actual percentage of all registered voters who support the measure) lies within the interval. The sample result was 52% ± 4%, giving us the interval from 48% to 56%. This means that if we used the same sampling method many times, about 95% of the confidence intervals we construct would contain the true population proportion. Choice C correctly states this interpretation using proper statistical language.",
+  "distractorRationale": {
+    "A": "This incorrectly treats the sample statistic as the exact population parameter, ignoring sampling variability and the margin of error.",
+    "B": "This states the confidence interval correctly but omits the crucial '95% confident' qualifier, making it sound like a definitive statement about the population rather than a probabilistic inference.",
+    "D": "This misinterprets what the 95% confidence level means - it's not about repeating the poll and getting results in the interval, but about the interval containing the true population parameter."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:48:27.929Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "546bd6a8-c00c-41bb-80a0-4f01bcb6af72"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.125,
+    "evaluatedAt": "2026-01-08T15:52:50.687Z"
+  }
+}

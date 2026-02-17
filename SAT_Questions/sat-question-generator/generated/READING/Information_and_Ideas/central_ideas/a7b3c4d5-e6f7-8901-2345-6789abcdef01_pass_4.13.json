@@ -1,0 +1,63 @@
+{
+  "id": "a7b3c4d5-e6f7-8901-2345-6789abcdef01",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.1,
+    "linguistic": 2.9
+  },
+  "stem": "Which choice best describes the central idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Emotional labor, originally studied in service industries, is actually a universal aspect of human interaction that affects all relationships.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Service industry workers face unique challenges in managing their emotions while interacting with customers.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Sociologist Arlie Hochschild's research on emotional labor has revolutionized workplace psychology.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Contemporary society's emphasis on emotional authenticity stems from widespread emotional exhaustion.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage's central idea is that emotional labor, while first identified in workplace settings, is actually a universal phenomenon that occurs in all human interactions. The author develops this main point by first defining emotional labor and its origins in workplace studies, then expanding to show how it applies to family relationships, friendships, and all social interactions. The passage emphasizes that this 'invisible work' is essential for social cohesion but often unrecognized, making it a pervasive aspect of human experience rather than something limited to specific contexts.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it captures the passage's main argument about emotional labor's universal nature.",
+    "B": "This choice is too narrow, focusing only on the original workplace context rather than the passage's broader argument about emotional labor's universality.",
+    "C": "This choice focuses too narrowly on Hochschild as an individual researcher rather than on the concept of emotional labor itself and its broad implications.",
+    "D": "This choice takes a minor detail from the end of the passage (emotional authenticity) and presents it as the main idea, when it's actually a consequence of the broader phenomenon being discussed."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:21:31.320Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "4e98a1b0-624a-428f-af7c-98d49f099d89"
+  },
+  "passage": "The concept of \"emotional labor\" has gained significant attention in workplace psychology, yet its implications extend far beyond professional settings. First coined by sociologist Arlie Hochschild, emotional labor refers to the effort required to manage one's emotions to create a publicly observable facial and bodily display. While initially studied in service industries where workers must maintain pleasant demeanors regardless of their actual feelings, researchers now recognize that emotional labor permeates all aspects of human interaction. From maintaining family harmony during stressful holidays to comforting friends through difficult times, individuals constantly regulate their emotional expressions to meet social expectations. This invisible work, though essential for social cohesion, often goes unrecognized and can lead to emotional exhaustion when performed excessively. Understanding emotional labor's ubiquitous nature helps explain why interpersonal relationships can feel draining and why emotional authenticity has become increasingly valued in contemporary society.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 156,
+    "source": "Academic discussion of workplace psychology"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.125,
+    "evaluatedAt": "2026-01-08T15:24:46.525Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "8f3a2b1c-9d4e-5f6a-8b7c-1e2f3a4b5c6d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 4.8,
+    "linguistic": 4.7
+  },
+  "stem": "As used in the passage, \"catholic\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "relating to the Roman Catholic Church",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "universal or all-embracing",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "orthodox or traditional",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "morally righteous",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In this context, \"catholic\" (with a lowercase 'c') means \"universal\" or \"all-embracing.\" The passage describes the historian's approach as encompassing many different aspects and perspectives—technological, economic, social, cultural, and environmental dimensions, as well as diverse disciplinary approaches. The word \"catholic\" here emphasizes the comprehensive, inclusive nature of her methodology, indicating that she cast a wide net to capture all relevant aspects of the industrial revolution rather than limiting herself to a narrow focus.",
+  "distractorRationale": {
+    "A": "This refers to the capitalized \"Catholic\" meaning related to the Roman Catholic Church, but the passage uses lowercase 'catholic' in a secular, academic context with no religious connotations.",
+    "C": "While 'orthodox' can sometimes be associated with traditional religious practices, the passage actually emphasizes how the historian departed from traditional narrow approaches, making this meaning inconsistent with the context.",
+    "D": "This meaning relates to moral righteousness or virtue, but the passage is discussing scholarly methodology and comprehensiveness, not moral judgments or ethical considerations."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:21:44.281Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "aaf607c2-3ccb-4fa9-a0f8-fa259b1e97e4"
+  },
+  "passage": "The historian's approach to documenting the industrial revolution was notably **catholic** in scope, encompassing not merely the technological innovations and economic transformations that traditionally dominate such narratives, but also the social upheavals, cultural shifts, and environmental consequences that accompanied this pivotal period. Rather than adhering to a narrow methodological framework, she drew upon diverse disciplinary perspectives—sociology, anthropology, environmental science, and literary criticism—to construct a comprehensive analysis that illuminated previously overlooked dimensions of this complex historical phenomenon. Her willingness to incorporate such varied analytical lenses reflected a scholarly commitment to presenting the most complete picture possible of humanity's transition into the modern industrial age.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 121,
+    "source": "Academic text on historical methodology"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T15:24:56.989Z"
+  }
+}

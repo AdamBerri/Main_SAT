@@ -1,0 +1,195 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 5.114583333333334,
+        "passRate": 0.8125,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractors rely too heavily on arbitrary arithmetic adjustments (subtracting 1, 3, or 5 from the average) rather than targeting distinct conceptual misconceptions",
+              "Error pathways are implausible or overly complex, such as requiring multiple simultaneous unrelated errors (confusing squaring with cubing AND ignoring the constant term)",
+              "Distractors appear reverse-engineered from desired wrong answers rather than derived from authentic student thinking patterns"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty when it only requires straightforward algebraic expansion and should be 2.5-3/5",
+              "Problem overcalibrated by 2 full difficulty levels - uses standard techniques with simple computations but rated as 'only top students answer correctly'",
+              "Computational difficulty rated 5/5 when calculations involve only small integers and basic operations that are actually 2/5 complexity"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question miscategorized as 'Advanced Math - nonlinear functions' difficulty 1/5 when it's actually basic function substitution more appropriate for 'Heart of Algebra' at 0.5/5 difficulty",
+              "Lacks SAT sophistication - even easy SAT questions typically require multi-step reasoning or conceptual understanding, not just trivial mechanical computation like f(2) = 2² + 3"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Problem contains contradictory mathematical constraints - points (2,15) and (4,35) are equidistant from vertex at x=3 but have unequal y-values, violating parabola symmetry",
+              "The 'solution' abandons rigorous mathematical reasoning and uses averaging without valid justification, making the designated correct answer mathematically indefensible"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5.28125,
+        "passRate": 0.75
+      },
+      "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, faithfulness",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.828125,
+        "passRate": 0.8125,
+        "errorCategories": [
+          {
+            "category": "mathematical_correctness",
+            "frequency": 4,
+            "exampleErrors": [
+              "The designated correct answer C (c=11) is mathematically incorrect based on the problem constraints. The actual correct value should be c=51, which is not among the choices.",
+              "The problem stem states the parabola passes through (2, 15) and (6, 15), but the explanation requires points (2, -6) and (6, -6) to arrive at the stated correct answer of 3.",
+              "Distractor B's rationale claims a sign error leads to -1, but verification shows the described error pathway actually produces 23, not -1."
+            ]
+          },
+          {
+            "category": "distractor_rationale_coherence",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor B's rationale is self-contradictory, starting with one error type (computational: 4(16)=63) but then pivoting to a completely different error (using axis of symmetry as y-value), and the arithmetic doesn't produce the stated answer.",
+              "Distractor C requires multiple unrelated errors with vague explanations like 'additional sign or arithmetic error' without showing how these naturally lead to the answer value.",
+              "Distractor D presents two completely different error paths for the same wrong answer, making it unclear what misconception is actually being measured."
+            ]
+          },
+          {
+            "category": "difficulty_calibration",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty is actually 3/5 (Medium) because the symmetry clue makes it accessible to students with standard SAT preparation, and it follows a linear solution path.",
+              "Question rated 5/5 (Hardest) is overestimated by 1-1.5 points; it's actually 3.5-4/5 because it has a clear entry point through symmetry and uses standard SAT techniques.",
+              "Question rated 2/5 is understated by 0.5-1.0 points; should be 2.5-3/5 as it requires synthesis of multiple quadratic concepts beyond typical direct formula applications."
+            ]
+          },
+          {
+            "category": "missing_plausible_errors",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractors miss natural mistakes like f(1)=5 where students correctly recognize symmetry but incorrectly conclude f(1)=f(2)=5 by confusing the two given points.",
+              "Missing distractors for common errors like 'forgetting to square the binomial' which would yield -6, or coefficient errors (a=1/2 or a=2) leading to other systematic wrong answers.",
+              "The distractor set lacks values from averaging y-coordinates incorrectly, such as (5+(-13))/2=-4, which represents a common averaging misconception."
+            ]
+          },
+          {
+            "category": "explanation_quality",
+            "frequency": 1,
+            "exampleErrors": [
+              "The explanation contains 15+ recalculation attempts with debugging notes like 'Wait, let me recalculate...', 'This doesn't match any answer choice...', and 'I'll adjust the problem...' instead of providing a clean, polished solution.",
+              "The explanation admits at the end that the problem needs to be changed, essentially acknowledging the stem and correct answer are incompatible.",
+              "The explanation reads like raw working notes rather than student-facing instructional content, creating confusion and distrust."
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.572916666666667,
+        "passRate": 0.75
+      },
+      "improvementMade": "Addressed: mathematical_correctness, distractor_rationale_coherence, difficulty_calibration",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.942708333333333,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractor rationales don't match their numerical values (e.g., B claims calculation yields 37 but the distractor is 7)",
+              "Distractors conflate multiple distinct errors rather than isolating one clear misconception (e.g., B mixes sign errors, coefficient errors, and arithmetic errors indiscriminately)",
+              "Distractor pathways are incoherent or artificially constructed rather than reflecting genuine student misconceptions (e.g., Choice A's 'confusing horizontal distance with vertical distance' doesn't naturally lead to the answer)"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question rated 5/5 (Hard) but is actually 3.5/4 (Medium-to-Above Average) due to straightforward linear procedure with no branching paths or alternative methods",
+              "Question rated 4/5 (Above Average) but is actually 3/5 (Medium) because key insight (symmetry) is immediately available, substantially reducing cognitive demand",
+              "Computational difficulty overstated relative to conceptual difficulty; simple integer arithmetic and minimal multi-step calculations don't justify high difficulty ratings"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Final arithmetic error in explanation: computation shows 2 - 16 + 29 = 15, but designated answer is 1; correct answer (15) does not appear in provided choices",
+              "Designated answer (-8) contradicts correct calculation: 2 × 5 × (-1) = -10, not -8; correct answer (-10) is not among the provided choices"
+            ]
+          },
+          {
+            "category": "pedagogical_coherence",
+            "frequency": 2,
+            "exampleErrors": [
+              "Multiple incompatible explanations per distractor suggest writers didn't have one clear misconception in mind (e.g., D's explanation conflates 'confusing y-values' with 'incorrect vertex identification')",
+              "Distractor design lacks mathematical sophistication; some choices are trivially eliminable (e.g., simply copying a given value from the stem) and don't reflect coherent student reasoning"
+            ]
+          },
+          {
+            "category": "problem_construction",
+            "frequency": 1,
+            "exampleErrors": [
+              "Core problem validation failure: correct answer derived from sound mathematical reasoning does not appear in the provided answer choices, indicating fundamental error in problem setup or answer key compilation"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.375,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, answer_validity",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T19:49:18.422Z",
+  "completedAt": "2026-01-09T20:16:34.958Z",
+  "bestTestScore": 4.572916666666667
+}

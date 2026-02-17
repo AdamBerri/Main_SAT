@@ -1,0 +1,54 @@
+{
+  "id": "a7f3c8d2-4e1b-4c9a-b8e6-9d2f5a1c3e7b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A researcher investigated whether daily exercise affects academic performance. She randomly selected 500 students from a large university and divided them into two groups based on their self-reported exercise habits: 280 students who exercised daily and 220 who did not. The researcher found that 65% of daily exercisers had GPAs above 3.5, compared to 48% of non-exercisers. Which conclusion about the university's student population is most valid?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Daily exercise causes higher GPAs among university students.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Students who exercise daily are more likely to have GPAs above 3.5 than students who do not exercise daily.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Among university students, there is an association between daily exercise and having a GPA above 3.5, but this association does not necessarily mean exercise causes higher GPAs.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The difference in GPA percentages is too small to draw any valid conclusion about the relationship between exercise and academic performance.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "This is an observational study where students self-selected into exercise groups rather than being randomly assigned to exercise or not exercise. While the researcher randomly selected the 500 students from the university (making generalization to the university population valid), the study design does not establish causation.\n\nThe key limitation is confounding variables. Students who choose to exercise daily may differ from non-exercisers in other ways that affect GPA: time management skills, discipline, socioeconomic status, health consciousness, or other factors. Any of these could explain the GPA difference without exercise being the cause.\n\nOption C correctly identifies that:\n1. An association exists (65% vs 48% is a meaningful difference in the randomly selected sample)\n2. This association can be generalized to the university population (due to random selection)\n3. But causation cannot be inferred from this observational study design\n\nTo establish causation, the researcher would need an experimental design where students are randomly assigned to exercise or not exercise, controlling for confounding variables.",
+  "distractorRationale": {
+    "A": "This incorrectly claims causation from an observational study. Students self-selected into exercise groups, so confounding variables (like motivation, time management, or health status) could explain the GPA difference. Random selection of the sample allows generalization but does not establish causation without random assignment to treatment groups.",
+    "B": "While this avoids claiming causation, it makes a predictive claim ('more likely') that goes beyond what the observational data supports. The higher percentage in the sample shows association, but without controlling for confounding variables through random assignment, we cannot validly predict individual likelihood. This distractor appeals to students who recognize correlation isn't causation but don't fully understand the limitations of observational studies.",
+    "C": "This is the correct answer. It appropriately acknowledges the association found in the randomly selected sample (which can be generalized to the population) while correctly noting that the observational study design prevents causal inference.",
+    "D": "This incorrectly dismisses a 17-percentage-point difference (65% - 48% = 17%) as 'too small.' This distractor targets students who lack understanding of what constitutes a meaningful difference or who incorrectly believe that only very large differences matter. The random selection of 500 students makes this difference meaningful for identifying association, though not causation."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:20.036Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "53e780b9-ff78-43c9-ae0c-3d07b70a865b"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

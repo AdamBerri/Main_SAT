@@ -1,0 +1,63 @@
+{
+  "id": "a7f3c8d2-4e6b-4a9c-8f1d-2b5e7c9a1f3e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.1,
+    "procedural": 3.9,
+    "linguistic": 3.8
+  },
+  "stem": "The passage is mainly concerned with",
+  "choices": [
+    {
+      "label": "A",
+      "text": "describing how the brain's default mode network facilitates divergent thinking processes.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "challenging the traditional view that creativity and analytical thinking are incompatible cognitive processes.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "explaining why breakthrough innovations require systematic application of creative thinking.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "arguing that cognitive flexibility is more important than specialization in any single intellectual domain.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage's central argument is that recent neuroscientific research challenges the conventional wisdom that creativity and analytical thinking are incompatible. The author presents evidence that these processes actually work together synergistically, and uses this to explain various phenomena like breakthrough innovations and exceptional intellectual achievement. The main thrust of the passage is to overturn the traditional dichotomy between creative and analytical thinking.",
+  "distractorRationale": {
+    "A": "This choice focuses on a specific detail mentioned in the passage (the brain's default mode network) rather than the main argument. While this information supports the central claim, it's not what the passage is mainly concerned with.",
+    "B": "This is the correct answer as it captures the passage's central argument.",
+    "C": "This choice focuses on one supporting example (breakthrough innovations) rather than the main argument. The passage uses innovations as evidence for the broader claim about creativity and analytical thinking working together.",
+    "D": "While the passage mentions cognitive flexibility as important, this choice is too narrow and doesn't capture the specific argument about the relationship between creativity and analytical thinking that forms the passage's central concern."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:53:17.948Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "83eefc3d-a022-4632-ab1e-4f1c73e0fcae"
+  },
+  "passage": "The conventional wisdom that creativity and analytical thinking are fundamentally incompatible has been challenged by recent neuroscientific research. Rather than operating as opposing cognitive systems, creative and analytical processes appear to work synergistically, with the brain's default mode network facilitating divergent thinking while executive control networks refine and evaluate ideas. This integration explains why many breakthrough innovations emerge not from pure inspiration, but from the systematic application of creative thinking to analytical problems. The most effective problem-solvers seamlessly alternate between generative and evaluative modes, using analytical frameworks to guide creative exploration and creative insights to transcend the limitations of purely logical approaches. This cognitive flexibility, rather than specialization in either domain, appears to be the hallmark of exceptional intellectual achievement across disciplines ranging from scientific research to artistic endeavors.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 154,
+    "source": "Adapted from cognitive science research"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9583333333333335,
+    "evaluatedAt": "2026-01-08T14:56:35.539Z"
+  }
+}

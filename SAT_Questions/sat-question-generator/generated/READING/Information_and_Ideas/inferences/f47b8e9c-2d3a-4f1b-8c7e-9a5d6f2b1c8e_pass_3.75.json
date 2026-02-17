@@ -1,0 +1,63 @@
+{
+  "id": "f47b8e9c-2d3a-4f1b-8c7e-9a5d6f2b1c8e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 2.9,
+    "linguistic": 3.2
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred about the thriving coral sections?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "They are protected by an underwater freshwater spring that creates unique environmental conditions.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "They will eventually succumb to bleaching like the outer edges of the reef system.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "They have been artificially enhanced by previous marine conservation efforts.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "They represent a new species of coral that is naturally resistant to environmental changes.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage provides several clues that point to an underwater freshwater spring: the consistently cooler water temperature (2-3 degrees Celsius cooler), the different salinity levels, the circular pattern of the thriving area (800 meters in diameter), the unusual geological formations beneath these zones, and the local name 'the cold heart' passed down through generations. These details collectively suggest a localized source of cooler, less saline water - characteristics typical of a freshwater spring - that creates a unique microenvironment protecting the coral from the conditions affecting the outer reef.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "While this might seem logical, the passage suggests the inner sections have unique environmental conditions (cooler temperature, different salinity) that are actively protecting them, making this outcome less certain.",
+    "C": "The passage provides no evidence of human intervention or conservation efforts; the local name 'the cold heart' suggests this phenomenon has existed for generations before modern conservation.",
+    "D": "The passage indicates environmental differences in the water itself (temperature and salinity), not biological differences in the coral species, making this explanation unsupported."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:21:22.572Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "a58deeae-3783-49e4-8681-a869600672d1"
+  },
+  "passage": "When marine biologist Dr. Elena Vasquez first arrived at the remote research station on Coral Island, she expected to document the gradual decline of the reef system that satellite imagery had suggested was occurring. Instead, her initial surveys revealed something puzzling: while the outer edges of the reef showed the anticipated signs of bleaching and deterioration, the inner sections displayed remarkably vibrant coral formations with diverse fish populations that seemed to be thriving. The water temperature readings in these inner areas were consistently 2-3 degrees Celsius cooler than in the surrounding ocean, and the salinity levels showed subtle but measurable differences. Local fishing crews, when questioned, mentioned that their fathers and grandfathers had always referred to this particular area as 'the cold heart,' though none could explain the origin of the name. Dr. Vasquez noted that the thriving sections were all located within a roughly circular area approximately 800 meters in diameter, and her preliminary geological surveys indicated unusual rock formations beneath these zones.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 167,
+    "source": "Adapted from marine biology research"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.75,
+    "evaluatedAt": "2026-01-08T15:26:29.811Z"
+  }
+}

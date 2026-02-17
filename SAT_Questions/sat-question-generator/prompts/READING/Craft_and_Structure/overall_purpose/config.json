@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "currentVersion": "1.4.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Reading question about the author's purpose.\n\nThe passage should:\n- Have a clear rhetorical purpose (inform, persuade, analyze, describe, etc.)\n- Show the author's intent through word choice and structure\n- Be from an academic, journalistic, or literary context\n\nThe question should:\n- Ask about the author's \"main purpose\" or why they wrote the passage\n- Test understanding of rhetorical intent\n- Have distractors that confuse purpose with topic or misidentify intent\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.312Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/READING/Craft_and_Structure/overall_purpose/schema.json"
+}

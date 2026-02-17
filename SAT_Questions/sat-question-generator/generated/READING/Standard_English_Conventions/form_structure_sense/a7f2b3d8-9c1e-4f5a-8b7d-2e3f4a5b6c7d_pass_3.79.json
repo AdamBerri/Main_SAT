@@ -1,0 +1,62 @@
+{
+  "id": "a7f2b3d8-9c1e-4f5a-8b7d-2e3f4a5b6c7d",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 2.8,
+    "linguistic": 3
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "poses a significant threat",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "pose a significant threat",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "posing a significant threat",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "has posed a significant threat",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The correct answer is B because the subject 'rising ocean temperatures' is plural, requiring the plural verb form 'pose.' The phrase 'rising ocean temperatures' refers to multiple temperature increases across different locations and times, making it a plural subject that must agree with a plural verb.",
+  "distractorRationale": {
+    "A": "This uses the singular verb form 'poses,' which incorrectly treats the plural subject 'rising ocean temperatures' as singular.",
+    "B": "This is correct - the plural verb 'pose' agrees with the plural subject 'rising ocean temperatures.'",
+    "C": "This uses a participial form 'posing' that creates an incomplete construction and doesn't provide the main verb needed for the clause.",
+    "D": "This uses the singular auxiliary verb 'has' with past participle 'posed,' which incorrectly treats the plural subject as singular."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:37:28.824Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "938b0cbb-30be-4446-ba16-7d22ca045a4e"
+  },
+  "passage": "The marine biology research team has been studying coral reef ecosystems for over a decade, and their findings suggest that rising ocean temperatures poses a significant threat to biodiversity. The team's comprehensive data collection methods have enabled them to track changes in coral health across multiple sites in the Caribbean.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 52,
+    "source": "Academic research context"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.7857142857142856,
+    "evaluatedAt": "2026-01-08T14:42:52.081Z"
+  }
+}

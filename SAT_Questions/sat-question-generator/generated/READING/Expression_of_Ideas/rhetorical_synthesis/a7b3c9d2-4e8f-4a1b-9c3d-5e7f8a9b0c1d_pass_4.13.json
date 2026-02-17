@@ -1,0 +1,63 @@
+{
+  "id": "a7b3c9d2-4e8f-4a1b-9c3d-5e7f8a9b0c1d",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.1,
+    "procedural": 2.3,
+    "linguistic": 2
+  },
+  "stem": "The student wants to emphasize the environmental benefits of electric buses while acknowledging the economic considerations. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Although electric buses cost 60% more initially than diesel buses, they produce zero direct emissions and operate more quietly, making them environmentally superior despite the higher upfront investment.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Electric buses have lower maintenance costs and operate quietly, and many cities offer financial incentives for their adoption, while diesel buses contribute to air pollution.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Electric buses produce zero direct emissions and have lower maintenance costs, but they cost 60% more initially than diesel buses that contribute to urban air pollution.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "While diesel buses contribute significantly to urban air pollution, electric buses are more expensive initially, though cities are offering financial incentives for electric bus adoption.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A most effectively accomplishes the goal by leading with the economic concern (higher initial cost) but then emphasizing multiple environmental benefits (zero emissions and quieter operation) before concluding with a clear statement that positions electric buses as 'environmentally superior.' This structure acknowledges the economic reality while strongly emphasizing the environmental advantages, exactly matching the student's stated purpose.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "This choice mentions environmental and economic factors but fails to create a clear emphasis on environmental benefits. The structure doesn't acknowledge the cost concern adequately and doesn't create the intended emphasis.",
+    "C": "While this mentions environmental benefits, it ends with the negative aspects (cost and pollution from diesel buses), which undermines the goal of emphasizing environmental benefits. The structure works against the intended emphasis.",
+    "D": "This choice focuses more on the economic aspects and financial incentives rather than emphasizing the environmental benefits. It doesn't effectively highlight the environmental advantages of electric buses."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:58:34.417Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "8c63e2d3-5199-49e6-9631-56e3d7bd1314"
+  },
+  "passage": "While researching for a report on urban transportation, a student has gathered the following notes:\n\n• Electric buses produce zero direct emissions during operation\n• Traditional diesel buses contribute significantly to urban air pollution\n• The initial cost of electric buses is approximately 60% higher than diesel buses\n• Electric buses have lower maintenance costs over their lifetime\n• Many cities are offering financial incentives for electric bus adoption\n• Electric buses operate more quietly than diesel buses, reducing noise pollution",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 85,
+    "source": "Student research notes on urban transportation"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.125,
+    "evaluatedAt": "2026-01-08T15:04:07.307Z"
+  }
+}

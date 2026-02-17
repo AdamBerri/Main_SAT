@@ -1,0 +1,63 @@
+{
+  "id": "f47b8e2d-9c41-4f89-b7a3-8d5e2f1a6c9b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.7,
+    "linguistic": 5
+  },
+  "stem": "The passage is primarily concerned with",
+  "choices": [
+    {
+      "label": "A",
+      "text": "demonstrating that Renaissance humanism was entirely dependent on classical Greek and Roman sources.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "challenging the conventional historical view that the Renaissance represented a sharp break from medieval thought.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "arguing that medieval scholasticism was superior to Renaissance intellectual achievements.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "explaining how thirteenth-century Franciscan philosophy influenced later empirical methods.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage's central argument is that the traditional historical interpretation of the Renaissance as a 'decisive rupture' from medieval thought is flawed. The author systematically argues that what historians view as revolutionary changes were actually continuations or recontextualizations of medieval ideas. The opening sentence establishes this thesis, and the entire passage supports it with specific examples (individual agency, empirical observation, secularization) before concluding that this 'historiographical myopia' prevents proper understanding of European intellectual development as continuous rather than revolutionary.",
+  "distractorRationale": {
+    "A": "This choice misrepresents the passage's argument. While the author mentions that humanist rhetoric emphasized classical antiquity, the main point is about continuity with medieval (not classical) traditions, and the author argues that even this classical influence was more rhetorical than substantive.",
+    "B": "This is the correct answer as explained above.",
+    "C": "The passage does not make a value judgment about which period was 'superior.' Instead, it argues for continuity between the periods and critiques historians who overemphasize the differences.",
+    "D": "While the passage mentions Franciscan philosophy as an example, this is merely one piece of evidence supporting the larger argument about continuity. This choice focuses on a supporting detail rather than the central claim."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:19:50.794Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "b5b5aa39-1b77-469c-887b-5f833dfb439a"
+  },
+  "passage": "The prevailing historiographical paradigm that portrays the Renaissance as a decisive rupture from medieval scholasticism obscures the profound continuities that undergird this putative transformation. While humanist rhetoric emphasized classical antiquity's revival, the substantive intellectual frameworks remained largely derivative of medieval precedents. The supposed elevation of individual agency, for instance, merely recontextualized rather than supplanted the medieval notion of divine providence operating through human instrumentality. Similarly, the celebrated emergence of empirical observation was prefigured by thirteenth-century Franciscan natural philosophy, particularly in the works of Roger Bacon and Robert Grosseteste. Even the Renaissance's vaunted secularization represented not an abandonment of theological concerns but their sophisticated integration into ostensibly worldly pursuits. This historiographical myopia perpetuates a false dichotomy that impedes our understanding of European intellectual development as a fundamentally continuous process of gradual metamorphosis rather than revolutionary discontinuity.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 154,
+    "source": "Academic historical analysis"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.5833333333333335,
+    "evaluatedAt": "2026-01-08T15:24:46.524Z"
+  }
+}

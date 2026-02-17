@@ -1,0 +1,266 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "config": {
+    "maxIterations": 5,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.908854166666667,
+        "passRate": 0.9375,
+        "errorCategories": [
+          {
+            "category": "difficulty_overcalibration",
+            "frequency": 7,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 3/5 due to clear main idea structure and straightforward elimination process",
+              "Question rated 5/5 (hardest) but performs at 3/5 (medium) - expected 70-75% accuracy vs stated ~40% for true difficulty 5",
+              "Stated 3/5 difficulty but actually 1.8-2.0/5 - main idea explicitly stated in opening/closing, weak distractors easily eliminated"
+            ]
+          },
+          {
+            "category": "weak_distractor_quality",
+            "frequency": 5,
+            "exampleErrors": [
+              "Distractors lack sophistication - no attractive wrong answers for students who understand the passage, easily eliminated",
+              "Wrong answers contain obvious eliminator signals (absolutes, scope errors, extreme language) making elimination too straightforward",
+              "Choice A directly paraphrases opening sentence, distractors are obviously too narrow or contradictory - no competing plausible interpretations"
+            ]
+          },
+          {
+            "category": "linguistic_vs_procedural_confusion",
+            "frequency": 4,
+            "exampleErrors": [
+              "Difficulty ratings confuse linguistic sophistication with conceptual/procedural complexity - high vocabulary doesn't equal difficult task",
+              "Linguistic difficulty (4.9/5) and procedural difficulty (4.9/5) seem inflated relative to straightforward main idea identification",
+              "Surface-level linguistic complexity (genuinely high) mistaken for actual cognitive task difficulty (moderate) - passage difficulty ≠ question difficulty"
+            ]
+          },
+          {
+            "category": "explicit_thesis_signaling",
+            "frequency": 4,
+            "exampleErrors": [
+              "Main idea explicitly stated in first sentence/conclusion, correct answer nearly quotes thesis - removes inference challenge",
+              "Passage uses strong signal words like 'The fundamental error lies in...' which directly points to main argument",
+              "Topic sentence states thesis directly with clear 'old view vs new view' structure that telegraphs the answer"
+            ]
+          },
+          {
+            "category": "sat_authenticity_deviation",
+            "frequency": 1,
+            "exampleErrors": [
+              "Passage uses graduate-level philosophical terminology (incommensurability, asymptotically) without scaffolding - reads like philosophy journal not SAT",
+              "Answer choices require philosophical training to distinguish - all choices B, C, D could be defended based on passage content",
+              "Content too specialized (meta-philosophical concepts about scientific epistemology) - typically graduate-level, not accessible to diverse student backgrounds"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.9375,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overcalibration, weak_distractor_quality, linguistic_vs_procedural_confusion",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 5.161458333333334,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "weak_distractor_design",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractors are obviously supporting details rather than cleverly disguised alternatives",
+              "No truly competitive distractors that would appeal to mid-level students",
+              "The incorrect choices are clearly subordinate details with obvious eliminations using basic detail-vs-main-idea distinction"
+            ]
+          },
+          {
+            "category": "straightforward_passage_structure",
+            "frequency": 4,
+            "exampleErrors": [
+              "Clear problem-solution structure with explicit topic sentences reduces complexity",
+              "Linear chronology with clear cause-effect relationships requires no competing interpretations",
+              "Classic 'old view → new view' structure that SAT students are trained to recognize makes identification too easy"
+            ]
+          },
+          {
+            "category": "explicit_thesis_placement",
+            "frequency": 3,
+            "exampleErrors": [
+              "The main idea is telegraphed too clearly in the final sentence, reducing cognitive demand",
+              "The last sentence essentially IS the answer, requiring minimal inference",
+              "Very clear opening thesis with well-organized progression makes the answer too obvious"
+            ]
+          },
+          {
+            "category": "direct_answer_paraphrasing",
+            "frequency": 3,
+            "exampleErrors": [
+              "Choice A directly paraphrases the passage's concluding statement making it too straightforward",
+              "Answer choice A almost paraphrases the conclusion with similar language",
+              "The correct answer uses passage language ('consequences,' 'beyond') making selection too obvious"
+            ]
+          },
+          {
+            "category": "insufficient_synthesis_requirement",
+            "frequency": 3,
+            "exampleErrors": [
+              "No need to synthesize information across multiple paragraphs for a stated 4/5 difficulty",
+              "No abstract reasoning or inference required beyond basic summarization",
+              "Missing multiple plausible interpretations and subtle inference required for higher difficulty levels"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: weak_distractor_design, straightforward_passage_structure, explicit_thesis_placement",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.830729166666667,
+        "passRate": 0.8125,
+        "errorCategories": [
+          {
+            "category": "difficulty_overcalibration",
+            "frequency": 6,
+            "exampleErrors": [
+              "Question stated as 5/5 difficulty functions closer to 2-3/5 due to obvious answer confirmation and clear elimination of distractors",
+              "Question stated as 4/5 difficulty actually operates at 3.3-3.5/5 because standard elimination strategy works efficiently despite high linguistic difficulty",
+              "Question rated 5/5 across all dimensions is actually 3-3.5/5 since it takes strong students only 90-120 seconds, not the 3-4 minutes expected for true difficulty 5"
+            ]
+          },
+          {
+            "category": "answer_ambiguity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Legitimate ambiguity between answers A and D where A describes system nature while D describes system priorities - both strongly supported by passage",
+              "Genuine ambiguity between A (methodological framework about archaeology vs. records) and D (substantive finding about medieval parenting values)",
+              "Answer A emphasizes meta-level archaeological methodology while B captures the direct historical finding - both defensibly correct depending on interpretation of 'main idea'"
+            ]
+          },
+          {
+            "category": "linguistic_versus_conceptual_confusion",
+            "frequency": 2,
+            "exampleErrors": [
+              "High linguistic difficulty (4.2/5 vocabulary) creates accessibility barrier but doesn't reflect true reasoning complexity - strong readers find it straightforward while weak readers struggle regardless of analytical skills",
+              "Dense vocabulary and complex prose (legitimately 4/5 linguistic) creates false floor making question seem harder conceptually than it actually is - inflates stated difficulty by 1 full point"
+            ]
+          },
+          {
+            "category": "distractor_weakness",
+            "frequency": 2,
+            "exampleErrors": [
+              "Wrong answers clearly eliminable because B is too general, C reverses causation, D contradicts passage - none would tempt strong readers in a true difficulty 5 question",
+              "Distractors either focus on details (B), miss key elements (C), or mischaracterize emphasis (D) making them clearly distinguishable rather than creating genuine challenge"
+            ]
+          },
+          {
+            "category": "difficulty_underestimation",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question rated 3/5 should be 2/5 or 1.5/5 because it has clear thesis statement, no ambiguity, and typical 'broad but accurate' main idea pattern allowing 30-45 second completion",
+              "Stated difficulty suggests 50% accuracy but question would likely achieve 65-75% due to straightforward structure"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.708333333333333,
+        "passRate": 0.75
+      },
+      "improvementMade": "Addressed: difficulty_overcalibration, answer_ambiguity, linguistic_versus_conceptual_confusion",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.072916666666667,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 6,
+            "exampleErrors": [
+              "Question stated as 3/5 difficulty but actual difficulty ~2.5/5 due to repetitive passage structure and obvious answer architecture with weak distractors",
+              "Question stated as 2/5 difficulty but actual difficulty ~1.5/5 because main idea is explicitly stated in passage with no inference required and clear correct answer",
+              "Question stated as 5/5 difficulty but actual difficulty 3.5-4/5 because passage includes explicit thesis statement in final sentence that mirrors the correct answer choice"
+            ]
+          },
+          {
+            "category": "distractor_effectiveness",
+            "frequency": 5,
+            "exampleErrors": [
+              "Wrong answers (B, C, D) are too easy to eliminate because they focus on single details or narrow aspects rather than the overarching theme, failing to create genuine cognitive demand",
+              "Distractors lack temptation factor—even careful elimination strategies quickly narrow to correct answer without requiring careful reasoning or meaningful discrimination between plausible options",
+              "Answer choices B and D are clearly secondary details or explicitly contradicted by passage content, making them insufficiently 'trappy' for the stated difficulty level"
+            ]
+          },
+          {
+            "category": "passage_structure_guidance",
+            "frequency": 3,
+            "exampleErrors": [
+              "Passage uses highly repetitive or parallel structure that makes pattern-obvious and minimizes inference required—examples follow identical logic, reducing cognitive load below stated difficulty",
+              "Passage includes explicit thesis statement or topic sentence that directly mirrors correct answer choice, allowing students to match rather than synthesize",
+              "Clear linear narrative with explicit organization markers ('surprisingly,' 'thus,' 'meanwhile') guides readers methodically through argument rather than requiring genuine inference"
+            ]
+          },
+          {
+            "category": "answer_choice_discrimination",
+            "frequency": 1,
+            "exampleErrors": [
+              "Answer choice C is problematically close to correct answer A—both accurately reflect passage content, with C capturing the passage's final/most emphasized point while A requires synthesis, creating ambiguity about what constitutes the 'main idea'"
+            ]
+          },
+          {
+            "category": "inference_demand_mismatch",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question requires minimal multi-step reasoning and primarily tests recognition/matching of explicitly stated main idea rather than inferential synthesis across disparate evidence types as difficulty rating suggests"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.145833333333334,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, distractor_effectiveness, passage_structure_guidance",
+      "newPromptVersion": "1.3.0"
+    }
+  ],
+  "currentBestVersion": "1.2.0",
+  "converged": true,
+  "startedAt": "2026-01-08T18:49:18.730Z",
+  "completedAt": "2026-01-09T20:33:05.799Z",
+  "bestTestScore": 4.708333333333333
+}

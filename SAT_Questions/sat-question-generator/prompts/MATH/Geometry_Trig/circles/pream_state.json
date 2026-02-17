@@ -1,0 +1,202 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "circles"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 3.377604166666666,
+        "passRate": 0.125,
+        "errorCategories": [
+          {
+            "category": "multiple_correct_answers",
+            "frequency": 18,
+            "exampleErrors": [
+              "All four answer choices are mathematically correct - each point lies exactly 5 units from center (3, -2)",
+              "Choices B, C, and D are all also correct answers, not distractors - verification shows (7,1), (8,-2), and (3,3) all satisfy the circle equation",
+              "The designated answer is correct but so are the other three options - the question has four valid answers instead of one"
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 7,
+            "exampleErrors": [
+              "Stated difficulty 3/5 but actual is 2/5 - straightforward distance formula application with no conceptual tricks",
+              "Calibration overstated by 0.7-1.0 points - this single-step problem should yield 65-75% accuracy, not 50%",
+              "Too easy for stated difficulty - tests direct recall of d=2r formula, more appropriate for middle school than SAT"
+            ]
+          },
+          {
+            "category": "distractor_validation_failure",
+            "frequency": 6,
+            "exampleErrors": [
+              "Distractor rationale claims point is 'approximately 5.83 units' but explanation calculates it as exactly 5",
+              "The rationale states this distractor targets a misconception, but the actual calculation shows this point IS on the circle",
+              "Distractor D rationale about area formula confusion is psychologically implausible - would require TWO errors (use area formula AND forget π)"
+            ]
+          },
+          {
+            "category": "incorrect_answer_key",
+            "frequency": 5,
+            "exampleErrors": [
+              "The designated correct answer C) h=12 is wrong - when h=12, k=0 violates the condition that k>0. The actual answer is B) h=6√2",
+              "The correct answer is 28/3 ≈ 9.33, not the designated answer C) 10 - mathematical error in problem setup",
+              "Designated answer B) 29/4 is incorrect - the actual solution is k=25/4 which isn't among the choices"
+            ]
+          },
+          {
+            "category": "explanation_contradictions",
+            "frequency": 4,
+            "exampleErrors": [
+              "Explanation contains self-correction dialogue revealing 'Choice B also works... I need to adjust choice B' but never updates the actual choice",
+              "Explanation proves all four points are equidistant then inexplicably concludes 'the correct answer is A' without mathematical justification",
+              "The author correctly derives h=6√2 in the explanation but then claims answer is h=12"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.65625,
+        "passRate": 0.25
+      },
+      "improvementMade": "Addressed: multiple_correct_answers, difficulty_miscalibration, distractor_validation_failure",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.28125,
+        "passRate": 0.25,
+        "errorCategories": [
+          {
+            "category": "answer_validity",
+            "frequency": 6,
+            "exampleErrors": [
+              "Multiple answer choices satisfy the geometric condition (all four points lie on the circle), violating the principle of a single correct answer",
+              "The designated correct answer is mathematically sound, but the question contains at least two defensible correct answers due to flawed answer choice design",
+              "The keyed answer contradicts the mathematical work shown in the explanation—correct calculations yield a different answer than what is marked correct"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor rationales are internally contradictory or reference different point coordinates than the actual answer choices (e.g., rationale discusses (7,0) but choice is (7,1))",
+              "Error pathways lack transparency—it's unclear how a student would mechanically arrive at the distractor through a systematic misconception rather than random guessing",
+              "At least one distractor actually satisfies the problem conditions (lies on the circle), making it indistinguishable from the correct answer"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question rated 3/5 difficulty but actual success rate would likely be 70-80% (typical of 1.5-2/5 questions); difficulty is overstated by 1+ level",
+              "Procedural complexity is straightforward (direct formula application) contradicting the stated 5/5 computational difficulty rating",
+              "Missing computational or conceptual challenge typically required to justify medium-to-high difficulty ratings; question requires only routine substitution"
+            ]
+          },
+          {
+            "category": "distractor_rationale_error",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor rationale describes a mathematically incoherent error path that doesn't actually produce the stated answer when worked through systematically",
+              "Multiple alternative error narratives are provided for a single distractor, contradicting each other and creating ambiguity about the intended misconception being tested"
+            ]
+          },
+          {
+            "category": "geometric_constraint_inconsistency",
+            "frequency": 1,
+            "exampleErrors": [
+              "The stated geometric constraint (x-coordinate less than 3) uniquely determines one of two mathematically valid solutions, but the keyed answer ignores this constraint and selects the other solution"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.125,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_validity, distractor_quality, difficulty_accuracy",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.3124999999999996,
+        "passRate": 0.16666666666666666,
+        "errorCategories": [
+          {
+            "category": "answer_validity",
+            "frequency": 5,
+            "exampleErrors": [
+              "Designated correct answer (A: k=1) contradicts mathematical derivation showing k=2; verification by substitution confirms answer B is correct",
+              "All four answer choices lie on the circle (distance=5), making it impossible to have a single correct answer; multiple-choice question has four equally valid answers",
+              "Point (7,6) cannot lie on circle with radius 5; vertical distance from center to y=6 exceeds radius (8>5), creating mathematical impossibility in problem constraints"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractor rationales are vague and don't clearly articulate misconception strategies; C and D lack focus on targeted student errors with confusing or convoluted explanations",
+              "Distractors poorly calibrated for discrimination—some eliminate too easily (distance ~3.6 vs 5), failing to effectively distinguish understanding levels; missing 'plausible alternative' distractors with distances very close to correct answer",
+              "Distractor rationales incoherent or unjustified; provided arithmetic doesn't lead to claimed answer (D=9); error mechanisms unclear without identifiable student misconception type"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 2.5-3/5; straightforward procedural steps with clean arithmetic and low computational complexity; overestimated by 1.5-2 points",
+              "Stated difficulty 4/5 with actual difficulty ~3.7/5; mechanical approach path, manageable computational accessibility with standard arithmetic; procedural rating slightly overestimated despite solid conceptual demand"
+            ]
+          },
+          {
+            "category": "algebraic_verification",
+            "frequency": 1,
+            "exampleErrors": [
+              "Derived quadratic equation 4x²-36x+33=0 yields solutions x=(9±4√3)/2≈7.964 and 1.036, but designated answer (33/5=6.6) doesn't match either solution; final answer asserted without justification and fails verification against original circle equations"
+            ]
+          },
+          {
+            "category": "logic_consistency",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question stem states problem constraints that create logical impossibility: circle radius 5 with requirement for point at y=6 (vertical distance 8 from center); no point can satisfy both conditions, breaking problem validity entirely"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_validity, distractor_quality, difficulty_accuracy",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:32:04.881Z",
+  "completedAt": "2026-01-09T20:17:50.953Z",
+  "bestTestScore": 3.65625
+}

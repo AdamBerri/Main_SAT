@@ -1,0 +1,62 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "linguistic": 1
+  },
+  "stem": "As used in the passage, \"address\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "deal with",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "speak to",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "write on",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "locate",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this context, \"address\" means \"deal with\" or \"tackle.\" The principal is taking action to handle or resolve the problem of student tardiness. The passage supports this meaning by describing how she plans to \"tackle this issue\" and by explaining the specific steps she will take to solve the problem.",
+  "distractorRationale": {
+    "A": "This is the correct answer - 'address' means to deal with or handle the problem.",
+    "B": "While 'address' can mean 'speak to' (as in addressing an audience), this doesn't fit the context where she's dealing with a problem, not just talking to people.",
+    "C": "This refers to writing an address on mail or packages, which is unrelated to the context of handling a school issue.",
+    "D": "This refers to finding or identifying a location, which doesn't make sense in the context of handling a behavioral problem."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:20:20.913Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "0c7d3de7-b4fb-4e1f-9c87-0bfcc2e4a218"
+  },
+  "passage": "The school principal decided to **address** the growing concern about student tardiness by implementing a new policy. She believed that speaking directly to students and parents about the importance of punctuality would be more effective than simply sending written warnings. During the next faculty meeting, she outlined her plan to tackle this issue through improved communication.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 58
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.583333333333333,
+    "evaluatedAt": "2026-01-08T15:24:56.988Z"
+  }
+}

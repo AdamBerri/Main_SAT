@@ -1,0 +1,63 @@
+{
+  "id": "a7f3c9e2-4b8d-4c1a-9f6e-2d8b5a1c7e9f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "stem": "Which quotation from the passage best supports the claim that urban environments offer superior resources for bee populations compared to rural agricultural areas?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"We documented 127 different bee species thriving in Chicago's downtown core, compared to only 89 species in the surrounding agricultural areas.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "\"The decline of bee populations worldwide has become a pressing environmental concern.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"While urban heat islands do pose challenges, Chen's data indicates that the benefits... outweigh these drawbacks.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"The pesticide load in urban soil samples was 40% lower than in agricultural regions.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A provides the most direct and compelling evidence that urban environments offer superior resources for bee populations compared to agricultural areas. The specific comparison of 127 bee species in Chicago's downtown versus only 89 species in surrounding agricultural areas demonstrates through concrete data that urban environments support greater bee diversity and population success. This quantitative evidence directly supports the claim about urban superiority for bee populations.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it provides direct comparative evidence.",
+    "B": "This quote establishes the general context of bee population decline but doesn't compare urban versus agricultural environments or provide evidence of urban superiority.",
+    "C": "While this quote acknowledges urban benefits, it focuses on challenges (heat islands) and doesn't provide specific comparative evidence between urban and agricultural areas.",
+    "D": "This quote supports one aspect of why urban areas might be better (lower pesticides), but it doesn't provide as comprehensive evidence as the species count comparison and doesn't directly demonstrate superior bee population outcomes."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:52:27.999Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "1d3c8887-9127-4780-8504-a2585d7eccfe"
+  },
+  "passage": "The decline of bee populations worldwide has become a pressing environmental concern, but recent research suggests that urban environments may actually provide crucial refuges for these vital pollinators. Dr. Sarah Chen's comprehensive study of bee diversity in metropolitan areas reveals surprising findings that challenge conventional wisdom about urban ecology. \"We documented 127 different bee species thriving in Chicago's downtown core, compared to only 89 species in the surrounding agricultural areas,\" Chen reports. This urban advantage stems from several factors. City gardens and parks offer a diverse array of flowering plants that bloom throughout the growing season, providing consistent nectar sources. In contrast, monoculture farming creates \"food deserts\" for bees, with vast expanses of single crops that flower only briefly. Additionally, urban areas typically use fewer pesticides than industrial farms. \"The pesticide load in urban soil samples was 40% lower than in agricultural regions,\" Chen noted. Perhaps most importantly, cities provide numerous nesting sites in the form of hollow trees, building crevices, and undisturbed soil patches. While urban heat islands do pose challenges, Chen's data indicates that the benefits of diverse food sources and reduced chemical exposure outweigh these drawbacks for most bee species.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 198,
+    "source": "Adapted from environmental research findings"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.875,
+    "evaluatedAt": "2026-01-08T14:56:47.943Z"
+  }
+}

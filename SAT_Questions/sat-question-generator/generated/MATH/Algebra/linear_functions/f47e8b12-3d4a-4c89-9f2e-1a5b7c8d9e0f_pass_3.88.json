@@ -1,0 +1,59 @@
+{
+  "id": "f47e8b12-3d4a-4c89-9f2e-1a5b7c8d9e0f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 3.9,
+    "computational": 3.8
+  },
+  "stem": "A water tank initially contains 480 gallons of water. Water is being drained from the tank at a constant rate. After 15 minutes, the tank contains 360 gallons, and after 25 minutes, the tank contains 280 gallons. If $f(t)$ represents the number of gallons of water in the tank after $t$ minutes, which of the following statements about the linear function $f(t)$ is correct?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The slope of $f(t)$ is $-8$, meaning the tank loses 8 gallons per minute.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The slope of $f(t)$ is $8$, meaning the tank gains 8 gallons per minute.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The slope of $f(t)$ is $-12$, meaning the tank loses 12 gallons per minute.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The $y$-intercept of $f(t)$ is 360, representing the initial amount of water.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find the slope of the linear function, I'll use the two given data points: (15, 360) and (25, 280).\n\nSlope = $\\frac{\\text{change in y}}{\\text{change in x}} = \\frac{280 - 360}{25 - 15} = \\frac{-80}{10} = -8$\n\nThe slope is $-8$, which means the tank loses 8 gallons per minute (the negative sign indicates a decrease).\n\nTo verify this is correct, I can check if this rate is consistent with the initial condition. If the tank starts with 480 gallons and loses 8 gallons per minute:\n- After 15 minutes: $480 - 8(15) = 480 - 120 = 360$ gallons ✓\n- After 25 minutes: $480 - 8(25) = 480 - 200 = 280$ gallons ✓\n\nThe linear function is $f(t) = 480 - 8t$, where the slope is $-8$ and the $y$-intercept is 480 (the initial amount).",
+  "distractorRationale": {
+    "A": "This is correct. The slope is -8, indicating the tank loses 8 gallons per minute.",
+    "B": "This choice has the wrong sign for the slope. Students might forget that a decreasing quantity has a negative slope, or they might calculate the slope as positive 8.",
+    "C": "This choice results from incorrectly calculating the slope, possibly by using the wrong data points or making an arithmetic error in the calculation.",
+    "D": "This choice confuses a point on the line (360 gallons at 15 minutes) with the y-intercept. The y-intercept represents the value when t = 0, which is the initial 480 gallons."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:33:37.843Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "4b7940c7-1fc4-40d1-8321-67b9aeb07fc2"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.875,
+    "evaluatedAt": "2026-01-08T15:38:30.248Z"
+  }
+}

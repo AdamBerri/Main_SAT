@@ -1,0 +1,58 @@
+{
+  "id": "a3f7d8e1-2b4c-4a9d-8f6e-1c5b9d3e7a2f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.1,
+    "procedural": 1.1,
+    "linguistic": 1.3
+  },
+  "stem": "Which quotation from the passage best supports the claim that urban raccoons require less territory than rural raccoons?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"urban raccoons have smaller home ranges than their rural counterparts, typically covering only 20-30 acres compared to 50-100 acres in rural areas\"",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "\"We observed raccoons visiting an average of 3-4 garbage bins per night\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Cities also provide numerous den sites for raccoons, including attics, sewers, and hollow trees in parks\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"urban raccoons face fewer natural predators like coyotes and great horned owls\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A directly supports the claim by providing specific numerical data comparing urban and rural raccoon territory sizes. The phrase 'smaller home ranges' directly corresponds to 'require less territory,' and the concrete measurements (20-30 acres versus 50-100 acres) provide explicit evidence of this difference. This quotation addresses both key elements of the claim: that urban raccoons exist and that they need less territory than rural ones.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it directly states the territorial difference with specific measurements.",
+    "B": "This choice describes raccoon behavior regarding food sources but does not directly address territory size or make any comparison between urban and rural raccoons. While this information may explain why urban raccoons need less territory, it doesn't provide evidence that they actually have less territory.",
+    "C": "This choice discusses den sites available to urban raccoons but says nothing about territory size or rural raccoons. It addresses where raccoons live within cities, not how much space they require overall.",
+    "D": "This choice focuses on predator presence affecting urban raccoon populations, but it doesn't mention territory size or compare urban and rural raccoon spatial needs. It explains a different aspect of urban raccoon success."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:12.583Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a9e3dfa6-1e6d-4dac-9fc1-154b088babee"
+  },
+  "passage": "The following is adapted from a 2018 article about urban wildlife.\n\nUrban areas are often thought to be inhospitable to wildlife, but recent research suggests that cities can support surprisingly diverse animal populations. Raccoons have adapted particularly well to city environments. In Toronto, researchers tracked raccoon movements and found that urban raccoons have smaller home ranges than their rural counterparts, typically covering only 20-30 acres compared to 50-100 acres in rural areas. The abundance of food sources in cities means raccoons don't need to travel as far to meet their nutritional needs. \"We observed raccoons visiting an average of 3-4 garbage bins per night,\" noted wildlife biologist Emma Chen. Cities also provide numerous den sites for raccoons, including attics, sewers, and hollow trees in parks. The urban heat island effect keeps city temperatures warmer than surrounding areas, which benefits raccoons during winter months. Additionally, urban raccoons face fewer natural predators like coyotes and great horned owls, allowing their populations to thrive.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 162,
+    "source": "Adapted from a 2018 article about urban wildlife"
+  },
+  "hasImage": false
+}

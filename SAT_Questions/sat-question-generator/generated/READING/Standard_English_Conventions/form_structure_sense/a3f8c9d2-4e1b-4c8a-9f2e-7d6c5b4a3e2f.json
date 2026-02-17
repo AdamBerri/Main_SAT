@@ -1,0 +1,58 @@
+{
+  "id": "a3f8c9d2-4e1b-4c8a-9f2e-7d6c5b4a3e2f",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3.1,
+    "linguistic": 3.1
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "provide",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "provides",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "are providing",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "have provided",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement with an intervening prepositional phrase. The subject of the sentence is 'collection' (singular), not 'recordings' (which is the object of the preposition 'of'). The phrase 'of recordings that her team has assembled over the past fifteen years' is a long intervening modifier that separates the subject from the verb. Since 'collection' is singular, the verb must be singular: 'provides.' Choice A ('provide') is plural and incorrectly agrees with the nearby plural noun 'recordings' rather than the true subject. Choice C ('are providing') is plural and uses progressive aspect unnecessarily. Choice D ('have provided') is plural and uses present perfect tense, which doesn't match the simple present tense established in the passage's context.",
+  "distractorRationale": {
+    "A": "This plural verb form incorrectly agrees with 'recordings,' the nearest noun, rather than with the true subject 'collection.' This is a proximity error where students mistake the object of a preposition for the sentence subject.",
+    "B": "This is the correct answer. The singular verb 'provides' correctly agrees with the singular subject 'collection.'",
+    "C": "This plural progressive form makes two errors: it incorrectly treats 'collection' as plural, and it uses progressive aspect when simple present is appropriate for describing an ongoing state of fact.",
+    "D": "This plural perfect form incorrectly treats 'collection' as plural and uses present perfect tense, which would emphasize a completed action rather than an ongoing state."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:01.422Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "131b5387-31a3-44ad-9702-677bbd73490e"
+  },
+  "passage": "Marine biologist Dr. Elena Vasquez has dedicated her career to studying the communication patterns of humpback whales. Her research team has documented over 300 distinct vocalizations across multiple whale populations in the Pacific Ocean. The complexity of these songs, which can last up to twenty minutes and contain repeating themes, suggests a sophisticated form of social interaction. The collection of recordings that her team has assembled over the past fifteen years [1]_____ crucial evidence for understanding cetacean intelligence.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 89,
+    "source": "Original passage about marine biology research"
+  },
+  "hasImage": false
+}

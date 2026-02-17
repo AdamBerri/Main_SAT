@@ -1,0 +1,61 @@
+{
+  "id": "a7f8e3d2-9b4c-4e6f-8a1d-5c7f9e2b8d4a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.7,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "stem": "As used in the passage, \"qualify\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "to meet the necessary requirements for",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "to modify or limit with restrictions",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "to describe the essential characteristics of",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "to prove oneself competent in",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In this context, \"qualify\" means to modify or limit with restrictions. The historian is not making absolute, definitive claims about the manuscript's origin, but rather is adding limitations and reservations to her assertions. The passage explicitly states that she chose to \"qualify her assertions with appropriate scholarly reservations,\" indicating that she is modifying her statements by adding cautionary language and acknowledging limitations rather than making unqualified claims.",
+  "distractorRationale": {
+    "A": "This refers to meeting requirements or standards for something (like qualifying for a position), but the historian isn't trying to meet requirements—she's adding limitations to her statements.",
+    "C": "While describing characteristics is a meaning of 'qualify,' the context shows she's not describing her assertions but rather adding restrictions and reservations to them.",
+    "D": "This meaning relates to demonstrating competence or ability, but the passage indicates the historian is adding cautionary limitations rather than proving her expertise."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:25:13.034Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "b7d036ce-af81-47b0-91bf-6d1a7dc7cc56"
+  },
+  "passage": "The historian's methodology was rigorous, yet her conclusions about the medieval manuscript's provenance remained tentative. While the parchment's composition and the ink's chemical analysis provided compelling evidence for a thirteenth-century origin, she recognized that such determinations are inherently provisional in nature. The fragmentary condition of the text, coupled with the absence of contemporary records that might corroborate her findings, necessitated a cautious approach. Rather than proclaiming definitive answers, she chose to **qualify** her assertions with appropriate scholarly reservations, acknowledging the limitations inherent in paleographic analysis when dealing with incomplete historical artifacts.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 98,
+    "source": "Academic text on historical research methodology"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.416666666666667,
+    "evaluatedAt": "2026-01-08T14:29:15.163Z"
+  }
+}

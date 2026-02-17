@@ -1,0 +1,58 @@
+{
+  "id": "a7b3c9d1-4e5f-6789-abcd-ef0123456789",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.1,
+    "computational": 1.7
+  },
+  "stem": "A store marks up the price of a jacket by 40% from its wholesale cost. During a sale, the store offers a 25% discount off the marked-up price. If the wholesale cost of the jacket is $60, what is the final sale price?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$45",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$54",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$63",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$69",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Calculate the marked-up price.\nThe wholesale cost is $60, and the markup is 40%.\nMarked-up price = $60 + 0.40 × $60 = $60 + $24 = $84\n\nStep 2: Calculate the discount amount.\nThe discount is 25% of the marked-up price.\nDiscount = 0.25 × $84 = $21\n\nStep 3: Calculate the final sale price.\nFinal sale price = Marked-up price - Discount\nFinal sale price = $84 - $21 = $63\n\nTherefore, the final sale price is $63.",
+  "distractorRationale": {
+    "A": "This represents applying the 25% discount directly to the wholesale cost ($60 × 0.75 = $45), incorrectly skipping the markup step.",
+    "B": "This represents incorrectly calculating the final price as 90% of the wholesale cost ($60 × 0.90 = $54), misunderstanding how markups and discounts combine.",
+    "D": "This represents applying only a 15% discount instead of 25% to the marked-up price ($84 × 0.85 ≈ $71.40), or making an arithmetic error in the discount calculation."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:45:51.802Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "d3ef2dd9-e0e0-4eae-95cd-ffbe154c5c33"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.625,
+    "evaluatedAt": "2026-01-08T15:49:58.153Z"
+  }
+}

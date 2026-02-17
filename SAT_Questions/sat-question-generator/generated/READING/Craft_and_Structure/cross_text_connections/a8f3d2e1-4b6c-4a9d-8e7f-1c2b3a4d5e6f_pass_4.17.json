@@ -1,0 +1,63 @@
+{
+  "id": "a8f3d2e1-4b6c-4a9d-8e7f-1c2b3a4d5e6f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1
+  },
+  "stem": "Based on the passages, what is the relationship between Text 1 and Text 2?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 and Text 2 present complementary perspectives on the benefits of different reading formats.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Text 1 argues against digital reading while Text 2 argues against physical books.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Text 1 and Text 2 reach the same conclusion about which reading format is superior.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 2 directly refutes the claims made in Text 1 about reading comprehension.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The correct answer is A. Text 1 presents the advantages of physical books (better retention, sensory engagement, fewer distractions), while Text 2 presents the advantages of digital books (portability, convenience, accessibility features). Neither text argues against the other format; instead, they offer complementary perspectives by highlighting different benefits of each reading method. The passages work together to show that both formats have distinct advantages.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This is incorrect because neither text argues against the opposing format. Text 1 focuses on the benefits of physical books without criticizing digital books, and Text 2 focuses on the benefits of digital books without criticizing physical books.",
+    "C": "This is incorrect because the texts do not reach the same conclusion. Text 1 implicitly favors physical books while Text 2 implicitly favors digital books, but more importantly, neither explicitly declares one format superior.",
+    "D": "This is incorrect because Text 2 does not refute Text 1's claims. Text 2 never mentions reading comprehension or retention, which are key points in Text 1. Instead, Text 2 focuses on different advantages like portability and convenience."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:57:55.571Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "89074dd9-4a5e-4167-bce9-d3399d5b8aca"
+  },
+  "passage": "Text 1\n\nReading physical books offers unique advantages that digital formats cannot replicate. The tactile experience of turning pages and the visual progress of moving through a book create a deeper connection to the material. Studies show that readers retain information better when reading from paper, as the physical act of reading engages multiple senses. Additionally, physical books eliminate screen-related distractions and eye strain, allowing for longer, more focused reading sessions.\n\nText 2\n\nDigital books have revolutionized how we access and consume literature. E-readers and tablets allow users to carry thousands of books in a single device, making reading more convenient than ever. Digital formats also offer adjustable text size, built-in dictionaries, and instant access to new titles. For travelers and students with heavy course loads, the portability and storage capacity of digital books provide practical benefits that traditional books simply cannot match.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 175,
+    "source": "Comparative analysis of reading formats"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T15:03:10.613Z"
+  }
+}

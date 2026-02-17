@@ -1,0 +1,54 @@
+{
+  "id": "a7f3c8d2-4e91-4b5a-9c3e-8d6f2a1b5c9e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.1,
+    "procedural": 3.8,
+    "computational": 4.3
+  },
+  "stem": "A researcher studying the relationship between hours of sleep ($x$) and test scores ($y$) for high school students collected data from 8 students and created a line of best fit with equation $y = 6.5x + 42$. The table below shows the actual test scores for three of these students.\n\n$$\\begin{array}{|c|c|}\n\\hline\n\\text{Hours of Sleep} & \\text{Test Score} \\\\\n\\hline\n5 & 76 \\\\\n\\hline\n6 & 82 \\\\\n\\hline\n7 & 85 \\\\\n\\hline\n\\end{array}$$\n\nWhat is the sum of the residuals for these three students?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-3.5$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$3.5$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$-1.5$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$243$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The residual for each data point is calculated as: residual = actual value - predicted value.\n\nFor the student with 5 hours of sleep:\n- Predicted score: $y = 6.5(5) + 42 = 32.5 + 42 = 74.5$\n- Actual score: $76$\n- Residual: $76 - 74.5 = 1.5$\n\nFor the student with 6 hours of sleep:\n- Predicted score: $y = 6.5(6) + 42 = 39 + 42 = 81$\n- Actual score: $82$\n- Residual: $82 - 81 = 1$\n\nFor the student with 7 hours of sleep:\n- Predicted score: $y = 6.5(7) + 42 = 45.5 + 42 = 87.5$\n- Actual score: $85$\n- Residual: $85 - 87.5 = -2.5$\n\nSum of residuals: $1.5 + 1 + (-2.5) = 1.5 + 1 - 2.5 = -3.5$\n\nTherefore, the answer is $-3.5$.",
+  "distractorRationale": {
+    "A": "This is the correct answer, obtained by properly calculating each residual as (actual - predicted) and summing with correct signs.",
+    "B": "This results from calculating residuals as (predicted - actual) instead of (actual - predicted), which reverses the sign: $-1.5 + (-1) + 2.5 = 3.5$.",
+    "C": "This results from an arithmetic error when summing the residuals, such as computing $1.5 + 1 - 2.5 = -1.5$ by incorrectly subtracting $1.5 + 1 = 2.5$ from zero instead of adding first.",
+    "D": "This results from adding the actual test scores ($76 + 82 + 85 = 243$) instead of calculating and summing the residuals, representing a fundamental misunderstanding of what a residual is."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:24.529Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "5d5725e6-5fb7-4a7f-a478-effc1472438a"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

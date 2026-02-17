@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "currentVersion": "1.3.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Reading question with two related passages (paired texts).\n\nThe passages should:\n- Address the same topic from different angles or perspectives\n- Be 75-100 words each\n- Have a clear relationship (agreement, disagreement, complementary, etc.)\n\nThe question should:\n- Ask how the passages relate to each other\n- Test understanding of multiple perspectives\n- Have distractors that mischaracterize the relationship\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.312Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/READING/Craft_and_Structure/cross_text_connections/schema.json"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "a7b3c9d2-4e8f-4a1b-9c6d-2f5e8a7b3c9d",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 3.9,
+    "linguistic": 3.9
+  },
+  "stem": "Which choice best corrects the sentence boundary error in the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The phenomenon of bioluminescence has captivated scientists for centuries; marine organisms such as jellyfish and deep-sea fish produce light through chemical reactions involving luciferin and luciferase.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The phenomenon of bioluminescence has captivated scientists for centuries, marine organisms such as jellyfish and deep-sea fish produce light through chemical reactions involving luciferin and luciferase.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The phenomenon of bioluminescence has captivated scientists for centuries marine organisms such as jellyfish and deep-sea fish produce light through chemical reactions involving luciferin and luciferase.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The phenomenon of bioluminescence has captivated scientists for centuries, because marine organisms such as jellyfish and deep-sea fish produce light through chemical reactions involving luciferin and luciferase.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A correctly uses a semicolon to separate two independent clauses that are closely related in meaning. The first clause ('The phenomenon of bioluminescence has captivated scientists for centuries') and the second clause ('marine organisms such as jellyfish and deep-sea fish produce light through chemical reactions involving luciferin and luciferase') are both complete thoughts that can stand alone as sentences. A semicolon is the appropriate punctuation to join these related independent clauses.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This creates a comma splice error by using only a comma to join two independent clauses, which is grammatically incorrect.",
+    "C": "This creates a run-on sentence by joining two independent clauses with no punctuation, making the sentence difficult to read and grammatically incorrect.",
+    "D": "While this option uses a subordinating conjunction ('because'), it creates a logical error because the second clause doesn't explain why bioluminescence has captivated scientists—it simply states what marine organisms do."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:33:13.137Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "99ab40c7-fde3-415d-acbb-06c4e8fa4d3c"
+  },
+  "passage": "The phenomenon of bioluminescence has captivated scientists for centuries, marine organisms such as jellyfish and deep-sea fish produce light through chemical reactions involving luciferin and luciferase. This natural illumination serves multiple purposes: attracting prey, deterring predators, and facilitating communication between members of the same species. Recent advances in biotechnology have enabled researchers to harness these luminescent properties for medical applications, including the development of fluorescent markers that can track cellular processes in real time.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 87
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.857142857142857,
+    "evaluatedAt": "2026-01-08T15:37:57.406Z"
+  }
+}

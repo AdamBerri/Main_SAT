@@ -1,0 +1,61 @@
+{
+  "id": "f47b2c8e-9d3a-4f2b-8e1c-2a5f6b7d8e9f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 1.8,
+    "linguistic": 1.9
+  },
+  "stem": "Based on the passage, it can most reasonably be inferred that Maria",
+  "choices": [
+    {
+      "label": "A",
+      "text": "had extensive gardening experience before joining the community garden.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "was initially discouraged by the other volunteers' lack of confidence in her abilities.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "developed her gardening expertise through persistent effort and active learning.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "will definitely be chosen as the new garden coordinator.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage shows Maria's clear progression from a complete beginner who \"could barely tell the difference between a weed and a seedling\" to someone who became highly knowledgeable and respected. This transformation is explicitly attributed to her determination, early arrival times, shadowing experienced gardeners, and asking \"endless questions.\" The passage demonstrates that her expertise was earned through persistent effort and active learning rather than prior knowledge.",
+  "distractorRationale": {
+    "A": "This contradicts the passage, which clearly states Maria \"could barely tell the difference between a weed and a seedling\" when she started, indicating she was a complete beginner.",
+    "B": "While the volunteers were initially nervous about Maria's inexperience, the passage provides no evidence that Maria was discouraged by their behavior. Instead, it emphasizes her determination to learn.",
+    "D": "The passage only states that members \"suggested\" Maria would be perfect for the role. This is a recommendation, not a guarantee that she will be chosen."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:52:31.292Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "854d6444-6f3a-491f-9dbc-794157617a5d"
+  },
+  "passage": "When Maria first started working at the community garden, she could barely tell the difference between a weed and a seedling. The other volunteers would watch nervously as she approached the delicate tomato plants, and more than once, someone would gently redirect her to the compost pile instead. But Maria was determined to learn. She arrived early every Saturday morning, shadowing experienced gardeners and asking endless questions about soil pH, companion planting, and pest control. By midsummer, she was confidently identifying plant diseases and recommending organic treatments to newcomers. The same volunteers who had once steered her away from the vegetables now sought her advice on everything from seed starting to harvest timing. When the garden coordinator announced her retirement at the end of the season, several longtime members immediately suggested that Maria would be the perfect replacement.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 148
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4,
+    "evaluatedAt": "2026-01-08T14:57:20.288Z"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "a7f8b2d3-9e4c-4a1b-8f7d-3c5e9a2b1d6f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 4.8
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred about the relationship between bioluminescence and survival in the deep ocean?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Bioluminescent organisms have evolved more efficient metabolisms to compensate for the energy cost of light production.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The ability to produce light provides bioluminescent organisms with hunting and mating advantages that outweigh its metabolic costs.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Non-luminescent deep-sea organisms are gradually becoming extinct due to their inability to compete for resources.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Bioluminescence is most advantageous in areas of the deep ocean where prey is abundant and energy conservation is less critical.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage provides multiple pieces of evidence that support the inference that bioluminescence offers advantages that outweigh its costs. The key evidence includes: (1) bioluminescent organisms have higher reproductive success rates, (2) they have access to larger and more nutritious prey, (3) bioluminescent displays lead to successful reproduction 94% of the time versus 23% for non-luminescent attempts, and (4) these advantages are strongest where prey density is lowest (where energy conservation should matter most). The passage concludes that 'the metabolic cost of bioluminescence may be offset by advantages,' directly supporting this inference.",
+  "distractorRationale": {
+    "A": "The passage does not mention anything about bioluminescent organisms having more efficient metabolisms. The research focuses on behavioral and ecological advantages, not metabolic adaptations.",
+    "C": "The passage provides no evidence that non-luminescent organisms are becoming extinct. It only shows that bioluminescent organisms have higher reproductive success, not that their relatives are disappearing.",
+    "D": "This directly contradicts the passage, which states that the correlation between light production and reproductive success was 'strongest in regions where prey density was lowest'—the opposite of abundant prey conditions."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:25:51.538Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "1bc4d6d3-a3ae-4f21-aaca-1a7d6aef9cdb"
+  },
+  "passage": "The proliferation of bioluminescent organisms in the deep ocean has long puzzled marine biologists. While the energy expenditure required to produce light might seem disadvantageous in an environment where calories are scarce, recent research suggests that this apparent paradox resolves when we consider the unique selective pressures of the abyssal zone. Dr. Elena Vasquez's team discovered that organisms capable of bioluminescence showed significantly higher reproductive success rates than their non-luminescent relatives, even when controlling for other factors such as size and metabolic efficiency. Intriguingly, the correlation between light production and reproductive success was strongest in regions where prey density was lowest—precisely where one would expect energy conservation to be most critical. The team's analysis of stomach contents revealed that bioluminescent species had access to prey items that were consistently larger and more nutritious than those consumed by non-luminescent species. Furthermore, mating behaviors observed through deep-sea cameras showed that bioluminescent displays preceded successful reproduction in 94% of recorded instances, compared to only 23% for non-luminescent courtship attempts. These findings suggest that in the resource-limited deep ocean, the metabolic cost of bioluminescence may be offset by advantages that are not immediately apparent from surface-level analysis.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 198,
+    "source": "Adapted from marine biology research"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.25,
+    "evaluatedAt": "2026-01-08T14:30:02.789Z"
+  }
+}

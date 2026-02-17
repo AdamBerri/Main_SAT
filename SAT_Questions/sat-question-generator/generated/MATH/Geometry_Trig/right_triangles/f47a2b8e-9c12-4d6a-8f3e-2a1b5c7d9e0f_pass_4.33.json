@@ -1,0 +1,59 @@
+{
+  "id": "f47a2b8e-9c12-4d6a-8f3e-2a1b5c7d9e0f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "computational": 1.2
+  },
+  "stem": "In a right triangle, one angle measures $30°$ and the side opposite to this angle has length 6. What is the length of the hypotenuse?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "3",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "6",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "12",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$6\\sqrt{3}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "In this right triangle, we have a $30°$ angle with the opposite side having length 6. We need to find the hypotenuse.\n\nUsing the sine ratio: $\\sin(30°) = \\frac{\\text{opposite}}{\\text{hypotenuse}}$\n\nWe know that $\\sin(30°) = \\frac{1}{2}$ and the opposite side = 6.\n\nSubstituting: $\\frac{1}{2} = \\frac{6}{\\text{hypotenuse}}$\n\nCross-multiplying: $\\text{hypotenuse} = \\frac{6}{\\frac{1}{2}} = 6 \\times 2 = 12$\n\nTherefore, the length of the hypotenuse is 12.",
+  "distractorRationale": {
+    "A": "This results from incorrectly thinking that sin(30°) = 1/2 means the hypotenuse is half the opposite side, rather than the opposite side being half the hypotenuse.",
+    "B": "This assumes the hypotenuse equals the opposite side, ignoring the trigonometric relationship entirely.",
+    "C": "Correct answer using sin(30°) = 1/2 properly.",
+    "D": "This might result from confusing the 30-60-90 triangle ratios and thinking this represents the hypotenuse when it's actually the adjacent side length."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:58:28.862Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "c1a10c1f-91e3-4b60-8218-919da4d6709b"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.333333333333333,
+    "evaluatedAt": "2026-01-08T16:02:23.113Z"
+  }
+}

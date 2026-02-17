@@ -1,0 +1,63 @@
+{
+  "id": "a7b3c9d4-e5f6-4a8b-9c2d-1e3f4a5b6c7d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "stem": "Which quotation from the passage best supports the claim that exceptional artistic ability develops through sustained effort rather than innate talent?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Even Mozart, often cited as the quintessential child prodigy, didn't compose his first masterwork until he had been studying music for over a decade.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"The evidence shows that excellence is primarily the product of years of deliberate practice and coaching, not of any innate talent.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"Furthermore, neuroplasticity research reveals that intensive artistic training literally rewires the brain, enhancing neural pathways associated with creativity and technical skill.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"This evidence suggests that our cultural mythology of effortless artistic brilliance not only misrepresents reality but may discourage aspiring artists who assume they lack some essential, inborn gift.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B provides the most direct textual evidence supporting the claim that exceptional artistic ability develops through sustained effort rather than innate talent. Dr. Ericsson's statement explicitly contrasts 'years of deliberate practice and coaching' with 'innate talent,' directly addressing both components of the claim. The quote uses the word 'primarily' to emphasize that practice and coaching are the main factors, while explicitly rejecting innate talent as the source of excellence. This quotation serves as the passage's clearest articulation of the central argument.",
+  "distractorRationale": {
+    "A": "While this quote about Mozart supports the passage's argument, it focuses on a specific example of how even supposed 'prodigies' required extensive study time. It doesn't directly contrast effort with innate talent as clearly as choice B does.",
+    "B": "This is the correct answer as it most directly supports the claim.",
+    "C": "This quote explains the neurological mechanism behind how practice improves artistic ability, but it doesn't directly address the contrast between effort and innate talent that the claim focuses on.",
+    "D": "This quote discusses the consequences of believing in innate talent but doesn't provide evidence that artistic ability actually develops through sustained effort—it's more about the effects of the mythology than evidence against innate talent."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:22:17.130Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "7a01bd00-ba3f-4a61-b249-862fa956dea3"
+  },
+  "passage": "The widespread belief that artistic genius is an innate, immutable quality has profoundly shaped how we understand creativity, but this romanticized notion may actually hinder artistic development. Contemporary research in cognitive psychology suggests that exceptional artistic ability emerges not from mysterious inspiration but from deliberate practice and sustained effort over time. Dr. K. Anders Ericsson's landmark studies demonstrate that world-class performers in various fields, including music and visual arts, typically accumulate at least 10,000 hours of focused practice before achieving mastery. \"The evidence shows that excellence is primarily the product of years of deliberate practice and coaching, not of any innate talent,\" Ericsson notes. Furthermore, neuroplasticity research reveals that intensive artistic training literally rewires the brain, enhancing neural pathways associated with creativity and technical skill. A longitudinal study of conservatory students found that those who practiced most intensively showed the greatest increases in both gray matter density and white matter integrity in brain regions linked to motor control and auditory processing. Perhaps most tellingly, when researchers examined the early works of celebrated artists like Picasso and Mozart, they discovered that these masters' initial efforts were often unremarkable—it was only through years of rigorous practice that their distinctive genius emerged. \"Even Mozart, often cited as the quintessential child prodigy, didn't compose his first masterwork until he had been studying music for over a decade,\" observes music historian Dr. Sarah Chen. This evidence suggests that our cultural mythology of effortless artistic brilliance not only misrepresents reality but may discourage aspiring artists who assume they lack some essential, inborn gift.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 267,
+    "source": "Academic article on artistic development and cognitive psychology"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.041666666666667,
+    "evaluatedAt": "2026-01-08T15:25:06.893Z"
+  }
+}

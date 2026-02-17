@@ -1,0 +1,62 @@
+{
+  "id": "a7f2d3c8-9e4b-4f1a-8c5d-2b6e7a9f0d3c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 1.8,
+    "linguistic": 2.1
+  },
+  "stem": "The passage is primarily organized by",
+  "choices": [
+    {
+      "label": "A",
+      "text": "presenting a chronological sequence of events leading to current urban planning policies.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "contrasting two competing perspectives on how cities should use available land.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "describing a problem and then proposing several potential solutions.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "explaining the causes of urban gardening trends and their effects on city development.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage is structured around contrasting two competing viewpoints about urban land use. The first paragraph presents the benefits of urban gardening (\"On one hand\"), while the second paragraph presents the opposing view that prioritizes housing development (\"On the other hand\"). The final paragraph acknowledges this as a \"tension\" and \"dilemma,\" reinforcing the contrast structure. Key transitional phrases like \"On one hand\" and \"On the other hand\" clearly signal this compare/contrast organization.",
+  "distractorRationale": {
+    "A": "The passage does not present events in chronological order or trace the historical development of policies. Instead, it focuses on current competing viewpoints.",
+    "C": "While the passage mentions a challenge, it does not propose solutions. The final paragraph acknowledges the dilemma but offers no concrete proposals for resolving it.",
+    "D": "The passage does not explain what caused urban gardening trends to develop, nor does it trace effects in a cause-and-effect structure. It focuses on contrasting current arguments about land use priorities."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:26:03.763Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "0c5041b0-94e1-467e-a32c-7103bc059541"
+  },
+  "passage": "The growing popularity of urban gardening has created an unexpected challenge for city planners: how to balance green space development with affordable housing needs. On one hand, community gardens and rooftop farms provide numerous benefits to urban residents. They offer fresh produce in areas often classified as food deserts, create opportunities for social interaction among neighbors, and help reduce the urban heat island effect by providing natural cooling. Additionally, these green spaces can improve air quality and provide educational opportunities for children to learn about agriculture and nutrition.\n\nOn the other hand, the land used for urban gardens could potentially house hundreds of families in need of affordable accommodation. In cities like San Francisco and New York, where housing costs have skyrocketed, every available plot of land represents a possible solution to the housing crisis. Critics argue that while gardens are aesthetically pleasing and environmentally beneficial, they essentially prioritize luxury amenities over basic human shelter needs. Furthermore, many urban gardens serve primarily affluent neighborhoods, raising questions about whether these projects truly address food access issues or simply enhance property values for existing residents.\n\nThis tension reflects a broader dilemma facing modern cities: how to create livable, sustainable communities while ensuring that all residents have access to fundamental necessities like housing.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 201,
+    "source": "Adapted from urban planning analysis"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.375,
+    "evaluatedAt": "2026-01-08T15:32:06.429Z"
+  }
+}

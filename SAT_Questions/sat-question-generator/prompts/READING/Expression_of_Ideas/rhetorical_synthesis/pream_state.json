@@ -1,0 +1,169 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "config": {
+    "maxIterations": 5,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 0,
+        "passRate": 0,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "No significant errors found",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 0,
+        "passRate": 0,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "No significant errors found",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.125,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "difficulty_overstatement",
+            "frequency": 4,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 3/5 due to explicit prompt signals ('emphasize the paradox') reducing cognitive demand and high similarity across answer choices",
+              "Question stated as 2/5 difficulty but actual difficulty is 1.5/5 because the correct answer is immediately identifiable through direct phrase matching with minimal distractor competition",
+              "Question stated as 3/5 difficulty but actual difficulty is 2.5/5 because answer choices contain weak distractors with obviously irrelevant information and clear causal connections requiring straightforward matching"
+            ]
+          },
+          {
+            "category": "weak_distractors",
+            "frequency": 3,
+            "exampleErrors": [
+              "Only one answer choice directly mentions the key phrase ('became a model'), making the correct answer identifiable without genuine competition from other options",
+              "Distractors focus on irrelevant information (energy consumption, photosynthesis mechanics) rather than providing plausible but incorrect interpretations of the synthesis goal",
+              "Answer choices C and D include obviously off-topic information that fails to address the stated rhetorical goal, eliminating them through simple rejection rather than nuanced comparison"
+            ]
+          },
+          {
+            "category": "excessive_prompt_clarity",
+            "frequency": 2,
+            "exampleErrors": [
+              "The phrase 'emphasize the paradox' explicitly signals what to look for, dramatically reducing cognitive demand by removing the need for students to infer the rhetorical goal independently",
+              "The goal is stated so explicitly ('emphasize the transformation,' 'emphasize the park's influence') that students know exactly what information to match without requiring interpretive reasoning"
+            ]
+          },
+          {
+            "category": "insufficient_content_differentiation",
+            "frequency": 2,
+            "exampleErrors": [
+              "All four answer choices include identical core information (property value data, healthcare savings, recovery period references), with differences only in structural arrangement and connective language rather than substantive content selection",
+              "Answer choices differ primarily in how information is organized rather than what information is selected, reducing the question to a structural recognition task instead of content synthesis"
+            ]
+          },
+          {
+            "category": "mechanical_solution_process",
+            "frequency": 2,
+            "exampleErrors": [
+              "Once students understand the basic concept (benefits vs. policy decisions), the solution becomes straightforward mechanical matching without requiring inference chains or complex data interpretation",
+              "The task reduces to identifying one key phrase or concept rather than requiring multi-step reasoning, complex synthesis, or evaluation of competing legitimate interpretations"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.229166666666667,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overstatement, weak_distractors, excessive_prompt_clarity",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.932291666666667,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but performs at 3.5-4/5 due to clear task definition, transparent source material, and binary evaluation structure that enables process of elimination",
+              "Question rated 3/5 difficulty but actually performs at 2.5/5; explicit goal statement ('emphasize impact on existing residents') and straightforward answer elimination make it easier than claimed",
+              "Question rated 4/5 difficulty but actually performs at 3.5/4; once students understand the reinforcement goal, answer B becomes distinctly superior with limited discrimination challenge"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Answer B is defensible but vulnerable: Choice C also uses relevant information effectively (banking to naval capacity to route control), creating moderate rather than decisive distinction between B and C",
+              "Answer B explanation overstates bidirectionality: text shows one-directional leverage (political orientation capitalizes on geography) rather than mutual reinforcement as the goal requires"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor D is the weakest link with vague misconception targeting; it overlaps significantly with distractor B (both miss the 'why' aspect) rather than representing a distinct student error type"
+            ]
+          },
+          {
+            "category": "other_issues",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question framing creates ambiguity about primary mechanism: whether supremacy was maintained through military/naval superiority (Answer C logic) or structural control of trade infrastructure (Answer B logic) is not sufficiently clarified by source material"
+            ]
+          },
+          {
+            "category": "conceptual_clarity",
+            "frequency": 0,
+            "exampleErrors": []
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.020833333333333,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
+      "newPromptVersion": "1.3.0"
+    }
+  ],
+  "currentBestVersion": "1.2.0",
+  "converged": true,
+  "startedAt": "2026-01-08T15:11:51.744Z",
+  "completedAt": "2026-01-09T21:04:06.243Z",
+  "bestTestScore": 4.229166666666667
+}

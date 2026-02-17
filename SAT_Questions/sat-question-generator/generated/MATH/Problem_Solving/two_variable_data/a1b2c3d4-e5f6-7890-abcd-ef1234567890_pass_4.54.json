@@ -1,0 +1,60 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.1,
+    "procedural": 2.2,
+    "computational": 2
+  },
+  "stem": "A researcher collected data on the number of hours students spent studying for a test and their test scores. The scatterplot below shows the data with a line of best fit. The equation of the line of best fit is $y = 3.2x + 68$, where $x$ represents hours studied and $y$ represents the test score.\n\nBased on the line of best fit, what is the predicted test score for a student who studied for 5 hours?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "73.2",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "84",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "89.2",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "94.4",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To find the predicted test score for a student who studied for 5 hours, substitute $x = 5$ into the equation of the line of best fit:\n\n$y = 3.2x + 68$\n$y = 3.2(5) + 68$\n$y = 16 + 68$\n$y = 84$\n\nTherefore, the predicted test score is 84.",
+  "distractorRationale": {
+    "A": "This results from incorrectly calculating $3.2 \\times 5 = 5.2$ instead of $16$, giving $5.2 + 68 = 73.2$.",
+    "B": "This is the correct answer: $3.2(5) + 68 = 16 + 68 = 84$.",
+    "C": "This results from adding the coefficient and hours before multiplying: $(3.2 + 5) \\times 68/8.2 = 89.2$ (common algebraic error).",
+    "D": "This results from incorrectly using the formula $y = 3.2(x + 68)$ instead of $y = 3.2x + 68$, giving $3.2(5 + 68)/8 = 94.4$."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:52:29.285Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "4cfef8fe-4bb0-4f85-b132-87d1db9f0753"
+  },
+  "hasImage": true,
+  "imageDescription": "A scatterplot showing data points representing hours studied (x-axis, 0-10 hours) versus test scores (y-axis, 60-100 points). The points show a positive correlation with some scatter. A line of best fit passes through the data with equation y = 3.2x + 68 clearly labeled. The line should intersect the y-axis at 68 and have a positive slope. Include 8-12 data points scattered around the line.",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.541666666666667,
+    "evaluatedAt": "2026-01-08T15:56:10.788Z"
+  }
+}

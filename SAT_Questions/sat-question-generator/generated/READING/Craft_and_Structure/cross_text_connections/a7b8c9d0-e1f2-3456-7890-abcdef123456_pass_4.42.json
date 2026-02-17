@@ -1,0 +1,62 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.1,
+    "linguistic": 4
+  },
+  "stem": "Based on the passages, the relationship between Text 1 and Text 2 can best be described as",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 advocates for gradual AI implementation while Text 2 argues for immediate widespread adoption.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 emphasizes AI's technical advantages while Text 2 highlights concerns about preserving human elements in medicine.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 1 focuses on AI's limitations in medical diagnosis while Text 2 celebrates its transformative potential.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 and Text 2 both conclude that AI should replace traditional diagnostic methods entirely.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passages present contrasting perspectives on AI in medicine. Text 1 focuses on the technical benefits and capabilities of AI systems—their accuracy, pattern recognition abilities, and potential to democratize expert-level diagnosis. Text 2 acknowledges these capabilities but emphasizes concerns about losing essential human elements like empathy, clinical judgment, and the physician-patient relationship. While Text 1 presents AI as an inevitable evolution, Text 2 advocates for measured integration that preserves human aspects of care. This creates a clear contrast between technical optimism and humanistic caution.",
+  "distractorRationale": {
+    "A": "This reverses the positions. Text 1 actually suggests AI adoption is inevitable ('signals an inevitable evolution'), while Text 2 advocates for gradual, measured implementation.",
+    "C": "This completely misrepresents both texts. Text 1 celebrates AI's potential and capabilities, while Text 2 acknowledges AI's capabilities but raises concerns about implementation.",
+    "D": "Neither text concludes that AI should completely replace traditional methods. Text 1 describes AI as 'augmenting' clinical decision-making, and Text 2 explicitly advocates for AI as a 'supplementary tool.'"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:58:57.743Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "5e48e18f-977f-46be-a386-898bf38fdc11"
+  },
+  "passage": "Text 1\n\nThe widespread adoption of artificial intelligence in medical diagnosis represents a paradigm shift toward precision medicine. AI algorithms can process vast datasets of medical imaging, genetic information, and patient histories to identify patterns invisible to human practitioners. These systems demonstrate remarkable accuracy in detecting early-stage cancers, predicting treatment responses, and personalizing therapeutic interventions. By augmenting clinical decision-making with computational power, AI promises to democratize access to expert-level diagnostic capabilities, particularly in underserved regions where specialist physicians are scarce. The integration of machine learning into healthcare infrastructure signals an inevitable evolution toward more efficient, evidence-based medical practice.\n\nText 2\n\nWhile artificial intelligence offers compelling diagnostic capabilities, its integration into medical practice raises profound concerns about the erosion of physician-patient relationships. Medicine fundamentally relies on human empathy, intuitive clinical judgment, and the nuanced understanding of individual patient circumstances—qualities that algorithmic systems inherently lack. The risk of diagnostic overreliance on AI could diminish physicians' critical thinking skills and clinical acumen over time. Moreover, the opacity of machine learning algorithms creates accountability challenges when diagnostic errors occur. Rather than wholesale adoption, healthcare systems should pursue a measured approach that preserves the irreplaceable human elements of medical care while selectively incorporating AI as a supplementary tool.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 186,
+    "source": "Contemporary debates on AI in healthcare"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.416666666666667,
+    "evaluatedAt": "2026-01-08T15:03:10.613Z"
+  }
+}

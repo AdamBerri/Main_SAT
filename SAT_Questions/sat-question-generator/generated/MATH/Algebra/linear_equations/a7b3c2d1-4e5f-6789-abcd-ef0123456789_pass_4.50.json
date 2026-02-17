@@ -1,0 +1,59 @@
+{
+  "id": "a7b3c2d1-4e5f-6789-abcd-ef0123456789",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.1,
+    "procedural": 3.9,
+    "computational": 4
+  },
+  "stem": "A company manufactures two types of widgets: standard and premium. The production cost for a standard widget is $8, and the production cost for a premium widget is $14. Last month, the company produced a total of 2,400 widgets and had total production costs of $26,400. If $s$ represents the number of standard widgets produced and $p$ represents the number of premium widgets produced, which of the following systems of equations can be used to find the number of each type of widget produced?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$s + p = 2400$ and $8s + 14p = 26400$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$s + p = 26400$ and $8s + 14p = 2400$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$s + p = 2400$ and $14s + 8p = 26400$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$8s + 14p = 2400$ and $s + p = 26400$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To set up the system of equations, we need to identify the constraints given in the problem.\n\nFirst constraint: The total number of widgets produced was 2,400. Since $s$ represents standard widgets and $p$ represents premium widgets, we have:\n$s + p = 2400$\n\nSecond constraint: The total production costs were $26,400. Since standard widgets cost $8 each and premium widgets cost $14 each, the total cost equation is:\n$8s + 14p = 26400$\n\nTherefore, the correct system is $s + p = 2400$ and $8s + 14p = 26400$.",
+  "distractorRationale": {
+    "A": "This is the correct answer with proper setup of both constraint equations.",
+    "B": "This swaps the values in the two equations, confusing the total number of widgets (2,400) with the total cost ($26,400).",
+    "C": "This correctly identifies the widget count equation but swaps the cost coefficients, assigning $14 to standard widgets and $8 to premium widgets.",
+    "D": "This completely reverses both equations, putting costs where quantities should be and quantities where costs should be."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:32:31.983Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "f0948152-0b86-404f-86b5-1ef85e4432cd"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.5,
+    "evaluatedAt": "2026-01-08T15:37:57.112Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "a8f3c4e5-b2d1-4a8c-9e7f-1b3c5d7e9f2a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2.2,
+    "linguistic": 2.1
+  },
+  "stem": "The passage is mainly about",
+  "choices": [
+    {
+      "label": "A",
+      "text": "the water conservation benefits of vertical farming compared to traditional agriculture.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "how vertical farming represents an innovative agricultural solution with multiple environmental and practical advantages.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "the growing scarcity of arable land and its impact on global food production.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "the technical process of growing crops in vertically stacked layers within controlled environments.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B correctly identifies the central idea of the passage. The author presents vertical farming as a significant innovation in agriculture and then systematically explains its various advantages (water efficiency, pesticide-free production, year-round growing, urban accessibility) and its potential importance for future food security. The passage's main focus is on establishing vertical farming as a comprehensive solution with multiple benefits, not on any single aspect.",
+  "distractorRationale": {
+    "A": "This choice is too narrow, focusing only on the water conservation benefit mentioned in the passage rather than the broader central idea about vertical farming as an innovative solution.",
+    "B": "This is the correct answer.",
+    "C": "While the passage mentions land scarcity as context, this is not the main focus. The central idea is about vertical farming as a solution, not the problem of land scarcity itself.",
+    "D": "This choice focuses on a technical detail mentioned briefly in the passage rather than the main argument about vertical farming's advantages and significance."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:20:39.444Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "d308426d-af05-4dbf-a3ab-d9c29eb8e2a1"
+  },
+  "passage": "The widespread adoption of vertical farming represents a significant shift in agricultural thinking. Unlike traditional farming, which relies on horizontal expansion across vast areas of land, vertical farming maximizes crop production by growing plants in vertically stacked layers within controlled environments. This innovative approach offers numerous advantages: it requires 95% less water than conventional farming, eliminates the need for pesticides, and can produce crops year-round regardless of weather conditions. Most importantly, vertical farms can be established in urban areas, dramatically reducing the distance food must travel from farm to consumer. As global populations continue to grow and arable land becomes increasingly scarce, vertical farming may prove essential for feeding the world's cities while minimizing environmental impact.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 132
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4,
+    "evaluatedAt": "2026-01-08T15:24:46.524Z"
+  }
+}

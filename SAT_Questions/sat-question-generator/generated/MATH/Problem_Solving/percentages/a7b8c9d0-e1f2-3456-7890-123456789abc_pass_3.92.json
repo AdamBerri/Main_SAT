@@ -1,0 +1,59 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-123456789abc",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 2.9,
+    "computational": 2.8
+  },
+  "stem": "A store marks up all items by 25% above cost. During a sale, the store offers a 20% discount off the marked price. If an item costs the store $80, what is the final selling price during the sale?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$80",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$84",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$96",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$100",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "First, find the marked price by adding 25% markup to the cost: $80 × 1.25 = $100. Next, apply the 20% discount to the marked price: $100 × (1 - 0.20) = $100 × 0.80 = $80. The final selling price is $80.",
+  "distractorRationale": {
+    "A": "This is the correct answer. The 25% markup followed by 20% discount results in the original cost price.",
+    "B": "This represents adding 5% to the original cost ($80 × 1.05), which is the error of thinking 25% - 20% = 5% net increase.",
+    "C": "This represents applying only the 20% markup ($80 × 1.20), confusing the markup percentage.",
+    "D": "This represents the marked price before the discount, forgetting to apply the 20% discount."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:45:26.577Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "7cec2d12-3328-4e8b-9323-0889c4980601"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T15:49:58.152Z"
+  }
+}

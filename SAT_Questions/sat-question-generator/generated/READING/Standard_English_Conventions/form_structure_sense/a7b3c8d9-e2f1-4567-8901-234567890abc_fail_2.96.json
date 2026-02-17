@@ -1,0 +1,62 @@
+{
+  "id": "a7b3c8d9-e2f1-4567-8901-234567890abc",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.1,
+    "procedural": 1.7,
+    "linguistic": 1.8
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "has organized",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "have organized",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "was organizing",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "were organizing",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The correct answer is B because the compound subject 'the center's director and several volunteers' is plural and requires the plural verb form 'have organized.' When two or more subjects are joined by 'and,' they form a compound subject that takes a plural verb. The past perfect tense 'have organized' is also appropriate here because it indicates an action completed in the recent past with relevance to the present context.",
+  "distractorRationale": {
+    "A": "This choice incorrectly uses the singular verb form 'has' with a compound plural subject. The compound subject 'the center's director and several volunteers' requires a plural verb.",
+    "B": "This is the correct answer.",
+    "C": "This choice uses a singular verb form 'was' with a compound plural subject, which violates subject-verb agreement rules.",
+    "D": "While 'were' correctly recognizes the plural subject, the progressive tense 'were organizing' is inappropriate here because the context indicates a completed action, not an ongoing process in the past."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:32:49.471Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "ead872d2-31b0-4fe9-b906-d08463b849e0"
+  },
+  "passage": "The local community center offers various programs for residents of all ages. Last month, the center's director and several volunteers _______ a series of workshops on financial literacy. These sessions covered topics such as budgeting, saving, and investment strategies. The workshops were so popular that the center plans to expand the program next year.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 58
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "fail",
+    "score": 2.9642857142857144,
+    "evaluatedAt": "2026-01-08T15:37:44.164Z"
+  }
+}

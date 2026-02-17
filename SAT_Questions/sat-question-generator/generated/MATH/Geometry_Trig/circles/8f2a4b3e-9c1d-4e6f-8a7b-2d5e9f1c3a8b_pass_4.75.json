@@ -1,0 +1,59 @@
+{
+  "id": "8f2a4b3e-9c1d-4e6f-8a7b-2d5e9f1c3a8b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "circles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 2.9,
+    "computational": 2.7
+  },
+  "stem": "In the coordinate plane, a circle has center $(4, -2)$ and passes through the point $(7, 2)$. What is the equation of this circle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$(x - 4)^2 + (y + 2)^2 = 5$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$(x - 4)^2 + (y + 2)^2 = 25$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$(x + 4)^2 + (y - 2)^2 = 25$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$(x - 7)^2 + (y - 2)^2 = 25$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To find the equation of a circle, we need the center $(h, k)$ and the radius $r$. The standard form is $(x - h)^2 + (y - k)^2 = r^2$.\n\nGiven: Center is $(4, -2)$ and the circle passes through $(7, 2)$.\n\nFirst, find the radius using the distance formula between the center and the given point:\n$r = \\sqrt{(7 - 4)^2 + (2 - (-2))^2}$\n$r = \\sqrt{3^2 + 4^2}$\n$r = \\sqrt{9 + 16}$\n$r = \\sqrt{25} = 5$\n\nNow substitute into the standard form:\n$(x - 4)^2 + (y - (-2))^2 = 5^2$\n$(x - 4)^2 + (y + 2)^2 = 25$",
+  "distractorRationale": {
+    "A": "This choice has the correct center coordinates but uses $r = 5$ instead of $r^2 = 25$ in the equation.",
+    "B": "This is the correct answer with proper center coordinates and $r^2 = 25$.",
+    "C": "This choice incorrectly uses $(x + 4)^2 + (y - 2)^2$, reversing the signs in both the $x$ and $y$ terms.",
+    "D": "This choice incorrectly uses the point $(7, 2)$ as the center instead of $(4, -2)$."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:56:26.668Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "fd4313ed-96d3-4ab1-8883-2bac09601e63"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.75,
+    "evaluatedAt": "2026-01-08T16:01:55.631Z"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 2.9,
+    "linguistic": 3.3
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred about the Arctic terns' early arrival?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The terns are arriving early because they have developed more efficient flight patterns over the past fifteen years.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The terns' early arrival and poor condition suggest they are struggling to find adequate food sources during migration.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The terns are deliberately changing their migration schedule to avoid competition with other bird species.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The early arrival indicates that the terns have found new, more abundant feeding areas along their route.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage provides several pieces of evidence that support the inference that terns are struggling to find food during migration: they arrive showing 'signs of nutritional stress,' the traditional stopover sites are 'empty' where 'thousands of terns typically gathered to rest and feed,' and their main food sources have 'moved to deeper, offshore locations' due to rising water temperatures. The early arrival combined with poor physical condition suggests they are rushing through or skipping feeding stops because adequate food is no longer available at traditional locations.",
+  "distractorRationale": {
+    "A": "The passage provides no evidence about flight pattern efficiency. The early arrival is linked to environmental changes affecting food availability, not improved flying ability.",
+    "C": "There is no mention of competition with other bird species in the passage. The early arrival is connected to the absence of food at stopover sites, not avoidance of other birds.",
+    "D": "This contradicts the passage, which states that terns show 'signs of nutritional stress' and that traditional feeding areas are now 'empty.' If they had found better feeding areas, they would likely be in better condition."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:25:05.847Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "438eee71-dd80-4e1b-bb39-608dfa9805f1"
+  },
+  "passage": "Dr. Elena Vasquez had been studying the migration patterns of Arctic terns for fifteen years, but this season's data puzzled her. The birds that typically arrived at their Greenland breeding grounds in late May were appearing nearly three weeks earlier. More concerning was the condition of the birds themselves—many showed signs of nutritional stress despite having completed a journey that should have provided ample feeding opportunities along traditional stopover sites. Vasquez cross-referenced her observations with reports from research stations along the birds' usual migration route. Station after station reported the same phenomenon: empty coastlines where thousands of terns typically gathered to rest and feed. Meanwhile, satellite imagery revealed that water temperatures along these coastal areas had risen by an average of 4.2 degrees Celsius compared to the previous decade. The fish species that terns depend on—small schooling fish that thrive in cooler waters—had apparently moved to deeper, offshore locations. Vasquez realized that her fifteen years of data might now represent a baseline for a world that no longer existed.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 178,
+    "source": "Scientific research narrative"
+  },
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.875,
+    "evaluatedAt": "2026-01-08T14:30:02.789Z"
+  }
+}

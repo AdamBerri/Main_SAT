@@ -1,0 +1,59 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-123456789abc",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.7,
+    "procedural": 4.2,
+    "computational": 4
+  },
+  "stem": "In triangle $ABC$, the length of side $AB$ is 15, the length of side $BC$ is 20, and the measure of angle $B$ is $60°$. What is the length of side $AC$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$5\\sqrt{13}$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$5\\sqrt{7}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$25$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$35$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find the length of side $AC$, we can use the Law of Cosines: $c^2 = a^2 + b^2 - 2ab\\cos(C)$. In this case, we want to find $AC$, so we have: $AC^2 = AB^2 + BC^2 - 2(AB)(BC)\\cos(B)$. Substituting the given values: $AC^2 = 15^2 + 20^2 - 2(15)(20)\\cos(60°)$. Since $\\cos(60°) = \\frac{1}{2}$, we get: $AC^2 = 225 + 400 - 2(15)(20)(\\frac{1}{2}) = 625 - 300 = 325$. Therefore, $AC = \\sqrt{325} = \\sqrt{25 \\cdot 13} = 5\\sqrt{13}$.",
+  "distractorRationale": {
+    "A": "This is the correct answer obtained by properly applying the Law of Cosines.",
+    "B": "This results from incorrectly using $\\cos(60°) = \\frac{\\sqrt{3}}{2}$ instead of $\\frac{1}{2}$, leading to $AC^2 = 625 - 300\\sqrt{3} \\approx 175$.",
+    "C": "This results from incorrectly assuming the triangle is a right triangle and using the Pythagorean theorem: $\\sqrt{15^2 + 20^2} = \\sqrt{625} = 25$.",
+    "D": "This results from simply adding the two given sides: $15 + 20 = 35$, which violates the triangle inequality."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:57:02.957Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "eab0d5cb-93dc-4ef7-9109-47cb61378168"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T15:59:15.906Z"
+  }
+}

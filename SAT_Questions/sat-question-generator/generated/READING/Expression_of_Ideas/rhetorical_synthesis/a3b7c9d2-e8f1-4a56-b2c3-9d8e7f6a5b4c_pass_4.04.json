@@ -1,0 +1,62 @@
+{
+  "id": "a3b7c9d2-e8f1-4a56-b2c3-9d8e7f6a5b4c",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 1.7,
+    "linguistic": 2.1
+  },
+  "stem": "The student wants to emphasize coyotes' successful adaptation to city life while providing specific examples. Which choice most effectively combines the information to achieve this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Over the past three decades, coyotes have shown remarkable adaptability to urban environments by learning to hunt during dawn and dusk hours, navigate city traffic, use storm drains as corridors, and adjust their diet to include urban food sources, though these changes have resulted in smaller body sizes compared to rural coyotes.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Coyotes have adapted to cities over three decades. They hunt at dawn and dusk, navigate traffic, use storm drains, eat urban food, and are smaller than rural coyotes.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Urban coyotes are smaller than rural ones because they eat different food in cities, including pets, rodents, and garbage, and they have learned to hunt at dawn and dusk while using storm drains and navigating traffic over the past thirty years.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Although urban coyotes are generally smaller than rural coyotes due to different food sources, they have successfully adapted to city life by hunting at dawn and dusk, navigating traffic, and using storm drains as travel corridors.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A most effectively combines the information by opening with the main claim about 'remarkable adaptability' and then providing a comprehensive list of specific behavioral adaptations that support this thesis. The structure emphasizes successful adaptation while acknowledging the physical change as a consequence rather than a limitation. The flow moves logically from the general adaptation claim to specific examples, creating a strong, cohesive sentence that fulfills the student's goal of emphasizing successful adaptation with concrete examples.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "While this includes all the information, the choppy, list-like structure fails to emphasize the remarkable nature of the adaptation and doesn't create effective flow between ideas.",
+    "C": "This choice begins with the size difference, which undermines the goal of emphasizing successful adaptation. The structure suggests limitation first rather than success, making it less effective for the stated purpose.",
+    "D": "Although this choice is well-written, it omits the important detail about diet adaptation and begins with 'Although,' which diminishes rather than emphasizes the success of urban adaptation."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:31:30.994Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "77038745-ad32-4335-9667-f51b543f5a42"
+  },
+  "passage": "While researching a report on urban wildlife, a student has gathered the following notes about coyotes in cities:\n\n• Coyotes have adapted remarkably well to urban environments over the past three decades.\n• They primarily hunt at dawn and dusk to avoid human contact.\n• Urban coyotes have learned to navigate traffic and use storm drains as travel corridors.\n• Their diet in cities includes small pets, rodents, and food scraps from garbage.\n• City coyotes are generally smaller than their rural counterparts due to different food sources.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 89,
+    "source": "Student research notes"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.041666666666667,
+    "evaluatedAt": "2026-01-08T14:36:32.450Z"
+  }
+}

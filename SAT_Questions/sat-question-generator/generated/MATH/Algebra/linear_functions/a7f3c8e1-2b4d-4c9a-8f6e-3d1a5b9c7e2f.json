@@ -1,0 +1,54 @@
+{
+  "id": "a7f3c8e1-2b4d-4c9a-8f6e-3d1a5b9c7e2f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 3.8,
+    "computational": 3.7
+  },
+  "stem": "A water tank is being filled at a constant rate. After 12 minutes, the tank contains 156 gallons of water. After 20 minutes, the tank contains 220 gallons of water. If the relationship between the number of gallons of water in the tank, $g$, and the time in minutes, $t$, can be modeled by a linear function, what was the amount of water, in gallons, in the tank when filling began?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "60",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "64",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "72",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "84",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find the initial amount of water, we need to determine the linear function $g(t) = mt + b$, where $m$ is the rate of filling and $b$ is the initial amount.\n\nStep 1: Find the rate of change (slope).\nUsing the two given points $(12, 156)$ and $(20, 220)$:\n$$m = \\frac{220 - 156}{20 - 12} = \\frac{64}{8} = 8$$\n\nThe tank fills at 8 gallons per minute.\n\nStep 2: Find the initial amount (y-intercept).\nUsing the point-slope form with $(12, 156)$:\n$$g(t) = 8t + b$$\n$$156 = 8(12) + b$$\n$$156 = 96 + b$$\n$$b = 60$$\n\nWe can verify with the other point $(20, 220)$:\n$$g(20) = 8(20) + 60 = 160 + 60 = 220$$ ✓\n\nTherefore, the tank contained 60 gallons when filling began.",
+  "distractorRationale": {
+    "A": "This is the correct answer: b = 156 - 8(12) = 156 - 96 = 60",
+    "B": "Results from using the change in gallons (64) as if it were the y-intercept: student calculates 220 - 156 = 64 and incorrectly identifies this as the initial amount instead of recognizing it represents the change over 8 minutes",
+    "C": "Results from using the wrong point to find the y-intercept with correct slope: student uses (20, 220) but makes sign error: b = 220 - 8(20) = 220 - 160 = 60, then adds instead of keeping the result, getting 60 + 12 = 72, or alternatively calculates 156 - 8(12) = 156 - 96 = 60 but then incorrectly adds 12: 60 + 12 = 72",
+    "D": "Results from incorrectly calculating slope as 64/12 instead of 64/8, getting m = 5.33..., then rounding and using: b = 156 - 5(12) = 156 - 60 = 96, or from the error of subtracting only the time value from one data point: 156 - 12 = 144, then making an arithmetic error, or from 220 - 20(8) = 220 - 160 = 60, then incorrectly adding 20 + 4 = 24 to get 84"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:05.198Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "f1ba2d45-4ec0-4433-88de-64d3f15577de"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

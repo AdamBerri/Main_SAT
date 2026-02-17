@@ -1,0 +1,54 @@
+{
+  "id": "f47b3d82-9c4e-4f5a-8b2d-1a3c5e7f9b1d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.2,
+    "computational": 2.2
+  },
+  "stem": "A store marks up the wholesale price of a jacket by 40% to set its retail price. During a sale, the store reduces the retail price by 25%. If the sale price of the jacket is $63, what was the wholesale price?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$50",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$60",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$70",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$75",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $w$ be the wholesale price.\n\nStep 1: After a 40% markup, the retail price is:\n$$\\text{Retail price} = w \\times 1.40 = 1.4w$$\n\nStep 2: After a 25% reduction from retail, the sale price is:\n$$\\text{Sale price} = 1.4w \\times 0.75 = 1.05w$$\n\nStep 3: We know the sale price is $63:\n$$1.05w = 63$$\n\nStep 4: Solve for $w$:\n$$w = \\frac{63}{1.05} = 60$$\n\nVerification: $60 \\times 1.40 = 84$ (retail price), then $84 \\times 0.75 = 63$ (sale price) ✓\n\nThe wholesale price was $60.",
+  "distractorRationale": {
+    "A": "Results from incorrectly calculating the combined effect as 40% - 25% = 15% net markup, then solving 1.15w = 63. Calculation: 63 ÷ 1.15 = 54.78, which rounds to approximately $50. This represents the misconception that percentage changes can be added/subtracted arithmetically.",
+    "B": "This is the correct answer: wholesale price of $60.",
+    "C": "Results from working backward with only the 25% discount, forgetting the initial 40% markup. Student calculates: 63 ÷ 0.75 = 84, then incorrectly treats this as needing a further adjustment, or makes an arithmetic error. More precisely, this comes from: 63 ÷ 0.75 = 84, then 84 - 14 = 70, applying a $14 adjustment based on misunderstanding the markup.",
+    "D": "Results from correctly finding the retail price (63 ÷ 0.75 = 84) but then incorrectly subtracting 25% of the sale price instead of dividing by 1.40. Calculation: 84 - (0.25 × 63) = 84 - 15.75 = 68.25, which rounds to approximately $75. This represents confusion about which value to use as the base for percentage calculations."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:11.460Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "ca51860a-bd08-41f7-829a-0cd91d89b807"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

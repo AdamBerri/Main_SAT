@@ -1,0 +1,61 @@
+{
+  "id": "3e8c9d2a-5f7b-4c1e-9a3d-8b2c4e6f1a9c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 1.7,
+    "linguistic": 1.7
+  },
+  "stem": "Based on the text and chart, which statement is most strongly supported?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Community gardens face their greatest participation challenges during winter months when growing conditions are poor.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The data confirms the text's observation that summer months present participation challenges despite being peak growing time.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Participation rates remain consistently high throughout the year, contradicting concerns about member retention.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The chart shows that spring months have the lowest participation rates, which limits food production.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The text specifically mentions that \"many gardens face challenges with member retention, particularly during the busy summer months when vacation schedules conflict with peak growing time.\" The chart supports this by showing participation rates declining from May (85%) through July (60%) and August (55%), which are indeed the summer months when gardens would typically be most productive. This creates the exact conflict the text describes between peak growing season and reduced participation.",
+  "distractorRationale": {
+    "A": "While winter months (December 35%, January 45%) do show low participation, the text doesn't identify winter as the main challenge—it specifically mentions summer months as problematic despite being peak growing time.",
+    "C": "This contradicts both the text and data. The chart shows significant variation (from 35% to 85%), and the text explicitly discusses member retention challenges.",
+    "D": "This misreads the chart. Spring months (March 65%, April 80%, May 85%) actually show increasing and relatively high participation rates, not the lowest rates."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:24:14.819Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "a546dab6-fad1-4bc7-8cd9-549e9d577608"
+  },
+  "passage": "The following text is adapted from a 2023 report on urban gardening initiatives.\n\nCommunity gardens have become increasingly popular in urban areas as residents seek ways to grow their own food and connect with neighbors. These gardens not only provide fresh produce but also create green spaces that can improve air quality and reduce urban heat. Maria Santos, coordinator of the Green Neighborhoods program, notes that \"community gardens serve multiple functions beyond food production—they're spaces for education, social interaction, and environmental stewardship.\"\n\nThe success of community gardens often depends on consistent participation from local residents. Gardens that maintain active membership throughout the growing season tend to produce more vegetables and create stronger community bonds. However, many gardens face challenges with member retention, particularly during the busy summer months when vacation schedules conflict with peak growing time.\n\n[THIS IS CHART: Community Garden Participation Rates by Month]\nJanuary: 45%\nFebruary: 50%\nMarch: 65%\nApril: 80%\nMay: 85%\nJune: 75%\nJuly: 60%\nAugust: 55%\nSeptember: 70%\nOctober: 80%\nNovember: 40%\nDecember: 35%",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 185,
+    "source": "Urban gardening report with participation data"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T14:30:21.316Z"
+  }
+}

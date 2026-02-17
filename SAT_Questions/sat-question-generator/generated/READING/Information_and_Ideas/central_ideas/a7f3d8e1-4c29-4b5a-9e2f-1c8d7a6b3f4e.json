@@ -1,0 +1,58 @@
+{
+  "id": "a7f3d8e1-4c29-4b5a-9e2f-1c8d7a6b3f4e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4,
+    "linguistic": 3.7
+  },
+  "stem": "Which choice best describes the main idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Octopuses demonstrate planning behaviors that appear inconsistent with their decentralized neural structure.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The distributed nervous system of octopuses enables more efficient foraging than centralized brain structures.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Young octopuses develop defensive behaviors before experiencing the environmental pressures that would make such behaviors advantageous.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Marine biologists have identified specific octopus behaviors that require coordinated action between the central brain and arm-based neurons.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage presents a tension between observed octopus behaviors (carrying coconut shells for future use, anticipating needs) and their neurological structure (lacking vertebrate-style long-term memory architecture, having distributed nervous systems). The passage develops this apparent inconsistency through multiple examples: the tool-use behavior suggests planning, yet their neural anatomy differs fundamentally from animals typically associated with such cognitive abilities. The detail about young octopuses displaying these behaviors 'well before' encountering threats reinforces this puzzle. The main idea synthesizes these elements into the paradox of sophisticated planning-like behaviors emerging from an unconventional neural organization.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it captures the central tension between behavioral observations and neurological structure that the passage develops.",
+    "B": "This choice focuses exclusively on the functional advantage of the distributed nervous system (simultaneous exploration of multiple crevices) but misses the passage's emphasis on the apparent contradiction between this system and the observed planning behaviors. The passage presents the neural structure as unexpected given the behaviors, not as an explanation for foraging efficiency.",
+    "C": "While the passage does mention that young octopuses display these behaviors before experiencing predation threats, this observation serves as additional evidence for the puzzle the passage presents rather than being the main focus. This choice captures one supporting detail but misses the broader tension between behavior and neural architecture that organizes the passage.",
+    "D": "This choice mistakes a supporting detail (the coordination between central brain and arms during movement) for the main idea. The passage mentions this coordination as part of describing the distributed nervous system, not as the primary focus. The passage is centrally concerned with the apparent mismatch between capabilities and neural structure, not with documenting specific coordinated behaviors."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:11.368Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "b86751eb-65ac-49a3-96e6-f873cd95986c"
+  },
+  "passage": "Marine biologists studying octopus behavior have documented instances of these cephalopods carrying coconut shells across the ocean floor, assembling them into protective shelters when threatened. Similar observations of octopuses gathering rocks to barricade den entrances suggest a capacity for anticipating future needs. Yet these same researchers note that octopuses lack the neural architecture associated with long-term memory in vertebrates, possessing instead a distributed nervous system where two-thirds of neurons reside in their arms rather than their brain. This anatomical arrangement allows each arm to process sensory information independently, enabling octopuses to explore multiple crevices simultaneously while their central brain coordinates overall movement. The coconut-carrying behavior emerges in octopuses as young as six months old, well before they have encountered significant predation threats in laboratory settings, and persists even when alternative shelter materials are readily available.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 147,
+    "source": "Original passage on cephalopod cognition research"
+  },
+  "hasImage": false
+}

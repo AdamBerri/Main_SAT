@@ -1,0 +1,62 @@
+{
+  "id": "f4a7b8c9-2e3f-4d5a-9b1c-8e7f6a5d4c3b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "stem": "The passage argues that traditional materialist explanations of consciousness may be inadequate. Which quotation best supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"The theory predicts that consciousness is not unique to biological brains but could emerge in artificial systems or even simple networks.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"quantum coherence in microtubules within neurons creates the substrate for consciousness, linking it to the fundamental quantum structure of reality.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"current neuroscientific evidence overwhelmingly supports the view that consciousness is an emergent property of neural activity, with no need for exotic quantum effects or panpsychist assumptions.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"the accumulating anomalies in consciousness research—such as the persistence of awareness during clinical death experiences and the apparent unity of consciousness despite the brain's distributed processing—suggest that our materialist paradigm may be fundamentally incomplete.\"",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Choice D directly supports the passage's central claim that materialist explanations may be inadequate by citing specific empirical anomalies that challenge the traditional framework. The quotation explicitly states that these anomalies 'suggest that our materialist paradigm may be fundamentally incomplete,' providing concrete evidence (clinical death experiences, unity of consciousness) that materialist theories struggle to explain. This quotation serves as the passage's culminating argument against materialist orthodoxy.",
+  "distractorRationale": {
+    "A": "This quotation describes Tononi's IIT theory but doesn't directly challenge materialist explanations—it simply extends where consciousness might emerge, not whether materialist frameworks are inadequate.",
+    "B": "While this presents Penrose's quantum theory as an alternative, it doesn't provide evidence that materialist explanations are inadequate—it merely offers a different mechanistic explanation.",
+    "C": "This quotation actually supports materialist explanations by stating that current evidence 'overwhelmingly supports' neural emergence theories, directly contradicting the passage's main claim."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:53:25.374Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "d7707541-e648-4dbe-bb85-c97b652de305"
+  },
+  "passage": "The prevailing orthodoxy in contemporary neuroscience posits that consciousness emerges from the complex interactions of neurons in the brain—a materialist perspective that has dominated scientific discourse for decades. However, recent empirical findings challenge this reductive framework, suggesting instead that consciousness may be a fundamental property of the universe itself, akin to mass or charge. Dr. Giulio Tononi's Integrated Information Theory (IIT) proposes that consciousness corresponds to integrated information, or Φ (phi), which can theoretically exist in any system capable of integrating information. \"The theory predicts that consciousness is not unique to biological brains but could emerge in artificial systems or even simple networks,\" Tononi explains. Meanwhile, quantum physicist Roger Penrose argues that \"quantum coherence in microtubules within neurons creates the substrate for consciousness, linking it to the fundamental quantum structure of reality.\" Perhaps most provocatively, panpsychist philosopher Philip Goff contends that \"consciousness is not produced by complex arrangements of matter but is rather an intrinsic feature of matter itself, present even at the level of elementary particles.\" Critics dismiss these theories as speculative, noting that \"current neuroscientific evidence overwhelmingly supports the view that consciousness is an emergent property of neural activity, with no need for exotic quantum effects or panpsychist assumptions.\" Nevertheless, the accumulating anomalies in consciousness research—such as the persistence of awareness during clinical death experiences and the apparent unity of consciousness despite the brain's distributed processing—suggest that our materialist paradigm may be fundamentally incomplete.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 247,
+    "source": "Adapted from a neuroscience journal article on consciousness theories"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T14:56:47.944Z"
+  }
+}

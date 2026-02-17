@@ -1,0 +1,62 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2,
+    "linguistic": 2
+  },
+  "stem": "Which choice most effectively combines the underlined information to emphasize the technological progress in solar panel efficiency?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Solar panels convert sunlight into electricity through photovoltaic cells, and while early panels from the 1970s converted only 6% of sunlight into electricity, modern residential panels now achieve 15-22% efficiency, demonstrating significant technological progress over the past decade.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Solar panels use photovoltaic cells to convert sunlight into electricity, with current residential panels converting 15-22% of sunlight and early 1970s panels converting 6%, showing that efficiency has improved significantly over the past decade.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Modern solar panels convert 15-22% of sunlight into electricity through photovoltaic cells, which is a significant improvement over the past decade compared to early solar panels from the 1970s that converted only 6% of sunlight into electricity.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The efficiency of solar panels, which convert sunlight into electricity through photovoltaic cells, has improved significantly over the past decade, with early 1970s panels converting 6% of sunlight and current residential panels converting 15-22%.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A most effectively emphasizes technological progress by using a clear contrast structure with 'while...only 6%' followed by 'now achieve 15-22%' and explicitly stating 'demonstrating significant technological progress.' This structure creates a strong before-and-after comparison that highlights the advancement, and the word 'demonstrating' directly connects the data to the conclusion about progress.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "While grammatically correct, this choice is less effective because it presents the information in a more matter-of-fact way without the strong contrasting structure that emphasizes progress. The phrase 'showing that' is weaker than 'demonstrating.'",
+    "C": "This choice is less effective because it places the conclusion about improvement in the middle of the sentence rather than at the end, reducing its impact. The structure doesn't create as clear a contrast between past and present.",
+    "D": "This choice begins with the general statement about improvement before providing the specific evidence, which is less effective for emphasis. The contrast between old and new efficiency rates comes at the end rather than building to the conclusion about progress."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:28:45.135Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "99802b9f-6762-4807-8d71-6004ef08b107"
+  },
+  "passage": "While researching renewable energy for a report, a student has gathered the following notes about solar panel technology:\n\n• Solar panels convert sunlight directly into electricity through photovoltaic cells\n• The efficiency of modern solar panels has improved significantly over the past decade\n• Current residential solar panels typically convert 15-22% of sunlight into usable electricity\n• Early solar panels from the 1970s converted only about 6% of sunlight into electricity\n\nThe student wants to write a paragraph that emphasizes the technological progress in solar panel efficiency.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 95
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.291666666666667,
+    "evaluatedAt": "2026-01-08T15:31:26.149Z"
+  }
+}

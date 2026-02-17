@@ -1,0 +1,63 @@
+{
+  "id": "f47d2b8e-9c4a-4d2b-8f1e-3a5c7e9b2d4f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 1.9,
+    "linguistic": 2
+  },
+  "stem": "Based on the passages, what is the relationship between the two texts regarding vertical farming?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 presents the potential benefits of vertical farming, while Text 2 acknowledges these benefits but emphasizes current limitations and challenges.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Text 1 argues that vertical farming is currently impractical, while Text 2 demonstrates that it is already economically viable.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Both texts agree that vertical farming is the definitive solution to urban food production challenges.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 focuses on environmental concerns about vertical farming, while Text 2 discusses only the economic advantages.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The correct answer is A. Text 1 presents an optimistic view of vertical farming, highlighting its benefits such as year-round production, reduced environmental impact, and sustainability for urban areas. Text 2 takes a more cautious stance, acknowledging the technology's promise ('While vertical farming shows promise') but focusing primarily on significant challenges including high costs, energy consumption, and limited crop viability. This creates a balanced perspective where Text 2 doesn't completely dismiss vertical farming but rather presents a realistic assessment of current obstacles.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This mischaracterizes both texts. Text 1 is optimistic about vertical farming's potential, not arguing it's impractical. Text 2 emphasizes challenges and limitations, not economic viability.",
+    "C": "This is incorrect because Text 2 explicitly states that vertical farming 'will likely remain a niche solution rather than a comprehensive answer,' showing disagreement with the idea that it's a definitive solution.",
+    "D": "This reverses the focus of each text. Text 1 discusses environmental benefits, not concerns, while Text 2 addresses both economic challenges (high costs) and environmental issues (carbon footprint from energy use)."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:25:39.666Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "34401075-1170-44b3-9eab-cefe574f64fc"
+  },
+  "passage": "Text 1\nUrban vertical farms represent a revolutionary approach to agriculture. These indoor facilities use LED lighting and hydroponic systems to grow crops in stacked layers, maximizing yield per square foot. By eliminating weather dependency and reducing transportation costs, vertical farms can produce fresh vegetables year-round in city centers. This technology addresses food security concerns while minimizing environmental impact through reduced pesticide use and water conservation. As urban populations continue to grow, vertical farming offers a sustainable solution for feeding metropolitan areas efficiently.\n\nText 2\nWhile vertical farming shows promise, significant challenges remain before widespread adoption becomes feasible. The initial construction costs are enormous, often exceeding traditional farming investments by 400%. Additionally, the energy consumption required for LED lighting systems creates a substantial carbon footprint that may offset environmental benefits. Current vertical farms can only grow certain crops economically, limiting their agricultural impact. Until these technological and economic barriers are addressed, vertical farming will likely remain a niche solution rather than a comprehensive answer to global food production needs.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 175,
+    "source": "Adapted from agricultural technology analysis"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 5.083333333333333,
+    "evaluatedAt": "2026-01-08T15:31:39.607Z"
+  }
+}

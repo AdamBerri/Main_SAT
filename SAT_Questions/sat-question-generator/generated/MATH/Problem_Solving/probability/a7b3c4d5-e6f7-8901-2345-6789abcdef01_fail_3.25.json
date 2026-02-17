@@ -1,0 +1,59 @@
+{
+  "id": "a7b3c4d5-e6f7-8901-2345-6789abcdef01",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "probability"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 3,
+    "computational": 3.1
+  },
+  "stem": "A bag contains 8 red marbles, 6 blue marbles, and 4 green marbles. If two marbles are drawn from the bag without replacement, what is the probability that both marbles are the same color?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\frac{31}{153}$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{29}{153}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{1}{3}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{7}{18}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find the probability that both marbles are the same color, we need to calculate the probability for each color and add them together.\n\nTotal marbles: 8 + 6 + 4 = 18\n\nProbability both are red:\n$P(\\text{both red}) = \\frac{8}{18} \\times \\frac{7}{17} = \\frac{56}{306}$\n\nProbability both are blue:\n$P(\\text{both blue}) = \\frac{6}{18} \\times \\frac{5}{17} = \\frac{30}{306}$\n\nProbability both are green:\n$P(\\text{both green}) = \\frac{4}{18} \\times \\frac{3}{17} = \\frac{12}{306}$\n\nTotal probability both are same color:\n$P(\\text{same color}) = \\frac{56}{306} + \\frac{30}{306} + \\frac{12}{306} = \\frac{98}{306} = \\frac{31}{153}$\n\nTherefore, the answer is $\\frac{31}{153}$.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This results from incorrectly calculating one of the individual color probabilities, likely making an arithmetic error in the numerator.",
+    "C": "This comes from incorrectly assuming equal probability for each color combination without accounting for the different quantities of each color.",
+    "D": "This results from using replacement instead of without replacement, calculating $\\frac{8^2 + 6^2 + 4^2}{18^2} = \\frac{116}{324} = \\frac{29}{81}$, then making an error in simplification."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:45:24.548Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "cd8d468a-6905-4188-99ae-8d6fa8146930"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.25,
+    "evaluatedAt": "2026-01-08T15:51:31.645Z"
+  }
+}

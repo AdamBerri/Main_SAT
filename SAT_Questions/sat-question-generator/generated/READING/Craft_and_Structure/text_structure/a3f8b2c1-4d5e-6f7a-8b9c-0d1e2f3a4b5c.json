@@ -1,0 +1,58 @@
+{
+  "id": "a3f8b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "linguistic": 1.1
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It describes a problem and then explains how an invention solved it.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "It presents an invention and then describes its effects on society.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "It compares two different methods of producing books.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It traces the development of literacy over several centuries.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage is organized by first introducing the printing press invention (\"The invention of the printing press by Johannes Gutenberg in the 1450s\"), then systematically describing its various effects on European society. The structure moves from the invention itself to its immediate effect (making books accessible), then to broader consequences (rising literacy, the Protestant Reformation, the Scientific Revolution, and middle class growth). The explicit transitions \"As a result\" and \"Similarly\" signal this cause-and-effect organization where one invention leads to multiple societal changes.",
+  "distractorRationale": {
+    "A": "While the passage does mention that books were expensive and rare before the printing press, this is presented as background context rather than a problem requiring solution. The passage focuses on describing the effects of the invention, not on framing the previous situation as a problem that needed solving.",
+    "B": "This is the correct answer.",
+    "C": "Although the passage mentions both hand-copying and printing press production of books, it does not compare these two methods in detail. The hand-copying is mentioned only briefly as context, and the passage does not analyze similarities or differences between the methods.",
+    "D": "While the passage does mention that literacy rates rose, it focuses on a specific time period (the 1450s and its aftermath) rather than tracing literacy development over multiple centuries. The passage is about the printing press's impact, not a historical survey of literacy."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:42.306Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "0ab4ef60-4d10-4ec1-a832-9cf23b00e55c"
+  },
+  "passage": "The invention of the printing press by Johannes Gutenberg in the 1450s transformed European society. Before this innovation, books were copied by hand, making them extremely expensive and rare. Only wealthy individuals and institutions could afford to own books, which limited the spread of knowledge. However, the printing press changed everything. It allowed books to be produced quickly and cheaply, making them accessible to a much larger audience. As a result, literacy rates began to rise across Europe. More people could now read religious texts, scientific works, and literature. This increase in literacy had important consequences. It helped fuel the Protestant Reformation, as people could read the Bible in their own languages. Similarly, it supported the Scientific Revolution by allowing researchers to share their discoveries more widely. The printing press also contributed to the growth of a middle class, as merchants and craftspeople gained access to educational materials that had previously been available only to the elite.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 167,
+    "source": "Historical explanation"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,170 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "config": {
+    "maxIterations": 5,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 0,
+        "passRate": 0,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "No significant errors found",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 0,
+        "passRate": 0,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "No significant errors found",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.119791666666666,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "difficulty_calibration",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question stated as 3/5 difficulty but actual difficulty is 2/5 due to explicit structural markers (e.g., 'Before...Consequently') that make the problem-solution-consequences pattern obvious and easy to recognize",
+              "Question rated 5/5 difficulty but actual difficulty closer to 3.5-4/5 because while vocabulary and syntax are sophisticated, the transparent chronological scaffolding ('Initially' → 'However' → 'More recently') undermines analytical reasoning demands",
+              "Question calibrated at 3/5 but functions at 2.5/5 because the three-part structure (problem, solutions, results) is extremely formulaic and explicitly demarcated with clear topic sentences, allowing correct answer identification in 45-60 seconds"
+            ]
+          },
+          {
+            "category": "answer_choice_discrimination",
+            "frequency": 2,
+            "exampleErrors": [
+              "Correct answer choice A is so dramatically superior to alternatives that it practically mirrors the passage's explicit organization, providing minimal inferential challenge and making wrong answers deviate substantially from passage content rather than presenting plausible near-misses",
+              "Missing distractor targeting sophisticated misconceptions—no choice presents the plausible alternative of 'multiple competing solutions' or 'causes and effects of a single phenomenon' that would challenge strong comprehenders"
+            ]
+          },
+          {
+            "category": "distractor_effectiveness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor B ('Multiple solutions approach') is ambiguously worded and weak because the passage does address a problem, making the distractor hinge only on counting solutions rather than targeting a genuine structural misconception",
+              "Distractor D ('Argumentative approach') has poor discriminative power because the passage contains zero argumentative markers, making it trivially easy to eliminate even for weak readers",
+              "Distractor C ('Chronological sequence') is too easy to eliminate through surface-level observation of binary contrast (before/after) without requiring deep understanding of why the structure is contrastive rather than sequential"
+            ]
+          },
+          {
+            "category": "cognitive_load_mismatch",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question presents high linguistic difficulty (sophisticated vocabulary: 'oscillated,' 'precipitous decline,' 'catalyzed') but low structural reasoning difficulty, creating imbalanced cognitive demands where vocabulary barrier exceeds analytical complexity—a true 5/5 would maintain difficulty through both linguistic AND reasoning components"
+            ]
+          },
+          {
+            "category": "textual_scaffolding_overexplicitness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Passage uses unusually explicit organizational signposting ('Fortunately,' 'As a result,' 'These developments') that over-scaffolds the structure for a level 3+ question, making pattern recognition automatic rather than requiring inferential work to discern implicit organizational principles"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.354166666666666,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_calibration, answer_choice_discrimination, distractor_effectiveness",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.270833333333333,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question labeled 5/5 difficulty but structure is straightforward with explicit signposting ('presents an intriguing paradox', 'Consider the trajectory', 'Yet this very instability'); authentic 5/5 would obscure relationships more subtly",
+              "Question labeled 2/5 difficulty but uses clear transition words ('However', 'Next', 'Additionally', 'As a result') making problem-solution structure unmistakable; should be 1/5",
+              "Question labeled 2/5 difficulty but has explicit signposting ('For decades...struggled' → 'However, a breakthrough came' → 'As a result'); straightforward mystery-resolution with high student success rate (75%+) indicates 1/5 rating"
+            ]
+          },
+          {
+            "category": "weak_distractors",
+            "frequency": 3,
+            "exampleErrors": [
+              "Incorrect answer choices easily eliminated by direct contradiction: Choice B focuses on 'lexicography' not central to passage; Choice C emphasizes 'competing theories' absent from text; Choice D suggests principle 'fails to apply' when passage doesn't address this",
+              "Distractors are obviously wrong rather than temptingly plausible: Choice B contrasts 'multiple cities' when passage analyzes only Portland; Choice C claims 'analyzes long-term effects' when passage shows immediate results; Choice D references 'historical development' when passage is contemporary",
+              "Only one distractor (B) presents real competition; others clearly contradict passage: Choice B about 'effects' is somewhat tempting but undermined by paragraph 2's shift to solutions; Choice D about 'chronological' organization easily eliminated by lack of temporal markers"
+            ]
+          },
+          {
+            "category": "answer_choice_formatting",
+            "frequency": 1,
+            "exampleErrors": [
+              "Answer choices are excessively long (20-25 words averaging with multiple clauses) compared to authentic SAT options (8-12 words); example provided shows verbose choice A could be condensed from full clause structure to brief phrase like 'show how linguistic change demonstrates language vitality'"
+            ]
+          },
+          {
+            "category": "passage_topic_selection",
+            "frequency": 1,
+            "exampleErrors": [
+              "Passage leans heavily toward pure linguistic philosophy rather than typical SAT topics (historical narratives, scientific explanations, literary commentary, social phenomena); focus on lexicographers and etymological semantic inversion is less commonly represented in official SAT Reading passages"
+            ]
+          },
+          {
+            "category": "explicit_structure_signposting",
+            "frequency": 1,
+            "exampleErrors": [
+              "Passage structure is resolved too explicitly for authentic SAT style; the paradox is stated directly ('presents an intriguing paradox'), illustrated clearly ('Consider the trajectory of egregious'), and resolved explicitly ('Yet this very instability underscores'); authentic passages would require more inference by obscuring these relationships more subtly"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.1875,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, weak_distractors, answer_choice_formatting",
+      "newPromptVersion": "1.3.0"
+    }
+  ],
+  "currentBestVersion": "1.2.0",
+  "converged": true,
+  "startedAt": "2026-01-08T15:10:40.930Z",
+  "completedAt": "2026-01-09T21:04:23.394Z",
+  "bestTestScore": 4.354166666666666
+}

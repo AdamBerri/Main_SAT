@@ -1,0 +1,62 @@
+{
+  "id": "f47b8c2d-9e4a-4f1b-8c3d-2e5f7a9b1c4e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "stem": "Which quotation from the passage best supports the claim that genetic homogenization in honeybee populations poses a more serious long-term threat than commonly recognized environmental factors?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"genetic variation has decreased by 47% since 1995, with some commercial lines exhibiting less diversity than populations typically associated with endangered species\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"The genetic bottleneck we're witnessing represents a more insidious danger than acute toxicity events, because it compromises the species' adaptive capacity across multiple generations\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"reduced genetic diversity correlates with decreased disease resistance, compromised thermoregulation, and diminished foraging efficiency\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"this genetic erosion may be irreversible within the timeframe necessary to address current pollination crises\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B directly supports the claim by explicitly comparing genetic homogenization to commonly recognized threats (\"acute toxicity events\" like pesticide exposure) and explaining why the genetic threat is more serious long-term (\"more insidious\" and \"compromises the species' adaptive capacity across multiple generations\"). This quotation establishes both the comparative severity and the temporal dimension that makes genetic threats more serious than the environmental factors typically emphasized.",
+  "distractorRationale": {
+    "A": "While this provides important statistical evidence of genetic decline, it doesn't establish that this threat is more serious than commonly recognized environmental factors—it simply quantifies the genetic problem without making the crucial comparison.",
+    "B": "This is the correct answer as it directly compares genetic threats to commonly recognized environmental threats and explains why genetic issues are more serious long-term.",
+    "C": "This describes the consequences of genetic diversity loss but doesn't establish that these consequences represent a more serious threat than commonly recognized environmental factors like pesticides or colony collapse disorder.",
+    "D": "This emphasizes the urgency and potential permanence of genetic erosion but doesn't make the comparative claim that genetic threats are more serious than the commonly recognized environmental threats."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:25:42.442Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "9585ae37-e2af-4a95-a898-e719516f1a53"
+  },
+  "passage": "The prevailing narrative about the decline of honeybee populations has focused predominantly on colony collapse disorder and pesticide exposure, yet this emphasis may obscure a more fundamental threat: the erosion of genetic diversity within commercial bee populations. Dr. Marina Kovačević's longitudinal study of apiary genetics reveals a troubling homogenization that has accelerated since the 1990s. \"The genetic bottleneck we're witnessing represents a more insidious danger than acute toxicity events,\" Kovačević argues, \"because it compromises the species' adaptive capacity across multiple generations.\" Her analysis of mitochondrial DNA from over 3,000 hives across North America shows that genetic variation has decreased by 47% since 1995, with some commercial lines exhibiting less diversity than populations typically associated with endangered species. This genetic uniformity, while initially advantageous for predictable honey production, has created what Kovačević terms \"evolutionary fragility\"—a condition where entire populations lack the genetic toolkit necessary to respond to environmental pressures. \"We've essentially created a monoculture,\" she explains, \"and monocultures, regardless of the species, are inherently vulnerable to systemic collapse.\" The implications extend beyond honey production: reduced genetic diversity correlates with decreased disease resistance, compromised thermoregulation, and diminished foraging efficiency. Most alarmingly, Kovačević's data suggests that this genetic erosion may be irreversible within the timeframe necessary to address current pollination crises, as the reintroduction of wild genetic material faces significant logistical and regulatory obstacles.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 247,
+    "source": "Adapted from a scientific journal article on bee population genetics"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.7083333333333335,
+    "evaluatedAt": "2026-01-08T14:29:43.292Z"
+  }
+}

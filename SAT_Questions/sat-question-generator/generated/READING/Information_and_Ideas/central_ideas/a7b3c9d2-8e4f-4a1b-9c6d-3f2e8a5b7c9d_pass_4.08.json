@@ -1,0 +1,63 @@
+{
+  "id": "a7b3c9d2-8e4f-4a1b-9c6d-3f2e8a5b7c9d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 3.9,
+    "linguistic": 4.3
+  },
+  "stem": "The passage is primarily concerned with",
+  "choices": [
+    {
+      "label": "A",
+      "text": "demonstrating that technological innovations like the printing press and internet have had predominantly negative effects on society.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "arguing that technology's societal impact depends on the social and institutional contexts in which it is implemented.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "explaining how the printing press and internet have transformed communication and information sharing throughout history.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "advocating for the development of new technologies that can overcome existing social and political barriers.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage's central argument is that technology's impact on society is not inherently positive or negative, but rather depends on the social structures, institutions, and contexts within which it operates. The author uses examples like the printing press and internet to illustrate this point, showing how the same technologies can have different effects depending on the societal framework. The passage concludes by emphasizing that meaningful progress requires attention to both technological innovation and social reform, reinforcing the main argument about the importance of context.",
+  "distractorRationale": {
+    "A": "This choice misrepresents the author's balanced view. The passage acknowledges both positive and negative effects of technology, but doesn't argue that the effects are predominantly negative—rather, it argues that effects depend on context.",
+    "B": "This is the correct answer as it captures the passage's central argument about the contingent nature of technology's impact.",
+    "C": "This choice focuses too narrowly on the specific examples (printing press and internet) rather than the broader argument about technology and social context that these examples serve to illustrate.",
+    "D": "This choice misses the mark because the passage doesn't advocate for developing new technologies, but rather emphasizes the need to consider social contexts and reforms alongside technological implementation."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:50:52.642Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "b596f62e-6f07-4e8a-b512-6148dc8d8645"
+  },
+  "passage": "The prevailing assumption that technological innovation invariably leads to societal progress has obscured a more nuanced reality: technology's impact is fundamentally contingent upon the social structures within which it is deployed. Consider the printing press, often heralded as a democratizing force that spread literacy and knowledge. Yet in societies with rigid hierarchical systems, the same technology served to reinforce existing power dynamics by enabling more efficient dissemination of state propaganda and religious orthodoxy. Similarly, while the internet has facilitated unprecedented global communication and access to information, it has simultaneously enabled the creation of echo chambers that fragment public discourse and amplify misinformation. The critical factor is not the technology itself, but rather the institutional frameworks, cultural values, and political arrangements that determine how technological capabilities are channeled. This suggests that meaningful technological progress requires concurrent attention to social reform—a recognition that tools alone cannot transform society without deliberate efforts to reshape the contexts in which they operate.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 167,
+    "source": "Academic essay on technology and society"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T14:56:35.536Z"
+  }
+}

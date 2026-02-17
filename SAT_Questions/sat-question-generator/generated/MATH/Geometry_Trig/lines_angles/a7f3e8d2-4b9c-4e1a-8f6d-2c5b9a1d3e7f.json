@@ -1,0 +1,54 @@
+{
+  "id": "a7f3e8d2-4b9c-4e1a-8f6d-2c5b9a1d3e7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.1,
+    "computational": 2.1
+  },
+  "stem": "Lines $m$ and $n$ are parallel, and line $t$ is a transversal that intersects both lines. The measure of one of the acute angles formed is $65°$. What is the measure, in degrees, of one of the obtuse angles formed?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$25$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$90$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$115$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$130$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "When a transversal intersects two parallel lines, it creates eight angles. At each intersection point, the angles form linear pairs. An acute angle and an obtuse angle at the same intersection point are supplementary, meaning they sum to $180°$.\n\nGiven that one acute angle measures $65°$, we can find the obtuse angle:\n\nObtuse angle $= 180° - 65° = 115°$\n\nVerification: $65° + 115° = 180°$ ✓\n\nThe answer to the question is $115°$ which corresponds to choice C.",
+  "distractorRationale": {
+    "A": "Student who subtracts the acute angle from $90°$ instead of $180°$, confusing complementary angles with supplementary angles: $90° - 65° = 25°$",
+    "B": "Student who incorrectly assumes the obtuse angle is a right angle, not recognizing that angles formed by a transversal are not necessarily perpendicular: $90°$",
+    "C": "Correct answer: The acute and obtuse angles are supplementary, so $180° - 65° = 115°$",
+    "D": "Student who doubles the acute angle instead of finding the supplement: $2 × 65° = 130°$"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:34.951Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "697deb13-9dd8-4b85-a6df-d964255027da"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

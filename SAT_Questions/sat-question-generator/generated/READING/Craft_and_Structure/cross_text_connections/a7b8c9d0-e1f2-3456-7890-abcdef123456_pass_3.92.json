@@ -1,0 +1,61 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 3.3
+  },
+  "stem": "Based on the passages, what is the relationship between the two authors' perspectives on AI in medical diagnosis?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The authors present completely opposing views, with Passage 1 supporting AI and Passage 2 rejecting it entirely.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Both authors agree that AI will eventually replace human physicians in most diagnostic situations.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The authors offer complementary perspectives, with Passage 1 highlighting AI's strengths and Passage 2 emphasizing the continued importance of human expertise.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The authors focus on entirely different aspects of healthcare, making their perspectives unrelated to each other.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The correct answer is C. While Passage 1 emphasizes the revolutionary benefits of AI in medical diagnosis (speed, accuracy, early detection), Passage 2 acknowledges these capabilities but argues for the continued importance of human medical expertise. Crucially, Passage 2 concludes that 'the most effective healthcare approach likely combines AI's analytical power with physicians' holistic understanding,' indicating that the authors present complementary rather than contradictory perspectives. Both recognize AI's value, but Passage 2 provides a more nuanced view that incorporates human elements.",
+  "distractorRationale": {
+    "A": "This mischaracterizes the relationship as completely oppositional. Passage 2 actually acknowledges AI's impressive capabilities and doesn't reject AI entirely, but rather advocates for a balanced approach.",
+    "B": "Neither passage suggests that AI will replace physicians. Passage 1 focuses on AI's diagnostic capabilities without discussing replacement, and Passage 2 explicitly argues for combining AI with human expertise.",
+    "D": "This is incorrect because both passages directly address the same topic: AI's role in medical diagnosis. They are clearly related and respond to the same central question about AI in healthcare."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:32:17.421Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "f665b8c3-0355-48b2-b122-63eb80000774"
+  },
+  "passage": "Passage 1\nThe rise of artificial intelligence in medical diagnosis represents a revolutionary leap forward in healthcare precision. AI systems can analyze thousands of medical images in seconds, identifying patterns that might escape even experienced radiologists. These technologies promise to reduce diagnostic errors, which currently affect millions of patients annually. By processing vast datasets of medical information, AI can detect early-stage diseases with unprecedented accuracy, potentially saving countless lives through earlier intervention and more targeted treatments.\n\nPassage 2\nWhile AI's diagnostic capabilities are impressive, we must not overlook the irreplaceable value of human medical expertise. Physicians bring contextual understanding, emotional intelligence, and nuanced clinical judgment that no algorithm can replicate. A patient's medical history, family dynamics, and personal concerns all influence treatment decisions in ways that extend far beyond pattern recognition. The most effective healthcare approach likely combines AI's analytical power with physicians' holistic understanding, ensuring that technology enhances rather than replaces the human element in medicine.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 162,
+    "source": "Contemporary healthcare technology debate"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T14:36:36.507Z"
+  }
+}

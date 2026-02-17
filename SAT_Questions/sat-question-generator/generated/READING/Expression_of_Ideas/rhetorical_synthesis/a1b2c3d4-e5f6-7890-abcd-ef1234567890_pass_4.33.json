@@ -1,0 +1,63 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.1,
+    "linguistic": 3.2
+  },
+  "stem": "Which choice most effectively uses the information from the notes to accomplish the student's goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Urban gardens offer numerous environmental benefits, including reducing heat islands by up to 5°F, filtering air pollutants, and supporting 25% more biodiversity than typical urban areas, while also providing fresh produce and fostering social connections among residents.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Urban gardens reduce the urban heat island effect by up to 5°F in surrounding areas and filter air pollutants, removing an average of 48 pounds of carbon dioxide per year per 100 square feet, making them environmentally beneficial.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Community gardens provide fresh produce to neighborhoods that often lack access to healthy food options, and residents who participate report 30% higher levels of social connection with neighbors.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Studies show that urban gardening increases biodiversity, supporting 25% more species than typical urban landscapes, which demonstrates their environmental value.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A most effectively accomplishes the student's goal of emphasizing the multifaceted nature of urban gardens' benefits. It synthesizes information from all the major categories presented in the notes—environmental benefits (heat reduction, air filtration, biodiversity), food access, and social benefits—creating a comprehensive overview that demonstrates the wide-ranging impact of urban gardens. The sentence structure effectively balances the different types of benefits while maintaining clarity and flow.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it synthesizes multiple types of benefits to show the multifaceted nature.",
+    "B": "This choice focuses only on environmental benefits, failing to capture the multifaceted nature the student wants to emphasize.",
+    "C": "This choice addresses only social and food access benefits, omitting the environmental advantages entirely.",
+    "D": "This choice mentions only one environmental benefit (biodiversity), providing too narrow a focus for the student's goal."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:00:26.469Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "1c170a2f-7acc-46b9-a571-5f01d85d78d0"
+  },
+  "passage": "While researching the environmental benefits of urban gardens, a student has gathered the following notes:\n\n• Urban gardens can reduce the urban heat island effect by up to 5°F in surrounding areas\n• These gardens filter air pollutants, removing an average of 48 pounds of carbon dioxide per year per 100 square feet\n• Community gardens provide fresh produce to neighborhoods that often lack access to healthy food options\n• Studies show that urban gardening increases biodiversity, supporting 25% more species than typical urban landscapes\n• Residents who participate in community gardens report 30% higher levels of social connection with neighbors\n\nThe student wants to write an introduction to a research paper that emphasizes the multifaceted nature of urban gardens' benefits.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 142,
+    "source": "Student research notes"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.333333333333333,
+    "evaluatedAt": "2026-01-08T15:04:07.308Z"
+  }
+}

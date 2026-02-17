@@ -1,0 +1,63 @@
+{
+  "id": "a7b2c9d4-e8f3-4a5b-9c7d-1e6f8a2b4c9d",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 2.9,
+    "linguistic": 3
+  },
+  "stem": "Which choice best corrects the sentence boundary error in the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Marine biologists have discovered that coral reefs serve multiple ecological functions: they provide shelter for numerous fish species, filter water naturally, and protect coastlines from erosion.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Marine biologists have discovered that coral reefs serve multiple ecological functions, they provide shelter for numerous fish species, filter water naturally, and protect coastlines from erosion.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Marine biologists have discovered that coral reefs serve multiple ecological functions; however they provide shelter for numerous fish species, filter water naturally, and protect coastlines from erosion.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Marine biologists have discovered that coral reefs serve multiple ecological functions they provide shelter for numerous fish species; filter water naturally, and protect coastlines from erosion.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A correctly uses a colon to separate the two independent clauses. The first clause 'Marine biologists have discovered that coral reefs serve multiple ecological functions' is a complete sentence that introduces a list or explanation. The colon appropriately signals that what follows will elaborate on the 'multiple ecological functions' mentioned. The second part provides specific examples of these functions, making the colon the most appropriate punctuation mark to connect these related ideas.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This creates a comma splice by using only a comma to join two independent clauses, which is grammatically incorrect.",
+    "C": "This misuses the semicolon with 'however' - when 'however' follows a semicolon, it should be followed by a comma. Additionally, 'however' creates a logical contradiction rather than the intended elaboration.",
+    "D": "This creates a run-on sentence by failing to properly separate the first independent clause, and the semicolon placement creates an awkward and incorrect sentence structure."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:31:40.668Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "84691c8f-2aa4-433c-9848-9a2d0c4bcbb1"
+  },
+  "passage": "Marine biologists have discovered that coral reefs serve multiple ecological functions they provide shelter for numerous fish species, filter water naturally, and protect coastlines from erosion. Recent studies indicate that healthy coral ecosystems can support over 4,000 different species of fish, making them among the most biodiverse environments on Earth.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 52,
+    "source": "Academic science writing"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9642857142857144,
+    "evaluatedAt": "2026-01-08T15:37:57.404Z"
+  }
+}

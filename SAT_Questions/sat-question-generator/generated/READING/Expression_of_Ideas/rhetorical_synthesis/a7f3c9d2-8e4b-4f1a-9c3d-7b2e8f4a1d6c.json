@@ -1,0 +1,58 @@
+{
+  "id": "a7f3c9d2-8e4b-4f1a-9c3d-7b2e8f4a1d6c",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "stem": "The student wants to explain why the Florentine wool guilds' inspection system proved economically beneficial despite its costs. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Although the inspection protocols increased costs by 18 percent and caused delays, they enabled Florentine wool to command premiums of 40-65 percent, and the early establishment of these standards created reputational advantages that persisted independently of the quality signaling the inspections provided.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The inspection system required multiple independent assessments and delayed market entry by three to four weeks, but Florentine wool eventually commanded substantial price premiums that economic historians attribute to lasting reputational advantages from early adoption of quality verification.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Despite increasing production costs by 18 percent, the rigorous inspection protocols allowed Florentine wool to achieve price premiums of 40-65 percent within two decades, demonstrating that systematic quality verification could overcome the economic disadvantages of delayed market entry.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The multiple independent assessments required before premium sales increased costs and caused delays, yet the resulting price premiums of 40-65 percent persisted even after other regions adopted similar practices, indicating that the inspection system's economic value derived from quality signaling rather than production efficiency.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A most effectively accomplishes the goal by establishing the complete causal chain that explains the economic benefit: it quantifies both the costs (18% increase, delays) and the substantial returns (40-65% premiums), then crucially explains why these benefits proved durable—the early adoption created reputational advantages that operated 'independently of' the quality signaling function. This final element is essential because it explains why the system remained beneficial even after competitors adopted similar practices, addressing the apparent paradox of sustained advantage from a replicable process. The phrase 'independently of' captures the key insight from the notes that the price premium 'transcended the immediate quality signaling function,' making clear that reputation became a separate, enduring asset.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This choice fails to quantify the cost increase (mentioning delays but omitting the 18% figure), which weakens the cost-benefit comparison that explains why the system was 'economically beneficial despite its costs.' More significantly, it presents the reputational advantages as something historians 'attribute to' early adoption without explaining the mechanism—it doesn't clarify that these advantages operated independently of ongoing quality signaling, leaving unclear why early adoption mattered once others adopted similar practices.",
+    "C": "This choice establishes a clear cost-benefit comparison with specific figures, but it fundamentally misinterprets the economic mechanism. By stating the system 'could overcome the economic disadvantages of delayed market entry,' it suggests the premiums merely compensated for the delays, when the notes indicate something more significant: the premiums far exceeded the costs AND persisted after competitors adopted similar practices. The choice omits the crucial insight about reputational advantages operating independently of quality signaling, instead implying the benefit was simply that quality verification outweighed its own costs—a much less sophisticated economic explanation.",
+    "D": "This choice inverts the key causal relationship established in the notes. By concluding that 'the inspection system's economic value derived from quality signaling rather than production efficiency,' it contradicts the notes' explicit statement that price premiums persisted 'even after other regions adopted similar inspection practices, suggesting that early adoption created lasting reputational advantages that transcended the immediate quality signaling function.' The notes indicate the enduring value came from reputation that operated beyond quality signaling, not from quality signaling itself. This represents a fundamental misreading of how the economic benefit was sustained."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:06.364Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "b54e57a0-a437-4574-9b7a-45bb4dfeb063"
+  },
+  "passage": "While researching the economic history of medieval trade guilds for a seminar paper on institutional evolution, a student has taken the following notes:\n\n• In thirteenth-century Florence, wool guilds established rigorous quality inspection protocols that required multiple independent assessments before cloth could be sold at premium prices.\n• These inspection requirements initially increased production costs by approximately 18 percent and delayed market entry by three to four weeks.\n• Within two decades, Florentine wool commanded price premiums of 40-65 percent over comparable textiles from regions without systematic quality verification.\n• Economic historians analyzing surviving guild records have determined that the price premium persisted even after other regions adopted similar inspection practices, suggesting that early adoption created lasting reputational advantages that transcended the immediate quality signaling function of the inspections themselves.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 142,
+    "source": "Original content for SAT-style assessment"
+  },
+  "hasImage": false
+}

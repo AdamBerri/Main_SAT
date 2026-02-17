@@ -1,0 +1,63 @@
+{
+  "id": "a7b3c4d5-e6f7-8901-2345-6789abcdef12",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.7,
+    "procedural": 1.8,
+    "linguistic": 1.8
+  },
+  "stem": "The author's main purpose in the passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "explain the recent popularity of urban beekeeping among city residents.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "argue against the widespread adoption of urban beekeeping practices.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "describe the various challenges that urban beekeepers typically face.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "compare urban beekeeping methods with traditional commercial beekeeping.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The author's main purpose is to argue against urban beekeeping by presenting a series of concerns and problems. The passage begins by acknowledging the trend's appeal but quickly shifts to warning that it 'raises significant concerns.' The author systematically presents evidence of potential harm: inadequate training, disease spread, environmental challenges, and ultimately concludes that urban beekeeping 'may inadvertently harm' pollinators. The persuasive structure and cautionary language clearly indicate the author's intent to discourage this practice.",
+  "distractorRationale": {
+    "A": "This confuses a minor supporting detail (mentioning the trend's popularity) with the main purpose. The author mentions popularity only to set up the argument against it.",
+    "B": "This is the correct answer.",
+    "C": "This mistakes the method (describing challenges) for the purpose. While the author does describe challenges, these descriptions serve the larger argumentative purpose of discouraging urban beekeeping.",
+    "D": "This is not supported by the passage, which focuses solely on urban beekeeping problems rather than making comparisons with commercial operations."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:27:23.807Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "b6ff25b2-7f03-4c5c-bbcf-f35532e2649e"
+  },
+  "passage": "The recent surge in urban beekeeping has captured the attention of city planners and environmentalists alike. While rooftop hives may seem like a charming addition to the urban landscape, this trend raises significant concerns that deserve careful consideration. Urban beekeepers often lack the extensive training required to manage colonies effectively, leading to poorly maintained hives that can become breeding grounds for diseases and parasites. These problems don't remain isolated; they spread to wild bee populations and commercial apiaries in surrounding areas. Furthermore, urban environments present unique challenges that even experienced beekeepers struggle to address. Air pollution weakens bee immune systems, while the limited variety of flowering plants in cities creates nutritional deficiencies that compromise colony health. Rather than helping urban ecosystems, amateur beekeeping operations may inadvertently harm the very pollinators they aim to support.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 147,
+    "source": "Environmental policy analysis"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T15:31:39.363Z"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "a7f2c8e1-4b5d-6789-abc1-def234567890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "A researcher claims that a new study method increases test scores. She randomly assigns 120 students to either the new method (treatment group) or traditional method (control group), with 60 students in each group. After 8 weeks, the treatment group has a mean score of 78.5 with a standard deviation of 12.2, while the control group has a mean score of 74.8 with a standard deviation of 11.7. The researcher calculates a 95% confidence interval for the difference in means (treatment - control) as (−2.1, 9.5) and concludes that \"the new method significantly improves test scores.\" Which of the following best describes the validity of this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The conclusion is valid because the treatment group's mean score is higher than the control group's mean score.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The conclusion is valid because the confidence interval contains only positive values, indicating a significant improvement.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The conclusion is not valid because the confidence interval contains zero, indicating no significant difference between the methods.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is not valid because the sample size is too small to detect meaningful differences between the groups.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To evaluate the researcher's claim of \"significant improvement,\" we must examine the 95% confidence interval for the difference in means. The interval (−2.1, 9.5) contains zero, which means that zero is a plausible value for the true difference between the treatment and control groups. In statistical hypothesis testing, when a confidence interval for a difference contains zero, we cannot conclude there is a statistically significant difference between the groups. The fact that the interval ranges from −2.1 to 9.5 means the true difference could be anywhere in this range, including negative values (indicating the control group performs better) or positive values (indicating the treatment group performs better). Since we cannot rule out zero difference, the researcher's conclusion of \"significant improvement\" is not statistically justified.",
+  "distractorRationale": {
+    "A": "This choice reflects a common misconception that comparing only the sample means is sufficient for determining significance, ignoring the variability and uncertainty captured by the confidence interval.",
+    "B": "This choice represents a fundamental misunderstanding of confidence intervals - the student incorrectly believes the interval contains only positive values when it actually ranges from −2.1 to 9.5.",
+    "C": "This is the correct answer - recognizing that a confidence interval containing zero indicates no statistically significant difference.",
+    "D": "This choice incorrectly focuses on sample size adequacy rather than the proper interpretation of the confidence interval results."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:52:06.807Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "7017c756-b9c1-4a1b-9a84-0ff699cabc01"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.2916666666666665,
+    "evaluatedAt": "2026-01-08T15:55:56.255Z"
+  }
+}

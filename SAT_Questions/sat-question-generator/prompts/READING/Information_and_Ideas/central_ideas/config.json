@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "currentVersion": "1.4.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Reading question that tests the student's ability to identify the central idea or main argument of a passage.\n\nThe passage should:\n- Be 80-120 words for shorter passages, 150-200 for longer ones\n- Have a clear central idea that's supported throughout\n- Come from academic or literary contexts\n\nThe question should:\n- Ask students to identify what the passage is \"mainly about\" or the author's \"central claim\"\n- Have one answer that captures the main idea accurately\n- Include distractors that are either too narrow, too broad, or focus on details\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.310Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/READING/Information_and_Ideas/central_ideas/schema.json"
+}

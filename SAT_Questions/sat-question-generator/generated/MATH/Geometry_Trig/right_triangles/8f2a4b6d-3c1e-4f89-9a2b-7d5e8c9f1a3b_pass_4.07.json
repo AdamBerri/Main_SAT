@@ -1,0 +1,60 @@
+{
+  "id": "8f2a4b6d-3c1e-4f89-9a2b-7d5e8c9f1a3b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 1.9,
+    "computational": 2.1
+  },
+  "stem": "A ladder is leaning against a wall. The ladder makes a $65°$ angle with the ground and reaches a height of 12 feet on the wall. What is the length of the ladder, to the nearest foot?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "11 feet",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "13 feet",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "15 feet",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "27 feet",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In this right triangle problem, we have:\n- The angle between the ladder and ground = $65°$\n- The height on the wall (opposite side) = 12 feet\n- The ladder length (hypotenuse) = unknown\n\nUsing the sine ratio: $\\sin(65°) = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{12}{\\text{ladder length}}$\n\nSolving for the ladder length:\n$\\text{ladder length} = \\frac{12}{\\sin(65°)}$\n\n$\\sin(65°) \\approx 0.9063$\n\n$\\text{ladder length} = \\frac{12}{0.9063} \\approx 13.24$ feet\n\nRounding to the nearest foot gives us 13 feet.",
+  "distractorRationale": {
+    "A": "This results from using cosine instead of sine: $12/\\cos(65°) \\approx 12/0.4226 \\approx 28.4$, but then incorrectly calculating or using the adjacent side formula",
+    "B": "Correct answer using $\\sin(65°) = 12/\\text{hypotenuse}$",
+    "C": "This results from incorrectly using the tangent ratio or making computational errors in the calculation",
+    "D": "This results from using cosine instead of sine: $12/\\cos(65°) \\approx 12/0.4226 \\approx 28.4$, rounded to 27"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:58:03.233Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "13020948-a74e-426c-9c22-180ccdd7c3ea"
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle diagram showing a ladder leaning against a wall. The ladder forms the hypotenuse, the wall forms the vertical side (labeled 12 feet), and the ground forms the horizontal base. The angle between the ladder and the ground is marked as 65°. The ladder length should be marked with a question mark or variable.",
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.071428571428571,
+    "evaluatedAt": "2026-01-08T16:02:23.112Z"
+  }
+}

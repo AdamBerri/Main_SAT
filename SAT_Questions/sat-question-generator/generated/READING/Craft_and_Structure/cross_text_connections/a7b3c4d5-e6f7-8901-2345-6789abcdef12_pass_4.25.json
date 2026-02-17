@@ -1,0 +1,63 @@
+{
+  "id": "a7b3c4d5-e6f7-8901-2345-6789abcdef12",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.9,
+    "linguistic": 2.1
+  },
+  "stem": "Based on the texts, how do the authors' perspectives on remote work relate to each other?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Both authors agree that remote work is beneficial but disagree about which benefits are most important.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The first author emphasizes the advantages of remote work, while the second author focuses on its disadvantages.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Both authors present balanced views that acknowledge both positive and negative aspects of remote work.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The authors reach opposite conclusions about whether companies should adopt remote work policies.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 presents a clearly positive view of remote work, highlighting benefits like increased productivity, cost savings, and expanded talent pools, concluding that it represents a 'permanent evolution.' Text 2 takes a more cautionary stance, focusing on challenges like isolation, collaboration difficulties, and cultural maintenance issues. While Text 2 acknowledges some advantages exist ('certain advantages'), its primary focus is on the 'serious challenges that cannot be ignored.' This creates a complementary relationship where one text emphasizes benefits while the other emphasizes drawbacks.",
+  "distractorRationale": {
+    "A": "This is incorrect because the authors don't both agree that remote work is beneficial. Text 2 primarily focuses on challenges and drawbacks rather than benefits.",
+    "B": "This is correct - Text 1 emphasizes advantages while Text 2 focuses on disadvantages.",
+    "C": "This is incorrect because neither text presents a truly balanced view. Text 1 is overwhelmingly positive, while Text 2 is primarily focused on challenges.",
+    "D": "This is incorrect because neither text explicitly states a conclusion about whether companies should or shouldn't adopt remote work policies - they focus on describing effects rather than making policy recommendations."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:59:36.075Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "f643e70c-b81f-420f-8b28-5bdf0c386472"
+  },
+  "passage": "Text 1\n\nThe rise of remote work has fundamentally transformed the modern workplace. Companies report increased productivity as employees enjoy greater flexibility and reduced commuting stress. Without the distractions of office chatter and lengthy meetings, workers can focus more deeply on their tasks. Additionally, businesses save significantly on overhead costs like office space and utilities. Remote work also opens up talent pools beyond geographical boundaries, allowing companies to hire the best candidates regardless of location. This shift represents a permanent evolution in how we approach professional life.\n\nText 2\n\nWhile remote work offers certain advantages, it presents serious challenges that cannot be ignored. Many employees struggle with isolation and the blurred boundaries between home and work life. The absence of face-to-face interaction hampers team collaboration and makes it difficult to build meaningful professional relationships. New employees particularly suffer without mentorship opportunities and informal learning that naturally occurs in office settings. Furthermore, maintaining company culture and ensuring accountability becomes increasingly complex when teams are dispersed across different locations and time zones.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 172,
+    "source": "Contemporary workplace analysis"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.25,
+    "evaluatedAt": "2026-01-08T15:03:10.614Z"
+  }
+}

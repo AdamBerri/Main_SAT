@@ -1,0 +1,59 @@
+{
+  "id": "f47b2c8e-9d4a-4f2b-8e3c-1a5d6b9c2f8e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.1,
+    "computational": 3.7
+  },
+  "stem": "A company tracks the daily number of customer service calls received over a 30-day period. The mean number of calls per day is 85, and the standard deviation is 12. On one particular day, the company received 109 calls. If this value is replaced with 73 calls, which of the following statements about the new data set is true?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The mean will decrease by 1.2 and the standard deviation will decrease.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The mean will decrease by 1.2 and the standard deviation will increase.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The mean will decrease by 3.6 and the standard deviation will decrease.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The mean will decrease by 3.6 and the standard deviation will increase.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "First, calculate the change in mean. When we replace 109 with 73, we're removing 109 and adding 73, so the net change in the sum is $73 - 109 = -36$. Since there are 30 data points, the change in mean is $\\frac{-36}{30} = -1.2$. The new mean is $85 - 1.2 = 83.8$.\n\nFor the standard deviation, we need to consider how this change affects the spread. Originally, 109 calls was $109 - 85 = 24$ units above the mean, which is $\\frac{24}{12} = 2$ standard deviations above the mean. The replacement value of 73 calls will be $73 - 83.8 = -10.8$ units below the new mean, which is less extreme than the original deviation. Since we're replacing an extreme value (2 standard deviations from mean) with a less extreme value (closer to the mean), the standard deviation will decrease.",
+  "distractorRationale": {
+    "A": "Correct answer - properly calculates the mean change and recognizes that replacing an extreme value with a less extreme value decreases standard deviation.",
+    "B": "Correctly calculates the mean change but incorrectly thinks standard deviation increases when replacing an extreme value with a less extreme one.",
+    "C": "Incorrectly calculates mean change as the full difference (36) rather than dividing by the number of data points, but correctly identifies that standard deviation decreases.",
+    "D": "Makes both errors - incorrectly calculates the mean change and incorrectly thinks standard deviation increases."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:46:53.717Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "5b3b13af-d2ce-4e94-bf4f-d61797bcefba"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9583333333333335,
+    "evaluatedAt": "2026-01-08T15:50:58.924Z"
+  }
+}

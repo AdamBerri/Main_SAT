@@ -1,0 +1,55 @@
+{
+  "id": "a7f3c8e1-9b4d-4f2a-8c6e-2d5f9a1b3e7c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "In triangle $ABC$, point $D$ lies on side $\\overline{BC}$ such that $\\overline{AD}$ is perpendicular to $\\overline{BC}$. If $AB = 13$, $BD = 5$, and $DC = 9$, what is the length of side $AC$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$15$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\sqrt{274}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$14$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\sqrt{205}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Since $\\overline{AD}$ is perpendicular to $\\overline{BC}$, we have two right triangles: $\\triangle ABD$ and $\\triangle ACD$.\n\nStep 1: Find the length of $AD$ using the Pythagorean theorem in $\\triangle ABD$.\n\nIn right triangle $ABD$, we have:\n$$AB^2 = AD^2 + BD^2$$\n$$13^2 = AD^2 + 5^2$$\n$$169 = AD^2 + 25$$\n$$AD^2 = 144$$\n$$AD = 12$$\n\nStep 2: Use the Pythagorean theorem in $\\triangle ACD$ to find $AC$.\n\nIn right triangle $ACD$, we have:\n$$AC^2 = AD^2 + DC^2$$\n$$AC^2 = 12^2 + 9^2$$\n$$AC^2 = 144 + 81$$\n$$AC^2 = 225$$\n$$AC = 15$$\n\nTherefore, the length of side $AC$ is $15$.",
+  "distractorRationale": {
+    "A": "This is the correct answer obtained by properly applying the Pythagorean theorem twice.",
+    "B": "This results from incorrectly using $BC = 14$ as a leg in a right triangle with $AB = 13$ and attempting to find $AC$ using $AC^2 = 13^2 + 14^2 = 169 + 196 = 365$, then making an arithmetic error and getting $\\sqrt{274}$. This represents confusion about which segments form right triangles.",
+    "C": "This results from incorrectly assuming that $AC = BC = BD + DC = 5 + 9 = 14$, representing a fundamental misunderstanding that the triangle is isosceles or failing to use the altitude information properly.",
+    "D": "This results from correctly finding $AD = 12$ but then incorrectly applying the Pythagorean theorem as $AC^2 = AB^2 + DC^2 = 13^2 + 9^2 = 169 + 81 = 250$, then making an arithmetic error to get $\\sqrt{205}$. This represents confusion about which sides belong to which right triangle."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:12.565Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "05469663-3aa9-4aa4-a13f-73526fcb8f04"
+  },
+  "hasImage": true,
+  "imageDescription": "A triangle ABC with vertices labeled. Point D is marked on the base BC between B and C. A line segment AD is drawn from vertex A to point D, with a small square symbol at D indicating that AD is perpendicular to BC. The following measurements are labeled: AB = 13 (along the left side), BD = 5 (along the base from B to D), and DC = 9 (along the base from D to C). The triangle should be drawn so that A is above BC, with D creating two right triangles when the altitude is drawn.",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "a7b3c9d1-4e8f-2a5b-9c6d-1e2f3a4b5c6d",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 2.9,
+    "linguistic": 3.2
+  },
+  "stem": "Which choice most logically completes the text with a transition that indicates the relationship between the two sentences?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Similarly,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "However,",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Therefore,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Furthermore,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The correct answer is B, 'However,' because it establishes the necessary contrast between Pompeii's thriving state and its sudden destruction. The first sentence describes the city's prosperity and vitality, while the second sentence describes its catastrophic burial. This creates a sharp contrast that requires a transition indicating opposition or unexpected change, which 'However' provides perfectly.",
+  "distractorRationale": {
+    "A": "'Similarly' indicates that the second idea parallels or resembles the first, but the destruction of Pompeii contrasts sharply with its previous prosperity rather than resembling it.",
+    "B": "This is the correct answer as it properly indicates the contrast between Pompeii's thriving state and its sudden destruction.",
+    "C": "'Therefore' suggests that the eruption was a logical consequence of Pompeii's prosperity, which is not the relationship being described - the eruption was an unexpected natural disaster.",
+    "D": "'Furthermore' indicates addition of similar or supporting information, but the volcanic destruction contradicts rather than adds to the description of the city's prosperity."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:32:00.381Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "0cbda39c-f029-4b44-8778-70cfedb91f3f"
+  },
+  "passage": "The ancient city of Pompeii was a thriving commercial center with elaborate villas, bustling markets, and sophisticated infrastructure including aqueducts and public baths. _______ when Mount Vesuvius erupted in 79 CE, the city was buried under layers of volcanic ash and pumice, preserving it in a state of suspended animation that would captivate archaeologists nearly two millennia later.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 58,
+    "source": "Historical text about Pompeii"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.541666666666667,
+    "evaluatedAt": "2026-01-08T14:36:06.852Z"
+  }
+}

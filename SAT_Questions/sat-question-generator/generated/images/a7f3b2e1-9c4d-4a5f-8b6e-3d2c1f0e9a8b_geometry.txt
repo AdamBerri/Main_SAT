@@ -1,0 +1,47 @@
+```xml
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cylinderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ddd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coneGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#aaa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ccc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="#eee" />
+
+  <!-- Coordinate System -->
+  <line x1="50" y1="250" x2="50" y2="50" stroke="black" stroke-width="1" />
+  <line x1="45" y1="250" x2="55" y2="250" stroke="black" stroke-width="1" />
+  <line x1="45" y1="50" x2="55" y2="50" stroke="black" stroke-width="1" />
+  <text x="30" y="255" font-size="10">0</text>
+  <text x="30" y="55" font-size="10">18</text> <!-- 8 + 10 -->
+
+  <!-- Cylinder -->
+  <ellipse cx="200" cy="250" rx="60" ry="15" fill="url(#cylinderGradient)" stroke="black" stroke-width="1" />
+  <rect x="140" y="130" width="120" height="120" fill="url(#cylinderGradient)" stroke="black" stroke-width="1" />
+  <ellipse cx="200" cy="130" rx="60" ry="15" fill="url(#cylinderGradient)" stroke="black" stroke-width="1" />
+
+  <!-- Cone -->
+  <path d="M140 130 L200 30 L260 130 Z" fill="url(#coneGradient)" stroke="black" stroke-width="1" />
+
+  <!-- Cutting Plane -->
+  <line x1="140" y="200" x2="260" y="200" stroke="red" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="265" y="203" font-size="10" fill="red">Cutting Plane</text>
+
+  <!-- Dimensions -->
+  <line x1="70" y="250" x2="70" y="130" stroke="blue" stroke-width="1" />
+  <line x1="65" y="250" x2="75" y="250" stroke="blue" stroke-width="1" />
+  <line x1="65" y="130" x2="75" y="130" stroke="blue" stroke-width="1" />
+  <text x="75" y="190" font-size="10" fill="blue">Height = 8"</text>
+
+  <line x1="70" y="250" x2="70" y="200" stroke="green" stroke-width="1" />
+  <line x1="65" y="250" x2="75" y="250" stroke="green" stroke-width="1" />
+  <line x1="65" y="200" x2="75" y="200" stroke="green" stroke-width="1" />
+  <text x="75" y="225" font-size="10" fill="green">5"</text>
+
+  <line x1="200" y

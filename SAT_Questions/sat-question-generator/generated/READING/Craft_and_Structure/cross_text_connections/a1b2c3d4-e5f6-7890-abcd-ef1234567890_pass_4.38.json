@@ -1,0 +1,62 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "linguistic": 1
+  },
+  "stem": "Based on the texts, how does Text 2 relate to Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It contradicts Text 1 by arguing that community gardens provide no benefits to urban areas.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "It acknowledges the benefits mentioned in Text 1 while also presenting potential drawbacks of community gardens.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "It supports Text 1 by providing additional evidence for the positive effects of community gardens.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It focuses on completely different aspects of community gardens than those discussed in Text 1.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 2 begins by acknowledging that community gardens 'offer many benefits,' which aligns with the positive aspects presented in Text 1. However, Text 2 then introduces challenges and criticisms not mentioned in Text 1, such as declining volunteer participation, potential contribution to gentrification, and the argument that cities should focus on attracting grocery stores instead. This creates a balanced perspective that recognizes both the advantages and disadvantages of community gardens.",
+  "distractorRationale": {
+    "A": "This is incorrect because Text 2 explicitly states that community gardens 'offer many benefits,' showing it doesn't completely contradict Text 1.",
+    "C": "This is wrong because Text 2 doesn't just support Text 1—it introduces criticisms and challenges that present a more complex view of community gardens.",
+    "D": "This is incorrect because both texts discuss the same topic (community gardens) and Text 2 specifically references benefits mentioned in Text 1 before introducing new concerns."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:26:56.751Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "bf712482-7a11-4cfb-b4e4-579d9342e357"
+  },
+  "passage": "Text 1\nCommunity gardens have become popular in urban areas as a way to bring fresh produce to neighborhoods that lack grocery stores. These gardens allow residents to grow their own vegetables and fruits, providing healthy food options that might otherwise be expensive or unavailable. Beyond nutrition, community gardens create social connections among neighbors who work together to maintain the shared space. They also beautify vacant lots and provide green spaces in concrete-heavy environments.\n\nText 2\nWhile community gardens offer many benefits, they also present challenges that cities must address. Maintaining these gardens requires ongoing commitment from volunteers, and participation often declines over time. Additionally, community gardens can inadvertently contribute to gentrification, as improved neighborhoods may attract higher-income residents and raise property values. Some critics argue that cities should focus on attracting full-service grocery stores rather than expecting residents to grow their own food.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 175,
+    "source": "Adapted from urban planning research"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.375,
+    "evaluatedAt": "2026-01-08T15:31:39.608Z"
+  }
+}

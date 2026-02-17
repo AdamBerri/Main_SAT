@@ -1,0 +1,63 @@
+{
+  "id": "f47b2e8c-9a1d-4f6b-8e2a-1c5d7f9e3b4a",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "; these",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": ", these",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "these",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": ". These",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A is correct because it uses a semicolon to properly join two independent clauses. The first clause 'Marine biologists have discovered that coral reefs support an incredible diversity of species' and the second clause 'these underwater ecosystems are home to approximately 25% of all marine life despite covering less than 1% of the ocean floor' are both complete thoughts that can stand alone as sentences. A semicolon is the appropriate punctuation to connect closely related independent clauses.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This creates a comma splice, which incorrectly uses only a comma to join two independent clauses.",
+    "C": "This creates a run-on sentence by joining two independent clauses with no punctuation.",
+    "D": "While this creates two grammatically correct sentences, it unnecessarily breaks up closely related ideas that flow better when connected with a semicolon."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:32:54.231Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "f85c6df6-aa65-4b0c-90fa-6db97924b028"
+  },
+  "passage": "Marine biologists have discovered that coral reefs support an incredible diversity of species _______ these underwater ecosystems are home to approximately 25% of all marine life despite covering less than 1% of the ocean floor.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 32,
+    "source": "Academic writing sample"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.5,
+    "evaluatedAt": "2026-01-08T15:37:57.406Z"
+  }
+}

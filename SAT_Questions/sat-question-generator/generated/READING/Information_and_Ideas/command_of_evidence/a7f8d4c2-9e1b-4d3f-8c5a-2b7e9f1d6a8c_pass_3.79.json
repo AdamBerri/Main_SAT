@@ -1,0 +1,62 @@
+{
+  "id": "a7f8d4c2-9e1b-4d3f-8c5a-2b7e9f1d6a8c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "stem": "Which quotation from the passage best supports the author's claim that Renaissance humanist methodology retained characteristics of medieval scholastic approaches?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"the eye with which I see God is the same eye with which God sees me\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"both authors construct elaborate arguments that systematically undermine their own apparent premises\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"we who seem to be moderns in relation to the ancients find that we are ancients in relation to those who come after us\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"demonstrated the necessity of reconciling contradictory authorities through careful linguistic analysis\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B directly supports the claim about methodological continuity by explicitly stating that both Erasmus (a humanist) and Thomas Aquinas (a scholastic) employed the same type of paradoxical reasoning in their arguments. This quotation provides concrete evidence of how humanist methodology 'retained the dialectical rigor characteristic of their scholastic predecessors,' making it the strongest textual evidence for the author's claim about methodological similarities.",
+  "distractorRationale": {
+    "A": "This quotation from Meister Eckhart supports the claim about continuity in celebrating individual dignity, but does not address methodological approaches or reasoning techniques.",
+    "C": "This quotation from Otto of Freising supports the claim about historical consciousness being anticipated by medieval thinkers, but does not relate to methodological similarities between humanists and scholastics.",
+    "D": "While this quotation mentions Peter Abelard's analytical approach, it describes a medieval precedent for textual criticism rather than demonstrating that humanists retained scholastic methodological characteristics."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:21:00.250Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "7a47e480-368a-4b7b-8450-32488e51022e"
+  },
+  "passage": "The prevailing narrative that Renaissance humanism represented a decisive rupture with medieval scholasticism obscures the profound intellectual continuities that persisted across these ostensibly distinct epochs. While humanists like Petrarch and Erasmus ostensibly championed a return to classical antiquity, their methodological approaches often retained the dialectical rigor characteristic of their scholastic predecessors. Consider Erasmus's \"Praise of Folly,\" which employs the same paradoxical reasoning that Thomas Aquinas utilized in his theological treatises—both authors construct elaborate arguments that systematically undermine their own apparent premises. Moreover, the humanist emphasis on textual criticism and philological precision was prefigured by medieval scholars like Peter Abelard, whose \"Sic et Non\" demonstrated the necessity of reconciling contradictory authorities through careful linguistic analysis. Even the humanist celebration of individual dignity finds antecedents in the writings of medieval mystics such as Meister Eckhart, who proclaimed that \"the eye with which I see God is the same eye with which God sees me.\" The supposed humanist innovation of historical consciousness was likewise anticipated by medieval chroniclers like Otto of Freising, who recognized that \"we who seem to be moderns in relation to the ancients find that we are ancients in relation to those who come after us.\" Rather than representing a revolutionary departure, Renaissance humanism constitutes a sophisticated elaboration of intellectual traditions that remained fundamentally rooted in medieval soil.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 237,
+    "source": "Academic essay on Renaissance intellectual history"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.7916666666666665,
+    "evaluatedAt": "2026-01-08T15:25:06.892Z"
+  }
+}

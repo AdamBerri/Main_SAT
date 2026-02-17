@@ -1,0 +1,53 @@
+{
+  "id": "a3f8d7c2-9b4e-4a1f-8d3c-5e6f7a8b9c0d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.2,
+    "computational": 2.8
+  },
+  "stem": "A ramp is being constructed to provide wheelchair access to a building entrance. The ramp must rise 4.5 feet vertically and make an angle of 5° with the horizontal ground. What is the length of the ramp, in feet, rounded to the nearest tenth?\n\n(Note: sin(5°) ≈ 0.087, cos(5°) ≈ 0.996, tan(5°) ≈ 0.087)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "0.4",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "4.5",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "51.7",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "51.8",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To find the length of the ramp, we need to identify which trigonometric ratio relates the given information. The ramp length is the hypotenuse of a right triangle, the vertical rise of 4.5 feet is the side opposite to the 5° angle, and we need to find the hypotenuse.\n\nThe sine ratio relates the opposite side to the hypotenuse:\n$$\\sin(5°) = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{4.5}{\\text{ramp length}}$$\n\nSolving for the ramp length:\n$$\\text{ramp length} = \\frac{4.5}{\\sin(5°)} = \\frac{4.5}{0.087} ≈ 51.72$$\n\nRounded to the nearest tenth, the ramp length is 51.7 feet.\n\nThe answer is C.",
+  "distractorRationale": {
+    "A": "This results from incorrectly multiplying instead of dividing: 4.5 × sin(5°) = 4.5 × 0.087 ≈ 0.4. This error treats the vertical rise as the hypotenuse rather than the opposite side.",
+    "B": "This results from using cos instead of sin and multiplying: 4.5 × cos(5°) = 4.5 × 0.996 ≈ 4.5. This represents confusing which trigonometric ratio to use and also applying the wrong operation.",
+    "D": "This results from using tan instead of sin in the calculation: 4.5/tan(5°) = 4.5/0.087 ≈ 51.7, but then rounding 51.72 differently or making a slight computational error to get 51.8. Since tan(5°) ≈ sin(5°) for small angles, this gives a very close but incorrect answer."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:56.805Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "ed62b16b-955a-4b58-bc9d-aa10f9d5be03"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

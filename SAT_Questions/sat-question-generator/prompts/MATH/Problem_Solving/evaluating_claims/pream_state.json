@@ -1,0 +1,170 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.6484375,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "difficulty_calibration",
+            "frequency": 8,
+            "exampleErrors": [
+              "Question rated 4/5 difficulty but actually 2.5-3/5 due to straightforward single-concept focus and obvious correct answer that tests basic research methodology familiar to SAT students",
+              "Computational difficulty rated 5/5 despite requiring only basic division (0.16 ÷ 0.035), which is significantly overrated for what should be 2/5 at most",
+              "Question stated as 1/5 (easiest) but requires understanding selection bias, correlation vs causation, and critical reasoning skills that would place it at 2.5-3/5 difficulty level"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question conflates descriptive statistics (sample findings) with inferential statistics (population claims), making the designated correct answer technically flawed from a rigorous statistical perspective",
+              "Correct answer validates a population-level conclusion based solely on sample proportions, ignoring fundamental principles of statistical inference like sampling methodology and representativeness",
+              "Answer key problem where a distractor (option B) has merit when properly interpreting 'valid conclusion' from a statistical inference perspective, creating ambiguity about what is actually correct"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question requires knowledge of p-values, hypothesis testing, and statistical significance at depth that exceeds SAT scope, belonging instead in AP Statistics or college-level courses",
+              "Excessive complexity with stimulus containing 127 words and overly technical language like 'statistically significant at the 0.05 level (p = 0.003)' that SAT explicitly avoids",
+              "Critical section misclassification: categorized as MATH question when it's actually logical reasoning/research methodology that belongs in Reading & Writing section under 'Command of Evidence' skills"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor uses arbitrary threshold (75%) that appears unmotivated and is too easily eliminable, missing more relevant misconceptions about sampling bias versus sample size",
+              "Distractor presents a true statement that supports rather than challenges validity, failing the basic criterion that it should represent a plausible reason the conclusion is invalid",
+              "Distractor is grammatically/logically nonsensical with factually false information, making it trivially eliminable and not representing authentic student thinking"
+            ]
+          },
+          {
+            "category": "construct_clarity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question contains critical ambiguity about whether it's testing sample description versus population inference, without distinguishing what 'valid' means in this context",
+              "Unclear what construct is being tested: basic proportion calculation, understanding of sampling validity, or critical evaluation of research claims, leading to multiple defensible answers",
+              "Answer choices create confusion about whether students should evaluate descriptive accuracy (120/200 is 'most') or inferential validity (can we conclude this about the whole school)"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.499999999999999,
+        "passRate": 0.75
+      },
+      "improvementMade": "Addressed: difficulty_calibration, answer_validity, faithfulness",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.244791666666666,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 3.2/5 due to minimal computational demand and straightforward elimination process despite sophisticated conceptual foundation",
+              "Question rated 5/5 difficulty but actual difficulty is 3.5-4/5 because procedural demands are modest and logical elimination path is direct, despite requiring advanced conceptual understanding",
+              "Question labeled 3/5 difficulty but actual difficulty is 2/5 because it relies primarily on reading comprehension and elimination of obviously wrong answers rather than sophisticated statistical reasoning"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.0625,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_accuracy",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.96875,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 5,
+            "exampleErrors": [
+              "Stated 3/5 difficulty but actual difficulty 2.3/5; question only requires recognizing 68% > 50% with minimal critical thinking and obvious wrong answers",
+              "Stated 5/5 difficulty but actual difficulty 3.5-4/5; relies on standard AP Statistics concepts and textbook pitfalls rather than advanced integrated reasoning",
+              "Stated 3/5 difficulty but actual difficulty 2.2/5; fundamentally a reading comprehension question about sample vs. population distinction with clear elimination paths"
+            ]
+          },
+          {
+            "category": "weak_distractors",
+            "frequency": 3,
+            "exampleErrors": [
+              "Answer choices A, C, D are implausibly wrong with no compelling competition; only B is defensible, eliminating meaningful discrimination between options",
+              "Choice D (sample too small) is undermined by the stated margin of error; Choice C (can't conclude) uses overly strong claim easily dismissed since sampling is standard practice",
+              "Choice A (causation claim) is obviously wrong and eliminated immediately; students don't need to engage in nuanced reasoning"
+            ]
+          },
+          {
+            "category": "computational_mismatch",
+            "frequency": 2,
+            "exampleErrors": [
+              "Computational difficulty rated 3.1/5 but question requires zero computation; the 65% is already given with no calculations needed",
+              "Procedural difficulty inflated at 4.9/5 when essentially zero computation or problem-solving is required; question is primarily reading comprehension"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Designated correct answer (B) is defensible but problematic; competing answer (D) about confidence intervals is arguably more statistically rigorous and sophisticated",
+              "Ambiguity in interpretation of 'evidence that' creates confusion about whether the claim is weak (sample shows this) or strong (statistically reliable)"
+            ]
+          },
+          {
+            "category": "pedagogical_clarity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question settles on basic answer (B) without requiring consideration of statistical precision; Answer D about margins of error would better assess understanding of sampling distributions but is excluded as viable option"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.041666666666667,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: difficulty_miscalibration, weak_distractors, computational_mismatch",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:32:05.324Z",
+  "completedAt": "2026-01-09T20:24:36.585Z",
+  "bestTestScore": 4.499999999999999
+}

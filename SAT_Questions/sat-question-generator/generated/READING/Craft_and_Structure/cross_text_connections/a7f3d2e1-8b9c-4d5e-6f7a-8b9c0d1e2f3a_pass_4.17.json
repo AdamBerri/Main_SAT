@@ -1,0 +1,61 @@
+{
+  "id": "a7f3d2e1-8b9c-4d5e-6f7a-8b9c0d1e2f3a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 2,
+    "linguistic": 2.2
+  },
+  "stem": "Based on the passages, how do the two texts relate to each other regarding vertical farming?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 presents vertical farming as a complete solution, while Text 2 argues it has no potential benefits.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 emphasizes the promising aspects of vertical farming, while Text 2 highlights significant practical limitations.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Both texts agree that vertical farming is currently the best solution to global food security challenges.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 focuses on environmental benefits, while Text 2 discusses only the technological aspects.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passages present contrasting perspectives on vertical farming. Text 1 emphasizes the positive potential of vertical farming, highlighting benefits like increased food production per square foot, year-round growing capabilities, reduced pesticide use, and water conservation. Text 2 acknowledges this promise ('shows promise') but focuses on significant practical limitations, including high energy costs, economic constraints, and limited crop variety. The relationship is one of optimistic potential versus realistic constraints.",
+  "distractorRationale": {
+    "A": "This overstates both positions. Text 1 doesn't claim vertical farming is a complete solution, and Text 2 acknowledges that vertical farming 'shows promise,' indicating it does see potential benefits.",
+    "C": "This is incorrect because the texts present opposing views on vertical farming's current viability. Text 2 explicitly states limitations that prevent it from being a large-scale solution.",
+    "D": "This mischaracterizes the content. While Text 1 does mention environmental benefits, it also discusses technological aspects. Text 2 covers both economic and technological limitations, not just technological aspects."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:32:37.905Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "7fdfb84f-832a-4e51-9ff6-531b4534b320"
+  },
+  "passage": "Text 1\nUrban vertical farming represents a revolutionary approach to agriculture that could transform how we produce food. By growing crops in vertically stacked layers within controlled indoor environments, these facilities can produce significantly more food per square foot than traditional farming. Vertical farms use LED lighting and hydroponic systems to optimize growing conditions year-round, eliminating the need for pesticides and reducing water usage by up to 95%. As urban populations continue to expand and climate change threatens conventional agriculture, vertical farming offers a sustainable solution that brings food production directly into cities.\n\nText 2\nWhile vertical farming shows promise, its current limitations prevent it from being a viable large-scale solution to global food security. The energy costs associated with LED lighting systems make vertical farming operations extremely expensive, often requiring ten times more energy than traditional greenhouse farming. Additionally, vertical farms are currently only economically feasible for high-value crops like leafy greens and herbs, not staple crops like wheat, corn, or rice that feed most of the world's population. Until significant technological advances reduce energy costs and expand crop variety, vertical farming will remain a niche agricultural practice rather than a transformative solution.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 186,
+    "source": "Adapted from agricultural technology analysis"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T14:36:36.508Z"
+  }
+}

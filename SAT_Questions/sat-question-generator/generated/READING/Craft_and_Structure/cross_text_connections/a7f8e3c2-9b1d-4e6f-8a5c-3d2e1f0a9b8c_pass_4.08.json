@@ -1,0 +1,63 @@
+{
+  "id": "a7f8e3c2-9b1d-4e6f-8a5c-3d2e1f0a9b8c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "stem": "The relationship between the two passages can best be characterized as",
+  "choices": [
+    {
+      "label": "A",
+      "text": "complementary perspectives that together provide a comprehensive understanding of consciousness research.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "fundamentally incompatible worldviews regarding the tractability of consciousness as a scientific problem.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "sequential stages in the evolution of neuroscientific thinking about consciousness.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "different methodological approaches to the same underlying theoretical framework.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passages present fundamentally incompatible worldviews about whether consciousness can be scientifically explained. Passage 1 argues that the 'hard problem' of consciousness is 'intractable' because materialist frameworks have fundamental limitations—they 'cannot bridge the explanatory gap.' Passage 2 directly contradicts this, arguing that the explanatory gap 'reflects our current methodological constraints rather than fundamental limitations' and that apparent barriers are 'not insurmountable philosophical barriers but rather technical limitations.' These represent irreconcilable philosophical positions about the very possibility of scientific progress on consciousness.",
+  "distractorRationale": {
+    "A": "The passages are not complementary—they directly contradict each other on whether the hard problem of consciousness can be solved. Passage 1 sees fundamental limitations while Passage 2 sees only temporary technical challenges.",
+    "B": "This is the correct answer.",
+    "C": "The passages do not represent a chronological evolution of thinking but rather competing contemporary perspectives. Both acknowledge current neuroscientific advances but interpret their significance differently.",
+    "D": "The passages represent different theoretical frameworks, not just different methods. Passage 1 embraces a philosophical position about fundamental explanatory gaps, while Passage 2 adopts a purely empirical stance that such gaps will be closed through better science."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:58:16.523Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "d2e0e7e3-6862-48d4-9dd0-274c13acc4d2"
+  },
+  "passage": "Passage 1\nThe prevailing orthodoxy in contemporary neuroscience posits that consciousness emerges from neural complexity—that the intricate interplay of billions of neurons generates subjective experience through purely mechanistic processes. This reductionist paradigm, while scientifically rigorous, fundamentally misconstrues the nature of consciousness by conflating correlation with causation. The hard problem of consciousness—explaining why there is something it is like to have experiences—remains intractable precisely because materialist frameworks cannot bridge the explanatory gap between objective neural activity and subjective phenomenology.\n\nPassage 2\nRecent advances in computational neuroscience have begun to elucidate the mechanisms underlying conscious experience with unprecedented precision. Integrated Information Theory provides a quantitative framework for measuring consciousness based on a system's capacity to integrate information across neural networks. While the subjective dimension of experience presents methodological challenges, these are not insurmountable philosophical barriers but rather technical limitations that will yield to increasingly sophisticated experimental paradigms. The apparent explanatory gap reflects our current methodological constraints rather than fundamental limitations of scientific inquiry into consciousness.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 175,
+    "source": "Adapted from philosophical and neuroscientific discourse on consciousness"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T15:03:10.613Z"
+  }
+}

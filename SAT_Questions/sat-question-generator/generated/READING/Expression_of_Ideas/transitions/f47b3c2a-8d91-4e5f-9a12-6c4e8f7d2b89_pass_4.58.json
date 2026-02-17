@@ -1,0 +1,61 @@
+{
+  "id": "f47b3c2a-8d91-4e5f-9a12-6c4e8f7d2b89",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1.2
+  },
+  "stem": "Which choice completes the text with the most logical transition?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Similarly,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "However,",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Therefore,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Furthermore,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The correct answer is B, 'However,' because it establishes a contrast between what many students believe (that studying late at night is most effective) and what research actually shows (that getting adequate sleep is more beneficial). This transition word signals that the second sentence contradicts or opposes the common belief mentioned in the first sentence.",
+  "distractorRationale": {
+    "A": "'Similarly,' would suggest that the research supports the students' belief, but the passage indicates the opposite - that research contradicts this belief.",
+    "C": "'Therefore,' indicates a cause-and-effect relationship, but the research findings are not a result of students' beliefs; rather, they contradict those beliefs.",
+    "D": "'Furthermore,' would add supporting information to the first sentence, but the research actually challenges rather than supports what students believe."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:31:18.866Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "491064be-ecb2-486d-b971-35e3e04e9078"
+  },
+  "passage": "Many students believe that studying late at night is the most effective way to prepare for exams. _______ research shows that getting adequate sleep before a test actually improves memory retention and cognitive performance more than cramming through the night.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 38,
+    "source": "Educational psychology text"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.583333333333333,
+    "evaluatedAt": "2026-01-08T14:36:06.852Z"
+  }
+}

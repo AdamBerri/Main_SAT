@@ -1,0 +1,207 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.332589285714286,
+        "passRate": 0.625,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 8,
+            "exampleErrors": [
+              "Question rated 4/5 difficulty but tests basic comma splice identification that should be 2/5 - expects 65-75% success rate instead of 35-45%",
+              "Stated 5/5 difficulty for straightforward semicolon usage with clear wrong answers - actually 2.5-3/5 with likely 60-70% success rate",
+              "Question calibrated at 4/5 but tests fundamental grammar concepts from middle school - cognitive load and procedural steps indicate 2-2.5/5"
+            ]
+          },
+          {
+            "category": "missing_context_presentation",
+            "frequency": 7,
+            "exampleErrors": [
+              "No complete sentence provided - only answer choice fragments shown without full context required for authentic SAT questions",
+              "Question references specific content (bioluminescence, clause structure) not visible in the question stem",
+              "Answer choices show disconnected fragments ('them, they') without showing where these fit in the complete sentence"
+            ]
+          },
+          {
+            "category": "incorrect_answer_keys",
+            "frequency": 4,
+            "exampleErrors": [
+              "Designated answer A violates comma-before-coordinating-conjunction rule; answer B is actually correct per Standard English conventions",
+              "Both choices C (semicolon) and D (comma + 'and') are grammatically correct, creating ambiguous correctness that unfairly penalizes knowledgeable students",
+              "Question designates one answer correct but alternative choice follows standard compound sentence structure equally well"
+            ]
+          },
+          {
+            "category": "non_standard_terminology",
+            "frequency": 4,
+            "exampleErrors": [
+              "'Boundaries' is not standard SAT terminology - should use 'punctuation,' 'sentence structure,' or 'combining sentences'",
+              "Concept label unclear and vague compared to official SAT materials which use specific grammar terms",
+              "Term 'boundaries' technically accurate but not conventional SAT terminology used in official materials"
+            ]
+          },
+          {
+            "category": "flawed_distractor_design",
+            "frequency": 3,
+            "exampleErrors": [
+              "Choice B creates obvious sentence fragment too easily eliminated - doesn't effectively discriminate between knowledge levels",
+              "Choice D uses double errors (semicolon + lowercase) making it too obviously wrong instead of testing subtle understanding",
+              "Answer choice 'decades being that' is archaic/non-standard construction not typical of plausible SAT distractors"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.125,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, missing_context_presentation, incorrect_answer_keys",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.022321428571429,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "missing_context",
+            "frequency": 6,
+            "exampleErrors": [
+              "Question stem provides no original sentence showing the error; SAT always displays the underlined portion in full sentence context",
+              "Question only shows the junction point without complete clauses visible; students cannot meaningfully evaluate punctuation appropriateness",
+              "Full sentence context is missing, making it impossible to verify if answer choice truly maintains proper boundaries"
+            ]
+          },
+          {
+            "category": "authenticity_formatting",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question lacks authentic SAT presentation format; official SAT embeds underlined portion within complete visible prose rather than isolation",
+              "Sentence presented without proper SAT-style context showing what precedes and follows underlined portion; makes difficulty assessment and validity impossible to confirm",
+              "Question stem phrasing is acceptable but less typical of official SAT wording; should clarify whether option A represents original error or correction"
+            ]
+          },
+          {
+            "category": "difficulty_overstatement",
+            "frequency": 4,
+            "exampleErrors": [
+              "Stated difficulty 5/5 but actual difficulty 2-3/5; comma splice error is obvious and straightforward, not requiring nuanced reasoning",
+              "Stated difficulty 4/5 but actual difficulty 2.5/5; error recognition and standard semicolon application are too mechanical for above-average rating",
+              "Question rated 3/5 but performs at 2/5; obvious error and limited viable options make this below-average difficulty despite sophisticated vocabulary"
+            ]
+          },
+          {
+            "category": "weak_distractor_design",
+            "frequency": 3,
+            "exampleErrors": [
+              "Option D uses 'being that' construction which is colloquial and wouldn't appear as a legitimate SAT distractor; distractors should represent real student errors",
+              "Option D presents a grammatically correct alternative using comma + coordinating conjunction, making it an alternative correct answer rather than a plausible distractor",
+              "Distractor D requires knowledge of advanced semicolon-conjunction rule but doesn't serve mid-level students effectively; uneven difficulty gradient across answer choices"
+            ]
+          },
+          {
+            "category": "explanation_errors",
+            "frequency": 2,
+            "exampleErrors": [
+              "Explanation claims 'prior to this breakthrough, bacterial infections...' is an independent clause, but 'prior to this breakthrough' is actually a prepositional phrase; contradicts SAT grammar rules",
+              "Explanation reasoning for why choice B is correct appears flawed when analyzed against actual clause structure and semicolon usage rules"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.892857142857143,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: missing_context, authenticity_formatting, difficulty_overstatement",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.9955357142857144,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "context_incompleteness",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question stem references underlined text but no sentence is provided - creates unanswerable question without seeing what needs correcting",
+              "Missing surrounding passage context - SAT questions require 20-30 words of context to show natural sentence flow and clarify independent clause boundaries",
+              "Explanation references words not in question stem - creates disconnect between what's presented and what's explained"
+            ]
+          },
+          {
+            "category": "grammar_authenticity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Missing the original sentence/full context - question references 'underlined portion' but provides no complete sentence",
+              "Missing 'NO CHANGE' option - official SAT questions always include this choice for error correction questions",
+              "Weak/artificial answer choices - distractors don't represent authentic student errors or plausible misconceptions"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Comma splice error is too obvious and straightforward - students can identify it in 30-45 seconds, making the question easier than rated",
+              "Stated difficulty of 3-4/5 but actual difficulty is 1.5-2.5/5 - the error has minimal ambiguity and clear elimination strategy",
+              "Low cognitive load with no competing interpretations - question lacks the conceptual complexity required for medium-to-hard difficulty ratings"
+            ]
+          },
+          {
+            "category": "question_construction",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractors are too obviously wrong rather than representing plausible errors - Choice D (semicolon + and) or Choice B (no punctuation) are rare/unnatural mistakes that don't reflect authentic student misconceptions",
+              "Question lacks sophistication for authentic SAT - uses basic comma splice instead of testing more nuanced concepts like semicolon vs. colon, transitional phrases, or dependent clause confusion"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Designated correct answer (C) relies on flawed logical reasoning - explanation mischaracterizes the relationship between clauses, claiming a colon correctly shows causality when the clauses are actually parallel observations",
+              "Logical error in explanation - the clause about brain capacity doesn't explain why early acquisition is efficient; it's a separate observation that should be joined with semicolon, not colon"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.7142857142857144,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: context_incompleteness, grammar_authenticity, difficulty_accuracy",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:55:29.442Z",
+  "completedAt": "2026-01-09T20:31:27.839Z",
+  "bestTestScore": 4.125
+}

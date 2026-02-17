@@ -1,0 +1,58 @@
+{
+  "id": "f47b8c92-3d15-4e89-a6f2-8c9e1b4f7a23",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 2.7,
+    "computational": 2.8
+  },
+  "stem": "A marketing research company conducted a survey to determine which brand of smartphone teenagers prefer. They surveyed 500 teenagers at a technology conference and found that 320 preferred Brand A, 120 preferred Brand B, and 60 preferred Brand C. Based on these results, the company concluded that \"Brand A is preferred by 64% of all teenagers nationwide.\" Which of the following best describes this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The conclusion is valid because the sample size of 500 is large enough to represent all teenagers.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The conclusion is valid because 64% is significantly higher than the percentages for the other brands.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The conclusion is not valid because the sample was not randomly selected from all teenagers nationwide.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is not valid because the survey should have included more than three smartphone brands.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To evaluate this statistical claim, we need to consider whether the sample is representative of the population being studied. The company surveyed teenagers at a technology conference, which creates a sampling bias. Teenagers attending a technology conference are likely to have different preferences and knowledge about smartphones compared to the general teenage population nationwide. This biased sample cannot be used to make valid conclusions about all teenagers nationwide. While the calculation of 64% is correct ($\\frac{320}{500} = 0.64 = 64\\%$), the sampling method makes the conclusion invalid. A valid study would require a random sample from the entire population of teenagers nationwide.",
+  "distractorRationale": {
+    "A": "This choice incorrectly assumes that sample size alone determines validity, ignoring the critical issue of sampling bias.",
+    "B": "This choice focuses on the magnitude of the difference between brands rather than the fundamental sampling problem.",
+    "D": "This choice suggests the issue is with the number of brands surveyed rather than the biased sampling method."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:52:36.072Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "15b2ddc6-6f07-4e19-b377-bd241833d299"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9583333333333335,
+    "evaluatedAt": "2026-01-08T15:55:56.255Z"
+  }
+}

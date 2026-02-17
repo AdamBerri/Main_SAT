@@ -1,0 +1,62 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-123456789abc",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "stem": "Which choice most effectively combines the student's notes to emphasize both the urgent need for equitable green space distribution and the multifaceted benefits that justify substantial public investment?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Urban green spaces provide documented mental health benefits and economic advantages, yet significant disparities in access persist, particularly in low-income neighborhoods where residents have drastically less parkland per capita than recommended by health organizations, creating an urgent imperative for cities to adopt innovative green infrastructure models that simultaneously address equity concerns and capitalize on the comprehensive benefits these spaces offer.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "While cities like Singapore and Copenhagen demonstrate that innovative green infrastructure can be successfully integrated into dense urban environments, the economic benefits of urban green spaces—including increased property values and reduced healthcare costs—make them valuable investments, and studies show they reduce cortisol levels and anxiety symptoms while fostering social cohesion.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Research reveals that urban green spaces reduce cortisol levels and anxiety symptoms, provide economic benefits through increased property values and tourism revenue, and help regulate temperature and improve air quality, but many low-income neighborhoods lack adequate green space, with some having less than 2 square meters per resident compared to the WHO's 9-square-meter recommendation.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The multifaceted benefits of urban green spaces encompass mental health improvements, economic advantages, climate regulation, and social cohesion, while successful examples from Singapore and Copenhagen prove that innovative approaches can overcome space constraints, though equitable distribution remains challenging in areas where residents have insufficient access to recommended parkland levels.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A most effectively synthesizes the information by establishing a clear causal relationship between documented benefits and the urgent need for action. It begins with the proven benefits (mental health and economic), immediately contrasts this with the equity problem (disparities in low-income areas with specific data), and concludes by connecting innovative solutions to both equity and comprehensive benefits. The structure creates logical flow from evidence to problem to solution, while the phrase 'urgent imperative' directly addresses the emphasis requirement. The sentence maintains sophisticated syntax while clearly prioritizing both key themes the student wants to emphasize.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "This choice mentions benefits and examples but fails to emphasize the equity issue adequately. The structure presents information in a less logical sequence and doesn't create the sense of urgency needed to justify 'substantial public investment.'",
+    "C": "While this choice covers most topics, it uses a simple list structure with 'but' as a weak connector. It doesn't effectively synthesize the information to show how the benefits justify addressing the equity problem, nor does it emphasize urgency.",
+    "D": "This choice acknowledges benefits and equity challenges but treats them as separate issues rather than synthesizing them into a compelling argument. The phrase 'remains challenging' understates the urgency, and the connection between benefits and investment justification is weak."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:26:49.340Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "479f75d5-1065-4c8d-83c6-245905a4a0b7"
+  },
+  "passage": "While researching the impact of urban green spaces on mental health for a public policy report, a student has gathered the following notes:\n\n• Studies consistently show that exposure to urban parks and green corridors reduces cortisol levels and anxiety symptoms in city residents.\n• Many low-income neighborhoods lack adequate green space, with some areas having less than 2 square meters of parkland per resident compared to the WHO recommendation of 9 square meters.\n• Cities like Singapore and Copenhagen have successfully integrated green infrastructure into dense urban environments through innovative vertical gardens and rooftop parks.\n• The economic benefits of urban green spaces include increased property values, reduced healthcare costs, and enhanced tourism revenue.\n• Climate change and urban heat island effects make green spaces increasingly critical for temperature regulation and air quality improvement.\n• Community gardens and participatory green space design foster social cohesion and civic engagement among diverse urban populations.\n\nThe student wants to synthesize this information to emphasize both the urgent need for equitable green space distribution and the multifaceted benefits that justify substantial public investment.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 168
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.5833333333333335,
+    "evaluatedAt": "2026-01-08T15:31:26.148Z"
+  }
+}

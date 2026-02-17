@@ -1,0 +1,61 @@
+{
+  "id": "f47b8c2d-9e1a-4f6b-8d3c-2a5e7b9c4f1d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "stem": "Which choice best describes the overall structure of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A chronological account of how urban heat islands developed historically, followed by predictions about future urban climate patterns.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "A comparison between urban and rural temperature patterns, contrasted with an analysis of different city planning approaches worldwide.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "An introduction to a complex urban phenomenon, an explanation of its underlying causes, an examination of its consequences, and a discussion of potential remedies.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "An argument against current urban development practices, supported by evidence of environmental damage, followed by a refutation of proposed solutions.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage follows a clear problem-analysis-solution structure. It begins by introducing urban heat islands as a paradoxical phenomenon (paragraph 1), then explains the multiple causes behind temperature differentials (paragraph 2), examines the cascading consequences of these effects (paragraph 3), and finally discusses innovative mitigation strategies (paragraphs 4-5). The organizational pattern moves logically from problem identification through causal analysis to potential solutions, with transitional phrases like 'This temperature differential stems from,' 'Consequently,' and 'Nevertheless' marking these structural shifts.",
+  "distractorRationale": {
+    "A": "While the passage mentions urban heat islands as a phenomenon planners have 'grappled with for decades,' it does not provide a chronological historical account or make predictions about future climate patterns. The structure focuses on present-day causes, effects, and solutions rather than temporal development.",
+    "B": "Though the passage does mention the temperature difference between urban and rural areas, it does not structure itself as a systematic comparison between these environments. Additionally, while it references specific cities, it doesn't analyze different planning approaches worldwide but rather focuses on solutions to the heat island problem.",
+    "D": "The passage does not present an argument against urban development practices. Instead, it acknowledges cities' benefits ('concentrate economic activity and innovation') while addressing the heat island problem. The final section presents solutions as promising rather than refuting them, using positive language like 'innovative mitigation strategies' and 'promising pathways forward.'"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:31:14.806Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "799dd24a-0057-4a14-90c0-260503f3ebdb"
+  },
+  "passage": "The phenomenon of urban heat islands—metropolitan areas significantly warmer than their surrounding rural regions—presents a paradox that urban planners have grappled with for decades. While cities concentrate economic activity and innovation, they simultaneously create thermal environments that can be 2-7°C warmer than nearby countryside, exacerbating energy consumption and public health concerns.\n\nThis temperature differential stems from multiple interconnected factors. Primarily, the preponderance of concrete, asphalt, and steel in urban landscapes absorbs and retains solar radiation more efficiently than natural vegetation. Concurrently, the scarcity of trees and green spaces eliminates the cooling effect of evapotranspiration—the process by which plants release water vapor. Furthermore, anthropogenic heat from vehicles, air conditioning systems, and industrial processes compounds these thermal dynamics.\n\nConsequently, cities experience cascading effects that extend beyond mere temperature elevation. Energy demands surge as residents rely increasingly on air conditioning, creating a feedback loop that generates additional waste heat. Public health deteriorates, particularly among vulnerable populations, as heat-related illnesses proliferate during extreme weather events. Economic productivity suffers as outdoor labor becomes less viable and infrastructure degrades more rapidly under thermal stress.\n\nNevertheless, innovative mitigation strategies are emerging that offer promising pathways forward. Green roof initiatives in cities like Copenhagen and Singapore have demonstrated measurable temperature reductions while providing additional benefits such as stormwater management and urban agriculture opportunities. Similarly, the implementation of reflective \"cool\" pavements and building materials can significantly reduce heat absorption. Perhaps most transformatively, comprehensive urban forest programs—exemplified by Melbourne's ambitious goal to double its tree canopy by 2040—address the root cause by restoring natural cooling mechanisms.\n\nThese solutions, while requiring substantial initial investment and coordinated policy implementation, represent a fundamental shift toward sustainable urban design that reconciles economic vitality with environmental stewardship.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 298,
+    "source": "Adapted from urban planning research"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4,
+    "evaluatedAt": "2026-01-08T14:35:53.857Z"
+  }
+}

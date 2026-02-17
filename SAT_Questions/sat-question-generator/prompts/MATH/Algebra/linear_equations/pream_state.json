@@ -1,0 +1,255 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.609375000000001,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 6,
+            "exampleErrors": [
+              "Question rated 4/5 or 5/5 difficulty but only requires straightforward algebraic translation or basic linear equations (actual difficulty 2-3/5)",
+              "Computational difficulty rated 4.3/5 despite involving only basic arithmetic with clean integers and no calculation complexity",
+              "Time estimates suggest 1.5-2 minutes for difficulty 4/5 problem when well-prepared students can solve in 30-60 seconds"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor rationales that are mathematically incoherent or don't produce the stated values (e.g., 'dividing 37 by 0.10 and subtracting 250' yields 120, not 62)",
+              "Error pathways that are too contrived or require multiple unexplained steps that no student would naturally follow",
+              "Vague justifications like 'making an arithmetic error' without specifying what produces the distractor value"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 4,
+            "exampleErrors": [
+              "The mathematically correct answer (105 or 120) is not among the answer choices provided",
+              "The designated correct answer is demonstrably incorrect when verified against the problem constraints",
+              "Solving the stated problem yields a value that doesn't match any option, with explanation acknowledging the error"
+            ]
+          },
+          {
+            "category": "explanation_coherence",
+            "frequency": 1,
+            "exampleErrors": [
+              "Explanation attempts multiple recalculations and acknowledges the answer doesn't work, then claims 'we get c = 24' without justification",
+              "Solution contains algebraic errors and inconsistencies, jumping between different values (b = 30 vs b = 38) without explanation"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.7083333333333335,
+        "passRate": 0.25
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, distractor_quality, answer_validity",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.666666666666666,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "mathematical_errors",
+            "frequency": 6,
+            "exampleErrors": [
+              "Question has incorrect answer key - computed answer is 174 but stated correct answer is 164",
+              "Problem constraints are internally inconsistent - two equations yield different values for x (50 vs 47.41)",
+              "Correct calculation yields 500 but answer choices don't include this value, suggesting construction error"
+            ]
+          },
+          {
+            "category": "distractor_implausibility",
+            "frequency": 5,
+            "exampleErrors": [
+              "Distractor rationale requires multiple sequential errors (subtracting 40 twice) that no student would naturally make",
+              "Claimed error path doesn't mathematically produce the distractor value - rationale says 196 but distractor is 172",
+              "Distractor requires both forgetting to subtract monthly fee AND making unexplained arithmetic error changing 287 to 180"
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 4,
+            "exampleErrors": [
+              "Rated 5/5 difficulty but is standard substitution problem with clean arithmetic - actually 3-3.5/5",
+              "Rated 3/5 but is straightforward two-equation system solvable in under 2 minutes - actually 2-2.3/5",
+              "Complex mixture problem rated 5/5 but missing sophisticated traps and requires only basic linear equations - actually 3.5/5"
+            ]
+          },
+          {
+            "category": "explanation_quality",
+            "frequency": 3,
+            "exampleErrors": [
+              "Explanation shows raw work process including 'Wait, let me recalculate' and acknowledges numbers don't work",
+              "Explanation correctly derives one answer but then tries to force-fit different answer as correct without justification",
+              "Distractor rationale is vague ('incorrectly sets up') without specifying the actual misconception being targeted"
+            ]
+          },
+          {
+            "category": "authenticity_deviations",
+            "frequency": 2,
+            "exampleErrors": [
+              "Final expression feels artificial and doesn't emerge naturally from problem context - inserted purely to add steps",
+              "Context detail unnecessarily specific ('Last week, the company used...') where SAT prefers general timeframes",
+              "Problem combines multiple complex elements (mixture + constraints + expression evaluation) creating excessive cognitive load beyond typical SAT scope"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5.208333333333333,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: mathematical_errors, distractor_implausibility, difficulty_miscalibration",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.578125,
+        "passRate": 0.5,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but actual algebraic complexity is 3.5-4/5 due to low computational demand once constraint is substituted",
+              "Question rated 4/5 difficulty but features straightforward system of equations with clean arithmetic, suggesting actual difficulty is 2-2.5/5",
+              "Question rated 3/5 difficulty but uses standard textbook problem archetype with minimal conceptual ambiguity and high student success rate, suggesting actual difficulty is 2-2.2/5"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Designated correct answer C ($33.90) contradicts the explanation which mathematically derives $33.00; answer key should be B",
+              "System of equations in problem (450 boards, $6,840 cost) produces answer 210, but designated answer C (270) yields $6,480 total cost—no valid solution exists for stated parameters",
+              "Problem parameters (Monday $195, Tuesday $210) yield m = 23/9 ≈ $2.56, but designated answer B ($3.00) is mathematically incorrect; explanation reconstructs problem values without acknowledging contradiction",
+              "Problem with 85 total tickets and $780 revenue yields 37 adult tickets mathematically, but designated answer C (45 tickets) would only be correct for $820 revenue"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Choice A rationale is internally contradictory, offering three different error paths without clarity on primary misconception; appears arbitrary rather than targeting coherent error",
+              "Distractor C ratio explanation (42 ÷ 0.10 vs. other operations) doesn't clearly specify what arithmetic error produces 67; lacks transparent pathway students would naturally follow",
+              "Distractor D contains vague rationale about subtracting in wrong order; explanation conflates multiple errors without clearly connecting misconception to answer choice 670",
+              "Distractor B rationale claims 'correctly solves for cookie price but makes arithmetic error' but the stated error mechanism doesn't logically produce answer 35; unclear what misconception is targeted"
+            ]
+          },
+          {
+            "category": "frontend_convertibility",
+            "frequency": 1,
+            "exampleErrors": [
+              "Explanation contains contradictory self-correction: stem states Monday $195/Tuesday $210 but explanation reconstructs problem to Monday $225/Tuesday $240 to justify answer; improperly escaped LaTeX backslashes; distractors reference calculations not present in explanation; cannot deploy without reconciliation between stem and explanation"
+            ]
+          },
+          {
+            "category": "procedural_clarity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Explanation's error rationales lack specificity about exact computational steps; e.g., Choice A states 'arithmetic error to get 5' without explaining which operation produces 5 from available numbers, making it impossible to verify if error pattern is realistic"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 2.9791666666666665,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.7083333333333335,
+        "passRate": 0.5,
+        "errorCategories": [
+          {
+            "category": "answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Designated answer B ($3.00) does not satisfy both equations in the system; correct solution is m ≈ $2.56 which matches no answer choice",
+              "Answer B (66) corresponds to only one particular solution; system is underdetermined and allows multiple valid answers (62, 66, 72 all possible)",
+              "Keyed answer does not match the mathematically correct solution derived from the given problem data"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor B ($50) has internally inconsistent rationale that doesn't actually produce the stated value; the provided logic yields $25 not $50",
+              "Distractor C (9) lacks coherent error path; stated mistake '$15 - 2 = 13' doesn't logically lead to answer choice of 9"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but actual complexity is 3.5/5; uses straightforward linear equations with transparent setup and predictable solution path",
+              "Question rated 3/5 difficulty but actual difficulty is 2.5/5; computational steps are straightforward with clean coefficients requiring no complex procedures"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Answer choices ordered randomly (6, 7.5, 9, 5) rather than following SAT standard ascending/descending progression; distractors appear generic rather than targeting specific misconceptions"
+            ]
+          },
+          {
+            "category": "frontend_convertibility",
+            "frequency": 1,
+            "exampleErrors": [
+              "Explanation field contains malformed content with multiple false starts, debugging text ('Wait let me recalculate...'), and contradictory calculations that don't match final answer, creating logical inconsistency and poor user experience"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_validity, distractor_quality, difficulty_accuracy",
+      "newPromptVersion": "1.3.0"
+    }
+  ],
+  "currentBestVersion": "1.2.0",
+  "converged": true,
+  "startedAt": "2026-01-08T19:49:18.281Z",
+  "completedAt": "2026-01-09T20:36:04.741Z",
+  "bestTestScore": 5.208333333333333
+}

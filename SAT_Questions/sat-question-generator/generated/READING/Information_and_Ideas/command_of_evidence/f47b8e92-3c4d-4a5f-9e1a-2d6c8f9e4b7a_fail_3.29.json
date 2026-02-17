@@ -1,0 +1,61 @@
+{
+  "id": "f47b8e92-3c4d-4a5f-9e1a-2d6c8f9e4b7a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "stem": "Which quotation from the passage best supports the claim that social media algorithms actively promote extreme viewpoints over moderate ones?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"We found that users who began the study with centrist political views were 40% more likely to adopt extreme positions after eighteen months of algorithm-driven content exposure.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"The platforms' business model depends on engagement, and unfortunately, outrage drives engagement more effectively than reasoned discourse.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"moderate political posts reaching only 23% of the audience that extreme content achieved.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "\"algorithmic content curation doesn't simply show people what they already believe—it systematically amplifies extreme viewpoints while suppressing moderate perspectives.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Choice C provides the most direct and specific evidence that algorithms actively promote extreme viewpoints over moderate ones by showing the concrete disparity in reach: moderate content reaches only 23% of the audience that extreme content does. This quantitative evidence directly demonstrates the algorithmic bias toward extreme content in terms of actual distribution and visibility, which is the core of the claim about active promotion of extremism over moderation.",
+  "distractorRationale": {
+    "A": "While this shows the effect of algorithm exposure on users, it demonstrates the outcome of polarization rather than evidence of algorithms actively promoting extreme content over moderate content.",
+    "B": "This explains the business motivation behind the algorithmic bias but doesn't provide direct evidence of the algorithms actually promoting extreme viewpoints over moderate ones.",
+    "D": "Though this makes the claim about algorithmic amplification, it's more of an assertion than evidence. It states the conclusion rather than providing the supporting data that proves this systematic bias exists."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:26:20.605Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "bea316ce-18f2-456a-a3c0-063ca27025e7"
+  },
+  "passage": "The conventional wisdom that social media platforms merely reflect existing social divisions has been challenged by recent research demonstrating these technologies' active role in exacerbating polarization. Dr. Elena Rodriguez's longitudinal study of 50,000 users across multiple platforms reveals that algorithmic content curation doesn't simply show people what they already believe—it systematically amplifies extreme viewpoints while suppressing moderate perspectives. \"We found that users who began the study with centrist political views were 40% more likely to adopt extreme positions after eighteen months of algorithm-driven content exposure,\" Rodriguez explains. The study also documented a troubling feedback loop: as users engaged more with polarizing content, the algorithms interpreted this as preference and delivered increasingly radical material. Meanwhile, content promoting nuanced discussion or compromise received significantly less visibility, with moderate political posts reaching only 23% of the audience that extreme content achieved. Rodriguez notes, \"The platforms' business model depends on engagement, and unfortunately, outrage drives engagement more effectively than reasoned discourse.\" These findings suggest that social media's influence extends far beyond passive reflection, actively reshaping the ideological landscape through technological mediation.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 187,
+    "source": "Academic research summary on social media and polarization"
+  },
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.2916666666666665,
+    "evaluatedAt": "2026-01-08T14:29:43.293Z"
+  }
+}

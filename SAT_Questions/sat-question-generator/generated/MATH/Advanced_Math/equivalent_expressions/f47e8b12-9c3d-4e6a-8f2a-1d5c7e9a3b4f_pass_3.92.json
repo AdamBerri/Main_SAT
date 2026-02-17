@@ -1,0 +1,59 @@
+{
+  "id": "f47e8b12-9c3d-4e6a-8f2a-1d5c7e9a3b4f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 1.9,
+    "computational": 1.8
+  },
+  "stem": "Which of the following expressions is equivalent to $3x^2 - 12x + 12$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3(x - 2)^2$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$3(x^2 - 4x + 4)$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$(3x - 6)^2$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$3(x - 4)^2 + 12$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find an equivalent expression for $3x^2 - 12x + 12$, we can factor out the common factor of 3 first:\n\n$3x^2 - 12x + 12 = 3(x^2 - 4x + 4)$\n\nNow we need to factor the quadratic expression $x^2 - 4x + 4$. This is a perfect square trinomial of the form $a^2 - 2ab + b^2 = (a - b)^2$, where $a = x$ and $b = 2$:\n\n$x^2 - 4x + 4 = (x - 2)^2$\n\nTherefore:\n$3x^2 - 12x + 12 = 3(x^2 - 4x + 4) = 3(x - 2)^2$\n\nWe can verify this by expanding $3(x - 2)^2$:\n$3(x - 2)^2 = 3(x^2 - 4x + 4) = 3x^2 - 12x + 12$ ✓",
+  "distractorRationale": {
+    "A": "This is the correct answer obtained by factoring out 3 and recognizing the perfect square trinomial.",
+    "B": "This represents the intermediate step where 3 is factored out but the quadratic is not fully factored into its perfect square form.",
+    "C": "This results from incorrectly trying to factor the entire expression as a perfect square without first factoring out the common factor of 3.",
+    "D": "This comes from incorrectly identifying the perfect square as $(x - 4)^2$ instead of $(x - 2)^2$ and then trying to adjust with an additional constant."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:41:12.396Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "3f79ed13-48e6-49e3-9a5d-f979e4cf3261"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T15:44:42.617Z"
+  }
+}

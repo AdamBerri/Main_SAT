@@ -1,0 +1,36 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+.cursor/
+.claude/
+*.swp
+*.swo
+
+# Dependencies (any nested project)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build / runtime
+.next/
+out/
+build/
+.env
+.env.local
+.env.*.local
+*.log
+convex/_generated/
+.clerk/
+
+# Lock files (keep one per project if desired)
+yarn.lock
+pnpm-lock.yaml
+
+# Coverage / misc
+coverage/
+*.tsbuildinfo

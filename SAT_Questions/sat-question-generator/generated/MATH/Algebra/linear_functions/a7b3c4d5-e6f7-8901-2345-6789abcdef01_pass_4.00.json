@@ -1,0 +1,59 @@
+{
+  "id": "a7b3c4d5-e6f7-8901-2345-6789abcdef01",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 3.1
+  },
+  "stem": "A water tank initially contains 250 gallons of water. Water is being drained from the tank at a constant rate of 15 gallons per hour. The function $f(t) = 250 - 15t$ represents the amount of water, in gallons, remaining in the tank after $t$ hours of draining.\n\nWhat is the meaning of the $y$-intercept of the graph of $y = f(t)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The rate at which water is being drained from the tank",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The initial amount of water in the tank before draining begins",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The time it takes to completely drain the tank",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The amount of water remaining in the tank after 1 hour",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The $y$-intercept of a function occurs when the input variable equals zero. For the function $f(t) = 250 - 15t$, the $y$-intercept occurs when $t = 0$:\n\n$f(0) = 250 - 15(0) = 250$\n\nThis means that when $t = 0$ hours (before any draining has occurred), there are 250 gallons of water in the tank. Therefore, the $y$-intercept represents the initial amount of water in the tank before draining begins.\n\nIn the linear function $f(t) = 250 - 15t$, which is in the form $f(t) = b + mt$ where $b$ is the $y$-intercept and $m$ is the slope, the constant term 250 represents the starting value when $t = 0$.",
+  "distractorRationale": {
+    "A": "This describes the slope of the function (-15), not the y-intercept. Students may confuse the rate of change with the initial value.",
+    "B": "This is correct - the y-intercept represents the value when t = 0, which is the initial amount.",
+    "C": "This would be found by solving f(t) = 0, which gives the x-intercept, not the y-intercept.",
+    "D": "This would be f(1) = 235, which is a point on the function but not the y-intercept."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:33:50.494Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "903efd1a-12fa-4d87-a65e-187d860d5717"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4,
+    "evaluatedAt": "2026-01-08T15:38:30.248Z"
+  }
+}

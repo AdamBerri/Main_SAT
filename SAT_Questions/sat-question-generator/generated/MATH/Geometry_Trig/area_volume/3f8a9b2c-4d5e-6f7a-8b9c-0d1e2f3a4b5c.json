@@ -1,0 +1,53 @@
+{
+  "id": "3f8a9b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "A rectangular swimming pool has a length of 20 feet and a width of 12 feet. What is the area, in square feet, of the pool's surface?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "32",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "64",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "240",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "480",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To find the area of a rectangular surface, we use the formula:\n\n$$A = \\text{length} \\times \\text{width}$$\n\nSubstituting the given dimensions:\n\n$$A = 20 \\times 12$$\n\n$$A = 240 \\text{ square feet}$$\n\nCalculated answer: 240. This corresponds to choice C: 240. Therefore, the answer is C.",
+  "distractorRationale": {
+    "A": "**Single error:** Adds the dimensions instead of multiplying them. **Calculation:** 20 + 12 = 32. **Verification:** This represents the perimeter divided by 2, a common confusion between perimeter and area formulas.",
+    "B": "**Single error:** Calculates the perimeter instead of the area. **Calculation:** Perimeter = 2(20 + 12) = 2(32) = 64. **Verification:** Student uses the perimeter formula when the problem asks for area.",
+    "D": "**Single error:** Doubles the correct area calculation. **Calculation:** 20 × 12 = 240, then incorrectly multiplies by 2 to get 240 × 2 = 480. **Verification:** Student may think they need to account for both length and width separately or confuse the formula with surface area of a 3D shape."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:31.427Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "2dee765f-6e80-44ad-a205-df4dbf1e0efb"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

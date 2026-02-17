@@ -1,0 +1,62 @@
+{
+  "id": "f8e3c2a1-9b4d-4c7e-8f1a-2d6b5e9c3a7f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "stem": "Which choice best describes the overall structure of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A chronological account of how urban heat islands developed over time, followed by predictions about future urban climate patterns.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "A comparison between urban and rural temperature patterns, contrasted with an analysis of different climate zones.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "An explanation of a complex urban phenomenon, an analysis of its multiple causes, potential solutions, and implementation challenges.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "An argument advocating for specific urban planning policies, supported by statistical evidence and expert testimonials.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage follows a clear problem-analysis-solution-challenges structure. It begins by introducing urban heat islands as a paradoxical phenomenon (problem), then systematically examines the multiple interconnected causes (physical factors like impervious surfaces and canyon effects, plus anthropogenic heat generation). The passage then transitions to discussing potential solutions (green infrastructure, cool roof technologies, strategic urban design) before concluding with implementation challenges (coordination requirements, financial barriers, political obstacles). This organizational pattern is marked by transitional phrases like 'stems from,' 'Additionally,' 'Furthermore,' 'However,' and 'Nevertheless' that signal the progression through each structural component.",
+  "distractorRationale": {
+    "A": "While the passage mentions that heat islands intensify with development, it does not present a chronological timeline of how they developed historically, nor does it make predictions about future climate patterns.",
+    "B": "Although the passage briefly mentions the temperature disparity between urban and rural areas, this is not the primary organizational structure. The passage does not compare different climate zones but focuses specifically on urban heat island causes and solutions.",
+    "D": "The passage presents information objectively rather than arguing for specific policies. It does not include statistical evidence or expert testimonials but rather explains the phenomenon through scientific analysis and potential approaches."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:26:52.944Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "70e82916-1b80-44a9-b76a-defc90629bce"
+  },
+  "passage": "The phenomenon of urban heat islands presents a paradox: the very innovations that have allowed cities to flourish may ultimately undermine their sustainability. Metropolitan areas consistently register temperatures several degrees higher than surrounding rural regions, a disparity that intensifies with urban density and development. This thermal amplification stems from multiple interconnected factors that reinforce one another in a complex feedback loop.\n\nPrimarily, the replacement of natural surfaces with impervious materials fundamentally alters heat absorption and retention patterns. Concrete, asphalt, and steel absorb solar radiation more efficiently than vegetation and soil, while simultaneously reducing evapotranspiration—the natural cooling process by which plants release water vapor. Additionally, the geometric configuration of urban environments creates \"canyon effects\" where buildings trap heat and impede air circulation, preventing the natural dissipation of thermal energy that occurs in open landscapes.\n\nFurthermore, anthropogenic heat generation compounds these physical factors. The concentrated energy consumption of millions of residents, vehicles, and industrial processes releases substantial thermal output directly into the urban atmosphere. Air conditioning systems, paradoxically, exacerbate the problem by expelling hot air externally while cooling interior spaces, creating a vicious cycle where increased cooling demands generate additional heat.\n\nHowever, emerging urban planning strategies offer promising avenues for mitigation. Green infrastructure initiatives, such as extensive rooftop gardens and urban forests, can restore evapotranspiration processes while providing shade and improving air quality. Cool roof technologies that reflect rather than absorb solar radiation show measurable temperature reductions. Moreover, strategic urban design that promotes air flow through green corridors and optimizes building orientation can significantly ameliorate heat accumulation.\n\nNevertheless, implementing these solutions requires unprecedented coordination between municipal authorities, developers, and residents. The financial investment necessary for retrofitting existing infrastructure presents substantial challenges, particularly for economically disadvantaged communities that often experience the most severe heat island effects. Thus, while technological and design solutions exist, their widespread adoption depends on overcoming significant economic and political barriers.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 324,
+    "source": "Urban Climate Studies"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T15:32:06.429Z"
+  }
+}

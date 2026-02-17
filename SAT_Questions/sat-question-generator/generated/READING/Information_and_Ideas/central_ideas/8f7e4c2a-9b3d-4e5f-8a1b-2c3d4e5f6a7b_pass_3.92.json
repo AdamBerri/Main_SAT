@@ -1,0 +1,63 @@
+{
+  "id": "8f7e4c2a-9b3d-4e5f-8a1b-2c3d4e5f6a7b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3,
+    "linguistic": 3.2
+  },
+  "stem": "The passage is mainly about",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Dr. Teresa Amabile's groundbreaking research on workplace creativity and its practical applications.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "the scientific evidence that creativity can be developed rather than being an inborn talent.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "the importance of environmental factors like autonomy and resources in creative work.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "the neurological differences between creative and non-creative individuals' brain structures.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage's central idea is that creativity is not an innate talent but rather a skill that can be developed. The author begins by stating that the belief in creativity as an inborn gift 'has been thoroughly debunked,' then provides multiple lines of evidence (Amabile's research, Andreasen's neuroscience findings, and training program results) to support the main argument that creativity 'responds to cultivation and practice.' All supporting details work together to establish this central claim.",
+  "distractorRationale": {
+    "A": "This choice is too narrow, focusing only on one researcher's work rather than the passage's broader argument about creativity being developable.",
+    "B": "This is the correct answer as it captures the main argument supported throughout the passage.",
+    "C": "This choice focuses on one supporting detail (environmental factors) rather than the overarching argument about creativity being learnable.",
+    "D": "This choice emphasizes neurological findings, which serve as supporting evidence rather than the central claim about creativity being developable."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:52:07.428Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "a24255ae-e001-4a00-914f-ed783a7fdebf"
+  },
+  "passage": "The widespread belief that creativity is an innate talent possessed by a select few has been thoroughly debunked by decades of psychological research. Studies consistently demonstrate that creative thinking is a skill that can be developed through deliberate practice and specific techniques. Dr. Teresa Amabile's research at Harvard Business School reveals that environmental factors—such as autonomy, adequate resources, and encouragement to take risks—play a crucial role in fostering creativity. Furthermore, neuroscientist Dr. Nancy Andreasen's work shows that creative individuals often exhibit enhanced connectivity between different brain regions, a trait that can be strengthened through targeted mental exercises. Schools and organizations that implement creativity training programs report significant improvements in problem-solving abilities and innovative thinking among participants. This evidence suggests that rather than being a mysterious gift, creativity is a cognitive capacity that responds to cultivation and practice.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 154,
+    "source": "Educational psychology research summary"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T14:56:35.538Z"
+  }
+}

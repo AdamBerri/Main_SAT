@@ -1,0 +1,59 @@
+{
+  "id": "a7f3e5d2-8b91-4c6e-9a2d-1f8e3b7c9d4a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3.3,
+    "computational": 2.8
+  },
+  "stem": "A ladder is leaning against a vertical wall. The ladder makes a $65°$ angle with the ground, and the bottom of the ladder is 8 feet from the base of the wall. What is the length of the ladder, to the nearest foot?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "17 feet",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "19 feet",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "21 feet",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "23 feet",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This is a right triangle problem where we need to find the hypotenuse (ladder length). We know:\n- The angle between the ladder and ground is $65°$\n- The horizontal distance from the wall to the bottom of the ladder is 8 feet\n\nThe horizontal distance is adjacent to the $65°$ angle, and the ladder is the hypotenuse. We use the cosine ratio:\n\n$\\cos(65°) = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{8}{\\text{ladder length}}$\n\nSolving for the ladder length:\n$\\text{ladder length} = \\frac{8}{\\cos(65°)}$\n\n$\\cos(65°) \\approx 0.4226$\n\n$\\text{ladder length} = \\frac{8}{0.4226} \\approx 18.93$ feet\n\nRounding to the nearest foot gives us 19 feet.",
+  "distractorRationale": {
+    "A": "This results from using sine instead of cosine: $\\frac{8}{\\sin(65°)} \\approx 8.8$, then possibly making an arithmetic error or using the wrong calculation entirely.",
+    "B": "Correct answer using cosine ratio properly.",
+    "C": "This could result from using the complementary angle (25°) in the cosine calculation: $\\frac{8}{\\cos(25°)} \\approx 8.8$, or from computational errors in the trigonometric calculation.",
+    "D": "This might result from using tangent incorrectly or making significant computational errors in the trigonometric calculations."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:56:25.262Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "442ae2b0-0644-4bac-aba8-3741c3d55528"
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.333333333333333,
+    "evaluatedAt": "2026-01-08T16:02:23.111Z"
+  }
+}

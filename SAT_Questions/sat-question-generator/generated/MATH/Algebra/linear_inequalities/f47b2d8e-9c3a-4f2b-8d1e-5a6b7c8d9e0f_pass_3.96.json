@@ -1,0 +1,59 @@
+{
+  "id": "f47b2d8e-9c3a-4f2b-8d1e-5a6b7c8d9e0f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A company produces two types of widgets: Type A and Type B. The production constraints are as follows:\n\n• Each Type A widget requires 3 hours of labor and 2 units of material\n• Each Type B widget requires 1 hour of labor and 4 units of material\n• The company has at most 240 hours of labor available per week\n• The company has at most 320 units of material available per week\n• The company must produce at least 20 Type A widgets per week\n• The company cannot produce more than 60 Type B widgets per week\n\nLet $x$ represent the number of Type A widgets and $y$ represent the number of Type B widgets produced per week. Which of the following systems of inequalities correctly represents all the constraints?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3x + y \\leq 240$\n$2x + 4y \\leq 320$\n$x \\geq 20$\n$y \\leq 60$\n$x \\geq 0, y \\geq 0$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$3x + y \\leq 240$\n$2x + 4y \\leq 320$\n$x \\leq 20$\n$y \\geq 60$\n$x \\geq 0, y \\geq 0$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$x + 3y \\leq 240$\n$4x + 2y \\leq 320$\n$x \\geq 20$\n$y \\leq 60$\n$x \\geq 0, y \\geq 0$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$3x + y \\geq 240$\n$2x + 4y \\geq 320$\n$x \\geq 20$\n$y \\leq 60$\n$x \\geq 0, y \\geq 0$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To set up this system of inequalities, we need to translate each constraint into mathematical form:\n\n1. Labor constraint: Type A widgets require 3 hours each, Type B widgets require 1 hour each, with at most 240 hours available: $3x + 1y \\leq 240$ or $3x + y \\leq 240$\n\n2. Material constraint: Type A widgets require 2 units each, Type B widgets require 4 units each, with at most 320 units available: $2x + 4y \\leq 320$\n\n3. Minimum Type A production: At least 20 Type A widgets must be produced: $x \\geq 20$\n\n4. Maximum Type B production: Cannot produce more than 60 Type B widgets: $y \\leq 60$\n\n5. Non-negativity constraints: Cannot produce negative quantities: $x \\geq 0, y \\geq 0$\n\nThe correct system is therefore:\n$3x + y \\leq 240$\n$2x + 4y \\leq 320$\n$x \\geq 20$\n$y \\leq 60$\n$x \\geq 0, y \\geq 0$",
+  "distractorRationale": {
+    "A": "This is the correct answer with all constraints properly translated.",
+    "B": "This option incorrectly reverses the Type A minimum constraint ($x \\leq 20$ instead of $x \\geq 20$) and the Type B maximum constraint ($y \\geq 60$ instead of $y \\leq 60$).",
+    "C": "This option switches the coefficients in both resource constraints, confusing which widget type requires which amount of labor and material.",
+    "D": "This option uses 'greater than or equal to' instead of 'less than or equal to' for the resource constraints, which would mean the company needs at least 240 hours and 320 units rather than having those as maximum available amounts."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:39:31.253Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "5892860c-e8db-4cd1-95c3-dfa4f1c147c3"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9583333333333335,
+    "evaluatedAt": "2026-01-08T15:43:41.755Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-123456789abc",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.1,
+    "linguistic": 2.9
+  },
+  "stem": "Which quotation from the passage best supports the claim that multitasking creates negative cognitive effects?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"people can't multitask very well, and when people say they can, they're deluding themselves\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"multitasking while working can temporarily lower IQ scores by as much as 10 points—equivalent to the cognitive impact of losing a full night's sleep\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"The widespread belief that multitasking enhances productivity is fundamentally flawed\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"heavy multitaskers performed worse on every cognitive measure tested, including memory, attention control, and task-switching ability\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B provides the most specific and quantifiable evidence of multitasking's negative cognitive effects. The quotation presents concrete data showing that multitasking can lower IQ scores by 10 points and includes a compelling comparison to sleep deprivation, making it the strongest textual evidence for the claim about negative cognitive impacts. This evidence is both measurable and relatable, clearly demonstrating the severity of multitasking's cognitive consequences.",
+  "distractorRationale": {
+    "A": "While this quote addresses the misconception about multitasking ability, it focuses more on self-deception rather than providing concrete evidence of negative cognitive effects.",
+    "C": "This quote states the main thesis but doesn't provide specific evidence or data to support the claim about negative cognitive effects—it's the claim itself, not supporting evidence.",
+    "D": "Although this quote mentions poor performance on cognitive measures, it's less specific about the nature and magnitude of the cognitive effects compared to the concrete IQ data in choice B."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:52:07.507Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "980204be-8d8a-4546-8d03-1f83df0cd718"
+  },
+  "passage": "The widespread belief that multitasking enhances productivity is fundamentally flawed. Research consistently demonstrates that attempting to perform multiple cognitive tasks simultaneously actually impairs performance and reduces efficiency. Dr. Earl Miller, a neuroscientist at MIT, explains that \"people can't multitask very well, and when people say they can, they're deluding themselves. The brain is very good at deluding itself.\" When individuals believe they are multitasking, they are actually rapidly switching between tasks, a process that creates mental overhead and increases the likelihood of errors. A study conducted by Stanford University found that heavy multitaskers performed worse on every cognitive measure tested, including memory, attention control, and task-switching ability. Furthermore, researchers at the University of London discovered that multitasking while working can temporarily lower IQ scores by as much as 10 points—equivalent to the cognitive impact of losing a full night's sleep. The evidence is clear: rather than boosting productivity, multitasking undermines our cognitive capabilities and leads to decreased performance across all attempted tasks.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 178,
+    "source": "Academic research synthesis on cognitive psychology"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.5833333333333335,
+    "evaluatedAt": "2026-01-08T14:56:47.943Z"
+  }
+}

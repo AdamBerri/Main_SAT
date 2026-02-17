@@ -1,0 +1,55 @@
+{
+  "id": "a7f3c8e1-4b2d-4f9e-8c3a-9d6e2f1a5b8c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 3.8,
+    "computational": 3.9
+  },
+  "stem": "In triangle $ABC$, point $D$ lies on side $AC$ such that $BD$ is perpendicular to $AC$. If $AB = 20$, $BC = 15$, and $AC = 25$, what is the length of $BD$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$12$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$9$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$16$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{25\\sqrt{7}}{4}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "First, verify that triangle $ABC$ is a right triangle by checking if $AB^2 + BC^2 = AC^2$:\n\n$20^2 + 15^2 = 400 + 225 = 625 = 25^2$\n\nSince this equation holds, triangle $ABC$ is a right triangle with the right angle at $B$.\n\nTo find $BD$, we use the area of the triangle. The area can be calculated in two ways:\n\nMethod 1: Using the two legs of the right triangle:\n$\\text{Area} = \\frac{1}{2} \\cdot AB \\cdot BC = \\frac{1}{2} \\cdot 20 \\cdot 15 = 150$\n\nMethod 2: Using the hypotenuse and the altitude to the hypotenuse:\n$\\text{Area} = \\frac{1}{2} \\cdot AC \\cdot BD = \\frac{1}{2} \\cdot 25 \\cdot BD$\n\nSetting these equal:\n$150 = \\frac{1}{2} \\cdot 25 \\cdot BD$\n\n$150 = 12.5 \\cdot BD$\n\n$BD = \\frac{150}{12.5} = \\frac{1500}{125} = 12$\n\nTherefore, $BD = 12$.",
+  "distractorRationale": {
+    "A": "This is the correct answer, found by using the area formula with the altitude to the hypotenuse.",
+    "B": "This results from incorrectly assuming that $D$ is the midpoint of $AC$ and then using the formula for the median to the hypotenuse in a right triangle, calculating $BD = \\frac{AC}{2} - 3 = 12.5 - 3.5 = 9$, or from calculating $\\frac{15 \\cdot 20}{25} - 3 = 12 - 3 = 9$ through an arithmetic error.",
+    "C": "This results from incorrectly attempting to use the Pythagorean theorem on triangle $ABD$ or $BCD$ without first finding $AD$ or $CD$, or from confusing which side is the altitude and incorrectly calculating $\\sqrt{20^2 - 12^2} = \\sqrt{400 - 144} = \\sqrt{256} = 16$.",
+    "D": "This results from incorrectly treating the triangle as non-right and attempting to use Heron's formula to find the area, then solving for the altitude. With $s = \\frac{20 + 15 + 25}{2} = 30$, students might calculate $\\text{Area} = \\sqrt{30 \\cdot 10 \\cdot 15 \\cdot 5} = \\sqrt{22500}$, make an error, and arrive at this expression when solving for $BD$."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:56.219Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "9ee1a500-3c24-4526-9a08-eff0638adec9"
+  },
+  "hasImage": true,
+  "imageDescription": "A triangle ABC with vertices labeled. Side AC is the base (horizontal), with point D on AC. A line segment BD is drawn perpendicular to AC, indicated by a small square at point D. The sides are labeled: AB = 20 (left side), BC = 15 (right side), and AC = 25 (base). The altitude BD should be unlabeled (this is what students need to find).",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

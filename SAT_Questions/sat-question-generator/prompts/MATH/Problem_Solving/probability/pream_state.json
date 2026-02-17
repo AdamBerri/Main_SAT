@@ -1,0 +1,257 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "probability"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.4765625,
+        "passRate": 0.5,
+        "errorCategories": [
+          {
+            "category": "answer_choice_duplication",
+            "frequency": 5,
+            "exampleErrors": [
+              "Answer choices A and D are identical (both 1/6), creating ambiguity where students cannot determine which correct answer to select",
+              "Choices A (1/4) and D (25/100) are mathematically equivalent, violating SAT principles that require distinct answer choices",
+              "Three answer choices are mathematically equivalent to 1/6 (A, B as 15/90, and D), making the question invalid for assessment"
+            ]
+          },
+          {
+            "category": "unsimplified_fractions",
+            "frequency": 4,
+            "exampleErrors": [
+              "Choice D presents 25/100 instead of the simplified 1/4, which would never appear on an actual SAT",
+              "Answer choice 15/90 should be simplified to 1/6 per SAT conventions",
+              "Presenting both reduced (1/4) and unreduced (25/100) versions of the same answer violates SAT formatting standards"
+            ]
+          },
+          {
+            "category": "implausible_distractor_rationales",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor rationale claims 3/8 but answer is 3/7, with no clear mathematical path between them",
+              "Choice C (1/5) rationale mentions '(5/10) ÷ 2' which is not a natural student approach to probability",
+              "Distractor explanation provides three conflicting paths to the same answer, none of which mathematically produce the stated value"
+            ]
+          },
+          {
+            "category": "scope_beyond_sat",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question requires conditional probability formula P(A|B) = P(A∩B)/P(B), which is beyond SAT scope and belongs in AP Statistics",
+              "Problem involves multi-stage Craps probability requiring geometric series and sophisticated probability trees, taking 5-10 minutes versus SAT's 1.5-2 minute target"
+            ]
+          },
+          {
+            "category": "mathematical_errors",
+            "frequency": 1,
+            "exampleErrors": [
+              "Designated correct answer C (63/154) simplifies to 9/22, but the correct calculation yields 14/37, creating ambiguous keying",
+              "The explanation's calculation produces 308/814 = 14/37, which does not match the stated correct answer of 63/154"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.8125,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: answer_choice_duplication, unsimplified_fractions, implausible_distractor_rationales",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.098958333333334,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 5,
+            "exampleErrors": [
+              "Distractor A (1/5) is poorly explained with convoluted rationale that doesn't clearly lead to the answer; the error pathway isn't intuitive enough to be a strong misconception trap",
+              "Distractor B is weak and implausible, reflecting too careless an error (miscounting total marbles as 4) rather than systematic mathematical confusion",
+              "Distractor C (7/144) is mathematically opaque with no coherent misconception pathway; adding numerators or simplifying 12/144 to 7/144 makes no logical sense and doesn't represent genuine student thinking"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Question stated as 5/5 difficulty but actual difficulty is 2/5; it's a straightforward two-step probability calculation requiring no complex reasoning or multi-step problem-solving",
+              "Stated difficulty of 4/5 is significantly overestimated; actual difficulty is 2/5 with only basic arithmetic and standard formula application requiring ~1 minute to solve",
+              "Stated difficulty of 3/5 mismatches actual difficulty of 2/5; problem uses a standard template that students encounter repeatedly with minimal error opportunities beyond careless mistakes"
+            ]
+          },
+          {
+            "category": "misconception_targeting",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractors don't capture the most common error of using wrong formulas entirely (e.g., difference approach like (5-3)/(12-3) = 2/9 would better target systematic confusion)",
+              "Distractor B lacks a coherent misconception; the rationale includes multiple divergent paths that don't reflect how students naturally make errors",
+              "All three distractors stem from probability calculation errors with no discrimination between conceptual misunderstanding and arithmetic mistakes; missing distractors targeting fundamentally different error types",
+              "Distractor D's explanation is unconvincing; claiming 5/7 ≈ 0.714 would round to 1/2 (0.5) is implausible and doesn't represent genuine misconceptions students would make"
+            ]
+          },
+          {
+            "category": "answer_choice_calibration",
+            "frequency": 3,
+            "exampleErrors": [
+              "Answer choice C (7/144) doesn't align with a clear common mistake; no obvious computational path leads here making it a poor distractor",
+              "Multiple answer choices lack clear rationales for how students would arrive at them; distractors B, C, and D have fragmented or unconvincing error explanations",
+              "Answer choice spacing creates poor discrimination; choices too close together (0.278 vs 0.222) may reduce ability to distinguish between conceptual understanding and minor computational errors"
+            ]
+          },
+          {
+            "category": "question_authenticity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question lacks SAT complexity and context; most SAT probability questions include real-world context and present more complex relationships requiring interpretation, whereas this is formulaic and isolated",
+              "The problem is mathematically sound but misrepresented in difficulty and context, making it a significant deviation from authentic SAT standards despite appropriate format and language"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.8333333333333335,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, misconception_targeting",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.010416666666666,
+        "passRate": 0.625,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but uses straightforward two-step probability calculation with transparent solution path",
+              "Stated difficulty 3/5 for basic marble selection problem that requires only simple addition and fraction division",
+              "Claimed 4/5 difficulty for standard without-replacement probability problem with no complex reasoning or multiple cases"
+            ]
+          },
+          {
+            "category": "distractor_incoherence",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor C claims 20/144 simplifies to 1/6 through arithmetic error, but 20/144 = 5/36 with no clear path to 1/6",
+              "Distractor with value 7/144 has no plausible arithmetic pathway - would require two independent unexplained errors",
+              "Distractor D rationale describes 5/12 × 4/11 (correct calculation) but claims students then incorrectly simplify to 25/144 without motivation"
+            ]
+          },
+          {
+            "category": "weak_distractor_coverage",
+            "frequency": 3,
+            "exampleErrors": [
+              "Only 2 of 4 distractors effectively target distinct misconceptions; B and C overlap by representing same with-replacement error",
+              "Question missing key misconceptions like confusing problem with 'at least one' scenarios or misidentifying marble counts after first selection",
+              "Distractors don't coherently represent common student errors; some appear arbitrary rather than arising from natural misconceptions"
+            ]
+          },
+          {
+            "category": "sat_authenticity_gaps",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question too bare-bones compared to authentic SAT style; lacks real-world context embedding and sophisticated answer choice quality",
+              "Modern SAT increasingly avoids straightforward plug-and-chug probability; this question needs additional complexity like multiple cases or conditional constraints",
+              "Answer choices don't follow natural clustering patterns SAT typically uses for probability questions with multiple misconception types"
+            ]
+          },
+          {
+            "category": "answer_key_clarity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Labeling confusion between which answer choice (B vs C vs D) is correct due to inconsistent formatting",
+              "Correct answer listed but mathematical verification needed due to unclear notation about which distractor values correspond to which letters"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.875,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, distractor_incoherence, weak_distractor_coverage",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.9687500000000004,
+        "passRate": 0.625,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 6,
+            "exampleErrors": [
+              "Stated difficulty 3/5 (medium) but actual difficulty approximately 2.5/5. Straightforward two-step probability without replacement calculation lacks conceptual complexity and multi-step reasoning expected of true medium problems.",
+              "Stated difficulty 4/5 (hard) but actual difficulty 2/5 (below average). Simple marble probability with one-step calculation and no conditional language or multiple scenarios makes question significantly easier than advertised.",
+              "Stated difficulty 5/5 (very hard) but actual difficulty 2.5-3/5. Standard enumeration of dice outcomes with no overlapping conditions, no trick elements, and straightforward counting approach makes question overrated by 1.5-2.5 difficulty levels."
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Designated correct answer is C) 10/33, but mathematical verification shows correct answer is A) 5/33. Explanation correctly calculates 5/33 but fails to correct the keyed answer.",
+              "Answer choices appear misaligned with their labels. Explanation correctly identifies answer as 1/2, but formatting/transcription error prevents clear designation of which choice letter corresponds to 1/2."
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 2,
+            "exampleErrors": [
+              "Answer choices lack systematic connection to common student errors. Distractors (1/4, 1/3, 5/18) appear arbitrary rather than representing predictable mistake patterns like with-replacement errors or miscalculations.",
+              "Distractors poorly constructed and don't reflect typical probability misconceptions. Several wrong answers not derived from identifiable error pathways, reducing diagnostic value of the question."
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question structure is authentic SAT format with clear language and appropriate topic, but difficulty mismatch and arbitrary distractor construction prevent full authenticity. Question achieves only 65-70% alignment with genuine SAT problem characteristics due to easier-than-stated difficulty and weaker distractor design."
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:55:29.553Z",
+  "completedAt": "2026-01-09T20:47:42.473Z",
+  "bestTestScore": 4.8125
+}

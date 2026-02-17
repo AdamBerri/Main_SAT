@@ -1,0 +1,202 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.377604166666667,
+        "passRate": 0.625,
+        "errorCategories": [
+          {
+            "category": "implausible_distractors",
+            "frequency": 7,
+            "exampleErrors": [
+              "Distractor D (265°) exceeds 180° which is impossible for any interior angle of a triangle, creating fatal plausibility flaw that even weak students should recognize",
+              "Distractor C (180°) represents a degenerate triangle (straight line) that violates basic geometric intuition, too easily eliminated",
+              "Distractor rationales are mathematically incoherent: claims '180° - 70° - 55°' leads to 55° or '180° - 45° - 125°' explains 125°, which are circular and don't represent actual student work"
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 6,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty requires only basic subtraction (180° - 95° = 85°) and is too elementary for SAT, actual difficulty closer to 2/5",
+              "Problem rated 4/5 difficulty is actually 3/5 (Medium) - uses standard altitude-to-hypotenuse relationship with clean arithmetic and perfect squares",
+              "Question marked 5/5 across all dimensions is inflated by ~2 levels; straightforward Pythagorean theorem application twice with simple integers is actually 2.5-3/5 difficulty"
+            ]
+          },
+          {
+            "category": "authenticity_deviations",
+            "frequency": 5,
+            "exampleErrors": [
+              "Mixed answer choice formats (integers 10, 12 alongside complex fractions 481/24, 481/18) is inconsistent with SAT style which maintains uniform formatting",
+              "Question too simple for SAT difficulty 1/5 - pure middle-school computation (180° - 45° - 70°) lacks context, multi-step reasoning, or diagram typical of modern SAT",
+              "Excessive computational complexity using Heron's formula and yielding non-intuitive numbers like 481 deviates from modern SAT's emphasis on conceptual understanding over calculation"
+            ]
+          },
+          {
+            "category": "distractor_rationale_flaws",
+            "frequency": 5,
+            "exampleErrors": [
+              "Distractor B rationale admits it uses 'correct geometric reasoning' but claims it 'may not account for all constraints' which is mathematically incoherent without explanation",
+              "Distractor A explanation is vague ('confusing given side length') - why would student assume DC = 15 lacks geometric or arithmetic logic",
+              "Two distractors target same error type (forgetting one angle) while only one targets different misconception, creating inefficient asymmetric error coverage"
+            ]
+          },
+          {
+            "category": "answer_key_errors",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question designates answer D (481/18) as correct when mathematical proof shows answer B (25) is unambiguously correct through Pythagorean theorem, Stewart's Theorem, and Heron's formula",
+              "Answer choices B (12) and D (84/7) are mathematically identical since 84/7 = 12, creating two correct answers where only one should exist",
+              "Designated answer C (20) is incorrect; the correct answer through Law of Sines is B (10√3), and the explanation itself arrives at 10√3 before inexplicably claiming answer is 20"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.763392857142858,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: implausible_distractors, difficulty_miscalibration, authenticity_deviations",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.611607142857143,
+        "passRate": 0.5,
+        "errorCategories": [
+          {
+            "category": "answer_validity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Designated correct answer (A: 12 inches) is mathematically incorrect; explanation confuses angle DBC with angle ABC",
+              "Answer key states B (6√3) is correct, but calculation clearly shows A (4√3) is the correct answer based on multiple verification methods",
+              "Designated answer A (5√6) doesn't match the mathematics from the question stem; using Law of Sines correctly yields approximately 8.16, not 5√6"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor C has internally inconsistent rationale: calculation yields 4√3 (which is answer D), not 8, making the distractor design contradictory",
+              "Distractors B and D have unclear or convoluted rationales that don't represent systematic student misconceptions; appear arbitrary rather than reflecting authentic thinking",
+              "Answer choice A duplicates given angle (55°), making the question solvable through pattern recognition rather than genuine mathematical reasoning"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Stated difficulty 5/5 is significantly overestimated; actual difficulty is 2-2.3/5 with straightforward Pythagorean theorem application and memorable sin(30°) = 1/2",
+              "Claimed difficulty 5/5 contradicted by problem using recognizable 3-4-5 Pythagorean triple, reducing actual difficulty to 2.5-3/5",
+              "Stated 2/5 difficulty underestimated because question requires special angle trigonometry (sin 75°) and angle addition formulas beyond basic geometry"
+            ]
+          },
+          {
+            "category": "image_quality",
+            "frequency": 1,
+            "exampleErrors": [
+              "Critical mathematical inconsistency: BC = 8 units in question stem but BC = 12 units in image; labeling conflicts with standard geometric conventions and creates unsolvable problem"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question is unusually trivial for SAT standards (essentially single arithmetic step), lacks distractors testing realistic misconceptions, missing visual diagrams typical of authentic SAT geometry questions, and lacks contextual realism"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_validity, distractor_quality, difficulty_accuracy",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.282312925170068,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 4,
+            "exampleErrors": [
+              "Pythagorean theorem problem rated 5/5 difficulty but involves only two straightforward applications with clean arithmetic; actual difficulty should be 3.5-4/5",
+              "Altitude-to-hypotenuse problem rated 4/5 but heavily relies on recognizing 3-4-5 Pythagorean triple, reducing actual difficulty to 2.5-3/5",
+              "30-60-90 triangle problem rated 3/5 but tests only memorized ratio application with no genuine problem-solving; actual difficulty is 1.5-2/5"
+            ]
+          },
+          {
+            "category": "procedural_vs_conceptual_mismatch",
+            "frequency": 3,
+            "exampleErrors": [
+              "Problem has appropriate conceptual difficulty (4.7/5 for geometric insight) but procedural difficulty is overstated (5/5 claimed vs. 2 straightforward Pythagorean theorem applications)",
+              "Altitude problem conceptually requires geometric reasoning but procedure is simplified by pattern recognition of Pythagorean triple, creating disconnect between stated and actual difficulty",
+              "Law of Sines problem appears medium-difficulty conceptually but becomes below-average when reduced to direct formula application without complex problem-solving"
+            ]
+          },
+          {
+            "category": "computational_simplicity_underestimation",
+            "frequency": 2,
+            "exampleErrors": [
+              "Computational difficulty rated 5/5 for problem with perfect squares and clean arithmetic (√256 = 16, √81 = 9) requiring only basic operations",
+              "Computational difficulty rated 3/5 for 30-60-90 triangle when actual computation is trivial (8 × 2 = 16), reducing to 1/5 complexity"
+            ]
+          },
+          {
+            "category": "pattern_recognition_discount",
+            "frequency": 2,
+            "exampleErrors": [
+              "3-4-5 Pythagorean triple recognition (15-20-25) dramatically reduces problem difficulty for above-average students, making 4/5 rating unrealistic",
+              "30-60-90 triangle ratios are explicitly taught special right triangles, making the problem formulaic memorization rather than genuine problem-solving despite medium rating"
+            ]
+          },
+          {
+            "category": "time_estimate_miscalibration",
+            "frequency": 1,
+            "exampleErrors": [
+              "Problem rated 3/5 (medium) requiring 2-3 minutes is actually solvable in <2 minutes by prepared students, indicating actual difficulty should be 1-2 difficulty levels lower"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, procedural_vs_conceptual_mismatch, computational_simplicity_underestimation",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:32:05.208Z",
+  "completedAt": "2026-01-09T20:17:44.986Z",
+  "bestTestScore": 4.763392857142858
+}

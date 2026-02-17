@@ -1,0 +1,54 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 1.9,
+    "computational": 1.7
+  },
+  "stem": "If $x^2 - 7x + 12 = 0$, what is the sum of all solutions to the equation?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "3",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "4",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "7",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "12",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To find the sum of all solutions, we can solve the quadratic equation $x^2 - 7x + 12 = 0$ by factoring.\n\nWe need two numbers that multiply to 12 and add to -7. These numbers are -3 and -4.\n\nFactoring: $x^2 - 7x + 12 = (x - 3)(x - 4) = 0$\n\nSetting each factor equal to zero:\n$x - 3 = 0$ gives $x = 3$\n$x - 4 = 0$ gives $x = 4$\n\nVerification:\nFor $x = 3$: $(3)^2 - 7(3) + 12 = 9 - 21 + 12 = 0$ ✓\nFor $x = 4$: $(4)^2 - 7(4) + 12 = 16 - 28 + 12 = 0$ ✓\n\nThe sum of all solutions is $3 + 4 = 7$.\n\nAlternatively, by Vieta's formulas, for a quadratic equation $x^2 + bx + c = 0$, the sum of roots equals $-b$. In our equation $x^2 - 7x + 12 = 0$, we have $b = -7$, so the sum of roots is $-(-7) = 7$.",
+  "distractorRationale": {
+    "A": "This is one of the individual solutions to the equation. Students who solve correctly but forget to add both solutions together may select this answer, giving only the smaller root instead of the sum.",
+    "B": "This is the other individual solution to the equation. Students who solve correctly but give only the larger root instead of computing the sum of both solutions may select this answer.",
+    "C": "This is the correct answer. The two solutions are 3 and 4, and their sum is 7.",
+    "D": "This results from confusing the sum of solutions with the product of solutions. By Vieta's formulas, the product of the roots of $x^2 - 7x + 12 = 0$ is 12 (the constant term), but the question asks for the sum, not the product."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:25.731Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "aeaf021c-6baa-426d-a7f3-1c102f4d26b6"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

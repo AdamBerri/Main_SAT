@@ -1,0 +1,202 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "config": {
+    "maxIterations": 5,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 5.059895833333334,
+        "passRate": 0.9375,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 5,
+            "exampleErrors": [
+              "Stated 5/5 difficulty but actually 3/5 - sophisticated vocabulary creates appearance of difficulty without corresponding cognitive demands, expected 50-60% success not 20-30%",
+              "Stated 4/5 difficulty but actually 3.5/5 - single clear evidence point and linear reasoning path suggests 50-60% correct rate rather than 35-45%",
+              "Stated 3/5 difficulty but actually 1.5-2/5 - straightforward numerical comparison with weak distractors would yield 70-85% correct rate, not 50%"
+            ]
+          },
+          {
+            "category": "authenticity_and_style_mismatch",
+            "frequency": 1,
+            "exampleErrors": [
+              "Severely excessive vocabulary complexity with graduate-level scientific terminology like 'asymptotically approaching,' 'heterozygosity,' 'extirpation' that far exceeds SAT standards",
+              "Answer choices are 25-35 words each with multi-clause structures, when authentic SAT choices average 8-15 words and are direct and scannable",
+              "Passages read like academic journal abstracts with density and style inappropriate for SAT material, creating construct-irrelevant difficulty"
+            ]
+          },
+          {
+            "category": "weak_distractor_construction",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor B is trivially eliminable and directly contradicts explicit text, functioning as a 'freebie' elimination rather than genuine distractor",
+              "Answer choice D fabricates information not supported by text (e.g., 'genetic analyses refute bioaccumulation theory') rather than representing plausible misreadings",
+              "Distractors use absolute language like 'completely disappeared' that contradicts directly stated figures, making them too obviously wrong"
+            ]
+          },
+          {
+            "category": "mechanical_task_simplicity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Single-layer reasoning with clear contrast structure and explicit signaling ('however,' 'remained stable') requiring only identification of support vs. challenge",
+              "Straightforward evidence-matching task where hypothesis-to-data relationship is explicit and linear with minimal inference needed",
+              "Simple 3-step process with clear logical connections: identify claim, identify data, match claim to data"
+            ]
+          },
+          {
+            "category": "difficulty_underestimation",
+            "frequency": 0,
+            "exampleErrors": []
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.875,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, authenticity_and_style_mismatch, weak_distractor_construction",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 5.078125000000001,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 3/5 - explicit textual roadmap with 'While acknowledging...' makes answer nearly verbatim from passage",
+              "Question rated 5/5 difficulty but performs at 2.5-3/5 - clear contrast structure, obvious correct answer, and weak distractors make it accessible to 60-75% of test-takers rather than advanced students only",
+              "Question calibrated at 3/5 but functions at 2.0-2.3/5 - straightforward numerical contrast (18% vs 'primarily'), single-step reasoning, and easily eliminated distractors indicate below-average difficulty"
+            ]
+          },
+          {
+            "category": "weak_distractor_design",
+            "frequency": 3,
+            "exampleErrors": [
+              "Three distractors are immediately eliminable with basic comprehension - Choice B directly contradicted, Choice C never mentioned, Choice D makes opposite claim",
+              "Distractors are not particularly tempting and offer minimal opportunity for error given the clear contrast in the passages",
+              "Answer choices lack discrimination power - correct answer is near-verbatim from passage while wrong answers are obviously contradicted by explicit textual statements"
+            ]
+          },
+          {
+            "category": "answer_ambiguity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Designated answer A claims Rodriguez would respond by arguing technology increased skilled labor demand, but answer B (questioning census accuracy) is equally defensible since Rodriguez's firm-level data directly contradicts Chen's census findings",
+              "Question has two defensibly correct answers - both interpretations of how Rodriguez would respond to Chen's claim are academically valid based on the evidence provided"
+            ]
+          },
+          {
+            "category": "specificity_mismatch",
+            "frequency": 1,
+            "exampleErrors": [
+              "Answer A claims Text 2 explains how young monarchs 'find their way' but Text 2 only explains directional navigation (going south), not how they locate specific forests as Text 1's puzzle requires",
+              "Gap between what Text 1 asks (finding exact same forests) and what Text 2 explains (maintaining southward direction using sun position) - general navigation vs. precise destination-finding"
+            ]
+          },
+          {
+            "category": "difficulty_underestimation",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question rated 1/5 difficulty but actually performs at 1.5-2/5 due to cross-textual synthesis requirement, paraphrasing between question and answer, and plausible distractors",
+              "Stated as easiest tier but requires identifying implicit question in Text 1, bridging two passages, and resisting tempting distractor about specific forest location"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, weak_distractor_design, answer_ambiguity",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.958333333333333,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question stated as 5/5 difficulty but actual cognitive demands are 3.5/4 due to explicit textual evidence and straightforward answer architecture with transparent distractor logic",
+              "Question stated as 4/5 difficulty but actual difficulty is 3/5 because textual signals directly point to answer without requiring deep inference and distractors are easily eliminated",
+              "Question stated as 3/5 difficulty but actual difficulty is 2.5/5 because Martinez's alternative explanation is explicitly stated and unambiguous with clear supporting evidence in the text"
+            ]
+          },
+          {
+            "category": "transparent_answer_elimination",
+            "frequency": 4,
+            "exampleErrors": [
+              "All three distractors are relatively easy to eliminate for students who understand the passage and read the table correctly, making discrimination between high and low performers weak",
+              "Distractor options clearly contradict stated data (B objectively false, C directly contradicted, D factually wrong), leaving only one viable answer with minimal ambiguity",
+              "Weak distractors that don't target deeper misconceptions: B contradicts data obviously, C is unsupported, D is factually false, leaving answer A as only viable option",
+              "Distractors fail to create genuine cognitive challenge because understanding the passage and comparing directional differences is straightforward with obvious elimination paths"
+            ]
+          },
+          {
+            "category": "insufficient_inference_demand",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question only requires basic pattern matching and simple comparison between texts rather than multi-step reasoning or weighing competing interpretations",
+              "Straightforward text comparison task follows linear logic structure where answer is obvious through textual alignment rather than requiring sophisticated inference about cause-and-effect or implicit claims",
+              "Question presents binary either/or scenario (economic vs. legal factors) with no nuanced positions to weigh, reducing cognitive complexity significantly"
+            ]
+          },
+          {
+            "category": "minimal_error_opportunity",
+            "frequency": 3,
+            "exampleErrors": [
+              "No calculation required, no complex terminology, no ambiguous pronouns or sentence structures—linguistic difficulty does not match conceptual demands, creating easy elimination paths",
+              "Limited reading comprehension pitfalls because the disagreement between texts is stated explicitly rather than embedded, requiring only surface-level text matching",
+              "Question lacks interpretive ambiguity and competing reasonable answers that would create meaningful opportunities for student error or sophisticated misconception targeting"
+            ]
+          },
+          {
+            "category": "weak_distractor_design",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor B ('No meaningful difference') has poor discrimination power because differences are readily observable in the table, making it feel like a trivial reading mistake rather than targeting substantive misconceptions about reasoning"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, transparent_answer_elimination, insufficient_inference_demand",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T18:49:18.694Z",
+  "completedAt": "2026-01-09T20:32:09.353Z",
+  "bestTestScore": 0
+}

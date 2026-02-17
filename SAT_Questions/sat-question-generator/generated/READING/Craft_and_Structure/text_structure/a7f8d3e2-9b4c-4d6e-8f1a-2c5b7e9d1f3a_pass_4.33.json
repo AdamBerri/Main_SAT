@@ -1,0 +1,61 @@
+{
+  "id": "a7f8d3e2-9b4c-4d6e-8f1a-2c5b7e9d1f3a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.7
+  },
+  "stem": "The passage is primarily organized to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "present a chronological account of how microplastic research has evolved over time",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "compare the environmental impact of microplastics with that of other marine pollutants",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "trace the sequential process by which microplastics move through marine ecosystems and affect various organisms",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "argue for specific policy solutions to address the microplastic contamination problem",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage is organized to trace a sequential process, following the pathway of microplastics from their initial introduction into marine environments through their ultimate impact on human populations. The structure follows a clear progression: introduction of the problem → sources and entry points → transformation and dispersion → effects on marine organisms → biomagnification through food webs → human exposure. Transition words like 'Initially,' 'Once introduced,' 'Consequently,' and 'Ultimately' signal this sequential organization, showing how each stage leads to the next in the contamination process.",
+  "distractorRationale": {
+    "A": "While the passage mentions that microplastic impacts have 'only recently become apparent,' it does not organize information chronologically around the development of research. The focus is on the process of contamination, not the timeline of scientific discovery.",
+    "B": "The passage mentions that microplastics are 'unlike conventional pollutants' and references biomagnification processes that affect 'heavy metals and persistent organic pollutants,' but it does not structure the discussion around systematic comparisons between different types of pollutants.",
+    "D": "Although the passage concludes by mentioning the need for 'comprehensive intervention strategies,' it does not organize the content around arguing for specific policy solutions. The passage is primarily descriptive and explanatory rather than argumentative, and no specific policies are proposed or advocated."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:31:59.875Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "7bf8d054-5876-46ea-8b7b-11bd88239182"
+  },
+  "passage": "The proliferation of microplastics in marine ecosystems represents one of the most insidious environmental challenges of the twenty-first century. Unlike conventional pollutants whose effects are immediately visible, microplastics—particles smaller than five millimeters—infiltrate oceanic food webs through a process so gradual and pervasive that their cumulative impact has only recently become apparent to researchers.\n\nInitially, these microscopic fragments enter marine environments through multiple pathways: synthetic clothing fibers released during washing cycles, degraded plastic debris from coastal areas, and industrial processes that discharge plastic pellets directly into waterways. Once introduced, microplastics undergo a complex transformation. Ocean currents disperse them across vast distances, while photodegradation and mechanical weathering progressively fragment larger particles into increasingly minute components. This process creates a self-perpetuating cycle wherein existing plastic pollution continuously generates new microplastic particles.\n\nConsequently, marine organisms at every trophic level now encounter these synthetic particles as an unavoidable component of their environment. Filter-feeding organisms such as mussels and oysters inadvertently consume microplastics while processing seawater for nutrients. These particles then accumulate in their tissues, creating concentrated deposits that persist long after ingestion. As predatory fish consume contaminated shellfish, microplastics undergo biomagnification—the same process that concentrates heavy metals and persistent organic pollutants in apex predators. Each successive level of the food web experiences higher concentrations of synthetic particles, culminating in marine mammals and seabirds that carry substantial microplastic burdens.\n\nUltimately, this contamination extends beyond marine ecosystems to affect human populations through seafood consumption. Recent studies have detected microplastics in commercially harvested fish, shellfish, and even sea salt, suggesting that human exposure to these synthetic particles has become virtually inevitable. The long-term health implications remain largely unknown, as researchers are only beginning to investigate how chronic exposure to microplastics might affect human physiology. Nevertheless, the ubiquity of these particles throughout marine food webs indicates that addressing microplastic pollution requires immediate, comprehensive intervention strategies that target both existing contamination and the continued introduction of plastic materials into oceanic environments.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 348,
+    "source": "Environmental science analysis"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.333333333333333,
+    "evaluatedAt": "2026-01-08T14:35:53.859Z"
+  }
+}

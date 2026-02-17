@@ -1,0 +1,59 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-123456789abc",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.1,
+    "procedural": 1.9,
+    "computational": 1.9
+  },
+  "stem": "A water tank contains 120 gallons of water. Water is drained from the tank at a constant rate of 8 gallons per minute. The function $f(t) = 120 - 8t$ represents the amount of water, in gallons, remaining in the tank after $t$ minutes. What does the slope of this function represent in this context?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The initial amount of water in the tank",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The rate at which water is being drained from the tank",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The time it takes to empty the tank completely",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The amount of water remaining after 1 minute",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In the linear function $f(t) = 120 - 8t$, we can identify the slope by comparing it to the standard form $y = mx + b$, where $m$ is the slope. Here, the function can be written as $f(t) = -8t + 120$, so the slope is $-8$. The slope represents the rate of change of the dependent variable (water remaining) with respect to the independent variable (time). Since the slope is $-8$, this means the amount of water decreases by 8 gallons per minute, which is exactly the rate at which water is being drained from the tank.",
+  "distractorRationale": {
+    "A": "This confuses the slope with the y-intercept. The initial amount (120 gallons) is represented by the y-intercept, not the slope.",
+    "B": "This is correct - the slope of -8 represents the rate of change, which is 8 gallons per minute being drained.",
+    "C": "This confuses the slope with a calculated time value. The time to empty would be found by solving f(t) = 0, not by identifying the slope.",
+    "D": "This confuses the slope with a function value. The amount after 1 minute would be f(1) = 112 gallons, not the slope."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:32:39.369Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "09c3d513-d82f-4ac9-957f-2ddfbcc0915a"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.791666666666667,
+    "evaluatedAt": "2026-01-08T15:38:30.247Z"
+  }
+}

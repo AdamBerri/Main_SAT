@@ -1,0 +1,59 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3,
+    "computational": 3
+  },
+  "stem": "A cell phone plan charges a monthly fee of $25 plus $0.15 for each text message sent. If Maria's bill for one month was $43, how many text messages did she send that month?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "120",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "180",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "287",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "453",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let $t$ represent the number of text messages Maria sent. The total cost consists of the monthly fee plus the cost of text messages: $25 + 0.15t = 43$. Solving for $t$: $0.15t = 43 - 25 = 18$, so $t = \\frac{18}{0.15} = \\frac{18}{\\frac{15}{100}} = \\frac{18 \\times 100}{15} = \\frac{1800}{15} = 120$. Therefore, Maria sent 120 text messages.",
+  "distractorRationale": {
+    "A": "Correct answer obtained by properly setting up and solving the linear equation.",
+    "B": "This results from the error $\\frac{18}{0.10}$ instead of $\\frac{18}{0.15}$, confusing the per-message rate.",
+    "C": "This results from dividing the total bill by the per-message rate: $\\frac{43}{0.15}$, forgetting to subtract the monthly fee first.",
+    "D": "This results from the calculation error $\\frac{68}{0.15}$, likely from adding instead of subtracting the monthly fee: $43 + 25 = 68$."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:33:47.022Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "865d6489-03ec-4758-900d-118e2e6c9e71"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.25,
+    "evaluatedAt": "2026-01-08T15:37:57.113Z"
+  }
+}

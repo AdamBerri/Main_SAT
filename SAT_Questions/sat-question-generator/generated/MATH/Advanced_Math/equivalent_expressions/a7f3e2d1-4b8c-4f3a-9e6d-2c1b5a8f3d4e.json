@@ -1,0 +1,54 @@
+{
+  "id": "a7f3e2d1-4b8c-4f3a-9e6d-2c1b5a8f3d4e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.9,
+    "computational": 4.8
+  },
+  "stem": "If $x \\neq 0$ and $x \\neq 3$, which of the following is equivalent to $\\frac{x^3 - 9x}{x^2 - 6x + 9} \\cdot \\frac{x - 3}{x + 3}$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$x$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{x}{x - 3}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{x(x - 3)}{x + 3}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{x^2}{x + 3}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To simplify this expression, we need to factor completely and cancel common factors.\n\nFirst, factor the numerator of the first fraction:\n$x^3 - 9x = x(x^2 - 9) = x(x + 3)(x - 3)$\n\nNext, factor the denominator of the first fraction:\n$x^2 - 6x + 9 = (x - 3)^2 = (x - 3)(x - 3)$\n\nNow rewrite the entire expression:\n$$\\frac{x(x + 3)(x - 3)}{(x - 3)(x - 3)} \\cdot \\frac{x - 3}{x + 3}$$\n\nCombine into a single fraction:\n$$\\frac{x(x + 3)(x - 3)(x - 3)}{(x - 3)(x - 3)(x + 3)}$$\n\nCancel common factors:\n- $(x + 3)$ appears once in numerator and once in denominator: cancels\n- $(x - 3)$ appears twice in numerator and twice in denominator: cancels\n\nWhat remains is simply $x$.\n\nThe answer is $\\boxed{\\text{A}}$.",
+  "distractorRationale": {
+    "A": "This is the correct answer, obtained by properly factoring all expressions and canceling all common factors.",
+    "B": "This results from incorrectly canceling only one factor of $(x - 3)$ from the denominator instead of both, leaving one $(x - 3)$ in the denominator.",
+    "C": "This results from failing to recognize that $(x - 3)$ can be canceled from both the numerator and denominator, or from incorrectly combining the two fractions without proper cancellation.",
+    "D": "This results from incorrectly canceling the $(x - 3)$ factors but then multiplying $x$ by an extra $x$ factor, or from misapplying the multiplication of fractions."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:35.609Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "b0cce497-a80a-4805-a3fc-28b60c4cc943"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

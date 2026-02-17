@@ -1,0 +1,63 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.3
+  },
+  "stem": "The author's main purpose in the passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "explain the neurological processes involved in handwriting and typing.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "argue that schools should reconsider the decline of handwriting instruction based on cognitive research.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "compare the effectiveness of different note-taking methods for student learning.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "criticize educational policymakers for their technology integration decisions.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The author's main purpose is to argue that schools should reconsider the decline of handwriting instruction based on cognitive research. The passage begins by stating that the decline has been met with 'surprising indifference' and represents a 'fundamental misunderstanding,' then systematically presents neurological and cognitive evidence supporting handwriting's benefits over digital alternatives. The author concludes by warning that prioritizing technology over cognitive science risks 'sacrificing the very neurological foundations that make deep learning possible.' This structure and word choice clearly indicate a persuasive intent to advocate for reconsidering handwriting instruction.",
+  "distractorRationale": {
+    "A": "While the author does explain neurological processes, this is supporting evidence for the larger argument rather than the main purpose. The explanation serves the persuasive goal of advocating for handwriting instruction.",
+    "B": "This is the correct answer.",
+    "C": "The comparison of note-taking methods is only one piece of evidence in the broader argument. The author's purpose extends beyond comparison to advocacy for policy reconsideration.",
+    "D": "Though the author does criticize policymakers, this criticism serves the larger purpose of arguing for handwriting instruction. The critique is a means to the persuasive end, not the main purpose itself."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:28:24.826Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "e906f832-ff6f-4df9-a237-62e88c4d3503"
+  },
+  "passage": "The decline of handwriting instruction in schools has been met with surprising indifference, yet this shift represents more than just a pedagogical preference—it signals a fundamental misunderstanding of how learning occurs. When children form letters by hand, they engage multiple neural pathways simultaneously: the motor cortex coordinates finger movements, the visual cortex processes letter shapes, and the language centers integrate meaning with form. This multisensory engagement creates stronger memory traces than typing, where keystrokes require minimal cognitive effort and muscle memory is limited to finger placement rather than letter formation.\n\nRecent neuroimaging studies reveal that students who take notes by hand demonstrate superior comprehension and retention compared to those using laptops. The slower pace of handwriting forces learners to synthesize information actively, selecting key concepts rather than transcribing verbatim. Moreover, the physical act of writing appears to stimulate creativity and critical thinking in ways that digital input cannot replicate.\n\nYet educational policymakers continue to prioritize technology integration over cognitive science, assuming that faster input necessarily means better learning. This assumption not only lacks empirical support but ignores decades of research on embodied cognition—the principle that physical actions shape mental processes. As we rush toward an increasingly digital future, we risk sacrificing the very neurological foundations that make deep learning possible.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 203,
+    "source": "Educational psychology journal article"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.916666666666667,
+    "evaluatedAt": "2026-01-08T15:31:39.364Z"
+  }
+}

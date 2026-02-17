@@ -1,0 +1,62 @@
+{
+  "id": "a7b3c9d5-2e4f-4a1b-8c6d-9e2f1a3b5c7d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 2.8,
+    "linguistic": 3
+  },
+  "stem": "Which quotation from the passage best supports the claim that the relationship between social media and teen mental health is more complex than commonly assumed?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"teens who used social media primarily for creative expression and maintaining close friendships showed no increased rates of anxiety or depression compared to non-users\"",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "\"the quality of offline relationships remained the strongest predictor of teen mental health outcomes, regardless of social media habits\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"adolescents who established 'digital curfews,' avoiding screens for two hours before bedtime, reported 23% better sleep quality and improved mood regulation\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"teens might benefit more from mindful usage patterns that prioritize active engagement and healthy boundaries\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A best supports the claim that the relationship between social media and teen mental health is more complex than commonly assumed because it directly contradicts the simple narrative that social media harms teenagers. By showing that teens who use social media for creative expression and friendship maintenance experience no increased mental health problems, this evidence demonstrates that the type of social media use matters more than just whether teens use it at all. This finding reveals the nuanced nature of the relationship, challenging oversimplified assumptions.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "While this quote provides important context about mental health predictors, it doesn't directly challenge the assumption about social media's harmful effects—it simply identifies offline relationships as more important.",
+    "C": "This quote supports the idea that timing matters for social media use, but it focuses specifically on sleep and bedtime habits rather than broadly challenging assumptions about social media's overall impact.",
+    "D": "This quote presents a conclusion or recommendation rather than evidence that demonstrates the complexity of the relationship between social media and mental health."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:24:46.207Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "e3e4ab56-3473-47cf-bd79-d411dd8bcce0"
+  },
+  "passage": "The widespread assumption that social media platforms inevitably harm teenagers' mental health may be oversimplified. While some studies have found correlations between heavy social media use and depression, the relationship appears more nuanced than initially believed. Dr. Sarah Chen's longitudinal study of 2,400 adolescents found that \"teens who used social media primarily for creative expression and maintaining close friendships showed no increased rates of anxiety or depression compared to non-users.\" However, those who engaged primarily in passive consumption—scrolling through feeds without meaningful interaction—did show elevated stress levels. Additionally, Chen noted that \"the quality of offline relationships remained the strongest predictor of teen mental health outcomes, regardless of social media habits.\" The timing of social media use also proved significant. Research by the Digital Wellness Institute revealed that \"adolescents who established 'digital curfews,' avoiding screens for two hours before bedtime, reported 23% better sleep quality and improved mood regulation.\" These findings suggest that rather than avoiding social media entirely, teens might benefit more from mindful usage patterns that prioritize active engagement and healthy boundaries.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 183,
+    "source": "Adapted from research on adolescent digital wellness"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.333333333333333,
+    "evaluatedAt": "2026-01-08T14:29:43.291Z"
+  }
+}

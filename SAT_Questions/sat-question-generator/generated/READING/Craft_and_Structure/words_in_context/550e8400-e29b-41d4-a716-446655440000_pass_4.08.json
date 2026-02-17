@@ -1,0 +1,61 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "stem": "As used in the passage, \"plastic\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "artificial",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "adaptable",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "synthetic",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "malleable",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In this scientific context, \"plastic\" refers to the corals' ability to change and adapt their behaviors and characteristics in response to environmental conditions. The passage explicitly describes how these corals \"could alter their symbiotic relationships,\" \"modify their growth patterns,\" and \"change their feeding behaviors,\" all of which demonstrate adaptability. The word \"adaptable\" in choice B captures this biological meaning of plasticity—the capacity for change and flexibility in response to circumstances.",
+  "distractorRationale": {
+    "A": "While \"artificial\" is a common meaning of plastic when referring to synthetic materials, it doesn't fit the biological context where the passage describes natural coral responses to environmental changes.",
+    "C": "\"Synthetic\" is another common meaning of plastic as a material, but the passage is discussing natural biological processes, not artificial or man-made substances.",
+    "D": "\"Malleable\" suggests physical flexibility or the ability to be shaped, but the passage focuses on behavioral and biological adaptability rather than physical moldability."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:24:55.867Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "af771a3d-3379-4f4e-888d-4e6cae86ccb0"
+  },
+  "passage": "The marine biologist's research on coral reef ecosystems revealed a troubling pattern. While some coral species demonstrated remarkable resilience to rising ocean temperatures, others proved far more **plastic** in their response to environmental stressors. These adaptable corals could alter their symbiotic relationships with algae, modify their growth patterns, and even change their feeding behaviors within a single generation. This flexibility, though beneficial for short-term survival, raised questions about the long-term genetic stability of these coral populations.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 85,
+    "source": "Adapted from marine biology research"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T14:29:15.163Z"
+  }
+}

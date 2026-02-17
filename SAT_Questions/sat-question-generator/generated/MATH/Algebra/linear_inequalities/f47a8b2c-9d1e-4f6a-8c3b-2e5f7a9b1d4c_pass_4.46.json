@@ -1,0 +1,59 @@
+{
+  "id": "f47a8b2c-9d1e-4f6a-8c3b-2e5f7a9b1d4c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1.2
+  },
+  "stem": "A school fundraiser sells tickets for $8 each. The organizers want to raise at least $240. Which inequality represents the number of tickets, $t$, they need to sell?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$8t \\geq 240$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$8t \\leq 240$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$t \\geq 240$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$8t > 240$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The organizers want to raise at least $240, which means they want to raise $240 or more. Since each ticket costs $8, the total amount raised from selling $t$ tickets is $8t$. The phrase \"at least $240\" translates to \"greater than or equal to $240,\" which gives us the inequality $8t \\geq 240$.",
+  "distractorRationale": {
+    "A": "Correct answer: properly translates 'at least $240' to $8t \\geq 240$",
+    "B": "Confuses 'at least' with 'at most', using $\\leq$ instead of $\\geq$",
+    "C": "Omits the price per ticket, incorrectly setting up $t \\geq 240$ instead of $8t \\geq 240$",
+    "D": "Uses strict inequality $>$ instead of $\\geq$, missing that 'at least' includes equality"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:37:56.254Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "859439aa-01d2-4bf1-931a-2aaf019c2828"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.458333333333333,
+    "evaluatedAt": "2026-01-08T15:43:41.753Z"
+  }
+}

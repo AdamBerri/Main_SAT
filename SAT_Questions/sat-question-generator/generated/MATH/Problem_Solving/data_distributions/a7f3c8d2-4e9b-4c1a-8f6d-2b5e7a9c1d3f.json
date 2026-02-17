@@ -1,0 +1,54 @@
+{
+  "id": "a7f3c8d2-4e9b-4c1a-8f6d-2b5e7a9c1d3f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.7,
+    "procedural": 2.9,
+    "computational": 2.9
+  },
+  "stem": "A dataset consists of 7 test scores: 68, 72, 75, 78, 82, 85, 90. If the score of 78 is removed from the dataset, which of the following statements about the remaining 6 scores is true?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Both the mean and the median increase.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The mean increases, but the median decreases.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The mean decreases, but the median increases.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Both the mean and the median decrease.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Step 1: Calculate the original mean**\n\nSum of original 7 scores: $68 + 72 + 75 + 78 + 82 + 85 + 90 = 550$\n\nOriginal mean: $\\frac{550}{7} \\approx 78.57$\n\n**Step 2: Calculate the new mean after removing 78**\n\nSum of remaining 6 scores: $550 - 78 = 472$\n\nNew mean: $\\frac{472}{6} \\approx 78.67$\n\nThe mean **increases** from approximately 78.57 to 78.67.\n\n**Step 3: Find the original median**\n\nThe original dataset in order: 68, 72, 75, 78, 82, 85, 90\n\nWith 7 values, the median is the 4th value: **78**\n\n**Step 4: Find the new median after removing 78**\n\nThe new dataset in order: 68, 72, 75, 82, 85, 90\n\nWith 6 values, the median is the average of the 3rd and 4th values: $\\frac{75 + 82}{2} = \\frac{157}{2} = 78.5$\n\nThe median **increases** from 78 to 78.5.\n\n**Conclusion:** Both the mean and the median increase. The answer is **A**.\n\nThis occurs because 78 was below the new mean and was exactly at the original median position. Removing it shifts both measures upward.",
+  "distractorRationale": {
+    "A": "This is the correct answer. Both statistics increase when 78 is removed.",
+    "B": "Results from correctly calculating that the mean increases, but incorrectly believing the median must decrease when a middle value is removed. Students may think removing any value from the middle of a dataset always decreases the median.",
+    "C": "Results from incorrectly reasoning that removing a value close to the mean must decrease the mean (confusing it with removing a value above the mean), while correctly determining the median increases.",
+    "D": "Results from the misconception that removing any value from a dataset must decrease both the mean and median, failing to recognize that the position and value of the removed element relative to the distribution determines the effect."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:39.665Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "8b0cc5f8-c9f8-4ecc-86d1-d0e9479a4eec"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

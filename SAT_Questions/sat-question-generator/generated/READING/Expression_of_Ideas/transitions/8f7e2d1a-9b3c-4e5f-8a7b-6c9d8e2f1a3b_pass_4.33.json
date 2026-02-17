@@ -1,0 +1,62 @@
+{
+  "id": "8f7e2d1a-9b3c-4e5f-8a7b-6c9d8e2f1a3b",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "stem": "Which choice completes the text with the most logical transition?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Therefore,",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "However,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Similarly,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Meanwhile,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The correct answer is 'Therefore,' because it establishes a logical cause-and-effect relationship between the discovery described in the previous sentence and its implications. The discovery that deep-sea creatures use acoustic signals (the cause) leads to the conclusion that this fundamentally challenges our understanding and suggests sound's importance (the effect). This transition word precisely captures the logical flow from evidence to conclusion.",
+  "distractorRationale": {
+    "A": "Correct - establishes the proper cause-and-effect relationship between the discovery and its implications.",
+    "B": "Incorrect - 'However' indicates contrast, but there is no contradiction between the discovery and its implications; rather, the implications follow logically from the discovery.",
+    "C": "Incorrect - 'Similarly' suggests comparison or parallel ideas, but the sentence presents consequences of the discovery rather than drawing comparisons.",
+    "D": "Incorrect - 'Meanwhile' indicates simultaneous occurrence, but the sentence describes implications that result from the discovery rather than events happening at the same time."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:32:29.977Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "dea19bf8-cadc-4a1b-a4e2-faaad875eb2c"
+  },
+  "passage": "Marine biologists have long assumed that deep-sea creatures rely primarily on chemical cues for navigation and communication, given the perpetual darkness of their environment. Recent studies using advanced sonar technology have revealed that many deep-sea species actually produce and respond to complex acoustic signals, including sophisticated echolocation patterns previously thought to exist only in dolphins and bats. _______ this discovery fundamentally challenges our understanding of sensory adaptation in extreme environments and suggests that sound may be far more important in deep-ocean ecosystems than previously recognized.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 89,
+    "source": "Adapted from marine biology research"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.333333333333333,
+    "evaluatedAt": "2026-01-08T14:36:06.852Z"
+  }
+}

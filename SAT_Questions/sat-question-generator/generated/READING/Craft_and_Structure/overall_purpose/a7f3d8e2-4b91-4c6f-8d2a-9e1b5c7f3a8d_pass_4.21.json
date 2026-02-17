@@ -1,0 +1,62 @@
+{
+  "id": "a7f3d8e2-4b91-4c6f-8d2a-9e1b5c7f3a8d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2,
+    "linguistic": 2.1
+  },
+  "stem": "The author's main purpose in this passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "explain the psychological mechanisms behind multitasking",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "challenge a common misconception about multitasking and advocate for an alternative approach",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "describe the findings of recent neuroscience research on attention",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "compare the effectiveness of different productivity strategies",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The author's main purpose is to challenge the widespread belief that multitasking increases productivity (calling it 'not only wrong but potentially harmful') and then advocate for an alternative approach—developing 'capacity for deep, single-task focus.' The passage follows a clear argumentative structure: debunking a myth, providing evidence against it, and recommending a better alternative. The author uses persuasive language throughout, such as 'we should focus on developing' and describing single-task focus as 'essential for meaningful accomplishment.'",
+  "distractorRationale": {
+    "A": "While the author does explain some mechanisms (like attention switching), this is not the main purpose but rather supporting evidence for the argument against multitasking.",
+    "B": "This is the correct answer.",
+    "C": "The author mentions research findings, but only as evidence to support the main argument against multitasking, not as the primary purpose of the passage.",
+    "D": "The author only advocates for one strategy (single-task focus) rather than comparing multiple productivity strategies, and the focus is more on debunking multitasking than comparing various approaches."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:32:30.786Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "e55b458b-3ed0-4c0c-866f-9f138839dd71"
+  },
+  "passage": "The widespread belief that multitasking increases productivity is not only wrong but potentially harmful to our cognitive abilities. When we attempt to juggle multiple tasks simultaneously, our brains don't actually process them at the same time. Instead, we rapidly switch our attention from one task to another, a process that creates mental fatigue and reduces the quality of our work. Research conducted at Stanford University found that people who regularly multitask show decreased ability to filter out irrelevant information and have more difficulty organizing their thoughts. Even more concerning, neuroscientist Dr. Michael Posner's studies suggest that chronic multitasking may actually rewire our brains, making us less capable of sustained concentration. Rather than embracing the myth of multitasking, we should focus on developing our capacity for deep, single-task focus—a skill that, while increasingly rare in our distraction-filled world, remains essential for meaningful accomplishment.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 156,
+    "source": "Academic essay on cognitive psychology"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.208333333333333,
+    "evaluatedAt": "2026-01-08T14:36:04.555Z"
+  }
+}

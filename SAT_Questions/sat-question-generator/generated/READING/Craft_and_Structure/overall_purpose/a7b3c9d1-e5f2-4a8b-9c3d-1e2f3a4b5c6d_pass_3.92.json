@@ -1,0 +1,63 @@
+{
+  "id": "a7b3c9d1-e5f2-4a8b-9c3d-1e2f3a4b5c6d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 2.7,
+    "linguistic": 3
+  },
+  "stem": "The author's main purpose in the passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "describe the creative processes used by successful companies like 3M and Google.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "argue that creativity can be developed and should be actively cultivated in educational and workplace settings.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "analyze the reasons why some people are naturally more creative than others.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "explain how standardized testing has improved educational outcomes in recent decades.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The author's main purpose is to argue that creativity can be developed and should be actively cultivated. This is evident from the opening statement that the belief in creativity as an \"innate gift\" has \"done considerable damage,\" followed by evidence from research and corporate examples showing creativity can be systematically developed. The passage concludes with a call to action to \"abandon the fiction that creativity cannot be taught\" and implement \"evidence-based approaches\" in classrooms. The author is making a persuasive argument for changing how we approach creativity in education and workplaces.",
+  "distractorRationale": {
+    "A": "While the author mentions 3M and Google as examples, describing their creative processes is not the main purpose—these examples serve as evidence to support the larger argument about developing creativity.",
+    "B": "This is the correct answer.",
+    "C": "The author actually argues against the idea that some people are naturally more creative, stating this belief is a harmful myth, rather than analyzing reasons for natural differences.",
+    "D": "The author criticizes standardized testing, arguing it suppresses creative thinking rather than explaining how it has improved outcomes."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:26:24.827Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "725d0256-4d65-4e80-8f33-bc6c1c117542"
+  },
+  "passage": "The widespread belief that creativity is an innate gift possessed by a fortunate few has done considerable damage to our educational system and workplace culture. This myth persists despite decades of research demonstrating that creative thinking can be systematically developed through specific practices and environmental conditions. Consider the case of the 3M company, which allocates 15% of employee time to personal projects—a policy that has generated thousands of innovations, including the ubiquitous Post-it Note. Similarly, Google's \"20% time\" initiative has produced Gmail, Google News, and AdSense. These examples illustrate that when organizations create structures that encourage experimentation and tolerate failure, creative output flourishes.\n\nThe implications extend far beyond corporate boardrooms. Schools that emphasize standardized testing over exploratory learning inadvertently suppress the very thinking skills our economy desperately needs. Students learn to seek single correct answers rather than generate multiple possibilities. They become risk-averse, fearing the penalties associated with unconventional responses. Yet research consistently shows that societies with higher tolerance for ambiguity and uncertainty tend to produce more breakthrough innovations. If we truly want to prepare students for an increasingly complex world, we must abandon the fiction that creativity cannot be taught and begin implementing evidence-based approaches to nurture innovative thinking in every classroom.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 198,
+    "source": "Educational policy analysis"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T15:31:39.361Z"
+  }
+}

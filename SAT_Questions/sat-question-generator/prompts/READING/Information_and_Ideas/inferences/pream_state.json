@@ -1,0 +1,223 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "config": {
+    "maxIterations": 5,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.9375,
+        "passRate": 0.9375,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractors directly contradict explicit passage statements, testing basic reading accuracy rather than inference skills (e.g., 'She was nervous and made mistakes' when passage states 'played without any major mistakes')",
+              "Wrong answers are too easily eliminable, creating functional 3-choice items for careful readers and providing no discrimination power at higher ability levels",
+              "Distractors fail to target genuine reading comprehension misconceptions, instead catching only students who didn't read the passage at all"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Questions overcalibrated by 1-2 difficulty levels because they test vocabulary/linguistic complexity rather than genuine reasoning complexity (stated 5/5 when actually 3/5)",
+              "Stated difficulty doesn't match actual performance expectations - questions labeled 'hard' would likely be answered correctly by 60-70% of students rather than the expected 10-20%",
+              "Correct answers are near-paraphrases of explicit passage statements, making inference questions function as basic comprehension tests despite high difficulty ratings"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Passages use graduate-level academic discourse (e.g., 'historiographical narrative,' 'temporal sovereignty') rather than SAT's accessible high school register",
+              "Answer choices are excessively verbose (15-25 words) compared to SAT standard of 8-12 words per option",
+              "Questions require specialized academic knowledge rather than testing pure reading comprehension skills"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.541666666666667,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, faithfulness",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.815104166666666,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Overcalibrated difficulty ratings - questions rated 3/5 or 4/5 that are actually 0.5-1 point easier due to straightforward inferences and weak distractors",
+              "Mismatch between stated difficulty and actual cognitive demands - claims of complex multi-step reasoning when inference is actually single-step with clear textual support",
+              "Predicted discrimination issues - questions unlikely to effectively separate students at different ability levels due to correct answers being too obvious"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractors too easily eliminated with obvious contradictions (e.g., 'She typically prepares pastries during the afternoon hours' directly contradicts pastries ready at 5 a.m.)",
+              "Weak error pathways - distractors don't target genuine misconceptions or plausible reading errors that students would actually make",
+              "Missing textual anchoring - distractors introduce wholly new concepts with no connection to passage content rather than representing misinterpretations of actual textual details"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Uses original fictional vignette instead of published source text - SAT questions are based on excerpts from real literature, science, history, or social studies texts",
+              "Passage too brief and purpose-built (80 words) - authentic SAT passages are typically 100-150+ words minimum with richer content",
+              "Inference requires assumption beyond textual evidence - asking students to assume Maria arrives before her stated start time crosses from inference into speculation"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Correct answer contains subtle ambiguity - distinction between 'direct maternal teaching' vs 'observation' not clearly supported by passage text",
+              "Answer makes categorical claim requiring assumption - passage doesn't explicitly distinguish active teaching from observational learning of one's own mother",
+              "Sophisticated test-takers could reasonably question the answer - extended maternal contact could enable learning through observation rather than active instruction"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5.0625,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, distractor_quality, faithfulness",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.812500000000001,
+        "passRate": 0.8125,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 5,
+            "exampleErrors": [
+              "Stated difficulty 5/5 but question functions at 3.5/5 due to straightforward inference and weak distractors that are easily eliminated",
+              "Calibrated as 1/5 (Easy) but requires second-order inference and synthesis across non-adjacent sentences, actually functioning at 2-3/5 difficulty",
+              "Stated 4/5 difficulty but evidence is too explicit with multiple signposts, making it actually 3/5 with expected 50-60% correct rate instead of 35-45%"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Designated correct answer requires inferential leap not directly supported by text (e.g., inferring 'doubted profitability' when passage never mentions economic motivation explicitly)",
+              "Correct answer uses terminology that conflicts with passage content (e.g., 'direct exposure' when passage explicitly describes indirect bioaccumulation mechanism)",
+              "Alternative answer choices could be defensibly argued by sophisticated readers who make valid textual distinctions (e.g., distinguishing between knowing harvests fail vs. understanding soil depletion cause)"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor directly contradicts emphatic passage statements, functioning as 'throwaway' option that reduces discrimination (e.g., reversing 'revolutionized understanding' claim)",
+              "Distractor too easily eliminable, creating de facto three-choice question that fails to challenge high-ability students",
+              "Weak distractors use obvious red-flag words (e.g., 'preferred,' 'more frequently,' 'only') that trained test-takers immediately recognize as unsupported absolutes"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.625,
+        "passRate": 0.6666666666666666
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.963541666666667,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Question stated as 5/5 difficulty but actual difficulty is 3-3.5/5 due to clear textual support and weak distractors",
+              "Question stated as 3/5 difficulty but actual difficulty is 2.5/5 because answer is heavily scaffolded with explicit comparative language",
+              "Question stated as 2/5 difficulty but actual difficulty is 1.5/5 due to direct textual extraction with minimal inference required"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Designated answer (B) is defensible but not unambiguously correct; competing answer (C) has equally strong textual support and clearer logical connection to rejection factors",
+              "Question presents multifactorial explanation but answer requires accepting that one factor 'outweighed' others without explicit textual ranking"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor B is too weak and easy to eliminate without demonstrating real comprehension, showing uneven quality across answer choices",
+              "Distractors lack sufficient subtlety to effectively discriminate between thorough comprehension and surface reading"
+            ]
+          },
+          {
+            "category": "inference_scaffolding",
+            "frequency": 1,
+            "exampleErrors": [
+              "Answer is nearly explicit paraphrase of textual content rather than requiring true inference, conflating 'explicit comparison' with 'inference skill'",
+              "Passage structure heavily guides readers toward the intended inference, reducing genuine cognitive demand"
+            ]
+          },
+          {
+            "category": "textual_clarity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Multiple equally-weighted explanations presented in passage without clear hierarchy, making it ambiguous which factor should be identified as primary"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.041666666666667,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
+      "newPromptVersion": "1.3.0"
+    }
+  ],
+  "currentBestVersion": "1.2.0",
+  "converged": true,
+  "startedAt": "2026-01-08T18:49:18.686Z",
+  "completedAt": "2026-01-09T20:42:34.096Z",
+  "bestTestScore": 4.625
+}

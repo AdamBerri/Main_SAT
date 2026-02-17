@@ -1,0 +1,58 @@
+{
+  "id": "a3f8d9e2-4c1b-4a3e-9f2d-8b7c6e5d4a3b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "stem": "The author's main purpose in the passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "describe the key features of the monarch butterfly's migration pattern.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "explain why monarch butterflies prefer oyamel fir forests over other habitats.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "argue that monarch butterfly migration should receive more scientific attention.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "compare the monarch butterfly's migration to other insect migrations.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage's primary purpose is to describe the key features of monarch butterfly migration. The author presents factual information about the migration distance, destination, clustering behavior, return journey, and multi-generational nature of the cycle. The passage systematically outlines the main characteristics of this migration pattern without making arguments, comparisons to other species, or focusing narrowly on habitat preferences. The straightforward presentation of facts about different aspects of the migration indicates a descriptive purpose.",
+  "distractorRationale": {
+    "A": "This is the correct answer because the passage describes multiple aspects of monarch migration systematically.",
+    "B": "While the passage mentions oyamel fir forests as the winter destination, it does not explain why monarchs prefer these forests over other habitats. The passage simply states where they go, not why they choose this location.",
+    "C": "The passage presents information about monarch migration but does not make any argument about the need for scientific attention or advocate for any particular action. It maintains a neutral, informational tone throughout.",
+    "D": "Although the passage mentions that monarch migration is 'one of the longest insect migrations in the world,' it does not compare monarch migration to other insect migrations in any detail. This brief reference provides context but is not the passage's organizing purpose."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:35:56.268Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "7d0a25f3-965a-4710-a029-dca708cdc5e5"
+  },
+  "passage": "The monarch butterfly's annual migration from Canada to Mexico covers nearly 3,000 miles, making it one of the longest insect migrations in the world. Each fall, millions of monarchs travel south to spend the winter in oyamel fir forests high in the mountains of central Mexico. The butterflies cluster together on tree branches, with thousands occupying a single tree. This clustering behavior helps them survive the cool mountain temperatures. In spring, the monarchs begin their journey north, stopping to lay eggs on milkweed plants along the way. The butterflies that complete the migration are not the same individuals that left Mexico—it takes three to four generations of monarchs to complete the full round-trip cycle.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 118,
+    "source": "Science education text"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,59 @@
+{
+  "id": "f47b2e8c-9d3a-4f1b-8e6f-2c5d7a9b1e4c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.1,
+    "computational": 2.9
+  },
+  "stem": "Which of the following expressions is equivalent to $(2x - 3)(x + 4) - (x^2 - 5x + 6)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$x^2 + 10x - 18$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$x^2 + 3x - 6$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$3x^2 + 10x - 18$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$x^2 - 10x + 18$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "First, expand $(2x - 3)(x + 4)$:\n$(2x - 3)(x + 4) = 2x^2 + 8x - 3x - 12 = 2x^2 + 5x - 12$\n\nNow substitute this into the original expression:\n$(2x - 3)(x + 4) - (x^2 - 5x + 6) = 2x^2 + 5x - 12 - (x^2 - 5x + 6)$\n\nDistribute the negative sign:\n$= 2x^2 + 5x - 12 - x^2 + 5x - 6$\n\nCombine like terms:\n$= (2x^2 - x^2) + (5x + 5x) + (-12 - 6)$\n$= x^2 + 10x - 18$\n\nTherefore, the answer is A.",
+  "distractorRationale": {
+    "A": "This is the correct answer obtained by properly expanding and combining like terms.",
+    "B": "This results from incorrectly combining the constant terms as $-12 + 6 = -6$ instead of $-12 - 6 = -18$, or from errors in distributing the negative sign.",
+    "C": "This results from failing to subtract the $x^2$ term, keeping both $2x^2$ and $x^2$ to get $3x^2$ instead of $x^2$.",
+    "D": "This results from sign errors when distributing the negative and combining the $x$ terms, getting $5x - 5x = 0$ instead of $5x + 5x = 10x$, and getting $-12 + 6 = -6$ then changing sign to get $+18$."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:40:36.027Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "28726ff2-4a88-45fc-8024-a64f45398052"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 5.125,
+    "evaluatedAt": "2026-01-08T15:44:42.616Z"
+  }
+}

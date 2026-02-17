@@ -1,0 +1,58 @@
+{
+  "id": "3f8e9a2b-4c1d-4e89-b3f2-7d6c5a8e9f1b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.9,
+    "linguistic": 1.9
+  },
+  "stem": "Which choice best states the main idea of the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Howard Carter's systematic documentation methods provided crucial context that enhanced scholarly understanding of Tutankhamun's tomb beyond the mere discovery of artifacts.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The tomb of King Tutankhamun contained over 5,000 artifacts that revealed important information about ancient Egyptian royal burial practices.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Archaeological excavations in the early 20th century were often conducted hastily, with insufficient attention to preserving contextual information.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Carter's financial backers were impatient with his slow excavation process, though his careful approach ultimately proved worthwhile.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage focuses on how Carter's methodical documentation approach (photographing, sketching, recording measurements) transformed the tomb discovery from merely finding objects into understanding ancient Egyptian burial practices. The final sentence explicitly states that his documentation 'transformed a collection of beautiful objects into a coherent narrative,' making the value of his systematic methods the central point. While the passage mentions the tomb's contents and Carter's conflicts with backers, these serve as supporting details for the main claim about documentation's importance.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it captures both the methodological focus (systematic documentation) and the outcome (enhanced scholarly understanding through context).",
+    "B": "This choice focuses only on what was found in the tomb, missing the passage's emphasis on Carter's documentation methods and their scholarly value. The artifacts themselves are mentioned as context for explaining the importance of how Carter recorded them.",
+    "C": "While the passage contrasts Carter with other excavators who 'rushed to uncover treasures,' this comparison serves to highlight Carter's distinctive approach rather than being a critique of early 20th-century archaeology generally. The main focus remains on Carter's positive contribution.",
+    "D": "This choice emphasizes the conflict with financial backers, which is mentioned only briefly as an obstacle Carter overcame. The passage's main concern is not the interpersonal tension but rather the scholarly value of Carter's documentation methods."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:33.369Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "5ecec173-f1c2-496d-bf2a-da9c98414ae7"
+  },
+  "passage": "The discovery of King Tutankhamun's tomb in 1922 captivated the world, but archaeologist Howard Carter's meticulous documentation process was equally remarkable. Unlike many excavators of his era who rushed to uncover treasures, Carter spent nearly a decade carefully cataloging over 5,000 artifacts. He photographed each item in its original position, created detailed sketches, and recorded precise measurements before any object was moved. This painstaking approach allowed later researchers to understand not just what objects the tomb contained, but how they were arranged and what that arrangement revealed about ancient Egyptian burial practices. Carter's insistence on thorough documentation, though it frustrated his financial backers who wanted immediate results, ultimately provided scholars with invaluable context that transformed a collection of beautiful objects into a coherent narrative about royal death rituals in the 14th century BCE.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 142,
+    "source": "Original passage about archaeological methodology"
+  },
+  "hasImage": false
+}

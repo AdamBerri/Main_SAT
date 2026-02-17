@@ -1,0 +1,58 @@
+{
+  "id": "a3f8b9c2-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 2.7,
+    "linguistic": 3.2
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "reveal",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "reveals",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "have revealed",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "are revealing",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement with a singular subject separated from its verb by a long intervening phrase. The subject of the sentence is 'dataset' (singular), not 'scientists' (which appears in the prepositional phrase 'collected by the scientists'). The singular subject 'dataset' requires the singular verb form 'reveals.' Choice A ('reveal') is incorrect because it is a plural verb form that does not agree with the singular subject. Choice C ('have revealed') is incorrect because it uses a plural auxiliary verb 'have' rather than the required singular form. Choice D ('are revealing') is incorrect because it uses the plural auxiliary 'are' and also shifts to progressive aspect unnecessarily, when the simple present tense is appropriate for stating a general finding.",
+  "distractorRationale": {
+    "A": "Uses the plural verb form 'reveal,' which would be correct only if the subject were plural. This distractor tempts students who incorrectly identify 'scientists' as the subject rather than recognizing it as part of a prepositional phrase modifying 'dataset.'",
+    "B": "CORRECT - Uses the singular verb 'reveals' which correctly agrees with the singular subject 'dataset.'",
+    "C": "Uses the plural present perfect form 'have revealed' instead of the required singular form. This distractor combines a number error (plural 'have' instead of singular 'has') with an unnecessary shift to perfect aspect.",
+    "D": "Uses the plural present progressive form 'are revealing' instead of the required singular form. This distractor combines a number error with an inappropriate shift to progressive aspect when simple present is needed for stating research findings."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:35:54.781Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "f644e3e8-f5ff-4b2a-8099-4664b7022dd7"
+  },
+  "passage": "Marine biologists studying coral reef ecosystems have discovered that certain species of parrotfish play a crucial role in maintaining reef health. These colorful fish consume algae that would otherwise smother coral formations, and their feeding behavior creates the distinctive white sand found on tropical beaches. The research team, working across multiple sites in the Caribbean over a three-year period, has documented significant correlations between parrotfish populations and coral resilience. The comprehensive dataset collected by the scientists _____ [1] that protected areas with abundant parrotfish populations show markedly higher rates of coral recovery following bleaching events.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 98,
+    "source": "Original content about marine biology research"
+  },
+  "hasImage": false
+}

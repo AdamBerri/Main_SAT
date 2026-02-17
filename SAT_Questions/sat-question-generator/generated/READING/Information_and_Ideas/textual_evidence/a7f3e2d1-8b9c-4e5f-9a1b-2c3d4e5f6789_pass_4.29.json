@@ -1,0 +1,62 @@
+{
+  "id": "a7f3e2d1-8b9c-4e5f-9a1b-2c3d4e5f6789",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2,
+    "linguistic": 2.2
+  },
+  "stem": "Based on the texts, which statement best describes how the Portland study results relate to the debate mentioned in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The results support the argument that green infrastructure can significantly improve urban air quality when strategically implemented.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The results confirm that vegetation traps pollutants and worsens air quality in urban areas.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The results show that green infrastructure has no measurable effect on air pollution levels.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The results demonstrate that only tree-lined streets, not green roofs, can improve air quality.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The Portland study data directly supports the position mentioned in Text 1 that 'strategically placed green infrastructure can significantly improve urban air quality.' The study shows consistent reductions in PM2.5 levels at locations near green infrastructure (18% reduction within 100 meters, 7% reduction at 100-300 meters), with an overall citywide improvement of 12%. This evidence contradicts the concern that vegetation might worsen air quality and instead validates the effectiveness of strategic green infrastructure placement.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "This misinterprets the data - the study shows reductions in PM2.5 levels, not increases that would indicate trapped pollutants worsening air quality.",
+    "C": "This contradicts the clear numerical evidence showing significant reductions in PM2.5 levels at locations with green infrastructure.",
+    "D": "This is incorrect because the study examined green roofs and vertical gardens, not tree-lined streets, and found positive results from these installations."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:26:47.829Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "24dcdd27-9979-4fde-a2ea-9cf0d61ef7ca"
+  },
+  "passage": "Text 1\n\nUrban planners have long debated the effectiveness of green spaces in reducing air pollution within cities. While parks and tree-lined streets are aesthetically pleasing, their actual impact on air quality has been questioned. Some researchers argue that vegetation can trap pollutants close to ground level, potentially worsening air quality in certain areas. However, recent studies suggest that strategically placed green infrastructure can significantly improve urban air quality by filtering harmful particles and absorbing carbon dioxide.\n\nText 2\n\nA 2023 study measured air quality improvements in downtown Portland, Oregon, following the installation of green roofs and vertical gardens on commercial buildings. The research team monitored particulate matter (PM2.5) levels at various locations throughout the city center over a two-year period.\n\nResults:\n• Locations within 100 meters of new green infrastructure: 18% reduction in PM2.5 levels\n• Locations 100-300 meters from green infrastructure: 7% reduction in PM2.5 levels\n• Control locations with no nearby green infrastructure: 2% increase in PM2.5 levels\n• Citywide average reduction: 12% decrease in PM2.5 levels",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 187,
+    "source": "Urban planning research summary with study data"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.291666666666667,
+    "evaluatedAt": "2026-01-08T14:30:21.319Z"
+  }
+}

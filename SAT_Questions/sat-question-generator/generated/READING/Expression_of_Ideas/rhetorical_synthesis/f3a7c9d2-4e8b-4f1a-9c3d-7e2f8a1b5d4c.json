@@ -1,0 +1,58 @@
+{
+  "id": "f3a7c9d2-4e8b-4f1a-9c3d-7e2f8a1b5d4c",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 3.9,
+    "linguistic": 3.9
+  },
+  "stem": "The student wants to explain why plant populations recovered following beaver reintroduction. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "After beavers were reintroduced to western Colorado watersheds in 2018, native willow and cottonwood seedling survival rates increased by 340% within three years, a period during which water tables rose an average of 2.3 meters in summer.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Beaver reintroduction in western Colorado led to elevated water tables that maintained moist soil conditions, which prevented seedling desiccation and enabled native willow and cottonwood populations to recover after decades of decline.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Following beaver reintroduction in 2018, water tables in western Colorado rose significantly during summer months, while native willow and cottonwood species showed dramatically increased seedling survival rates in reintroduction zones.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Native willow and cottonwood seedlings in western Colorado, which require consistently moist soil to survive the establishment period, experienced 340% higher survival rates after beaver reintroduction elevated summer water tables by 2.3 meters.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B most effectively explains why plant populations recovered by presenting the complete causal chain: beaver reintroduction → elevated water tables → moist soil conditions → prevention of seedling desiccation → population recovery. This synthesis directly addresses the question's goal of explaining the mechanism behind the recovery. The answer establishes clear logical connections between each step while emphasizing the ecological process rather than simply listing correlated observations. It also provides appropriate context by noting the populations had been declining for decades, making the recovery significant.",
+  "distractorRationale": {
+    "A": "This choice presents a temporal correlation between beaver reintroduction and improved seedling survival, but it fails to explain WHY the recovery occurred. By simply stating that both changes happened 'within three years,' it leaves the causal mechanism implicit and doesn't mention the critical factor of soil moisture that prevented desiccation. The synthesis reads more like a timeline of events than an explanation of ecological processes.",
+    "B": "This is the correct answer.",
+    "C": "This choice describes two parallel outcomes (rising water tables and increased seedling survival) but fails to establish any causal relationship between them. The word 'while' suggests simultaneity rather than causation, leaving readers to infer the connection. Most critically, it omits the mechanism entirely—the soil moisture conditions that actually enabled seedling survival—making it descriptive rather than explanatory.",
+    "D": "While this choice includes the causal mechanism (moist soil for establishment), it structures the information awkwardly by front-loading the plant requirements before establishing the beaver-water table connection. More significantly, it emphasizes specific numerical data (340%, 2.3 meters) over the ecological process, and it doesn't complete the explanatory chain by connecting moist soil conditions to the prevention of desiccation. The synthesis suggests correlation more strongly than it establishes causation."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:32.559Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "f6ca7e58-2780-4b7b-bb9e-96f3ab165672"
+  },
+  "passage": "While researching the ecological impact of beaver reintroduction programs for an environmental science report, a student took the following notes:\n\n• Beavers were reintroduced to several watersheds in western Colorado beginning in 2018.\n• Within three years, water tables in reintroduction zones rose an average of 2.3 meters during summer months.\n• Native willow and cottonwood species, which had been declining for decades, showed 340% increased seedling survival rates in these same zones.\n• The elevated water tables created consistently moist soil conditions that prevented seedling desiccation during the critical establishment period.\n\nThe student wants to explain why plant populations recovered following beaver reintroduction. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 142,
+    "source": "Original question content"
+  },
+  "hasImage": false
+}

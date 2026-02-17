@@ -1,0 +1,62 @@
+{
+  "id": "a7b3c4d5-e6f7-8901-2345-6789abcdef01",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.7,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "stem": "The author's main purpose in this passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "explain the cognitive processes involved in multitasking and task-switching.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "challenge a widely held belief about multitasking and advocate for focused attention.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "describe the various ways multitasking manifests in modern workplaces and schools.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "present research findings about the effects of multitasking on cognitive performance.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The author's main purpose is to challenge the conventional wisdom that multitasking is beneficial and to advocate for focused attention instead. The passage begins by stating that conventional wisdom about multitasking 'has been thoroughly debunked,' uses research evidence to demonstrate why multitasking is counterproductive, and concludes with a direct call to action: 'It's time we abandoned this counterproductive practice and embraced the power of sustained, focused attention.' This argumentative structure reveals the author's persuasive intent to change readers' minds about multitasking.",
+  "distractorRationale": {
+    "A": "While the author does explain cognitive processes, this is not the main purpose but rather a means to support the argument against multitasking. The explanation serves the larger goal of persuasion.",
+    "B": "This is the correct answer.",
+    "C": "The author mentions workplaces and schools only briefly to establish context, not to describe various manifestations of multitasking in detail. This confuses a minor supporting detail with the main purpose.",
+    "D": "Although research findings are presented, they serve as evidence to support the author's argument rather than being the primary purpose. The author is not simply reporting research but using it persuasively."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:30:40.832Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "2e2d924d-d86b-4b4f-b2a0-ab335760e854"
+  },
+  "passage": "The conventional wisdom about multitasking—that it allows us to accomplish more in less time—has been thoroughly debunked by cognitive science research. Yet this myth persists in our workplaces and schools, where the ability to juggle multiple tasks simultaneously is often viewed as a valuable skill. The reality is far more sobering: what we call multitasking is actually rapid task-switching, and each switch comes with a cognitive cost. When we shift our attention from one task to another, our brains require time to refocus, leading to decreased efficiency and increased errors. Studies have shown that people who multitask take up to 25% longer to complete tasks compared to those who focus on one activity at a time. Perhaps most troubling, heavy multitaskers perform worse on tests of attention control and working memory—the very cognitive abilities that multitasking supposedly enhances. It's time we abandoned this counterproductive practice and embraced the power of sustained, focused attention.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 162,
+    "source": "Academic essay on cognitive psychology"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.958333333333333,
+    "evaluatedAt": "2026-01-08T14:36:04.552Z"
+  }
+}

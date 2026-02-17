@@ -1,0 +1,63 @@
+{
+  "id": "f7e8d9c0-1a2b-3c4d-5e6f-789012345678",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1
+  },
+  "stem": "Which quotation from the passage best supports the claim that community gardens provide economic benefits to residents?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Families here can grow their own tomatoes, peppers, and herbs for just the cost of seeds and water.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "\"My daughter now understands that carrots don't just appear in the supermarket—she's watched them grow from tiny seeds.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"These shared green spaces offer numerous benefits to city residents.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"The gardens also improve air quality by adding more plants to urban environments.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A is correct because it directly demonstrates the economic benefit of community gardens by showing how families can produce their own food at minimal cost (\"just the cost of seeds and water\"). This quotation provides specific evidence that growing food in community gardens is financially advantageous compared to purchasing produce from stores.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it provides direct evidence of economic benefits.",
+    "B": "This quotation supports educational benefits rather than economic benefits, focusing on a child's learning about food production.",
+    "C": "This is too general and doesn't specify economic benefits; it could refer to any type of benefit mentioned in the passage.",
+    "D": "This quotation supports environmental benefits (air quality improvement) rather than economic benefits."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:19:43.467Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "ecb24248-9c02-4c7b-8226-4456500e78c1"
+  },
+  "passage": "Community gardens have become increasingly popular in urban areas, and for good reason. These shared green spaces offer numerous benefits to city residents. First, they provide fresh, affordable produce to neighborhoods that often lack access to grocery stores with quality fruits and vegetables. Maria Santos, who manages a community garden in Detroit, explains, \"Families here can grow their own tomatoes, peppers, and herbs for just the cost of seeds and water.\" Additionally, community gardens create opportunities for neighbors to connect and work together. The gardens also improve air quality by adding more plants to urban environments. Finally, these spaces offer educational opportunities for children, who can learn about nutrition and where food comes from. As one parent noted, \"My daughter now understands that carrots don't just appear in the supermarket—she's watched them grow from tiny seeds.\"",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 148,
+    "source": "Adapted from urban development research"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T15:25:06.892Z"
+  }
+}

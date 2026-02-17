@@ -1,0 +1,63 @@
+{
+  "id": "f47b8c92-1e4d-4a5b-9c2f-8d3e7a6b5c4d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 3.1,
+    "linguistic": 2.7
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred about the Arctic terns' unusual behavior?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Climate change has disrupted the terns' internal biological clocks, causing them to migrate earlier than normal.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The terns relocated their breeding sites primarily to avoid increased human disturbance in their traditional coastal areas.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Food sources have become more abundant in inland areas, attracting the terns to new locations.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The terns' early arrival indicates they will have a more successful breeding season than in previous years.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage provides strong evidence supporting this inference through the contrast between abandoned coastal areas (which show 'increased human development' including 'new fishing operations, expanded port facilities, and regular helicopter tours') and the new inland breeding sites (which are all 'situated in recently established wildlife protection zones where human activity was strictly regulated'). The timing correlation—human activities began 'just two months prior' to the terns' behavioral change—further supports this logical inference about cause and effect.",
+  "distractorRationale": {
+    "A": "The passage explicitly states that 'coastal temperatures had remained within normal ranges,' and while the birds arrived early, there's no evidence connecting this to climate disrupting biological clocks rather than behavioral adaptation to human disturbance.",
+    "B": "This is the correct answer.",
+    "C": "The passage provides no information about food sources or their abundance in either coastal or inland areas, making this inference unsupported by the text.",
+    "D": "While the terns arrived early, the passage gives no indication about breeding success, and the disruption to their normal patterns could suggest challenges rather than improved outcomes."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:53:15.030Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "32e9fdb7-ad8d-4188-b5a6-e64e4e3fd00e"
+  },
+  "passage": "Dr. Martinez had been studying the migration patterns of Arctic terns for over a decade, but this season's data puzzled her. The birds had arrived at their breeding grounds three weeks earlier than usual, and their traditional nesting sites—typically bustling with activity by mid-June—remained largely abandoned. Instead, the terns had established new colonies nearly fifty miles inland, in areas that had never been documented as breeding locations. Local weather stations reported that coastal temperatures had remained within normal ranges, ruling out the most obvious explanation. However, Martinez noticed that the abandoned coastal areas showed signs of increased human development: new fishing operations, expanded port facilities, and regular helicopter tours that had begun operating just two months prior. Meanwhile, the inland sites where the terns had relocated shared a common characteristic—they were all situated in recently established wildlife protection zones where human activity was strictly regulated.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 156,
+    "source": "Adapted from ornithological research"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T14:57:20.289Z"
+  }
+}

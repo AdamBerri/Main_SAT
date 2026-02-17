@@ -1,0 +1,198 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.75,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but actual difficulty is 2.5/5 - severely overcalibrated by 2-3 difficulty levels",
+              "Computational difficulty rated 5/5 when problem requires only straightforward arithmetic with no complex calculations",
+              "Problem rated 4/5 but is a standard Algebra I procedure that 55-70% of students would answer correctly, not 30-40%"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Correct answer yields mathematically impossible negative water heights (-60 cm), yet this is designated as correct without acknowledging physical impossibility",
+              "Question asks for g(20) - f(20) which equals -90, but the answer key claims 210 is correct through unexplained reinterpretation",
+              "Mathematical solution gives t ≈ 35.36 minutes, but answer key designates 22.5 as correct despite verification showing this produces a 1.33:1 ratio instead of the required 2:1"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractors describe errors leading to different values (t=15) than the actual distractor choices, with vague 'arithmetic errors' to bridge the gap",
+              "Two distractors (A and D) target essentially the same misconception about confusing t-value with drainage rate, creating redundancy",
+              "Distractor rationales are internally contradictory, claiming students 'correctly found both values' but then didn't account for initial water"
+            ]
+          },
+          {
+            "category": "question_ambiguity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question states 'height IS 3 times what it was' but requires interpreting as 'height INCREASE equals 3 times the height' to reach the keyed answer",
+              "Natural reading of the question yields an answer (k=72) that is not among the choices, forcing unnatural interpretation",
+              "Multiple defensible interpretations exist, with different reasonable readings leading to answers A, C, or a value not listed"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5.197916666666667,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.494791666666667,
+        "passRate": 0.6875,
+        "errorCategories": [
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 8,
+            "exampleErrors": [
+              "Question rated 4/5 difficulty but is actually straightforward linear function problem requiring only basic substitution - should be 2-2.5/5",
+              "Stated as 5/5 (hardest) but involves routine algebra with clean numbers and no conceptual complexity - actually 2.5-3/5",
+              "Computational difficulty rated 4.1/5 when arithmetic is elementary (240-30=210, 15×2=30) - closer to 2.5-3/5"
+            ]
+          },
+          {
+            "category": "mathematical_correctness",
+            "frequency": 6,
+            "exampleErrors": [
+              "Designated correct answer is mathematically incorrect - the correct calculation yields 580, not the keyed answer of 610",
+              "Function given in problem (h(t) = 2.4t + 15.6) yields k = 28, but explanation switches to different function to match answer choice of 25",
+              "Algebraic solution produces t = 23.4 minutes, which doesn't match any answer choice; explanation retroactively changes problem parameters"
+            ]
+          },
+          {
+            "category": "distractor_design_flaws",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor rationales describe errors that don't mathematically produce the stated answer values (e.g., slope error of -7 should yield 620, not 690)",
+              "Distractors require multiple simultaneous errors that are implausible (e.g., conceptual error + arithmetic error + misreading)",
+              "Answer choice 28 justified with convoluted explanations like '(3+7)×5=50 then making an error' - when multiple explanations needed, it's a red flag"
+            ]
+          },
+          {
+            "category": "internal_inconsistency",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question asks for 'm + b' but distractor rationale claims question asks for 'm + 2b' - suggests question stem was edited without updating rationales",
+              "All distractor rationales reference coefficient 2.5 but actual function in question uses 2.4",
+              "Explanation calculates correct answer as 580 then declares 610 correct without addressing the discrepancy"
+            ]
+          },
+          {
+            "category": "answer_key_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Correct answer to 'm + b' is 84 (Choice A) but answer key designates 144 (Choice B) as correct",
+              "Mathematically correct answer (580) not among provided options (530, 610, 690, 770) - knowledgeable student cannot find their answer",
+              "Explanation explicitly shows f(40) = 130, then states f(0) + f(40) = 610 despite 450 + 130 = 580"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5.1875,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: difficulty_miscalibration, mathematical_correctness, distractor_design_flaws",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.958333333333333,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 8,
+            "exampleErrors": [
+              "Distractor D (720) has convoluted and unconvincing rationale with internal contradictions ($450 + 180 + 180 = 810$ vs. stated 720); lacks coherent error pathway",
+              "Distractor A (642) rationale is internally incoherent - claims slope is +8 but then uses equation that doesn't produce the stated value; arithmetic doesn't follow logical error pattern",
+              "Distractor C and D lack plausible error mechanisms - numbers appear in problem stem encouraging pattern-matching over computation; missing clear connection between stated misconception and final answer"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question stated as 3/5 difficulty but actual difficulty 1.5/5 - requires only direct substitution into provided formula with basic arithmetic (15×12=180, 450-180=270)",
+              "Stated 4/5 difficulty but actual 2.5/3.0 - problem is heavily scaffolded with given initial value and straightforward procedural execution with minimal decision-making",
+              "Stated 5/5 difficulty but actual 2.5-3/5 - no conceptual leaps needed, linear sequence of operations, straightforward execution with basic arithmetic"
+            ]
+          },
+          {
+            "category": "misconception_clarity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractor rationales are vague and don't clearly explain error pathways - e.g., 'confusing rate with time' doesn't specifically show how student arrives at answer choice",
+              "Multiple conflicting error scenarios described for single distractor without justification for which path student would follow - reads like overlapping draft attempts rather than finalized distractor",
+              "Distractor C rationale contradictory: claims student correctly calculates 80÷8=10 then states they divide 150÷10=15, but sequence doesn't make coherent sense"
+            ]
+          },
+          {
+            "category": "problem_design",
+            "frequency": 2,
+            "exampleErrors": [
+              "Answer choices numerically appear in problem stem - C and D distractors use values from stem (21 from f(5)-f(2)=21, 14 from f(3)-f(1)=14), encouraging recognition over computation rather than genuine discrimination",
+              "Answer choices B, C, D are artificially constructed rather than error-derived - lack authentic misconception pathways reflecting how students would naturally make mistakes"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Problem is mathematically underdetermined - only constrains slope (m=7), not y-intercept (b=k); multiple valid values of k produce different answers, making designated answer A (-35) not unambiguously correct without additional constraint"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.833333333333333,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, misconception_clarity",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T19:49:18.364Z",
+  "completedAt": "2026-01-09T20:16:49.956Z",
+  "bestTestScore": 5.1875
+}

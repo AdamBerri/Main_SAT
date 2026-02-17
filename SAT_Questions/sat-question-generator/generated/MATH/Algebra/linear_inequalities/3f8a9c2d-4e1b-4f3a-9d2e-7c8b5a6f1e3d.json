@@ -1,0 +1,54 @@
+{
+  "id": "3f8a9c2d-4e1b-4f3a-9d2e-7c8b5a6f1e3d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "computational": 1
+  },
+  "stem": "A student needs to score at least 75 points on a test to pass. If the student has already answered questions worth 42 points, which inequality represents the number of additional points, $p$, the student needs to pass the test?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$p \\geq 33$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$p \\leq 33$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$p \\geq 117$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$p > 33$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The student needs a total of at least 75 points to pass. Since the student already has 42 points, we need to find how many additional points $p$ are required.\n\nThe total points will be: $42 + p$\n\nFor the student to pass, this total must be at least 75:\n$$42 + p \\geq 75$$\n\nSubtracting 42 from both sides:\n$$p \\geq 75 - 42$$\n$$p \\geq 33$$\n\nVerification: If $p = 33$ (boundary), total = $42 + 33 = 75$ ✓ (exactly passes)\nIf $p = 40$ (interior value), total = $42 + 40 = 82$ ✓ (passes)\nIf $p = 30$ (outside), total = $42 + 30 = 72$ ✗ (fails, as expected)\n\nThe answer is A.",
+  "distractorRationale": {
+    "A": "This is the correct answer. The student needs at least 33 additional points to reach the passing threshold of 75.",
+    "B": "This reverses the inequality direction. A student who believes 'at least' translates to ≤ instead of ≥ would select this. This would incorrectly suggest the student needs 33 or fewer points to pass.",
+    "C": "This adds 42 and 75 instead of subtracting. A student who misunderstands the relationship between current points and needed points might add them together, getting $p \\geq 117$.",
+    "D": "This uses strict inequality instead of non-strict. A student who confuses 'at least' (≥) with 'more than' (>) would select this. While $p = 33$ exactly allows passing, this choice incorrectly excludes that boundary value."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:38.733Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "e2092aa9-6bda-471d-ac96-841bd7e1a8a0"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

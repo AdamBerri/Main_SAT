@@ -1,0 +1,58 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 3.1
+  },
+  "stem": "As used in the text, what does the word \"command\" most nearly mean?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "dominate",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "order",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "deserve",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "control",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this context, \"command\" means to dominate or have a commanding presence over. The passage describes how the dome's physical presence dominated Florence's skyline and established visual hierarchy. The phrase \"command the skyline\" is an idiomatic expression meaning to be the dominant visual feature, which aligns with \"dominate.\" The context emphasizes the dome's physical prominence and visual superiority rather than authority, control over people, or merit.",
+  "distractorRationale": {
+    "A": "This is the correct answer. The context of the dome's presence over the skyline and its role in establishing visual hierarchy indicates dominance or commanding presence in a physical, spatial sense.",
+    "B": "While \"command\" can mean to give orders or direct, this meaning requires a human subject exercising authority over others. The passage describes a building's physical presence over a skyline, not the issuing of directives or instructions.",
+    "C": "Though \"command\" can mean to deserve or be worthy of (as in \"command respect\"), the passage focuses on the dome's actual physical presence and influence on urban planning, not on whether it merits attention or admiration.",
+    "D": "While \"control\" might seem plausible, \"command\" in the context of dominating a skyline refers to visual prominence rather than exercising power or regulation. The dome doesn't control the skyline in the sense of managing or directing it; rather, it dominates it through sheer presence. Additionally, the passage emphasizes the dome as a reference point that influenced subsequent decisions, not as an agent controlling those decisions."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:30.296Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "58986521-aa53-4e3e-aefe-7135a5fd2584"
+  },
+  "passage": "In her study of Renaissance architecture, Professor Chen argues that the dome of Florence Cathedral represents a pivotal moment in engineering history. The structure's innovative design allowed it to **command** the city's skyline for centuries, establishing a visual hierarchy that influenced urban planning throughout Italy. Brunelleschi's creation became the reference point by which all subsequent civic buildings were positioned and proportioned.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 62,
+    "source": "Simulated academic text on architectural history"
+  },
+  "hasImage": false
+}

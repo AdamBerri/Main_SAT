@@ -1,0 +1,58 @@
+{
+  "id": "a7f3c8d2-4e91-4b3a-9c5e-2d8f1a6b3e4c",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.7,
+    "procedural": 3.2,
+    "linguistic": 2.7
+  },
+  "stem": "The student wants to explain why urban green spaces improve public health outcomes. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Urban green spaces improve public health because cities with more parks report lower rates of respiratory illness, and studies show neighborhoods with significant tree coverage have better air quality.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Because urban vegetation filters air by trapping particulate matter and absorbing pollutants, cities with more parks and tree-lined streets report lower rates of respiratory illness among residents.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Cities with parks and tree-lined streets have lower respiratory illness rates, while neighborhoods with at least 20% tree canopy coverage show significantly better air quality than less vegetated areas.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Urban vegetation improves air quality in neighborhoods with sufficient tree coverage, and improved air quality reduces respiratory conditions like asthma.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B most effectively accomplishes the goal of explaining why urban green spaces improve public health outcomes. It establishes a clear causal chain by first identifying the mechanism (vegetation filters air by trapping particulates and absorbing pollutants), then connecting this mechanism to the health outcome (lower rates of respiratory illness). This structure directly answers 'why' by explaining the process through which green spaces affect health, making the relationship between urban vegetation and public health improvements explicit and logical.",
+  "distractorRationale": {
+    "A": "This choice presents correlational observations (cities with parks have lower illness rates; neighborhoods with trees have better air quality) but fails to explain the causal mechanism connecting green spaces to health outcomes. It describes what happens without explaining why, leaving the reader to infer the connection between vegetation and respiratory health.",
+    "B": "This is the correct answer.",
+    "C": "This choice simply lists two separate observations without establishing any causal relationship between them. It presents data points about respiratory illness and air quality but doesn't explain how urban vegetation produces these outcomes or connect the air quality findings to health improvements.",
+    "D": "While this choice mentions that vegetation improves air quality and that air quality affects respiratory health, it omits the crucial explanatory detail of how vegetation improves air quality (the filtering mechanism). Without this mechanism, the explanation remains incomplete and doesn't fully address why green spaces lead to better health outcomes."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:26.519Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "f8423a16-9a2c-4cd4-b6cb-645138ffbf23"
+  },
+  "passage": "While researching the impact of urban green spaces on public health for a community planning report, a student took the following notes:\n\n• Cities with more parks and tree-lined streets report lower rates of respiratory illness among residents.\n• Urban vegetation acts as a natural air filter, trapping particulate matter and absorbing pollutants like nitrogen dioxide.\n• Studies show that neighborhoods with at least 20% tree canopy coverage have significantly better air quality than those with less vegetation.\n• Improved air quality in these areas directly reduces the incidence of asthma and other respiratory conditions.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 98,
+    "source": "Original content for SAT-style question"
+  },
+  "hasImage": false
+}

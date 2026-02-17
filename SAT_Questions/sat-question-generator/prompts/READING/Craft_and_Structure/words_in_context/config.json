@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "currentVersion": "1.4.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Reading question that tests vocabulary in context.\n\nThe passage should:\n- Use a word with multiple possible meanings\n- Provide enough context to determine the intended meaning\n- Use the word in a natural, academic context\n\nThe question should:\n- Ask what the underlined word \"most nearly means\" in context\n- Have a correct answer that matches the contextual usage\n- Include distractors that are other valid meanings of the word but wrong in context\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.312Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/READING/Craft_and_Structure/words_in_context/schema.json"
+}

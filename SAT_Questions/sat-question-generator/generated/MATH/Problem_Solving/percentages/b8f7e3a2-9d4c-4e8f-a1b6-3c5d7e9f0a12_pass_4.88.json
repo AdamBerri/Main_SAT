@@ -1,0 +1,59 @@
+{
+  "id": "b8f7e3a2-9d4c-4e8f-a1b6-3c5d7e9f0a12",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3,
+    "computational": 3
+  },
+  "stem": "A store is having a sale where all items are marked down 25%. Sarah buys a jacket during the sale and pays $84. The next week, the store increases all prices by 20%. What is the price of the same jacket after this price increase?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$100.80",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$134.40",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$126.00",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$112.00",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "First, find the original price of the jacket before the 25% markdown. If the jacket was marked down 25%, then Sarah paid 75% of the original price. Let $x$ be the original price. Then: $0.75x = 84$, so $x = 84 ÷ 0.75 = 112$. The original price was $112.\n\nNext, calculate the price after a 20% increase from the original price. A 20% increase means the new price is 120% of the original price: $112 × 1.20 = 134.40$.\n\nTherefore, the price of the jacket after the 20% increase is $134.40.",
+  "distractorRationale": {
+    "A": "This results from applying the 20% increase to the sale price ($84) instead of the original price: $84 × 1.20 = $100.80",
+    "B": "This is the correct answer: original price of $112 increased by 20% gives $112 × 1.20 = $134.40",
+    "C": "This results from incorrectly calculating the original price as $105 (perhaps from $84 ÷ 0.8 = $105) and then applying 20% increase: $105 × 1.20 = $126",
+    "D": "This is just the original price without applying the 20% increase, showing the student found the pre-sale price correctly but forgot the final step"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:43:55.728Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "a42116e5-bce2-4ca9-8d81-2dda6bdc8de0"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.875,
+    "evaluatedAt": "2026-01-08T15:49:58.151Z"
+  }
+}

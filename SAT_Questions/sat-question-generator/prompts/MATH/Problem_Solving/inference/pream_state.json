@@ -1,0 +1,198 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.96875,
+        "passRate": 0.8125,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but actually 3.5-4/5 due to single-concept application and straightforward calculation (400 × 4 = 1,600)",
+              "Computational difficulty rated 5/5 when actual computation is simply basic arithmetic (2.5/5 actual)",
+              "Overall difficulty 3/5 overstated as 2.3-2.5/5 due to minimal computational burden and standard statistics concept"
+            ]
+          },
+          {
+            "category": "component_difficulty_inconsistency",
+            "frequency": 4,
+            "exampleErrors": [
+              "Computational difficulty rated 4.8/5 but actual is 2/5 - simple multiplication with clean numbers",
+              "Procedural difficulty 2.8/5 doesn't match the minimal two-step process (calculate proportion, apply margin)",
+              "Sub-difficulty ratings (Conceptual: 1.3, Procedural: 1.2) suggest overall should be higher than stated 1.0/5"
+            ]
+          },
+          {
+            "category": "sat_content_mismatch",
+            "frequency": 3,
+            "exampleErrors": [
+              "Tests confidence intervals and margin of error calculations which are AP Statistics content, not SAT Math curriculum",
+              "SAT deliberately excludes inferential statistics and hypothesis testing - this question requires understanding ME ∝ 1/√n",
+              "Uses technical statistical terminology like '95% confidence level' and 'margin of error' inappropriate for SAT vocabulary"
+            ]
+          },
+          {
+            "category": "question_style_deviation",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question stem is excessively verbose and technical for SAT standards - real SAT questions are more concise",
+              "Scenario feels like textbook statistics problem rather than standardized test item with overly academic context"
+            ]
+          },
+          {
+            "category": "difficulty_underestimation",
+            "frequency": 1,
+            "exampleErrors": [
+              "Rated 1/5 difficulty but actually 1.5-2/5 because it tests statistical reasoning about inference and uncertainty, not just calculation",
+              "Expected 85-95% correct at 1/5 but predicted 70-80% actual performance suggests 2/5 difficulty"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5.194444444444444,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, component_difficulty_inconsistency, sat_content_mismatch",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.8802083333333335,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty tests a fundamental, explicitly-taught concept (sampling bias) with straightforward elimination logic; actual difficulty closer to 2.5-3/5",
+              "Question rated 3/5 difficulty actually measures 2.2/5; tests selection bias recognition with transparent answer choices and no multi-step inference required",
+              "Question rated 5/5 difficulty tests standard introductory statistics concept (confidence intervals vs. point estimates) with zero required computation; actual difficulty 3.5/5"
+            ]
+          },
+          {
+            "category": "ambiguous_correct_answer",
+            "frequency": 1,
+            "exampleErrors": [
+              "Multiple answer choices (A, B, D) present statistically valid reasoning, but only B is marked correct without adequately explaining why other options are inferior",
+              "Answer B is defensibly correct for sampling bias, but D's statement that 'random selection does not guarantee representative samples' is logically true and applies directly to the scenario"
+            ]
+          },
+          {
+            "category": "weak_distractor_design",
+            "frequency": 1,
+            "exampleErrors": [
+              "Choice B (280) lacks theoretical foundation and doesn't correspond to an obvious student misconception; appears arbitrary rather than representing a natural calculation error"
+            ]
+          },
+          {
+            "category": "minor_calibration_misalignment",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question rated 1/5 difficulty is actually 1.5/5; 'approximately vs. exactly' distinction and inverse calculation trap create additional cognitive load beyond basic percentage computation"
+            ]
+          },
+          {
+            "category": "computational_assessment_error",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question rated as having 5/5 computational difficulty despite being entirely conceptual with zero required calculations; computational rating appears to be assessment error"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.25,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, ambiguous_correct_answer, weak_distractor_design",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.114583333333333,
+        "passRate": 0.875,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question stated as 5/5 difficulty but actual difficulty is 3.5-4/5 due to explicit guidance in stem and straightforward elimination strategy without requiring deep conceptualization",
+              "Question marked 4/5 difficulty but actual difficulty is 2.5-3/5 because calculation is basic proportion scaling (68/200 × 8,000) requiring only elementary arithmetic",
+              "Question rated 5/5 difficulty but actual difficulty is 3.5-4/5 because confidence interval is provided explicitly with zero computation required; students only interpret given information"
+            ]
+          },
+          {
+            "category": "computational_vs_conceptual_mismatch",
+            "frequency": 3,
+            "exampleErrors": [
+              "Computational difficulty marked 4.1/5 but actual computation is simple proportion/scaling with no complex calculations needed",
+              "Conceptual difficulty rated 4/5 while procedural difficulty is only 2/5 because the interval is given; rating conflates conceptual rigor with procedural complexity",
+              "Question has zero computation required but rated as 5/5 difficulty; true 5/5 questions typically demand both conceptual AND procedural/computational challenge"
+            ]
+          },
+          {
+            "category": "answer_key_logic_flaw",
+            "frequency": 2,
+            "exampleErrors": [
+              "Answer choice A is marked correct but logically incomplete—the arithmetic is correct (68/200 × 8,000 = 2,720) but doesn't validate the inference as statistically sound; authentic SAT questions differentiate between 'math works' and 'inference is valid'",
+              "Answer key accepts choice A without acknowledging that correct arithmetic alone doesn't establish statistical validity; should require qualifying the claim as a 'reasonable estimate' rather than definitive proof"
+            ]
+          },
+          {
+            "category": "weak_distractor_design",
+            "frequency": 2,
+            "exampleErrors": [
+              "Choice B criticizes sample size as 'too small' when 200 from 8,000 (2.5%) is actually reasonable for many statistical purposes, contradicting standard practice and making the distractor unrealistic",
+              "Choices B, C, and D have unclear or overly broad logic; Choice C makes unfounded selection bias claims without evidence, and Choice D conflates 'opportunity to participate' with actual representativeness in misleading ways"
+            ]
+          },
+          {
+            "category": "insufficient_statistical_nuance",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question tests whether students can multiply proportions correctly rather than evaluating validity of statistical inference; lacks acknowledgment of sampling variability and margin of error typical of authentic SAT inference questions",
+              "Missing elements of authentic SAT inference questions: doesn't address whether sample was truly random, doesn't discuss confidence levels or potential bias, and lacks nuance found in College Board questions"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.9375,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, computational_vs_conceptual_mismatch, answer_key_logic_flaw",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:32:05.145Z",
+  "completedAt": "2026-01-09T20:24:12.220Z",
+  "bestTestScore": 5.194444444444444
+}

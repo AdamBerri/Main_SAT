@@ -1,0 +1,63 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.1,
+    "procedural": 1.1,
+    "linguistic": 1.1
+  },
+  "stem": "The author's main purpose in this passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "explain the history and question the validity of a common health belief.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "describe the various sources of water in the human diet.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "argue that people should never drink eight glasses of water per day.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "discuss the importance of staying hydrated for good health.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The author's main purpose is to explain the history and question the validity of the \"eight glasses of water a day\" belief. The passage traces the origin of this advice to a 1945 recommendation, explains how the original meaning was distorted over time, and presents recent research suggesting the rule may be unnecessary. The author uses phrases like \"may not be based on solid scientific evidence\" and \"this detail was forgotten\" to challenge the validity of this common health belief while providing historical context.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "While the passage mentions water from food and other beverages, describing various water sources is not the main purpose—it's just supporting detail used to explain how the original recommendation was misunderstood.",
+    "C": "The author does not argue that people should never drink eight glasses of water; rather, they suggest it may be unnecessary for many people and that drinking when thirsty may be sufficient.",
+    "D": "Although the passage acknowledges that staying hydrated is important, the main focus is on questioning a specific hydration rule rather than discussing the general importance of hydration."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:59:58.490Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "ad0b79a4-bf46-43d2-b977-bfa1272d5174"
+  },
+  "passage": "Many people believe that drinking eight glasses of water daily is essential for good health, but this widely accepted advice may not be based on solid scientific evidence. The \"eight glasses a day\" rule appears to have originated from a 1945 recommendation by the Food and Nutrition Board, which suggested that people need about 2.5 liters of water daily. However, this recommendation included water from all sources—not just drinking water, but also water from food, coffee, tea, and other beverages. Over the decades, this detail was forgotten, and the simplified \"eight glasses\" message became popular wisdom. Recent medical research suggests that most healthy adults can simply drink when they feel thirsty, as the human body has evolved sophisticated mechanisms to regulate hydration. While staying hydrated is certainly important, the specific requirement of eight glasses may be unnecessary for many people.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 146,
+    "source": "Health and wellness article"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T15:03:16.760Z"
+  }
+}

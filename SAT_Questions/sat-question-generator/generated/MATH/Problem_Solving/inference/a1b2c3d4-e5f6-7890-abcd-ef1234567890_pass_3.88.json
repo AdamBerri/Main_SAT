@@ -1,0 +1,59 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.1,
+    "procedural": 1.3,
+    "computational": 1.2
+  },
+  "stem": "A researcher surveys 200 randomly selected high school students and finds that 120 of them prefer online learning to in-person learning. Which of the following best describes what the researcher can conclude?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Exactly 60% of all high school students prefer online learning.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The sample suggests that approximately 60% of all high school students may prefer online learning.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "More than half of all high school students definitely prefer online learning.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The 200 students surveyed represent the entire population of high school students.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The researcher surveyed a sample of 200 students and found that $\\frac{120}{200} = 0.60 = 60\\%$ prefer online learning. However, this is just a sample statistic, not a population parameter. The sample provides evidence about the population, but we cannot make definitive claims about the entire population based on one sample. The most appropriate conclusion is that the sample suggests approximately 60% of all high school students may prefer online learning, acknowledging the uncertainty inherent in statistical inference from samples.",
+  "distractorRationale": {
+    "A": "This choice incorrectly treats the sample statistic as if it were the exact population parameter, ignoring sampling variability.",
+    "B": "This is the correct answer as it appropriately uses tentative language ('suggests', 'approximately', 'may') to indicate inference from sample to population.",
+    "C": "This choice makes a definitive claim about the population based on sample data, which is inappropriate in statistical inference.",
+    "D": "This choice incorrectly suggests that a sample of 200 students represents the entire population, misunderstanding the concept of sampling."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:48:55.951Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "7587c623-915e-477d-aa82-9e55e49f542a"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.875,
+    "evaluatedAt": "2026-01-08T15:52:50.688Z"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SAT Math Question",
+  "description": "Schema for SAT Math section questions",
+  "type": "object",
+  "required": [
+    "id",
+    "topic",
+    "difficulty",
+    "stem",
+    "choices",
+    "correctAnswer",
+    "explanation",
+    "distractorRationale",
+    "hasImage",
+    "requiresCalculator",
+    "answerType",
+    "metadata"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for this question"
+    },
+    "topic": {
+      "type": "object",
+      "required": ["section", "domain", "subtopic"],
+      "properties": {
+        "section": {
+          "type": "string",
+          "const": "MATH"
+        },
+        "domain": {
+          "type": "string",
+          "enum": [
+            "Algebra",
+            "Advanced_Math",
+            "Problem_Solving",
+            "Geometry_Trig"
+          ]
+        },
+        "subtopic": {
+          "type": "string",
+          "enum": [
+            "linear_equations",
+            "linear_functions",
+            "systems_of_equations",
+            "linear_inequalities",
+            "equivalent_expressions",
+            "nonlinear_equations",
+            "nonlinear_functions",
+            "ratios_rates",
+            "percentages",
+            "units",
+            "data_distributions",
+            "probability",
+            "inference",
+            "evaluating_claims",
+            "two_variable_data",
+            "area_volume",
+            "lines_angles",
+            "triangles",
+            "circles",
+            "right_triangles"
+          ]
+        }
+      }
+    },
+    "difficulty": {
+      "type": "object",
+      "required": ["overall", "conceptual", "procedural", "computational"],
+      "properties": {
+        "overall": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "conceptual": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "procedural": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "computational": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 5
+        }
+      }
+    },
+    "stem": {
+      "type": "string",
+      "description": "The question stem/prompt. Use LaTeX notation for math: $x^2$ for inline, $$...$$ for display",
+      "minLength": 10
+    },
+    "choices": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["label", "text", "isCorrect"],
+        "properties": {
+          "label": {
+            "type": "string",
+            "enum": ["A", "B", "C", "D"]
+          },
+          "text": {
+            "type": "string",
+            "description": "Answer choice text. Use LaTeX for math expressions",
+            "minLength": 1
+          },
+          "isCorrect": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "correctAnswer": {
+      "type": "string",
+      "enum": ["A", "B", "C", "D"]
+    },
+    "explanation": {
+      "type": "string",
+      "description": "Step-by-step solution with LaTeX math notation",
+      "minLength": 50
+    },
+    "distractorRationale": {
+      "type": "object",
+      "description": "Explanation of the specific error each distractor represents",
+      "properties": {
+        "A": { "type": "string" },
+        "B": { "type": "string" },
+        "C": { "type": "string" },
+        "D": { "type": "string" }
+      }
+    },
+    "hasImage": {
+      "type": "boolean",
+      "description": "Whether this question requires an accompanying image"
+    },
+    "imageDescription": {
+      "type": "string",
+      "description": "Detailed description for image generation (if hasImage is true)"
+    },
+    "imagePath": {
+      "type": "string",
+      "description": "Path to the generated image file (populated after image generation)"
+    },
+    "requiresCalculator": {
+      "type": "boolean",
+      "description": "Whether a calculator is needed for this question"
+    },
+    "answerType": {
+      "type": "string",
+      "enum": ["multiple_choice", "grid_in"],
+      "description": "Whether this is multiple choice or student-produced response"
+    },
+    "gridInAnswer": {
+      "type": "string",
+      "description": "The correct answer for grid-in questions (if answerType is grid_in)"
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["generatedAt", "promptVersion", "modelUsed", "generationId"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "promptVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "modelUsed": {
+          "type": "string"
+        },
+        "generationId": {
+          "type": "string",
+          "format": "uuid"
+        }
+      }
+    }
+  }
+}

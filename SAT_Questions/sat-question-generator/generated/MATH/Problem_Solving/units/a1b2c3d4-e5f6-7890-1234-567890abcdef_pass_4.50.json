@@ -1,0 +1,59 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.2
+  },
+  "stem": "A water tank is being filled at a rate of 15 gallons per minute. If the tank needs to hold 2,700 gallons when full, how many hours will it take to fill the empty tank?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "2.5",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "3",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "45",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "180",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To find the time needed to fill the tank, I need to divide the total capacity by the filling rate, then convert to hours.\n\nFirst, find the time in minutes:\nTime = Total capacity ÷ Rate\nTime = 2,700 gallons ÷ 15 gallons per minute = 180 minutes\n\nNext, convert minutes to hours:\n180 minutes × (1 hour ÷ 60 minutes) = 180 ÷ 60 = 3 hours\n\nTherefore, it will take 3 hours to fill the empty tank.",
+  "distractorRationale": {
+    "A": "This results from incorrectly calculating 2,700 ÷ 15 = 180, then dividing by 60 incorrectly as 180 ÷ 72 = 2.5",
+    "B": "This is the correct answer: 180 minutes converted to 3 hours",
+    "C": "This results from calculating 2,700 ÷ 60 = 45, confusing the conversion factor with the rate",
+    "D": "This is the time in minutes (2,700 ÷ 15 = 180) without converting to hours"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:47:53.480Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "e44ee2a0-31e2-4b23-9723-cb2681b49583"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.5,
+    "evaluatedAt": "2026-01-08T15:50:40.485Z"
+  }
+}

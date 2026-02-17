@@ -1,0 +1,62 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 1.7,
+    "linguistic": 1.7
+  },
+  "stem": "Which quotation from the passage best supports the claim that vertical farming offers significant advantages over traditional agriculture?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"We're seeing harvests every 35 days instead of the typical 60-90 day cycles of outdoor farming.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "\"Critics argue that the high energy costs associated with LED lighting make vertical farming economically unsustainable.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"The rise of urban vertical farming represents a promising solution to food security challenges in densely populated cities.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"Recent advances in energy-efficient lighting technology are steadily reducing these operational expenses.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A provides the best textual evidence supporting the claim that vertical farming offers significant advantages over traditional agriculture. The quotation directly compares vertical farming's harvest cycle (35 days) to traditional outdoor farming (60-90 days), demonstrating a concrete, measurable advantage. This specific comparison with numerical data clearly illustrates how vertical farming outperforms conventional methods in terms of production speed and efficiency.",
+  "distractorRationale": {
+    "A": "This is the correct answer as it provides specific comparative evidence.",
+    "B": "This quotation actually presents a disadvantage of vertical farming, not an advantage, making it contrary to the claim being supported.",
+    "C": "While this statement is positive about vertical farming, it merely restates the general claim rather than providing specific evidence to support it.",
+    "D": "This quotation addresses improvements in vertical farming technology but doesn't directly compare it to traditional agriculture or demonstrate a clear advantage."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:24:27.847Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "e21da730-87a5-4bf4-8355-58b008123995"
+  },
+  "passage": "The rise of urban vertical farming represents a promising solution to food security challenges in densely populated cities. Unlike traditional agriculture, which requires vast horizontal spaces, vertical farms utilize stacked growing systems in controlled indoor environments. These facilities can produce crops year-round, regardless of weather conditions or seasonal limitations. A study conducted in Singapore found that vertical farms can yield up to 390 times more produce per square foot than conventional farms. Additionally, vertical farming eliminates the need for pesticides and herbicides, as the controlled environment prevents pest infestations naturally. \"We're seeing harvests every 35 days instead of the typical 60-90 day cycles of outdoor farming,\" explains Dr. Maria Santos, an agricultural researcher. The technology also addresses water conservation concerns, with vertical farms using 95% less water than traditional farming methods through precise irrigation systems. Critics argue that the high energy costs associated with LED lighting make vertical farming economically unsustainable, but recent advances in energy-efficient lighting technology are steadily reducing these operational expenses.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 178,
+    "source": "Agricultural Technology Review"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T14:29:43.291Z"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "currentVersion": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Reading question that tests the student's ability to use quantitative data from a chart, graph, or table to support or weaken a claim.\n\nThis is the QUANTITATIVE version of Command of Evidence - students must interpret visual data, not textual quotes.\n\n## TWO-STAGE GENERATION\n\n### Stage 1: Generate the Data\nFirst, create a realistic dataset for one of these chart types:\n- Bar Chart: 3-6 categories with comparative values\n- Line Graph: 4-6 time points showing trends (can have 1-2 series)\n- Data Table: 3-5 rows with 2-4 columns of related data\n\nThe data should come from a realistic domain (science, economics, social science, health, environment) and support interesting comparisons, trends, or relationships.\n\n### Stage 2: Generate the Question\nCreate a short passage (2-3 sentences) that introduces a researcher/study and makes a claim (causal, correlational, comparative, or trend-based).\n\nThe question stem should ask students to support, weaken, or complete the claim using data from the figure.\n\n## ANSWER REQUIREMENTS\nCorrect Answer (A): Must accurately cite specific data that directly addresses the claim.\n\nDistractors (B, C, D): Each uses a different strategy:\n1. Misread value - adjacent category/row value\n2. Wrong comparison - reversed relationship\n3. Opposite trend - flipped direction\n4. Percentage confusion - absolute vs percentage\n5. Irrelevant data - wrong year/category\n6. Extrapolation error - beyond data shown\n\n## OUTPUT\nOutput JSON with: passage, stem, choices, correctAnswer, explanation, distractorRationale, hasImage (true), imageDescription (detailed chart spec with ALL data values), chartData (structured data), passageMetadata, difficulty.\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-11T12:00:00.000Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/READING/Information_and_Ideas/command_of_evidence_quantitative/schema.json"
+}

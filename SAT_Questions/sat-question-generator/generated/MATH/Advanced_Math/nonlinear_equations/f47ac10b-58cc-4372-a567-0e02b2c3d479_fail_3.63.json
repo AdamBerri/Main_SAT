@@ -1,0 +1,59 @@
+{
+  "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "computational": 1
+  },
+  "stem": "What are the solutions to the equation $x^2 - 5x + 6 = 0$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$x = 2$ and $x = 3$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$x = -2$ and $x = -3$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$x = 1$ and $x = 6$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$x = -1$ and $x = -6$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To solve $x^2 - 5x + 6 = 0$, we can factor the quadratic expression. We need two numbers that multiply to 6 and add to -5. Those numbers are -2 and -3. So we can write: $x^2 - 5x + 6 = (x - 2)(x - 3) = 0$. Using the zero product property, either $x - 2 = 0$ or $x - 3 = 0$. Therefore, $x = 2$ or $x = 3$.",
+  "distractorRationale": {
+    "A": "This is the correct answer obtained by properly factoring the quadratic.",
+    "B": "This results from incorrectly factoring as $(x + 2)(x + 3) = 0$, likely from sign errors.",
+    "C": "This results from incorrectly factoring as $(x - 1)(x - 6) = 0$, confusing the factors of the constant term.",
+    "D": "This results from incorrectly factoring as $(x + 1)(x + 6) = 0$, combining sign errors with incorrect factorization."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:39:31.966Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "da63bcd3-6ed2-4046-a830-a4afebdea435"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.625,
+    "evaluatedAt": "2026-01-08T15:44:37.406Z"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "f47c8d2e-9b1a-4c6f-8e7d-3a5b9c1f2d4e",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.7,
+    "procedural": 4.2,
+    "linguistic": 4
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "each of which contain philosophical texts that scholars believe were part of a private library.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "each of which contains philosophical texts that scholars believe were part of a private library.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "each of them contain philosophical texts that scholars believe were part of a private library.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "each of them containing philosophical texts that scholars believe were part of a private library.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because 'each' is a singular pronoun that requires the singular verb form 'contains.' The phrase 'each of which' refers to individual scrolls taken one at a time, making the subject singular despite the plural noun 'scrolls' in the prepositional phrase 'of which.' The relative pronoun 'which' is also appropriate here because it refers to the inanimate noun 'scrolls.'",
+  "distractorRationale": {
+    "A": "This choice incorrectly uses the plural verb 'contain' with the singular subject 'each.' The word 'each' always takes a singular verb regardless of the plural noun that follows in a prepositional phrase.",
+    "B": "This is the correct answer.",
+    "C": "This choice incorrectly uses 'them' instead of 'which.' The pronoun 'them' cannot introduce a relative clause, and the plural verb 'contain' is incorrect with the singular subject 'each.'",
+    "D": "This choice uses 'them' instead of the relative pronoun 'which,' making it grammatically incorrect. Additionally, 'containing' creates a participial phrase that doesn't properly complete the sentence structure."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:33:05.787Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "ddaf0834-75d2-4757-8249-92c372027a4d"
+  },
+  "passage": "The recent archaeological discoveries in the ancient city of Pompeii have revealed not only well-preserved frescoes and mosaics but also insights into daily life that historians had never before encountered. Among the most significant findings are a collection of carbonized scrolls, each of which contain philosophical texts that scholars believe were part of a private library. The preservation of these documents, along with household items and even loaves of bread, provide an unprecedented glimpse into Roman civilization at the moment of the volcanic eruption in 79 CE.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 94,
+    "source": "Adapted from archaeological research"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.071428571428571,
+    "evaluatedAt": "2026-01-08T15:37:44.164Z"
+  }
+}

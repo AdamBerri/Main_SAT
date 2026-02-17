@@ -1,0 +1,62 @@
+{
+  "id": "a7b9c3e5-2f4d-4a8b-9e1c-6d7f8a9b0c2e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.1,
+    "linguistic": 4
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred about art historical scholarship prior to the 1980s restoration?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Art historians deliberately ignored evidence of Michelangelo's use of bright colors in order to support established theories.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Scholars had developed their interpretations of Michelangelo's artistic style based on incomplete visual evidence.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The academic community was aware that environmental factors had altered the appearance of Renaissance artworks but chose not to investigate further.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Art history textbooks contained deliberate misrepresentations of Michelangelo's color preferences to make his work seem more sophisticated.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage indicates that art historians had characterized Michelangelo as a 'somber colorist who favored muted earth tones' based on what they could see of the darkened frescoes. However, the restoration revealed that 'centuries of candle smoke, incense, and accumulated grime had darkened the frescoes' and that the original colors were actually 'brilliant blues, vibrant pinks, and luminous yellows.' This suggests that scholars had formed their interpretations based on the altered appearance of the artwork, not on the original colors. The fact that 'art history textbooks that had praised Michelangelo's restrained use of color suddenly seemed obsolete' further supports the inference that previous scholarship was based on incomplete visual evidence.",
+  "distractorRationale": {
+    "A": "The passage provides no evidence that historians 'deliberately ignored' anything. Rather, it suggests they were working with the visual evidence available to them, which happened to be obscured by centuries of accumulated damage.",
+    "C": "There is no indication in the passage that scholars were aware of environmental damage but chose not to investigate. The text suggests the extent of the alteration was not fully understood until the restoration revealed the dramatic difference.",
+    "D": "The passage does not suggest any deliberate misrepresentation. The characterization of Michelangelo's 'restrained use of color' appears to have been an honest interpretation based on what scholars could observe in the darkened frescoes."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:52:54.860Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "ea0d087e-e3cf-482f-a15e-95a0531cf024"
+  },
+  "passage": "The restoration of the Sistine Chapel ceiling in the 1980s revealed startling discoveries about Michelangelo's original work. Centuries of candle smoke, incense, and accumulated grime had darkened the frescoes to such an extent that art historians had long characterized Michelangelo as a somber colorist who favored muted earth tones. The painstaking cleaning process, however, unveiled brilliant blues, vibrant pinks, and luminous yellows that had been hidden beneath layers of soot. Critics initially denounced the restoration as overly aggressive, arguing that the newly revealed colors were too garish to be authentic. Yet chemical analysis of paint samples confirmed that these vivid hues were indeed Michelangelo's original palette. The controversy intensified when scholars realized that their fundamental understanding of Renaissance color theory would need to be reconsidered. Art history textbooks that had praised Michelangelo's 'restrained use of color' suddenly seemed obsolete, and museum curators worldwide began to question whether other masterpieces might be similarly obscured by centuries of environmental damage.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 167,
+    "source": "Art history analysis"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.291666666666667,
+    "evaluatedAt": "2026-01-08T14:57:20.288Z"
+  }
+}

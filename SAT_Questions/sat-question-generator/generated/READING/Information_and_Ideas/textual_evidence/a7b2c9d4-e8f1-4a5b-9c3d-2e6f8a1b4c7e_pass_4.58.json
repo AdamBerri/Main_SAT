@@ -1,0 +1,62 @@
+{
+  "id": "a7b2c9d4-e8f1-4a5b-9c3d-2e6f8a1b4c7e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "stem": "Based on the relationship between Text 1, Text 2, and the employment data, which conclusion is most strongly supported?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The employment data contradicts Text 1's assertion that technological advancement creates new employment opportunities.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 2 and the data validate Text 1's argument that temporal considerations and adaptive measures are essential factors in assessing technology's employment impact.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The data demonstrates that Text 1's optimistic view of technological unemployment is unfounded, as even communities with retraining programs experienced initial job losses.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 2's findings directly refute Text 1's claim that automation eliminates occupational categories, since the data shows consistent employment patterns across all communities.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B correctly identifies that Text 2 and the accompanying data support Text 1's nuanced argument. Text 1 emphasizes that \"short-term displacement effects frequently obscure long-term job creation patterns\" and that the \"temporal dimension\" is crucial. The data perfectly illustrates this: communities with retraining programs initially experienced 15% unemployment increases but eventually achieved 12% decreases below baseline by year 10. This validates Text 1's assertion that adaptive measures and temporal considerations are essential for understanding technology's true employment impact. Text 2 reinforces this by noting that recovery was \"contingent upon substantial investments in workforce retraining programs,\" directly supporting Text 1's argument about the importance of \"labor market adaptations.\"",
+  "distractorRationale": {
+    "A": "This misinterprets the relationship by suggesting contradiction where there is actually support. The data shows long-term job creation in communities with retraining, which aligns with Text 1's argument about new employment opportunities emerging.",
+    "C": "This incorrectly characterizes Text 1 as merely 'optimistic' and fails to recognize that Text 1 explicitly acknowledges short-term displacement effects. The initial job losses are consistent with Text 1's sophisticated analysis.",
+    "D": "This completely misrepresents both texts and the data. Text 1 does claim automation eliminates certain occupational categories, and the data shows very different employment patterns between communities with and without retraining programs."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:53:17.320Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "4dde457d-794f-40e0-b237-d25fcd9f25fe"
+  },
+  "passage": "Text 1\nThe prevailing narrative in economic literature posits that technological advancement invariably precipitates employment displacement, a phenomenon economists term \"technological unemployment.\" This deterministic view, however, fails to account for the nuanced interplay between innovation cycles and labor market adaptations. While automation may eliminate certain occupational categories, it simultaneously engenders novel employment sectors that often require more sophisticated skill sets. The temporal dimension of this transformation is crucial: short-term displacement effects frequently obscure long-term job creation patterns, leading to premature conclusions about technology's deleterious impact on employment.\n\nText 2\nDr. Elena Vasquez's longitudinal study of manufacturing communities affected by industrial automation reveals a more complex employment trajectory than traditional economic models suggest. Her research, spanning three decades across twelve metropolitan areas, documents an initial period of significant job losses followed by gradual economic recovery. However, Vasquez emphasizes that this recovery was contingent upon substantial investments in workforce retraining programs and educational infrastructure. Communities that failed to implement such measures experienced prolonged economic stagnation, while those that proactively adapted demonstrated remarkable resilience and eventual prosperity.\n\nEmployment Data from Vasquez Study (2020-2023)\n\nCommunities with Retraining Programs:\n- Year 1 post-automation: 15% unemployment increase\n- Year 5 post-automation: 3% unemployment decrease from baseline\n- Year 10 post-automation: 12% unemployment decrease from baseline\n\nCommunities without Retraining Programs:\n- Year 1 post-automation: 18% unemployment increase\n- Year 5 post-automation: 14% unemployment increase from baseline\n- Year 10 post-automation: 11% unemployment increase from baseline",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 287,
+    "source": "Academic research synthesis with empirical data"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.583333333333333,
+    "evaluatedAt": "2026-01-08T14:57:15.173Z"
+  }
+}

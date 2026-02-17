@@ -1,0 +1,246 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.2265625,
+        "passRate": 0.6875,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 8,
+            "exampleErrors": [
+              "Question rated 3/5 difficulty but is actually 2/5 - straightforward factoring with simple arithmetic that most students would solve correctly",
+              "Massive overrating: Question rated 5/5 across all dimensions but is actually 2-3/5 - standard intermediate algebra with clean numbers and direct application",
+              "Difficulty stated as 4/5 but is actually 2.5-3/5 - single-concept problem with linear solution path and answer choices that enable verification"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Designated correct answer is x=1, but verification shows √(1+12) - √1 = 3.606 ≠ 2, while x=4 gives correct result of 2",
+              "Answer key states x=4 is correct, but testing shows √(4+12) + 3 = 6.606 ≠ 4; none of the answer choices actually satisfy the equation",
+              "Correct calculation yields ab = 360, but this value is not among the answer choices; answer key incorrectly designates 60 as correct"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor rationale 'calculating a+√b-√b+8=48' is incoherent and bears no logical relationship to the problem structure",
+              "Distractor 24.5 represents dividing by 2, which has no plausible connection to solving x²=49 - too easily eliminated",
+              "Missing the strongest distractor -7, which tests whether students read 'positive value' carefully, while including implausible options like 2401"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 2,
+            "exampleErrors": [
+              "Answer choice D lists '-1 and 4' combining multiple values, but SAT never uses this format - should ask for sum/product or specify positive/negative solution",
+              "Question labeled as 'Advanced Math - nonlinear equations' with nested radicals is too elementary (8th-grade level) and uses unrealistic distractors unlike authentic SAT items"
+            ]
+          },
+          {
+            "category": "mathematical_consistency",
+            "frequency": 1,
+            "exampleErrors": [
+              "Explanation correctly derives a=10 and b=36 but then attempts to retrofit answer from ab=360 to a√b=60 by reinterpreting the question stem, which explicitly asks for ab",
+              "Solution path shown in explanation arrives at x=4 and verifies it, yet answer key designates x=1 as correct - direct contradiction within the same question"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5.34375,
+        "passRate": 0.75
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.216145833333332,
+        "passRate": 0.375,
+        "errorCategories": [
+          {
+            "category": "answer_validity_errors",
+            "frequency": 8,
+            "exampleErrors": [
+              "Designated correct answer is mathematically incorrect when verified (e.g., x=11/9 produces 4.78 instead of 4, or x=2 doesn't satisfy the original equation)",
+              "None of the provided answer choices are actual solutions to the stated equation (actual solutions are irrational or not listed)",
+              "Explanation contains calculation errors or works backwards to force an answer rather than solving correctly"
+            ]
+          },
+          {
+            "category": "distractor_quality_issues",
+            "frequency": 7,
+            "exampleErrors": [
+              "Distractors have implausible error chains that don't reflect authentic student thinking (e.g., 'confusing √64 with √16' leading to answer of 4)",
+              "Rationales are vague or internally inconsistent (e.g., claiming 64² leads to 128, or describing 'arithmetic error' without specifics)",
+              "Missing critical common misconceptions (e.g., no option for -8 when solving x²=64, or failing to include extraneous solutions)"
+            ]
+          },
+          {
+            "category": "faithfulness_deviations",
+            "frequency": 3,
+            "exampleErrors": [
+              "Difficulty calibration severely mismatched (question labeled 'Advanced Math' but tests only basic arithmetic like √64=8)",
+              "Question too elementary for SAT standards (single-step problems inappropriate for college readiness test)",
+              "Missing SAT-typical features like multi-step reasoning, context, or sophisticated distractor design"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy_problems",
+            "frequency": 1,
+            "exampleErrors": [
+              "Stated difficulty rating (5/5) doesn't match actual complexity - question rated slightly too high at 5/5 when it's more like 4.5/5",
+              "Difficulty assessment complicated by question having wrong answer choices, making actual difficulty impossible to calibrate accurately"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: answer_validity_errors, distractor_quality_issues, faithfulness_deviations",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.359375,
+        "passRate": 0.125,
+        "errorCategories": [
+          {
+            "category": "answer_validity",
+            "frequency": 6,
+            "exampleErrors": [
+              "Designated correct answer (C: x = 2) fails verification when substituted into the original equation, yielding -14 instead of 0",
+              "Answer choice (B: 11/9) does not satisfy the original radical equation; substitution yields approximately 4.783 instead of 4",
+              "Explanation arrives at quadratic x² - 92x + 4 = 0 but keyed answer B (11/9) does not satisfy this or the original equation"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 5,
+            "exampleErrors": [
+              "Distractor A (-1) has factually incorrect rationale claiming it produces negative radicands when it actually produces valid radical values",
+              "Distractor C (6) targets coefficient confusion but lacks specificity about which exact expansion error leads to this answer",
+              "Options A and C are suspiciously symmetric (7 ± √129)/10, which may allow test-taking pattern recognition rather than mathematical understanding"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Stated difficulty of 5/5 is significantly inflated; actual difficulty is 3.5/4 (straightforward algebraic procedure without novel insight)",
+              "Question rated 3/5 but is actually 1.5/5 (basic trinomial factorization requiring no complex reasoning)",
+              "Difficulty 4/5 is slightly generous; should be 3.8/4 (mechanical solution path despite multiple procedural steps)"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question lacks authentic SAT characteristics: oversimplified (x² = 64), no real-world context, and poor distractor quality that doesn't represent genuine misconceptions"
+            ]
+          },
+          {
+            "category": "explanation_accuracy",
+            "frequency": 1,
+            "exampleErrors": [
+              "Provided explanation arrives at x² - 92x + 4 = 0 but then jumps to claiming x = 11/9 without proper verification or acknowledgment that this value doesn't satisfy the derived equation"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.4375,
+        "passRate": 0.5
+      },
+      "improvementMade": "Addressed: answer_validity, distractor_quality, difficulty_accuracy",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.40625,
+        "passRate": 0.25,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 7,
+            "exampleErrors": [
+              "Distractor rationales are vague and lack specific algebraic error paths that students would actually follow",
+              "Distractors based on incoherent error descriptions that don't produce the claimed answer (e.g., described factoring error yields different value)",
+              "Missing pedagogically important distractors such as extraneous solutions that result from students skipping verification step"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 6,
+            "exampleErrors": [
+              "Designated correct answer does not satisfy the original equation when verified by direct substitution",
+              "Algebraic work leads to irrational solutions (e.g., x = 2 + 2√3) but answer key selects nearest integer, violating SAT standards",
+              "None of the provided answer choices satisfy the original equation; correct answer is not represented among the options"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 4,
+            "exampleErrors": [
+              "Stated difficulty of 1/5 is significantly too low; actual difficulty is 2.5-3/5 due to multi-step procedures and potential pitfalls",
+              "Stated difficulty of 5/5 overstated; problem is actually 3-3.5/5 as it follows straightforward procedural techniques without requiring insight",
+              "Difficulty rating fails to account for conceptual complexity of extraneous solutions, underestimating true cognitive demand"
+            ]
+          },
+          {
+            "category": "question_ambiguity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question asks for 'the value' (singular) of x but equation has two mathematically valid solutions; both appear as answer choices without specification of which is desired (e.g., positive vs. negative root)"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.354166666666666,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_quality, answer_validity, difficulty_accuracy",
+      "newPromptVersion": "1.3.0"
+    }
+  ],
+  "currentBestVersion": "1.2.0",
+  "converged": true,
+  "startedAt": "2026-01-08T19:49:18.278Z",
+  "completedAt": "2026-01-09T20:50:20.721Z",
+  "bestTestScore": 4.4375
+}

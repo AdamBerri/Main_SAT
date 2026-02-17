@@ -1,0 +1,54 @@
+{
+  "id": "a7f3c9e2-4b1d-4a8f-9c3e-5d6f8a9b2c1e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "A city's transportation department surveyed 240 randomly selected commuters at the main train station between 7:00 AM and 9:00 AM on weekdays. Of those surveyed, 156 reported using public transportation as their primary commute method. The city has 180,000 total commuters. Based on this survey, the department estimates that 117,000 commuters in the city primarily use public transportation. Which of the following statements best evaluates this estimate?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The estimate is unreliable because the sample was taken only from train station users during morning rush hour, which likely overrepresents public transportation users.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The estimate is valid because the calculation correctly scales the sample proportion to the total population: $\\frac{156}{240} \\times 180{,}000 = 117{,}000$.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The estimate is unreliable because 240 commuters is too small a sample to make inferences about 180,000 total commuters.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The estimate is valid because the survey used random selection within the chosen location and time period.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "While the arithmetic calculation is correct ($\\frac{156}{240} = 0.65$, and $0.65 \\times 180{,}000 = 117{,}000$), the estimate is statistically unreliable due to sampling bias.\n\nThe critical flaw is that the sample was collected exclusively at a train station during morning rush hour. This sampling method systematically overrepresents commuters who use public transportation, since people at a train station are far more likely to be public transit users than the general commuting population.\n\nFor a sample to produce valid inferences about a population, it must be representative of that entire population. Even though individuals were randomly selected within the train station, the location and time constraints created a biased sample that does not reflect all 180,000 commuters in the city (many of whom drive, work from home, or commute at different times).\n\nA sample size of 240 out of 180,000 (0.13%) is actually reasonable for statistical inference when properly randomized—sample size alone is not the issue here. The fundamental problem is the non-representative sampling method.",
+  "distractorRationale": {
+    "A": "This is the correct answer. It identifies the sampling bias that makes the estimate unreliable despite correct arithmetic.",
+    "B": "This represents the misconception that correct arithmetic automatically means valid statistical inference. Students who choose this focus only on computational accuracy while ignoring whether the sample represents the population.",
+    "C": "This represents the misconception that sample size relative to population size determines validity. Students incorrectly believe 240 is 'too small' without recognizing that proper sampling methods matter more than raw sample size, and that 0.13% samples are standard in statistics.",
+    "D": "This represents misunderstanding what 'random selection' means in statistics. While individuals were randomly chosen at the train station, the sampling frame itself (train station users during rush hour) was not representative of all commuters, making this a biased sample despite randomization within that frame."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:21.613Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "771a21cc-356c-4f6f-b119-40c45f9426a8"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

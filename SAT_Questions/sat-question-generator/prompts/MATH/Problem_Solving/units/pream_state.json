@@ -1,0 +1,265 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.651041666666667,
+        "passRate": 0.8125,
+        "errorCategories": [
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 6,
+            "exampleErrors": [
+              "Question rated 5/5 difficulty but is straightforward unit conversion requiring only basic arithmetic - should be 2-3/5",
+              "Rated 4/5 but is simple three-step calculation with no conceptual depth - actually 2.5/5",
+              "Stated as 3/5 medium difficulty but is routine two-step conversion problem - overcalibrated by 0.5 points"
+            ]
+          },
+          {
+            "category": "distractor_rationale_inconsistency",
+            "frequency": 5,
+            "exampleErrors": [
+              "Distractor rationale claims students 'divide by 8 without proper consideration' but calculation 24,346÷8=3,043 is actually the CORRECT step",
+              "States distractor A results from formula '216,000÷2.5÷29.5735÷8' but this yields ~365, not stated value of 4,100",
+              "Rationale says 'multiplying by 10' produces distractor but mathematical path to reach that value is unclear and implausible"
+            ]
+          },
+          {
+            "category": "implausible_error_paths",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor C ($2.50) assumes students write down the weight value as cost - psychologically implausible for students attempting calculation",
+              "Distractor involves 'confusing bottle capacity' with no specific mechanism - too vague to represent actual student thinking",
+              "Rationale requires multiple compounding errors that no coherent misconception would produce"
+            ]
+          },
+          {
+            "category": "answer_key_errors",
+            "frequency": 3,
+            "exampleErrors": [
+              "Correct calculation yields ~3,043 bottles, but answer key designates D) 6,090 as correct - off by factor of 2",
+              "Calculation produces 2,921 bottles but answer key shows 29,300 - appears to be order-of-magnitude error",
+              "Stated correct answer D (8 bottles) doesn't match most plausible calculations, while distractor A (81) is closer to mathematical result"
+            ]
+          },
+          {
+            "category": "mathematical_realism_issues",
+            "frequency": 2,
+            "exampleErrors": [
+              "Correct answer of 8 bottles produced in 8 hours is unrealistically low for pharmaceutical production context",
+              "Answer choices ordered illogically (81, 102, 203, 8) rather than ascending order typical of SAT"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.65625,
+        "passRate": 0.75
+      },
+      "improvementMade": "Addressed: difficulty_miscalibration, distractor_rationale_inconsistency, implausible_error_paths",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.104166666666666,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "difficulty_overestimation",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question stated as 3/5 difficulty but actual difficulty is 2.2/5 - straightforward two-step unit conversion lacks conceptual subtlety",
+              "Question claimed as 4/5 difficulty but actual difficulty is 2.5/3.0 - minimal conceptual load with explicit procedural steps and well-separated answer choices",
+              "Question rated 3/5 but likely achieves 65-70% correct rate suggesting true difficulty is 3/5 - computational errors not conceptual gaps indicate execution issues rather than deep misunderstanding"
+            ]
+          },
+          {
+            "category": "weak_discriminative_power",
+            "frequency": 3,
+            "exampleErrors": [
+              "Distractor A (30) is implausibly low and students would self-correct just by considering reasonableness - most students would eliminate before calculating",
+              "Distractor A (20) is orders of magnitude from correct answer making it far too easy to eliminate based on problem structure alone without requiring calculation",
+              "Distractor D has low to moderate discriminative power - students may avoid simply because they cannot justify how the answer arose rather than understanding correct procedure"
+            ]
+          },
+          {
+            "category": "unclear_distractor_rationale",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor D has confused and internally inconsistent rationale attempting multiple different error sources (multiplying by 360, converting to seconds, using 6 hours instead of 2.5) without committing to a single misconception",
+              "Distractor B lacks coherent error pathway with incoherent rationale containing multiple contradictory calculation pathways that don't reliably produce the distractor value"
+            ]
+          },
+          {
+            "category": "implausible_distractor_design",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor 4,320 lacks obvious procedural misconception that yields it naturally - the relationship 4,320 = 12 × 360 doesn't arise from realistic student error patterns",
+              "Distractor A (20) targets stopping before unit conversion and division but is implausibly small given production rate context - eliminable through reasonableness check without demonstrating conceptual understanding"
+            ]
+          },
+          {
+            "category": "incomplete_error_targeting",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor set shows weak cognitive progression that doesn't cleanly separate novice through advanced errors - distractors fail to effectively distinguish between students who understand unit conversion versus those who don't"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.25,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_overestimation, weak_discriminative_power, unclear_distractor_rationale",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.9270833333333335,
+        "passRate": 0.5,
+        "errorCategories": [
+          {
+            "category": "authenticity_to_sat_standards",
+            "frequency": 5,
+            "exampleErrors": [
+              "Question exceeds typical SAT complexity with 5-6 sequential steps and stacked unit conversions; authentic SAT problems limit to 2-4 steps maximum",
+              "Ambiguous language ('approximately') contradicts exact answer choices without justification or range specification consistent with SAT format",
+              "Distractors do not reflect typical SAT error patterns; missing obvious intermediate wrong answers like forgetting specific conversion steps",
+              "Over-reliance on calculator-dependent arithmetic (270,336,000 ÷ 150) exceeds typical non-calculator SAT item complexity",
+              "Answer choice magnitude imbalances (795 disproportionately large compared to 13.2, 55.5, 210) suggest artificial construction rather than organic error patterns"
+            ]
+          },
+          {
+            "category": "distractor_quality_issues",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor B has incoherent and contradictory rationale with multiple conflicting explanations that don't logically produce the given answer",
+              "Distractor D (4,320) uses contrived error pathway invoking unrelated unit conversions (144 square inches per square foot) that no natural student misconception would produce",
+              "Distractors A, B, C lack coherent error narratives with multiple attempted explanations suggesting test maker uncertainty about misconception pathways",
+              "Distractor B (1,500) rationale is mathematically inconsistent; stated error (forgetting hours-to-minutes conversion) doesn't logically yield this answer"
+            ]
+          },
+          {
+            "category": "answer_key_errors",
+            "frequency": 3,
+            "exampleErrors": [
+              "Stated correct answer D (794) is mathematically incorrect; correct answer should be 795 after proper rounding of 794.85",
+              "Answer D (880,000) does not match calculated result of 1,802,240 capsules; reverse engineering shows production rate should be 1.17 kg/hr, not 2.4 kg/hr",
+              "No provided answer choice matches the correct mathematical result of 1,802,240 capsules when following all given parameters correctly"
+            ]
+          },
+          {
+            "category": "difficulty_calibration_mismatch",
+            "frequency": 3,
+            "exampleErrors": [
+              "Stated 5/5 difficulty is significantly overstated; actual difficulty is 2.5-3/5 (straightforward mechanical calculation with no conceptual obstacles)",
+              "Stated 3/5 difficulty contradicted by actual 1-2/5 straightforward two-step conversion requiring only direct calculation with no complex reasoning",
+              "Stated 4/5 difficulty overstated; actual difficulty is 2.5/3 with single formulaic conversion and minimal cognitive load"
+            ]
+          },
+          {
+            "category": "mathematical_or_calculation_errors",
+            "frequency": 2,
+            "exampleErrors": [
+              "Calculation verification shows 3.5 × 3.785 × 60 = 794.85, not exactly 794; rounding inconsistency creates answer key ambiguity",
+              "Working backward from answer D (880,000) yields required production rate of 1.171875 kg/hr, not the stated 2.4 kg/hr, exposing fundamental parameter mismatch"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.291666666666667,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: authenticity_to_sat_standards, distractor_quality_issues, answer_key_errors",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 3.776041666666667,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "answer_key_error",
+            "frequency": 3,
+            "exampleErrors": [
+              "Designated correct answer (C: 6,100) is mathematically incorrect; correct calculation yields 4,869.5 bottles, making answer B (4,880) correct",
+              "Answer C (25.0% increase) only becomes correct by working backwards and changing problem parameters; contradicts the stated problem where current capacity exceeds requirements by 230%",
+              "Question contains internal logical contradiction where current production (4,147,200 vials) far exceeds required production (1,800,000 vials), making any percent increase answer invalid"
+            ]
+          },
+          {
+            "category": "distractor_incoherence",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor A has incomprehensibly long rationale listing multiple unrelated calculations (1,067, 2,838, 3,043, 2,030) with no clear single misconception pathway",
+              "Distractor D contains contradictory error paths: includes both 'forgetting unit conversion' and 'reciprocal calculation' explanations that don't clearly connect to answer 8,200"
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 3/5 (medium) because formula is straightforward (Rate × Time ÷ Container Size) with provided conversion factor and well-separated answer choices",
+              "Question rated 3/5 (medium) but contains fatal mathematical inconsistency making it unsolvable—students following correct procedures arrive at contradictory results"
+            ]
+          },
+          {
+            "category": "missing_distractor_plausibility",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractors A (2,400) and B (4,880) are magnitude implausible—students reject them on reasonableness checks alone rather than mathematical understanding, failing to discriminate between guessing and competence",
+              "No distractor targets common computational error where students correctly convert units but make arithmetic mistakes (e.g., 12 × 150 = 1,500), leaving a gap in error-trapping"
+            ]
+          },
+          {
+            "category": "problem_statement_ambiguity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Question fails to clearly specify required production target; explanation works backwards from answer choice and modifies problem parameters (assumes 3,000 mL/min requirement) not stated in original problem"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.6666666666666665,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: answer_key_error, distractor_incoherence, difficulty_miscalibration",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:55:29.457Z",
+  "completedAt": "2026-01-09T20:49:20.122Z",
+  "bestTestScore": 4.65625
+}

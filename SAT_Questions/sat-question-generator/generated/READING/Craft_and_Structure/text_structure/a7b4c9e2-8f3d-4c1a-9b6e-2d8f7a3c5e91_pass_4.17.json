@@ -1,0 +1,61 @@
+{
+  "id": "a7b4c9e2-8f3d-4c1a-9b6e-2d8f7a3c5e91",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 3.7,
+    "linguistic": 4.1
+  },
+  "stem": "Which choice best describes the overall structure of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A chronological account of how microplastic pollution has developed over time",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "A comparison between different types of marine pollution and their relative severity",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "An analysis of the causes of a problem, its effects, and potential solutions",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "An argument defending one particular approach to environmental protection over others",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage follows a clear problem-analysis structure that moves systematically through three distinct phases. The first paragraph identifies microplastic pollution as a major problem and explains its causes (primary and secondary sources). The second paragraph examines the effects and consequences of this pollution on marine life and ecosystems. The third paragraph presents potential solutions, including regulatory measures, technological innovations, and international cooperation. This cause-effect-solution organizational pattern is reinforced by transitional phrases like 'The consequences of this contamination' and 'Addressing this crisis requires,' which clearly signal the structural shifts between sections.",
+  "distractorRationale": {
+    "A": "While the passage mentions that microplastic pollution is a twenty-first century challenge, it does not trace the historical development of the problem over time. The focus is on analyzing current causes, effects, and solutions rather than providing a chronological narrative.",
+    "B": "The passage focuses exclusively on microplastic pollution and does not compare it to other forms of marine pollution. There is no comparative analysis of different pollution types or assessment of their relative severity.",
+    "D": "Rather than advocating for one specific approach over others, the passage presents a 'multifaceted approach' that includes multiple complementary solutions. It does not argue for the superiority of any single environmental protection strategy but instead emphasizes the need for comprehensive, coordinated action."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:29:13.997Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "0e6b0a0b-1e6e-488a-8bbb-b82f3671b979"
+  },
+  "passage": "The proliferation of microplastics in marine environments has emerged as one of the most pressing ecological challenges of the twenty-first century. These microscopic fragments, measuring less than five millimeters in diameter, originate from various sources and infiltrate ocean ecosystems through multiple pathways. Primary microplastics are manufactured at microscopic sizes for use in cosmetics, synthetic textiles, and industrial processes. When these products are used and disposed of, the particles flow through wastewater systems that often lack adequate filtration technology. Secondary microplastics, conversely, result from the gradual breakdown of larger plastic debris through weathering, UV radiation, and mechanical abrasion in marine environments.\n\nThe consequences of this contamination are manifold and increasingly severe. Marine organisms, from zooplankton to large fish, inadvertently ingest these particles, mistaking them for food. This ingestion disrupts digestive processes, reduces nutrient absorption, and can lead to internal injuries. Moreover, microplastics act as vectors for toxic chemicals, concentrating pollutants that bioaccumulate as they move up the food chain. The ramifications extend beyond individual organisms to entire ecosystems, altering species composition and disrupting fundamental ecological relationships.\n\nAddressing this crisis requires a multifaceted approach that targets both prevention and remediation. Regulatory measures must restrict the use of microplastics in consumer products while mandating improved wastewater treatment technologies. Simultaneously, innovation in biodegradable alternatives and enhanced plastic recycling systems can reduce the input of new plastic waste into marine environments. International cooperation is essential, as ocean currents transport microplastics across national boundaries, making this a truly global challenge that demands coordinated action.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 267,
+    "source": "Environmental science text"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T14:35:53.854Z"
+  }
+}

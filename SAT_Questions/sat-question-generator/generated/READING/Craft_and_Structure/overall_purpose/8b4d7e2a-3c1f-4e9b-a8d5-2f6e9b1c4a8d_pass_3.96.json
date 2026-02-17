@@ -1,0 +1,61 @@
+{
+  "id": "8b4d7e2a-3c1f-4e9b-a8d5-2f6e9b1c4a8d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.1,
+    "linguistic": 4.2
+  },
+  "stem": "The author's main purpose in the passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "describe the current applications of artificial intelligence in various professional fields.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "challenge a prevailing assumption about AI's impact on employment by proposing an alternative perspective.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "analyze the specific advantages that AI systems have over human workers in technical tasks.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "argue that policymakers should focus on preventing AI development to protect human jobs.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The author's main purpose is to challenge the conventional wisdom that AI will replace human workers by arguing for an alternative view—that AI will complement rather than substitute human capabilities. The passage begins by identifying the 'conventional wisdom' as fundamentally flawed, then systematically presents evidence for human-AI collaboration using examples like radiology. The author concludes by reframing the policy challenge from preparing for mass unemployment to cultivating uniquely human skills, clearly indicating the persuasive intent to shift perspective on AI's workplace impact.",
+  "distractorRationale": {
+    "A": "While the author mentions applications like radiology and legal research, these are used as evidence to support the main argument rather than being the primary focus. The purpose is not descriptive but argumentative.",
+    "C": "The author actually emphasizes AI's limitations and the continued importance of human capabilities rather than analyzing AI's advantages over humans. The passage argues for complementarity, not AI superiority.",
+    "D": "The author does not advocate for preventing AI development. Instead, the passage accepts AI integration and argues for adapting education and policy to leverage human-AI collaboration effectively."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:30:03.921Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "1df9b7ef-3b48-4d3b-9c42-9aaa9470061c"
+  },
+  "passage": "The conventional wisdom holds that artificial intelligence will inevitably supplant human workers across virtually every sector of the economy. This narrative, while compelling in its stark simplicity, fundamentally mischaracterizes both the nature of AI capabilities and the trajectory of technological integration in the workplace. Rather than wholesale replacement, we are witnessing—and will continue to witness—a more nuanced process of human-AI collaboration that amplifies human potential rather than negating it. Consider the field of radiology: while AI systems can now detect certain anomalies with remarkable precision, the interpretation of these findings within the broader context of patient history, symptomatology, and treatment planning remains quintessentially human. The radiologist's role has not disappeared; it has evolved to encompass higher-order analytical thinking that leverages AI as a diagnostic tool. This pattern of complementary enhancement, rather than substitution, is emerging across disciplines from legal research to financial analysis. The challenge facing policymakers and educators is not how to prepare for mass unemployment, but rather how to cultivate the uniquely human skills—creativity, emotional intelligence, ethical reasoning—that will define the value of human contribution in an AI-augmented world.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 187,
+    "source": "Contemporary technology and labor economics analysis"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9583333333333335,
+    "evaluatedAt": "2026-01-08T14:36:04.551Z"
+  }
+}

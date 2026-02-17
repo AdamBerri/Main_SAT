@@ -1,0 +1,58 @@
+{
+  "id": "3f8b9c2d-4e7a-4b3c-9d1f-8e2a5c6b7d9e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4,
+    "linguistic": 3.9
+  },
+  "stem": "Based on the texts, how would Paulson most likely respond to Chen's argument?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Guild membership patterns suggest resistance to change was not the primary cause of their declining influence.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Guild expansion during technological innovation directly contradicts claims about their eventual obsolescence.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Declining productivity per member confirms that guilds failed to adopt efficient manufacturing practices.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Membership growth in technologically advanced sectors proves guilds successfully adapted to industrial changes.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Paulson's data shows that guild membership actually grew (34%) during the period of technological change, particularly in the sectors Chen identifies as most affected. This growth pattern suggests guilds weren't simply rejecting new methods and dying out—they were attracting more members. However, the simultaneous 40% decline in output per member, while total industrial production tripled, indicates guilds were becoming economically marginalized despite maintaining institutional presence. This evidence implies their declining influence resulted from being bypassed by new industrial production systems rather than from resistance alone. Paulson would likely argue that Chen's focus on guild attitudes misidentifies the mechanism: guilds lost relevance not because they rejected change and disappeared, but because industrial production grew around them, making them economically peripheral even as they persisted institutionally.",
+  "distractorRationale": {
+    "A": "This is correct because it recognizes the nuanced relationship between the data patterns: guilds could maintain and even grow membership while simultaneously losing economic relevance—suggesting their decline stemmed from being superseded by alternative production systems rather than from resistance causing their dissolution.",
+    "B": "This oversimplifies the relationship by treating membership growth as contradicting obsolescence claims. However, organizations can become obsolete in influence and economic importance while maintaining institutional presence. The data shows guilds persisted but became marginalized—growth doesn't negate the obsolescence Chen describes, it reframes its mechanism.",
+    "C": "This appears to support Chen by linking declining productivity to failed adaptation, but it misses the synthesis point. If guilds were simply failing to adopt efficient practices, we'd expect membership to decline as they became uncompetitive. Instead, membership grew while productivity fell—suggesting a more complex dynamic where guilds attracted members but operated in an increasingly marginalized economic space.",
+    "D": "This misreads the significance of membership growth by treating it as evidence of successful adaptation. However, the dramatic decline in per-member output alongside tripling industrial production suggests these guild members were participating in an economically shrinking sphere. Growth in membership doesn't indicate adaptation when accompanied by such severe productivity decline relative to the broader industrial sector."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:17.455Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "47d24c68-8d86-4940-8cfd-cb16be0923fb"
+  },
+  "passage": "Text 1\n\nHistorian Maria Chen argues that the decline of urban craft guilds in 18th-century Europe stemmed primarily from their rigid membership requirements and resistance to technological innovation. These organizations, she contends, failed to adapt their training systems to accommodate new manufacturing methods, ultimately rendering themselves obsolete as industrial production expanded. Chen emphasizes that guild masters actively rejected labor-saving devices, viewing them as threats to traditional skill hierarchies and apprenticeship structures that had defined their professional identity for centuries.\n\nText 2\n\nEconomist Robert Paulson examined guild membership records from 1720-1790 across five major European cities. His analysis reveals that total guild membership actually increased by 34% during this period, with particularly strong growth in textile and metalworking guilds—the very sectors experiencing the most rapid technological change. However, Paulson notes that the economic output per guild member declined by approximately 40% over the same timeframe, even as overall industrial production in these cities tripled.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 178,
+    "source": "Paired historical analysis texts"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,59 @@
+{
+  "id": "a7b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 2.8,
+    "computational": 2.8
+  },
+  "stem": "A teacher recorded the number of books read by students in her class during the summer. The data set is: 2, 3, 5, 5, 6, 8, 9, 12, 15. If the teacher removes the outlier from this data set, which of the following statements about the remaining data is true?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The mean will decrease and the median will remain the same.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The mean will increase and the median will decrease.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Both the mean and median will decrease.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Both the mean and median will increase.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "First, identify the outlier in the data set: 2, 3, 5, 5, 6, 8, 9, 12, 15. The value 2 is significantly lower than the rest of the data and appears to be an outlier.\n\nOriginal data: 2, 3, 5, 5, 6, 8, 9, 12, 15\n- Mean = (2 + 3 + 5 + 5 + 6 + 8 + 9 + 12 + 15) ÷ 9 = 65 ÷ 9 ≈ 7.22\n- Median = 6 (middle value of 9 numbers)\n\nAfter removing the outlier (2): 3, 5, 5, 6, 8, 9, 12, 15\n- Mean = (3 + 5 + 5 + 6 + 8 + 9 + 12 + 15) ÷ 8 = 63 ÷ 8 = 7.875\n- Median = (6 + 8) ÷ 2 = 5.5 (average of 4th and 5th values)\n\nComparing the results:\n- Mean: 7.22 → 7.875 (increased)\n- Median: 6 → 5.5 (decreased)\n\nTherefore, the mean increases and the median decreases.",
+  "distractorRationale": {
+    "A": "Students might incorrectly think removing a low outlier decreases the mean, or miscalculate that the median stays the same.",
+    "B": "This is the correct answer - removing the low outlier increases the mean and the median decreases due to the change in position.",
+    "C": "Students might think both measures decrease when removing any outlier, not considering the direction of the outlier's effect.",
+    "D": "Students might incorrectly think both measures always move in the same direction when data is removed."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:46:22.654Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "dffce988-b4a6-447b-9067-28c31727ee79"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 2.625,
+    "evaluatedAt": "2026-01-08T15:50:58.924Z"
+  }
+}

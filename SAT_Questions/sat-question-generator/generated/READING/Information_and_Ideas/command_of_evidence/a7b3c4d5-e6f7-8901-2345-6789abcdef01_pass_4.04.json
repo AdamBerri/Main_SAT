@@ -1,0 +1,62 @@
+{
+  "id": "a7b3c4d5-e6f7-8901-2345-6789abcdef01",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.1,
+    "linguistic": 4.3
+  },
+  "stem": "Which quotation from the passage best supports the claim that social media users are more politically informed than commonly believed?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"users consistently encounter opposing viewpoints at rates comparable to traditional media consumption patterns\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"recommendation algorithms exposed users to 40% more ideologically diverse content than their self-selected reading habits would suggest\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"The very act of encountering and responding to contrary opinions online appears to sharpen users' understanding of alternative perspectives\"",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "\"social media's role in creating echo chambers has been significantly overstated\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Choice C best supports the claim that social media users are more politically informed than commonly believed because it directly addresses how online engagement enhances users' understanding and knowledge. The phrase 'sharpen users' understanding of alternative perspectives' explicitly indicates improved political awareness and comprehension, which directly correlates with being more informed. This evidence shows that social media interaction actually increases users' grasp of complex political issues by forcing them to engage with and understand opposing viewpoints.",
+  "distractorRationale": {
+    "A": "This quote addresses exposure to opposing viewpoints but only establishes that social media is comparable to traditional media, not that users are more informed than commonly believed.",
+    "B": "This evidence focuses on the diversity of content exposure through algorithms but doesn't directly address whether users become more politically informed or knowledgeable as a result.",
+    "D": "This is a conclusion about echo chambers being overstated, but it doesn't provide specific evidence about users' level of political knowledge or awareness."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:51:49.888Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "9634f3df-68f1-46da-9cc3-fd0e0b691fb3"
+  },
+  "passage": "The prevailing assumption that social media platforms inevitably fragment political discourse into isolated echo chambers may be fundamentally flawed. Recent empirical research challenges this conventional wisdom, suggesting that the reality of online political engagement is far more nuanced than critics suggest. Dr. Elena Rodriguez's comprehensive analysis of cross-platform interactions reveals that \"users consistently encounter opposing viewpoints at rates comparable to traditional media consumption patterns, with 73% of participants reporting regular exposure to conflicting political perspectives.\" Furthermore, algorithmic recommendations, often blamed for ideological isolation, actually demonstrate surprising diversity. A longitudinal study tracking user behavior across multiple platforms found that \"recommendation algorithms exposed users to 40% more ideologically diverse content than their self-selected reading habits would suggest.\" Perhaps most tellingly, survey data indicates that social media users show greater awareness of opposing arguments than their offline counterparts. As researcher Michael Chen notes, \"The very act of encountering and responding to contrary opinions online appears to sharpen users' understanding of alternative perspectives, even when they ultimately reject them.\" While concerns about political polarization remain valid, the evidence suggests that social media's role in creating echo chambers has been significantly overstated.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 186,
+    "source": "Contemporary media studies research"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.041666666666667,
+    "evaluatedAt": "2026-01-08T14:56:47.943Z"
+  }
+}

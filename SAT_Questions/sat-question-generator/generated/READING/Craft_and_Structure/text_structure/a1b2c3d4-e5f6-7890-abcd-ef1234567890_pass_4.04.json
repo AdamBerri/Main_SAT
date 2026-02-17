@@ -1,0 +1,61 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "linguistic": 1
+  },
+  "stem": "Which choice best describes the overall structure of the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It presents a common misconception and then explains three factors that contribute to sleep quality.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "It compares the benefits of going to bed early with the benefits of going to bed late.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "It describes a problem with modern sleep habits and proposes a single solution.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It traces the historical development of sleep research from past to present.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage follows a clear structure: it begins by identifying a common misconception (that sleep quality is simply about going to bed early), then systematically presents three factors that actually contribute to sleep quality (sleep environment, daily habits, and bedtime routine). The transition words 'However,' 'First,' 'Second,' and 'Finally' clearly signal this organizational pattern of refuting a misconception and then providing multiple explanatory factors.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "The passage does not compare early versus late bedtimes; it focuses on factors beyond just bedtime that affect sleep quality.",
+    "C": "While the passage mentions a misconception, it provides three distinct factors rather than a single solution, and it doesn't frame the issue as a widespread problem.",
+    "D": "The passage contains no historical information or chronological development; it focuses on present-day factors affecting sleep quality."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:32:14.202Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "f1782d7b-a8c3-49a6-9027-7a79d6e19d5b"
+  },
+  "passage": "Many people believe that getting enough sleep is simply a matter of going to bed early. However, sleep quality depends on much more than just bedtime. First, the sleep environment plays a crucial role. A cool, dark, and quiet room promotes better rest than a warm, bright, or noisy space. Second, daily habits significantly impact sleep quality. Regular exercise during the day helps the body prepare for rest, while consuming caffeine late in the afternoon can disrupt sleep patterns. Finally, establishing a consistent bedtime routine signals to the brain that it's time to wind down. Activities like reading, gentle stretching, or listening to calm music can help transition the mind from the day's activities to a restful state.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 128
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.041666666666667,
+    "evaluatedAt": "2026-01-08T14:35:53.859Z"
+  }
+}

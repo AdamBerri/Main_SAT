@@ -1,0 +1,59 @@
+{
+  "id": "f47e8c92-3d5a-4b8f-9e21-7c4a8f6d2e15",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.1,
+    "procedural": 1.3,
+    "computational": 1
+  },
+  "stem": "A scatterplot shows the relationship between the number of hours students studied for a test and their test scores. The line of best fit has a positive slope. Which of the following statements best describes what this indicates about the relationship between study time and test scores?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "As study time increases, test scores tend to increase.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "As study time increases, test scores tend to decrease.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Study time and test scores are not related.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "All students who study more will definitely score higher.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "A line of best fit with a positive slope indicates a positive correlation between the two variables. This means that as one variable (study time) increases, the other variable (test scores) tends to increase as well. The key word is 'tends to' because correlation shows a general trend, not a guarantee for every individual case.",
+  "distractorRationale": {
+    "A": "This is the correct answer - positive slope indicates positive correlation.",
+    "B": "This describes a negative correlation, which would be indicated by a negative slope.",
+    "C": "This describes no correlation, which would be indicated by a horizontal line (zero slope).",
+    "D": "This is too absolute - correlation shows trends, not guarantees for every individual case."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:51:45.935Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "cef77aea-eb9d-42f4-b41b-c87f8ff32ed2"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.041666666666667,
+    "evaluatedAt": "2026-01-08T15:56:10.787Z"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "a7b3c4d5-e6f7-8901-2345-6789abcdef01",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.1,
+    "linguistic": 4
+  },
+  "stem": "Which choice completes the text with the most logical transition?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Furthermore,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Nevertheless,",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "For instance,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Consequently,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage presents a clear contrast between what urban planners advocate (mixed-use developments with their benefits) and what many developers actually do (continue to favor single-use zoning that perpetuates problems). 'Nevertheless' is the most logical transition because it signals this contradiction between the ideal solution and current practice. The first sentence establishes the benefits of mixed-use development, while the second sentence introduces an opposing reality despite these known advantages.",
+  "distractorRationale": {
+    "A": "'Furthermore' indicates addition or continuation of the same line of thought, but the second sentence contradicts rather than builds upon the first sentence's positive view of mixed-use development.",
+    "B": "Correct answer - 'Nevertheless' appropriately signals the contrast between the advocated solution and actual developer practices.",
+    "C": "'For instance' introduces a specific example, but the second sentence doesn't provide an example of mixed-use development; instead, it describes opposing practices.",
+    "D": "'Consequently' suggests a cause-and-effect relationship, but developers favoring single-use zoning is not a result of planners advocating for mixed-use development; it's a contrasting practice."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:58:21.071Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "f4b25720-861e-44ef-9c3b-4c27d26aa404"
+  },
+  "passage": "Urban planners have long advocated for mixed-use developments that combine residential, commercial, and office spaces within walking distance. These integrated communities reduce car dependency, foster social interaction, and create vibrant neighborhoods where people can live, work, and shop without lengthy commutes. _______ many developers continue to favor single-use zoning patterns that segregate different types of buildings into distinct areas, perpetuating suburban sprawl and automobile reliance.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 78,
+    "source": "Urban planning discussion"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.291666666666667,
+    "evaluatedAt": "2026-01-08T15:02:04.059Z"
+  }
+}

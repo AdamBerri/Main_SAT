@@ -1,0 +1,62 @@
+{
+  "id": "a7f3b8c9-4d2e-5f6a-8b9c-1d2e3f4a5b6c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 3.2,
+    "linguistic": 3.1
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred about the sea lions' deep-diving behavior?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The sea lions have developed a more efficient hunting strategy than their counterparts on other islands.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The behavior serves a purpose other than hunting for food.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The sea lions' behavior will eventually return to normal patterns once seasonal conditions change.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Surface fish populations have been depleted by local fishing activities.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage provides several key pieces of evidence that support the inference that the behavior serves a purpose other than hunting: the sea lions dive deep during daylight (unusual timing), they don't hunt during these dives (cameras show they remain motionless and don't capture prey), surface fish remain abundant, and the behavior persists year-round regardless of prey availability. Since the behavior clearly isn't for hunting but continues consistently, it must serve some other biological or behavioral function.",
+  "distractorRationale": {
+    "A": "This contradicts the passage, which explicitly states that underwater cameras revealed the sea lions were not hunting during these deep dives—they remained motionless and returned without capturing prey.",
+    "C": "The passage indicates this behavior has continued for eighteen months year-round, regardless of seasonal changes, suggesting it's not dependent on temporary seasonal conditions.",
+    "D": "The passage explicitly states that local fishermen confirmed surface fish populations remained abundant throughout the study period, directly contradicting this choice."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:19:29.622Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "72000254-c046-4a9b-af53-bb74a0dd49cb"
+  },
+  "passage": "When marine biologist Dr. Elena Rodriguez first arrived at the Galápagos Research Station in 2019, she noticed something peculiar about the feeding patterns of the local sea lion population. Unlike their counterparts on other islands, these sea lions consistently dove to depths exceeding 200 meters during daylight hours, a behavior typically reserved for nighttime hunting. Initially, Rodriguez attributed this anomaly to seasonal variations in prey distribution. However, after eighteen months of careful observation, she documented that this deep-diving behavior occurred year-round, regardless of seasonal changes in fish populations near the surface. Local fishermen, who had worked these waters for decades, confirmed that surface fish populations remained abundant throughout Rodriguez's study period. Most intriguingly, underwater cameras revealed that the sea lions were not hunting during these deep dives—they descended rapidly, remained motionless for several minutes at depth, then returned to the surface without capturing prey.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 162,
+    "source": "Adapted from marine biology research"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4,
+    "evaluatedAt": "2026-01-08T15:26:29.809Z"
+  }
+}

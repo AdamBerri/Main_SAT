@@ -1,0 +1,58 @@
+{
+  "id": "a7f3c8d2-4e91-4b5a-9c3f-2d8e6f1a9b4c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "stem": "The passage is structured to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "trace the multifaceted consequences stemming from a technological innovation.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "contrast traditional and modern approaches to industrial production.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "chronicle the sequential developments within a scientific field.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "examine how economic factors shaped scientific research priorities.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage is organized around a cause-and-effect structure that radiates outward from a single innovation (synthetic dyes). It begins with Perkin's discovery, then systematically explores its ramifications: commercial success, economic displacement of traditional industries, and unexpected contributions to pharmaceutical development. The final sentence explicitly characterizes this as tracing consequences ('trajectory...traces'), emphasizing the 'intricate convergence' of multiple effects rather than a simple linear sequence. The structure moves from the initial technological breakthrough through its expanding spheres of influence across commerce, agriculture, chemistry, and medicine.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "While the passage does mention traditional dye production (indigo cultivation) and modern synthetic methods, this comparison serves as one example within a broader consequence-tracing structure rather than organizing the entire passage. The contrast between old and new methods occupies only the middle section and functions to illustrate economic impact, not to structure the whole argument.",
+    "C": "The passage does present events in temporal order (1856 discovery, decade of expansion, 1880 indigo synthesis), but chronology serves as a vehicle for exploring consequences rather than the organizing principle. The structure emphasizes causal relationships and expanding effects rather than sequential developments—the final sentence explicitly rejects 'linear progression' in favor of 'intricate convergence,' signaling that temporal sequence is not the primary organizational framework.",
+    "D": "While economic factors appear prominently (commercial viability, trade network dissolution, commercial imperatives), the passage is structured around the effects flowing from an innovation, not around how economics shaped research. The economic elements are presented as consequences of the synthetic dye discovery rather than as driving forces behind scientific inquiry. The passage moves from technological breakthrough to its effects, not from economic needs to resulting research."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:57.288Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "c9fd68cd-a92d-4295-870e-585f37620c97"
+  },
+  "passage": "The advent of synthetic dyes in the mid-nineteenth century precipitated transformations extending far beyond the textile industry. William Perkin's 1856 synthesis of mauveine from coal tar derivatives inaugurated an era wherein chromatic possibilities, once constrained by the vagaries of natural pigment extraction, became subject to deliberate chemical manipulation. Aniline purple, as the compound was initially termed, achieved immediate commercial viability; within a decade, European factories produced dozens of synthetic colorants, each iteration refining techniques of molecular reconfiguration. The economic ramifications proved substantial: indigo cultivation in colonial India, which had sustained regional economies for centuries, entered precipitous decline as German chemists perfected laboratory synthesis of the compound by 1880. Traditional dye-producing regions witnessed the dissolution of established trade networks, their agricultural systems rendered obsolete by industrial chemistry's capacity for replication and standardization. Yet this displacement generated its own complexities. The synthetic dye industry's expansion necessitated corresponding developments in organic chemistry, catalyzing theoretical advances that would eventually underpin pharmaceutical innovation. Chemists investigating molecular structures to achieve desired hues inadvertently established methodologies applicable to drug synthesis, their taxonomies of chemical behavior providing frameworks for subsequent therapeutic interventions. The trajectory from Perkin's fortuitous discovery to the emergence of the modern pharmaceutical industry thus traces not a linear progression but an intricate convergence of commercial imperatives, scientific inquiry, and geopolitical consequence.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 217,
+    "source": "Original passage on industrial chemistry history"
+  },
+  "hasImage": false
+}

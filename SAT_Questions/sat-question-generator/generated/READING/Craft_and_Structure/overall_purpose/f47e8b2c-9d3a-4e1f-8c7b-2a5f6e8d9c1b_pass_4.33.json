@@ -1,0 +1,63 @@
+{
+  "id": "f47e8b2c-9d3a-4e1f-8c7b-2a5f6e8d9c1b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.1,
+    "procedural": 3.9,
+    "linguistic": 3.8
+  },
+  "stem": "The author's main purpose in the passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "argue that artificial intelligence will fundamentally transform the nature of work by replacing human workers in most industries.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "challenge the prevailing view that AI will replace human workers and advocate for a collaborative approach instead.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "analyze the current capabilities of artificial intelligence systems in medical diagnosis and other professional fields.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "describe the various ways that artificial intelligence is currently being integrated into educational curricula.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The author's main purpose is to challenge the conventional wisdom that AI will replace human workers and instead advocate for a collaborative model. This is evident from the opening statement that the conventional narrative 'fundamentally misunderstands the nature of human-AI collaboration' and the consistent argument throughout that AI should be viewed as an 'amplifier of human capabilities' rather than a replacement. The author uses examples and reasoning to persuade readers to adopt this alternative perspective on human-AI relationships in the workplace.",
+  "distractorRationale": {
+    "A": "This choice confuses the author's purpose with the conventional view they are arguing against. The author explicitly rejects this perspective in the opening paragraph.",
+    "B": "This is the correct answer.",
+    "C": "While the author does analyze AI capabilities in medical diagnosis, this is used as supporting evidence for the larger argument, not the main purpose. This choice confuses a rhetorical strategy with the overall intent.",
+    "D": "The author mentions education and workforce development only in the final paragraph as a consequence of their argument, not as the main focus. This choice misidentifies a supporting point as the primary purpose."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:27:05.798Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "05ee90ec-6e86-4761-8ce2-c57ad0a4a404"
+  },
+  "passage": "The conventional wisdom holds that artificial intelligence will inevitably replace human workers across virtually all sectors of the economy. This narrative, while compelling in its simplicity, fundamentally misunderstands the nature of human-AI collaboration. Rather than viewing AI as a wholesale replacement for human intelligence, we should recognize it as a powerful amplifier of human capabilities—one that can liberate workers from routine tasks while enabling them to focus on uniquely human skills like creative problem-solving, emotional intelligence, and complex reasoning.\n\nConsider the field of medical diagnosis. While AI systems can now identify certain cancers in imaging scans with remarkable accuracy, they cannot comfort a frightened patient, navigate the ethical complexities of treatment decisions, or adapt their communication style to different cultural contexts. The most effective healthcare delivery emerges not from AI alone, nor from human practitioners working in isolation, but from a synergistic partnership that leverages the computational power of machines alongside the empathy, intuition, and contextual understanding that define human expertise.\n\nThis collaborative model requires us to fundamentally reimagine education and workforce development. Instead of preparing students for jobs that may not exist in a decade, we must cultivate the distinctly human capacities that will remain irreplaceable: critical thinking, creativity, interpersonal communication, and ethical reasoning. The future belongs not to those who can compete with machines, but to those who can work alongside them.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 247,
+    "source": "Contemporary technology analysis"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.333333333333333,
+    "evaluatedAt": "2026-01-08T15:31:39.362Z"
+  }
+}

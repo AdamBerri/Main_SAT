@@ -1,0 +1,62 @@
+{
+  "id": "a7b3c8d2-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.3,
+    "linguistic": 1.9
+  },
+  "stem": "As used in the passage, \"temper\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "moderate",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "strengthen",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "anger",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "heat",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this context, \"temper\" means to moderate or restrain. The passage describes how species have learned to control or tone down their competitive behaviors, leading to a more balanced ecosystem. The surrounding context about sharing feeding grounds and creating harmony supports this meaning of tempering as moderation rather than elimination of competition.",
+  "distractorRationale": {
+    "A": "This is the correct answer - temper means to moderate in this context.",
+    "B": "While 'temper' can mean to strengthen (as in tempering steel), this meaning doesn't fit the context of reducing competitive behaviors.",
+    "C": "Though 'temper' can refer to anger or mood, the passage is about behavioral moderation, not emotional states.",
+    "D": "While 'temper' can relate to heating processes in metallurgy, this meaning is completely unrelated to the biological context of the passage."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:23:56.042Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "369d17e7-7846-4938-865d-cca4b9675d7e"
+  },
+  "passage": "The marine biologist carefully examined the coral reef, noting how the vibrant ecosystem had begun to recover after years of environmental stress. What struck her most was the way different species had learned to **temper** their competitive behaviors, creating a more balanced community. Fish that once aggressively defended territory now shared feeding grounds, while various coral species grew in harmonious clusters rather than overwhelming each other. This moderation in natural competition had allowed the reef's biodiversity to flourish once again.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 89,
+    "source": "Marine biology research excerpt"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9166666666666665,
+    "evaluatedAt": "2026-01-08T14:29:15.161Z"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "a7b3c9d2-e4f5-6789-a1b2-c3d4e5f67890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "probability"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.9,
+    "computational": 4.3
+  },
+  "stem": "A jar contains 8 red marbles, 6 blue marbles, and 4 green marbles. Maria draws 3 marbles from the jar without replacement. What is the probability that she draws exactly 2 red marbles and 1 blue marble?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\frac{7}{34}$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{8}{51}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{4}{17}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{16}{85}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find the probability of drawing exactly 2 red marbles and 1 blue marble, we need to use combinations.\n\nFirst, let's identify what we have:\n- Total marbles: 8 + 6 + 4 = 18\n- We want: 2 red marbles from 8 red, and 1 blue marble from 6 blue\n- Total marbles drawn: 3\n\nThe number of ways to choose 2 red marbles from 8 is $\\binom{8}{2} = \\frac{8!}{2!(8-2)!} = \\frac{8 \\times 7}{2 \\times 1} = 28$\n\nThe number of ways to choose 1 blue marble from 6 is $\\binom{6}{1} = 6$\n\nThe number of ways to choose 0 green marbles from 4 is $\\binom{4}{0} = 1$\n\nSo the number of favorable outcomes is $28 \\times 6 \\times 1 = 168$\n\nThe total number of ways to choose 3 marbles from 18 is $\\binom{18}{3} = \\frac{18!}{3!(18-3)!} = \\frac{18 \\times 17 \\times 16}{3 \\times 2 \\times 1} = \\frac{4896}{6} = 816$\n\nTherefore, the probability is $\\frac{168}{816} = \\frac{7}{34}$",
+  "distractorRationale": {
+    "A": "This is the correct answer obtained by properly calculating combinations.",
+    "B": "This results from incorrectly calculating the total number of ways to choose 3 marbles from 18, possibly using $\\binom{17}{3}$ instead of $\\binom{18}{3}$.",
+    "C": "This results from not properly accounting for the ordering or making an error in the combination calculations, possibly treating this as a permutation problem.",
+    "D": "This results from making computational errors in the combination calculations or incorrectly simplifying the final fraction."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:46:29.585Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "b4e39a6a-e027-442a-a097-1553033d78ab"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.291666666666667,
+    "evaluatedAt": "2026-01-08T15:51:31.645Z"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "batchId": "batch_all_1767884929423",
+  "startedAt": "2026-01-08T15:08:49.423Z",
+  "completedAt": "2026-01-08T15:08:53.693Z",
+  "totalGenerated": 0,
+  "totalPassed": 0,
+  "byTopic": {
+    "READING/Information_and_Ideas/command_of_evidence": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Information_and_Ideas/inferences": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Information_and_Ideas/textual_evidence": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Craft_and_Structure/words_in_context": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Information_and_Ideas/central_ideas": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Craft_and_Structure/cross_text_connections": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Expression_of_Ideas/transitions": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Expression_of_Ideas/rhetorical_synthesis": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Algebra/linear_equations": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Algebra/linear_functions": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Algebra/systems_of_equations": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Algebra/linear_inequalities": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Advanced_Math/equivalent_expressions": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Advanced_Math/nonlinear_equations": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Advanced_Math/nonlinear_functions": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/ratios_rates": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/percentages": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/units": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/data_distributions": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/probability": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/inference": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/evaluating_claims": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Problem_Solving/two_variable_data": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Geometry_Trig/area_volume": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Geometry_Trig/lines_angles": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Geometry_Trig/triangles": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Geometry_Trig/circles": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "MATH/Geometry_Trig/right_triangles": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Craft_and_Structure/text_structure": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Craft_and_Structure/overall_purpose": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Standard_English_Conventions/boundaries": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    },
+    "READING/Standard_English_Conventions/form_structure_sense": {
+      "generated": 0,
+      "passed": 0,
+      "avgScore": 0
+    }
+  },
+  "errors": []
+}

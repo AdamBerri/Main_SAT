@@ -1,0 +1,59 @@
+{
+  "id": "a7f8b2c3-9d4e-5f6a-8b7c-1e2d3f4a5b6c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 2.9,
+    "computational": 2.8
+  },
+  "stem": "A manufacturing company produces widgets at a rate of 450 widgets per hour. If the company operates 8 hours per day, 5 days per week, how many widgets does the company produce in 3 weeks?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "3,600",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "10,800",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "54,000",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "162,000",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To find the total number of widgets produced in 3 weeks, we need to convert the production rate through multiple time units.\n\nGiven information:\n- Rate: 450 widgets per hour\n- Operating schedule: 8 hours per day, 5 days per week\n- Time period: 3 weeks\n\nStep 1: Find widgets produced per day\n450 widgets/hour × 8 hours/day = 3,600 widgets/day\n\nStep 2: Find widgets produced per week\n3,600 widgets/day × 5 days/week = 18,000 widgets/week\n\nStep 3: Find widgets produced in 3 weeks\n18,000 widgets/week × 3 weeks = 54,000 widgets\n\nTherefore, the company produces 54,000 widgets in 3 weeks.",
+  "distractorRationale": {
+    "A": "This represents widgets produced in just one day (450 × 8 = 3,600), forgetting to account for multiple days and weeks",
+    "B": "This represents widgets produced in 3 days (3,600 × 3 = 10,800), incorrectly using 3 days instead of 3 weeks",
+    "C": "This is the correct answer: 450 × 8 × 5 × 3 = 54,000 widgets",
+    "D": "This results from incorrectly multiplying by 7 days per week instead of 5 working days (450 × 8 × 7 × 3 = 75,600) or other calculation errors leading to this value"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:46:36.104Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "dc3fbf90-a669-41c9-ab79-771aa7b27ca9"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.75,
+    "evaluatedAt": "2026-01-08T15:50:40.484Z"
+  }
+}

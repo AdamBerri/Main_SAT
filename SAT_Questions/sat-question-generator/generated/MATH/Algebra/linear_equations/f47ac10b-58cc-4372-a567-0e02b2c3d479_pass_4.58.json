@@ -1,0 +1,59 @@
+{
+  "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.1,
+    "procedural": 1,
+    "computational": 1.1
+  },
+  "stem": "Maria bought 3 notebooks and spent a total of $12. If each notebook costs the same amount, what is the cost of one notebook?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$4",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$9",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$15",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $x$ represent the cost of one notebook. Since Maria bought 3 notebooks and each costs the same amount, the total cost is $3x$. We know the total cost is $12, so we can write the equation: $3x = 12$. To solve for $x$, divide both sides by 3: $x = \\frac{12}{3} = 4$. Therefore, one notebook costs $4.",
+  "distractorRationale": {
+    "A": "This results from subtracting 3 from 12 instead of dividing, confusing the operation needed.",
+    "B": "This is the correct answer obtained by dividing the total cost by the number of notebooks.",
+    "C": "This results from subtracting the number of notebooks from the total cost (12 - 3 = 9).",
+    "D": "This results from adding the number of notebooks to the total cost (12 + 3 = 15)."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:33:08.723Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "b4d069f4-49e0-4374-998a-152e85777c50"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.583333333333333,
+    "evaluatedAt": "2026-01-08T15:37:57.113Z"
+  }
+}

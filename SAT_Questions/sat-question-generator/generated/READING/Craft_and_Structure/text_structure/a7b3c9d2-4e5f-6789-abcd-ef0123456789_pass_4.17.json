@@ -1,0 +1,62 @@
+{
+  "id": "a7b3c9d2-4e5f-6789-abcd-ef0123456789",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 3,
+    "linguistic": 3.2
+  },
+  "stem": "Which choice best describes the overall structure of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A scientific hypothesis is presented, followed by experimental data that supports the hypothesis.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "A problem is introduced, its causes are analyzed, and potential solutions are discussed.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Two competing theories are compared and contrasted to determine which is more valid.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "A historical timeline traces the development of an environmental issue from past to present.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage follows a clear problem-solution structure. The first paragraph introduces the problem of declining bee populations and Colony Collapse Disorder. The second paragraph analyzes the causes of this problem, including pesticide exposure, habitat loss, and climate change. The third paragraph discusses various solutions being implemented, such as pesticide restrictions, bee-friendly farming practices, and urban beekeeping programs. This three-part organization (problem → causes → solutions) is a classic rhetorical structure used in informational writing.",
+  "distractorRationale": {
+    "A": "The passage does not present a hypothesis followed by experimental data. Instead, it describes an established environmental problem and discusses its causes and solutions.",
+    "C": "The passage does not compare competing theories. It presents a unified explanation of the bee decline problem and various complementary solutions rather than contrasting different viewpoints.",
+    "D": "While the passage mentions that CCD was first identified in 2006, it does not trace a historical timeline. The focus is on explaining current causes and solutions rather than chronicling historical development."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:27:56.835Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "00812714-a51e-489f-8a37-7785faf6146c"
+  },
+  "passage": "The rapid decline of bee populations worldwide has become one of the most pressing environmental concerns of our time. Colony Collapse Disorder (CCD), first identified in 2006, has devastated honeybee colonies across North America and Europe, with some regions reporting losses of up to 40% annually. This phenomenon occurs when worker bees mysteriously abandon their hives, leaving behind the queen, larvae, and honey stores.\n\nSeveral factors contribute to this alarming trend. Pesticide exposure, particularly from neonicotinoids used in agriculture, has been shown to impair bees' navigation systems and weaken their immune responses. Additionally, habitat loss due to urbanization and monoculture farming practices has reduced the diversity of flowering plants that bees depend on for nutrition. Climate change further exacerbates these problems by altering blooming cycles and creating unpredictable weather patterns that disrupt foraging behaviors.\n\nFortunately, various solutions are being implemented to address this crisis. Many countries have begun restricting or banning harmful pesticides, while farmers are increasingly adopting bee-friendly practices such as planting cover crops and maintaining wildflower strips along field margins. Urban beekeeping programs have also emerged, transforming city rooftops and parks into pollinator havens. Furthermore, researchers are developing disease-resistant bee varieties and exploring innovative hive management techniques to strengthen colony resilience.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 218,
+    "source": "Environmental science text"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.166666666666667,
+    "evaluatedAt": "2026-01-08T15:32:06.430Z"
+  }
+}

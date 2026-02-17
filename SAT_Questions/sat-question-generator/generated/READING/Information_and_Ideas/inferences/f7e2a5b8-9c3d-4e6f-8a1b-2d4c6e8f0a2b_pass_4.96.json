@@ -1,0 +1,62 @@
+{
+  "id": "f7e2a5b8-9c3d-4e6f-8a1b-2d4c6e8f0a2b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 2.1
+  },
+  "stem": "Based on the passage, which of the following can most reasonably be inferred?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Some plot holders are not fulfilling their maintenance obligations.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The annual fee of $75 is too expensive for most community members.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The garden coordinator is planning to expand the garden in the coming years.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Maria will have to wait exactly two years to get her own plot.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage states that plot holders are 'required to maintain their gardens regularly,' but Maria observes 'several plots that appeared neglected—weeds had overtaken the planted areas, and tools lay scattered and rusted.' This creates a clear logical inference: if plots are required to be maintained but some appear neglected, then some plot holders are not fulfilling their maintenance obligations. This inference is supported by the contrast between the stated requirement and the observed reality.",
+  "distractorRationale": {
+    "A": "This is the correct answer - the inference is logically supported by the contrast between maintenance requirements and observed neglected plots.",
+    "B": "The passage mentions high demand (30+ people on waiting list) and doesn't suggest the fee is problematic, making this inference unsupported.",
+    "C": "The passage states the garden has 'reduced in size over the past five years,' which contradicts any inference about expansion plans.",
+    "D": "The passage says people 'typically' wait two years, but this doesn't guarantee Maria will wait exactly that long—it could be more or less time."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:23:50.600Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "a705f69b-7783-4ae1-997f-65296e590d46"
+  },
+  "passage": "When Maria first arrived at the community garden, she noticed that most plots were already flourishing with vegetables and flowers. The waiting list for new plots had over thirty names, and the garden coordinator mentioned that people typically waited two years before getting their own space. However, Maria observed several plots that appeared neglected—weeds had overtaken the planted areas, and tools lay scattered and rusted. The coordinator explained that plot holders paid an annual fee of $75 and were required to maintain their gardens regularly. Despite the high demand for plots, Maria learned that the garden had actually reduced in size over the past five years, with three sections converted back to regular park space.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 128,
+    "source": "Community gardening scenario"
+  },
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.958333333333333,
+    "evaluatedAt": "2026-01-08T14:30:02.787Z"
+  }
+}

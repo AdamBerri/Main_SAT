@@ -1,0 +1,62 @@
+{
+  "id": "f47b2c8e-9d1a-4e6b-8c3f-2a5e7b9d4c1f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.1,
+    "linguistic": 3.9
+  },
+  "stem": "The author's main purpose in the passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "explain the technical processes behind medical AI diagnostic systems and their implementation in healthcare settings.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "argue that medical AI systems perpetuate existing healthcare inequities and advocate for systemic reforms to address these biases.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "provide a balanced overview of both the benefits and drawbacks of artificial intelligence in medical practice.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "demonstrate that artificial intelligence has failed to deliver on its promises and should be abandoned in medical contexts.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The author's main purpose is to argue that medical AI systems perpetuate existing healthcare inequities and advocate for systemic reforms. This is evident from the passage's structure: the author begins by acknowledging AI's promise but immediately pivots to expose 'a troubling reality' about algorithmic bias. The author uses strong, persuasive language ('This isn't merely a technical glitch—it's a perpetuation of historical medical biases') and provides concrete evidence (the 23% statistic) to support their argument. The passage concludes with specific calls for action ('establish rigorous auditing standards, mandate transparency'), clearly indicating the author's intent to persuade readers that reform is necessary.",
+  "distractorRationale": {
+    "A": "This choice confuses the author's purpose with the topic. While the passage mentions medical AI systems, the author's intent is not to explain how they work but to critique their biased implementation.",
+    "C": "This suggests the author provides a neutral, balanced perspective, but the passage is clearly argumentative. The author acknowledges AI's promise only to set up their critique of its inequitable implementation.",
+    "D": "This overstates the author's position. While critical of current AI implementation, the author explicitly states 'The promise of AI in medicine is real' and advocates for reform rather than abandonment."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:27:48.451Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "a2484950-48d3-4b80-9bbe-8286508c87fa"
+  },
+  "passage": "The widespread adoption of artificial intelligence in medical diagnostics has been heralded as a revolutionary breakthrough, promising unprecedented accuracy and efficiency. Yet this enthusiasm obscures a troubling reality: the algorithms powering these systems are trained on datasets that systematically underrepresent minority populations, women, and elderly patients. When a diagnostic AI trained primarily on data from young, white males encounters a middle-aged Black woman presenting with cardiac symptoms, it may fail to recognize patterns that deviate from its narrow training parameters. This isn't merely a technical glitch—it's a perpetuation of historical medical biases encoded in silicon and steel.\n\nThe consequences extend far beyond individual misdiagnoses. As hospitals increasingly rely on AI recommendations for treatment protocols, resource allocation, and even triage decisions, these algorithmic blind spots become institutionalized forms of discrimination. A recent study revealed that AI systems used in emergency departments were 23% less likely to recommend immediate intervention for patients from underrepresented groups, even when controlling for symptom severity and medical history. The very technology we've embraced as objective and impartial may be amplifying the inequities we sought to eliminate.\n\nAddressing this crisis requires more than diverse training data—it demands a fundamental reconsideration of how we develop and deploy medical AI. We must establish rigorous auditing standards, mandate transparency in algorithmic decision-making, and ensure that affected communities have a voice in shaping these systems. The promise of AI in medicine is real, but realizing it equitably will require acknowledging that our algorithms are only as fair as the society that creates them.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 267,
+    "source": "Academic journal editorial on medical AI ethics"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.25,
+    "evaluatedAt": "2026-01-08T15:31:39.363Z"
+  }
+}

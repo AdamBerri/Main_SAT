@@ -1,0 +1,59 @@
+{
+  "id": "a3f8c9d2-4e1b-4a3c-9f2e-7d8e5c1a6b3f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 2.7,
+    "linguistic": 2.9
+  },
+  "stem": "Which choice most effectively uses data from the table to support Chen's conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "City B, with 28% green space coverage, has an air quality index of 65, while City E, with only 8% green space coverage, has an air quality index of 142.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "City A has the highest air quality index at 156, demonstrating that limited green space leads to poor air quality.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "City D, with 15% green space coverage, has better air quality than City B, which has 28% green space coverage.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "City F has 22% green space coverage and serves a population of 2.1 million residents.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A is correct because it directly supports Chen's conclusion by comparing two cities with significantly different green space percentages and showing that the city with more green space (City B at 28%) has a much lower (better) air quality index of 65 compared to the city with less green space (City E at 8%) which has a higher (worse) air quality index of 142. Since lower air quality index values indicate better air quality, this data clearly demonstrates the positive relationship Chen identified between extensive green spaces and better air quality.",
+  "distractorRationale": {
+    "A": "Correct: accurately cites data showing City B (28% green space, AQI 65) has better air quality than City E (8% green space, AQI 142), directly supporting the claim that more green space correlates with better air quality.",
+    "B": "Wrong: uses wrong comparison - while City A does have an AQI of 156, this choice doesn't compare it to a city with more green space to demonstrate the relationship Chen claims. It only presents one data point without the comparative context needed.",
+    "C": "Wrong: reverses the relationship - City D (15% green space, AQI 98) actually has worse air quality than City B (28% green space, AQI 65), which would weaken rather than support Chen's conclusion.",
+    "D": "Wrong: uses irrelevant data - while these values for City F are accurate, population data doesn't address the relationship between green space and air quality that Chen's conclusion focuses on."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-11T16:05:17.000Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "32b19236-d5af-4bd1-adaa-69fbe6ef5e05"
+  },
+  "passage": "Environmental scientist Dr. Maria Chen investigated the relationship between urban green space and air quality in major cities. After analyzing pollution data from six cities with varying amounts of parkland, Chen concluded that cities with more extensive green spaces consistently experience better air quality than those with limited vegetation.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 52,
+    "source": "Adapted from a study on urban environmental factors"
+  },
+  "hasImage": true,
+  "imageDescription": "Data table titled 'Urban Green Space and Air Quality in Six Major Cities'. The table has 4 columns: 'City', 'Green Space Coverage (%)', 'Air Quality Index (AQI)', and 'Population (millions)'. Six rows of data: City A: 6%, 156, 3.8; City B: 28%, 65, 1.9; City C: 12%, 118, 4.2; City D: 15%, 98, 2.7; City E: 8%, 142, 3.1; City F: 22%, 78, 2.1. Below the table is a note: 'Note: Lower AQI values indicate better air quality. Source: Urban Environmental Research Institute, 2023'"
+}

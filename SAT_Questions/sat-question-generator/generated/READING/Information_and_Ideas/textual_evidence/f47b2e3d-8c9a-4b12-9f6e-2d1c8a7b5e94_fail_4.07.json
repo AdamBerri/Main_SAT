@@ -1,0 +1,64 @@
+{
+  "id": "f47b2e3d-8c9a-4b12-9f6e-2d1c8a7b5e94",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.1,
+    "linguistic": 4
+  },
+  "stem": "Based on the texts and table, which statement best describes the relationship between Dr. Chen's findings and the Metropolitan Climate Research Institute's data?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Chen's results align with the table's data for green infrastructure, but her temperature reduction figure falls between the single-strategy and combined-strategy outcomes.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Chen's findings contradict the table by showing that green infrastructure alone can achieve temperature reductions comparable to combined strategies.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The table confirms Chen's research by showing that green infrastructure has the highest success rate among individual strategies.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Chen's study demonstrates that green infrastructure is more effective than the table suggests, as her results exceed all values shown for individual strategies.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Dr. Chen's study found that green infrastructure could reduce temperatures by 2.3°C, which aligns closely with the table's data showing green infrastructure alone achieving 1.8°C reduction. Chen's figure falls logically between the table's single-strategy results (1.8°C for green infrastructure) and the combined-strategy results (3.4°C), suggesting her research is consistent with the broader pattern that integrated approaches yield better results than individual strategies.",
+  "distractorRationale": {
+    "A": "This is the correct answer as explained above.",
+    "B": "This misinterprets the data - Chen's 2.3°C reduction is not comparable to the 3.4°C achieved by combined strategies, and doesn't contradict the table.",
+    "C": "This confuses success rate with temperature reduction effectiveness - while green infrastructure has a 67% success rate, reflective surfaces actually have a higher success rate at 75%.",
+    "D": "This is incorrect because Chen's 2.3°C result is higher than the table's 1.8°C for green infrastructure alone, but it doesn't exceed all individual strategy values when considering that this difference likely reflects methodological variations between studies."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:21:48.647Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "16786bda-d0d4-473f-afbd-d6ba134a0a9c"
+  },
+  "passage": "Text 1\n\nUrban heat islands—metropolitan areas significantly warmer than their rural surroundings—represent one of the most pronounced examples of human impact on local climate. The phenomenon occurs when natural land cover is replaced with concrete, asphalt, and buildings that absorb and retain heat more effectively than vegetation. Dr. Sarah Chen's recent study of fifteen major cities found that strategic implementation of green infrastructure could reduce urban temperatures by an average of 2.3°C during peak summer months. \"The key is not just adding green spaces,\" Chen explains, \"but integrating them systematically throughout the urban fabric to create cooling corridors that channel airflow and maximize evapotranspiration.\"\n\nText 2\n\nA comprehensive analysis by the Metropolitan Climate Research Institute examined temperature reduction strategies across twenty-five cities worldwide over a five-year period. The study categorized interventions into three primary approaches: green roofs and walls (vegetation-based cooling), reflective surfaces (albedo modification), and urban water features (evaporative cooling). Cities that implemented comprehensive programs combining all three strategies achieved the most substantial temperature reductions, with some experiencing decreases of up to 4.1°C in their hottest districts.\n\n[THIS IS TABLE: Temperature Reduction by Strategy Type\nStrategy Type | Average Temp Reduction (°C) | Cities Implementing | Success Rate (%)\nGreen Infrastructure Only | 1.8 | 12 | 67\nReflective Surfaces Only | 1.2 | 8 | 75\nWater Features Only | 0.9 | 6 | 50\nCombined Strategies | 3.4 | 9 | 89]",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 247,
+    "source": "Adapted from urban climate research studies"
+  },
+  "hasImage": true,
+  "imageDescription": "A data table showing temperature reduction strategies with columns for Strategy Type, Average Temperature Reduction in Celsius, Cities Implementing, and Success Rate percentage. The table has 4 rows of data comparing different urban cooling approaches.",
+  "_evaluation": {
+    "status": "fail",
+    "score": 4.071428571428571,
+    "evaluatedAt": "2026-01-08T15:25:22.324Z"
+  }
+}

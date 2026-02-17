@@ -1,0 +1,61 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-123456789abc",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about Dr. Hartwell's assessment of the manuscript?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "She believes the manuscript is authentic because the physical evidence confirms its age and provenance.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "She has determined that the manuscript is a forgery despite its convincing physical characteristics.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "She remains uncertain about the manuscript's authenticity and plans to conduct additional tests.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "She suspects the manuscript may be authentic but was written by someone other than Giovanni Mercator.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage strongly implies that Dr. Hartwell has concluded the manuscript is a forgery. While the physical evidence (handwriting, paper, ink) appears authentic, the content reveals anachronistic knowledge—the treatise describes agricultural techniques and understanding of plant physiology that wouldn't be developed until decades or even centuries after 1547. The phrase 'Too prescient, perhaps' signals her realization that the content is impossibly advanced for its supposed time period. Her decision to call the dealer, combined with the statement that he 'would not be pleased with her assessment' and her commitment to 'scholarly integrity,' indicates she will report the manuscript as inauthentic despite its convincing physical characteristics.",
+  "distractorRationale": {
+    "A": "This contradicts the passage's emphasis on Dr. Hartwell's concerns about the anachronistic content, which outweighs the convincing physical evidence.",
+    "C": "The passage suggests she has reached a definitive conclusion rather than remaining uncertain—her decision to call the dealer and the reference to 'scholarly integrity' indicate a firm assessment.",
+    "D": "While the passage mentions the manuscript is attributed to Giovanni Mercator's nephew, Dr. Hartwell's concerns focus on the anachronistic content rather than questions of authorship within the Mercator family."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:20:46.210Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "16eb2d85-e3b6-49c2-bc32-6bc307593541"
+  },
+  "passage": "The manuscript lay before Dr. Hartwell, its edges yellowed with age, the ink faded but still legible. She had spent three months authenticating what the dealer claimed was a lost work by the Renaissance polymath Giovanni Mercator—not the famous cartographer, but his lesser-known nephew who had pursued natural philosophy in the shadow of his uncle's geographic achievements. The handwriting matched samples from Mercator's verified correspondence, the paper bore the correct watermarks for 16th-century Venetian mills, and the chemical analysis of the ink revealed the precise iron-gall composition used by scholars of that era.\n\nYet something nagged at Dr. Hartwell. The treatise purported to describe a series of botanical experiments conducted in 1547, detailing the cultivation of New World crops—maize, tomatoes, and potatoes—in European soil. The methodology was sophisticated, the observations acute, and the conclusions remarkably prescient about plant adaptation. Too prescient, perhaps. While Spanish conquistadors had indeed brought these crops to Europe by the mid-16th century, widespread cultivation and systematic study remained decades away. The treatise described techniques that wouldn't be developed until the late 1600s, and its understanding of plant physiology seemed to anticipate discoveries that wouldn't occur until the 18th century.\n\nDr. Hartwell closed the manuscript and reached for her phone. The dealer would not be pleased with her assessment, but scholarly integrity demanded nothing less than absolute honesty about her findings.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 247
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.541666666666667,
+    "evaluatedAt": "2026-01-08T15:26:29.810Z"
+  }
+}

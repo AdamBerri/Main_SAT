@@ -1,0 +1,59 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2,
+    "computational": 2
+  },
+  "stem": "A marketing company conducted a survey to determine customer satisfaction with a new product. They surveyed 200 customers who had purchased the product in the last month. Of these customers, 160 reported being satisfied with the product. The company concluded: \"80% of all customers are satisfied with our new product.\"\n\nWhich of the following best describes the validity of this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The conclusion is valid because 160 out of 200 customers equals 80%.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The conclusion is not valid because the sample may not represent all customers.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The conclusion is not valid because 200 customers is too small a sample size.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is valid because the survey was conducted recently.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To evaluate this statistical claim, we need to consider whether the sample is representative of the population. The calculation is correct: $\\frac{160}{200} = 0.8 = 80\\%$. However, the sample consists only of customers who purchased the product in the last month. This group may not represent all customers because:\n\n1. Recent purchasers might be more enthusiastic about the product\n2. Dissatisfied customers might be less likely to respond to surveys\n3. The sample excludes customers who haven't purchased recently\n\nTherefore, generalizing from this specific sample to \"all customers\" is not statistically valid. The conclusion overstates what can be inferred from the data.",
+  "distractorRationale": {
+    "A": "Focuses only on the arithmetic calculation without considering sampling bias or representativeness",
+    "B": "Correctly identifies that the sample (recent purchasers) may not represent the broader population of all customers",
+    "C": "Incorrectly suggests sample size is the main issue, when 200 is actually a reasonable sample size for many purposes",
+    "D": "Incorrectly assumes that timing alone makes the conclusion valid, ignoring sampling bias issues"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:52:21.644Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "58773075-d528-4a5a-9e35-9289de5f9a0c"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.2083333333333335,
+    "evaluatedAt": "2026-01-08T15:55:56.255Z"
+  }
+}

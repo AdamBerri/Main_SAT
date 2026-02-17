@@ -1,0 +1,58 @@
+{
+  "id": "a7b3c4d5-e6f7-8901-2345-6789abcdef01",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.2,
+    "computational": 2
+  },
+  "stem": "A car travels at a constant speed of 65 miles per hour. How many feet does the car travel in 8 seconds?\n\n(Note: 1 mile = 5,280 feet)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "520 feet",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "693 feet",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "765 feet",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{2,288}{3}$ feet",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "First, convert the speed from miles per hour to feet per second.\n\nStart with 65 miles per hour:\n$65 \\text{ miles/hour} \\times \\frac{5,280 \\text{ feet}}{1 \\text{ mile}} \\times \\frac{1 \\text{ hour}}{3,600 \\text{ seconds}}$\n\n$= \\frac{65 \\times 5,280}{3,600} \\text{ feet/second}$\n\n$= \\frac{343,200}{3,600} \\text{ feet/second}$\n\n$= \\frac{2,288}{24} \\text{ feet/second}$\n\n$= \\frac{286}{3} \\text{ feet/second}$\n\nNow multiply by 8 seconds to find the distance:\n$\\frac{286}{3} \\times 8 = \\frac{2,288}{3}$ feet",
+  "distractorRationale": {
+    "A": "This results from converting 65 mph to 65 feet per second (ignoring unit conversion) and multiplying by 8",
+    "B": "This comes from incorrectly converting 65 mph to approximately 86.6 feet per second (using 60 seconds per minute instead of 3,600 seconds per hour) and multiplying by 8",
+    "C": "This results from converting 65 mph to approximately 95.3 feet per second (forgetting to convert miles to feet) and multiplying by 8"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:46:48.066Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "46494252-5b49-48ef-ac59-af4e96aaa507"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.291666666666667,
+    "evaluatedAt": "2026-01-08T15:50:40.484Z"
+  }
+}

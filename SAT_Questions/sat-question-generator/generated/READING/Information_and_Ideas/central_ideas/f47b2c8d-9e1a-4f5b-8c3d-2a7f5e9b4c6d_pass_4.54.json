@@ -1,0 +1,62 @@
+{
+  "id": "f47b2c8d-9e1a-4f5b-8c3d-2a7f5e9b4c6d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "linguistic": 3
+  },
+  "stem": "Which choice best describes the central idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Coral bleaching is a survival mechanism that helps corals adapt to rising water temperatures.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Recent research has revealed that coral reefs are dynamic, adaptive ecosystems rather than static structures.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Marine scientists have discovered new conservation strategies for protecting coral reefs from environmental threats.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Coral reefs possess complex biochemical processes that enable them to survive in changing ocean conditions.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage's central idea is that recent marine research has fundamentally changed our understanding of coral reefs from static 'underwater gardens' to dynamic, adaptive ecosystems. The author supports this main point by providing specific examples of coral adaptability (bleaching as survival mechanism, heat tolerance development) and concludes by discussing the implications for conservation strategies. Choice B captures this overarching transformation in scientific understanding that unifies all the supporting details in the passage.",
+  "distractorRationale": {
+    "A": "This choice focuses too narrowly on coral bleaching, which is just one supporting example used to illustrate the broader point about coral reef dynamism.",
+    "C": "This choice misrepresents the passage's focus. While conservation implications are mentioned, the passage is primarily about changing scientific understanding, not about discovering new conservation strategies.",
+    "D": "This choice is too narrow, focusing only on the biochemical processes rather than the broader shift from viewing reefs as static to understanding them as dynamic ecosystems."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:52:42.107Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "5fdc07c7-e1b0-48c3-9016-0189269cb3a1"
+  },
+  "passage": "The traditional view of coral reefs as static underwater gardens has been fundamentally challenged by recent marine research. Rather than being passive structures, coral reefs are now understood to be dynamic ecosystems that actively respond to environmental changes through complex biochemical processes. When faced with rising water temperatures, corals can expel their symbiotic algae—a process called bleaching—as a survival mechanism rather than simply dying from stress. This adaptive response, while often unsuccessful in extreme conditions, demonstrates that corals possess sophisticated regulatory mechanisms that allow them to attempt environmental adjustments. Furthermore, some coral species have shown remarkable resilience by developing heat tolerance over successive generations, suggesting an evolutionary capacity for adaptation that scientists are only beginning to understand. These findings have profound implications for conservation efforts, as they indicate that coral reef preservation strategies must account for the reefs' inherent dynamism rather than treating them as fragile, unchanging entities.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 162,
+    "source": "Marine biology research article"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.541666666666667,
+    "evaluatedAt": "2026-01-08T14:56:35.538Z"
+  }
+}

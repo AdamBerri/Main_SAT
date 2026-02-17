@@ -1,0 +1,54 @@
+{
+  "id": "a7f3e9d2-4b8c-4e1a-9c3f-7d2e8a1b5c4f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A linear function $f$ satisfies $f(3) = 17$ and $f(8) = 42$. Another linear function $g$ has a y-intercept that is 5 less than the y-intercept of $f$ and a slope that is twice the slope of $f$. What is the value of $g(12)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$107$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$112$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$115$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$120$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "First, find the slope of $f$:\n$$m_f = \\frac{f(8) - f(3)}{8 - 3} = \\frac{42 - 17}{5} = \\frac{25}{5} = 5$$\n\nNext, find the y-intercept of $f$ using $f(x) = m_f x + b_f$:\n$$17 = 5(3) + b_f$$\n$$17 = 15 + b_f$$\n$$b_f = 2$$\n\nSo $f(x) = 5x + 2$.\n\nNow determine the parameters of $g$:\n- Slope of $g$: $m_g = 2m_f = 2(5) = 10$\n- Y-intercept of $g$: $b_g = b_f - 5 = 2 - 5 = -3$\n\nTherefore, $g(x) = 10x - 3$.\n\nFinally, calculate $g(12)$:\n$$g(12) = 10(12) - 3 = 120 - 3 = 115$$",
+  "distractorRationale": {
+    "A": "Uses the slope of f instead of twice the slope for g: $m_g = 5$ instead of $10$. Then calculates $g(12) = 5(12) - 3 = 60 - 3 = 57$. Wait, this gives 57, not 107. Let me recalculate: If student adds 5 to y-intercept instead of subtracting: $b_g = 2 + 5 = 7$, then $g(12) = 10(12) + 7 = 120 + 7 = 127$. Still not matching. Actually, uses slope of f and adds 5 to intercept: $g(12) = 5(12) + 7 = 60 + 7 = 67$. Let me try: uses slope 10 but adds 5 to get $b_g = 7$, then miscalculates: $10(12) - 13 = 107$. Better: correctly finds $m_g = 10$ and $b_g = -3$, but evaluates at $x = 11$ instead of $x = 12$: $g(11) = 10(11) - 3 = 110 - 3 = 107$.",
+    "B": "Correctly finds slope $m_g = 10$ but incorrectly calculates y-intercept as $b_g = 2$ (forgets to subtract 5), then makes arithmetic error: $g(12) = 10(12) + 2 = 120 + 2 = 122$. Let me recalculate for 112: Uses $b_g = -8$ instead of $-3$ (subtracts 5 from slope instead of intercept): $g(12) = 10(12) - 8 = 120 - 8 = 112$.",
+    "C": "This is the correct answer: $g(12) = 10(12) - 3 = 115$.",
+    "D": "Correctly finds $m_g = 10$ but forgets to subtract 5 from the y-intercept, using $b_g = 2$ instead of $b_g = -3$: $g(12) = 10(12) + 2 = 120 + 2 = 122$. Let me recalculate for exactly 120: Forgets to include the y-intercept term entirely: $g(12) = 10(12) = 120$."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:36:29.030Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "7b0484c8-2d6c-4f6d-99fa-a18d4b87e650"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

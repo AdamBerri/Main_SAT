@@ -1,0 +1,168 @@
+{
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 20,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 16,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.559895833333333,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "difficulty_accuracy",
+            "frequency": 8,
+            "exampleErrors": [
+              "Question stated as difficulty 3/5 but actual difficulty is 1.5-2.0/5 - single-step slope interpretation problem with minimal cognitive load that should take only 15-30 seconds",
+              "Question rated 5/5 difficulty but actually 2.5-3/5 - tests simple knowledge recall (sum of residuals equals zero) rather than complex problem-solving, with unnecessary red herring information making it appear harder than it is",
+              "Question calibrated at 4/5 but actually 2.5-3.5/5 - straightforward residual calculation with basic arithmetic that takes under 60 seconds, overcalibrated by approximately 1.5 difficulty points"
+            ]
+          },
+          {
+            "category": "answer_validity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Correct answer designated as C (II and III only) but all three statements (I, II, and III) are mathematically true - appears to be a keying error where Statement I residual calculation of +4 is incorrectly excluded",
+              "Designated answer is B (3) but standard statistical definition gives residual = actual - predicted = 95 - 98 = -3, making answer A correct - contradicts universal statistical conventions without justification",
+              "Mathematical solution yields m + b = 13.5 but stated correct answer is 25.5 which doesn't match any valid calculation, and 13.5 is not among the answer choices - fundamental error in problem construction or answer key"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor rationale states '4 + 60 + 7 = 71' but the answer choice is 67, with unclear error pathway that doesn't represent natural student thinking - appears reverse-engineered rather than pedagogically meaningful",
+              "Distractors B and C are trivially eliminated by reading comprehension alone since stem explicitly states 'positive slope' - no statistical understanding required to eliminate these options",
+              "Distractor claims error of '8 × 5 = 48' but this specific arithmetic mistake is implausible and arbitrary, testing basic arithmetic rather than understanding of linear models"
+            ]
+          },
+          {
+            "category": "faithfulness",
+            "frequency": 2,
+            "exampleErrors": [
+              "Question asks for artificial sum m + b rather than individual parameters or interpretable quantities - SAT typically asks for directly meaningful values, and this format feels contrived for actual test",
+              "Question relies on specialized theoretical property that sum of residuals equals zero, which is more AP Statistics content than SAT - College Board typically tests application and reasoning rather than memorized statistical properties"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.53125,
+        "passRate": 0.75
+      },
+      "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.192460317460318,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_incoherence",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor B (65) lacks psychological plausibility—the rationale '5 + 60 = 65' doesn't represent a coherent misconception a confused student would naturally make",
+              "Distractor D (85) rationale is mathematically incoherent—'Multiplying x by the y-intercept: 4(60) ÷ 3 ≈ 80' doesn't yield 85 and the explanation doesn't match the error"
+            ]
+          },
+          {
+            "category": "weak_distractor_discrimination",
+            "frequency": 2,
+            "exampleErrors": [
+              "Distractor D is weak at discrimination—only catches students who didn't read carefully or have severe conceptual gaps, not a tempting error for mid-level students",
+              "Distractor B won't effectively fool many students—it offers no realistic path to that answer, failing to separate students with partial understanding"
+            ]
+          },
+          {
+            "category": "unclear_error_rationale",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor A rationale is unclear—'5 + 4 + 60 = 69' doesn't match answer choice (64), then awkwardly pivots to '4 + 60 = 64,' making the explanation muddled and incoherent"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: distractor_incoherence, weak_distractor_discrimination, unclear_error_rationale",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 8,
+      "testSetSize": 2,
+      "trainMetrics": {
+        "avgScore": 4.1309523809523805,
+        "passRate": 0.8571428571428571,
+        "errorCategories": [
+          {
+            "category": "difficulty_calibration_overestimated",
+            "frequency": 3,
+            "exampleErrors": [
+              "Question stated as 4/5 difficulty but actual difficulty is 3/5. The problem is mechanically straightforward with low error opportunity and predictable structure; it lacks the complexity expected for above-average difficulty.",
+              "Question stated as 3/5 difficulty but actual difficulty is ~2.2/5. The calculation is transparent and routine (plug values into formula, perform basic arithmetic), with minimal cognitive demand and no conceptual nuance.",
+              "Question calibrated at 3/5 but should be 2.0-2.5/5. It's a direct application of a single formula with minimal complexity; students who understand residuals answer correctly consistently with no conceptual traps."
+            ]
+          },
+          {
+            "category": "answer_key_mismatch",
+            "frequency": 1,
+            "exampleErrors": [
+              "The designated answer (B) is mathematically incorrect based on the given data and calculations shown in the explanation. The correct answer should be 3.5, not 1, indicating either data values were changed without updating the answer key or the keyed answer is wrong.",
+              "Calculation verification shows residuals sum to 3.5, but answer choice B (1) does not match. A knowledgeable student following correct procedures would arrive at 3.5, creating a reliability issue."
+            ]
+          },
+          {
+            "category": "distractor_effectiveness_weak",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distractor A (50) is implausibly specific and lacks conceptual motivation—adding 8 and 42 while ignoring x entirely reflects pure guessing rather than a coherent misconception, making it ineffective at discriminating student understanding.",
+              "Distractor B (74) uses an overly convoluted arithmetic path (8(5) = 40, then 42 - 8 = 34) that few students would naturally follow, reducing its pedagogical value for identifying a specific misconception."
+            ]
+          },
+          {
+            "category": "internal_inconsistency",
+            "frequency": 0,
+            "exampleErrors": []
+          },
+          {
+            "category": "pedagogical_clarity_issues",
+            "frequency": 0,
+            "exampleErrors": []
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 0,
+        "passRate": 0
+      },
+      "improvementMade": "Addressed: difficulty_calibration_overestimated, answer_key_mismatch, distractor_effectiveness_weak",
+      "newPromptVersion": "1.2.0"
+    }
+  ],
+  "currentBestVersion": "1.1.0",
+  "converged": true,
+  "startedAt": "2026-01-08T20:55:29.477Z",
+  "completedAt": "2026-01-09T20:24:51.775Z",
+  "bestTestScore": 4.53125
+}

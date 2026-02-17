@@ -1,0 +1,63 @@
+{
+  "id": "8a2c4f6e-9b1d-4e8f-a3c5-7d9e2f1b8c4a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1.3,
+    "linguistic": 1.2
+  },
+  "stem": "How do the two texts relate to each other?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "They present opposing viewpoints about social media's impact on human connection.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "They both argue that social media has improved communication among young people.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "They provide similar examples of how technology has changed family relationships.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "They focus on different aspects of social media without contradicting each other.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The two texts present clearly opposing viewpoints about social media's impact on human connection. Text 1 argues that social media has improved communication and strengthened relationships by allowing people to stay connected across distances. Text 2 argues the opposite, claiming that social media actually isolates people and weakens genuine relationships despite appearing to connect them. This direct contradiction in their central claims makes them opposing viewpoints on the same topic.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This is incorrect because only Text 1 argues that social media has improved communication among young people. Text 2 argues that it has harmed young people by causing anxiety and isolation.",
+    "C": "This is incorrect because while both texts mention family relationships, they draw opposite conclusions. Text 1 says social media has strengthened family bonds, while Text 2 suggests it has weakened genuine interaction.",
+    "D": "This is incorrect because the texts directly contradict each other on the fundamental question of whether social media helps or harms human connection. They are not focusing on different aspects but rather taking opposite stances on the same core issue."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:27:16.095Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "e8b01cd2-dd12-4d53-9b3c-d57f1beedb52"
+  },
+  "passage": "Text 1\nSocial media has revolutionized how we communicate and stay connected with friends and family. Platforms like Instagram and Facebook allow us to share important moments instantly, bridging distances that once seemed impossible to cross. Young people especially benefit from these tools, as they can maintain friendships across different schools and cities. The ability to video chat with relatives who live far away has strengthened family bonds in ways previous generations never experienced. Social media has truly made the world a smaller, more connected place.\n\nText 2\nWhile social media promises connection, it often delivers the opposite. Many users report feeling more isolated despite having hundreds of online \"friends.\" The constant comparison with others' carefully curated posts leads to anxiety and low self-esteem, particularly among teenagers. Face-to-face conversations are becoming rarer as people prefer texting or commenting online. Real relationships require genuine interaction, not just likes and shares. Instead of bringing us together, social media may actually be driving us apart emotionally and socially.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 175,
+    "source": "Adapted from contemporary media studies discussions"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 3.9583333333333335,
+    "evaluatedAt": "2026-01-08T15:31:39.608Z"
+  }
+}

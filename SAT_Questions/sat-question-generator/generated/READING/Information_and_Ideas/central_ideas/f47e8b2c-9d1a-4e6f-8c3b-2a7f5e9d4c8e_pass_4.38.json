@@ -1,0 +1,62 @@
+{
+  "id": "f47e8b2c-9d1a-4e6f-8c3b-2a7f5e9d4c8e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 1.9,
+    "linguistic": 1.8
+  },
+  "stem": "The passage is mainly about",
+  "choices": [
+    {
+      "label": "A",
+      "text": "the technological improvements that have made electric vehicles more practical than earlier models.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "the significant transformation that electric vehicle adoption represents for society and various industries.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "the government policies and corporate investments that are supporting electric vehicle development.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "the environmental benefits that will result from replacing fossil fuel-powered vehicles with electric ones.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage's central idea is that electric vehicle adoption represents a fundamental, wide-ranging transformation for society. The author begins by stating that EVs represent 'more than just a technological shift' and are a 'fundamental transformation in how society approaches energy consumption and environmental responsibility.' The passage concludes by emphasizing that 'the implications extend beyond reduced emissions' and that the shift will 'reshape entire industries.' This broad, transformative theme unifies all the specific details mentioned throughout the passage.",
+  "distractorRationale": {
+    "A": "This choice is too narrow, focusing only on the technological improvements mentioned in one part of the passage rather than the overarching theme of societal transformation.",
+    "B": "This is the correct answer as it captures the passage's central theme of broad societal and industrial transformation.",
+    "C": "This choice focuses on supporting factors (policies and investments) rather than the main idea of fundamental transformation that these factors are enabling.",
+    "D": "This choice is too narrow, focusing only on environmental benefits, which the passage actually states is just one aspect of a much broader transformation."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T14:52:59.653Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "14c73360-9365-4ef5-b4e1-f68305a37d97"
+  },
+  "passage": "The widespread adoption of electric vehicles (EVs) represents more than just a technological shift in transportation—it signals a fundamental transformation in how society approaches energy consumption and environmental responsibility. While early electric cars faced significant limitations in battery life and charging infrastructure, recent advances have dramatically improved their practicality and appeal. Major automotive manufacturers are now investing billions in EV development, and governments worldwide are implementing policies to accelerate the transition away from fossil fuel-powered vehicles. This convergence of technological innovation, corporate investment, and regulatory support suggests that electric vehicles are poised to become the dominant form of personal transportation within the next two decades. The implications extend beyond reduced emissions; the shift promises to reshape entire industries, from energy production to urban planning, as communities adapt to this new transportation paradigm.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 154
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.375,
+    "evaluatedAt": "2026-01-08T14:56:35.538Z"
+  }
+}

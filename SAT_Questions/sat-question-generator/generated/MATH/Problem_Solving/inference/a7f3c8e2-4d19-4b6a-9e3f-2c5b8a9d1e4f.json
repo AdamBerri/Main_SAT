@@ -1,0 +1,54 @@
+{
+  "id": "a7f3c8e2-4d19-4b6a-9e3f-2c5b8a9d1e4f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A researcher surveyed 180 randomly selected students at a university with 7,200 students. Of those surveyed, 45 reported spending more than 15 hours per week on extracurricular activities. The researcher calculated that approximately 1,800 students at the university spend more than 15 hours per week on extracurricular activities. A second researcher claims this estimate is unreliable because students who spend significant time on extracurriculars were more likely to respond to the survey request. Which of the following best evaluates the second researcher's claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The claim is not valid because the calculation $\\frac{45}{180} \\times 7{,}200 = 1{,}800$ is mathematically correct.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The claim is not valid because a sample of 180 students is large enough to make reliable estimates about 7,200 students.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The claim is valid because if students with more extracurricular involvement were more likely to respond, the sample may overestimate the proportion in the full population.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The claim is valid because random selection cannot account for differences in response rates between different types of students.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The second researcher's concern addresses response bias, not sampling methodology or calculation accuracy. Although the initial selection was random, the actual respondents may not represent the full population if certain types of students were more likely to complete the survey.\n\nThe calculation $\\frac{45}{180} = 0.25$ or 25%, scaled to the full population: $0.25 \\times 7{,}200 = 1{,}800$ is mathematically correct. However, this estimate assumes the 180 respondents accurately represent all 7,200 students.\n\nIf students heavily involved in extracurriculars were more motivated to respond to a survey about student activities, then the 25% rate in the sample would be higher than the true population rate. This would cause the 1,800 estimate to be too high.\n\nThe key insight is distinguishing between:\n- **Random selection** (who was invited to participate) - this was done correctly\n- **Response bias** (who actually participated) - this is the concern\n\nEven with random selection, non-response bias can make a sample unrepresentative if certain groups respond at different rates. Choice C correctly identifies this as a valid concern that could affect the reliability of the estimate.",
+  "distractorRationale": {
+    "A": "This choice confuses mathematical accuracy with statistical validity. The calculation is correct, but correct arithmetic doesn't guarantee a reliable estimate if the sample is biased due to differential response rates.",
+    "B": "This choice incorrectly assumes sample size alone determines reliability. While 180 is a reasonable sample size (2.5% of the population), size doesn't protect against response bias. A large biased sample is still biased.",
+    "C": "CORRECT: Identifies that response bias can make even a randomly selected sample unrepresentative, leading to overestimation if highly involved students were more likely to respond.",
+    "D": "This choice misunderstands the relationship between random selection and response rates. Random selection can work well, but the concern here is specifically about differential response rates after selection, which is a valid issue that the claim correctly identifies."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:01.667Z",
+    "promptVersion": "1.2.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "ec4ebd62-e860-48a3-9ebe-94d4f0cdebb4"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice"
+}

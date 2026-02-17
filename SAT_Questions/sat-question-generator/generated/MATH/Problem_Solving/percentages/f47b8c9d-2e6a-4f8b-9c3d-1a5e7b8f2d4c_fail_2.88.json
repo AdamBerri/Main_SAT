@@ -1,0 +1,59 @@
+{
+  "id": "f47b8c9d-2e6a-4f8b-9c3d-1a5e7b8f2d4c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "A store marks up the wholesale price of an item by 40% to determine its retail price. During a sale, the store offers a 25% discount off the retail price. If the store's profit on the item during the sale is $18, what was the wholesale price of the item?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$120",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$150",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$180",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$200",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let $w$ be the wholesale price. The retail price is $w + 0.40w = 1.40w$. During the sale, the price is $1.40w - 0.25(1.40w) = 1.40w(1 - 0.25) = 1.40w(0.75) = 1.05w$. The profit is the sale price minus the wholesale price: $1.05w - w = 0.05w = 18$. Solving for $w$: $w = \\frac{18}{0.05} = 360 \\div 0.05 = 180$. Therefore, the wholesale price was $180.",
+  "distractorRationale": {
+    "A": "This results from incorrectly calculating the sale price as retail price minus 25% of wholesale price, rather than 25% of retail price.",
+    "B": "This results from setting up the equation as 0.12w = 18 (using 12% instead of 5% as the profit margin).",
+    "C": "Correct answer: wholesale price of $180 gives a profit of $18 during the sale.",
+    "D": "This results from incorrectly assuming the profit margin is 9% instead of 5%, leading to 0.09w = 18."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:44:20.208Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "4f39cb95-0b10-41fa-80f4-d2a7297310d1"
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 2.875,
+    "evaluatedAt": "2026-01-08T15:49:58.152Z"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "a3f7c2d1-8b4e-4a2f-9c1d-5e6f7a8b9c0d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the seals' increased presence at the research station dock?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "They are attracted by the food-related activities of the station staff.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "They have become less fearful of humans over time in general.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "They prefer the research station's location to the commercial fishing harbor.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "They gather in larger groups than they did in previous years.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage establishes a clear pattern connecting the seals' increased dock presence with food-related activities. The text explicitly states that fishing boats 'regularly discarded fish scraps' and are now gone, while the seals' behavior 'changed most noticeably during the morning hours' when staff prepare catch samples and 'occasionally dropping small fish pieces into the water.' The temporal correlation (morning hours matching staff activities) and the direct mention of food in the water during these times strongly supports that seals are attracted by the staff's food-related activities. This inference requires connecting the departure of fishing boats, the timing of seal appearances, and the staff's fish-handling activities—two closely positioned details with strong textual scaffolding.",
+  "distractorRationale": {
+    "A": "This is the correct answer, supported by the correlation between seal presence and food-related staff activities.",
+    "B": "While the passage mentions seals approaching more frequently, it doesn't provide evidence that this reflects a general decrease in fear of humans rather than a specific response to food availability. The seals may still be cautious of humans in other contexts.",
+    "C": "The passage indicates the fishing harbor is fifteen miles away and that fishing boats left the research station area, but provides no evidence about the seals' location preferences beyond their attraction to food sources. The seals may simply be following food opportunities rather than preferring one location over another.",
+    "D": "Although the passage mentions groups of 'five or more' seals and notes increased frequency of sightings, it doesn't provide information about historical group sizes to support an inference about larger gatherings. The predecessor's notes mention 'occasional sightings' but don't specify group sizes for comparison."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-09T21:37:11.385Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "c97806d4-552b-4a7c-be19-d7ff2bfd0731"
+  },
+  "passage": "When marine biologist Dr. Elena Rodriguez first arrived at the coastal research station in 2019, she noticed something unusual about the local seal population. The seals, which typically maintained a cautious distance from human activity, had begun approaching the station's dock with increasing frequency. Her predecessor's notes mentioned occasional seal sightings near the dock, perhaps once or twice monthly. However, Dr. Rodriguez observed seals gathering at the dock almost daily, sometimes in groups of five or more. She soon discovered that a commercial fishing operation had relocated to a harbor fifteen miles south just six months earlier. The fishing boats that once anchored near the research station—and regularly discarded fish scraps into the water—were now absent from the area. Dr. Rodriguez noted that the seals' behavior changed most noticeably during the morning hours, precisely when the research station staff prepared their daily catch samples, often rinsing equipment and occasionally dropping small fish pieces into the water near the dock.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 162,
+    "source": "Simulated marine biology field report"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SAT Reading Question",
+  "description": "Schema for SAT Reading and Writing section questions",
+  "type": "object",
+  "required": [
+    "id",
+    "topic",
+    "difficulty",
+    "passage",
+    "passageMetadata",
+    "stem",
+    "choices",
+    "correctAnswer",
+    "explanation",
+    "distractorRationale",
+    "metadata"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for this question"
+    },
+    "topic": {
+      "type": "object",
+      "required": ["section", "domain", "subtopic"],
+      "properties": {
+        "section": {
+          "type": "string",
+          "const": "READING"
+        },
+        "domain": {
+          "type": "string",
+          "enum": [
+            "Information_and_Ideas",
+            "Craft_and_Structure",
+            "Expression_of_Ideas",
+            "Standard_English_Conventions"
+          ]
+        },
+        "subtopic": {
+          "type": "string",
+          "enum": [
+            "central_ideas",
+            "inferences",
+            "command_of_evidence",
+            "textual_evidence",
+            "words_in_context",
+            "text_structure",
+            "cross_text_connections",
+            "overall_purpose",
+            "rhetorical_synthesis",
+            "transitions",
+            "boundaries",
+            "form_structure_sense"
+          ]
+        }
+      }
+    },
+    "difficulty": {
+      "type": "object",
+      "required": ["overall", "conceptual", "procedural", "linguistic"],
+      "properties": {
+        "overall": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "conceptual": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "procedural": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "linguistic": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 5
+        }
+      }
+    },
+    "passage": {
+      "type": "string",
+      "description": "The reading passage text",
+      "minLength": 50
+    },
+    "passageMetadata": {
+      "type": "object",
+      "required": ["genre", "wordCount"],
+      "properties": {
+        "genre": {
+          "type": "string",
+          "enum": ["literary", "informational", "argumentative", "scientific"]
+        },
+        "wordCount": {
+          "type": "integer",
+          "minimum": 50,
+          "maximum": 750
+        },
+        "source": {
+          "type": "string",
+          "description": "Attribution or source description"
+        }
+      }
+    },
+    "stem": {
+      "type": "string",
+      "description": "The question stem/prompt",
+      "minLength": 10
+    },
+    "choices": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["label", "text", "isCorrect"],
+        "properties": {
+          "label": {
+            "type": "string",
+            "enum": ["A", "B", "C", "D"]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "isCorrect": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "correctAnswer": {
+      "type": "string",
+      "enum": ["A", "B", "C", "D"]
+    },
+    "explanation": {
+      "type": "string",
+      "description": "Detailed explanation of why the correct answer is correct",
+      "minLength": 50
+    },
+    "distractorRationale": {
+      "type": "object",
+      "description": "Explanation of why each distractor is wrong",
+      "properties": {
+        "A": { "type": "string" },
+        "B": { "type": "string" },
+        "C": { "type": "string" },
+        "D": { "type": "string" }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["generatedAt", "promptVersion", "modelUsed", "generationId"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "promptVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "modelUsed": {
+          "type": "string"
+        },
+        "generationId": {
+          "type": "string",
+          "format": "uuid"
+        }
+      }
+    },
+    "hasImage": {
+      "type": "boolean",
+      "description": "Whether this question includes a visual element (chart, graph, table, etc.)"
+    },
+    "imageDescription": {
+      "type": "string",
+      "description": "Description of the image/visual for generation (if hasImage is true)"
+    },
+    "imagePath": {
+      "type": "string",
+      "description": "Path to the generated image file (populated after image generation)"
+    }
+  }
+}

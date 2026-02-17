@@ -1,0 +1,59 @@
+{
+  "id": "f47b8c3e-9d2a-4f1b-8e7c-3a5b9f1d6e8a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "If $x^2 - 6x + 5 = 0$, what are the possible values of $x$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$x = 1$ or $x = 5$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$x = -1$ or $x = -5$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$x = 2$ or $x = 3$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$x = -2$ or $x = -3$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To solve $x^2 - 6x + 5 = 0$, we can factor the quadratic expression. We need to find two numbers that multiply to 5 and add to -6. These numbers are -1 and -5, since $(-1) \\times (-5) = 5$ and $(-1) + (-5) = -6$. Therefore, $x^2 - 6x + 5 = (x - 1)(x - 5) = 0$. By the zero product property, either $x - 1 = 0$ or $x - 5 = 0$, which gives us $x = 1$ or $x = 5$. We can verify: $(1)^2 - 6(1) + 5 = 1 - 6 + 5 = 0$ ✓ and $(5)^2 - 6(5) + 5 = 25 - 30 + 5 = 0$ ✓",
+  "distractorRationale": {
+    "A": "Correct answer obtained by proper factoring of the quadratic equation.",
+    "B": "This results from incorrectly changing the signs of both roots, possibly from confusion about the relationship between factors and roots.",
+    "C": "This comes from incorrectly factoring as $(x - 2)(x - 3)$, which would give $x^2 - 5x + 6 = 0$, not the original equation.",
+    "D": "This results from the same factoring error as choice C but with incorrect signs, leading to $(x + 2)(x + 3) = 0$."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:39:00.575Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "4593dd45-cba2-47b5-9f31-c6cf0e4b2abe"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "_evaluation": {
+    "status": "fail",
+    "score": 3.7083333333333335,
+    "evaluatedAt": "2026-01-08T15:44:37.406Z"
+  }
+}

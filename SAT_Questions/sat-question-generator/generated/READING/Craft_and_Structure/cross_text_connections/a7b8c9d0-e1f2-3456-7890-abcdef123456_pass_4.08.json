@@ -1,0 +1,62 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.1,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "stem": "Based on the passages, how do the authors' perspectives on the gig economy relate to each other?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Both authors acknowledge the gig economy's benefits but disagree about whether traditional employment should be completely abandoned.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The authors present fundamentally opposing viewpoints, with Passage 1 emphasizing worker empowerment and Passage 2 highlighting systemic exploitation.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The passages complement each other by examining different aspects of the same phenomenon without direct contradiction.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Both authors critique the gig economy but propose different solutions for addressing its inherent problems.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passages present fundamentally opposing perspectives on the gig economy. Passage 1 celebrates it as 'fundamental liberation' that provides 'unprecedented autonomy' and creates 'more equitable opportunities,' while Passage 2 criticizes it as systematically dismantling worker protections and creating 'the illusion of independence.' The authors reach completely different conclusions about whether the gig economy benefits or harms workers, making their viewpoints directly contradictory rather than complementary.",
+  "distractorRationale": {
+    "A": "This mischaracterizes the relationship because Passage 1 doesn't acknowledge any drawbacks of the gig economy, and neither passage discusses abandoning traditional employment entirely.",
+    "C": "This incorrectly suggests the passages are complementary when they actually present opposing evaluations of the same phenomenon, with one viewing it positively and the other negatively.",
+    "D": "This is incorrect because Passage 1 doesn't critique the gig economy at all - it celebrates it. Only Passage 2 presents criticisms, and neither passage proposes specific solutions."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-08T15:28:15.218Z",
+    "promptVersion": "1.0.0",
+    "modelUsed": "claude-sonnet-4-20250514",
+    "generationId": "24bcfce2-f52f-4bfa-8dbd-b143629d683d"
+  },
+  "passage": "Passage 1\nThe modern gig economy represents a fundamental liberation from the constraints of traditional employment. Workers now possess unprecedented autonomy to choose their projects, set their schedules, and diversify their income streams. This flexibility enables individuals to pursue passion projects while maintaining financial stability, fostering creativity and entrepreneurial spirit. The elimination of rigid corporate hierarchies allows talent to flourish based on merit rather than seniority, creating more equitable opportunities for advancement.\n\nPassage 2\nWhile the gig economy offers apparent flexibility, it systematically dismantles the social safety net that traditional employment provides. Workers sacrifice essential benefits like health insurance, retirement contributions, and paid leave for the illusion of independence. The unpredictable income streams create financial instability, forcing workers to accept lower wages and longer hours to compensate for uncertainty. This economic model primarily benefits corporations, which can reduce labor costs while transferring financial risks to individual workers.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 167,
+    "source": "Contemporary economic analysis"
+  },
+  "hasImage": false,
+  "_evaluation": {
+    "status": "pass",
+    "score": 4.083333333333333,
+    "evaluatedAt": "2026-01-08T15:31:39.609Z"
+  }
+}

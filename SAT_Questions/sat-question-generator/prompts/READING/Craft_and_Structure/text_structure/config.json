@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "currentVersion": "1.3.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "content": "Generate an SAT Reading question about how a passage is organized or structured.\n\nThe passage should:\n- Have a clear organizational pattern (compare/contrast, cause/effect, problem/solution, etc.)\n- Include transition words and structural markers\n- Be well-organized with identifiable parts\n\nThe question should:\n- Ask about the overall structure or how parts relate\n- Test understanding of rhetorical organization\n- Have distractors that misidentify the structure\n\n{DIFFICULTY_DESCRIPTION}",
+      "createdAt": "2026-01-08T14:10:32.312Z",
+      "parentVersion": null,
+      "preamIteration": 0,
+      "performanceMetrics": null
+    }
+  ],
+  "temperatureConfig": {
+    "generation": 0.7,
+    "variation": 0.3
+  },
+  "schemaPath": "/Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator/prompts/READING/Craft_and_Structure/text_structure/schema.json"
+}
