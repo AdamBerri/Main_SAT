@@ -36,7 +36,7 @@
             "exampleErrors": [
               "Correct answer yields mathematically impossible negative water heights (-60 cm), yet this is designated as correct without acknowledging physical impossibility",
               "Question asks for g(20) - f(20) which equals -90, but the answer key claims 210 is correct through unexplained reinterpretation",
-              "Mathematical solution gives t ≈ 35.36 minutes, but answer key designates 22.5 as correct despite verification showing this produces a 1.33:1 ratio instead of the required 2:1"
+              "Mathematical solution gives t \u2248 35.36 minutes, but answer key designates 22.5 as correct despite verification showing this produces a 1.33:1 ratio instead of the required 2:1"
             ]
           },
           {
@@ -81,7 +81,7 @@
             "exampleErrors": [
               "Question rated 4/5 difficulty but is actually straightforward linear function problem requiring only basic substitution - should be 2-2.5/5",
               "Stated as 5/5 (hardest) but involves routine algebra with clean numbers and no conceptual complexity - actually 2.5-3/5",
-              "Computational difficulty rated 4.1/5 when arithmetic is elementary (240-30=210, 15×2=30) - closer to 2.5-3/5"
+              "Computational difficulty rated 4.1/5 when arithmetic is elementary (240-30=210, 15\u00d72=30) - closer to 2.5-3/5"
             ]
           },
           {
@@ -99,7 +99,7 @@
             "exampleErrors": [
               "Distractor rationales describe errors that don't mathematically produce the stated answer values (e.g., slope error of -7 should yield 620, not 690)",
               "Distractors require multiple simultaneous errors that are implausible (e.g., conceptual error + arithmetic error + misreading)",
-              "Answer choice 28 justified with convoluted explanations like '(3+7)×5=50 then making an error' - when multiple explanations needed, it's a red flag"
+              "Answer choice 28 justified with convoluted explanations like '(3+7)\u00d75=50 then making an error' - when multiple explanations needed, it's a red flag"
             ]
           },
           {
@@ -151,7 +151,7 @@
             "category": "difficulty_accuracy",
             "frequency": 5,
             "exampleErrors": [
-              "Question stated as 3/5 difficulty but actual difficulty 1.5/5 - requires only direct substitution into provided formula with basic arithmetic (15×12=180, 450-180=270)",
+              "Question stated as 3/5 difficulty but actual difficulty 1.5/5 - requires only direct substitution into provided formula with basic arithmetic (15\u00d712=180, 450-180=270)",
               "Stated 4/5 difficulty but actual 2.5/3.0 - problem is heavily scaffolded with given initial value and straightforward procedural execution with minimal decision-making",
               "Stated 5/5 difficulty but actual 2.5-3/5 - no conceptual leaps needed, linear sequence of operations, straightforward execution with basic arithmetic"
             ]
@@ -162,7 +162,7 @@
             "exampleErrors": [
               "Distractor rationales are vague and don't clearly explain error pathways - e.g., 'confusing rate with time' doesn't specifically show how student arrives at answer choice",
               "Multiple conflicting error scenarios described for single distractor without justification for which path student would follow - reads like overlapping draft attempts rather than finalized distractor",
-              "Distractor C rationale contradictory: claims student correctly calculates 80÷8=10 then states they divide 150÷10=15, but sequence doesn't make coherent sense"
+              "Distractor C rationale contradictory: claims student correctly calculates 80\u00f78=10 then states they divide 150\u00f710=15, but sequence doesn't make coherent sense"
             ]
           },
           {
@@ -191,8 +191,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T19:49:18.364Z",
-  "completedAt": "2026-01-09T20:16:49.956Z",
+  "completedAt": null,
   "bestTestScore": 5.1875
 }

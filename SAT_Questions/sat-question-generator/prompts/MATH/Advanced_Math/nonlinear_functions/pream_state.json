@@ -44,7 +44,7 @@
             "frequency": 2,
             "exampleErrors": [
               "Question miscategorized as 'Advanced Math - nonlinear functions' difficulty 1/5 when it's actually basic function substitution more appropriate for 'Heart of Algebra' at 0.5/5 difficulty",
-              "Lacks SAT sophistication - even easy SAT questions typically require multi-step reasoning or conceptual understanding, not just trivial mechanical computation like f(2) = 2² + 3"
+              "Lacks SAT sophistication - even easy SAT questions typically require multi-step reasoning or conceptual understanding, not just trivial mechanical computation like f(2) = 2\u00b2 + 3"
             ]
           },
           {
@@ -159,7 +159,7 @@
             "frequency": 2,
             "exampleErrors": [
               "Final arithmetic error in explanation: computation shows 2 - 16 + 29 = 15, but designated answer is 1; correct answer (15) does not appear in provided choices",
-              "Designated answer (-8) contradicts correct calculation: 2 × 5 × (-1) = -10, not -8; correct answer (-10) is not among the provided choices"
+              "Designated answer (-8) contradicts correct calculation: 2 \u00d7 5 \u00d7 (-1) = -10, not -8; correct answer (-10) is not among the provided choices"
             ]
           },
           {
@@ -188,8 +188,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T19:49:18.422Z",
-  "completedAt": "2026-01-09T20:16:34.958Z",
+  "completedAt": null,
   "bestTestScore": 4.572916666666667
 }

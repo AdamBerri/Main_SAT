@@ -60,7 +60,7 @@
             "frequency": 2,
             "exampleErrors": [
               "Distractors lack genuine conceptual challenge and don't test understanding of the actual argument; they rely on surface-level keyword matching rather than nuanced comprehension",
-              "Weak discrimination between reader levels—strong readers eliminate distractors by direct textual matching, while weak readers pick them for wrong reasons (missing keywords), not genuine conceptual misunderstanding"
+              "Weak discrimination between reader levels\u2014strong readers eliminate distractors by direct textual matching, while weak readers pick them for wrong reasons (missing keywords), not genuine conceptual misunderstanding"
             ]
           },
           {
@@ -160,8 +160,8 @@
     }
   ],
   "currentBestVersion": "1.2.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T15:11:05.988Z",
-  "completedAt": "2026-01-09T20:49:15.949Z",
+  "completedAt": null,
   "bestTestScore": 4.25
 }

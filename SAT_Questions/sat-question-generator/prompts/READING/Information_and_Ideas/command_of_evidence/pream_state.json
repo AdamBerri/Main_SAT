@@ -209,7 +209,7 @@
             "frequency": 2,
             "exampleErrors": [
               "Distractor C is too easy to eliminate (timing vs. resources are conceptually distant) and distractor D requires domain knowledge, creating uneven discrimination across answer choices",
-              "Distractors C and D are too weak—C is obviously supporting data rather than explicit claims, and D doesn't mention the core actor (sea otters) at all, making them trivially eliminable"
+              "Distractors C and D are too weak\u2014C is obviously supporting data rather than explicit claims, and D doesn't mention the core actor (sea otters) at all, making them trivially eliminable"
             ]
           }
         ]
@@ -223,8 +223,8 @@
     }
   ],
   "currentBestVersion": "1.2.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T18:49:18.644Z",
-  "completedAt": "2026-01-09T20:42:43.775Z",
+  "completedAt": null,
   "bestTestScore": 3.9375
 }

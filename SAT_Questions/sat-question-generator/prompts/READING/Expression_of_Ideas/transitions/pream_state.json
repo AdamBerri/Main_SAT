@@ -125,7 +125,7 @@
             "frequency": 2,
             "exampleErrors": [
               "High linguistic complexity (sophisticated vocabulary, complex syntax) conflated with high question difficulty despite straightforward transition task",
-              "Dense prose and technical terminology (86°F, algae populations) inflate perceived difficulty without matching actual cognitive demand of transition identification"
+              "Dense prose and technical terminology (86\u00b0F, algae populations) inflate perceived difficulty without matching actual cognitive demand of transition identification"
             ]
           },
           {
@@ -148,7 +148,7 @@
             "category": "insufficient_procedural_complexity",
             "frequency": 2,
             "exampleErrors": [
-              "Single-step decision making (recognize contrast → match transition word) without multi-step reasoning or synthesis required",
+              "Single-step decision making (recognize contrast \u2192 match transition word) without multi-step reasoning or synthesis required",
               "No complex inference, subtle distinctions between answer choices, or need to weigh multiple valid interpretations"
             ]
           }
@@ -163,8 +163,8 @@
     }
   ],
   "currentBestVersion": "1.2.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T15:12:15.198Z",
-  "completedAt": "2026-01-09T20:55:49.412Z",
+  "completedAt": null,
   "bestTestScore": 4.1875
 }

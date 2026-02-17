@@ -155,7 +155,7 @@
             "category": "faithfulness",
             "frequency": 1,
             "exampleErrors": [
-              "Question includes excessive hand-holding with explicit notation about ordered data (a₁ ≤ a₂...) that is atypical for SAT; feels like teaching scaffolding rather than assessment; also fails to provide actual data values needed to determine median uniquely"
+              "Question includes excessive hand-holding with explicit notation about ordered data (a\u2081 \u2264 a\u2082...) that is atypical for SAT; feels like teaching scaffolding rather than assessment; also fails to provide actual data values needed to determine median uniquely"
             ]
           },
           {
@@ -189,7 +189,7 @@
             "exampleErrors": [
               "Designated correct answer is mathematically incorrect - calculated answer should be A (mean decreases, median stays same) but answer key shows C",
               "Arithmetic error in explanation - states 360 - 301 = 59 but answer given is 57, which doesn't satisfy the mean constraint of 43",
-              "Designated answer D (14) is correct but explanation lacks rigorous justification for why a₄ must equal 14 rather than a smaller value satisfying a₄ + a₅ = 28"
+              "Designated answer D (14) is correct but explanation lacks rigorous justification for why a\u2084 must equal 14 rather than a smaller value satisfying a\u2084 + a\u2085 = 28"
             ]
           },
           {
@@ -235,8 +235,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T20:32:05.223Z",
-  "completedAt": "2026-01-09T21:11:23.312Z",
+  "completedAt": null,
   "bestTestScore": 4.458333333333333
 }

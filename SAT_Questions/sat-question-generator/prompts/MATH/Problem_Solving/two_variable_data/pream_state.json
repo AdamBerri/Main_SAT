@@ -45,7 +45,7 @@
             "exampleErrors": [
               "Distractor rationale states '4 + 60 + 7 = 71' but the answer choice is 67, with unclear error pathway that doesn't represent natural student thinking - appears reverse-engineered rather than pedagogically meaningful",
               "Distractors B and C are trivially eliminated by reading comprehension alone since stem explicitly states 'positive slope' - no statistical understanding required to eliminate these options",
-              "Distractor claims error of '8 × 5 = 48' but this specific arithmetic mistake is implausible and arbitrary, testing basic arithmetic rather than understanding of linear models"
+              "Distractor claims error of '8 \u00d7 5 = 48' but this specific arithmetic mistake is implausible and arbitrary, testing basic arithmetic rather than understanding of linear models"
             ]
           },
           {
@@ -78,23 +78,23 @@
             "category": "distractor_incoherence",
             "frequency": 2,
             "exampleErrors": [
-              "Distractor B (65) lacks psychological plausibility—the rationale '5 + 60 = 65' doesn't represent a coherent misconception a confused student would naturally make",
-              "Distractor D (85) rationale is mathematically incoherent—'Multiplying x by the y-intercept: 4(60) ÷ 3 ≈ 80' doesn't yield 85 and the explanation doesn't match the error"
+              "Distractor B (65) lacks psychological plausibility\u2014the rationale '5 + 60 = 65' doesn't represent a coherent misconception a confused student would naturally make",
+              "Distractor D (85) rationale is mathematically incoherent\u2014'Multiplying x by the y-intercept: 4(60) \u00f7 3 \u2248 80' doesn't yield 85 and the explanation doesn't match the error"
             ]
           },
           {
             "category": "weak_distractor_discrimination",
             "frequency": 2,
             "exampleErrors": [
-              "Distractor D is weak at discrimination—only catches students who didn't read carefully or have severe conceptual gaps, not a tempting error for mid-level students",
-              "Distractor B won't effectively fool many students—it offers no realistic path to that answer, failing to separate students with partial understanding"
+              "Distractor D is weak at discrimination\u2014only catches students who didn't read carefully or have severe conceptual gaps, not a tempting error for mid-level students",
+              "Distractor B won't effectively fool many students\u2014it offers no realistic path to that answer, failing to separate students with partial understanding"
             ]
           },
           {
             "category": "unclear_error_rationale",
             "frequency": 1,
             "exampleErrors": [
-              "Distractor A rationale is unclear—'5 + 4 + 60 = 69' doesn't match answer choice (64), then awkwardly pivots to '4 + 60 = 64,' making the explanation muddled and incoherent"
+              "Distractor A rationale is unclear\u2014'5 + 4 + 60 = 69' doesn't match answer choice (64), then awkwardly pivots to '4 + 60 = 64,' making the explanation muddled and incoherent"
             ]
           }
         ]
@@ -136,7 +136,7 @@
             "category": "distractor_effectiveness_weak",
             "frequency": 1,
             "exampleErrors": [
-              "Distractor A (50) is implausibly specific and lacks conceptual motivation—adding 8 and 42 while ignoring x entirely reflects pure guessing rather than a coherent misconception, making it ineffective at discriminating student understanding.",
+              "Distractor A (50) is implausibly specific and lacks conceptual motivation\u2014adding 8 and 42 while ignoring x entirely reflects pure guessing rather than a coherent misconception, making it ineffective at discriminating student understanding.",
               "Distractor B (74) uses an overly convoluted arithmetic path (8(5) = 40, then 42 - 8 = 34) that few students would naturally follow, reducing its pedagogical value for identifying a specific misconception."
             ]
           },
@@ -161,8 +161,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T20:55:29.477Z",
-  "completedAt": "2026-01-09T20:24:51.775Z",
+  "completedAt": null,
   "bestTestScore": 4.53125
 }

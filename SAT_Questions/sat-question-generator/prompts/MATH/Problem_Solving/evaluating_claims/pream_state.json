@@ -26,7 +26,7 @@
             "frequency": 8,
             "exampleErrors": [
               "Question rated 4/5 difficulty but actually 2.5-3/5 due to straightforward single-concept focus and obvious correct answer that tests basic research methodology familiar to SAT students",
-              "Computational difficulty rated 5/5 despite requiring only basic division (0.16 ÷ 0.035), which is significantly overrated for what should be 2/5 at most",
+              "Computational difficulty rated 5/5 despite requiring only basic division (0.16 \u00f7 0.035), which is significantly overrated for what should be 2/5 at most",
               "Question stated as 1/5 (easiest) but requires understanding selection bias, correlation vs causation, and critical reasoning skills that would place it at 2.5-3/5 difficulty level"
             ]
           },
@@ -163,8 +163,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T20:32:05.324Z",
-  "completedAt": "2026-01-09T20:24:36.585Z",
+  "completedAt": null,
   "bestTestScore": 4.499999999999999
 }

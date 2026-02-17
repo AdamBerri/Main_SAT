@@ -103,7 +103,7 @@
             "frequency": 2,
             "exampleErrors": [
               "Distractor A requires two independent errors (inverting ratio AND making unit conversion error) simultaneously, violating SAT principles. This is too contrived and less discriminative than single-error distractors, and magnitude is so far removed (0.27 vs 0.75) that students can eliminate it through estimation.",
-              "Distractor spacing shows consecutive 100-unit intervals (200, 300, 400, 500) creating arithmetic symmetry. Options are equidistant from correct answer (±200 mL), allowing weak students to guess the middle value or detect a pattern rather than demonstrate conceptual understanding."
+              "Distractor spacing shows consecutive 100-unit intervals (200, 300, 400, 500) creating arithmetic symmetry. Options are equidistant from correct answer (\u00b1200 mL), allowing weak students to guess the middle value or detect a pattern rather than demonstrate conceptual understanding."
             ]
           },
           {
@@ -117,7 +117,7 @@
             "category": "distractor_conceptual_targeting",
             "frequency": 1,
             "exampleErrors": [
-              "Distractor C (2.7) lacks coherent error pathway—rationale describes 'realizing the error is too large and arbitrarily dividing by some factor,' which represents fixing an error rather than making a consistent misconception. This doesn't reflect genuine student thinking and lacks a clear, reproducible error strategy."
+              "Distractor C (2.7) lacks coherent error pathway\u2014rationale describes 'realizing the error is too large and arbitrarily dividing by some factor,' which represents fixing an error rather than making a consistent misconception. This doesn't reflect genuine student thinking and lacks a clear, reproducible error strategy."
             ]
           }
         ]
@@ -213,7 +213,7 @@
             "category": "answer_validity",
             "frequency": 3,
             "exampleErrors": [
-              "Designated correct answer (B: 200 mL) is mathematically incorrect; correct answer should be A: 100 mL based on ratio calculations (3/8 × 2.4 = 0.9L needed, minus 0.8L available = 0.1L = 100mL)",
+              "Designated correct answer (B: 200 mL) is mathematically incorrect; correct answer should be A: 100 mL based on ratio calculations (3/8 \u00d7 2.4 = 0.9L needed, minus 0.8L available = 0.1L = 100mL)",
               "Designated answer (A: 720 pages) contains arithmetic error in explanation; shows '500 + 420 = 720' which is false; correct answer should be 920 pages, which doesn't appear in answer choices",
               "Answer key contains direct contradiction: lists B (200) as correct but distractor A rationale states 'This is the correct answer... 100 mL is required,' creating impossible situation"
             ]
@@ -252,8 +252,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T20:55:29.421Z",
-  "completedAt": "2026-01-09T20:50:22.871Z",
+  "completedAt": null,
   "bestTestScore": 4.71875
 }

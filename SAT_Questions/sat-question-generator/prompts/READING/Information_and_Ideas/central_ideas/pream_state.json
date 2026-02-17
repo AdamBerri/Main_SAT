@@ -45,7 +45,7 @@
             "exampleErrors": [
               "Difficulty ratings confuse linguistic sophistication with conceptual/procedural complexity - high vocabulary doesn't equal difficult task",
               "Linguistic difficulty (4.9/5) and procedural difficulty (4.9/5) seem inflated relative to straightforward main idea identification",
-              "Surface-level linguistic complexity (genuinely high) mistaken for actual cognitive task difficulty (moderate) - passage difficulty ≠ question difficulty"
+              "Surface-level linguistic complexity (genuinely high) mistaken for actual cognitive task difficulty (moderate) - passage difficulty \u2260 question difficulty"
             ]
           },
           {
@@ -99,7 +99,7 @@
             "exampleErrors": [
               "Clear problem-solution structure with explicit topic sentences reduces complexity",
               "Linear chronology with clear cause-effect relationships requires no competing interpretations",
-              "Classic 'old view → new view' structure that SAT students are trained to recognize makes identification too easy"
+              "Classic 'old view \u2192 new view' structure that SAT students are trained to recognize makes identification too easy"
             ]
           },
           {
@@ -221,7 +221,7 @@
             "frequency": 5,
             "exampleErrors": [
               "Wrong answers (B, C, D) are too easy to eliminate because they focus on single details or narrow aspects rather than the overarching theme, failing to create genuine cognitive demand",
-              "Distractors lack temptation factor—even careful elimination strategies quickly narrow to correct answer without requiring careful reasoning or meaningful discrimination between plausible options",
+              "Distractors lack temptation factor\u2014even careful elimination strategies quickly narrow to correct answer without requiring careful reasoning or meaningful discrimination between plausible options",
               "Answer choices B and D are clearly secondary details or explicitly contradicted by passage content, making them insufficiently 'trappy' for the stated difficulty level"
             ]
           },
@@ -229,7 +229,7 @@
             "category": "passage_structure_guidance",
             "frequency": 3,
             "exampleErrors": [
-              "Passage uses highly repetitive or parallel structure that makes pattern-obvious and minimizes inference required—examples follow identical logic, reducing cognitive load below stated difficulty",
+              "Passage uses highly repetitive or parallel structure that makes pattern-obvious and minimizes inference required\u2014examples follow identical logic, reducing cognitive load below stated difficulty",
               "Passage includes explicit thesis statement or topic sentence that directly mirrors correct answer choice, allowing students to match rather than synthesize",
               "Clear linear narrative with explicit organization markers ('surprisingly,' 'thus,' 'meanwhile') guides readers methodically through argument rather than requiring genuine inference"
             ]
@@ -238,7 +238,7 @@
             "category": "answer_choice_discrimination",
             "frequency": 1,
             "exampleErrors": [
-              "Answer choice C is problematically close to correct answer A—both accurately reflect passage content, with C capturing the passage's final/most emphasized point while A requires synthesis, creating ambiguity about what constitutes the 'main idea'"
+              "Answer choice C is problematically close to correct answer A\u2014both accurately reflect passage content, with C capturing the passage's final/most emphasized point while A requires synthesis, creating ambiguity about what constitutes the 'main idea'"
             ]
           },
           {
@@ -259,8 +259,8 @@
     }
   ],
   "currentBestVersion": "1.2.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T18:49:18.730Z",
-  "completedAt": "2026-01-09T20:33:05.799Z",
+  "completedAt": null,
   "bestTestScore": 4.708333333333333
 }

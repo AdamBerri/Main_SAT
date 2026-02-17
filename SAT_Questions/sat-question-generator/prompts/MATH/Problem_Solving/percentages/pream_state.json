@@ -74,7 +74,7 @@
             "category": "weak_misconception_targeting",
             "frequency": 4,
             "exampleErrors": [
-              "Distractor targets arithmetic failure rather than genuine misconception (e.g., calculating 25% of 40 as 25 instead of 10—an unusually large error that doesn't generalize well)",
+              "Distractor targets arithmetic failure rather than genuine misconception (e.g., calculating 25% of 40 as 25 instead of 10\u2014an unusually large error that doesn't generalize well)",
               "Distractor requires multiple simultaneous errors to reach the answer, reducing its diagnostic power (e.g., both miscalculating percentage AND adding instead of subtracting)",
               "Error pathway is implausible or would require students to make inconsistent mistakes (e.g., 'rounding without mathematical justification' or 'selecting the nearest option')"
             ]
@@ -83,7 +83,7 @@
             "category": "unclear_distractor_rationale",
             "frequency": 3,
             "exampleErrors": [
-              "Distractor rationale claims mathematical pathway that doesn't actually produce the stated answer value (e.g., $408 ÷ 0.65 ≈ $627.69, not $500)",
+              "Distractor rationale claims mathematical pathway that doesn't actually produce the stated answer value (e.g., $408 \u00f7 0.65 \u2248 $627.69, not $500)",
               "Error explanation is vague or speculative without clear algebraic steps (e.g., 'incorrectly solving by assuming a linear relationship' for distractor A)",
               "Multiple contradictory error pathways provided for same distractor without clarity on which produces the answer (e.g., two different computational methods both described but neither yielding the actual distractor value)"
             ]
@@ -94,7 +94,7 @@
             "exampleErrors": [
               "No distractor targets an obvious common misconception that students would naturally make (e.g., no option for students who add percentages instead of compounding them)",
               "Missing distractor that captures students who correctly set up the problem but make arithmetic/computational errors in execution",
-              "Gap in pedagogical coverage—distractor set doesn't address all major error types relevant to the question's learning objectives"
+              "Gap in pedagogical coverage\u2014distractor set doesn't address all major error types relevant to the question's learning objectives"
             ]
           },
           {
@@ -135,7 +135,7 @@
             "frequency": 4,
             "exampleErrors": [
               "Distractor A has convoluted, multi-step rationales that don't clearly show how students naturally arrive at the answer; lacks coherent misconception targeting",
-              "Distractor C contains arithmetic inconsistencies where stated calculation paths don't actually produce the claimed value (e.g., $63 ÷ 1.15 ≈ $54.78, not $73.50)",
+              "Distractor C contains arithmetic inconsistencies where stated calculation paths don't actually produce the claimed value (e.g., $63 \u00f7 1.15 \u2248 $54.78, not $73.50)",
               "Distractor D rationale explores multiple possible error paths without settling on a single clear misconception, appearing to be post-hoc rationalization rather than genuine student error"
             ]
           },
@@ -152,8 +152,8 @@
             "category": "arithmetic_validation",
             "frequency": 2,
             "exampleErrors": [
-              "Distractor values don't emerge from stated error pathways; for example, Choice C calculation of $63 ÷ 0.75 ÷ 0.60 = 140, not 73.50, indicating distractor wasn't derived from actual misconception",
-              "Distractor D rationale contains computational inconsistencies where the described error sequence ($113.40 ÷ 1.23 ≈ $92.20) doesn't actually produce the claimed answer of $120"
+              "Distractor values don't emerge from stated error pathways; for example, Choice C calculation of $63 \u00f7 0.75 \u00f7 0.60 = 140, not 73.50, indicating distractor wasn't derived from actual misconception",
+              "Distractor D rationale contains computational inconsistencies where the described error sequence ($113.40 \u00f7 1.23 \u2248 $92.20) doesn't actually produce the claimed answer of $120"
             ]
           },
           {
@@ -192,7 +192,7 @@
             "category": "distractor_quality_incoherence",
             "frequency": 4,
             "exampleErrors": [
-              "Distractor rationale contains multiple conflicting error paths that don't clearly lead to the stated answer (e.g., explanations proposing different calculations like '$63 ÷ 1.15' and 'rounding $54.78' that don't coherently justify the final distractor value)",
+              "Distractor rationale contains multiple conflicting error paths that don't clearly lead to the stated answer (e.g., explanations proposing different calculations like '$63 \u00f7 1.15' and 'rounding $54.78' that don't coherently justify the final distractor value)",
               "Internal contradictions in distractor logic where the mathematical work shown doesn't match the answer choice (e.g., explanation states '$40 - $15 = $25' but concludes answer is $15, or rationale describes calculation path that yields different value than the distractor)",
               "Confusing multi-path rationales that propose several different misconceptions for a single distractor without clarifying which error students would actually make (e.g., listing 'net percentage', 'percentage reversal', and 'division error' as explanations for one distractor value)"
             ]
@@ -219,7 +219,7 @@
             "frequency": 2,
             "exampleErrors": [
               "Correct answer provided contradicts the mathematical work shown in the explanation (e.g., derivation shows cost should equal $60 but answer key states $50; verification shows if cost=$50 then sale price=$50 not $60 as stated)",
-              "Problem parameters and answer key are mismatched, with explanation containing arithmetic that doesn't produce the designated correct answer (e.g., $0.80 × 1.25c = 1.00c$ but then answer is given as $50 instead of derived value)"
+              "Problem parameters and answer key are mismatched, with explanation containing arithmetic that doesn't produce the designated correct answer (e.g., $0.80 \u00d7 1.25c = 1.00c$ but then answer is given as $50 instead of derived value)"
             ]
           },
           {
@@ -241,7 +241,7 @@
   ],
   "currentBestVersion": "1.2.0",
   "bestTestScore": 4.291666666666667,
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-09T19:33:25.358Z",
-  "completedAt": "2026-01-09T20:33:25.563Z"
+  "completedAt": null
 }

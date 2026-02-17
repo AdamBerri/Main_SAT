@@ -25,7 +25,7 @@
             "category": "difficulty_overestimation",
             "frequency": 5,
             "exampleErrors": [
-              "Question rated 5/5 difficulty but actually 3.5-4/5 due to single-concept application and straightforward calculation (400 × 4 = 1,600)",
+              "Question rated 5/5 difficulty but actually 3.5-4/5 due to single-concept application and straightforward calculation (400 \u00d7 4 = 1,600)",
               "Computational difficulty rated 5/5 when actual computation is simply basic arithmetic (2.5/5 actual)",
               "Overall difficulty 3/5 overstated as 2.3-2.5/5 due to minimal computational burden and standard statistics concept"
             ]
@@ -44,7 +44,7 @@
             "frequency": 3,
             "exampleErrors": [
               "Tests confidence intervals and margin of error calculations which are AP Statistics content, not SAT Math curriculum",
-              "SAT deliberately excludes inferential statistics and hypothesis testing - this question requires understanding ME ∝ 1/√n",
+              "SAT deliberately excludes inferential statistics and hypothesis testing - this question requires understanding ME \u221d 1/\u221an",
               "Uses technical statistical terminology like '95% confidence level' and 'margin of error' inappropriate for SAT vocabulary"
             ]
           },
@@ -143,7 +143,7 @@
             "frequency": 5,
             "exampleErrors": [
               "Question stated as 5/5 difficulty but actual difficulty is 3.5-4/5 due to explicit guidance in stem and straightforward elimination strategy without requiring deep conceptualization",
-              "Question marked 4/5 difficulty but actual difficulty is 2.5-3/5 because calculation is basic proportion scaling (68/200 × 8,000) requiring only elementary arithmetic",
+              "Question marked 4/5 difficulty but actual difficulty is 2.5-3/5 because calculation is basic proportion scaling (68/200 \u00d7 8,000) requiring only elementary arithmetic",
               "Question rated 5/5 difficulty but actual difficulty is 3.5-4/5 because confidence interval is provided explicitly with zero computation required; students only interpret given information"
             ]
           },
@@ -160,7 +160,7 @@
             "category": "answer_key_logic_flaw",
             "frequency": 2,
             "exampleErrors": [
-              "Answer choice A is marked correct but logically incomplete—the arithmetic is correct (68/200 × 8,000 = 2,720) but doesn't validate the inference as statistically sound; authentic SAT questions differentiate between 'math works' and 'inference is valid'",
+              "Answer choice A is marked correct but logically incomplete\u2014the arithmetic is correct (68/200 \u00d7 8,000 = 2,720) but doesn't validate the inference as statistically sound; authentic SAT questions differentiate between 'math works' and 'inference is valid'",
               "Answer key accepts choice A without acknowledging that correct arithmetic alone doesn't establish statistical validity; should require qualifying the claim as a 'reasonable estimate' rather than definitive proof"
             ]
           },
@@ -191,8 +191,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T20:32:05.145Z",
-  "completedAt": "2026-01-09T20:24:12.220Z",
+  "completedAt": null,
   "bestTestScore": 5.194444444444444
 }

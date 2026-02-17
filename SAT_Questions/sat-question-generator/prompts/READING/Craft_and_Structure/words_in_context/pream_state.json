@@ -85,7 +85,7 @@
             "category": "faithfulness",
             "frequency": 1,
             "exampleErrors": [
-              "Question format and style match SAT conventions, but deviates significantly in answer choice sophistication, distractor quality, and potential answer key error—answer choices differ too dramatically in meaning rather than representing nuanced synonyms as in official College Board items"
+              "Question format and style match SAT conventions, but deviates significantly in answer choice sophistication, distractor quality, and potential answer key error\u2014answer choices differ too dramatically in meaning rather than representing nuanced synonyms as in official College Board items"
             ]
           },
           {
@@ -223,8 +223,8 @@
     }
   ],
   "currentBestVersion": "1.3.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T15:10:22.295Z",
-  "completedAt": "2026-01-09T21:17:40.299Z",
+  "completedAt": null,
   "bestTestScore": 3.9583333333333335
 }

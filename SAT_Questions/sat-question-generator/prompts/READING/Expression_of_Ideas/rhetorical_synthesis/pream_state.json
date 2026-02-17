@@ -162,8 +162,8 @@
     }
   ],
   "currentBestVersion": "1.2.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T15:11:51.744Z",
-  "completedAt": "2026-01-09T21:04:06.243Z",
+  "completedAt": null,
   "bestTestScore": 4.229166666666667
 }

@@ -44,7 +44,7 @@
             "frequency": 4,
             "exampleErrors": [
               "Question rated 4/5 difficulty but is actually standard textbook system of equations (2.5-3/5). Clean numbers, straightforward setup, no conceptual tricks.",
-              "Rated 5/5 across all dimensions but requires only basic substitution/elimination with manageable arithmetic—appropriate for 2/5 difficulty level.",
+              "Rated 5/5 across all dimensions but requires only basic substitution/elimination with manageable arithmetic\u2014appropriate for 2/5 difficulty level.",
               "Stated as 3/5 (medium) but is below-average difficulty (2.3-2.5/5) due to standard template, clean numbers, and multiple choice format allowing verification."
             ]
           },
@@ -54,14 +54,14 @@
             "exampleErrors": [
               "Explanation shows trial-and-error process with phrases like 'Wait, let me recalculate' and 'I need to reconsider', revealing unfinished work inappropriate for student-facing content.",
               "Explanation correctly calculates a = 37 multiple times, then inexplicably tries to 'adjust' problem values to force answer to be $3.00, changing 67.50 to 75.",
-              "Explanation demonstrates correct solution yields $150, then attempts to rationalize $100 answer by suggesting 'problem values would need adjusting'—mathematical dishonesty."
+              "Explanation demonstrates correct solution yields $150, then attempts to rationalize $100 answer by suggesting 'problem values would need adjusting'\u2014mathematical dishonesty."
             ]
           },
           {
             "category": "sat_authenticity_concerns",
             "frequency": 1,
             "exampleErrors": [
-              "While structure and context match SAT style, mathematical error in answer key is disqualifying—College Board questions undergo rigorous verification and computational errors are extremely rare.",
+              "While structure and context match SAT style, mathematical error in answer key is disqualifying\u2014College Board questions undergo rigorous verification and computational errors are extremely rare.",
               "Question format and difficulty calibration appropriate for SAT, but the designated correct answer being mathematically wrong would never occur in official materials."
             ]
           }
@@ -174,8 +174,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T20:32:05.317Z",
-  "completedAt": "2026-01-09T21:05:19.733Z",
+  "completedAt": null,
   "bestTestScore": 3.555555555555556
 }

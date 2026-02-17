@@ -87,7 +87,7 @@
             "category": "distractor_incoherence",
             "frequency": 6,
             "exampleErrors": [
-              "Distractor rationales are internally contradictory, jumping between multiple calculation methods without clear resolution (e.g., suggesting both sin(65°) = 8/x and sin(65°) = x/8 for the same distractor)",
+              "Distractor rationales are internally contradictory, jumping between multiple calculation methods without clear resolution (e.g., suggesting both sin(65\u00b0) = 8/x and sin(65\u00b0) = x/8 for the same distractor)",
               "Multiple competing error pathways proposed for a single distractor without explanation of which one actually produces the stated answer value",
               "Convoluted explanations that read like reverse-engineering from an answer choice rather than describing an actual student misconception (e.g., 'adding an error term or using alternative formula' without specifying which yields the distractor value)"
             ]
@@ -97,7 +97,7 @@
             "frequency": 4,
             "exampleErrors": [
               "Distractors target unclear or implausible misconceptions that don't represent coherent student error pathways (e.g., distractor A appears artificially constructed with compounded mistakes rather than a single coherent error)",
-              "Lack of single, dominant misconception per distractor—instead proposing vague or multiple competing error mechanisms that undermine the discriminative power of the question",
+              "Lack of single, dominant misconception per distractor\u2014instead proposing vague or multiple competing error mechanisms that undermine the discriminative power of the question",
               "Distractor represents rounding/arithmetic imprecision rather than genuine conceptual misconception, reducing ability to discriminate understanding levels"
             ]
           },
@@ -105,7 +105,7 @@
             "category": "mathematical_inconsistency",
             "frequency": 2,
             "exampleErrors": [
-              "Problem contains contradictory conditions where given constraints cannot be simultaneously satisfied—the stated sine value conflicts with the triangle's geometric constraints, making the designated answer mathematically unsound",
+              "Problem contains contradictory conditions where given constraints cannot be simultaneously satisfied\u2014the stated sine value conflicts with the triangle's geometric constraints, making the designated answer mathematically unsound",
               "Second measurement or condition in the problem is not used in the final solution, violating both equations when one should satisfy both constraints simultaneously"
             ]
           },
@@ -148,7 +148,7 @@
             "exampleErrors": [
               "Distractor rationale provides multiple conflicting derivations without clearly explaining which misconception is targeted; final calculation doesn't match the answer value",
               "Rationale jumps between multiple incorrect setups without settling on which one produces the stated answer; lists several calculations that don't equal the distractor value",
-              "Explanation contradicts itself by first deriving the correct answer through one method, then claiming the distractor comes from a different error—logically impossible"
+              "Explanation contradicts itself by first deriving the correct answer through one method, then claiming the distractor comes from a different error\u2014logically impossible"
             ]
           },
           {
@@ -156,7 +156,7 @@
             "frequency": 4,
             "exampleErrors": [
               "Distractor targets an implausibly specific arithmetic error (dividing by 4 instead of 3) that doesn't naturally emerge from any standard misconception pathway",
-              "Error of confusing complementary angles is mentioned but the specific value (18.8) isn't explained coherently; unclear why a student would use 67° instead of 62°",
+              "Error of confusing complementary angles is mentioned but the specific value (18.8) isn't explained coherently; unclear why a student would use 67\u00b0 instead of 62\u00b0",
               "Distractor represents a very specific error that lacks genuine conceptual grounding; students would struggle to arrive there through logical mistake rather than random calculation"
             ]
           },
@@ -196,8 +196,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T20:32:05.087Z",
-  "completedAt": "2026-01-09T20:18:33.092Z",
+  "completedAt": null,
   "bestTestScore": 4.35515873015873
 }

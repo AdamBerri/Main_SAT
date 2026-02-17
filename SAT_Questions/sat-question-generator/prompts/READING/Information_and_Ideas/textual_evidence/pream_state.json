@@ -172,7 +172,7 @@
             "category": "minimal_error_opportunity",
             "frequency": 3,
             "exampleErrors": [
-              "No calculation required, no complex terminology, no ambiguous pronouns or sentence structures—linguistic difficulty does not match conceptual demands, creating easy elimination paths",
+              "No calculation required, no complex terminology, no ambiguous pronouns or sentence structures\u2014linguistic difficulty does not match conceptual demands, creating easy elimination paths",
               "Limited reading comprehension pitfalls because the disagreement between texts is stated explicitly rather than embedded, requiring only surface-level text matching",
               "Question lacks interpretive ambiguity and competing reasonable answers that would create meaningful opportunities for student error or sophisticated misconception targeting"
             ]
@@ -195,8 +195,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T18:49:18.694Z",
-  "completedAt": "2026-01-09T20:32:09.353Z",
+  "completedAt": null,
   "bestTestScore": 0
 }

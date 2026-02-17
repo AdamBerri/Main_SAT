@@ -45,15 +45,15 @@
             "exampleErrors": [
               "Distractor rationale claims point is 'approximately 5.83 units' but explanation calculates it as exactly 5",
               "The rationale states this distractor targets a misconception, but the actual calculation shows this point IS on the circle",
-              "Distractor D rationale about area formula confusion is psychologically implausible - would require TWO errors (use area formula AND forget π)"
+              "Distractor D rationale about area formula confusion is psychologically implausible - would require TWO errors (use area formula AND forget \u03c0)"
             ]
           },
           {
             "category": "incorrect_answer_key",
             "frequency": 5,
             "exampleErrors": [
-              "The designated correct answer C) h=12 is wrong - when h=12, k=0 violates the condition that k>0. The actual answer is B) h=6√2",
-              "The correct answer is 28/3 ≈ 9.33, not the designated answer C) 10 - mathematical error in problem setup",
+              "The designated correct answer C) h=12 is wrong - when h=12, k=0 violates the condition that k>0. The actual answer is B) h=6\u221a2",
+              "The correct answer is 28/3 \u2248 9.33, not the designated answer C) 10 - mathematical error in problem setup",
               "Designated answer B) 29/4 is incorrect - the actual solution is k=25/4 which isn't among the choices"
             ]
           },
@@ -63,7 +63,7 @@
             "exampleErrors": [
               "Explanation contains self-correction dialogue revealing 'Choice B also works... I need to adjust choice B' but never updates the actual choice",
               "Explanation proves all four points are equidistant then inexplicably concludes 'the correct answer is A' without mathematical justification",
-              "The author correctly derives h=6√2 in the explanation but then claims answer is h=12"
+              "The author correctly derives h=6\u221a2 in the explanation but then claims answer is h=12"
             ]
           }
         ]
@@ -90,7 +90,7 @@
             "exampleErrors": [
               "Multiple answer choices satisfy the geometric condition (all four points lie on the circle), violating the principle of a single correct answer",
               "The designated correct answer is mathematically sound, but the question contains at least two defensible correct answers due to flawed answer choice design",
-              "The keyed answer contradicts the mathematical work shown in the explanation—correct calculations yield a different answer than what is marked correct"
+              "The keyed answer contradicts the mathematical work shown in the explanation\u2014correct calculations yield a different answer than what is marked correct"
             ]
           },
           {
@@ -98,7 +98,7 @@
             "frequency": 4,
             "exampleErrors": [
               "Distractor rationales are internally contradictory or reference different point coordinates than the actual answer choices (e.g., rationale discusses (7,0) but choice is (7,1))",
-              "Error pathways lack transparency—it's unclear how a student would mechanically arrive at the distractor through a systematic misconception rather than random guessing",
+              "Error pathways lack transparency\u2014it's unclear how a student would mechanically arrive at the distractor through a systematic misconception rather than random guessing",
               "At least one distractor actually satisfies the problem conditions (lies on the circle), making it indistinguishable from the correct answer"
             ]
           },
@@ -158,7 +158,7 @@
             "frequency": 3,
             "exampleErrors": [
               "Distractor rationales are vague and don't clearly articulate misconception strategies; C and D lack focus on targeted student errors with confusing or convoluted explanations",
-              "Distractors poorly calibrated for discrimination—some eliminate too easily (distance ~3.6 vs 5), failing to effectively distinguish understanding levels; missing 'plausible alternative' distractors with distances very close to correct answer",
+              "Distractors poorly calibrated for discrimination\u2014some eliminate too easily (distance ~3.6 vs 5), failing to effectively distinguish understanding levels; missing 'plausible alternative' distractors with distances very close to correct answer",
               "Distractor rationales incoherent or unjustified; provided arithmetic doesn't lead to claimed answer (D=9); error mechanisms unclear without identifiable student misconception type"
             ]
           },
@@ -174,7 +174,7 @@
             "category": "algebraic_verification",
             "frequency": 1,
             "exampleErrors": [
-              "Derived quadratic equation 4x²-36x+33=0 yields solutions x=(9±4√3)/2≈7.964 and 1.036, but designated answer (33/5=6.6) doesn't match either solution; final answer asserted without justification and fails verification against original circle equations"
+              "Derived quadratic equation 4x\u00b2-36x+33=0 yields solutions x=(9\u00b14\u221a3)/2\u22487.964 and 1.036, but designated answer (33/5=6.6) doesn't match either solution; final answer asserted without justification and fails verification against original circle equations"
             ]
           },
           {
@@ -195,8 +195,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T20:32:04.881Z",
-  "completedAt": "2026-01-09T20:17:50.953Z",
+  "completedAt": null,
   "bestTestScore": 3.65625
 }

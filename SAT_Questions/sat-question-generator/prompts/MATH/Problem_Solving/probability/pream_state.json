@@ -44,7 +44,7 @@
             "frequency": 4,
             "exampleErrors": [
               "Distractor rationale claims 3/8 but answer is 3/7, with no clear mathematical path between them",
-              "Choice C (1/5) rationale mentions '(5/10) ÷ 2' which is not a natural student approach to probability",
+              "Choice C (1/5) rationale mentions '(5/10) \u00f7 2' which is not a natural student approach to probability",
               "Distractor explanation provides three conflicting paths to the same answer, none of which mathematically produce the stated value"
             ]
           },
@@ -52,7 +52,7 @@
             "category": "scope_beyond_sat",
             "frequency": 2,
             "exampleErrors": [
-              "Question requires conditional probability formula P(A|B) = P(A∩B)/P(B), which is beyond SAT scope and belongs in AP Statistics",
+              "Question requires conditional probability formula P(A|B) = P(A\u2229B)/P(B), which is beyond SAT scope and belongs in AP Statistics",
               "Problem involves multi-stage Craps probability requiring geometric series and sophisticated probability trees, taking 5-10 minutes versus SAT's 1.5-2 minute target"
             ]
           },
@@ -107,7 +107,7 @@
               "Distractors don't capture the most common error of using wrong formulas entirely (e.g., difference approach like (5-3)/(12-3) = 2/9 would better target systematic confusion)",
               "Distractor B lacks a coherent misconception; the rationale includes multiple divergent paths that don't reflect how students naturally make errors",
               "All three distractors stem from probability calculation errors with no discrimination between conceptual misunderstanding and arithmetic mistakes; missing distractors targeting fundamentally different error types",
-              "Distractor D's explanation is unconvincing; claiming 5/7 ≈ 0.714 would round to 1/2 (0.5) is implausible and doesn't represent genuine misconceptions students would make"
+              "Distractor D's explanation is unconvincing; claiming 5/7 \u2248 0.714 would round to 1/2 (0.5) is implausible and doesn't represent genuine misconceptions students would make"
             ]
           },
           {
@@ -160,7 +160,7 @@
             "exampleErrors": [
               "Distractor C claims 20/144 simplifies to 1/6 through arithmetic error, but 20/144 = 5/36 with no clear path to 1/6",
               "Distractor with value 7/144 has no plausible arithmetic pathway - would require two independent unexplained errors",
-              "Distractor D rationale describes 5/12 × 4/11 (correct calculation) but claims students then incorrectly simplify to 25/144 without motivation"
+              "Distractor D rationale describes 5/12 \u00d7 4/11 (correct calculation) but claims students then incorrectly simplify to 25/144 without motivation"
             ]
           },
           {
@@ -250,8 +250,8 @@
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": true,
+  "converged": false,
   "startedAt": "2026-01-08T20:55:29.553Z",
-  "completedAt": "2026-01-09T20:47:42.473Z",
+  "completedAt": null,
   "bestTestScore": 4.8125
 }
