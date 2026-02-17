@@ -32,17 +32,14 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ReadingQuestionGenerator = void 0;
 exports.createReadingGenerator = createReadingGenerator;
 const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
 const uuid_1 = require("uuid");
-const sdk_1 = __importDefault(require("@anthropic-ai/sdk"));
 const config_1 = require("../core/config");
+const glm_client_1 = require("../core/glm-client");
 const reading_templates_1 = require("../prompts/reading-templates");
 /**
  * Reading Question Generator
@@ -55,32 +52,32 @@ const reading_templates_1 = require("../prompts/reading-templates");
  * enables sophisticated distractor generation.
  */
 class ReadingQuestionGenerator {
-    anthropic;
-    constructor(anthropicApiKey) {
-        this.anthropic = new sdk_1.default({ apiKey: anthropicApiKey });
+    client;
+    constructor(apiKey) {
+        this.client = (0, glm_client_1.createGLMClient)(apiKey);
     }
     /**
      * Stage 1: Generate passage with analysis metadata
      */
     async generatePassage(params) {
         const prompt = (0, reading_templates_1.buildPassageGenerationPrompt)(params);
-        const response = await this.anthropic.messages.create({
+        const response = await this.client.chat.completions.create({
             model: config_1.MODEL_CONFIG.generation.model,
             max_tokens: config_1.MODEL_CONFIG.generation.maxTokens,
             temperature: 0.8, // Higher for creative passage generation
             messages: [{ role: 'user', content: prompt }],
         });
-        const textBlock = response.content.find((block) => block.type === 'text');
-        if (!textBlock) {
+        const responseText = (0, glm_client_1.extractText)(response);
+        if (!responseText) {
             throw new Error('No text response from model');
         }
         // Parse JSON response
-        const jsonStr = this.extractJSON(textBlock.text);
+        const jsonStr = this.extractJSON(responseText);
         try {
             return JSON.parse(jsonStr);
         }
         catch (e) {
-            throw new Error(`Failed to parse passage JSON: ${e}\n\nResponse: ${textBlock.text}`);
+            throw new Error(`Failed to parse passage JSON: ${e}\n\nResponse: ${responseText}`);
         }
     }
     /**
@@ -88,24 +85,24 @@ class ReadingQuestionGenerator {
      */
     async generateQuestionFromPassage(topic, passageAnalysis, params) {
         const prompt = (0, reading_templates_1.buildQuestionGenerationPrompt)(topic.subtopic, passageAnalysis, params.distractorStrategies);
-        const response = await this.anthropic.messages.create({
+        const response = await this.client.chat.completions.create({
             model: config_1.MODEL_CONFIG.generation.model,
             max_tokens: config_1.MODEL_CONFIG.generation.maxTokens,
             temperature: 0.6, // Lower for more consistent question structure
             messages: [{ role: 'user', content: prompt }],
         });
-        const textBlock = response.content.find((block) => block.type === 'text');
-        if (!textBlock) {
+        const responseText = (0, glm_client_1.extractText)(response);
+        if (!responseText) {
             throw new Error('No text response from model');
         }
         // Parse question response
-        const jsonStr = this.extractJSON(textBlock.text);
+        const jsonStr = this.extractJSON(responseText);
         let questionData;
         try {
             questionData = JSON.parse(jsonStr);
         }
         catch (e) {
-            throw new Error(`Failed to parse question JSON: ${e}\n\nResponse: ${textBlock.text}`);
+            throw new Error(`Failed to parse question JSON: ${e}\n\nResponse: ${responseText}`);
         }
         // Build full question object
         const generationId = (0, uuid_1.v4)();
@@ -317,9 +314,9 @@ exports.ReadingQuestionGenerator = ReadingQuestionGenerator;
  * Create reading generator from environment
  */
 function createReadingGenerator() {
-    const apiKey = process.env.ANTHROPIC_API_KEY;
+    const apiKey = process.env.ZHIPU_API_KEY;
     if (!apiKey) {
-        throw new Error('Missing ANTHROPIC_API_KEY');
+        throw new Error('Missing ZHIPU_API_KEY');
     }
     return new ReadingQuestionGenerator(apiKey);
 }

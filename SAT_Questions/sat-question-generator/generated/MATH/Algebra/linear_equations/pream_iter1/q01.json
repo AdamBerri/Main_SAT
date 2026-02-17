@@ -1,0 +1,54 @@
+{
+  "id": "a9f3c7e2-8d4b-4c1a-9e5f-3b6a7d2e8f1c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1,
+    "computational": 1
+  },
+  "stem": "If 3x + 7 = 22, what is the value of x?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "5",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "15",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "29",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "7.33",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To solve 3x + 7 = 22, first subtract 7 from both sides: 3x = 22 - 7 = 15. Then divide both sides by 3: x = 15 \u00f7 3 = 5.",
+  "distractorRationale": {
+    "A": "This is the correct answer. Subtracting 7 from both sides gives 3x = 15, and dividing by 3 gives x = 5.",
+    "B": "This results from subtracting 7 from both sides correctly to get 3x = 15, but then forgetting to divide by 3.",
+    "C": "This results from adding 7 to both sides instead of subtracting: 3x = 22 + 7 = 29, then forgetting to divide by 3.",
+    "D": "This results from dividing 22 by 3 first without isolating the variable term: 22 \u00f7 3 \u2248 7.33."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.9.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a9f3c7e2-8d4b-4c1a-9e5f-3b6a7d2e8f1c"
+  }
+}

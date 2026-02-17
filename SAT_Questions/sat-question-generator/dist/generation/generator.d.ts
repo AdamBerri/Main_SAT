@@ -4,9 +4,10 @@ import type { TopicPath, DifficultyParams, DifficultyLevel, GeneratedQuestion } 
  * Generates questions using Claude with versioned prompts and difficulty sampling
  */
 export declare class QuestionGenerator {
-    private anthropic;
+    private client;
     private promptManager;
-    constructor(anthropicApiKey: string);
+    private similarityCache;
+    constructor(apiKey: string);
     /**
      * Sample difficulty parameters with variation
      */
@@ -44,6 +45,14 @@ export declare class QuestionGenerator {
      * Handles newlines, tabs, and other control chars that break JSON.parse
      */
     private sanitizeJSONString;
+    /**
+     * Simple token-based Jaccard similarity to detect duplicates
+     */
+    private buildSignature;
+    private jaccard;
+    private loadSimilarityCache;
+    private isNovel;
+    private addToSimilarityCache;
 }
 /**
  * Create generator with environment variables

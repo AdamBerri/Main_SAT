@@ -14,8 +14,8 @@ npm run dev -- generate -t "READING/Information_and_Ideas/central_ideas" -n 10
 npm run dev -- evaluate -t "READING/Information_and_Ideas/central_ideas"
 
 # Run PREAM optimization (generates, evaluates, improves prompts iteratively)
-npm run dev -- optimize -t "TOPIC_PATH" -i 5 -s 10
-# -i = iterations (default 5), -s = samples per iteration (default 10)
+npm run dev -- optimize -t "TOPIC_PATH" -i 5 -s 25
+# -i = iterations (default 5), -s = samples per iteration (default 25)
 
 # Generate images for questions that need them
 npm run dev -- images -t "MATH/Geometry_Trig/circles"
@@ -90,7 +90,7 @@ export const MODEL_CONFIG = {
 
 Each topic goes through iterative optimization:
 
-1. **Generate samples** (default 10: 8 train, 2 test)
+1. **Generate samples** (default 25: 20 train, 5 test)
 2. **Evaluate** training and test sets using SSR (Structured Semantic Rating)
 3. **Categorize errors** found in low-scoring questions
 4. **Generate improved prompt** based on error patterns

@@ -1,0 +1,30 @@
+{
+  "id": "c4e8f2a1-9d3b-4e7c-a5f6-1b8d3c9e2f4a",
+  "topic": { "section": "MATH", "domain": "Geometry_Trig", "subtopic": "circles" },
+  "difficulty": { "overall": 1, "conceptual": 1.0, "procedural": 1.2, "computational": 1.0 },
+  "stem": "A circle has a diameter of 8 inches. What is the area of the circle, in square inches?",
+  "choices": [
+    { "label": "A", "text": "4π", "isCorrect": false },
+    { "label": "B", "text": "8π", "isCorrect": false },
+    { "label": "C", "text": "16π", "isCorrect": true },
+    { "label": "D", "text": "64π", "isCorrect": false }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The area of a circle is given by the formula A = πr², where r is the radius. Since the diameter is 8 inches, the radius is r = 8/2 = 4 inches. Substituting into the formula: A = π(4)² = π(16) = 16π square inches.",
+  "distractorRationale": {
+    "A": "Results from using the radius in the formula A = πr without squaring: A = π(4) = 4π.",
+    "B": "Results from using the diameter instead of the radius: A = π(8) = 8π.",
+    "C": "Correct: A = πr² = π(4)² = 16π.",
+    "D": "Results from squaring the diameter instead of the radius: A = π(8)² = 64π."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T15:15:00Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "c4e8f2a1-9d3b-4e7c-a5f6-1b8d3c9e2f4a"
+  },
+  "evaluation": { "weightedScore": 4.833, "passed": true }
+}

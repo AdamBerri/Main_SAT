@@ -1,0 +1,54 @@
+{
+  "id": "a8f4c9e2-1d3b-4f7a-9e2c-6b5a8d1f3e9c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 2.0
+  },
+  "stem": "A recipe for 12 muffins requires 2.5 cups of flour. Maria wants to make 30 muffins using the same recipe. How many cups of flour does she need?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "5.0",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "6.0",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "6.25",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "7.5",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Set up a proportion comparing muffins to flour: 12/2.5 = 30/x. Cross-multiply to get 12x = 75. Dividing both sides by 12 gives x = 75/12 = 6.25 cups of flour.",
+  "distractorRationale": {
+    "A": "Student doubled the original amount (2.5 × 2 = 5.0) instead of multiplying by the correct scale factor of 2.5.",
+    "B": "Student calculated the difference in muffins (30 - 12 = 18), divided by 12 to get 1.5, then added to 2.5 to get 4.0, then made an arithmetic error. Alternatively, student may have incorrectly rounded 6.25 down to 6.0.",
+    "C": "Correct answer: 30/12 = 2.5 scale factor, so 2.5 × 2.5 = 6.25 cups.",
+    "D": "Student multiplied 2.5 × 3 = 7.5, confusing the scale factor with tripling the recipe."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.9.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a8f4c9e2-1d3b-4f7a-9e2c-6b5a8d1f3e9c"
+  }
+}

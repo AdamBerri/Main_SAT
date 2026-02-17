@@ -1,0 +1,54 @@
+{
+  "id": "a8f4c9e2-7d3b-4f1a-9e5c-6b2a8d1f3e7c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A clothing store is having a sale. Sarah buys 3 shirts and 2 pairs of jeans for a total of $90. Each shirt costs $12. What is the cost of one pair of jeans?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$27",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$18",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$39",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$45",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let j represent the cost of one pair of jeans. The total cost equation is: 3(12) + 2j = 90. First, calculate the cost of shirts: 3(12) = 36. Then substitute: 36 + 2j = 90. Subtract 36 from both sides: 2j = 54. Divide both sides by 2: j = 27. Therefore, one pair of jeans costs $27.",
+  "distractorRationale": {
+    "A": "This is the correct answer, obtained by properly setting up and solving the equation 3(12) + 2j = 90.",
+    "B": "This results from dividing the remaining amount by 3 instead of 2: (90 - 36) ÷ 3 = 54 ÷ 3 = 18. The student confused the number of shirts with the number of jeans.",
+    "C": "This results from subtracting the cost of one shirt instead of three shirts: (90 - 12) ÷ 2 = 78 ÷ 2 = 39. The student failed to multiply the shirt cost by 3.",
+    "D": "This results from failing to subtract the shirt costs at all: 90 ÷ 2 = 45. The student only divided the total by 2, ignoring the shirt purchases entirely."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.9.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a8f4c9e2-7d3b-4f1a-9e5c-6b2a8d1f3e7c"
+  }
+}

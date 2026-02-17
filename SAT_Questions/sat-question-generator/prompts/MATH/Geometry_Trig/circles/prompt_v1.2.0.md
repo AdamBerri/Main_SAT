@@ -1,64 +1,72 @@
-```
 Generate an SAT Math question about circles.
 
-Topics may include:
-- Circle equations in coordinate plane
-- Arc length and sector area
-- Central and inscribed angles
-- Circle properties
+TOPIC VARIETY — Choose ONE topic from this list and do NOT repeat across questions:
+- Circle equations in standard form (x-h)^2 + (y-k)^2 = r^2
+- Converting general form to standard form (completing the square)
+- Arc length given central angle and radius
+- Sector area given central angle and radius
+- Inscribed angle theorem
+- Central angles and their relationship to arcs
+- Tangent lines to circles (perpendicular to radius at point of tangency)
+- Chord properties (perpendicular bisector, intersecting chords)
+- Circle properties (circumference, area, diameter-radius relationship)
+- Circles inscribed in or circumscribing polygons
 
 {DIFFICULTY_DESCRIPTION}
 
+STRICT JSON SCHEMA — Your output MUST exactly match this structure. Do NOT use alternative field names:
+- Use "stem" (NOT "question", "questionText", or nested objects)
+- Use "choices" as an array of {"label", "text", "isCorrect"} (NOT "options", NOT "value" instead of "text")
+- Include ALL required top-level fields: id, topic, difficulty, stem, choices, correctAnswer, explanation, distractorRationale, hasImage, requiresCalculator, answerType, metadata
+
 CRITICAL REQUIREMENTS:
 
-1. ANSWER UNIQUENESS: Verify mathematically that EXACTLY ONE answer choice is correct.
-   - For "point on circle" questions: Calculate distance from center for ALL choices using √[(x-h)²+(y-k)²] and compare to radius
-   - For equation problems: Substitute ALL choices into the equation and verify only one satisfies it
-   - For algebraic solutions: Solve completely to find actual numerical values, then verify which answer choice matches
-   - RED FLAG: If multiple choices seem correct, the problem is broken—redesign it
+1. REAL-WORLD OR SAT-STYLE CONTEXT: Every question MUST be framed as a word problem or geometric scenario, not a bare formula. Examples:
+   - "A circular garden has a diameter of 14 feet. What is the area..."
+   - "In the xy-plane, a circle has center (3, -2) and passes through (7, 1). What is..."
+   Do NOT write bare computation questions.
 
-2. ANSWER KEY ACCURACY: 
-   - Solve the problem completely BEFORE writing answer choices
-   - Write down the exact numerical answer from your solution
-   - Verify this exact value appears in your intended correct choice
-   - For problems with constraints (e.g., "k > 0", "positive x-coordinate"), verify the answer satisfies ALL stated constraints
-   - Check: Does the problem geometry make sense? (e.g., can a point with y=6 actually lie on a circle of radius 5 centered at origin?)
+2. ANSWER UNIQUENESS AND ARITHMETIC ACCURACY:
+   - Solve the problem COMPLETELY before writing choices
+   - Verify EVERY arithmetic step, especially addition: double-check sums like a+b by counting
+   - Ensure NO two choices are equivalent (e.g., "7" and "√49" are the SAME value — never offer both)
+   - Ensure no choice is approximately equal to the correct answer in different form (e.g., "20π" and "62.8")
+   - For completing-the-square: verify (b/2)² explicitly, then check the final r² by expanding back
 
-3. DISTRACTOR VALIDATION: Each wrong answer must be:
-   - Definitively incorrect when checked against the problem (calculate the exact value each distractor produces)
-   - Based on a specific, plausible error:
-     * Calculation: sign error, arithmetic mistake, dropped term
-     * Conceptual: wrong formula (diameter vs radius, area vs circumference)
-     * Procedural: stopping mid-solution, using wrong value from problem
-   - Include exact calculations in rationales (e.g., "Distance = √[(3-0)²+(4-0)²] = 5" not "approximately 3.6")
-   - Numerically distinct from correct answer AND from each other
-   - For coordinate problems: Distractors should yield distances/values noticeably different from the target (avoid all four points being equidistant)
+3. GEOMETRIC CONSISTENCY:
+   - Before writing the problem, verify the geometry is physically possible
+   - If a point is "on a circle," verify it satisfies the circle equation
+   - If P lies on the circle, P CANNOT be an external point for tangent construction
+   - Check that all given lengths/angles can coexist (e.g., triangle inequality, angle sum = 180°)
 
-4. DIFFICULTY CALIBRATION:
-   - Difficulty 1-2: Direct formula application, 1-2 computational steps, standard setups
-   - Difficulty 3: Multi-step solution OR one non-obvious insight; moderate computation
-   - Difficulty 4-5: Combines multiple concepts, requires strategic setup, complex algebra, or non-standard approach
-   - Self-check: Could an average student complete this in 1-2 minutes (diff 1-2), 2-3 minutes (diff 3), or 3+ minutes (diff 4-5)?
-   - Be conservative: procedural problems with clean arithmetic are usually difficulty 2-3, not 4-5
+4. DISTRACTOR VALIDATION: Each wrong answer must be:
+   - Actually incorrect when checked mathematically
+   - Based on a specific, named student error with exact calculation shown
+   - Numerically distinct from ALL other choices (including equivalent forms)
 
-5. EXPLANATION CLARITY:
-   - Present ONE direct solution path from start to finish
-   - Show all algebraic steps with specific numbers
-   - For each distractor, state: "Choice X: [calculate what this gives] ≠ [required value], incorrect because [specific error]"
-   - No self-corrections, no "alternatively", no uncertainty phrases
-   - Verify your explanation's final answer matches your designated correct choice
+5. DIFFICULTY CALIBRATION:
+   - Difficulty 1: Single formula, minimal calc (circumference from radius)
+   - Difficulty 2: Two steps or one formula with conversion
+   - Difficulty 3: Multiple steps or one conceptual insight
+   - Difficulty 4: Multiple concepts combined (e.g., completing square + distance)
+   - Difficulty 5: Non-obvious approach, synthesis of 3+ concepts, complex algebra
+   - Be conservative: a problem using one standard theorem is NOT difficulty 5
 
-6. IMAGE NECESSITY: Include "consider_image: true" only if:
-   - Problem involves multiple geometric elements whose spatial relationships are complex to describe
-   - Visualization would prevent ambiguity about configuration
-   - Simple cases (single circle equation, one point to test, standard position) usually DON'T need images
+6. EXPLANATION CLARITY:
+   - Show ONE clear solution path, no self-debugging language
+   - Do NOT include "Let me verify", "Wait", "Actually", "re-examining", etc.
+   - If your solution reveals the problem is flawed, REDESIGN the problem instead of noting the flaw
 
-MANDATORY PRE-SUBMISSION CHECKLIST:
-☑ I solved the problem algebraically and obtained a specific numerical answer
-☑ This numerical answer appears in exactly ONE answer choice
-☑ I verified all four choices by substitution/calculation—only one works
-☑ Each distractor's rationale includes the exact wrong value it produces
-☑ The problem constraints are geometrically/algebraically possible
-☑ Difficulty rating matches actual solution complexity (be conservative)
-☑ My explanation contains no contradictions or corrections
-```
+7. FORMAT REQUIREMENTS:
+   - id MUST be a valid UUID v4
+   - All numeric answer choices must be distinct values (not equivalent forms)
+   - promptVersion: "1.2.0", modelUsed: "claude-sonnet-4-5-20250929"
+   - answerType must be "multiple_choice" (with underscore, not hyphen)
+
+PRE-SUBMISSION CHECKLIST:
+- JSON uses "stem" and "choices" with "text" fields (not alternatives)
+- Only one choice is correct; no two choices are numerically equivalent
+- All arithmetic verified (especially sums and squares)
+- Geometric setup is physically possible
+- Difficulty matches actual complexity
+- No self-debugging language anywhere

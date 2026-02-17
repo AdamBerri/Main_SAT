@@ -1,17 +1,14 @@
 import type { EvaluationDimension, SSRResult, MicroJudgeResult, GeneratedQuestion } from '../core/types';
 /**
  * Semantic Similarity Rating (SSR) based micro-judge system.
- * Uses Claude to convert free-text evaluations to Likert-scale scores
+ * Uses GLM-5 to convert free-text evaluations to Likert-scale scores
  * by comparing to anchor statements.
- *
- * Note: This implementation uses Claude for semantic comparison instead of
- * embeddings, keeping everything within Anthropic's ecosystem.
  */
 export declare class SSRRater {
-    private anthropic;
-    constructor(anthropicApiKey: string);
+    private client;
+    constructor(apiKey: string);
     /**
-     * Use Claude to compute semantic similarity scores between evaluation and anchors
+     * Use GLM-5 to compute semantic similarity scores between evaluation and anchors
      * Returns a probability distribution over the 5 Likert levels
      */
     private computeSemanticSimilarity;

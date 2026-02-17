@@ -11,8 +11,8 @@ import { type SampledReadingParams, type PassageAnalysis } from '../prompts/read
  * enables sophisticated distractor generation.
  */
 export declare class ReadingQuestionGenerator {
-    private anthropic;
-    constructor(anthropicApiKey: string);
+    private client;
+    constructor(apiKey: string);
     /**
      * Stage 1: Generate passage with analysis metadata
      */

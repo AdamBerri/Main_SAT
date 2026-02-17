@@ -11,12 +11,12 @@ export declare const DEFAULT_PREAM_CONFIG: PREAMConfig;
 export declare const DEFAULT_TEMPERATURE_CONFIG: TemperatureConfig;
 export declare const MODEL_CONFIG: {
     generation: {
-        provider: "anthropic";
+        provider: "zhipu";
         model: string;
         maxTokens: number;
     };
     evaluation: {
-        provider: "anthropic";
+        provider: "zhipu";
         model: string;
         maxTokens: number;
     };
@@ -27,7 +27,6 @@ export declare const MODEL_CONFIG: {
 };
 export declare const SSR_CONFIG: {
     temperature: number;
-    epsilon: number;
     acceptableThreshold: number;
 };
 export declare function getTopicPath(section: SATSection, domain: ReadingDomain | MathDomain, subtopic: ReadingSubtopic | MathSubtopic): TopicPath;

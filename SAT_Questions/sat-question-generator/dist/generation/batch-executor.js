@@ -46,16 +46,16 @@ const evaluator_1 = require("../evaluation/evaluator");
 const config_1 = require("../core/config");
 /**
  * API Key Pool Manager
- * Manages multiple Anthropic API keys with rate limiting
+ * Manages multiple Zhipu API keys with rate limiting
  */
 class APIKeyPool {
     keys;
     currentIndex = 0;
-    constructor(anthropicKeys) {
+    constructor(apiKeys) {
         this.keys = [];
-        for (const key of anthropicKeys) {
+        for (const key of apiKeys) {
             this.keys.push({
-                provider: 'anthropic',
+                provider: 'zhipu',
                 key,
                 rateLimit: 50, // requests per minute
                 currentUsage: 0,
@@ -107,8 +107,8 @@ exports.APIKeyPool = APIKeyPool;
 class BatchExecutor {
     keyPool;
     concurrency;
-    constructor(anthropicKeys, concurrency = 5) {
-        this.keyPool = new APIKeyPool(anthropicKeys);
+    constructor(apiKeys, concurrency = 5) {
+        this.keyPool = new APIKeyPool(apiKeys);
         this.concurrency = concurrency;
     }
     /**
@@ -294,21 +294,21 @@ exports.BatchExecutor = BatchExecutor;
  * Create batch executor from environment variables
  */
 function createBatchExecutor(concurrency) {
-    const anthropicKeys = [];
+    const apiKeys = [];
     // Primary key
-    if (process.env.ANTHROPIC_API_KEY) {
-        anthropicKeys.push(process.env.ANTHROPIC_API_KEY);
+    if (process.env.ZHIPU_API_KEY) {
+        apiKeys.push(process.env.ZHIPU_API_KEY);
     }
-    // Additional keys (ANTHROPIC_API_KEY_2, ANTHROPIC_API_KEY_3, etc.)
+    // Additional keys (ZHIPU_API_KEY_2, ZHIPU_API_KEY_3, etc.)
     for (let i = 2; i <= 10; i++) {
-        const key = process.env[`ANTHROPIC_API_KEY_${i}`];
+        const key = process.env[`ZHIPU_API_KEY_${i}`];
         if (key)
-            anthropicKeys.push(key);
+            apiKeys.push(key);
     }
-    if (anthropicKeys.length === 0) {
-        throw new Error('No ANTHROPIC_API_KEY found in environment');
+    if (apiKeys.length === 0) {
+        throw new Error('No ZHIPU_API_KEY found in environment');
     }
-    console.log(`Batch executor initialized with ${anthropicKeys.length} API key(s)`);
-    return new BatchExecutor(anthropicKeys, concurrency);
+    console.log(`Batch executor initialized with ${apiKeys.length} API key(s)`);
+    return new BatchExecutor(apiKeys, concurrency);
 }
 //# sourceMappingURL=batch-executor.js.map

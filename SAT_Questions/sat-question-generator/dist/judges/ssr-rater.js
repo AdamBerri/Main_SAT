@@ -1,43 +1,40 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SSRRater = void 0;
 exports.createSSRRater = createSSRRater;
-const sdk_1 = __importDefault(require("@anthropic-ai/sdk"));
 const config_1 = require("../core/config");
+const glm_client_1 = require("../core/glm-client");
 const anchors_1 = require("./anchors");
 const elicitation_prompts_1 = require("./elicitation-prompts");
 /**
  * Semantic Similarity Rating (SSR) based micro-judge system.
- * Uses Claude to convert free-text evaluations to Likert-scale scores
+ * Uses GLM-5 to convert free-text evaluations to Likert-scale scores
  * by comparing to anchor statements.
- *
- * Note: This implementation uses Claude for semantic comparison instead of
- * embeddings, keeping everything within Anthropic's ecosystem.
  */
 class SSRRater {
-    anthropic;
-    constructor(anthropicApiKey) {
-        this.anthropic = new sdk_1.default({ apiKey: anthropicApiKey });
+    client;
+    constructor(apiKey) {
+        this.client = (0, glm_client_1.createGLMClient)(apiKey);
     }
     /**
-     * Use Claude to compute semantic similarity scores between evaluation and anchors
+     * Use GLM-5 to compute semantic similarity scores between evaluation and anchors
      * Returns a probability distribution over the 5 Likert levels
      */
     async computeSemanticSimilarity(evaluation, anchorSet) {
-        const response = await this.anthropic.messages.create({
+        const response = await this.client.chat.completions.create({
             model: config_1.MODEL_CONFIG.evaluation.model,
             max_tokens: 256,
-            system: `You are a semantic similarity scorer. Given an evaluation text and 5 anchor statements representing different quality levels (1=worst, 5=best), estimate how similar the evaluation is to each anchor.
+            messages: [
+                {
+                    role: 'system',
+                    content: `You are a semantic similarity scorer. Given an evaluation text and 5 anchor statements representing different quality levels (1=worst, 5=best), estimate how similar the evaluation is to each anchor.
 
 Output ONLY a JSON object with similarity scores (0-1) for each level, like:
 {"1": 0.1, "2": 0.2, "3": 0.3, "4": 0.25, "5": 0.15}
 
 The scores should sum to 1.0 (they represent a probability distribution).
 Consider both the sentiment and specific content when scoring.`,
-            messages: [
+                },
                 {
                     role: 'user',
                     content: `Evaluation to score:
@@ -54,12 +51,12 @@ Output the similarity distribution as JSON:`,
                 },
             ],
         });
-        const textBlock = response.content.find((block) => block.type === 'text');
-        if (!textBlock) {
+        const text = (0, glm_client_1.extractText)(response);
+        if (!text) {
             return { 1: 0.2, 2: 0.2, 3: 0.2, 4: 0.2, 5: 0.2 }; // Uniform fallback
         }
         try {
-            const jsonMatch = textBlock.text.match(/\{[^}]+\}/);
+            const jsonMatch = text.match(/\{[^}]+\}/);
             if (jsonMatch) {
                 const parsed = JSON.parse(jsonMatch[0]);
                 return {
@@ -92,19 +89,18 @@ Output the similarity distribution as JSON:`,
      */
     async elicitEvaluation(dimension, question, context) {
         const elicitationPrompt = (0, elicitation_prompts_1.getElicitationPrompt)(dimension);
-        const response = await this.anthropic.messages.create({
+        const response = await this.client.chat.completions.create({
             model: config_1.MODEL_CONFIG.evaluation.model,
             max_tokens: config_1.MODEL_CONFIG.evaluation.maxTokens,
-            system: elicitationPrompt.systemPrompt,
             messages: [
+                { role: 'system', content: elicitationPrompt.systemPrompt },
                 {
                     role: 'user',
                     content: elicitationPrompt.buildUserPrompt(question, context),
                 },
             ],
         });
-        const textBlock = response.content.find((block) => block.type === 'text');
-        return textBlock ? textBlock.text : '';
+        return (0, glm_client_1.extractText)(response);
     }
     /**
      * Rate a question on a specific dimension using SSR
@@ -152,19 +148,21 @@ Output the similarity distribution as JSON:`,
      * Extract improvement suggestions from evaluation
      */
     async extractImprovement(dimension, question, evaluation) {
-        const response = await this.anthropic.messages.create({
+        const response = await this.client.chat.completions.create({
             model: config_1.MODEL_CONFIG.evaluation.model,
             max_tokens: 512,
-            system: `Based on an evaluation of an SAT question for ${dimension}, extract specific, actionable improvements needed. Be concise and specific.`,
             messages: [
+                {
+                    role: 'system',
+                    content: `Based on an evaluation of an SAT question for ${dimension}, extract specific, actionable improvements needed. Be concise and specific.`,
+                },
                 {
                     role: 'user',
                     content: `Evaluation:\n${evaluation}\n\nProvide 1-3 specific improvements for this ${dimension} issue:`,
                 },
             ],
         });
-        const textBlock = response.content.find((block) => block.type === 'text');
-        return textBlock ? textBlock.text : '';
+        return (0, glm_client_1.extractText)(response);
     }
     /**
      * Evaluate a question across all relevant dimensions
@@ -205,10 +203,10 @@ exports.SSRRater = SSRRater;
  * Factory function to create SSR rater with environment variables
  */
 function createSSRRater() {
-    const anthropicKey = process.env.ANTHROPIC_API_KEY;
-    if (!anthropicKey) {
-        throw new Error('Missing ANTHROPIC_API_KEY environment variable.');
+    const apiKey = process.env.ZHIPU_API_KEY;
+    if (!apiKey) {
+        throw new Error('Missing ZHIPU_API_KEY environment variable.');
     }
-    return new SSRRater(anthropicKey);
+    return new SSRRater(apiKey);
 }
 //# sourceMappingURL=ssr-rater.js.map

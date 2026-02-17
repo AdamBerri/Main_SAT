@@ -1,0 +1,54 @@
+{
+  "id": "a8f4c9e2-7d3b-4f1a-9e5c-8b2a6d1f3e7c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 3.5,
+    "computational": 3.0
+  },
+  "stem": "A biologist is studying the growth of a bacterial colony. The table shows the population of bacteria, in thousands, at different times after the start of the experiment.\n\n| Time (hours) | Population (thousands) |\n|--------------|------------------------|\n| 2            | 15                     |\n| 5            | 27                     |\n| 8            | 39                     |\n| 11           | 51                     |\n\nWhich equation represents the relationship between time t, in hours, and population P, in thousands of bacteria?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "P = 4t + 7",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "P = 4t + 15",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "P = 12t - 9",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "P = 7t + 1",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find the linear equation, first calculate the slope using any two points from the table. Using (2, 15) and (5, 27): slope = (27 - 15)/(5 - 2) = 12/3 = 4. The equation has the form P = 4t + b. Substituting the point (2, 15): 15 = 4(2) + b, so 15 = 8 + b, which gives b = 7. Therefore, the equation is P = 4t + 7. This can be verified with other points: when t = 8, P = 4(8) + 7 = 39, which matches the table.",
+  "distractorRationale": {
+    "A": "This is the correct answer. The slope is 4 and the y-intercept is 7.",
+    "B": "This results from using the population at t = 2 as the y-intercept without solving for the actual y-intercept. The student correctly found the slope of 4 but incorrectly assumed b = 15.",
+    "C": "This results from calculating the total change in population (51 - 15 = 36) and dividing by the number of intervals (3) to get 12 as the slope, then forcing the equation through the first point incorrectly.",
+    "D": "This results from reversing the slope calculation, using (time difference)/(population difference) instead of (population difference)/(time difference), getting 3/12 = 0.25, then rounding or miscalculating to get slope 7, and solving for b = 1."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.9.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a8f4c9e2-7d3b-4f1a-9e5c-8b2a6d1f3e7c"
+  }
+}

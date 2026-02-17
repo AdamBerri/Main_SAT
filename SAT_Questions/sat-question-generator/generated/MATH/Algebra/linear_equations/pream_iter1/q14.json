@@ -1,0 +1,54 @@
+{
+  "id": "a9f3c8e2-7d4b-4c1a-9e5f-3b6a8d2e7f4c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.5,
+    "procedural": 2.5,
+    "computational": 2.0
+  },
+  "stem": "Maria is currently 12 years old, and her mother is currently 36 years old. In how many years will Maria's mother be exactly twice as old as Maria?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "12",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "24",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "18",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "6",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let x represent the number of years from now. At that time, Maria will be 12 + x years old and her mother will be 36 + x years old. We need to find when the mother's age equals twice Maria's age: 36 + x = 2(12 + x). Expanding: 36 + x = 24 + 2x. Solving: 36 - 24 = 2x - x, so 12 = x. In 12 years, Maria will be 24 and her mother will be 48, which is exactly twice Maria's age.",
+  "distractorRationale": {
+    "A": "Correct answer obtained by properly setting up and solving the equation 36 + x = 2(12 + x).",
+    "B": "Results from finding Maria's age in x years (12 + 12 = 24) instead of the number of years, confusing the final age with the time interval.",
+    "C": "Results from incorrectly setting up the equation as 36 = 2(12) + x, solving for when the current age difference (24) is maintained rather than when the ratio is 2:1.",
+    "D": "Results from finding half the current age difference (36 - 12 = 24, then 24/2 = 12, then 12/2 = 6) through flawed reasoning about how age ratios change."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.9.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a9f3c8e2-7d4b-4c1a-9e5f-3b6a8d2e7f4c"
+  }
+}

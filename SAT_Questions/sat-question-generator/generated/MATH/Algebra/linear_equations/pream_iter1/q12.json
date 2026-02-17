@@ -1,0 +1,54 @@
+{
+  "id": "a8f4c9e2-7d3b-4f1a-9e5c-2b6d8a3f7e1c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A chemist needs to create 60 liters of a 25% acid solution by mixing a 15% acid solution with a 40% acid solution. How many liters of the 40% acid solution should be used?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "24",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "36",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "30",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "15",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let x represent the liters of 40% solution needed. Then (60 - x) represents the liters of 15% solution. The equation based on the amount of pure acid is: 0.40x + 0.15(60 - x) = 0.25(60). Simplifying: 0.40x + 9 - 0.15x = 15, which gives 0.25x + 9 = 15, so 0.25x = 6, and x = 24 liters.",
+  "distractorRationale": {
+    "A": "Correct answer obtained by properly setting up and solving the mixture equation.",
+    "B": "Results from solving for the amount of 15% solution instead of the 40% solution (60 - 24 = 36).",
+    "C": "Results from incorrectly assuming equal amounts of each solution should be mixed (60 \u00f7 2 = 30).",
+    "D": "Results from setting up the equation incorrectly as 0.40x = 0.25(60) - 0.15(60), ignoring the constraint that solutions must sum to 60 liters."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.9.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a8f4c9e2-7d3b-4f1a-9e5c-2b6d8a3f7e1c"
+  }
+}

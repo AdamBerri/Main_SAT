@@ -133,7 +133,7 @@ program
   .description('Run PREAM optimization for a topic')
   .option('-t, --topic <topic>', 'Topic path to optimize')
   .option('-i, --iterations <count>', 'Max iterations', '5')
-  .option('-s, --samples <count>', 'Samples per iteration', '10')
+  .option('-s, --samples <count>', 'Samples per iteration', '25')
   .option('--single-iteration', 'Run only one PREAM iteration (for round-robin orchestration)')
   .action(async (options) => {
     try {

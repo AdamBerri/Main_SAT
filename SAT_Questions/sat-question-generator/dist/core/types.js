@@ -33,6 +33,7 @@ exports.BaseQuestionSchema = zod_1.z.object({
         promptVersion: zod_1.z.string(),
         modelUsed: zod_1.z.string(),
         generationId: zod_1.z.string().uuid(),
+        blueprintId: zod_1.z.string().optional(),
     }),
 });
 exports.ReadingQuestionSchema = exports.BaseQuestionSchema.extend({

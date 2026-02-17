@@ -8,11 +8,38 @@
   "versions": [
     {
       "version": "1.0.0",
-      "content": "Generate an SAT Math question about circles.\n\nTopics may include:\n- Circle equations in coordinate plane\n- Arc length and sector area\n- Central and inscribed angles\n- Circle properties\n\nConsider whether an image is needed.\n\n{DIFFICULTY_DESCRIPTION}",
       "createdAt": "2026-01-08T14:10:32.316Z",
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.1.0",
+      "createdAt": "2026-02-17T18:30:00.000Z",
+      "parentVersion": "1.0.0",
+      "preamIteration": 1,
+      "performanceMetrics": {
+        "avgFaithfulness": 4.286,
+        "avgAnswerValidity": 4.286,
+        "avgDistractorQuality": 4.286,
+        "avgDifficultyAccuracy": 4.286,
+        "avgFrontendConvertibility": 4.286,
+        "sampleSize": 25
+      }
+    },
+    {
+      "version": "1.2.0",
+      "createdAt": "2026-02-17T19:30:00.000Z",
+      "parentVersion": "1.1.0",
+      "preamIteration": 2,
+      "performanceMetrics": {
+        "avgFaithfulness": 4.233,
+        "avgAnswerValidity": 4.233,
+        "avgDistractorQuality": 4.233,
+        "avgDifficultyAccuracy": 4.233,
+        "avgFrontendConvertibility": 4.233,
+        "sampleSize": 25
+      }
     }
   ],
   "temperatureConfig": {

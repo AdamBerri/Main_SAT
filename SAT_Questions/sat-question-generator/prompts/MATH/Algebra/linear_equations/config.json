@@ -4,11 +4,10 @@
     "domain": "Algebra",
     "subtopic": "linear_equations"
   },
-  "currentVersion": "1.4.0",
+  "currentVersion": "1.9.0",
   "versions": [
     {
       "version": "1.0.0",
-      "content": "Generate an SAT Math question involving linear equations in one or two variables.\n\nThe question should:\n- Present a real-world scenario or abstract problem involving linear equations\n- Require solving for a variable or finding a specific value\n- Use appropriate difficulty-level complexity\n\nInclude:\n- Clear problem setup with necessary constraints\n- Realistic numbers and contexts\n- Unambiguous solution path\n\n{DIFFICULTY_DESCRIPTION}",
       "createdAt": "2026-01-08T14:10:32.313Z",
       "parentVersion": null,
       "preamIteration": 0,
@@ -16,10 +15,44 @@
     },
     {
       "version": "1.4.0",
-      "content": "prompt_v1.4.0.md",
       "createdAt": "2026-02-17T12:00:00.000Z",
       "parentVersion": "1.2.0",
       "preamIteration": 5,
+      "performanceMetrics": null
+    },
+    {
+      "version": "1.5.0",
+      "createdAt": "2026-02-17T13:00:00.000Z",
+      "parentVersion": "1.2.0",
+      "preamIteration": 6,
+      "performanceMetrics": null
+    },
+    {
+      "version": "1.6.0",
+      "createdAt": "2026-02-17T14:00:00.000Z",
+      "parentVersion": "1.2.0",
+      "preamIteration": 7,
+      "performanceMetrics": null
+    },
+    {
+      "version": "1.7.0",
+      "createdAt": "2026-02-17T15:30:00.000Z",
+      "parentVersion": "1.6.0",
+      "preamIteration": 1,
+      "performanceMetrics": null
+    },
+    {
+      "version": "1.8.0",
+      "createdAt": "2026-02-17T16:30:00.000Z",
+      "parentVersion": "1.7.0",
+      "preamIteration": 2,
+      "performanceMetrics": null
+    },
+    {
+      "version": "1.9.0",
+      "createdAt": "2026-02-17T23:00:00.000Z",
+      "parentVersion": "1.8.0",
+      "preamIteration": 0,
       "performanceMetrics": null
     }
   ],

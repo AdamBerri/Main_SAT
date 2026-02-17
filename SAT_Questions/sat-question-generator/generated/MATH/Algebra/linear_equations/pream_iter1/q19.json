@@ -1,0 +1,54 @@
+{
+  "id": "a9f4e7c3-8d2b-4f1a-9e5c-6b3a8d2f7e4c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.5,
+    "procedural": 4.0,
+    "computational": 3.0
+  },
+  "stem": "A rectangular garden has a perimeter of 84 feet. The length of the garden is 6 feet more than twice its width. What is the width of the garden, in feet?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "12",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "18",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "26",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "30",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let w represent the width and l represent the length. From the problem, we have two equations: 2l + 2w = 84 (perimeter formula) and l = 2w + 6 (length is 6 more than twice the width). Substituting the second equation into the first: 2(2w + 6) + 2w = 84. Expanding: 4w + 12 + 2w = 84. Combining like terms: 6w + 12 = 84. Subtracting 12 from both sides: 6w = 72. Dividing by 6: w = 12.",
+  "distractorRationale": {
+    "A": "Correct answer obtained by properly setting up and solving the system of equations.",
+    "B": "Results from solving l + w = 84 instead of using the perimeter formula 2l + 2w = 84, treating the perimeter as if it were the sum of length and width only.",
+    "C": "Results from incorrectly interpreting the relationship as w = 2l + 6 instead of l = 2w + 6, reversing which dimension is described in terms of the other.",
+    "D": "Results from setting up l = 2w + 6 correctly but then solving 2w + 6 + 2w = 84 by incorrectly simplifying to 4w + 6 = 84 instead of 6w + 12 = 84."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.9.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a9f4e7c3-8d2b-4f1a-9e5c-6b3a8d2f7e4c"
+  }
+}

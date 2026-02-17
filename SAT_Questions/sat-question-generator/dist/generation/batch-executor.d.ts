@@ -1,12 +1,12 @@
 import type { TopicPath, BatchConfig, BatchResult } from '../core/types';
 /**
  * API Key Pool Manager
- * Manages multiple Anthropic API keys with rate limiting
+ * Manages multiple Zhipu API keys with rate limiting
  */
 export declare class APIKeyPool {
     private keys;
     private currentIndex;
-    constructor(anthropicKeys: string[]);
+    constructor(apiKeys: string[]);
     /**
      * Get next available API key
      */
@@ -24,7 +24,7 @@ export declare class APIKeyPool {
 export declare class BatchExecutor {
     private keyPool;
     private concurrency;
-    constructor(anthropicKeys: string[], concurrency?: number);
+    constructor(apiKeys: string[], concurrency?: number);
     /**
      * Execute batch generation for multiple topics
      * Questions are saved organized by topic: generated/SECTION/DOMAIN/SUBTOPIC/

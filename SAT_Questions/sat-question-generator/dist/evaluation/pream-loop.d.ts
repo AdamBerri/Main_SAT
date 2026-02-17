@@ -5,10 +5,11 @@ import { QuestionEvaluator } from './evaluator';
  * Implements the closed-loop prompt optimization algorithm from the PREAM paper.
  */
 export declare class PREAMLoop {
-    private anthropic;
+    private client;
     private evaluator;
+    private repairer;
     private config;
-    constructor(anthropicApiKey: string, config?: Partial<PREAMConfig>, evaluator?: QuestionEvaluator);
+    constructor(apiKey: string, config?: Partial<PREAMConfig>, evaluator?: QuestionEvaluator);
     /**
      * Run a single PREAM iteration (for round-robin orchestration)
      * Loads existing state, runs one iteration, saves state, and returns
@@ -72,6 +73,10 @@ export declare class PREAMLoop {
      * Summarize improvement made
      */
     private summarizeImprovement;
+    /**
+     * Build a lightweight coverage summary to encourage diversity
+     */
+    private buildCoverageSummary;
 }
 /**
  * Create PREAM loop with environment variables

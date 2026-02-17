@@ -1,0 +1,54 @@
+{
+  "id": "a9f4c7e3-8d2b-4f1a-9e5c-3b6d8f2a7c4e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.0,
+    "computational": 4.0
+  },
+  "stem": "A conference center is scheduling sessions for a two-day event. Each session is either 60 minutes or 90 minutes long. The center must schedule exactly 18 sessions total over the two days. On each day, the total session time must be at least 600 minutes but cannot exceed 1020 minutes. Additionally, there must be at least twice as many 60-minute sessions as 90-minute sessions across both days. What is the maximum number of 90-minute sessions that can be scheduled?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "5",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "6",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "7",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "9",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let x represent the number of 60-minute sessions and y represent the number of 90-minute sessions. We have the constraints: x + y = 18 (exactly 18 sessions total), so x = 18 - y. The constraint that there must be at least twice as many 60-minute sessions as 90-minute sessions gives us x ≥ 2y, which becomes 18 - y ≥ 2y, so 18 ≥ 3y, thus y ≤ 6. For the time constraints, the total time is 60x + 90y minutes. Since this must be distributed over two days with each day having at least 600 minutes and at most 1020 minutes, the total must be at least 1200 minutes and at most 2040 minutes. Substituting x = 18 - y: 60(18 - y) + 90y = 1080 - 60y + 90y = 1080 + 30y. We need 1200 ≤ 1080 + 30y ≤ 2040, which gives 120 ≤ 30y ≤ 960, so 4 ≤ y ≤ 32. Since y ≤ 6 from the session ratio constraint, the binding constraint is y ≤ 6. Testing y = 6: we get x = 12, total time = 1080 + 180 = 1260 minutes. Splitting as 630 minutes per day satisfies 600 ≤ 630 ≤ 1020 for both days. The maximum is 6.",
+  "distractorRationale": {
+    "A": "Student interpreted the ratio constraint as x ≥ 2y + 1 instead of x ≥ 2y, yielding y ≤ 5.67, so chose y = 5.",
+    "B": "Correct answer: properly applied all three constraints and found y ≤ 6 is the maximum satisfying x + y = 18, x ≥ 2y, and feasible daily time allocations.",
+    "C": "Student ignored the ratio constraint x ≥ 2y and only considered the total session constraint, finding y = 7 gives x = 11, but 11 < 2(7) = 14 violates the ratio requirement.",
+    "D": "Student misread the ratio constraint as y ≥ 2x instead of x ≥ 2y, incorrectly maximizing 90-minute sessions."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.9.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a9f4c7e3-8d2b-4f1a-9e5c-3b6d8f2a7c4e"
+  }
+}

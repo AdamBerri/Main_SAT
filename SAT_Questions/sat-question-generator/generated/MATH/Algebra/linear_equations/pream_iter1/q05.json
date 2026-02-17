@@ -1,0 +1,54 @@
+{
+  "id": "a8f3c9e1-4b2d-4c7a-9e5f-3d6a8b1c2e4f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.5,
+    "computational": 1.0
+  },
+  "stem": "If 3(x + 4) = 18, what is the value of x?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "2",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "6",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "10",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "−2",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To solve for x, first distribute the 3: 3(x + 4) = 3x + 12 = 18. Next, subtract 12 from both sides: 3x = 6. Finally, divide both sides by 3: x = 2.",
+  "distractorRationale": {
+    "A": "Correct answer obtained by properly distributing 3, then isolating x.",
+    "B": "Results from dividing 18 by 3 to get 6 without first distributing and subtracting 12.",
+    "C": "Results from incorrectly subtracting 4 from 18 to get 14, then dividing by 3 and rounding 4.67 up to 5, or from incorrectly thinking x + 4 = 14.",
+    "D": "Results from a sign error when solving, such as computing 6 - 12 = -6 and then dividing by 3 to get -2."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.9.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a8f3c9e1-4b2d-4c7a-9e5f-3d6a8b1c2e4f"
+  }
+}

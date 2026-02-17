@@ -17,4 +17,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./evaluator"), exports);
 __exportStar(require("./pream-loop"), exports);
 __exportStar(require("./image-evaluator"), exports);
+__exportStar(require("./repair"), exports);
 //# sourceMappingURL=index.js.map

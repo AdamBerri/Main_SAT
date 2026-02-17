@@ -258,6 +258,28 @@ export interface PREAMConfig {
   convergenceThreshold: number;  // Stop if improvement < this
   minSamplesPerIteration: number;
   errorCategoryCount: number;  // Number of error categories to extract
+  repairEnabled: boolean;       // Enable self-healing repair step before evaluation
+  maxRepairAttempts: number;    // Max repair passes per question (default 1)
+}
+
+// ============================================
+// Repair / Self-Healing Types
+// ============================================
+
+export type RepairCategory =
+  | 'math_error'             // stem numbers don't produce stated answer
+  | 'distractor_rationale'   // vague or unverifiable distractor reasoning
+  | 'distractor_value'       // distractor value doesn't match its derivation
+  | 'non_integer_mismatch'   // non-integer choice when correct answer is integer
+  | 'self_debug_language'    // "Wait," "Let me recalculate," etc. in explanation
+  | 'schema_fix';            // structural/schema issues
+
+export interface RepairResult {
+  questionId: string;
+  repaired: boolean;
+  issuesFound: RepairCategory[];
+  issueDetails: string[];       // human-readable description of each issue
+  originalScore?: number;       // optional pre-repair eval score
 }
 
 export interface PREAMIteration {
@@ -280,6 +302,11 @@ export interface PREAMIteration {
   };
   improvementMade: string;
   newPromptVersion: string;
+  repairStats?: {
+    totalAttempted: number;
+    totalRepaired: number;
+    issueBreakdown: Record<RepairCategory, number>;
+  };
 }
 
 export interface PREAMState {

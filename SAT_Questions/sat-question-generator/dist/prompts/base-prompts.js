@@ -94,6 +94,28 @@ The question should:
 - Have distractors that are from the passage but don't support the specific claim
 
 {DIFFICULTY_DESCRIPTION}`,
+    command_of_evidence_quantitative: `Generate an SAT Reading question that tests the student's ability to use quantitative data from a chart, graph, or table to support or weaken a claim.
+
+This is the QUANTITATIVE version of Command of Evidence - students must interpret visual data, not textual quotes.
+
+First, generate realistic data for a bar chart, line graph, or data table. Then create a passage (2-3 sentences) that makes a claim about the data.
+
+The question should ask students to:
+- Support the claim with data from the figure
+- OR weaken the claim with data
+- OR complete a statement using the data
+
+Correct answer must accurately cite specific values from the chart.
+
+Distractors should use these strategies:
+- Misread value (adjacent category)
+- Wrong comparison (reversed relationship)
+- Opposite trend (flipped direction)
+- Irrelevant data (wrong year/category)
+
+Output must include hasImage: true and detailed imageDescription with ALL data values for chart rendering.
+
+{DIFFICULTY_DESCRIPTION}`,
     textual_evidence: `Generate an SAT Reading question with paired texts or a text with notes/data.
 
 The passage should include:

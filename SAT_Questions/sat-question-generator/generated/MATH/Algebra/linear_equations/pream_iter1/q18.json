@@ -1,0 +1,54 @@
+{
+  "id": "a9f4c7e2-8d3b-4f1a-9e6c-2b5a8d1f3e7c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.5,
+    "procedural": 4.0,
+    "computational": 3.5
+  },
+  "stem": "A student council is planning a school event and has a budget of $1,400. They plan to spend $150 on decorations and the remaining money on food. If they purchase sandwiches for $10 each and fruit platters for $15 each, and they want to buy twice as many sandwiches as fruit platters, what is the maximum number of sandwiches they can purchase?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "70",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "125",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "83",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "35",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "First, calculate the money available for food: $1,400 - $150 = $1,250. Let p represent the number of fruit platters. Then the number of sandwiches is 2p. The cost equation is: 10(2p) + 15p = 1,250. Simplifying: 20p + 15p = 1,250, so 35p = 1,250. Therefore p = 35.714. Since they can only buy whole platters, p = 35. The maximum number of sandwiches is 2(35) = 70. Checking: 10(70) + 15(35) = 700 + 525 = 1,225, which is within the budget of $1,250. They have $25 remaining, but this is not enough to buy another sandwich ($10 would require reducing fruit platters). Therefore, the maximum is 70 sandwiches.",
+  "distractorRationale": {
+    "A": "Correct answer: 70 sandwiches maximum can be purchased given the constraint of buying twice as many sandwiches as fruit platters.",
+    "B": "Student divided the total food budget by the sandwich price: 1,250 ÷ 10 = 125, ignoring the constraint about fruit platters.",
+    "C": "Student divided the total food budget by the average price: 1,250 ÷ 15 = 83.33, incorrectly averaging the item costs or making an arithmetic error.",
+    "D": "Student solved for the number of fruit platters (35) instead of sandwiches."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.9.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a9f4c7e2-8d3b-4f1a-9e6c-2b5a8d1f3e7c"
+  }
+}

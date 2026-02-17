@@ -1,4 +1,4 @@
-import type { TopicPath, PromptConfig, PromptVersion, DifficultyParams, TemperatureConfig } from '../core/types';
+import type { TopicPath, PromptConfig, PromptVersion, DifficultyParams, TemperatureConfig, Blueprint } from '../core/types';
 /**
  * Manages prompt versions, loading, and configuration for each topic.
  */
@@ -58,7 +58,7 @@ export declare class PromptManager {
     /**
      * Build full prompt with difficulty for generation
      */
-    buildGenerationPrompt(topic: TopicPath, difficulty: DifficultyParams, version?: string): {
+    buildGenerationPrompt(topic: TopicPath, difficulty: DifficultyParams, version?: string, blueprint?: Blueprint): {
         system: string;
         user: string;
     };

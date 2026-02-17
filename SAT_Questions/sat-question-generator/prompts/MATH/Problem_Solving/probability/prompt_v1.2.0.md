@@ -1,63 +1,48 @@
-```
-Generate an SAT Math question about probability that adheres strictly to SAT conventions and difficulty level.
+Generate an SAT Math question about probability that matches College Board style and conventions.
 
 Topics may include:
-- Basic probability calculations (single event, simple fractions)
-- Compound events (independent events using multiplication)
-- Mutually exclusive events (using addition)
-- Simple expected value (mean outcome calculation)
-
-EXCLUDED TOPICS (beyond SAT scope):
-- Conditional probability formulas P(A|B) = P(A∩B)/P(B)
-- Geometric series or multi-stage probability trees
-- Combinations/permutations requiring nCr notation
+- Basic probability calculations
+- Compound events (independent/dependent)
+- Conditional probability
+- Expected value
 
 {DIFFICULTY_DESCRIPTION}
 
-DIFFICULTY CALIBRATION:
-- Level 1-2 (Easy): Single-step calculation, one event type, straightforward setup
-- Level 3 (Medium): Two distinct reasoning steps OR one conceptual subtlety (like complement), clear setup
-- Level 4-5 (Hard): Three+ steps OR multiple probability concepts combined OR requires careful case analysis
-
 CRITICAL REQUIREMENTS:
 
-Answer Verification (COMPLETE BEFORE WRITING DISTRACTORS):
-1. Solve the problem completely and write out your calculation
-2. Simplify your answer to lowest terms (fractions) or standard form (decimals)
-3. Designate this verified answer as the correct choice
-4. DO NOT change the correct answer designation after creating distractors
+1. ANSWER CHOICES:
+   - All four choices must be numerically distinct after simplification (e.g., 5/33 and 10/66 are duplicates)
+   - Verify that no two fractions reduce to the same value
+   - Use realistic values that could plausibly arise from probability calculations
 
-Answer Choices:
-- ALL five answer choices (A-E) must be mathematically DISTINCT values
-- Simplify ALL fractions to lowest terms (e.g., 1/4, not 25/100 or 2/8)
-- Simplify ALL decimal equivalents (e.g., 0.25, not 0.250)
-- After writing all choices, verify that no two are equivalent (check: 1/2 = 0.5, 2/3 ≈ 0.667, etc.)
-- Ensure correct answer letter matches your verified calculation exactly
+2. DISTRACTOR DESIGN (HIGHEST PRIORITY):
+   - Each wrong answer must result from a specific, predictable student error
+   - For each distractor, identify the exact misconception or calculation mistake:
+     * Confusing P(A and B) with P(A) × P(B) when events are dependent
+     * Forgetting to account for "without replacement" scenarios
+     * Using P(A) + P(B) instead of P(A or B) = P(A) + P(B) - P(A and B)
+     * Calculating the complement incorrectly
+     * Confusing conditional probability P(A|B) with P(B|A)
+     * Misapplying the multiplication principle in multi-step scenarios
+     * Using original probabilities instead of updated probabilities after an event
+     * Treating dependent events as independent
+   - Avoid generic distractors like "random nearby values" or "obviously wrong numbers"
+   - Each distractor rationale must show the step-by-step wrong calculation that produces that specific value
+   - Vary your distractor types across questions—avoid reusing the same error pattern combinations
 
-Distractor Construction (SYSTEMATIC APPROACH REQUIRED):
-Each distractor must come from ONE of these error types:
-1. COMPUTATIONAL ERROR: Arithmetic mistake in correct method (e.g., 7+5=13 instead of 12)
-2. CONCEPTUAL ERROR: Wrong probability principle (e.g., multiplying instead of adding for mutually exclusive)
-3. SETUP ERROR: Using wrong numbers from problem (e.g., total items instead of favorable outcomes)
-4. METHOD ERROR: Using wrong approach (e.g., calculating with replacement when it's without)
+3. DIFFICULTY CALIBRATION:
+   - Match difficulty to actual cognitive demands, not superficial complexity:
+     * Difficulty 1-2: Single-step probability (favorable/total)
+     * Difficulty 3-4: Multi-step reasoning or one probability concept (complement, independence)
+     * Difficulty 5: Multiple concepts combined or conditional probability with complexity
+   - Count the number of reasoning steps and concepts required
 
-For each distractor, explicitly:
-- State which error type it represents
-- Show the calculation that produces it
-- Verify it's a natural mistake students would make
+4. SAT FORMATTING:
+   - Use College Board conventions: clear stem, four labeled choices (A-D)
+   - Context should be realistic and varied: surveys, medical testing, quality control, sports statistics, game shows, weather forecasting, card games, genetics, manufacturing defects, raffles, committee selection
+   - Avoid overusing common scenarios like marble/ball selection from bags or urns
+   - Match the concise, precise wording style of official SAT questions
 
-Example: "Distractor B (1/4): METHOD ERROR - Student treats draws as independent (with replacement), calculating (2/8)×(1/7) instead of without replacement"
-
-Timing:
-- Question should be solvable in 1.5-2 minutes maximum
-- Avoid multi-step problems requiring extensive case analysis
-
-MANDATORY VERIFICATION CHECKLIST (before finalizing):
-☑ I have solved the problem completely and verified my calculation
-☑ The answer designated as correct matches my verified calculation exactly
-☑ All 5 answer choices are distinct (I checked for equivalent values)
-☑ All fractions are in lowest terms
-☑ Each distractor represents one of the four systematic error types
-☑ Each distractor's calculation is shown and produces that exact value
-☑ Problem difficulty matches stated level based on step count and conceptual complexity
-```
+5. RATIONALES:
+   - Correct answer: Show complete solution with all steps
+   - Each distractor: Demonstrate the exact wrong approach with calculations, not just "student might confuse X with Y"

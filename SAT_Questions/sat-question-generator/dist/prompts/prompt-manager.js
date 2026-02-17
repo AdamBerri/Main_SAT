@@ -206,7 +206,7 @@ Create one unambiguously correct answer with well-crafted distractors.
     /**
      * Build full prompt with difficulty for generation
      */
-    buildGenerationPrompt(topic, difficulty, version) {
+    buildGenerationPrompt(topic, difficulty, version, blueprint) {
         const promptTemplate = version
             ? this.getPromptByVersion(topic, version)
             : this.getCurrentPrompt(topic);
@@ -215,7 +215,10 @@ Create one unambiguously correct answer with well-crafted distractors.
         const optimizedUser = promptTemplate.includes('{DIFFICULTY_DESCRIPTION}')
             ? promptTemplate.replace('{DIFFICULTY_DESCRIPTION}', this.describeDifficulty(difficulty))
             : `${promptTemplate}\n\n${this.describeDifficulty(difficulty)}`;
-        return { system, user: optimizedUser };
+        const blueprintBlock = blueprint
+            ? `\nQUESTION BLUEPRINT (enforce this form to increase variety):\n- ID: ${blueprint.id}\n- Surface form: ${blueprint.surface}\n- Reasoning focus: ${blueprint.reasoning}\n- Representation: ${blueprint.representation}\n- Extra: ${blueprint.description}\nDo not reuse previous blueprints in this batch; follow this one closely.`
+            : '';
+        return { system, user: `${optimizedUser}\n${blueprintBlock}` };
     }
     /**
      * Format difficulty description

@@ -1,0 +1,34 @@
+{
+  "id": "f8a3c9e7-2d4b-4f1a-9e6c-3b5a7d1f8e2c",
+  "topic": { "section": "MATH", "domain": "Geometry_Trig", "subtopic": "circles" },
+  "difficulty": { "overall": 3, "conceptual": 3.0, "procedural": 3.2, "computational": 2.8 },
+  "stem": "In circle O, points A, B, and C lie on the circle. The central angle AOB measures 116°. If point C is positioned on the circle such that angle ACB is an inscribed angle that intercepts the same arc AB as the central angle, what is the measure of angle ACB?",
+  "choices": [
+    { "label": "A", "text": "58°", "isCorrect": true },
+    { "label": "B", "text": "64°", "isCorrect": false },
+    { "label": "C", "text": "116°", "isCorrect": false },
+    { "label": "D", "text": "232°", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The inscribed angle theorem states that an inscribed angle is half the central angle intercepting the same arc. Central angle AOB = 116°, so inscribed angle ACB = 116° ÷ 2 = 58°.",
+  "distractorRationale": {
+    "A": "Correct: 116/2 = 58°.",
+    "B": "From computing (180-116)/2 = 32, then adding incorrectly.",
+    "C": "Assuming inscribed angle equals central angle.",
+    "D": "Doubling the central angle instead of halving."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.1.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d"
+  },
+  "evaluation": {
+    "weightedScore": 4.667,
+    "passed": true,
+    "scores": { "faithfulness": 5, "answer_validity": 5, "distractor_quality": 4, "difficulty_accuracy": 4, "frontend_convertibility": 5 }
+  }
+}

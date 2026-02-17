@@ -82,8 +82,10 @@ export const DEFAULT_PREAM_CONFIG: PREAMConfig = {
   maxIterations: 5,
   trainTestSplit: 0.8,
   convergenceThreshold: 0.02, // 2% improvement threshold
-  minSamplesPerIteration: 10,
+  minSamplesPerIteration: 25,
   errorCategoryCount: 5,
+  repairEnabled: true,
+  maxRepairAttempts: 1,
 };
 
 export const DEFAULT_TEMPERATURE_CONFIG: TemperatureConfig = {

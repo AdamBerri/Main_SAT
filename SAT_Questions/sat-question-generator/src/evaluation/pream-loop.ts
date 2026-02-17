@@ -10,6 +10,7 @@ import type {
   QuestionEvaluation,
   PromptVersion,
   MicroJudgeResult,
+  RepairCategory,
 } from '../core/types';
 import {
   DEFAULT_PREAM_CONFIG,
@@ -20,6 +21,7 @@ import {
 } from '../core/config';
 import { createGLMClient, extractText } from '../core/glm-client';
 import { QuestionEvaluator, createEvaluator } from './evaluator';
+import { QuestionRepairer, createRepairer } from './repair';
 
 /**
  * PREAM (Prompt Refinement with Evaluations by Automated Micro-judges) Loop
@@ -28,6 +30,7 @@ import { QuestionEvaluator, createEvaluator } from './evaluator';
 export class PREAMLoop {
   private client: OpenAI;
   private evaluator: QuestionEvaluator;
+  private repairer: QuestionRepairer | null;
   private config: PREAMConfig;
 
   constructor(
@@ -38,6 +41,7 @@ export class PREAMLoop {
     this.client = createGLMClient(apiKey);
     this.evaluator = evaluator || createEvaluator();
     this.config = { ...DEFAULT_PREAM_CONFIG, ...config };
+    this.repairer = this.config.repairEnabled ? new QuestionRepairer(apiKey) : null;
   }
 
   /**
@@ -112,10 +116,15 @@ export class PREAMLoop {
 
     console.log(`\n=== PREAM Iteration ${iterationNum} for ${topic.subtopic} ===`);
 
+    // Always use the latest version (not best) so each iteration builds on the last
+    const latestVersion = state.iterations.length > 0
+      ? state.iterations[state.iterations.length - 1].newPromptVersion
+      : state.currentBestVersion;
+
     // Run the iteration
     const iteration = await this.runIteration(
       topic,
-      state.currentBestVersion,
+      latestVersion,
       iterationNum,
       generateQuestions
     );
@@ -179,13 +188,14 @@ export class PREAMLoop {
     };
 
     let previousTestScore = 0;
+    let latestVersion = '1.0.0';
 
     for (let i = 0; i < this.config.maxIterations && !state.converged; i++) {
       console.log(`\n=== PREAM Iteration ${i + 1} for ${topic.subtopic} ===`);
 
     const iteration = await this.runIteration(
       topic,
-      state.currentBestVersion,
+      latestVersion,
       i + 1,
       generateQuestions
     );
@@ -214,6 +224,7 @@ export class PREAMLoop {
       }
 
       previousTestScore = iteration.testMetrics.avgScore;
+      latestVersion = iteration.newPromptVersion;
 
       // Save state after each iteration
       await this.saveState(state);
@@ -247,23 +258,62 @@ export class PREAMLoop {
     const allQuestions = await generateQuestions(topic, currentVersion, totalSamples);
     const coverageSummary = this.buildCoverageSummary(allQuestions);
 
-    // 2. Split into train/test
+    // 2. REPAIR STEP — fix math errors, schema issues, vague rationales before judging
+    let repairStats: { totalAttempted: number; totalRepaired: number; issueBreakdown: Record<RepairCategory, number> } | undefined;
+
+    if (this.repairer) {
+      console.log(`Repairing ${allQuestions.length} questions (max ${this.config.maxRepairAttempts} pass${this.config.maxRepairAttempts > 1 ? 'es' : ''})...`);
+
+      let questionsToRepair = allQuestions;
+      let cumulativeStats: typeof repairStats = {
+        totalAttempted: allQuestions.length,
+        totalRepaired: 0,
+        issueBreakdown: {} as Record<RepairCategory, number>,
+      };
+
+      for (let pass = 0; pass < this.config.maxRepairAttempts; pass++) {
+        const { questions: repaired, stats } = await this.repairer.repairBatch(questionsToRepair, topic);
+        questionsToRepair = repaired;
+
+        cumulativeStats.totalRepaired += stats.totalRepaired;
+        for (const [cat, count] of Object.entries(stats.issueBreakdown)) {
+          const key = cat as RepairCategory;
+          cumulativeStats.issueBreakdown[key] = (cumulativeStats.issueBreakdown[key] || 0) + count;
+        }
+
+        console.log(`  Pass ${pass + 1}: ${stats.totalRepaired}/${stats.totalAttempted} questions repaired`);
+        if (stats.totalRepaired === 0) break; // no more issues to fix
+      }
+
+      // Replace original questions with repaired versions
+      for (let i = 0; i < allQuestions.length; i++) {
+        allQuestions[i] = questionsToRepair[i];
+      }
+      repairStats = cumulativeStats;
+
+      const breakdown = Object.entries(cumulativeStats.issueBreakdown)
+        .map(([k, v]) => `${k}: ${v}`)
+        .join(', ');
+      console.log(`Repair complete. ${cumulativeStats.totalRepaired} fixed. Issues: ${breakdown || 'none'}`);
+    }
+
+    // 3. Split into train/test
     const trainQuestions = allQuestions.slice(0, trainSize);
     const testQuestions = allQuestions.slice(trainSize);
 
-    // 3. Evaluate train set
+    // 4. Evaluate train set
     console.log('Evaluating training set...');
     const trainEvaluations = await this.evaluator.evaluateBatch(trainQuestions);
 
-    // 4. Evaluate test set
+    // 5. Evaluate test set
     console.log('Evaluating test set...');
     const testEvaluations = await this.evaluator.evaluateBatch(testQuestions);
 
-    // 5. Categorize errors from train set
+    // 6. Categorize errors from train set
     console.log('Categorizing errors...');
     const errorCategories = await this.categorizeErrors(trainEvaluations);
 
-    // 6. Generate improved prompt using meta-prompting
+    // 7. Generate improved prompt using meta-prompting
     console.log('Generating improved prompt...');
     const currentPrompt = this.loadPrompt(topic, currentVersion);
     const improvedPrompt = await this.improvePrompt(
@@ -273,13 +323,13 @@ export class PREAMLoop {
       coverageSummary
     );
 
-    // 7. Calculate new version
+    // 8. Calculate new version
     const newVersion = this.incrementVersion(currentVersion);
 
-    // 8. Save new prompt version
+    // 9. Save new prompt version
     await this.savePromptVersion(topic, newVersion, improvedPrompt, iterationNum);
 
-    // 9. Build iteration result
+    // 10. Build iteration result
     const trainMetrics = this.calculateMetrics(trainEvaluations);
     const testMetrics = this.calculateMetrics(testEvaluations);
 
@@ -299,6 +349,7 @@ export class PREAMLoop {
       },
       improvementMade: this.summarizeImprovement(errorCategories),
       newPromptVersion: newVersion,
+      repairStats,
     };
   }
 

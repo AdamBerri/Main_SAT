@@ -1,0 +1,54 @@
+{
+  "id": "a8f4c9e2-7d3b-4c1a-9e5f-6b2a8d1f3e7c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "Maria bought 3 notebooks for a total of $12. What was the price, in dollars, of each notebook?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "4",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "9",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "15",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "36",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let p represent the price of each notebook. Since Maria bought 3 notebooks for a total of $12, we have 3p = 12. Dividing both sides by 3 gives p = 4. Therefore, each notebook costs $4.",
+  "distractorRationale": {
+    "A": "This is the correct answer. Dividing the total cost ($12) by the number of notebooks (3) gives $4 per notebook.",
+    "B": "This results from subtracting the number of notebooks from the total: 12 - 3 = 9. This operation doesn't represent the relationship between total cost and unit price.",
+    "C": "This results from adding the number of notebooks to the total: 12 + 3 = 15. This operation doesn't represent the relationship between total cost and unit price.",
+    "D": "This results from multiplying the total cost by the number of notebooks: 12 \u00d7 3 = 36. This reverses the correct operation and gives total cost if each notebook were $12."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-17T00:00:00Z",
+    "promptVersion": "1.9.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "a8f4c9e2-7d3b-4c1a-9e5f-6b2a8d1f3e7c"
+  }
+}

@@ -4,8 +4,8 @@ import type { GeneratedImage, MathQuestion, MicroJudgeResult } from '../core/typ
  * Evaluates generated images for SAT math questions using Claude's vision capabilities
  */
 export declare class ImageEvaluator {
-    private anthropic;
-    constructor(anthropicApiKey: string);
+    private client;
+    constructor(apiKey: string);
     /**
      * Evaluate an image for a math question
      */

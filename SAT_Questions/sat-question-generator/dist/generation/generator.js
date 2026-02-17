@@ -32,28 +32,27 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.QuestionGenerator = void 0;
 exports.createGenerator = createGenerator;
 const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
 const uuid_1 = require("uuid");
-const sdk_1 = __importDefault(require("@anthropic-ai/sdk"));
 const config_1 = require("../core/config");
+const glm_client_1 = require("../core/glm-client");
 const prompt_manager_1 = require("../prompts/prompt-manager");
 const schema_validator_1 = require("../schemas/schema-validator");
+const blueprints_1 = require("./blueprints");
 /**
  * SAT Question Generator
  * Generates questions using Claude with versioned prompts and difficulty sampling
  */
 class QuestionGenerator {
-    anthropic;
+    client;
     promptManager = (0, prompt_manager_1.getPromptManager)();
-    constructor(anthropicApiKey) {
-        this.anthropic = new sdk_1.default({ apiKey: anthropicApiKey });
+    similarityCache = new Map();
+    constructor(apiKey) {
+        this.client = (0, glm_client_1.createGLMClient)(apiKey);
     }
     /**
      * Sample difficulty parameters with variation
@@ -78,28 +77,31 @@ class QuestionGenerator {
     async generateQuestion(topic, targetDifficulty, promptVersion) {
         const generationId = (0, uuid_1.v4)();
         const isReading = topic.section === 'READING';
+        const blueprint = (0, blueprints_1.sampleBlueprint)(topic);
         // Sample difficulty with variation
         const tempConfig = this.promptManager.getTemperatureConfig(topic);
         const difficulty = this.sampleDifficulty(targetDifficulty, tempConfig.variation, isReading);
         // Get prompt
-        const { system, user } = this.promptManager.buildGenerationPrompt(topic, difficulty, promptVersion);
+        const { system, user } = this.promptManager.buildGenerationPrompt(topic, difficulty, promptVersion, blueprint);
         // Get schema for output format
         const schema = (0, schema_validator_1.getSchemaContent)(topic.section);
         const schemaInstruction = `\n\nOutput your response as valid JSON matching this schema:\n\`\`\`json\n${JSON.stringify(schema, null, 2)}\n\`\`\`\n\nIMPORTANT: Output ONLY the JSON object, no additional text. Ensure all string values are properly escaped - use \\n for newlines, \\t for tabs.`;
         // Generate
-        const response = await this.anthropic.messages.create({
+        const response = await this.client.chat.completions.create({
             model: config_1.MODEL_CONFIG.generation.model,
             max_tokens: config_1.MODEL_CONFIG.generation.maxTokens,
             temperature: tempConfig.generation,
-            system: system + schemaInstruction,
-            messages: [{ role: 'user', content: user }],
+            messages: [
+                { role: 'system', content: system + schemaInstruction },
+                { role: 'user', content: user },
+            ],
         });
-        const textBlock = response.content.find((block) => block.type === 'text');
-        if (!textBlock) {
+        const responseText = (0, glm_client_1.extractText)(response);
+        if (!responseText) {
             throw new Error('No text response from model');
         }
         // Parse JSON response with sanitization for control characters
-        const jsonStr = this.extractJSON(textBlock.text);
+        const jsonStr = this.extractJSON(responseText);
         let rawQuestion;
         try {
             rawQuestion = JSON.parse(jsonStr);
@@ -114,6 +116,7 @@ class QuestionGenerator {
             promptVersion: promptVersion || this.promptManager.getPromptConfig(topic).currentVersion,
             modelUsed: config_1.MODEL_CONFIG.generation.model,
             generationId,
+            blueprintId: blueprint.id,
         };
         // Ensure topic is set correctly
         rawQuestion.topic = {
@@ -130,7 +133,14 @@ class QuestionGenerator {
             ];
             throw new Error(`Generated question failed validation:\n${errors.join('\n')}`);
         }
-        return validation.question;
+        const question = validation.question;
+        // Novelty guard to avoid near-duplicates
+        if (!this.isNovel(question, topic)) {
+            throw new Error('Rejected generated question due to high similarity with existing items');
+        }
+        // Cache signature for subsequent comparisons
+        this.addToSimilarityCache(question, topic);
+        return question;
     }
     /**
      * Generate multiple questions for a topic
@@ -139,17 +149,28 @@ class QuestionGenerator {
         const questions = [];
         // Default to uniform distribution across difficulty levels
         const difficulties = difficultyDistribution || this.getDefaultDifficultyDistribution(count);
-        for (let i = 0; i < count; i++) {
-            const difficulty = difficulties[i % difficulties.length];
-            try {
-                const question = await this.generateQuestion(topic, difficulty, promptVersion);
-                questions.push(question);
-                console.log(`Generated question ${i + 1}/${count} for ${topic.subtopic}`);
+        const maxAttemptsPerSlot = 3;
+        let slot = 0;
+        while (slot < count) {
+            const difficulty = difficulties[slot % difficulties.length];
+            let attempt = 0;
+            let success = false;
+            while (attempt < maxAttemptsPerSlot && !success) {
+                try {
+                    const question = await this.generateQuestion(topic, difficulty, promptVersion);
+                    questions.push(question);
+                    console.log(`Generated question ${questions.length}/${count} for ${topic.subtopic}`);
+                    success = true;
+                }
+                catch (e) {
+                    attempt++;
+                    console.error(`Attempt ${attempt}/${maxAttemptsPerSlot} failed for slot ${slot + 1}: ${e}`);
+                    if (attempt >= maxAttemptsPerSlot) {
+                        console.error('Giving up on this slot to avoid infinite loops');
+                    }
+                }
             }
-            catch (e) {
-                console.error(`Failed to generate question ${i + 1}/${count}: ${e}`);
-                // Continue with remaining questions
-            }
+            slot++;
         }
         return questions;
     }
@@ -300,15 +321,72 @@ class QuestionGenerator {
         }
         return result;
     }
+    /**
+     * Simple token-based Jaccard similarity to detect duplicates
+     */
+    buildSignature(question) {
+        const textParts = [
+            question.stem,
+            ...question.choices.map((c) => c.text),
+        ];
+        const raw = textParts.join(' ').toLowerCase().replace(/[^a-z0-9\s]/g, ' ');
+        const tokens = raw.split(/\s+/).filter((t) => t.length > 3);
+        return new Set(tokens);
+    }
+    jaccard(a, b) {
+        let intersection = 0;
+        const smaller = a.size < b.size ? a : b;
+        const larger = a.size < b.size ? b : a;
+        for (const token of smaller) {
+            if (larger.has(token))
+                intersection++;
+        }
+        const union = a.size + b.size - intersection;
+        return union === 0 ? 0 : intersection / union;
+    }
+    loadSimilarityCache(topic) {
+        const key = (0, config_1.topicToString)(topic);
+        if (this.similarityCache.has(key)) {
+            return this.similarityCache.get(key);
+        }
+        const cache = [];
+        const existing = this.loadGeneratedQuestions(topic).slice(-300); // limit memory
+        for (const q of existing) {
+            cache.push({ id: q.id, sig: this.buildSignature(q) });
+        }
+        this.similarityCache.set(key, cache);
+        return cache;
+    }
+    isNovel(question, topic) {
+        const sig = this.buildSignature(question);
+        const cache = this.loadSimilarityCache(topic);
+        for (const entry of cache) {
+            const sim = this.jaccard(sig, entry.sig);
+            if (sim >= 0.85) {
+                return false;
+            }
+        }
+        return true;
+    }
+    addToSimilarityCache(question, topic) {
+        const key = (0, config_1.topicToString)(topic);
+        const cache = this.similarityCache.get(key) || [];
+        cache.push({ id: question.id, sig: this.buildSignature(question) });
+        // Keep cache size bounded
+        if (cache.length > 500) {
+            cache.shift();
+        }
+        this.similarityCache.set(key, cache);
+    }
 }
 exports.QuestionGenerator = QuestionGenerator;
 /**
  * Create generator with environment variables
  */
 function createGenerator() {
-    const apiKey = process.env.ANTHROPIC_API_KEY;
+    const apiKey = process.env.ZHIPU_API_KEY;
     if (!apiKey) {
-        throw new Error('Missing ANTHROPIC_API_KEY environment variable');
+        throw new Error('Missing ZHIPU_API_KEY environment variable');
     }
     return new QuestionGenerator(apiKey);
 }

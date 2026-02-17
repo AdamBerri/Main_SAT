@@ -32,24 +32,21 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ImageEvaluator = void 0;
 exports.createImageEvaluator = createImageEvaluator;
-const sdk_1 = __importDefault(require("@anthropic-ai/sdk"));
 const fs = __importStar(require("fs"));
 const config_1 = require("../core/config");
+const glm_client_1 = require("../core/glm-client");
 const anchors_1 = require("../judges/anchors");
 /**
  * Image Evaluator
  * Evaluates generated images for SAT math questions using Claude's vision capabilities
  */
 class ImageEvaluator {
-    anthropic;
-    constructor(anthropicApiKey) {
-        this.anthropic = new sdk_1.default({ apiKey: anthropicApiKey });
+    client;
+    constructor(apiKey) {
+        this.client = (0, glm_client_1.createGLMClient)(apiKey);
     }
     /**
      * Evaluate an image for a math question
@@ -122,15 +119,13 @@ Evaluate the image quality based on:
 5. Usefulness - Does it effectively support the question?
 
 Provide a detailed evaluation describing the image's strengths and weaknesses.`;
-        let content;
+        let userContent;
         if (imageContent.type === 'base64') {
-            content = [
+            userContent = [
                 {
-                    type: 'image',
-                    source: {
-                        type: 'base64',
-                        media_type: imageContent.mediaType,
-                        data: imageContent.content,
+                    type: 'image_url',
+                    image_url: {
+                        url: `data:${imageContent.mediaType || 'image/png'};base64,${imageContent.content}`,
                     },
                 },
                 {
@@ -149,7 +144,10 @@ Provide your detailed evaluation of the image quality:`,
         }
         else {
             // For SVG/text content
-            content = `Evaluate this SVG/diagram for the following SAT math question:
+            userContent = [
+                {
+                    type: 'text',
+                    text: `Evaluate this SVG/diagram for the following SAT math question:
 
 **Question:** ${question.stem}
 
@@ -162,28 +160,34 @@ Provide your detailed evaluation of the image quality:`,
 ${imageContent.content}
 \`\`\`
 
-Provide your detailed evaluation of how well this visual content supports the question:`;
+Provide your detailed evaluation of how well this visual content supports the question:`,
+                },
+            ];
         }
-        const response = await this.anthropic.messages.create({
+        const response = await this.client.chat.completions.create({
             model: config_1.MODEL_CONFIG.evaluation.model,
             max_tokens: config_1.MODEL_CONFIG.evaluation.maxTokens,
-            system: systemPrompt,
-            messages: [{ role: 'user', content }],
+            messages: [
+                { role: 'system', content: systemPrompt },
+                { role: 'user', content: userContent },
+            ],
         });
-        const textBlock = response.content.find((block) => block.type === 'text');
-        return textBlock ? textBlock.text : '';
+        return (0, glm_client_1.extractText)(response);
     }
     /**
      * Compute SSR score from textual evaluation using Claude
      */
     async computeSSRScore(textualEvaluation) {
         const anchorSet = (0, anchors_1.getAnchorSet)('image_quality');
-        // Use Claude to compare evaluation to anchors
-        const response = await this.anthropic.messages.create({
+        // Use GLM-5 to compare evaluation to anchors
+        const response = await this.client.chat.completions.create({
             model: config_1.MODEL_CONFIG.evaluation.model,
             max_tokens: 256,
-            system: `You are a semantic similarity scorer. Given an evaluation and 5 anchor statements (1=worst, 5=best), output similarity scores as JSON: {"1": 0.1, "2": 0.2, "3": 0.3, "4": 0.25, "5": 0.15}. Scores must sum to 1.0.`,
             messages: [
+                {
+                    role: 'system',
+                    content: `You are a semantic similarity scorer. Given an evaluation and 5 anchor statements (1=worst, 5=best), output similarity scores as JSON: {"1": 0.1, "2": 0.2, "3": 0.3, "4": 0.25, "5": 0.15}. Scores must sum to 1.0.`,
+                },
                 {
                     role: 'user',
                     content: `Evaluation: "${textualEvaluation}"
@@ -199,11 +203,11 @@ Output JSON:`,
                 },
             ],
         });
-        const textBlock = response.content.find((block) => block.type === 'text');
+        const text = (0, glm_client_1.extractText)(response);
         let pmf = { 1: 0.2, 2: 0.2, 3: 0.2, 4: 0.2, 5: 0.2 };
-        if (textBlock) {
+        if (text) {
             try {
-                const jsonMatch = textBlock.text.match(/\{[^}]+\}/);
+                const jsonMatch = text.match(/\{[^}]+\}/);
                 if (jsonMatch) {
                     const parsed = JSON.parse(jsonMatch[0]);
                     pmf = {
@@ -237,19 +241,21 @@ Output JSON:`,
      * Extract improvement suggestions
      */
     async extractImprovement(evaluation) {
-        const response = await this.anthropic.messages.create({
+        const response = await this.client.chat.completions.create({
             model: config_1.MODEL_CONFIG.evaluation.model,
             max_tokens: 512,
-            system: 'Extract specific, actionable improvements for an SAT question image based on the evaluation. Be concise.',
             messages: [
+                {
+                    role: 'system',
+                    content: 'Extract specific, actionable improvements for an SAT question image based on the evaluation. Be concise.',
+                },
                 {
                     role: 'user',
                     content: `Evaluation:\n${evaluation}\n\nProvide 2-3 specific improvements:`,
                 },
             ],
         });
-        const textBlock = response.content.find((block) => block.type === 'text');
-        return textBlock ? textBlock.text : '';
+        return (0, glm_client_1.extractText)(response);
     }
     /**
      * Create a failed result
@@ -293,10 +299,10 @@ exports.ImageEvaluator = ImageEvaluator;
  * Create image evaluator from environment
  */
 function createImageEvaluator() {
-    const anthropicKey = process.env.ANTHROPIC_API_KEY;
-    if (!anthropicKey) {
-        throw new Error('Missing ANTHROPIC_API_KEY environment variable');
+    const apiKey = process.env.ZHIPU_API_KEY;
+    if (!apiKey) {
+        throw new Error('Missing ZHIPU_API_KEY environment variable');
     }
-    return new ImageEvaluator(anthropicKey);
+    return new ImageEvaluator(apiKey);
 }
 //# sourceMappingURL=image-evaluator.js.map

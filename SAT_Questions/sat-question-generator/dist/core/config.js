@@ -108,11 +108,13 @@ exports.MATH_HIERARCHY = {
 // Default Configurations
 // ============================================
 exports.DEFAULT_PREAM_CONFIG = {
-    maxIterations: 10,
+    maxIterations: 5,
     trainTestSplit: 0.8,
     convergenceThreshold: 0.02, // 2% improvement threshold
-    minSamplesPerIteration: 20,
+    minSamplesPerIteration: 25,
     errorCategoryCount: 5,
+    repairEnabled: true,
+    maxRepairAttempts: 1,
 };
 exports.DEFAULT_TEMPERATURE_CONFIG = {
     generation: 0.7,
@@ -123,13 +125,13 @@ exports.DEFAULT_TEMPERATURE_CONFIG = {
 // ============================================
 exports.MODEL_CONFIG = {
     generation: {
-        provider: 'anthropic',
-        model: 'claude-sonnet-4-5-20250929',
+        provider: 'zhipu',
+        model: 'glm-5',
         maxTokens: 4096,
     },
     evaluation: {
-        provider: 'anthropic',
-        model: 'claude-sonnet-4-5-20250929',
+        provider: 'zhipu',
+        model: 'glm-5',
         maxTokens: 2048,
     },
     imageGeneration: {
@@ -141,9 +143,8 @@ exports.MODEL_CONFIG = {
 // SSR Configuration
 // ============================================
 exports.SSR_CONFIG = {
-    temperature: 2.0, // Temperature parameter for PMF calculation
-    epsilon: 0.01, // Small constant for numerical stability
-    acceptableThreshold: 3.5, // Score >= this is acceptable
+    temperature: 2.0, // Temperature parameter for PMF softmax calculation
+    acceptableThreshold: 3.5, // Score >= this is acceptable (pass/fail threshold)
 };
 // ============================================
 // Utility Functions

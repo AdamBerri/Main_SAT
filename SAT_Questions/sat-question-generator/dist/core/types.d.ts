@@ -2,7 +2,7 @@ import { z } from 'zod';
 export type SATSection = 'READING' | 'MATH';
 export type ReadingDomain = 'Information_and_Ideas' | 'Craft_and_Structure' | 'Expression_of_Ideas' | 'Standard_English_Conventions';
 export type MathDomain = 'Algebra' | 'Advanced_Math' | 'Problem_Solving' | 'Geometry_Trig';
-export type ReadingSubtopic = 'central_ideas' | 'inferences' | 'command_of_evidence' | 'textual_evidence' | 'words_in_context' | 'text_structure' | 'cross_text_connections' | 'overall_purpose' | 'rhetorical_synthesis' | 'transitions' | 'boundaries' | 'form_structure_sense';
+export type ReadingSubtopic = 'central_ideas' | 'inferences' | 'command_of_evidence' | 'command_of_evidence_quantitative' | 'textual_evidence' | 'words_in_context' | 'text_structure' | 'cross_text_connections' | 'overall_purpose' | 'rhetorical_synthesis' | 'transitions' | 'boundaries' | 'form_structure_sense';
 export type MathSubtopic = 'linear_equations' | 'linear_functions' | 'systems_of_equations' | 'linear_inequalities' | 'equivalent_expressions' | 'nonlinear_equations' | 'nonlinear_functions' | 'ratios_rates' | 'percentages' | 'units' | 'data_distributions' | 'probability' | 'inference' | 'evaluating_claims' | 'two_variable_data' | 'area_volume' | 'lines_angles' | 'triangles' | 'circles' | 'right_triangles';
 export type Subtopic = ReadingSubtopic | MathSubtopic;
 export interface TopicPath {
@@ -78,16 +78,19 @@ export declare const BaseQuestionSchema: z.ZodObject<{
         promptVersion: z.ZodString;
         modelUsed: z.ZodString;
         generationId: z.ZodString;
+        blueprintId: z.ZodOptional<z.ZodString>;
     }, "strip", z.ZodTypeAny, {
         generatedAt: string;
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     }, {
         generatedAt: string;
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     }>;
 }, "strip", z.ZodTypeAny, {
     id: string;
@@ -117,6 +120,7 @@ export declare const BaseQuestionSchema: z.ZodObject<{
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     };
 }, {
     id: string;
@@ -146,9 +150,17 @@ export declare const BaseQuestionSchema: z.ZodObject<{
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     };
 }>;
 export type BaseQuestion = z.infer<typeof BaseQuestionSchema>;
+export interface Blueprint {
+    id: string;
+    description: string;
+    surface: 'single prose passage' | 'informational passage' | 'passage + data_display' | 'paired_passages' | 'sentence_focus' | 'notes_to_sentence' | 'word_problem' | 'graph_description' | 'data_display' | 'diagram';
+    reasoning: string;
+    representation: 'text_only' | 'chart_or_table' | 'graph_or_sketch' | 'diagram' | 'table_or_chart';
+}
 export declare const ReadingQuestionSchema: z.ZodObject<{
     id: z.ZodString;
     topic: z.ZodObject<{
@@ -205,16 +217,19 @@ export declare const ReadingQuestionSchema: z.ZodObject<{
         promptVersion: z.ZodString;
         modelUsed: z.ZodString;
         generationId: z.ZodString;
+        blueprintId: z.ZodOptional<z.ZodString>;
     }, "strip", z.ZodTypeAny, {
         generatedAt: string;
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     }, {
         generatedAt: string;
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     }>;
 } & {
     passage: z.ZodString;
@@ -262,6 +277,7 @@ export declare const ReadingQuestionSchema: z.ZodObject<{
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     };
     passage: string;
     passageMetadata: {
@@ -300,6 +316,7 @@ export declare const ReadingQuestionSchema: z.ZodObject<{
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     };
     passage: string;
     passageMetadata: {
@@ -368,16 +385,19 @@ export declare const MathQuestionSchema: z.ZodObject<{
         promptVersion: z.ZodString;
         modelUsed: z.ZodString;
         generationId: z.ZodString;
+        blueprintId: z.ZodOptional<z.ZodString>;
     }, "strip", z.ZodTypeAny, {
         generatedAt: string;
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     }, {
         generatedAt: string;
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     }>;
 } & {
     hasImage: z.ZodBoolean;
@@ -414,6 +434,7 @@ export declare const MathQuestionSchema: z.ZodObject<{
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     };
     hasImage: boolean;
     requiresCalculator: boolean;
@@ -449,6 +470,7 @@ export declare const MathQuestionSchema: z.ZodObject<{
         promptVersion: string;
         modelUsed: string;
         generationId: string;
+        blueprintId?: string | undefined;
     };
     hasImage: boolean;
     requiresCalculator: boolean;
@@ -516,6 +538,16 @@ export interface PREAMConfig {
     convergenceThreshold: number;
     minSamplesPerIteration: number;
     errorCategoryCount: number;
+    repairEnabled: boolean;
+    maxRepairAttempts: number;
+}
+export type RepairCategory = 'math_error' | 'distractor_rationale' | 'distractor_value' | 'non_integer_mismatch' | 'self_debug_language' | 'schema_fix';
+export interface RepairResult {
+    questionId: string;
+    repaired: boolean;
+    issuesFound: RepairCategory[];
+    issueDetails: string[];
+    originalScore?: number;
 }
 export interface PREAMIteration {
     iteration: number;
@@ -537,6 +569,11 @@ export interface PREAMIteration {
     };
     improvementMade: string;
     newPromptVersion: string;
+    repairStats?: {
+        totalAttempted: number;
+        totalRepaired: number;
+        issueBreakdown: Record<RepairCategory, number>;
+    };
 }
 export interface PREAMState {
     topic: TopicPath;
@@ -549,7 +586,7 @@ export interface PREAMState {
     completedAt: string | null;
 }
 export interface APIKeyConfig {
-    provider: 'anthropic' | 'openai' | 'google';
+    provider: 'zhipu' | 'anthropic' | 'openai' | 'google';
     key: string;
     rateLimit: number;
     currentUsage: number;
