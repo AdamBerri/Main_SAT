@@ -1,0 +1,40 @@
+{
+  "id": "rt-d3-q12-c8f3b2e5-4d0a-4f6c-9b7e-2e3d4c5b6a7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3,
+    "computational": 2
+  },
+  "stem": "A wheelchair ramp rises at an angle of 53° from the horizontal ground. If the ramp is 45 feet long, what is the horizontal distance covered by the ramp, in feet? (Given: sin 53° ≈ 4/5, cos 53° ≈ 3/5, and tan 53° ≈ 4/3)",
+  "choices": [
+    {"label": "A", "text": "27", "isCorrect": true},
+    {"label": "B", "text": "36", "isCorrect": false},
+    {"label": "C", "text": "60", "isCorrect": false},
+    {"label": "D", "text": "75", "isCorrect": false}
+  ],
+  "correctAnswer": "A",
+  "explanation": "The ramp is the hypotenuse (45 ft), and we need the horizontal distance (adjacent side). Using cosine: cos 53° = adjacent/hypotenuse = d/45. So d = 45 × (3/5) = 27 feet.",
+  "distractorRationale": {
+    "A": "Correct. Uses cos 53° = 3/5 to find the adjacent side: 45 × 3/5 = 27",
+    "B": "Uses sin 53° instead of cos 53°, finding the vertical rise instead of the horizontal distance: 45 × 4/5 = 36",
+    "C": "Incorrectly multiplies the hypotenuse by tan 53° as if the ramp were the adjacent side: 45 × 4/3 = 60",
+    "D": "Sets up the ratio inverted, dividing the hypotenuse by cos 53° instead of multiplying: 45 ÷ (3/5) = 45 × 5/3 = 75"
+  },
+  "hasImage": false,
+  "imageDescription": "A right triangle where the hypotenuse represents the 45-foot ramp, the horizontal leg represents the ground distance, and the vertical leg represents the rise. The 53° angle is at the base between the ramp and the ground.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d3-q12"
+  }
+}

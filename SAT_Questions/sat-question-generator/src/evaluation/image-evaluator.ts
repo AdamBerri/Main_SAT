@@ -7,7 +7,7 @@ import type {
   MicroJudgeResult,
 } from '../core/types';
 import { MODEL_CONFIG, SSR_CONFIG } from '../core/config';
-import { createGLMClient, extractText } from '../core/glm-client';
+import { createGLMClient, extractText, resolveLLMApiKey } from '../core/glm-client';
 import { SSRRater, createSSRRater } from '../judges/ssr-rater';
 import { getAnchorSet } from '../judges/anchors';
 
@@ -317,11 +317,6 @@ Output JSON:`,
  * Create image evaluator from environment
  */
 export function createImageEvaluator(): ImageEvaluator {
-  const apiKey = process.env.ZHIPU_API_KEY;
-
-  if (!apiKey) {
-    throw new Error('Missing ZHIPU_API_KEY environment variable');
-  }
-
+  const apiKey = resolveLLMApiKey();
   return new ImageEvaluator(apiKey);
 }

@@ -145,20 +145,30 @@ log_section() {
 }
 
 check_env() {
-    if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
-        if [ -f .env ]; then
-            set -a
-            source .env
-            set +a
-        fi
+    if [ -f .env ]; then
+        set -a
+        source .env
+        set +a
     fi
 
-    if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
-        log "ERROR: ANTHROPIC_API_KEY not set. Please set it in .env or environment."
+    # Normalize local backend env aliases
+    if [ -n "${LLM_API_KEY:-}" ] && [ -z "${ZHIPU_API_KEY:-}" ]; then
+        export ZHIPU_API_KEY="$LLM_API_KEY"
+    fi
+    if [ -n "${MINIMAX_BASE_URL:-}" ] && [ -z "${LLM_BASE_URL:-}" ]; then
+        export LLM_BASE_URL="$MINIMAX_BASE_URL"
+    fi
+
+    if [ -z "${ZHIPU_API_KEY:-}" ] && [ -z "${LLM_BASE_URL:-}" ]; then
+        log "ERROR: No LLM backend configured. Set ZHIPU_API_KEY or LLM_BASE_URL/MINIMAX_BASE_URL."
         exit 1
     fi
 
-    log "Environment check passed - API key loaded"
+    if [ -n "${LLM_BASE_URL:-}" ]; then
+        log "Environment check passed - local backend configured at $LLM_BASE_URL"
+    else
+        log "Environment check passed - hosted API key loaded"
+    fi
 }
 
 # =============================================================================

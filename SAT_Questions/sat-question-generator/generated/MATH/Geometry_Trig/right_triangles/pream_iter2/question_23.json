@@ -1,0 +1,56 @@
+{
+  "id": "rt-d5-023-c4e6f8a1-3d5b-4c7e-9f2a-1b8d6c4e3a5f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.0
+  },
+  "stem": "A right triangle has one acute angle of 45 degrees and an area of 50 square centimeters. What is the length of the hypotenuse, in centimeters?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "10",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "10\\sqrt{2}",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "5\\sqrt{2}",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "20",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Since one acute angle is 45 degrees, this is a 45-45-90 triangle with two equal legs. Let c be the hypotenuse. Each leg has length c / sqrt(2) = c * sqrt(2) / 2. The area is (1/2) * leg * leg = (1/2) * (c * sqrt(2) / 2)^2 = (1/2) * (c^2 / 2) = c^2 / 4. Setting this equal to 50: c^2 / 4 = 50, so c^2 = 200, and c = sqrt(200) = 10sqrt(2). Verification: each leg = 10sqrt(2) * sqrt(2) / 2 = 10, area = (1/2)(10)(10) = 50 square centimeters.",
+  "distractorRationale": {
+    "A": "Correctly finds each leg = 10 from the area equation (1/2)(10)(10) = 50, but reports the leg length as the hypotenuse instead of computing c = 10sqrt(2)",
+    "B": "Correct: Sets up area = c^2 / 4 = 50, solves c^2 = 200, giving c = 10sqrt(2)",
+    "C": "Omits the factor of 1/2 in the area formula, computing leg^2 = 50 to get leg = 5sqrt(2), then reports this leg as the hypotenuse instead of multiplying by sqrt(2) to obtain 10",
+    "D": "Applies 30-60-90 side ratios instead of 45-45-90, using legs = c/2 and c*sqrt(3)/2, which gives area = c^2 * sqrt(3) / 8 = 50, leading to c^2 = 400 / sqrt(3), then incorrectly approximates sqrt(3) as 1 to get c = 20"
+  },
+  "hasImage": false,
+  "imageDescription": "A right triangle with the right angle at the bottom-left vertex. The two acute angles are each labeled 45 degrees. The two equal legs are marked with tick marks to show they are equal in length. The area inside the triangle is labeled 50 cm squared.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T20:20:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter2-d5-q23"
+  }
+}

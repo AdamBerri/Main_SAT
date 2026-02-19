@@ -1,0 +1,56 @@
+{
+  "id": "rt-d5-q24-d4e5f6a7-8b9c-4d0e-1f2a-3b4c5d6e7f8a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 5.0,
+    "computational": 4.5
+  },
+  "stem": "In the figure, triangles ABC and ACD are both right triangles. Triangle ABC has a right angle at B, with angle BAC = 53 degrees and BC = 16. Triangle ACD has a right angle at C, with angle CAD = 37 degrees. Given that sin 53 = cos 37 = 4/5, cos 53 = sin 37 = 3/5, tan 53 = 4/3, and tan 37 = 3/4, what is the length of CD?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "9",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "12",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "20",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "15",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Step 1 (Triangle ABC): In right triangle ABC with right angle at B and angle BAC = 53 degrees, BC is opposite the 53-degree angle and AC is the hypotenuse. Using sin(53) = BC/AC: 4/5 = 16/AC, so AC = 16 * 5/4 = 20. Also, AB = AC * cos(53) = 20 * 3/5 = 12. Step 2 (Triangle ACD): In right triangle ACD with right angle at C and angle CAD = 37 degrees, CD is opposite the 37-degree angle and AC is adjacent. Using tan(37) = CD/AC: CD = AC * tan(37) = 20 * 3/4 = 15. Verification: AD = AC/cos(37) = 20/(4/5) = 25. Check: CD^2 + AC^2 = 225 + 400 = 625 = 25^2 = AD^2. Confirmed.",
+  "distractorRationale": {
+    "A": "Uses AB instead of AC in the second triangle. Correctly finds AB = 12 from triangle ABC, then computes CD = AB * tan(37) = 12 * 3/4 = 9",
+    "B": "Uses sin(37) instead of tan(37) in triangle ACD. Correctly finds AC = 20, then computes CD = AC * sin(37) = 20 * 3/5 = 12",
+    "C": "Correctly computes AC = 20 but reports AC as the answer instead of proceeding to compute CD in the second triangle = 20",
+    "D": "Correct: Finds AC = 20 from triangle ABC using sin(53) = 16/AC, then computes CD = AC * tan(37) = 20 * 3/4 = 15"
+  },
+  "hasImage": true,
+  "imageDescription": "Two right triangles sharing side AC are shown. Triangle ABC has vertices A (top-left), B (bottom-left), and C (bottom-right), with a small square at B indicating the right angle. Angle BAC is labeled 53 degrees and side BC is labeled 16. Triangle ACD has vertices A (top-left), C (bottom-right), and D (far right), with a small square at C indicating the right angle. Angle CAD is labeled 37 degrees. Side AC connects the two triangles.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d5-q24"
+  }
+}

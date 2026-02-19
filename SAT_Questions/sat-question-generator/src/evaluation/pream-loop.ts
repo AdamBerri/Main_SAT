@@ -19,7 +19,7 @@ import {
   getPromptPath,
   ensureDirectoryExists,
 } from '../core/config';
-import { createGLMClient, extractText } from '../core/glm-client';
+import { createGLMClient, extractText, resolveLLMApiKey } from '../core/glm-client';
 import { QuestionEvaluator, createEvaluator } from './evaluator';
 import { QuestionRepairer, createRepairer } from './repair';
 
@@ -656,11 +656,6 @@ Output as valid JSON matching the provided schema.`;
  * Create PREAM loop with environment variables
  */
 export function createPREAMLoop(config?: Partial<PREAMConfig>): PREAMLoop {
-  const apiKey = process.env.ZHIPU_API_KEY;
-
-  if (!apiKey) {
-    throw new Error('Missing ZHIPU_API_KEY environment variable');
-  }
-
+  const apiKey = resolveLLMApiKey();
   return new PREAMLoop(apiKey, config);
 }

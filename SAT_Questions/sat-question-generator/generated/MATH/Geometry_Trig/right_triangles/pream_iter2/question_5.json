@@ -1,0 +1,40 @@
+{
+  "id": "rt-d1-005-a7e2b4c6-3f58-4d1a-9c8e-6b5a2d4f1e3c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A crane has a cable that is 80 feet long, stretching from the top of the crane arm down to a point on the ground. The cable makes a 60-degree angle with the ground. Given that cos 60\u00b0 = 0.5, what is the horizontal distance, in feet, from the base of the crane to the point where the cable meets the ground?",
+  "choices": [
+    {"label": "A", "text": "60", "isCorrect": false},
+    {"label": "B", "text": "160", "isCorrect": false},
+    {"label": "C", "text": "40", "isCorrect": true},
+    {"label": "D", "text": "80", "isCorrect": false}
+  ],
+  "correctAnswer": "C",
+  "explanation": "The cable is the hypotenuse (80 feet) and the horizontal distance is the side adjacent to the 60\u00b0 angle. Using the cosine ratio, cos 60\u00b0 = adjacent/hypotenuse, so adjacent = 80 \u00d7 0.5 = 40 feet.",
+  "distractorRationale": {
+    "A": "Confused the angle measure with the side length, answering 60 because the angle is 60 degrees.",
+    "B": "Divided by cos 60\u00b0 instead of multiplying, inverting the ratio: 80 \u00f7 0.5 = 160.",
+    "C": "Correct: cos 60\u00b0 = adjacent/hypotenuse, so adjacent = 80 \u00d7 0.5 = 40.",
+    "D": "Used the cable length directly as the horizontal distance, ignoring the angle: 80."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T20:20:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter2-d1-q5"
+  }
+}

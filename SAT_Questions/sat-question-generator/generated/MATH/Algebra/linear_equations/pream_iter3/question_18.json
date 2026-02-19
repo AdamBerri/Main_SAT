@@ -1,0 +1,54 @@
+{
+  "id": "c8f2e9a4-6d3b-4e1a-9f7c-5b2d8a3e1f4c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 3.5,
+    "computational": 3.0
+  },
+  "stem": "A store buys widgets at $8 each and sells them at $14 each. The store also pays $360 per month in fixed costs (rent, utilities, etc.). How many widgets must the store sell per month to make exactly $600 in profit?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "100",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "120",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "160",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "240",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let w represent the number of widgets sold. The profit per widget is $14 - $8 = $6. The total profit equals the profit per widget times the number sold, minus fixed costs: 6w - 360 = 600. Adding 360 to both sides: 6w = 960. Dividing by 6: w = 160. We can verify: Revenue is 14(160) = $2,240, cost of goods is 8(160) = $1,280, so profit is 2,240 - 1,280 - 360 = $600.",
+  "distractorRationale": {
+    "A": "Forgot to account for fixed costs, solving 6w = 600. = 100",
+    "B": "Subtracted fixed costs from target profit incorrectly, solving 6w = 360 + 360. = 120",
+    "D": "Used selling price instead of profit margin, solving 14w - 360 = 600. = 240"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T01:30:00.000Z",
+    "promptVersion": "1.11.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d4-q18"
+  }
+}

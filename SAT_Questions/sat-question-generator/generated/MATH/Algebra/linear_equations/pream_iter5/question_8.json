@@ -1,0 +1,39 @@
+{
+  "id": "d5a9b3c6-1e4f-4b8d-9c2a-7f6e1d8b4a3c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A parking garage charges $6 for the first hour and $4 for each additional hour after the first. Marcus parked his car in the garage and was charged a total of $30. For how many hours did Marcus park his car?",
+  "choices": [
+    {"label": "A", "text": "5", "isCorrect": false},
+    {"label": "B", "text": "6", "isCorrect": false},
+    {"label": "C", "text": "7", "isCorrect": true},
+    {"label": "D", "text": "8", "isCorrect": false}
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let h represent the total number of hours Marcus parked. The first hour costs $6, and each additional hour costs $4, so the total cost is 6 + 4(h - 1) = 30. Expanding: 6 + 4h - 4 = 30, which simplifies to 2 + 4h = 30. Subtracting 2 from both sides gives 4h = 28, so h = 28 / 4 = 7. Marcus parked for 7 hours.",
+  "distractorRationale": {
+    "A": "Divided the total charge by the first-hour rate: 30 / 6 = 5.",
+    "B": "Subtracted the first-hour charge and divided by the additional-hour rate, but forgot to add back the first hour: (30 - 6) / 4 = 24 / 4 = 6.",
+    "C": "Correct: Set up 6 + 4(h - 1) = 30, simplified to 2 + 4h = 30, then 4h = 28, h = 28 / 4 = 7.",
+    "D": "Added the combined constant to 30 instead of subtracting when isolating the variable: 4h = 30 + 2 = 32, h = 32 / 4 = 8."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d2-q8"
+  }
+}

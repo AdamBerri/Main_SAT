@@ -314,10 +314,7 @@ exports.ReadingQuestionGenerator = ReadingQuestionGenerator;
  * Create reading generator from environment
  */
 function createReadingGenerator() {
-    const apiKey = process.env.ZHIPU_API_KEY;
-    if (!apiKey) {
-        throw new Error('Missing ZHIPU_API_KEY');
-    }
+    const apiKey = (0, glm_client_1.resolveLLMApiKey)();
     return new ReadingQuestionGenerator(apiKey);
 }
 //# sourceMappingURL=reading-generator.js.map

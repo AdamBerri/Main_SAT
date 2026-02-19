@@ -1,0 +1,55 @@
+{
+  "id": "t23c5f9d2-4a8b-4e3c-7d1f-2b9a6c8e3d5f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.5
+  },
+  "stem": "In right triangle DEF with the right angle at F, sin(D) = (sqrt(3))/2. If the area of triangle DEF is 18 * sqrt(3) square units, what is the length of the hypotenuse DE?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "6",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "6\\sqrt{3}",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "12",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "6\\sqrt{2}",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Since sin(D) = sqrt(3)/2, angle D = 60 degrees, so angle E = 30 degrees. This is a 30-60-90 triangle. Let the side opposite the 30-degree angle (DF) equal a. Then the side opposite the 60-degree angle (EF) equals a * sqrt(3), and the hypotenuse DE = 2a. The area is (1/2) * DF * EF = (1/2) * a * a * sqrt(3) = (a^2 * sqrt(3)) / 2. Setting this equal to 18 * sqrt(3): (a^2 * sqrt(3)) / 2 = 18 * sqrt(3). Dividing both sides by sqrt(3): a^2 / 2 = 18, so a^2 = 36, thus a = 6. The hypotenuse DE = 2a = 2 * 6 = 12.",
+  "distractorRationale": {
+    "A": "Solves a^2 = 36 correctly to get a = 6 but stops there, reporting the short leg DF as the hypotenuse instead of doubling to get DE = 2a, yielding the incorrect answer = 6",
+    "B": "Computes EF = a * sqrt(3) = 6 * sqrt(3) and reports the longer leg EF as the hypotenuse instead of computing DE = 2a = 12, yielding the incorrect answer = 6\\sqrt{3}",
+    "C": "Correct: Identifies the 30-60-90 triangle, sets (a^2 * sqrt(3))/2 = 18 * sqrt(3), solves a = 6, and computes DE = 2a = 12",
+    "D": "Omits the factor of 1/2 in the area formula, writing a * (a * sqrt(3)) = 18 * sqrt(3), which gives a^2 = 18, a = 3 * sqrt(2), and DE = 2a = 6 * sqrt(2) = 6\\sqrt{2}"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T14:30:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter1-d5-q23"
+  }
+}

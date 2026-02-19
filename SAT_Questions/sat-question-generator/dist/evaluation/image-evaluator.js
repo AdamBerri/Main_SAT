@@ -299,10 +299,7 @@ exports.ImageEvaluator = ImageEvaluator;
  * Create image evaluator from environment
  */
 function createImageEvaluator() {
-    const apiKey = process.env.ZHIPU_API_KEY;
-    if (!apiKey) {
-        throw new Error('Missing ZHIPU_API_KEY environment variable');
-    }
+    const apiKey = (0, glm_client_1.resolveLLMApiKey)();
     return new ImageEvaluator(apiKey);
 }
 //# sourceMappingURL=image-evaluator.js.map

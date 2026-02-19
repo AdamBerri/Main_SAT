@@ -18,7 +18,7 @@ import {
   ensureDirectoryExists,
   topicToString,
 } from '../core/config';
-import { createGLMClient, extractText } from '../core/glm-client';
+import { createGLMClient, extractText, resolveLLMApiKey } from '../core/glm-client';
 import { getPromptManager } from '../prompts/prompt-manager';
 import { getSchemaContent, fullValidation } from '../schemas/schema-validator';
 import { sampleBlueprint } from './blueprints';
@@ -427,11 +427,6 @@ export class QuestionGenerator {
  * Create generator with environment variables
  */
 export function createGenerator(): QuestionGenerator {
-  const apiKey = process.env.ZHIPU_API_KEY;
-
-  if (!apiKey) {
-    throw new Error('Missing ZHIPU_API_KEY environment variable');
-  }
-
+  const apiKey = resolveLLMApiKey();
   return new QuestionGenerator(apiKey);
 }

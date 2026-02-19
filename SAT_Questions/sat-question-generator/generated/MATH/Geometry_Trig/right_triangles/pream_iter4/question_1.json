@@ -1,0 +1,40 @@
+{
+  "id": "rt-d1-q01-c4a8e2f1-7b3d-4e9a-8f5c-1d6a9b2e3c7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A 40-foot guy wire runs from the top of an antenna to the ground, making a 37-degree angle with the ground. Given that sin 37\u00b0 \u2248 3/5, cos 37\u00b0 \u2248 4/5, and tan 37\u00b0 \u2248 3/4, what is the height of the antenna, in feet?",
+  "choices": [
+    {"label": "A", "text": "30", "isCorrect": false},
+    {"label": "B", "text": "24", "isCorrect": true},
+    {"label": "C", "text": "20", "isCorrect": false},
+    {"label": "D", "text": "32", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The guy wire is the hypotenuse (40 feet) and the antenna height is the side opposite the 37\u00b0 angle. Using sin 37\u00b0 = opposite/hypotenuse: height = 40 \u00d7 sin 37\u00b0 = 40 \u00d7 (3/5) = 120/5 = 24 feet.",
+  "distractorRationale": {
+    "A": "Used tan instead of sin, multiplying the hypotenuse by tan 37\u00b0 instead of sin 37\u00b0: 40 \u00d7 (3/4) = 30.",
+    "B": "Correct: height = hypotenuse \u00d7 sin 37\u00b0 = 40 \u00d7 (3/5) = 24.",
+    "C": "Confused 37\u00b0 with 30\u00b0 and applied the 30-60-90 rule (short leg = hypotenuse/2): 40 \u00d7 (1/2) = 20.",
+    "D": "Used cos instead of sin, finding the horizontal distance instead of the height: 40 \u00d7 (4/5) = 32."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle showing a vertical antenna with a guy wire running from its top to the ground. The guy wire (hypotenuse) is labeled 40 ft. The angle between the guy wire and the horizontal ground is labeled 37\u00b0. The vertical side (antenna height) is marked with a question mark.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d1-q1"
+  }
+}

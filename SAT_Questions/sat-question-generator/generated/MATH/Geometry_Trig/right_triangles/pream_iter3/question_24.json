@@ -1,0 +1,56 @@
+{
+  "id": "rt-d5-q24-e6b1d4f2-7a3c-4e8b-9d5f-4c2a8e6b1d3f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.5
+  },
+  "stem": "A kite is flying at a height h directly above point A on level ground. A string runs from the kite to a person standing at point B on the ground, making a 45-degree angle with the ground. A second string runs from the kite to an anchor at point C on the ground, on the opposite side of A from B, making a 60-degree angle with the ground. If the distance from B to C is 100 meters, what is h, in meters?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "50(3 - \\sqrt{3})",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "50\\sqrt{2}",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "50(\\sqrt{3} - 1)",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "25(3 - \\sqrt{3})",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Two right triangles share the vertical side h (the kite's height above A). In right triangle with B: tan(45) = h/AB, so AB = h. In right triangle with C: tan(60) = h/AC, so AC = h/sqrt(3). Since B and C are on opposite sides of A, BC = AB + AC = h + h/sqrt(3) = h(1 + 1/sqrt(3)) = h(sqrt(3) + 1)/sqrt(3) = 100. Solving: h = 100sqrt(3)/(sqrt(3) + 1). Rationalizing: h = 100sqrt(3)(sqrt(3) - 1)/((sqrt(3))^2 - 1^2) = 100sqrt(3)(sqrt(3) - 1)/2 = 100(3 - sqrt(3))/2 = 50(3 - sqrt(3)). Verification: h = 50(3 - sqrt(3)) approximately equals 63.4. AB = 63.4, AC = 63.4/sqrt(3) approximately equals 36.6. BC = 63.4 + 36.6 = 100. Confirmed.",
+  "distractorRationale": {
+    "A": "Correct: Sets up tan(45) = h/AB and tan(60) = h/AC, uses AB + AC = 100, solves h = 100sqrt(3)/(sqrt(3) + 1), and rationalizes to get h = 50(3 - sqrt(3))",
+    "B": "Treats BC = 100 as the hypotenuse of a single right triangle with the kite at the top and uses sin(45) = h/100, obtaining h = 100 sin(45) = 100(sqrt(2)/2) = 50sqrt(2), instead of setting up two separate right triangles = 50\\sqrt{2}",
+    "C": "Inverts the tangent ratio for the 60-degree angle, using tan(60) = AC/h instead of h/AC, which gives AC = h sqrt(3). Then AB + AC = h + h sqrt(3) = h(1 + sqrt(3)) = 100, yielding h = 100/(1 + sqrt(3)) = 50(sqrt(3) - 1) = 50(\\sqrt{3} - 1)",
+    "D": "Sets up the equations correctly and reaches h = 100sqrt(3)/(sqrt(3) + 1), but when rationalizing the denominator computes (sqrt(3))^2 - 1^2 as 3 + 1 = 4 instead of 3 - 1 = 2, giving h = 100sqrt(3)(sqrt(3) - 1)/4 = 100(3 - sqrt(3))/4 = 25(3 - sqrt(3)) = 25(3 - \\sqrt{3})"
+  },
+  "hasImage": true,
+  "imageDescription": "A vertical dashed line represents the kite's height h above point A on the ground. Point B is to the left of A on a horizontal ground line, and point C is to the right of A. A line from the kite to B makes a 45-degree angle with the ground at B. A line from the kite to C makes a 60-degree angle with the ground at C. The distance BC along the ground is labeled 100 m. Point A is directly below the kite on segment BC.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d5-q24"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A theater sells adult tickets for $15 and child tickets for $9. On Saturday, the theater sold a total of 240 tickets and collected $2,910 in revenue. How many adult tickets were sold?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "125",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "115",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "135",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "194",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let a = number of adult tickets and c = number of child tickets. We have two equations: a + c = 240 (total tickets) and 15a + 9c = 2910 (total revenue). From the first equation, c = 240 - a. Substituting into the second equation: 15a + 9(240 - a) = 2910. Expanding: 15a + 2160 - 9a = 2910. Simplifying: 6a + 2160 = 2910. Subtracting 2160: 6a = 750. Dividing by 6: a = 125.",
+  "distractorRationale": {
+    "A": "Correct: Using a + c = 240 and 15a + 9c = 2910, substitute c = 240 - a to get 15a + 9(240 - a) = 2910, which simplifies to 6a = 750, so a = 125.",
+    "B": "Found the number of child tickets instead of adult tickets: c = 240 - 125 = 115.",
+    "C": "Subtracted incorrectly when isolating the variable: 2910 - 2160 = 810 instead of 750, then 810 / 6 = 135.",
+    "D": "Divided total revenue by the adult ticket price, assuming all tickets were adult: 2910 / 15 = 194."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d3-q13"
+  }
+}

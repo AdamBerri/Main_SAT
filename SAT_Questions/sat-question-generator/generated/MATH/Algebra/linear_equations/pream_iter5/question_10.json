@@ -1,0 +1,39 @@
+{
+  "id": "f7c2d5e8-3a6b-4d1f-9e4c-8b3a7f1d6e2c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.5,
+    "computational": 1.5
+  },
+  "stem": "A plumber charges a $50 service call fee plus $25 for each half-hour of labor. If a customer's total bill is $250, how many hours did the plumber work?",
+  "choices": [
+    {"label": "A", "text": "4", "isCorrect": true},
+    {"label": "B", "text": "5", "isCorrect": false},
+    {"label": "C", "text": "6", "isCorrect": false},
+    {"label": "D", "text": "8", "isCorrect": false}
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let t represent the number of half-hour increments the plumber worked. The total bill is 50 + 25t = 250. Subtracting 50 from both sides: 25t = 200. Dividing both sides by 25: t = 200 / 25 = 8 half-hours. Converting to hours: 8 / 2 = 4 hours. The plumber worked 4 hours.",
+  "distractorRationale": {
+    "A": "Correct: Subtracted the service fee and divided by the half-hour rate to get 8 half-hours, then converted: (250 - 50) / 25 = 8, and 8 / 2 = 4.",
+    "B": "Divided total bill by the half-hour rate without subtracting the service fee, then converted to hours: 250 / 25 = 10, and 10 / 2 = 5.",
+    "C": "Added the service fee to the total instead of subtracting, then divided and converted: (250 + 50) / 25 = 300 / 25 = 12, and 12 / 2 = 6.",
+    "D": "Subtracted the service fee and divided by the half-hour rate but forgot to convert half-hours to hours: (250 - 50) / 25 = 200 / 25 = 8."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d2-q10"
+  }
+}

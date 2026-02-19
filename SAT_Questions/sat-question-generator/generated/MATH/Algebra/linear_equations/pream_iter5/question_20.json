@@ -1,0 +1,39 @@
+{
+  "id": "e1f7a8b9-4c5d-4e6f-a0b1-2c3d4e5f6a7b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 3.5,
+    "computational": 3.5
+  },
+  "stem": "A gym membership plan costs $m per month after a one-time enrollment fee of $e. The total cost C, in dollars, of the membership after t months is given by C = e + mt. A member has paid a total of $390 after 6 months and a total of $590 after 10 months. The gym also offers personal training sessions for $25 each. What is the one-time enrollment fee, in dollars?",
+  "choices": [
+    { "label": "A", "text": "50", "isCorrect": false },
+    { "label": "B", "text": "59", "isCorrect": false },
+    { "label": "C", "text": "65", "isCorrect": false },
+    { "label": "D", "text": "90", "isCorrect": true }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The personal training session price of $25 is extra information not needed for this problem. Using the two data points to set up a system: e + 6m = 390 and e + 10m = 590. Subtracting the first equation from the second: (e + 10m) - (e + 6m) = 590 - 390, which gives 4m = 200. Dividing by 4: m = 50. Substituting back into the first equation: e + 6(50) = 390, so e + 300 = 390, giving e = 90.",
+  "distractorRationale": {
+    "A": "Found the monthly fee (m = 50) by subtracting equations but reported it as the enrollment fee instead of substituting back: 200 / 4 = 50.",
+    "B": "Divided the 10-month total by 10 without accounting for the enrollment fee: 590 / 10 = 59.",
+    "C": "Divided the 6-month total by 6 without accounting for the enrollment fee: 390 / 6 = 65.",
+    "D": "Correct: Subtracted the two equations to get 4m = 200, found m = 50, then substituted back: 390 - 6(50) = 390 - 300 = 90."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d4-q20"
+  }
+}

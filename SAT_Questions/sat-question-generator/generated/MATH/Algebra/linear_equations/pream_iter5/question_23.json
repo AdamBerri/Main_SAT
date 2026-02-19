@@ -1,0 +1,39 @@
+{
+  "id": "c9d3e7a2-4f1b-4c8e-a5d6-3b2f1a9e8c7d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 5.0,
+    "computational": 4.0
+  },
+  "stem": "A company's revenue increased by 40% from Year 1 to Year 2, then decreased by 20% from Year 2 to Year 3. If the company's revenue in Year 3 was $84,000, what was the company's revenue in Year 1, in dollars?",
+  "choices": [
+    { "label": "A", "text": "$60,480", "isCorrect": false },
+    { "label": "B", "text": "$63,000", "isCorrect": false },
+    { "label": "C", "text": "$70,000", "isCorrect": false },
+    { "label": "D", "text": "$75,000", "isCorrect": true }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Let R represent the revenue in Year 1. Year 2 revenue is 1.40 × R, and Year 3 revenue is 0.80 × (1.40 × R) = 1.12R. Setting this equal to $84,000: 1.12R = 84,000, so R = 84,000 ÷ 1.12 = 75,000. The company's Year 1 revenue was $75,000.",
+  "distractorRationale": {
+    "A": "To reverse the 20% decrease, multiplied Year 3 revenue by 1.20 instead of dividing by 0.80, then to reverse the 40% increase, multiplied by 0.60 instead of dividing by 1.40: 84,000 × 1.20 = 100,800; 100,800 × 0.60 = 60,480.",
+    "B": "Correctly divided Year 3 by 0.80 to get Year 2 revenue but then subtracted 40% instead of dividing by 1.40 to get Year 1: 84,000 ÷ 0.80 = 105,000; 105,000 × 0.60 = 63,000.",
+    "C": "Subtracted the percentages to get a net 20% increase and divided by 1.20: 84,000 ÷ 1.20 = 70,000.",
+    "D": "Correct: Combined the successive changes as 1.40 × 0.80 = 1.12 and solved 1.12R = 84,000, giving R = 84,000 ÷ 1.12 = 75,000."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d5-q23"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "c4f8a2b5-9d3e-4a7c-8e1f-6b5d2c9a3e7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "Priya's age is 3 years more than twice Raj's age. If the sum of their ages is 39, how old is Raj?",
+  "choices": [
+    {"label": "A", "text": "13", "isCorrect": false},
+    {"label": "B", "text": "14", "isCorrect": false},
+    {"label": "C", "text": "12", "isCorrect": true},
+    {"label": "D", "text": "18", "isCorrect": false}
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let r represent Raj's age. Priya's age is 2r + 3. Since the sum of their ages is 39: r + (2r + 3) = 39. This simplifies to 3r + 3 = 39, then 3r = 39 - 3 = 36, so r = 36 / 3 = 12. Raj is 12 years old. Check: Priya is 2(12) + 3 = 27, and 12 + 27 = 39.",
+  "distractorRationale": {
+    "A": "Omitted the constant 3 when setting up the equation and solved 3r = 39: r = 39 / 3 = 13.",
+    "B": "Added 3 to 39 instead of subtracting when isolating the variable: 3r = 39 + 3 = 42, r = 42 / 3 = 14.",
+    "C": "Correct: Set up r + (2r + 3) = 39, simplified to 3r + 3 = 39, then 3r = 36, r = 36 / 3 = 12.",
+    "D": "Used r + 3 instead of 2r + 3 for Priya's age (forgot to double): r + (r + 3) = 39, 2r + 3 = 39, 2r = 36, r = 36 / 2 = 18."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d2-q7"
+  }
+}

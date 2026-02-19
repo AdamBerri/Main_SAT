@@ -1,0 +1,54 @@
+{
+  "id": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "An investor has $10,000 to invest in two different accounts. One account pays 4% annual interest, and the other pays 6% annual interest. If the total interest earned after one year is $520, how much money was invested at 4%?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3,000",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$4,000",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$5,000",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$6,000",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let x represent the amount invested at 4%. Then (10,000 - x) represents the amount invested at 6%. The total interest earned is: 0.04x + 0.06(10,000 - x) = 520. Expanding: 0.04x + 600 - 0.06x = 520. Combining like terms: -0.02x + 600 = 520. Subtracting 600 from both sides: -0.02x = -80. Dividing by -0.02: x = 4,000. We can verify: $4,000 at 4% earns 0.04(4,000) = $160, and $6,000 at 6% earns 0.06(6,000) = $360, totaling $160 + $360 = $520.",
+  "distractorRationale": {
+    "A": "Incorrectly setting up the equation as 0.04x + 0.06(10,000 - x) = 500 instead of 520. This gives -0.02x = -100, so x = 5,000, then confusing this with the other account's value.",
+    "C": "Incorrectly assuming equal amounts should be invested without considering the interest constraint. Simply dividing $10,000 by 2 = $5,000.",
+    "D": "Confusing which account had which amount. The amount at 6% is 10,000 - 4,000 = $6,000."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T01:30:00.000Z",
+    "promptVersion": "1.11.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d3-q15"
+  }
+}

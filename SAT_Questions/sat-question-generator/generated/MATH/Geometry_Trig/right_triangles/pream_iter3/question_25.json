@@ -1,0 +1,56 @@
+{
+  "id": "rt-d5-q25-f7c2e5a3-8b4d-4f9a-9e1c-5d3b7a2f8c6e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.5,
+    "procedural": 5.0,
+    "computational": 5.0
+  },
+  "stem": "The perimeter of a right triangle is 60 + 20\\sqrt{3} centimeters, and one of the acute angles measures 30 degrees. What is the area of the triangle, in square centimeters?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "200",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "400",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "200\\sqrt{3}",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "600",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "In a 30-60-90 right triangle, the sides are in the ratio 1 : sqrt(3) : 2. Let the shortest side (opposite 30 degrees) be a. Then the sides are a, a sqrt(3), and 2a. The perimeter is a + a sqrt(3) + 2a = a(3 + sqrt(3)). Setting this equal to 60 + 20 sqrt(3): a(3 + sqrt(3)) = 60 + 20 sqrt(3). Solving for a: a = (60 + 20 sqrt(3))/(3 + sqrt(3)). Rationalizing by multiplying by (3 - sqrt(3))/(3 - sqrt(3)): numerator = (60 + 20 sqrt(3))(3 - sqrt(3)) = 180 - 60 sqrt(3) + 60 sqrt(3) - 20(3) = 180 - 60 = 120. Denominator = 9 - 3 = 6. So a = 120/6 = 20. The legs are a = 20 and a sqrt(3) = 20 sqrt(3). Area = (1/2)(20)(20 sqrt(3)) = 200 sqrt(3). Verification: Perimeter = 20 + 20 sqrt(3) + 40 = 60 + 20 sqrt(3). Confirmed.",
+  "distractorRationale": {
+    "A": "Correctly finds a = 20 but computes area using only the short leg for both dimensions of the triangle, as if both legs equal a: area = (1/2)(20)(20) = 200",
+    "B": "Correctly finds a = 20 but uses the hypotenuse 2a = 40 as the second leg instead of a sqrt(3), computing area = (1/2)(20)(40) = 400",
+    "C": "Correct: Finds a = 20 from the perimeter equation, identifies the two legs as 20 and 20sqrt(3), and computes area = (1/2)(20)(20sqrt(3)) = 200sqrt(3)",
+    "D": "Correctly finds a = 20 but uses the long leg a sqrt(3) = 20 sqrt(3) for both legs, computing area = (1/2)(20 sqrt(3))(20 sqrt(3)) = (1/2)(400)(3) = 600"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d5-q25"
+  }
+}

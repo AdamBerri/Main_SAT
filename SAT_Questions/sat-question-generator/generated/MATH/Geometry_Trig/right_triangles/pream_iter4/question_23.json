@@ -1,0 +1,56 @@
+{
+  "id": "rt-d5-q23-c3d4e5f6-7a8b-4c9d-0e1f-2a3b4c5d6e7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 5.0,
+    "computational": 4.5
+  },
+  "stem": "Two buildings stand on level ground, 30 meters apart. From the top of the first building, which is 30 meters tall, the angle of depression to the base of the second building is 45 degrees. From the top of the second building, the angle of depression to the base of the first building is 60 degrees. What is the height of the second building, in meters?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "15\\sqrt{3}",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "30\\sqrt{3}",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "30\\sqrt{6}",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "30(\\sqrt{3} + 1)",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Two right triangles share the horizontal distance d between the buildings. From the top of the first building (height 30): tan(45) = 30/d, so d = 30. This confirms the buildings are 30 meters apart (consistent with the given). From the top of the second building (height h): tan(60) = h/d = h/30, so h = 30 tan(60) = 30 sqrt(3). Verification: tan(45) = 30/30 = 1. tan(60) = 30 sqrt(3)/30 = sqrt(3). Both confirmed.",
+  "distractorRationale": {
+    "A": "Uses sin(60) instead of tan(60) when computing the second building's height: h = 30 sin(60) = 30(sqrt(3)/2) = 15sqrt(3)",
+    "B": "Correct: Uses tan(45) = 30/d to confirm d = 30, then computes h = 30 tan(60) = 30 sqrt(3)",
+    "C": "Uses sin(45) instead of tan(45) to find d, computing the line-of-sight distance instead of the horizontal distance: d = 30/sin(45) = 30 sqrt(2). Then h = 30 sqrt(2) * tan(60) = 30 sqrt(2) * sqrt(3) = 30sqrt(6)",
+    "D": "Incorrectly interprets the 60-degree depression angle as giving the height difference between the buildings rather than the full height of the second building: tan(60) = (h - 30)/30, so h - 30 = 30 sqrt(3), giving h = 30 + 30 sqrt(3) = 30(sqrt(3) + 1)"
+  },
+  "hasImage": true,
+  "imageDescription": "Two buildings stand on level ground, 30 meters apart. The left building is labeled 30 m tall. A dashed horizontal line extends from the top of the left building to the right, with a dashed line angling down to the base of the right building, forming a 45-degree angle of depression. From the top of the right building, a dashed horizontal line extends left, with a dashed line angling down to the base of the left building, forming a 60-degree angle of depression. The right building's height is labeled h.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d5-q23"
+  }
+}

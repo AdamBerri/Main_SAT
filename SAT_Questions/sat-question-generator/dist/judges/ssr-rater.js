@@ -203,10 +203,7 @@ exports.SSRRater = SSRRater;
  * Factory function to create SSR rater with environment variables
  */
 function createSSRRater() {
-    const apiKey = process.env.ZHIPU_API_KEY;
-    if (!apiKey) {
-        throw new Error('Missing ZHIPU_API_KEY environment variable.');
-    }
+    const apiKey = (0, glm_client_1.resolveLLMApiKey)();
     return new SSRRater(apiKey);
 }
 //# sourceMappingURL=ssr-rater.js.map

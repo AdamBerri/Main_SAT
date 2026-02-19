@@ -36,8 +36,17 @@ if [ -f .env ]; then
     set +a
 fi
 
-if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
-    log "ERROR: ANTHROPIC_API_KEY not set"
+# Normalize local backend env aliases
+if [ -n "${LLM_API_KEY:-}" ] && [ -z "${ZHIPU_API_KEY:-}" ]; then
+    export ZHIPU_API_KEY="$LLM_API_KEY"
+fi
+if [ -n "${MINIMAX_BASE_URL:-}" ] && [ -z "${LLM_BASE_URL:-}" ]; then
+    export LLM_BASE_URL="$MINIMAX_BASE_URL"
+fi
+
+# Require either hosted key or local OpenAI-compatible endpoint
+if [ -z "${ZHIPU_API_KEY:-}" ] && [ -z "${LLM_BASE_URL:-}" ]; then
+    log "ERROR: No LLM backend configured. Set ZHIPU_API_KEY or LLM_BASE_URL/MINIMAX_BASE_URL"
     exit 1
 fi
 

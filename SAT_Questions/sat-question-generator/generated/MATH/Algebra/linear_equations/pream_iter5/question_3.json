@@ -1,0 +1,39 @@
+{
+  "id": "a3c4d5e6-7f8a-4b9c-0d1e-2f3a4b5c6d7e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A company has a budget of $500 for office supplies. After spending $35 on pens, the company uses the remaining budget to buy notebooks that cost $5 each. How many notebooks can the company buy?",
+  "choices": [
+    {"label": "A", "text": "93", "isCorrect": true},
+    {"label": "B", "text": "99", "isCorrect": false},
+    {"label": "C", "text": "100", "isCorrect": false},
+    {"label": "D", "text": "107", "isCorrect": false}
+  ],
+  "correctAnswer": "A",
+  "explanation": "After spending $35 on pens, the remaining budget is 500 - 35 = 465 dollars. Dividing by the cost per notebook gives 465 / 5 = 93 notebooks.",
+  "distractorRationale": {
+    "A": "Correct: Subtracted the pen cost from the budget and divided by the notebook price: (500 - 35) / 5 = 465 / 5 = 93.",
+    "B": "Subtracted the notebook price from the budget instead of the pen cost, then divided by the notebook price: (500 - 5) / 5 = 495 / 5 = 99.",
+    "C": "Divided the total budget by the notebook price without subtracting the pen cost: 500 / 5 = 100.",
+    "D": "Added the pen cost to the budget instead of subtracting, then divided by the notebook price: (500 + 35) / 5 = 535 / 5 = 107."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d1-q3"
+  }
+}

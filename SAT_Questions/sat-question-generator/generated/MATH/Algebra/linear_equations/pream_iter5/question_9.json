@@ -1,0 +1,39 @@
+{
+  "id": "e6b1c4d7-2f5a-4c9e-8d3b-1a7f6e2c5b9d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "Elena is buying notebooks and folders for school. Each notebook costs $4 and each folder costs $2. She buys a total of 14 items and spends exactly $40. How many notebooks does Elena buy?",
+  "choices": [
+    {"label": "A", "text": "3", "isCorrect": false},
+    {"label": "B", "text": "6", "isCorrect": true},
+    {"label": "C", "text": "8", "isCorrect": false},
+    {"label": "D", "text": "10", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let n represent the number of notebooks and f represent the number of folders. From the problem: n + f = 14 and 4n + 2f = 40. From the first equation, f = 14 - n. Substituting into the cost equation: 4n + 2(14 - n) = 40, which gives 4n + 28 - 2n = 40, then 2n + 28 = 40. Subtracting 28 from both sides: 2n = 12, so n = 12 / 2 = 6. Elena buys 6 notebooks.",
+  "distractorRationale": {
+    "A": "Substituted the total number of items for folders instead of 14 - n: 4n + 2(14) = 40, 4n + 28 = 40, 4n = 12, n = 12 / 4 = 3.",
+    "B": "Correct: Set up n + f = 14 and 4n + 2f = 40, substituted f = 14 - n, and solved: 2n = 12, n = 12 / 2 = 6.",
+    "C": "Solved the system correctly but reported the number of folders instead of notebooks: f = 14 - 6 = 8.",
+    "D": "Divided total spending by the notebook price without accounting for folder purchases: 40 / 4 = 10."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d2-q9"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "rt-d5-022-b3d5e7a9-2c4f-4b6e-8a1d-9f3c7e5b2a4d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 5.0,
+    "computational": 4.5
+  },
+  "stem": "In right triangle ABC with the right angle at B, point D is the foot of the altitude from B to the hypotenuse AC. If angle A = 30 degrees and BD = 9, what is the length of AC?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "12\\sqrt{3}",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "18\\sqrt{3}",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "18",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "9\\sqrt{3}",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In right triangle ABD (with angle ADB = 90 degrees), angle A = 30 degrees, so angle ABD = 60 degrees. Using BD = 9: AB = BD / sin(30) = 9 / (1/2) = 18, and AD = BD / tan(30) = 9 / (1/sqrt(3)) = 9sqrt(3). In right triangle BDC (with angle BDC = 90 degrees), angle C = 60 degrees (from the original triangle), so angle DBC = 30 degrees. Using BD = 9: DC = BD / tan(60) = 9 / sqrt(3) = 3sqrt(3). Therefore AC = AD + DC = 9sqrt(3) + 3sqrt(3) = 12sqrt(3). Verification: AB / AC = sin(60) gives 18 / (12sqrt(3)) = 18 / (12sqrt(3)) = 3 / (2sqrt(3)) = sqrt(3)/2 = sin(60). Confirmed.",
+  "distractorRationale": {
+    "A": "Correct: Finds AD = 9sqrt(3) from triangle ABD and DC = 3sqrt(3) from triangle BDC using the correct angles, then AC = AD + DC = 12sqrt(3)",
+    "B": "Uses angle 30 degrees in triangle BDC instead of the correct angle 60 degrees to compute DC: DC = BD / tan(30) = 9sqrt(3) instead of 3sqrt(3), giving AC = 9sqrt(3) + 9sqrt(3) = 18sqrt(3)",
+    "C": "Finds AB = BD / sin(30) = 18 in triangle ABD but reports AB as the hypotenuse AC",
+    "D": "Finds AD = 9sqrt(3) in triangle ABD but reports AD as the full hypotenuse AC, omitting the segment DC = 3sqrt(3)"
+  },
+  "hasImage": true,
+  "imageDescription": "Right triangle ABC with the right angle marked at B. Point D lies on hypotenuse AC, and a perpendicular line segment BD is drawn from B to AC, with a right angle mark at D. The angle at A is labeled 30 degrees, and BD is labeled 9. The segments AD and DC are indicated along the hypotenuse.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T20:20:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter2-d5-q22"
+  }
+}

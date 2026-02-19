@@ -1,0 +1,55 @@
+{
+  "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "Two workers, Maria and James, are painting a fence together. Working alone, Maria can complete the job in 8 hours, while James can complete it in 12 hours. After working together for 1 hour, they take a break. What fraction of the fence have they painted?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "1/8",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "5/24",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "1/4",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "3/8",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Maria's rate is 1/8 of the fence per hour, and James's rate is 1/12 of the fence per hour. Working together, their combined rate is 1/8 + 1/12. Finding a common denominator of 24: 1/8 + 1/12 = 3/24 + 2/24 = 5/24 of the fence per hour. In 1 hour, they complete 5/24 of the fence.",
+  "distractorRationale": {
+    "A": "Calculated only Maria's work rate and ignored James's contribution: Maria paints 1/8 per hour, so in 1 hour she paints 1/8.",
+    "B": "Correct: Combined rate is 1/8 + 1/12 = 3/24 + 2/24 = 5/24 per hour, so in 1 hour they paint 5/24.",
+    "C": "Used Maria's rate for both workers instead of adding the individual rates: 2 x (1/8) = 2/8 = 1/4.",
+    "D": "Multiplied Maria's rate by 3 instead of 1 hour: (1/8) x 3 = 3/8."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d3-q12"
+  }
+}

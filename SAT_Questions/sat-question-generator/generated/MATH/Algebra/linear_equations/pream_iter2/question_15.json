@@ -1,0 +1,55 @@
+{
+  "id": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "Elena invested a total of $8,000 in two different accounts. She invested part of the money in an account that earns 3% annual simple interest and the rest in an account that earns 5% annual simple interest. After one year, she earned a total of $340 in interest. How much money did Elena invest in the account earning 3% interest?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "2,000",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "3,000",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "4,000",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "5,000",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let x represent the amount invested at 3% interest. Then (8000 - x) represents the amount invested at 5% interest. The interest earned from the 3% account is 0.03x, and the interest from the 5% account is 0.05(8000 - x). The total interest earned is $340: 0.03x + 0.05(8000 - x) = 340. Expanding: 0.03x + 400 - 0.05x = 340. Combining like terms: -0.02x + 400 = 340. Subtracting 400 from both sides: -0.02x = -60. Dividing by -0.02: x = 3000 dollars.",
+  "distractorRationale": {
+    "A": "This results from incorrectly assuming equal distribution weighted by rates. Calculating 8000 × (3/8) = 3000, then making an arithmetic error to get 2000, or from setting up 0.03x + 0.05(8000 - x) = 340 but making a sign error: -0.02x + 400 = 340 becomes -0.02x = 60 (wrong sign), giving x = -3000, then using absolute value or recalculating to get 2000.",
+    "B": "Correct answer. Solving 0.03x + 0.05(8000 - x) = 340 gives x = 3000 dollars.",
+    "C": "This results from setting up the equation correctly but making a calculation error when dividing. From -0.02x = -60, incorrectly calculating -60/-0.02 as 4000 instead of 3000, or from using the wrong total interest value of $320 instead of $340 in the original problem, which would give -0.02x = -80, so x = 4000.",
+    "D": "This results from reversing the equation setup as 0.05x + 0.03(8000 - x) = 340 (swapping which rate corresponds to x). Expanding: 0.05x + 240 - 0.03x = 340. Combining: 0.02x + 240 = 340. Subtracting 240: 0.02x = 100. Dividing by 0.02: x = 5000."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T00:30:00.000Z",
+    "promptVersion": "1.10.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "gen-e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "rt-d1-002-d4b8e1f3-9c25-4a7b-8f6d-3e2a1c5b9d7e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A 60-foot-tall flagpole stands vertically on level ground. From the tip of the flagpole's shadow, the angle of elevation to the top of the flagpole is 53 degrees. Given that tan 53\u00b0 \u2248 4/3, sin 53\u00b0 \u2248 0.8, and cos 53\u00b0 \u2248 0.6, what is the length of the shadow, in feet?",
+  "choices": [
+    {"label": "A", "text": "36", "isCorrect": false},
+    {"label": "B", "text": "45", "isCorrect": true},
+    {"label": "C", "text": "48", "isCorrect": false},
+    {"label": "D", "text": "80", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The flagpole is the side opposite the 53\u00b0 angle and the shadow is the side adjacent to it. Using the tangent ratio, tan 53\u00b0 = opposite/adjacent = 60/shadow. Solving for the shadow: shadow = 60 \u00f7 (4/3) = 60 \u00d7 (3/4) = 45 feet.",
+  "distractorRationale": {
+    "A": "Used cos 53\u00b0 instead of tan 53\u00b0, multiplying the pole height by cos: 60 \u00d7 0.6 = 36.",
+    "B": "Correct: tan 53\u00b0 = opposite/adjacent, so adjacent = 60 \u00f7 (4/3) = 60 \u00d7 (3/4) = 45.",
+    "C": "Used sin 53\u00b0 instead of tan 53\u00b0, multiplying the pole height by sin: 60 \u00d7 0.8 = 48.",
+    "D": "Multiplied the pole height by tan 53\u00b0 instead of dividing: 60 \u00d7 (4/3) = 80."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T20:20:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter2-d1-q2"
+  }
+}

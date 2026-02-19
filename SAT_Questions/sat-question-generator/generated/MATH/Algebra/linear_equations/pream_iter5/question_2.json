@@ -1,0 +1,39 @@
+{
+  "id": "f2b3c4d5-6e7f-4a8b-9c0d-1e2f3a4b5c6d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "Marcus is 4 years older than twice his sister's age. If Marcus is 18 years old, how old is his sister?",
+  "choices": [
+    {"label": "A", "text": "7", "isCorrect": true},
+    {"label": "B", "text": "9", "isCorrect": false},
+    {"label": "C", "text": "11", "isCorrect": false},
+    {"label": "D", "text": "14", "isCorrect": false}
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let s represent the sister's age. The equation is 2s + 4 = 18. Subtracting 4 from both sides gives 2s = 18 - 4 = 14. Dividing both sides by 2 gives s = 14 / 2 = 7.",
+  "distractorRationale": {
+    "A": "Correct: Set up 2s + 4 = 18, subtracted 4, then divided by 2: (18 - 4) / 2 = 14 / 2 = 7.",
+    "B": "Divided Marcus's age by 2 without subtracting 4 first: 18 / 2 = 9.",
+    "C": "Added 4 to Marcus's age instead of subtracting, then divided by 2: (18 + 4) / 2 = 22 / 2 = 11.",
+    "D": "Subtracted 4 from Marcus's age but forgot to divide by 2: 18 - 4 = 14."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d1-q2"
+  }
+}

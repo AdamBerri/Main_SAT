@@ -1,0 +1,40 @@
+{
+  "id": "rt-d1-003-e5c9f2a4-1d36-4b8c-9a7e-4f3b2d6c8e1a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A ski slope descends at an angle of 37 degrees below the horizontal. If the vertical drop from the top to the bottom of the slope is 30 meters, what is the length of the slope, in meters? (Given: sin 37\u00b0 \u2248 0.6, cos 37\u00b0 \u2248 0.8, tan 37\u00b0 \u2248 0.75)",
+  "choices": [
+    {"label": "A", "text": "18", "isCorrect": false},
+    {"label": "B", "text": "24", "isCorrect": false},
+    {"label": "C", "text": "40", "isCorrect": false},
+    {"label": "D", "text": "50", "isCorrect": true}
+  ],
+  "correctAnswer": "D",
+  "explanation": "The slope is the hypotenuse and the vertical drop is the side opposite the 37\u00b0 angle. Using sin 37\u00b0 = opposite/hypotenuse: 0.6 = 30/hypotenuse, so hypotenuse = 30 \u00f7 0.6 = 50 meters.",
+  "distractorRationale": {
+    "A": "Multiplied the vertical drop by sin 37\u00b0 instead of dividing: 30 \u00d7 0.6 = 18.",
+    "B": "Multiplied the vertical drop by cos 37\u00b0 instead of dividing by sin 37\u00b0: 30 \u00d7 0.8 = 24.",
+    "C": "Used tan 37\u00b0 to find the horizontal distance instead of using sin 37\u00b0 to find the hypotenuse: 30 \u00f7 0.75 = 40.",
+    "D": "Correct: sin 37\u00b0 = opposite/hypotenuse, so hypotenuse = 30 \u00f7 0.6 = 50."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T20:20:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter2-d1-q3"
+  }
+}

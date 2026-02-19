@@ -1,0 +1,56 @@
+{
+  "id": "rt-d5-q22-c4f8b2a1-5d9e-4f3c-8b6a-2e4d7c9a1b3f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 5.0,
+    "computational": 4.5
+  },
+  "stem": "In a right triangle with hypotenuse 20 and one acute angle of 30 degrees, an altitude is drawn from the right-angle vertex to the hypotenuse. What is the area of the smaller of the two triangles created by this altitude?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "25",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\\frac{25\\sqrt{3}}{2}",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "25\\sqrt{3}",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\\frac{75\\sqrt{3}}{2}",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In the 30-60-90 right triangle with hypotenuse 20: the shorter leg (opposite 30 degrees) is 10 and the longer leg (opposite 60 degrees) is 10sqrt(3). The altitude h from the right-angle vertex C to hypotenuse AB satisfies: Area of triangle = (1/2)(10)(10sqrt(3)) = 50sqrt(3), and also Area = (1/2)(AB)(h) = (1/2)(20)(h) = 10h. So h = 5sqrt(3). The altitude foot D divides the hypotenuse into segments: DB = (shorter leg)^2 / hypotenuse = 100/20 = 5, and DA = (longer leg)^2 / hypotenuse = 300/20 = 15. Check: 5 + 15 = 20. The smaller sub-triangle has base DB = 5 and height h = 5sqrt(3). Its area is (1/2)(5)(5sqrt(3)) = 25sqrt(3)/2.",
+  "distractorRationale": {
+    "A": "Correctly finds the altitude foot divides the hypotenuse with the shorter segment DB = 5, but confuses the altitude h = 5sqrt(3) with the shorter leg of the original triangle (10), computing area as (1/2)(5)(10) = 25",
+    "B": "Correct: Finds the legs as 10 and 10sqrt(3), computes the altitude to the hypotenuse as h = 5sqrt(3), identifies the shorter segment DB = 5, and calculates the smaller sub-triangle area as (1/2)(5)(5sqrt(3)) = 25sqrt(3)/2",
+    "C": "Correctly finds DB = 5 and the altitude h = 5sqrt(3), but uses the longer leg 10sqrt(3) as the height of the sub-triangle instead of the altitude, computing area as (1/2)(5)(10sqrt(3)) = 25sqrt(3)",
+    "D": "Correctly computes the altitude h = 5sqrt(3) but confuses the two hypotenuse segments, using the longer segment DA = 15 for the smaller triangle instead of DB = 5, computing area as (1/2)(15)(5sqrt(3)) = 75sqrt(3)/2"
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle ABC is shown with the right angle at C, hypotenuse AB = 20, angle A = 60 degrees, and angle B = 30 degrees. The shorter leg BC = 10 is opposite the 30-degree angle, and the longer leg AC = 10sqrt(3) is opposite the 60-degree angle. A dashed altitude line is drawn from C perpendicular to AB, meeting AB at point D. The segment DB = 5 is labeled near vertex B, and DA = 15 is labeled near vertex A. The altitude CD = h is labeled.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d5-q22"
+  }
+}

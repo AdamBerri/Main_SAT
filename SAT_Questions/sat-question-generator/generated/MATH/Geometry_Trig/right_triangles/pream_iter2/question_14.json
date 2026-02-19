@@ -1,0 +1,40 @@
+{
+  "id": "rt-d3-q14-b7a1d9e3-5c4f-4b8a-9d2e-6f3c1a8b5d7e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A mountain road descends at a constant angle of 23 degrees below the horizontal from a pass to a valley floor. The road surface distance from the pass to the valley is 780 feet. A bridge crosses a river at the bottom of the descent, with the bridge deck 50 feet above the valley floor. Given sin 23\u00b0 = 5/13 and cos 23\u00b0 = 12/13, how far below the mountain pass is the bridge deck, in feet?",
+  "choices": [
+    { "label": "A", "text": "350", "isCorrect": false },
+    { "label": "B", "text": "250", "isCorrect": true },
+    { "label": "C", "text": "275", "isCorrect": false },
+    { "label": "D", "text": "300", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The total vertical drop from the mountain pass to the valley floor is found using sin 23\u00b0: vertical drop = 780 \u00d7 sin 23\u00b0 = 780 \u00d7 (5/13) = 300 feet. Since the bridge deck is 50 feet above the valley floor, the bridge deck is 300 - 50 = 250 feet below the mountain pass.",
+  "distractorRationale": {
+    "A": "Computes the total vertical drop correctly as 780 \u00d7 (5/13) = 300, but adds the bridge height instead of subtracting: 300 + 50 = 350",
+    "B": "Correct: Computes the total vertical drop as 780 \u00d7 (5/13) = 300, then subtracts the bridge height above the valley floor: 300 - 50 = 250",
+    "C": "Uses tan 23\u00b0 = 5/12 (derived from sin/cos) instead of sin 23\u00b0 = 5/13 for the vertical drop: 780 \u00d7 (5/12) = 325, then correctly subtracts 50: 325 - 50 = 275",
+    "D": "Correctly computes the total vertical drop as 780 \u00d7 (5/13) = 300 but does not account for the bridge being 50 feet above the valley floor = 300"
+  },
+  "hasImage": true,
+  "imageDescription": "A side-view diagram showing a mountain road descending from left to right. The road starts at the mountain pass (upper left) and descends at a 23\u00b0 angle below the horizontal to the valley floor (lower right). The road surface distance of 780 ft is labeled along the slope. At the bottom, a bridge is shown crossing a river, with the bridge deck labeled 50 ft above the valley floor. A vertical dashed line from the mountain pass level down to the bridge deck is marked with a question mark.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T20:20:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter2-d3-q14"
+  }
+}

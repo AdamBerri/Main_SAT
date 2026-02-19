@@ -1,0 +1,40 @@
+{
+  "id": "rt-d4-q16-b3e7a1f9-4c8d-4e2b-9f6a-1d5c3e7b9a2f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.0,
+    "computational": 3.5
+  },
+  "stem": "A flagpole on flat ground casts a shadow that is 8 feet long. The angle of elevation from the tip of the shadow to the top of the flagpole is 60 degrees. A rectangular banner, 3 feet wide and as tall as the flagpole, hangs from the pole. The flagpole is made of aluminum weighing 2 pounds per foot. What is the area of the banner, in square feet?",
+  "choices": [
+    {"label": "A", "text": "8\\sqrt{3}", "isCorrect": false},
+    {"label": "B", "text": "12\\sqrt{3}", "isCorrect": false},
+    {"label": "C", "text": "24\\sqrt{3}", "isCorrect": true},
+    {"label": "D", "text": "24", "isCorrect": false}
+  ],
+  "correctAnswer": "C",
+  "explanation": "The aluminum weight (2 pounds per foot) is extra information that should be ignored. The flagpole height h satisfies tan(60) = h/8, so h = 8*tan(60) = 8*sqrt(3) feet. The banner is as tall as the flagpole and 3 feet wide, so its area is 8*sqrt(3) * 3 = 24*sqrt(3) square feet.",
+  "distractorRationale": {
+    "A": "Computed the flagpole height correctly using tan(60) = sqrt(3), giving h = 8*sqrt(3), but reported the height as the area instead of multiplying by the banner width = 8\\sqrt{3}",
+    "B": "Used sin(60) instead of tan(60) to find the flagpole height: h = 8*sin(60) = 8*(sqrt(3)/2) = 4*sqrt(3), then computed area = 4*sqrt(3) * 3 = 12\\sqrt{3}",
+    "C": "Correct: h = 8*tan(60) = 8*sqrt(3), area = 8*sqrt(3) * 3 = 24\\sqrt{3}",
+    "D": "Used the shadow length (8 feet) as the flagpole height without applying trigonometry, then computed area = 8 * 3 = 24"
+  },
+  "hasImage": true,
+  "imageDescription": "A vertical line represents the flagpole on the right. A horizontal line on the ground from the base of the flagpole extends 8 feet to the left to the tip of the shadow. A dashed line from the tip of the shadow to the top of the flagpole represents the line of sight. The angle at the shadow tip between the ground and the line of sight is labeled 60 degrees. The flagpole height is labeled h, and the shadow length is labeled 8 ft. A shaded rectangle representing the banner (3 ft wide) hangs alongside the flagpole.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d4-q16"
+  }
+}

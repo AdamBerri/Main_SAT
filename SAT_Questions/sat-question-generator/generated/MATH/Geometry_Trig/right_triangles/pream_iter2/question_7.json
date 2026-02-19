@@ -1,0 +1,40 @@
+{
+  "id": "rt-d2-007-b4c8d2e5-5f3a-4b9c-8d6e-7a2f1b3c4d5e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A building casts a shadow on level ground. The distance from the base of the building to the tip of the shadow is 60 feet, and the angle of elevation from the tip of the shadow to the top of the building is 37\u00b0. Using the values sin 37\u00b0 \u2248 3/5, cos 37\u00b0 \u2248 4/5, and tan 37\u00b0 \u2248 3/4, what is the height of the building, in feet?",
+  "choices": [
+    {"label": "A", "text": "36", "isCorrect": false},
+    {"label": "B", "text": "48", "isCorrect": false},
+    {"label": "C", "text": "80", "isCorrect": false},
+    {"label": "D", "text": "45", "isCorrect": true}
+  ],
+  "correctAnswer": "D",
+  "explanation": "The shadow length (60 feet) is the side adjacent to the 37\u00b0 angle, and the building height is the side opposite the angle. The tangent ratio relates opposite to adjacent: tan 37\u00b0 = opposite/adjacent. So height = 60 \u00d7 tan 37\u00b0 = 60 \u00d7 (3/4) = 45 feet.",
+  "distractorRationale": {
+    "A": "Used sin 37\u00b0 instead of tan 37\u00b0, treating the shadow as the hypotenuse and computing 60 \u00d7 (3/5) = 36.",
+    "B": "Used cos 37\u00b0 instead of tan 37\u00b0, treating the shadow as the hypotenuse and computing 60 \u00d7 (4/5) = 48.",
+    "C": "Set up the tangent ratio inverted (adjacent/opposite instead of opposite/adjacent), computing 60 \u00d7 (4/3) = 80.",
+    "D": "Correct: tan 37\u00b0 = opposite/adjacent, so height = 60 \u00d7 (3/4) = 45."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T20:20:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter2-d2-q7"
+  }
+}

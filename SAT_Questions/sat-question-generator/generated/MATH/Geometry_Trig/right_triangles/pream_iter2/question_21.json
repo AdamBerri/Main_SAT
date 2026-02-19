@@ -1,0 +1,56 @@
+{
+  "id": "rt-d5-021-a2c4e6f8-1b3d-4a5c-9e7f-8d2b6a4c1e3f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.0
+  },
+  "stem": "A surveyor stands at point P on flat ground and measures the angle of elevation to the top of a cliff as 30 degrees. She then walks 40 meters directly toward the cliff to point Q, where the angle of elevation to the top of the cliff is 60 degrees. What is the height of the cliff, in meters?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "20",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\\frac{40\\sqrt{3}}{3}",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "10\\sqrt{3}",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "20\\sqrt{3}",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Let h be the height of the cliff. Let d_P be the horizontal distance from P to the base of the cliff and d_Q be the horizontal distance from Q to the base. Since the surveyor walked 40 meters toward the cliff, d_P - d_Q = 40. From point P: tan(30) = h / d_P, so d_P = h * sqrt(3). From point Q: tan(60) = h / d_Q, so d_Q = h / sqrt(3). Then d_P - d_Q = h * sqrt(3) - h / sqrt(3) = h(sqrt(3) - 1/sqrt(3)) = h((3 - 1)/sqrt(3)) = 2h / sqrt(3) = 40. Solving: h = 40 * sqrt(3) / 2 = 20 * sqrt(3). Verification: d_P = 20sqrt(3) * sqrt(3) = 60, d_Q = 20sqrt(3) / sqrt(3) = 20, d_P - d_Q = 60 - 20 = 40 meters.",
+  "distractorRationale": {
+    "A": "Sets up 2h / sqrt(3) = 40 correctly but solves as 2h = 40, forgetting to multiply by sqrt(3), giving h = 20",
+    "B": "Treats 40 meters as the horizontal distance from Q to the cliff base rather than the distance between P and Q, then computes h = 40 * tan(30) = 40 / sqrt(3) = 40sqrt(3)/3",
+    "C": "Uses the sum d_P + d_Q = 40 instead of the difference d_P - d_Q = 40, obtaining 4h / sqrt(3) = 40, which gives h = 10sqrt(3)",
+    "D": "Correct: Sets up tan(30) = h / d_P and tan(60) = h / d_Q, computes d_P - d_Q = 2h / sqrt(3) = 40, and solves h = 20sqrt(3)"
+  },
+  "hasImage": true,
+  "imageDescription": "A vertical cliff is shown on the right with height h labeled. Two points P and Q are on flat horizontal ground to the left, with P farther from the cliff and Q closer. The distance between P and Q is labeled 40 m. Dashed lines from P and Q to the top of the cliff show the lines of sight. The angle of elevation from P is labeled 30 degrees, and the angle of elevation from Q is labeled 60 degrees. Horizontal dashed lines from P and Q to the base of the cliff show the distances d_P and d_Q.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T20:20:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter2-d5-q21"
+  }
+}

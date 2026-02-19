@@ -1,0 +1,54 @@
+{
+  "id": "a8f3c9e2-4b7d-4a1c-9e5f-3b6a8d2e7c4f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 3.5,
+    "computational": 3.0
+  },
+  "stem": "A bakery sells two types of pastries: croissants and muffins. On Monday, the bakery sold 120 total pastries and earned $456 in revenue. Croissants sell for $4.50 each and muffins sell for $3.00 each. If the bakery wants to maximize profit and knows that croissants have a profit margin of 60% while muffins have a profit margin of 40%, how many croissants were sold on Monday?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "48",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "56",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "64",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "72",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let c represent the number of croissants sold and m represent the number of muffins sold. From the problem, we can write two equations: c + m = 120 (total pastries) and 4.50c + 3.00m = 456 (total revenue). From the first equation, m = 120 - c. Substituting into the second equation: 4.50c + 3.00(120 - c) = 456. Simplifying: 4.50c + 360 - 3.00c = 456, which gives 1.50c + 360 = 456. Subtracting 360 from both sides: 1.50c = 96. Dividing by 1.50: c = 64. The bakery sold 64 croissants on Monday.",
+  "distractorRationale": {
+    "A": "This results from incorrectly solving 1.50c = 96 by computing 96 ÷ 2 = 48 instead of dividing by 1.50. The student treats the coefficient as 2 rather than 1.50, producing 48.",
+    "B": "This results from setting up the equation as 4.50c + 3.00(120 - c) = 456 but making an arithmetic error when combining like terms. The student computes 4.50c - 3.00c = 2.00c instead of 1.50c, leading to 2.00c + 360 = 456, so 2.00c = 96, giving c = 48. Then the student accidentally uses m = 120 - 48 = 72 but swaps the values, reporting 56 as the answer after further confusion. Alternatively, this comes from computing 360 - 456 = -96 and then solving -1.50c = -96 but dividing -96 by -1.5 incorrectly as -96 × (2/3) = -64, taking absolute value gives 64, but then confusing this with muffins and computing 120 - 64 = 56.",
+    "D": "This results from correctly finding c = 64 but then confusing which variable represents croissants. The student calculates m = 120 - 64 = 56 for muffins, but then mistakenly reports the croissant count as 120 - 64 = 56 for muffins and 64 for croissants, but swaps them in the final answer, reporting 72. More directly, this comes from solving m = 120 - c and finding m = 56 when c = 64, but then computing 120 - 56 + 8 = 72 through an arithmetic error, or from setting up the revenue equation with coefficients reversed as 3.00c + 4.50m = 456, leading to 3.00c + 4.50(120 - c) = 456, which gives 3.00c + 540 - 4.50c = 456, so -1.50c = -84, yielding c = 56, then mistakenly computing 56 + 16 = 72."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T00:30:00.000Z",
+    "promptVersion": "1.10.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "batch-iter2-linear-equations-001"
+  }
+}

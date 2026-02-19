@@ -1,0 +1,39 @@
+{
+  "id": "e1a2b3c4-5d6e-4f7a-8b9c-0d1e2f3a4b5c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A gym charges a one-time registration fee of $24 plus $8 per month for membership. If a new member pays a total of $200, how many months of membership did the member pay for?",
+  "choices": [
+    {"label": "A", "text": "22", "isCorrect": true},
+    {"label": "B", "text": "24", "isCorrect": false},
+    {"label": "C", "text": "25", "isCorrect": false},
+    {"label": "D", "text": "28", "isCorrect": false}
+  ],
+  "correctAnswer": "A",
+  "explanation": "The total cost equals the registration fee plus the monthly cost: 24 + 8m = 200. Subtracting 24 from both sides gives 8m = 200 - 24 = 176. Dividing both sides by 8 gives m = 176 / 8 = 22.",
+  "distractorRationale": {
+    "A": "Correct: Subtracted the $24 registration fee from $200 and divided by $8 per month: (200 - 24) / 8 = 176 / 8 = 22.",
+    "B": "Subtracted the monthly rate from the total instead of the registration fee, then divided by the monthly rate: (200 - 8) / 8 = 192 / 8 = 24.",
+    "C": "Divided the total by the monthly rate without subtracting the registration fee: 200 / 8 = 25.",
+    "D": "Added the registration fee to the total instead of subtracting, then divided by the monthly rate: (200 + 24) / 8 = 224 / 8 = 28."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d1-q1"
+  }
+}

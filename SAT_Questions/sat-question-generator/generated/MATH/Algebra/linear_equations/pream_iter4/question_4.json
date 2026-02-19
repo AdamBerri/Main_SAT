@@ -1,0 +1,55 @@
+{
+  "id": "d4e5f6a7-b8c9-4d01-2e34-f5a6b7c8d9e0",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A theater sold tickets for $8 each. If the total ticket sales were $144, how many tickets were sold?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "18",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "17",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "136",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "152",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let t represent the number of tickets sold. The equation is 8t = 144. Dividing both sides by 8: t = 144 ÷ 8 = 18. The theater sold 18 tickets.",
+  "distractorRationale": {
+    "A": "Correct: divided total sales by price per ticket: 144 ÷ 8 = 18",
+    "B": "Student calculated 144 ÷ 8 = 18, then subtracted 1 thinking one ticket was complimentary: 18 - 1 = 17",
+    "C": "Student subtracted the ticket price from the total: 144 - 8 = 136",
+    "D": "Student added the ticket price to the total: 144 + 8 = 152"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d1-q4"
+  }
+}

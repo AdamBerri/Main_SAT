@@ -1,0 +1,39 @@
+{
+  "id": "rt-d3-q11-a2b4c6d8-1e3f-4a5b-9c7d-8e6f2a4b0c1d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.5,
+    "procedural": 3.0,
+    "computational": 3.0
+  },
+  "stem": "A park ranger stands 36 feet from the base of a historic lighthouse and measures the angle of elevation to the top of the lighthouse to be 53 degrees. The ranger's eyes are 5 feet above the ground. If tan 53° = 4/3, what is the total height of the lighthouse, in feet?",
+  "choices": [
+    { "label": "A", "text": "27", "isCorrect": false },
+    { "label": "B", "text": "32", "isCorrect": false },
+    { "label": "C", "text": "48", "isCorrect": false },
+    { "label": "D", "text": "53", "isCorrect": true }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The angle of elevation is measured from the ranger's eye level, so the tangent ratio gives the height from the ranger's eyes to the top of the lighthouse. Using tan 53° = opposite/adjacent: 4/3 = h/36, so h = 36 × (4/3) = 48 feet. This is only the height above the ranger's eye level. The total height of the lighthouse is 48 + 5 = 53 feet.",
+  "distractorRationale": {
+    "A": "Inverts the tangent ratio, using 3/4 instead of 4/3, and also omits the ranger's eye height: 36 × (3/4) = 27",
+    "B": "Inverts the tangent ratio, using 3/4 instead of 4/3, then adds the eye height: 36 × (3/4) + 5 = 27 + 5 = 32",
+    "C": "Uses tan 53° = 4/3 correctly to find the height above eye level (36 × 4/3 = 48) but omits the ranger's eye height of 5 feet, treating the eye-level height as the full lighthouse height = 48",
+    "D": "Correct: Computes the height above eye level as 36 × (4/3) = 48, then adds the ranger's eye height of 5 feet to get the total lighthouse height = 53"
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle diagram showing a park ranger standing 36 feet from the base of a lighthouse. A dashed horizontal line extends from the ranger's eye level (labeled 5 ft above the ground) to the lighthouse. The angle of elevation from the ranger's eyes to the top of the lighthouse is labeled 53°. The horizontal distance of 36 ft is marked along the ground, and the total height of the lighthouse is marked with a question mark.",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T14:30:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter1-d3-q11"
+  }
+}

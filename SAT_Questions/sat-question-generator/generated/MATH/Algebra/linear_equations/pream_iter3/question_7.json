@@ -1,0 +1,54 @@
+{
+  "id": "q7-tutoring-sessions-d2-iter3",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A tutoring center charges a one-time assessment fee of $40 plus $35 per tutoring session. If a student paid a total of $285, how many tutoring sessions did the student attend?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "5",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "7",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "8",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "9",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let s = number of tutoring sessions. The total cost is: 40 + 35s = 285. First, subtract 40 from both sides: 35s = 245. Then, divide both sides by 35: s = 7. The student attended 7 tutoring sessions.",
+  "distractorRationale": {
+    "A": "Subtracted the assessment fee from total but then divided by the wrong value. (285 - 40) ÷ 49 ≈ 5.",
+    "C": "Divided the total by the session cost without subtracting the assessment fee first. 285 ÷ 35 ≈ 8.",
+    "D": "Incorrectly added the assessment fee instead of subtracting it. (285 + 40) ÷ 35 ≈ 9."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T01:30:00.000Z",
+    "promptVersion": "1.11.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d2-q7"
+  }
+}

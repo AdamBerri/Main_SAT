@@ -1,0 +1,55 @@
+{
+  "id": "c3d4e5f6-a7b8-4901-c2d3-e4f5a6b7c8d9",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 3.5,
+    "computational": 3.0
+  },
+  "stem": "A phone company offers a data plan with tiered pricing. The first 5 GB of data costs $8 per GB. Data usage between 5 GB and 12 GB costs $6 per GB. Any data usage above 12 GB costs $10 per GB. Last month, a customer used 18 GB of data. This month, the customer reduced usage by 6 GB. The company also mentions that the average customer uses 9 GB per month. How much did the customer pay for data this month, in dollars?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "64",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "76",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "82",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "88",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Last month: 18 GB\nThis month: 18 - 6 = 12 GB (the average 9 GB is extra information)\n\nFor 12 GB:\nFirst 5 GB: 5 × $8 = $40\nNext 7 GB (from 5 to 12): 7 × $6 = $42\nNo GB above 12\n\nTotal cost: $40 + $42 = $76",
+  "distractorRationale": {
+    "A": "Used the average customer usage of 9 GB instead of calculating this customer's actual usage: first 5 GB at $8 = $40, next 4 GB at $6 = $24, total = 40 + 24 = 64",
+    "B": "Correct: This month's usage is 18 - 6 = 12 GB. Cost = 5(8) + 7(6) = 40 + 42 = 76",
+    "C": "Correctly calculated 12 GB but misapplied the tier boundaries, treating the second tier as only 5 GB wide (5 to 10) instead of 7 GB wide (5 to 12): 5(8) + 5(6) + 2(10) = 40 + 30 + 12 = 82",
+    "D": "Applied the first-tier rate of $8 to all GB but miscounted usage starting from 0 instead of 1: 11 × 8 = 88"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d4-q18"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "rt-d3-q13-c4d6e8f0-3a5b-4c7d-9e2f-1a8b4c6d3e5f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 3.0
+  },
+  "stem": "A 26-foot ladder leans against a vertical wall, making an angle θ with the level ground. If cos θ = 5/13, what is the area, in square feet, of the right triangle formed by the ladder, the wall, and the ground?",
+  "choices": [
+    { "label": "A", "text": "50", "isCorrect": false },
+    { "label": "B", "text": "120", "isCorrect": true },
+    { "label": "C", "text": "130", "isCorrect": false },
+    { "label": "D", "text": "240", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The ladder is the hypotenuse (26 ft). The base along the ground (adjacent to θ) is 26 × cos θ = 26 × (5/13) = 10 feet. The height along the wall (opposite θ) is 26 × sin θ = 26 × (12/13) = 24 feet. The area of the right triangle is (1/2) × base × height = (1/2) × 10 × 24 = 120 square feet.",
+  "distractorRationale": {
+    "A": "Swaps sin θ and cos θ, making both legs equal to 10: uses sin θ = 5/13 (incorrect) to get height = 26 × (5/13) = 10, then area = (1/2) × 10 × 10 = 50",
+    "B": "Correct: Finds base = 26 × (5/13) = 10, height = 26 × (12/13) = 24, then area = (1/2) × 10 × 24 = 120",
+    "C": "Correctly finds the base (10) but uses the hypotenuse (26) instead of the height in the area formula: (1/2) × 10 × 26 = 130",
+    "D": "Correctly finds the base (10) and height (24) but omits the factor of 1/2 in the area formula: 10 × 24 = 240"
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle formed by a ladder leaning against a wall. The ladder (hypotenuse) is labeled 26 ft. The angle θ is at the base of the ladder where it meets the ground. The ground is horizontal and the wall is vertical. The base and height are unlabeled, and a question mark indicates the area of the triangle is to be found.",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T14:30:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter1-d3-q13"
+  }
+}

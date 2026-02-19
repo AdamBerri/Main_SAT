@@ -1,0 +1,40 @@
+{
+  "id": "rt-d4-020-71f160db-8b74-4890-8658-40fb46a14c89",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.0,
+    "computational": 3.5
+  },
+  "stem": "A surveyor stands 36 meters from the base of a vertical cell tower on flat ground. She measures the angle of elevation to the top of the tower as 53 degrees. Her field notes also record that the tower's shadow extends 27 meters on the opposite side and the tower is made of galvanized steel weighing 45 kilograms per meter. Using the approximations sin(53) = 4/5 and cos(53) = 3/5, what is the straight-line distance, in meters, from the surveyor's position to the top of the tower?",
+  "choices": [
+    {"label": "A", "text": "48", "isCorrect": false},
+    {"label": "B", "text": "60", "isCorrect": true},
+    {"label": "C", "text": "84", "isCorrect": false},
+    {"label": "D", "text": "45", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The shadow length (27 m) and steel weight (45 kg/m) are extra information that should be ignored. The tower height is found using tan(53) = height/36. Since tan(53) = sin(53)/cos(53) = (4/5)/(3/5) = 4/3, the height = 36 * (4/3) = 48 meters. The straight-line distance from the surveyor to the top of the tower is the hypotenuse of the right triangle: sqrt(36^2 + 48^2) = sqrt(1296 + 2304) = sqrt(3600) = 60 meters. Alternatively, distance = 36/cos(53) = 36/(3/5) = 60 meters.",
+  "distractorRationale": {
+    "A": "Computed the tower height correctly using tan(53) = 4/3 to get h = 36 * (4/3) = 48, but reported the height as the straight-line distance instead of applying the Pythagorean theorem = 48",
+    "B": "Correct: height = 36 * tan(53) = 48, straight-line distance = sqrt(36^2 + 48^2) = sqrt(3600) = 60",
+    "C": "Added the ground distance and the tower height instead of using the Pythagorean theorem to find the hypotenuse: 36 + 48 = 84",
+    "D": "Used the shadow length (27 m) instead of the surveyor's distance (36 m) in the calculation, failing to ignore the extra information: 27/cos(53) = 27/(3/5) = 45"
+  },
+  "hasImage": true,
+  "imageDescription": "A vertical line represents the cell tower in the center. To the left, a point labeled 'Surveyor' is on the ground 36 m from the tower base. A dashed line from the surveyor to the top of the tower represents the straight-line distance (hypotenuse). The angle of elevation at the surveyor's position is labeled 53 degrees. To the right of the tower base, the shadow extends 27 m (shown as a lighter shaded region). The tower height h and the surveyor-to-top distance are marked with question marks.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T20:20:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "aca8b32f-d38a-4a2f-b9ea-66e858041bf7"
+  }
+}

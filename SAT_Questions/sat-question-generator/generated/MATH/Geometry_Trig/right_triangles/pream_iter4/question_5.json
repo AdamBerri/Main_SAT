@@ -1,0 +1,40 @@
+{
+  "id": "rt-d1-q05-a8e3c6d5-2f7b-4a4e-9d1c-5b8f6a3e2d4c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A zip line cable stretches 255 feet from the top of a hill to a platform below, descending at a 28-degree angle from the horizontal. Given that sin 28\u00b0 \u2248 8/17, cos 28\u00b0 \u2248 15/17, and tan 28\u00b0 \u2248 8/15, what is the vertical drop of the zip line, in feet?",
+  "choices": [
+    {"label": "A", "text": "136", "isCorrect": false},
+    {"label": "B", "text": "120", "isCorrect": true},
+    {"label": "C", "text": "127.5", "isCorrect": false},
+    {"label": "D", "text": "225", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The cable is the hypotenuse (255 feet) and the vertical drop is the side opposite the 28\u00b0 angle. Using sin 28\u00b0 = opposite/hypotenuse: vertical drop = 255 \u00d7 sin 28\u00b0 = 255 \u00d7 (8/17) = 2040/17 = 120 feet.",
+  "distractorRationale": {
+    "A": "Used tan instead of sin, confusing the trig ratios: 255 \u00d7 (8/15) = 2040/15 = 136.",
+    "B": "Correct: vertical drop = hypotenuse \u00d7 sin 28\u00b0 = 255 \u00d7 (8/17) = 120.",
+    "C": "Confused 28\u00b0 with 30\u00b0 and applied the 30-60-90 rule (short leg = hypotenuse/2): 255 \u00d7 (1/2) = 127.5.",
+    "D": "Used cos instead of sin, finding the horizontal distance instead of the vertical drop: 255 \u00d7 (15/17) = 225."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle showing a ski gondola cable as the hypotenuse labeled 255 ft, stretching from a base station at the bottom to an upper station at the top. The angle between the cable and the horizontal ground is labeled 28\u00b0. The vertical rise on the right side is marked with a question mark.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d1-q5"
+  }
+}

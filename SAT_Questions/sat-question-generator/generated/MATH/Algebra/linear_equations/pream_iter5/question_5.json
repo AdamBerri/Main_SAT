@@ -1,0 +1,39 @@
+{
+  "id": "c5e6f7a8-9b0c-4d1e-2f3a-4b5c6d7e8f9a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A group of 6 friends equally split the cost of a gift. Each person also paid $4 for wrapping paper. If each person paid a total of $19, what was the cost, in dollars, of the gift?",
+  "choices": [
+    {"label": "A", "text": "90", "isCorrect": true},
+    {"label": "B", "text": "110", "isCorrect": false},
+    {"label": "C", "text": "114", "isCorrect": false},
+    {"label": "D", "text": "138", "isCorrect": false}
+  ],
+  "correctAnswer": "A",
+  "explanation": "Each person's share of the gift cost is 19 - 4 = 15 dollars. Since there are 6 friends, the total cost of the gift is 15 * 6 = 90 dollars.",
+  "distractorRationale": {
+    "A": "Correct: Subtracted the wrapping cost from each person's total and multiplied by 6: (19 - 4) * 6 = 15 * 6 = 90.",
+    "B": "Multiplied total per person by number of friends but subtracted only one wrapping fee instead of all six: 19 * 6 - 4 = 114 - 4 = 110.",
+    "C": "Multiplied total per person by number of friends without subtracting the wrapping cost: 19 * 6 = 114.",
+    "D": "Added the wrapping cost to each person's total instead of subtracting, then multiplied by 6: (19 + 4) * 6 = 23 * 6 = 138."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d1-q5"
+  }
+}

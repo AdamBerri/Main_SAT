@@ -1,0 +1,55 @@
+{
+  "id": "q21-linear-profit-margin-d5",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.0
+  },
+  "stem": "A company's cost C (in dollars) to produce n widgets is given by C = 800 + 5n, and the revenue R from selling n widgets is R = 12n. The company wants the profit to be at least 30% of the cost. What is the minimum number of widgets the company must produce and sell to achieve this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "160",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "171",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "189",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "190",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The profit is R - C = 12n - (800 + 5n) = 7n - 800. We need the profit to be at least 30% of the cost: 7n - 800 ≥ 0.30(800 + 5n). Expanding the right side: 7n - 800 ≥ 240 + 1.5n. Subtracting 1.5n from both sides: 5.5n - 800 ≥ 240. Adding 800: 5.5n ≥ 1040. Dividing by 5.5: n ≥ 189.09. Since n must be a whole number, the minimum is n = 190. Verification: C = 800 + 5(190) = 1750, R = 12(190) = 2280, profit = 530, and 530/1750 ≈ 0.303 = 30.3% ≥ 30%.",
+  "distractorRationale": {
+    "A": "Solved 7n - 800 = 0.30(800) without including the variable cost component. 7n - 800 = 240, so 7n = 1040, giving n = 148.57, rounded incorrectly to 160.",
+    "B": "Set profit equal to 30% of revenue instead of cost. 7n - 800 = 0.30(12n) gives 7n - 800 = 3.6n, so 3.4n = 800, giving n = 235.29, but made arithmetic error = 171.",
+    "C": "Found n ≥ 189.09 correctly but rounded down instead of up to the nearest integer = 189.",
+    "D": "Correct answer: properly set up inequality, solved to get n ≥ 189.09, and rounded up to n = 190."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T01:30:00.000Z",
+    "promptVersion": "1.11.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d5-q21"
+  }
+}

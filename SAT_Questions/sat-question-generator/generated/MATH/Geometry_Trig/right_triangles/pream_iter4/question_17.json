@@ -1,0 +1,40 @@
+{
+  "id": "rt-d4-q17-c9f1b4e3-2a5d-4d8c-b7e6-3f2a1c9d5b8e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3,
+    "procedural": 4,
+    "computational": 4
+  },
+  "stem": "A farmer owns a right-triangular plot of land. The longest side of the plot (the hypotenuse) is 100 yards, and one of the acute angles of the triangular plot is 37 degrees. The plot is bordered by a stream along the hypotenuse, and the farmer plans to install an irrigation well at the center of the plot. Given that sin 37\u00b0 \u2248 3/5, cos 37\u00b0 \u2248 4/5, and tan 37\u00b0 \u2248 3/4, what is the area of the plot, in square yards?",
+  "choices": [
+    {"label": "A", "text": "3,000", "isCorrect": false},
+    {"label": "B", "text": "2,400", "isCorrect": true},
+    {"label": "C", "text": "1,440", "isCorrect": false},
+    {"label": "D", "text": "4,000", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The right triangle has hypotenuse 100 yards and an acute angle of 37\u00b0. The side opposite the 37\u00b0 angle is 100 \u00d7 sin 37\u00b0 = 100 \u00d7 (3/5) = 60 yards. The side adjacent to the 37\u00b0 angle is 100 \u00d7 cos 37\u00b0 = 100 \u00d7 (4/5) = 80 yards. The area of the right triangle is (1/2) \u00d7 60 \u00d7 80 = 2,400 square yards. The information about the stream and the irrigation well is not needed.",
+  "distractorRationale": {
+    "A": "Used the hypotenuse (100) in place of the adjacent side in the area formula: area = (1/2)(100)(60) = 3,000.",
+    "B": "Correct: opposite = 100 \u00d7 (3/5) = 60, adjacent = 100 \u00d7 (4/5) = 80, area = (1/2)(60)(80) = 2,400.",
+    "C": "Applied the general triangle area formula using the acute angle instead of the right angle: area = (1/2)(60)(80)(sin 37\u00b0) = (1/2)(60)(80)(3/5) = 1,440.",
+    "D": "Used the hypotenuse (100) in place of the opposite side in the area formula: area = (1/2)(100)(80) = 4,000."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle representing the farmer's plot. The hypotenuse is labeled 100 yards with a wavy line indicating the stream. The right angle is clearly marked. One acute angle is labeled 37\u00b0. The two legs are indicated with question marks. The interior of the triangle is shaded to represent the plot area.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d4-q17"
+  }
+}

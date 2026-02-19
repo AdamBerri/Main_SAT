@@ -1,0 +1,55 @@
+{
+  "id": "q10-bookstore-sales-d2-iter3",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A bookstore sells hardcover books for $22 each and paperback books for $14 each. In one day, the store sold a total of 60 books and collected $1,032 in revenue. How many hardcover books were sold?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "24",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "30",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "36",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "47",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let h = number of hardcover books and p = number of paperback books. From the problem: h + p = 60 and 22h + 14p = 1,032. From the first equation, p = 60 - h. Substituting into the second equation: 22h + 14(60 - h) = 1,032. Simplifying: 22h + 840 - 14h = 1,032, so 8h + 840 = 1,032. Subtracting 840 from both sides: 8h = 192. Dividing by 8: h = 24.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "Incorrectly assumed equal numbers of hardcover and paperback books. 60 ÷ 2 = 30.",
+    "C": "Found the number of paperback books instead of hardcover books. p = 60 - 24 = 36.",
+    "D": "Divided total revenue by hardcover price without considering paperback books. 1,032 ÷ 22 ≈ 47."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T01:30:00.000Z",
+    "promptVersion": "1.11.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d2-q10"
+  }
+}

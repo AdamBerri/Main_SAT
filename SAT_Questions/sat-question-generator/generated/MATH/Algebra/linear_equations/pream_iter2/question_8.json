@@ -1,0 +1,55 @@
+{
+  "id": "c7f9e4a3-5d8b-4c1e-9a6f-2b3d7e8c4f1a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A school fundraiser sells cookies for $3 per box and brownies for $5 per box. If the fundraiser sold a total of 85 boxes and raised $325, how many boxes of cookies were sold?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "30",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "40",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "50",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "55",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let c represent the number of cookie boxes and b represent the number of brownie boxes. From the given information, we have c + b = 85 and 3c + 5b = 325. From the first equation, b = 85 - c. Substituting into the second equation: 3c + 5(85 - c) = 325. Expanding: 3c + 425 - 5c = 325. Combining like terms: -2c + 425 = 325. Subtracting 425 from both sides: -2c = -100. Dividing both sides by -2: c = 50. To verify: 50 cookie boxes and 35 brownie boxes gives 3(50) + 5(35) = 150 + 175 = 325.",
+  "distractorRationale": {
+    "A": "This results from reversing the prices, setting up 5c + 3b = 325 instead of 3c + 5b = 325. Substituting b = 85 - c gives 5c + 3(85 - c) = 325, which simplifies to 5c + 255 - 3c = 325, so 2c = 70 and c = 35. Then making an arithmetic error: 35 - 5 = 30.",
+    "B": "This results from an arithmetic error when combining like terms. Computing 3c - 5c incorrectly as -3c gives -3c + 425 = 325, so -3c = -100 and c = 33.33. Rounding to the nearest choice gives 30, or alternatively, miscomputing -100 ÷ -2.5 = 40.",
+    "C": "Correct. Setting up c + b = 85 and 3c + 5b = 325, substituting b = 85 - c gives 3c + 5(85 - c) = 325. Simplifying: 3c + 425 - 5c = 325, so -2c = -100 and c = 50.",
+    "D": "This results from using the wrong total revenue of $315 instead of $325. With 3c + 5b = 315 and b = 85 - c, we get 3c + 5(85 - c) = 315, which gives 3c + 425 - 5c = 315, so -2c = -110 and c = 55."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T00:30:00.000Z",
+    "promptVersion": "1.10.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter2-batch1-q8"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "Sarah is currently 3 times as old as her nephew Tom. In 6 years, Sarah will be twice as old as Tom. How old is Sarah now?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "12",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "18",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "21",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "24",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let S = Sarah's current age and T = Tom's current age. From the given information: S = 3T (Sarah is currently 3 times as old as Tom) and S + 6 = 2(T + 6) (in 6 years, Sarah will be twice as old as Tom). Expanding the second equation: S + 6 = 2T + 12. Simplifying: S = 2T + 6. Now we have two expressions for S: 3T = 2T + 6. Subtracting 2T from both sides: T = 6. Therefore, S = 3T = 3(6) = 18.",
+  "distractorRationale": {
+    "A": "Divided Sarah's correct age by the average of the two multipliers: 18 / 1.5 = 12.",
+    "B": "Correct: From S = 3T and S + 6 = 2(T + 6), we get 3T = 2T + 6, so T = 6 and S = 18.",
+    "C": "Found Sarah's age in 6 years (S + 6 = 24) but subtracted 3 instead of 6: 24 - 3 = 21.",
+    "D": "Found Sarah's age in 6 years instead of now: S + 6 = 2(T + 6) = 2(12) = 24."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d3-q14"
+  }
+}

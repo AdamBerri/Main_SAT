@@ -1,0 +1,39 @@
+{
+  "id": "f4a7c3e1-8d2b-4f9a-9c5e-1b6a3d8f2e7c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.5
+  },
+  "stem": "A sales representative earns a monthly commission based on a tiered structure: 5% on the first $20,000 of sales, 8% on sales between $20,001 and $50,000, and 12% on all sales exceeding $50,000. Last month, the representative earned a total commission of $7,600. What was the representative's total sales amount, in dollars?",
+  "choices": [
+    { "label": "A", "text": "$80,000", "isCorrect": false },
+    { "label": "B", "text": "$85,000", "isCorrect": true },
+    { "label": "C", "text": "$92,500", "isCorrect": false },
+    { "label": "D", "text": "$95,000", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The commission must be computed tier by tier and the problem solved by working backwards. Commission on the first $20,000 of sales: 0.05 × 20,000 = 1,000. Commission on sales from $20,001 to $50,000 (which is $30,000 of sales): 0.08 × 30,000 = 2,400. Total commission from the first $50,000 of sales: 1,000 + 2,400 = 3,400. Remaining commission attributable to sales above $50,000: 7,600 − 3,400 = 4,200. Sales above $50,000: 4,200 ÷ 0.12 = 35,000. Total sales: 50,000 + 35,000 = 85,000.",
+  "distractorRationale": {
+    "A": "Applied the 8% rate to the entire first $50,000 instead of splitting into the 5% and 8% tiers: 0.08 × 50,000 = 4,000; remaining commission 7,600 − 4,000 = 3,600; sales above $50,000 at 12%: 3,600 ÷ 0.12 = 30,000; total sales 50,000 + 30,000 = 80,000.",
+    "B": "Correct: Computed tier-by-tier commission (0.05 × 20,000 = 1,000; 0.08 × 30,000 = 2,400; total from first $50,000 = 3,400), then solved for sales above $50,000: (7,600 − 3,400) ÷ 0.12 = 35,000; total sales = 50,000 + 35,000 = 85,000.",
+    "C": "Applied the 5% rate to the entire first $50,000 instead of splitting tiers: 0.05 × 50,000 = 2,500; remaining commission 7,600 − 2,500 = 5,100; sales above $50,000 at 12%: 5,100 ÷ 0.12 = 42,500; total sales 50,000 + 42,500 = 92,500.",
+    "D": "Divided total commission by the middle-tier rate without accounting for the tiered structure: 7,600 ÷ 0.08 = 95,000."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d5-q21"
+  }
+}

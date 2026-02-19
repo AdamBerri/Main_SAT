@@ -1,0 +1,54 @@
+{
+  "id": "q8-farm-animals-d2-iter3",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A farmer has chickens and cows on his farm. In total, there are 30 animals and 82 legs. How many cows are on the farm?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "8",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "11",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "19",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "22",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let c = number of cows and k = number of chickens. Cows have 4 legs and chickens have 2 legs. From the problem: c + k = 30 and 4c + 2k = 82. From the first equation, k = 30 - c. Substituting into the second equation: 4c + 2(30 - c) = 82. Simplifying: 4c + 60 - 2c = 82, so 2c + 60 = 82. Subtracting 60 from both sides: 2c = 22. Dividing by 2: c = 11.",
+  "distractorRationale": {
+    "A": "Miscalculated by using the wrong leg count relationship. (82 - 60) ÷ 3 ≈ 8.",
+    "C": "Found the number of chickens instead of cows. k = 30 - 11 = 19.",
+    "D": "Subtracted 60 from 82 but forgot to divide by 2. 82 - 60 = 22."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T01:30:00.000Z",
+    "promptVersion": "1.11.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d2-q8"
+  }
+}

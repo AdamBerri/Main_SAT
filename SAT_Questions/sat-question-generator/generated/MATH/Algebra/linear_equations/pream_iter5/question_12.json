@@ -1,0 +1,39 @@
+{
+  "id": "f2b3c4d5-6e7f-4a89-0b12-3c4d5e6f7a8b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A bakery sells cupcakes for $3 each and cookies for $2 each. On Monday, the bakery sold a total of 85 items and earned $210 in revenue. How many cupcakes did the bakery sell on Monday?",
+  "choices": [
+    {"label": "A", "text": "20", "isCorrect": false},
+    {"label": "B", "text": "40", "isCorrect": true},
+    {"label": "C", "text": "45", "isCorrect": false},
+    {"label": "D", "text": "70", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let c represent the number of cupcakes and k represent the number of cookies. The two equations are c + k = 85 and 3c + 2k = 210. From the first equation, k = 85 - c. Substituting into the revenue equation: 3c + 2(85 - c) = 210. Distributing: 3c + 170 - 2c = 210. Combining like terms: c + 170 = 210. Subtracting 170 from both sides: c = 40.",
+  "distractorRationale": {
+    "A": "Distributed the 2 to 85 but not to c when substituting: 3c + 170 - c = 210, so 2c = 40, and c = 40 / 2 = 20.",
+    "B": "Correct: Set up c + k = 85 and 3c + 2k = 210, substituted k = 85 - c, simplified to c + 170 = 210, so c = 210 - 170 = 40.",
+    "C": "Solved the system correctly but reported the number of cookies instead of cupcakes: k = 85 - 40 = 45.",
+    "D": "Divided total revenue by the cupcake price without using the system: 210 / 3 = 70."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d3-q12"
+  }
+}

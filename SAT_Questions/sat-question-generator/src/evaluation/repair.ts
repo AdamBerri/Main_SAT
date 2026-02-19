@@ -6,7 +6,7 @@ import type {
   RepairCategory,
 } from '../core/types';
 import { MODEL_CONFIG } from '../core/config';
-import { createGLMClient, extractText } from '../core/glm-client';
+import { createGLMClient, extractText, resolveLLMApiKey } from '../core/glm-client';
 import { fullValidation } from '../schemas/schema-validator';
 
 const SELF_DEBUG_PATTERNS = [
@@ -378,9 +378,6 @@ RULES:
  * Create repairer from environment
  */
 export function createRepairer(): QuestionRepairer {
-  const apiKey = process.env.ZHIPU_API_KEY;
-  if (!apiKey) {
-    throw new Error('Missing ZHIPU_API_KEY environment variable');
-  }
+  const apiKey = resolveLLMApiKey();
   return new QuestionRepairer(apiKey);
 }

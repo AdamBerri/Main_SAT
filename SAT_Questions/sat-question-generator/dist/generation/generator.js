@@ -384,10 +384,7 @@ exports.QuestionGenerator = QuestionGenerator;
  * Create generator with environment variables
  */
 function createGenerator() {
-    const apiKey = process.env.ZHIPU_API_KEY;
-    if (!apiKey) {
-        throw new Error('Missing ZHIPU_API_KEY environment variable');
-    }
+    const apiKey = (0, glm_client_1.resolveLLMApiKey)();
     return new QuestionGenerator(apiKey);
 }
 //# sourceMappingURL=generator.js.map

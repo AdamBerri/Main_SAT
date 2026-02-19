@@ -1,0 +1,54 @@
+{
+  "id": "q6-concert-tickets-d2-iter3",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A concert venue sold a total of 200 tickets. Adult tickets cost $25 each and child tickets cost $15 each. The total revenue from ticket sales was $4,250. How many adult tickets were sold?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "75",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "100",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "125",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "170",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let a = number of adult tickets and c = number of child tickets. From the problem, we have two equations: a + c = 200 and 25a + 15c = 4,250. From the first equation, c = 200 - a. Substituting into the second equation: 25a + 15(200 - a) = 4,250. Simplifying: 25a + 3,000 - 15a = 4,250, so 10a + 3,000 = 4,250. Subtracting 3,000 from both sides: 10a = 1,250. Dividing by 10: a = 125.",
+  "distractorRationale": {
+    "A": "Found the number of child tickets instead of adult tickets. c = 200 - 125 = 75.",
+    "B": "Incorrectly assumed equal numbers of adult and child tickets. 200 ÷ 2 = 100.",
+    "D": "Divided total revenue by adult ticket price without considering child tickets. 4,250 ÷ 25 = 170."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T01:30:00.000Z",
+    "promptVersion": "1.11.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d2-q6"
+  }
+}

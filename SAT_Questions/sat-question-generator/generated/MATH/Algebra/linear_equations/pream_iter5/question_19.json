@@ -1,0 +1,39 @@
+{
+  "id": "d0e6f7a8-3b4c-4d5e-f9a0-1b2c3d4e5f6a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.5,
+    "procedural": 4.0,
+    "computational": 3.5
+  },
+  "stem": "A delivery driver travels from Warehouse A to Store B at 30 miles per hour and then from Store B to Store C at 60 miles per hour. The total distance from Warehouse A to Store C, traveling through Store B, is 180 miles. The driver took a 30-minute lunch break at Store B. If the total driving time, not including the lunch break, was 4 hours, what is the distance from Warehouse A to Store B, in miles?",
+  "choices": [
+    { "label": "A", "text": "30", "isCorrect": false },
+    { "label": "B", "text": "60", "isCorrect": true },
+    { "label": "C", "text": "90", "isCorrect": false },
+    { "label": "D", "text": "120", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The 30-minute lunch break is extra information that is not needed since the problem specifies driving time only. Let d be the distance from A to B. Then the distance from B to C is 180 - d. The driving time equation is: d/30 + (180 - d)/60 = 4. Multiplying every term by 60: 2d + (180 - d) = 240. Distributing: 2d + 180 - d = 240. Combining like terms: d + 180 = 240. Subtracting 180: d = 60.",
+  "distractorRationale": {
+    "A": "Subtracted the 30-minute lunch break from the driving time, using 3.5 hours instead of 4: d/30 + (180 - d)/60 = 3.5, which gives d + 180 = 210, so d = 30.",
+    "B": "Correct: Set up d/30 + (180 - d)/60 = 4, multiplied by 60 to get 2d + 180 - d = 240, giving d = 60.",
+    "C": "Added the 30-minute lunch break to the driving time, using 4.5 hours instead of 4: d/30 + (180 - d)/60 = 4.5, which gives d + 180 = 270, so d = 90.",
+    "D": "Swapped the speeds for the two segments, using 60 mph for A-to-B and 30 mph for B-to-C: d/60 + (180 - d)/30 = 4, which gives d + 360 - 2d = 240, so d = 120."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d4-q19"
+  }
+}

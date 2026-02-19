@@ -1,0 +1,39 @@
+{
+  "id": "e5c9a3f7-1d8b-4e2a-9c4f-7a6b3d1e8f5c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A kite is flying at a height of 30 feet directly above a point on the ground. The kite string makes a 37-degree angle with the ground. Given that sin 37° ≈ 0.6 and cos 37° ≈ 0.8, what is the approximate length of the kite string, in feet?",
+  "choices": [
+    { "label": "A", "text": "18", "isCorrect": false },
+    { "label": "B", "text": "24", "isCorrect": false },
+    { "label": "C", "text": "40", "isCorrect": false },
+    { "label": "D", "text": "50", "isCorrect": true }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The kite string is the hypotenuse of a right triangle. The height of the kite (30 feet) is the side opposite the 37° angle at the ground. Since sin 37° = opposite / hypotenuse, we have 0.6 = 30 / hypotenuse. Solving: hypotenuse = 30 / 0.6 = 50 feet.",
+  "distractorRationale": {
+    "A": "Multiplied the height by sin instead of dividing. The student computed 30 × 0.6 = 18",
+    "B": "Multiplied the height by cos instead of dividing by sin. The student computed 30 × 0.8 = 24",
+    "C": "Used tan 37° ≈ 0.75 instead of sin 37°. The student divided the height by tan: 30 / 0.75 = 40",
+    "D": "Correct: Recognized that sin relates the opposite side (height) to the hypotenuse (string), then solved hypotenuse = 30 / sin 37° = 30 / 0.6 = 50"
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle with a stick figure at the bottom-left holding a string. The string (hypotenuse) extends up and to the right to a kite icon. The vertical leg is labeled 30 ft (height), the angle at the ground between the string and the horizontal is labeled 37°, and the hypotenuse is labeled with a question mark. The right angle is at the bottom-right where the vertical height meets the ground.",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T14:30:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter1-d2-q8"
+  }
+}

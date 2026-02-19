@@ -17,15 +17,17 @@ Create a `.env` file:
 cp .env.example .env
 ```
 
-Edit `.env` with your API keys:
+Edit `.env` with your backend settings:
 
 ```env
-# Required: Anthropic API key for generation and evaluation
-ANTHROPIC_API_KEY=sk-ant-api03-...
+# Option A: Hosted Zhipu (GLM)
+ZHIPU_API_KEY=...
 
-# Optional: Additional keys for parallel batch execution
-ANTHROPIC_API_KEY_2=sk-ant-api03-...
-ANTHROPIC_API_KEY_3=sk-ant-api03-...
+# Option B: Local/OpenAI-compatible backend (for RunPod or self-hosted MiniMax)
+# LLM_BASE_URL=http://127.0.0.1:8000/v1
+# LLM_MODEL=minimax-m1
+# If your local endpoint needs auth:
+# LLM_API_KEY=...
 
 # Required for image generation (math questions with figures)
 GOOGLE_API_KEY=...
@@ -139,7 +141,7 @@ For running large batches unattended:
 #!/bin/bash
 # save as run-batch.sh
 
-export ANTHROPIC_API_KEY="sk-ant-..."
+export ZHIPU_API_KEY="..."
 export GOOGLE_API_KEY="..."
 
 cd /Users/berri/Desktop/initial_claude_work/SAT_Questions/sat-question-generator

@@ -1,0 +1,55 @@
+{
+  "id": "e9f7a4b5-3d8c-4e2a-9c6f-4a7b8c9d2e5f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.0
+  },
+  "stem": "A car's value depreciates by 15% in the first year and then by 10% in the second year. If the car is worth $30,600 after two years, what was its original purchase price in dollars?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "34,000",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "38,250",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "40,000",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "40,800",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let P be the original price. After 15% depreciation in year 1, the value is P - 0.15P = 0.85P. After 10% depreciation in year 2, the value is 0.85P - 0.10(0.85P) = 0.85P(1 - 0.10) = 0.85P × 0.90 = 0.765P. Setting this equal to the final value: 0.765P = 30,600. Solving for P: P = 30,600 ÷ 0.765 = 40,000. The original purchase price was $40,000.",
+  "distractorRationale": {
+    "A": "Reversed only the second year depreciation and stopped: 30,600 ÷ 0.90 = 34,000.",
+    "B": "Added the depreciation percentages back to the final value instead of dividing: 30,600 × 1.25 = 38,250.",
+    "C": "Correct: after 15% then 10% successive depreciation, value is 0.85 × 0.90 × P = 0.765P = 30,600, so P = 40,000.",
+    "D": "Combined depreciation as a single 25% decline by adding 15% + 10%: 30,600 ÷ 0.75 = 40,800."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d5-q25"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "rt-d4-q18-d7a2c5f1-8b3e-4f6d-c1a9-4e7b2d8f3a5c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4,
+    "computational": 3.5
+  },
+  "stem": "A solar panel is mounted on a flat roof using a right-triangular support frame. The panel surface, which forms the hypotenuse of the frame, is 12 feet long and is tilted at 30 degrees from the horizontal roof. The roof is 50 feet wide. An installer needs to order sheet metal to cover the triangular side of the support frame. What is the area of the right-triangular side of the support frame, in square feet?",
+  "choices": [
+    {"label": "A", "text": "18\u221a3", "isCorrect": true},
+    {"label": "B", "text": "24\u221a3", "isCorrect": false},
+    {"label": "C", "text": "18", "isCorrect": false},
+    {"label": "D", "text": "36", "isCorrect": false}
+  ],
+  "correctAnswer": "A",
+  "explanation": "The support frame is a right triangle with the hypotenuse (panel surface) = 12 feet and one acute angle of 30\u00b0. The vertical leg (opposite the 30\u00b0 angle) is 12 \u00d7 sin 30\u00b0 = 12 \u00d7 (1/2) = 6 feet. The horizontal leg (adjacent to the 30\u00b0 angle) is 12 \u00d7 cos 30\u00b0 = 12 \u00d7 (\u221a3/2) = 6\u221a3 feet. The area of the right triangle is (1/2) \u00d7 6 \u00d7 6\u221a3 = 18\u221a3 square feet. The 50-foot roof width is not needed.",
+  "distractorRationale": {
+    "A": "Correct: vertical = 12 \u00d7 sin 30\u00b0 = 6, horizontal = 12 \u00d7 cos 30\u00b0 = 6\u221a3, area = (1/2)(6)(6\u221a3) = 18\u221a3.",
+    "B": "Treated the 12-foot panel as the horizontal base instead of the hypotenuse and used tan 30\u00b0 to find the height: height = 12 \u00d7 tan 30\u00b0 = 12 \u00d7 (\u221a3/3) = 4\u221a3, area = (1/2)(12)(4\u221a3) = 24\u221a3.",
+    "C": "Used sin 30\u00b0 for both legs instead of sin for one and cos for the other: both legs = 12 \u00d7 sin 30\u00b0 = 6, area = (1/2)(6)(6) = 18.",
+    "D": "Used the hypotenuse (12) as one side in the area formula instead of computing the horizontal leg: area = (1/2)(12)(6) = 36."
+  },
+  "hasImage": true,
+  "imageDescription": "A right-triangular support frame on a flat roof. The horizontal base sits on the roof surface. The vertical leg rises perpendicular to the roof. The hypotenuse (labeled 12 ft) represents the solar panel surface. The angle between the hypotenuse and the horizontal base is labeled 30\u00b0. The right angle between the vertical leg and the horizontal base is marked.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d4-q18"
+  }
+}

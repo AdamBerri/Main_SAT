@@ -1,0 +1,40 @@
+{
+  "id": "rt-d2-q10-c8e5f2a7-3b6d-4c4e-d1f9-5a7b3e9c2d1f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.5,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A lighthouse keeper spots a boat on the water. The boat is 60 feet horizontally from the base of the lighthouse, and the angle of depression from the top of the lighthouse to the boat is 37 degrees. Given that sin 37\u00b0 \u2248 3/5, cos 37\u00b0 \u2248 4/5, and tan 37\u00b0 \u2248 3/4, what is the straight-line distance from the top of the lighthouse to the boat, in feet?",
+  "choices": [
+    {"label": "A", "text": "48", "isCorrect": false},
+    {"label": "B", "text": "45", "isCorrect": false},
+    {"label": "C", "text": "100", "isCorrect": false},
+    {"label": "D", "text": "75", "isCorrect": true}
+  ],
+  "correctAnswer": "D",
+  "explanation": "The angle of depression from the lighthouse equals the angle of elevation from the boat, which is 37\u00b0. The horizontal distance (60 feet) is the side adjacent to the 37\u00b0 angle, and the straight-line distance from the lighthouse top to the boat is the hypotenuse. Using cosine: cos 37\u00b0 = adjacent/hypotenuse = 60/hypotenuse. Solving: hypotenuse = 60 \u00f7 cos 37\u00b0 = 60 \u00f7 (4/5) = 60 \u00d7 (5/4) = 75 feet.",
+  "distractorRationale": {
+    "A": "Multiplied by cos instead of dividing, inverting the relationship between adjacent and hypotenuse: 60 \u00d7 cos 37\u00b0 = 60 \u00d7 (4/5) = 48.",
+    "B": "Used tan to find the lighthouse height (opposite side) instead of cos to find the hypotenuse: 60 \u00d7 tan 37\u00b0 = 60 \u00d7 (3/4) = 45.",
+    "C": "Confused adjacent with opposite, using sin instead of cos in the denominator: 60 \u00f7 sin 37\u00b0 = 60 \u00f7 (3/5) = 60 \u00d7 (5/3) = 100.",
+    "D": "Correct: cos 37\u00b0 = adjacent/hypotenuse, so hypotenuse = 60 \u00f7 (4/5) = 75."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle with the vertical leg representing the lighthouse. A dashed horizontal line extends from the top of the lighthouse, and the angle between this horizontal line and the line of sight to the boat is labeled 37\u00b0 (angle of depression). The horizontal leg along the water surface from the lighthouse base to the boat is labeled 60 ft. The hypotenuse (line of sight from lighthouse top to boat) is labeled with a question mark.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d2-q10"
+  }
+}

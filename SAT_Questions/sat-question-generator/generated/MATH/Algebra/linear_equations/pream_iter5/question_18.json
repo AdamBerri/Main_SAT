@@ -1,0 +1,39 @@
+{
+  "id": "c9d5e6f7-2a3b-4c4d-e8f9-0a1b2c3d4e5f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.5,
+    "procedural": 4.0,
+    "computational": 3.5
+  },
+  "stem": "A farmer plants two crops: wheat and corn. Each acre of wheat yields a profit of $300, and each acre of corn yields a profit of $500. The farmer plants a total of 20 acres and earns a total profit of $7,600 from these two crops. The farmer's neighbor plants 15 acres of soybeans at a profit of $400 per acre. What is the profit the farmer earns from the corn crop alone, in dollars?",
+  "choices": [
+    { "label": "A", "text": "2,400", "isCorrect": false },
+    { "label": "B", "text": "3,600", "isCorrect": false },
+    { "label": "C", "text": "4,000", "isCorrect": true },
+    { "label": "D", "text": "6,400", "isCorrect": false }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The neighbor's soybean information is extra and not needed. Let w be the acres of wheat and c be the acres of corn. Set up the system: w + c = 20 and 300w + 500c = 7,600. Substituting w = 20 - c into the second equation: 300(20 - c) + 500c = 7,600. Distributing: 6,000 - 300c + 500c = 7,600. Combining like terms: 6,000 + 200c = 7,600. Subtracting 6,000: 200c = 1,600. Dividing by 200: c = 8. The farmer plants 8 acres of corn, so the profit from corn is 500 x 8 = 4,000.",
+  "distractorRationale": {
+    "A": "Correctly found c = 8 acres of corn but multiplied by the wheat profit rate instead of the corn profit rate: 300 x 8 = 2,400.",
+    "B": "Solved the system correctly but reported the wheat profit instead of the corn profit: w = 12, and 300 x 12 = 3,600.",
+    "C": "Correct: Solved the system w + c = 20 and 300w + 500c = 7,600 to get c = 8, then computed corn profit as 500 x 8 = 4,000.",
+    "D": "Used the neighbor's soybean rate ($400) instead of the corn rate ($500) in the system: 300(20 - c) + 400c = 7,600 gives 100c = 1,600, so c = 16, then 400 x 16 = 6,400."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d4-q18"
+  }
+}

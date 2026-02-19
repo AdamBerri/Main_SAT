@@ -1,0 +1,39 @@
+{
+  "id": "f7a2c3d4-9e1b-4f8a-b5c6-3d7e8f9a1b2c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 3.5,
+    "computational": 3.0
+  },
+  "stem": "A printing company produces custom T-shirts for schools and organizations. The company charges an $80 setup fee for each order, a flat $40 delivery fee, and $8 per T-shirt. The T-shirts will be sold at the school store for $15 each. If a school club has a budget of $600 for ordering T-shirts, how many T-shirts can the club order?",
+  "choices": [
+    { "label": "A", "text": "60", "isCorrect": true },
+    { "label": "B", "text": "65", "isCorrect": false },
+    { "label": "C", "text": "70", "isCorrect": false },
+    { "label": "D", "text": "75", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The selling price of $15 per T-shirt is extra information not needed to determine the order quantity. The total budget must cover the setup fee, delivery fee, and the cost of the T-shirts. Setting up the equation: 80 + 40 + 8n = 600. Combining the fixed costs: 120 + 8n = 600. Subtracting 120 from both sides: 8n = 480. Dividing both sides by 8: n = 480 / 8 = 60.",
+  "distractorRationale": {
+    "A": "Correct: Subtracted setup fee ($80) and delivery fee ($40) from the $600 budget, then divided by $8 per shirt: (600 - 80 - 40) / 8 = 480 / 8 = 60.",
+    "B": "Forgot to subtract the delivery fee before dividing: (600 - 80) / 8 = 520 / 8 = 65.",
+    "C": "Forgot to subtract the setup fee before dividing: (600 - 40) / 8 = 560 / 8 = 70.",
+    "D": "Divided the total budget by the per-shirt cost without subtracting any fixed fees: 600 / 8 = 75."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d4-q16"
+  }
+}

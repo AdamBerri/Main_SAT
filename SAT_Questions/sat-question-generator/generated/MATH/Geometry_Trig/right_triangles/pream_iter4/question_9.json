@@ -1,0 +1,40 @@
+{
+  "id": "rt-d2-q09-e7b5d1f4-2c6a-4a3d-d8e9-5f4b1c3a2d8e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.5,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A guy wire is attached to the top of a 120-foot radio antenna and anchored to the ground. The wire makes a 53-degree angle with the ground. Given that sin 53\u00b0 \u2248 4/5, cos 53\u00b0 \u2248 3/5, and tan 53\u00b0 \u2248 4/3, what is the length of the guy wire, in feet?",
+  "choices": [
+    {"label": "A", "text": "90", "isCorrect": false},
+    {"label": "B", "text": "96", "isCorrect": false},
+    {"label": "C", "text": "200", "isCorrect": false},
+    {"label": "D", "text": "150", "isCorrect": true}
+  ],
+  "correctAnswer": "D",
+  "explanation": "The antenna height (120 feet) is the side opposite the 53\u00b0 angle, and the guy wire is the hypotenuse. Using sine: sin 53\u00b0 = opposite/hypotenuse = 120/wire. Solving for the wire: wire = 120 \u00f7 sin 53\u00b0 = 120 \u00f7 (4/5) = 120 \u00d7 (5/4) = 150 feet.",
+  "distractorRationale": {
+    "A": "Divided by tan instead of sin, finding the horizontal distance to the anchor instead of the wire length: 120 \u00f7 tan 53\u00b0 = 120 \u00f7 (4/3) = 120 \u00d7 (3/4) = 90.",
+    "B": "Multiplied by sin instead of dividing, inverting the relationship between opposite and hypotenuse: 120 \u00d7 sin 53\u00b0 = 120 \u00d7 (4/5) = 96.",
+    "C": "Divided by cos instead of sin, confusing adjacent and opposite in the ratio: 120 \u00f7 cos 53\u00b0 = 120 \u00f7 (3/5) = 120 \u00d7 (5/3) = 200.",
+    "D": "Correct: sin 53\u00b0 = opposite/hypotenuse, so wire = 120 \u00f7 (4/5) = 120 \u00d7 (5/4) = 150."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle with the vertical leg labeled as a 120 ft radio antenna. The hypotenuse represents the guy wire, labeled with a question mark, running from the top of the antenna down to an anchor point on the ground. The angle between the wire and the horizontal ground is labeled 53\u00b0.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d2-q9"
+  }
+}

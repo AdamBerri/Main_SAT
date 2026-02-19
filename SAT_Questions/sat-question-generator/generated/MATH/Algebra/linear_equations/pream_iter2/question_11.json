@@ -1,0 +1,55 @@
+{
+  "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A chemistry student needs to prepare 200 milliliters of a 16% salt solution by mixing a 10% salt solution with a 25% salt solution. How many milliliters of the 10% solution should be used?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "80",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "100",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "120",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "180",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let x represent the number of milliliters of the 10% solution. Then (200 - x) represents the number of milliliters of the 25% solution. The amount of pure salt from the 10% solution is 0.10x, and the amount from the 25% solution is 0.25(200 - x). The total amount of pure salt in the final mixture is 0.16(200) = 32 milliliters. Setting up the equation: 0.10x + 0.25(200 - x) = 32. Expanding: 0.10x + 50 - 0.25x = 32. Combining like terms: -0.15x + 50 = 32. Subtracting 50 from both sides: -0.15x = -18. Dividing by -0.15: x = 120 milliliters. To verify: 0.10(120) + 0.25(80) = 12 + 20 = 32 = 0.16(200).",
+  "distractorRationale": {
+    "A": "Results from finding the amount of 25% solution (200 - 120 = 80) and mistakenly reporting it as the amount of 10% solution.",
+    "B": "Results from assuming equal volumes of each solution should be mixed: 200 ÷ 2 = 100, without setting up or solving the mixture equation.",
+    "C": "Correct. Setting up 0.10x + 0.25(200 - x) = 32 gives -0.15x = -18, so x = 120 milliliters.",
+    "D": "Results from dividing by the wrong coefficient in the final step. After correctly finding -0.15x = -18, the student divides 18 by 0.10 (the concentration of the solution being solved for) instead of 0.15: 18 ÷ 0.10 = 180."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T00:30:00.000Z",
+    "promptVersion": "1.10.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "gen-a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d"
+  }
+}

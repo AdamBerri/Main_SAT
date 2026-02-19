@@ -12,6 +12,7 @@ import type {
 import { QuestionGenerator } from './generator';
 import { QuestionEvaluator, createEvaluator } from '../evaluation/evaluator';
 import { getAllTopics, topicToString, getGeneratedDir, ensureDirectoryExists } from '../core/config';
+import { resolveLLMApiKey } from '../core/glm-client';
 
 /**
  * API Key Pool Manager
@@ -339,8 +340,18 @@ export function createBatchExecutor(concurrency?: number): BatchExecutor {
     if (key) apiKeys.push(key);
   }
 
+  // Alternative env name for custom/local backends
+  if (apiKeys.length === 0 && process.env.LLM_API_KEY) {
+    apiKeys.push(process.env.LLM_API_KEY);
+  }
+
+  // Keyless local backend (OpenAI-compatible server on RunPod, vLLM, MiniMax, etc.)
   if (apiKeys.length === 0) {
-    throw new Error('No ZHIPU_API_KEY found in environment');
+    apiKeys.push(resolveLLMApiKey());
+  }
+
+  if (apiKeys.length === 0) {
+    throw new Error('No API key or local LLM backend configured');
   }
 
   console.log(`Batch executor initialized with ${apiKeys.length} API key(s)`);

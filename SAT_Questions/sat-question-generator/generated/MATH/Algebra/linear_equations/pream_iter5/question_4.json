@@ -1,0 +1,39 @@
+{
+  "id": "b4d5e6f7-8a9b-4c0d-1e2f-3a4b5c6d7e8f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A community garden has two sections, east and west. The east section has 4 more rows of plants than the west section. If the garden has 24 rows in total, how many rows are in the west section?",
+  "choices": [
+    {"label": "A", "text": "10", "isCorrect": true},
+    {"label": "B", "text": "12", "isCorrect": false},
+    {"label": "C", "text": "14", "isCorrect": false},
+    {"label": "D", "text": "20", "isCorrect": false}
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let w represent the number of rows in the west section. The east section has w + 4 rows. The total is w + (w + 4) = 24, which simplifies to 2w + 4 = 24. Subtracting 4 from both sides gives 2w = 24 - 4 = 20. Dividing both sides by 2 gives w = 20 / 2 = 10.",
+  "distractorRationale": {
+    "A": "Correct: Set up w + (w + 4) = 24, simplified to 2w + 4 = 24, subtracted 4, and divided by 2: (24 - 4) / 2 = 20 / 2 = 10.",
+    "B": "Divided the total number of rows by 2 without accounting for the 4-row difference: 24 / 2 = 12.",
+    "C": "Added the difference to the total instead of subtracting, then divided by 2: (24 + 4) / 2 = 28 / 2 = 14.",
+    "D": "Subtracted the difference from the total but forgot to divide by 2: 24 - 4 = 20."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d1-q4"
+  }
+}

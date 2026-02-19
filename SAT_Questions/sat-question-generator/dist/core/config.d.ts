@@ -11,12 +11,12 @@ export declare const DEFAULT_PREAM_CONFIG: PREAMConfig;
 export declare const DEFAULT_TEMPERATURE_CONFIG: TemperatureConfig;
 export declare const MODEL_CONFIG: {
     generation: {
-        provider: "zhipu";
+        provider: "openai";
         model: string;
         maxTokens: number;
     };
     evaluation: {
-        provider: "zhipu";
+        provider: "openai";
         model: string;
         maxTokens: number;
     };

@@ -1,0 +1,55 @@
+{
+  "id": "e5g1f2b3-7c4d-4e9f-1a8b-4d1c9e3f6a7b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "Sarah is three times as old as her brother Tom. In 5 years, the sum of their ages will be 50. How old is Tom currently?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "8",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "10",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "15",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "30",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let t = Tom's current age. Since Sarah is three times as old as Tom, Sarah's current age is 3t. In 5 years, Tom will be t + 5 and Sarah will be 3t + 5. The sum of their future ages: (t + 5) + (3t + 5) = 50. Simplifying: 4t + 10 = 50. Subtracting 10 from both sides: 4t = 40. Dividing by 4: t = 10.",
+  "distractorRationale": {
+    "A": "Miscounted the coefficient on t, solving 5t + 10 = 50 instead of 4t + 10 = 50: 5t = 40, t = 8",
+    "B": "Correct: Set up equation (t + 5) + (3t + 5) = 50, simplify to 4t + 10 = 50, solve 4t = 40 to get t = 10",
+    "C": "Solved correctly for 4t = 40 to get t = 10, but then added 5 years to the current age: 10 + 5 = 15",
+    "D": "Found Sarah's current age instead of Tom's: 3t = 3(10) = 30"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d2-q10"
+  }
+}

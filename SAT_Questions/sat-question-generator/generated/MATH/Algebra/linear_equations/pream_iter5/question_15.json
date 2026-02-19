@@ -1,0 +1,39 @@
+{
+  "id": "c5e6f7a8-9b0c-4d12-3e45-6f7a8b9c0d1e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "The manager of a bookstore uses the equation R = 12b + 8m to estimate total monthly revenue R, in dollars, where b is the number of books sold and m is the number of magazines sold. In January, the store sold twice as many magazines as books and earned $2,240 in revenue. How many books were sold in January?",
+  "choices": [
+    {"label": "A", "text": "70", "isCorrect": false},
+    {"label": "B", "text": "80", "isCorrect": true},
+    {"label": "C", "text": "112", "isCorrect": false},
+    {"label": "D", "text": "160", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "Since the store sold twice as many magazines as books, m = 2b. Substituting into the revenue equation: R = 12b + 8(2b) = 12b + 16b = 28b. Setting 28b = 2,240 and dividing both sides by 28: b = 2,240 / 28 = 80. The store sold 80 books in January.",
+  "distractorRationale": {
+    "A": "Swapped the relationship and set b = 2m instead of m = 2b: 12(2m) + 8m = 2,240, so 24m + 8m = 32m = 2,240, giving m = 2,240 / 32 = 70.",
+    "B": "Correct: Substituted m = 2b to get 12b + 16b = 28b = 2,240, so b = 2,240 / 28 = 80.",
+    "C": "Forgot to multiply the magazine price by 2 when substituting m = 2b, using 12b + 8b instead of 12b + 16b: 20b = 2,240, so b = 2,240 / 20 = 112.",
+    "D": "Solved correctly for b = 80 but reported the number of magazines instead of books: m = 2 x 80 = 160."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d3-q15"
+  }
+}

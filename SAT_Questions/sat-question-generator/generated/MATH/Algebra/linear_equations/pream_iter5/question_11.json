@@ -1,0 +1,39 @@
+{
+  "id": "e1a2b3c4-5d6f-4a78-9b01-2c3d4e5f6a7b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "Marcus is 4 years older than his sister Nadia. In 6 years, the sum of their ages will be 50. What is Marcus's current age?",
+  "choices": [
+    {"label": "A", "text": "17", "isCorrect": false},
+    {"label": "B", "text": "21", "isCorrect": true},
+    {"label": "C", "text": "24", "isCorrect": false},
+    {"label": "D", "text": "27", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let m represent Marcus's current age and n represent Nadia's current age. Since Marcus is 4 years older, m = n + 4. In 6 years, their ages will be m + 6 and n + 6, so (m + 6) + (n + 6) = 50. This simplifies to m + n + 12 = 50, so m + n = 38. Substituting m = n + 4 into m + n = 38 gives (n + 4) + n = 38, so 2n + 4 = 38, then 2n = 34, and n = 17. Therefore m = 17 + 4 = 21.",
+  "distractorRationale": {
+    "A": "Solved the system correctly but reported Nadia's age instead of Marcus's: n = 34 / 2 = 17.",
+    "B": "Correct: Set up m = n + 4 and (m + 6) + (n + 6) = 50, simplified to m + n = 38, substituted to get 2n = 34, so n = 17 and m = 17 + 4 = 21.",
+    "C": "Added 6 years to only one person instead of both: (m + 6) + n = 50, so m + n = 44, then (n + 4) + n = 44, giving 2n = 40, n = 20, and m = 20 + 4 = 24.",
+    "D": "Interpreted the future sum as the current sum of their ages: m + n = 50, then (n + 4) + n = 50, giving 2n = 46, n = 23, and m = 23 + 4 = 27."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d3-q11"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "rt-d2-q06-b4e2a7c1-8f3d-4d9a-a5b6-2c1e7f9d3a8b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A 60-foot flagpole stands vertically on level ground. When the sun is at a 53-degree angle of elevation, the flagpole casts a shadow on the ground. Given that sin 53\u00b0 \u2248 4/5, cos 53\u00b0 \u2248 3/5, and tan 53\u00b0 \u2248 4/3, what is the length of the shadow, in feet?",
+  "choices": [
+    {"label": "A", "text": "36", "isCorrect": false},
+    {"label": "B", "text": "45", "isCorrect": true},
+    {"label": "C", "text": "48", "isCorrect": false},
+    {"label": "D", "text": "80", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The flagpole height (60 feet) is the side opposite the 53\u00b0 angle of elevation, and the shadow length is the side adjacent to the angle. Using tangent: tan 53\u00b0 = opposite/adjacent = 60/shadow. Solving for the shadow: shadow = 60 \u00f7 tan 53\u00b0 = 60 \u00f7 (4/3) = 60 \u00d7 (3/4) = 45 feet.",
+  "distractorRationale": {
+    "A": "Treated the flagpole height as the hypotenuse and multiplied by cos 53\u00b0 instead of dividing by tan 53\u00b0: 60 \u00d7 cos 53\u00b0 = 60 \u00d7 (3/5) = 36.",
+    "B": "Correct: tan 53\u00b0 = opposite/adjacent, so shadow = 60 \u00f7 (4/3) = 60 \u00d7 (3/4) = 45.",
+    "C": "Treated the flagpole height as the hypotenuse and multiplied by sin 53\u00b0 instead of dividing by tan 53\u00b0: 60 \u00d7 sin 53\u00b0 = 60 \u00d7 (4/5) = 48.",
+    "D": "Multiplied by tan 53\u00b0 instead of dividing, inverting the tangent operation: 60 \u00d7 tan 53\u00b0 = 60 \u00d7 (4/3) = 80."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle showing a vertical flagpole labeled 60 ft on the left side. The horizontal ground to the right of the flagpole base represents the shadow, labeled with a question mark. A dashed line from the tip of the shadow to the top of the flagpole represents a sun ray, and the angle between this line and the ground is labeled 53\u00b0.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d2-q6"
+  }
+}

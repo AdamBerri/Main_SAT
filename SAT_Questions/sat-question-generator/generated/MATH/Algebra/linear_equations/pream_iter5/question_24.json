@@ -1,0 +1,39 @@
+{
+  "id": "d1e4f8b3-7a2c-4d9e-b5f6-8c3a1e9d2f7b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.5,
+    "procedural": 5.0,
+    "computational": 4.5
+  },
+  "stem": "Two printing machines, A and B, are used to complete a large print job of 1,625 pages. Machine A prints 75 pages per hour and Machine B prints 50 pages per hour. Machine A starts the job alone and works for 5 hours before Machine B joins. Both machines then work together until the job is complete. For how many hours did Machine B work?",
+  "choices": [
+    { "label": "A", "text": "10", "isCorrect": true },
+    { "label": "B", "text": "11", "isCorrect": false },
+    { "label": "C", "text": "13", "isCorrect": false },
+    { "label": "D", "text": "15", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Machine A works alone for 5 hours, printing 75 × 5 = 375 pages. Remaining pages: 1,625 − 375 = 1,250. When both machines work together, their combined rate is 75 + 50 = 125 pages per hour. Time working together: 1,250 ÷ 125 = 10 hours. Since Machine B joins when both work together, Machine B worked for 10 hours.",
+  "distractorRationale": {
+    "A": "Correct: Machine A prints 75 × 5 = 375 pages alone; remaining 1,625 − 375 = 1,250 pages at combined rate 125 pages/hour: 1,250 ÷ 125 = 10.",
+    "B": "Used Machine B's rate instead of Machine A's rate for the solo period: 50 × 5 = 250 pages; remaining 1,625 − 250 = 1,375; together at 125 pages/hour: 1,375 ÷ 125 = 11.",
+    "C": "Ignored Machine A's solo work and divided total pages by the combined rate: 1,625 ÷ 125 = 13.",
+    "D": "Reported Machine A's total working time instead of Machine B's: Machine A worked 5 hours alone plus 10 hours together = 15."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d5-q24"
+  }
+}

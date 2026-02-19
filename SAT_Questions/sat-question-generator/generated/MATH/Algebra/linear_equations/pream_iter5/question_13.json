@@ -1,0 +1,39 @@
+{
+  "id": "a3c4d5e6-7f8a-4b90-1c23-4d5e6f7a8b9c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A school is choosing between two printing companies for its yearbooks. Company A charges a $600 setup fee plus $15 per yearbook. Company B charges no setup fee but $25 per yearbook. For how many yearbooks will the total cost from Company A equal the total cost from Company B?",
+  "choices": [
+    {"label": "A", "text": "15", "isCorrect": false},
+    {"label": "B", "text": "24", "isCorrect": false},
+    {"label": "C", "text": "40", "isCorrect": false},
+    {"label": "D", "text": "60", "isCorrect": true}
+  ],
+  "correctAnswer": "D",
+  "explanation": "Let n represent the number of yearbooks. Company A's total cost is 600 + 15n and Company B's total cost is 25n. Setting these equal: 600 + 15n = 25n. Subtracting 15n from both sides: 600 = 10n. Dividing both sides by 10: n = 60. At 60 yearbooks, both companies charge 600 + 15(60) = 600 + 900 = 1,500 dollars.",
+  "distractorRationale": {
+    "A": "Added the per-yearbook rates instead of subtracting when isolating n: 600 / (15 + 25) = 600 / 40 = 15.",
+    "B": "Divided the setup fee by Company B's rate instead of the rate difference: 600 / 25 = 24.",
+    "C": "Divided the setup fee by Company A's rate instead of the rate difference: 600 / 15 = 40.",
+    "D": "Correct: Set 600 + 15n = 25n, subtracted 15n from both sides, and divided: 600 / 10 = 60."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d3-q13"
+  }
+}

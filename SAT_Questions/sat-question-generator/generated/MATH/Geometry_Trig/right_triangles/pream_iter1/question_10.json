@@ -1,0 +1,39 @@
+{
+  "id": "a1d5b8e3-4f2c-4a7d-9e3f-6c8b1a5d7e2f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "From the top of a 36-foot lighthouse, a keeper spots a boat on the water at an angle of depression of 37 degrees. Given that sin 37° ≈ 0.6, cos 37° ≈ 0.8, and tan 37° ≈ 0.75, what is the approximate horizontal distance from the base of the lighthouse to the boat, in feet?",
+  "choices": [
+    { "label": "A", "text": "27", "isCorrect": false },
+    { "label": "B", "text": "48", "isCorrect": true },
+    { "label": "C", "text": "45", "isCorrect": false },
+    { "label": "D", "text": "60", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The angle of depression from the top of the lighthouse equals the angle of elevation from the boat to the top of the lighthouse (alternate interior angles), so the angle at the boat is 37°. In this right triangle, the lighthouse height (36 feet) is the side opposite the 37° angle, and the horizontal distance is the side adjacent to it. Using tan 37° = opposite / adjacent: 0.75 = 36 / distance. Solving: distance = 36 / 0.75 = 48 feet.",
+  "distractorRationale": {
+    "A": "Multiplied instead of dividing. The student computed height × tan 37° = 36 × 0.75 = 27",
+    "B": "Correct: Recognized that tan relates opposite (height) to adjacent (horizontal distance), then solved distance = 36 / tan 37° = 36 / 0.75 = 48",
+    "C": "Used cos instead of tan and divided. The student computed 36 / cos 37° = 36 / 0.8 = 45",
+    "D": "Used sin instead of tan and divided, which yields the hypotenuse (line-of-sight distance) rather than the horizontal distance. The student computed 36 / sin 37° = 36 / 0.6 = 60"
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle with a lighthouse on the left side. The vertical leg is labeled 36 ft (lighthouse height). A dashed horizontal line extends from the top of the lighthouse to the right, and the angle between this horizontal line and the line of sight down to the boat is labeled 37° (angle of depression). The horizontal leg along the water is labeled with a question mark (distance to boat). A small boat icon sits at the bottom-right vertex. The right angle is at the base of the lighthouse where it meets the water level.",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T14:30:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter1-d2-q10"
+  }
+}

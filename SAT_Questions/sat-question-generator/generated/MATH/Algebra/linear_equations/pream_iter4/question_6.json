@@ -1,0 +1,55 @@
+{
+  "id": "a8f4c9e2-3d7b-4f1a-9e6c-2b5a8d1f7e3c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A farm has 35 animals consisting of only chickens and horses. If the total number of legs among all animals is 94, how many horses are on the farm? (Assume each chicken has 2 legs and each horse has 4 legs.)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "12",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "23",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "24",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "47",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let h = number of horses and c = number of chickens. From the problem: c + h = 35 (total animals) and 2c + 4h = 94 (total legs). From the first equation: c = 35 - h. Substituting into the second equation: 2(35 - h) + 4h = 94. Simplifying: 70 - 2h + 4h = 94, so 2h + 70 = 94. Subtracting 70 from both sides: 2h = 24. Dividing by 2: h = 12.",
+  "distractorRationale": {
+    "A": "Correct: Set up system c + h = 35 and 2c + 4h = 94, substitute c = 35 - h, solve 2h = 24 to get h = 12",
+    "B": "Solved for the number of chickens instead of horses: c = 35 - 12 = 23",
+    "C": "Forgot to divide by 2 in the final step: 2h = 24, then reported 24 instead of dividing to get h = 12 = 24",
+    "D": "Divided total legs by the number of leg types (2) instead of setting up a system: 94 ÷ 2 = 47"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d2-q6"
+  }
+}

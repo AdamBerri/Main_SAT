@@ -1,0 +1,40 @@
+{
+  "id": "rt-d4-q20-f7c1e5b3-8a2b-4c6f-d30e-5b9a7c1f3e6d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.5,
+    "procedural": 4.0,
+    "computational": 4.0
+  },
+  "stem": "Two office buildings stand on flat ground. Building A is 60 feet tall and Building B is 24 feet tall. A straight enclosed walkway connects the rooftop of Building B to the rooftop of Building A, making a 53-degree angle with the horizontal. The walkway has glass panels on both sides and the buildings share underground parking. Using the approximations sin(53) = 4/5 and cos(53) = 3/5, what is the length of the walkway, in feet?",
+  "choices": [
+    {"label": "A", "text": "27", "isCorrect": false},
+    {"label": "B", "text": "75", "isCorrect": false},
+    {"label": "C", "text": "45", "isCorrect": true},
+    {"label": "D", "text": "60", "isCorrect": false}
+  ],
+  "correctAnswer": "C",
+  "explanation": "The underground parking is extra information that should be ignored. The walkway rises from the top of Building B (24 feet) to the top of Building A (60 feet), so the vertical rise is 60 - 24 = 36 feet. The walkway forms the hypotenuse of a right triangle with the vertical rise as the opposite side. Using sin(53) = opposite/hypotenuse: 4/5 = 36/walkway, so walkway = 36 * (5/4) = 45 feet.",
+  "distractorRationale": {
+    "A": "Computed the horizontal distance between the buildings instead of the walkway length: horizontal = 36/tan(53) = 36/(4/3) = 27",
+    "B": "Used the full height of Building A (60 feet) as the vertical rise instead of the height difference (60 - 24 = 36): walkway = 60/sin(53) = 60/(4/5) = 75",
+    "C": "Correct: vertical rise = 60 - 24 = 36, walkway = 36/sin(53) = 36/(4/5) = 45",
+    "D": "Used cos(53) instead of sin(53) to find the walkway length: walkway = 36/cos(53) = 36/(3/5) = 60"
+  },
+  "hasImage": true,
+  "imageDescription": "Two vertical rectangles represent the buildings on flat ground. Building A on the left is taller (labeled 60 ft) and Building B on the right is shorter (labeled 24 ft). A diagonal line connects the rooftops, representing the walkway. The angle between the walkway and a horizontal dashed line at Building B's rooftop level is labeled 53 degrees. The vertical difference between the rooftops (36 ft) is indicated with a bracket on the left side.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d4-q20"
+  }
+}

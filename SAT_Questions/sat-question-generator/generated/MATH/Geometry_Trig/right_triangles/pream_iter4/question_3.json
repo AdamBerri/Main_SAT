@@ -1,0 +1,40 @@
+{
+  "id": "rt-d1-q03-e6c1a4b3-9d5f-4e2c-8b7a-3f8d9e1c6a2b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A ski gondola cable stretches 60 feet from one support tower to the next, making a 37-degree angle with the horizontal. Given that sin 37\u00b0 \u2248 3/5, cos 37\u00b0 \u2248 4/5, and tan 37\u00b0 \u2248 3/4, what is the horizontal distance between the two towers, in feet?",
+  "choices": [
+    {"label": "A", "text": "36", "isCorrect": false},
+    {"label": "B", "text": "75", "isCorrect": false},
+    {"label": "C", "text": "45", "isCorrect": false},
+    {"label": "D", "text": "48", "isCorrect": true}
+  ],
+  "correctAnswer": "D",
+  "explanation": "The cable is the hypotenuse (60 feet) and the horizontal distance is the side adjacent to the 37\u00b0 angle. Using cos 37\u00b0 = adjacent/hypotenuse: horizontal distance = 60 \u00d7 cos 37\u00b0 = 60 \u00d7 (4/5) = 240/5 = 48 feet.",
+  "distractorRationale": {
+    "A": "Used sin instead of cos, finding the vertical rise instead of the horizontal distance: 60 \u00d7 (3/5) = 36.",
+    "B": "Set up the cosine ratio inverted, dividing by cos instead of multiplying: 60 \u00f7 (4/5) = 60 \u00d7 (5/4) = 75.",
+    "C": "Used tan instead of cos, applying the wrong trig ratio: 60 \u00d7 (3/4) = 45.",
+    "D": "Correct: horizontal distance = hypotenuse \u00d7 cos 37\u00b0 = 60 \u00d7 (4/5) = 48."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle showing a ski gondola cable as the hypotenuse labeled 60 ft, stretching diagonally between two support towers. The angle between the cable and the horizontal ground is labeled 37\u00b0. The horizontal distance between the towers is marked with a question mark.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d1-q3"
+  }
+}

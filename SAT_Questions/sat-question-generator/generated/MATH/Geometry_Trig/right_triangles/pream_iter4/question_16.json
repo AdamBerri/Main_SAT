@@ -1,0 +1,40 @@
+{
+  "id": "rt-d4-q16-b3e8a1f2-7c4d-4e9b-a5f6-2d1c3b8a7e4f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3,
+    "procedural": 4,
+    "computational": 4
+  },
+  "stem": "A painter needs to paint the front triangular face of an A-frame cabin. The roof on each side makes a 53-degree angle with the horizontal eave line at the base. The eave line is 30 feet wide, and the cabin is 40 feet deep. Given that sin 53\u00b0 \u2248 4/5, cos 53\u00b0 \u2248 3/5, and tan 53\u00b0 \u2248 4/3, what is the area of the triangular face to be painted, in square feet?",
+  "choices": [
+    {"label": "A", "text": "180", "isCorrect": false},
+    {"label": "B", "text": "300", "isCorrect": true},
+    {"label": "C", "text": "400", "isCorrect": false},
+    {"label": "D", "text": "375", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The triangular face is an isosceles triangle with base 30 feet. The ridge of the roof is directly above the center of the eave line, so each half of the triangle is a right triangle with a horizontal leg of 30/2 = 15 feet (adjacent to the 53\u00b0 angle). The height of the triangle is: height = 15 \u00d7 tan 53\u00b0 = 15 \u00d7 (4/3) = 20 feet. The area of the triangular face is: (1/2) \u00d7 30 \u00d7 20 = 300 square feet. The 40-foot depth of the cabin is not needed for the area of the front face.",
+  "distractorRationale": {
+    "A": "Used sin 53\u00b0 instead of tan 53\u00b0 to find the height: height = 15 \u00d7 (4/5) = 12, area = (1/2)(30)(12) = 180.",
+    "B": "Correct: Half-base = 15, height = 15 \u00d7 tan 53\u00b0 = 15 \u00d7 (4/3) = 20, area = (1/2)(30)(20) = 300.",
+    "C": "Used the cabin depth (40 feet) instead of the eave width (30 feet) as the base in the area formula: area = (1/2)(40)(20) = 400.",
+    "D": "Used the slant height of the roof panel (hypotenuse) instead of the vertical height in the area formula: hypotenuse = 15 / cos 53\u00b0 = 15 / (3/5) = 25, area = (1/2)(30)(25) = 375."
+  },
+  "hasImage": true,
+  "imageDescription": "An A-frame cabin viewed from the front, showing the triangular face. The horizontal eave line at the base is labeled 30 ft. The roof panels rise from each end of the eave line and meet at the ridge at the top. The angle between each roof panel and the horizontal eave line is labeled 53\u00b0. A dashed vertical line from the ridge to the center of the eave line represents the height of the triangle.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d4-q16"
+  }
+}

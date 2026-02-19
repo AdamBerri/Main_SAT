@@ -1,0 +1,40 @@
+{
+  "id": "rt-d2-q06-e4a1b7c3-8d2f-4e9a-b5c6-1f3d7a9e2b8c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A kite is flying at the end of a 60-foot string that makes a 53-degree angle with the ground. Given that sin 53\u00b0 \u2248 4/5, cos 53\u00b0 \u2248 3/5, and tan 53\u00b0 \u2248 4/3, what is the height of the kite above the ground, in feet?",
+  "choices": [
+    {"label": "A", "text": "36", "isCorrect": false},
+    {"label": "B", "text": "75", "isCorrect": false},
+    {"label": "C", "text": "80", "isCorrect": false},
+    {"label": "D", "text": "48", "isCorrect": true}
+  ],
+  "correctAnswer": "D",
+  "explanation": "The kite string (60 feet) is the hypotenuse of the right triangle, and the height of the kite is the side opposite the 53\u00b0 angle. Using sine: sin 53\u00b0 = opposite/hypotenuse = height/60. Therefore, height = 60 \u00d7 sin 53\u00b0 = 60 \u00d7 (4/5) = 48 feet.",
+  "distractorRationale": {
+    "A": "Used cos instead of sin, finding the horizontal distance instead of the height: 60 \u00d7 cos 53\u00b0 = 60 \u00d7 (3/5) = 36.",
+    "B": "Set up the sine ratio inverted, dividing by sin instead of multiplying: height = 60 \u00f7 (4/5) = 60 \u00d7 (5/4) = 75.",
+    "C": "Used tan instead of sin, treating the hypotenuse as the adjacent side: 60 \u00d7 tan 53\u00b0 = 60 \u00d7 (4/3) = 80.",
+    "D": "Correct: sin 53\u00b0 = opposite/hypotenuse, so height = 60 \u00d7 (4/5) = 48."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle with the hypotenuse labeled as a 60 ft kite string extending from a point on the ground up to a kite. The angle between the string and the ground is labeled 53\u00b0. The vertical leg is labeled with a question mark representing the height of the kite. A small kite icon is at the top of the vertical leg.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d2-q06"
+  }
+}

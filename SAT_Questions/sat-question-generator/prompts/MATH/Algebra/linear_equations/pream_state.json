@@ -11,10 +11,228 @@
     "minSamplesPerIteration": 25,
     "errorCategoryCount": 5
   },
-  "iterations": [],
-  "currentBestVersion": "1.9.0",
-  "bestTestScore": 0,
-  "converged": false,
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.9.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.489,
+        "passRate": 1.0,
+        "errorCategories": [
+          {
+            "category": "vague_distractor_rationales",
+            "frequency": 8,
+            "exampleErrors": [
+              "Chemist question: rationales are 'proportion error', 'equal amounts', 'calculation slip' with no specific calculations shown",
+              "Cyclist question: distractor D is just the remaining distance value with no explanation of what error leads to it"
+            ]
+          },
+          {
+            "category": "weak_distractor_plausibility",
+            "frequency": 2,
+            "exampleErrors": [
+              "Cyclist question: Choice D=36 is merely the remaining distance, not a result of a specific calculation error",
+              "Muffin question: distractor A rationale 'Subtracting 3 from 15' is vague and doesn't map to a real student mistake"
+            ]
+          },
+          {
+            "category": "abstract_equation_format",
+            "frequency": 1,
+            "exampleErrors": [
+              "Distribution equation '3(x-4)=2x+7' presented as bare algebra without real-world word problem context, lowering faithfulness to SAT style"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.316,
+        "passRate": 1.0
+      },
+      "improvementMade": "Addressed: vague_distractor_rationales, weak_distractor_plausibility, abstract_equation_format",
+      "newPromptVersion": "1.10.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.10.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 5.49,
+        "passRate": 1.0,
+        "errorCategories": [
+          {
+            "category": "repetitive_d1_structure",
+            "frequency": 5,
+            "exampleErrors": [
+              "All 5 difficulty-1 questions use identical 'total ÷ price = quantity' pattern (notebooks $3/$21, rental $45/$180, streaming $12/$84, catering $8/$152, mulch $5/$65)",
+              "No variety in equation structure at difficulty 1 — missing two-step or setup-from-narrative problems"
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 3,
+            "exampleErrors": [
+              "Delivery question (d2): 8 + 0.50m = 23 is effectively one-step (subtract then divide), borderline d1",
+              "Cell phone question (d2): 45 + 0.15t = 63 is same one-step structure, should be more complex for d2"
+            ]
+          },
+          {
+            "category": "convoluted_distractor_rationales",
+            "frequency": 4,
+            "exampleErrors": [
+              "Theater Q6 distractor D: claims '8a coefficient error → 810/5=162, approximated to 155' — no clean error path to 155",
+              "Cookies Q8 distractor A: multi-step error chain that doesn't cleanly produce the value 30"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5.49,
+        "passRate": 1.0
+      },
+      "improvementMade": "Addressed: repetitive_d1_structure, difficulty_miscalibration, convoluted_distractor_rationales",
+      "newPromptVersion": "1.11.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.11.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.50,
+        "passRate": 0.60,
+        "errorCategories": [
+          {
+            "category": "broken_distractor_arithmetic",
+            "frequency": 12,
+            "exampleErrors": [
+              "Q22-A: rationale says '102÷0.85=120, forgot first discount=127' but 120≠127",
+              "Q1-A: rationale says '28-4=24, then mistakenly chose 6' but 24≠6",
+              "Q21-B: rationale says 'n=235.29, arithmetic error=171' — no valid error path"
+            ]
+          },
+          {
+            "category": "handwave_error_paths",
+            "frequency": 8,
+            "exampleErrors": [
+              "Q1-A: 'then mistakenly chose 6' — masks that 24≠6",
+              "Q22-B: 'made arithmetic error = 135' — 156.92≠135",
+              "Q21-A: 'rounded incorrectly to 160' — 148.57→160 is arbitrary"
+            ]
+          },
+          {
+            "category": "missing_correct_rationale_key",
+            "frequency": 15,
+            "exampleErrors": [
+              "Q1-Q20: distractorRationale has only 3 keys (wrong answers), missing the correct answer's key",
+              "Q21-Q25 correctly include all 4 keys — inconsistency across batch"
+            ]
+          },
+          {
+            "category": "d2_still_too_simple",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q7 (tutoring: 40+35s=285) is structurally identical to D1 problems Q2 and Q3"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.70,
+        "passRate": 0.80
+      },
+      "improvementMade": "Addressed: broken_distractor_arithmetic (added WORKFLOW + BANNED patterns + ARITHMETIC VERIFICATION), missing_correct_rationale_key (new Section 5 requiring all 4 keys), handwave_error_paths (banned 'then mistakenly chose X' patterns), d2_still_too_simple (added qualifying/non-qualifying D2 examples)",
+      "newPromptVersion": "1.12.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.12.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.58,
+        "passRate": 0.90,
+        "errorCategories": [
+          {
+            "category": "final_step_arithmetic_errors",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q16: Correct setup (s=220, p=15, discount: 170+55×17=170+935) but final addition wrong: wrote 1070 instead of 1105",
+              "Q18: Correct tiers (5×8=40, 7×6=42) but final sum wrong: wrote 76 instead of 82"
+            ]
+          },
+          {
+            "category": "implausible_distractor_magnitudes",
+            "frequency": 4,
+            "exampleErrors": [
+              "Q3: Distractors 120 hours and 240 hours for a driving question where answer is 3 hours",
+              "Q4: Distractors 136 and 152 tickets when answer is 18 tickets"
+            ]
+          },
+          {
+            "category": "phantom_values_in_rationales",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q5: Rationale references '$10' but problem only contains $30, $20, and $150 — no $10 anywhere in stem"
+            ]
+          },
+          {
+            "category": "difficulty_undershoot_d4_d5",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q20: Labeled D4 but answer is just 46-40=6 (single subtraction), pay rates are redundant",
+              "Q22: Labeled D5 but is basic addition: 18+2+5.40=25.40, too simple"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.48,
+        "passRate": 1.0
+      },
+      "improvementMade": "Addressed: final_step_arithmetic_errors (new Section 11: POST-COMPLETION VERIFICATION with specific addition-error examples), implausible_distractor_magnitudes (new Section 5: MAGNITUDE RULE requiring same-order-of-magnitude), phantom_values_in_rationales (new Section 6: GROUNDING RULE requiring stem-only numbers), difficulty_undershoot (strengthened D4 to require 3+ algebraic steps and forbid single-subtraction answers)",
+      "newPromptVersion": "1.13.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.13.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 5.95,
+        "passRate": 1.0,
+        "errorCategories": [
+          {
+            "category": "structural_repetitiveness_d2_d3",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q6 and Q9 (D2) both use items+cost system-of-equations format (animals/legs and notebooks/folders)",
+              "Q12 and Q14 (D3) both use items+cost system format (cupcakes/cookies and widgets)"
+            ]
+          },
+          {
+            "category": "difficulty_borderline_calibration",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q16 and Q17 (D4) rely primarily on extra-info traps for difficulty; core algebra is 3-step subtract-and-divide",
+              "Q11 (D3) age problem structurally similar to D2 age problem (Q7), differentiated mainly by future-sum condition"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 6.00,
+        "passRate": 1.0
+      },
+      "improvementMade": "Final iteration (5/5). No prompt improvement needed — v1.13.0 achieved best scores across all iterations.",
+      "newPromptVersion": null
+    }
+  ],
+  "currentBestVersion": "1.13.0",
+  "bestTestScore": 6.00,
+  "converged": true,
   "startedAt": "2026-02-17T23:00:00.000Z",
-  "completedAt": null
+  "completedAt": "2026-02-18T14:00:00.000Z"
 }

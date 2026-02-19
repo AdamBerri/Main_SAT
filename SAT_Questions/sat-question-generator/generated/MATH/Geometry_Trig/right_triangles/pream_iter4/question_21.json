@@ -1,0 +1,56 @@
+{
+  "id": "rt-d5-q21-a1b2c3d4-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 5.0,
+    "computational": 4.5
+  },
+  "stem": "In triangle ABD, point C lies on segment BD such that AC is perpendicular to BD. Angle ADB = 60 degrees, angle ABD = 30 degrees, and AD = 8. What is the length of BD?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "8",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "12",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "16",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "8\\sqrt{3}",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The perpendicular AC creates two right triangles sharing side AC. In right triangle ACD (right angle at C): angle D = 60 degrees and hypotenuse AD = 8. So AC = 8 sin(60) = 8(sqrt(3)/2) = 4sqrt(3), and CD = 8 cos(60) = 8(1/2) = 4. In right triangle ACB (right angle at C): angle B = 30 degrees and opposite side AC = 4sqrt(3). Since tan(30) = AC/BC, we get BC = AC/tan(30) = 4sqrt(3)/(1/sqrt(3)) = 4sqrt(3) * sqrt(3) = 12. Therefore BD = BC + CD = 12 + 4 = 16. Verification: In triangle ACB, tan(30) = 4sqrt(3)/12 = sqrt(3)/3 = 1/sqrt(3). This equals tan(30). Confirmed.",
+  "distractorRationale": {
+    "A": "Inverts the tangent ratio in triangle ACB: computes BC = tan(30) * AC instead of AC/tan(30). BC = (1/sqrt(3)) * 4sqrt(3) = 4. Then BD = BC + CD = 4 + 4 = 8",
+    "B": "Correctly finds AC = 4sqrt(3) and BC = 12 from triangle ACB, but forgets to add CD = 4, reporting only BC = 12",
+    "C": "Correct: Finds AC = 4sqrt(3) and CD = 4 from the 60-degree right triangle, then BC = 12 from the 30-degree right triangle, and computes BD = 12 + 4 = 16",
+    "D": "Finds the hypotenuse AB of triangle ACB instead of the base BD. In triangle ACB with AC = 4sqrt(3) and angle B = 30: AB = AC/sin(30) = 4sqrt(3)/(1/2) = 8sqrt(3)"
+  },
+  "hasImage": true,
+  "imageDescription": "Triangle ABD is shown with vertices labeled A (top), B (bottom-left), and D (bottom-right). Point C lies on segment BD between B and D. A dashed line from A to C is drawn perpendicular to BD, with a small square marking the right angle at C. Angle ABD (at vertex B) is labeled 30 degrees, angle ADB (at vertex D) is labeled 60 degrees, and side AD is labeled 8. The segments BC and CD are shown along the base BD.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d5-q21"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "rt-d2-q07-c5f3b8d2-9a4e-4e1b-b6c7-3d2f8a1e4b9c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "An 80-foot conveyor belt runs from ground level up to a loading platform, making a 37-degree angle with the horizontal ground. Given that sin 37\u00b0 \u2248 3/5, cos 37\u00b0 \u2248 4/5, and tan 37\u00b0 \u2248 3/4, what is the horizontal distance from the bottom of the conveyor belt to the base of the platform, in feet?",
+  "choices": [
+    {"label": "A", "text": "48", "isCorrect": false},
+    {"label": "B", "text": "60", "isCorrect": false},
+    {"label": "C", "text": "64", "isCorrect": true},
+    {"label": "D", "text": "100", "isCorrect": false}
+  ],
+  "correctAnswer": "C",
+  "explanation": "The conveyor belt (80 feet) is the hypotenuse of the right triangle, and the horizontal distance is the side adjacent to the 37\u00b0 angle. Using cosine: cos 37\u00b0 = adjacent/hypotenuse = horizontal/80. Therefore, horizontal = 80 \u00d7 cos 37\u00b0 = 80 \u00d7 (4/5) = 64 feet.",
+  "distractorRationale": {
+    "A": "Used sin instead of cos, finding the vertical rise instead of the horizontal distance: 80 \u00d7 sin 37\u00b0 = 80 \u00d7 (3/5) = 48.",
+    "B": "Used tan instead of cos, treating the hypotenuse as the adjacent side in a tangent ratio: 80 \u00d7 tan 37\u00b0 = 80 \u00d7 (3/4) = 60.",
+    "C": "Correct: cos 37\u00b0 = adjacent/hypotenuse, so horizontal distance = 80 \u00d7 (4/5) = 64.",
+    "D": "Set up the cosine ratio inverted, dividing by cos instead of multiplying: 80 \u00f7 cos 37\u00b0 = 80 \u00f7 (4/5) = 80 \u00d7 (5/4) = 100."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle showing a conveyor belt as the hypotenuse labeled 80 ft, running from the lower left to the upper right. The angle between the conveyor belt and the horizontal ground at the lower left is labeled 37\u00b0. The horizontal leg along the ground is labeled with a question mark representing the horizontal distance. The vertical leg on the right represents the height of the loading platform.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d2-q7"
+  }
+}

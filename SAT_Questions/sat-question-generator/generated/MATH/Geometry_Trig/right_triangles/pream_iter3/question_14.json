@@ -1,0 +1,40 @@
+{
+  "id": "rt-d3-q14-e0b5d4a7-6f2c-4b8e-9d0a-4a5f6e7d8c9b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3,
+    "computational": 2
+  },
+  "stem": "A 40-foot ladder is leaned against a wall so that the base of the ladder makes a 37° angle with the ground. Given that sin 37° ≈ 3/5, cos 37° ≈ 4/5, and tan 37° ≈ 3/4, how high up the wall does the top of the ladder reach, in feet?",
+  "choices": [
+    {"label": "A", "text": "32", "isCorrect": false},
+    {"label": "B", "text": "24", "isCorrect": true},
+    {"label": "C", "text": "30", "isCorrect": false},
+    {"label": "D", "text": "20", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The ladder is the hypotenuse (40 ft), and we need the height on the wall (the side opposite the 37° angle). Using sine: sin 37° = opposite/hypotenuse = h/40. So h = 40 × (3/5) = 24 feet.",
+  "distractorRationale": {
+    "A": "Uses cos 37° instead of sin 37°, finding the distance from the wall along the ground rather than the height: 40 × 4/5 = 32",
+    "B": "Correct. Uses sin 37° = 3/5 to find the opposite side (wall height): 40 × 3/5 = 24",
+    "C": "Treats the ladder as the adjacent side and multiplies by tan 37° instead of using sin with the hypotenuse: 40 × 3/4 = 30",
+    "D": "Applies a wrong special-triangle ratio, treating the triangle as 30-60-90 where the side opposite 30° is half the hypotenuse: 40 ÷ 2 = 20"
+  },
+  "hasImage": false,
+  "imageDescription": "A right triangle with the hypotenuse representing the 40-foot ladder leaning against a vertical wall. The 37° angle is formed between the ladder and the horizontal ground at the base. The vertical leg is the height reached on the wall, and the horizontal leg is the distance from the wall to the base of the ladder.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d3-q14"
+  }
+}

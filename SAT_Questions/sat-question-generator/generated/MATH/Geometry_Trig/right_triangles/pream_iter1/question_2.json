@@ -1,0 +1,39 @@
+{
+  "id": "rt-d1-002-b8c3d4e5-2a19-4f6b-8d7e-3c5a9f1b2e6d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A rectangular park is 120 meters long and 50 meters wide. A jogger wants to take a shortcut by running diagonally from one corner of the park to the opposite corner. What is the length, in meters, of the diagonal path?",
+  "choices": [
+    {"label": "A", "text": "170", "isCorrect": false},
+    {"label": "B", "text": "130", "isCorrect": true},
+    {"label": "C", "text": "85", "isCorrect": false},
+    {"label": "D", "text": "70", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The diagonal of the rectangle forms the hypotenuse of a right triangle with legs 120 m and 50 m. Using the Pythagorean theorem: d = \u221a(120\u00b2 + 50\u00b2) = \u221a(14400 + 2500) = \u221a16900 = 130 meters. This is a 5-12-13 Pythagorean triple scaled by 10.",
+  "distractorRationale": {
+    "A": "Added the two side lengths instead of using the Pythagorean theorem, computing 120 + 50 = 170.",
+    "B": "Correct: \u221a(120\u00b2 + 50\u00b2) = \u221a(14400 + 2500) = \u221a16900 = 130.",
+    "C": "Averaged the two side lengths instead of using the Pythagorean theorem, computing (120 + 50) \u00f7 2 = 85.",
+    "D": "Subtracted the two side lengths instead of using the Pythagorean theorem, computing 120 - 50 = 70."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T14:30:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter1-d1-q2"
+  }
+}

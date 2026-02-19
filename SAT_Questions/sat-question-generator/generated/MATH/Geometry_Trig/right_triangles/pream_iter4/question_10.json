@@ -1,0 +1,40 @@
+{
+  "id": "rt-d2-q10-f8c6e2a5-3d7b-4b4e-e9f1-6a5c2d4b3e9f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 2.0
+  },
+  "stem": "A tramway cable runs from a base station on flat ground up to a mountain station, making a 37-degree angle with the horizontal ground. The horizontal distance between the two stations is 120 feet. Given that sin 37\u00b0 \u2248 3/5, cos 37\u00b0 \u2248 4/5, and tan 37\u00b0 \u2248 3/4, what is the vertical height gained by the tramway, in feet?",
+  "choices": [
+    {"label": "A", "text": "90", "isCorrect": true},
+    {"label": "B", "text": "72", "isCorrect": false},
+    {"label": "C", "text": "96", "isCorrect": false},
+    {"label": "D", "text": "160", "isCorrect": false}
+  ],
+  "correctAnswer": "A",
+  "explanation": "The horizontal distance (120 feet) is the side adjacent to the 37\u00b0 angle, and the vertical height is the side opposite. Using tangent: tan 37\u00b0 = opposite/adjacent = height/120. Therefore, height = 120 \u00d7 tan 37\u00b0 = 120 \u00d7 (3/4) = 90 feet.",
+  "distractorRationale": {
+    "A": "Correct: tan 37\u00b0 = opposite/adjacent, so height = 120 \u00d7 (3/4) = 90.",
+    "B": "Used sin instead of tan, treating the adjacent side as if it were the hypotenuse: 120 \u00d7 sin 37\u00b0 = 120 \u00d7 (3/5) = 72.",
+    "C": "Used cos instead of tan, treating the adjacent side as if it were the hypotenuse: 120 \u00d7 cos 37\u00b0 = 120 \u00d7 (4/5) = 96.",
+    "D": "Divided by tan instead of multiplying, inverting the tangent operation: 120 \u00f7 tan 37\u00b0 = 120 \u00f7 (3/4) = 120 \u00d7 (4/3) = 160."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle showing the tramway cable as the hypotenuse running from the lower-left base station to the upper-right mountain station. The angle between the cable and the horizontal ground at the base station is labeled 37\u00b0. The horizontal leg along the ground is labeled 120 ft. The vertical leg on the right represents the height gained and is labeled with a question mark.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d2-q10"
+  }
+}

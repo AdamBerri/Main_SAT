@@ -1,0 +1,55 @@
+{
+  "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A coffee shop sells two types of coffee beans. The manager mixes premium beans costing $18 per pound with regular beans costing $12 per pound to create a 20-pound blend that costs $14.40 per pound. How many pounds of premium beans are used in the blend?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "12",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "10",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "8",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "6",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let p = pounds of premium beans and r = pounds of regular beans. We can set up two equations: p + r = 20 (total weight) and 18p + 12r = 14.40(20) = 288 (total cost). From the first equation, r = 20 - p. Substituting into the second equation: 18p + 12(20 - p) = 288. Simplifying: 18p + 240 - 12p = 288, so 6p + 240 = 288. Subtracting 240 from both sides: 6p = 48. Dividing by 6: p = 8 pounds.",
+  "distractorRationale": {
+    "A": "Found the weight of regular beans instead of premium: r = 20 - 8 = 12.",
+    "B": "Assumed equal amounts of each bean: 20 / 2 = 10.",
+    "C": "Correct: Using p + r = 20 and 18p + 12r = 288, substitute r = 20 - p to get 18p + 12(20 - p) = 288, which simplifies to 6p = 48, so p = 8.",
+    "D": "Used the concentration ratio with half the total weight instead of the full weight: (18 - 14.40)/(18 - 12) = 3.60/6 = 0.6, then 0.6 x 10 = 6."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d3-q11"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "rt-d1-q04-e6b1d4f3-7c5a-4d2e-8f9b-4a3c7e1d2f6b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A 116-meter zip line cable runs from the top of an observation tower to a landing platform on the ground. The cable makes a 44-degree angle with the ground. Given that sin 44\u00b0 \u2248 20/29, cos 44\u00b0 \u2248 21/29, and tan 44\u00b0 \u2248 20/21, what is the horizontal distance from the base of the tower to the landing platform, in meters?",
+  "choices": [
+    {"label": "A", "text": "58", "isCorrect": false},
+    {"label": "B", "text": "58\u221a2", "isCorrect": false},
+    {"label": "C", "text": "80", "isCorrect": false},
+    {"label": "D", "text": "84", "isCorrect": true}
+  ],
+  "correctAnswer": "D",
+  "explanation": "In this right triangle, the zip line cable is the hypotenuse (116 meters) and the horizontal distance is the side adjacent to the 44\u00b0 angle. Using cos 44\u00b0 = adjacent/hypotenuse: adjacent = 116 \u00d7 cos 44\u00b0 = 116 \u00d7 (21/29) = (116 \u00f7 29) \u00d7 21 = 4 \u00d7 21 = 84 meters.",
+  "distractorRationale": {
+    "A": "Used wrong special triangle ratio \u2014 applied the 30-60-90 rule (short leg = hypotenuse/2) instead of using the given trig value: 116/2 = 58",
+    "B": "Used wrong special triangle ratio \u2014 applied the 45-45-90 rule (leg = hypotenuse/\u221a2) instead of using the given trig value: 116/\u221a2 = 58\u221a2",
+    "C": "Used sin instead of cos \u2014 found the vertical height (opposite) instead of the horizontal distance (adjacent): 116 \u00d7 (20/29) = 80",
+    "D": "Correct: horizontal distance = hypotenuse \u00d7 cos 44\u00b0 = 116 \u00d7 (21/29) = 84"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d1-q04"
+  }
+}

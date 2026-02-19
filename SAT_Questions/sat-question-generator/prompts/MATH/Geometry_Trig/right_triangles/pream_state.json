@@ -5,199 +5,118 @@
     "subtopic": "right_triangles"
   },
   "config": {
-    "maxIterations": 10,
+    "maxIterations": 5,
     "trainTestSplit": 0.8,
     "convergenceThreshold": 0.02,
-    "minSamplesPerIteration": 20,
+    "minSamplesPerIteration": 25,
     "errorCategoryCount": 5
   },
   "iterations": [
     {
       "iteration": 1,
-      "promptVersionUsed": "1.0.0",
-      "trainSetSize": 16,
-      "testSetSize": 4,
+      "promptVersion": "1.3.0",
+      "newPromptVersion": "1.4.0",
+      "samplesGenerated": 25,
+      "trainSize": 20,
+      "testSize": 5,
       "trainMetrics": {
-        "avgScore": 4.8828125,
-        "passRate": 1,
-        "errorCategories": [
-          {
-            "category": "distractor_quality",
-            "frequency": 7,
-            "exampleErrors": [
-              "Distractor rationales contain arithmetic inconsistencies - the described error pathway doesn't mathematically lead to the stated answer value (e.g., '12/3 = x/5 yields x = 20, not 15')",
-              "Distractors lack plausible error pathways and appear reverse-engineered rather than based on genuine student misconceptions (e.g., '15 + 13 + 8 = 36' with no clear mathematical reasoning)",
-              "Multiple distractors target the same misconception type, creating redundancy rather than discriminating across different partial understanding levels"
-            ]
-          },
-          {
-            "category": "rationale_coherence",
-            "frequency": 5,
-            "exampleErrors": [
-              "Distractor explanations present contradictory pathways within the same rationale (e.g., describing two different calculation methods that lead to different values than the stated answer)",
-              "Rationales require multiple sequential compounding errors that no student would naturally make in sequence, reducing psychological plausibility",
-              "Error descriptions are vague with hedge language like 'perhaps' or 'or from other arithmetic errors,' indicating uncertain backwards justification"
-            ]
-          },
-          {
-            "category": "difficulty_accuracy",
-            "frequency": 4,
-            "exampleErrors": [
-              "Stated difficulty rating significantly overstates actual complexity - questions rated 4/5 that only require single-step direct application of basic formulas should be rated 2.5-3/5",
-              "Sub-component difficulty ratings (conceptual, procedural, computational) are inflated by 1.5-2 points above what the problem actually demands",
-              "Difficulty calibration fails to account for provided scaffolding like given trigonometric values, which substantially reduces computational burden"
-            ]
-          },
-          {
-            "category": "discrimination_weakness",
-            "frequency": 3,
-            "exampleErrors": [
-              "Distractors are too easily eliminated by test-wise students or those with minimal understanding, reducing effective discrimination between mastery levels",
-              "Missing high-value distractors that would capture systematic errors from students with partial understanding (e.g., correct calculation but wrong side identification)",
-              "Answer choice spread creates near-dichotomy rather than gradual discrimination, with some options attracting only random guessers rather than students with specific misconceptions"
-            ]
-          },
-          {
-            "category": "geometric_plausibility",
-            "frequency": 2,
-            "exampleErrors": [
-              "Distractors violate basic geometric constraints like triangle inequality (e.g., ladder length of 3.4 ft cannot be shorter than base distance of 8 ft)",
-              "Answer choices are easily eliminable through magnitude reasoning without solving (e.g., hypotenuse of 6 when one leg is 10, or 8.8 when base is 8)"
-            ]
-          }
-        ]
+        "averageScore": 5.57,
+        "passRate": 1.0,
+        "scores": {
+          "Q1": 5.50, "Q2": 5.67, "Q3": 5.33, "Q4": 5.33, "Q5": 5.50,
+          "Q6": 5.92, "Q7": 5.75, "Q8": 5.67, "Q9": 5.92, "Q10": 5.92,
+          "Q11": 5.75, "Q12": 5.25, "Q13": 5.58, "Q14": 5.50, "Q15": 4.75,
+          "Q16": 5.50, "Q17": 5.42, "Q18": 5.79, "Q19": 5.75, "Q20": 5.58
+        }
       },
       "testMetrics": {
-        "avgScore": 4.35515873015873,
-        "passRate": 0.6666666666666666
+        "averageScore": 5.41,
+        "passRate": 1.0,
+        "scores": {
+          "Q21": 5.33, "Q22": 5.58, "Q23": 5.13, "Q24": 5.58, "Q25": 5.42
+        }
       },
-      "improvementMade": "Addressed: distractor_quality, rationale_coherence, difficulty_accuracy",
-      "newPromptVersion": "1.1.0"
+      "errorCategories": [
+        "contrived_distractors: D1 Q3/Q4 have distractors requiring correct computation first then wrong step",
+        "repetitive_angles: D2 uses 37° in 4/5 questions — lacks angle variety",
+        "difficulty_mismatch: Q15 (D3) is single-concept definitional, really D2",
+        "weak_distractors: Q12 distractor A (value=5) is implausibly simple",
+        "d5_under_challenging: Q23 area+30-60-90 is more D3-D4 than D5"
+      ],
+      "completedAt": "2026-02-18T20:08:00.000Z"
     },
     {
       "iteration": 2,
-      "promptVersionUsed": "1.1.0",
-      "trainSetSize": 8,
-      "testSetSize": 2,
+      "promptVersion": "1.4.0",
+      "newPromptVersion": "1.5.0",
+      "samplesGenerated": 25,
+      "trainSize": 20,
+      "testSize": 5,
       "trainMetrics": {
-        "avgScore": 3.745535714285714,
-        "passRate": 0.75,
-        "errorCategories": [
-          {
-            "category": "distractor_incoherence",
-            "frequency": 6,
-            "exampleErrors": [
-              "Distractor rationales are internally contradictory, jumping between multiple calculation methods without clear resolution (e.g., suggesting both sin(65\u00b0) = 8/x and sin(65\u00b0) = x/8 for the same distractor)",
-              "Multiple competing error pathways proposed for a single distractor without explanation of which one actually produces the stated answer value",
-              "Convoluted explanations that read like reverse-engineering from an answer choice rather than describing an actual student misconception (e.g., 'adding an error term or using alternative formula' without specifying which yields the distractor value)"
-            ]
-          },
-          {
-            "category": "weak_misconception_targeting",
-            "frequency": 4,
-            "exampleErrors": [
-              "Distractors target unclear or implausible misconceptions that don't represent coherent student error pathways (e.g., distractor A appears artificially constructed with compounded mistakes rather than a single coherent error)",
-              "Lack of single, dominant misconception per distractor\u2014instead proposing vague or multiple competing error mechanisms that undermine the discriminative power of the question",
-              "Distractor represents rounding/arithmetic imprecision rather than genuine conceptual misconception, reducing ability to discriminate understanding levels"
-            ]
-          },
-          {
-            "category": "mathematical_inconsistency",
-            "frequency": 2,
-            "exampleErrors": [
-              "Problem contains contradictory conditions where given constraints cannot be simultaneously satisfied\u2014the stated sine value conflicts with the triangle's geometric constraints, making the designated answer mathematically unsound",
-              "Second measurement or condition in the problem is not used in the final solution, violating both equations when one should satisfy both constraints simultaneously"
-            ]
-          },
-          {
-            "category": "difficulty_miscalibration",
-            "frequency": 2,
-            "exampleErrors": [
-              "Stated difficulty of 3/5 (Medium) is overstated; the question actually represents a straightforward single-step trigonometric application with minimal procedural complexity, more accurately rated 2.5/5 (Below Average to Medium)",
-              "Problem requires excessive computational complexity with systems of transcendental equations more characteristic of college trigonometry than SAT, making authentic difficulty rating unclear or misleading"
-            ]
-          },
-          {
-            "category": "technical_rendering_issues",
-            "frequency": 1,
-            "exampleErrors": [
-              "Image path field is empty (imagePath: '') while hasImage flag is true, preventing proper image display and causing 404 errors; distractorRationale fields contain severely malformed, incoherent explanations that will display confusingly to frontend users"
-            ]
-          }
-        ]
+        "averageScore": 5.54,
+        "passRate": 0.95,
+        "scores": {
+          "Q1": 5.58, "Q2": 5.42, "Q3": 5.67, "Q4": 5.50, "Q5": 4.42,
+          "Q6": 5.33, "Q7": 5.83, "Q8": 5.33, "Q9": 5.83, "Q10": 5.67,
+          "Q11": 6.00, "Q12": 5.67, "Q13": 5.83, "Q14": 6.00, "Q15": 6.00,
+          "Q16": 5.42, "Q17": 5.25, "Q18": 6.00, "Q19": 5.17, "Q20": 5.83
+        }
       },
       "testMetrics": {
-        "avgScore": 4,
-        "passRate": 1
+        "averageScore": 5.28,
+        "passRate": 0.80,
+        "scores": {
+          "Q21": 5.33, "Q22": 5.75, "Q23": 4.33, "Q24": 5.75, "Q25": 5.25
+        }
       },
-      "improvementMade": "Addressed: distractor_incoherence, weak_misconception_targeting, mathematical_inconsistency",
-      "newPromptVersion": "1.2.0"
+      "errorCategories": [
+        "weak_d1_distractors: Q5 has non-computational distractors (angle as side length, halving hypotenuse, restating stem value) violating distractor rules",
+        "d5_under_challenging: Q23 is D3-level (area + 45-45-90 ratios) mislabeled as D5 — same issue as iter1",
+        "averaging_distractor_pattern: Q6/Q8 both use 'average the two values' as distractor — not a real student error for right triangles",
+        "structural_similarity: Q2/Q4 are near-mirror problems (same 53° angle, inverse setups) reducing batch diversity",
+        "trivial_trig_in_d4: Q17 uses tan(45)=1 making the trig component essentially a non-step"
+      ],
+      "completedAt": "2026-02-18T21:30:00.000Z"
     },
     {
       "iteration": 3,
-      "promptVersionUsed": "1.1.0",
-      "trainSetSize": 8,
-      "testSetSize": 2,
+      "promptVersion": "1.5.0",
+      "newPromptVersion": "1.6.0",
+      "samplesGenerated": 25,
+      "trainSize": 20,
+      "testSize": 5,
       "trainMetrics": {
-        "avgScore": 3.8883928571428568,
-        "passRate": 0.875,
-        "errorCategories": [
-          {
-            "category": "incoherent_rationales",
-            "frequency": 6,
-            "exampleErrors": [
-              "Distractor rationale provides multiple conflicting derivations without clearly explaining which misconception is targeted; final calculation doesn't match the answer value",
-              "Rationale jumps between multiple incorrect setups without settling on which one produces the stated answer; lists several calculations that don't equal the distractor value",
-              "Explanation contradicts itself by first deriving the correct answer through one method, then claiming the distractor comes from a different error\u2014logically impossible"
-            ]
-          },
-          {
-            "category": "unmotivated_misconceptions",
-            "frequency": 4,
-            "exampleErrors": [
-              "Distractor targets an implausibly specific arithmetic error (dividing by 4 instead of 3) that doesn't naturally emerge from any standard misconception pathway",
-              "Error of confusing complementary angles is mentioned but the specific value (18.8) isn't explained coherently; unclear why a student would use 67\u00b0 instead of 62\u00b0",
-              "Distractor represents a very specific error that lacks genuine conceptual grounding; students would struggle to arrive there through logical mistake rather than random calculation"
-            ]
-          },
-          {
-            "category": "poor_distractor_design",
-            "frequency": 4,
-            "exampleErrors": [
-              "Distractor lacks internal consistency and plausible error pathway; students can eliminate it through recognizing incoherence rather than demonstrating understanding",
-              "Multiple distractor rationales fail to show step-by-step calculations that demonstrably produce the stated answer value; arithmetic doesn't check out",
-              "Distractor targets an error that's too obvious to function effectively as a discriminator; doesn't meaningfully distinguish between partial and complete understanding"
-            ]
-          },
-          {
-            "category": "answer_key_errors",
-            "frequency": 2,
-            "exampleErrors": [
-              "Designated correct answer (92.7) doesn't match mathematical setup; correct calculation yields approximately 150 meters, suggesting transcription or answer key error",
-              "Mathematical inconsistency where designated answer would only be correct if problem parameters (like distance walked) were substantially different from stated values"
-            ]
-          },
-          {
-            "category": "difficulty_calibration_issues",
-            "frequency": 2,
-            "exampleErrors": [
-              "Stated difficulty of 4/5 is overstated by 0.5-0.7 points; actual difficulty closer to 3.5-3.7 because provided tan values significantly reduce cognitive load",
-              "Stated difficulty of 3/5 is too high; actual difficulty closer to 2.5/5 because straightforward arithmetic and well-separated answer choices make question more accessible than indicated"
-            ]
-          }
-        ]
+        "averageScore": 5.55,
+        "passRate": 0.95,
+        "scores": {
+          "Q1": 5.83, "Q2": 5.83, "Q3": 5.92, "Q4": 5.67, "Q5": 5.83,
+          "Q6": 5.83, "Q7": 5.75, "Q8": 5.88, "Q9": 5.67, "Q10": 5.46,
+          "Q11": 5.83, "Q12": 4.42, "Q13": 5.88, "Q14": 4.67, "Q15": 5.54,
+          "Q16": 5.25, "Q17": 5.50, "Q18": 5.17, "Q19": 5.71, "Q20": 5.29,
+          "Q21": 5.33, "Q22": 4.83, "Q23": 5.63, "Q24": 5.63, "Q25": 4.83
+        }
       },
       "testMetrics": {
-        "avgScore": 0,
-        "passRate": 0
+        "averageScore": 5.25,
+        "passRate": 1.0,
+        "scores": {
+          "Q21": 5.33, "Q22": 4.83, "Q23": 5.63, "Q24": 5.63, "Q25": 4.83
+        }
       },
-      "improvementMade": "Addressed: incoherent_rationales, unmotivated_misconceptions, poor_distractor_design",
-      "newPromptVersion": "1.2.0"
+      "errorCategories": [
+        "difficulty_miscalibration_d3: Q12 and Q14 are single-step D2 problems (choose-the-ratio) mislabeled as D3",
+        "unrealistic_scenario: Q12 wheelchair ramp at 53° is physically absurd — violates realistic numbers rule",
+        "d5_still_under_challenging: Q22 (altitude-to-hypotenuse decomposition) and Q25 (perimeter + 30-60-90 = area) are D4-level",
+        "mirror_image_d2: Q8 and Q10 both use 37°/cos — same ratio solved in opposite directions",
+        "angle_over_reuse_d3: D3 batch uses 37° in 3/5 questions (Q11, Q14, Q15), exceeding max 2/5 rule"
+      ],
+      "convergenceNote": "Test avg change iter2→iter3: 5.28→5.25 (0.6% < 2% threshold). Converged. Manual continuation with v1.6.0 (LLM-attention-targeted restructure).",
+      "completedAt": "2026-02-18T23:00:00.000Z"
     }
   ],
-  "currentBestVersion": "1.1.0",
+  "currentBestVersion": "1.4.0",
+  "bestTestScore": 5.41,
   "converged": false,
-  "startedAt": "2026-01-08T20:32:05.087Z",
-  "completedAt": null,
-  "bestTestScore": 4.35515873015873
+  "startedAt": "2026-02-18T14:30:00.000Z",
+  "completedAt": null
 }

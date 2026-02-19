@@ -1,0 +1,39 @@
+{
+  "id": "b4d5e6f7-8a9b-4c01-2d34-5e6f7a8b9c0d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A factory produces standard widgets and deluxe widgets. Each standard widget requires 2 hours of labor, and each deluxe widget requires 5 hours of labor. In one week, the factory produced a total of 110 widgets using 400 hours of labor. How many deluxe widgets were produced that week?",
+  "choices": [
+    {"label": "A", "text": "45", "isCorrect": false},
+    {"label": "B", "text": "50", "isCorrect": false},
+    {"label": "C", "text": "60", "isCorrect": true},
+    {"label": "D", "text": "80", "isCorrect": false}
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let s represent the number of standard widgets and d represent the number of deluxe widgets. The two equations are s + d = 110 and 2s + 5d = 400. From the first equation, s = 110 - d. Substituting into the labor equation: 2(110 - d) + 5d = 400. Distributing: 220 - 2d + 5d = 400. Combining like terms: 220 + 3d = 400. Subtracting 220 from both sides: 3d = 180. Dividing by 3: d = 60.",
+  "distractorRationale": {
+    "A": "Distributed 2 to 110 but not to d when substituting: 220 - d + 5d = 400, so 4d = 180, and d = 180 / 4 = 45.",
+    "B": "Solved the system correctly but reported the number of standard widgets instead of deluxe: s = 110 - 60 = 50.",
+    "C": "Correct: Set up s + d = 110 and 2s + 5d = 400, substituted s = 110 - d, simplified to 3d = 180, so d = 180 / 3 = 60.",
+    "D": "Divided total labor hours by deluxe labor hours without using the system: 400 / 5 = 80."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d3-q14"
+  }
+}

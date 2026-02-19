@@ -1,0 +1,40 @@
+{
+  "id": "rt-d4-q19-e6b0d4a2-7f1a-4b5e-c29d-4a8f6b0e2d5c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.5,
+    "computational": 4.0
+  },
+  "stem": "An architect is designing a triangular glass panel for a building facade. The panel is a right triangle with the right angle at one corner. The base of the panel is 15 feet, and the angle between the base and the hypotenuse is 53 degrees. The glass costs $8 per square foot, and the building has 12-foot ceilings on each floor. Using the approximation tan(53) = 4/3, what is the total cost of the glass needed for this panel?",
+  "choices": [
+    {"label": "A", "text": "$720", "isCorrect": false},
+    {"label": "B", "text": "$1200", "isCorrect": true},
+    {"label": "C", "text": "$2400", "isCorrect": false},
+    {"label": "D", "text": "$1500", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The ceiling height (12 feet) is extra information that should be ignored. The height of the right triangle is found using tan(53) = height/base: height = 15 * (4/3) = 20 feet. The area of the right triangle is (1/2) * 15 * 20 = 150 square feet. The total glass cost is 150 * $8 = $1200.",
+  "distractorRationale": {
+    "A": "Used sin(53) = 4/5 instead of tan(53) = 4/3 to find the height: height = 15 * (4/5) = 12, area = (1/2)(15)(12) = 90, cost = 90 * 8 = $720",
+    "B": "Correct: height = 15 * tan(53) = 15 * (4/3) = 20, area = (1/2)(15)(20) = 150, cost = 150 * 8 = $1200",
+    "C": "Forgot the 1/2 factor in the triangle area formula, computing area as base times height instead: area = 15 * 20 = 300, cost = 300 * 8 = $2400",
+    "D": "Confused the hypotenuse for the height in the area formula: hyp = sqrt(15^2 + 20^2) = sqrt(625) = 25, area = (1/2)(15)(25) = 187.5, cost = 187.5 * 8 = $1500"
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle with the right angle at the bottom-left corner. The horizontal base is labeled 15 ft along the bottom. The vertical side is on the left (labeled h). The hypotenuse runs from the bottom-right corner to the top-left corner. The angle at the bottom-right corner between the base and hypotenuse is labeled 53 degrees. The interior of the triangle is shaded to represent the glass panel.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d4-q19"
+  }
+}

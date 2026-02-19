@@ -1,0 +1,54 @@
+{
+  "id": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A parking meter contains 42 coins consisting of quarters and dimes with a total value of $7.80. How many quarters are in the meter?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "18",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "20",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "22",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "24",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Let q represent the number of quarters. Then (42 - q) represents the number of dimes. The total value in dollars is: 0.25q + 0.10(42 - q) = 7.80. Expanding: 0.25q + 4.20 - 0.10q = 7.80. Combining like terms: 0.15q + 4.20 = 7.80. Subtracting 4.20 from both sides: 0.15q = 3.60. Dividing by 0.15: q = 24. We can verify: 24 quarters equal 24(0.25) = $6.00, and 18 dimes equal 18(0.10) = $1.80, totaling $6.00 + $1.80 = $7.80.",
+  "distractorRationale": {
+    "A": "Confusing the number of quarters with the number of dimes. There are 42 - 24 = 18 dimes in the meter.",
+    "B": "Incorrectly assuming the coins are split based on value ratio rather than solving the system. Estimating quarters as approximately 42/2 = 21, rounded to 20.",
+    "C": "Making an arithmetic error when solving 0.15q = 3.60. Incorrectly calculating 3.60/0.15 by computing 360/15 = 24, then subtracting 2 to get 22."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T01:30:00.000Z",
+    "promptVersion": "1.11.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d3-q14"
+  }
+}

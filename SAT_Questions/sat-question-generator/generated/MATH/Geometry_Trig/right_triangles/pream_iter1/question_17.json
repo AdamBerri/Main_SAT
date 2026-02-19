@@ -1,0 +1,39 @@
+{
+  "id": "rt-d4-q17-b4c5d6e7-8f9a-4b01-c234-d5e6f7a8b9c0",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.0,
+    "computational": 3.5
+  },
+  "stem": "Two buildings stand on opposite sides of a straight, level street that is 60 feet wide. From the top of Building A, the angle of depression to the base of Building B is 53°. From the top of Building B, the angle of depression to the base of Building A is 37°. What is the sum of the heights, in feet, of the two buildings?\n\n(tan 53° = 4/3 and tan 37° = 3/4)",
+  "choices": [
+    { "label": "A", "text": "84", "isCorrect": false },
+    { "label": "B", "text": "125", "isCorrect": true },
+    { "label": "C", "text": "160", "isCorrect": false },
+    { "label": "D", "text": "80", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "For Building A, the angle of depression from its top to the base of Building B is 53°. By alternate interior angles, the angle of elevation from the base of Building B to the top of Building A is also 53°. In the right triangle with the height of Building A as the opposite side and the 60-foot street as the adjacent side: tan 53° = (height of A) / 60, so height of A = 60 × (4/3) = 80 feet. Similarly, the angle of elevation from the base of Building A to the top of Building B is 37°: tan 37° = (height of B) / 60, so height of B = 60 × (3/4) = 45 feet. The sum of the heights is 80 + 45 = 125 feet.",
+  "distractorRationale": {
+    "A": "Uses sin instead of tan for both buildings: height_A = 60 × sin 53° = 60 × (4/5) = 48, height_B = 60 × sin 37° = 60 × (3/5) = 36, sum = 48 + 36 = 84",
+    "B": "Correct: height_A = 60 × tan 53° = 60 × (4/3) = 80, height_B = 60 × tan 37° = 60 × (3/4) = 45, sum = 80 + 45 = 125",
+    "C": "Assumes both buildings have the same height as Building A and doubles it: 80 × 2 = 160",
+    "D": "Computes only the height of Building A and stops, reporting 60 × (4/3) = 80"
+  },
+  "hasImage": true,
+  "imageDescription": "A cross-section diagram showing two buildings on opposite sides of a 60-foot-wide street. Building A is on the left, Building B on the right. A dashed line from the top of Building A to the base of Building B shows the 53° angle of depression. A dashed line from the top of Building B to the base of Building A shows the 37° angle of depression. The street width of 60 ft is labeled along the ground between the two buildings.",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T14:30:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter1-d4-q17"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "rt-d5-q21-b3e7a1f9-4c8d-4e2b-9a5f-1d3c6e8b4a7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.5
+  },
+  "stem": "Two hikers start from the same point on flat ground. Hiker A walks due east and Hiker B walks due north. After some time, Hiker A has walked 50 meters more than Hiker B, and the straight-line distance between the two hikers is 50 meters more than the distance Hiker A walked. How far, in meters, did Hiker B walk?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "50",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "50\\sqrt{3}",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "150",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "200",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let b be the distance Hiker B walked (northward leg). Then Hiker A walked b + 50 (eastward leg), and the straight-line distance between them (hypotenuse) is (b + 50) + 50 = b + 100. By the Pythagorean theorem: b^2 + (b + 50)^2 = (b + 100)^2. Expanding: b^2 + b^2 + 100b + 2500 = b^2 + 200b + 10000. Simplifying: b^2 - 100b - 7500 = 0. Using the quadratic formula: b = (100 + sqrt(10000 + 30000)) / 2 = (100 + sqrt(40000)) / 2 = (100 + 200) / 2 = 150. Verification: Hiker B = 150 m, Hiker A = 200 m, hypotenuse = 250 m. Check: 150^2 + 200^2 = 22500 + 40000 = 62500 = 250^2. This is a 3-4-5 right triangle scaled by 50.",
+  "distractorRationale": {
+    "A": "Sets up the Pythagorean equation b^2 + (b + 50)^2 = (b + 100)^2 correctly and expands to get 2b^2 + 100b + 2500 = b^2 + 200b + 10000, but makes a sign error when moving 200b to the left side, writing b^2 + 100b - 7500 = 0 instead of b^2 - 100b - 7500 = 0. Solving: b = (-100 + sqrt(10000 + 30000)) / 2 = (-100 + 200) / 2 = 50",
+    "B": "Expands (b + 100)^2 incorrectly as b^2 + 100b + 10000 (forgetting to double the middle term, which should be 200b). This yields 2b^2 + 100b + 2500 = b^2 + 100b + 10000, which simplifies to b^2 = 7500, giving b = sqrt(7500) = 50\\sqrt{3}",
+    "C": "Correct: Sets up b^2 + (b + 50)^2 = (b + 100)^2, expands and simplifies to b^2 - 100b - 7500 = 0, and solves using the quadratic formula to get b = (100 + 200) / 2 = 150",
+    "D": "Correctly solves the quadratic to find b = 150 but then reports Hiker A's distance (b + 50 = 200) instead of Hiker B's distance = 200"
+  },
+  "hasImage": true,
+  "imageDescription": "A right-angle coordinate setup is shown. Point O is the starting point at the origin. Hiker A's path goes horizontally to the right (east) to a point labeled A, with the distance labeled b + 50. Hiker B's path goes vertically upward (north) to a point labeled B, with the distance labeled b. A dashed line connects A to B representing the hypotenuse, labeled b + 100. The right angle at O is marked.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d5-q21"
+  }
+}

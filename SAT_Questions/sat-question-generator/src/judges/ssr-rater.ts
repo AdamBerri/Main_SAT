@@ -7,7 +7,7 @@ import type {
   AnchorSet,
 } from '../core/types';
 import { SSR_CONFIG, MODEL_CONFIG } from '../core/config';
-import { createGLMClient, extractText } from '../core/glm-client';
+import { createGLMClient, extractText, resolveLLMApiKey } from '../core/glm-client';
 import { getAnchorSet } from './anchors';
 import { getElicitationPrompt } from './elicitation-prompts';
 
@@ -265,11 +265,6 @@ Output the similarity distribution as JSON:`,
  * Factory function to create SSR rater with environment variables
  */
 export function createSSRRater(): SSRRater {
-  const apiKey = process.env.ZHIPU_API_KEY;
-
-  if (!apiKey) {
-    throw new Error('Missing ZHIPU_API_KEY environment variable.');
-  }
-
+  const apiKey = resolveLLMApiKey();
   return new SSRRater(apiKey);
 }

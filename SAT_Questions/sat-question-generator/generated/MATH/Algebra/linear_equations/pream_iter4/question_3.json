@@ -1,0 +1,55 @@
+{
+  "id": "c3d4e5f6-a7b8-4c90-1d23-e4f5a6b7c8d9",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "Marcus drove at a constant speed of 60 miles per hour. If he traveled a total distance of 180 miles, for how many hours did he drive?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "2",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "120",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "240",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "3",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Let h represent the number of hours. Using the distance formula distance = rate × time: 60h = 180. Dividing both sides by 60: h = 180 ÷ 60 = 3. Marcus drove for 3 hours.",
+  "distractorRationale": {
+    "A": "Student subtracted speed from distance first, then divided: (180 - 60) ÷ 60 = 120 ÷ 60 = 2",
+    "B": "Student subtracted the rate from the distance: 180 - 60 = 120",
+    "C": "Student added the rate to the distance: 180 + 60 = 240",
+    "D": "Correct: divided distance by rate: 180 ÷ 60 = 3"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d1-q3"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "b2f7c8e1-4d9a-4c3b-8e5f-1a6d9c2e7b4f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "The equation C = 25 + 0.15m represents the total cost C, in dollars, for a month of cell phone service where m is the number of minutes used beyond the included plan minutes. What is the meaning of the number 25 in this equation?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The cost per minute for extra usage",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The total number of included minutes",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The fixed monthly fee for the plan",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The maximum cost allowed per month",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "In the linear equation C = 25 + 0.15m, the equation is in the form y = b + mx, where b is the y-intercept (constant term) and m is the slope (rate of change). The 25 is the constant term that represents the base cost when m = 0 (no extra minutes used). This is the fixed monthly fee charged regardless of extra usage. The 0.15 represents the cost per additional minute.",
+  "distractorRationale": {
+    "A": "Student confused the constant term with the coefficient: incorrectly identified 0.15 as what was being asked, but stated 25 instead through misreading = 25",
+    "B": "Student confused the cost constant with a quantity, thinking 25 represented included minutes rather than dollars = 25",
+    "C": "Correct: The constant term 25 represents the base cost when m = 0, which is the fixed monthly fee = 25",
+    "D": "Student misinterpreted the constant as a limiting value rather than understanding it as the base cost in the linear model = 25"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d2-q7"
+  }
+}

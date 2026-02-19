@@ -1,0 +1,55 @@
+{
+  "id": "d8e6f9a3-4c7b-4d2a-9f8e-3b5c7a9d1e4f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.0
+  },
+  "stem": "A real estate agent earns commission on property sales using a tiered structure: 6% on the first $150,000 of a sale and 4% on any amount above $150,000. If the agent earned a total commission of $18,000 on a single property sale, what was the sale price of the property in dollars?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "300,000",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "350,000",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "375,000",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "450,000",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The commission on the first $150,000 is 0.06 × 150,000 = $9,000. The remaining commission is 18,000 - 9,000 = $9,000, which comes from the amount above $150,000 at 4%. Let x be the amount above $150,000. Then 0.04x = 9,000, so x = 9,000 ÷ 0.04 = 225,000. Total sale price = 150,000 + 225,000 = 375,000. Verification: 0.06 × 150,000 + 0.04 × 225,000 = 9,000 + 9,000 = 18,000.",
+  "distractorRationale": {
+    "A": "Used a single 6% rate for the entire sale: 18,000 ÷ 0.06 = 300,000.",
+    "B": "Swapped the tier rates, applying 4% to the first $150,000 and 6% above: 0.04 × 150,000 = 6,000, remaining 18,000 - 6,000 = 12,000, then 12,000 ÷ 0.06 = 200,000, total = 150,000 + 200,000 = 350,000.",
+    "C": "Correct: first $150,000 earns 0.06 × 150,000 = 9,000, remaining 9,000 ÷ 0.04 = 225,000, total = 150,000 + 225,000 = 375,000.",
+    "D": "Used a single 4% rate for the entire sale: 18,000 ÷ 0.04 = 450,000."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d5-q24"
+  }
+}

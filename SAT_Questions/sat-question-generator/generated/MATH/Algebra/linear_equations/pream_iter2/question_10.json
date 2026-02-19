@@ -1,0 +1,55 @@
+{
+  "id": "e9f7d6c5-4b8a-4e3d-9a8c-2b5d7f1e4c3a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A cell phone plan charges $45 per month plus $0.15 for each text message sent. If a customer's bill for one month was $63, how many text messages did the customer send that month?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "90",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "120",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "180",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "420",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let t represent the number of text messages sent. The total bill is the monthly charge plus the cost of text messages: 45 + 0.15t = 63. Subtracting 45 from both sides: 0.15t = 18. Dividing both sides by 0.15: t = 120. To verify: 45 + 0.15(120) = 45 + 18 = 63.",
+  "distractorRationale": {
+    "A": "This results from an error in the division step. After correctly finding 0.15t = 18, the student divides 18 by 0.15 but makes an error: computing 18 ÷ 0.15 as 18 ÷ 2 = 9, then multiplying by 10 to get 90, or directly miscomputing the division as 90.",
+    "B": "Correct. Setting up the equation 45 + 0.15t = 63, subtracting 45 gives 0.15t = 18, and dividing by 0.15 gives t = 120.",
+    "C": "This results from an error when subtracting the monthly charge. Computing 63 - 45 incorrectly as 27 gives 0.15t = 27, so t = 27 ÷ 0.15 = 180.",
+    "D": "This results from adding the monthly charge instead of subtracting: 63 + 45 = 108, then dividing by 0.15 to get 108 ÷ 0.15 = 720. Recognizing this is too large and halving gives 360, or making another arithmetic error to arrive at 420, or computing 63 ÷ 0.15 = 420 by forgetting to subtract the base charge first."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T00:30:00.000Z",
+    "promptVersion": "1.10.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter2-batch1-q10"
+  }
+}

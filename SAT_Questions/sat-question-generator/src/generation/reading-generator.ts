@@ -8,7 +8,7 @@ import type {
   ReadingQuestion,
 } from '../core/types';
 import { MODEL_CONFIG, getGeneratedDir, ensureDirectoryExists } from '../core/config';
-import { createGLMClient, extractText } from '../core/glm-client';
+import { createGLMClient, extractText, resolveLLMApiKey } from '../core/glm-client';
 import {
   sampleReadingParams,
   buildPassageGenerationPrompt,
@@ -335,9 +335,6 @@ export class ReadingQuestionGenerator {
  * Create reading generator from environment
  */
 export function createReadingGenerator(): ReadingQuestionGenerator {
-  const apiKey = process.env.ZHIPU_API_KEY;
-  if (!apiKey) {
-    throw new Error('Missing ZHIPU_API_KEY');
-  }
+  const apiKey = resolveLLMApiKey();
   return new ReadingQuestionGenerator(apiKey);
 }

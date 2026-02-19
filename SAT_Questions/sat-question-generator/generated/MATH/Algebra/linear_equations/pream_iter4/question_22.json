@@ -1,0 +1,55 @@
+{
+  "id": "b9e5d3a7-2c4f-4b8a-9d6e-1f3c5a7b9d2e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.0
+  },
+  "stem": "A coffee roaster wants to price a specialty blend so that the profit is exactly 30% of the production cost. If the production cost is $18 per pound and the roaster must also pay a $2 per pound packaging fee (which is not part of the profit calculation base), what should the selling price be per pound?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "23.40",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "25.40",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "26.00",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "28.40",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The profit must be 30% of the production cost: profit = 0.30 × 18 = 5.40. The selling price must cover the production cost ($18), the packaging fee ($2), and the profit ($5.40). Therefore, selling price = 18 + 2 + 5.40 = 25.40. The selling price should be $25.40 per pound.",
+  "distractorRationale": {
+    "A": "Calculated profit as 30% of production cost only: 18 × 0.30 = 5.40, then added only this to production cost: 18 + 5.40 = 23.40.",
+    "B": "Correct: profit is 30% of production cost = 0.30 × 18 = 5.40, selling price = 18 + 2 + 5.40 = 25.40.",
+    "C": "Calculated profit as 30% of total cost including packaging: 0.30 × (18 + 2) = 6, then selling price = 18 + 2 + 6 = 26.00.",
+    "D": "Calculated profit as 30% of selling price, setting up s = 18 + 2 + 0.30s, solving 0.70s = 20, getting s = 200/7 ≈ 28.57, then incorrectly used 18 + 2 + 0.30 × 28 = 28.40."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d5-q22"
+  }
+}

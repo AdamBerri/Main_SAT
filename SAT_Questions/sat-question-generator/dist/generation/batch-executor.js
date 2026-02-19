@@ -44,6 +44,7 @@ const p_limit_1 = __importDefault(require("p-limit"));
 const generator_1 = require("./generator");
 const evaluator_1 = require("../evaluation/evaluator");
 const config_1 = require("../core/config");
+const glm_client_1 = require("../core/glm-client");
 /**
  * API Key Pool Manager
  * Manages multiple Zhipu API keys with rate limiting
@@ -305,8 +306,16 @@ function createBatchExecutor(concurrency) {
         if (key)
             apiKeys.push(key);
     }
+    // Alternative env name for custom/local backends
+    if (apiKeys.length === 0 && process.env.LLM_API_KEY) {
+        apiKeys.push(process.env.LLM_API_KEY);
+    }
+    // Keyless local backend (OpenAI-compatible server on RunPod, vLLM, MiniMax, etc.)
     if (apiKeys.length === 0) {
-        throw new Error('No ZHIPU_API_KEY found in environment');
+        apiKeys.push((0, glm_client_1.resolveLLMApiKey)());
+    }
+    if (apiKeys.length === 0) {
+        throw new Error('No API key or local LLM backend configured');
     }
     console.log(`Batch executor initialized with ${apiKeys.length} API key(s)`);
     return new BatchExecutor(apiKeys, concurrency);

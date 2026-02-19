@@ -1,0 +1,40 @@
+{
+  "id": "rt-d4-q19-e5b9d2a4-1c7f-4e3a-d8b6-5a3f1e9c7d2b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4,
+    "computational": 4
+  },
+  "stem": "A zip line runs from the top of a vertical observation tower to a raised platform. The platform is 20 feet above the ground and is located 60 feet horizontally from the base of the tower on level ground. From the base of the platform, the angle of elevation to the top of the tower is 37 degrees. The zip line can carry riders weighing up to 250 pounds. Given that sin 37\u00b0 \u2248 3/5, cos 37\u00b0 \u2248 4/5, and tan 37\u00b0 \u2248 3/4, what is the length of the zip line, in feet?",
+  "choices": [
+    {"label": "A", "text": "75", "isCorrect": false},
+    {"label": "B", "text": "85", "isCorrect": false},
+    {"label": "C", "text": "45", "isCorrect": false},
+    {"label": "D", "text": "65", "isCorrect": true}
+  ],
+  "correctAnswer": "D",
+  "explanation": "First, find the height of the tower using the angle of elevation from the platform's base. The horizontal distance is 60 feet and the angle is 37\u00b0. Tower height = 60 \u00d7 tan 37\u00b0 = 60 \u00d7 (3/4) = 45 feet. The zip line runs from the top of the tower (45 feet high) to the platform (20 feet high), so the vertical drop of the zip line is 45 \u2212 20 = 25 feet. The horizontal span is 60 feet. The zip line length is \u221a(60\u00b2 + 25\u00b2) = \u221a(3600 + 625) = \u221a4225 = 65 feet. The weight limit is not needed.",
+  "distractorRationale": {
+    "A": "Forgot to subtract the platform height and used the full tower height as the vertical distance: zip line = \u221a(60\u00b2 + 45\u00b2) = \u221a(3600 + 2025) = \u221a5625 = 75.",
+    "B": "Found the correct vertical drop of 25 feet but added the legs instead of using the Pythagorean theorem: 60 + 25 = 85.",
+    "C": "Computed the tower height (60 \u00d7 3/4 = 45) but stopped there, reporting the tower height as the answer without computing the zip line length = 45.",
+    "D": "Correct: tower height = 60 \u00d7 (3/4) = 45, vertical drop = 45 \u2212 20 = 25, zip line = \u221a(60\u00b2 + 25\u00b2) = \u221a4225 = 65."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle showing the side view of the zip line setup. A vertical observation tower is on the left, with its height labeled with a question mark. A raised platform (labeled 20 ft high) is on the right, 60 feet horizontally from the tower base. The angle of elevation from the base of the platform to the top of the tower is labeled 37\u00b0. A diagonal line representing the zip line connects the top of the tower to the top of the platform.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d4-q19"
+  }
+}

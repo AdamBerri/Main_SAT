@@ -1,0 +1,40 @@
+{
+  "id": "rt-d3-q11-b7e2a1f4-3c9d-4e5b-8a6f-1d2c3b4a5e6f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2,
+    "procedural": 3,
+    "computational": 3
+  },
+  "stem": "A firefighter stands 60 feet from the base of a building and measures the angle of elevation to the top of the building to be 37°. The firefighter's eyes are 5 feet above the ground. Given that sin 37° ≈ 3/5, cos 37° ≈ 4/5, and tan 37° ≈ 3/4, what is the height of the building, in feet?",
+  "choices": [
+    {"label": "A", "text": "45", "isCorrect": false},
+    {"label": "B", "text": "50", "isCorrect": true},
+    {"label": "C", "text": "41", "isCorrect": false},
+    {"label": "D", "text": "53", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The angle of elevation from the firefighter's eye level to the top of the building is 37°. The horizontal distance is 60 feet. Using tangent: tan 37° = opposite/adjacent = h/60, where h is the height above eye level. So h = 60 × (3/4) = 45 feet. Since the firefighter's eyes are 5 feet above the ground, the total building height is 45 + 5 = 50 feet.",
+  "distractorRationale": {
+    "A": "Correctly uses tan 37° to find the height above eye level (60 × 3/4 = 45) but forgets to add the observer's eye height of 5 feet = 45",
+    "B": "Correct. Uses tan 37° = 3/4 to get the height above eye level: 60 × 3/4 = 45, then adds the 5-foot eye height: 45 + 5 = 50",
+    "C": "Uses sin 37° instead of tan 37° to find the height above eye level: 60 × 3/5 = 36, then adds the 5-foot eye height: 36 + 5 = 41",
+    "D": "Uses cos 37° instead of tan 37° to find the height above eye level: 60 × 4/5 = 48, then adds the 5-foot eye height: 48 + 5 = 53"
+  },
+  "hasImage": false,
+  "imageDescription": "A right triangle formed by the horizontal ground distance of 60 ft, the vertical height of the building above eye level, and the line of sight from the firefighter's eyes to the top of the building, with the 37° angle of elevation marked at the firefighter's position.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T22:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d3-q11"
+  }
+}

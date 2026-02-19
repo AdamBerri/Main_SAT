@@ -1,0 +1,39 @@
+{
+  "id": "b3e7f1a4-8c2d-4f6a-9b5e-7d1c3a8f2e6b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.5,
+    "computational": 1.5
+  },
+  "stem": "A farmer has 28 animals on her property, all of which are either chickens or cows. If the animals have a combined total of 80 legs, how many of the animals are cows?",
+  "choices": [
+    {"label": "A", "text": "13", "isCorrect": false},
+    {"label": "B", "text": "12", "isCorrect": true},
+    {"label": "C", "text": "16", "isCorrect": false},
+    {"label": "D", "text": "20", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let c represent the number of chickens and w represent the number of cows. The total number of animals gives c + w = 28, and the total number of legs gives 2c + 4w = 80. From the first equation, c = 28 - w. Substituting into the second equation: 2(28 - w) + 4w = 80, which simplifies to 56 - 2w + 4w = 80, then 56 + 2w = 80, so 2w = 24 and w = 24 / 2 = 12. There are 12 cows.",
+  "distractorRationale": {
+    "A": "Subtracted the number of animals from the number of legs, then divided by 4: (80 - 28) / 4 = 52 / 4 = 13.",
+    "B": "Correct: Set up the system c + w = 28 and 2c + 4w = 80, substituted, and solved: 56 + 2w = 80, 2w = 24, w = 24 / 2 = 12.",
+    "C": "Set up and solved the system correctly but reported the number of chickens instead of cows: c = 28 - 12 = 16.",
+    "D": "Divided total legs by 4 without accounting for the chickens: 80 / 4 = 20."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d2-q6"
+  }
+}

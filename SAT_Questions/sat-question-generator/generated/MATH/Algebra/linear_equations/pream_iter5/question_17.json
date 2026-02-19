@@ -1,0 +1,39 @@
+{
+  "id": "b8c4d5e6-1f2a-4b3c-d7e8-9f0a1b2c3d4e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 3.5,
+    "computational": 3.0
+  },
+  "stem": "A tutoring center charges a $35 registration fee. Group sessions cost $7 each and private sessions cost $35 each. The center also sells practice workbooks for $12 each. Last month, Chris attended 10 group sessions, and his total bill from the center was $210. If Chris did not purchase any workbooks, how many private sessions did Chris attend?",
+  "choices": [
+    { "label": "A", "text": "3", "isCorrect": true },
+    { "label": "B", "text": "4", "isCorrect": false },
+    { "label": "C", "text": "5", "isCorrect": false },
+    { "label": "D", "text": "6", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The workbook price of $12 is extra information not needed for this problem. The total bill includes the registration fee, the cost of group sessions, and the cost of private sessions. First, calculate the group session cost: 10 x 7 = 70. Set up the equation: 35 + 70 + 35p = 210. Combine the known costs: 105 + 35p = 210. Subtract 105 from both sides: 35p = 105. Divide both sides by 35: p = 105 / 35 = 3.",
+  "distractorRationale": {
+    "A": "Correct: Subtracted registration fee ($35) and group session costs (10 x 7 = $70) from the total, then divided by private session rate: (210 - 35 - 70) / 35 = 105 / 35 = 3.",
+    "B": "Forgot to subtract the registration fee: (210 - 70) / 35 = 140 / 35 = 4.",
+    "C": "Forgot to subtract the group session costs: (210 - 35) / 35 = 175 / 35 = 5.",
+    "D": "Divided the total bill by the private session cost without subtracting any other charges: 210 / 35 = 6."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d4-q17"
+  }
+}

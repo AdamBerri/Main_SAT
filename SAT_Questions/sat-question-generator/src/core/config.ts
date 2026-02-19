@@ -99,13 +99,22 @@ export const DEFAULT_TEMPERATURE_CONFIG: TemperatureConfig = {
 
 export const MODEL_CONFIG = {
   generation: {
-    provider: 'zhipu' as const,
-    model: 'glm-5',
+    provider: 'openai' as const,
+    model:
+      process.env.GENERATION_MODEL ||
+      process.env.LLM_MODEL ||
+      process.env.MINIMAX_MODEL ||
+      'glm-5',
     maxTokens: 4096,
   },
   evaluation: {
-    provider: 'zhipu' as const,
-    model: 'glm-5',
+    provider: 'openai' as const,
+    model:
+      process.env.EVALUATION_MODEL ||
+      process.env.LLM_MODEL ||
+      process.env.MINIMAX_MODEL ||
+      process.env.GENERATION_MODEL ||
+      'glm-5',
     maxTokens: 2048,
   },
   imageGeneration: {

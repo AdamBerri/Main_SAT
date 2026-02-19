@@ -1,0 +1,55 @@
+{
+  "id": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A furniture manufacturer produces chairs and tables. The cost to produce each chair is $30, and the cost to produce each table is $50. Last month, the company produced a total of 200 items and spent $7,200 on production. How many chairs did the company produce?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "60",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "100",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "140",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "160",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let c represent the number of chairs and t represent the number of tables. From the given information: c + t = 200 and 30c + 50t = 7,200. From the first equation, t = 200 - c. Substituting into the second equation: 30c + 50(200 - c) = 7,200. Expanding: 30c + 10,000 - 50c = 7,200. Combining like terms: -20c + 10,000 = 7,200. Subtracting 10,000 from both sides: -20c = -2,800. Dividing by -20: c = 140. To verify: 30(140) + 50(60) = 4,200 + 3,000 = 7,200.",
+  "distractorRationale": {
+    "A": "Results from finding the number of tables (t = 200 - 140 = 60) and mistakenly reporting it as the number of chairs.",
+    "B": "Results from assuming equal production of chairs and tables: 200 ÷ 2 = 100, without solving the cost equation.",
+    "C": "Correct. Setting up 30c + 50(200 - c) = 7,200 gives -20c = -2,800, so c = 140.",
+    "D": "Results from a subtraction error when simplifying. The student computes 10,000 - 7,200 = 3,200 instead of 2,800, then divides: 3,200 ÷ 20 = 160."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T00:30:00.000Z",
+    "promptVersion": "1.10.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "gen-d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a"
+  }
+}

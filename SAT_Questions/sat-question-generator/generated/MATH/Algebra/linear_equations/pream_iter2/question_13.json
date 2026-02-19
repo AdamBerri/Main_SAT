@@ -1,0 +1,55 @@
+{
+  "id": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.5,
+    "computational": 3.0
+  },
+  "stem": "A cyclist travels from Town A to Town B, a distance of 156 miles. She rides at 15 miles per hour for the first part of the journey and at 12 miles per hour for the remainder. If the entire trip takes 12 hours, how many miles did she travel at 15 miles per hour?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "60",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "78",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "96",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "104",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let x represent the distance traveled at 15 miles per hour. Then (156 - x) represents the distance traveled at 12 miles per hour. Using the formula time = distance/rate, the time for the first part is x/15, and the time for the second part is (156 - x)/12. The total time is 12 hours: x/15 + (156 - x)/12 = 12. Multiplying all terms by 60 (the least common multiple of 15 and 12): 4x + 5(156 - x) = 720. Expanding: 4x + 780 - 5x = 720. Combining like terms: -x + 780 = 720. Subtracting 780 from both sides: -x = -60. Multiplying by -1: x = 60 miles.",
+  "distractorRationale": {
+    "A": "Correct answer. Solving x/15 + (156 - x)/12 = 12 gives x = 60 miles.",
+    "B": "This results from incorrectly setting up the equation as x/12 + (156 - x)/15 = 12 (swapping the speeds), which gives 5x + 4(156 - x) = 720 when multiplied by 60. Expanding: 5x + 624 - 4x = 720. Combining: x + 624 = 720. So x = 96. Then making an arithmetic error or calculating 156 - 96 = 60 and mistakenly selecting 78 as a middle value, or from another calculation: (12 × 15 + 12 × 12)/2 - 6 = 78.",
+    "C": "This results from setting up the equation backwards as x/12 + (156 - x)/15 = 12 (reversing which speed corresponds to which distance). Multiplying by 60: 5x + 4(156 - x) = 720. Expanding: 5x + 624 - 4x = 720. Combining: x = 96.",
+    "D": "This results from using the wrong total distance in calculations. If someone assumes 13 hours instead of 12, solving x/15 + (156 - x)/12 = 13 gives 4x + 780 - 5x = 780, so -x = 0, which is wrong. Alternatively, calculating 156 - 60 = 96, then adding an error to get 104, or solving with distances: assuming equal time at each speed (6 hours each) gives 6 × 15 = 90 and 6 × 12 = 72, total 162 ≠ 156, then adjusting incorrectly to 104."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T00:30:00.000Z",
+    "promptVersion": "1.10.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "gen-c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f"
+  }
+}

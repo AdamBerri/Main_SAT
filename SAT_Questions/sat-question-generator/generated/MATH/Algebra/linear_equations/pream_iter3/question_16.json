@@ -1,0 +1,54 @@
+{
+  "id": "a8f3c9e2-4d1b-4f7a-9e5c-3b6d8a1f2e4c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 3.5,
+    "computational": 3.0
+  },
+  "stem": "A catering company offers two meal plans for events. Plan A costs $12 per person plus a $150 setup fee. Plan B costs $18 per person with no setup fee. For how many guests would both plans cost exactly the same total amount?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "12",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "18",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "25",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "30",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let n represent the number of guests. Plan A costs 150 + 12n dollars, and Plan B costs 18n dollars. Setting these equal: 150 + 12n = 18n. Subtracting 12n from both sides: 150 = 6n. Dividing by 6: n = 25. We can verify: Plan A costs 150 + 12(25) = 150 + 300 = $450, and Plan B costs 18(25) = $450.",
+  "distractorRationale": {
+    "A": "Used the per-person cost of Plan A instead of solving the equation. = 12",
+    "B": "Used the per-person cost of Plan B instead of solving the equation. = 18",
+    "D": "Incorrectly solved 150 = 6n by dividing 150 by 5 instead of 6. = 30"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T01:30:00.000Z",
+    "promptVersion": "1.11.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d4-q16"
+  }
+}

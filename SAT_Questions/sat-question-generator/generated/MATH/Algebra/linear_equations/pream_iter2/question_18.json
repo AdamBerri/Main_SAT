@@ -1,0 +1,54 @@
+{
+  "id": "c7f5e9a4-6d9b-4c3e-9f7a-5d8c6e4f9a3b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 3.5,
+    "computational": 3.0
+  },
+  "stem": "A wedding planner is arranging seating for a reception with both round tables and rectangular tables. Each round table seats 8 guests and costs $45 to rent, while each rectangular table seats 6 guests and costs $30 to rent. The planner has a budget of $780 for table rentals and needs to seat exactly 144 guests. How many round tables should be rented?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "8",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "12",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "15",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "18",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let r represent the number of round tables and t represent the number of rectangular tables. The seating requirement gives 8r + 6t = 144, and the budget constraint gives 45r + 30t = 780. Simplifying the first equation by dividing by 2: 4r + 3t = 72. Simplifying the second equation by dividing by 15: 3r + 2t = 52. From the first equation: 3t = 72 - 4r, so t = (72 - 4r)/3. Substituting into the second equation: 3r + 2((72 - 4r)/3) = 52. Multiplying by 3: 9r + 2(72 - 4r) = 156. Expanding: 9r + 144 - 8r = 156. Combining like terms: r + 144 = 156. Subtracting 144: r = 12. Verifying: If r = 12, then from 4r + 3t = 72: 48 + 3t = 72, so 3t = 24, giving t = 8. Checking the budget: 45(12) + 30(8) = 540 + 240 = 780. The planner should rent 12 round tables.",
+  "distractorRationale": {
+    "A": "This results from confusing the variables and solving for t (rectangular tables) instead of r (round tables). When the student correctly solves the system, they find t = 8 rectangular tables but mistakenly report this as the number of round tables.",
+    "C": "This results from setting up the equation 45r + 30t = 780 and simplifying to 3r + 2t = 52, then making an arithmetic error. The student might compute 3r + 2t = 52 and notice 144 ÷ 8 = 18 for all round tables, then estimate downward without solving properly, or solve 4r + 3t = 72 incorrectly by computing t = (72 - 4r)/3 but then substituting r = 15 to verify: 4(15) + 3t = 72 gives 60 + 3t = 72, so t = 4. The student arrives at 15 through trial or estimation.",
+    "D": "This results from considering only the seating constraint and computing 144 ÷ 8 = 18, which would be the number of round tables needed if no rectangular tables were used. The student ignores the budget constraint entirely, not recognizing that using all round tables would cost 18 × 45 = 810 dollars, exceeding the budget."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T00:30:00.000Z",
+    "promptVersion": "1.10.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "batch-iter2-linear-equations-003"
+  }
+}

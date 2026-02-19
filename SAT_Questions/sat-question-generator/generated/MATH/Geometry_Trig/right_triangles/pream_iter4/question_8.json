@@ -1,0 +1,40 @@
+{
+  "id": "rt-d2-q08-d6a4c9e3-1b5f-4f2c-c7d8-4e3a9b2f1c7d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 2.0
+  },
+  "stem": "A hot air balloon is tethered to the ground by a 60-foot cable. The cable makes a 60-degree angle with the horizontal ground. Given that sin 60\u00b0 = \u221a3/2, cos 60\u00b0 = 1/2, and tan 60\u00b0 = \u221a3, what is the height of the balloon above the ground, in feet?",
+  "choices": [
+    {"label": "A", "text": "30", "isCorrect": false},
+    {"label": "B", "text": "30\u221a3", "isCorrect": true},
+    {"label": "C", "text": "40\u221a3", "isCorrect": false},
+    {"label": "D", "text": "60\u221a3", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The cable (60 feet) is the hypotenuse of the right triangle, and the balloon height is the side opposite the 60\u00b0 angle. Using sine: sin 60\u00b0 = opposite/hypotenuse = height/60. Therefore, height = 60 \u00d7 sin 60\u00b0 = 60 \u00d7 (\u221a3/2) = 30\u221a3 feet.",
+  "distractorRationale": {
+    "A": "Used cos instead of sin, finding the horizontal distance instead of the height: 60 \u00d7 cos 60\u00b0 = 60 \u00d7 (1/2) = 30.",
+    "B": "Correct: sin 60\u00b0 = opposite/hypotenuse, so height = 60 \u00d7 (\u221a3/2) = 30\u221a3.",
+    "C": "Set up the sine ratio inverted, dividing by sin instead of multiplying: 60 \u00f7 (\u221a3/2) = 60 \u00d7 (2/\u221a3) = 120/\u221a3 = 40\u221a3.",
+    "D": "Used tan instead of sin, treating the hypotenuse as the adjacent side: 60 \u00d7 tan 60\u00b0 = 60 \u00d7 \u221a3 = 60\u221a3."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle with the hypotenuse labeled as a 60 ft cable running from a point on the ground up to a hot air balloon. The angle between the cable and the horizontal ground is labeled 60\u00b0. The vertical leg represents the balloon height and is labeled with a question mark. The horizontal leg represents the distance along the ground from the tether point to directly below the balloon.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d2-q8"
+  }
+}

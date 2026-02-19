@@ -1,0 +1,55 @@
+{
+  "id": "q24-linear-tiered-shipping-d5",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.0
+  },
+  "stem": "A shipping company charges $3 per pound for the first 10 pounds of a package, and $2 per pound for each additional pound beyond 10 pounds. If a package costs $56 to ship, what is the total weight of the package in pounds?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "18",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "20",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "23",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "26",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let w be the total weight in pounds. The first 10 pounds cost 3(10) = $30. The additional (w - 10) pounds cost 2(w - 10). The total cost is: 30 + 2(w - 10) = 56. Expanding: 30 + 2w - 20 = 56. Simplifying: 10 + 2w = 56. Subtracting 10: 2w = 46. Dividing by 2: w = 23 pounds. Verification: First 10 pounds cost 3(10) = $30, next 13 pounds cost 2(13) = $26, total = $30 + $26 = $56.",
+  "distractorRationale": {
+    "A": "Used average rate incorrectly. Found 56 ÷ 3 = 18.67, rounded to 18.",
+    "B": "Forgot to account for the tiered pricing. Used the second tier rate for all weight: 56 ÷ 2 = 28, then subtracted the 10-pound threshold incorrectly = 20.",
+    "C": "Correct answer: set up 30 + 2(w - 10) = 56, solved 2w = 46 to get w = 23 pounds.",
+    "D": "Used only the additional weight calculation. Found 56 - 30 = 26 from the second tier, forgot to add the first 10 pounds = 26."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T01:30:00.000Z",
+    "promptVersion": "1.11.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d5-q24"
+  }
+}

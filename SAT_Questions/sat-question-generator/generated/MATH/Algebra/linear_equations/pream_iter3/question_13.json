@@ -1,0 +1,54 @@
+{
+  "id": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A driver travels 240 miles in 5 hours. The first part of the trip is driven at 60 miles per hour, and the remaining distance is driven at 40 miles per hour. How many miles were driven at 60 miles per hour?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "80",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "100",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "120",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "160",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let x represent the distance driven at 60 mph. Then (240 - x) represents the distance driven at 40 mph. Using the formula time = distance/rate, the total time is: x/60 + (240 - x)/40 = 5. Multiplying all terms by 120 to clear denominators: 2x + 3(240 - x) = 600. Expanding: 2x + 720 - 3x = 600. Combining like terms: -x = -120. Dividing by -1: x = 120. We can verify: 120/60 = 2 hours at 60 mph, and 120/40 = 3 hours at 40 mph, totaling 2 + 3 = 5 hours.",
+  "distractorRationale": {
+    "A": "Incorrectly using total distance divided by sum of speeds. Calculating 240/(60+40) = 240/100 = 2.4 hours, then multiplying by one speed: 2.4 × 60 = 144, which might be misread as 80.",
+    "B": "Setting up the equation incorrectly as x/60 + (240 - x)/40 = 240/5 = 48 instead of 5. This gives 2x + 3(240 - x) = 5760, so -x = 5040, leading to errors that approximate to 100.",
+    "D": "Reversing the distances. If 160 miles were at 60 mph and 80 miles at 40 mph, the time would be 160/60 + 80/40 = 2.67 + 2 = 4.67 hours, not 5."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T01:30:00.000Z",
+    "promptVersion": "1.11.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter3-d3-q13"
+  }
+}

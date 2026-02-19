@@ -1,0 +1,39 @@
+{
+  "id": "rt-d3-q15-e6f8a0b2-5c7d-4e9f-1a4b-3c0d6e8f5a7b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.5,
+    "procedural": 2.5,
+    "computational": 2.0
+  },
+  "stem": "A hiking trail on a mountainside rises 7 meters in elevation over a certain stretch. An engineer models the incline of the trail using the equation sin θ = 7/25, where θ is the angle the trail makes with the horizontal ground. What does the number 25 represent in this equation?",
+  "choices": [
+    { "label": "A", "text": "The angle of incline of the trail, in degrees", "isCorrect": false },
+    { "label": "B", "text": "The horizontal distance covered by the trail, in meters", "isCorrect": false },
+    { "label": "C", "text": "The vertical rise per horizontal meter of the trail", "isCorrect": false },
+    { "label": "D", "text": "The length of the trail along the slope, in meters", "isCorrect": true }
+  ],
+  "correctAnswer": "D",
+  "explanation": "In a right triangle, sin θ = opposite/hypotenuse. Here the opposite side is the vertical rise (7 meters) and the hypotenuse is the length of the trail along the slope. Since sin θ = 7/25, the denominator 25 represents the hypotenuse, which is the length of the trail measured along the slope, in meters. (For reference, the horizontal distance would be the adjacent side: sqrt(25² − 7²) = sqrt(625 − 49) = sqrt(576) = 24 meters, which is not 25.)",
+  "distractorRationale": {
+    "A": "Confuses the ratio value with the angle measurement, interpreting the denominator 25 as the angle in degrees rather than a side length = 25",
+    "B": "Identifies 25 as the horizontal ground distance (the adjacent side), confusing the hypotenuse with the adjacent side in the sine ratio; the actual horizontal distance is 24 = 24",
+    "C": "Misinterprets the ratio as a rate of change (rise/run) rather than recognizing that sine equals opposite over hypotenuse, treating 25 as a unit rate = 25",
+    "D": "Correct: Recognizes that sin θ = opposite/hypotenuse = 7/25, so 25 is the hypotenuse, which represents the sloped length of the trail = 25"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T14:30:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter1-d3-q15"
+  }
+}

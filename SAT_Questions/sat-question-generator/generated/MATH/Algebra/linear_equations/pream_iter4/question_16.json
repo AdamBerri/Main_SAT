@@ -1,0 +1,55 @@
+{
+  "id": "a1b2c3d4-e5f6-4789-a0b1-c2d3e4f5a6b7",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 3.5,
+    "computational": 3.0
+  },
+  "stem": "A catering company charges a flat setup fee plus a per-person cost for events. For a party of 40 guests, the total cost is $820. For a party of 65 guests, the total cost is $1,195. The company also offers a discount package where the setup fee is reduced by $50 but the per-person cost increases by $2. If a customer chooses the discount package for 55 guests, what is the total cost in dollars?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "935",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "995",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "1070",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "1155",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let s = setup fee and p = per-person cost. From the given information:\n40p + s = 820\n65p + s = 1195\n\nSubtracting the first equation from the second:\n25p = 375\np = 15\n\nSubstituting back:\n40(15) + s = 820\n600 + s = 820\ns = 220\n\nFor the discount package:\nNew setup fee = 220 - 50 = 170\nNew per-person cost = 15 + 2 = 17\n\nFor 55 guests with discount package:\nTotal = 170 + 55(17) = 170 + 935 = 1070",
+  "distractorRationale": {
+    "A": "Forgot the setup fee entirely and only calculated per-person costs: 55 × 17 = 935",
+    "B": "Applied the setup fee discount but used the original per-person cost instead of the increased rate: (220 - 50) + 55(15) = 170 + 825 = 995",
+    "C": "Correct: Setup fee s = 220, per-person cost p = 15. Discount package: (220 - 50) + 55(15 + 2) = 170 + 55(17) = 170 + 935 = 1070",
+    "D": "Increased the per-person cost but forgot to apply the setup fee reduction: 220 + 55(17) = 220 + 935 = 1155"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T02:30:00.000Z",
+    "promptVersion": "1.12.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter4-d4-q16"
+  }
+}

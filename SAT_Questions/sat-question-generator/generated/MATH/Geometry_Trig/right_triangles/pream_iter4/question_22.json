@@ -1,0 +1,56 @@
+{
+  "id": "rt-d5-q22-b2c3d4e5-6f7a-4b8c-9d0e-1f2a3b4c5d6e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 5.0,
+    "computational": 5.0
+  },
+  "stem": "From a point Q on level ground, the angle of elevation to the top of a vertical tower is 45 degrees. From a point R, which is 20 meters farther from the base of the tower than Q along the same straight line, the angle of elevation to the top of the tower is 30 degrees. What is the height of the tower, in meters?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "20",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "10\\sqrt{3}",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "10(\\sqrt{3} + 1)",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "20(\\sqrt{3} + 1)",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let h be the tower height and d be the distance from Q to the tower base. Two right triangles share the tower height h. From Q: tan(45) = h/d, so d = h. From R: tan(30) = h/(d + 20), so d + 20 = h sqrt(3). Substituting d = h: h + 20 = h sqrt(3). Then 20 = h(sqrt(3) - 1). Solving: h = 20/(sqrt(3) - 1). Rationalizing: h = 20(sqrt(3) + 1)/((sqrt(3))^2 - 1^2) = 20(sqrt(3) + 1)/2 = 10(sqrt(3) + 1). Verification: d = h = 10(sqrt(3) + 1) approximately 27.32 meters. d + 20 = 47.32. tan(30) = 27.32/47.32 = 0.5774 = 1/sqrt(3). Confirmed.",
+  "distractorRationale": {
+    "A": "Treats the 20-meter distance between Q and R as the total distance from Q to the tower base, using only one right triangle: tan(45) = h/20, so h = 20",
+    "B": "Uses tan(60) instead of tan(45) at point Q (complementary angle error). With d = h/sqrt(3) and d + 20 = h sqrt(3): h/sqrt(3) + 20 = h sqrt(3), giving 20 = h sqrt(3) - h/sqrt(3) = 2h/sqrt(3), so h = 10sqrt(3)",
+    "C": "Correct: Sets up d = h from the 45-degree triangle and d + 20 = h sqrt(3) from the 30-degree triangle, solves h(sqrt(3) - 1) = 20, and rationalizes to get h = 10(sqrt(3) + 1)",
+    "D": "Correctly reaches h = 20/(sqrt(3) - 1) and multiplies numerator and denominator by (sqrt(3) + 1), obtaining 20(sqrt(3) + 1) in the numerator, but forgets to divide by the denominator (sqrt(3) - 1)(sqrt(3) + 1) = 2, reporting h = 20(sqrt(3) + 1)"
+  },
+  "hasImage": true,
+  "imageDescription": "A vertical tower stands on level ground with its base labeled T and top labeled P. Point Q is on the ground to the right of the tower, and point R is farther to the right. The distance from Q to R is labeled 20 m. A dashed line from Q to P makes a 45-degree angle with the ground. A dashed line from R to P makes a 30-degree angle with the ground. The tower height is labeled h.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d5-q22"
+  }
+}

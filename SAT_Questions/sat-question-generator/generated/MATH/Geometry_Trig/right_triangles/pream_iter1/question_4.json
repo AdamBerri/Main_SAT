@@ -1,0 +1,39 @@
+{
+  "id": "rt-d1-004-d1e5f6a7-4c3b-4f8d-a9e2-5b7c8d1f3a6e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.0,
+    "computational": 1.0
+  },
+  "stem": "A wheelchair ramp is 26 feet long and makes an angle with the ground. The cosine of this angle is 12/13. What is the horizontal distance, in feet, covered by the ramp?",
+  "choices": [
+    {"label": "A", "text": "13", "isCorrect": false},
+    {"label": "B", "text": "10", "isCorrect": false},
+    {"label": "C", "text": "36", "isCorrect": false},
+    {"label": "D", "text": "24", "isCorrect": true}
+  ],
+  "correctAnswer": "D",
+  "explanation": "In this right triangle, the ramp is the hypotenuse (26 feet) and the horizontal distance is the side adjacent to the angle. Using cos \u03b8 = adjacent/hypotenuse: adjacent = 26 \u00d7 (12/13) = 24 feet. This is a 5-12-13 Pythagorean triple scaled by 2.",
+  "distractorRationale": {
+    "A": "Divided the hypotenuse by 2 instead of multiplying by the cosine, computing 26 \u00f7 2 = 13.",
+    "B": "Used sin \u03b8 = 5/13 instead of cos \u03b8 = 12/13 to find the adjacent side, computing 26 \u00d7 (5/13) = 10.",
+    "C": "Added the vertical rise to the hypotenuse instead of multiplying by cosine, computing 26 + 10 = 36.",
+    "D": "Correct: cos \u03b8 = adjacent/hypotenuse, so adjacent = 26 \u00d7 (12/13) = 24."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T14:30:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter1-d1-q4"
+  }
+}

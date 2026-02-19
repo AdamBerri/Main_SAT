@@ -1,0 +1,40 @@
+{
+  "id": "rt-d2-010-e7f2a5b8-8c6d-4e3f-9a1b-1d5c4e6f7a8b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.0,
+    "computational": 1.5
+  },
+  "stem": "A 50-foot cable runs from the top of a utility pole straight down to an anchor point on the ground, making a 40\u00b0 angle with the ground. Which of the following expressions gives the height of the utility pole, in feet?",
+  "choices": [
+    {"label": "A", "text": "50 cos 40\u00b0", "isCorrect": false},
+    {"label": "B", "text": "50 sin 40\u00b0", "isCorrect": true},
+    {"label": "C", "text": "50 tan 40\u00b0", "isCorrect": false},
+    {"label": "D", "text": "50/sin 40\u00b0", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The cable is the hypotenuse (50 feet) and the pole height is the side opposite the 40\u00b0 angle at the ground. Since sin = opposite/hypotenuse, the height = hypotenuse \u00d7 sin 40\u00b0 = 50 sin 40\u00b0.",
+  "distractorRationale": {
+    "A": "Used cos instead of sin, which would give the horizontal distance from the anchor to the base of the pole rather than the height: 50 cos 40\u00b0.",
+    "B": "Correct: sin 40\u00b0 = opposite/hypotenuse, so height = 50 sin 40\u00b0.",
+    "C": "Used tan instead of sin, which would be correct only if the 50-foot measurement were the horizontal distance to the anchor rather than the cable length: 50 tan 40\u00b0.",
+    "D": "Divided by sin instead of multiplying, which would find the hypotenuse given the opposite side rather than finding the opposite side given the hypotenuse: 50/sin 40\u00b0."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T20:20:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter2-d2-q10"
+  }
+}

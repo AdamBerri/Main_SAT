@@ -1,0 +1,39 @@
+{
+  "id": "b8e2f4a1-9c3d-4b7e-a6f5-2d1c8a3e9f7b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5.0,
+    "procedural": 4.5,
+    "computational": 4.0
+  },
+  "stem": "A delivery truck leaves a warehouse at 9:00 AM traveling at a constant speed of 45 miles per hour. At 9:40 AM, a courier van leaves the same warehouse along the same route at a constant speed of 60 miles per hour. At what time does the courier van catch up to the delivery truck?",
+  "choices": [
+    { "label": "A", "text": "10:52 AM", "isCorrect": false },
+    { "label": "B", "text": "11:00 AM", "isCorrect": false },
+    { "label": "C", "text": "11:40 AM", "isCorrect": true },
+    { "label": "D", "text": "12:20 PM", "isCorrect": false }
+  ],
+  "correctAnswer": "C",
+  "explanation": "By 9:40 AM, the truck has traveled for 40 minutes, which is 2/3 of an hour. Distance traveled by the truck: 45 × (2/3) = 30 miles. Let t represent the number of hours after 9:40 AM. The truck's position is 30 + 45t miles and the van's position is 60t miles. Setting them equal: 60t = 30 + 45t, so 15t = 30, giving t = 2 hours. The van catches the truck at 9:40 AM + 2 hours = 11:40 AM.",
+  "distractorRationale": {
+    "A": "Converted 40 minutes as 40/100 = 0.4 hours instead of 40/60 = 2/3 hours: head start = 45 × 0.4 = 18 miles; 60t = 18 + 45t; 15t = 18; t = 1.2 hours = 1 hour 12 minutes; 9:40 AM + 1 hour 12 minutes = 10:52 AM.",
+    "B": "Solved correctly for t = 2 hours but measured from 9:00 AM instead of 9:40 AM: 9:00 AM + 2 hours = 11:00 AM.",
+    "C": "Correct: Head start = 45 × (2/3) = 30 miles; 60t = 30 + 45t; t = 2 hours after 9:40 AM = 11:40 AM.",
+    "D": "Used the van's speed to calculate the truck's head start distance: 60 × (2/3) = 40 miles; 60t = 40 + 45t; 15t = 40; t = 8/3 hours = 2 hours 40 minutes; 9:40 AM + 2 hours 40 minutes = 12:20 PM."
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T03:30:00.000Z",
+    "promptVersion": "1.13.0",
+    "modelUsed": "claude-sonnet-4-5-20250929",
+    "generationId": "iter5-d5-q22"
+  }
+}
