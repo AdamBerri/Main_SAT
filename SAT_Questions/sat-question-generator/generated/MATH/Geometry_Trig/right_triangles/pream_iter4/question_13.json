@@ -1,0 +1,40 @@
+{
+  "id": "rt-d3-q13-c6e1a4b3-9d5f-4c2a-8e7b-3f1d5a9c2e6b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 3.0
+  },
+  "stem": "A 36-foot vertical antenna pole is supported by a guy wire that makes a 45-degree angle with the ground. The engineer plans to move the wire's ground anchor 12 feet farther from the pole while keeping the wire attached to the top of the pole. Given that sin 45\u00b0 = \u221a2/2, cos 45\u00b0 = \u221a2/2, and tan 45\u00b0 = 1, what will be the length of the new guy wire, in feet?",
+  "choices": [
+    {"label": "A", "text": "36\u221a2", "isCorrect": false},
+    {"label": "B", "text": "48", "isCorrect": false},
+    {"label": "C", "text": "60", "isCorrect": true},
+    {"label": "D", "text": "84", "isCorrect": false}
+  ],
+  "correctAnswer": "C",
+  "explanation": "Since the original wire makes a 45\u00b0 angle with the ground and the pole is 36 feet tall, the original ground anchor is 36 feet from the pole (because tan 45\u00b0 = 1, so height = distance). Moving the anchor 12 feet farther places it 36 + 12 = 48 feet from the pole. The new wire length is \u221a(36\u00b2 + 48\u00b2) = \u221a(1296 + 2304) = \u221a3600 = 60 feet.",
+  "distractorRationale": {
+    "A": "Computed the original wire length instead of the new wire length, forgetting the 12-foot extension: \u221a(36\u00b2 + 36\u00b2) = \u221a(2 \u00d7 1296) = 36\u221a2.",
+    "B": "Found the new anchor distance (36 + 12 = 48) but reported it as the wire length without using the Pythagorean theorem = 48.",
+    "C": "Correct: Original anchor distance = 36 (tan 45\u00b0 = 1), new distance = 48, wire = \u221a(36\u00b2 + 48\u00b2) = \u221a3600 = 60.",
+    "D": "Added the pole height and new anchor distance instead of using the Pythagorean theorem: 36 + 48 = 84."
+  },
+  "hasImage": true,
+  "imageDescription": "A vertical antenna pole labeled 36 ft with a dashed line showing the original guy wire at 45\u00b0 to the ground, anchored 36 ft from the base. A solid line shows the new guy wire from the top of the pole to a new anchor point 12 ft farther from the pole (48 ft from the base). The right angle at the base of the pole is marked.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d3-q13"
+  }
+}

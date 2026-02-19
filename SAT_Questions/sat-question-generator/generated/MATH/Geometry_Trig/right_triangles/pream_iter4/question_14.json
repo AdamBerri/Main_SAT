@@ -1,0 +1,40 @@
+{
+  "id": "rt-d3-q14-d7f2b5c4-1a8e-4d3b-9c6f-4e2a7b1d8f3c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A 45-foot lighthouse sits on a rocky outcrop that is 15 feet above sea level. From the top of the lighthouse, a keeper measures the angle of depression to a fishing boat as 37 degrees. Given that sin 37\u00b0 \u2248 3/5, cos 37\u00b0 \u2248 4/5, and tan 37\u00b0 \u2248 3/4, what is the horizontal distance from the base of the outcrop to the boat, in feet?",
+  "choices": [
+    {"label": "A", "text": "60", "isCorrect": false},
+    {"label": "B", "text": "75", "isCorrect": false},
+    {"label": "C", "text": "80", "isCorrect": true},
+    {"label": "D", "text": "100", "isCorrect": false}
+  ],
+  "correctAnswer": "C",
+  "explanation": "The total height above sea level is 45 + 15 = 60 feet. The angle of depression is 37\u00b0, so tan 37\u00b0 = 60/d, where d is the horizontal distance. Solving: d = 60/tan 37\u00b0 = 60/(3/4) = 60 \u00d7 (4/3) = 80 feet.",
+  "distractorRationale": {
+    "A": "Forgot to include the outcrop height, using only the lighthouse height: 45/(3/4) = 45 \u00d7 (4/3) = 60.",
+    "B": "Used cos instead of tan: 60/(4/5) = 60 \u00d7 (5/4) = 75.",
+    "C": "Correct: Total height = 45 + 15 = 60, horizontal = 60/(3/4) = 60 \u00d7 (4/3) = 80.",
+    "D": "Used sin instead of tan: 60/(3/5) = 60 \u00d7 (5/3) = 100."
+  },
+  "hasImage": true,
+  "imageDescription": "A side view showing a rocky outcrop 15 feet above sea level with a lighthouse 45 feet tall on top. From the top of the lighthouse, a dashed line angles down at 37\u00b0 below horizontal to a fishing boat on the water. The horizontal distance from the outcrop base to the boat is marked with a question mark.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d3-q14"
+  }
+}

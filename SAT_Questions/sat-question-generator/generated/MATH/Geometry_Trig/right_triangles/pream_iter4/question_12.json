@@ -1,0 +1,40 @@
+{
+  "id": "rt-d3-q12-b5d9f3a2-8c4e-4a1b-9d7f-2e5c6a8b3d1e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 2.5
+  },
+  "stem": "A lifeguard sits in a chair that is 8 feet tall, on a pier that stands 16 feet above the water surface. The lifeguard measures the angle of depression to a swimmer as 53 degrees. Given that sin 53\u00b0 \u2248 4/5, cos 53\u00b0 \u2248 3/5, and tan 53\u00b0 \u2248 4/3, how far horizontally is the swimmer from the base of the pier, in feet?",
+  "choices": [
+    {"label": "A", "text": "12", "isCorrect": false},
+    {"label": "B", "text": "18", "isCorrect": true},
+    {"label": "C", "text": "30", "isCorrect": false},
+    {"label": "D", "text": "32", "isCorrect": false}
+  ],
+  "correctAnswer": "B",
+  "explanation": "The lifeguard's eyes are 8 + 16 = 24 feet above the water. The angle of depression to the swimmer is 53\u00b0, which equals the angle of elevation from the swimmer to the lifeguard. In the right triangle, tan 53\u00b0 = vertical/horizontal = 24/d. Solving: d = 24/tan 53\u00b0 = 24/(4/3) = 24 \u00d7 (3/4) = 18 feet.",
+  "distractorRationale": {
+    "A": "Forgot to include the chair height, using only the pier height: 16/(4/3) = 16 \u00d7 (3/4) = 12.",
+    "B": "Correct: Total height = 8 + 16 = 24, horizontal = 24/(4/3) = 24 \u00d7 (3/4) = 18.",
+    "C": "Used sin instead of tan: 24/(4/5) = 24 \u00d7 (5/4) = 30.",
+    "D": "Set up the ratio inverted, multiplying by tan instead of dividing: 24 \u00d7 (4/3) = 32."
+  },
+  "hasImage": true,
+  "imageDescription": "A side view showing a pier standing 16 feet above the water surface. On top of the pier is a lifeguard chair 8 feet tall. A dashed line from the lifeguard's position angles down at 53\u00b0 below horizontal to a swimmer in the water. The horizontal distance from the pier base to the swimmer is marked with a question mark.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d3-q12"
+  }
+}

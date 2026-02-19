@@ -12,11 +12,14 @@
 PARALLEL=${PARALLEL:-10}
 MAX_ITERATIONS=${MAX_ITERATIONS:-5}
 PREAM_SAMPLES=${PREAM_SAMPLES:-10}
+PREAM_CONVERGENCE=${PREAM_CONVERGENCE:-0.02}
+PREAM_SUBAGENTS=${PREAM_SUBAGENTS:-1}
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-LOG_DIR="$SCRIPT_DIR/logs"
+DATA_ROOT="${PREAM_DATA_ROOT:-$SCRIPT_DIR}"
+LOG_DIR="$DATA_ROOT/logs"
 mkdir -p "$LOG_DIR"
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 MAIN_LOG="$LOG_DIR/pream_roundrobin_$TIMESTAMP.log"
@@ -30,6 +33,16 @@ log() {
 }
 
 # Load env
+if [ -f "$DATA_ROOT/.env.minimax" ]; then
+    set -a
+    source "$DATA_ROOT/.env.minimax"
+    set +a
+fi
+if [ -f "$DATA_ROOT/.env" ]; then
+    set -a
+    source "$DATA_ROOT/.env"
+    set +a
+fi
 if [ -f .env ]; then
     set -a
     source .env
@@ -89,7 +102,7 @@ ALL_TOPICS=(
 # Get iteration count for a topic from pream_state.json
 get_iteration_count() {
     local topic=$1
-    local state_file="$SCRIPT_DIR/prompts/$topic/pream_state.json"
+    local state_file="$DATA_ROOT/prompts/$topic/pream_state.json"
 
     if [ -f "$state_file" ]; then
         # Extract iterations array length using grep and wc
@@ -103,7 +116,7 @@ get_iteration_count() {
 # Check if topic has converged
 is_converged() {
     local topic=$1
-    local state_file="$SCRIPT_DIR/prompts/$topic/pream_state.json"
+    local state_file="$DATA_ROOT/prompts/$topic/pream_state.json"
 
     if [ -f "$state_file" ]; then
         grep -q '"converged": true' "$state_file" && return 0
@@ -118,7 +131,12 @@ run_single_iteration() {
 
     echo "[$(date '+%H:%M:%S')] Starting iteration: $topic" >> "$MAIN_LOG"
 
-    npm run dev -- optimize -t "$topic" -s "$PREAM_SAMPLES" --single-iteration > "$topic_log" 2>&1
+    PREAM_DATA_ROOT="$DATA_ROOT" npm run dev -- optimize \
+        -t "$topic" \
+        -s "$PREAM_SAMPLES" \
+        -c "$PREAM_CONVERGENCE" \
+        --subagents "$PREAM_SUBAGENTS" \
+        --single-iteration > "$topic_log" 2>&1
     local exit_code=$?
 
     if [ $exit_code -eq 0 ]; then
@@ -139,6 +157,9 @@ log "============================================"
 log "Parallelism: $PARALLEL topics at a time"
 log "Max iterations per topic: $MAX_ITERATIONS"
 log "Samples per iteration: $PREAM_SAMPLES"
+log "Convergence threshold: $PREAM_CONVERGENCE"
+log "Subagents per loop: $PREAM_SUBAGENTS"
+log "Data root: $DATA_ROOT"
 log "Total topics: ${#ALL_TOPICS[@]}"
 log "Strategy: Soft sync (max 1 iteration apart)"
 log "Image generation: DISABLED"

@@ -251,7 +251,7 @@ ${params.computational !== undefined ? `- Computational complexity: ${params.com
      */
     getInitializedTopics() {
         const topics = [];
-        const promptsDir = path.join(__dirname, '../../prompts');
+        const promptsDir = config_1.PROMPTS_DIR;
         if (!fs.existsSync(promptsDir)) {
             return topics;
         }

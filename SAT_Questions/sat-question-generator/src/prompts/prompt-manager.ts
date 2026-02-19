@@ -14,6 +14,7 @@ import {
   getSchemaPath,
   ensureDirectoryExists,
   DEFAULT_TEMPERATURE_CONFIG,
+  PROMPTS_DIR,
 } from '../core/config';
 import { buildPrompt, READING_BASE_PROMPTS, MATH_BASE_PROMPTS } from './base-prompts';
 
@@ -285,7 +286,7 @@ ${params.computational !== undefined ? `- Computational complexity: ${params.com
    */
   getInitializedTopics(): TopicPath[] {
     const topics: TopicPath[] = [];
-    const promptsDir = path.join(__dirname, '../../prompts');
+    const promptsDir = PROMPTS_DIR;
 
     if (!fs.existsSync(promptsDir)) {
       return topics;

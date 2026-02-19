@@ -20,15 +20,18 @@
 QUESTIONS_PER_TOPIC=${QUESTIONS_PER_TOPIC:-10}
 PREAM_ITERATIONS=${PREAM_ITERATIONS:-5}
 PREAM_SAMPLES=${PREAM_SAMPLES:-20}
+PREAM_CONVERGENCE=${PREAM_CONVERGENCE:-0.02}
+PREAM_SUBAGENTS=${PREAM_SUBAGENTS:-1}
 OPTIMIZATION_ROUNDS=${OPTIMIZATION_ROUNDS:-2}
 CONTINUE_ON_ERROR=${CONTINUE_ON_ERROR:-true}
 
 # Directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
 cd "$SCRIPT_DIR"
+DATA_ROOT="${PREAM_DATA_ROOT:-$SCRIPT_DIR}"
 
 # Logging
-LOG_DIR="$SCRIPT_DIR/logs"
+LOG_DIR="$DATA_ROOT/logs"
 mkdir -p "$LOG_DIR"
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 LOG_FILE="$LOG_DIR/autonomous_run_$TIMESTAMP.log"
@@ -145,6 +148,16 @@ log_section() {
 }
 
 check_env() {
+    if [ -f "$DATA_ROOT/.env.minimax" ]; then
+        set -a
+        source "$DATA_ROOT/.env.minimax"
+        set +a
+    fi
+    if [ -f "$DATA_ROOT/.env" ]; then
+        set -a
+        source "$DATA_ROOT/.env"
+        set +a
+    fi
     if [ -f .env ]; then
         set -a
         source .env
@@ -179,7 +192,7 @@ generate_all() {
     log_section "PHASE 1: Generating Questions for All Topics"
     log "Generating $QUESTIONS_PER_TOPIC questions per topic..."
 
-    if npm run dev -- generate --all -c "$QUESTIONS_PER_TOPIC" 2>&1 | tee -a "$LOG_FILE"; then
+    if PREAM_DATA_ROOT="$DATA_ROOT" npm run dev -- generate --all -c "$QUESTIONS_PER_TOPIC" 2>&1 | tee -a "$LOG_FILE"; then
         log "Batch generation complete!"
         return 0
     else
@@ -194,7 +207,12 @@ optimize_topic() {
     local topic="$1"
     log "Optimizing: $topic"
 
-    if npm run dev -- optimize -t "$topic" -i "$PREAM_ITERATIONS" -s "$PREAM_SAMPLES" 2>&1 | tee -a "$LOG_FILE"; then
+    if PREAM_DATA_ROOT="$DATA_ROOT" npm run dev -- optimize \
+        -t "$topic" \
+        -i "$PREAM_ITERATIONS" \
+        -s "$PREAM_SAMPLES" \
+        -c "$PREAM_CONVERGENCE" \
+        --subagents "$PREAM_SUBAGENTS" 2>&1 | tee -a "$LOG_FILE"; then
         log "Successfully optimized: $topic"
         return 0
     else
@@ -234,14 +252,14 @@ generate_images_for_all() {
     log "Generating images for questions that need them (both Reading and Math)..."
 
     # Use the --all flag to process all topics at once
-    npm run dev -- images --all 2>&1 | tee -a "$LOG_FILE" || true
+    PREAM_DATA_ROOT="$DATA_ROOT" npm run dev -- images --all 2>&1 | tee -a "$LOG_FILE" || true
 
     log "Image generation complete"
 }
 
 show_stats() {
     log_section "STATISTICS"
-    npm run dev -- stats 2>&1 | tee -a "$LOG_FILE" || true
+    PREAM_DATA_ROOT="$DATA_ROOT" npm run dev -- stats 2>&1 | tee -a "$LOG_FILE" || true
 }
 
 write_summary() {
@@ -258,6 +276,8 @@ write_summary() {
         echo "  Questions per topic: $QUESTIONS_PER_TOPIC"
         echo "  PREAM iterations: $PREAM_ITERATIONS"
         echo "  PREAM samples: $PREAM_SAMPLES"
+        echo "  PREAM convergence: $PREAM_CONVERGENCE"
+        echo "  PREAM subagents: $PREAM_SUBAGENTS"
         echo "  Optimization rounds: $OPTIMIZATION_ROUNDS"
         echo ""
         echo "Topics processed: 32"
@@ -290,8 +310,11 @@ main() {
     log "  Questions per topic: $QUESTIONS_PER_TOPIC"
     log "  PREAM iterations: $PREAM_ITERATIONS"
     log "  PREAM samples: $PREAM_SAMPLES"
+    log "  PREAM convergence: $PREAM_CONVERGENCE"
+    log "  PREAM subagents: $PREAM_SUBAGENTS"
     log "  Optimization rounds: $OPTIMIZATION_ROUNDS"
     log "  Continue on error: $CONTINUE_ON_ERROR"
+    log "  Data root: $DATA_ROOT"
     log "  Log file: $LOG_FILE"
     log ""
 

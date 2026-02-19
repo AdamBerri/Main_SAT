@@ -87,6 +87,9 @@ npm run dev -- evaluate -t READING/Information_and_Ideas/central_ideas
 ```bash
 # Optimize prompts for a topic (iterates until convergence)
 npm run dev -- optimize -t MATH/Algebra/linear_equations -i 5 -s 20
+
+# Tune loop behavior for heavy compute runs
+npm run dev -- optimize -t MATH/Algebra/linear_equations -i 12 -s 25 -c 0.005 --subagents 5
 ```
 
 ### View Statistics
@@ -191,3 +194,4 @@ const results = await executor.executeAllTopics(10);
 2. **Check logs**: Generation logs show passage type, length, and question type
 3. **Review failures**: Questions saved with `_fail_` in filename need prompt improvement
 4. **Run PREAM**: After initial generation, run optimization on topics with low pass rates
+5. **Create isolated MiniMax workspace**: `npm run setup:minimax-experiment` to avoid touching existing PREAM state

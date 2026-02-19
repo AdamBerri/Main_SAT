@@ -12,6 +12,8 @@
 #   AGENT_COUNT        Total logical agents across the whole cluster (default: 50)
 #   MAX_ITERATIONS     Max PREAM iterations per topic (default: 5)
 #   PREAM_SAMPLES      Samples per PREAM iteration (default: 25)
+#   PREAM_CONVERGENCE  Convergence threshold (default: 0.02)
+#   PREAM_SUBAGENTS    Parallel workers per loop (default: 1)
 #   TOPICS_FILE        Topic list file (default: cloud/topics.txt)
 #   LOOP_SLEEP_SECONDS Sleep between single-iteration calls (default: 2)
 #   MAX_TOPIC_RETRIES  Retries for transient command failures (default: 2)
@@ -23,6 +25,8 @@ AGENT_ID=${AGENT_ID:-}
 AGENT_COUNT=${AGENT_COUNT:-50}
 MAX_ITERATIONS=${MAX_ITERATIONS:-5}
 PREAM_SAMPLES=${PREAM_SAMPLES:-25}
+PREAM_CONVERGENCE=${PREAM_CONVERGENCE:-0.02}
+PREAM_SUBAGENTS=${PREAM_SUBAGENTS:-1}
 TOPICS_FILE=${TOPICS_FILE:-cloud/topics.txt}
 LOOP_SLEEP_SECONDS=${LOOP_SLEEP_SECONDS:-2}
 MAX_TOPIC_RETRIES=${MAX_TOPIC_RETRIES:-2}
@@ -45,7 +49,8 @@ fi
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-LOG_DIR="$SCRIPT_DIR/logs/cloud_agents"
+DATA_ROOT="${PREAM_DATA_ROOT:-$SCRIPT_DIR}"
+LOG_DIR="$DATA_ROOT/logs/cloud_agents"
 mkdir -p "$LOG_DIR"
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 MAIN_LOG="$LOG_DIR/agent_${AGENT_ID}_$TIMESTAMP.log"
@@ -56,7 +61,17 @@ log() {
   echo "$msg" | tee -a "$MAIN_LOG"
 }
 
-# Load .env if available
+# Load environment files (experiment root first)
+if [ -f "$DATA_ROOT/.env.minimax" ]; then
+  set -a
+  source "$DATA_ROOT/.env.minimax"
+  set +a
+fi
+if [ -f "$DATA_ROOT/.env" ]; then
+  set -a
+  source "$DATA_ROOT/.env"
+  set +a
+fi
 if [ -f .env ]; then
   set -a
   source .env
@@ -108,14 +123,13 @@ if [ ! -f "$TOPICS_FILE" ]; then
   exit 1
 fi
 
-mapfile -t RAW_TOPICS < "$TOPICS_FILE"
 TOPICS=()
-for raw in "${RAW_TOPICS[@]}"; do
+while IFS= read -r raw || [ -n "$raw" ]; do
   topic="$(echo "$raw" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
   if [ -n "$topic" ] && [[ ! "$topic" =~ ^# ]]; then
     TOPICS+=("$topic")
   fi
-done
+done < "$TOPICS_FILE"
 
 if [ "${#TOPICS[@]}" -eq 0 ]; then
   log "ERROR: no topics loaded from $TOPICS_FILE"
@@ -147,12 +161,13 @@ fi
 
 log "Starting cloud agent"
 log "Topics in pool: $TOPIC_COUNT, active agents: $ACTIVE_AGENTS, assigned: ${#ASSIGNED_TOPICS[@]}"
-log "MAX_ITERATIONS=$MAX_ITERATIONS, PREAM_SAMPLES=$PREAM_SAMPLES"
+log "MAX_ITERATIONS=$MAX_ITERATIONS, PREAM_SAMPLES=$PREAM_SAMPLES, PREAM_CONVERGENCE=$PREAM_CONVERGENCE, PREAM_SUBAGENTS=$PREAM_SUBAGENTS"
+log "Data root: $DATA_ROOT"
 log "Assigned topics: ${ASSIGNED_TOPICS[*]}"
 
 get_iteration_count() {
   local topic=$1
-  local state_file="$SCRIPT_DIR/prompts/$topic/pream_state.json"
+  local state_file="$DATA_ROOT/prompts/$topic/pream_state.json"
   if [ -f "$state_file" ]; then
     grep -o '"iteration":' "$state_file" 2>/dev/null | wc -l | tr -d ' '
   else
@@ -162,7 +177,7 @@ get_iteration_count() {
 
 is_converged() {
   local topic=$1
-  local state_file="$SCRIPT_DIR/prompts/$topic/pream_state.json"
+  local state_file="$DATA_ROOT/prompts/$topic/pream_state.json"
   if [ -f "$state_file" ]; then
     grep -q '"converged": true' "$state_file" && return 0
   fi
@@ -188,7 +203,13 @@ run_topic() {
 
     log "[$topic] running single iteration $((iter_count + 1))"
     set +e
-    npm run dev -- optimize -t "$topic" -i "$MAX_ITERATIONS" -s "$PREAM_SAMPLES" --single-iteration >> "$MAIN_LOG" 2>&1
+    PREAM_DATA_ROOT="$DATA_ROOT" npm run dev -- optimize \
+      -t "$topic" \
+      -i "$MAX_ITERATIONS" \
+      -s "$PREAM_SAMPLES" \
+      -c "$PREAM_CONVERGENCE" \
+      --subagents "$PREAM_SUBAGENTS" \
+      --single-iteration >> "$MAIN_LOG" 2>&1
     local exit_code=$?
     set -e
 

@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { v4 as uuidv4 } from 'uuid';
+import pLimit from 'p-limit';
 import type OpenAI from 'openai';
 import type {
   TopicPath,
@@ -165,38 +166,48 @@ export class QuestionGenerator {
     promptVersion?: string,
     difficultyDistribution?: DifficultyLevel[]
   ): Promise<GeneratedQuestion[]> {
-    const questions: GeneratedQuestion[] = [];
-
     // Default to uniform distribution across difficulty levels
     const difficulties = difficultyDistribution || this.getDefaultDifficultyDistribution(count);
+    const subagents = Math.max(
+      1,
+      parseInt(
+        process.env.GENERATION_CONCURRENCY ||
+          process.env.PREAM_SUBAGENTS ||
+          '1',
+        10
+      )
+    );
+    const limit = pLimit(subagents);
 
     const maxAttemptsPerSlot = 3;
-    let slot = 0;
+    let completed = 0;
 
-    while (slot < count) {
-      const difficulty = difficulties[slot % difficulties.length];
-      let attempt = 0;
-      let success = false;
+    const tasks = Array.from({ length: count }, (_, slot) =>
+      limit(async () => {
+        const difficulty = difficulties[slot % difficulties.length];
+        let attempt = 0;
 
-      while (attempt < maxAttemptsPerSlot && !success) {
-        try {
-          const question = await this.generateQuestion(topic, difficulty, promptVersion);
-          questions.push(question);
-          console.log(`Generated question ${questions.length}/${count} for ${topic.subtopic}`);
-          success = true;
-        } catch (e) {
-          attempt++;
-          console.error(`Attempt ${attempt}/${maxAttemptsPerSlot} failed for slot ${slot + 1}: ${e}`);
-          if (attempt >= maxAttemptsPerSlot) {
-            console.error('Giving up on this slot to avoid infinite loops');
+        while (attempt < maxAttemptsPerSlot) {
+          try {
+            const question = await this.generateQuestion(topic, difficulty, promptVersion);
+            completed++;
+            console.log(`Generated question ${completed}/${count} for ${topic.subtopic}`);
+            return question;
+          } catch (e) {
+            attempt++;
+            console.error(`Attempt ${attempt}/${maxAttemptsPerSlot} failed for slot ${slot + 1}: ${e}`);
+            if (attempt >= maxAttemptsPerSlot) {
+              console.error('Giving up on this slot to avoid infinite loops');
+            }
           }
         }
-      }
 
-      slot++;
-    }
+        return null;
+      })
+    );
 
-    return questions;
+    const results = await Promise.all(tasks);
+    return results.filter((q): q is GeneratedQuestion => q !== null);
   }
 
   /**

@@ -32,11 +32,15 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.QuestionEvaluator = void 0;
 exports.createEvaluator = createEvaluator;
 const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
+const p_limit_1 = __importDefault(require("p-limit"));
 const config_1 = require("../core/config");
 const ssr_rater_1 = require("../judges/ssr-rater");
 /**
@@ -70,13 +74,11 @@ class QuestionEvaluator {
      * Evaluate multiple questions
      */
     async evaluateBatch(questions, dimensions) {
-        // Process in parallel with some concurrency limit
-        const results = [];
-        for (const question of questions) {
-            const evaluation = await this.evaluate(question, dimensions);
-            results.push(evaluation);
-        }
-        return results;
+        const subagents = Math.max(1, parseInt(process.env.EVALUATION_CONCURRENCY ||
+            process.env.PREAM_SUBAGENTS ||
+            '1', 10));
+        const limit = (0, p_limit_1.default)(subagents);
+        return Promise.all(questions.map((question) => limit(() => this.evaluate(question, dimensions))));
     }
     /**
      * Calculate aggregate score from individual judge results

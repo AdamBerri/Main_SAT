@@ -33,7 +33,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SSR_CONFIG = exports.MODEL_CONFIG = exports.DEFAULT_TEMPERATURE_CONFIG = exports.DEFAULT_PREAM_CONFIG = exports.MATH_HIERARCHY = exports.READING_HIERARCHY = exports.GOLD_STANDARDS_DIR = exports.EVALUATION_DIR = exports.GENERATED_DIR = exports.SCHEMAS_DIR = exports.PROMPTS_DIR = exports.PACKAGE_ROOT = void 0;
+exports.SSR_CONFIG = exports.MODEL_CONFIG = exports.DEFAULT_TEMPERATURE_CONFIG = exports.DEFAULT_PREAM_CONFIG = exports.MATH_HIERARCHY = exports.READING_HIERARCHY = exports.GOLD_STANDARDS_DIR = exports.EVALUATION_DIR = exports.GENERATED_DIR = exports.SCHEMAS_DIR = exports.PROMPTS_DIR = exports.DATA_ROOT = exports.PACKAGE_ROOT = void 0;
 exports.getTopicPath = getTopicPath;
 exports.getPromptDir = getPromptDir;
 exports.getSchemaPath = getSchemaPath;
@@ -50,11 +50,14 @@ const path = __importStar(require("path"));
 // Directory Paths
 // ============================================
 exports.PACKAGE_ROOT = path.resolve(__dirname, '../..');
-exports.PROMPTS_DIR = path.join(exports.PACKAGE_ROOT, 'prompts');
+exports.DATA_ROOT = process.env.PREAM_DATA_ROOT
+    ? path.resolve(process.env.PREAM_DATA_ROOT)
+    : exports.PACKAGE_ROOT;
+exports.PROMPTS_DIR = path.join(exports.DATA_ROOT, 'prompts');
 exports.SCHEMAS_DIR = path.join(exports.PACKAGE_ROOT, 'schemas');
-exports.GENERATED_DIR = path.join(exports.PACKAGE_ROOT, 'generated');
-exports.EVALUATION_DIR = path.join(exports.PACKAGE_ROOT, 'evaluation');
-exports.GOLD_STANDARDS_DIR = path.join(exports.PACKAGE_ROOT, 'gold_standards');
+exports.GENERATED_DIR = path.join(exports.DATA_ROOT, 'generated');
+exports.EVALUATION_DIR = path.join(exports.DATA_ROOT, 'evaluation');
+exports.GOLD_STANDARDS_DIR = path.join(exports.DATA_ROOT, 'gold_standards');
 // ============================================
 // Topic Hierarchy
 // ============================================

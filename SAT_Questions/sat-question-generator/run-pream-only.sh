@@ -7,11 +7,14 @@
 
 PREAM_ITERATIONS=${PREAM_ITERATIONS:-5}
 PREAM_SAMPLES=${PREAM_SAMPLES:-25}
+PREAM_CONVERGENCE=${PREAM_CONVERGENCE:-0.02}
+PREAM_SUBAGENTS=${PREAM_SUBAGENTS:-1}
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-LOG_DIR="$SCRIPT_DIR/logs"
+DATA_ROOT="${PREAM_DATA_ROOT:-$SCRIPT_DIR}"
+LOG_DIR="$DATA_ROOT/logs"
 mkdir -p "$LOG_DIR"
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 LOG_FILE="$LOG_DIR/pream_only_$TIMESTAMP.log"
@@ -29,6 +32,16 @@ log_section() {
 }
 
 # Load env
+if [ -f "$DATA_ROOT/.env.minimax" ]; then
+    set -a
+    source "$DATA_ROOT/.env.minimax"
+    set +a
+fi
+if [ -f "$DATA_ROOT/.env" ]; then
+    set -a
+    source "$DATA_ROOT/.env"
+    set +a
+fi
 if [ -f .env ]; then
     set -a
     source .env
@@ -88,6 +101,9 @@ log_section "PREAM Optimization Only (Sonnet 4.5)"
 log "Skipping generation, running PREAM on existing questions"
 log "Iterations per topic: $PREAM_ITERATIONS"
 log "Samples per iteration: $PREAM_SAMPLES"
+log "Convergence threshold: $PREAM_CONVERGENCE"
+log "Subagents per loop: $PREAM_SUBAGENTS"
+log "Data root: $DATA_ROOT"
 
 count=0
 total=32
@@ -99,11 +115,16 @@ for topic in $ALL_TOPICS; do
     log ""
     log "[$count/$total] Optimizing: $topic"
 
-    npm run dev -- optimize -t "$topic" -i "$PREAM_ITERATIONS" -s "$PREAM_SAMPLES" 2>&1 | tee -a "$LOG_FILE" || true
+    PREAM_DATA_ROOT="$DATA_ROOT" npm run dev -- optimize \
+        -t "$topic" \
+        -i "$PREAM_ITERATIONS" \
+        -s "$PREAM_SAMPLES" \
+        -c "$PREAM_CONVERGENCE" \
+        --subagents "$PREAM_SUBAGENTS" 2>&1 | tee -a "$LOG_FILE" || true
 done
 
 log_section "Generating Images for All Questions"
-npm run dev -- images --all 2>&1 | tee -a "$LOG_FILE" || true
+PREAM_DATA_ROOT="$DATA_ROOT" npm run dev -- images --all 2>&1 | tee -a "$LOG_FILE" || true
 
 log_section "COMPLETE"
 log "PREAM optimization finished"

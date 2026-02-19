@@ -112,11 +112,45 @@
       ],
       "convergenceNote": "Test avg change iter2→iter3: 5.28→5.25 (0.6% < 2% threshold). Converged. Manual continuation with v1.6.0 (LLM-attention-targeted restructure).",
       "completedAt": "2026-02-18T23:00:00.000Z"
+    },
+    {
+      "iteration": 4,
+      "promptVersion": "1.6.0",
+      "newPromptVersion": null,
+      "samplesGenerated": 25,
+      "trainSize": 20,
+      "testSize": 5,
+      "trainMetrics": {
+        "averageScore": 5.46,
+        "passRate": 1.0,
+        "scores": {
+          "Q1": 4.75, "Q2": 5.08, "Q3": 5.42, "Q4": 4.58, "Q5": 4.75,
+          "Q6": 5.58, "Q7": 5.75, "Q8": 5.50, "Q9": 5.42, "Q10": 5.75,
+          "Q11": 5.75, "Q12": 5.75, "Q13": 5.08, "Q14": 5.75, "Q15": 5.75,
+          "Q16": 5.92, "Q17": 5.42, "Q18": 5.33, "Q19": 5.92, "Q20": 5.92
+        }
+      },
+      "testMetrics": {
+        "averageScore": 5.33,
+        "passRate": 0.80,
+        "scores": {
+          "Q21": 5.75, "Q22": 5.42, "Q23": 5.00, "Q24": 5.83, "Q25": 4.67
+        }
+      },
+      "errorCategories": [
+        "d1_difficulty_miscalibration: All D1 questions provide all 3 trig values requiring choose-the-ratio (D2 behavior). Q2/Q4 are clearly D2.",
+        "grounding_violation_distractors: Q1/Q4/Q5 use 'confused with 30° rule' distractors with 1/2 not from stem — violates rationale grounding rule",
+        "q25_revision_language: Q25 distractor D rationale is ~300 words of rambling with 'Wait', 'Let me reconsider', 'actually' — severe faithfulness violation",
+        "q23_d5_under_challenging: Q23 first equation just confirms given distance. Actual computation is h=30tan60 — one step, D3 not D5",
+        "structural_similarity_d4: Q17/Q18 both hyp→legs→area; Q19/Q20 both trig→offset→Pythagorean — only 3 distinct D4 structures"
+      ],
+      "convergenceNote": "Test avg iter3→iter4: 5.25→5.33 (+1.5% < 2% threshold). Converged. Did not beat best test score of 5.41 (iter1, v1.4.0). Q25 FAILED on faithfulness (revision language in distractor rationale).",
+      "completedAt": "2026-02-19T00:30:00.000Z"
     }
   ],
   "currentBestVersion": "1.4.0",
   "bestTestScore": 5.41,
-  "converged": false,
+  "converged": true,
   "startedAt": "2026-02-18T14:30:00.000Z",
-  "completedAt": null
+  "completedAt": "2026-02-19T00:30:00.000Z"
 }

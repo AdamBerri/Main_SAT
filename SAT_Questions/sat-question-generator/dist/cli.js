@@ -148,6 +148,8 @@ program
     .option('-t, --topic <topic>', 'Topic path to optimize')
     .option('-i, --iterations <count>', 'Max iterations', '5')
     .option('-s, --samples <count>', 'Samples per iteration', '25')
+    .option('-c, --convergence <threshold>', 'Convergence threshold override (default 0.02)')
+    .option('--subagents <count>', 'Parallel generation/evaluation workers per PREAM loop')
     .option('--single-iteration', 'Run only one PREAM iteration (for round-robin orchestration)')
     .action(async (options) => {
     try {
@@ -156,10 +158,17 @@ program
             process.exit(1);
         }
         const topic = (0, config_1.parseTopicString)(options.topic);
-        const preamLoop = (0, pream_loop_1.createPREAMLoop)({
+        if (options.subagents) {
+            process.env.PREAM_SUBAGENTS = String(parseInt(options.subagents));
+        }
+        const preamConfig = {
             maxIterations: parseInt(options.iterations),
             minSamplesPerIteration: parseInt(options.samples),
-        });
+        };
+        if (options.convergence !== undefined) {
+            preamConfig.convergenceThreshold = parseFloat(options.convergence);
+        }
+        const preamLoop = (0, pream_loop_1.createPREAMLoop)(preamConfig);
         const generator = (0, generator_1.createGenerator)();
         // Single iteration mode for round-robin orchestration
         if (options.singleIteration) {

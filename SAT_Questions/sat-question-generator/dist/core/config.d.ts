@@ -1,5 +1,6 @@
 import type { TopicPath, SATSection, ReadingDomain, MathDomain, ReadingSubtopic, MathSubtopic, PREAMConfig, TemperatureConfig } from './types';
 export declare const PACKAGE_ROOT: string;
+export declare const DATA_ROOT: string;
 export declare const PROMPTS_DIR: string;
 export declare const SCHEMAS_DIR: string;
 export declare const GENERATED_DIR: string;

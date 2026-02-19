@@ -16,11 +16,15 @@ import type {
 // ============================================
 
 export const PACKAGE_ROOT = path.resolve(__dirname, '../..');
-export const PROMPTS_DIR = path.join(PACKAGE_ROOT, 'prompts');
+export const DATA_ROOT = process.env.PREAM_DATA_ROOT
+  ? path.resolve(process.env.PREAM_DATA_ROOT)
+  : PACKAGE_ROOT;
+
+export const PROMPTS_DIR = path.join(DATA_ROOT, 'prompts');
 export const SCHEMAS_DIR = path.join(PACKAGE_ROOT, 'schemas');
-export const GENERATED_DIR = path.join(PACKAGE_ROOT, 'generated');
-export const EVALUATION_DIR = path.join(PACKAGE_ROOT, 'evaluation');
-export const GOLD_STANDARDS_DIR = path.join(PACKAGE_ROOT, 'gold_standards');
+export const GENERATED_DIR = path.join(DATA_ROOT, 'generated');
+export const EVALUATION_DIR = path.join(DATA_ROOT, 'evaluation');
+export const GOLD_STANDARDS_DIR = path.join(DATA_ROOT, 'gold_standards');
 
 // ============================================
 // Topic Hierarchy

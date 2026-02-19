@@ -1,0 +1,40 @@
+{
+  "id": "rt-d3-q11-a4c8e2f1-7b3d-4f9a-8c5e-1d6a3b9f2e7c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.5,
+    "procedural": 3.0,
+    "computational": 3.0
+  },
+  "stem": "A surveyor stands 60 feet from the base of a building and measures the angle of elevation to the top of the building to be 37 degrees. The surveyor's eyes are 5 feet above the ground. Given that sin 37\u00b0 \u2248 3/5, cos 37\u00b0 \u2248 4/5, and tan 37\u00b0 \u2248 3/4, what is the height of the building, in feet?",
+  "choices": [
+    {"label": "A", "text": "41", "isCorrect": false},
+    {"label": "B", "text": "45", "isCorrect": false},
+    {"label": "C", "text": "50", "isCorrect": true},
+    {"label": "D", "text": "53", "isCorrect": false}
+  ],
+  "correctAnswer": "C",
+  "explanation": "The angle of elevation from the surveyor's eye level to the top of the building is 37\u00b0. The horizontal distance is 60 feet. Using tangent: tan 37\u00b0 = height above eyes / 60, so height above eyes = 60 \u00d7 (3/4) = 45 feet. Since the surveyor's eyes are 5 feet above the ground, the total building height is 45 + 5 = 50 feet.",
+  "distractorRationale": {
+    "A": "Used sin instead of tan to find the height above eye level: 60 \u00d7 sin 37\u00b0 = 60 \u00d7 (3/5) = 36, then added eye height: 36 + 5 = 41.",
+    "B": "Correctly computed the height above eye level using tan (60 \u00d7 3/4 = 45) but forgot to add the surveyor's 5-foot eye height = 45.",
+    "C": "Correct: height above eyes = 60 \u00d7 tan 37\u00b0 = 60 \u00d7 (3/4) = 45, total height = 45 + 5 = 50.",
+    "D": "Used cos instead of tan to find the height above eye level: 60 \u00d7 cos 37\u00b0 = 60 \u00d7 (4/5) = 48, then added eye height: 48 + 5 = 53."
+  },
+  "hasImage": true,
+  "imageDescription": "A right triangle showing a surveyor standing 60 feet from a building. A dashed horizontal line from the surveyor's eyes (labeled 5 ft above ground) extends to the building. A line of sight goes from the surveyor's eyes to the top of the building, with the 37\u00b0 angle of elevation marked. The building height is labeled with a question mark.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d3-q11"
+  }
+}

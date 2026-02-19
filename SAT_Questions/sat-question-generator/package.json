@@ -13,6 +13,7 @@
     "generate": "ts-node src/cli.ts generate",
     "evaluate": "ts-node src/cli.ts evaluate",
     "optimize": "ts-node src/cli.ts optimize",
+    "setup:minimax-experiment": "node scripts/setup-minimax-experiment.mjs",
     "lint": "eslint src/**/*.ts",
     "test": "jest"
   },

@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { v4 as uuidv4 } from 'uuid';
+import pLimit from 'p-limit';
 import type {
   GeneratedQuestion,
   QuestionEvaluation,
@@ -58,15 +58,20 @@ export class QuestionEvaluator {
     questions: GeneratedQuestion[],
     dimensions?: EvaluationDimension[]
   ): Promise<QuestionEvaluation[]> {
-    // Process in parallel with some concurrency limit
-    const results: QuestionEvaluation[] = [];
+    const subagents = Math.max(
+      1,
+      parseInt(
+        process.env.EVALUATION_CONCURRENCY ||
+          process.env.PREAM_SUBAGENTS ||
+          '1',
+        10
+      )
+    );
+    const limit = pLimit(subagents);
 
-    for (const question of questions) {
-      const evaluation = await this.evaluate(question, dimensions);
-      results.push(evaluation);
-    }
-
-    return results;
+    return Promise.all(
+      questions.map((question) => limit(() => this.evaluate(question, dimensions)))
+    );
   }
 
   /**

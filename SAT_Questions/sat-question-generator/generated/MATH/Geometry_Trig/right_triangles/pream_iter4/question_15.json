@@ -1,0 +1,40 @@
+{
+  "id": "rt-d3-q15-e8a3c6d5-2b9f-4e1c-a7d8-5f3b1c4e9a2d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.0,
+    "computational": 3.0
+  },
+  "stem": "Two buildings stand 120 feet apart on level ground. From the roof of the shorter building, which is 40 feet tall, the angle of elevation to the top of the taller building is 53 degrees. Given that sin 53\u00b0 \u2248 4/5, cos 53\u00b0 \u2248 3/5, and tan 53\u00b0 \u2248 4/3, what is the height of the taller building, in feet?",
+  "choices": [
+    {"label": "A", "text": "112", "isCorrect": false},
+    {"label": "B", "text": "136", "isCorrect": false},
+    {"label": "C", "text": "160", "isCorrect": false},
+    {"label": "D", "text": "200", "isCorrect": true}
+  ],
+  "correctAnswer": "D",
+  "explanation": "The angle of elevation from the short roof to the tall roof is 53\u00b0 over a horizontal distance of 120 feet. The height difference is: 120 \u00d7 tan 53\u00b0 = 120 \u00d7 (4/3) = 160 feet. The taller building's total height is 160 + 40 = 200 feet.",
+  "distractorRationale": {
+    "A": "Used cos instead of tan to find the height difference: 120 \u00d7 cos 53\u00b0 = 120 \u00d7 (3/5) = 72, then added shorter building: 72 + 40 = 112.",
+    "B": "Used sin instead of tan to find the height difference: 120 \u00d7 sin 53\u00b0 = 120 \u00d7 (4/5) = 96, then added shorter building: 96 + 40 = 136.",
+    "C": "Correctly found the height difference (120 \u00d7 4/3 = 160) but forgot to add the shorter building's height = 160.",
+    "D": "Correct: Height difference = 120 \u00d7 tan 53\u00b0 = 120 \u00d7 (4/3) = 160, total = 160 + 40 = 200."
+  },
+  "hasImage": true,
+  "imageDescription": "Two buildings shown side by side, 120 feet apart on level ground. The shorter building on the left is labeled 40 ft. A dashed line from the roof of the shorter building angles upward at 53\u00b0 to the top of the taller building on the right. The taller building's height is marked with a question mark.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d3-q15"
+  }
+}

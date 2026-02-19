@@ -13,6 +13,8 @@
 #   AGENT_COUNT      Total logical agents cluster-wide (default: 50)
 #   MAX_ITERATIONS   Passed through to per-agent script (default: 5)
 #   PREAM_SAMPLES    Passed through to per-agent script (default: 25)
+#   PREAM_CONVERGENCE Passed through to per-agent script (default: 0.02)
+#   PREAM_SUBAGENTS  Passed through to per-agent script (default: 1)
 #   TOPICS_FILE      Topic list file (default: cloud/topics.txt)
 #
 # Advanced override:
@@ -27,7 +29,10 @@ NODE_COUNT=${NODE_COUNT:-6}
 AGENT_COUNT=${AGENT_COUNT:-50}
 MAX_ITERATIONS=${MAX_ITERATIONS:-5}
 PREAM_SAMPLES=${PREAM_SAMPLES:-25}
+PREAM_CONVERGENCE=${PREAM_CONVERGENCE:-0.02}
+PREAM_SUBAGENTS=${PREAM_SUBAGENTS:-1}
 TOPICS_FILE=${TOPICS_FILE:-cloud/topics.txt}
+PREAM_DATA_ROOT=${PREAM_DATA_ROOT:-}
 
 if [ -z "$NODE_INDEX" ]; then
   echo "ERROR: NODE_INDEX is required"
@@ -71,7 +76,10 @@ fi
 
 echo "Node $NODE_INDEX/$NODE_COUNT launching $AGENTS_ON_NODE agent(s)"
 echo "Global agent range: [$AGENT_OFFSET, $((AGENT_OFFSET + AGENTS_ON_NODE - 1))]"
-echo "AGENT_COUNT=$AGENT_COUNT, MAX_ITERATIONS=$MAX_ITERATIONS, PREAM_SAMPLES=$PREAM_SAMPLES"
+echo "AGENT_COUNT=$AGENT_COUNT, MAX_ITERATIONS=$MAX_ITERATIONS, PREAM_SAMPLES=$PREAM_SAMPLES, PREAM_CONVERGENCE=$PREAM_CONVERGENCE, PREAM_SUBAGENTS=$PREAM_SUBAGENTS"
+if [ -n "$PREAM_DATA_ROOT" ]; then
+  echo "PREAM_DATA_ROOT=$PREAM_DATA_ROOT"
+fi
 
 if [ "$AGENTS_ON_NODE" -le 0 ]; then
   echo "Nothing to launch on this node."
@@ -86,6 +94,9 @@ for ((local_idx = 0; local_idx < AGENTS_ON_NODE; local_idx++)); do
   AGENT_COUNT=$AGENT_COUNT \
   MAX_ITERATIONS=$MAX_ITERATIONS \
   PREAM_SAMPLES=$PREAM_SAMPLES \
+  PREAM_CONVERGENCE=$PREAM_CONVERGENCE \
+  PREAM_SUBAGENTS=$PREAM_SUBAGENTS \
+  PREAM_DATA_ROOT=$PREAM_DATA_ROOT \
   TOPICS_FILE=$TOPICS_FILE \
   "$SCRIPT_DIR/run-pream-cloud-agent.sh" &
   pids+=($!)

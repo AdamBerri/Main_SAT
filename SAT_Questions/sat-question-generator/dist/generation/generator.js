@@ -32,12 +32,16 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.QuestionGenerator = void 0;
 exports.createGenerator = createGenerator;
 const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
 const uuid_1 = require("uuid");
+const p_limit_1 = __importDefault(require("p-limit"));
 const config_1 = require("../core/config");
 const glm_client_1 = require("../core/glm-client");
 const prompt_manager_1 = require("../prompts/prompt-manager");
@@ -146,21 +150,23 @@ class QuestionGenerator {
      * Generate multiple questions for a topic
      */
     async generateBatch(topic, count, promptVersion, difficultyDistribution) {
-        const questions = [];
         // Default to uniform distribution across difficulty levels
         const difficulties = difficultyDistribution || this.getDefaultDifficultyDistribution(count);
+        const subagents = Math.max(1, parseInt(process.env.GENERATION_CONCURRENCY ||
+            process.env.PREAM_SUBAGENTS ||
+            '1', 10));
+        const limit = (0, p_limit_1.default)(subagents);
         const maxAttemptsPerSlot = 3;
-        let slot = 0;
-        while (slot < count) {
+        let completed = 0;
+        const tasks = Array.from({ length: count }, (_, slot) => limit(async () => {
             const difficulty = difficulties[slot % difficulties.length];
             let attempt = 0;
-            let success = false;
-            while (attempt < maxAttemptsPerSlot && !success) {
+            while (attempt < maxAttemptsPerSlot) {
                 try {
                     const question = await this.generateQuestion(topic, difficulty, promptVersion);
-                    questions.push(question);
-                    console.log(`Generated question ${questions.length}/${count} for ${topic.subtopic}`);
-                    success = true;
+                    completed++;
+                    console.log(`Generated question ${completed}/${count} for ${topic.subtopic}`);
+                    return question;
                 }
                 catch (e) {
                     attempt++;
@@ -170,9 +176,10 @@ class QuestionGenerator {
                     }
                 }
             }
-            slot++;
-        }
-        return questions;
+            return null;
+        }));
+        const results = await Promise.all(tasks);
+        return results.filter((q) => q !== null);
     }
     /**
      * Generate and save questions

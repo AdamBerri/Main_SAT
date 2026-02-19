@@ -1,0 +1,40 @@
+{
+  "id": "rt-d4-q20-f9b4d7e6-3c1a-4f2d-b8e5-6a4c2d9f1b3e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "right_triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.0,
+    "computational": 4.0
+  },
+  "stem": "From the top of a 35-foot watchtower, a ranger spots a campfire at an angle of depression \u03b8, where sin \u03b8 = 5/13, cos \u03b8 = 12/13, and tan \u03b8 = 5/12. A firebreak is located 36 feet directly beyond the campfire (farther from the tower), at the same ground level. The watchtower has a rotating searchlight. What is the straight-line distance from the top of the watchtower to the firebreak, in feet?",
+  "choices": [
+    {"label": "A", "text": "91", "isCorrect": false},
+    {"label": "B", "text": "120", "isCorrect": false},
+    {"label": "C", "text": "125", "isCorrect": true},
+    {"label": "D", "text": "155", "isCorrect": false}
+  ],
+  "correctAnswer": "C",
+  "explanation": "First, find the horizontal distance from the tower to the campfire. Using tan \u03b8 = opposite/adjacent = 35/d, so d = 35/tan \u03b8 = 35/(5/12) = 35 \u00d7 (12/5) = 84 feet. The firebreak is 36 feet beyond the campfire, so it is 84 + 36 = 120 feet from the tower horizontally. The straight-line distance from the tower top to the firebreak is \u221a(120\u00b2 + 35\u00b2) = \u221a(14400 + 1225) = \u221a15625 = 125 feet. The searchlight information is not needed.",
+  "distractorRationale": {
+    "A": "Found the straight-line distance to the campfire instead of the firebreak, forgetting the 36-foot offset: \u221a(84\u00b2 + 35\u00b2) = \u221a(7056 + 1225) = \u221a8281 = 91.",
+    "B": "Correctly found the horizontal distance to the firebreak (84 + 36 = 120) but reported it as the answer without accounting for the 35-foot tower height = 120.",
+    "C": "Correct: horizontal to fire = 84, to firebreak = 120, distance = \u221a(120\u00b2 + 35\u00b2) = \u221a15625 = 125.",
+    "D": "Added the horizontal and vertical distances instead of using the Pythagorean theorem: 120 + 35 = 155."
+  },
+  "hasImage": true,
+  "imageDescription": "A side view showing a 35-foot watchtower on the left. From the top, a dashed line angles down at angle \u03b8 to a campfire on the ground 84 feet from the tower base. A firebreak is marked 36 feet farther from the tower at 120 feet total. A solid line shows the straight-line distance from the tower top to the firebreak, forming the hypotenuse of a right triangle with the 35-foot height and 120-foot horizontal.",
+  "imagePath": "",
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-18T23:30:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-opus-4-6",
+    "generationId": "iter4-d4-q20"
+  }
+}
