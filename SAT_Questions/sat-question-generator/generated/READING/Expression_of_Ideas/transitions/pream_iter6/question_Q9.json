@@ -1,0 +1,58 @@
+{
+  "id": "d9e0f1a2-b3c4-4d5e-6f7a-8b9c0d1e2f35",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "The documentary series examined how small businesses adapted during economic downturns, profiling owners who found creative solutions to declining sales. _______ the final episode focused on a bakery that began offering cooking classes to supplement its income when foot traffic dropped by half.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 58,
+    "source": "Adapted from a television programming review"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "For instance,",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Nevertheless,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "As a result,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "In contrast,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The first sentence describes the documentary's general focus on small businesses adapting creatively. The second sentence gives a specific example of this: a bakery that started cooking classes. 'For instance' correctly introduces this specific illustration of the broader pattern.",
+  "distractorRationale": {
+    "A": "Correct. 'For instance' introduces the bakery as a specific example of the documentary's broader focus on creative business adaptations.",
+    "B": "'Nevertheless' signals a concession or contrast, but the bakery example supports and illustrates the documentary's theme rather than contradicting it.",
+    "C": "'As a result' signals causation, but the bakery episode is an example of the documentary's subject, not a consequence of it.",
+    "D": "'In contrast' signals opposition, but the bakery episode aligns with the documentary's stated focus on creative adaptations."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:01:03.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e0f1a2b3-c4d5-4e6f-7a8b-9c0d1e2f3a45"
+  },
+  "hasImage": false
+}

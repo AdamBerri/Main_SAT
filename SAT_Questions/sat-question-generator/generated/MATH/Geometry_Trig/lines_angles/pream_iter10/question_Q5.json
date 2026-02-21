@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0005-4aaa-b005-000000000005",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "If two angles are vertical angles and one measures $48°$, what is the measure of the other?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$132°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$48°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$42°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$96°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Vertical angles are always congruent. If one is $48°$, the other is also $48°$.",
+  "distractorRationale": {
+    "A": "Computed supplement: $180° - 48° = 132°$.",
+    "B": "Correct. Vertical angles are equal.",
+    "C": "Computed complement: $90° - 48° = 42°$.",
+    "D": "Doubled the angle: $48° \\times 2 = 96°$."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.338Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0005-4000-a005-000000000005"
+  }
+}

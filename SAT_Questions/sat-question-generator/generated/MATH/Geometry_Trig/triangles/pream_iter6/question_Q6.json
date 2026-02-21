@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c821-5e14-4b8d-9c02-d16f48e73a05",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "Triangle $PQR$ is similar to triangle $STU$, with $PQ$ corresponding to $ST$, $QR$ corresponding to $TU$, and $PR$ corresponding to $SU$. If $PQ = 4$, $QR = 6$, $PR = 8$, and $ST = 6$, what is the length of $TU$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$4$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$8$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$9$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$12$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Since triangle $PQR \\sim$ triangle $STU$ with $PQ$ corresponding to $ST$, the scale factor from $PQR$ to $STU$ is $\\dfrac{ST}{PQ} = \\dfrac{6}{4} = \\dfrac{3}{2}$. Because $QR$ corresponds to $TU$, we have $TU = QR \\times \\dfrac{3}{2} = 6 \\times \\dfrac{3}{2} = 9$.",
+  "distractorRationale": {
+    "A": "The student inverts the scale factor, computing $TU = QR \\times \\dfrac{PQ}{ST} = 6 \\times \\dfrac{4}{6} = 4$, which shrinks the triangle instead of enlarging it.",
+    "B": "The student adds the difference in corresponding sides rather than multiplying: $TU = QR + (ST - PQ) = 6 + (6 - 4) = 8$, confusing additive and multiplicative scaling.",
+    "C": "Correct.",
+    "D": "The student correctly finds the scale factor $\\dfrac{3}{2}$ but applies it to $PR$ (finding $SU$) instead of to $QR$: $PR \\times \\dfrac{3}{2} = 8 \\times \\dfrac{3}{2} = 12$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b9d24e67-1f3a-4c8e-a501-7c85f2d90b43"
+  }
+}

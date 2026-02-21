@@ -1,0 +1,58 @@
+{
+  "id": "b4c5d6e7-eeee-4b0c-1d2e-3f4a5b6c7d89",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "Conservation biologists working to protect the Iberian lynx initially focused on increasing the prey base by reintroducing European rabbits, which constitute more than ninety percent of the lynx's diet. The rabbit population recovered substantially in target areas over five years. _______ the lynx population remained stagnant, as genetic analysis revealed that decades of isolation had reduced genetic diversity to the point where reproductive failure rates were abnormally high regardless of food availability.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 90,
+    "source": "Adapted from a conservation biology research article"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "As anticipated,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Consequently,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Despite this progress,",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "In addition,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage describes a conservation strategy (increase prey) and a success (rabbits recovered). Then it reveals that this success did not produce the expected outcome for the lynx. 'Despite this progress' precisely captures the concessive relationship: the rabbit recovery was genuine progress, yet the lynx population did not benefit. 'Consequently' is a strong distractor because students might expect the lynx to benefit from more food, but the passage explicitly states the lynx remained stagnant -- the opposite of what 'Consequently' would imply. 'As anticipated' is tempting only if students misread the passage as confirming a prediction.",
+  "distractorRationale": {
+    "A": "'As anticipated' signals an expected outcome, but the lynx stagnation was not expected; the whole conservation effort was designed to help the lynx recover.",
+    "B": "'Consequently' signals a logical result of the rabbit recovery. Students might expect the lynx to benefit from more prey, but the passage reveals the opposite: the lynx did not recover.",
+    "C": "Correct. 'Despite this progress' signals that although the rabbit recovery was a genuine advance, the lynx population failed to respond due to an independent genetic problem.",
+    "D": "'In addition' adds a supporting point, but the lynx stagnation contradicts rather than supplements the narrative of conservation progress."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:04:03.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b4eeeeee-c5d6-4e7f-8a9b-0c1d2e3f4a56"
+  },
+  "hasImage": false
+}

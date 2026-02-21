@@ -1,0 +1,38 @@
+{
+  "id": "b2c3d4e5-2222-4a6b-8c7d-9e0f1a2b3c12",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "A semicircular window has a diameter of 8 feet. A rectangular door beneath it is 8 feet wide and 6 feet tall. What is the total area, in square feet, of the window and door combined?",
+  "choices": [
+    { "label": "A", "text": "$48 + 8\\pi$", "isCorrect": true },
+    { "label": "B", "text": "$48 + 16\\pi$", "isCorrect": false },
+    { "label": "C", "text": "$48 + 32\\pi$", "isCorrect": false },
+    { "label": "D", "text": "$56$", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The rectangle area is $8 \\times 6 = 48$ square feet. The semicircle has diameter 8, so radius $r = 4$. The semicircle area is $\\frac{1}{2}\\pi r^2 = \\frac{1}{2}\\pi(16) = 8\\pi$. Total: $48 + 8\\pi$ square feet. The answer is A.",
+  "distractorRationale": {
+    "A": "Correct. Rectangle $48$ + semicircle $8\\pi = 48 + 8\\pi$.",
+    "B": "Uses the full circle area instead of the semicircle: $\\pi(4)^2 = 16\\pi$, giving $48 + 16\\pi$.",
+    "C": "Uses the diameter as the radius in the semicircle formula: $\\frac{1}{2}\\pi(8)^2 = 32\\pi$, giving $48 + 32\\pi$.",
+    "D": "Adds diameter to rectangle area instead of computing semicircle area: $48 + 8 = 56$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:12.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-b222-4d5e-8f9a-0b1c2d3e4f12"
+  }
+}

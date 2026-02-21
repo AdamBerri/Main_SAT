@@ -1,0 +1,57 @@
+{
+  "id": "c5f9a3b2-8d1e-4c7f-9a2b-6e4d8f1c3b7e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "Emperor penguins breed during the Antarctic winter, when temperatures can drop below minus forty degrees Fahrenheit. The male penguin incubates the single egg on top of his feet, tucking it beneath a warm flap of skin called the brood pouch. During the two-month incubation period, the male does not eat at all. Instead, thousands of males huddle together in large groups, rotating positions so that each bird spends time in the warmer interior of the huddle and also takes a turn on the cold outer edge. By the time the egg hatches, the male has lost nearly half his body weight. The female, who has been feeding at sea during this period, returns just as the chick emerges.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 120,
+    "source": "Original passage"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the huddling behavior of male emperor penguins?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It allows penguins to share food more efficiently during winter.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "It helps each penguin conserve body heat throughout incubation.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "It protects the eggs from predators during the breeding season.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It ensures that the strongest males incubate eggs at the center.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage states that males rotate positions so each bird spends time in the warmer interior of the huddle and also takes a turn on the colder outer edge. This rotation system, combined with the extreme cold temperatures described and the two-month period of fasting, indicates that huddling helps all penguins manage body temperature and conserve heat necessary to survive without food. The explicit mention of 'warmer interior' directly supports this inference.",
+  "distractorRationale": {
+    "A": "The passage explicitly states males do not eat at all during incubation, so food-sharing through huddling is directly contradicted by the text.",
+    "C": "The passage does not mention predators at any point. Introducing protection from predators requires an assumption entirely unsupported by the passage.",
+    "D": "The rotation system described ensures all males take turns at both the warm center and the cold outer edge—exactly the opposite of one group always staying in the center."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d"
+  },
+  "hasImage": false
+}

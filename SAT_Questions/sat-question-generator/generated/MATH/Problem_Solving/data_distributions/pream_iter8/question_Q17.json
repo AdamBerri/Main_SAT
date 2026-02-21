@@ -1,0 +1,54 @@
+{
+  "id": "0b1c7676-d372-485c-951a-021c5fcd14b0",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "A researcher recorded the daily high temperatures (in degrees Fahrenheit) at five weather stations as $20, 30, 40, 50, 600$. The value $600$ was a data entry error; the correct value is $60$. After the error is corrected, what is the mean of the five temperatures?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$35$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$40$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$50$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$60$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "STEP A — Sort the erroneous data: $20, 30, 40, 50, 600$.\n\nSTEP B (erroneous mean) — $\\frac{20+30+40+50+600}{5} = \\frac{740}{5} = 148$.\n\nSTEP G (after correction) — Replace $600$ with $60$. The corrected sorted data set is: $20, 30, 40, 50, 60$.\n\nNew sum: $20 + 30 + 40 + 50 + 60 = 200$.\n\nNew mean: $\\frac{200}{5} = \\mathbf{40}$.\n\nSTEP C — Corrected median: position $\\frac{5+1}{2} = 3$. Third value $= 40$. Median $= 40$.\n\nSTEP H — The correct answer is $40$, matching choice B.\n\nSTEP I — Distractor analysis:\n- Choice A ($35$): Wrong operation — student removes $600$ from the sum ($740 - 600 = 140$) but forgets to add the corrected value $60$, then divides by the wrong count of $4$: $\\frac{140}{4} = 35$. Two errors compound: omits the replacement and uses $n=4$.\n- Choice C ($50$): Wrong $n$ — student correctly removes $600$ and adds $60$ to get sum $200$, but divides by $4$ instead of $5$: $\\frac{200}{4} = 50$. Only one error: forgetting to keep $n=5$ after a replacement (not a deletion).\n- Choice D ($60$): Partial computation — student reports the corrected value itself as the new mean, treating the fixed entry as the answer without computing the mean of all five values.",
+  "distractorRationale": {
+    "A": "Compound error: the student removes 600 from the sum (740 - 600 = 140) but neither adds the replacement value 60 nor maintains the correct count. Dividing 140 by 4 gives 35.",
+    "B": "Correct. The corrected sum is 20 + 30 + 40 + 50 + 60 = 200, and 200 / 5 = 40.",
+    "C": "Wrong-n error: the student correctly computes the new sum (200) after the substitution but divides by 4 instead of 5, as if the data entry error resulted in a deletion rather than a replacement.",
+    "D": "Partial computation: the student identifies the corrected value (60) and reports it directly as the new mean without computing the average of all five temperatures."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "0a1244eb-330e-44a6-b3f7-03e784c222f5"
+  }
+}

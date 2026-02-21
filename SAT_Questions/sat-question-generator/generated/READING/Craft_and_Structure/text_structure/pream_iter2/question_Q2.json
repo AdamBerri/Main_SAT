@@ -1,0 +1,58 @@
+{
+  "id": "c4d8e3f2-5a9b-4c1d-9f7e-2b6a3d8c5e1f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "linguistic": 1.1
+  },
+  "passage": "The history of public libraries in the United States can be traced through three distinct eras. In the mid-1800s, the first tax-supported public libraries emerged in Massachusetts. Citizens argued that communities had a responsibility to educate all residents, not just those who could afford books. Boston opened the first large urban public library in 1854, and the idea spread rapidly to other cities.\n\nBy the early 1900s, a second era began when philanthropist Andrew Carnegie funded the construction of over 2,500 library buildings across the country. Carnegie believed that libraries gave ambitious individuals the tools to improve themselves. His grants required cities to provide the land and commit to ongoing funding, ensuring local investment.\n\nToday, libraries have entered a third era defined by digital access. In addition to books, they now provide computers, internet connections, e-books, and digital databases. Librarians have expanded their role to include teaching digital literacy skills, helping patrons navigate an increasingly online world. Each era has redefined what a public library is — and whom it serves.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 170,
+    "source": "Original passage modeled on historical overview writing"
+  },
+  "stem": "The passage is structured to present the history of public libraries by—",
+  "choices": [
+    {
+      "label": "A",
+      "text": "contrasting library services in rural areas versus urban centers.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "describing three chronological phases of library development.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "explaining how Carnegie's donations caused modern digital libraries.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "arguing that today's libraries are superior to those of the past.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage explicitly organizes the history of public libraries into three named eras — the 1800s founding era, the Carnegie construction era of the early 1900s, and today's digital era — presented in chronological sequence. Each paragraph addresses one era with a clear time marker ('In the mid-1800s,' 'By the early 1900s,' 'Today'), making chronological sequence the dominant and clearly signaled organizational pattern.",
+  "distractorRationale": {
+    "A": "The passage does not distinguish between rural and urban libraries except to note that Boston opened the first large urban library. No sustained rural-versus-urban contrast exists.",
+    "B": "Correct. The passage moves through three time-marked phases in sequence, explicitly labeling each era and describing the defining characteristics of each period.",
+    "C": "While Carnegie is discussed in the second era, the passage does not present his donations as a direct cause of today's digital libraries. The three eras are treated as sequential developments, not as a cause-and-effect chain linking Carnegie to the present.",
+    "D": "The passage describes what each era contributed and notes that each era 'redefined' libraries, but it does not argue that current libraries are better. No evaluative comparison ranking the eras is made."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f2a3b4c5-d6e7-4f8a-9b0c-1d2e3f4a5b6c"
+  },
+  "hasImage": false
+}

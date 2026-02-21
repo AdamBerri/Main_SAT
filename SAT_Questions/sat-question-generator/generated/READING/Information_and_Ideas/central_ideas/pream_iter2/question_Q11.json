@@ -1,0 +1,58 @@
+{
+  "id": "51142954-6ba8-4930-91f0-bd660574dcfa",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3.0,
+    "linguistic": 3.3
+  },
+  "passage": "Urban heat islands—areas where cities are significantly warmer than surrounding rural land—present a growing challenge for municipal planners. Paved surfaces and buildings absorb solar radiation during the day and release it as heat at night, preventing temperatures from dropping naturally. Cities like Phoenix and Houston regularly record overnight lows several degrees higher than nearby rural areas, straining electrical grids as residents run air conditioning around the clock.\n\nPlanting trees and installing green roofs can partially offset these effects, as vegetation cools the air through evapotranspiration. Yet infrastructure investments required for widespread greening can exceed city budgets, particularly in lower-income neighborhoods that tend to have less tree canopy and suffer disproportionately from elevated temperatures. Addressing urban heat, then, demands both environmental strategies and careful attention to where those strategies are deployed.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 138,
+    "source": "Original passage"
+  },
+  "stem": "Which choice best describes the main idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Urban heat islands are caused primarily by paved surfaces that trap solar energy, making cities like Phoenix and Houston dangerously hot at night.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Tackling urban heat islands effectively requires both environmental solutions and consideration of which communities most need those solutions.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Green infrastructure such as trees and green roofs is the most promising method for reducing urban heat island effects in major cities.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Lower-income urban neighborhoods bear the greatest burden of urban heat islands because they have fewer trees and less access to cooling resources.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage opens by explaining the urban heat island phenomenon and its causes, then describes environmental remedies (tree planting, green roofs), and finally notes that cost constraints mean lower-income neighborhoods—which suffer most—are least likely to receive these interventions. The concluding sentence explicitly ties these threads together: effective solutions require both environmental strategies and attention to equitable deployment. Choice B captures this dual emphasis on method and equity, which is the synthesis the passage builds toward.",
+  "distractorRationale": {
+    "A": "While paved surfaces and their heat-trapping role are mentioned, this choice focuses only on the cause of urban heat islands and ignores the passage's extended discussion of solutions and equity—it represents only the first portion of the passage's argument.",
+    "B": "Correct. The passage develops the argument that addressing urban heat requires both environmental tools and equity considerations about where those tools are applied.",
+    "C": "The passage presents green infrastructure as a partial, costly remedy rather than 'the most promising method,' and does not rank it above other strategies. This overstates one detail from the second paragraph.",
+    "D": "The disproportionate burden on lower-income neighborhoods is a supporting detail used to motivate the equity concern, not the passage's main point. The passage uses this fact to argue for targeted deployment of solutions, not merely to document inequality."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "0040d918-62f8-4e18-8cf8-8049c3a56a4f"
+  },
+  "hasImage": false
+}

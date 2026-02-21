@@ -1,0 +1,54 @@
+{
+  "id": "c6a0e8d3-2f57-4b1c-a9e4-7d3b5f8c0e12",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "A laboratory contains two heating elements, X and Y, each drawing a normal operating current measured in amperes. An engineer observes the following: when the current through element X is increased by 3 amperes and the current through element Y is doubled, the combined current drawn is 40 amperes. When the current through element X is doubled and the current through element Y is increased by 3 amperes, the combined current drawn is 41 amperes. What is the total normal operating current, in amperes, drawn by both heating elements combined?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$1$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$13$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$25$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$75$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let $x$ = the normal operating current of element X and $y$ = the normal operating current of element Y, both in amperes.\n\nTranslating the two conditions into equations:\n$$(x + 3) + 2y = 40 \\implies x + 2y = 37 \\quad (1)$$\n$$2x + (y + 3) = 41 \\implies 2x + y = 38 \\quad (2)$$\n\nThe goal is to find $x + y$.\n\n**Strategic step — Add equations (1) and (2):**\n$$(x + 2y) + (2x + y) = 37 + 38$$\n$$3x + 3y = 75$$\n$$3(x + y) = 75$$\n$$x + y = 25$$\n\n**Verification by solving individually:**\nFrom equation (1): $x = 37 - 2y$. Substitute into equation (2): $2(37 - 2y) + y = 38 \\implies 74 - 4y + y = 38 \\implies -3y = -36 \\implies y = 12$.\nThen $x = 37 - 2(12) = 37 - 24 = 13$.\n\n**Checking:** Equation (1): $13 + 2(12) = 13 + 24 = 37$ ✓. Equation (2): $2(13) + 12 = 26 + 12 = 38$ ✓.\n\n$x + y = 13 + 12 = 25$ ✓.\n\nThe key insight is to add both equations, which immediately gives $3(x + y) = 75$, so $x + y = 25$ without needing to solve for $x$ and $y$ individually.",
+  "distractorRationale": {
+    "A": "Subtracts the equations instead of adding: $(2x + y) - (x + 2y) = 38 - 37 \\implies x - y = 1$, and reports this result ($x - y = 1$) as the combined current instead of computing $x + y$.",
+    "B": "Solves the system fully and finds $x = 13$ correctly, but reports only $x$ (the current for element X alone) instead of the combined total $x + y = 25$.",
+    "C": "Correct. Adds the two equations to get $3(x + y) = 75$, giving $x + y = 25$.",
+    "D": "Adds the equations correctly to obtain $3x + 3y = 75$ but forgets to divide by 3, reporting $75$ as the combined current rather than $x + y = 25$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f4e5d6c7-b8a9-0123-def0-456789012345"
+  }
+}

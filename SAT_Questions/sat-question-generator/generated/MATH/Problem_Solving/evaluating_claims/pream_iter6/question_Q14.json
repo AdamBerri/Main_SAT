@@ -1,0 +1,54 @@
+{
+  "id": "f5d3a9b1-6e4c-4f28-8c0e-9b7a2d4f6e31",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "computational": 3.2
+  },
+  "stem": "Researchers at a university wanted to estimate the average weekly study time of all 8,000 undergraduate students at their university. They posted a link to an online survey on the university's social media page and received 500 responses. The average weekly study time reported by the 500 respondents was 14 hours. The researchers concluded that the average weekly study time for all 8,000 undergraduates at the university is approximately 14 hours. Which of the following identifies the most significant problem with this conclusion?\n\n(A) The sample is too small; at least 1,000 students should have been surveyed to make a valid conclusion about 8,000 students.\n(B) The sample likely overrepresents students who study more, since students who follow the social media page and choose to respond may not be representative of all undergraduates.\n(C) The conclusion is valid because 500 students is a large number, and the result of 14 hours is a specific, concrete finding.\n(D) The conclusion is not valid because researchers cannot ask students to report their own study time — the data must be collected by observation.",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The sample is too small; at least 1,000 students should have been surveyed to make a valid conclusion about 8,000 students.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The sample likely overrepresents students who study more, since students who follow the social media page and choose to respond may not be representative of all undergraduates.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The conclusion is valid because 500 students is a large number, and the result of 14 hours is a specific, concrete finding.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is not valid because researchers cannot ask students to report their own study time — the data must be collected by observation.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Step 1: Identify the sampling method. Researchers posted a link on social media and accepted whoever chose to respond. This is a voluntary response sample — only people who saw the post and decided to respond are included.\n\nStep 2: Identify the source of bias. Students who actively follow the university's social media and choose to answer a survey about study habits may be systematically different from the general undergraduate population. Students who study more may be more likely to engage with academic-related content and respond, skewing the average upward. Students who study less may be less likely to respond.\n\nStep 3: Assess the impact. Because the sample was not randomly selected from all 8,000 students, there is a systematic reason to expect the sample does not represent the population. The conclusion — that the population average is 14 hours — is not supported.\n\nStep 4: Eliminate other choices. The problem is not the sample size (500 out of 8,000 could be adequate with random selection). The problem is voluntary response bias from a non-random sample.\n\nAnswer B correctly identifies voluntary response bias as the fundamental flaw.",
+  "distractorRationale": {
+    "A": "Incorrect. There is no fixed threshold like 1,000 that defines an adequate sample size. The core problem is not the number surveyed but how they were selected. A randomly selected sample of 500 from 8,000 would be sufficient for inference; 500 voluntary respondents are not, regardless of sample size.",
+    "B": "Correct. Posting a survey link on social media and accepting only those who choose to respond creates a voluntary response sample. Such samples are biased because people who respond are systematically different from those who do not — in this case, likely more academically engaged students.",
+    "C": "Incorrect. Large sample size does not compensate for a biased sampling method. A large voluntary response sample still produces biased results. The specificity of the answer (14 hours) does not make the inference valid.",
+    "D": "Incorrect. Self-reported data is widely used in surveys and can be valid. The issue here is not the data collection method (self-report vs. observation) but the non-random selection process that produced the sample."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c8d5f2a0-4e1b-4a69-b7f3-0a9c6e2d5b84"
+  }
+}

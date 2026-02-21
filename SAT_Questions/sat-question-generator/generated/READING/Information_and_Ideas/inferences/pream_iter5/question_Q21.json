@@ -1,0 +1,57 @@
+{
+  "id": "b3e7f9a1-4c2d-4e8b-9f1a-5d6c7b8e2a3f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "In the mid-nineteenth century, the naturalist Charles Lyell advanced a geological principle that would fundamentally reshape how scientists conceived of time itself: that the same processes observable in the present—erosion, sedimentation, volcanic activity—had operated continuously throughout Earth's history at roughly uniform rates. This principle of uniformitarianism stood in stark contrast to the catastrophist theories then dominant, which attributed geological formations to sudden, violent upheavals. What is less commonly appreciated, however, is that Lyell's insistence on uniform rates carried an embedded methodological commitment that extended beyond geology. By anchoring his theory in observable, present-day phenomena, Lyell implicitly demanded that all valid geological inference remain tethered to what could be directly witnessed or experimentally reproduced. The corollary was uncomfortable: processes operating at scales or rates beyond direct observation risked methodological illegitimacy, regardless of the evidence for them. Lyell himself, decades later, struggled to accept Darwin's theory of evolution by natural selection—not primarily on religious grounds, as is sometimes assumed, but because the time scales and mechanisms involved strained the observational standards his own uniformitarianism had established.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 178,
+    "source": "Adapted from a history of science monograph on nineteenth-century natural philosophy"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the relationship between Lyell's uniformitarianism and his resistance to Darwinian evolution?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Lyell's religious convictions created barriers that prevented full scientific evaluation of Darwin's claims.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The methodological standard embedded in Lyell's own theory constrained his ability to accept mechanisms he could not directly observe.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Lyell rejected evolution because natural selection operated too slowly to accumulate sufficient geological evidence.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Uniformitarianism's emphasis on gradual change made it fundamentally incompatible with any theory of biological transformation.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage explicitly states that Lyell struggled to accept Darwin's theory 'not primarily on religious grounds, as is sometimes assumed, but because the time scales and mechanisms involved strained the observational standards his own uniformitarianism had established.' The passage further explains that uniformitarianism carried an 'embedded methodological commitment' requiring geological inference to remain 'tethered to what could be directly witnessed or experimentally reproduced,' and that processes beyond direct observation 'risked methodological illegitimacy.' The inference is that Lyell's own theoretical framework—its insistence on directly observable phenomena—became the constraint that made natural selection, with its unobservable generational mechanisms and vast time scales, epistemologically suspect by his own criteria. This requires synthesizing Lyell's methodological principle with its implied corollary and then connecting that corollary to his reception of Darwin.",
+  "distractorRationale": {
+    "A": "The passage explicitly refutes this: Lyell's resistance was 'not primarily on religious grounds, as is sometimes assumed.' This distractor inverts the passage's corrective claim and is therefore contradicted by the text.",
+    "C": "The passage identifies time scales as part of the problem, but the core issue was observational methodology, not the pace of evidence accumulation per se. This distractor conflates the symptom (unobservable time scales) with the deeper cause (the methodological standard requiring direct observability), requiring only superficial engagement with the passage.",
+    "D": "This distractor attempts a plausible thematic connection—both uniformitarianism and evolution involve gradual processes—but the passage does not suggest incompatibility on this basis. Uniformitarianism's gradualism would, if anything, be consistent with natural selection's gradualism; the actual tension was observational, not about the pace of change itself."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4f8d2e1-7a3b-4f9c-8e2d-1a5b6c7d8e9f"
+  },
+  "hasImage": false
+}

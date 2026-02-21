@@ -1,0 +1,58 @@
+{
+  "id": "c4d8e2f1-a7b3-4c9d-8e5f-2b6a1c3d7e9f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "When the Black Death arrived in Florence in 1348, the city's commercial networks had already created the conditions for its catastrophic spread. The dense concentration of cloth merchants, wool workers, and banking agents who moved between warehouses, counting houses, and market stalls provided the pathogen with an unbroken chain of human contact spanning the whole city. Within months, roughly half the population had died.\n\nThe immediate aftermath saw surviving merchants consolidate their holdings into fewer, larger firms. The labor shortage produced by mass mortality gave surviving workers unprecedented leverage: wages rose, guild restrictions loosened, and artisans who had labored under fixed rates for decades renegotiated their terms. The economic landscape that emerged bore little resemblance to the one that existed before 1348.\n\nYet the longer trajectory confounded those who anticipated permanent transformation. Within two generations, population recovery restored labor supply, wages fell back toward pre-plague levels, and guild hierarchies reasserted themselves. The commercial structures that had made Florence prosperous — and vulnerable — reconstituted along broadly familiar lines. The plague had been catastrophic in human terms; its power to permanently restructure economic relations proved far more limited.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 196,
+    "source": "Original passage, adapted from economic history"
+  },
+  "stem": "The passage is structured to present which of the following?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "An initial disruption, its short-term effects, and the limits of lasting change",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Competing scholarly interpretations of the plague's economic significance",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The causes of the plague's spread followed by its demographic consequences",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "A problem, a proposed solution, and an evaluation of that solution's success",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage unfolds in three distinct phases that mirror the structure described in choice A. The first paragraph establishes the disruption (the plague's arrival and its preconditions for spread). The second traces short-term effects — labor market shifts, wage increases, guild loosening. The third complicates those effects by showing that anticipated permanent transformation did not materialize: the pre-plague structures reasserted themselves. The dominant organizational logic is temporal and analytical — event, immediate consequence, long-term qualification — not a debate between interpretations, not a cause-effect chain ending with demographics, and not a problem-solution framework.",
+  "distractorRationale": {
+    "A": "Correct. The passage moves from the disruption of the plague, to the short-term economic shifts it produced, to the longer arc in which those shifts proved temporary — a three-part structure of disruption, immediate effect, and qualified outcome.",
+    "B": "The passage does not present competing scholarly interpretations. It presents a single analytical account of what happened over time. There are no attributed viewpoints, no 'some historians argue' constructions, and no debate structure. The qualification in the final paragraph is temporal, not interpretive disagreement.",
+    "C": "The first paragraph does describe conditions that enabled the plague's spread, which could be read as causal. But the passage does not culminate in demographic consequences — it culminates in economic reconstitution. Selecting this option requires misreading the scope of the first paragraph as the passage's dominant frame and ignoring the economic focus of paragraphs two and three.",
+    "D": "There is no proposed solution in the passage. The labor market shifts in paragraph two are not presented as a human response designed to solve the problem of mass mortality; they are structural consequences of that mortality. The final paragraph does not evaluate a solution — it qualifies a transformation, which is a meaningfully different rhetorical move."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d"
+  },
+  "hasImage": false
+}

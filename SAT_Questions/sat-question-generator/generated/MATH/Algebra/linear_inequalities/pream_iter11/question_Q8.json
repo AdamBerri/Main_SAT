@@ -1,0 +1,38 @@
+{
+  "id": "a4b5c6d7-e8f9-4a0b-1c2d-3e4f5a6b7c8d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "computational": 1.9
+  },
+  "stem": "A baker needs at least 40 cups of flour for a large order. She already has 7 cups. Each bag of flour contains 6 cups. What is the least number of bags she must buy?",
+  "choices": [
+    { "label": "A", "text": "5", "isCorrect": false },
+    { "label": "B", "text": "7", "isCorrect": false },
+    { "label": "C", "text": "6", "isCorrect": true },
+    { "label": "D", "text": "4", "isCorrect": false }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Set up the inequality: $7 + 6b \\geq 40$. Subtract 7: $6b \\geq 33$. Divide by 6: $b \\geq 5.5$. Since $b$ must be a whole number, the least number of bags is 6.",
+  "distractorRationale": {
+    "A": "Cluster B error: Computed $6b \\geq 33$ and got $b \\geq 5.5$, then rounded down to 5 instead of up, not realizing 5 bags give only 37 cups total.",
+    "B": "Cluster D error: Ignored the 7 cups already on hand, solved $6b \\geq 40$, got $b \\geq 6.67$, rounded up to 7.",
+    "C": "Correct. $7 + 6b \\geq 40$ gives $b \\geq 5.5$, so the minimum whole number is 6.",
+    "D": "Cluster C error: Misread 'at least 40' as 'around 40' and estimated $40 \\div 6 \\approx 6.7$, then subtracted 2 bags for the flour already owned (treating 7 cups as roughly 1 bag), arriving at about 4."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:08.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b5c6d7e8-f9a0-4b1c-2d3e-4f5a6b7c8d9e"
+  }
+}

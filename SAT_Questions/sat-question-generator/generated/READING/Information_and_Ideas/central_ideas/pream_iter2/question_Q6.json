@@ -1,0 +1,58 @@
+{
+  "id": "b3e7f1a4-9c2d-4b8e-8f3a-5d1c7e9b2f4a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2.0,
+    "linguistic": 2.3
+  },
+  "passage": "Coral reefs cover less than one percent of the ocean floor, yet they support roughly twenty-five percent of all marine species. This extraordinary productivity stems from a partnership between coral animals and tiny algae called zooxanthellae, which live within coral tissue and convert sunlight into nutrients. The coral provides shelter and carbon dioxide; the algae return up to ninety percent of the energy they produce. When ocean temperatures rise even a degree or two above normal, corals expel the algae and turn ghostly white—a process called bleaching. Without their algae partners, bleached corals can survive for weeks, but prolonged stress leads to starvation and death. Repeated bleaching events, driven by climate change, now threaten reefs on every ocean basin.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 115,
+    "source": "Adapted from a marine biology overview"
+  },
+  "stem": "Which choice best describes the main idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Coral reefs are remarkably productive ecosystems because of the symbiotic relationship between corals and algae, a partnership now endangered by climate-driven bleaching.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Rising ocean temperatures cause coral bleaching by prompting corals to expel the algae that live within their tissue.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Zooxanthellae are essential to marine ecosystems because they convert sunlight into nutrients for a wide variety of sea creatures.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Despite occupying a small fraction of the ocean floor, coral reefs host a disproportionately large share of marine biodiversity.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage opens by noting coral reefs' outsized ecological importance, then explains the coral-algae symbiosis that makes this productivity possible, and finally describes how bleaching—triggered by warming oceans—threatens that partnership. Choice A captures all three elements: the reef's productivity, the symbiosis responsible for it, and the climate threat. No other choice integrates these three threads.",
+  "distractorRationale": {
+    "A": "Correct. Synthesizes the reef's ecological significance, the coral-algae partnership, and the climate threat that imperils it.",
+    "B": "This describes only the bleaching mechanism—a significant supporting detail, but not the passage's full scope, which also covers the reef's productivity and broader ecological consequences.",
+    "C": "Zooxanthellae's role is presented as part of the coral partnership, not as a standalone claim about all marine ecosystems. This overstates the algae's independent importance while ignoring the passage's larger argument.",
+    "D": "This restates only the opening statistic about biodiversity and ignores the symbiosis explanation and the climate threat—both central to the passage's argument."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4f8a2e1-7b3d-4c9f-8e2a-1d5f7b9c3e8a"
+  },
+  "hasImage": false
+}

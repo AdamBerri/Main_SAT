@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "c14fd0b8-4f79-4a01-b329-ac61a334f9e7",
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "linguistic": 1.2
+  },
+  "passage": "The city's new recycling program requires residents to separate paper, plastic, and glass into different bins. Collection trucks pick up each type of material on a different day of the week. Most residents [1]_____ the new system convenient, though some have complained about the additional sorting required.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 50,
+    "source": "Adapted from a municipal services report"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "finds",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "find",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "found",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "finding",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement with a straightforward plural subject. 'Most residents' is plural and requires the base form/plural present 'find.' The present tense matches the current, ongoing situation described.",
+  "distractorRationale": {
+    "A": "Third-person singular—disagrees with the plural 'residents.'",
+    "B": "Correct. Plural present agreeing with 'Most residents.'",
+    "C": "Past tense—while grammatically possible, the present tense context ('requires,' 'pick up') makes present tense appropriate.",
+    "D": "Participle—cannot function as main verb without auxiliary."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a38c6276-10a2-4a51-8253-02ed77966f30"
+  }
+}

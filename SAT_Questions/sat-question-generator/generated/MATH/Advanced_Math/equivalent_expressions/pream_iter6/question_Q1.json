@@ -1,0 +1,54 @@
+{
+  "id": "a3f2c1d4-8e5b-4a7f-9c6d-2b1e3f4a5c8d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "computational": 1.3
+  },
+  "stem": "Which of the following is equivalent to $(x + 3)(x + 4)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$x^2 + 12$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$x^2 + 7x + 7$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$x^2 - 7x + 12$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$x^2 + 7x + 12$",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "To expand $(x + 3)(x + 4)$, use the distributive property (FOIL):\n\nFirst terms: $x \\cdot x = x^2$\nOuter terms: $x \\cdot 4 = 4x$\nInner terms: $3 \\cdot x = 3x$\nLast terms: $3 \\cdot 4 = 12$\n\nAdding all terms: $x^2 + 4x + 3x + 12$\n\nCombining like terms: $x^2 + 7x + 12$\n\nThe correct answer is $x^2 + 7x + 12$.",
+  "distractorRationale": {
+    "A": "Incomplete FOIL: student only multiplied the first terms ($x \\cdot x = x^2$) and last terms ($3 \\cdot 4 = 12$), omitting both middle cross-products entirely.",
+    "B": "Coefficient error on the constant: student correctly combined the middle terms ($4x + 3x = 7x$) but added the constants instead of multiplying them ($3 + 4 = 7$ instead of $3 \\times 4 = 12$).",
+    "C": "Sign error: student computed the correct coefficients but applied a negative sign to the middle term, writing $-7x$ instead of $+7x$.",
+    "D": "This is the correct answer."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f7e2a1b3-9c4d-4e8f-b5a6-1d2e3f4c5b6a"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "e1d9b7a4-3c62-4f8e-b5d1-7a9c2f4e8b16",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "Two cell phone plans have the following pricing structures:\n- **Plan A** charges $a$ dollars per minute of talk time plus a flat monthly fee of $\\$15$.\n- **Plan B** charges $b$ dollars per minute of talk time with no monthly fee.\n\nA customer who talks for exactly **30 minutes** per month pays the same total amount under both plans. How much more, in dollars, does Plan B cost than Plan A for a customer who talks for **90 minutes** per month?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\$15$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$\\$30$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$\\$45$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\$60$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Step 1: Use the break-even condition to find $b - a$.**\nAt 30 minutes, Plan A costs $30a + 15$ and Plan B costs $30b$. Setting them equal:\n$$30a + 15 = 30b \\Rightarrow 30(b - a) = 15 \\Rightarrow b - a = \\frac{15}{30} = \\frac{1}{2}$$\n\n**Step 2: Find how much more Plan B costs at 90 minutes.**\n$$\\text{Plan B} - \\text{Plan A} = 90b - (90a + 15) = 90(b - a) - 15$$\n$$= 90\\left(\\frac{1}{2}\\right) - 15 = 45 - 15 = 30$$\n\nPlan B costs $\\$30$ more than Plan A at 90 minutes of usage.\n\n**Key insight:** The individual rates $a$ and $b$ are never needed — only their difference $b - a = \\frac{1}{2}$ matters. The $\\$15$ monthly fee of Plan A partially offsets Plan B's per-minute rate advantage at higher usage.",
+  "distractorRationale": {
+    "A": "Answers with just the monthly fee ($\\$15$), reasoning that the two plans differ only by the flat fee without accounting for the per-minute rate difference at 90 minutes.",
+    "B": "Correct: $b-a=\\frac{1}{2}$, so the difference at 90 min is $90 \\times \\frac{1}{2} - 15 = 45 - 15 = \\$30$.",
+    "C": "Computes $90(b-a) = 90 \\times \\frac{1}{2} = 45$ but forgets to subtract the $\\$15$ monthly fee that reduces the net difference: answers $\\$45$.",
+    "D": "Adds the monthly fee instead of subtracting it when computing the 90-minute difference: $90 \\times \\frac{1}{2} + 15 = 45 + 15 = \\$60$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f4a7c1e9-2b85-4d6f-c8a3-0e5b7d2f9c14"
+  }
+}

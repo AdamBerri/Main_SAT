@@ -1,0 +1,54 @@
+{
+  "id": "d2e6f0a4-b8c1-4d3e-a5f7-9b1c3e5f7a9b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "Two manufacturers quote per-unit costs (in dollars) of $a$ for Manufacturer Alpha and $b$ for Manufacturer Beta. Two independent procurement analyses yield the following equations:\n\n$$\\frac{a}{3} + \\frac{b}{6} = 5$$\n$$\\frac{a}{6} + \\frac{b}{3} = 4$$\n\nWhat is the total combined per-unit cost $a + b$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$6$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$18$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$20$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$81$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The key insight is to add the two equations directly. Notice that the coefficient of $a$ in equation 1 ($\\frac{1}{3}$) plus the coefficient of $a$ in equation 2 ($\\frac{1}{6}$) equals $\\frac{1}{2}$. The same is true for $b$. Therefore:\n\n**Step 1:** Add equation 1 and equation 2:\n$$\\left(\\frac{a}{3} + \\frac{b}{6}\\right) + \\left(\\frac{a}{6} + \\frac{b}{3}\\right) = 5 + 4$$\n$$a\\left(\\frac{1}{3} + \\frac{1}{6}\\right) + b\\left(\\frac{1}{6} + \\frac{1}{3}\\right) = 9$$\n$$a \\cdot \\frac{1}{2} + b \\cdot \\frac{1}{2} = 9$$\n$$\\frac{a + b}{2} = 9 \\Rightarrow a + b = 18$$\n\n**Verification by solving the full system:**\n\nMultiply equation 1 by 6: $2a + b = 30$\nMultiply equation 2 by 6: $a + 2b = 24$\n\nSubtract the second from the first: $a - b = 6$\n\nWith $a + b = 18$ and $a - b = 6$: $a = 12$, $b = 6$.\n\nChecking equation 1: $\\frac{12}{3} + \\frac{6}{6} = 4 + 1 = 5$ ✓\nChecking equation 2: $\\frac{12}{6} + \\frac{6}{3} = 2 + 2 = 4$ ✓\n\n$a + b = 12 + 6 = 18$ ✓",
+  "distractorRationale": {
+    "A": "Subtracts the two equations instead of adding them, finding $\\frac{a-b}{6} = 1$ (since $\\frac{1}{3} - \\frac{1}{6} = \\frac{1}{6}$ for both variables), giving $a - b = 6$, and mistakenly reports this as $a + b$.",
+    "B": "Correct. Adding both equations gives $\\frac{a+b}{2} = 9$, so $a + b = 18$.",
+    "C": "Assumes $a = b$ and uses only equation 1: $\\frac{a}{3} + \\frac{a}{6} = 5$ gives $\\frac{a}{2} = 5$, so $a = 10$, and the student reports $a + b = 2(10) = 20$.",
+    "D": "Adds the fractional coefficients incorrectly as $\\frac{1}{3} + \\frac{1}{6} = \\frac{1}{9}$ instead of $\\frac{1}{2}$, obtaining $\\frac{a+b}{9} = 9$, so $a + b = 81$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e"
+  }
+}

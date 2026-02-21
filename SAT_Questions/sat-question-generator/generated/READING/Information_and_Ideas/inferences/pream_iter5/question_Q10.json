@@ -1,0 +1,57 @@
+{
+  "id": "d8e0f2a4-b6c8-4d0e-9f2a-4b6c8d0e2f4a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "Every spring, monarch butterflies begin a migration from their overwintering grounds in the mountains of central Mexico to breeding areas across the United States and Canada. The journey spans thousands of miles and takes several generations to complete—no single butterfly makes the full round trip. Instead, the butterflies that depart Mexico in spring live only long enough to reach the southern United States, where they lay eggs and die. Their offspring continue northward, and it may take three or four generations before monarchs reach the northern end of their summer range. In late summer, a special generation of monarchs hatches. Unlike their parents and grandparents, these butterflies do not reproduce immediately. Instead, they fly the entire distance back to Mexico—a journey of up to 3,000 miles—and survive the winter before beginning the cycle again the following spring.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 143,
+    "source": "Adapted from an entomology overview of monarch butterfly migration patterns"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the late-summer generation of monarch butterflies?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "They have a longer lifespan than earlier generations in the cycle.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "They are born with a genetic memory of the Mexican overwintering sites.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "They migrate north before turning south toward Mexico.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "They are physically larger than monarchs born in earlier generations.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage states that the spring and summer generations of monarchs live only long enough to reach the next stage northward before laying eggs and dying. In contrast, the late-summer generation flies up to 3,000 miles to Mexico, survives an entire winter, and then begins the migration cycle again the following spring. Connecting these two descriptions reveals that the late-summer butterflies must survive significantly longer than the earlier generations—making a longer lifespan a clear, supported inference. The passage does not state this explicitly, but the contrast between the brief lives of earlier generations and the winter-surviving late-summer generation makes it the most reasonable conclusion.",
+  "distractorRationale": {
+    "B": "While the passage implies that the late-summer generation navigates accurately to Mexico, it does not mention genetic memory or explain the mechanism of their navigation. Choosing this answer requires importing scientific background knowledge not present in the passage itself.",
+    "C": "The passage specifies that the late-summer generation hatches at the northern end of the summer range and then flies southward to Mexico. The passage does not describe them first moving north; this choice contradicts the described pattern.",
+    "D": "The passage contains no information about the physical size of any generation of monarchs. Selecting this option would require making an assumption entirely unsupported by any textual detail."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e6f8a0b2-c4d6-4e8f-0a2b-6c8d0e2f4a6b"
+  },
+  "hasImage": false
+}

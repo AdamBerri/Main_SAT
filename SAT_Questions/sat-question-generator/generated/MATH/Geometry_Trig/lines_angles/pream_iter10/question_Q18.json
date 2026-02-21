@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0012-4aaa-b012-000000000018",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "In a quadrilateral, three of the angles measure $85°$, $110°$, and $(2x + 15)°$. The fourth angle is $(3x - 10)°$. What is the measure of the largest angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$110°$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$79°$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$86°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$32°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Quadrilateral angle sum is $360°$: $85 + 110 + (2x+15) + (3x-10) = 360$. Simplify: $200 + 5x = 360$, $5x = 160$, $x = 32$. Angles: $85°$, $110°$, $2(32)+15 = 79°$, $3(32)-10 = 86°$. The largest is $110°$.",
+  "distractorRationale": {
+    "A": "Correct. The given angle of $110°$ is the largest.",
+    "B": "Found the third angle $79°$ instead of the largest.",
+    "C": "Found the fourth angle $86°$ instead of the largest.",
+    "D": "Reported $x = 32$ as the answer."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T03:28:52.365Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0012-4000-a012-000000000018"
+  }
+}

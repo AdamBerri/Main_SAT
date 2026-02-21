@@ -1,0 +1,54 @@
+{
+  "id": "a9b0c1d2-e3f4-5a6b-7c8d-9e0f1a2b3c4d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A salesperson's total monthly pay consists of a $\\$2{,}000$ base salary plus a commission that is a fixed percent of monthly sales. In a month when the salesperson's total sales were $\\$40{,}000$, the total pay was $\\$5{,}200$. In the following month, total sales were $\\$55{,}000$. What was the salesperson's total pay for the second month?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$6,000",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$6,400",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$7,150",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$4,400",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Commission from first month: $5{,}200 - $2{,}000 = $3{,}200$. Commission rate: $3{,}200 / $40{,}000 = 0.08 = 8\\%$. Second month: $2{,}000 + 0.08 \\times 55{,}000 = $2{,}000 + $4{,}400 = $6{,}400$.",
+  "distractorRationale": {
+    "A": "Student rounded the commission rate to 10%: $2,000 + 0.10 × $40,000 = $6,000 — applied old sales instead of new.",
+    "B": "Correct answer.",
+    "C": "Student divided total pay by sales ($5,200 / $40,000 = 13%) without separating the base: $55,000 × 0.13 = $7,150.",
+    "D": "Student found only the commission on new sales and forgot the base: 0.08 × $55,000 = $4,400."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:24.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e9f0a1b2-c3d4-5e6f-7a8b-9c0d1e2f3a4b"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "e7b1a6c5-28f4-4d0e-1a5b-6c3b2e4f8d9a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "A model airplane is built at a scale of 1:24. If the actual airplane has a wingspan of 12 feet, what is the wingspan of the model airplane, in inches? (1 foot = 12 inches)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "0.5",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "5",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "6",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "288",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Apply the scale ratio to find the model wingspan in feet. A scale of 1:24 means the model is $\\frac{1}{24}$ the size of the actual airplane. Model wingspan $= \\frac{12 \\text{ ft}}{24} = 0.5$ feet.\n\nStep 2: Convert feet to inches using 1 foot = 12 inches. $0.5 \\text{ ft} \\times 12 \\text{ in/ft} = 6$ inches.\n\nThe model airplane's wingspan is 6 inches.",
+  "distractorRationale": {
+    "A": "Error type: Ignored unit conversion entirely. The student correctly applied the scale ratio to get 0.5 feet but did not convert to inches, reporting 0.5 as the final answer. Wrong step: skipped the multiplication by 12. Wrong calculation: $\\frac{12}{24} = 0.5$ (reported as final answer in inches). Result: 0.5.",
+    "B": "Error type: Wrong unit conversion factor. The student applied the scale correctly to get 0.5 feet but then used 10 inches per foot instead of 12 inches per foot. Wrong calculation: $0.5 \\times 10 = 5$ inches. Result: 5.",
+    "D": "Error type: Inverted ratio. The student inverted the scale, multiplying the actual wingspan by 24 instead of dividing. Wrong step: used $12 \\times 24 = 288$ feet, then $288 \\times 12 = 3{,}456$ inches. Wait — applying the inversion directly: the student computed $12 \\times 24 = 288$ and reported that as the answer in inches (skipping the feet-to-inches conversion on the inflated value, or treating 288 as already in inches). Wrong calculation: $12 \\times 24 = 288$. Result: 288."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f5a7i9d1-e3b5-4f8h-0d4f-4e6a8c0d2f3a"
+  }
+}

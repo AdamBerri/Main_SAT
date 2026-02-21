@@ -1,0 +1,54 @@
+{
+  "id": "7c8d2f41-5a93-4b7e-9d16-3e0b8c6f2a15",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "In triangle $ABC$, point $D$ lies on $\\overline{AB}$ and point $E$ lies on $\\overline{AC}$ such that $\\overline{DE} \\parallel \\overline{BC}$. If $AD = 5$, $AB = 15$, and $BC = 18$, what is the length of $DE$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$6$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$12$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$9$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$54$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Since $\\overline{DE} \\parallel \\overline{BC}$, triangles $ADE$ and $ABC$ are similar by the AA Similarity Theorem (they share angle $A$, and corresponding angles are equal because $DE \\parallel BC$).\n\nFor similar triangles, corresponding sides are proportional:\n$$\\frac{AD}{AB} = \\frac{DE}{BC}$$\n\nSubstituting the known values:\n$$\\frac{5}{15} = \\frac{DE}{18}$$\n$$\\frac{1}{3} = \\frac{DE}{18}$$\n$$DE = \\frac{18}{3} = 6$$",
+  "distractorRationale": {
+    "A": "Correct. Uses the similarity ratio $\\frac{AD}{AB} = \\frac{5}{15} = \\frac{1}{3}$, giving $DE = \\frac{1}{3} \\cdot 18 = 6$.",
+    "B": "The student uses $DB$ instead of $AD$ in the ratio, computing $\\frac{DB}{AB} = \\frac{10}{15} = \\frac{2}{3}$, and then finds $DE = \\frac{2}{3} \\cdot 18 = 12$.",
+    "C": "The student sets up the ratio as $\\frac{AD}{DB} = \\frac{5}{10} = \\frac{1}{2}$ and applies it to $BC$, computing $DE = \\frac{1}{2} \\cdot 18 = 9$, using the ratio of the segment to the remaining segment rather than to the full side.",
+    "D": "The student inverts the proportion and multiplies rather than divides, setting up $\\frac{AB}{AD} = \\frac{BC}{DE}$ correctly but then solving it as $DE = AB \\cdot BC \\div AD = 15 \\cdot 18 \\div 5 = 54$, which inverts the direction of scaling."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b5f3a8c1-2e47-4d90-9c83-6a1d7e5b0f42"
+  }
+}

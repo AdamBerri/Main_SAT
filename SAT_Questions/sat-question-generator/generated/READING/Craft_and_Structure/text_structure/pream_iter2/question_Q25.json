@@ -1,0 +1,57 @@
+{
+  "id": "e7a2c5f9-3b6d-4e1a-c8f2-5d9b3e6a1f4c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "In the first decades of the twentieth century, Frederick Winslow Taylor's system of scientific management promised to eliminate inefficiency by fragmenting skilled labor into discrete, measurable tasks. Factory owners who adopted Taylorist methods did see productivity gains; they also encountered a phenomenon Taylor's calculus had not anticipated. Workers subjected to minute-by-minute task monitoring began engaging in systematic slowdowns, coordinating their pace reduction across shifts in ways that resisted supervisory detection.\n\nLabor historians have read these slowdowns as evidence of worker agency—a form of covert collective action that persisted beneath the surface of apparent compliance. But reading them as pure resistance risks assimilating them too quickly to a heroic narrative. Many slowdowns were as much about managing physical exhaustion as about challenging managerial authority; the distinction between self-preservation and solidarity is difficult to maintain in practice.\n\nWhat the episode illuminates is the dependence of any efficiency regime on the discretionary cooperation of those it governs. The workers' coordinated pace reduction was not simply opposition to Taylorism; it was a demonstration that Taylorism's own premises—that labor could be fully quantified and controlled—were self-undermining when applied to beings capable of strategic response.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 209,
+    "source": "Adapted from a scholarly essay on labor history and management theory"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A historical practice is introduced, an interpretive dispute about it is complicated, and a broader implication is drawn.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Taylor's management system is critiqued, then defended through evidence of its productivity gains.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Worker resistance is presented as a cause that produced Taylorism's eventual institutional collapse.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Two historical interpretations of labor slowdowns are compared, and one is judged more accurate.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage moves through three stages: paragraph 1 introduces Taylor's system and its unintended consequence (coordinated slowdowns); paragraph 2 raises an interpretive dispute (resistance vs. self-preservation) and complicates the dominant labor-history reading without resolving it; paragraph 3 draws an implication that transcends the interpretive dispute, arguing that the slowdowns exposed a structural flaw in Taylorism's premises. Choice A captures this progression—historical practice, complication of its interpretation, and a broader implication—without mischaracterizing any stage.",
+  "distractorRationale": {
+    "A": "Correct. The passage introduces the Taylorist slowdown phenomenon, complicates the labor-history interpretation of it as heroic resistance, and then uses the episode to expose a broader claim about efficiency regimes' dependence on discretionary cooperation.",
+    "B": "The passage does note that factory owners 'did see productivity gains,' which could suggest a defense of Taylorism. However, the passage does not defend Taylorism—the productivity gains are mentioned only to set up the 'unintended phenomenon' that follows. The overall argumentative direction is critical of Taylorism's premises, not a balanced critique-then-defense arc.",
+    "C": "The passage treats the slowdowns as epistemologically revealing—they expose a flaw in Taylorism's logic—but does not claim they caused Taylorism's institutional collapse. No institutional collapse is mentioned. A reader who converts 'self-undermining premises' into 'institutional collapse' performs a structural misreading that mistakes the logical implication for a claimed historical outcome.",
+    "D": "The second paragraph does introduce two interpretations (collective resistance vs. exhaustion management) and notes the difficulty of distinguishing them. However, the passage does not adjudicate between them or judge one more accurate; it uses their indistinction as a complication. The final paragraph moves past both interpretations entirely, reframing the episode's significance. Readers who mistake the second paragraph's complication for the passage's concluding move will select this distractor."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a3b5c7-d9e2-4f4a-b6c8-d1e3f5a7b9c2"
+  }
+}

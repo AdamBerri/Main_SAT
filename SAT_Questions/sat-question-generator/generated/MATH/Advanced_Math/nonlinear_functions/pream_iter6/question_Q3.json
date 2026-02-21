@@ -1,0 +1,54 @@
+{
+  "id": "c5a9b3e7-12f4-4d8e-bf6c-3a1d7e5b9c2f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "The function $h$ is defined by $h(x) = (x - 2)^2 + 5$. What is the minimum value of $h(x)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-5$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$2$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$5$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$9$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The function $h(x) = (x - 2)^2 + 5$ is in vertex form $a(x - h)^2 + k$, where the vertex is at $(h, k) = (2, 5)$.\n\nSince the coefficient of $(x-2)^2$ is positive ($a = 1 > 0$), the parabola opens upward, and the vertex represents the minimum point.\n\nThe minimum value of $h(x)$ is the $y$-coordinate of the vertex, which is $\\mathbf{5}$.\n\nThis minimum occurs when $(x - 2)^2 = 0$, i.e., when $x = 2$.",
+  "distractorRationale": {
+    "A": "A student who reads the $+5$ in the vertex form as $-5$ (negating the constant term) reports the minimum as $-5$. This sign error occurs when the student misreads or misapplies the vertex form formula.",
+    "B": "A student who confuses the minimum value (the $y$-coordinate of the vertex) with the $x$-coordinate of the vertex reports $2$. This error mixes up which coordinate of the vertex gives the minimum output.",
+    "C": "This is the correct answer. The vertex of $h(x) = (x-2)^2 + 5$ is $(2, 5)$, so the minimum value of $h(x)$ is $5$.",
+    "D": "A student who evaluates $h(0)$ (the $y$-intercept) instead of finding the vertex computes $h(0) = (0-2)^2 + 5 = 4 + 5 = 9$. This error confuses the minimum value with the $y$-intercept of the parabola."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e5f6a7-b8c9-4012-bcde-f23456789012"
+  }
+}

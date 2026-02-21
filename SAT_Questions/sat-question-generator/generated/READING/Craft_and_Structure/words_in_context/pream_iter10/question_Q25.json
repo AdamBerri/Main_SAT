@@ -1,0 +1,58 @@
+{
+  "id": "b8e2f4a7-3c9d-4b6e-8f1a-9c4d7b2e5f3a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "The longstanding debate over whether Ptolemy deliberately falsified observational data in his Almagest has been difficult to resolve precisely because the evidentiary standards appropriate to ancient astronomy are themselves contested. Some historians treat minor discrepancies between Ptolemy's reported observations and what modern retrocomputation predicts as proof of fabrication; others argue that such gaps fall within the range of plausible instrumental and atmospheric error. What makes the dispute especially intractable is that both camps must work from the same textual record, interpreting silence and anomaly through frameworks that reflect their prior commitments as much as the evidence itself.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 107,
+    "source": "Adapted from a study in the history of ancient science"
+  },
+  "stem": "As used in the passage, \"reflect\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "reveal",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "mirror",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "ponder",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "deflect",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In the passage, historians interpret 'silence and anomaly through frameworks that reflect their prior commitments as much as the evidence itself.' The claim is that these interpretive frameworks expose or make visible the historians' pre-existing assumptions and loyalties — the frameworks do not just organize evidence, they disclose something about the people using them. 'Reveal' captures this sense of making something latent visible or apparent. 'Mirror' implies a passive, faithful reproduction of something that already exists in plain view, which understates the passage's more critical point that biases are embedded in and surfaced by the frameworks. 'Ponder' refers to the act of thinking carefully, which is a separate meaning of 'reflect' but has no grammatical fit here (the frameworks do not think). 'Deflect' means to redirect or turn aside, which is semantically opposite to what the passage describes.",
+  "distractorRationale": {
+    "A": "Correct. 'Reveal' fits the passage's argument that interpretive frameworks expose the prior commitments of their users — something that might not be obvious but is made apparent through the way the frameworks operate.",
+    "B": "'Mirror' suggests an exact, faithful reproduction of something already visible, which misses the passage's critical implication that prior commitments are embedded and disclosed by frameworks rather than simply reflected back. The distinction is subtle but important at this difficulty level.",
+    "C": "'Ponder' is a legitimate meaning of 'reflect' (to reflect on a problem means to think carefully about it), but here 'reflect' takes 'their prior commitments' as its grammatical object, and frameworks cannot engage in deliberation or contemplation.",
+    "D": "'Deflect' means to cause something to change direction or to turn aside criticism. While it shares a physical metaphor with 'reflect,' it is semantically incompatible with the passage, which says the frameworks expose rather than redirect the historians' biases."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5f1a3c7-9b2d-4e8f-8c4a-1d7b3e9f5a2c"
+  },
+  "hasImage": false
+}

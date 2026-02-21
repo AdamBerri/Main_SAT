@@ -1,0 +1,54 @@
+{
+  "id": "f8a3c6b2-9d14-4e7f-a5c8-2b4d7e1f3a09",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "The table below shows selected values of two linear functions $f$ and $g$.\n\n| $x$ | $f(x)$ | $g(x)$ |\n|-----|--------|--------|\n| $1$ | $4$ | $14$ |\n| $4$ | $13$ | $8$ |\n\nFor what value of $x$ does $f(x) = g(x)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-9$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$\\dfrac{7}{5}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$3$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$11$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Step 1: Find $f(x)$.**\nUsing points $(1, 4)$ and $(4, 13)$:\n$$m_f = \\frac{13 - 4}{4 - 1} = \\frac{9}{3} = 3$$\nUsing point $(1, 4)$: $4 = 3(1) + b \\Rightarrow b = 1$.\nSo $f(x) = 3x + 1$.\n\n**Step 2: Find $g(x)$.**\nUsing points $(1, 14)$ and $(4, 8)$:\n$$m_g = \\frac{8 - 14}{4 - 1} = \\frac{-6}{3} = -2$$\nUsing point $(1, 14)$: $14 = -2(1) + b \\Rightarrow b = 16$.\nSo $g(x) = -2x + 16$.\n\n**Step 3: Solve $f(x) = g(x)$.**\n$$3x + 1 = -2x + 16$$\n$$5x = 15$$\n$$x = 3$$\n\n**Verify:** $f(3) = 3(3)+1 = 10$ and $g(3) = -2(3)+16 = 10$. ✓",
+  "distractorRationale": {
+    "A": "Reverses the $y$-value order when computing $f$'s slope: uses $\\frac{4-13}{4-1} = -3$ instead of $\\frac{13-4}{4-1} = 3$, giving $f(x) = -3x+7$; then solves $-3x+7=-2x+16 \\Rightarrow -x=9 \\Rightarrow x=-9$.",
+    "B": "Reads $g(4) = 8$ as $g$'s $y$-intercept instead of computing it from the slope: uses $g(x) = -2x+8$; then solves $3x+1=-2x+8 \\Rightarrow 5x=7 \\Rightarrow x=\\frac{7}{5}$.",
+    "C": "Correct: $f(x)=3x+1$ and $g(x)=-2x+16$; setting equal gives $5x=15 \\Rightarrow x=3$.",
+    "D": "Reverses the $y$-value order when computing $g$'s slope: uses $\\frac{14-8}{4-1} = 2$ instead of $\\frac{8-14}{4-1} = -2$, giving $g(x) = 2x+12$; then solves $3x+1=2x+12 \\Rightarrow x=11$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "1c5e8a2f-6b94-4d7e-b3f1-9a2c4d6e8f10"
+  }
+}

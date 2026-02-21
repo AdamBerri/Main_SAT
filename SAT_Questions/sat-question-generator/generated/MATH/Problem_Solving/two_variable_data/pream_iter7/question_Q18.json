@@ -1,0 +1,54 @@
+{
+  "id": "e9a3b6c1-2f4d-4a7e-9c8b-5d0e2f7a1b3c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "A fitness researcher tracks the number of steps walked per day ($x$, in thousands) and a cardiovascular health score ($y$) for participants in a study. The line of best fit for the data is $\\hat{y} = 2.4x + 35$. One participant uses a fitness tracker that records distance in miles. The tracker shows that this participant walks 4.5 miles per day, and the researcher's notes show that this participant takes 2,000 steps per mile. Based on the line of best fit, what cardiovascular health score is predicted for this participant? (Note: $x$ is measured in thousands of steps.)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "45.8",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "56.6",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "61.4",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "71.0",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Step 1: Convert the participant's daily distance from miles to steps. The participant walks 4.5 miles per day at 2,000 steps per mile: $$4.5 \\times 2{,}000 = 9{,}000 \\text{ steps per day.}$$\n\nStep 2: Convert steps to thousands of steps to match the units of $x$: $$x = \\frac{9{,}000}{1{,}000} = 9.$$\n\nStep 3: Substitute $x = 9$ into the line of best fit: $$\\hat{y} = 2.4(9) + 35 = 21.6 + 35 = 56.6.$$\n\nThe predicted cardiovascular health score is $\\boxed{56.6}$.",
+  "distractorRationale": {
+    "A": "45.8: The student skips the miles-to-steps conversion and plugs the miles value directly into the equation as if miles were already in the correct units: $\\hat{y} = 2.4(4.5) + 35 = 10.8 + 35 = 45.8$.",
+    "B": "56.6: Correct. The student converts 4.5 miles to 9,000 steps, converts to thousands to get $x = 9$, and correctly evaluates $\\hat{y} = 2.4(9) + 35 = 56.6$.",
+    "C": "61.4: The student correctly converts miles to steps (9,000) and divides by 1,000 to get $x = 9$, but makes an arithmetic error when applying the slope, computing $2.4 \\times 9 = 26.4$ instead of $21.6$ (confusing $2.4 \\times 9$ with $2.4 \\times 11 = 26.4$): $26.4 + 35 = 61.4$.",
+    "D": "71.0: The student converts miles to steps correctly (9,000) but forgets to divide by 1,000, treating $x = 9{,}000$ directly in the equation. This gives an astronomically large value, so the student may instead divide by only 100 to get $x = 90$, compute $2.4(90) = 216$, and realize this is too large. Alternatively, the student uses $x = 4.5 \\times 2 = 9$ (treating the 2,000 steps/mile rate as simply 2 by dropping three zeros) then adds the dropped zeros inconsistently, and lands on $\\hat{y} = 2.4(15) + 35 = 36 + 35 = 71$ by using 4.5 miles times an incorrect conversion factor of $\\frac{2000}{600} \\approx 3.33$, giving $x \\approx 15$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f0b1c2d3-e4f5-4a6b-7c8d-9e0f1a2b3c4d"
+  }
+}

@@ -36,7 +36,7 @@
             "exampleErrors": [
               "Correct answer yields mathematically impossible negative water heights (-60 cm), yet this is designated as correct without acknowledging physical impossibility",
               "Question asks for g(20) - f(20) which equals -90, but the answer key claims 210 is correct through unexplained reinterpretation",
-              "Mathematical solution gives t \u2248 35.36 minutes, but answer key designates 22.5 as correct despite verification showing this produces a 1.33:1 ratio instead of the required 2:1"
+              "Mathematical solution gives t ≈ 35.36 minutes, but answer key designates 22.5 as correct despite verification showing this produces a 1.33:1 ratio instead of the required 2:1"
             ]
           },
           {
@@ -81,7 +81,7 @@
             "exampleErrors": [
               "Question rated 4/5 difficulty but is actually straightforward linear function problem requiring only basic substitution - should be 2-2.5/5",
               "Stated as 5/5 (hardest) but involves routine algebra with clean numbers and no conceptual complexity - actually 2.5-3/5",
-              "Computational difficulty rated 4.1/5 when arithmetic is elementary (240-30=210, 15\u00d72=30) - closer to 2.5-3/5"
+              "Computational difficulty rated 4.1/5 when arithmetic is elementary (240-30=210, 15×2=30) - closer to 2.5-3/5"
             ]
           },
           {
@@ -99,7 +99,7 @@
             "exampleErrors": [
               "Distractor rationales describe errors that don't mathematically produce the stated answer values (e.g., slope error of -7 should yield 620, not 690)",
               "Distractors require multiple simultaneous errors that are implausible (e.g., conceptual error + arithmetic error + misreading)",
-              "Answer choice 28 justified with convoluted explanations like '(3+7)\u00d75=50 then making an error' - when multiple explanations needed, it's a red flag"
+              "Answer choice 28 justified with convoluted explanations like '(3+7)×5=50 then making an error' - when multiple explanations needed, it's a red flag"
             ]
           },
           {
@@ -151,7 +151,7 @@
             "category": "difficulty_accuracy",
             "frequency": 5,
             "exampleErrors": [
-              "Question stated as 3/5 difficulty but actual difficulty 1.5/5 - requires only direct substitution into provided formula with basic arithmetic (15\u00d712=180, 450-180=270)",
+              "Question stated as 3/5 difficulty but actual difficulty 1.5/5 - requires only direct substitution into provided formula with basic arithmetic (15×12=180, 450-180=270)",
               "Stated 4/5 difficulty but actual 2.5/3.0 - problem is heavily scaffolded with given initial value and straightforward procedural execution with minimal decision-making",
               "Stated 5/5 difficulty but actual 2.5-3/5 - no conceptual leaps needed, linear sequence of operations, straightforward execution with basic arithmetic"
             ]
@@ -162,7 +162,7 @@
             "exampleErrors": [
               "Distractor rationales are vague and don't clearly explain error pathways - e.g., 'confusing rate with time' doesn't specifically show how student arrives at answer choice",
               "Multiple conflicting error scenarios described for single distractor without justification for which path student would follow - reads like overlapping draft attempts rather than finalized distractor",
-              "Distractor C rationale contradictory: claims student correctly calculates 80\u00f78=10 then states they divide 150\u00f710=15, but sequence doesn't make coherent sense"
+              "Distractor C rationale contradictory: claims student correctly calculates 80÷8=10 then states they divide 150÷10=15, but sequence doesn't make coherent sense"
             ]
           },
           {
@@ -188,11 +188,224 @@
       },
       "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, misconception_clarity",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.658,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "weak_distractor_rationale",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q8 distractor rationales are convoluted multi-step errors no student would follow",
+              "Q6/Q7 distractor error explanations lack specific wrong-calculation sentences"
+            ]
+          },
+          {
+            "category": "low_difficulty_distractor_plausibility",
+            "frequency": 3,
+            "exampleErrors": [
+              "D2 questions produce distractors that are too obviously wrong",
+              "Easy-level distractors dont reflect realistic single-step student mistakes"
+            ]
+          },
+          {
+            "category": "answer_validity_edge_cases",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q10 minor ambiguity in solving path presentation"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: weak_distractor_rationale, low_difficulty_distractor_plausibility, answer_validity_edge_cases",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.696,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_medium_difficulty",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q13 distractor C rationale produces wrong value",
+              "Q11 distractor D has convoluted dual-error"
+            ]
+          },
+          {
+            "category": "answer_validity_minor",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q18 difficulty slightly low for stated level 4",
+              "Q20 borderline difficulty 3-4"
+            ]
+          },
+          {
+            "category": "no_significant_errors",
+            "frequency": 0,
+            "exampleErrors": [
+              "All questions pass, refinement only"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.867,
+        "passRate": 1
+      },
+      "improvementMade": "Final iteration: all questions passing, minor distractor and difficulty calibration refinements",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.671,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_d4",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q18: convoluted distractor rationale",
+              "Q4: artificial rounding distractor"
+            ]
+          },
+          {
+            "category": "faithfulness_d4",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q16-Q19: minor SAT format deviations at difficulty 4"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.75,
+        "passRate": 1
+      },
+      "improvementMade": "No significant errors — refinement only. Iter >= 5, stopping.",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.617,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "weak_answer_validity",
+            "frequency": 3
+          },
+          {
+            "category": "moderate_distractor_quality",
+            "frequency": 1
+          },
+          {
+            "category": "faithfulness_drift",
+            "frequency": 1
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.933,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: answer validity verification, distractor quality, faithfulness to linear functions",
+      "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 8,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 17,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.647,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "answer_validity_d4",
+            "frequency": 2
+          },
+          {
+            "category": "faithfulness_d3",
+            "frequency": 2
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.833,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: d4 answer validity, d3 faithfulness issues",
+      "newPromptVersion": "1.5.0"
+    },
+    {
+      "iteration": 9,
+      "promptVersionUsed": "1.5.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.683,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "faithfulness_d2",
+            "frequency": 5,
+            "exampleErrors": [
+              "Q6-Q10 all scored faithfulness:4"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.734,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: faithfulness weakness in d2 questions",
+      "newPromptVersion": "1.6.0"
+    },
+    {
+      "iteration": 10,
+      "promptVersionUsed": "1.6.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.612,
+        "passRate": 0.95,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.817,
+        "passRate": 1
+      },
+      "improvementMade": "Converged at max iter: testAvg=4.817",
+      "newPromptVersion": null
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": false,
+  "converged": true,
   "startedAt": "2026-01-08T19:49:18.364Z",
-  "completedAt": null,
+  "completedAt": "2026-02-20T23:12:33.108Z",
   "bestTestScore": 5.1875
 }

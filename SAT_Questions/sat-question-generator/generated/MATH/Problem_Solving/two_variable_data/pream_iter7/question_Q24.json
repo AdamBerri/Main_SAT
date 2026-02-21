@@ -1,0 +1,54 @@
+{
+  "id": "c7e1a4f2-8b5d-4c9a-9f3e-2d8b6a1c4e7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "Two groups of students follow different training programs. The lines of best fit for their data are:\n\n- **Group A:** $\\hat{y} = 2x + 20$\n- **Group B:** $\\hat{y} = 4x + 8$\n\nwhere $x$ is the number of hours of weekly practice and $\\hat{y}$ is the predicted performance score (out of 100).\n\nA student in Group A practiced for $c$ hours per week and had a residual of $+5$. A student in Group B practiced for the same number of hours $c$ and had a residual of $-3$. The Group B student's actual score exceeded the Group A student's actual score by 6 points.\n\nWhat is the value of $c$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$8$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$9$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$10$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$13$",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Step 1: Express each student's actual score in terms of $c$.**\n\nUsing residual = actual $-$ predicted, so actual = predicted + residual:\n\n- Group A student: actual $= (2c + 20) + 5 = 2c + 25$\n- Group B student: actual $= (4c + 8) + (-3) = 4c + 5$\n\n**Step 2: Set up an equation using the given difference.**\n\nGroup B's actual score exceeds Group A's by 6:\n$$(4c + 5) - (2c + 25) = 6$$\n$$2c - 20 = 6$$\n$$2c = 26$$\n$$c = 13$$\n\n**Verification:** Group A actual $= 2(13) + 25 = 51$. Group B actual $= 4(13) + 5 = 57$. Difference $= 57 - 51 = 6$. Confirmed.",
+  "distractorRationale": {
+    "A": "The student applies a sign error to Group A's residual, using actual = predicted $-$ residual for Group A: actual$_A = 2c + 20 - 5 = 2c + 15$. Then $(4c+5)-(2c+15) = 6 \\Rightarrow 2c = 16 \\Rightarrow c = 8$. This is a residual sign flip for Group A only.",
+    "B": "The student ignores both residuals entirely and sets up the equation using only the predicted values: $(4c+8)-(2c+20)=6 \\Rightarrow 2c-12=6 \\Rightarrow c=9$. This reflects a failure to apply the residuals to find the actual scores.",
+    "C": "The student applies a sign error to Group B's residual only, using actual$_B = 4c + 8 + 3 = 4c + 11$ instead of $4c + 5$. Then $(4c+11)-(2c+25)=6 \\Rightarrow 2c-14=6 \\Rightarrow c=10$. This is a residual sign flip for Group B only.",
+    "D": "Correct. The student correctly applies actual = predicted + residual for both students, sets up (Group B actual) $-$ (Group A actual) = 6, and solves to get $c = 13$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a8f2c4e9-1d7b-4a3c-8e5f-9b6d2e1a4c8f"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "c8d9e0f1-a2b3-4c4d-5e6f-7a8b9c0d1e2f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "A caterer charges $18 per adult meal and $10 per child meal. A family is planning a party with a budget of no more than $500 for food. If there will be 15 adults at the party, what is the greatest number of children that can be invited?",
+  "choices": [
+    { "label": "A", "text": "24", "isCorrect": false },
+    { "label": "B", "text": "23", "isCorrect": true },
+    { "label": "C", "text": "50", "isCorrect": false },
+    { "label": "D", "text": "20", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Adult cost: $18 \\times 15 = $270. Remaining budget: $500 - $270 = $230. Set up $10k \\leq 230$, so $k \\leq 23$. The greatest number of children is 23.",
+  "distractorRationale": {
+    "A": "Cluster B error: Calculated adult cost as $18 \\times 15 = $260$ (arithmetic slip: $18 \\times 15 = 260$ instead of 270), then $500 - 260 = 240$, and $240 \\div 10 = 24$.",
+    "B": "Correct. $18(15) + 10k \\leq 500$ gives $270 + 10k \\leq 500$, so $k \\leq 23$.",
+    "C": "Cluster D error: Ignored adult meal costs entirely and solved $10k \\leq 500$, getting $k \\leq 50$.",
+    "D": "Cluster C error: Correctly found $k \\leq 23$ but then subtracted 3, reasoning that 'no more than $500' means they should stay well under budget, choosing 20."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:15.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d9e0f1a2-b3c4-4d5e-6f7a-8b9c0d1e2f3a"
+  }
+}

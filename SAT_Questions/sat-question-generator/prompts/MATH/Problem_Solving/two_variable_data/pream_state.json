@@ -45,7 +45,7 @@
             "exampleErrors": [
               "Distractor rationale states '4 + 60 + 7 = 71' but the answer choice is 67, with unclear error pathway that doesn't represent natural student thinking - appears reverse-engineered rather than pedagogically meaningful",
               "Distractors B and C are trivially eliminated by reading comprehension alone since stem explicitly states 'positive slope' - no statistical understanding required to eliminate these options",
-              "Distractor claims error of '8 \u00d7 5 = 48' but this specific arithmetic mistake is implausible and arbitrary, testing basic arithmetic rather than understanding of linear models"
+              "Distractor claims error of '8 × 5 = 48' but this specific arithmetic mistake is implausible and arbitrary, testing basic arithmetic rather than understanding of linear models"
             ]
           },
           {
@@ -78,23 +78,23 @@
             "category": "distractor_incoherence",
             "frequency": 2,
             "exampleErrors": [
-              "Distractor B (65) lacks psychological plausibility\u2014the rationale '5 + 60 = 65' doesn't represent a coherent misconception a confused student would naturally make",
-              "Distractor D (85) rationale is mathematically incoherent\u2014'Multiplying x by the y-intercept: 4(60) \u00f7 3 \u2248 80' doesn't yield 85 and the explanation doesn't match the error"
+              "Distractor B (65) lacks psychological plausibility—the rationale '5 + 60 = 65' doesn't represent a coherent misconception a confused student would naturally make",
+              "Distractor D (85) rationale is mathematically incoherent—'Multiplying x by the y-intercept: 4(60) ÷ 3 ≈ 80' doesn't yield 85 and the explanation doesn't match the error"
             ]
           },
           {
             "category": "weak_distractor_discrimination",
             "frequency": 2,
             "exampleErrors": [
-              "Distractor D is weak at discrimination\u2014only catches students who didn't read carefully or have severe conceptual gaps, not a tempting error for mid-level students",
-              "Distractor B won't effectively fool many students\u2014it offers no realistic path to that answer, failing to separate students with partial understanding"
+              "Distractor D is weak at discrimination—only catches students who didn't read carefully or have severe conceptual gaps, not a tempting error for mid-level students",
+              "Distractor B won't effectively fool many students—it offers no realistic path to that answer, failing to separate students with partial understanding"
             ]
           },
           {
             "category": "unclear_error_rationale",
             "frequency": 1,
             "exampleErrors": [
-              "Distractor A rationale is unclear\u2014'5 + 4 + 60 = 69' doesn't match answer choice (64), then awkwardly pivots to '4 + 60 = 64,' making the explanation muddled and incoherent"
+              "Distractor A rationale is unclear—'5 + 4 + 60 = 69' doesn't match answer choice (64), then awkwardly pivots to '4 + 60 = 64,' making the explanation muddled and incoherent"
             ]
           }
         ]
@@ -136,7 +136,7 @@
             "category": "distractor_effectiveness_weak",
             "frequency": 1,
             "exampleErrors": [
-              "Distractor A (50) is implausibly specific and lacks conceptual motivation\u2014adding 8 and 42 while ignoring x entirely reflects pure guessing rather than a coherent misconception, making it ineffective at discriminating student understanding.",
+              "Distractor A (50) is implausibly specific and lacks conceptual motivation—adding 8 and 42 while ignoring x entirely reflects pure guessing rather than a coherent misconception, making it ineffective at discriminating student understanding.",
               "Distractor B (74) uses an overly convoluted arithmetic path (8(5) = 40, then 42 - 8 = 34) that few students would naturally follow, reducing its pedagogical value for identifying a specific misconception."
             ]
           },
@@ -158,11 +158,107 @@
       },
       "improvementMade": "Addressed: difficulty_calibration_overestimated, answer_key_mismatch, distractor_effectiveness_weak",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.65,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q18 single residual calculation rated difficulty 4 but is really d2-3"
+            ]
+          },
+          {
+            "category": "minor_faithfulness_issues",
+            "frequency": 4,
+            "exampleErrors": [
+              "Q3, Q16, Q17, Q20 had minor SAT style/format deviations"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.717,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty_miscalibration (stronger calibration rules, explicit examples), minor_faithfulness_issues (added internal consistency checks)",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.717,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.683,
+        "passRate": 1
+      },
+      "improvementMade": "Converged at -0.7%. 100% pass rate. Best score 4.717 from v1.3.0.",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.517,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "faithfulness_cluster",
+            "frequency": 3
+          },
+          {
+            "category": "weak_distractors",
+            "frequency": 1
+          },
+          {
+            "category": "minor_validity",
+            "frequency": 1
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.917,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: d3 faithfulness to two-variable data, distractor quality, answer validity",
+      "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.521,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.95,
+        "passRate": 1
+      },
+      "improvementMade": "Converged: <2% improvement",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.1.0",
-  "converged": false,
+  "currentBestVersion": "1.4.0",
+  "converged": true,
   "startedAt": "2026-01-08T20:55:29.477Z",
-  "completedAt": null,
-  "bestTestScore": 4.53125
+  "completedAt": "2026-02-20T22:38:48.346Z",
+  "bestTestScore": 4.95
 }

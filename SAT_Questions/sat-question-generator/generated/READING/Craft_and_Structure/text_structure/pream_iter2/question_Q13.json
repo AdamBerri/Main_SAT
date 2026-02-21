@@ -1,0 +1,57 @@
+{
+  "id": "f9b2d4e7-3c1a-4f8d-9b6e-2a5c7f1d9e3b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "Marie Curie's path to scientific recognition was shaped as much by institutional barriers as by her own remarkable persistence. When she arrived in Paris in 1891, the University of Paris admitted women to study—a policy unusual for its era—yet professional positions remained almost entirely closed to them. Curie earned two degrees and conducted groundbreaking research, but she could not secure a university post and worked instead in an unsalaried research capacity for years.\n\nThe discovery of polonium and radium in 1898 began to shift her circumstances. The Nobel Committee awarded her the Physics Prize in 1903, though committee correspondence later revealed that some members had initially intended to recognize only her husband, Pierre, and their colleague Henri Becquerel. Curie's inclusion came partly through Pierre's insistence. Eight years later, she received a second Nobel Prize in Chemistry—the first person to win the award in two different sciences—while simultaneously being denied membership in the French Academy of Sciences by a single vote.\n\nHer career thus followed a pattern familiar to many women of her generation: exceptional achievement running alongside persistent institutional resistance, with recognition arriving unevenly and often contingent on factors beyond scientific merit.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 192,
+    "source": "Original passage"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A biographical account traces a subject's career while showing achievement and resistance occurring together.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "A chronological narrative builds toward a climactic moment of final recognition.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Two contrasting figures are compared to illustrate a broader argument about scientific institutions.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "An individual's struggles are presented, then a solution to those struggles is proposed.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage follows Curie's career in rough chronological order, but its organizational purpose is not simply to narrate a timeline. Each stage pairs her achievements with corresponding institutional resistance: her degrees against the closed professional positions, her Nobel Prize against the committee's initial plan to exclude her, her second Nobel against her rejection from the Academy. The final paragraph makes this dual structure explicit. The dominant pattern is a biographical account that consistently weaves achievement together with resistance, not a narrative building toward final triumph.",
+  "distractorRationale": {
+    "A": "Correct. The passage is structured as a biographical account that consistently pairs Curie's achievements with instances of institutional resistance, culminating in the final paragraph's explicit summary of this pattern.",
+    "B": "The passage is chronological in sequence, but it does not build toward a climactic moment of final recognition. Her second Nobel Prize arrives alongside rejection from the Academy, and the closing paragraph frames her career as one of ongoing tension, not resolution.",
+    "C": "The passage does not compare two contrasting figures. Pierre Curie and Becquerel appear briefly, but neither functions as a contrasting figure; they serve as supporting characters in Curie's story.",
+    "D": "The passage describes Curie's struggles at length but never proposes a solution to them. The final paragraph generalizes her experience as a pattern shared by many women of her era, framing it as a recurring condition rather than a problem to be solved."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2d8f4c6-9b1e-4a3d-8f7c-5e2b9d1f6a4c"
+  }
+}

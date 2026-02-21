@@ -1,0 +1,54 @@
+{
+  "id": "c1e9a4d7-2f83-4b5c-8d16-0a7e3f9b2c61",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "A state health agency randomly selected 500 adults from the state's adult population of 4,000,000 and found that 60% reported exercising at least 3 times per week. Separately, it randomly selected 500 adults from the same population and found that 55% reported eating 5 or more servings of fruits and vegetables daily. Both surveys were conducted independently. The agency concluded: \"Among all adults in the state, people who exercise at least 3 times per week are more likely to also eat 5 or more servings of fruits and vegetables daily.\" Which of the following best evaluates this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The conclusion is valid because both samples were randomly selected from the same state population, so both percentages accurately describe adult behavior statewide.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The conclusion cannot be supported by this data because the two surveys were conducted on separate, independent samples — no individual's exercise habits were linked to that individual's diet, so no conclusion about the relationship between the two behaviors can be made.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The conclusion is invalid because the combined sample of 1,000 adults is too small to represent a population of 4,000,000 adults.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is invalid because both surveys were conducted at the same time, making it impossible to determine whether exercise habits or diet habits developed first.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The agency's conclusion is about a relationship between two behaviors within individuals: that people who exercise more are also more likely to eat more fruits and vegetables. This is a claim about the joint distribution of two variables — requiring that both variables be measured on the same individuals. However, the two surveys were conducted on separate, independent samples. Survey 1 measured only exercise frequency in 500 people. Survey 2 measured only diet habits in a different set of 500 people. No individual in this study had both their exercise habits and their diet habits recorded. Therefore, it is impossible to determine from this data whether individuals who exercise frequently are also individuals who eat healthfully. The two percentages (60% and 55%) describe the separate distributions of two behaviors in two independent groups — they provide no information whatsoever about whether these behaviors co-occur within the same people.\n\nChoice A is wrong because it confuses the validity of each individual percentage (which may be accurate descriptions of the state population's single behaviors) with the validity of a claim about the relationship between two behaviors — a claim that requires paired data. Choice C is wrong because sample size is not the issue; the fatal flaw is the study design itself (separate samples), not insufficient numbers. Choice D is wrong because the conclusion does not claim a causal or temporal ordering of behaviors — it claims a concurrent association. Timing of measurement is irrelevant to this particular flaw.",
+  "distractorRationale": {
+    "A": "This choice correctly recognizes that random sampling supports generalization of individual percentages to the population. However, it conflates the validity of estimating each behavior separately with the validity of a conclusion about the relationship between the two behaviors — a fundamentally different type of claim requiring a different type of data (paired observations on the same individuals).",
+    "B": "Correct. The conclusion requires knowing whether the same individuals who exercise also eat well. The two surveys measured different behaviors in entirely separate groups, providing no information about how these behaviors co-occur within individuals. No claim about the association between exercise and diet can be supported by this independent two-sample design.",
+    "C": "This choice applies a sample size concern that is irrelevant to the actual flaw. Two random samples of 500 from 4,000,000 are adequate to estimate the prevalence of each behavior separately. The problem is the study structure — not the number of people surveyed.",
+    "D": "This choice introduces a temporal/causal reasoning error that does not apply. The conclusion claims a concurrent association (people who do X also tend to do Y), not a causal or developmental sequence. Whether exercise preceded diet changes is a separate question unrelated to the data structure flaw identified in Choice B."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a58d2f04-9e17-4c3a-b7f6-2c1e8d5b3a09"
+  }
+}

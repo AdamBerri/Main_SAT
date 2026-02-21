@@ -1,0 +1,54 @@
+{
+  "id": "b3e7a1f2-9c4d-4e8b-a6f3-2d5c8a1b7e9f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "A school district surveyed 120 randomly selected students from Lincoln High School and found that 45 of them reported spending more than 2 hours per day on social media. The district wants to use this result to estimate how many of the school's 1,600 students spend more than 2 hours per day on social media. Which of the following is the most reasonable estimate?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "45",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "600",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "960",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "1,200",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Since the 120 students were randomly selected, the sample proportion can be used to estimate the population proportion. The proportion in the sample is 45/120 = 3/8 = 0.375. To estimate the number in the full school of 1,600 students: 0.375 × 1,600 = 600. Because the sample was randomly selected from Lincoln High School students, this estimate is statistically sound for that population.",
+  "distractorRationale": {
+    "A": "Error type 1 (Confusing sample with population): A student might report the raw sample count of 45 without scaling it to the full school population, treating the sample result as the population total.",
+    "B": "This is the correct answer. Applying the sample proportion (45/120 = 0.375) to the full school population (1,600 × 0.375 = 600) gives the best estimate.",
+    "C": "Error type 5 (Overgeneralizing scope): A student might mistakenly compute 1,600 - 120 = 1,480 and then scale only the remaining students, or use an incorrect proportion such as 120/200 applied to 1,600, arriving at 960 — misapplying the ratio.",
+    "D": "Error type 2 (Wrong confidence interpretation): A student might assume that because 45 out of 120 is 'close to half,' roughly three-quarters of the 1,600 students — about 1,200 — use social media heavily, overstating the proportion found in the sample."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a4f2c8e1-7b3d-4a9f-8c5e-1d6b3a7f2c9e"
+  }
+}

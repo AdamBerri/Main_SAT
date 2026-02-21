@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-000d-4aaa-b00d-000000000013",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "Two supplementary angles are in the ratio $5:4$. What is the measure of the larger angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$80°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$100°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$90°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$20°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let the angles be $5k$ and $4k$. Since they are supplementary: $5k + 4k = 180$, so $9k = 180$, $k = 20$. The larger angle is $5(20) = 100°$.",
+  "distractorRationale": {
+    "A": "Found the smaller angle: $4(20) = 80°$.",
+    "B": "Correct. $5(20) = 100°$.",
+    "C": "Assumed supplementary means they split $180°$ equally.",
+    "D": "Reported $k = 20$ instead of the angle."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.339Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-000d-4000-a00d-000000000013"
+  }
+}

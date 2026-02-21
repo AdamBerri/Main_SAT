@@ -1,0 +1,94 @@
+{
+  "id": "1a9885a7-c32c-47f9-866d-426686999a78",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "passage": "Psychologists studying memory retention conducted an experiment comparing three study techniques over a four-week period. They argue that spaced repetition produces superior long-term retention compared to both massed practice and passive review, as measured by the percentage of material recalled after four weeks.",
+  "stem": "Which choice most effectively uses data from the figure to support the psychologists' argument?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "After four weeks, participants using spaced repetition recalled 74% of the material, compared to 45% for massed practice and 31% for passive review, making spaced repetition the most effective technique at every time point.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "At the one-week mark, massed practice participants recalled 68% while spaced repetition participants recalled 72%, a difference of only 4 percentage points.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Passive review participants showed the steepest decline, dropping from 65% recall at one day to 31% at four weeks, a loss of 34 percentage points.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Spaced repetition participants started at 78% recall after one day and declined to 74% after four weeks, showing only a 4-point decline compared to larger drops for the other methods.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that spaced repetition produces superior four-week retention compared to both alternatives. Choice A directly compares all three techniques at the four-week mark (74% vs. 45% vs. 31%), clearly showing spaced repetition's superiority. Choice B focuses on one-week results where the gap is small. Choice C discusses passive review's decline without comparing to spaced repetition's four-week outcome. Choice D discusses spaced repetition's own trajectory without comparing the four-week endpoint to the other methods.",
+  "distractorRationale": {
+    "A": "Correct: compares all three methods at four weeks, showing spaced repetition at 74% is substantially higher than massed practice (45%) and passive review (31%).",
+    "B": "Wrong (misread value): cites one-week data where the gap between spaced repetition and massed practice is small, which actually weakens the impression of spaced repetition's superiority.",
+    "C": "Wrong (irrelevant data): discusses passive review's decline trajectory without directly comparing four-week outcomes across all methods.",
+    "D": "Wrong (incomplete evidence): shows spaced repetition's own stability but omits the four-week comparison to both alternatives needed to support the claim."
+  },
+  "hasImage": true,
+  "imageDescription": "Line graph titled 'Material Recalled Over Time by Study Technique.' X-axis: Time After Study (1 Day, 1 Week, 2 Weeks, 4 Weeks). Y-axis: Percentage Recalled (0-100%). Three lines: Spaced Repetition: 78%, 72%, 76%, 74%. Massed Practice: 75%, 68%, 55%, 45%. Passive Review: 65%, 52%, 40%, 31%. Source: Cognitive Psychology Research Lab, 2024.",
+  "chartData": {
+    "type": "line_graph",
+    "title": "Material Recalled Over Time by Study Technique",
+    "data": {
+      "timePoints": [
+        "1 Day",
+        "1 Week",
+        "2 Weeks",
+        "4 Weeks"
+      ],
+      "series": {
+        "Spaced Repetition": [
+          78,
+          72,
+          76,
+          74
+        ],
+        "Massed Practice": [
+          75,
+          68,
+          55,
+          45
+        ],
+        "Passive Review": [
+          65,
+          52,
+          40,
+          31
+        ]
+      },
+      "unit": "percentage",
+      "yAxisLabel": "Percentage Recalled (%)",
+      "xAxisLabel": "Time After Study"
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 64,
+    "source": "Adapted from Cognitive Psychology Research Lab experimental study"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:37.113Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "1b71d14a-a1f3-4bab-b63d-73b7df7c74f0"
+  }
+}

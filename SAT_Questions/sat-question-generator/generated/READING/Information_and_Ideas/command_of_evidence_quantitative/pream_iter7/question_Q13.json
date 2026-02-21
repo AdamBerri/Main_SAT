@@ -1,0 +1,87 @@
+{
+  "id": "52e5044b-ef22-4cb3-a1d2-1a5be608e92d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "A wildlife conservation group monitored the population of three endangered bird species in a national park from 2018 to 2023. The group's annual report states that the red-crested warbler population has grown at a faster rate than the populations of the other two monitored species.",
+  "stem": "Which choice most effectively uses data from the figure to support the conservation group's statement?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The red-crested warbler population grew from 120 to 204 individuals (a 70% increase), while the spotted owl grew from 85 to 110 (29% increase) and the blue-winged tanager grew from 200 to 240 (20% increase).",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The blue-winged tanager had the largest population in both 2018 (200) and 2023 (240), remaining the most numerous species throughout the study period.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The red-crested warbler population reached 204 individuals in 2023, while the spotted owl population was 110, indicating that the warbler had nearly twice as many individuals.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The spotted owl population increased from 85 to 110, a gain of 25 individuals, while the blue-winged tanager gained 40 individuals over the same period.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is about growth rate, not absolute population size. Choice A correctly compares growth rates: warbler at 70% vs. owl at 29% and tanager at 20%, showing the warbler grew fastest. Choice B discusses absolute population size, not growth rate. Choice C compares 2023 populations but not growth rates. Choice D compares absolute gains for owl and tanager without mentioning the warbler or calculating rates.",
+  "distractorRationale": {
+    "A": "Correct: computes percentage growth for all three species, showing the warbler's 70% rate is the highest.",
+    "B": "Wrong (wrong comparison): focuses on which species had the largest absolute population, not the fastest growth rate.",
+    "C": "Wrong (misread value): compares 2023 population sizes rather than growth rates, conflating population magnitude with rate of change.",
+    "D": "Wrong (irrelevant data): discusses absolute gains for the owl and tanager without mentioning the warbler or computing percentage growth."
+  },
+  "hasImage": true,
+  "imageDescription": "Data table titled 'Endangered Bird Species Population Counts, 2018 vs. 2023.' Columns: Species, 2018 Population, 2023 Population. Rows: Red-Crested Warbler - 120 - 204; Spotted Owl - 85 - 110; Blue-Winged Tanager - 200 - 240. Source: National Park Wildlife Conservation Group, 2024.",
+  "chartData": {
+    "type": "data_table",
+    "title": "Endangered Bird Species Population Counts, 2018 vs. 2023",
+    "data": {
+      "columns": [
+        "Species",
+        "2018 Population",
+        "2023 Population"
+      ],
+      "rows": [
+        [
+          "Red-Crested Warbler",
+          120,
+          204
+        ],
+        [
+          "Spotted Owl",
+          85,
+          110
+        ],
+        [
+          "Blue-Winged Tanager",
+          200,
+          240
+        ]
+      ]
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 58,
+    "source": "Adapted from National Park Wildlife Conservation Group annual report"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.806Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "218471cd-b072-4ba6-9845-1786d0367edc"
+  }
+}

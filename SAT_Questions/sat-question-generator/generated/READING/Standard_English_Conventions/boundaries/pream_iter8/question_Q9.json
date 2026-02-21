@@ -1,0 +1,58 @@
+{
+  "id": "f6a0b1c2-d3e4-4f5a-c9b8-4a5b6c7d8e9f",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "Marie Curie conducted her pioneering research on radioactivity in a small, poorly equipped laboratory in Paris. She worked tirelessly for years[; driven by intellectual curiosity and an unshakeable commitment to scientific rigor]. Her dedication ultimately led to her becoming the first person to win two Nobel Prizes in different scientific fields.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 61,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "; driven by intellectual curiosity and an unshakeable commitment to scientific rigor",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": ", driven by intellectual curiosity and an unshakeable commitment to scientific rigor",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": ". Driven by intellectual curiosity and an unshakeable commitment to scientific rigor",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": ": driven by intellectual curiosity and an unshakeable commitment to scientific rigor",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The phrase 'driven by intellectual curiosity and an unshakeable commitment to scientific rigor' is a past participial phrase modifying the subject 'She' — it is not an independent clause, because it has no subject and no main verb of its own. A semicolon (Choice A) must join two independent clauses; using it before a participial phrase is a semicolon misuse error. Choice B correctly uses a comma to attach this participial phrase to the independent clause 'She worked tirelessly for years,' which is the standard way to join a modifying participial phrase to the clause it modifies.",
+  "distractorRationale": {
+    "A": "Choice A misuses a semicolon. A semicolon is used to join two independent clauses, but 'driven by intellectual curiosity and an unshakeable commitment to scientific rigor' is a participial phrase, not an independent clause — it has no subject and no main verb. Placing a semicolon before it violates Standard English conventions.",
+    "B": "Choice B is correct. A comma properly attaches the participial phrase to the independent clause it modifies, forming one complete, grammatically correct sentence.",
+    "C": "Choice C creates a sentence fragment. Placing a period before 'Driven by intellectual curiosity and an unshakeable commitment to scientific rigor' isolates a participial phrase as a stand-alone sentence, but the phrase has no subject or main verb and cannot stand on its own.",
+    "D": "Choice D misuses a colon. A colon can introduce a noun, list, or explanatory clause, but it is not used to attach a participial phrase that modifies the subject of the preceding clause. The participial phrase here is a modifier, not an elaboration introduced by a colon."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d"
+  },
+  "hasImage": false
+}

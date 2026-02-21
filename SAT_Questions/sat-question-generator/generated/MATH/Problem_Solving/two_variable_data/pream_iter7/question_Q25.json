@@ -1,0 +1,54 @@
+{
+  "id": "e9d3b1f7-4c2a-4e8f-9b5d-7a1c3e6b8d2f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 4.8
+  },
+  "stem": "A scatterplot displays the relationship between $x$ and $y$ for a dataset of 6 data points. The mean $x$-value for the dataset is $\\bar{x} = 8$. The line of best fit for the data is:\n$$\\hat{y} = 2.5x - 3$$\n\nWhich of the following statements **must** be true?\n\n**I.** The mean $y$-value of the dataset is $17$.\n\n**II.** The association between $x$ and $y$ in the dataset is positive.\n\n**III.** The data point in the dataset whose $x$-value is closest to $8$ has a $y$-value of $17$.",
+  "choices": [
+    {
+      "label": "A",
+      "text": "I only",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "II only",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "I and II only",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "I, II, and III",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Statement I — TRUE:**\nA key property of the least-squares regression line is that it always passes through the point $(\\bar{x}, \\bar{y})$, the means of the two variables. Since $\\bar{x} = 8$:\n$$\\bar{y} = 2.5(8) - 3 = 20 - 3 = 17$$\nSo the mean $y$-value must be $17$. Statement I must be true.\n\n**Statement II — TRUE:**\nFor a line of best fit, the sign of the slope is always the same as the sign of the correlation coefficient $r$. Since the slope of the line is $2.5 > 0$, the correlation between $x$ and $y$ must be positive, meaning the association is positive. Statement II must be true.\n\n**Statement III — NOT NECESSARILY TRUE:**\nThe fact that the line passes through $(\\bar{x}, \\bar{y}) = (8, 17)$ means that the *mean* of the $y$-values equals $17$, not that any individual data point lies on the line. Any data point can have a nonzero residual, including the point with $x$-value closest to $8$. Its actual $y$-value could be, for example, $19$ (with a residual of $+2$) or $14$ (with a residual of $-3$). Statement III is not necessarily true.\n\n**Only Statements I and II must be true, so the answer is C.**",
+  "distractorRationale": {
+    "A": "The student correctly identifies Statement I as true but incorrectly rejects Statement II, perhaps not recognizing that the sign of the slope of the line of best fit must match the sign of the correlation coefficient. A positive slope guarantees a positive association.",
+    "B": "The student correctly identifies Statement II as true but incorrectly rejects Statement I, likely not knowing that the line of best fit always passes through $(\\bar{x}, \\bar{y})$. Without this property, the student cannot confirm that $\\bar{y} = 17$.",
+    "C": "Correct. The student knows both key properties: (1) the line of best fit passes through $(\\bar{x}, \\bar{y})$, confirming $\\bar{y} = 17$; and (2) slope sign equals correlation sign, confirming a positive association. The student also correctly recognizes that individual data points need not lie on the line.",
+    "D": "The student correctly accepts Statements I and II but incorrectly accepts Statement III. This error reflects a common misconception: confusing the fact that the line passes through the *mean* point $(8, 17)$ with the claim that a specific data point with $x \\approx 8$ must have $y = 17$. Any individual data point can deviate from the line."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b5f3e9c1-7a4d-4b8e-9c2f-1e6d3a8b5c9f"
+  }
+}

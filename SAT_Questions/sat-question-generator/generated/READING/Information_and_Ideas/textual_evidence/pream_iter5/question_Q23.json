@@ -1,0 +1,53 @@
+{
+  "id": "d5e9b3c2-8f4a-4d1e-c7b8-4a3f5e9d2b1c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "Text 1\nNeuroscientists studying attention have identified two competing accounts of why practice improves performance. The automaticity account holds that skilled performers encode motor sequences so thoroughly that conscious attention is freed for higher-level planning—the experienced pianist reads ahead in the score because finger movements no longer require deliberate monitoring. The chunking account proposes instead that experts reorganize perceptual input into larger meaningful units, reducing the total number of items attention must track. Both accounts predict faster performance; only the automaticity account predicts that performance degrades under secondary task conditions that load conscious attention.\n\nText 2\nParticipants (novices and experts) performed a piano sight-reading task alone and simultaneously with a verbal shadowing task (repeating heard words aloud). Results:\n\n| Group | Solo Performance Score | Dual-Task Score | Score Decline (%) | Note Grouping Size (avg notes/chunk) |\n|---|---|---|---|---|\n| Novices | 52 | 31 | 40.4% | 1.8 |\n| Experts | 89 | 83 | 6.7% | 6.1 |",
+  "stem": "The expert data in Text 2 create an interpretive problem for Text 1's framing of automaticity versus chunking. Which conclusion best captures this problem?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Expert resilience under dual-task conditions supports automaticity, not chunking",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Experts' large chunk size shows chunking alone explains their dual-task resilience",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Expert data fit both accounts, so the dual-task test cannot adjudicate between them",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Novice decline under dual-task conditions suggests novices rely on chunking, not automaticity",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Text 1 identifies dual-task performance as the decisive test: only automaticity predicts resilience under secondary task load, because chunking would merely reduce tracking load, not free conscious attention entirely. The problem is that Text 2's expert data fit both predictions simultaneously: experts show minimal decline under dual-task (6.7%), which Text 1 says only automaticity predicts—but experts also show far larger chunk sizes (6.1 vs. 1.8 notes/chunk), which is exactly what the chunking account predicts. Because both accounts make predictions that are consistent with the expert results (automaticity: minimal dual-task decline; chunking: large chunks), and the expert data satisfy both, the experiment cannot distinguish which mechanism is actually responsible. Text 1 frames the dual-task condition as the tool that 'only the automaticity account predicts' will preserve performance—but experts' large chunks could also reduce working memory load enough to survive the shadowing task, making the test ambiguous. Thus the interpretive problem is that the data don't adjudicate the debate as Text 1 implies they should.",
+  "distractorRationale": {
+    "A": "This choice correctly notes that expert resilience under dual-task fits automaticity's prediction. However, it ignores that experts' large chunk sizes (6.1 notes/chunk) simultaneously satisfy the chunking account. Selecting A requires accepting that the chunking evidence is irrelevant, which is not supported by Text 1's framework. This distractor targets students who read the dual-task result as a clean verdict for automaticity without synthesizing the chunk size column.",
+    "B": "This choice commits the opposite error of A—it accepts chunking as the sole explanation while ignoring that dual-task resilience is precisely what Text 1 says only automaticity can explain. Students who focus on the chunk size data without integrating the dual-task predictions will find this plausible. But Text 1 explicitly says chunking does NOT specifically predict dual-task resilience.",
+    "C": "Correct. See explanation.",
+    "D": "Novice decline under dual-task (40.4%) is consistent with Text 1's claim that only automaticity predicts resilience—novices lack automaticity, so they decline. But the conclusion that novices rely on 'chunking' is not supported: novices have small chunk sizes (1.8), which actually suggests they do little chunking, not that they rely on it. This distractor is a subtle inversion that misreads what high decline implies about the novice mechanism."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3c4d5e6-b7f8-9012-cdef-123456789013"
+  },
+  "hasImage": false
+}

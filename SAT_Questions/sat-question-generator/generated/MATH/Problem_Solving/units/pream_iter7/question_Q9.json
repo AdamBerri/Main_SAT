@@ -1,0 +1,54 @@
+{
+  "id": "e6f0a4b5-2c17-4d89-d145-3f6a1e8b0c23",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "A specialty tea shop sells loose-leaf tea at $12.80 per pound. What is the price of the tea per ounce? (1 pound = 16 ounces)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$0.40",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$0.80",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$1.60",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$12.80",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To find the price per ounce, divide the price per pound by the number of ounces in one pound.\n\n$$\\frac{\\$12.80}{1 \\text{ lb}} \\times \\frac{1 \\text{ lb}}{16 \\text{ oz}} = \\frac{\\$12.80}{16 \\text{ oz}} = \\$0.80 \\text{ per oz}$$\n\nThe price per ounce is **$0.80**.",
+  "distractorRationale": {
+    "A": "Choice A ($0.40) results from using the wrong conversion of 1 pound = 32 ounces instead of 16 ounces, perhaps from confusing pounds with a 2-pound unit: $\\$12.80 \\div 32 = \\$0.40$. The student doubles the correct number of ounces per pound.",
+    "B": "Choice B ($0.80) is the correct answer.",
+    "C": "Choice C ($1.60) results from using the wrong conversion of 1 pound = 8 ounces instead of 16 ounces: $\\$12.80 \\div 8 = \\$1.60$. The student halves the correct number of ounces per pound, perhaps confusing ounces with another unit.",
+    "D": "Choice D ($12.80) results from making no conversion at all — the student stops one step early and reports the given per-pound price as the per-ounce price. This is an early-stop error where the student does not perform the required unit conversion."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4d5e6f7-8091-0213-c4d5-e6f7a8b9c0d1"
+  }
+}

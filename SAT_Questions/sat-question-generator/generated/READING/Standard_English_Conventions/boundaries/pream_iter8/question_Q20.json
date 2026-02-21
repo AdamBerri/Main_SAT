@@ -1,0 +1,58 @@
+{
+  "id": "f3b7e1d5-48a2-4c63-9d17-5a2c0f8b3e61",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "passage": "The discovery of the Rosetta Stone in 1799 provided scholars with a crucial key to deciphering ancient Egyptian hieroglyphics. The stone bore the same priestly decree written in three scripts: hieroglyphic, Demotic, and Greek. For decades, linguists debated the correct approach to unlocking the hieroglyphic system, [5]Thomas Young made significant progress in identifying phonetic signs, Jean-Fran\u00e7ois Champollion ultimately cracked the full code in 1822 by demonstrating that hieroglyphics combined both phonetic and ideographic elements.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 80,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries and punctuation conventions?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Thomas Young made significant progress in identifying phonetic signs; Jean-Fran\u00e7ois Champollion ultimately cracked the full code",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Thomas Young made significant progress in identifying phonetic signs Jean-Fran\u00e7ois Champollion ultimately cracked the full code",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Thomas Young made significant progress in identifying phonetic signs; but Jean-Fran\u00e7ois Champollion ultimately cracked the full code",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion contains two independent clauses: 'Thomas Young made significant progress in identifying phonetic signs' (subject: 'Thomas Young,' verb: 'made') and 'Jean-François Champollion ultimately cracked the full code in 1822 by demonstrating that hieroglyphics combined both phonetic and ideographic elements' (subject: 'Jean-François Champollion,' verb: 'cracked'). Choice A joins these two independent clauses with only a comma, creating a comma splice — one of the most common sentence boundary errors. A comma alone is insufficient to join two independent clauses. Choice B correctly uses a semicolon to connect the two independent clauses, which is appropriate here because the clauses describe parallel contributions by two different scholars working on the same problem. Choice C eliminates all punctuation between the two independent clauses, creating a run-on (fused) sentence. Choice D uses 'semicolon + but,' which is non-standard: when a coordinating conjunction such as 'but' joins two independent clauses, the correct punctuation is a comma before the conjunction, not a semicolon.",
+  "distractorRationale": {
+    "A": "Joining 'Thomas Young made significant progress in identifying phonetic signs' and 'Jean-François Champollion ultimately cracked the full code' with only a comma creates a comma splice. Two independent clauses cannot be joined by a comma alone.",
+    "B": "Correct. A semicolon properly connects two closely related independent clauses. Both 'Thomas Young made significant progress in identifying phonetic signs' and 'Jean-François Champollion ultimately cracked the full code' are independent clauses, and the semicolon correctly signals their equal standing and close relationship.",
+    "C": "Removing all punctuation between the two independent clauses creates a fused (run-on) sentence. 'Thomas Young made significant progress in identifying phonetic signs Jean-François Champollion ultimately cracked the full code' has no boundary between two complete independent clauses.",
+    "D": "Using 'semicolon + but' is non-standard in Standard English. When a coordinating conjunction (such as 'but') is used to join two independent clauses, a comma — not a semicolon — should precede the conjunction. The correct form would be '...phonetic signs, but Jean-François Champollion...'"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b8e2f4c6-15d7-4a88-c791-6d3b0e9a2f47"
+  },
+  "hasImage": false
+}

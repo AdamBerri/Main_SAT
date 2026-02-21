@@ -1,0 +1,58 @@
+{
+  "id": "b3c7d8e9-f1a2-4b5c-9d6e-7f8a9b0c1d2e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "linguistic": 4.3
+  },
+  "passage": "The Columbian Exchange, which began with Columbus's 1492 voyage, is typically narrated as a transfer of crops and animals between hemispheres. Less examined is the reciprocal nature of disease transmission. European colonizers carried smallpox, measles, and typhus to populations that had evolved no immunological defenses against these pathogens—catastrophic epidemics followed, sometimes preceding direct contact as infected traders passed the microbes along existing Indigenous trade networks. The resulting demographic collapse reshaped colonial economies: labor-starved settlers turned increasingly to the transatlantic slave trade to sustain plantation agriculture. Meanwhile, syphilis, though its Old World origins remain contested, spread rapidly through European armies and port cities during the late fifteenth and early sixteenth centuries, altering social and medical practices on that continent as well. Historians now argue that understanding early colonial outcomes requires grappling with microbial as well as military and economic forces.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 148,
+    "source": "Adapted from a historical survey of early modern Atlantic history"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the relationship between epidemic disease and the transatlantic slave trade?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "European deliberate use of disease weakened Indigenous resistance to colonial rule.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Indigenous demographic decline created economic conditions that drove demand for enslaved labor.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Slave traders deliberately exploited disease-weakened communities to capture enslaved people.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The slave trade expanded because European diseases eliminated competition from Indigenous traders.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage states that epidemics caused 'demographic collapse' and that 'labor-starved settlers turned increasingly to the transatlantic slave trade to sustain plantation agriculture.' This causal chain—disease reduces Indigenous population, labor shortage results, slave trade expands to fill that shortage—is directly supported by the passage. Choice B accurately captures this inferential connection without paraphrasing any single sentence, requiring the student to link 'demographic collapse,' 'labor-starved settlers,' and 'slave trade' across multiple sentences.",
+  "distractorRationale": {
+    "A": "The passage describes disease transmission as largely unintentional and even preceding direct contact through Indigenous trade networks. It offers no support for deliberate biological warfare; this is a reading-in that lacks textual grounding.",
+    "B": "Correct. The passage explicitly connects demographic collapse to labor scarcity and then to the slave trade, making this inference the most strongly supported.",
+    "C": "While plausible as historical knowledge, the passage says nothing about slave traders targeting disease-weakened communities for capture. Introducing that mechanism requires an assumption well beyond what the text supports.",
+    "D": "The passage does not mention Indigenous traders as competitors, nor does it frame their demographic decline in terms of competitive elimination. This option conflates unrelated ideas and requires assumptions the passage does not authorize."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e4f5a6b7-c8d9-4e0f-a1b2-c3d4e5f6a7b8"
+  },
+  "hasImage": false
+}

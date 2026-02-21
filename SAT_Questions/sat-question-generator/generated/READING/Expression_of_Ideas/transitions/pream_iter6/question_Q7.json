@@ -1,0 +1,58 @@
+{
+  "id": "b7c8d9e0-f1a2-4b3c-4d5e-6f7a8b9c0d13",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "Researchers found that the new fertilizer increased crop yields by thirty percent in the first growing season. _______ farmers in the region began purchasing the product in large quantities for the following year.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 55,
+    "source": "Adapted from an agricultural research summary"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "In other words,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "On the contrary,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Accordingly,",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Meanwhile,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage describes a positive research finding (increased crop yields) that logically led to farmer behavior (purchasing the product). 'Accordingly' signals that the farmers' actions were a direct response to the research results, capturing this cause-and-effect relationship.",
+  "distractorRationale": {
+    "A": "'In other words' restates or clarifies a previous point. The farmers' purchases are a consequence of the findings, not a restatement of them.",
+    "B": "'On the contrary' contradicts a previous statement. The farmers' response aligns with the positive findings rather than opposing them.",
+    "C": "Correct. 'Accordingly' signals that farmers acted in response to the research results, capturing the cause-effect relationship.",
+    "D": "'Meanwhile' indicates events happening at the same time in different places. The farmers' purchases occurred after and because of the research, not simultaneously and independently."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:01:01.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c8d9e0f1-a2b3-4c4d-5e6f-7a8b9c0d1e23"
+  },
+  "hasImage": false
+}

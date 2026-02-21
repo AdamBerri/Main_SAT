@@ -1,0 +1,54 @@
+{
+  "id": "e7f8a9b0-c1d2-3e4f-5a6b-7c8d9e0f1a2b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 2,
+    "computational": 2.2
+  },
+  "stem": "A salesperson earns a base salary of $2,000 per month plus a 6% commission on all sales. In one month, the salesperson's total sales were $5,000. What was the salesperson's total earnings for that month?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2,300",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$300",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$2,120",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$5,300",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Commission = $5,000 × 0.06 = $300. Total earnings = $2,000 + $300 = $2,300.",
+  "distractorRationale": {
+    "A": "Correct answer.",
+    "B": "Student calculated only the commission ($5,000 × 0.06 = $300) and forgot to add the base salary.",
+    "C": "Student applied the 6% commission to the base salary instead of sales: $2,000 × 0.06 = $120, total = $2,000 + $120 = $2,120.",
+    "D": "Student added the commission to the sales total instead of the base salary: $5,000 + $300 = $5,300."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:08.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c"
+  }
+}

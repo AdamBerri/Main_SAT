@@ -1,0 +1,38 @@
+{
+  "id": "d0e1f2a3-b4c5-4d6e-7f8a-9b0c1d2e3f4a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "A store sells notebooks for $4 each and pens for $2 each. Maria buys 3 pens and some notebooks. If she spends no more than $26, what is the greatest number of notebooks she can buy?",
+  "choices": [
+    { "label": "A", "text": "6", "isCorrect": false },
+    { "label": "B", "text": "5", "isCorrect": true },
+    { "label": "C", "text": "4", "isCorrect": false },
+    { "label": "D", "text": "7", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Maria spends $2 \\times 3 = $6 on pens. Set up the inequality: $6 + 4n \\leq 26$. Subtract 6: $4n \\leq 20$. Divide by 4: $n \\leq 5$. The greatest number of notebooks is 5.",
+  "distractorRationale": {
+    "A": "Cluster B error: Miscalculated pen cost as $2 \\times 3 = $8 (arithmetic slip), then solved $8 + 4n \\leq 26$, getting $4n \\leq 18$, $n \\leq 4.5$, rounded to 6 by rounding up.",
+    "B": "Correct. $6 + 4n \\leq 26$ gives $n \\leq 5$.",
+    "C": "Cluster C error: Interpreted 'no more than $26' as strictly less than, solved $6 + 4n < 26$, got $n < 5$, and chose 4.",
+    "D": "Cluster D error: Ignored the pen purchase entirely, solved $4n \\leq 26$, got $n \\leq 6.5$, rounded up to 7."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:06.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b"
+  }
+}

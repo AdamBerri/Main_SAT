@@ -1,0 +1,58 @@
+{
+  "id": "f2a3b4c5-cccc-4f8a-9b0c-1d2e3f4a5b67",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Economists studying rural communities have found that the closure of a town's last remaining grocery store triggers a cascade of economic decline: residents drive to distant retailers, spending their money in other communities, while local property values drop as the area becomes less desirable. Policy experts have therefore advocated for subsidies to keep small-town grocery stores open. _______ a detailed case study of three towns in the Midwest that received such subsidies found that the stores survived but the broader economic decline continued, since the subsidies addressed only one symptom of a deeper demographic shift toward urbanization.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 110,
+    "source": "Adapted from an economics policy journal"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Accordingly,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "That said,",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "For example,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Moreover,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The first two sentences present a problem and a proposed solution (subsidies). The third sentence then qualifies that solution: the subsidies kept stores open but did not address the root cause. 'That said' correctly signals a concessive pivot -- acknowledging the logic of subsidies while introducing evidence that undermines their effectiveness. 'For example' might tempt students who see the case study as an illustration, but the case study contradicts rather than illustrates the subsidies' value. 'Moreover' might tempt those who see additional evidence being introduced, but the new evidence undermines rather than supports the advocacy for subsidies.",
+  "distractorRationale": {
+    "A": "'Accordingly' signals a logical consequence of the subsidy advocacy. The case study findings undermine the advocacy rather than following from it.",
+    "B": "Correct. 'That said' signals a qualification: while subsidies seemed logically justified, the evidence shows they failed to solve the underlying problem.",
+    "C": "'For example' introduces an illustration of a general point. The case study does not illustrate the success of subsidies; it demonstrates their inadequacy.",
+    "D": "'Moreover' adds supporting evidence, but the case study undermines rather than strengthens the case for subsidies."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:04:01.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f2cccccc-a3b4-4c5d-6e7f-8a9b0c1d2e34"
+  },
+  "hasImage": false
+}

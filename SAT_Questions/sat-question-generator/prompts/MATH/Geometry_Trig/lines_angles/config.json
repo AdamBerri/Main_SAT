@@ -4,7 +4,7 @@
     "domain": "Geometry_Trig",
     "subtopic": "lines_angles"
   },
-  "currentVersion": "1.3.0",
+  "currentVersion": "2.1.0",
   "versions": [
     {
       "version": "1.0.0",
@@ -13,6 +13,42 @@
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.4.0",
+      "createdAt": "2026-02-21T02:44:09.391Z",
+      "parentVersion": "1.3.0",
+      "preamIteration": 6,
+      "performanceMetrics": {
+        "trainAvgScore": 4.585,
+        "trainPassRate": 0.95,
+        "testAvgScore": 4.193,
+        "testPassRate": 0.8
+      }
+    },
+    {
+      "version": "1.5.0",
+      "createdAt": "2026-02-21T03:12:27.508Z",
+      "parentVersion": "1.4.0",
+      "preamIteration": 7,
+      "performanceMetrics": {
+        "trainAvgScore": 4.504,
+        "trainPassRate": 1,
+        "testAvgScore": 4.183,
+        "testPassRate": 0.8
+      }
+    },
+    {
+      "version": "2.1.0",
+      "createdAt": "2026-02-21T04:30:00.000Z",
+      "parentVersion": null,
+      "preamIteration": 9,
+      "performanceMetrics": {
+        "trainAvgScore": 5.396,
+        "trainPassRate": 1,
+        "testAvgScore": 5.247,
+        "testPassRate": 1
+      }
     }
   ],
   "temperatureConfig": {

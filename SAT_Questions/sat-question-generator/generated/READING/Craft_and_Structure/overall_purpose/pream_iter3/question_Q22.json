@@ -1,0 +1,57 @@
+{
+  "id": "c4d8f2a1-9b3e-4c7d-8f1a-2e6b5c9d3f7a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "In the early twentieth century, botanical illustrators occupied an ambiguous professional position: trained as artists but employed as scientists, paid for technical accuracy but valued for aesthetic sensibility. The women who dominated this field—most famously those affiliated with Kew Gardens in London—produced work that circulated in scientific journals, natural history surveys, and popular magazines simultaneously, without those communities fully acknowledging the overlap. Their illustrations were precise enough to serve as taxonomic references yet composed with an attention to light and shadow that betrayed months of purely artistic training. When botanists cited these images in classificatory disputes, they relied on judgments about color gradation and structural proportion that no verbal description could have conveyed with equal authority. The question of whether this work was science or art was rarely posed because it was rarely useful to pose it; the illustrations functioned productively in both registers at once. Contemporary historians have revisited this ambiguity not to resolve it but to ask what it reveals about how disciplinary categories were constructed and enforced in the period—and about which kinds of knowledge those categories systematically undervalued by treating as decorative what was, in practice, epistemic.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 188,
+    "source": "Adapted from a historical essay on scientific illustration"
+  },
+  "stem": "Which choice best describes the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Recover the contributions of women botanical illustrators who were excluded from scientific recognition",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Describe how botanical illustration functioned simultaneously as both artistic and scientific practice",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Argue that disciplinary boundaries systematically devalued certain forms of knowledge by categorizing them as decorative",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Explain why contemporary historians have become interested in the history of scientific illustration",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage builds toward the claim made in its final sentence: that disciplinary categories 'systematically undervalued' certain knowledge 'by treating as decorative what was, in practice, epistemic.' This is the organizing purpose that frames every earlier detail. The description of illustrators' dual status, the account of how their images functioned across scientific and aesthetic registers, and the note that the science-or-art question 'was rarely useful to pose' all serve to establish the historical conditions under which an epistemically significant practice was misclassified. The passage does not merely describe this dual functioning (Choice B) or simply recover neglected contributors (Choice A); it uses those historical facts to make an argument about how categorization itself operated as a mechanism of devaluation.",
+  "distractorRationale": {
+    "A": "The passage does foreground women illustrators at Kew Gardens and acknowledges their work was undervalued, but recovering their contributions is the vehicle for a larger argument about disciplinary categorization—not the primary goal in itself.",
+    "B": "The passage extensively describes the dual functioning of botanical illustration, and this is substantively supported by multiple sentences. But description is the foundation, not the purpose. The author uses this description to argue that treating such work as decorative constituted a form of epistemic misclassification.",
+    "C": "Correct. The final sentence crystallizes the argument that runs through the passage: disciplinary categories that sorted work as art rather than science systematically undervalued knowledge that was genuinely epistemic in function.",
+    "D": "Contemporary historians are mentioned only in the final paragraph, and their interest is noted briefly as a frame for the passage's conclusion. Explaining their motivations is peripheral to the passage's central argumentative purpose."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f2a3b4c5-d6e7-4f8a-9b0c-1d2e3f4a5b6c"
+  }
+}

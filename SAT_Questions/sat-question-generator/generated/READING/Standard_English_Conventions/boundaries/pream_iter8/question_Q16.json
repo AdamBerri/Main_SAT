@@ -1,0 +1,58 @@
+{
+  "id": "a3f7c2d1-84e6-4b19-9f05-2c8d1e6a7b34",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "linguistic": 4.3
+  },
+  "passage": "Marine biologists studying bioluminescence have long sought to understand the biochemical triggers that activate light-producing cells in deep-sea organisms. Their most recent research has focused on a single enzyme, luciferase, [1]which catalyzes the oxidation of luciferin; which releases photons as a byproduct of the reaction. Tracking these molecular interactions may eventually allow scientists to engineer light-emitting proteins for use in medical imaging.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 68,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries and punctuation conventions?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "which catalyzes the oxidation of luciferin, which releases photons",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "which catalyzes the oxidation of luciferin. Which releases photons",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "which catalyzes the oxidation of luciferin: which releases photons",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion contains two relative clauses that both modify 'luciferase.' The first relative clause is 'which catalyzes the oxidation of luciferin,' and the second, 'which releases photons as a byproduct of the reaction,' provides additional information about that oxidation process. Because both 'which' clauses are dependent (relative) clauses — not independent clauses — they cannot be separated by a semicolon, period, or colon. A semicolon (Choice A) is incorrect because it must join two independent clauses, and 'which releases photons' is a dependent relative clause. Choice B correctly uses a comma before the second 'which' clause, the standard way to attach a non-restrictive relative clause. Choice C creates an illegal fragment: 'Which releases photons as a byproduct of the reaction' cannot stand alone as a sentence. Choice D incorrectly uses a colon, which must follow a grammatically complete independent clause — a relative clause introduced by 'which' is not an independent clause.",
+  "distractorRationale": {
+    "A": "The semicolon is incorrectly used here because it must connect two independent clauses. 'Which releases photons as a byproduct of the reaction' is a dependent relative clause, not an independent clause, so a semicolon creates a semicolon-misuse error.",
+    "B": "Correct. A comma before the second relative clause ('which releases photons') is the standard punctuation for attaching a non-restrictive relative clause, producing a grammatically correct sentence.",
+    "C": "Placing a period before 'Which releases photons as a byproduct of the reaction' creates an illegal sentence fragment, since a clause beginning with 'which' (as a relative pronoun) cannot stand alone as a complete sentence.",
+    "D": "A colon must follow a grammatically complete independent clause. The preceding text ('which catalyzes the oxidation of luciferin') is itself a dependent relative clause, so it cannot host a colon."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e9b4f1a2-33c7-4d88-b651-7f2e9c0d5a16"
+  },
+  "hasImage": false
+}

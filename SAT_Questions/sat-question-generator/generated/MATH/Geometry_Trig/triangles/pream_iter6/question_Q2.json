@@ -1,0 +1,54 @@
+{
+  "id": "d4c8e3f0-7a12-4b56-9c3d-2e5f8a1b6d94",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "computational": 1.1
+  },
+  "stem": "A right triangle has legs of length $6$ and $8$. What is the length of the hypotenuse?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$7$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$10$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$14$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$100$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "By the Pythagorean theorem, if a right triangle has legs $a$ and $b$ and hypotenuse $c$, then $a^2 + b^2 = c^2$.\n\n$$6^2 + 8^2 = c^2$$\n$$36 + 64 = c^2$$\n$$100 = c^2$$\n$$c = \\sqrt{100} = 10$$\n\nThe hypotenuse is $10$. (This is the familiar 3-4-5 triple scaled by 2.)",
+  "distractorRationale": {
+    "A": "The student averages the two legs ($\\frac{6+8}{2} = 7$) instead of applying the Pythagorean theorem, yielding $7$.",
+    "B": "Correct answer: $\\sqrt{6^2 + 8^2} = \\sqrt{100} = 10$.",
+    "C": "The student adds the two legs directly ($6 + 8 = 14$) instead of using the Pythagorean theorem, yielding $14$.",
+    "D": "The student correctly computes $6^2 + 8^2 = 100$ but forgets to take the square root, reporting $100$ as the hypotenuse."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c2f05d84-3e6a-4b18-9d4e-5f7c0a2b1e36"
+  }
+}

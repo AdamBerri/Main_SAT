@@ -1,0 +1,57 @@
+{
+  "id": "e8d2f6b4-1c9a-4e3d-8b7f-5a2c4e9d1f6b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "Coral reefs cover less than one percent of the ocean floor yet support roughly twenty-five percent of all marine species. This productivity depends on a partnership between corals—small invertebrate animals—and algae called zooxanthellae that live within their tissues. The algae photosynthesize, providing corals with up to ninety percent of their energy needs, while the corals supply the algae with shelter and nutrients. The relationship sustains the entire reef ecosystem.\n\nWhen ocean temperatures rise even slightly above seasonal norms—typically by one to two degrees Celsius sustained over several weeks—corals eject their zooxanthellae in a stress response. Without the algae, corals turn white, a phenomenon called bleaching, and lose their primary energy source. If temperatures return to normal quickly, corals can reabsorb algae and recover. Prolonged warmth, however, leads to widespread coral death. The Great Barrier Reef experienced mass bleaching events in 2016, 2017, and 2020, each linked to above-average sea surface temperatures.\n\nRestoration programs are currently testing whether heat-tolerant strains of zooxanthellae can be introduced into reef systems to increase coral resilience. Results are promising in controlled settings, but researchers caution that selective breeding of heat tolerance takes decades, and ocean temperatures are rising faster than restoration efforts can scale.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 204,
+    "source": "Original passage"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A symbiotic system is described, then a threat to that system is explained, then a response to the threat is assessed.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "A series of bleaching events is documented chronologically, leading to a call for urgent action.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A scientific debate is introduced, with evidence presented for and against a proposed solution.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "A cause-and-effect chain is traced from rising temperatures to ecosystem collapse, then reversed by successful restoration.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The first paragraph describes the coral-algae symbiotic system and its importance to reef productivity. The second explains the threat: elevated ocean temperatures trigger bleaching, disrupting the symbiosis, with specific bleaching events noted as examples. The third assesses the ongoing restoration response and its limitations. The passage thus moves through three clearly distinct stages—system, threat, response—with the response section honestly evaluating both promise and constraint rather than declaring success.",
+  "distractorRationale": {
+    "A": "Correct. The passage describes the symbiotic system (paragraph 1), explains the threat of warming-induced bleaching (paragraph 2), and assesses restoration efforts as a response (paragraph 3).",
+    "B": "The bleaching events of 2016, 2017, and 2020 are mentioned, but they function as supporting examples within a broader explanation, not as the primary organizational spine. The passage does not build toward a call for action; the final paragraph is an honest assessment of limitations, not an appeal.",
+    "C": "The passage does not present a scientific debate with evidence on both sides of a proposed solution. Researchers are cautiously optimistic about heat-tolerant zooxanthellae, and no opposing view argues the approach is wrong; the concern is pace, not validity.",
+    "D": "The passage does trace a cause-and-effect chain from temperature rise to bleaching, but it does not culminate in successful restoration. The third paragraph notes that restoration is promising but cannot scale fast enough to match warming rates—a qualified, unresolved outcome, not a reversal."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f4a1c8e6-9b3d-4f2a-8c7e-1d5b9f3c6a8e"
+  }
+}

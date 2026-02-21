@@ -1,0 +1,58 @@
+{
+  "id": "f9a8b7c6-d5e4-4f3a-0b1c-2d3e4f5a6b7c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "linguistic": 1.2
+  },
+  "passage": "Sleep is not simply a period of rest; it is an active biological process essential to human health. During sleep, the brain consolidates memories by transferring information from short-term storage to long-term storage, which is why students who sleep after studying tend to remember material better than those who stay awake. The body also uses sleep to repair tissues, regulate hormones, and strengthen the immune system. Chronic sleep deprivation has been linked to a range of serious health problems, including increased risk of heart disease, diabetes, and depression. Despite these well-documented consequences, many adults in the United States regularly sleep fewer than the seven to nine hours recommended by health professionals. Teenagers face a particular challenge: their biological clocks naturally shift during adolescence, making it difficult for them to fall asleep early, yet school schedules often require them to wake up before their bodies are ready. Understanding what sleep does and why we need enough of it is a first step toward making healthier choices around rest.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 155,
+    "source": "Adapted from a health science article on sleep and human well-being"
+  },
+  "stem": "Which choice best describes the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To inform readers about the functions of sleep and the consequences of not getting enough",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "To advocate for changing school start times so teenagers can sleep longer",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "To describe the stages of sleep and what happens in the brain during each stage",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "To explain the causes of insomnia and recommend medical treatments for sleep disorders",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage covers two interrelated topics: what sleep does for the body (memory consolidation, tissue repair, hormone regulation, immune strengthening) and what happens when people do not get enough sleep (increased risk of heart disease, diabetes, and depression). It also notes that many adults and teenagers fall short of recommended sleep amounts, illustrating the real-world relevance of this gap. The final sentence frames the passage's goal as building understanding that leads to healthier choices — an informative aim. While teenagers and school schedules are mentioned, this is one illustrative detail, not the organizing focus. No specific advocacy or medical recommendations are made.",
+  "distractorRationale": {
+    "A": "Correct. The passage systematically explains sleep's biological functions and then describes the documented health consequences of insufficient sleep across multiple sentences, covering both sides of the topic with an informative tone.",
+    "B": "The passage mentions that school schedules conflict with adolescent sleep biology, but it does not argue that schools should change their start times. This is a supporting detail illustrating why teenagers struggle with sleep, not the purpose of the passage.",
+    "C": "The passage discusses some functions that occur during sleep (such as memory consolidation), but it does not describe sleep stages or what happens in the brain during each stage. That level of neurological detail is absent.",
+    "D": "The passage does not address insomnia as a condition or recommend any medical treatments. It focuses on sleep's general functions and the consequences of insufficient sleep in the general population."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e5f6a7-b8c9-0123-defa-234567890123"
+  },
+  "hasImage": false
+}

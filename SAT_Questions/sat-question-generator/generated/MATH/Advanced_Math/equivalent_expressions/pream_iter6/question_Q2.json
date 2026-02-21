@@ -1,0 +1,54 @@
+{
+  "id": "b4e1d2c5-7f8a-4b6e-a3c9-5d2f1e8b3c7a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "computational": 1.1
+  },
+  "stem": "Which of the following is equivalent to $6x^2 + 9x$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$x(6x + 9)$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$3(2x^2 + 3x)$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$3x(2x + 3)$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$3x(3x + 2)$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To factor $6x^2 + 9x$, find the greatest common factor (GCF) of both terms.\n\nFactors of $6x^2$: $2 \\cdot 3 \\cdot x \\cdot x$\nFactors of $9x$: $3 \\cdot 3 \\cdot x$\n\nGCF $= 3x$\n\nDivide each term by $3x$:\n$\\frac{6x^2}{3x} = 2x$\n$\\frac{9x}{3x} = 3$\n\nSo $6x^2 + 9x = 3x(2x + 3)$.\n\nVerification: $3x(2x + 3) = 6x^2 + 9x$ ✓",
+  "distractorRationale": {
+    "A": "Incomplete factoring: student factored out only $x$ but not the common factor of 3, leaving $x(6x + 9)$ instead of the fully factored form.",
+    "B": "Incomplete factoring: student factored out only 3 but not the common factor of $x$, leaving $3(2x^2 + 3x)$ instead of the fully factored form.",
+    "C": "This is the correct answer.",
+    "D": "Coefficient swap error: student correctly identified $3x$ as the GCF but swapped the resulting coefficients inside the parentheses, writing $3x(3x + 2)$ instead of $3x(2x + 3)$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c8d3f2e1-4a5b-4c7d-b6e9-2f1a3d4e5c8b"
+  }
+}

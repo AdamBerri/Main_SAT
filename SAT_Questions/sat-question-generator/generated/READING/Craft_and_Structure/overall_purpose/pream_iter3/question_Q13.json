@@ -1,0 +1,56 @@
+{
+  "id": "f7a8b9c0-d1e2-4f3a-9b4c-5d6e7f8a9b0c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "Sleep deprivation among teenagers has become a recognized public health concern, yet the typical school schedule does little to address it. Most American high schools begin classes before 8:00 a.m., a start time established decades ago to accommodate bus schedules and parental work hours. Adolescent biology, by contrast, shifts toward later sleep and wake cycles during puberty—a change driven by hormones, not habits. Teenagers asked to wake before 6:00 a.m. on school days are often functioning on fewer than six hours of sleep, well below the eight to ten hours recommended for their age group. The consequences extend from mood and attention in the classroom to elevated rates of depression, obesity, and traffic accidents among teen drivers. Districts that have moved start times to 8:30 a.m. or later have reported measurable improvements across these areas. Resistance to change often comes from logistical concerns—transportation costs, after-school activities, parent schedules—all of which are real but have proven manageable in communities that have made the adjustment. The case for later start times is built on consistent evidence, and communities that continue to delay action bear the cost in student wellbeing.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 186,
+    "source": "Adapted from an opinion piece on adolescent health and school policy"
+  },
+  "stem": "What is the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To explain the biological reasons why teenagers naturally prefer to stay up late at night",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "To describe the health problems that result from insufficient sleep in adolescents",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "To argue that schools should adopt later start times to protect student health",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "To analyze why communities have been slow to change early school start times",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage builds a case for changing school start times by drawing on biology, health data, evidence from districts that have made the shift, and a direct rebuttal of logistical objections. Its final sentence frames continued inaction as a cost communities bear in student wellbeing—a call to act rather than simply to understand. Biology, health statistics, and logistical concerns all function as supporting evidence for this central argument. The author's primary goal is persuasion on a specific policy question, not merely explanation or description.",
+  "distractorRationale": {
+    "A": "The passage does explain adolescent biology and the hormonal shift toward later sleep cycles, and this information occupies several sentences. However, this biological explanation serves as evidence for the policy argument rather than as the passage's primary purpose. The author invokes biology to justify why early start times are harmful, not to give a lesson in sleep science.",
+    "B": "Health consequences—depression, obesity, traffic accidents, mood, and attention—are discussed at length and with specificity. A student who focuses on these details might select this choice. However, the passage uses the health consequences as evidence that current schedules are harmful and as grounds for demanding change, making description of health problems a supporting move rather than the main purpose.",
+    "D": "The passage acknowledges logistical concerns (transportation costs, activities, parent schedules) and notes that communities have resisted change. However, the author's treatment of these concerns is brief and dismissive—they have 'proven manageable'—rather than analytical. The passage does not primarily seek to analyze why change is slow; it argues that the case for change is strong enough that delay is unjustifiable."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a8b9c0d1-e2f3-4a5b-8c6d-7e8f9a0b1c2d"
+  }
+}

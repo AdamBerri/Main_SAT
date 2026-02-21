@@ -1,0 +1,58 @@
+{
+  "id": "9e2b5f8a-3c7d-4e1f-8b4a-6d9c2e5f8a1b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "Text 1\n\nPhilosophers of science have debated whether the predictive success of a theory constitutes genuine evidence for its truth, or merely for its usefulness as a calculating tool. Instrumentalists hold that theories need not describe real underlying structures; they need only generate accurate predictions. Realists counter that the extraordinary predictive success of mature scientific theories — particularly in physics — demands a deeper explanation: if theoretical entities like electrons were mere fictions, it would be a remarkable coincidence that theories positing them yield such precise predictions. This argument, sometimes called the \"no miracles argument,\" holds that scientific realism provides the best, and perhaps the only, non-miraculous explanation for science's predictive triumphs.\n\nText 2\n\nHistorian of science Hasok Chang has documented cases in which now-discarded theories — including phlogiston theory and the caloric theory of heat — achieved genuine predictive successes within their respective domains before being replaced. Phlogiston theory correctly predicted the behavior of many combustion reactions; caloric theory accurately modeled heat flow in numerous experimental contexts. Neither theory described structures that later science recognized as real, yet both generated predictions that matched observations.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 205,
+    "source": "Adapted from philosophy of science literature on scientific realism and instrumentalism"
+  },
+  "stem": "How does the evidence in Text 2 most directly bear on the \"no miracles argument\" presented in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It shows that predictive success can occur without theoretical entities being real.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "It proves that instrumentalism is a more reliable guide to scientific practice than realism.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "It confirms that mature theories are always eventually replaced by more accurate ones.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It suggests the no miracles argument applies only to physics, not to other sciences.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The no miracles argument in Text 1 asserts that science's predictive success would be 'miraculous' unless theoretical entities (like electrons) actually exist — realism is needed to explain success. Text 2 complicates this directly: phlogiston and caloric theory achieved genuine predictive success, yet they did not describe structures that later science recognized as real. This creates a historical counterexample: predictive success occurred without the theoretical entities being real. If that is possible, then predictive success is not by itself a compelling reason to believe theoretical entities exist — which is precisely what the no miracles argument requires. Choice A captures this inferential relationship accurately without overclaiming (it does not say realism is false, only that the argument's premise is undermined).",
+  "distractorRationale": {
+    "A": "Correct. Text 2 shows successful-but-false theories existed, which undermines the no miracles argument's claim that only realism explains predictive success.",
+    "B": "Text 2 documents historical examples of discarded theories succeeding, but this does not prove instrumentalism is more reliable in practice — only that the historical record complicates the realist argument. The leap to 'more reliable guide' is an overgeneralization not supported by either text.",
+    "C": "Text 2 does show some theories are eventually replaced, but Text 1 never claims mature theories are permanent. The 'no miracles argument' concerns the basis for believing theories, not their longevity. This choice is true-but-irrelevant to the specific argument under examination.",
+    "D": "Text 1 specifically mentions physics as a domain where the no miracles argument is compelling, but this does not mean Text 2's evidence limits the argument to physics only. Text 2 draws on chemistry-adjacent sciences (combustion, heat), and neither text explicitly restricts the argument's domain. This choice represents a misreading of the scope of Text 1's physics example."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b3c5d7e9-f2a4-4b6c-8d1e-3f5a7b9c2d4e"
+  },
+  "hasImage": false
+}

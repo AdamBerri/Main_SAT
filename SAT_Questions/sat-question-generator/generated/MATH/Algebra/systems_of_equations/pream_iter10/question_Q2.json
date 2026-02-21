@@ -1,0 +1,54 @@
+{
+  "id": "7de376c2-ab96-40ac-9536-ea1170d5756a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.3,
+    "computational": 1.1
+  },
+  "stem": "A soccer team played 20 games, winning some and drawing the rest with no losses. The team earned 3 points for each win and 1 point for each draw, accumulating 48 points in total. How many more games did the team win than draw?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$4$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$6$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$8$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$14$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let $w$ = number of wins and $d$ = number of draws. The two conditions give:\n$$w + d = 20$$\n$$3w + d = 48$$\n\nSubtracting the first equation from the second:\n$$(3w + d) - (w + d) = 48 - 20$$\n$$2w = 28$$\n$$w = 14$$\n\nBack-substituting: $d = 20 - 14 = 6$.\n\nChecking: $14 + 6 = 20$ ✓ and $3(14) + 6 = 42 + 6 = 48$ ✓\n\nThe number of games won minus games drawn is $w - d = 14 - 6 = \\boxed{8}$.",
+  "distractorRationale": {
+    "A": "Arithmetic error when subtracting equations: the student computes $48 - 20 = 24$ instead of $28$, giving $2w = 24 \\Rightarrow w = 12$, $d = 8$, and $w - d = 4$.",
+    "B": "Wrong-variable error: the student correctly solves the system ($w = 14$, $d = 6$) but reports the number of draws ($d = 6$) instead of the difference $w - d = 8$.",
+    "C": "Correct answer.",
+    "D": "Wrong-variable error: the student correctly solves the system ($w = 14$, $d = 6$) but reports the number of wins ($w = 14$) instead of the difference $w - d = 8$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e48c4188-60a7-40df-ae0b-9f65e8b9415b"
+  }
+}

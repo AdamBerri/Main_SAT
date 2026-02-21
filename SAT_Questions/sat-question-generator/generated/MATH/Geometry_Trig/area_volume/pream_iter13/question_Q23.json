@@ -1,0 +1,38 @@
+{
+  "id": "d4e5f6a7-3333-4a6b-8c7d-9e0f1a2b3c23",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "A hemispherical dome sits atop a cylindrical building. The cylinder has a radius of 6 meters and a height of 10 meters. The hemisphere has the same radius as the cylinder. What is the total volume, in cubic meters, of the building including the dome?",
+  "choices": [
+    { "label": "A", "text": "$504\\pi$", "isCorrect": true },
+    { "label": "B", "text": "$360\\pi$", "isCorrect": false },
+    { "label": "C", "text": "$648\\pi$", "isCorrect": false },
+    { "label": "D", "text": "$144\\pi$", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Cylinder volume: $\\pi(6)^2(10) = 360\\pi$. Hemisphere volume: $\\frac{1}{2} \\cdot \\frac{4}{3}\\pi(6)^3 = \\frac{2}{3}\\pi(216) = 144\\pi$. Total: $360\\pi + 144\\pi = 504\\pi$ cubic meters. The answer is A.",
+  "distractorRationale": {
+    "A": "Correct. $360\\pi + 144\\pi = 504\\pi$.",
+    "B": "Computes only the cylinder volume, omitting the dome: $\\pi(6)^2(10) = 360\\pi$.",
+    "C": "Uses a full sphere instead of a hemisphere: $360\\pi + \\frac{4}{3}\\pi(216) = 360\\pi + 288\\pi = 648\\pi$.",
+    "D": "Computes only the hemisphere volume, omitting the cylinder: $\\frac{2}{3}\\pi(216) = 144\\pi$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:23.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-d333-4d5e-8f9a-0b1c2d3e4f23"
+  }
+}

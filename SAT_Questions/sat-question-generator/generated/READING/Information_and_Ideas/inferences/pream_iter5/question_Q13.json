@@ -1,0 +1,58 @@
+{
+  "id": "f6a9b3c4-5d1e-4b8f-c2d7-8e3f9a5b6c7d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "In the 1840s, Ignaz Semmelweis, a Hungarian physician working in Vienna, noticed a striking difference between two maternity wards in the same hospital. The First Division, staffed by medical students who moved directly from performing autopsies to delivering babies, had a maternal mortality rate from childbed fever of approximately ten percent. The Second Division, staffed by midwives who had no contact with cadavers, had a mortality rate below two percent. Semmelweis hypothesized that 'cadaverous particles' transferred on unwashed hands were causing the deaths. When he instituted mandatory handwashing with chlorinated lime solution in the First Division, the mortality rate dropped to match that of the Second Division within months. Despite this compelling evidence, Semmelweis's findings were largely rejected by the European medical establishment, in part because the prevailing miasma theory attributed disease to bad air rather than contact transmission. Semmelweis died in an asylum in 1865, his work unrecognized. Decades later, Pasteur and Lister's germ theory finally validated the principle behind his intervention.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 172,
+    "source": "Adapted from a history of medicine overview on the development of antiseptic practice"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about why Semmelweis's findings were rejected?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The medical establishment distrusted conclusions drawn from hospital observation rather than laboratory experiments.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "His evidence was statistically insufficient to persuade physicians accustomed to larger clinical trials.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "His conclusions conflicted with the dominant theoretical framework through which physicians interpreted disease.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The handwashing protocol was too costly and impractical for widespread hospital adoption at the time.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage explicitly states that rejection was 'in part because the prevailing miasma theory attributed disease to bad air rather than contact transmission.' This means the medical establishment had an existing theoretical framework—miasma theory—that explained disease differently. Semmelweis's contact transmission hypothesis was incompatible with that framework, not because his data was weak (the mortality drop was dramatic and rapid) but because it challenged accepted doctrine. The later validation by germ theory further confirms that the issue was theoretical incompatibility, not a flaw in Semmelweis's reasoning or evidence.",
+  "distractorRationale": {
+    "A": "The passage does not mention any objection to hospital-based observation as a method; the stated reason for rejection is miasma theory, not methodological skepticism.",
+    "B": "The passage describes a clear and dramatic mortality reduction that occurred 'within months,' which represents compelling evidence. The text mentions no complaints about statistical insufficiency or trial size.",
+    "C": "Correct. The passage directly identifies miasma theory—a competing explanatory framework—as the reason why contact transmission was rejected, and Semmelweis's data conflicted with that prevailing framework.",
+    "D": "The passage never mentions cost or practicality concerns. Chlorinated lime solution was a simple, inexpensive intervention, and no logistical barriers are cited as reasons for rejection."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2b5c8d3-1e6f-4a9b-8c2d-5f7a1b3c4e5d"
+  },
+  "hasImage": false
+}

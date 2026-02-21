@@ -1,0 +1,54 @@
+{
+  "id": "c7d3b852-1e4a-4f97-8c20-3b6a9e2f0d74",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "Two sales representatives, Priya and Marcus, each earn a weekly base salary plus a fixed commission per unit sold. Priya earns a base salary of $300 per week and $11 per unit sold. Marcus earns a base salary of $60 per week and $15 per unit sold. For what number of units sold $s$ does Marcus earn exactly $120 more than Priya in a given week?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$s = 15$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$s = 30$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$s = 60$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$s = 90$",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Write weekly earnings as linear functions of units sold $s$. Priya: $P(s) = 11s + 300$. Marcus: $M(s) = 15s + 60$. We need $M(s) - P(s) = 120$: $$(15s + 60) - (11s + 300) = 120$$ $$4s - 240 = 120$$ $$4s = 360$$ $$s = 90$$ Verification: $P(90) = 11(90) + 300 = 990 + 300 = 1290$. $M(90) = 15(90) + 60 = 1350 + 60 = 1410$. Difference: $1410 - 1290 = 120$. ✓",
+  "distractorRationale": {
+    "A": "Omits Priya's base salary from her earnings function: solves $(15s + 60) - 11s = 120$, giving $4s + 60 = 120$, so $4s = 60$ and $s = 15$.",
+    "B": "Ignores both representatives' base salaries entirely: solves $15s - 11s = 120$, giving $4s = 120$, so $s = 30$.",
+    "C": "Sets Marcus's earnings equal to Priya's (finds the break-even point instead of where Marcus earns $120 more): solves $15s + 60 = 11s + 300$, giving $4s = 240$, so $s = 60$.",
+    "D": "Correct answer."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e86b17-5c29-4a83-9f01-2e7d0c5b8a34"
+  }
+}

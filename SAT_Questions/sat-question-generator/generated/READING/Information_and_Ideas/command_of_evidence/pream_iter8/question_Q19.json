@@ -1,0 +1,57 @@
+{
+  "id": "c7d3e9a1-8f4b-4c2e-a7d5-1b9f3e8c4a6d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "The linguistic assimilation of second-generation immigrants has been studied extensively in North American contexts, but scholars have only recently begun examining how assimilation trajectories differ based on the economic sector into which the first generation entered. A 2020 analysis of sociolinguistic data from three metropolitan areas compared English phonological integration — measured by vowel shift adoption rates — among second-generation adults whose parents had worked primarily in ethnic enclave economies versus those whose parents had worked in mainstream labor markets. Children of enclave-economy workers showed vowel shift adoption rates averaging 41% of the native baseline, while children of mainstream-economy workers showed rates averaging 68%. Notably, the educational attainment of second-generation participants did not fully account for this gap: even when restricted to college-educated participants, children of enclave workers averaged 48% adoption versus 71% for children of mainstream workers. Researchers noted that residential segregation correlated with enclave employment, but regression models isolating employment sector as a variable while controlling for residential patterns still yielded a statistically significant 19-percentage-point gap in adoption rates. The authors cautioned that phonological integration is only one dimension of linguistic assimilation and that lexical and syntactic measures sometimes show different patterns; in their own dataset, syntactic complexity scores did not differ significantly between the two groups.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 207,
+    "source": "Adapted from a sociolinguistic study of immigrant language assimilation, 2021"
+  },
+  "stem": "A sociolinguist claims that parental employment in ethnic enclave economies independently reduces second-generation immigrants' phonological integration into the host language, beyond what residential segregation alone can explain. Which quotation from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Children of enclave-economy workers showed vowel shift adoption rates averaging 41% of the native baseline, while children of mainstream-economy workers showed rates averaging 68%.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"Even when restricted to college-educated participants, children of enclave workers averaged 48% adoption versus 71% for children of mainstream workers.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Researchers noted that residential segregation correlated with enclave employment, but regression models isolating employment sector as a variable while controlling for residential patterns still yielded a statistically significant 19-percentage-point gap in adoption rates.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "\"In their own dataset, syntactic complexity scores did not differ significantly between the two groups.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The claim has a specific causal structure: parental enclave employment independently reduces phonological integration beyond what residential segregation explains. This requires evidence that (1) an employment-sector effect on phonological integration exists, AND (2) that effect holds after controlling for residential segregation. Choice C is the only excerpt that directly addresses both conditions: it acknowledges the confounding relationship between enclave employment and residential segregation, and then presents regression results showing that the employment-sector gap persists (at a statistically significant 19 percentage points) even after residential patterns are controlled. Choice A shows the raw correlation between parental employment sector and phonological integration but cannot establish independence from residential segregation. Choice B shows that educational attainment doesn't explain the gap, which addresses a different confound. Choice D pertains to syntactic measures, not phonological integration, and actually weakens a broad linguistic assimilation claim.",
+  "distractorRationale": {
+    "A": "This excerpt establishes that a difference in phonological integration exists between the two groups, which is necessary background for the claim. However, the raw 27-percentage-point gap could be entirely attributable to residential segregation rather than employment sector per se. It does not establish the 'independently' qualifier in the claim.",
+    "B": "This is a strong distractor: it shows the employment-sector gap persists after controlling for educational attainment, demonstrating some independence of the effect. However, the claim specifically concerns independence from residential segregation, not educational attainment. This excerpt controls for the wrong confound.",
+    "C": "Correct. This excerpt directly states that regression models controlled for residential patterns while isolating employment sector, and a statistically significant 19-percentage-point gap remained — precisely establishing that the employment-sector effect is independent of residential segregation, as the claim requires.",
+    "D": "This excerpt addresses syntactic complexity, a different dimension of linguistic assimilation. It is also inconsistent with a strong version of the claim (suggesting no group difference in that domain), making it the weakest support for the specific phonological independence claim."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e6b4f8a2-3c9d-4e7f-8a1b-5d2c6e9f3b4a"
+  }
+}

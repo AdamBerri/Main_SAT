@@ -1,0 +1,54 @@
+{
+  "id": "c5d9b2e3-1f7a-4c8d-b4e6-3a9f2c5d8b1e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "A researcher asked 80 volunteers at a local gym how many days per week they exercise. She found that, on average, these volunteers exercise 5.2 days per week. The researcher concluded that adults in the city exercise an average of 5.2 days per week. Which of the following best identifies a flaw in this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The sample size of 80 is too small to draw any conclusions about gym members.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "People who volunteer at gyms are likely to exercise more than typical city adults, so the sample is not representative of the city's adult population.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The study should have recorded total hours of exercise rather than number of days to produce a valid result.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The conclusion would only be valid if the average were at least 3 days per week.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The critical flaw is that the sample — volunteers at a gym — is not representative of all city adults. People who spend time at a gym are far more likely to exercise frequently than the general adult population. This is a biased sample (non-random, self-selected from a fitness context), so any result from it cannot reliably be generalized to city adults as a whole. The conclusion extends the finding beyond the group that was actually sampled.",
+  "distractorRationale": {
+    "A": "Error type 6 (Sample size misapplication): A student might focus on the sample size as a problem, but 80 is a reasonable number for a survey; the real issue is how the sample was selected, not how many were included.",
+    "B": "This is the correct answer. Gym volunteers are a biased, non-random sample of city adults — they exercise systematically more, making the generalization to all city adults invalid (Error type 3: Ignoring sampling method).",
+    "C": "Error type 7 (Misidentifying the population): A student might think the measurement unit (days vs. hours) is the flaw, but the question being studied — frequency of exercise — is well-captured by days per week. The measurement choice does not affect who was sampled or whether the sample represents city adults.",
+    "D": "Error type 2 (Wrong confidence interpretation): A student might believe there is a numerical threshold the result must meet before a conclusion is valid. This reflects a misconception that the magnitude of a finding — rather than how the sample was collected — determines whether inference is appropriate."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d7b1a3f5-2c9e-4b8a-9f6d-4e2c7a1b5f3d"
+  }
+}

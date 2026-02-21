@@ -1,0 +1,53 @@
+{
+  "id": "b3e7f2a1-9c4d-4e8b-a5f6-2d1c3e7b9f0a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Text 1\nEcologists studying forest succession have long debated whether mid-successional communities—those dominated by fast-growing pioneer species—are inherently unstable or whether apparent instability reflects measurement artifacts. Pioneer species typically produce abundant biomass quickly but allocate relatively little carbon to structural tissue, prioritizing reproductive output instead. This allocation strategy yields dramatic short-term gains in stand-level productivity but compromises long-term structural integrity, as root systems remain shallow and stems thin relative to crown area.\n\nText 2\nData from a 40-year longitudinal study of mixed temperate forests:\n\n| Succession Stage | Avg. Annual Productivity (Mg C/ha) | Storm Mortality Rate (% stems/yr) | Carbon Residence Time (yrs) |\n|---|---|---|---|\n| Early (0–10 yrs) | 2.1 | 0.4 | 8 |\n| Mid (11–25 yrs) | 4.7 | 2.3 | 12 |\n| Late (26–40 yrs) | 3.9 | 0.6 | 47 |",
+  "stem": "The data in Text 2 most directly complicate which implicit assumption in Text 1's argument about pioneer species allocation strategies?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "That high productivity necessarily indicates successful long-term forest development",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "That structural vulnerability is the primary cost of rapid carbon allocation",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "That mid-successional instability outweighs its productivity advantages in carbon storage",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "That pioneer species trade reproductive success for reduced storm resilience",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Text 1 argues that pioneer species' allocation strategy yields 'dramatic short-term gains in stand-level productivity' but compromises 'long-term structural integrity.' This framing implicitly assumes that the structural vulnerability and instability of mid-successional stages represent a net negative—that the costs outweigh the benefits when considering the full carbon cycle. However, the data in Text 2 reveal that mid-successional forests have the highest productivity (4.7 Mg C/ha) AND a meaningfully higher carbon residence time (12 yrs) compared to early stages (8 yrs), though far lower than late stages (47 yrs). Crucially, the storm mortality data (2.3% vs. 0.4–0.6%) shows the instability is real, but the productivity and residence time gains mean mid-successional stages are net carbon accumulators despite their vulnerability. Text 1 implies the instability is the defining feature with costs that define the outcome, but the data suggest that instability does not negate the carbon storage function—it merely elevates it transiently before late-successional stability achieves far greater residence times. The specific assumption being complicated is that the vulnerability costs at mid-succession make the allocation strategy a net liability in terms of ecosystem carbon function; the data show mid-succession is still a net carbon gain phase, complicating any simple negative framing of that tradeoff.",
+  "distractorRationale": {
+    "A": "Text 1 never assumes high productivity indicates long-term forest development success—it explicitly acknowledges the short-term nature of productivity gains. This distractor misreads Text 1's position as more naive than it is, targeting students who conflate the argument's acknowledgment of productivity with an assumption that productivity equals success.",
+    "B": "Text 1 does describe structural vulnerability (shallow roots, thin stems) as a cost, but the 'primary cost' framing is an addition not present in Text 1. More importantly, the data don't specifically address whether structural vulnerability is primary versus other costs—the data show storm mortality rates, which confirm vulnerability, not complicate it. This distractor is tempting because it references real content from both texts but doesn't identify the actual tension.",
+    "C": "Correct. See explanation.",
+    "D": "Text 1 discusses reproductive output as a priority but does not explicitly link it as a direct trade against storm resilience; storm mortality is mentioned in Text 2 but Text 1 frames the trade-off as productivity vs. structural integrity, not reproduction vs. resilience. Students who conflate these two framings may select this, but it misidentifies which assumption in Text 1 the data challenge."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-d5e6-7890-abcd-ef1234567891"
+  },
+  "hasImage": false
+}

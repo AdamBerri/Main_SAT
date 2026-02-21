@@ -1,0 +1,54 @@
+{
+  "id": "1e6971da-f22f-4c26-8bd4-125f7c583af7",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "Two sections of a statistics course take the same midterm exam. Section A has 4 students whose scores have a mean of 65. Section B has 6 students whose scores have a mean of 80. What is the mean score of all 10 students combined?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "71",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "72.5",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "74",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "75",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "STEP A — No single data set to sort; two group summaries are given.\n\nSTEP B — Compute the total sum for each group, then the combined mean.\n  Section A: 4 students, mean 65 → sum_A = 4 × 65 = 260\n  Section B: 6 students, mean 80 → sum_B = 6 × 80 = 480\n  Combined sum = 260 + 480 = 740\n  Combined mean = 740 ÷ 10 = 74\n\nSTEP C — Median: not required; the question asks only for the mean.\n\nSTEP D — Mode: not required.\n\nSTEP E — Range: not required.\n\nSTEP F — Standard deviation: not involved.\n\nSTEP G — No data modification.\n\nSTEP H — Correct answer = 74, which is choice C. ✓\n\nSTEP I — Distractor analysis:\n  Choice A (71): MISCONCEPTION — weights-flipped error. The student accidentally uses Section B's count as the weight for Section A and vice versa: (6×65 + 4×80) ÷ 10 = (390 + 320) ÷ 10 = 710 ÷ 10 = 71. This error arises from swapping which multiplier belongs to which group.\n  Choice B (72.5): MISCONCEPTION — unweighted average. The student computes the simple average of the two group means without accounting for group size: (65 + 80) ÷ 2 = 72.5. A student who knows the concept of weighted means in principle but forgets to apply group counts will land here.\n  Choice D (75): MISCONCEPTION — partial-computation/rounding error. The student may round the weighted mean calculation, or note that 74 is close to 75 and choose the rounder number. Alternatively, a student who adds the two sums (740) and then divides by a wrong total (e.g., uses n = 9 by miscounting) gets ≈ 82.2; or who mistakenly uses n = 8 gets 92.5 — neither matches, but a student who uses n = 10 but makes an arithmetic slip (e.g., computes 4×65 = 250 instead of 260) gets 730 ÷ 10 = 73, then rounds up to 75. Choice D is specifically designed to catch off-by-one arithmetic slips in the sum of Section A.",
+  "distractorRationale": {
+    "A": "Weights-flipped error: the student multiplies Section A's mean by Section B's count and vice versa, computing (6×65 + 4×80) ÷ 10 = 71 instead of the correct weighted combination.",
+    "B": "Unweighted average error: the student ignores group sizes and computes the simple mean of the two reported means, (65 + 80) ÷ 2 = 72.5, failing to weight by the number of students in each section.",
+    "C": "Correct answer: combined mean = (4×65 + 6×80) ÷ 10 = 740 ÷ 10 = 74.",
+    "D": "Arithmetic slip error: the student sets up the weighted mean correctly but makes an arithmetic error in computing one of the group sums (e.g., 4×65 = 250 instead of 260), yielding 730 ÷ 10 = 73, which they round to 75, or uses a slightly wrong denominator."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "9a2af71c-c12a-4458-9ade-dc2e6e2cd3bd"
+  }
+}

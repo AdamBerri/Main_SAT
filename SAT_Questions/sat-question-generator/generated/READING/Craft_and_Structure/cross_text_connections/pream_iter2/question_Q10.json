@@ -1,0 +1,58 @@
+{
+  "id": "f7b2e4d5-1c8a-4f3b-9e6d-2a5c8e1f4b7d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "Text 1\nPlastic straws account for a tiny fraction of total ocean plastic—less than 0.03 percent by weight according to some estimates. Yet single-use straw bans have become one of the most widely adopted environmental policies of the past decade. These bans generate public awareness about plastic pollution and signal corporate and governmental commitment to sustainability, even if their direct impact on ocean debris is modest.\ntml\nText 2\nResearchers tracking marine plastic pollution argue that effective solutions must target the largest sources of ocean waste. Studies indicate that fishing nets, ropes, and lines make up nearly half of all plastic found in the Great Pacific Garbage Patch by weight. Redirecting public and regulatory attention toward industrial and agricultural plastic sources would generate far greater environmental benefit than consumer-product restrictions that primarily serve a symbolic function.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 149,
+    "source": "Original passages"
+  },
+  "stem": "Which choice best describes how the authors of Text 1 and Text 2 view single-use plastic bans?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Both authors agree that single-use plastic bans are the most effective strategy for reducing ocean pollution.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 acknowledges that straw bans have limited direct environmental impact, while Text 2 argues that this limitation makes such bans counterproductive.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 1 argues that fishing industry plastics are the true cause of ocean pollution, while Text 2 defends consumer-product restrictions as a reasonable response.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 2 expands on Text 1 by identifying additional symbolic benefits of single-use plastic bans that Text 1 had not considered.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 openly concedes that straw bans have a modest direct impact on ocean plastic (less than 0.03 percent by weight) but defends them on the grounds of awareness-raising and signaling commitment. Text 2 accepts the same factual premise—that consumer-product bans address a small fraction of the problem—but draws a different conclusion: because these bans are primarily symbolic, they divert attention from the industrial and agricultural sources that represent the majority of ocean plastic. The two texts share the same factual starting point but diverge in whether symbolic value justifies policies with limited direct impact.",
+  "distractorRationale": {
+    "A": "Neither author claims straw bans are the most effective strategy. Text 1 calls their direct impact 'modest,' and Text 2 explicitly argues that targeting larger industrial sources would be far more beneficial.",
+    "B": "Correct. Text 1 concedes the limited direct impact but defends the symbolic value; Text 2 uses that same limited impact to argue against prioritizing such bans, concluding they are counterproductive diversions.",
+    "C": "This reverses each author's position. Text 1 does not focus on fishing industry plastics at all; Text 2 is the one identifying industrial fishing gear as the primary source, and it does not defend consumer-product restrictions.",
+    "D": "Text 2 does not expand on or add to the symbolic benefits Text 1 identifies. Text 2 treats the symbolic nature of such bans as a criticism, arguing they distract from more impactful policies."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b4d6f8a2-3e1c-4b7d-9f5a-2c8e4a1f6d3b"
+  },
+  "hasImage": false
+}

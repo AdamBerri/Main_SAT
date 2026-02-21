@@ -1,0 +1,58 @@
+{
+  "id": "f6a7b8c9-6666-4f2a-3b4c-5d6e7f8091a3",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4,
+    "linguistic": 4.3
+  },
+  "passage": "Linguists studying the Pirah\u00e3 language of the Brazilian Amazon found that it lacks words for specific numbers, using only terms roughly translatable as \"few\" and \"many.\" Early researchers proposed that this absence limited speakers' ability to perform exact quantitative reasoning. _______ experimental studies showed that Pirah\u00e3 speakers could match quantities precisely when shown visual arrays, suggesting that numerical cognition operates independently of the language one speaks.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 80,
+    "source": "Adapted from a cognitive linguistics research article"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "In other words,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Granted,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Nonetheless,",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Accordingly,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage sets up a claim (lacking number words limits quantitative reasoning) and then presents evidence that undermines that claim (speakers could match quantities anyway). 'Nonetheless' correctly signals that the experimental findings hold true despite the earlier researchers' expectation to the contrary, introducing a concessive contrast.",
+  "distractorRationale": {
+    "A": "'In other words' restates a previous idea in different terms. The experimental findings are new evidence that contradicts the earlier proposal, not a restatement of it.",
+    "B": "'Granted' concedes a point before introducing a counterargument. However, the passage is not conceding the experimental findings; rather, the experimental findings undermine the earlier proposal. The logical direction is reversed from what 'Granted' would require.",
+    "C": "Correct. 'Nonetheless' signals that despite the earlier proposal about linguistic limitations on reasoning, the experimental evidence showed the opposite.",
+    "D": "'Accordingly' signals a logical consequence, but the experimental findings contradict rather than follow from the earlier proposal."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:03:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f6666666-a7b8-4c9d-0e1f-2a3b4c5d6e78"
+  },
+  "hasImage": false
+}

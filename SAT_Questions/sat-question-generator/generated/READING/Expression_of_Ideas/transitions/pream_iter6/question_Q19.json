@@ -1,0 +1,58 @@
+{
+  "id": "c9d0e1f2-9999-4c5d-6e7f-8a9b0c1d2e34",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "Ecologists studying invasive plant species have typically focused on the damage these plants cause to native ecosystems, documenting how they outcompete local flora for sunlight and nutrients. A study of purple loosestrife in North American wetlands, though, found that areas with moderate loosestrife presence actually supported greater insect diversity than areas dominated exclusively by native cattails. _______ the researchers cautioned that this benefit was strictly limited to moderate invasion levels and that dense loosestrife stands still devastated native plant communities.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 92,
+    "source": "Adapted from an ecology research journal"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Even so,",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Therefore,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Similarly,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "In other words,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The second sentence presents a surprising positive finding about an invasive species. The third sentence then qualifies that finding by warning about its limited applicability. 'Even so' correctly signals that despite the positive result, an important caveat still applies, creating a concessive relationship.",
+  "distractorRationale": {
+    "A": "Correct. 'Even so' signals that the researchers added an important qualification despite the positive finding about insect diversity.",
+    "B": "'Therefore' signals a logical consequence, but the caveat about dense stands is a qualification of the positive finding, not a conclusion drawn from it.",
+    "C": "'Similarly' draws a parallel, but the researchers' caution introduces a limitation that qualifies rather than mirrors the positive finding.",
+    "D": "'In other words' restates a previous idea, but the researchers' warning is a new qualification, not a rephrasing of the finding about insect diversity."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:03:03.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c9999999-d0e1-4f2a-3b4c-5d6e7f8a9b01"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,54 @@
+{
+  "id": "b8e4a1c7-3d92-4f0e-9a6b-5c7f2e8d1b34",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "A co-working space charges a monthly fee for two membership tiers: a standard plan and a premium plan. In March, 3 standard memberships and 5 premium memberships generated a total of $4,100 in revenue. In April, 1 standard membership and 3 premium memberships generated a total of $1,900 in revenue. A corporate client wants to purchase 1 standard membership and 2 premium memberships for an employee. What would be the total cost, in dollars, of this purchase?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$300$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$1{,}500$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$1{,}800$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$1{,}900$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $s$ = the cost of one standard membership and $p$ = the cost of one premium membership.\n\nThe two revenue conditions give the system:\n$$3s + 5p = 4100 \\quad (1)$$\n$$s + 3p = 1900 \\quad (2)$$\n\nThe goal is to find $s + 2p$.\n\n**Step 1 — Eliminate $s$ using equation (2):**\nMultiply equation (2) by 3: $3s + 9p = 5700$.\nSubtract equation (1): $(3s + 9p) - (3s + 5p) = 5700 - 4100 \\implies 4p = 1600 \\implies p = 400$.\n\n**Step 2 — Back-substitute to find $s$:**\nSubstitute $p = 400$ into equation (2): $s + 3(400) = 1900 \\implies s + 1200 = 1900 \\implies s = 700$.\n\n**Step 3 — Compute the target expression:**\n$$s + 2p = 700 + 2(400) = 700 + 800 = 1500$$\n\n**Checking:** Equation (1): $3(700) + 5(400) = 2100 + 2000 = 4100$ ✓. Equation (2): $700 + 3(400) = 700 + 1200 = 1900$ ✓.\n\nThe total cost of 1 standard and 2 premium memberships is $\\$1{,}500$.",
+  "distractorRationale": {
+    "A": "Makes a sign error when back-substituting: after finding $p = 400$ correctly, writes $s - 1200 = 1900$ instead of $s + 1200 = 1900$, giving $s = 3100$; then computes $s + 2p = 3100 + 800 = 3900$. Wait — this gives 3900. The student who obtains $\\$300$ divides incorrectly: after getting $4p = 1600$, forgets to divide by 4 and treats $p = 1600$ as the answer, then computes $s = 1900 - 3(1600) = 1900 - 4800 = -2900$, giving $s + 2p = -2900 + 3200 = 300$.",
+    "B": "Correct. Solves the system to find $s = 700$ and $p = 400$, then computes $s + 2p = 700 + 800 = 1500$.",
+    "C": "Solves for $s = 700$ and $p = 400$ correctly, but computes $2s + p = 2(700) + 400 = 1400 + 400 = 1800$ (swaps the coefficients in the target expression, computing $2s + p$ instead of $s + 2p$).",
+    "D": "Misreads the second equation $s + 3p = 1900$ as already representing $s + 2p$ (misreads the coefficient 3 on $p$ as 2), and reports the right-hand side $1900$ directly as the answer without solving."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c2d3e4f5-a6b7-8901-bcde-f23456789012"
+  }
+}

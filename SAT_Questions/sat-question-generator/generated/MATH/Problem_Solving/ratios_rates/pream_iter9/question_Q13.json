@@ -1,0 +1,54 @@
+{
+  "id": "a5eeb4ea-df1e-4a2f-b134-1eec597690a1",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "A trail mix recipe combines nuts, dried fruit, and granola in the ratio $5:3:2$. A camper wants to make a total of 40 cups of trail mix. How many cups of dried fruit does the camper need?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "4",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "12",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "20",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "24",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Step 1: Find the total number of ratio parts. $$5 + 3 + 2 = 10 \\text{ total parts}$$\n\nStep 2: Determine the fraction of the mix that is dried fruit. Dried fruit has 3 parts out of 10 total: $\\frac{3}{10}$.\n\nStep 3: Multiply by the total volume. $$\\frac{3}{10} \\times 40 = 12 \\text{ cups}$$\n\nThe camper needs 12 cups of dried fruit.",
+  "distractorRationale": {
+    "A": "Stopped at intermediate value — the student finds the value of each single ratio part (the scale factor) but reports that as the answer rather than multiplying it by the dried fruit ratio number. Wrong calculation: scale factor $= 40 \\div 10 = 4$. The student reports 4 instead of completing the final step: $3 \\times 4 = 12$.",
+    "B": "Correct answer. Total parts $= 10$; dried fruit fraction $= \\frac{3}{10}$; $\\frac{3}{10} \\times 40 = 12$ cups.",
+    "C": "Wrong term selected from ratio — the student applies the correct method but uses the nuts value (5) instead of the dried fruit value (3). Wrong calculation: $\\frac{5}{10} \\times 40 = 20$ cups (this is the correct amount of nuts, not dried fruit).",
+    "D": "Part-to-whole vs part-to-part confusion — the student compares dried fruit only to the other non-nut ingredient (granola) rather than to the full mixture. The student uses $\\frac{3}{3+2} = \\frac{3}{5}$ as the dried fruit fraction instead of $\\frac{3}{10}$. Wrong calculation: $\\frac{3}{5} \\times 40 = 24$ cups."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e1717e13-2b99-4d9e-a38a-02091ef99935"
+  }
+}

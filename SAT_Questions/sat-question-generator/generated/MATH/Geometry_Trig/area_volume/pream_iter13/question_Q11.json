@@ -1,0 +1,38 @@
+{
+  "id": "b2c3d4e5-1111-4a6b-8c7d-9e0f1a2b3c11",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "computational": 3.3
+  },
+  "stem": "A cylindrical grain silo has a volume of $500\\pi$ cubic feet and a height of 20 feet. What is the radius, in feet, of the silo?",
+  "choices": [
+    { "label": "A", "text": "$5$", "isCorrect": true },
+    { "label": "B", "text": "$25$", "isCorrect": false },
+    { "label": "C", "text": "$10$", "isCorrect": false },
+    { "label": "D", "text": "$\\sqrt{500}$", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The volume of a cylinder is $V = \\pi r^2 h$. Setting $500\\pi = \\pi r^2(20)$ and dividing both sides by $20\\pi$: $r^2 = \\frac{500}{20} = 25$, so $r = 5$ feet. The answer is A.",
+  "distractorRationale": {
+    "A": "Correct. $r^2 = 25$, so $r = 5$.",
+    "B": "Finds $r^2 = 25$ but reports $r^2$ as the answer instead of taking the square root.",
+    "C": "Divides volume by height but forgets to cancel $\\pi$: $\\frac{500\\pi}{20} = 25\\pi$, then incorrectly takes $\\sqrt{25\\pi} \\approx 10$. Equivalently, doubles the correct answer by confusing radius with diameter.",
+    "D": "Forgets to divide by the height: sets $r^2 = 500$, giving $r = \\sqrt{500}$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:11.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-b111-4d5e-8f9a-0b1c2d3e4f11"
+  }
+}

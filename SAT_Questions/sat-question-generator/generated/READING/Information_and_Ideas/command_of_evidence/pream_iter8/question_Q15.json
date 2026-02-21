@@ -1,0 +1,57 @@
+{
+  "id": "d1e2f3a4-b5c6-4d7e-9f8a-0b1c2d3e4f5a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "The following passage is adapted from a 2023 report on student sleep and academic performance.\n\nA growing body of research links insufficient sleep among adolescents to declines in academic performance, with school start times identified as a key structural factor. Most American middle and high schools begin before 8:30 a.m., a schedule that conflicts with the biological shift in circadian rhythm that occurs during puberty and causes teenagers to feel alert later in the evening and drowsy later in the morning.\n\nA longitudinal study tracking 4,200 students across three school districts in Colorado found that students at schools with start times before 8:00 a.m. averaged 6.4 hours of sleep per night, compared to 7.6 hours for students at schools starting at 8:30 a.m. or later — a difference of 1.2 hours nightly. The earlier-starting group reported falling asleep at similar times as their later-starting peers, meaning the difference in sleep duration arose almost entirely from earlier wake-up times rather than altered bedtimes.\n\nGrade point averages followed a similar pattern. In the same longitudinal study, students at early-start schools averaged a GPA of 2.89, compared to 3.14 for students at later-start schools, a statistically significant difference of 0.25 grade points after controlling for socioeconomic status and prior academic performance.\n\nTransition studies — examining districts that changed their start times — provide additional evidence. Seattle Public Schools shifted high school start times from 7:50 a.m. to 8:45 a.m. in 2016. A study measuring outcomes before and after the change found that students gained an average of 34 minutes of nightly sleep, and attendance rates improved by 3.0 percentage points in the year following the transition.\n\nCritics of start time delays point to logistical complications, including changes to bus schedules, after-school activity timing, and parent work schedules. Researchers acknowledge these challenges but argue they are outweighed by demonstrated academic and health benefits.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 293,
+    "source": "Adapted from a 2023 education policy research report"
+  },
+  "stem": "A school board member claims that moving high school start times later is directly associated with students getting more sleep, based on data from a district that actually made this change. Which evidence from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"students at schools with start times before 8:00 a.m. averaged 6.4 hours of sleep per night, compared to 7.6 hours for students at schools starting at 8:30 a.m. or later\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"students at early-start schools averaged a GPA of 2.89, compared to 3.14 for students at later-start schools, a statistically significant difference of 0.25 grade points after controlling for socioeconomic status and prior academic performance\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Seattle Public Schools shifted high school start times from 7:50 a.m. to 8:45 a.m. in 2016. A study measuring outcomes before and after the change found that students gained an average of 34 minutes of nightly sleep\"",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "\"attendance rates improved by 3.0 percentage points in the year following the transition\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The claim has three key elements: (1) moving high school start times later, (2) is associated with students getting more sleep, and (3) the evidence comes from a district that actually made this change. Choice C addresses all three. It identifies Seattle Public Schools as a district that concretely shifted start times (from 7:50 to 8:45 a.m.), directly measures the sleep outcome (34 minutes gained), and reports these as results from a before-and-after study of an actual change — exactly the 'transition study' evidence the claim specifies. Choice A is a plausible distractor because it also quantifies sleep differences by start time, but it comes from a cross-sectional comparison of different schools, not a district that changed its times.",
+  "distractorRationale": {
+    "A": "Choice A provides quantified sleep data (6.4 vs. 7.6 hours) linked to different start times, which superficially matches the claim. However, it comes from a longitudinal comparison across different schools — not from a district that changed its start times. The claim specifically requires evidence from a district that 'actually made this change,' which Choice A does not satisfy.",
+    "B": "Choice B provides GPA data from the same Colorado longitudinal study as Choice A. It measures academic performance, not sleep duration, so it does not address whether a start time change leads to more sleep. It also does not involve a district that changed its start times.",
+    "C": "This is the correct answer. See explanation above.",
+    "D": "Choice D reports one outcome from the Seattle transition (improved attendance) but measures attendance rates, not sleep. A reader who quickly associates 'Seattle transition' with the correct answer might select this, but it does not address the sleep outcome specified in the claim."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b"
+  }
+}

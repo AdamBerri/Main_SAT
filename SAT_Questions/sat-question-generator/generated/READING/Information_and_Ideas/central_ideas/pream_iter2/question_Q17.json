@@ -1,0 +1,56 @@
+{
+  "id": "c4f8a2b1-7e3d-4c9a-b6f5-1e2d9f8c7b4a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "Coral reefs cover less than one percent of the ocean floor, yet they harbor an estimated twenty-five percent of all marine species. Marine ecologists studying reef resilience have increasingly distinguished between structural diversity—the number of species present—and functional diversity, the range of ecological roles those species perform. A reef with forty fish species might be more fragile than one with twenty, if the forty species all perform similar functions. When a bleaching event eliminates certain fish, a functionally diverse reef retains species that graze algae, regulate nutrients, and rebuild calcium carbonate structures—roles that keep the system viable. A reef dense with taxonomic variety but thin on functional variety loses these capacities simultaneously when stress eliminates even a single guild. Researchers tracking reefs across the Indo-Pacific have found that high species counts correlate poorly with post-disturbance recovery rates, while functional breadth predicts recovery with considerably more precision.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 155,
+    "source": "Adapted from a review article in a marine ecology journal"
+  },
+  "stem": "Which choice best states the main idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Coral reefs are disproportionately important to ocean biodiversity relative to the small fraction of ocean floor they occupy.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Bleaching events pose a greater threat to reefs with low species counts than to reefs with high taxonomic variety.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The ecological resilience of coral reefs depends more on the functional variety of species present than on the total number of species.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Marine ecologists studying reef resilience have developed a new classification system that measures ecological roles rather than species abundance.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage develops a distinction between structural diversity (species count) and functional diversity (range of ecological roles), then argues through multiple lines of evidence that functional diversity—not species count—determines a reef's ability to survive disturbances. The example of forty species potentially being more fragile than twenty if they share the same functions, the description of what functionally diverse reefs retain after bleaching, and the Indo-Pacific research findings all converge on the same inference: ecological role variety is the operative factor in resilience. No single sentence states this as a thesis; the reader must synthesize the contrast developed across the passage. Choice C captures this synthesis accurately.",
+  "distractorRationale": {
+    "A": "The opening statistic about reefs covering one percent of the ocean floor but harboring twenty-five percent of species is an orienting fact, not the passage's argument. The passage does not develop the theme of reefs' disproportionate importance.",
+    "B": "The passage argues the opposite pattern: species count (high or low) is a poor predictor of resilience. Bleaching events are used as an illustration of why functional diversity matters, not as evidence about species count thresholds.",
+    "D": "The passage references the structural/functional distinction as an analytical tool researchers use, not as a newly developed classification system. The passage's concern is with what this distinction reveals about resilience, not with documenting a methodological innovation."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2e8f4a1-9c3d-4e7b-a6f5-3d2c9e8b7a4f"
+  }
+}

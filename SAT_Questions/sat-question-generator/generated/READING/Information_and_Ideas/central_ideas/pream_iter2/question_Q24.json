@@ -1,0 +1,57 @@
+{
+  "id": "7c3e9f1a-8b4d-4c6e-a2f5-9d1b7e3c4f8a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "Vernacular architecture—farmhouses, granaries, fishermen's cottages built without architects by their eventual inhabitants—has long been studied as a record of climatic adaptation. Thick walls in desert regions, steep pitches in snowy climates, raised floors in flood-prone deltas: the logic seems purely functional, a direct translation of environmental constraint into form.\n\nEthnographic fieldwork has complicated this reading. Builders in the same climate zone frequently produce radically divergent structures, while communities separated by mountain ranges or seas replicate forms with remarkable fidelity. The thickness of a wall or the angle of a roof encodes not only local weather but patterns of kinship, trade routes, marriage alliances, and the migration histories through which techniques and aesthetic preferences travel across geography.\n\nA granary in the Sahel and a stave church in Norway share the property of being unreadable as pure environmental responses. Both are documents of interlocking constraints—material, social, and historical—none of which achieves explanatory primacy over the others.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 172,
+    "source": "Adapted from a journal article on vernacular architecture and cultural geography"
+  },
+  "stem": "Which choice best describes what the passage is mainly about?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The discovery that builders in the same climate zone produce structurally different buildings, which calls into question the assumption that architecture reflects environmental conditions",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The insufficiency of purely environmental explanations for vernacular architecture, which encodes social and historical factors alongside climatic constraints",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The argument that ethnographic fieldwork has proven more valuable than architectural analysis for understanding how communities adapt to their physical environments",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The observation that vernacular structures in geographically distant regions share formal similarities that reveal the extent of premodern trade and migration networks",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage moves through three phases of argument. The first paragraph presents the conventional environmental-determinism reading of vernacular architecture with specific examples (thick walls, steep pitches, raised floors). The second paragraph introduces ethnographic evidence that disrupts this reading: divergence within climate zones and convergence across geographic barriers both indicate that climate alone is insufficient. The third paragraph generalizes the disruption: structures are 'unreadable as pure environmental responses' because they encode 'interlocking constraints—material, social, and historical—none of which achieves explanatory primacy.' The main idea synthesizes these phases: the environmental explanation is real but partial, and understanding vernacular buildings requires integrating social and historical factors alongside climate. Answer B captures this two-part claim—the insufficiency of one framework and the necessity of incorporating others—without distorting the passage's balanced, non-hierarchical conclusion.",
+  "distractorRationale": {
+    "A": "This answer accurately describes one piece of evidence from the second paragraph—divergence within climate zones—but treats it as if it were the main point. The passage uses this observation as support for a broader argument about multiple determining factors, not as an end in itself. The framing 'calls into question' also overstates the passage's conclusion, which does not wholly dismiss environmental explanations but reframes them as partial.",
+    "B": "Correct. This answer holds the passage's two central moves together: the environmental explanation is insufficient on its own, and the alternative incorporates social and historical factors alongside climate. It avoids elevating any single factor as the new 'real' explanation, matching the third paragraph's explicit claim that no constraint achieves explanatory primacy.",
+    "C": "The passage mentions ethnographic fieldwork as a source of evidence, not as the subject of a methodological argument. The passage does not compare ethnography favorably to architectural analysis as a method; it uses ethnographic findings to revise the content of architectural interpretation. The claim about 'adapting to physical environments' also reinscribes the environmental focus the passage is complicating.",
+    "D": "The passage mentions that communities separated by seas replicate forms with 'remarkable fidelity,' suggesting trade routes and migration as one explanatory factor. But this is one component of a larger argument about multiple constraints, and the passage does not focus on documenting premodern networks. Answer D mistakes a supporting example for the passage's organizing claim."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b8e4c1f7-2a9d-4b5c-e3f8-7a1d9c6e2b4f"
+  }
+}

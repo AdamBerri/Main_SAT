@@ -1,0 +1,57 @@
+{
+  "id": "5a9d3e7b-2c1f-4a8e-9b4d-7f3c2e1a8b6d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "Text 1\nThe rise of algorithmic content curation has produced a paradox at the heart of contemporary democratic discourse. When recommendation systems optimize for engagement metrics, they predictably amplify content that triggers strong emotional responses, systematically rewarding outrage, tribalism, and factual distortion over considered deliberation. Citizens who consume algorithmically curated information therefore develop an increasingly distorted model of public opinion—perceiving their own partisan views as more widely shared and opposing positions as more extreme than surveys actually reveal. Democracy requires an informed citizenry, and these systems structurally undermine that precondition.\n\nText 2\nCritics who attribute democratic dysfunction to algorithmic recommendation systems conflate correlation with causation and overestimate platform influence relative to pre-existing social factors. Survey data consistently show that heavy consumers of algorithmically curated content are no more polarized than demographically comparable individuals who rely primarily on traditional broadcast media. If platforms were the primary driver of polarization, we would expect meaningful attitudinal divergence between these groups. The more parsimonious explanation is that social sorting—residential, occupational, and relational homophily—predates and substantially exceeds any polarizing effect attributable to content algorithms.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 160,
+    "source": "Adapted from academic discussions on media, algorithms, and political polarization"
+  },
+  "stem": "How do the authors of Text 1 and Text 2 differ in their assessment of algorithmic content curation's role in democratic society?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 attributes democratic dysfunction primarily to citizens' irrational susceptibility to emotionally charged content, while Text 2 argues that algorithmic design choices, not user behavior, are the root cause of polarization.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 treats algorithmic curation as a structurally corrupting force on the informational preconditions of democracy, while Text 2 challenges the causal primacy of algorithms by citing evidence that social factors external to platforms produce comparable polarization.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 1 maintains that outrage-driven content distorts citizens' perceptions of consensus, while Text 2 accepts this perceptual distortion but argues it does not meaningfully impair democratic deliberation.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 advocates for regulatory intervention targeting algorithmic engagement metrics, while Text 2 proposes addressing social homophily through community integration policies instead.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 makes a structural argument: algorithmic optimization for engagement systematically produces epistemic distortions (misperceptions of opinion distributions, amplification of extremes) that undermine the informational foundation democracy requires. The claim is causal and structural—algorithms do this to democratic culture. Text 2 directly contests this causal attribution. It does not deny polarization exists; it denies algorithms are its primary driver. By invoking survey data showing that heavy platform users are no more polarized than comparable consumers of traditional media, Text 2 redirects causal responsibility to social homophily predating digital platforms. The relationship is that Text 1 asserts algorithmic causation of democratic harm, while Text 2 challenges that causal claim using comparative evidence and proposes an alternative, deeper causal factor. Multi-step reasoning: (1) identify Text 1's structural causal claim, (2) identify Text 2's comparative empirical counter-evidence, (3) recognize Text 2 accepts polarization as real but contests its cause, (4) distinguish causal challenge from denial of effects, (5) verify Text 2 invokes pre-platform social sorting as alternative explanation, (6) confirm Text 1 does not advocate specific policy, (7) confirm Text 2 does not propose integration policies.",
+  "distractorRationale": {
+    "A": "This inverts both arguments. Text 1 blames algorithmic design (optimization for engagement) rather than citizens' irrationality. Text 2 does not blame algorithmic design choices; it minimizes algorithms' causal role entirely in favor of pre-existing social factors.",
+    "B": "Correct. Text 1 argues algorithms structurally corrupt democracy's informational preconditions. Text 2 rejects this causal primacy by presenting survey evidence that comparable polarization exists among non-platform users, attributing the phenomenon instead to social sorting.",
+    "C": "Text 2 does not accept Text 1's claim about perceptual distortion while minimizing its effects—Text 2 challenges whether algorithms cause the polarization at all. Text 2's argument is about causation, not about the severity of effects given that distortion exists.",
+    "D": "Neither text advocates specific policies. Text 1 diagnoses a structural problem but does not call for regulatory intervention. Text 2 explains an alternative cause (homophily) but does not propose community integration as a remedy."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3f7a1e9-8d2b-4c5f-9a3e-1b6d4f8c2a7e"
+  }
+}

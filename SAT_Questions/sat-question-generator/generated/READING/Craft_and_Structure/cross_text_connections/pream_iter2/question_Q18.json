@@ -1,0 +1,57 @@
+{
+  "id": "a2d6f8b1-4c9e-4a3d-8f7b-2e5c1a9d6f3b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "Text 1\nUrban planners in the mid-twentieth century embraced the separation of land uses—residential, commercial, industrial—as a scientific advance that would produce healthier, more efficient cities. By segregating incompatible activities, planners believed they could eliminate pollution, reduce traffic conflict, and allow each zone to develop optimally. Residents would sleep in tranquil neighborhoods, work in purpose-built commercial districts, and commute between them via arterial roads designed to move traffic with maximum throughput.\n\nText 2\nThe mixed-use neighborhoods that planners systematically dismantled in the name of zoning efficiency turn out to have possessed significant advantages that were invisible to the modernist planning framework. Streets lined with a variety of uses generated continuous pedestrian activity throughout the day, creating the informal surveillance that reduces crime and the economic density that supports small businesses. Their apparent messiness reflected a complex, self-regulating order that top-down rationalization could not replicate.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 158,
+    "source": "Adapted from academic writing on urban planning history and theory"
+  },
+  "stem": "How does the perspective presented in Text 2 relate to the planning philosophy described in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 2 extends Text 1's argument by providing empirical data showing that zoning efficiency gains outweighed the social costs of neighborhood dismantlement.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 2 accepts Text 1's characterization of mid-century planning goals but argues that planners failed in their execution because they underestimated the technical challenges of arterial road design.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Text 2 reveals that the outcomes the mid-century planning framework treated as problems—mixed uses, pedestrian messiness—actually generated social and economic benefits that the framework's own criteria could not measure.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Text 2 argues that mixed-use neighborhoods were superior to zoned districts because residents preferred walkable streets, a preference that planners dismissed without adequate research.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Text 1 presents mid-century planners' rationale for zoning: segregating uses would eliminate conflict and pollution and allow each zone to function optimally. Mixed-use neighborhoods represented, to this framework, an irrational, inefficient condition to be corrected. Text 2 directly challenges this framing by arguing that the very features planners categorized as problems—variety of uses, continuous pedestrian activity, apparent messiness—actually produced meaningful benefits: crime reduction through informal surveillance and economic density supporting small businesses. Crucially, Text 2's argument is that these benefits were 'invisible to the modernist planning framework,' meaning the framework could not register what it was destroying. This is not merely a disagreement about outcomes but a claim that the evaluative criteria themselves were too narrow to capture what mixed-use neighborhoods accomplished.",
+  "distractorRationale": {
+    "A": "Text 2 makes the opposite argument: the dismantlement of mixed-use neighborhoods was a loss, not a net gain. Text 2 provides no empirical data showing efficiency gains outweighed social costs; it argues the social costs were real and the efficiency gains were illusory.",
+    "B": "Text 2 does not accept Text 1's planning goals as sound; it critiques the framework itself. Text 2 says nothing about arterial road design being technically flawed—its argument centers on the conceptual blindness of the zoning philosophy.",
+    "C": "Correct. Text 2 argues the 'apparent messiness' and mixed uses that planners treated as problems generated benefits that the planning framework could not measure—an indictment of the framework's evaluative criteria, not just its outcomes.",
+    "D": "Text 2 does not ground its argument in resident preferences or claim planners dismissed research. Its argument is structural and economic—about informal surveillance and small business support—not about popular preference or research methodology failures."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d8e2f6a4-1b3c-4d9e-7f5a-2c8b4e6d1f9a"
+  }
+}

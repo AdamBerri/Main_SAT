@@ -1,0 +1,54 @@
+{
+  "id": "230697e5-6535-4762-ba3b-f6dbe87413fd",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "A delivery truck travels at a constant speed of 55 miles per hour. How many feet does the truck travel in 6 minutes? (1 mile = 5,280 feet)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "330",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "5.5",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "9,680",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "29,040",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Step 1: Convert 6 minutes to hours, since the speed is given in miles per hour. $$6 \\text{ min} \\times \\frac{1 \\text{ hr}}{60 \\text{ min}} = \\frac{6}{60} = \\frac{1}{10} \\text{ hr}$$\n\nStep 2: Find the distance in miles. $$55 \\frac{\\text{mi}}{\\text{hr}} \\times \\frac{1}{10} \\text{ hr} = 5.5 \\text{ miles}$$\n\nStep 3: Convert miles to feet. $$5.5 \\times 5{,}280 = 29{,}040 \\text{ feet}$$\n\nThe truck travels 29,040 feet in 6 minutes.",
+  "distractorRationale": {
+    "A": "Ignored unit conversion entirely — the student skips both required conversions (minutes to hours and miles to feet) and simply multiplies the speed by the raw number of minutes: $55 \\times 6 = 330$. No unit conversions are performed.",
+    "B": "Stopped at intermediate value — the student correctly converts 6 minutes to $\\frac{1}{10}$ hour and multiplies by 55 mph to get 5.5 miles, but stops there and reports 5.5 without converting miles to feet.",
+    "C": "Wrong unit conversion factor — the student correctly finds 5.5 miles but converts to yards using 1 mile = 1,760 yards, then reports the result as if it were feet. Wrong calculation: $5.5 \\times 1{,}760 = 9{,}680$.",
+    "D": "Correct answer. $55 \\times \\frac{6}{60} = 5.5$ miles; $5.5 \\times 5{,}280 = 29{,}040$ feet."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "0ac663a6-074f-481e-9220-b5960fca6d7b"
+  }
+}

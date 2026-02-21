@@ -1,0 +1,57 @@
+{
+  "id": "b4e8f2a1-7c3d-4f9b-8e2a-5d1c6f7b9e0a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "linguistic": 1.1
+  },
+  "passage": "The town of Millbrook had not seen rain in over six weeks. The reservoir that supplied the town's drinking water had dropped to thirty percent of its normal capacity. Local farmers reported that their crops were wilting despite daily irrigation. The town council held an emergency meeting and voted to restrict outdoor water use, including lawn watering and car washing, effective immediately. Council members also contacted a neighboring county to negotiate an emergency water-sharing agreement. The local newspaper ran a front-page story urging residents to reduce water consumption indoors as well, recommending shorter showers and running dishwashers only when fully loaded.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 108,
+    "source": "Original passage"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the town of Millbrook's water supply situation?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The reservoir will run out of water within a week.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Outdoor restrictions alone will not be enough to resolve the shortage.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The neighboring county has agreed to share its water supply.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Farmers are the primary cause of the reservoir's low water level.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage states that the council enacted outdoor water restrictions, but officials also immediately sought an emergency water-sharing deal with a neighboring county, and the newspaper urged indoor conservation as well. This combination of actions—outdoor bans, negotiating external supply, and pushing for indoor reductions—indicates that outdoor restrictions alone are insufficient to address the severity of the shortage. If outdoor restrictions were enough, the additional measures would be unnecessary.",
+  "distractorRationale": {
+    "A": "The passage does not provide any timeline for when the reservoir might be fully depleted. Saying it will run out within a week requires assumptions not supported by the text.",
+    "C": "The passage says the council 'contacted' the neighboring county to 'negotiate' an agreement, not that any agreement had been finalized. This distractor overstates what the passage establishes.",
+    "D": "The passage mentions farmers as one group affected by the drought, not as a cause of the reservoir's decline. The drought itself—six weeks without rain—is the implied cause."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "1f2e3d4c-5b6a-7f8e-9d0c-1b2a3f4e5d6c"
+  },
+  "hasImage": false
+}

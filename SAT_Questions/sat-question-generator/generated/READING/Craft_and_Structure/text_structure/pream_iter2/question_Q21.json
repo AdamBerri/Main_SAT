@@ -1,0 +1,57 @@
+{
+  "id": "b2e7f4a1-9c3d-4e8f-a5b6-1d2c3e4f5a6b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "The medieval scriptorium occupied a peculiar position in the monastery's hierarchy of labor. Monks who copied manuscripts were exempt from certain manual duties, yet this exemption carried its own rigors: sustained posture, dim candlelight, and the slow disciplining of breath that steady penmanship demanded. The body was subordinated not to field or forge but to the vellum page.\n\nThe manuscripts these monks produced were themselves engines of institutional reproduction. A copy of Gratian's Decretum did not merely preserve canon law; it extended the jurisdictional reach of ecclesiastical courts into regions where no bishop had yet traveled. Each new copy multiplied the authority of the text it bore, transforming words into administrative instruments.\n\nWhat emerges from examining this labor is a recursive relationship: the monastery's authority legitimized the scriptorium's output, while that output in turn reinforced the monastery's claim to intellectual and spiritual guardianship. Historians who treat these manuscripts solely as windows onto medieval thought have missed the mechanism by which thought became power.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 175,
+    "source": "Adapted from a scholarly essay on medieval institutional history"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A specific labor practice is examined to reveal a self-reinforcing institutional dynamic.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "A historical misconception is identified, then corrected through archival evidence.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Two competing accounts of monastic authority are weighed against each other.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The physical conditions of monastic labor are traced as a cause of manuscript proliferation.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage moves from a specific phenomenon—the scriptorium and its monks' labor—through an examination of the manuscripts' institutional function, to a concluding claim about the recursive, mutually reinforcing relationship between monastic authority and scribal output. This is a general-to-specific-to-abstract movement in which one particular practice (copying manuscripts) is used to reveal a self-reinforcing institutional dynamic. Choice A captures this structure precisely.",
+  "distractorRationale": {
+    "A": "Correct. The passage grounds its argument in the specific practice of monastic copying, then uses that specificity to expose a broader recursive mechanism of institutional power.",
+    "B": "The passage does critique historians in its final sentence, which could suggest a 'misconception corrected' structure. However, no archival evidence is marshaled—the argument is analytical, not evidentiary—and the critique is subordinate to the main structural purpose, which is explicating the recursive relationship.",
+    "C": "The passage contains no genuinely competing accounts of monastic authority. The final paragraph synthesizes rather than adjudicates between perspectives, making this a misreading of the concluding move as oppositional rather than integrative.",
+    "D": "The physical conditions of the scriptorium (posture, candlelight, disciplined breath) appear only in the first paragraph and are not causally linked to manuscript proliferation. The passage treats physical conditions as context, not as a causal mechanism—mistaking this section's role produces this distractor's structural error."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3d4e5f6-a7b8-4c9d-b1e2-f3a4b5c6d7e8"
+  }
+}

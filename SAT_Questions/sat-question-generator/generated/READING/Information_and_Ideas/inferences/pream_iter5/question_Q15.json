@@ -1,0 +1,58 @@
+{
+  "id": "c9e2f5a6-7b3c-4d8e-e4f9-1a5b6c7d8e9f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "In 1848, Phineas Gage, a railroad construction foreman in Vermont, survived a catastrophic accident in which a tamping iron was driven through his skull, entering beneath his left cheekbone and exiting through the top of his head. Gage remained conscious and could speak coherently within minutes of the accident. His physical recovery was remarkable: his vision, speech, and motor functions were largely intact within weeks. However, those who had known Gage before the accident observed dramatic changes in his personality. His physician, John Harlow, noted that Gage had transformed from a capable, responsible, and well-liked supervisor into a man who was fitful, irreverent, and unable to complete plans. Gage's employers at the railroad, who had considered rehiring him, ultimately concluded that 'Gage was no longer Gage'—that the man who survived was functionally a different person from the foreman they had employed. He spent his final years moving between jobs without holding any position for long.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 168,
+    "source": "Adapted from a neuroscience history account of the Phineas Gage case and its significance"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the significance of the Phineas Gage case?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It demonstrated that personality and behavior are governed by specific brain regions rather than being wholly separate from physical brain structure.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "It proved that injuries to the left hemisphere of the brain are more damaging to personality than injuries to the right hemisphere.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "It showed that physical recovery from brain injury is always more rapid than psychological recovery.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It established that workplace accidents of this severity inevitably alter an individual's social relationships.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage documents that Gage's language, movement, and vision—functions controlled by different brain regions—survived intact, while his personality and executive function were radically altered. The specific nature of what changed (personality, planning ability, impulse control) alongside what did not change (speech, vision, motor function) implies that different brain areas govern different capacities. The iron's trajectory through a specific region destroyed personality and decision-making while leaving other functions intact—a pattern that can only be explained if these functions have distinct physical substrates in the brain. This is the key inference the case enabled: personality is not separate from brain structure.",
+  "distractorRationale": {
+    "A": "Correct. The selective damage—personality destroyed while motor and language functions remained—implies these capacities have distinct physical locations in the brain, supporting the inference that brain structure underlies personality.",
+    "B": "The passage mentions the iron entered beneath the left cheekbone, but no comparison to right-hemisphere injuries is made or implied. Generalizing about hemisphere lateralization requires information the passage does not provide.",
+    "C": "The passage notes Gage's physical recovery was rapid, but his personality changes appear to have been permanent rather than slow-recovering. The passage gives no basis for generalizing this into a universal principle about all brain injuries.",
+    "D": "The passage describes Gage's inability to hold jobs, which involves social relationships, but 'inevitably' is an absolute claim requiring universal evidence. The passage describes one individual case and never generalizes this outcome to all accidents of similar severity."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e7f2a3-9b5c-4c1d-a6e8-3f2b8c9d1e5f"
+  },
+  "hasImage": false
+}

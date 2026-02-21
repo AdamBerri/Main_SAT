@@ -1,0 +1,38 @@
+{
+  "id": "c3d4e5f6-3333-4a6b-8c7d-9e0f1a2b3c18",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "A rectangular garden measures 20 feet by 12 feet. A circular fountain with a diameter of 8 feet is located in the center of the garden. What is the area, in square feet, of the garden NOT covered by the fountain?",
+  "choices": [
+    { "label": "A", "text": "$240 - 16\\pi$", "isCorrect": true },
+    { "label": "B", "text": "$240 - 64\\pi$", "isCorrect": false },
+    { "label": "C", "text": "$240 - 8\\pi$", "isCorrect": false },
+    { "label": "D", "text": "$64 - 16\\pi$", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Rectangle area: $20 \\times 12 = 240$ square feet. The fountain has diameter 8, so radius $r = 4$. Circle area: $\\pi(4)^2 = 16\\pi$. Remaining area: $240 - 16\\pi$ square feet. The answer is A.",
+  "distractorRationale": {
+    "A": "Correct. $240 - \\pi(4)^2 = 240 - 16\\pi$.",
+    "B": "Uses the diameter as the radius: $\\pi(8)^2 = 64\\pi$, giving $240 - 64\\pi$.",
+    "C": "Uses the circumference formula instead of area: $2\\pi(4) = 8\\pi$, giving $240 - 8\\pi$.",
+    "D": "Computes the perimeter of the rectangle instead of the area: $2(20 + 12) = 64$, giving $64 - 16\\pi$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:18.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-c333-4d5e-8f9a-0b1c2d3e4f18"
+  }
+}

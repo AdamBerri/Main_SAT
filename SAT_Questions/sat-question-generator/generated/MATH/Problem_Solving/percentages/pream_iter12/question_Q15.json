@@ -1,0 +1,54 @@
+{
+  "id": "e9f0a1b2-c3d4-5e6f-7a8b-9c0d1e2f3a4b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.1,
+    "computational": 3
+  },
+  "stem": "In a survey of 500 residents, 35% preferred candidate A and 40% preferred candidate B. The remaining residents were undecided. How many more residents preferred candidate B than candidate A?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "5",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "25",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "125",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "200",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Candidate A: 500 × 0.35 = 175. Candidate B: 500 × 0.40 = 200. Difference = 200 − 175 = 25.",
+  "distractorRationale": {
+    "A": "Student subtracted the percentages (40% − 35% = 5%) and reported 5 as a count instead of computing 5% of 500.",
+    "B": "Correct answer.",
+    "C": "Student found the number of undecided residents: 500 × 0.25 = 125.",
+    "D": "Student reported the count for candidate B (500 × 0.40 = 200) instead of the difference."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:14.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f0a1b2c3-d4e5-6f7a-8b9c-0d1e2f3a4b5c"
+  }
+}

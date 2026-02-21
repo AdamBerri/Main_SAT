@@ -1,0 +1,54 @@
+{
+  "id": "3a7f2c1e-8b4d-4e09-a6f3-d5c8e1b09472",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "A blueprint uses a scale in which 2 centimeters represents 5 feet. A room measures 8 centimeters on the blueprint. What is the actual length of the room, in feet?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3.2$ feet",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$20$ feet",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$40$ feet",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$80$ feet",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The blueprint scale states that 2 cm represents 5 feet, so the scale factor (actual feet per blueprint cm) is $\\frac{5}{2} = 2.5$ feet per centimeter. The room measures 8 cm on the blueprint, so the actual length is $8 \\times 2.5 = 20$ feet.",
+  "distractorRationale": {
+    "A": "Error type: Unit inversion. The student flips the scale ratio, using $\\frac{2}{5}$ instead of $\\frac{5}{2}$. Wrong calculation: $8 \\times \\frac{2}{5} = \\frac{16}{5} = 3.2$ feet. This produces 3.2 feet.",
+    "B": "This is the correct answer: $8 \\times \\frac{5}{2} = 8 \\times 2.5 = 20$ feet.",
+    "C": "Error type: Ignored unit conversion entirely. The student uses 5 feet per centimeter directly (treating '2 cm = 5 ft' as '1 cm = 5 ft'), skipping the step of dividing by 2. Wrong calculation: $8 \\times 5 = 40$ feet. This produces 40 feet.",
+    "D": "Error type: Scaling error. The student multiplies the two scale numbers together ($2 \\times 5 = 10$) to form a ratio of 10 feet per centimeter, then applies it to the blueprint measurement. Wrong calculation: $8 \\times 10 = 80$ feet. This produces 80 feet."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4e8a2f1-7d3b-4a05-b9e6-f1c2d3e4a5b6"
+  }
+}

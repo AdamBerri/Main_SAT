@@ -1,0 +1,54 @@
+{
+  "id": "c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "In a class of 50 students, 15 students received an A on the final exam. What percent of the class received an A?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "15%",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "30%",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "35%",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "3%",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Percent = (15/50) × 100 = 30%.",
+  "distractorRationale": {
+    "A": "Student used the count (15) directly as the percentage without dividing by the total.",
+    "B": "Correct answer.",
+    "C": "Student added 15 and 50 to get 65 and subtracted 30: 65 − 30 = 35% — or student computed 50 − 15 = 35 and reported that as the percentage.",
+    "D": "Student divided 15 by 50 but forgot to multiply by 100: 15/50 = 0.30, misread as 3%."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:04.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d0e1f2a3-b4c5-6d7e-8f9a-0b1c2d3e4f5a"
+  }
+}

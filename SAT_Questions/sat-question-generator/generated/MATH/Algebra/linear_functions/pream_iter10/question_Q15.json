@@ -1,0 +1,54 @@
+{
+  "id": "30abf651-0df6-45ef-9ac4-d4c022dba432",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "A line in the $xy$-plane passes through the points $(1, 14)$ and $(4, 8)$. What is the $x$-intercept of the line?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$6$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$8$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$11$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$16$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "First, find the slope using the two given points $(1, 14)$ and $(4, 8)$:\n$$m = \\frac{8 - 14}{4 - 1} = \\frac{-6}{3} = -2$$\n\nNext, find the $y$-intercept $b$ using the equation $y = -2x + b$ and the point $(1, 14)$:\n$$14 = -2(1) + b \\implies b = 16$$\n\nSo the equation of the line is $y = -2x + 16$.\n\nTo find the $x$-intercept, set $y = 0$ and solve:\n$$0 = -2x + 16 \\implies 2x = 16 \\implies x = 8$$\n\nThe $x$-intercept is $8$.",
+  "distractorRationale": {
+    "A": "Finds the slope correctly as $m = -2$ but computes $b$ by adding $m \\cdot x_1$ instead of subtracting: $b = 14 + (-2)(1) = 12$; then solves $-2x + 12 = 0$ to get $x = 6$.",
+    "B": "Correct. Slope $= -2$, $y$-intercept $= 14 - (-2)(1) = 16$, and $x$-intercept $= 16/2 = 8$.",
+    "C": "Finds slope correctly but uses the wrong point when computing $b$, substituting $x_2 = 4$ into the formula using $y_1 = 14$: $b = 14 - (-2)(4) = 14 + 8 = 22$; then solves $-2x + 22 = 0$ to get $x = 11$.",
+    "D": "Correctly computes the $y$-intercept as $b = 16$ but reports the $y$-intercept value instead of solving for the $x$-intercept."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e7566941-cb00-491e-ae19-2fa2854284be"
+  }
+}

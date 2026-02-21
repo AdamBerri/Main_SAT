@@ -1,0 +1,59 @@
+{
+  "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1.3
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- The giant panda is native to central China.\n- Giant pandas eat almost exclusively bamboo.\n- A panda can consume up to 38 kilograms of bamboo per day.\n- Bamboo forests in China have been shrinking due to human development.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 52,
+    "source": "Student research notes on giant pandas"
+  },
+  "stem": "The student wants to explain why giant pandas face a threat to their survival. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Giant pandas live in central China and eat bamboo every day.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Because giant pandas depend almost entirely on bamboo for food, the shrinking of China's bamboo forests due to human development threatens their survival.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "A giant panda can eat up to 38 kilograms of bamboo in a single day, which is a large amount of food.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Human development in China has caused bamboo forests to shrink over time.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it connects two key pieces of information from the notes: pandas' near-total dependence on bamboo and the shrinking of bamboo forests. This connection directly explains the threat to pandas' survival. The other choices either omit the causal link (A, D) or focus on an irrelevant detail (C).",
+  "distractorRationale": {
+    "A": "This choice merely states where pandas live and that they eat bamboo, without connecting these facts to any threat to their survival.",
+    "C": "This choice focuses on the quantity of bamboo consumed, which is a detail that does not explain why pandas face a threat.",
+    "D": "This choice mentions the shrinking forests but fails to connect that fact to pandas' dependence on bamboo, so it does not explain the threat to pandas specifically."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

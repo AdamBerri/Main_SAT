@@ -1,0 +1,56 @@
+{
+  "id": "d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "Microplastics—fragments smaller than five millimeters broken down from larger plastic products—have been detected in ocean water, freshwater rivers, agricultural soil, and the bodies of fish, birds, and marine mammals. Researchers have also found them in human blood, lung tissue, and breast milk. Because plastic production has expanded dramatically since the 1950s and because plastics degrade slowly, the quantity of microplastic particles in the environment continues to grow. Scientists studying the health effects face a significant challenge: the particles vary widely in size, shape, and chemical composition, making it difficult to draw general conclusions from any single study. Some laboratory studies have linked microplastic exposure to inflammation, hormonal disruption, and cellular damage in animals, but translating these findings to human health outcomes remains uncertain. Regulatory agencies in several countries have begun monitoring microplastic levels and funding further research, while environmental groups have pushed for restrictions on single-use plastics and improvements in waste management. The science is still developing, but the evidence already assembled is sufficient to treat microplastic contamination as a serious and growing concern that warrants coordinated action across governments, industries, and researchers.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 193,
+    "source": "Adapted from a science journalism article on microplastic pollution"
+  },
+  "stem": "What is the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To summarize what scientists currently know about where microplastics are found in nature",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "To explain why studying the health effects of microplastics is so difficult for researchers",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "To argue that existing evidence justifies treating microplastic contamination as an urgent concern requiring coordinated action",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "To describe the regulatory and policy responses that governments have taken to address microplastics",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage moves through several layers—documenting where microplastics are found, noting the difficulty of studying their effects, and acknowledging scientific uncertainty—before arriving at its concluding claim: that the evidence already assembled is sufficient to treat microplastic contamination as serious and to warrant coordinated action. This final claim is not a summary of research findings but an argument about what the existing evidence demands in terms of response. The passage presents information and scientific complexity not as ends in themselves but as grounds for a policy argument. Recognizing this requires tracing how the author uses acknowledgment of uncertainty to preempt the objection that more research is needed before acting.",
+  "distractorRationale": {
+    "A": "The passage does document the widespread presence of microplastics across ecosystems and in human tissue, and these details occupy the opening sentences. A reader who focuses only on this section might select this choice. However, the passage goes beyond summarizing distribution data to build toward an argument about appropriate societal response. Summarizing what is known is a starting point, not the primary purpose.",
+    "B": "The passage devotes substantial attention to the methodological challenges researchers face—variability in particle size, shape, and composition, and the difficulty of translating animal studies to human outcomes. This is substantive content that could plausibly represent the author's main concern. However, the passage introduces these challenges not to explain research difficulty as a subject in itself, but to acknowledge them while still arguing that existing evidence is sufficient to justify action.",
+    "D": "The passage mentions that regulatory agencies have begun monitoring and funding research, and that environmental groups have pushed for restrictions on single-use plastics. These are genuine and specific details in the passage. However, they appear in a single sentence as examples of current response, not as the focus of an analysis. The passage uses policy responses to illustrate that action is already beginning—supporting the call for more coordinated effort—rather than to describe those responses as its primary subject."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b"
+  }
+}

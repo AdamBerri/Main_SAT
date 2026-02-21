@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4,
+    "computational": 4.3
+  },
+  "stem": "A clothing store purchases shirts at a wholesale cost and applies a 60% markup to set the retail price. During a clearance sale, the store offers 25% off the retail price. If the clearance sale price of a shirt is $48, what was the wholesale cost of the shirt?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$30",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$40",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$36",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$64",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let the wholesale cost be $c$. Retail price = $1.60c$. Clearance price = $1.60c \\times 0.75 = 1.20c$. Setting $1.20c = 48$, we get $c = 40$.",
+  "distractorRationale": {
+    "A": "Student applied only the 60% markup without the discount: $48 / 1.60 = $30.",
+    "B": "Correct answer.",
+    "C": "Student divided the clearance price by the sum of markup and discount factors: $48 / (0.60 + 0.75) = $48 / 1.35 ≈ $35.56, rounded to $36.",
+    "D": "Student reversed the discount only: $48 / 0.75 = $64, ignoring the markup entirely."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:15.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2b3c4d5-e6f7-8a9b-0c1d-2e3f4a5b6c7d"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "a7f1b6c3-0d45-4e89-2f7a-5b8c3d6e1a70",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "In triangle $XYZ$, $XY = XZ$ and angle $Y = 55°$. What is the measure of angle $X$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$55°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$70°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$90°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$125°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Since $XY = XZ$, triangle $XYZ$ is isosceles, which means the base angles opposite the equal sides are equal. The equal sides meet at $X$, so the base angles are at $Y$ and $Z$:\n\n$$\\angle Y = \\angle Z = 55°$$\n\nUsing the triangle angle sum:\n$$\\angle X + \\angle Y + \\angle Z = 180°$$\n$$\\angle X + 55° + 55° = 180°$$\n$$\\angle X = 180° - 110° = 70°$$",
+  "distractorRationale": {
+    "A": "The student assumes all three angles of the isosceles triangle are equal and reports $\\angle X = \\angle Y = 55°$, confusing isosceles with equilateral.",
+    "B": "Correct answer: $\\angle X = 180° - 2(55°) = 70°$.",
+    "C": "The student assumes the apex angle of an isosceles triangle is always $90°$ (confusing isosceles with right isosceles), reporting $\\angle X = 90°$.",
+    "D": "The student subtracts only one base angle from $180°$, computing $180° - 55° = 125°$, forgetting that both base angles must be subtracted."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f5c38a17-6b9d-4e41-0a8b-1c4d7e2f3a58"
+  }
+}

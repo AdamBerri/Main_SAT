@@ -1,0 +1,54 @@
+{
+  "id": "e3f4a5b6-c7d8-9e0f-1a2b-3c4d5e6f7a8b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "A company had 400 employees at the start of the year. During the year, the number of employees increased by 15%, and then during the following year, the number decreased by 10%. How many employees did the company have at the end of the second year?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "414",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "420",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "400",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "460",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "After 15% increase: 400 × 1.15 = 460. After 10% decrease: 460 × 0.90 = 414.",
+  "distractorRationale": {
+    "A": "Correct answer.",
+    "B": "Student added the percentages (15% − 10% = 5% net increase) and applied to the original: 400 × 1.05 = 420.",
+    "C": "Student assumed 15% up then 10% down returns to the original: 400.",
+    "D": "Student applied only the first increase and stopped: 400 × 1.15 = 460."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:11.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f4a5b6c7-d8e9-0f1a-2b3c-4d5e6f7a8b9c"
+  }
+}

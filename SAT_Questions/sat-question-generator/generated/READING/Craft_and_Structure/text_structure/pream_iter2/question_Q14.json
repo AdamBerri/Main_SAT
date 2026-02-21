@@ -1,0 +1,57 @@
+{
+  "id": "c6e1b9f4-8a3d-4c7e-9f2b-4d8a1e6c3f7b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.2
+  },
+  "passage": "Economists have long debated whether minimum wage increases reduce employment, and the question resists easy resolution. Standard economic theory predicts that setting a price floor above the market equilibrium wage will cause employers to hire fewer workers, producing unemployment among the very people the policy intends to help. This prediction rests on a model of perfectly competitive labor markets where employers freely choose among many equivalent workers.\n\nEmpirical evidence, drawn from comparisons of neighboring regions with different minimum wage levels, has complicated that prediction considerably. Studies examining fast food employment along state borders where one state raised its minimum wage and the adjacent state did not have generally found small or negligible effects on employment. Critics of these studies argue that border comparisons mask regional economic trends that make the two sides more similar than the methodology assumes, and that effects become more visible over longer timeframes.\n\nBoth camps agree that labor markets are not perfectly competitive—monopsony power, where a single employer or small group of employers dominates hiring in a region, can make minimum wage increases employment-neutral or even employment-positive under certain conditions. The dispute, then, is less about whether market structure matters than about how prevalent and powerful monopsony conditions actually are in contemporary economies.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 210,
+    "source": "Original passage"
+  },
+  "stem": "The passage is structured to accomplish which of the following?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Present a theoretical prediction, complicate it with contrary evidence, then reframe the debate's actual stakes.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Describe a policy dispute, then argue in favor of one side using economic theory.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Introduce a question, survey evidence on both sides, then offer a definitive resolution.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Establish a theoretical framework, then present two competing empirical studies that test it.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The first paragraph lays out the standard economic theory's prediction that minimum wage increases reduce employment. The second paragraph presents empirical evidence that complicates that prediction and then notes critics' objections to that evidence. The third paragraph does not simply continue the debate; it reframes what the debate is actually about—shifting from whether minimum wages hurt employment to how prevalent monopsony conditions are. This movement from theory to complication to reframing is the dominant structural pattern.",
+  "distractorRationale": {
+    "A": "Correct. The passage moves from presenting the theoretical prediction (paragraph 1), to complicating it with empirical evidence and methodological objections (paragraph 2), to reframing the real question at issue (paragraph 3).",
+    "B": "The passage describes a policy dispute but never argues in favor of either side. The final paragraph identifies where both sides agree, not which side is correct.",
+    "C": "The passage introduces a question and surveys evidence, but the final paragraph does not offer a definitive resolution. It reframes the underlying question, leaving the empirical dispute open.",
+    "D": "The passage presents one theoretical framework (competitive labor markets) in the first paragraph, but the empirical section does not describe two separate competing studies. It describes a methodology (border comparisons) and then critics of that methodology—not two distinct studies testing the theory."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b5f9c3e1-7a4d-4b8f-9e2c-6d1a8f5c3b7e"
+  }
+}

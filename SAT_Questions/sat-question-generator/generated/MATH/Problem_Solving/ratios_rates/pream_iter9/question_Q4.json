@@ -1,0 +1,53 @@
+{
+  "id": "d6a0f5b4-17e3-4c9d-0f4a-5b2a1d3e7c8f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "computational": 1.2
+  },
+  "stem": "A store sells ground coffee for $4.80 per pound. What is the price per ounce of the coffee? (1 pound = 16 ounces)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$0.30",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$0.40",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$4.80",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$76.80",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Step 1: Identify the given rate. The coffee costs $4.80 per pound.\n\nStep 2: Convert pounds to ounces using the conversion factor 1 pound = 16 ounces. Divide the price per pound by 16 to find the price per ounce: $\\frac{\\$4.80}{16 \\text{ oz}} = \\$0.30$ per ounce.\n\nThe price of the coffee is $0.30 per ounce.",
+  "distractorRationale": {
+    "B": "Error type: Wrong unit conversion factor. The student used 12 ounces per pound instead of 16 ounces per pound (a common confusion with other unit systems). Wrong calculation: $\\frac{\\$4.80}{12} = \\$0.40$ per ounce. Result: $0.40.",
+    "C": "Error type: Ignored unit conversion entirely. The student skipped the conversion from pounds to ounces and reported the price per pound ($4.80) as the price per ounce. Wrong calculation: the student used $4.80 directly without dividing by 16. Result: $4.80.",
+    "D": "Error type: Unit inversion. The student multiplied the price per pound by 16 instead of dividing, inverting the conversion direction. Wrong calculation: $\\$4.80 \\times 16 = \\$76.80$. Result: $76.80."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e4f6h8c0-d2a4-4e7g-9c3e-3d5f7b9c1e2f"
+  }
+}

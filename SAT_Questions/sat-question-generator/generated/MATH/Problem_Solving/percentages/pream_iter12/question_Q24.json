@@ -1,0 +1,54 @@
+{
+  "id": "e7f8a9b0-c1d2-3e4f-5a6b-7c8d9e0f1a2b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "In a certain town, 60% of adults own a car and 45% of adults own a bicycle. If 80% of adults own at least one of these two vehicles, what percent of adults own both a car and a bicycle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "15%",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "20%",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "25%",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "35%",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Using the inclusion-exclusion principle: $P(\\text{car or bike}) = P(\\text{car}) + P(\\text{bike}) - P(\\text{both})$. So $80\\% = 60\\% + 45\\% - P(\\text{both})$, giving $P(\\text{both}) = 105\\% - 80\\% = 25\\%$.",
+  "distractorRationale": {
+    "A": "Student subtracted the two individual rates: 60% − 45% = 15%.",
+    "B": "Student subtracted the union rate from the larger group: 80% − 60% = 20%.",
+    "C": "Correct answer.",
+    "D": "Student subtracted the smaller group from the union: 80% − 45% = 35%."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:23.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d8e9f0a1-b2c3-4d5e-6f7a-8b9c0d1e2f3a"
+  }
+}

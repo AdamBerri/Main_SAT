@@ -1,0 +1,59 @@
+{
+  "id": "b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2e",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- The Amazon River is the largest river in the world by water volume.\n- It flows through South America, primarily through Brazil.\n- The Amazon basin contains the largest tropical rainforest on Earth.\n- The rainforest is home to an estimated 10% of all species on the planet.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 55,
+    "source": "Student research notes on the Amazon River"
+  },
+  "stem": "The student wants to convey the ecological importance of the Amazon region. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The Amazon River is the largest river by water volume and flows mainly through Brazil.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The Amazon basin holds the world's largest tropical rainforest, which is home to roughly 10% of all species on Earth.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "South America contains the Amazon River, which is an important river that flows through several countries.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The Amazon rainforest is very large and is located in the Amazon basin in South America.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it connects the Amazon basin's largest tropical rainforest to its extraordinary biodiversity (10% of all species), directly conveying ecological importance. The other choices focus on geographic facts (A, C) or size without ecological significance (D).",
+  "distractorRationale": {
+    "A": "This choice describes the river's physical characteristics but says nothing about ecological importance.",
+    "C": "This choice provides only a vague geographic description without any information about biodiversity or ecology.",
+    "D": "This choice mentions the rainforest's size and location but omits the specific biodiversity detail that conveys ecological importance."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:04.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3f"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

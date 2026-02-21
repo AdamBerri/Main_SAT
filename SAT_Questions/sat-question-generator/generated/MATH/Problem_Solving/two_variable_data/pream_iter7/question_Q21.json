@@ -1,0 +1,54 @@
+{
+  "id": "b3f7a2c1-9e4d-4a8b-8c6f-2d1e5b9a3c7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A researcher records the weight (in grams) of a certain type of mineral sample as a function of its volume (in cubic centimeters). A line of best fit is calculated for the data. Two of the data points and their residuals are given in the table below.\n\n| Volume ($x$, cm³) | Weight ($y$, g) | Residual |\n|---|---|---|\n| 3 | 20 | $+2$ |\n| 9 | 35 | $-1$ |\n\nWhat is the $y$-intercept of the line of best fit?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$12.5$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$9$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$16$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$6$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Since residual = actual $-$ predicted, the predicted values are: actual $-$ residual.\n\nFor $x = 3$: predicted $= 20 - 2 = 18$\nFor $x = 9$: predicted $= 35 - (-1) = 36$\n\nThe slope of the line of best fit is:\n$$m = \\frac{36 - 18}{9 - 3} = \\frac{18}{6} = 3$$\n\nUsing point $(3, 18)$ to find the $y$-intercept $b$:\n$$18 = 3(3) + b$$\n$$18 = 9 + b$$\n$$b = 9$$\n\nThe $y$-intercept of the line of best fit is $\\boxed{9}$.\n\nVerification: Line is $\\hat{y} = 3x + 9$. At $x = 3$: $\\hat{y} = 18$, residual $= 20 - 18 = +2$. At $x = 9$: $\\hat{y} = 36$, residual $= 35 - 36 = -1$. Both check out.",
+  "distractorRationale": {
+    "A": "The student uses the actual data point values (not the predicted values) to compute the slope: $m = (35-20)/(9-3) = 2.5$, then plugs in: $20 = 2.5(3) + b \\Rightarrow b = 12.5$. This error ignores the residuals entirely when reconstructing the line.",
+    "B": "Correct. The student correctly recovers the predicted values using predicted = actual $-$ residual, computes slope = 3, and solves for $b = 9$.",
+    "C": "The student reverses the residual formula, treating residual = predicted $-$ actual (a sign error), so predicted at $x=3$ becomes $20 + 2 = 22$ and at $x=9$ becomes $35 + (-1) = 34$. Slope = $(34-22)/6 = 2$. Then $b = 22 - 2(3) = 16$.",
+    "D": "The student correctly computes the slope as 3 but uses the raw actual values to find the intercept: $20 = 3(3) + b \\Rightarrow b = 11$, then confuses with $35 = 3(9) + b \\Rightarrow b = 8$. Taking the average or making an arithmetic error leads to $b = 6$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e7c2a1f9-3b5d-4e8a-9c6f-1d4b7a2e5c8d"
+  }
+}

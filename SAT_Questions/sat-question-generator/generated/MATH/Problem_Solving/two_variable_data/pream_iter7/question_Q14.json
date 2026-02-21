@@ -1,0 +1,54 @@
+{
+  "id": "e6b2c5d4-9f7a-4e8b-8c3d-1a5f9b2e6c7d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "computational": 3.2
+  },
+  "stem": "A small business owner recorded the number of items sold per week ($x$) and the weekly profit in dollars ($y$) over 20 weeks. The line of best fit for the data is $y = 8.5x - 340$. Based on this model, what is the minimum number of items the store must sell in a week for the predicted weekly profit to be positive?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$10$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$40$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$41$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$45$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The line of best fit is $y = 8.5x - 340$. For the predicted profit to be positive, we need $y > 0$:\n$$8.5x - 340 > 0$$\n$$8.5x > 340$$\n$$x > \\frac{340}{8.5}$$\n$$x > 40$$\n\nSince $x$ represents a count of items sold (a whole number), the minimum integer value greater than 40 is $41$.\n\nVerification: When $x = 40$: $y = 8.5(40) - 340 = 340 - 340 = 0$ (not positive).\nWhen $x = 41$: $y = 8.5(41) - 340 = 348.5 - 340 = 8.5 > 0$ (positive).",
+  "distractorRationale": {
+    "A": "This results from ignoring the constant term and dividing the absolute value of the $y$-intercept by the slope incorrectly, or computing $340 \\div 8.5 \\div something$. More likely, the student computed $8.5 \\times 10 = 85$ and confused profit with a different target, or divided $340$ by an incorrect factor.",
+    "B": "This is the break-even point where predicted profit equals exactly zero ($x = 40$ gives $y = 0$). The student correctly solved $8.5x = 340$ but did not recognize that profit must be strictly greater than zero, requiring $x = 41$.",
+    "C": "Correct. The inequality $8.5x - 340 > 0$ gives $x > 40$, and since items must be whole numbers, the minimum is $x = 41$.",
+    "D": "This may result from a rounding or arithmetic error, such as incorrectly computing $340 \\div 8.5$ as 45 instead of 40, or using $8$ instead of $8.5$ as the divisor ($340 \\div 8 = 42.5$, rounded up to 45 in error)."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2d8f4a6-3c1e-4b9f-9d5a-7e2c8b3f1a6d"
+  }
+}

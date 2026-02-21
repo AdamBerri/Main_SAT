@@ -1,0 +1,59 @@
+{
+  "id": "e8f9a0b1-c2d3-4e4f-5a6b-7c8d9e0f1a2c",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- Redlining was a practice in which banks and the federal government denied mortgages and insurance to residents of predominantly Black neighborhoods from the 1930s through the 1960s.\n- The practice prevented Black families from building wealth through homeownership during a period of rapid suburban growth.\n- A 2018 study found that formerly redlined neighborhoods still have lower home values and higher poverty rates than comparable non-redlined areas.\n- Environmental researchers have found that formerly redlined neighborhoods also have fewer trees and higher average summer temperatures than surrounding areas.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 100,
+    "source": "Student research notes on the lasting effects of redlining"
+  },
+  "stem": "The student wants to demonstrate that redlining's effects persist across multiple dimensions today. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Redlining denied mortgages to residents of Black neighborhoods from the 1930s through the 1960s, preventing families from building wealth through homeownership.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Formerly redlined neighborhoods still have lower home values and higher poverty rates, and environmental researchers have found they also have fewer trees and higher summer temperatures.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "A 2018 study revealed that neighborhoods targeted by redlining continue to have lower property values and higher poverty rates than comparable areas.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Environmental researchers have discovered that formerly redlined neighborhoods have fewer trees and experience higher average summer temperatures than surrounding areas.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it presents effects across multiple dimensions: economic (lower home values, higher poverty) and environmental (fewer trees, higher temperatures), directly demonstrating that redlining's impact persists in more than one area. Choices C and D each describe only one dimension of the lasting effects, and A focuses on the historical practice itself.",
+  "distractorRationale": {
+    "A": "This choice describes the original practice and its immediate economic mechanism but does not address whether the effects persist today.",
+    "C": "This choice addresses only the economic dimension (home values and poverty rates) and does not demonstrate effects across multiple dimensions.",
+    "D": "This choice covers only the environmental dimension (trees and temperatures) without including the economic effects, failing to show multiple dimensions."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:19.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f9a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3d"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

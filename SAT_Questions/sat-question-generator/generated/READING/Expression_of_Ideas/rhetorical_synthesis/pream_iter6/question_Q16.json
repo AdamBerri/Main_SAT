@@ -1,0 +1,59 @@
+{
+  "id": "d0e1f2a3-b4c5-4d6e-7f8a-9b0c1d2e3f4b",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4,
+    "linguistic": 4.3
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- In 1854, physician John Snow mapped cholera cases in London and traced the outbreak to a contaminated water pump on Broad Street.\n- At the time, most scientists believed cholera was spread through miasma, or bad air.\n- Snow's map-based approach was one of the first uses of spatial analysis to investigate disease patterns.\n- Modern epidemiologists use geographic information systems (GIS) to track and predict the spread of infectious diseases.\n- Snow's methods are now considered foundational to the field of epidemiology.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 91,
+    "source": "Student research notes on the history of epidemiology"
+  },
+  "stem": "The student wants to connect John Snow's 1854 investigation to current practices in epidemiology. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "John Snow's 1854 cholera map challenged the prevailing miasma theory by showing the outbreak originated from a contaminated water pump on Broad Street.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Snow's use of spatial analysis to trace cholera to a contaminated pump pioneered an approach that modern epidemiologists continue through GIS technology to track infectious diseases.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Modern epidemiologists rely on geographic information systems to track disease outbreaks and predict how infections will spread across populations.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Snow's methods are considered foundational to epidemiology because he was one of the first to use maps to study disease patterns.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it explicitly draws a line from Snow's 1854 method (spatial analysis to trace cholera) to current practice (GIS for tracking infectious diseases), directly connecting past and present. Choice A focuses only on Snow's historical challenge to miasma theory, C describes only modern methods, and D calls Snow foundational without making the specific connection to current GIS use.",
+  "distractorRationale": {
+    "A": "This choice describes Snow's historical achievement in challenging the miasma theory but does not connect his methods to any current epidemiological practices.",
+    "C": "This choice describes modern GIS use but does not link it back to Snow's 1854 investigation, missing the connection the goal requires.",
+    "D": "This choice acknowledges Snow's importance to epidemiology but states it in general terms without drawing a specific link to current methods or technologies."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:15.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5c"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

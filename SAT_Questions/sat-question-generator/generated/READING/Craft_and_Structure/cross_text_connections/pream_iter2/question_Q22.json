@@ -1,0 +1,57 @@
+{
+  "id": "7c2e9f1a-4b8d-4e3c-9a1f-6d2b8e5c7a3f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Text 1\nThe philosophical tradition of treating consciousness as an exclusively first-person phenomenon—irreducible to third-person physical description—has generated what David Chalmers famously termed the hard problem. Qualia, the subjective character of experience, cannot be exhaustively explained by neurological correlates because knowing every functional detail of pain-processing architecture leaves open the question of why processing produces felt sensation at all. This explanatory gap between objective mechanism and subjective experience constitutes, on this view, a permanent limitation of physicalist accounts of mind.\n\nText 2\nThe persistence of the so-called hard problem may reflect a conceptual confusion rather than a genuine ontological divide. When we ask why neural activity produces experience, we may be implicitly presupposing that explanation must take a particular reductive form—deriving phenomenal properties from non-phenomenal ones. But if phenomenal properties are themselves fundamental constituents of reality rather than epiphenomenal byproducts, the demand for such derivation dissolves. Panpsychism, understood rigorously, does not so much answer the hard problem as reveal that it was never well posed.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 157,
+    "source": "Adapted from philosophical discussions of consciousness and the mind-body problem"
+  },
+  "stem": "Which choice best describes the relationship between the two texts' treatments of the explanatory gap between neural processes and conscious experience?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 presents the explanatory gap as evidence that physicalism is incoherent, while Text 2 defends physicalism by redefining the scope of physical explanation.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 characterizes the explanatory gap as an enduring limitation within physicalist frameworks, while Text 2 contends that a different ontological starting point eliminates the need for the gap to be bridged at all.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 1 treats the explanatory gap as a psychological illusion arising from limited introspective capacity, while Text 2 confirms this diagnosis by tracing the illusion to a category error about reduction.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 argues that qualia cannot be studied scientifically, while Text 2 proposes panpsychism as a scientific methodology for investigating phenomenal properties empirically.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 accepts the hard problem as a genuine, permanent challenge: even complete functional knowledge of neural processing cannot explain why there is subjective experience, making the explanatory gap an irreducible obstacle for physicalism. Text 2 does not directly refute Text 1's logic within a physicalist framework; instead, it changes the ontological premise by suggesting phenomenal properties might be fundamental. If consciousness is basic rather than derived, the demand to derive it from non-phenomenal physical processes is itself misguided—the problem dissolves rather than gets solved. The relationship is therefore that Text 1 treats the gap as a permanent constraint on one kind of explanation, while Text 2 argues the gap only appears if one presupposes an ontological framework that a better alternative (panpsychism) abandons. Multi-step reasoning required: (1) grasp Text 1's claim that the gap is permanent within physicalism, (2) identify Text 2's move as changing ontological premises rather than answering within physicalism, (3) recognize this as dissolution rather than solution, (4) distinguish this from Text 2 defending physicalism, (5) distinguish from claiming the gap is illusory due to introspection, (6) avoid conflating ontological with methodological moves, (7) select the answer capturing the precise nature of the contrast.",
+  "distractorRationale": {
+    "A": "Text 1 does not claim physicalism is incoherent—it claims the gap is a permanent limitation. More critically, Text 2 does not defend physicalism at all; panpsychism is a departure from standard physicalist ontology, not a redefinition of it.",
+    "B": "Correct. Text 1 frames the gap as an enduring problem for physicalist explanation. Text 2 argues that if phenomenal properties are fundamental (panpsychism), the requirement to derive them from non-phenomenal processes was itself mistaken, dissolving rather than solving the problem.",
+    "C": "Neither text treats the explanatory gap as a psychological illusion stemming from introspective limits. Text 1 treats it as real and philosophically serious. Text 2 calls it a conceptual confusion about the form of explanation, not a perceptual or introspective error.",
+    "D": "Text 1 never claims qualia cannot be studied scientifically—its argument is specifically about explanation, not methodology. Text 2 does not present panpsychism as a scientific methodology; it offers it as an ontological alternative that reframes the philosophical question."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2e4f8a1-3c9d-4b7e-8f2a-5d1c6b9e3f7a"
+  }
+}

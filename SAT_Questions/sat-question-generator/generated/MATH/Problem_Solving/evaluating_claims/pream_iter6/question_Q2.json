@@ -1,0 +1,54 @@
+{
+  "id": "b91e4f02-c637-4a7d-8d50-2e3a5c6f1b84",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "computational": 1.1
+  },
+  "stem": "A local gym placed a sign-up sheet at its front desk asking members to write down how many days per week they exercise. Of the 800 gym members, 120 members filled out the sheet, and those members reported exercising an average of 5 days per week. The gym manager concludes that, on average, all 800 gym members exercise 5 days per week. Which of the following identifies the most significant flaw in the manager's conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The manager should have surveyed at least 400 members to reach a valid conclusion.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Only members who chose to fill out the sheet responded, and those members are likely more motivated exercisers than members who did not respond, making the sample unrepresentative.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Exercising 5 days per week is not a realistic average for gym members.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The conclusion would be valid only if the gym had more than 1,000 total members.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The manager's conclusion is flawed because the sample suffers from voluntary response bias. Only 120 out of 800 members chose to fill out the sign-up sheet — members who voluntarily respond to a survey about exercise frequency are likely the most active and motivated members. Members who exercise infrequently or feel self-conscious about their habits are less likely to record their information. This means the 120 respondents are not representative of all 800 members. The manager cannot validly generalize the average of 5 days per week to the entire membership based on this self-selected group.",
+  "distractorRationale": {
+    "A": "There is no statistical rule that a sample must be at least half the population size. The key issue is not the number surveyed but how they were selected. Even 400 voluntarily responding members would still produce a biased sample.",
+    "B": "Correct. Because members self-selected by voluntarily filling out the sheet, the sample systematically over-represents highly motivated exercisers. This voluntary response bias makes the conclusion about all 800 members invalid.",
+    "C": "Whether 5 days per week is realistic is a matter of personal opinion and is not a statistical flaw. The flaw lies in the sampling method, not the numerical result.",
+    "D": "Total population size does not determine whether a conclusion is valid. What matters is how the sample was selected, not the size of the overall population."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e4d1b7c3-5f28-4e93-bd67-8a2f0c9e3d71"
+  }
+}

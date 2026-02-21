@@ -1,0 +1,54 @@
+{
+  "id": "c5e8a134-7f2b-4d91-ae3c-0b9d6f47e215",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "Worker A can paint a fence alone in 6 hours. Worker B can paint the same fence alone in 3 hours. The two workers begin painting together. After working together for 1 hour, Worker A stops and leaves. How many additional hours does Worker B need to finish painting the fence alone?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\frac{1}{2}$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$1$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{3}{2}$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{5}{2}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Work rate problems require expressing each worker's rate as a fraction of the fence per hour.\n\nStep 1: Determine each worker's rate.\n- Worker A's rate: $\\frac{1}{6}$ fence per hour\n- Worker B's rate: $\\frac{1}{3}$ fence per hour\n\nStep 2: Find the combined rate when both work together.\n$$\\frac{1}{6} + \\frac{1}{3} = \\frac{1}{6} + \\frac{2}{6} = \\frac{3}{6} = \\frac{1}{2} \\text{ fence per hour}$$\n\nStep 3: Find the fraction of the fence completed during the 1 hour both work together.\n$$\\frac{1}{2} \\times 1 = \\frac{1}{2} \\text{ of the fence is done}$$\n\nStep 4: Find the fraction remaining.\n$$1 - \\frac{1}{2} = \\frac{1}{2} \\text{ of the fence remains}$$\n\nStep 5: Find how long Worker B takes to finish alone.\n$$t = \\frac{\\frac{1}{2}}{\\frac{1}{3}} = \\frac{1}{2} \\times 3 = \\frac{3}{2} \\text{ hours}$$\n\nVerification: $\\frac{1}{2}$ fence at rate $\\frac{1}{3}$ fence/hour: $\\frac{1/2}{1/3} = \\frac{3}{2}$ ✓",
+  "distractorRationale": {
+    "A": "Error type: 'Stopped at intermediate value' — student correctly finds that $\\frac{1}{2}$ of the fence remains after the first hour, and reports this fraction ($\\frac{1}{2}$) directly as the number of additional hours, without dividing by Worker B's rate. Wrong step: student reports the remaining fraction $\\frac{1}{2}$ as the time in hours instead of computing $\\frac{1/2}{1/3}$. Wrong calculation: remaining fraction $= \\frac{1}{2}$, reported as $\\frac{1}{2}$ hour. This produces $\\frac{1}{2}$.",
+    "B": "Error type: 'Rate applied to wrong quantity' — student applies the combined work rate to the remaining portion instead of Worker B's individual rate. Wrong step: student uses the combined rate $\\frac{1}{2}$ fence/hour instead of Worker B's rate $\\frac{1}{3}$ fence/hour. Wrong calculation: $t = \\frac{1/2}{1/2} = 1$ hour. This produces 1.",
+    "C": "This is the correct answer. After 1 hour working together, $\\frac{1}{2}$ of the fence is done. Worker B finishes the remaining $\\frac{1}{2}$ at a rate of $\\frac{1}{3}$ fence/hour, taking $\\frac{1/2}{1/3} = \\frac{3}{2}$ hours.",
+    "D": "Error type: 'Wrong term selected from ratio' — student correctly solves for the additional time Worker B needs ($\\frac{3}{2}$ hours) but then reports the total number of hours Worker B worked, adding the 1 hour of combined work. Wrong step: student computes $1 + \\frac{3}{2} = \\frac{5}{2}$ instead of reporting only the additional time. Wrong calculation: $1 + \\frac{3}{2} = \\frac{5}{2}$ hours total for B. This produces $\\frac{5}{2}$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d2f5b890-36c7-4e02-bf4a-1c8e79023456"
+  }
+}

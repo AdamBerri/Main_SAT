@@ -1,0 +1,54 @@
+{
+  "id": "83673190-8142-403d-8ae5-792d8ccbd46b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.1,
+    "computational": 1.0
+  },
+  "stem": "In the $xy$-plane, a student graphs the lines $y = 3x + 2$ and $y = x + 8$. What are the coordinates of the point where the two lines intersect?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$(3, 5)$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$(3, 11)$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$(5, 17)$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$(6, 14)$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "At the intersection point, both equations have the same $x$- and $y$-values. Setting the right-hand sides equal:\n$$3x + 2 = x + 8$$\n$$3x - x = 8 - 2$$\n$$2x = 6$$\n$$x = 3$$\n\nBack-substituting into the second equation:\n$$y = 3 + 8 = 11$$\n\nChecking in the first equation: $y = 3(3) + 2 = 9 + 2 = 11$ ✓\nChecking in the second equation: $y = 3 + 8 = 11$ ✓\n\nThe intersection point is $\\boxed{(3, 11)}$.",
+  "distractorRationale": {
+    "A": "Coefficient-drop error when back-substituting: the student correctly finds $x = 3$ but evaluates the first equation as $y = x + 2 = 3 + 2 = 5$ (drops the coefficient of 3 from $3x$), giving the point $(3, 5)$.",
+    "B": "Correct answer.",
+    "C": "Sign-flip error when moving terms: the student writes $3x + 2 = x + 8 \\Rightarrow 3x - x = 8 + 2 = 10$ (adds 2 to the right instead of subtracting it), giving $2x = 10 \\Rightarrow x = 5$; back-substituting into $y = 3x + 2$ yields $y = 3(5) + 2 = 17$, producing the point $(5, 17)$.",
+    "D": "Forgot-to-divide error: the student correctly obtains $2x = 6$ but reports $x = 6$ (forgetting to divide by 2); back-substituting gives $y = 6 + 8 = 14$, yielding the point $(6, 14)$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4d19ef9f-4b15-4bb7-ad6d-a7d2fe63913b"
+  }
+}

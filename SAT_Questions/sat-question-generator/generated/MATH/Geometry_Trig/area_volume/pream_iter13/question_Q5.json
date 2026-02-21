@@ -1,0 +1,38 @@
+{
+  "id": "a1b2c3d4-5555-4a6b-8c7d-9e0f1a2b3c05",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "A circular swimming pool has a diameter of 10 meters. What is the area, in square meters, of the pool?",
+  "choices": [
+    { "label": "A", "text": "$10\\pi$", "isCorrect": false },
+    { "label": "B", "text": "$100\\pi$", "isCorrect": false },
+    { "label": "C", "text": "$25\\pi$", "isCorrect": true },
+    { "label": "D", "text": "$5\\pi$", "isCorrect": false }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The area of a circle is $A = \\pi r^2$. The diameter is 10 meters, so the radius is $r = 5$ meters. $A = \\pi(5)^2 = 25\\pi$ square meters. The answer is C.",
+  "distractorRationale": {
+    "A": "Uses the circumference formula with the radius: $2\\pi(5) = 10\\pi$ instead of the area formula.",
+    "B": "Uses the diameter instead of the radius: $\\pi(10)^2 = 100\\pi$.",
+    "C": "Correct. $\\pi(5)^2 = 25\\pi$.",
+    "D": "Omits the exponent: $\\pi(5) = 5\\pi$ instead of $\\pi(5)^2$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:05.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-5555-4d5e-8f9a-0b1c2d3e4f05"
+  }
+}

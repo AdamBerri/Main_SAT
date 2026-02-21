@@ -1,0 +1,54 @@
+{
+  "id": "c5d6e7f8-a9b0-1c2d-3e4f-5a6b7c8d9e0f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.2,
+    "computational": 2
+  },
+  "stem": "A town had a population of 8,000 people in 2020. By 2023, the population had decreased by 5%. How many people lived in the town in 2023?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "7,600",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "7,500",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "400",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "8,400",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Decrease = 8,000 × 0.05 = 400. Population in 2023 = 8,000 − 400 = 7,600.",
+  "distractorRationale": {
+    "A": "Correct answer.",
+    "B": "Student subtracted 500 instead of 400, treating 5% as 500 out of 8,000: 8,000 − 500 = 7,500.",
+    "C": "Student found only the decrease amount (8,000 × 0.05 = 400) and reported it as the final population.",
+    "D": "Student added the decrease instead of subtracting: 8,000 + 400 = 8,400."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:07.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d6e7f8a9-b0c1-2d3e-4f5a-6b7c8d9e0f1a"
+  }
+}

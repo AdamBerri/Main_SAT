@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0007-4aaa-b007-000000000007",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "In a triangle, two of the angles measure $50°$ and $60°$. What is the measure of the exterior angle adjacent to the third angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$70°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$110°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$120°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$130°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "By the exterior angle theorem, the exterior angle equals the sum of the two non-adjacent interior angles: $50° + 60° = 110°$. Alternatively, the third interior angle is $180° - 50° - 60° = 70°$, and the exterior angle is $180° - 70° = 110°$.",
+  "distractorRationale": {
+    "A": "Found the third interior angle ($70°$) instead of the exterior angle.",
+    "B": "Correct. $50° + 60° = 110°$.",
+    "C": "Added $60° + 60° = 120°$ (doubled one angle by mistake).",
+    "D": "Added $60° + 70° = 130°$ (used interior angle instead of $50°$)."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.338Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0007-4000-a007-000000000007"
+  }
+}

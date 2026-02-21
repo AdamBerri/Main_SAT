@@ -1,0 +1,54 @@
+{
+  "id": "b3e7f2a1-9c4d-4e8b-8f5a-2d1c6b9e3a7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "computational": 3.3
+  },
+  "stem": "A fitness researcher collected data on the number of hours of vigorous exercise per week ($x$) and the resting heart rate in beats per minute ($y$) for a group of adults. The line of best fit for the data is $y = -2.3x + 84$. One participant exercises 6 hours per week and has an actual resting heart rate of 68 beats per minute. What is the residual for this participant?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-2.2$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$2.2$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$68$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$70.2$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The residual is defined as: residual = actual value $-$ predicted value.\n\nStep 1: Find the predicted resting heart rate for a participant who exercises 6 hours per week using the line of best fit.\n$$y = -2.3(6) + 84 = -13.8 + 84 = 70.2 \\text{ bpm}$$\n\nStep 2: Calculate the residual.\n$$\\text{residual} = \\text{actual} - \\text{predicted} = 68 - 70.2 = -2.2$$\n\nThe residual is $-2.2$, meaning the participant's actual resting heart rate is 2.2 bpm lower than what the line of best fit predicts.",
+  "distractorRationale": {
+    "A": "Correct. The residual is actual minus predicted: $68 - 70.2 = -2.2$.",
+    "B": "Sign error. This results from computing predicted minus actual ($70.2 - 68 = 2.2$) instead of actual minus predicted.",
+    "C": "Incomplete solution. This is the participant's actual resting heart rate — the problem's given value — not the residual.",
+    "D": "Incomplete solution. This is the predicted resting heart rate from the line of best fit ($-2.3(6) + 84 = 70.2$), but the residual requires subtracting the predicted value from the actual value."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e2a7f3c1-8b4d-4f9e-9a6c-3d1b5e8c2f7a"
+  }
+}

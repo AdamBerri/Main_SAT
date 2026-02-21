@@ -1,0 +1,54 @@
+{
+  "id": "d5a9b4f3-8e6c-4d7a-9b2f-7c3e1a8d5f2b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "A botanist measured the height ($x$, in centimeters) and leaf surface area ($y$, in square centimeters) of 30 plants of the same species. The line of best fit for the data is $y = 2.4x - 6$. Based on this model, what is the predicted height, in centimeters, of a plant with a leaf surface area of 42 square centimeters?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$17.5$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$20$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$24$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$94.8$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The line of best fit is $y = 2.4x - 6$, where $x$ is height (cm) and $y$ is leaf surface area (cm$^2$).\n\nTo find the predicted height for a leaf surface area of 42 cm$^2$, substitute $y = 42$ and solve for $x$:\n$$42 = 2.4x - 6$$\n$$42 + 6 = 2.4x$$\n$$48 = 2.4x$$\n$$x = \\frac{48}{2.4} = 20$$\n\nThe predicted height is $20$ centimeters.",
+  "distractorRationale": {
+    "A": "This results from forgetting to account for the constant term, dividing $y$ directly by the slope: $42 \\div 2.4 = 17.5$. The student did not add 6 before dividing.",
+    "B": "Correct. Setting $y = 42$ and solving: $2.4x - 6 = 42 \\Rightarrow 2.4x = 48 \\Rightarrow x = 20$.",
+    "C": "This results from a division error: the student correctly computes $42 + 6 = 48$ but then divides by 2 instead of 2.4, getting $48 \\div 2 = 24$.",
+    "D": "This results from substituting $x = 42$ (the given leaf area) directly into the equation rather than solving for $x$: $2.4(42) - 6 = 100.8 - 6 = 94.8$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1c7e3f9-2b8d-4a6c-8f5e-9d3b7a2c1f8e"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "f1a8c3d7-2e9b-4f4a-8c7e-5b1d3f9a7c2e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "The marketing team presented three distinct proposals for the campaign's visual identity, each reflecting a different interpretation of the brand's core values. After considerable deliberation, the creative director elected to pursue the second option, reasoning that its minimalist aesthetic would travel well across digital and print platforms without requiring costly adaptations. The other proposals, while inventive, were set aside for potential future projects.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 68,
+    "source": "Original"
+  },
+  "stem": "As used in the passage, \"elected\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "chose",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "appointed",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "voted",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "qualified",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this passage, the creative director 'elected to pursue the second option' — meaning she chose or decided on it based on her own reasoning. The word 'elected' here functions in its sense of making a deliberate personal decision, not a formal or collective process. The passage presents this as an individual act of judgment following deliberation, making 'chose' the most accurate equivalent.",
+  "distractorRationale": {
+    "A": "Correct. 'Chose' reflects the meaning of 'elected' as making a deliberate personal decision, which fits the passage's depiction of the creative director's individual judgment.",
+    "B": "'Appointed' means to assign someone to a position or role. The director is not placing anyone into a role — she is selecting a creative option.",
+    "C": "'Voted' implies a collective process involving multiple people casting ballots. The passage depicts a single individual making a decision, not a group vote.",
+    "D": "'Qualified' means to meet requirements or to limit a statement. This is not a standard meaning of 'elected' in any common context and does not fit the passage at all."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2d9f7c3-8b4e-4f1a-9e5c-3d7b1a9f4c8e"
+  },
+  "hasImage": false
+}

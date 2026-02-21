@@ -1,0 +1,38 @@
+{
+  "id": "a0b1c2d3-e4f5-4a6b-7c8d-9e0f1a2b3c4d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "computational": 3.3
+  },
+  "stem": "A furniture company makes tables and chairs. Each table requires 5 hours of labor and each chair requires 2 hours. The company has at most 60 hours of labor available per week. If the company must produce at least 8 chairs per week, what is the greatest number of tables it can produce in a week?",
+  "choices": [
+    { "label": "A", "text": "8", "isCorrect": false },
+    { "label": "B", "text": "10", "isCorrect": false },
+    { "label": "C", "text": "12", "isCorrect": false },
+    { "label": "D", "text": "9", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The labor constraint is $5t + 2c \\leq 60$. With $c \\geq 8$, substitute the minimum chairs: $5t + 2(8) \\leq 60$, so $5t + 16 \\leq 60$, giving $5t \\leq 44$, thus $t \\leq 8.8$. The greatest whole number of tables is 8.",
+  "distractorRationale": {
+    "A": "Correct. $5t + 2(8) \\leq 60$ gives $t \\leq 8.8$, so the maximum is 8.",
+    "B": "Cluster B error: Forgot to account for the chair production. Solved $5t \\leq 60$, getting $t \\leq 12$, then adjusted by subtracting 2 (misapplied correction), arriving at 10.",
+    "C": "Cluster D error: Divided total hours by table hours only: $60 \\div 5 = 12$, completely ignoring the chair requirement.",
+    "D": "Cluster C error: Computed $5t + 16 \\leq 60$ correctly to get $t \\leq 8.8$, but rounded up to 9 instead of down."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:11.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b1c2d3e4-f5a6-4b7c-8d9e-0f1a2b3c4d5e"
+  }
+}

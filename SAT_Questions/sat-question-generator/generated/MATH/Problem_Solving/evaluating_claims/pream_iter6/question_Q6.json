@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2e1-4b85-4d69-9f1a-2c6e8b0d3a47",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "A school newspaper surveyed 80 students who visited the library during lunch on a Tuesday to find out their favorite subject. Of those surveyed, 45% said math was their favorite subject. The newspaper concluded that 45% of ALL students at the school prefer math. Which of the following best explains why this conclusion may NOT be valid?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The sample size of 80 students is too small to draw any conclusion.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Students who visit the library during lunch may not represent all students at the school, since this group could have different subject preferences.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The percentage 45% is not high enough to support a conclusion about the whole school.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The survey should have asked about more than one subject to be valid.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "For a sample to support a generalization about an entire population (all students at the school), the sample must be representative of that population. Students who choose to visit the library during lunch are a specific, self-selected group who may have different interests — including subject preferences — compared to the general student body. Because this is a convenience sample (not randomly selected from all students), it is likely biased, and the 45% figure cannot reliably be extended to all students at the school. The key flaw is the non-random, non-representative selection method, not the sample size or the percentage value.",
+  "distractorRationale": {
+    "A": "This distractor targets the misconception that sample size alone determines validity. While sample size matters, the more critical issue here is the non-random selection method. A sample of 80 randomly chosen students could support a generalization, but 80 library visitors cannot.",
+    "B": "Correct. Library visitors during lunch are a self-selected, convenience sample that likely differs from the overall student population in subject preferences, making the generalization invalid.",
+    "C": "This distractor targets a misconception that a specific percentage threshold is required for a conclusion to be valid. The percentage value itself is not the problem; the selection method is.",
+    "D": "This distractor introduces an irrelevant criterion. The number of topics asked about does not affect whether the sample is representative of the school population."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a"
+  }
+}

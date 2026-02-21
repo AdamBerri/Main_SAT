@@ -114,7 +114,7 @@ class QuestionGenerator {
             throw new Error(`Failed to parse JSON response: ${e}`);
         }
         // Add metadata if not present
-        rawQuestion.id = rawQuestion.id || (0, uuid_1.v4)();
+        rawQuestion.id = (0, uuid_1.v4)();
         rawQuestion.metadata = {
             generatedAt: new Date().toISOString(),
             promptVersion: promptVersion || this.promptManager.getPromptConfig(topic).currentVersion,
@@ -128,6 +128,10 @@ class QuestionGenerator {
             domain: topic.domain,
             subtopic: topic.subtopic,
         };
+        // Auto-correct passage wordCount metadata to match actual passage
+        if (rawQuestion.passage && rawQuestion.passageMetadata) {
+            rawQuestion.passageMetadata.wordCount = rawQuestion.passage.split(/\s+/).length;
+        }
         // Validate
         const validation = (0, schema_validator_1.fullValidation)(rawQuestion, topic);
         if (!validation.valid) {

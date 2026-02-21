@@ -1,0 +1,57 @@
+{
+  "id": "e1a7c4f9-6b2d-4e3f-8c5a-4d9b1f7e2c6a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "Classical economists treated taste as a preference expressed in market behavior: individuals ranked goods and services according to private valuations, and prices emerged from the aggregation of those rankings. Taste was exogenous to the system—it arrived from outside economic life and set it in motion.\n\nThorstein Veblen's account of conspicuous consumption challenged this assumption not by denying that individuals rank goods but by showing that the rankings themselves are formed within processes of social rivalry and status negotiation. A coat was not purchased because it satisfied a pre-existing preference for warmth; it was purchased partly because acquiring it placed one in a legible social position relative to others who could or could not afford it.\n\nThe debate this opened proved generative. Anthropologists documented taste formation through gift economies and ceremonial exchange; sociologists mapped its operation through class habitus; behavioral economists quantified preference reversals under conditions of social comparison. Each tradition found that preferences, rather than driving markets, were themselves partly constituted by the social arrangements markets produce.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 182,
+    "source": "Adapted from an intellectual history of economic thought and social theory"
+  },
+  "stem": "Which choice best states the central idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Veblen's theory of conspicuous consumption demonstrated that social status concerns, rather than utility maximization, are the primary driver of consumer behavior in market economies",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The classical economic view that taste is exogenous to markets has been displaced across multiple disciplines by evidence that preferences are shaped by the social conditions markets themselves generate",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Research in anthropology, sociology, and behavioral economics has collectively established that market prices are less accurate reflections of individual preferences than classical economists believed",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The study of preference formation reveals an irresolvable tension between individual agency and social determination that has prevented any single discipline from producing a unified theory of consumer behavior",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage traces an intellectual progression across three phases. The first paragraph establishes the classical model: taste is exogenous, arriving from outside the market and initiating it. The second paragraph presents Veblen's challenge: the rankings that constitute taste are formed within social rivalry—they are endogenous to social life, not prior to it. The third paragraph documents how this challenge propagated across anthropology, sociology, and behavioral economics, with each tradition finding that 'preferences...were themselves partly constituted by the social arrangements markets produce.' This final formulation inverts the classical model: rather than preferences driving markets, markets (and the social arrangements around them) partly produce preferences. Answer B synthesizes all three phases—the original model, its challenge, and the cross-disciplinary evidence—without treating any single figure or discipline as the passage's focal point. It accurately characterizes the direction of revision (classical view displaced) and its substance (preferences are shaped by social conditions markets generate).",
+  "distractorRationale": {
+    "A": "This answer treats Veblen's theory as the passage's conclusion rather than as one stage in a longer argument. The passage uses Veblen to open a generative debate, then traces how that debate ramified across multiple disciplines; the third paragraph is equally important as the second. Characterizing social status as the 'primary driver' also overstates Veblen's claim as presented—the passage says the coat was purchased 'partly' for status reasons, not exclusively.",
+    "B": "Correct. This answer integrates the passage's three movements: the classical exogenous model, Veblen's challenge to it, and the multi-disciplinary elaboration that ultimately inverted the causal relationship between preferences and markets. It neither reduces the argument to Veblen alone nor treats the disciplinary evidence as the main subject.",
+    "C": "The passage does not claim that market prices inaccurately reflect preferences. The argument is about where preferences come from, not about the relationship between preferences and prices. This answer introduces a claim about price accuracy that is not present in any of the three paragraphs, importing a different (and specifically neoclassical) debate into a passage about preference formation.",
+    "D": "The passage does not frame the debate as producing irresolvable tension or as failing to generate a unified theory. The third paragraph presents the various disciplinary traditions as converging on a common finding—that preferences are constituted by social arrangements—which is the opposite of an unresolved impasse. This answer mistakes the existence of multiple methodological approaches for a substantive disagreement about conclusions."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c6f2a9e4-8d1b-4c7f-a5e3-2b9d4f6e1c8a"
+  }
+}

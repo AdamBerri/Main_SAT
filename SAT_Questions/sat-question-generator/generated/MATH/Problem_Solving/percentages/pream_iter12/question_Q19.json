@@ -1,0 +1,54 @@
+{
+  "id": "a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 4,
+    "computational": 4.2
+  },
+  "stem": "A store marks up a product by 50% over its cost, then offers a 30% discount on the marked-up price during a sale. What is the store's profit or loss as a percent of the original cost?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "5% profit",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "20% profit",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "15% profit",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "10% profit",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let cost = $100. Marked-up price = $100 × 1.50 = $150. Sale price = $150 × 0.70 = $105. Profit = $105 − $100 = $5, which is 5% of cost.",
+  "distractorRationale": {
+    "A": "Correct answer.",
+    "B": "Student subtracted percentages additively: 50% − 30% = 20% profit.",
+    "C": "Student averaged the two percentages: (50% + 30%) / 2 = 40%, then halved again — or computed 50% × 30% = 15%.",
+    "D": "Student computed (1.50 × 0.70) = 1.05, read the 0.05 as 10% by misplacing the decimal."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:18.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d8e9f0a1-b2c3-4d5e-6f7a-8b9c0d1e2f3a"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "c4f8a2b3-5d9e-4f1a-b2c3-d4e5f6a70002",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "linguistic": 1.1
+  },
+  "passage": "Text 1\nResearchers studying urban parks have found that access to green spaces is linked to lower reported stress levels among city residents. A 2022 survey of 800 adults living in major cities found that those who visited a park at least once per week were 35 percent more likely to describe their overall stress as \"low\" compared to those who never visited parks.\n\nText 2\nThe same research team tracked weekly park visits and self-reported stress ratings (on a scale of 1 to 10, where 1 is least stressed) for 200 participants over six months. Their data showed the following average stress ratings by visit frequency:\n\n| Weekly Park Visits | Average Stress Rating |\n|---|---|\n| 0 visits | 7.2 |\n| 1–2 visits | 5.8 |\n| 3–4 visits | 4.5 |\n| 5+ visits | 3.9 |",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 148,
+    "source": "Adapted from urban wellness research study materials"
+  },
+  "stem": "Which statement is best supported by both texts taken together?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "More frequent park visits are associated with lower stress ratings.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "People who visit parks have no stress at all.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Stress decreases only after five or more park visits per week.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Park visits affect stress levels only in adults over age 40.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Text 1 establishes that visiting a park at least once per week correlates with lower self-reported stress. Text 2 provides quantitative support: as weekly park visits increase from 0 (average stress 7.2) to 1-2 (5.8) to 3-4 (4.5) to 5+ (3.9), stress ratings consistently decrease. Together, the two sources confirm that higher visit frequency is associated with lower stress across the entire range of data.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "Text 2 shows that even those who visit 5 or more times per week still report an average stress rating of 3.9 out of 10, not zero stress. This distractor overgeneralizes the relationship.",
+    "C": "The data in Text 2 shows stress decreasing at every frequency level starting from 1-2 visits, not only at 5+ visits. This distractor misreads the pattern by focusing only on the highest frequency category.",
+    "D": "Neither text mentions participant age as a variable. This distractor introduces a factor (age 40+) that has no basis in either source."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2e3f4a5-c6d7-4e8f-9a0b-1c2d3e4f0002"
+  },
+  "hasImage": false
+}

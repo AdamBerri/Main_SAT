@@ -1,0 +1,57 @@
+{
+  "id": "f3b6d9e2-7a4c-4d1f-8e5b-9c2a7f4b1d6e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "The following passage is adapted from a 2023 article on microplastics in freshwater ecosystems.\n\nMicroplastics—plastic particles smaller than five millimeters in diameter—have been detected in rivers, lakes, and streams around the world. These particles enter freshwater systems through multiple pathways: runoff from land-based plastic waste, discharge from wastewater treatment facilities that fail to fully filter synthetic fibers, and the breakdown of larger plastic debris in aquatic environments.\n\nThe effects of microplastics on freshwater organisms have been a growing area of research. Laboratory studies have demonstrated that fish exposed to microplastic concentrations found in polluted rivers showed a 28 percent reduction in feeding activity compared to fish in clean water. This reduction in feeding has been associated with lower body mass and reproductive output in the exposed fish populations.\n\nMicroplastics are particularly problematic because they can adsorb—or attract and hold on their surface—toxic chemical compounds such as pesticides and heavy metals. When aquatic organisms ingest these particles, they may absorb the attached contaminants along with the plastic itself. A 2022 study in Environmental Science & Technology found that zebra mussels exposed to microplastics coated with polychlorinated biphenyls (PCBs) accumulated PCB concentrations in their tissue that were 47 times higher than mussels exposed to PCBs alone.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 198,
+    "source": "Adapted from a 2023 review article in Environmental Science & Technology"
+  },
+  "stem": "A researcher claims that microplastics make certain chemical pollutants more dangerous to aquatic organisms by concentrating those pollutants in the organisms' bodies. Which quotation from the passage best supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Microplastics enter freshwater systems through multiple pathways: runoff from land-based plastic waste, discharge from wastewater treatment facilities that fail to fully filter synthetic fibers, and the breakdown of larger plastic debris in aquatic environments.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"Fish exposed to microplastic concentrations found in polluted rivers showed a 28 percent reduction in feeding activity compared to fish in clean water.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Microplastics can adsorb toxic chemical compounds such as pesticides and heavy metals, and when aquatic organisms ingest these particles, they may absorb the attached contaminants along with the plastic itself.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"Zebra mussels exposed to microplastics coated with polychlorinated biphenyls (PCBs) accumulated PCB concentrations in their tissue that were 47 times higher than mussels exposed to PCBs alone.\"",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Choice D is correct. The claim has two components: (1) microplastics concentrate chemical pollutants in organisms' bodies, and (2) this makes those pollutants more dangerous. Choice D directly supports component 1 with specific, quantified data: mussels exposed to PCB-coated microplastics accumulated PCB concentrations 47 times higher than mussels exposed to PCBs alone. The 47-fold increase directly demonstrates that microplastics concentrate pollutants in tissue, which most directly supports the claim. No inferential steps are needed to connect this evidence to the claim.",
+  "distractorRationale": {
+    "A": "Choice A describes how microplastics enter freshwater systems—their pathways of contamination—but says nothing about how they affect chemical pollutant concentrations in organisms' bodies.",
+    "B": "Choice B shows that microplastics reduce feeding activity in fish, which addresses a different harm (behavioral/physiological impact) rather than the concentration of chemical pollutants in tissue.",
+    "C": "Choice C explains the mechanism by which microplastics can carry chemical contaminants into organisms, but it is a general mechanistic description and does not provide the quantified evidence of concentration that the claim requires. Choice D, with its 47-fold concentration figure, provides more direct and specific support."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4f9c2a7-8b1e-4a6d-9f3c-5e2b7a1c8d4f"
+  },
+  "hasImage": false
+}

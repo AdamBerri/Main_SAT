@@ -1,0 +1,54 @@
+{
+  "id": "d7b4e9f1-2c6a-4d8e-b3f7-5a1c9e3f7b2d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 4.8
+  },
+  "stem": "Researchers at a hospital studied the records of 3,200 patients admitted for surgery over a five-year period. They found that patients who received a new pre-operative supplement had a 22% shorter average recovery time than patients who did not receive the supplement. The researchers conclude that the supplement causes faster recovery. A medical reviewer disputes this conclusion. The reviewer notes that surgeons administered the supplement at their own discretion, and that surgeons who favored the supplement also tended to perform minimally invasive procedures. Which of the following best describes the flaw the reviewer has identified?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The study's sample of 3,200 patients is drawn from a single hospital, so the findings may not generalize to surgical patients at other institutions.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The type of surgical procedure — minimally invasive versus traditional — is a confounding variable that could account for the difference in recovery time without any effect from the supplement.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Because surgeons chose whether to administer the supplement, patients who received it were self-selected, making their recovery times unrepresentative of all surgical patients.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "A 22% difference in recovery time is a relative measure, and without knowing the absolute recovery durations, it is impossible to determine whether the difference is clinically meaningful.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The reviewer's concern is about confounding variables. Surgeons who chose to give the supplement also tended to perform minimally invasive procedures. Minimally invasive surgery itself causes shorter recovery times compared to traditional open surgery — independently of any supplement. Therefore, the patients who received the supplement also benefited from less invasive procedures, making it impossible to determine whether the faster recovery was due to the supplement, the surgical technique, or both. This is a classic confound: a third variable (surgical technique) is associated with both the treatment (supplement use) and the outcome (recovery time), invalidating the causal conclusion. Because surgeons self-selected which patients received the supplement, patients in the two groups were not equivalent — they differed systematically in the surgical procedures they underwent. The causal claim requires ruling out all plausible alternative explanations, which this study cannot do.",
+  "distractorRationale": {
+    "A": "Incorrect. This raises a legitimate scope-of-generalization concern (overgeneralizing from one hospital), but it does not address the specific flaw the reviewer identified — the confounding role of surgical technique. The reviewer's argument is about why the causal inference is invalid even within this study's data, not about external generalizability.",
+    "B": "Correct. Surgical technique (minimally invasive vs. traditional) is correlated with both supplement use and recovery time, making it a confounding variable. The observed difference in recovery time could be entirely due to the procedure type, not the supplement, invalidating the causal conclusion.",
+    "C": "Incorrect. This partially describes the mechanism (surgeon discretion), but mislabels the consequence. The issue is not that the supplement-receiving patients are 'unrepresentative of all surgical patients' — the issue is that they systematically differ from the non-supplement group in a way that affects the outcome (they had less invasive procedures). Calling it a 'self-selection representativeness' problem mischaracterizes the confounding structure the reviewer identified.",
+    "D": "Incorrect. This raises a clinical significance concern about relative versus absolute measures, which is a legitimate methodological issue in medical research but is entirely unrelated to the reviewer's specific argument about surgical technique as a confound. The reviewer's concern is about causal validity, not the magnitude or clinical relevance of the measured effect."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3a6c8e2-4b1d-4f9e-a5c7-2e8b3d1f6a9c"
+  }
+}

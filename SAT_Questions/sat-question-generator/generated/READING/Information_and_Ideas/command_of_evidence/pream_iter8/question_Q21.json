@@ -1,0 +1,57 @@
+{
+  "id": "c3e7f2a1-8b4d-4e9f-a2c1-6d5b8f3e7a9c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "The following passage is adapted from a 2023 research summary on permafrost carbon dynamics.\n\nArctic permafrost holds approximately 1.5 trillion tons of organic carbon — nearly twice the amount currently present in Earth's atmosphere. As global temperatures rise, this frozen carbon reservoir faces mounting pressure from what scientists call the permafrost carbon feedback: thawing ground releases previously locked organic matter, which microbial decomposition then converts into greenhouse gases, further accelerating warming.\n\nRecent field measurements complicate the conventional picture of this feedback. At a study site in northeastern Siberia, researchers documented that thermokarst lakes — bodies of water formed when ice-rich permafrost collapses — emitted methane at rates of 22 to 48 milligrams per square meter per day during summer, driven primarily by anaerobic decomposition of newly exposed sediments at lake margins. However, the same study found that upland tundra adjacent to active thermokarst zones sequestered 14 milligrams of carbon per square meter per day through enhanced plant productivity, as warming extended the growing season by 17 days relative to 1980 baselines.\n\nA separate investigation in the Canadian High Arctic yielded a counterintuitive finding: sites with greater soil moisture — typically associated with permafrost thaw — displayed net carbon uptake of 8.3 grams per square meter annually, whereas drier adjacent plots released 11.7 grams per square meter annually. The researchers attributed this to oxygen availability controlling decomposition rates more strongly than substrate availability: in saturated soils, oxygen depletion suppresses aerobic microbial activity, resulting in carbon sequestration that temporarily offsets methane flux from anaerobic pathways.\n\nLaboratory incubation studies offer a molecular mechanism for the field observations: when frozen Arctic soils were thawed under controlled conditions at 5°C, aerobic respiration consumed 73 percent of released carbon within 60 days, compared to only 12 percent under anaerobic conditions over the same period. The contrast highlights why the hydrological regime — whether soils drain freely or retain water — may ultimately determine whether a given Arctic landscape functions as a carbon source or sink across decadal timescales.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 291,
+    "source": "Adapted from a 2023 synthesis article on Arctic carbon cycle feedbacks"
+  },
+  "stem": "A researcher argues that soil moisture conditions determine whether Arctic permafrost landscapes function as carbon sources or sinks more decisively than the rate at which organic substrate becomes newly available. Which quotation from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "thermokarst lakes — bodies of water formed when ice-rich permafrost collapses — emitted methane at rates of 22 to 48 milligrams per square meter per day during summer, driven primarily by anaerobic decomposition of newly exposed sediments at lake margins",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "upland tundra adjacent to active thermokarst zones sequestered 14 milligrams of carbon per square meter per day through enhanced plant productivity, as warming extended the growing season by 17 days relative to 1980 baselines",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "sites with greater soil moisture — typically associated with permafrost thaw — displayed net carbon uptake of 8.3 grams per square meter annually, whereas drier adjacent plots released 11.7 grams per square meter annually",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "in saturated soils, oxygen depletion suppresses aerobic microbial activity, resulting in carbon sequestration that temporarily offsets methane flux from anaerobic pathways",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The claim specifies two distinct elements: (1) that moisture conditions govern source-versus-sink status, and (2) that this moisture effect is more decisive than substrate availability. Choice D directly addresses both by stating the mechanism — oxygen depletion from saturation suppresses aerobic decomposition — that explains why moisture supersedes substrate in controlling carbon fate. Crucially, D provides the causal mechanism that makes moisture conditions decisive over substrate availability, which is the precise comparison the claim requires. Choice C presents corroborating field measurements (wet vs. dry plots), but it is a descriptive observation that does not articulate the mechanism establishing moisture's primacy over substrate. The researcher's attribution sentence immediately following C's data explicitly names 'oxygen availability controlling decomposition rates more strongly than substrate availability,' and choice D captures that mechanistic statement — the most direct support for the claim's causal assertion. Choices A and B both describe substrate-driven processes (lake methane flux from newly exposed sediments; plant uptake from extended growing season) and thus evidence conditions where substrate availability is the operative variable, making them counter to the claim's argument.",
+  "distractorRationale": {
+    "A": "Choice A describes methane emissions driven by anaerobic decomposition of newly exposed sediments — a process in which substrate availability (freshly thawed organic matter) is the primary driver. This is precisely the type of process the claim argues is less decisive than moisture conditions, making A evidence against, not for, the claim.",
+    "B": "Choice B addresses plant-based carbon sequestration responding to a longer growing season — a mechanism controlled by temperature and phenology rather than soil moisture or substrate availability. It neither demonstrates moisture's controlling role nor compares moisture to substrate as drivers of carbon flux.",
+    "C": "Choice C provides the empirical field data showing that wetter plots sequester while drier plots release carbon, which is relevant to the claim but does not explain the mechanism by which moisture supersedes substrate. A reader could use C to infer the moisture effect but would need an additional inferential step to conclude moisture is more decisive than substrate availability. Choice D supplies the mechanistic statement that eliminates that inferential gap.",
+    "D": "Correct. D states the mechanism — oxygen depletion in saturated soils suppresses aerobic microbial activity — that directly explains why moisture conditions control the source-versus-sink outcome independent of, and more powerfully than, organic substrate availability."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f2a8c3e1-7b4d-4f9a-b2c1-6d5e8f3a7c9b"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "b3e7a9c1-2d4f-4e8a-9b5c-1f6d2e8a7c3b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Medieval cartographers filled unmapped territories with sea monsters and griffins—not from credulity, as is often assumed, but from a disciplined professional vocabulary. A blank space on a map carried no information; a creature indicated that sailors had reported strange phenomena in those waters, that merchants had returned with accounts of unfamiliar animals, or simply that the territory lay beyond the cartographer's verified sources. The monsters were, in a sense, footnotes rendered in ink.\n\nModern mapping conventions replaced these figures with dotted lines, question marks, and the frank notation \"relief data incomplete.\" The monsters disappeared, but the epistemic condition they represented did not. Contemporary satellite maps contain their own lacunae: regions deliberately withheld, coastlines smoothed by proprietary algorithms, altitudes approximate within tolerances that matter enormously to engineers but that the published scale conceals. The precision of the modern map is partly a style of presentation—an argument made with contour lines rather than sea creatures.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 168,
+    "source": "Adapted from an essay on the history of cartographic representation"
+  },
+  "stem": "Which choice best describes what the passage is mainly about?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The ways in which maps have always encoded uncertainty within their visual conventions, whether through medieval iconography or modern notational practices",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The argument that medieval cartographers were more intellectually honest than their modern counterparts because they acknowledged the limits of geographic knowledge",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The process by which sea monsters were gradually eliminated from cartographic practice as explorers gathered more reliable empirical data about ocean territories",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The claim that modern satellite mapping has introduced new forms of deliberate distortion that are more problematic than the errors of medieval maps",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage traces a single argument across two historical periods without explicitly stating it as a thesis. In the first paragraph, the author reframes medieval map monsters as a professional vocabulary for representing unverified information—they were epistemic markers, not expressions of belief. The second paragraph introduces modern conventions (dotted lines, proprietary algorithms, smoothed coastlines) and argues that these too represent uncertainty through a different visual style. The phrase 'an argument made with contour lines rather than sea creatures' links both paragraphs: maps have always argued a position about what is and is not known, using whatever graphic conventions their era provides. Answer A synthesizes both the continuity across periods and the shared function of encoding uncertainty. It does not privilege either period as superior or inferior, which matches the passage's analytical rather than evaluative stance.",
+  "distractorRationale": {
+    "A": "Correct. This answer synthesizes the passage's core insight—that both medieval monsters and modern notations serve as conventions for representing epistemic limits—without importing a comparative judgment the passage does not make.",
+    "B": "The passage explicitly rejects naive contrasts between medieval credulity and modern rationality, and it does not argue that medieval mapmakers were more honest. The second paragraph's critique of modern mapping's concealed tolerances and proprietary algorithms introduces a complexity that prevents any simple moral hierarchy between eras.",
+    "C": "This answer describes a historical process the passage deliberately inverts. The passage argues that the monsters' disappearance did not resolve the underlying epistemic condition; it merely changed its graphic form. An answer about elimination misses the passage's central move of showing continuity beneath apparent change.",
+    "D": "The passage does not argue that modern distortions are more problematic than medieval errors, nor does it use the word 'deliberate' for all modern omissions. The author treats satellite lacunae and algorithmic smoothing as structural features of any representational system, analogous to medieval conventions rather than worse than them."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4f8e2a1-7b9d-4c3e-8f5a-2d1b6e9c7a4f"
+  }
+}

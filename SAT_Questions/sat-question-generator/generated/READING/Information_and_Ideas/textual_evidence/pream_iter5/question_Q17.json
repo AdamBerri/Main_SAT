@@ -1,0 +1,58 @@
+{
+  "id": "d4f7a2c8-9e1b-4d3f-8a6c-2b5e7f9a1c3d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "Text 1\n\nEconomists studying the relationship between urban green space and residential property values have generally found a positive correlation — homes near parks sell at a premium. However, a growing body of research complicates this finding by distinguishing between passive green space (maintained lawns and ornamental plantings) and ecological green space (native plant communities supporting biodiversity). The premium observed in earlier studies, some researchers now argue, may reflect buyers' preferences for manicured aesthetics rather than ecological function. If so, expanding ecological green space — which often appears less tidy — might not produce the same economic returns for municipalities seeking to justify conservation investments through property tax revenue.\n\nNote: A 2022 municipal study tracked median home sale prices within a half-mile radius of twelve urban park conversions. Six parks were converted from conventional turf to native ecological plantings; six were upgraded with improved conventional landscaping. Prices are indexed to pre-conversion baseline (100).\n\n| Park Type | Year 1 | Year 2 | Year 3 |\n|---|---|---|---|\n| Ecological conversion | 101 | 100 | 103 |\n| Conventional upgrade | 103 | 106 | 109 |",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 209,
+    "source": "Adapted from urban economics research on green space valuation"
+  },
+  "stem": "A researcher argues that municipalities cannot rely on property tax gains to fund ecological park conversions. Which of the following, if true, would most directly support this argument using evidence from both sources?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Conventional upgrades consistently outperformed ecological conversions in property value gains.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Ecological conversions produced minimal price growth while conventional upgrades generated steady gains.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Buyers prefer manicured aesthetics, so ecological parks generate less revenue overall.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Ecological parks returned to baseline pricing after initial gains, unlike conventional parks.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The researcher's argument requires showing that ecological conversions do not produce the property tax revenue gains needed to justify the investment. Text 1 identifies the core concern: buyers may prefer manicured aesthetics over ecological function, so ecological parks might not yield the same premium. The table confirms this: ecological conversions yielded negligible appreciation (101, 100, 103 — barely above baseline), while conventional upgrades showed consistent, substantial growth (103, 106, 109). Choice B accurately synthesizes both sources — characterizing the ecological result as 'minimal price growth' and the conventional result as 'steady gains' — and directly supports the funding argument without overstating or misrepresenting the data. This requires the student to read the indexed values, interpret them relative to baseline, and connect the trajectory to the economic argument in Text 1.",
+  "distractorRationale": {
+    "A": "While technically true based on the table, this choice only uses one source (the data) and describes the pattern in general terms without connecting it to the specific mechanism (buyer preference for aesthetics) or the funding argument. It passes a first read but lacks the synthesis needed.",
+    "B": "Correct. This choice accurately characterizes both data trajectories and links them to the researcher's argument about inadequate tax revenue.",
+    "C": "This restates Text 1's hypothesis ('buyers prefer manicured aesthetics') as if it were a confirmed finding, but Text 1 presents it as a possible explanation rather than established fact. The choice treats a theoretical claim as empirical evidence.",
+    "D": "Factually misreads the table. Ecological conversions did not show 'initial gains' that returned to baseline; year 1 was 101, year 2 dropped to 100 (baseline), and year 3 rose to 103. The pattern is flatness, not a rise-and-fall cycle. A careful student must check the table to eliminate this."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5f8a2b4-9c1d-4e3f-8b7a-3c6d9e2f5b8c"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "b3c7e9f1-2a4d-4e8b-9c1f-5d7a3e2b6c8d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Economists studying income distribution have long relied on the Gini coefficient, a single number meant to compress the sprawling complexity of inequality into something manageable. The appeal is understandable: a society can be ranked, compared, tracked over time. But compression has a cost that aggregate measures conceal rather than resolve. A coefficient of 0.4 tells you nothing about whether the bottom quintile earns enough to meet basic needs, whether the middle class is shrinking or stable, or whether gains at the top are driven by innovation or by rent extraction. Two countries with identical Gini scores can have radically different distributions of opportunity, health, and social mobility—differences that matter enormously for policy but vanish inside the index. Recent scholarship has begun disaggregating these figures, tracing inequality through race, geography, and gender simultaneously, and the resulting portraits look nothing like the tidy orderings that aggregate rankings produce. What these studies reveal is not merely technical: they expose the assumption, embedded in the preference for single-number summaries, that inequality is a unified phenomenon amenable to unified measurement. The reliance on summary statistics is not a neutral methodological choice; it reflects a prior commitment to the idea that economic complexity can and should be reduced to terms that permit straightforward comparison.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 197,
+    "source": "Adapted from academic writing on economic measurement"
+  },
+  "stem": "Which choice best describes the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Advocate for replacing the Gini coefficient with disaggregated measurements in economic research",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Argue that summary statistics embed hidden assumptions that distort how economic inequality is understood",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Explain why economists prefer aggregate measures despite their acknowledged limitations",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Demonstrate that countries with similar Gini scores can have meaningfully different economic conditions",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage's primary purpose is to argue that summary statistics like the Gini coefficient carry embedded assumptions—specifically, the assumption that inequality is a unified phenomenon reducible to a single number—and that this conceals rather than captures the true complexity of economic inequality. This argument is built cumulatively: the author first acknowledges why such measures appeal, then systematically enumerates what the coefficient fails to capture, then shows that disaggregated research produces fundamentally different pictures, and finally names the underlying ideological commitment as a 'prior commitment' rather than a neutral choice. The closing sentence makes explicit that the author's concern is not merely methodological adequacy but the hidden value judgments embedded in measurement conventions. Choice B captures this argumentative purpose at the correct level of abstraction.",
+  "distractorRationale": {
+    "A": "While the passage references disaggregated scholarship approvingly, it never explicitly advocates replacing the Gini coefficient. The author's concern is exposing embedded assumptions, not prescribing a specific methodological substitute.",
+    "B": "Correct. The passage argues that single-number summaries embed the assumption that inequality is a unified phenomenon and that this assumption distorts understanding rather than simply limiting measurement precision.",
+    "C": "The passage explains why such measures 'appeal' only briefly and then pivots to critique; explaining the appeal is a setup for the argument, not the purpose itself. The passage does not sympathetically account for economists' preferences.",
+    "D": "The comparison of two countries with identical Gini scores is a supporting example deployed to illustrate the coefficient's inadequacy, not the central claim. The purpose extends beyond demonstrating this empirical point to indicting the methodological preference for summary statistics."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b"
+  }
+}

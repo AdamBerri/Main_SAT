@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0013-4aaa-b013-000000000019",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "In a triangle, one angle is twice the smallest angle, and the largest angle is $12°$ more than three times the smallest angle. What is the measure of the largest angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$28°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$56°$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$96°$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$84°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let the smallest angle be $x$. Then the other angles are $2x$ and $3x + 12$. Triangle sum: $x + 2x + (3x + 12) = 180$, so $6x + 12 = 180$, $6x = 168$, $x = 28$. Largest angle: $3(28) + 12 = 96°$.",
+  "distractorRationale": {
+    "A": "Found the smallest angle ($28°$).",
+    "B": "Found the middle angle ($56°$).",
+    "C": "Correct. $3(28) + 12 = 96°$.",
+    "D": "Computed $3(28) = 84$ but forgot to add $12$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T03:28:52.371Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0013-4000-a013-000000000019"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "d6a1c9e2-57b3-4f82-b748-1e4d7c0f2a93",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "For centuries, cartographers relied on astronomical observations and painstaking triangulation surveys to produce accurate maps of coastlines and interior regions. The introduction of satellite geodesy in the mid-twentieth century changed everything [3]precise coordinates could now be determined within meters anywhere on Earth it became possible to compile global databases of topographic data that superseded all previous mapping efforts. Today, satellite-derived datasets underpin nearly every navigational system in use.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 73,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries and punctuation conventions?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "precise coordinates could now be determined within meters anywhere on Earth, it became possible",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "precise coordinates could now be determined within meters anywhere on Earth. It became possible",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "precise coordinates could now be determined within meters anywhere on Earth; and it became possible",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The underlined portion contains two independent clauses that have been run together with no punctuation between them: 'precise coordinates could now be determined within meters anywhere on Earth' (subject: 'coordinates,' verb: 'could be determined') and 'it became possible to compile global databases of topographic data that superseded all previous mapping efforts' (subject: 'it,' verb: 'became'). Fusing two independent clauses without any punctuation or conjunction creates a run-on sentence, which is the error in Choice A. Choice B inserts only a comma between the two independent clauses, producing a comma splice — a comma alone cannot join two independent clauses. Choice C correctly places a period after the first independent clause and capitalizes the second, producing two grammatically complete sentences. Choice D uses 'semicolon + and,' which is non-standard: a semicolon already signals that two independent clauses are being connected, so adding a coordinating conjunction ('and') is redundant and incorrect in Standard English.",
+  "distractorRationale": {
+    "A": "The original presents two independent clauses fused together with no punctuation — a run-on sentence. 'Precise coordinates could now be determined within meters anywhere on Earth' and 'it became possible to compile global databases' are both independent clauses that require a proper boundary between them.",
+    "B": "Inserting a comma between the two independent clauses ('...anywhere on Earth, it became possible...') creates a comma splice. A comma alone is insufficient to join two independent clauses in Standard English.",
+    "C": "Correct. Placing a period after the first independent clause ('...anywhere on Earth.') and beginning a new sentence with 'It became possible...' correctly separates the two independent clauses and eliminates the run-on.",
+    "D": "Using 'semicolon + and' ('...anywhere on Earth; and it became possible...') is non-standard. A semicolon already functions as a connector between two independent clauses; pairing it with the coordinating conjunction 'and' is redundant and incorrect in Standard English conventions."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1b3a7e4-68c2-4d11-9e05-2b7f8d0c6a42"
+  },
+  "hasImage": false
+}

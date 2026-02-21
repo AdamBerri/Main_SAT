@@ -1,0 +1,54 @@
+{
+  "id": "b7d4e8f2-93a1-4c2d-ae5b-6f0e9c2d4a87",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "computational": 1.1
+  },
+  "stem": "The function $g$ is defined by $g(x) = 3 \\cdot 2^x$. What is the value of $g(4)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$19$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$24$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$48$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$96$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Substitute $x = 4$ into $g(x) = 3 \\cdot 2^x$:\n\n$$g(4) = 3 \\cdot 2^4$$\n$$= 3 \\cdot 16$$\n$$= 48$$\n\nThe value of $g(4)$ is $\\mathbf{48}$.",
+  "distractorRationale": {
+    "A": "A student who adds instead of multiplies the coefficient computes $3 + 2^4 = 3 + 16 = 19$. This error treats the coefficient as being added to the exponential term rather than multiplied.",
+    "B": "A student who treats $2^x$ as $2 \\cdot x$ (confusing exponentiation with multiplication) computes $3 \\cdot 2 \\cdot 4 = 24$. This error replaces the exponent operation with simple multiplication.",
+    "C": "This is the correct answer: $g(4) = 3 \\cdot 2^4 = 3 \\cdot 16 = 48$.",
+    "D": "A student who computes $2^4$ correctly as $16$ but then mistakenly doubles the coefficient, using $6$ instead of $3$, gets $6 \\cdot 16 = 96$. This error could come from misreading or miscopying the leading coefficient."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2b3c4d5-e6f7-4890-abcd-ef1234567890"
+  }
+}

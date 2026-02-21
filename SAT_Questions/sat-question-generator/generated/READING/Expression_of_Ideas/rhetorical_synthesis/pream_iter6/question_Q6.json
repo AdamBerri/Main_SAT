@@ -1,0 +1,59 @@
+{
+  "id": "d0e1f2a3-b4c5-4d6e-7f8a-9b0c1d2e3f4a",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "linguistic": 2.3
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system.\n- Rising ocean temperatures cause coral bleaching, a process in which corals expel the algae that give them color and nutrients.\n- A 2020 study found that the Great Barrier Reef had lost more than half its coral populations since 1995.\n- Conservation efforts include reducing water pollution and limiting coastal development near the reef.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 74,
+    "source": "Student research notes on coral reef conservation"
+  },
+  "stem": "The student wants to explain why the Great Barrier Reef is in decline. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The Great Barrier Reef is the world's largest coral reef system and is located off the coast of Australia.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Conservation efforts such as reducing pollution and limiting coastal development aim to protect the Great Barrier Reef.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Rising ocean temperatures cause coral bleaching, which has contributed to the Great Barrier Reef losing more than half its coral populations since 1995.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Coral bleaching occurs when corals expel the algae that provide them with color and nutrients.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Choice C is correct because it links the cause (rising ocean temperatures causing coral bleaching) to the measurable decline (loss of more than half the coral since 1995), directly explaining why the reef is in decline. The other choices describe the reef (A), conservation responses (B), or define bleaching without connecting it to the reef's decline (D).",
+  "distractorRationale": {
+    "A": "This choice describes the reef's location and status as the largest reef system but does not address why it is declining.",
+    "B": "This choice focuses on conservation efforts rather than explaining the cause of the decline.",
+    "D": "This choice defines coral bleaching but does not connect it to rising temperatures or the reef's measurable loss."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:05.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

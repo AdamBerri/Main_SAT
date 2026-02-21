@@ -1,0 +1,54 @@
+{
+  "id": "6b722b8c-7fe9-457f-805c-1dededfeb2ab",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "computational": 3.2
+  },
+  "stem": "A swimming pool holds 480 gallons and is currently 25% full. A hose fills the pool at a rate of 9 gallons per minute, and a drain simultaneously removes water at a rate of 3 gallons per minute. How many minutes will it take to completely fill the pool with both the hose and drain open?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "20",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "30",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "60",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "80",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Find the current amount of water in the pool. $$0.25 \\times 480 = 120 \\text{ gallons currently in the pool}$$\n\nStep 2: Find how many gallons are still needed to fill the pool. $$480 - 120 = 360 \\text{ gallons remaining}$$\n\nStep 3: Find the net fill rate with both the hose and drain open. $$9 - 3 = 6 \\text{ gallons per minute (net)}$$\n\nStep 4: Divide the remaining volume by the net rate. $$\\frac{360}{6} = 60 \\text{ minutes}$$",
+  "distractorRationale": {
+    "A": "Part-to-whole vs part-to-part confusion — the student uses the current water level (120 gallons, which is 25% of 480) as the volume to fill, rather than computing the remaining volume (480 \u2212 120 = 360 gallons). Wrong calculation: $120 \\div 6 = 20$ minutes.",
+    "B": "Direct vs inverse proportion confusion — the student adds the hose and drain rates instead of subtracting, treating the drain as if it also fills the pool. Wrong calculation: net rate $= 9 + 3 = 12$ gal/min; time $= 360 \\div 12 = 30$ minutes.",
+    "C": "Correct answer. Remaining water $= 480 - 0.25(480) = 360$ gal; net rate $= 9 - 3 = 6$ gal/min; time $= 360 \\div 6 = 60$ min.",
+    "D": "Rate applied to wrong quantity — the student correctly computes the net fill rate ($9 - 3 = 6$ gal/min) but applies it to the full pool capacity instead of the remaining volume. Wrong calculation: $480 \\div 6 = 80$ minutes."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "aefe8257-11bf-44b8-8252-c6f433c89369"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "f7a1b6c5-8d3e-4f4a-0c2b-5e9d6a1f8c4b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "Making bread requires only a few basic steps. First, combine flour, water, yeast, and salt in a large bowl and mix until a rough dough forms. Next, knead the dough for about ten minutes until it becomes smooth and elastic. Kneading develops gluten, the protein network that gives bread its chewy texture. Then, place the dough in a greased bowl, cover it, and let it rise in a warm spot for one to two hours. During this time, the yeast consumes sugars and releases carbon dioxide, causing the dough to double in size.\n\nAfter the dough has risen, punch it down to release the gas, shape it into a loaf, and place it in a bread pan. Allow it to rise a second time for about thirty minutes. Finally, bake the loaf in a preheated oven at 375 degrees for thirty to thirty-five minutes, until the crust turns golden brown. When you tap the bottom of the finished loaf, it should sound hollow — a sign that the bread is fully baked.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 171,
+    "source": "Original passage modeled on instructional how-to writing"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A general description of bread is followed by the history of baking.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Steps in a process are presented in sequential order.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Two different bread-making methods are compared side by side.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Problems that arise during baking are explained, then solutions are given.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage walks the reader through the bread-making process from beginning to end using explicit sequence markers: 'First,' 'Next,' 'Then,' 'After,' and 'Finally.' Each step must be completed before the next can begin, and the passage presents them in the order they occur. This straightforward sequential or process structure is the clear dominant pattern.",
+  "distractorRationale": {
+    "A": "The passage contains no historical information about bread or baking. It does not begin with a general description of bread; it goes directly into the steps of making bread.",
+    "B": "Correct. The passage uses explicit transition words (First, Next, Then, After, Finally) to present each stage of the bread-making process in the order it must be performed.",
+    "C": "Only one bread-making method is described. The passage does not present an alternative technique or compare different approaches. No comparison is made.",
+    "D": "The passage does not identify problems that arise during baking. Brief explanations of why steps are done (e.g., kneading develops gluten, yeast releases carbon dioxide) are embedded in the sequence, but these are part of describing the steps, not a problem-solution framework."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f"
+  },
+  "hasImage": false
+}

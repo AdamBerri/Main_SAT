@@ -1,0 +1,58 @@
+{
+  "id": "e8f7a6b5-c4d3-4e2f-9a0b-1c2d3e4f5a6b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "Bread has been a staple food in human diets for thousands of years. The basic process of making bread involves mixing flour, water, and a leavening agent such as yeast, then allowing the dough to rise before baking it. When yeast is added to dough, it consumes sugars and releases carbon dioxide gas, which forms bubbles that make the dough expand. Heat from the oven causes these bubbles to set permanently, giving bread its characteristic light and airy texture. Different types of flour produce different results: whole wheat flour creates a denser loaf with a slightly nutty flavor, while refined white flour yields a softer, milder bread. Bakers can also adjust the amount of water in a recipe to change how the final bread turns out. More water tends to produce a chewier crumb, while less water results in a tighter, drier texture.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 143,
+    "source": "Adapted from a food science educational article on bread baking"
+  },
+  "stem": "What is the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To explain the science and techniques behind how bread is made",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "To argue that homemade bread is healthier than store-bought bread",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "To trace the history of bread from ancient times to the modern era",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "To compare the flavor profiles of different regional bread traditions worldwide",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage walks readers through the bread-making process: ingredients, the role of yeast in creating carbon dioxide, how heat sets the structure, and how variations in flour and water affect the final product. Every sentence either explains a step in the process or describes the science behind a specific result. The author's goal is to inform readers about how bread is made and why certain choices produce certain outcomes. No health claims, historical timeline, or cross-cultural comparisons appear in the passage.",
+  "distractorRationale": {
+    "A": "Correct. The passage covers the chemistry of yeast fermentation, the effect of heat, and how ingredient choices (flour type, water amount) affect texture and flavor — all aimed at explaining the science and technique of bread making.",
+    "B": "The passage never mentions health benefits, nutritional content, or any comparison between homemade and store-bought bread. This argument is entirely absent.",
+    "C": "The passage opens by noting bread has existed for thousands of years, but this is a brief framing detail, not the organizing focus. The passage does not trace a historical narrative.",
+    "D": "While the passage mentions that different flours produce different flavors, it does not compare bread traditions from different regions or cultures. The comparison is limited to ingredient types within the bread-making process."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3d4e5f6-a7b8-9012-cdef-123456789012"
+  },
+  "hasImage": false
+}

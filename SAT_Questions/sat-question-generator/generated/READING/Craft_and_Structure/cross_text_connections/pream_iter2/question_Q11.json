@@ -1,0 +1,58 @@
+{
+  "id": "c3f7a1b2-9d4e-4c8a-b5f6-2e1d9a7c3b8f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "linguistic": 3.3
+  },
+  "passage": "Text 1\nThe decline of coral reefs is most accurately understood as a symptom of systemic ocean acidification rather than isolated thermal events. As oceans absorb atmospheric carbon dioxide, carbonate ion concentrations drop, compromising the calcification processes that reef-building organisms depend upon. Temporary temperature spikes trigger visible bleaching, but the underlying chemical shift represents a more fundamental and irreversible disruption to marine carbonate chemistry.\n\nText 2\nRecent field studies in the Indo-Pacific document coral communities demonstrating measurable thermal acclimation over successive generations. Genetic analyses reveal that heat-tolerant allele frequencies have increased substantially in reef populations subjected to recurring warm-water events. These findings suggest that reef ecosystems retain adaptive potential that static models of decline have historically underestimated.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 131,
+    "source": "Adapted from contemporary marine ecology literature"
+  },
+  "stem": "Based on the passages, how do the two authors' perspectives on coral reef decline most clearly differ?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 argues that thermal events cause irreversible reef damage, while Text 2 argues that ocean acidification is the primary threat.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 focuses on a chemical process that limits reef recovery, while Text 2 presents biological evidence that reefs may have more resilience than Text 1's framework implies.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 1 and Text 2 agree that temperature fluctuations drive reef decline but disagree about which ocean regions are most affected.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 emphasizes long-term chemical trends, while Text 2 argues that those same chemical trends are what enable coral genetic adaptation.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 argues that ocean acidification represents a fundamental, irreversible disruption to reef-building chemistry, implying limited recovery potential. Text 2 counters this by presenting field evidence of coral populations developing thermal tolerance through genetic adaptation, suggesting reefs are more resilient than decline models predict. Choice B accurately captures this contrast: Text 1's chemical-disruption framework implies constrained futures for reefs, while Text 2's biological findings complicate that picture by demonstrating adaptive capacity.",
+  "distractorRationale": {
+    "A": "This inverts the texts' actual positions. Text 1 identifies ocean acidification as the root cause, not thermal events. Text 2 focuses on thermal acclimation, not acidification. The choice has the texts' subjects reversed.",
+    "B": "Correct. Text 1 emphasizes irreversible carbonate chemistry disruption, implying poor resilience; Text 2 provides genetic evidence of adaptive capacity, directly complicating Text 1's implied prognosis.",
+    "C": "Neither text expresses agreement that temperature fluctuations are the primary driver. Text 1 explicitly distinguishes thermal bleaching from the deeper acidification problem. The texts do not share a common causal focus.",
+    "D": "Text 2 does not address ocean acidification at all; its adaptive evidence concerns thermal tolerance. The choice fabricates a connection between the chemical trends in Text 1 and the genetic findings in Text 2."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1f2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c"
+  },
+  "hasImage": false
+}

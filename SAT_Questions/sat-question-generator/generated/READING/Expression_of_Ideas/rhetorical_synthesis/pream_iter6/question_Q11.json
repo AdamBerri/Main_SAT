@@ -1,0 +1,59 @@
+{
+  "id": "a0b1c2d3-e4f5-4a6b-7c8d-9e0f1a2b3c4d",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "linguistic": 3.3
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- The city of Venice, Italy, was built on more than 100 small islands in a shallow lagoon.\n- Wooden pilings driven deep into the clay beneath the lagoon support the city's buildings.\n- Over centuries, the extraction of groundwater from beneath Venice caused the land to sink.\n- Rising sea levels due to climate change have increased the frequency of flooding in Venice.\n- In 2020, Italy completed the MOSE barrier system, a series of movable gates designed to block high tides from entering the lagoon.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 93,
+    "source": "Student research notes on Venice flooding"
+  },
+  "stem": "The student wants to explain why Venice has become increasingly vulnerable to flooding. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Venice was built on over 100 islands in a lagoon, with buildings supported by wooden pilings driven into clay beneath the water.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Venice faces increasing floods because the land has been sinking due to past groundwater extraction while sea levels continue to rise from climate change.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Italy completed the MOSE barrier system in 2020, using movable gates to block high tides from flooding Venice's lagoon.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Rising sea levels from climate change have made flooding more frequent in Venice, a city built on islands in a shallow lagoon.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it identifies both contributing factors that have made Venice more vulnerable: the land sinking from groundwater extraction (a historical cause) and rising sea levels from climate change (an ongoing cause). Together, these explain the increasing vulnerability. Choice D mentions only rising sea levels and omits the sinking land, making it incomplete.",
+  "distractorRationale": {
+    "A": "This choice describes Venice's physical construction but does not explain why the city has become more vulnerable to flooding over time.",
+    "C": "This choice focuses on a response to flooding (the MOSE barriers) rather than explaining the causes of increased vulnerability.",
+    "D": "This choice mentions rising sea levels and Venice's island geography but omits the sinking land caused by groundwater extraction, providing only a partial explanation."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:10.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b1c2d3e4-f5a6-4b7c-8d9e-0f1a2b3c4d5e"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

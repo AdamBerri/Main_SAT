@@ -1,0 +1,54 @@
+{
+  "id": "2b6f4e8a-1c9d-4b7f-e3a5-8c0f2e4b6d1a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "In right triangle $ABC$, the right angle is at $C$. The altitude from $C$ to hypotenuse $\\overline{AB}$ meets $\\overline{AB}$ at point $H$. If $AH = 4$ and $HB = 9$, what is the value of $AC + BC$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$5\\sqrt{13}$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$25$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$5\\sqrt{6}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$6\\sqrt{13}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "When the altitude from the right angle is drawn to the hypotenuse, three similar right triangles are formed. The geometric mean (leg) relationships state:\n$$AC^2 = AH \\cdot AB \\quad \\text{and} \\quad BC^2 = HB \\cdot AB$$\n\nStep 1: Find $AB$.\n$$AB = AH + HB = 4 + 9 = 13$$\n\nStep 2: Apply the geometric mean (leg) relations.\n$$AC^2 = AH \\cdot AB = 4 \\cdot 13 = 52 \\implies AC = \\sqrt{52} = 2\\sqrt{13}$$\n$$BC^2 = HB \\cdot AB = 9 \\cdot 13 = 117 \\implies BC = \\sqrt{117} = 3\\sqrt{13}$$\n\nStep 3: Add the two legs.\n$$AC + BC = 2\\sqrt{13} + 3\\sqrt{13} = 5\\sqrt{13}$$\n\nVerification: $AC^2 + BC^2 = 52 + 117 = 169 = 13^2 = AB^2$ \\checkmark (Pythagorean theorem)",
+  "distractorRationale": {
+    "A": "Correct. Using $AC^2 = AH \\cdot AB = 52$ and $BC^2 = HB \\cdot AB = 117$ gives $AC + BC = 2\\sqrt{13} + 3\\sqrt{13} = 5\\sqrt{13}$.",
+    "B": "The student spatially misidentifies $H$ as lying on the legs rather than on the hypotenuse, computing $AC = AH + CH = 4 + 6 = 10$ and $BC = HB + CH = 9 + 6 = 15$ (where $CH = \\sqrt{AH \\cdot HB} = 6$ is correctly found), giving the incorrect sum $10 + 15 = 25$.",
+    "C": "The student uses the altitude $CH = \\sqrt{AH \\cdot HB} = 6$ but then applies the wrong geometric mean formula: $AC = \\sqrt{AH \\cdot CH} = \\sqrt{4 \\cdot 6} = 2\\sqrt{6}$ and $BC = \\sqrt{HB \\cdot CH} = \\sqrt{9 \\cdot 6} = 3\\sqrt{6}$, confusing $CH$ with $AB$ in the leg-on-hypotenuse formula, and getting $AC + BC = 5\\sqrt{6}$.",
+    "D": "The student correctly finds $AC = 2\\sqrt{13}$ and $BC = 3\\sqrt{13}$ but then multiplies the integer coefficients rather than adding them: $2 \\times 3 = 6$, reporting $AC + BC = 6\\sqrt{13}$ instead of $5\\sqrt{13}$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5b8c3f7-2a6d-4e1f-b9c4-7f0a3d6e8b2c"
+  }
+}

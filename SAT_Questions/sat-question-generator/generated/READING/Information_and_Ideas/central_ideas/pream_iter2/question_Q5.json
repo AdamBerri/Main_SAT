@@ -1,0 +1,57 @@
+{
+  "id": "f7a2c5d6-1e4b-4f3a-9c5e-8b2d6f4a1c9e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "Exercise has clear benefits for the human brain. Physical activity increases blood flow to the brain, delivering more oxygen and nutrients to brain cells. It also triggers the release of chemicals called neurotrophins, which help brain cells grow and form new connections. Studies show that people who exercise regularly perform better on tests of memory and attention than those who do not. Even a single workout can improve a person's mood and ability to focus for several hours afterward. Scientists now view regular physical activity as one of the best things a person can do to support long-term brain health.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 100,
+    "source": "Original passage on health and neuroscience"
+  },
+  "stem": "What is the passage mainly about?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Exercise releases neurotrophins that allow brain cells to grow and form connections with each other.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "People who exercise regularly show measurable improvements in memory and attention compared to sedentary people.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Regular physical activity supports brain health through multiple mechanisms and has both immediate and long-term benefits.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "A single exercise session can temporarily improve a person's mood and ability to concentrate.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage discusses multiple ways exercise benefits the brain: increased blood flow, release of neurotrophins, improved memory and attention scores, and immediate mood and focus improvements. It concludes that scientists view exercise as 'one of the best things a person can do to support long-term brain health.' Choice C correctly captures the full scope — multiple mechanisms and both immediate and long-term benefits — which is what the passage as a whole argues.",
+  "distractorRationale": {
+    "A": "The release of neurotrophins is one specific mechanism described in the passage, but it is a supporting detail rather than the main idea. The passage covers several mechanisms and effects beyond neurotrophins.",
+    "B": "The comparison between regular exercisers and non-exercisers is mentioned as evidence from studies, but it represents only one piece of evidence in a broader argument about exercise and brain health.",
+    "D": "The immediate effects of a single workout (mood and focus) are mentioned as one supporting example, but the passage emphasizes long-term brain health and multiple mechanisms. This choice captures a minor detail from a single sentence."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5a8d3f1-2c7b-4e9d-a1f4-6b3c9e2d5f8a"
+  },
+  "hasImage": false
+}

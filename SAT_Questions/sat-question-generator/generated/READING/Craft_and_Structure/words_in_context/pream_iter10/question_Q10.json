@@ -1,0 +1,57 @@
+{
+  "id": "c5e1a9f3-7b4d-4c8e-a2f6-9d3b0e5a7c1f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "The documentary filmmaker spent three years following a group of young athletes training for the Olympic trials. Her final film runs nearly four hours, but she chose to release a condensed version for streaming platforms, trimming footage that she felt slowed the story's momentum without adding emotional depth.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 55,
+    "source": "Original passage"
+  },
+  "stem": "As used in the passage, \"trimming\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "decorating",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "cutting",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "adjusting",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "balancing",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In the passage, 'trimming' describes what the filmmaker did to her four-hour film to create a condensed version — she removed footage. 'Cutting' is the most precise match because it means removing portions of something to make it shorter, which is exactly what the filmmaker did. The passage specifies she released a 'condensed version,' directly indicating that material was removed.",
+  "distractorRationale": {
+    "A": "'Decorating' is a meaning of 'trimming' in the sense of adding ornamental details (e.g., trimming a Christmas tree), but the passage describes shortening a film, not adding anything to it.",
+    "C": "'Adjusting' suggests making modifications or fine-tuning, but it does not capture the specific action of removing footage to make the film shorter, which is what 'condensed version' indicates.",
+    "D": "'Balancing' is a meaning of 'trim' in nautical or aviation contexts (adjusting sails or aircraft trim for balance), but nothing in the passage about filmmaking suggests a meaning related to equilibrium or balance."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4f8b2c6-9e1a-4d7f-8c3b-5a2e0f9d1c8b"
+  },
+  "hasImage": false
+}

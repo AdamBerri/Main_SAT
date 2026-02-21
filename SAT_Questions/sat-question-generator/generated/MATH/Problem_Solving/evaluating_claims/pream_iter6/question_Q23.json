@@ -1,0 +1,54 @@
+{
+  "id": "d4b8e5c3-f291-4a7d-b860-3f1c6d2e0a48",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "A school district administered a new reading intervention program to 3rd graders who scored below grade level. The district randomly selected 60 below-grade-level 3rd graders from across the district and assigned all 60 to the intervention. After one semester, 45 of the 60 students (75%) scored at or above grade level. The district concluded: \"This program is effective — it causes below-grade-level 3rd graders to improve their reading scores.\" A researcher reviewing the study notes that the district has approximately 300 below-grade-level 3rd graders total. Which of the following most accurately identifies the primary flaw in the district's conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The sample of 60 students is only 20% of the 300 below-grade-level 3rd graders, so the 75% improvement rate cannot be generalized to all below-grade-level 3rd graders in the district.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The study lacks a control group of below-grade-level students who did not receive the intervention, so it is impossible to determine whether the improvement was caused by the program or by natural development over the semester.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The students were not randomly selected from all 3rd graders in the district — only below-grade-level students were included — so no conclusion about reading improvement can be made.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The study is invalid because the improvement was measured using the same grade-level benchmark used to identify below-grade-level students at the start, creating a circular assessment.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The district's claim is causal: the program causes improvement. To establish that the program caused the improvement — rather than natural reading development, increased school experience, or regression to the mean — the study requires a comparison group. Without a control group of similar below-grade-level students who did not receive the intervention, the 75% improvement rate has no baseline against which to be judged. It is entirely possible that 75% or more of below-grade-level 3rd graders would reach grade level by semester's end through normal development, regardless of any intervention. This is the defining limitation of a study with no control group: you cannot separate the effect of the treatment from the effect of time and natural progression.\n\nNote that the study does have genuine strengths: the 60 students were randomly selected from the district's 300 below-grade-level 3rd graders, which means the results can be generalized to that specific population. This eliminates Choice A as a valid criticism — a randomly selected 20% of a defined population is an adequate sample for generalization. Choice C is also wrong: the population of interest is explicitly below-grade-level 3rd graders, not all 3rd graders, so restricting the sample to that group is appropriate and does not undermine the conclusion. Choice D describes a plausible but secondary concern about measurement that is not the primary or most damaging flaw in the causal reasoning.",
+  "distractorRationale": {
+    "A": "This choice misapplies sample size reasoning. A randomly selected sample of 60 from 300 is a 20% random sample, which is more than adequate to generalize to the full population of 300 below-grade-level 3rd graders. The problem is not the proportion of the population sampled but the absence of a comparison group to support causal claims.",
+    "B": "Correct. Without a control group of comparable students who did not receive the intervention, the observed 75% improvement rate cannot be attributed to the program. Natural maturation, regression to the mean, or other factors could fully explain the result.",
+    "C": "This choice incorrectly applies the concept of random sampling. The population of interest is specifically below-grade-level 3rd graders, and the sample was randomly drawn from exactly that population. Restricting the sample to the target population is methodologically correct, not a flaw.",
+    "D": "While using the same benchmark at start and end is worth considering, this is not the primary flaw. The benchmark provides a consistent measure of the same skill. The fundamental problem is the absence of a control group, which prevents any causal conclusion regardless of how the measurement instrument is designed."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e73f1d28-5c04-4b9e-a1f3-8d6b0e2c4a57"
+  }
+}

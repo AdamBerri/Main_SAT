@@ -1,0 +1,38 @@
+{
+  "id": "c6d7e8f9-a0b1-4c2d-3e4f-5a6b7c8d9e0f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "A rental company charges $15 per day for a bicycle. A customer wants to rent a bicycle and has a budget of at most $85. After paying a $10 security deposit, what is the greatest number of full days the customer can rent the bicycle?",
+  "choices": [
+    { "label": "A", "text": "4", "isCorrect": false },
+    { "label": "B", "text": "6", "isCorrect": false },
+    { "label": "C", "text": "5", "isCorrect": true },
+    { "label": "D", "text": "3", "isCorrect": false }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Set up the inequality: $10 + 15d \\leq 85$. Subtract 10: $15d \\leq 75$. Divide by 15: $d \\leq 5$. The greatest number of full days is 5.",
+  "distractorRationale": {
+    "A": "Cluster B error: Made an arithmetic mistake subtracting the deposit: $85 - 10 = 75$, then computed $75 \\div 15 = 5$, but subtracted 1 thinking the deposit counts as the first day's fee, getting 4.",
+    "B": "Cluster D error: Forgot to subtract the security deposit and solved $15d \\leq 85$, getting $d \\leq 5.67$, rounded up to 6.",
+    "C": "Correct. $10 + 15d \\leq 85$ gives $d \\leq 5$.",
+    "D": "Cluster C error: Treated the budget as strictly less than $85, then also subtracted the deposit twice (once from the budget, once from the remaining), getting $15d < 60$, $d < 4$, chose 3."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:09.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d7e8f9a0-b1c2-4d3e-4f5a-6b7c8d9e0f1a"
+  }
+}

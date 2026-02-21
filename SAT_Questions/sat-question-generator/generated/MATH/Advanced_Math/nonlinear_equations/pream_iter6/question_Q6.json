@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2d1-84e5-4b19-9c6a-2f0e8d3a7b45",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "What is the sum of all solutions to the equation $x^2 - 7x + 10 = 0$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$5$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$7$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$10$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Factor the quadratic equation $x^2 - 7x + 10 = 0$. We need two numbers that multiply to $10$ and add to $-7$. Those numbers are $-2$ and $-5$, so the equation factors as $(x - 2)(x - 5) = 0$.\n\nSetting each factor equal to zero gives $x = 2$ or $x = 5$.\n\nVerification:\n- $x = 2$: $(2)^2 - 7(2) + 10 = 4 - 14 + 10 = 0$ ✓\n- $x = 5$: $(5)^2 - 7(5) + 10 = 25 - 35 + 10 = 0$ ✓\n\nThe sum of all solutions is $2 + 5 = 7$.",
+  "distractorRationale": {
+    "A": "Choice A = 2: Results from identifying only the smaller root $x = 2$ as the answer, ignoring $x = 5$. This represents an incomplete solution where the student stops after finding the first factor.",
+    "B": "Choice B = 5: Results from identifying only the larger root $x = 5$ as the answer, ignoring $x = 2$. Verification: $(x-5)=0$ gives $x=5$ only, so $5$ is reported instead of the sum.",
+    "C": "Choice C = 7: Correct. The sum of the two solutions $2 + 5 = 7$. By Vieta's formulas, the sum of roots also equals $-(-7)/1 = 7$.",
+    "D": "Choice D = 10: Results from reporting the constant term $10$ from the equation $x^2 - 7x + 10 = 0$, confusing the product of roots (which equals $10$ by Vieta's formulas) with the sum. The product of roots $2 \times 5 = 10$, but the question asks for the sum."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b9e2a4f7-c1d5-4e83-8f6b-3a0d7c9e2b14"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "e0f1a2b3-c4d5-4e6f-7a8b-9c0d1e2f3a46",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "The restaurant owner expected that the new downtown location would attract more customers because of its proximity to the business district. _______ the suburban location, which lacked nearby office buildings, continued to generate higher revenue each month.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 57,
+    "source": "Adapted from a small business analysis"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Specifically,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Therefore,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Yet",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Similarly,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The owner expected the downtown location to outperform, but the suburban location actually generated more revenue. This directly contradicts the expectation, creating a contrast. 'Yet' correctly signals this unexpected outcome that opposes what was anticipated.",
+  "distractorRationale": {
+    "A": "'Specifically' introduces a more detailed version of the same point, but the second sentence contradicts rather than elaborates on the first.",
+    "B": "'Therefore' signals that the second sentence follows logically from the first, but the suburban location outperforming contradicts the expectation set up in the first sentence.",
+    "C": "Correct. 'Yet' signals the contrast between the expectation (downtown would attract more customers) and the reality (suburban generated higher revenue).",
+    "D": "'Similarly' draws a parallel, but the passage presents opposite outcomes for the two locations."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:01:04.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b56"
+  },
+  "hasImage": false
+}

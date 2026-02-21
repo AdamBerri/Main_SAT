@@ -1,0 +1,54 @@
+{
+  "id": "759cae06-5e4d-487d-9f6d-d9053d4863b9",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "Two lab technicians, Priya and Quinn, process samples at their respective workstations. Together they process 15 samples per hour. Priya processes 3 more samples per hour than Quinn. If $p$ represents Priya's rate (in samples per hour) and $q$ represents Quinn's rate, what is the value of $p + 2q$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$17$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$21$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$24$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$30$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Set up the system using the two given conditions:\n$$p + q = 15 \\quad (1)$$\n$$p = q + 3 \\quad (2)$$\n\nSubstitute equation (2) into equation (1):\n$$(q + 3) + q = 15$$\n$$2q + 3 = 15$$\n$$2q = 12$$\n$$q = 6$$\n\nBack-substitute: $p = 6 + 3 = 9$.\n\nChecking both equations:\n- Equation (1): $9 + 6 = 15$ ✓\n- Equation (2): $9 = 6 + 3$ ✓\n\nNow compute the requested expression:\n$$p + 2q = 9 + 2(6) = 9 + 12 = 21$$\n\nThe value of $p + 2q$ is $\\boxed{21}$.",
+  "distractorRationale": {
+    "A": "Substitution arithmetic error: the student correctly finds $p = 9$ and $q = 6$ but evaluates the expression as $p + 2 + q = 9 + 2 + 6 = 17$ (treating the coefficient 2 as a separate addend rather than multiplying it by $q$).",
+    "B": "Correct answer: solving gives $q = 6$ and $p = 9$, so $p + 2q = 9 + 12 = 21$.",
+    "C": "Wrong-variable error in expression: the student finds $p = 9$ and $q = 6$ correctly but computes $2p + q = 2(9) + 6 = 18 + 6 = 24$ (uses $2p + q$ instead of $p + 2q$, swapping which variable gets the coefficient of 2).",
+    "D": "Sign flip during substitution: the student sets up $2q + 3 = 15$ but solves it as $2q = 15 + 3 = 18$ (adds 3 instead of subtracting), getting $q = 9$ and $p = 12$; then $p + 2q = 12 + 2(9) = 12 + 18 = 30$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f224af19-b94c-40db-9e43-765efa7d79c3"
+  }
+}

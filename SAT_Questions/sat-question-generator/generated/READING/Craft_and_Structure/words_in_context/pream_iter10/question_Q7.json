@@ -1,0 +1,57 @@
+{
+  "id": "d4f9a3e2-8c1b-4a7f-9e5d-3b0c6a8f2e1d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "The architect's portfolio revealed a striking evolution in her approach: her earliest buildings were rigidly symmetrical, but over two decades her designs began to incorporate organic curves and unexpected angles. Critics noted that her later work seemed to draw on influences from the natural landscape of her coastal hometown, where cliffs and tidal formations had long captured her attention.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 63,
+    "source": "Original passage"
+  },
+  "stem": "As used in the passage, \"draw on\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "sketch from",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "pull from",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "derive from",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "depict from",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "In the passage, 'draw on' describes the relationship between the architect's later designs and the coastal landscape of her hometown — her work takes its character or qualities from that environment. 'Derive from' precisely captures this sense of obtaining or developing something from a source. The phrase is not about sketching or depicting the landscape, nor is 'pull from' — while close — as precise as 'derive from,' which carries the specific sense of obtaining qualities or inspiration from a source in an intellectual or creative context.",
+  "distractorRationale": {
+    "A": "'Sketch from' is a meaning of 'draw' in the visual arts sense (to make marks on paper), but the passage describes the source of creative influences, not a literal drawing activity.",
+    "B": "'Pull from' is colloquially close to 'derive from' but is more physical in connotation; in the context of an architect's work being shaped by landscape influences over decades, 'derive from' is more precise and contextually apt.",
+    "D": "'Depict from' is not a standard use of 'draw on,' and while 'draw' can mean to depict, the phrase 'draw on' in this context refers to the source of inspiration, not the act of representing something visually."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5a0b3f4-9c2d-4e8a-8f7b-1c4d6e2a9b5f"
+  },
+  "hasImage": false
+}

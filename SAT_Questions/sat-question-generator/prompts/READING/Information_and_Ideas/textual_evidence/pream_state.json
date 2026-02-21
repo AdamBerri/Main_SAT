@@ -172,7 +172,7 @@
             "category": "minimal_error_opportunity",
             "frequency": 3,
             "exampleErrors": [
-              "No calculation required, no complex terminology, no ambiguous pronouns or sentence structures\u2014linguistic difficulty does not match conceptual demands, creating easy elimination paths",
+              "No calculation required, no complex terminology, no ambiguous pronouns or sentence structures—linguistic difficulty does not match conceptual demands, creating easy elimination paths",
               "Limited reading comprehension pitfalls because the disagreement between texts is stated explicitly rather than embedded, requiring only surface-level text matching",
               "Question lacks interpretive ambiguity and competing reasonable answers that would create meaningful opportunities for student error or sophisticated misconception targeting"
             ]
@@ -192,11 +192,68 @@
       },
       "improvementMade": "Addressed: difficulty_overestimation, transparent_answer_elimination, insufficient_inference_demand",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.226,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "weak_distractors_low_difficulty",
+            "frequency": 4,
+            "exampleErrors": [
+              "Q6,Q7 d2 scored 2 on distractor_quality — easily eliminated by fact-checking",
+              "Q8,Q10 d2 scored 3 — address different aspects"
+            ]
+          },
+          {
+            "category": "weak_distractors_medium_hard",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q18 d4 distractor uses weak misconception framing"
+            ]
+          },
+          {
+            "category": "distractor_quality_universal_weakness",
+            "frequency": 5,
+            "exampleErrors": [
+              "All 5 bottom questions share distractor_quality as weakest dimension"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.8,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: weak_distractors_low_difficulty (require passage-grounded distractors at all levels), weak_distractors_medium_hard (require cross-source verification), distractor_quality_universal_weakness (added critical distractor design section with level-specific rules)",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.313,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.825,
+        "passRate": 1
+      },
+      "improvementMade": "Converged at +0.5%. 100% pass rate on both sets.",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.1.0",
-  "converged": false,
+  "currentBestVersion": "1.3.0",
+  "converged": true,
   "startedAt": "2026-01-08T18:49:18.694Z",
-  "completedAt": null,
-  "bestTestScore": 0
+  "completedAt": "2026-02-20T00:12:49.314Z",
+  "bestTestScore": 4.825
 }

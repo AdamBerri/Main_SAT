@@ -1,0 +1,54 @@
+{
+  "id": "e1a6b7c8-2f9d-4e4b-f5a0-6b3d1c427a8b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "Pencils are sold at a price of $0.25 per pencil. What is the total cost, in dollars, of 8 pencils?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$0.25",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$1.60",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$2.00",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$3.20",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To find the total cost, multiply the unit price by the number of pencils.\n\n$$8 \\text{ pencils} \\times \\frac{\\$0.25}{1 \\text{ pencil}} = \\$2.00$$\n\nThe pencils unit cancels, leaving dollars. The total cost of 8 pencils is $2.00.",
+  "distractorRationale": {
+    "A": "Stops one step early: reports only the unit price ($0.25 per pencil) without multiplying by the quantity of 8 pencils.",
+    "B": "Wrong unit price: uses $0.20 per pencil instead of $0.25, giving $8 \\times \\$0.20 = \\$1.60$. The student misremembers or misreads the given price as 20 cents rather than 25 cents.",
+    "C": "Correct: $8 \\times \\$0.25 = \\$2.00$.",
+    "D": "Wrong unit price: uses $0.40 per pencil instead of $0.25, giving $8 \\times \\$0.40 = \\$3.20$. The student misremembers the unit price as 40 cents rather than the stated 25 cents."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f4a5b6c7-de89-4f01-a234-5b6c7d8e9f0a"
+  }
+}

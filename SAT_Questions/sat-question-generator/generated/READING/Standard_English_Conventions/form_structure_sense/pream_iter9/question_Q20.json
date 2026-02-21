@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "511a29ce-9d0a-4751-ad20-006a2aa6d977",
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "passage": "Behavioral psychologists have studied the phenomenon of 'decision fatigue'—the tendency for the quality of decisions to deteriorate after a long session of decision-making. Judges, for example, have been shown to make more favorable rulings early in the day than later in the afternoon. Researchers recommend that anyone facing a series of important decisions [1]_____ the most consequential choices first, when cognitive resources are freshest.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 68,
+    "source": "Adapted from a behavioral psychology review"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "addresses",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "address",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "addressed",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "should address",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests the mandative subjunctive after 'recommend that.' The subjunctive requires the base form regardless of the subject's number. 'Anyone' is singular and would normally take 'addresses' in the indicative, but the subjunctive overrides: 'recommend that anyone...address.' The difficulty arises from the intervening participial phrase 'facing a series of important decisions' between the subject and verb.",
+  "distractorRationale": {
+    "A": "Indicative singular—correct number but wrong mood. Subjunctive is required.",
+    "B": "Correct. Base form (subjunctive) after 'recommend that.'",
+    "C": "Past tense—violates the subjunctive requirement.",
+    "D": "Modal construction—standard American subjunctive uses bare base form without modals."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "66ffb5c9-c8a6-48c7-b05b-372b737c3b04"
+  }
+}

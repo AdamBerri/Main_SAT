@@ -1,0 +1,57 @@
+{
+  "id": "d4a8e2c1-7f3b-4e9d-8a1c-6b5f2d9e7a3c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "Urban heat islands form when natural land surfaces are replaced with asphalt, concrete, and buildings that absorb and retain solar energy. Vegetation, by contrast, cools the air through evapotranspiration—the combined release of water vapor from soil and plant leaves. As cities expand outward, they eliminate the green cover that once moderated local temperatures, and the heat island effect intensifies.\n\nCity planners have responded to this problem with a range of interventions. Green roofs, which layer soil and vegetation atop existing buildings, reduce heat absorption and manage stormwater simultaneously. Reflective pavement materials bounce solar radiation away from the surface rather than converting it into heat. Street tree programs shade sidewalks and roads while contributing to evapotranspiration. Each strategy targets the same fundamental issue—excess heat retention—but operates through a different mechanism.\n\nDespite these efforts, implementation has been uneven across urban areas. Wealthier neighborhoods receive a disproportionate share of green infrastructure investment, while lower-income districts, often already warmer due to greater paving density, see fewer interventions. The result is that urban heat islands are not merely an environmental phenomenon but a marker of social inequity, concentrating their health burdens on populations least equipped to manage them.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 196,
+    "source": "Original passage"
+  },
+  "stem": "The passage is structured to accomplish which of the following?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Explain a phenomenon, survey responses to it, then reveal a complicating dimension of those responses.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Define a scientific concept, then compare two competing theories about its cause.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Identify a problem, then argue that existing solutions are inadequate and propose a better alternative.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Describe a sequence of events leading to a crisis, then evaluate the most promising response.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The first paragraph explains how urban heat islands form (the phenomenon). The second surveys several city planning responses—green roofs, reflective pavement, street trees—without ranking them. The third paragraph reveals a complicating dimension: implementation is inequitable, meaning the responses described in paragraph two disproportionately benefit wealthier neighborhoods. The overall movement is explanation, then response, then a complication of those responses, making A the accurate structural description.",
+  "distractorRationale": {
+    "A": "Correct. The passage moves from explaining the phenomenon (paragraph 1) to surveying responses (paragraph 2) to revealing that those responses are inequitably distributed (paragraph 3).",
+    "B": "The passage does define the urban heat island effect, but it never presents two competing theories about its cause. Only one causal mechanism—replacement of vegetation with heat-retaining surfaces—is given.",
+    "C": "The passage does describe planning solutions and notes that their implementation is uneven, but it never argues these solutions are inadequate or proposes a superior alternative. The third paragraph complicates the picture without dismissing the interventions.",
+    "D": "The passage does not narrate a chronological sequence of events. The heat island effect is explained as a process, not a storyline, and no single response is evaluated as most promising."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e7c3a9f1-2b8d-4e6c-9a4f-1d7b3e5c8a2f"
+  }
+}

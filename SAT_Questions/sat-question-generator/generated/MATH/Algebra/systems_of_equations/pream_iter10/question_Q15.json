@@ -1,0 +1,54 @@
+{
+  "id": "b9e4c7f2-1d30-4a68-9f5b-2c8a6e1d4b07",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "A streaming service offers two monthly subscription plans: a Basic plan and a Premium plan. A household that subscribes to 3 Basic plans and 1 Premium plan pays $\\$95$ per month. A household that subscribes to 1 Basic plan and 2 Premium plans pays $\\$100$ per month. What is the monthly cost, in dollars, of one Basic plan?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$15$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$16$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$18$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$41$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let $b$ = monthly cost of the Basic plan (in dollars) and $p$ = monthly cost of the Premium plan (in dollars).\n\nSet up the system:\n- $3b + p = 95$ ... (1)\n- $b + 2p = 100$ ... (2)\n\nMultiply equation (1) by 2:\n$$6b + 2p = 190 \\quad \\text{...(3)}$$\n\nSubtract equation (2) from equation (3):\n$$(6b + 2p) - (b + 2p) = 190 - 100$$\n$$5b = 90$$\n$$b = 18$$\n\nBack-substitute into equation (2) to find $p$:\n$$18 + 2p = 100$$\n$$2p = 82$$\n$$p = 41$$\n\nChecking equation (1): $3(18) + 41 = 54 + 41 = 95$ ✓\nChecking equation (2): $18 + 2(41) = 18 + 82 = 100$ ✓\n\nThe monthly cost of one Basic plan is $\\mathbf{\\$18}$.",
+  "distractorRationale": {
+    "A": "Makes a coefficient subtraction error when eliminating: after forming $6b + 2p = 190$, subtracts equation (2) but treats the $b$-coefficient as 0 rather than 1, writing $6b = 190 - 100 = 90$ instead of $5b = 90$, giving $b = 90 \\div 6 = 15$.",
+    "B": "Makes a subtraction arithmetic slip: correctly forms $6b + 2p = 190$, but computes $190 - 100 = 80$ instead of 90 when subtracting, giving $5b = 80 \\Rightarrow b = 16$.",
+    "C": "Correct answer: the Basic plan costs $\\$18$ per month.",
+    "D": "Makes a wrong-variable error: solves the system correctly ($b = 18$, $p = 41$) but reports the cost of the Premium plan ($p = 41$) instead of the Basic plan."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4a7f2b9c-e1d5-4730-b8f3-6c2d1a8e5b04"
+  }
+}

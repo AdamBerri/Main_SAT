@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0011-4aaa-b011-000000000017",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "Two parallel lines are cut by a transversal. The alternate exterior angles are $(4x + 7)°$ and $(6x - 33)°$. A second transversal creates a corresponding angle of $(3x + 22)°$ with the first parallel line. What is the measure of this corresponding angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$82°$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$87°$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$20°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$98°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Alternate exterior angles are equal: $4x+7 = 6x-33$. So $40 = 2x$, $x = 20$. The corresponding angle is $3(20)+22 = 82°$.",
+  "distractorRationale": {
+    "A": "Correct. $3(20) + 22 = 82°$.",
+    "B": "Computed $4(20) + 7 = 87°$ (the alternate exterior angle, not what was asked).",
+    "C": "Reported $x = 20$ as the answer.",
+    "D": "Computed $180° - 82° = 98°$ (found supplement instead)."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.339Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0011-4000-a011-000000000017"
+  }
+}

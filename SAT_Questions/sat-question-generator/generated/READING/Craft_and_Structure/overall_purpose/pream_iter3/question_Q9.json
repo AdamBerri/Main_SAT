@@ -1,0 +1,56 @@
+{
+  "id": "6f1b3e8c-4d9a-4c2f-9e7b-5a8d2c1f4b9e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "Public libraries in the United States are facing budget pressures that threaten services many communities rely on. Reduced municipal funding has forced dozens of library systems to cut their hours of operation, lay off staff, and delay the purchase of new books and digital resources. In cities where libraries have shortened their hours, residents with the fewest resources feel the impact most sharply: people without home internet access depend on library computers for job applications, tax filing, and communication with government agencies. Children from low-income households lose access to after-school tutoring programs and summer reading initiatives that help close learning gaps. Funding advocates have documented these effects in studies covering cities from small towns in rural states to major metropolitan areas. A library that closes early on Fridays or stays shuttered on Sundays is not just an inconvenience; it is a barrier that falls most heavily on those who have no alternatives. Protecting library funding, the evidence suggests, is inseparable from protecting equal access to opportunity.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 170,
+    "source": "Adapted from a public policy commentary on library funding"
+  },
+  "stem": "What is the main purpose of this passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To inform readers about the variety of services that public libraries currently offer",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "To argue that cutting library budgets harms vulnerable community members and limits opportunity",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "To analyze how municipal budget processes determine funding levels for public libraries",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "To describe the hardships experienced by library staff who have been laid off due to cuts",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage documents the negative effects of library budget cuts on community members—particularly those with limited resources—and concludes that protecting library funding is essential for equal access to opportunity. The author consistently frames reduced funding not as a neutral budget decision but as a harm with unequal consequences, which reveals a persuasive purpose: to make the case that such cuts should be opposed. The concluding sentence makes the advocacy position explicit.",
+  "distractorRationale": {
+    "A": "The passage does mention services such as computer access, tutoring programs, and summer reading initiatives, but these appear as evidence of what is lost when funding is cut—not as a general survey of library offerings. The purpose is not to catalog services but to argue against cutting them.",
+    "C": "The passage does not examine how municipal budget processes work or how funding decisions are made. The budget process is referenced only as the source of the problem, not as the subject of analysis.",
+    "D": "Staff layoffs are mentioned in one sentence as one of several consequences of budget cuts. The passage's focus is on the impact on library users—especially vulnerable residents—not on the experiences of library employees."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "5c2e8f1a-9b4d-4a7c-8e3f-1d6b9a2c5e8f"
+  }
+}

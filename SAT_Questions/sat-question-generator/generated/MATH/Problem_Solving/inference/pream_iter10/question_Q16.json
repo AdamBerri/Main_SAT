@@ -1,0 +1,54 @@
+{
+  "id": "a3f1c2e4-8b5d-4f7a-9c3e-6d2b1a8e4f90",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4,
+    "computational": 4.3
+  },
+  "stem": "A consumer research firm randomly selected 480 households from a city of 96,000 households and asked each selected household how many streaming subscriptions they currently pay for. The results showed a mean of 3.2 subscriptions per household and a median of 2 subscriptions per household. A reporter wrote that \"the typical household in the city pays for about 3 streaming subscriptions.\" Which of the following best evaluates the reporter's claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The claim is well-supported because the sample mean of 3.2 is close to 3, and the sample was randomly selected from city households.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The claim is misleading because the median of 2 is a better measure of the \"typical\" household when the mean and median differ substantially, suggesting the distribution is skewed.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The claim is invalid because 480 households is too small a sample to draw any reliable conclusions about 96,000 households.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The claim is unsupported because the survey only asked about current subscriptions, not historical patterns, so no inference about typical behavior can be made.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The reporter chose to report the mean (3.2) as representative of the \"typical\" household, rounding it to approximately 3. However, the median (2) differs substantially from the mean (3.2). When the mean and median diverge significantly, this indicates the distribution is skewed — in this case, likely right-skewed, meaning a small number of households with many subscriptions are pulling the mean upward. For a skewed distribution, the median is a more appropriate measure of the \"typical\" value because it is not distorted by extreme values. A \"typical\" household actually pays for 2 subscriptions, not 3. Therefore, the reporter's claim of \"about 3\" is misleading, even though the sample was properly conducted. The core error is choosing the wrong summary statistic to represent \"typical.\"",
+  "distractorRationale": {
+    "A": "Error type 2 (wrong confidence interpretation): This choice accepts the mean as an accurate representation of 'typical' without recognizing that a large gap between mean and median signals skew, which makes the mean a poor descriptor of the typical household. A student who doesn't distinguish between mean and median as measures of center would choose this.",
+    "B": "Correct answer: The gap between mean (3.2) and median (2) indicates a right-skewed distribution. In a skewed distribution, the median better represents the typical value. Reporting the mean as 'typical' misrepresents what most households actually experience.",
+    "C": "Error type 6 (sample size misapplication): A sample of 480 from 96,000 is a 0.5% sample, which is a perfectly adequate size for reliable inference in practice. Rejecting the conclusion purely on sample size grounds without examining representativeness or the actual flaw (wrong summary statistic) reflects a misunderstanding of what makes inference valid.",
+    "D": "Error type 5 (overgeneralizing scope / misidentifying limitation): The restriction to 'current' subscriptions is not a genuine statistical limitation for assessing the typical household's current behavior — that is precisely what was asked. Fabricating a limitation about historical patterns is not a real statistical reasoning error tied to the scenario; this distractor targets students who look for any possible objection rather than identifying the actual flaw."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b7e2d4f1-3a9c-4e8b-8d5f-1c6a2b3e7f04"
+  }
+}

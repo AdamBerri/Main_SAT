@@ -1,0 +1,57 @@
+{
+  "id": "e6a1c4f7-2d8b-4e3c-9f5a-3b7d1e9c4a8f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "The Amazon rainforest and the boreal forests of Canada and Russia are both critically important to the global climate, but they function in distinct ways. The Amazon acts as a massive carbon sink, absorbing vast quantities of carbon dioxide through rapid plant growth in its warm, humid environment. Its dense canopy also recycles moisture, generating rainfall that sustains agriculture far beyond its borders.\n\nThe boreal forest, by contrast, stores most of its carbon not in living trees but in the cold, waterlogged soil beneath them. Decomposition is slow in these frigid conditions, allowing organic matter to accumulate over centuries. When boreal forests are disturbed by fire or logging, this stored carbon is released quickly into the atmosphere.\n\nDespite these differences in how they sequester carbon, both forest systems are under increasing pressure from human activity and climate change — and the loss of either would have severe consequences for global temperatures.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 166,
+    "source": "Original passage"
+  },
+  "stem": "The passage is structured to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "explain why one type of forest is more important than another.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "describe a shared problem and trace its causes in two ecosystems.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "contrast how two forest types function, then note their common importance.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "present a sequence of events showing how forests respond to climate change.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage uses a clear compare-and-contrast structure. The first paragraph describes how the Amazon rainforest functions as a climate regulator. The second paragraph turns to the boreal forest with the explicit contrast marker 'by contrast,' explaining how it stores carbon differently. The final paragraph brings the two together by noting that, despite their differences, both face similar threats and both matter equally. The dominant structure is contrast followed by a unifying observation — matching choice C.",
+  "distractorRationale": {
+    "A": "The passage explicitly states in the conclusion that the loss of either forest 'would have severe consequences,' treating both as equally important. No ranking or hierarchy is established, so the passage does not argue that one forest is more important than the other.",
+    "B": "While climate change and human activity are identified as shared threats in the final paragraph, the passage does not trace the causes of these pressures in detail. The main body of the passage is devoted to contrasting the forests' mechanisms for storing carbon, not to investigating the origins of a shared problem.",
+    "D": "The passage does not present events unfolding in time sequence. It describes the existing characteristics and functions of two forest types, with the final paragraph noting ongoing threats. No chain of events or temporal progression is narrated, so chronological sequence is not the organizing pattern."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b7d3e6a9-4c1f-4b8e-a5c2-9f4d7b1e3a6c"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,38 @@
+{
+  "id": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "A student needs to earn at least 70 points on a test to pass. Each correct answer is worth 5 points. What is the least number of correct answers the student needs?",
+  "choices": [
+    { "label": "A", "text": "13", "isCorrect": false },
+    { "label": "B", "text": "15", "isCorrect": false },
+    { "label": "C", "text": "14", "isCorrect": true },
+    { "label": "D", "text": "12", "isCorrect": false }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Set up the inequality: $5c \\geq 70$. Divide both sides by 5: $c \\geq 14$. The least number of correct answers is 14.",
+  "distractorRationale": {
+    "A": "Cluster B error: Computed $70 \\div 5 = 14$ but then subtracted 1, thinking 'at least' means one fewer than the boundary value. Got 13.",
+    "B": "Cluster C error: Misread 'at least 70' as 'more than 70,' setting up $5c > 70$, getting $c > 14$, and chose 15.",
+    "C": "Correct. $5c \\geq 70$ gives $c \\geq 14$.",
+    "D": "Cluster D error: Computed $70 \\div 5 = 14$ but confused minimum with maximum and subtracted 2, arriving at 12."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:03.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b"
+  }
+}

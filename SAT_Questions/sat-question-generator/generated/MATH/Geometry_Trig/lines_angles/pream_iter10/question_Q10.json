@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-000a-4aaa-b00a-000000000010",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "An exterior angle of a triangle measures $140°$. The two non-adjacent interior angles are equal. What is the measure of each?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$40°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$70°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$80°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$140°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "By the exterior angle theorem, the exterior angle equals the sum of the two non-adjacent interior angles. If each is $x$, then $2x = 140°$, so $x = 70°$.",
+  "distractorRationale": {
+    "A": "Found the adjacent interior angle ($180° - 140° = 40°$) instead.",
+    "B": "Correct. $140° / 2 = 70°$.",
+    "C": "Subtracted $140 - 60 = 80$ (wrong subtraction).",
+    "D": "Assumed each interior angle equals the exterior angle."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.339Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-000a-4000-a00a-000000000010"
+  }
+}

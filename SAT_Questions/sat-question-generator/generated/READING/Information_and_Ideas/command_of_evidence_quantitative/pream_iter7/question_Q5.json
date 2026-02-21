@@ -1,0 +1,80 @@
+{
+  "id": "65adfb4c-83d6-4c83-baca-61448b182d2c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "A public library system tracked the number of books borrowed each month from January through April 2024. The data show that borrowing was highest in March.",
+  "stem": "Which choice most effectively uses data from the figure to support the claim about borrowing patterns?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "In March, 14,200 books were borrowed, compared to 9,800 in January, 11,500 in February, and 12,100 in April.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "In February, 11,500 books were borrowed, which was more than the 9,800 books borrowed in January.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "In April, 12,100 books were borrowed, which was higher than both January's 9,800 and February's 11,500.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "In January, 9,800 books were borrowed, making it the month with the fewest borrowings in the study period.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that borrowing was highest in March. Choice A supports this by showing March at 14,200, which is clearly the largest value compared to all other months. The distractors reference accurate data from other months but do not address March's position as the highest.",
+  "distractorRationale": {
+    "A": "Correct: cites March at 14,200 and compares to all other months, confirming it is the highest.",
+    "B": "Wrong (misread value): compares February to January but does not mention March or its position as highest.",
+    "C": "Wrong (wrong comparison): highlights April being higher than January and February, but does not compare to March.",
+    "D": "Wrong (opposite trend): focuses on the lowest month (January) rather than the highest (March)."
+  },
+  "hasImage": true,
+  "imageDescription": "Bar chart titled 'Monthly Book Borrowings, January-April 2024.' X-axis: Month (January, February, March, April). Y-axis: Number of Books Borrowed (0-16,000). Bars: January = 9,800, February = 11,500, March = 14,200, April = 12,100. Source: Metropolitan Public Library System, 2024.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Monthly Book Borrowings, January-April 2024",
+    "data": {
+      "categories": [
+        "January",
+        "February",
+        "March",
+        "April"
+      ],
+      "values": [
+        9800,
+        11500,
+        14200,
+        12100
+      ],
+      "unit": "books",
+      "yAxisLabel": "Number of Books Borrowed",
+      "xAxisLabel": "Month"
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 50,
+    "source": "Adapted from Metropolitan Public Library System quarterly report"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.459Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "8586bf8a-979d-43db-9352-3a1b74766bcf"
+  }
+}

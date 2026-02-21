@@ -1,0 +1,57 @@
+{
+  "id": "c3d4e5f6-a7b8-4c9d-8e0f-1a2b3c4d5e6f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "linguistic": 3.3
+  },
+  "passage": "The following passage is adapted from a 2022 report on urban heat island mitigation strategies.\n\nUrban heat islands — areas where cities experience significantly higher temperatures than surrounding rural regions — pose increasing public health and energy challenges. Researchers have proposed several strategies for cooling dense urban environments, with green infrastructure emerging as particularly promising.\n\nA study conducted across twelve North American cities found that neighborhoods with tree canopy coverage exceeding 30% recorded summer afternoon temperatures an average of 3.8°C lower than comparable neighborhoods with less than 10% coverage. The study's lead author, Dr. Priya Anand, noted that \"the cooling effect was most pronounced during heat wave events, when canopy-dense areas stayed 5.2°C cooler than sparse ones.\"\n\nGreen roofs — rooftop gardens installed on commercial and residential buildings — offer a complementary approach. Monitoring data from Chicago's City Hall green roof showed that surface temperatures on the vegetated roof reached a maximum of 32°C on a day when the adjacent conventional tar roof peaked at 73°C, a difference of 41°C. This surface cooling reduces the building's air conditioning load and limits heat released into surrounding air.\n\nNot all interventions achieve similar results, however. A large-scale study of cool pavements — road surfaces treated with reflective coatings — found average ambient temperature reductions of only 0.3°C in dense commercial districts, compared with projected reductions of 0.5–1.0°C. Researchers attributed the smaller-than-expected effect to heat re-radiation from surrounding building facades, which offset much of the pavement's reflective benefit.\n\nCity planners weighing these options must also consider longevity. Urban tree canopies require 15–20 years to reach full cooling effectiveness, while green roofs deliver benefits immediately upon installation but must be replaced every 20–40 years depending on substrate depth and maintenance.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 278,
+    "source": "Adapted from a 2022 municipal sustainability research report"
+  },
+  "stem": "A city planner argues that green roofs provide more immediately measurable temperature benefits than tree planting programs. Which quotation from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"neighborhoods with tree canopy coverage exceeding 30% recorded summer afternoon temperatures an average of 3.8°C lower than comparable neighborhoods with less than 10% coverage\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"surface temperatures on the vegetated roof reached a maximum of 32°C on a day when the adjacent conventional tar roof peaked at 73°C, a difference of 41°C\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"green roofs deliver benefits immediately upon installation but must be replaced every 20–40 years depending on substrate depth and maintenance\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"Urban tree canopies require 15–20 years to reach full cooling effectiveness, while green roofs deliver benefits immediately upon installation\"",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The claim has two key elements: (1) green roofs provide more immediately measurable benefits AND (2) this advantage is relative to tree planting programs. Choice D directly addresses both elements by explicitly contrasting the two approaches on the dimension of timing — stating that tree canopies require 15–20 years to reach full effectiveness while green roofs deliver benefits immediately. This is the only choice that explicitly compares green roofs to tree planting on the criterion of immediacy, which is the core of the claim. One logical step is needed to connect 'immediately' with 'more immediately measurable,' but that connection is very direct.",
+  "distractorRationale": {
+    "A": "Choice A provides evidence about tree canopy effectiveness (temperature reduction data) but says nothing about green roofs or about the immediacy of either intervention's benefits. It addresses cooling magnitude, not timing comparability.",
+    "B": "Choice B provides dramatic evidence of green roof surface temperature reduction (41°C difference) but does not mention tree planting or compare the two approaches on the dimension of immediacy. It supports that green roofs reduce temperatures but not that they do so more immediately than trees.",
+    "C": "Choice C mentions that green roofs deliver benefits immediately but omits the comparison to tree canopies entirely. Without the contrasting claim about trees, it cannot support the comparative claim that green roofs are more immediate than tree planting. Choice D contains all of Choice C's relevant information plus the necessary comparative context.",
+    "D": "This is the correct answer. See explanation above."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e5f6a7-b8c9-4d0e-9f1a-2b3c4d5e6f7a"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "b3e7a1c2-9f84-4d56-ae12-0c3f8b5d7e90",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "A car travels at a constant speed of 45 miles per hour on a highway. Given that 1 mile = 5,280 feet and 1 hour = 60 minutes, what is the car's speed in feet per minute?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "66",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "2,640",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "3,960",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "7,920",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To convert 45 miles per hour to feet per minute, apply two conversion factors:\n\nStep 1: Convert miles to feet.\n$$45 \\frac{\\text{mi}}{\\text{hr}} \\times \\frac{5{,}280 \\text{ ft}}{1 \\text{ mi}} = 237{,}600 \\frac{\\text{ft}}{\\text{hr}}$$\n\nStep 2: Convert hours to minutes.\n$$237{,}600 \\frac{\\text{ft}}{\\text{hr}} \\times \\frac{1 \\text{ hr}}{60 \\text{ min}} = 3{,}960 \\frac{\\text{ft}}{\\text{min}}$$\n\nThe car travels at **3,960 feet per minute**.",
+  "distractorRationale": {
+    "A": "Choice A (66) results from dividing by 3,600 instead of 60 — converting to feet per *second* rather than feet per *minute*: $45 \\times 5{,}280 \\div 3{,}600 = 66$. The student applies both 60 seconds/minute and 60 minutes/hour as divisors, effectively converting to ft/sec.",
+    "B": "Choice B (2,640) results from using an incorrect conversion factor of 1 mile = 3,520 feet instead of 5,280 feet: $45 \\times 3{,}520 \\div 60 = 2{,}640$. A student who misremembers the feet-per-mile conversion arrives at this answer.",
+    "C": "Choice C (3,960) is the correct answer.",
+    "D": "Choice D (7,920) results from dividing by 30 instead of 60, as if there were only 30 minutes in an hour: $45 \\times 5{,}280 \\div 30 = 7{,}920$. The student uses half the correct divisor, doubling the result."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-5d6e-7f80-9a1b-2c3d4e5f6a7b"
+  }
+}

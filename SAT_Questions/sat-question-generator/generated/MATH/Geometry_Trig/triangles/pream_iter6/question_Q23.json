@@ -1,0 +1,54 @@
+{
+  "id": "c4d5e6f7-8a9b-4c0d-e1f2-a3b4c5d6e7f8",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "In triangle $ABC$, $D$ is the midpoint of $\\overline{BC}$. Point $E$ lies on segment $\\overline{AD}$ such that $AE:ED = 1:2$. Line $BE$, when extended, meets side $\\overline{AC}$ at point $F$. What is the ratio $AF:FC$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$1:4$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$1:2$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$1:1$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$2:1$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Step 1: Express all points as position vectors.**\n\nLet position vectors of $A$, $B$, $C$ be $\\mathbf{a}$, $\\mathbf{b}$, $\\mathbf{c}$.\n\nSince $D$ is the midpoint of $BC$:\n$$\\mathbf{d} = \\frac{\\mathbf{b} + \\mathbf{c}}{2}$$\n\n**Step 2: Find the position vector of $E$.**\n\n$E$ lies on $AD$ with $AE:ED = 1:2$, so $E$ divides $AD$ in ratio $1:2$ from $A$:\n$$\\mathbf{e} = \\mathbf{a} + \\frac{1}{3}(\\mathbf{d} - \\mathbf{a}) = \\frac{2\\mathbf{a}}{3} + \\frac{\\mathbf{d}}{3} = \\frac{2\\mathbf{a}}{3} + \\frac{\\mathbf{b} + \\mathbf{c}}{6} = \\frac{4\\mathbf{a} + \\mathbf{b} + \\mathbf{c}}{6}$$\n\n**Step 3: Parametrize line $BE$ and find $F$ on $AC$.**\n\nPoints on line $BE$: $\\mathbf{b} + t(\\mathbf{e} - \\mathbf{b})$ for parameter $t$.\n\n$$= \\mathbf{b} + t\\left(\\frac{4\\mathbf{a} + \\mathbf{b} + \\mathbf{c}}{6} - \\mathbf{b}\\right) = \\mathbf{b} + t \\cdot \\frac{4\\mathbf{a} - 5\\mathbf{b} + \\mathbf{c}}{6}$$\n\n$$= \\frac{4t}{6}\\,\\mathbf{a} + \\left(1 - \\frac{5t}{6}\\right)\\mathbf{b} + \\frac{t}{6}\\,\\mathbf{c}$$\n\nFor $F$ to lie on $AC$, the coefficient of $\\mathbf{b}$ must equal zero:\n$$1 - \\frac{5t}{6} = 0 \\implies t = \\frac{6}{5}$$\n\n**Step 4: Find the position of $F$ on $AC$.**\n\nSubstituting $t = \\frac{6}{5}$:\n$$\\text{coefficient of } \\mathbf{a} = \\frac{4}{6} \\cdot \\frac{6}{5} = \\frac{4}{5}, \\quad \\text{coefficient of } \\mathbf{c} = \\frac{1}{6} \\cdot \\frac{6}{5} = \\frac{1}{5}$$\n\nSo $F = \\frac{4}{5}\\mathbf{a} + \\frac{1}{5}\\mathbf{c}$, meaning $F$ divides $AC$ with $AF = \\frac{1}{5} \\cdot AC$ (since $F = A + \\frac{1}{5}(C - A)$) and $FC = \\frac{4}{5} \\cdot AC$.\n\nTherefore $AF:FC = 1:4$.",
+  "distractorRationale": {
+    "A": "Correct answer obtained by expressing E as a position vector, parametrizing line BE, and setting the coefficient of the B-vector to zero to locate F on AC.",
+    "B": "The student directly equates $AF:FC$ to the given ratio $AE:ED = 1:2$, incorrectly assuming the cevian ratio is preserved when the line is extended to the opposite side, yielding $1:2$.",
+    "C": "The student misreads $AE:ED = 1:2$ as $AE:ED = 2:1$ (i.e., $E$ is two-thirds of the way from $A$ to $D$), and after recomputing finds $F$ at the midpoint of $AC$, giving $AF:FC = 1:1$.",
+    "D": "The student inverts the correct ratio, reporting $FC:AF = 1:4$ as the answer but labeling it $AF:FC = 4:1$, then reducing or misinterpreting to obtain $AF:FC = 2:1$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3e4f5a6-7b8d-9012-cdef-123456789012"
+  }
+}

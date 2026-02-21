@@ -1,0 +1,58 @@
+{
+  "id": "c4e8f1a2-9b5c-4d0e-a7f6-2e3d4c5b6a7f",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "Researchers have long studied the cognitive abilities of dolphins, and their work has yielded striking results. [Their findings reveal impressive intelligence. Including the use of tools, complex social communication, and even self-recognition in mirrors.] These discoveries have prompted renewed debate among scientists about the nature of animal consciousness.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 62,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Their findings reveal impressive intelligence. Including the use of tools, complex social communication, and even self-recognition in mirrors.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Their findings reveal impressive intelligence, including the use of tools, complex social communication, and even self-recognition in mirrors.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Their findings reveal impressive intelligence; including the use of tools, complex social communication, and even self-recognition in mirrors.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Their findings reveal impressive intelligence, and including the use of tools, complex social communication, and even self-recognition in mirrors.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The phrase 'Including the use of tools, complex social communication, and even self-recognition in mirrors' is a participial phrase, not an independent clause — it has no subject and no main verb. In Choice A (NO CHANGE), placing a period before this phrase creates an illegal fragment, since the phrase cannot stand on its own as a sentence. Choice B correctly attaches the participial phrase to the preceding independent clause with a comma, creating a single, complete sentence. This is the only option that avoids a boundary error.",
+  "distractorRationale": {
+    "A": "Choice A creates a sentence fragment. 'Including the use of tools, complex social communication, and even self-recognition in mirrors' is a participial phrase with no subject or main verb; it cannot stand as a complete sentence after a period.",
+    "B": "Choice B is correct. The comma properly attaches the participial phrase to the independent clause that precedes it, forming one complete, grammatically correct sentence.",
+    "C": "Choice C places a semicolon before a participial phrase. A semicolon must join two independent clauses; it cannot precede a phrase that lacks a subject and main verb. This is a semicolon misuse error.",
+    "D": "Choice D inserts 'and' between the main clause and the participial phrase, but the phrase still lacks a subject, so 'and including...' does not form a second independent clause. The construction is ungrammatical because 'and' here implies a parallel predicate or clause that does not exist."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d2e3f4a5-b6c7-8d9e-0f1a-2b3c4d5e6f7a"
+  },
+  "hasImage": false
+}

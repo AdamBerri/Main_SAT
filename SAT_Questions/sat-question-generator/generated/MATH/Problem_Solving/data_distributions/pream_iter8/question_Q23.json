@@ -1,0 +1,54 @@
+{
+  "id": "fc63bf7f-50cf-49c9-a12a-a5d8bb660706",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "A data set has a mean of 20 and a standard deviation of 4. A researcher creates a new data set by first multiplying every value in the original data set by 3 and then adding 5 to each result. What is the standard deviation of the new data set?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "4",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "7",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "12",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "17",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "STEP A — No individual values are given; the question operates on the summary statistics of the data set.\n\nSTEP B — Understand how linear transformations affect the mean and standard deviation.\n  General rule: if every value x in a data set is transformed to y = a·x + b, then\n    New mean = a · (original mean) + b\n    New standard deviation = |a| · (original standard deviation)\n  The additive constant b shifts every value by the same amount, so all deviations from the mean remain unchanged — the standard deviation is unaffected by adding a constant.\n  The multiplicative factor a stretches every deviation from the mean by the factor |a|, so the standard deviation is multiplied by |a|.\n\nSTEP C — Apply the rule to this problem.\n  Transformation: y = 3x + 5, so a = 3 and b = 5.\n  New standard deviation = |3| × 4 = 12\n  New mean = 3 × 20 + 5 = 65 (not asked, but confirms the transformation is correctly understood)\n\nSTEP F — Standard deviation is used conceptually: scaling multiplies SD by the scale factor; shifting leaves SD unchanged.\n\nSTEP H — Correct answer = 12, which is choice C. ✓\n\nSTEP I — Distractor analysis:\n  Choice A (4): MISCONCEPTION — SD-unchanged error. The student believes that multiplying every value by 3 does not affect the spread of the data, treating the multiplication the same way as adding a constant. A student who knows that adding a constant leaves SD unchanged may overgeneralize this rule to multiplication as well.\n  Choice B (7): MISCONCEPTION — wrong operation on SD. The student adds the multiplier to the SD instead of multiplying: 4 + 3 = 7. This student confuses an additive shift with a multiplicative stretch, applying the wrong arithmetic operation to the SD.\n  Choice D (17): MISCONCEPTION — applies the full transformation to SD. The student correctly multiplies the SD by 3 to get 12, but then also adds the constant 5, computing 3 × 4 + 5 = 17. This student does not recognize that adding a constant to every data value does not affect deviations from the mean and therefore does not affect the standard deviation.",
+  "distractorRationale": {
+    "A": "SD-unchanged error: the student incorrectly treats the multiplicative factor like an additive constant, concluding the standard deviation is unaffected by multiplying every value by 3.",
+    "B": "Wrong operation on SD: the student adds the multiplier (3) to the original SD instead of multiplying, computing 4 + 3 = 7, confusing a multiplicative stretch with an additive shift.",
+    "C": "Correct answer: the new SD = |3| × 4 = 12, because multiplying every value by 3 multiplies all deviations from the mean by 3, while adding 5 to every value shifts the mean but does not change any deviation.",
+    "D": "Full-transformation-applied-to-SD error: the student correctly multiplies the SD by 3 to get 12, but then incorrectly also adds the constant 5, computing 3×4+5 = 17, failing to recognize that the additive constant does not affect spread."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "12a87da5-ab68-4131-9476-f5e0b11482a9"
+  }
+}

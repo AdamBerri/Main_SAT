@@ -1,0 +1,57 @@
+{
+  "id": "e9a2f4c7-3b8d-4e1f-9a5c-2d7b6e3f8a1c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "The economic consequences of medieval plague outbreaks have been reexamined extensively since the 1990s, with historians increasingly questioning the once-dominant view that the Black Death uniformly devastated European economies. Regional studies have complicated this picture substantially. In Flemish towns, notarial records from 1350–1380 document an increase in the number of craft guilds registered per decade, rising from an average of 4.2 new guilds per decade in 1300–1349 to 7.8 per decade in 1350–1380. Historians attribute this surge partly to the redistribution of accumulated capital from plague victims to surviving relatives, who faced fewer competitors for urban economic niches. In contrast, certain agrarian regions of southern France saw grain output decline by an estimated 40% in the decade following the 1348 outbreak, with recovery delayed by recurrent outbreaks through the 1360s. Wages for surviving agricultural laborers rose sharply, however: surviving manorial records from Provence suggest day-laborer wages nearly doubled between 1347 and 1375. Merchant networks along the Rhine corridor, meanwhile, maintained transaction volumes within 15% of pre-plague levels throughout the 1350s, sustained by the consolidation of trade routes as smaller intermediary towns lost population. Chroniclers of the period often characterized the aftermath as uniform ruin, but the surviving economic records reveal a more differentiated regional pattern.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 207,
+    "source": "Adapted from a review of medieval economic history scholarship, 2019"
+  },
+  "stem": "A historian claims that the Black Death created economic opportunities for certain urban populations in northern Europe even as it disrupted agricultural output elsewhere. Which quotation from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Merchant networks along the Rhine corridor, meanwhile, maintained transaction volumes within 15% of pre-plague levels throughout the 1350s, sustained by the consolidation of trade routes as smaller intermediary towns lost population.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"In Flemish towns, notarial records from 1350–1380 document an increase in the number of craft guilds registered per decade, rising from an average of 4.2 new guilds per decade in 1300–1349 to 7.8 per decade in 1350–1380.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"In certain agrarian regions of southern France saw grain output decline by an estimated 40% in the decade following the 1348 outbreak, with recovery delayed by recurrent outbreaks through the 1360s.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"In Flemish towns, notarial records from 1350–1380 document an increase in the number of craft guilds registered per decade, rising from an average of 4.2 new guilds per decade in 1300–1349 to 7.8 per decade in 1350–1380. Historians attribute this surge partly to the redistribution of accumulated capital from plague victims to surviving relatives, who faced fewer competitors for urban economic niches.\"",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The claim has two elements: (1) economic opportunities arose for certain urban populations in northern Europe, and (2) agricultural output was disrupted elsewhere. Choice D addresses the first element most completely because it not only documents the measurable increase in guild formation (the economic opportunity) but also explains the mechanism — redistribution of capital and reduced competition — that constitutes an 'opportunity.' Choice B contains the same quantitative data but stops before the mechanism, leaving the 'opportunity' inference incomplete. Choice A shows trade network resilience in the Rhine corridor, which represents a different form of urban economic activity that was sustained rather than newly created, and it does not address agricultural disruption at all. Choice C addresses only agricultural decline and contains no urban opportunity component, satisfying only half the claim.",
+  "distractorRationale": {
+    "A": "Rhine corridor merchant networks maintained — not increased — their transaction volumes. This shows economic resilience rather than new opportunities, and it does not address agricultural disruption elsewhere. The claim requires evidence of opportunity creation, not mere survival.",
+    "B": "This is a strong distractor. It contains the same guild-formation data as the correct answer and does show urban economic expansion in northern Europe. However, it omits the mechanistic explanation that makes the 'opportunity' reading unambiguous. Without the capital-redistribution sentence, the guild increase alone could reflect other factors. Choice D covers both the evidence and the mechanism.",
+    "C": "This choice supports only the agricultural disruption portion of the claim and provides no evidence of urban economic opportunities. A correct answer must address both components of the two-part claim.",
+    "D": "Correct. This passage combines quantitative evidence of urban economic expansion in Flemish (northern European) towns with an explanatory mechanism explicitly framing that expansion as an opportunity for survivors. It addresses both dimensions of the claim with the fewest inferential steps."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d5a9b3e7-2c1f-4d8e-9b4a-6c2f8e3d7b1a"
+  }
+}

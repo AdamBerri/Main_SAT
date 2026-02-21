@@ -1,0 +1,57 @@
+{
+  "id": "d5e9a3b2-7c1f-4d8e-9a2c-3f5b8d1e7c4a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "The debate over whether mathematics is discovered or invented has occupied philosophers for centuries, and both positions have drawn sophisticated defenders. Platonists hold that mathematical objects—numbers, sets, functions—exist independently of any mind and that mathematicians access them through a kind of perception analogous to, though distinct from, sensory experience. Formalists, by contrast, treat mathematics as a system of symbols manipulated according to agreed-upon rules, with no claim about whether those symbols correspond to anything outside the system itself. What rarely surfaces in these debates is the degree to which the framing of the question obscures more than it illuminates. The terms 'discovery' and 'invention' import assumptions borrowed from physical science and engineering—where discovered objects preexist their discoverers and invented tools are built to serve external purposes. Mathematical practice, with its mixture of free creation and unexpected applicability, fits neither model cleanly. Physicists routinely encounter situations in which mathematical structures developed with no practical aim turn out to describe physical reality with uncanny precision. This applicability has been called 'unreasonable effectiveness,' and its persistence across centuries of inquiry suggests something is happening that neither side of the traditional debate fully accounts for. To ask whether mathematics is discovered or invented may be to ask a question whose terms prevent a genuine answer.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 201,
+    "source": "Adapted from a philosophical essay on the nature of mathematics"
+  },
+  "stem": "Which choice best describes the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Defend the formalist position against Platonist claims by showing that mathematical applicability is coincidental",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Explain the historical origins of the discovery-versus-invention debate in philosophy of mathematics",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Challenge the framing of a longstanding philosophical debate by showing its central question may be ill-formed",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Argue that the unreasonable effectiveness of mathematics demonstrates that mathematical objects are real",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage's organizing purpose is to challenge the terms of the discovery-versus-invention debate rather than to resolve it in favor of either side. The author presents both Platonism and formalism sympathetically before arguing that the framing 'obscures more than it illuminates.' The analysis then locates the problem in the borrowed vocabulary of 'discovery' and 'invention,' showing that mathematical practice fits neither model because of its 'mixture of free creation and unexpected applicability.' The reference to 'unreasonable effectiveness' reinforces that neither position accounts for a phenomenon both camps must explain. The final sentence makes the challenge to the question itself explicit. The author's rhetorical strategy is not to adjudicate between the positions but to question whether the debate is coherently structured—which is a different, higher-order purpose than explaining, defending, or refuting either view.",
+  "distractorRationale": {
+    "A": "The passage presents formalism as one coherent position but does not defend it; the author explicitly states that the traditional debate's terms prevent genuine answers, which undermines rather than supports formalism's framing of the question.",
+    "B": "The passage briefly presents both philosophical positions but does not trace their historical origins; historical explanation is absent from the text, which focuses on critiquing the logical structure of the debate rather than accounting for how it arose.",
+    "C": "Correct. The passage systematically presents both sides and then argues that the question itself is ill-formed because its terms—'discovery' and 'invention'—cannot adequately capture the dual nature of mathematical practice.",
+    "D": "The 'unreasonable effectiveness' of mathematics is cited as evidence that neither existing position adequately explains mathematical practice, not as proof for Platonism. The passage explicitly avoids using this phenomenon to endorse either side."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3b4c5d6-e7f8-4a9b-0c1d-2e3f4a5b6c7d"
+  }
+}

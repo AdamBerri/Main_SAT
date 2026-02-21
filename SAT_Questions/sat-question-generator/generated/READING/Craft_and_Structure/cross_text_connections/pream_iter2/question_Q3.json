@@ -1,0 +1,58 @@
+{
+  "id": "2d8f4b1c-7e3a-4c9f-b5d2-8a1e3f6c4b7e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "Text 1\nPublic libraries provide communities with free access to books, internet connections, and educational programs. They serve as gathering places where people of all ages and backgrounds can find resources for learning, job searching, and personal development. Library funding comes primarily from local property taxes, which means that wealthier communities tend to have better-stocked and better-staffed libraries. Despite this disparity, libraries remain among the most democratic institutions in American public life.\n\nText 2\nLocal libraries across the country are facing budget cuts that threaten their core services. In many cities, reduced hours, staff layoffs, and shrinking collections have made it harder for residents to access the resources they need. Community advocates warn that these reductions fall hardest on the residents who have the fewest alternatives — those without home internet access or the funds to purchase books. The erosion of library services represents a retreat from the public commitment to accessible education.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 148,
+    "source": "Adapted from civic journalism and library advocacy publications"
+  },
+  "stem": "Based on the texts, what do both authors agree on?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Libraries should replace property tax funding with federal grants to ensure equal services across communities.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Libraries are most valuable to community members who lack access to other educational or informational resources.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Budget cuts are the primary reason that library services are unequal across different communities.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Public libraries have successfully eliminated educational inequality in American communities.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Both texts highlight that libraries serve a critical function for people who lack alternative resources. Text 1 describes libraries as places where people of all backgrounds can access learning tools, implicitly emphasizing their importance for those without other means. Text 2 explicitly states that budget cuts 'fall hardest on the residents who have the fewest alternatives — those without home internet access or the funds to purchase books.' Both passages therefore converge on the idea that libraries are especially vital for people with limited access to other information sources.",
+  "distractorRationale": {
+    "A": "Neither text recommends replacing property tax funding with federal grants. Text 1 identifies property tax funding as a source of inequality, but proposes no specific solution. Text 2 does not address funding mechanisms at all.",
+    "B": "Correct. Text 1 implies that libraries serve those without other resources by emphasizing free and universal access; Text 2 explicitly states that cuts hurt most those with the fewest alternatives.",
+    "C": "Text 1 attributes service inequality to the property tax funding model, not to budget cuts. Text 2 discusses budget cuts, but does not claim they are the primary cause of cross-community inequality. The two texts identify different causes.",
+    "D": "Neither text claims that libraries have eliminated educational inequality. Text 1 acknowledges an ongoing funding disparity between wealthier and poorer communities, and Text 2 focuses on a worsening situation."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4e9b3c7f-2a1d-4f8e-9c5b-1d3a7e2f4c8b"
+  },
+  "hasImage": false
+}

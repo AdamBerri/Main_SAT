@@ -1,0 +1,57 @@
+{
+  "id": "f1c4e8b2-7a3d-4f6c-9e2b-1d5a8c3f7e9b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "Economists who study market design have long recognized a troubling asymmetry: while competitive markets excel at aggregating dispersed information through prices, they systematically fail to produce what theorists call \"option value\"—the social benefit of preserving future possibilities that have not yet been chosen. A wetland that could be drained for agriculture creates immediate, monetizable yields; its role as a flood buffer, a biodiversity reservoir, and a water filtration system resists monetization precisely because these functions become most legible only when they are lost. Markets therefore tend to convert option value into immediate exchange value, not because market participants are irrational or malicious, but because the incentive structure of competitive markets rewards those who capture value now over those who preserve value for uncertain future uses. Regulatory intervention, when it occurs, typically attempts to counteract this tendency by imposing costs—in the form of permit requirements or impact assessments—that force developers to internalize some fraction of the option value their projects extinguish. Critics argue, however, that such regulatory instruments are systematically underweighted: the costs imposed rarely approach the full social value of what is irreversibly destroyed, in part because regulatory agencies themselves must work within political and economic frameworks that discount uncertain future benefits.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 196,
+    "source": "Adapted from a law review article on environmental economics and regulatory theory"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the effectiveness of regulatory intervention in markets that systematically undervalue option value?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Regulatory agencies deliberately favor economic development over environmental preservation due to institutional capture.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Permit requirements and impact assessments fully compensate for the social costs of irreversible environmental destruction.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Regulatory tools are structurally limited by the same systemic discounting of future benefits that distorts market behavior.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Markets would spontaneously preserve option value if participants could better quantify the future benefits of environmental resources.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage explains that regulatory instruments are 'systematically underweighted' because 'regulatory agencies themselves must work within political and economic frameworks that discount uncertain future benefits'—the same discounting of future uncertainty that characterizes market failure. The passage thus implies that regulation does not escape the underlying epistemic and incentive problem; it is constrained by the same framework that produces the market distortion in the first place. Inferring C requires synthesizing the description of market failure (rewarding present value capture over option value preservation), the passage's assessment of regulatory insufficiency ('costs imposed rarely approach full social value'), and crucially the stated reason—that agencies operate within frameworks that apply similar discounting logic. The student must recognize that this structural parallel between market and regulatory failure is the passage's implied conclusion, not merely an incidental observation.",
+  "distractorRationale": {
+    "A": "The passage attributes regulatory underweighting to structural constraints—operating within frameworks that discount uncertain future benefits—not to deliberate favoritism or institutional capture. Institutional capture implies intentional bias, which the passage does not suggest; this distractor introduces a causal mechanism unsupported by the text.",
+    "B": "The passage explicitly states the opposite: costs imposed 'rarely approach the full social value of what is irreversibly destroyed.' This distractor directly contradicts the passage's claim and would only mislead students who misread 'attempts to counteract' as implying success.",
+    "D": "The passage locates the market's failure not in information deficits alone but in the incentive structure that rewards present value capture regardless of how well future benefits are quantified. Better quantification might help at the margins, but the passage's structural argument—that competitive markets reward immediate capture—would persist even with improved valuation, making this distractor an over-inference from the passage's information-aggregation point."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2d7f4e9-8b3c-4a1d-9f6e-3c5b8a2d7f1e"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "20fa8d1f-e8a7-4f5c-ae45-cc265fb526e1",
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "The Appalachian Trail stretches more than 2,100 miles from Georgia to Maine, passing through fourteen states along the way. Every year, thousands of hikers attempt to complete the entire trail in a single season. The majority of these thru-hikers, however, [1]_____ before reaching the halfway point due to injuries, weather, or exhaustion.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 55,
+    "source": "Adapted from an outdoor recreation report"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "quits",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "quit",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "quitting",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "has quit",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement with an intervening parenthetical. The subject is 'The majority' (which takes a plural verb when followed by 'of' + plural noun). 'The majority of these thru-hikers' takes the plural verb 'quit.' The present tense describes a habitual, recurring pattern. Note: 'quit' is the same form for present base/plural and past tense.",
+  "distractorRationale": {
+    "A": "Third-person singular—disagrees with the plural 'majority of hikers.'",
+    "B": "Correct. Base form/plural present, agreeing with 'The majority of these thru-hikers.'",
+    "C": "Participle—cannot serve as main verb without auxiliary.",
+    "D": "Present perfect singular—disagrees with the plural subject. 'Have quit' would be the plural present perfect."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "49cd6f75-b116-4e7e-af70-7bb7b7342d58"
+  }
+}

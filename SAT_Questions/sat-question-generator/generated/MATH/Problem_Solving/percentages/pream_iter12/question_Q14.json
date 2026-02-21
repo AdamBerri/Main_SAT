@@ -1,0 +1,54 @@
+{
+  "id": "c7d8e9f0-a1b2-3c4d-5e6f-7a8b9c0d1e2f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 3,
+    "computational": 3.2
+  },
+  "stem": "A worker's annual salary was $60,000 last year. This year, the worker received a 5% raise. If the worker saves 20% of the new salary, how much does the worker save this year?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$12,000",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$12,600",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$15,000",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$3,000",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "New salary = $60,000 × 1.05 = $63,000. Savings = $63,000 × 0.20 = $12,600.",
+  "distractorRationale": {
+    "A": "Student applied 20% savings to the old salary instead of the new one: $60,000 × 0.20 = $12,000.",
+    "B": "Correct answer.",
+    "C": "Student added the percentages (5% + 20% = 25%) and applied to the original: $60,000 × 0.25 = $15,000.",
+    "D": "Student calculated only the raise amount: $60,000 × 0.05 = $3,000."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:13.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d8e9f0a1-b2c3-4d5e-6f7a-8b9c0d1e2f3a"
+  }
+}

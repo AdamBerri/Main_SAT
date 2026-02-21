@@ -1,0 +1,54 @@
+{
+  "id": "e5f6a7b8-c9d0-4e1f-b2c3-4d5e6f7a8b9c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "computational": 1.9
+  },
+  "stem": "A researcher tracked the number of social media followers (in thousands) for a new brand over time. The line of best fit for a scatterplot of the data is $y = 2.4x + 18$, where $x$ is the number of months since the brand launched and $y$ is the predicted number of followers in thousands. What does the value $18$ represent in this context?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The brand gained 18,000 followers each month.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The brand had a predicted 18,000 followers at the time of launch.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The brand reached 18,000 followers after 2.4 months.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The brand had a predicted 2,400 followers at the time of launch.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In the equation $y = 2.4x + 18$, the value $18$ is the y-intercept. The y-intercept is the value of $y$ when $x = 0$.\n\nSince $x$ represents the number of months since launch, $x = 0$ corresponds to the time of launch. Substituting $x = 0$:\n$$y = 2.4(0) + 18 = 18$$\n\nBecause $y$ is measured in thousands of followers, the predicted number of followers at launch is $18 \\times 1{,}000 = 18{,}000$ followers.\n\nThe value 18 represents the predicted number of followers (in thousands) when the brand launched.",
+  "distractorRationale": {
+    "A": "This confuses the y-intercept (18) with the slope. The slope is $2.4$, which represents the monthly change in followers (in thousands), not 18.",
+    "B": "This is the correct answer. The y-intercept ($x = 0$, the launch date) gives $y = 18$ thousand followers.",
+    "C": "This confuses the roles of slope and y-intercept. The value 2.4 is the slope (monthly rate of change), not the number of months it takes to reach 18,000 followers. Setting $y = 18$ and solving $18 = 2.4x + 18$ gives $x = 0$, not $x = 2.4$.",
+    "D": "This reads the slope value ($2.4$ thousand) as the y-intercept, misidentifying which coefficient represents the starting value."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3a4b5c6-d7e8-9f0a-1b2c-3d4e5f6a7b8c"
+  }
+}

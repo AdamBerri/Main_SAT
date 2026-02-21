@@ -1,0 +1,53 @@
+{
+  "id": "a3f7c2d1-84e5-4b9a-b631-2f6d0e8c1a47",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "Machine P produces bolts at a rate of 120 bolts per hour, and Machine Q produces bolts at a rate of 80 bolts per hour. An order requires 1,400 bolts. Both machines start simultaneously. Machine Q then breaks down when exactly $\\frac{3}{7}$ of the order has been completed, and Machine P finishes the order alone. How many minutes did Machine P run alone to complete the order?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "240",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "300",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "400",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "600",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Find how many bolts are completed when Machine Q breaks down. $\\frac{3}{7}$ of the order: $\\frac{3}{7} \\times 1400 = 600$ bolts completed.\n\nStep 2: Find the remaining bolts for Machine P alone. $1400 - 600 = 800$ bolts remaining.\n\nStep 3: Convert Machine P's rate to bolts per minute. $120 \\text{ bolts/hr} = \\frac{120}{60} = 2 \\text{ bolts/min}$.\n\nStep 4: Find the time Machine P runs alone. $\\frac{800 \\text{ bolts}}{2 \\text{ bolts/min}} = 400$ minutes.\n\nThe answer is 400 minutes.",
+  "distractorRationale": {
+    "A": "Error type: Rate applied to wrong quantity. After Machine Q breaks down, $\\frac{4}{7}$ of the order remains: $\\frac{4}{7} \\times 1400 = 800$ bolts. However, this student applies the combined rate (Machine P + Machine Q = 120 + 80 = 200 bolts/hr = $\\frac{200}{60}$ bolts/min) to the remaining work instead of using only Machine P's rate. Time $= 800 \\div \\frac{200}{60} = 800 \\times \\frac{60}{200} = 800 \\times 0.3 = 240$ minutes.",
+    "B": "Error type: Inverted ratio. The student misreads $\\frac{3}{7}$ completed as meaning $\\frac{3}{7}$ remains (i.e., confuses the completed fraction with the remaining fraction). Remaining bolts $= \\frac{3}{7} \\times 1400 = 600$ bolts. Machine P's rate $= 2$ bolts/min. Time $= \\frac{600}{2} = 300$ minutes.",
+    "D": "Error type: Wrong term selected from ratio. The student correctly finds 800 bolts remaining but uses Machine Q's rate (80 bolts/hr $= \\frac{80}{60}$ bolts/min) instead of Machine P's rate (120 bolts/hr $= 2$ bolts/min) for the solo phase. Time $= 800 \\div \\frac{80}{60} = 800 \\times \\frac{60}{80} = 800 \\times 0.75 = 600$ minutes."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b8e1f4a2-3c7d-4e9b-a051-6f2d8c0b7e34"
+  }
+}

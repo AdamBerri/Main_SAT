@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2e1-84b9-4d6e-b1f5-c9e2d7a04f38",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "computational": 4.3
+  },
+  "stem": "The system of equations below is given, where $k$ is a constant.\n$$3x - ky = 7$$\n$$6x - 4y = 11$$\nFor what value of $k$ does this system of equations have no solution?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-2$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$2$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$4$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$8$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "A system of two linear equations has no solution when the lines are parallel — that is, when the ratios of the $x$- and $y$-coefficients are equal but the ratio of the constants is different (so the lines are distinct).\n\nFor the system $3x - ky = 7$ and $6x - 4y = 11$ to have no solution, the coefficient ratios must satisfy:\n$$\\frac{3}{6} = \\frac{k}{4}$$\n\nSolving for $k$:\n$$\\frac{1}{2} = \\frac{k}{4} \\implies k = 2$$\n\nVerification that the system is not coincident (would give infinitely many solutions): check whether $\\frac{7}{11} = \\frac{1}{2}$. Since $\\frac{7}{11} \\neq \\frac{1}{2}$, the lines are parallel and distinct, confirming the system has no solution when $k = 2$.\n\nChecking: with $k = 2$, the equations are $3x - 2y = 7$ and $6x - 4y = 11$. Multiplying the first by 2 gives $6x - 4y = 14 \\neq 11$, confirming the lines are parallel with no intersection.",
+  "distractorRationale": {
+    "A": "Makes a sign error when setting up the parallel-lines condition: writes $\\frac{3}{6} = -\\frac{k}{4}$, giving $\\frac{1}{2} = -\\frac{k}{4}$, so $k = -2$.",
+    "B": "Correct. Sets $\\frac{3}{6} = \\frac{k}{4}$, giving $k = 2$, and verifies the lines are parallel (not coincident).",
+    "C": "Misreads the second equation as $3x - 4y = 11$ (reads the coefficient 6 as 3), then sets $\\frac{3}{3} = \\frac{k}{4}$, giving $1 = \\frac{k}{4}$, so $k = 4$.",
+    "D": "Inverts the ratio by placing $k$ in the denominator instead of the numerator: sets up $\\frac{3}{6} = \\frac{4}{k}$, giving $\\frac{1}{2} = \\frac{4}{k}$, so $k = 8$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1e2d3c4-b5a6-7890-abcd-ef1234567890"
+  }
+}

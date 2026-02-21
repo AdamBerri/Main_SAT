@@ -1,0 +1,57 @@
+{
+  "id": "a8c1e4f7-2b5d-4f9a-b3e8-6d4c9f2a1b7e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "The following passage is adapted from a 2022 article on community gardens and nutrition.\n\nCommunity gardens—shared plots of land cultivated by local residents—have grown in number across American cities over the past two decades. Advocates argue that these gardens improve access to fresh produce in neighborhoods where grocery stores are scarce, often referred to as food deserts. A 2021 survey by the American Community Gardening Association found that there were more than 18,000 community gardens operating in the United States, up from roughly 6,000 in 2004.\n\nResearch suggests that participation in community gardens is associated with healthier eating habits. A study published in the American Journal of Public Health found that adults who gardened ate fruits and vegetables 1.4 more times per day on average than non-gardeners in the same neighborhoods. The researchers controlled for income and education, suggesting the gardening activity itself—rather than pre-existing differences between participants—drove the dietary improvement.\n\nCommunity gardens also offer social benefits. Participants frequently report stronger connections to their neighbors and greater feelings of community belonging. In a survey of garden participants in Denver, 78 percent said the garden had helped them meet new people in their neighborhood. Gardening has also been associated with reduced stress and improved mental health outcomes, particularly among urban residents who have limited access to natural environments.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 197,
+    "source": "Adapted from a 2022 article in the American Journal of Public Health"
+  },
+  "stem": "A student wants to support the claim that participating in a community garden leads to eating more fruits and vegetables. Which quotation from the passage best supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"There were more than 18,000 community gardens operating in the United States, up from roughly 6,000 in 2004.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"Adults who gardened ate fruits and vegetables 1.4 more times per day on average than non-gardeners in the same neighborhoods.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"In a survey of garden participants in Denver, 78 percent said the garden had helped them meet new people in their neighborhood.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"Gardening has been associated with reduced stress and improved mental health outcomes, particularly among urban residents who have limited access to natural environments.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct. The claim is that participating in a community garden leads to eating more fruits and vegetables. Choice B directly states that adults who gardened ate fruits and vegetables 1.4 more times per day on average than non-gardeners, which is a direct, quantified comparison between gardeners and non-gardeners on the specific outcome (fruit and vegetable consumption) stated in the claim. The language closely mirrors the claim, and no inferential steps are needed.",
+  "distractorRationale": {
+    "A": "Choice A gives statistics about the growth in the number of community gardens in the United States, which addresses how common gardens are—not whether participating in one leads to eating more fruits and vegetables.",
+    "C": "Choice C describes a social benefit of gardening (meeting new neighbors), which is a different outcome from the dietary claim about fruit and vegetable consumption.",
+    "D": "Choice D discusses mental health and stress reduction benefits of gardening, which are also different outcomes unrelated to eating more fruits and vegetables."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e7b4a9f3-1c6d-4e2b-8f5a-9d3c1f7b4a2e"
+  },
+  "hasImage": false
+}

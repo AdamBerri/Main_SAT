@@ -1,0 +1,58 @@
+{
+  "id": "b3e9f1a2-7c4d-4e8f-9a2b-1c3d5e7f9a0b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "linguistic": 4.3
+  },
+  "passage": "Text 1\n\nWhen ecologists study the stability of food webs, they often focus on \"keystone species\" — organisms whose removal would trigger disproportionate collapse across the system. The assumption underlying most keystone-species research is that these organisms exert their influence through direct predation: by controlling prey populations, they allow other species to persist. Yet recent fieldwork in temperate estuaries suggests a more complicated picture. In several studied systems, the most structurally important species were not apex predators but mid-trophic consumers whose feeding behavior modified the physical habitat itself — compacting sediment, clearing algal mats, and creating microhabitats for invertebrates. Removing these consumers did not simply shift prey abundance; it restructured the environment that dozens of other species depended on.\n\nText 2\n\nA 2021 field study compared species richness across twelve estuarine plots: six from which mid-trophic consumers had been experimentally removed and six undisturbed controls. After 18 months, the removal plots showed an average decline of 34% in invertebrate species richness, a 51% reduction in available microhabitat area, and a 28% increase in dense algal mat coverage. Predator abundance did not differ significantly between removal and control plots.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 218,
+    "source": "Adapted from ecology research literature on estuarine food web dynamics"
+  },
+  "stem": "Which finding from Text 2 most directly challenges the assumption described in Text 1 about how keystone species maintain food web stability?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Predator abundance remained similar across both plot types.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Invertebrate species richness declined by 34% in removal plots.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Algal mat coverage increased substantially after consumer removal.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Microhabitat area fell by over half in the removal plots.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Text 1 identifies the traditional assumption that keystone species maintain stability through direct predation — by controlling prey populations so predators can persist. The fieldwork in Text 1 complicates this by showing mid-trophic consumers matter through habitat modification rather than predation. Text 2's finding that predator abundance did NOT differ significantly between removal and control plots directly undermines the predation-based assumption: if the key mechanism were predation control, removing mid-trophic consumers should have altered predator dynamics. Instead, predators were unaffected while the habitat collapsed, confirming that the consumer's influence was structural rather than trophic. This is the finding that most specifically targets the assumption stated in Text 1.",
+  "distractorRationale": {
+    "A": "Correct. The unchanged predator abundance directly contradicts the assumption that important species work through predation control.",
+    "B": "The 34% decline in invertebrate richness supports Text 1's broader point about mid-trophic importance, but it does not specifically challenge the predation-based assumption — it merely confirms that consumers matter, not how they matter.",
+    "C": "The algal mat increase is consistent with the habitat-modification mechanism described in Text 1, so it supports rather than challenges the revised view presented there. It does not address the predation assumption directly.",
+    "D": "The microhabitat reduction also corroborates Text 1's habitat-modification argument rather than challenging the predation assumption. A student selecting this conflates 'evidence supporting the new claim' with 'evidence challenging the old assumption.'"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c2d4e6f8-1a3b-4c5d-8e9f-0a1b2c3d4e5f"
+  },
+  "hasImage": false
+}

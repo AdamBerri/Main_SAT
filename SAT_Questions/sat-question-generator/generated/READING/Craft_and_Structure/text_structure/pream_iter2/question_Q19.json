@@ -1,0 +1,58 @@
+{
+  "id": "e6f1a4b3-c9d5-4e2f-a7b8-4d1c5e8f3a2b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "Georgia O'Keeffe arrived in New York in 1918 already shaped by years of teaching school in the Texas panhandle, where vast flatness and unmediated sky had become her primary visual vocabulary. Alfred Stieglitz, who had arranged her move to the city, understood her work largely through his own aesthetic frameworks — the photograph as a record of psychological states, light as an index of feeling. He promoted her paintings as expressions of feminine interiority, a reading O'Keeffe publicly tolerated for decades while privately finding it reductive.\n\nHer extended stays in New Mexico beginning in 1929 sharpened a different axis of her practice. Animal skulls gathered from the desert floor entered her compositions not as symbols of death, which critics reliably invoked, but as objects of formal interest: their concavities, striations, and sun-bleached surfaces posed the same compositional challenges as the petals and architectural forms she had long favored. The desert itself — its color registers, its scale, its atmospheric clarity — became a perceptual environment she found more generative than any studio.\n\nBy the time she relocated permanently to New Mexico in 1949, following Stieglitz's death, the tension between the imposed interpretive framework and her own account of her motives had effectively dissolved. The critic's vocabulary could no longer easily claim her work when she was no longer present in the city that generated it.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 223,
+    "source": "Original passage, adapted from American art history"
+  },
+  "stem": "The passage is structured to present which of the following?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "An artist's gradual separation from an interpretive framework tied to a particular place",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "A chronological account of an artist's stylistic evolution across three distinct phases",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A contrast between critical misreadings and the actual content of an artist's paintings",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The influence of two geographic environments on an artist's technical development",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage traces a throughline from O'Keeffe's arrival in New York (where Stieglitz's interpretive framework was imposed on her) through her extended New Mexico stays (where she pursued her own motives independent of that framework) to her permanent relocation (at which point the framework loses its grip entirely). The organizing question is not primarily about stylistic phases, critical misreadings, or geographic influence in isolation — it is about the relationship between O'Keeffe and the interpretive vocabulary applied to her work, and how geographic distance from New York gradually dissolved that relationship. Each paragraph advances this central movement rather than simply describing what she painted or where she went.",
+  "distractorRationale": {
+    "A": "Correct. The passage is organized around O'Keeffe's progressive separation from Stieglitz's interpretive framework — a framework tied to New York — culminating in her permanent relocation to New Mexico, where that framework could no longer easily claim her work.",
+    "B": "The passage is chronological in its movement, and O'Keeffe does pass through phases, so this distractor has strong textual grounding. But the dominant logic is not stylistic evolution — the passage does not describe how her painting technique or subject matter transformed across phases. It describes the same tension (imposed interpretation vs. her own account) moving toward resolution. A student who focuses on the passage's chronological movement without tracking its thematic throughline will select this option.",
+    "C": "The passage does contrast the critics' reading (feminine interiority, death symbolism) with O'Keeffe's own account of her motives (formal interest, compositional challenge). This contrast is genuinely present in the text. But it is not the dominant organizational logic — the passage does not proceed by cataloguing misreadings and correcting them. The contrast is subordinate to the larger movement toward geographic and interpretive separation.",
+    "D": "Texas and New Mexico both appear as geographic environments that shaped O'Keeffe's practice, so this distractor is grounded in actual textual content. But the passage does not structure itself around technical development in each place. Texas appears only in the opening sentence as background; New Mexico is the site of the passage's resolution. The organizing logic is relational and interpretive, not a dual-geography comparison of technique."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"
+  },
+  "hasImage": false
+}

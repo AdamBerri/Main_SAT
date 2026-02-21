@@ -1,0 +1,78 @@
+{
+  "id": "e11cbd8f-d7a5-4ac1-aad8-fbda3a600508",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "A university study examined the relationship between hours of weekly exercise and self-reported stress levels among college students. The researchers found that students who exercised more hours per week reported lower stress levels.",
+  "stem": "Which choice most effectively uses data from the figure to support the researchers' finding?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Students exercising 7 or more hours per week reported an average stress level of 3.2 out of 10, while those exercising 3-6 hours reported 5.8 and those exercising 0-2 hours reported 7.4.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Students exercising 0-2 hours per week reported the highest stress level at 7.4 out of 10, which was above the overall average of 5.5.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Students exercising 3-6 hours per week reported an average stress level of 5.8, which was 1.6 points lower than the 0-2 hour group.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The difference in stress levels between the 3-6 hour group (5.8) and the 7+ hour group (3.2) was 2.6 points on a 10-point scale.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that more exercise correlates with lower stress. Choice A shows the full pattern across all three exercise levels (7+ hrs = 3.2, 3-6 hrs = 5.8, 0-2 hrs = 7.4), clearly demonstrating that stress decreases as exercise increases. Choice B mentions only the highest stress group. Choice C compares only two groups. Choice D compares only two groups and focuses on a point difference.",
+  "distractorRationale": {
+    "A": "Correct: shows all three exercise levels and their corresponding stress scores, demonstrating a clear inverse relationship.",
+    "B": "Wrong (incomplete evidence): cites only the least-active group and an overall average, failing to show the progression across all levels.",
+    "C": "Wrong (misread value): compares only two of three groups and focuses on the magnitude of difference rather than the overall trend.",
+    "D": "Wrong (incomplete evidence): compares only the middle and most-active groups without including the least-active group, which is needed to establish the full pattern."
+  },
+  "hasImage": true,
+  "imageDescription": "Bar chart titled 'Average Self-Reported Stress Level by Weekly Exercise Hours.' X-axis: Weekly Exercise Hours (0-2 hours, 3-6 hours, 7+ hours). Y-axis: Average Stress Level (1-10 scale). Bars: 0-2 hours = 7.4, 3-6 hours = 5.8, 7+ hours = 3.2. Source: University Health Sciences Department, 2024.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Average Self-Reported Stress Level by Weekly Exercise Hours",
+    "data": {
+      "categories": [
+        "0-2 hours",
+        "3-6 hours",
+        "7+ hours"
+      ],
+      "values": [
+        7.4,
+        5.8,
+        3.2
+      ],
+      "unit": "stress level (1-10 scale)",
+      "yAxisLabel": "Average Stress Level (1-10)",
+      "xAxisLabel": "Weekly Exercise Hours"
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 52,
+    "source": "Adapted from University Health Sciences Department research study"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.634Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "39c9ec1f-3ced-4c12-9772-99c0d8e7970e"
+  }
+}

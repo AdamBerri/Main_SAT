@@ -1,0 +1,38 @@
+{
+  "id": "d4e5f6a7-2222-4a6b-8c7d-9e0f1a2b3c22",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "When the radius of a sphere is doubled, by what factor does the volume increase?",
+  "choices": [
+    { "label": "A", "text": "$2$", "isCorrect": false },
+    { "label": "B", "text": "$4$", "isCorrect": false },
+    { "label": "C", "text": "$8$", "isCorrect": true },
+    { "label": "D", "text": "$6$", "isCorrect": false }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Original volume: $V = \\frac{4}{3}\\pi r^3$. New volume with radius $2r$: $V' = \\frac{4}{3}\\pi(2r)^3 = \\frac{4}{3}\\pi(8r^3) = 8 \\cdot \\frac{4}{3}\\pi r^3$. The volume increases by a factor of $2^3 = 8$. The answer is C.",
+  "distractorRationale": {
+    "A": "Confuses linear scaling with volumetric scaling: thinks doubling radius doubles volume (factor of 2 instead of $2^3$).",
+    "B": "Uses area scaling instead of volume scaling: $2^2 = 4$ instead of $2^3 = 8$.",
+    "C": "Correct. Volume scales as the cube of the linear dimension: $2^3 = 8$.",
+    "D": "Adds the scaling factors for each dimension instead of multiplying: $2 + 2 + 2 = 6$ instead of $2 \\times 2 \\times 2 = 8$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:22.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-d222-4d5e-8f9a-0b1c2d3e4f22"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "b9c0d1e2-f3a4-4b5c-9d6e-7f8a9b0c1d2e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.2
+  },
+  "passage": "The nineteenth-century naturalist Alexander von Humboldt traveled widely across the Americas, producing volumes of observations on plant distributions, ocean currents, and atmospheric conditions. What distinguished his approach from that of many contemporaries was not the scope of his data but the way he integrated it. Humboldt noticed that similar plant communities appeared at comparable altitudes across different mountain ranges on different continents—a pattern that pointed toward climate and elevation as organizing forces in nature, rather than geography alone. He mapped these relationships visually, creating diagrams that showed how temperature, pressure, and vegetation shifted across elevation zones. In doing so, he gave scientific form to the idea that nature functions as an interconnected whole, with each element influencing and responding to the others. Many historians of science credit Humboldt with laying the conceptual groundwork for ecology and for modern environmental thinking. His work influenced Darwin, Thoreau, and Muir, among others, and his insistence on understanding the connections among natural systems shaped how later generations approached both science and conservation. Humboldt described a world in which no species or phenomenon could be fully understood in isolation—a vision that continues to animate ecological science today.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 191,
+    "source": "Adapted from a history of science essay on Alexander von Humboldt"
+  },
+  "stem": "The main purpose of the passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "compare Humboldt's scientific methods with those of Darwin and other naturalists of the era",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "describe Humboldt's travels and the wide range of observations he recorded across continents",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "explain how Humboldt's integrated approach to nature shaped the foundations of ecological science",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "argue that Humboldt deserves more recognition than he currently receives among scientists",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage does not primarily celebrate Humboldt's travel or catalog his achievements; it traces a specific intellectual contribution—his integration of diverse observations into a vision of nature as an interconnected whole—and shows how that contribution influenced ecology and environmental thinking. The organizing idea is that Humboldt's distinctive method (synthesis rather than mere data collection) generated a concept (nature as a connected system) that shaped subsequent science. Each section of the passage develops this idea: his pattern recognition, his visual mapping, his influence on Darwin, Thoreau, and Muir, and the final claim that his vision animates ecology today.",
+  "distractorRationale": {
+    "A": "The passage mentions Darwin, Thoreau, and Muir as figures influenced by Humboldt, and it briefly contrasts Humboldt's integrative approach with that of 'many contemporaries.' However, the passage does not develop a systematic comparison of methods; Darwin and the others appear as evidence of Humboldt's influence, not as subjects of comparison.",
+    "B": "The passage does mention Humboldt's travels across the Americas and his volumes of observations, and a reader who focuses on the opening sentences might favor this choice. However, the passage quickly moves past travel and data to focus on what Humboldt did with his observations—specifically, how he integrated them to reveal ecological patterns. Description of travels is a brief framing device, not the primary purpose.",
+    "D": "The passage does assert that historians credit Humboldt with significant contributions, and its tone is clearly admiring. A reader might infer an implicit argument for greater recognition. However, the passage does not frame itself as a corrective to neglect or lack of recognition; it presents Humboldt's influence as already established and then explains its nature and scope. The purpose is explanatory rather than advocacy."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c0d1e2f3-a4b5-4c6d-8e7f-9a0b1c2d3e4f"
+  }
+}

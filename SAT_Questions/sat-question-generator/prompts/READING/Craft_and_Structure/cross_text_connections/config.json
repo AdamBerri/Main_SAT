@@ -4,7 +4,7 @@
     "domain": "Craft_and_Structure",
     "subtopic": "cross_text_connections"
   },
-  "currentVersion": "1.3.0",
+  "currentVersion": "1.4.0",
   "versions": [
     {
       "version": "1.0.0",
@@ -13,6 +13,18 @@
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.4.0",
+      "createdAt": "2026-02-20T16:11:07.004Z",
+      "parentVersion": "1.3.0",
+      "preamIteration": 1,
+      "performanceMetrics": {
+        "trainAvgScore": 4.471,
+        "trainPassRate": 1,
+        "testAvgScore": 5,
+        "testPassRate": 1
+      }
     }
   ],
   "temperatureConfig": {

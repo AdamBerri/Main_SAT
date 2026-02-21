@@ -1,0 +1,57 @@
+{
+  "id": "c3e5f7a9-2b4d-6e8f-b012-de3f4a5b6c7d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "linguistic": 1.1
+  },
+  "passage": "The ancient city of Teotihuacan, located about 30 miles northeast of modern-day Mexico City, was one of the largest urban centers in the pre-Columbian Americas. At its peak around 450 CE, the city housed an estimated 125,000 to 200,000 inhabitants, making it one of the most populous cities in the world at that time. Teotihuacan's influence extended across Mesoamerica through trade networks that reached as far as the Maya lowlands and the Gulf Coast.\n\nThe city's layout reflects careful urban planning. Two wide avenues, the Avenue of the Dead and an east-west thoroughfare, divide the city into quadrants. The Avenue of the Dead stretches nearly three miles and is flanked by more than 75 temples and ceremonial platforms. The Pyramid of the Sun, constructed around 100 CE, rises to a height of 216 feet and contains an estimated 1.3 million cubic meters of fill material—making it one of the largest structures in the ancient world by volume.\n\nDespite its grandeur, Teotihuacan was abandoned around 550 CE under circumstances that remain debated. Archaeological evidence of burning concentrated in administrative buildings suggests that an internal uprising rather than an external invasion may have brought down the city's ruling class. Skeletal remains found at some sites show signs of violent trauma, but the overall population decline appears to have been gradual rather than sudden.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 214,
+    "source": "Adapted from an overview of Mesoamerican archaeology"
+  },
+  "stem": "A student researching Teotihuacan argues that the city was exceptionally large for its era. Which quotation from the passage best supports this argument?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Two wide avenues, the Avenue of the Dead and an east-west thoroughfare, divide the city into quadrants.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"At its peak around 450 CE, the city housed an estimated 125,000 to 200,000 inhabitants, making it one of the most populous cities in the world at that time.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"Teotihuacan's influence extended across Mesoamerica through trade networks that reached as far as the Maya lowlands and the Gulf Coast.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"The Pyramid of the Sun, constructed around 100 CE, rises to a height of 216 feet and contains an estimated 1.3 million cubic meters of fill material.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The claim is that Teotihuacan was exceptionally large for its era. Choice B directly states that the city was \"one of the most populous cities in the world at that time,\" with a population of 125,000 to 200,000 inhabitants. This directly and explicitly supports the claim that the city was unusually large for its historical period, requiring no inference.",
+  "distractorRationale": {
+    "A": "This choice describes the city's street layout, which relates to urban planning rather than the city's exceptional size relative to other cities of its era.",
+    "C": "This choice addresses Teotihuacan's geographic and commercial influence, not its physical size or population. Influence is related to but distinct from the claim about the city being large.",
+    "D": "This choice provides evidence that a specific structure within the city was large, but the claim is about the city's overall size compared to other cities of its time, not about the dimensions of a single pyramid."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4f6a8b0-3c5e-7f9a-c123-ef4a5b6c7d8e"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "2e7f9c4a-1b3d-4f8e-6a2c-9d5b3e1f7a8c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "Text 1\nMonetary policy's transmission to the real economy operates through multiple channels, but behavioral economics has revealed that the expectation channel is paramount: central banks move prices and output primarily by moving expectations of future policy. This finding carries a radical implication. A central bank that credibly commits to a long-run nominal target can influence present economic activity even when its conventional policy tools are constrained—as during zero lower bound episodes—because agents rationally adjust current consumption and investment based on anticipated future monetary conditions. Institutional credibility therefore constitutes the most potent instrument in any central banker's toolkit.\n\nText 2\nThe expectational view of monetary transmission, while theoretically elegant, rests on assumptions about household and firm cognition that empirical work has systematically called into question. Survey-based measures of inflation expectations reveal substantial heterogeneity, inattentiveness, and persistent non-rationality among economic agents. If households do not form expectations rationally or update them in response to central bank communications, then the entire architecture of commitment-based policy collapses. Under these conditions, direct quantity-based interventions—asset purchase programs that alter the supply of financial instruments—achieve real effects through portfolio balance mechanisms that operate independently of expectation formation.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 163,
+    "source": "Adapted from economic policy discussions on monetary transmission mechanisms"
+  },
+  "stem": "Which choice most accurately characterizes the relationship between Text 1's argument and Text 2's response to it?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 2 accepts Text 1's claim that the expectation channel is the primary mechanism of monetary transmission but argues that this channel is more reliably activated through asset purchases than through forward guidance.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 2 challenges Text 1's identification of credibility as the paramount policy instrument by disputing the empirical foundation upon which Text 1's theoretical architecture depends, then redirects toward a mechanism that bypasses the assumption Text 1's framework requires.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 2 narrows the scope of Text 1's argument by conceding that rational expectations hold for firms while denying their applicability to household consumption and investment decisions.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 2 extends Text 1's framework by demonstrating that institutional credibility is insufficient on its own and must be supplemented by direct asset purchases to achieve the expectational alignment Text 1 describes.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 builds from the premise that agents form and update rational expectations in response to credible central bank commitments, concluding that institutional credibility is the most powerful monetary policy instrument—especially when conventional tools are unavailable. Text 2 attacks the empirical adequacy of the rational expectations premise itself: survey evidence shows agents are heterogeneous, inattentive, and non-rational in their expectation formation. This undermines the entire architecture Text 1 constructs. Text 2 then offers an alternative: asset purchase programs achieve real effects through portfolio balance mechanisms that do not depend on rational expectation formation, making them effective precisely where Text 1's preferred mechanism fails. The relationship is thus two-part: empirical challenge to Text 1's foundational assumption, followed by redirection to a mechanism that circumvents that assumption. Multi-step reasoning required: (1) identify Text 1's foundational assumption about rational expectations, (2) identify Text 2's empirical challenge to that assumption, (3) understand that Text 2's challenge undermines Text 1's conclusion about credibility, (4) recognize Text 2 proposes an alternative transmission mechanism, (5) identify that the alternative bypasses rather than improves the expectation channel, (6) distinguish 'bypass' from 'supplement,' (7) eliminate choices that preserve Text 1's expectation-channel framework.",
+  "distractorRationale": {
+    "A": "Text 2 does not accept that the expectation channel is the primary transmission mechanism—it directly challenges whether rational expectation formation occurs at all, which is the premise upon which that claim rests. Text 2 treats asset purchases as an alternative that bypasses the expectation channel, not a better activator of it.",
+    "B": "Correct. Text 2 disputes the empirical foundations of Text 1's rational expectations premise, showing that the theoretical architecture Text 1 builds on it is empirically vulnerable, then proposes portfolio balance effects via asset purchases as a mechanism that does not require rational expectation formation.",
+    "C": "Text 2 does not distinguish between firms and households in its critique. The survey-based evidence it cites covers economic agents broadly, and the argument about inattentiveness and non-rationality applies without the firm/household distinction this choice introduces.",
+    "D": "Text 2 does not extend or supplement Text 1's framework. It challenges the empirical foundations of that framework and proposes a different mechanism that works independently of the expectational alignment Text 1 discusses. 'Supplement' implies both mechanisms work together; Text 2 presents asset purchases as an alternative for when the expectation channel fails."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5b9d3f1-2a7c-4e8b-9f4d-1c6a3e2b8f5d"
+  }
+}

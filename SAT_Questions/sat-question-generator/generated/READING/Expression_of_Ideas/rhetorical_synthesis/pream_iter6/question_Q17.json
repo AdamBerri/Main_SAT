@@ -1,0 +1,59 @@
+{
+  "id": "f2a3b4c5-d6e7-4f8a-9b0c-1d2e3f4a5b6d",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- Coral reefs cover less than 1% of the ocean floor but support approximately 25% of all marine species.\n- Coral polyps have a mutualistic relationship with zooxanthellae, algae that live in coral tissue and produce nutrients through photosynthesis.\n- When water temperatures rise, corals expel zooxanthellae, causing bleaching and loss of their primary nutrient source.\n- Some coral species in the Persian Gulf naturally tolerate higher temperatures due to genetic adaptations developed over thousands of years.\n- Researchers are studying whether genes from heat-tolerant corals could be introduced to vulnerable reef populations.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 103,
+    "source": "Student research notes on coral reef resilience research"
+  },
+  "stem": "The student wants to explain a potential scientific approach to protecting coral reefs from rising temperatures. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Coral reefs support about 25% of marine species despite covering less than 1% of the ocean floor, making their protection critical to marine biodiversity.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "When water temperatures rise, corals expel the zooxanthellae they depend on for nutrients, leading to bleaching that can eventually kill the reef.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Because some Persian Gulf corals have evolved genetic tolerance to high temperatures, researchers are exploring whether transferring these genes to vulnerable corals could protect reefs from warming oceans.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Persian Gulf corals can survive in warmer water than most coral species because they have developed genetic adaptations over thousands of years.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Choice C is correct because it identifies the scientific basis (naturally heat-tolerant corals in the Persian Gulf) and the proposed approach (introducing those genes to vulnerable populations), presenting a clear strategy for protecting reefs. Choice A emphasizes the stakes but not an approach, B explains the problem but not a solution, and D describes the heat-tolerant corals without connecting them to any protective strategy.",
+  "distractorRationale": {
+    "A": "This choice establishes why coral reefs matter but does not describe any scientific approach to protecting them from rising temperatures.",
+    "B": "This choice explains the bleaching mechanism but presents the problem without offering or hinting at a solution.",
+    "D": "This choice describes heat-tolerant corals but does not connect their adaptation to any research effort or strategy for protecting other reefs."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:16.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3b4c5d6-e7f8-4a9b-0c1d-2e3f4a5b6c7e"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

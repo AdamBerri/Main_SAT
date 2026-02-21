@@ -1,0 +1,57 @@
+{
+  "id": "e7d3b9a2-1f4c-4e8a-9b6d-5c2f8a1e3b7d",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "The printing press transformed European society in the fifteenth century, it enabled the mass production of books for the first time. Before Gutenberg's invention, manuscripts were copied by hand, a process that took months or even years to complete.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 47,
+    "source": "Original SAT practice question"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "century. It enabled the mass production of books for the first time.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "century it enabled the mass production of books for the first time.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "century; and it enabled the mass production of books for the first time.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The original sentence contains a comma splice: two independent clauses—'The printing press transformed European society in the fifteenth century' and 'it enabled the mass production of books for the first time'—joined only by a comma. A comma alone cannot join two independent clauses. Choice B corrects this by placing a period after 'century,' separating the two complete thoughts into two grammatically correct sentences. This is the only choice that properly maintains sentence boundaries.",
+  "distractorRationale": {
+    "A": "NO CHANGE leaves the original comma splice intact. Two independent clauses—'The printing press transformed European society in the fifteenth century' and 'it enabled the mass production of books for the first time'—cannot be joined by a comma alone. This is a comma splice error.",
+    "C": "Removing all punctuation between the two independent clauses creates a fused (run-on) sentence. 'The printing press transformed European society in the fifteenth century it enabled the mass production of books for the first time' has no boundary between two complete thoughts, which violates sentence boundary rules.",
+    "D": "Pairing a semicolon with a coordinating conjunction ('and') is a common but incorrect construction. In standard written English, a coordinating conjunction after a semicolon is redundant and non-standard. Either a semicolon alone or a comma with a coordinating conjunction may join independent clauses, but not both together."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "2d8f4a7c-9e1b-4c3a-8f5d-6b2e9a4c1f8d"
+  },
+  "hasImage": false
+}

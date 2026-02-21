@@ -1,0 +1,58 @@
+{
+  "id": "f6a0d4e3-9b5c-4f1a-d8e7-3c0b4a9d5e1f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.2
+  },
+  "passage": "Text 1\nThe Columbian Exchange fundamentally reorganized global nutritional geography. Crops originating in the Americas—maize, potatoes, tomatoes, and sweet potatoes—became dietary staples across Eurasia and Africa within two centuries of contact. These calorie-dense transplants permitted sustained population growth in regions previously constrained by limited agrarian output, and demographers have traced substantial nineteenth-century European population increases directly to potato cultivation in marginal highland and northern soils unsuited to traditional grains.\n\nText 2\nNarrating the Columbian Exchange primarily as a story of agricultural abundance risks obscuring its asymmetry. The same transatlantic movements that delivered high-yield crops to European populations also carried epidemic diseases that devastated Indigenous American communities already managing sophisticated agricultural systems. Centering crop diffusion in this narrative assigns agency to plants while displacing the catastrophic demographic collapse that shaped the continents receiving those crops.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 139,
+    "source": "Adapted from historiographical discussions of the Columbian Exchange"
+  },
+  "stem": "Which choice best describes what Text 2 does in relation to Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 2 disputes Text 1's claim that New World crops increased European population, arguing that disease mortality offset any gains from improved nutrition.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 2 extends Text 1's account by identifying additional crops involved in the Columbian Exchange that Text 1 fails to mention.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Text 2 critiques the interpretive framework Text 1 uses, arguing that emphasizing agricultural benefits produces a selective and distorting account of the same historical process.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Text 2 agrees with Text 1 that crop diffusion drove demographic change but contends that Text 1 overstates the speed at which New World crops spread across Eurasia.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Text 1 frames the Columbian Exchange through the lens of crop diffusion and population growth, presenting agricultural transfer as its defining consequence. Text 2 does not dispute that crops moved or that populations grew in some regions; instead, it argues that this framing itself is problematic because it makes the exchange appear as a story of abundance while marginalizing the devastating disease-driven demographic collapse experienced by Indigenous Americans. Choice C correctly identifies this as a critique of Text 1's interpretive framework rather than a correction of its factual claims.",
+  "distractorRationale": {
+    "A": "Text 2 does not argue that European population gains were offset by disease mortality in Europe. Its point is that Indigenous Americans suffered demographic collapse, not that European benefits were nullified. Text 2 targets the narrative framing, not the accuracy of Text 1's population claim.",
+    "B": "Text 2 does not enumerate additional crops or expand Text 1's inventory. Its argument is historiographical—about how the narrative is constructed—not supplementary or additive to Text 1's botanical accounting.",
+    "C": "Correct. Text 2 explicitly argues that centering crop diffusion in the Columbian Exchange narrative is itself a distorting choice that assigns agency to plants and obscures Indigenous American devastation, critiquing the framework that Text 1 employs.",
+    "D": "Text 2 raises no objections about the timeline or pace of crop diffusion. Its critique concerns narrative emphasis and whose experiences are centered, not the chronology of agricultural spread that Text 1 describes."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a"
+  },
+  "hasImage": false
+}

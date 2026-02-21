@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "db01f692-16b3-4053-bc1e-d606b43eecfd",
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "The political theorist Hannah Arendt, whose analysis of totalitarianism remains one of the most influential works of twentieth-century political philosophy, argued that the distinguishing feature of totalitarian regimes was not merely their use of violence but their systematic destruction of the capacity for independent thought. In her magnum opus, Arendt maintained that the combination of propaganda, terror, and enforced isolation that characterized such regimes [1]_____ individuals of the shared reality necessary for meaningful political action, leaving them vulnerable to manipulation by the state.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 90,
+    "source": "Adapted from a political theory analysis"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "deprive",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "deprived",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "deprives",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "had deprived",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement combined with tense selection in reported speech with extreme structural complexity. The subject is 'the combination' (singular), separated from the verb by a three-element prepositional list ('of propaganda, terror, and enforced isolation') and a relative clause ('that characterized such regimes'). Within the reported speech frame of 'maintained that,' the verb should be past tense: 'deprived.' Despite the many plural nouns (propaganda, terror, isolation, regimes) and the plural verb 'characterized' in the relative clause, the main verb must agree with singular 'combination.' Simple past maintains tense consistency with 'maintained.'",
+  "distractorRationale": {
+    "A": "Base form/plural—disagrees with singular 'combination' and lacks proper tense for reported speech.",
+    "B": "Correct. Past tense, agreeing with singular 'combination' and consistent with 'maintained that' reported speech frame.",
+    "C": "Present singular—while it agrees in number, present tense breaks the past-tense reported speech frame of 'maintained that.'",
+    "D": "Past perfect—implies the deprivation occurred before the maintaining, but they are concurrent: Arendt maintained that the combination deprived, not that it had already deprived before she wrote about it."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "0c3514cb-fff6-4658-8aa4-c3a2252e255a"
+  }
+}

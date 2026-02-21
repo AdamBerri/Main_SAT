@@ -1,0 +1,58 @@
+{
+  "id": "e9a3f7b2-5c1d-4e8a-9b4c-3f7d2a6e1b9c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "linguistic": 1.1
+  },
+  "passage": "The community garden project brought together residents from across the neighborhood to cultivate a shared plot of land behind the library. Volunteers dug rows, planted seedlings, and took turns watering the beds each morning. By midsummer, the garden had begun to yield an impressive variety of vegetables and herbs.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 55,
+    "source": "Original"
+  },
+  "stem": "As used in the passage, \"yield\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "produce",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "surrender",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "bend",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "concede",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage describes a garden where volunteers planted seedlings and tended the beds, leading to the garden beginning to \"yield an impressive variety of vegetables and herbs.\" In agricultural contexts, yield means to produce or generate crops, which is exactly what the garden is doing. The surrounding details about planting and cultivation make clear that the word refers to what the garden is generating or bringing forth.",
+  "distractorRationale": {
+    "A": "Correct. 'Produce' fits the agricultural context perfectly — the garden is generating an output of vegetables and herbs after the volunteers' cultivation efforts.",
+    "B": "'Surrender' is a common meaning of 'yield' (e.g., 'yield to pressure'), but the passage describes a garden generating output, not something giving way or capitulating to a force.",
+    "C": "'Bend' captures the physical meaning of 'yield' (e.g., a material that yields under stress), but the passage is about a garden generating crops, not a material deforming.",
+    "D": "'Concede' reflects the meaning of yield in argument or debate contexts (e.g., 'yield the floor'), but the passage has no sense of a dispute or concession — it is about agricultural production."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e9f2a7-8b3c-4d1e-9f5a-2b7c3d8e1f4a"
+  },
+  "hasImage": false
+}

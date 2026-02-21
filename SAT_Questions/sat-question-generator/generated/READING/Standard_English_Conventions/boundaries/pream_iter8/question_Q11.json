@@ -1,0 +1,57 @@
+{
+  "id": "c4f2a8d1-7e3b-4a9c-8f6d-2e5b1a9c3f7d",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3.0,
+    "linguistic": 3.3
+  },
+  "passage": "The Eiffel Tower was originally built as a temporary exhibit for the 1889 World's Fair; later designated a permanent landmark after public opinion shifted in its favor. Today it stands as one of the most recognizable structures in the world and attracts millions of visitors each year.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 52,
+    "source": "Original SAT practice question"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "World's Fair, later designated a permanent landmark after public opinion shifted in its favor.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "World's Fair. Later designated a permanent landmark after public opinion shifted in its favor.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "World's Fair; and later designated a permanent landmark after public opinion shifted in its favor.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The phrase 'later designated a permanent landmark after public opinion shifted in its favor' is a participial phrase modifying 'The Eiffel Tower.' It has no subject and no finite verb of its own, so it is NOT an independent clause. A semicolon (Choice A) can only join two independent clauses, making it incorrect here. A comma (Choice B) correctly attaches the participial phrase to the preceding independent clause 'The Eiffel Tower was originally built as a temporary exhibit for the 1889 World's Fair.' Choice B is the only grammatically correct option.",
+  "distractorRationale": {
+    "A": "NO CHANGE uses a semicolon before 'later designated a permanent landmark,' but a semicolon must join two independent clauses. The phrase 'later designated a permanent landmark after public opinion shifted in its favor' is a participial phrase with no subject and no finite verb, so the semicolon is incorrect here.",
+    "C": "Placing a period before 'Later designated a permanent landmark after public opinion shifted in its favor' creates a fragment. This phrase has no subject and no finite verb, so it cannot stand alone as a complete sentence.",
+    "D": "Pairing a semicolon with a coordinating conjunction ('and') is a common student error. Even setting that aside, 'later designated a permanent landmark after public opinion shifted in its favor' remains a participial phrase without a subject or finite verb, so neither a semicolon nor a conjunction can correctly introduce it as a second independent clause."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "9b3e7f2d-4a1c-4e8b-9d6f-1c5a8b2e4d7f"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,54 @@
+{
+  "id": "f2e8c4a1-5b9d-4e3f-8c7a-1d6b4e2a9c5f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "A scatterplot shows the relationship between the number of days since January 1 ($x$) and the average daily temperature in degrees Celsius ($y$) for a city. The line of best fit for this data is:\n$$\\hat{y} = 0.12x + 2.4$$\n\nA researcher decides to express all temperatures in degrees Fahrenheit instead of Celsius, using the conversion $F = 1.8C + 32$. After converting all $y$-values to Fahrenheit, a new line of best fit is calculated for the same $x$-values.\n\nWhat is the $y$-intercept of the new line of best fit?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2.4$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$0.216$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$34.4$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$36.32$",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "When all $y$-values are transformed using $F = 1.8C + 32$, the new line of best fit is obtained by substituting the original line equation into the Fahrenheit conversion formula.\n\nOriginal line: $\\hat{y}_C = 0.12x + 2.4$\n\nApply $F = 1.8C + 32$:\n$$\\hat{y}_F = 1.8(0.12x + 2.4) + 32$$\n$$\\hat{y}_F = 1.8(0.12)x + 1.8(2.4) + 32$$\n$$\\hat{y}_F = 0.216x + 4.32 + 32$$\n$$\\hat{y}_F = 0.216x + 36.32$$\n\nThe $y$-intercept of the new line is $\\boxed{36.32}$.\n\nNote: The slope changes by a factor of 1.8 (the multiplicative part of the conversion), but the $y$-intercept is affected by BOTH the multiplicative factor (applied to the original intercept 2.4) AND the additive shift (+32).",
+  "distractorRationale": {
+    "A": "The student reports the original $y$-intercept $2.4$ without applying any conversion. This error reflects a failure to recognize that transforming all $y$-values changes both the slope and the intercept of the line of best fit.",
+    "B": "The student correctly computes the new slope ($1.8 \\times 0.12 = 0.216$) but reports the slope instead of the $y$-intercept. This is a misidentification of which parameter was asked for.",
+    "C": "The student applies only the additive part of the Fahrenheit conversion: $2.4 + 32 = 34.4$. This error comes from using $F = C + 32$ and ignoring the multiplicative factor of 1.8, so the original $y$-intercept is not scaled before adding 32.",
+    "D": "Correct. The student applies the full transformation $F = 1.8C + 32$ to the original line, distributing to get $\\hat{y}_F = 0.216x + 36.32$, and correctly identifies $36.32$ as the new $y$-intercept."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d9a3c7e1-2f5b-4e8a-8c4d-6b1e3a7c9f2d"
+  }
+}

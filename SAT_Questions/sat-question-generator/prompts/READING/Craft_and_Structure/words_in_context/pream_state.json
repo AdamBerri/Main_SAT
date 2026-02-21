@@ -85,7 +85,7 @@
             "category": "faithfulness",
             "frequency": 1,
             "exampleErrors": [
-              "Question format and style match SAT conventions, but deviates significantly in answer choice sophistication, distractor quality, and potential answer key error\u2014answer choices differ too dramatically in meaning rather than representing nuanced synonyms as in official College Board items"
+              "Question format and style match SAT conventions, but deviates significantly in answer choice sophistication, distractor quality, and potential answer key error—answer choices differ too dramatically in meaning rather than representing nuanced synonyms as in official College Board items"
             ]
           },
           {
@@ -220,11 +220,181 @@
       },
       "improvementMade": "Addressed: difficulty_overestimation, answer_key_errors, distractor_design_flaws",
       "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.271,
+        "passRate": 0.9,
+        "errorCategories": [
+          {
+            "category": "answer_ambiguity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q10 d2 scored 3 on answer_validity — distinct as notable vs different not disambiguated"
+            ]
+          },
+          {
+            "category": "atypical_word_usage",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q19 d4 scored 3 on faithfulness — archaic visit upon construction"
+            ]
+          },
+          {
+            "category": "weak_distractor_quality",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q11,Q13,Q18 scored 3 on distractor_quality — distractors dont strongly compete"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: answer_ambiguity (require strong contextual disambiguation), atypical_word_usage (ban archaic/obsolete constructions), weak_distractor_quality (require real common meanings as distractors)",
+      "newPromptVersion": "1.5.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.5.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.273,
+        "passRate": 0.95,
+        "errorCategories": [
+          {
+            "category": "unnatural_phrasing",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q4 d1: yield used in forced/stilted context scoring 3 on answer_validity"
+            ]
+          },
+          {
+            "category": "over_scaffolding",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q12 d3: depleting appears adjacent to target word, practically defining it"
+            ]
+          },
+          {
+            "category": "weak_distractors_low_diff",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q1, Q14, Q7 scored 3 on distractor_quality at low difficulty"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.7,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: unnatural_phrasing (natural phrasing check), over_scaffolding (no adjacent synonyms rule), weak_distractors_low_diff (d1-2 distractor quality section)",
+      "newPromptVersion": "1.6.0"
+    },
+    {
+      "iteration": 8,
+      "promptVersionUsed": "1.6.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.05,
+        "passRate": 0.9,
+        "errorCategories": [
+          {
+            "category": "redundant_distractors",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q5: separated/split near-synonyms",
+              "Q8: connect/span too similar causing answer ambiguity"
+            ]
+          },
+          {
+            "category": "weak_distractors_low_diff",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q3 d1 distractor_quality:2",
+              "Q5 d1 distractor_quality:2"
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q12 d3 too easy for stated difficulty",
+              "Q20 d4 distractor_quality:3 insufficient challenge"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.484,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: redundant_distractors (explicit redundancy check with examples), weak_distractors_low_diff (require 4+ distinct meanings), difficulty_miscalibration (d3-d4 calibration section)",
+      "newPromptVersion": "1.7.0"
+    },
+    {
+      "iteration": 9,
+      "promptVersionUsed": "1.7.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.225,
+        "passRate": 0.9,
+        "errorCategories": [
+          {
+            "category": "adjacent_synonym_violation",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q17 d4: absorb in passage too close to correct answer assimilate, answer_validity:2.5"
+            ]
+          },
+          {
+            "category": "fabricated_distractor_meaning",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q7 d2: fund adequately not a real meaning of table",
+              "Q20 d4: depict not a standard meaning of animate"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.633,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: adjacent_synonym_violation (expanded no-synonym rule to entire passage), fabricated_distractor_meaning (distractor authenticity check requiring dictionary verification)",
+      "newPromptVersion": "1.8.0"
+    },
+    {
+      "iteration": 10,
+      "promptVersionUsed": "1.8.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.271,
+        "passRate": 0.8,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.683,
+        "passRate": 1
+      },
+      "improvementMade": "Max iterations reached. Best version: 1.5.0 (test avg 5.0)",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.3.0",
-  "converged": false,
+  "currentBestVersion": "1.5.0",
+  "converged": true,
   "startedAt": "2026-01-08T15:10:22.295Z",
-  "completedAt": null,
-  "bestTestScore": 3.9583333333333335
+  "completedAt": "2026-02-20T15:47:53.001Z",
+  "bestTestScore": 5
 }

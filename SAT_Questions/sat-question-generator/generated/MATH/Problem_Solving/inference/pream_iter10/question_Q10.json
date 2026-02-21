@@ -1,0 +1,54 @@
+{
+  "id": "f4c2b8e1-9a3d-4f7c-b6e4-1d5a8f2c3b7e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "A national health organization surveyed 400 randomly selected adults across the United States and found that 52 of them had been diagnosed with high blood pressure in the past year. There are approximately 260 million adults in the United States. Based on this sample, which of the following is the best estimate of the number of U.S. adults diagnosed with high blood pressure in the past year?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "About 13 million",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "About 33.8 million",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "About 52 million",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "About 207 million",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The sample proportion of adults diagnosed with high blood pressure is 52/400 = 0.13, or 13%. Because the sample was randomly selected from U.S. adults, this proportion can be applied to the full adult population. Estimated number = 0.13 × 260,000,000 = 33,800,000, or about 33.8 million. Arithmetic check: 52 ÷ 400 = 0.13; 0.13 × 260,000,000 = 33,800,000. Answer B is correct.",
+  "distractorRationale": {
+    "A": "Error type 5 (Overgeneralizing scope): A student might confuse the scaling factor, dividing 260 million by 20 (perhaps misreading 400 as relating to 20 groups of 260 million ÷ 20 = 13 million) rather than correctly applying the 13% proportion — producing 13 million through a flawed proportional setup.",
+    "B": "This is the correct answer. Applying the sample proportion (52/400 = 13%) to the U.S. adult population (0.13 × 260 million = 33.8 million) gives the best estimate.",
+    "C": "Error type 1 (Confusing sample with population): A student might note that 52 adults were diagnosed in the sample and mistakenly equate 52 to '52 million' — transposing the raw sample count into a population-level number without computing the actual proportion and scaling it.",
+    "D": "Error type 2 (Wrong confidence interpretation): A student might subtract the diagnosed count from the total — computing 260 million − 52 million = 208 million (approximately 207 million) — misunderstanding the question as asking for the number NOT diagnosed rather than those who were, or applying the complement of an incorrectly scaled proportion."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a9e3c7f1-2d8b-4a6c-b1f4-7e5d2c9a3b8f"
+  }
+}

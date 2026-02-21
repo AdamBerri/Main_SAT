@@ -1,0 +1,56 @@
+{
+  "id": "e5c19b37-2a84-4d70-9f38-1b6e0d4c8a72",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "The term \"citizen science\" suggests a partnership between professional researchers and ordinary members of the public, but the relationship in practice has often been more one-sided than the name implies. Volunteers in large-scale data collection projects commonly perform repetitive tasks — photographing lichens, tagging birds, counting insects — while the scientists who design those projects retain control over research questions, analytical methods, and publication decisions. Survey data from multiple citizen science platforms show that fewer than five percent of volunteers receive any credit in the peer-reviewed articles that result from their contributions. Training materials for volunteers typically focus on data-entry accuracy rather than on explaining how collected data connects to broader research goals. Proponents argue that participants still benefit from exposure to scientific practice and from the satisfaction of contributing to knowledge. Critics note, however, that the same argument was once made to justify the unpaid labor of laboratory assistants before professional norms changed. The gap between the label of partnership and the actual distribution of credit, autonomy, and decision-making power raises a question that the field has been slow to address openly: whose science is citizen science, really?",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 181,
+    "source": "Adapted from a science policy journal"
+  },
+  "stem": "Which choice best describes the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Analyze how citizen science platforms train volunteers to collect accurate data for researchers",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Inform readers about the growth of citizen science as a method for large-scale data collection",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Challenge the claim that citizen science represents a genuine partnership by exposing unequal power dynamics",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Reconcile opposing views on whether citizen science volunteers receive adequate recognition for their contributions",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "From the opening observation that the relationship is \"more one-sided than the name implies\" through the specific statistics on publication credit and the closing rhetorical question, the passage systematically builds a critique of the gap between the rhetoric of partnership and the reality of unequal power. The comparison to historical unpaid laboratory labor is not a neutral observation but a pointed analogy reinforcing the critique. The author's purpose is to challenge a prevailing label, not merely to describe, inform about, or reconcile differing opinions about citizen science.",
+  "distractorRationale": {
+    "A": "Training materials are mentioned in the passage, but the author cites them as evidence of volunteers' limited access to the broader research context — a supporting detail for the critique rather than the subject of analysis. Selecting this choice confuses a secondary element with the primary rhetorical goal.",
+    "B": "The passage references citizen science platforms and the data-collection work volunteers perform, but these details are backdrop for the author's critical argument, not the subject of an informational overview. The tone and structure are argumentative rather than expository.",
+    "D": "The passage does note that proponents and critics hold different views, but the author does not attempt to reconcile them. The passage's final rhetorical question deliberately leaves the tension unresolved, reinforcing the author's intent to challenge rather than to mediate."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4f07d28-9b51-4e83-b26a-3d7a1c5e0f62"
+  }
+}

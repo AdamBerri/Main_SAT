@@ -1,0 +1,54 @@
+{
+  "id": "c5d2e8f1-3a7b-4c0d-9e6f-1b4a2c8d5e7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A diesel generator consumes fuel at a rate of 3.2 liters per hour when producing exactly 5 kilowatts of power. Fuel consumption scales proportionally with power output. A construction site requires 8 kilowatts of continuous power for 72 hours. Diesel fuel costs $4.15 per gallon, and 1 gallon equals 3.785 liters. What is the total cost of fuel for the 72-hour period, rounded to the nearest cent?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$252.63",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$382.46",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$404.19",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$489.44",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Step 1: Find the fuel consumption rate at 8 kilowatts.**\n\nSince consumption scales proportionally with power:\n$$\\frac{3.2 \\text{ L/hr}}{5 \\text{ kW}} \\times 8 \\text{ kW} = 5.12 \\text{ L/hr}$$\n\n**Step 2: Find total liters consumed over 72 hours.**\n\n$$5.12 \\frac{\\text{L}}{\\text{hr}} \\times 72 \\text{ hr} = 368.64 \\text{ L}$$\n\n**Step 3: Convert liters to gallons.**\n\n$$368.64 \\text{ L} \\times \\frac{1 \\text{ gal}}{3.785 \\text{ L}} = 97.394\\ldots \\text{ gal}$$\n\n**Step 4: Calculate total cost.**\n\n$$97.394 \\text{ gal} \\times \\$4.15/\\text{gal} = \\$404.19$$\n\nThe correct answer is **C: $404.19**.",
+  "distractorRationale": {
+    "A": "**Error: Fails to scale fuel consumption rate for the higher power output.** The student uses the base rate of 3.2 L/hr without adjusting for 8 kW: $3.2 \\times 72 = 230.4$ L $\\div 3.785 = 60.874$ gal $\\times \\$4.15 = \\$252.63$. The student ignores the proportional relationship between power and fuel consumption.",
+    "B": "**Error: Uses an incorrect liter-to-gallon conversion factor (1 gallon = 4.0 liters instead of 3.785 liters).** The student correctly scales to 5.12 L/hr and gets 368.64 L total, but converts using a rounded factor: $368.64 \\div 4.0 = 92.16$ gal $\\times \\$4.15 = \\$382.46$.",
+    "C": "**Correct answer.** Fuel rate is properly scaled to 5.12 L/hr, multiplied by 72 hr to get 368.64 L, converted to 97.394 gallons using the given factor of 3.785 L/gal, then multiplied by $4.15/gal to yield $404.19.",
+    "D": "**Error: Uses an additive rather than multiplicative model for power scaling.** The student adds the extra 3 kW of demand to the base rate instead of scaling proportionally: $3.2 + 3.0 = 6.2$ L/hr, then $6.2 \\times 72 = 446.4$ L $\\div 3.785 = 117.938$ gal $\\times \\$4.15 = \\$489.44$."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1e2d3c4-b5a6-7890-cdef-1234567890ab"
+  }
+}

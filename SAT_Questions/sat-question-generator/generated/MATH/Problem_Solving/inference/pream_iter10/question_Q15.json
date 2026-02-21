@@ -1,0 +1,54 @@
+{
+  "id": "c7e4b9a2-1f8d-4c3e-7b5a-9d2f6e8c4a1b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "Two studies examined reading scores among third-graders. Study A randomly selected 50 students from one elementary school and found a mean reading score of 74. Study B randomly selected 400 students from schools across the state and found a mean reading score of 71. A school principal argues that Study A's result is more trustworthy because the higher score shows stronger reading performance. Which of the following most clearly identifies the flaw in the principal's argument?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Study A's sample of 50 students is too small for its mean to be considered a reliable estimate of anything.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The principal is confusing a higher score with greater reliability — Study B's larger, more geographically diverse sample makes it a better estimate of third-grade reading performance statewide.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The two studies cannot be compared because they may have used different reading assessments with different scoring scales.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Study A's result applies only to the students tested, so it cannot be used to estimate the reading performance of any larger group.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The principal's argument conflates the value of a score with the trustworthiness of the estimate. Study A found a higher score (74 vs. 71), but a higher score does not make a study more reliable — what determines reliability is how the sample was drawn and what population it represents. Study B randomly sampled 400 students from schools across the state, making it a much stronger basis for estimating state-level reading performance: it is larger, and more importantly, it covers the full geographic range of the population of interest. Study A's 50 students from a single school may reflect local factors (teaching methods, demographics, funding) that make it unrepresentative of the state's third-graders as a whole. The principal's reasoning error is treating a favorable result as equivalent to a trustworthy result — a fundamental confusion about what makes a statistical estimate credible.",
+  "distractorRationale": {
+    "A": "Error type 6 (sample size misapplication): Study A's sample of 50, while smaller than Study B's, is not too small to produce a valid estimate for the school it sampled. The issue is the scope of generalization (one school vs. statewide), not that 50 is inherently inadequate. This distractor misidentifies the problem as absolute sample size.",
+    "B": "Correct. The principal commits error type 2 (wrong confidence interpretation) by treating a higher score as evidence of trustworthiness. The real driver of reliability is sample design and representativeness — Study B's statewide random sample is more trustworthy for estimating state-level performance precisely because it covers the target population more fully.",
+    "C": "Error type 3 (ignoring sampling method): Introducing the possibility of different scoring scales is a plausible-sounding concern, but it has no basis in the scenario — the problem states both studies measured reading scores, implying they are comparable. This distractor draws attention away from the actual flaw (scope of generalization) by raising an unrelated measurement issue.",
+    "D": "Error type 5 (overgeneralizing scope — inverted): This distractor goes too far in the other direction, suggesting Study A's result applies to no one beyond those tested. In fact, Study A's result can reasonably generalize to that school. The real limitation is that it cannot generalize to the entire state, not that it generalizes to no one."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3b9e7f1a-4c2d-4e8b-5f6a-1d9c8b3e7f2a"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "87b4d2e6-f519-4a03-c1e8-3d0f6a9b2c74",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "The equation $x^2 = 3x + 10$ has two solutions. What is the positive solution?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-2$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$2$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$5$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$10$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Rearrange the equation into standard form by subtracting $3x + 10$ from both sides:\n$$x^2 - 3x - 10 = 0$$\n\nFactor by finding two numbers that multiply to $-10$ and add to $-3$. Those numbers are $-5$ and $2$:\n$$(x - 5)(x + 2) = 0$$\n\nSetting each factor equal to zero: $x = 5$ or $x = -2$.\n\nVerification in the original equation $x^2 = 3x + 10$:\n- $x = 5$: LHS $= 25$, RHS $= 15 + 10 = 25$ ✓\n- $x = -2$: LHS $= 4$, RHS $= -6 + 10 = 4$ ✓\n\nThe positive solution is $x = 5$.",
+  "distractorRationale": {
+    "A": "Choice A = -2: Results from identifying the negative solution $x = -2$ instead of the positive one. The student solved the equation correctly but selected the wrong solution.",
+    "B": "Choice B = 2: Results from a sign error when rearranging: the student writes $x^2 + 3x - 10 = 0$ (adding $3x$ to the left instead of subtracting), then factors as $(x + 5)(x - 2) = 0$, giving solutions $x = -5$ and $x = 2$, and reports the positive solution as $2$. Verification of error: $(x+5)(x-2) = x^2 + 3x - 10 = 0$ has roots $x = 2$ and $x = -5$.",
+    "C": "Choice C = 5: Correct. After rearranging to $x^2 - 3x - 10 = 0$ and factoring as $(x-5)(x+2) = 0$, the positive solution is $x = 5$.",
+    "D": "Choice D = 10: Results from treating the equation as linear by ignoring the $x^2$ term, giving $0 = 3x + 10$ (or confusing the constant with a solution). Alternatively, the student reads $10$ directly from the equation as a solution without solving. Verification shows $10^2 = 100 \\neq 3(10)+10 = 40$, so $x = 10$ is not a valid solution."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "2a9f5c8e-b347-4d10-e6a1-7c3b0d8f4e92"
+  }
+}

@@ -61,9 +61,12 @@ function createGLMClientFromEnv() {
  * in <think>...</think> tags before the actual response.
  */
 function stripThinkingTokens(text) {
-    // Remove all <think>...</think> blocks (greedy, handles newlines)
-    const stripped = text.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
-    return stripped || text;
+    // Remove all <think>...</think> blocks (handles newlines)
+    let stripped = text.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
+    // Also handle unclosed <think> tags (model ran out of tokens during reasoning)
+    stripped = stripped.replace(/<think>[\s\S]*$/g, '').trim();
+    // If everything was thinking tokens, return empty string (not the raw thinking)
+    return stripped;
 }
 /**
  * Extract text content from an OpenAI chat completion response

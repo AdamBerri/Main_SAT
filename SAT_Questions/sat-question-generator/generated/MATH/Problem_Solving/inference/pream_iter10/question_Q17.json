@@ -1,0 +1,54 @@
+{
+  "id": "c8d3e5f7-2a4b-4c9d-b1e6-7f8a3c2d5e10",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "A school district surveyed all 1,200 students enrolled in its four high schools about their daily screen time. Results showed that 54% of respondents reported more than 4 hours of daily screen time. The district superintendent concluded that, across the four schools, approximately 648 students exceed 4 hours of daily screen time. A researcher reviewed the study and noted that 38% of surveyed students did not respond. Which of the following best explains why the researcher's concern most undermines the superintendent's conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The conclusion is flawed because the district should have sampled students rather than surveying all 1,200, since a random sample produces more reliable results than a census.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The conclusion is flawed because the 54% rate was calculated from respondents only, and students who did not respond may have systematically different screen time habits, making the effective sample unrepresentative.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The conclusion is flawed because the superintendent applied the percentage to all 1,200 students, but the survey only covered the four high schools, so the result cannot generalize to the broader population.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is flawed because self-reported screen time data is inherently unreliable, so no valid inference can be drawn regardless of who responded.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The superintendent intended to survey all 1,200 students (a census), but 38% — approximately 456 students — did not respond. This means the 54% figure is based only on the roughly 744 students who responded. The critical inference problem is non-response bias: students who chose not to respond may be systematically different from those who did. For example, students with very high screen time might be less likely to respond to a school survey about that topic, or vice versa. Because the non-respondents are not a random subset, the 54% from respondents cannot be reliably applied to all 1,200 students. The superintendent's calculation of 648 (= 54% × 1,200) treats the respondent rate as if it represented all students, which is not statistically justified when non-response is this substantial. The arithmetic 0.54 × 1,200 = 648 is correct, but the statistical reasoning behind applying that percentage to all 1,200 students is flawed due to potential non-response bias.",
+  "distractorRationale": {
+    "A": "Error type 6 (sample size misapplication / misunderstanding census vs. sample): Surveying all members of a population (a census) is generally more comprehensive than a random sample, not less reliable. Claiming that a sample would be preferable to a census reflects a fundamental misunderstanding of statistical methodology. This distractor targets students who confuse the conditions under which sampling is used with a general preference for sampling over census data.",
+    "B": "Correct answer: The 38% non-response rate means the 54% figure comes only from students who chose to respond. Non-respondents may have systematically different behaviors, introducing non-response bias. Applying the respondent percentage to all 1,200 students assumes the non-respondents have the same distribution, which cannot be justified when non-response is this large and potentially selective.",
+    "C": "Error type 5 (overgeneralizing scope — misidentifying the population): The superintendent's conclusion is specifically about the 1,200 students in the four district high schools — which is exactly the population surveyed. The conclusion does not claim to generalize beyond those four schools. This distractor targets students who confuse the scope of the conclusion with the scope of the survey, but the superintendent's claim actually matches the sampled population.",
+    "D": "Error type 3 (ignoring sampling method — conflating measurement reliability with sampling validity): Self-reported data always carries some unreliability, but this is a general caveat that applies to most surveys and does not specifically explain why this particular conclusion is undermined by the researcher's noted concern (the non-response rate). The researcher's concern is about who responded, not about whether respondents answered truthfully. Accepting this distractor requires ignoring the specific flaw identified in the prompt."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e1f4a7b2-6c8d-4e3f-9a5b-2d7c1e8f3a06"
+  }
+}

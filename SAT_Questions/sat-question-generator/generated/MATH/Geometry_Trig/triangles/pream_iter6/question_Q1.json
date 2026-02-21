@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2d1-58b4-4e09-91ac-7d3e6b5f2c80",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "computational": 1.3
+  },
+  "stem": "In triangle $PQR$, angle $P = 47°$ and angle $Q = 68°$. What is the measure of angle $R$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$55°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$65°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$75°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$115°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The sum of the interior angles of any triangle equals $180°$. Given angle $P = 47°$ and angle $Q = 68°$, we find angle $R$ by subtracting:\n\n$$\\angle R = 180° - 47° - 68° = 180° - 115° = 65°$$\n\nThe measure of angle $R$ is $65°$.",
+  "distractorRationale": {
+    "A": "The student subtracts only one of the given angles from $180°$ — specifically $180° - 47° - 78°$ by misreading $68°$ as $78°$ — arriving at $55°$.",
+    "B": "Correct answer: $180° - 47° - 68° = 65°$.",
+    "C": "The student adds the two given angles ($47° + 68° = 115°$) but then subtracts from $190°$ instead of $180°$, yielding $75°$.",
+    "D": "The student computes only the sum of the two given angles ($47° + 68° = 115°$) and reports that sum as the answer, forgetting to subtract from $180°$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b1e94c73-2f5d-4a07-8b3c-9d6e1f0a5c22"
+  }
+}

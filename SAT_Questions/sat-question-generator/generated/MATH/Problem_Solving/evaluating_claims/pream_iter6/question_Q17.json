@@ -1,0 +1,54 @@
+{
+  "id": "b1d4f8a2-67c3-4e90-a512-3e7b9f1d2c48",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "A school district with 12,000 students wants to estimate the proportion of students who prefer online homework submission over paper submission. A researcher randomly selects 60 students from one of the district's three high schools (which has 2,400 students) and finds that 45 of the 60 students prefer online submission.\n\nA district administrator concludes: \"Since 75% of the sampled students prefer online submission, we can conclude that approximately 75% of all 12,000 students in the district prefer online submission.\"\n\nWhich of the following identifies the most significant flaw in the administrator's conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The sample size of 60 students is too small to draw any conclusions about even the single school surveyed.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The sample was drawn from only one of the district's high schools, so it cannot be assumed to represent all 12,000 students in the district.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Because 45 out of 60 is exactly 75%, this percentage is too precise to generalize to a larger group.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The survey question is biased because it asks students to choose between only two options.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The administrator's conclusion attempts to generalize from a sample to the full district population of 12,000 students. For a generalization to the full district to be valid, the sample must be representative of all district students — which requires either random selection from the entire district or a design that ensures each school (and grade level) is fairly represented.\n\nThe critical flaw is that the 60-student sample was drawn only from one specific high school. This means the sample is not representative of the full district, which may include multiple schools, middle schools, and elementary schools with potentially different preferences. Students at one high school may have systematically different preferences than students at other schools.\n\nNote that 60 students randomly selected from a school of 2,400 is a reasonable sample for making inferences about that school ($60/2400 = 2.5\\%$ of the school population). The flaw is not sample size — it is the scope of the population being sampled. The sample was drawn from one school, so conclusions may only extend to students at that school, not to the entire district.\n\nChoice A is wrong because the sample size is adequate for the school it came from; the issue is coverage of the district, not size per se.\nChoice C is wrong because exact percentage calculations do not inherently become invalid when applied to a larger group — this reasoning is not a recognized statistical principle.\nChoice D introduces a flaw not described in the study; there is no information to suggest the question was worded in a biased way.",
+  "distractorRationale": {
+    "A": "Students who apply a blanket rule that small samples cannot support conclusions will choose this. However, 60 randomly selected students can validly represent the 2,400-student school; the problem is the scope of the generalization, not the raw size of the sample.",
+    "B": "Correct. The sample covers only one high school but the conclusion is about all 12,000 district students. Because the sample was not drawn from the full district, it cannot be assumed to represent all students in it.",
+    "C": "Students who confuse precision of a calculation with generalizability will choose this. The exact 75% figure is not itself a problem; the issue is whether the group sampled represents the group being described in the conclusion.",
+    "D": "Students who invent methodological flaws not described in the problem will choose this. The question stem gives no information about how the survey question was worded, so this distractor cannot be evaluated and is not supported by the given information."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3a9e5b7-1f2d-4c86-a730-5e8b0d4f7c21"
+  }
+}

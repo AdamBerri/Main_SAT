@@ -1,0 +1,57 @@
+{
+  "id": "29f1a3b5-8b0c-2d4e-1678-349f0a1b2c3d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "Plastic pollution in the world's oceans has become one of the most pressing environmental issues of the modern era. Each year, an estimated 8 million metric tons of plastic enter the ocean, adding to the estimated 150 million metric tons already present in marine environments. Much of this plastic does not decompose but instead breaks into smaller and smaller fragments called microplastics, defined as particles smaller than five millimeters in diameter.\n\nMarine animals are harmed by plastic pollution in multiple ways. Sea turtles frequently mistake plastic bags for jellyfish and ingest them, leading to intestinal blockages that can be fatal. Seabirds such as albatrosses feed plastic debris to their chicks, mistaking it for food; researchers on Midway Atoll in the Pacific Ocean found that 97 percent of Laysan albatross chicks examined contained plastic in their stomachs. Filter feeders, including mussels and oysters, accumulate microplastics in their tissues at concentrations that increase with the density of surrounding plastic pollution.\n\nThe problem is not limited to open oceans. Studies of rivers in Asia and Europe have found that these waterways carry substantial loads of plastic waste that eventually discharge into the sea. The Yangtze River in China has been identified as the single largest river source of ocean plastic, contributing an estimated 1.5 million metric tons annually. Reducing plastic pollution will require both consumer-level reductions in single-use plastic and large-scale policy interventions targeting industrial plastic production and waste management.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 215,
+    "source": "Adapted from an overview of marine plastic pollution"
+  },
+  "stem": "The passage states that seabirds are harmed by plastic pollution. Which quotation from the passage most directly supports this statement?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Each year, an estimated 8 million metric tons of plastic enter the ocean, adding to the estimated 150 million metric tons already present in marine environments.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"Sea turtles frequently mistake plastic bags for jellyfish and ingest them, leading to intestinal blockages that can be fatal.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Researchers on Midway Atoll in the Pacific Ocean found that 97 percent of Laysan albatross chicks examined contained plastic in their stomachs.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "\"Filter feeders, including mussels and oysters, accumulate microplastics in their tissues at concentrations that increase with the density of surrounding plastic pollution.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The claim is that seabirds are harmed by plastic pollution. Choice C directly provides evidence of harm to seabirds (specifically Laysan albatross chicks, a seabird species) by stating that 97 percent of chicks examined had plastic in their stomachs—a concrete, quantified finding about plastic ingestion in a named seabird. This directly and specifically supports the claim with no inference needed.",
+  "distractorRationale": {
+    "A": "This choice describes the overall quantity of plastic entering the ocean each year. It establishes the scale of the pollution problem but does not specifically address harm to seabirds.",
+    "B": "This choice describes harm to sea turtles, not seabirds. While it shows plastic causes harm to marine animals, it concerns a different animal group from the claim.",
+    "D": "This choice addresses harm to filter feeders such as mussels and oysters, which are invertebrates, not seabirds. The animal category in this choice does not match the claim."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3a0b2c4d-9c1e-3f5a-2789-45a0b1c2d3e4"
+  },
+  "hasImage": false
+}

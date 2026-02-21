@@ -1,0 +1,58 @@
+{
+  "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1.3
+  },
+  "passage": "The city park added new walking trails and picnic areas last spring. _______ the number of visitors doubled compared to the previous year.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 52,
+    "source": "Adapted from a city parks department report"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "As a result,",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "However,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Meanwhile,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "On the other hand,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage describes improvements made to the park (adding trails and picnic areas) followed by a positive outcome (doubled visitors). This is a clear cause-and-effect relationship: the improvements caused more visitors. 'As a result' is the only choice that signals this causal connection.",
+  "distractorRationale": {
+    "A": "Correct. 'As a result' signals the cause-effect relationship between park improvements and increased visitors.",
+    "B": "'However' signals contrast, but the second sentence is a logical consequence of the first, not a contrasting idea.",
+    "C": "'Meanwhile' signals simultaneous events happening separately, but the visitor increase is directly caused by the improvements, not happening independently.",
+    "D": "'On the other hand' signals contrast or an alternative perspective, which does not match the causal relationship in the passage."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c"
+  },
+  "hasImage": false
+}

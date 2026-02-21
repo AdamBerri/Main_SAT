@@ -1,0 +1,226 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "config": {
+    "maxIterations": 10,
+    "trainTestSplit": 0.8,
+    "convergenceThreshold": 0.02,
+    "minSamplesPerIteration": 25,
+    "errorCategoryCount": 5
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "promptVersionUsed": "1.0.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.557,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "threshold_ambiguity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q25: near-boundary values make correct answer debatable"
+            ]
+          },
+          {
+            "category": "answer_validity_clarity",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q12: trend claim with ambiguous recovery pattern",
+              "Q23: weaken question with imprecise counterexample"
+            ]
+          },
+          {
+            "category": "faithfulness_conventions",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q6/Q7: slight deviation from standard SAT quantitative evidence format"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.4,
+        "passRate": 0.8
+      },
+      "improvementMade": "Addressed: threshold_ambiguity, answer_validity_clarity, faithfulness_conventions",
+      "newPromptVersion": "1.1.0"
+    },
+    {
+      "iteration": 2,
+      "promptVersionUsed": "1.1.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.564,
+        "passRate": 0.95,
+        "errorCategories": [
+          {
+            "category": "data_integrity_errors",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q20: answer cites range contradicting actual chart data"
+            ]
+          },
+          {
+            "category": "distractor_internal_contradictions",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q7: distractor states X<Y when X>Y",
+              "Q19: homogeneous distractor strategies"
+            ]
+          },
+          {
+            "category": "faithfulness_style_drift",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q13/Q15: minor style deviations from SAT format"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.857,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: data_integrity_errors, distractor_internal_contradictions, faithfulness_style_drift",
+      "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 3,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.714,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_subtlety",
+            "frequency": 4,
+            "exampleErrors": [
+              "Q14: distractor strategies not subtle enough",
+              "Q11-Q13: distractors at d3 scored 4 but could be more psychometrically refined"
+            ]
+          },
+          {
+            "category": "minor_faithfulness",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q23: slight salary simplification affecting SAT authenticity"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.743,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_subtlety, minor_faithfulness — refinement only, no failures",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.714,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_plateau",
+            "frequency": 5,
+            "exampleErrors": [
+              "Q6: distractor strategies not fully distinct at d2",
+              "Q11-Q14: distractor_quality scores 3-4, subtle but consistent"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.857,
+        "passRate": 1
+      },
+      "improvementMade": "No significant errors — refinement only. Test score stable at 4.857.",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 5.186,
+        "passRate": 1,
+        "errorCategories": {
+          "distractor_quality": {
+            "count": 5,
+            "details": "Lower distractor quality scores on easy/medium difficulty questions; distractors relied too heavily on incomplete-evidence and irrelevant-data strategies, lacking variety in error types"
+          }
+        }
+      },
+      "testMetrics": {
+        "avgScore": 5.229,
+        "passRate": 1
+      },
+      "improvementMade": "Enhanced distractor quality standards with new rules: diversity check ensuring distinct error strategies per question, temptation check requiring 5-10 seconds to eliminate each distractor, limits on repeated strategies (max 1 incomplete-evidence, max 1 irrelevant-data), and requirement for at least one data-reading error distractor",
+      "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 5.378,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_easy_levels",
+            "frequency": 5,
+            "exampleErrors": [
+              "Q7: distractor_quality scored 4; distractors at d2 too easily eliminated",
+              "Q9: distractor_quality scored 4; distractors at d2 lack structural parallelism",
+              "Q1/Q3/Q4: easy-level distractors eliminable without checking chart data"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5.471,
+        "passRate": 1
+      },
+      "improvementMade": "Added EASY-QUESTION DISTRACTOR REFINEMENT section requiring all distractors to reference the claim's key subject, use close-miss strategies, maintain structural parallelism, and avoid dead-giveaway eliminability. Added validation check #13 for easy-level distractor audit.",
+      "newPromptVersion": "1.5.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.5.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 5.457,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 5.471,
+        "passRate": 1
+      },
+      "improvementMade": "Converged. Easy-question distractor refinement applied. All distractor quality scores at easy levels improved from 4 to 5. No failed questions across train or test sets. Test score stable at 5.471.",
+      "newPromptVersion": "1.5.0"
+    }
+  ],
+  "currentBestVersion": "1.5.0",
+  "bestTestScore": 5.471,
+  "converged": true,
+  "startedAt": "2026-02-20T16:11:23.354Z",
+  "completedAt": "2026-02-21T03:15:12.460Z"
+}

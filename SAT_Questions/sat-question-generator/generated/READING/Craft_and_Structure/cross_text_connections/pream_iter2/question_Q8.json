@@ -1,0 +1,58 @@
+{
+  "id": "d5f9b2a3-8e1c-4d7f-9a3b-2e6c8f1d4a7b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "Text 1\nThe domestication of dogs from wolves occurred thousands of years ago and fundamentally shaped human civilization. Early dogs helped hunters track and retrieve prey, guarded settlements from predators and rival groups, and provided warmth during cold nights. This partnership gave human communities a survival advantage, contributing to our ancestors' success as a species.\n\nText 2\nScientists continue to debate the precise location where wolf domestication first took place. Some genetic studies point to East Asia, others to Europe or the Middle East, and recent analyses suggest the process may have occurred independently in multiple regions. What researchers do agree on is that dogs were among the first animals domesticated by humans, predating the domestication of livestock by thousands of years.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 131,
+    "source": "Original passages"
+  },
+  "stem": "Based on the two texts, how do the authors' focuses differ?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 focuses on the practical roles dogs played for early humans, while Text 2 focuses on unresolved questions about the origins of dog domestication.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Text 1 argues that dog domestication was harmful to wolves, while Text 2 argues it was beneficial to humans.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Text 1 questions whether dogs truly aided early humans, while Text 2 confirms they did through genetic evidence.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 and Text 2 both emphasize the geographic location where dog domestication first began.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Text 1 focuses on the functional contributions dogs made to early human societies—hunting assistance, protection, and warmth—and argues these roles gave humans a survival advantage. Text 2 shifts focus to the scholarly debate over where and how many times domestication occurred, noting that the precise location remains contested. The two texts address the same broad topic (dog domestication) but concentrate on distinct aspects: Text 1 on the effects and roles of domesticated dogs, Text 2 on the geographic and historical origins of the domestication process.",
+  "distractorRationale": {
+    "A": "Correct. Text 1 centers on what domesticated dogs did for humans, while Text 2 centers on where and how domestication happened—a question researchers have not yet settled.",
+    "B": "Neither text argues that dog domestication was harmful to wolves. Text 1 focuses on human benefit; Text 2 discusses scientific debate about origins, not harm to wolves.",
+    "C": "Text 1 does not question whether dogs aided early humans; it asserts that they did. Text 2 does not use genetic evidence to confirm dogs' usefulness—it uses genetics to probe geographic origins.",
+    "D": "Text 1 does not discuss geographic location at all. Only Text 2 addresses the debate over where domestication occurred, and even there the location remains unresolved rather than emphasized as a conclusion."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e2b4d6f8-1a3c-4e5d-9f7b-3c5a1e8d2b6f"
+  },
+  "hasImage": false
+}

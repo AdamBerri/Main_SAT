@@ -1,0 +1,54 @@
+{
+  "id": "e7c5a9d3-2b14-4f87-b839-6f3d1a0e8c52",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "A fitness app company wants to know whether its users exercise more on weekends than on weekdays. The company randomly selects 500 of its active users (defined as users who logged at least one workout in the past 30 days) and surveys them. The survey finds that, on average, these users exercise 48 minutes per day on weekends and 31 minutes per day on weekdays.\n\nThe company publishes the following claim: \"App users exercise an average of 48 minutes per day on weekends, compared to 31 minutes per day on weekdays.\"\n\nA researcher argues that this claim cannot be generalized to all adults who exercise. Which of the following best explains why the researcher is correct?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The difference of 17 minutes between weekend and weekday exercise is too small to be meaningful.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "A sample of 500 users is too small to represent millions of adults who exercise.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The sample consists only of active users of a fitness app, who likely exercise more frequently than the general population of adults who exercise.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The survey asked users to self-report their exercise, which means the data could be inaccurate.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The company's published claim accurately describes the sample — it is a correct description of the 500 surveyed users' behavior. However, the researcher argues this cannot be generalized to \"all adults who exercise,\" and the key question is: why not?\n\nThe fundamental issue is that the sample was drawn from a specific, non-representative group: active users of a fitness tracking app. People who actively use a fitness app are self-selected — they have already demonstrated above-average motivation to track and engage with exercise. This makes them systematically different from the broader population of adults who exercise, which includes casual exercisers who do not use tracking apps.\n\nThis is a form of selection bias: the sampling frame (active fitness app users) does not match the target population (all adults who exercise). Therefore, even though the 500 users were randomly selected from app users, the sample is not representative of all exercising adults.\n\nNote the distinction: random selection within a biased sampling frame still produces a biased sample for the broader population. The 500 users can validly represent all active app users, but cannot represent all exercising adults.\n\nChoice A is wrong because the magnitude of a difference does not determine whether generalization is valid — this is a reasoning error about what makes a study generalizable.\nChoice B is wrong because 500 is a reasonable sample size for a large population; sample size alone does not determine representativeness if the selection method is sound within the correct population.\nChoice D raises a real concern about self-report data but does not address why the sample cannot represent all exercising adults — it would apply equally if the question were only about app users.",
+  "distractorRationale": {
+    "A": "Students who conflate practical significance with statistical generalizability will choose this. The size of the difference (17 minutes) is irrelevant to whether the sample can represent a broader population.",
+    "B": "Students who apply a rule that larger samples are always needed for larger populations will choose this. However, 500 randomly selected individuals can validly represent very large populations if drawn from the right group. The problem is who was sampled, not how many.",
+    "C": "Correct. The sample is drawn exclusively from active fitness app users, who are self-selected for high exercise motivation and frequency. This systematic difference means the sample cannot represent the broader population of all adults who exercise.",
+    "D": "Students who identify a real but secondary flaw will choose this. Self-report bias could affect the accuracy of the minutes reported, but this does not explain why the sample fails to represent all exercising adults. Even perfectly accurate self-reports from app users would not be generalizable to all exercising adults."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d8f2b6c4-5a3e-4d91-b847-7c9e0f1a3b65"
+  }
+}

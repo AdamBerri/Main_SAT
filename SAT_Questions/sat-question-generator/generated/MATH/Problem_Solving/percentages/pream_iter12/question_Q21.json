@@ -1,0 +1,54 @@
+{
+  "id": "e1f2a3b4-c5d6-7e8f-9a0b-1c2d3e4f5a6b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A business owner buys inventory at cost $C$ and applies a markup of $p\\%$ to set the retail price. A customer uses a coupon for $p\\%$ off the retail price. If the owner's cost was $\\$100$ and the customer paid $\\$91$, what is the value of $p$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "9",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "10",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "30",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "45",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Retail price = $100(1 + p/100)$. Customer pays $100(1 + p/100)(1 - p/100) = 100(1 - (p/100)^2)$. Setting this equal to $91$: $1 - (p/100)^2 = 0.91$, so $(p/100)^2 = 0.09$, giving $p/100 = 0.3$ and $p = 30$. Check: retail = $100 \\times 1.30 = $130$; sale = $130 \\times 0.70 = $91$.",
+  "distractorRationale": {
+    "A": "Student computed $100 − $91 = $9 and reported 9 as the percentage.",
+    "B": "Student assumed the $9 loss represents 10% of some nearby round number, or guessed a small markup.",
+    "C": "Correct answer.",
+    "D": "Student solved $(p/100)^2 = 0.09$ but took the square root incorrectly: $\\sqrt{0.09} = 0.045$, so $p = 45$."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:20.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2b3c4d5-e6f7-8a9b-0c1d-2e3f4a5b6c7d"
+  }
+}

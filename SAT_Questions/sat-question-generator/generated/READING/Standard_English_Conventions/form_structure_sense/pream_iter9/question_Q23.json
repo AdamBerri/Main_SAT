@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "cdc1a70d-21a0-4202-bd88-a736b0e08f75",
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "The constitutional scholar Akhil Amar has argued that many Americans fundamentally misunderstand the Bill of Rights, reading it as a document primarily concerned with individual liberties when its original framers intended it equally as a structural safeguard for democratic self-governance. In a widely cited 2008 article, Amar proposed that the Second Amendment, rather than establishing an unlimited individual right to bear arms, [1]_____ understood in the context of the amendment's reference to 'a well regulated Militia' and the eighteenth-century concern with preventing federal tyranny over state military forces.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 95,
+    "source": "Adapted from a constitutional law review"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "should be",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "be",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "is",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "was",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests the mandative subjunctive in an exceptionally complex construction. 'Proposed that' triggers the subjunctive, requiring the base form of 'be': 'proposed that the Second Amendment...be understood.' The difficulty is compounded by: (1) the lengthy 'rather than' parenthetical separating 'Amendment' from the verb; (2) the passive subjunctive construction ('be understood' rather than an active verb); (3) the multiple embedded prepositional phrases in the context; and (4) the competing pull of past-tense 'proposed' and 'was' toward non-subjunctive forms.",
+  "distractorRationale": {
+    "A": "'Should be' is a modal construction sometimes used as a subjunctive alternative in British English. Standard American English mandative subjunctive requires the bare form 'be' without modals.",
+    "B": "Correct. 'Be' is the subjunctive form required after 'proposed that.'",
+    "C": "'Is' is present indicative, which does not satisfy the subjunctive requirement.",
+    "D": "'Was' is past indicative. While 'proposed' is past tense, the subjunctive clause requires the base form regardless of the tense of the main verb."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "ec98ddff-c316-49aa-9309-3972b03724b0"
+  }
+}

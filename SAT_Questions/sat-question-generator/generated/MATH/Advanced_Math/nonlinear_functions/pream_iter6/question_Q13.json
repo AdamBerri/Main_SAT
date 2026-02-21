@@ -1,0 +1,54 @@
+{
+  "id": "d5a9c3f2-8e1b-4d7a-9f3e-2c5b8a1d4f6e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "The function $f$ is defined by $f(x) = (x - 2)(x + 3)(x - 5)$. What is the sum of all values of $x$ for which $f(x) = 0$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-30$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$0$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$4$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$10$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Set $f(x) = 0$:\n$$(x - 2)(x + 3)(x - 5) = 0$$\n\nBy the zero product property, $x = 2$, $x = -3$, or $x = 5$.\n\nSum of all roots:\n$$2 + (-3) + 5 = 4$$\n\nAlternatively, expanding the product gives $x^3 - 4x^2 - 11x + 30$. By Vieta's formulas, the sum of the roots equals $-(-4)/1 = 4$.\n\nThe answer is $\\boxed{4}$.",
+  "distractorRationale": {
+    "A": "Error: Student computes the product of the roots instead of the sum: $2 \\times (-3) \\times 5 = -30$.",
+    "B": "Error: Student holds the misconception that the roots of any polynomial must sum to zero.",
+    "C": "Correct. The roots are $x = 2, -3, 5$, and their sum is $2 + (-3) + 5 = 4$.",
+    "D": "Error: Student ignores the sign of the root from $(x+3)$, adding all root magnitudes: $2 + 3 + 5 = 10$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1c6d4e2-3f8b-4a7c-9d2e-5b1f8c4a6d3e"
+  }
+}

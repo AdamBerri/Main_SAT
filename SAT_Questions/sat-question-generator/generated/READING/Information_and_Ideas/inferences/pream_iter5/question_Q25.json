@@ -1,0 +1,57 @@
+{
+  "id": "c2f5a9e4-8b3d-4c7a-9f1e-4d6b8a2c5f7e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "The modernist poet Marianne Moore is frequently discussed in terms of her characteristic use of syllabic verse and her predilection for incorporating documentary material—museum catalogues, scientific descriptions, newspaper clippings—into her poems. Less examined is the epistemological implication of this practice. For Moore, the lyric poem was not a vehicle for the expression of a unified subjective consciousness but rather an instrument of accurate attention: the poem succeeded insofar as it captured the precise texture of an object or phenomenon as it actually was, independent of the perceiving self's projections. This aspiration placed Moore in implicit tension with the dominant Romantic inheritance, which valorized the transformation of experience through imagination and treated the fusion of self and world as the lyric's highest achievement. Moore's poetry, by contrast, insists on the intractability of objects—their resistance to being absorbed into the poem's emotional or rhetorical designs. Accordingly, her use of found language was not merely a formal innovation or an exercise in irony, as it has sometimes been classified; it was a principled epistemological choice. By importing verbatim passages from external sources, Moore enacted the poem's subordination to the world it described rather than the world's subordination to the poem's expressive needs.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 190,
+    "source": "Adapted from a scholarly essay on modernist poetics and epistemology"
+  },
+  "stem": "Based on the passage, which inference about Moore's use of found language is most strongly supported?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Moore's documentary method was primarily a critique of the lyric genre's conventional emphasis on emotional sincerity.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Incorporating verbatim external text was Moore's formal strategy for asserting the poem's independence from subjective experience.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Moore's incorporation of external sources enacted a relationship of deference between poem and world rather than one of transformation.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Moore's rejection of Romantic conventions stemmed from her belief that imagination distorts rather than enhances poetic perception.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage concludes with a precise characterization of what Moore's use of found language enacted: 'the poem's subordination to the world it described rather than the world's subordination to the poem's expressive needs.' This is a relationship of deference—the poem defers to external reality rather than transforming it. Choice C paraphrases this conclusion without quoting it directly and captures the key relational logic the passage builds toward: found language is evidence that the poem does not dominate or transform its subject but instead positions itself as secondary to or bounded by it. Arriving at C requires recognizing that the passage's final sentence is not merely a restatement of earlier points but a culminating inference about what Moore's practice means—and that 'deference' accurately translates 'subordination' in this context.",
+  "distractorRationale": {
+    "A": "The passage frames Moore's practice as an epistemological stance, not primarily as a critique of emotional sincerity. While her approach implicitly challenges Romantic expressivism, the passage explicitly states her use of found language was a 'principled epistemological choice'—about accurate attention to objects—not a polemical critique of sincerity conventions. This distractor substitutes a rhetorical motive for the epistemological one the passage foregrounds.",
+    "B": "This distractor inverts the passage's logic: Moore's use of external text was not about asserting the poem's independence from subjective experience but about enacting the poem's dependence on and subordination to external reality. 'Independence' in B implies the poem stands apart from the subjective; the passage's point is that the poem subordinates itself to the world—a fundamentally different relational claim. Students who read 'not a vehicle for unified subjective consciousness' may misread it as implying independence rather than deference.",
+    "D": "The passage describes Moore's implicit tension with Romanticism and notes that Romanticism 'valorized the transformation of experience through imagination.' However, the passage does not attribute Moore's rejection to a belief that imagination 'distorts' perception—it attributes it to her commitment to accurate attention to objects as they are. The word 'distorts' introduces a normative judgment about imagination that the passage never makes; Moore's position is described in terms of what the poem should do (attend accurately), not in terms of what imagination fails to do."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e9b3f7-2a1c-4d8b-9e5a-3c7f6d2e8b4a"
+  },
+  "hasImage": false
+}

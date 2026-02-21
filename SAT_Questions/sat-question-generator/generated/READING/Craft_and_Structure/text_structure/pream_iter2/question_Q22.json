@@ -1,0 +1,57 @@
+{
+  "id": "d4f8a2c6-1b3e-4d7f-9a2c-5b8e1f3a6d9c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Epidemiologists studying the 1918 influenza pandemic have long noted that mortality followed an unusual age distribution: rather than concentrating fatalities among the elderly and very young, the virus claimed a disproportionate number of adults between twenty and forty years of age. For decades this anomaly was attributed to behavioral factors—young adults' greater mobility and social exposure.\n\nMore recent immunological research has proposed a different mechanism. Adults who survived childhood diseases in the 1880s and 1890s may have developed antibodies that cross-reacted with the 1918 strain in harmful rather than protective ways—an immunological phenomenon sometimes called original antigenic sin. The elderly, whose immune histories reached further back, encountered different childhood strains and so escaped this particular cross-reactivity.\n\nWhat this reanalysis reveals is that immunity itself can be a liability when its specificity is mismatched to a novel pathogen. The research does not displace the earlier behavioral account so much as reframe it: social exposure mattered, but the biological substrate through which exposure became lethal had been largely invisible to researchers working without molecular tools.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 196,
+    "source": "Adapted from a review article in the history of medicine"
+  },
+  "stem": "The passage is structured to accomplish which of the following?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Trace an epidemiological anomaly from behavioral explanation to immunological reframing.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Refute a behavioral model by substituting a molecular one in its place.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Present the 1918 pandemic as a case study illustrating a general principle of immunology.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Sequence the historical development of pandemic mortality research chronologically.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage begins with an anomaly in 1918 pandemic mortality data, then presents the older behavioral explanation, then introduces the newer immunological account, and concludes by reframing—not replacing—the behavioral model. This movement from anomaly through competing explanations to a synthetic reframing is precisely what Choice A describes. The structure is organized around progressive clarification of a puzzle, not simple substitution or chronological sequencing.",
+  "distractorRationale": {
+    "A": "Correct. The passage traces the anomaly through an initial explanation and a revised one, concluding that the new research reframes rather than replaces the old account—a sophisticated structural arc captured by 'behavioral explanation to immunological reframing.'",
+    "B": "The passage explicitly states that the research 'does not displace the earlier behavioral account so much as reframe it,' making substitution an inaccurate description of the relationship between the two models. A careful reader cannot use simple presence/absence logic here; the passage genuinely engages both accounts.",
+    "C": "The final paragraph does articulate a general principle (immunity as potential liability), which makes this distractor plausible. However, the passage's dominant structure is not 'case study illustrating a principle'—the general principle emerges from the reanalysis and is not the passage's organizing framework. The case study framing mistakes the concluding synthesis for the overall organizational logic.",
+    "D": "The passage moves between time periods (1880s–1890s childhood diseases, decades of behavioral attribution, more recent research), which creates a surface appearance of chronological structure. But the organizing principle is explanatory revision, not temporal sequencing—the chronological references serve the argumentative structure rather than constitute it."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5f6a7b8-c9d1-4e2f-b3a4-c5d6e7f8a9b1"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "A gym membership costs $12 per month. A person wants to spend less than $100 on the membership over several months. What is the greatest number of full months the person can maintain the membership?",
+  "choices": [
+    { "label": "A", "text": "9", "isCorrect": false },
+    { "label": "B", "text": "7", "isCorrect": false },
+    { "label": "C", "text": "8", "isCorrect": true },
+    { "label": "D", "text": "10", "isCorrect": false }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Set up the inequality: $12m < 100$. Divide both sides by 12: $m < 8.\\overline{3}$. Since $m$ must be a whole number and strictly less than $8.\\overline{3}$, the greatest whole number is $m = 8$.",
+  "distractorRationale": {
+    "A": "Cluster B error: Computed $100 \\div 12 \\approx 8.33$ and rounded up to 9, not realizing $12 \\times 9 = 108 > 100$.",
+    "B": "Cluster C error: Interpreted 'less than $100' too conservatively and chose 7 to leave a larger buffer, even though $12 \\times 8 = 96 < 100$.",
+    "C": "Correct. $12m < 100$ gives $m < 8.33$, so the greatest whole number is 8.",
+    "D": "Cluster D error: Divided $100 \\div 10 = 10$ (using the wrong divisor) and reported 10 months."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:05.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3f"
+  }
+}

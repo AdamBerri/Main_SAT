@@ -1,0 +1,54 @@
+{
+  "id": "d8f1a4e3-7c50-4b2d-9e16-5a0b8c3f6d92",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "A custom print shop charges a one-time design fee plus a fixed cost per shirt. The table below shows the total cost $C$, in dollars, for ordering $n$ shirts.\n\n| $n$ (shirts) | $C$ (dollars) |\n|---|---|\n| 2 | 30 |\n| 5 | 45 |\n\nAssuming $C$ is a linear function of $n$, what is the maximum number of shirts a school club can order if its budget is $95?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "6",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "13",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "15",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "19",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Find the per-shirt cost (slope) using the two table values: $$m = \\frac{45 - 30}{5 - 2} = \\frac{15}{3} = 5 \\text{ dollars per shirt}$$ Step 2: Find the one-time design fee (the $C$-intercept $b$) using the point $(2, 30)$: $$30 = 5(2) + b \\implies 30 = 10 + b \\implies b = 20$$ So $C(n) = 5n + 20$. Step 3: Find the maximum $n$ within the $95 budget: $$5n + 20 \\leq 95 \\implies 5n \\leq 75 \\implies n \\leq 15$$ The maximum number of shirts the club can order is $\\mathbf{15}$.",
+  "distractorRationale": {
+    "A": "Uses the per-order cost at $n = 2$ as a per-shirt rate ($30 \\div 2 = 15$ per shirt) and ignores the design fee: solves $15n = 95$, giving $n \\approx 6.3$, which rounds down to 6.",
+    "B": "Correctly finds the slope of 5 but uses the first table value as the $C$-intercept ($b = 30$ instead of computing $b = 20$): solves $5n + 30 = 95$, giving $5n = 65$, so $n = 13$.",
+    "C": "Correct answer.",
+    "D": "Correctly finds the slope of 5 but ignores the design fee entirely ($b = 0$): solves $5n = 95$, giving $n = 19$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-d5e6-4f78-9a0b-1c2d3e4f5a6b"
+  }
+}

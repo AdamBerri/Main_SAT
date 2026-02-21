@@ -1,0 +1,58 @@
+{
+  "id": "f3a2b1c4-9d8e-4f7a-b6c5-d4e3f2a1b0c9",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1.3
+  },
+  "passage": "Every year, millions of monarch butterflies travel from Canada and the United States to their winter home in the mountains of central Mexico. This journey covers more than 2,500 miles, making it one of the longest insect migrations on Earth. The butterflies navigate using a combination of the sun's position and an internal biological clock, which together allow them to maintain a consistent southwestward direction. Scientists have found that monarchs can even correct their flight path on cloudy days by using Earth's magnetic field. Along the way, the butterflies stop to feed on flowering plants, building up fat reserves they will need to survive the winter months. They arrive in Mexico by the millions, clustering together in dense groups on oyamel fir trees to conserve warmth. The sheer number of butterflies in these clusters can weigh down tree branches, creating a striking natural spectacle that draws visitors from around the world.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 148,
+    "source": "Adapted from a natural science article on monarch butterfly migration"
+  },
+  "stem": "What is the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To explain the biological and behavioral features of monarch butterfly migration",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "To argue that monarch butterflies need stronger legal protections from human threats",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "To describe the landscape and tourism appeal of the monarch overwintering sites in Mexico",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "To compare monarch butterfly navigation strategies with those of other migratory species",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage systematically explains how monarch butterflies migrate: it covers the route and distance, the navigation mechanisms (sun position, internal clock, magnetic field), the behavior of feeding and fat storage en route, and the clustering behavior at the overwintering site. The organizing goal throughout is to inform readers about the biological and behavioral aspects of this migration. No argument for protection is advanced, and no comparison to other species is made. While Mexico's oyamel fir forests are mentioned, the passage does not focus on tourism or landscape.",
+  "distractorRationale": {
+    "A": "Correct. The passage provides factual information about the route, navigation methods, feeding behavior, and overwintering behavior of monarchs — all aimed at explaining how this migration works.",
+    "B": "The passage never discusses threats to monarchs, legal protections, or conservation policy. This distractor is about a topic absent from the passage.",
+    "C": "The passage does mention that the overwintering clusters attract visitors, but this is a single detail in the final sentence, not the organizing focus. The passage is primarily about the butterflies' biology and behavior, not the tourism experience.",
+    "D": "The passage does not compare monarchs to any other migratory animal. Navigation is discussed, but only in relation to monarchs themselves."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,80 @@
+{
+  "id": "13d05519-b6b0-4d24-9a89-c9983b575be6",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "A clinical trial compared the effectiveness of three different treatments for chronic migraines over a 12-week period. The lead researcher concluded that Treatment B was the most effective option, producing the greatest reduction in monthly migraine episodes.",
+  "stem": "Which choice most effectively uses data from the figure to support the researcher's conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Patients receiving Treatment B experienced an average reduction of 8.4 episodes per month, compared to 5.1 for Treatment A and 6.3 for Treatment C.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Patients receiving Treatment C experienced an average reduction of 6.3 episodes per month, which was 1.2 episodes more than Treatment A's reduction of 5.1.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Patients in the placebo group experienced an average reduction of 2.0 episodes per month, while Treatment A patients saw a reduction of 5.1 episodes.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Treatment B patients started with an average of 14.2 monthly episodes and ended with 5.8, while Treatment A patients started with 13.8 and ended with 8.7.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that Treatment B was most effective with the greatest reduction. Choice A directly compares all three treatments' reductions (B: 8.4, A: 5.1, C: 6.3), clearly showing B had the largest reduction. Choice B compares Treatment C to A without mentioning B. Choice C compares placebo to A without addressing B. Choice D provides raw numbers for B and A but requires calculation and omits Treatment C.",
+  "distractorRationale": {
+    "A": "Correct: directly compares all three treatments' reduction values, confirming Treatment B's 8.4 is the highest.",
+    "B": "Wrong (misread value): compares Treatment C to Treatment A but omits Treatment B, which is the subject of the claim.",
+    "C": "Wrong (irrelevant data): compares the placebo group to Treatment A, neither of which is the claimed best treatment.",
+    "D": "Wrong (incomplete evidence): shows raw start/end values for B and A only, requiring the reader to calculate reductions and missing Treatment C entirely."
+  },
+  "hasImage": true,
+  "imageDescription": "Bar chart titled 'Average Reduction in Monthly Migraine Episodes by Treatment (12-Week Trial).' X-axis: Treatment Group (Placebo, Treatment A, Treatment B, Treatment C). Y-axis: Average Reduction in Episodes per Month (0-10). Bars: Placebo = 2.0, Treatment A = 5.1, Treatment B = 8.4, Treatment C = 6.3. Source: National Headache Research Consortium, 2024.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Average Reduction in Monthly Migraine Episodes by Treatment (12-Week Trial)",
+    "data": {
+      "categories": [
+        "Placebo",
+        "Treatment A",
+        "Treatment B",
+        "Treatment C"
+      ],
+      "values": [
+        2,
+        5.1,
+        8.4,
+        6.3
+      ],
+      "unit": "episodes per month",
+      "yAxisLabel": "Average Reduction in Episodes per Month",
+      "xAxisLabel": "Treatment Group"
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 55,
+    "source": "Adapted from National Headache Research Consortium clinical trial results"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.763Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "5b2dc79c-994b-4b99-8480-4ef07ba0726e"
+  }
+}

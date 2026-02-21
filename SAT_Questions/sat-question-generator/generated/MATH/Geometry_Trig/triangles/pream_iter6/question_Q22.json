@@ -1,0 +1,54 @@
+{
+  "id": "7b3e9a12-4f5c-4d08-b6e1-2a8c0d7f3e95",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "In triangle $ABC$, $AB = 10$, $BC = 12$, and $AC = 8$. The angle bisector from vertex $B$ meets side $AC$ at point $D$. Points $E$ and $F$ are the feet of the perpendiculars drawn from $A$ and $C$ to line $BD$, respectively. What is the length of $EF$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\dfrac{\\sqrt{14}}{2}$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\dfrac{\\sqrt{2}}{2}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\dfrac{3}{2}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\dfrac{30\\sqrt{14}}{11}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Step 1: Set up perpendicular foot positions on line BD.**\n\nSince $BD$ bisects $\\angle ABC$, each half-angle equals $\\frac{B}{2}$.\n\nIn right triangle $ABE$ (with $E$ the foot from $A$ to $BD$):\n$$BE = AB\\cos\\frac{B}{2} = 10\\cos\\frac{B}{2}$$\n\nIn right triangle $CBF$ (with $F$ the foot from $C$ to $BD$):\n$$BF = BC\\cos\\frac{B}{2} = 12\\cos\\frac{B}{2}$$\n\n**Step 2: Compute $EF$.**\n\nBoth $E$ and $F$ lie on ray $BD$ from $B$, with $E$ closer to $B$ (since $BE < BF$):\n$$EF = BF - BE = (12 - 10)\\cos\\frac{B}{2} = 2\\cos\\frac{B}{2}$$\n\n**Step 3: Find $\\cos\\frac{B}{2}$ using the Law of Cosines.**\n\n$$\\cos B = \\frac{AB^2 + BC^2 - AC^2}{2 \\cdot AB \\cdot BC} = \\frac{100 + 144 - 64}{2(10)(12)} = \\frac{180}{240} = \\frac{3}{4}$$\n\nUsing the half-angle formula:\n$$\\cos\\frac{B}{2} = \\sqrt{\\frac{1 + \\cos B}{2}} = \\sqrt{\\frac{1 + \\frac{3}{4}}{2}} = \\sqrt{\\frac{7}{8}} = \\frac{\\sqrt{14}}{4}$$\n\n**Step 4: Compute $EF$.**\n\n$$EF = 2 \\cdot \\frac{\\sqrt{14}}{4} = \\frac{\\sqrt{14}}{2}$$",
+  "distractorRationale": {
+    "A": "Correct answer obtained by recognizing that BE and BF are projections of AB and BC onto the angle bisector, computing EF = (BC - AB)cos(B/2), and evaluating cos(B/2) via the half-angle formula.",
+    "B": "The student computes the **difference of perpendicular distances** $AE - CF = (AB - BC)\\sin\\frac{B}{2}$ instead of the difference along the bisector, obtaining $2\\sin\\frac{B}{2} = 2 \\cdot \\frac{1}{2\\sqrt{2}} = \\frac{\\sqrt{2}}{2}$, where $\\sin\\frac{B}{2} = \\sqrt{\\frac{1-3/4}{2}} = \\frac{1}{2\\sqrt{2}}$.",
+    "C": "The student uses $\\cos B = \\frac{3}{4}$ directly in place of $\\cos\\frac{B}{2}$, computing $EF = 2 \\cdot \\frac{3}{4} = \\frac{3}{2}$ without applying the half-angle formula.",
+    "D": "The student applies the **angle bisector length formula** $BD = \\frac{2 \\cdot AB \\cdot BC \\cdot \\cos(B/2)}{AB + BC} = \\frac{2(10)(12)(\\sqrt{14}/4)}{22} = \\frac{60\\sqrt{14}}{22} = \\frac{30\\sqrt{14}}{11}$ and reports the length of $BD$ rather than $EF$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2d3f4a5-6c7e-8901-bcde-f12345678901"
+  }
+}

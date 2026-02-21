@@ -1,0 +1,56 @@
+{
+  "id": "4c8e1a3f-7d2b-4f9c-8e5a-1b6d3f9a2c7e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "Many cities have replaced traditional streetlights with LED fixtures over the past decade, pointing to reduced energy costs as the main reason. An LED streetlight uses roughly fifty percent less electricity than a comparable sodium or mercury vapor lamp, and it lasts several times longer before needing replacement. City officials in places like Los Angeles and Chicago have calculated savings of tens of millions of dollars per year following full conversions to LED systems. Maintenance crews now spend far less time climbing ladders to swap out burned-out bulbs, freeing workers for other infrastructure tasks. Beyond economics, the lights produce less heat and contain none of the toxic mercury found in older lamp types. Residents in converted neighborhoods consistently report that streets feel brighter and safer at night, even when the total wattage of the new lights is lower than what the old fixtures consumed. The evidence from dozens of completed conversions makes a compelling case that LED streetlights deliver clear benefits across financial, environmental, and public-safety dimensions.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 163,
+    "source": "Adapted from a municipal policy analysis report"
+  },
+  "stem": "Which choice best describes the main purpose of this passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To compare the technical specifications of LED and sodium vapor streetlights in detail",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "To describe how maintenance crews benefit from the transition to LED lighting",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "To argue that cities should switch to LED streetlights because of their multiple benefits",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "To explain why LED streetlights feel brighter to residents despite using less electricity",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage builds a case for LED streetlights across several dimensions—cost savings, reduced maintenance labor, environmental advantages, and improved public safety perceptions—and concludes by calling the combined evidence 'a compelling case' for the technology. The author's goal is persuasive: to demonstrate that cities benefit in multiple ways from making the switch. The passage uses factual data and examples from real cities as supporting evidence for this advocacy position.",
+  "distractorRationale": {
+    "A": "The passage mentions technical differences such as wattage and mercury content, but these details serve as supporting evidence for the argument. A technical comparison is not the organizing purpose of the passage.",
+    "B": "Reduced maintenance burden is discussed in one sentence as one of several advantages, making it a secondary supporting point rather than the primary focus of the passage.",
+    "D": "Resident perceptions about brightness are mentioned in a single sentence near the end of the passage as one piece of evidence. Explaining the science behind this perception is not the passage's goal; supporting the case for LED adoption is."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "9d1f4a7c-3b8e-4c2a-8f5d-6e3b1c9a4d7f"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "e6b1c4d5-7f2a-4b3c-d4e5-f6a7b8c90004",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "linguistic": 1.2
+  },
+  "passage": "Text 1\nNutritionists have observed that people who eat breakfast regularly tend to maintain more stable energy levels throughout the morning compared to those who skip breakfast. One researcher argues that eating a protein-rich breakfast is especially beneficial because protein digests more slowly than carbohydrates, providing a longer-lasting source of energy. The researcher also notes that breakfast skippers often report feeling more fatigued and less focused by mid-morning.\n\nText 2\nA nutrition study tracked 150 adult participants over eight weeks. Each participant was assigned to one of three breakfast groups and completed an energy-level survey at 11 a.m. each day. Average energy ratings (scale of 1–10) were as follows:\n\n| Breakfast Type | Average 11 a.m. Energy Rating |\n|---|---|\n| No breakfast | 4.1 |\n| Carbohydrate-only breakfast | 5.7 |\n| Protein-rich breakfast | 7.4 |",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 155,
+    "source": "Adapted from nutrition research study and dietary recommendations"
+  },
+  "stem": "Which statement is supported by both Text 1 and the data in Text 2?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Eating a protein-rich breakfast is linked to higher mid-morning energy than other options.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Carbohydrate breakfasts provide more energy than protein breakfasts at 11 a.m.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Skipping breakfast results in slightly higher energy than eating carbohydrates only.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Protein digests faster than carbohydrates, causing a quick energy spike.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Text 1 argues that protein-rich breakfasts are especially beneficial because protein digests slowly, providing longer-lasting energy, and that breakfast skippers feel more fatigued. Text 2 shows that the protein-rich breakfast group had the highest average energy rating at 11 a.m. (7.4), compared to carbohydrate-only (5.7) and no breakfast (4.1). Together, both sources confirm that a protein-rich breakfast is associated with higher mid-morning energy levels.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "Text 2 shows protein-rich breakfast (7.4) outperforms carbohydrate-only breakfast (5.7) at 11 a.m., which is the opposite of what this choice claims. This distractor reverses the data's direction.",
+    "C": "Text 2 shows that skipping breakfast yields the lowest energy rating (4.1), while eating carbohydrates results in a higher rating (5.7). This distractor misreads the relative values in the table.",
+    "D": "Text 1 explicitly states that protein digests more slowly than carbohydrates — not faster. This distractor directly contradicts a stated claim in Text 1 and inverts the mechanism the researcher describes."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e0004"
+  },
+  "hasImage": false
+}

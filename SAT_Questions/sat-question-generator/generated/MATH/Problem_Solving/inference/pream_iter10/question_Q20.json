@@ -1,0 +1,54 @@
+{
+  "id": "e6c1a4d8-3f5b-4e2c-8a7d-1b9f3c5e7a20",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "A food scientist studied the relationship between the number of hours per week customers spent cooking at home and their self-reported satisfaction with their diet. The study involved 350 adults randomly selected from a national fitness app's user base. The scientist found a strong positive association: participants who cooked more hours per week consistently reported higher diet satisfaction. Based on these results, the scientist concluded that cooking at home causes greater diet satisfaction. Which of the following most accurately identifies the primary limitation of this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The conclusion is unsupported because the sample of 350 adults is too small to detect a meaningful association between cooking frequency and diet satisfaction.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The conclusion is unsupported because the participants were drawn from a fitness app, whose users may already have higher health motivation than the general population, so the association may not hold for all adults.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The conclusion is unsupported because an observational study showing an association cannot establish that cooking causes diet satisfaction — a third factor, such as general health consciousness, could independently drive both behaviors.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is unsupported because diet satisfaction was self-reported, and participants who cook more may overstate their satisfaction due to commitment to their cooking habits.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The scientist observed a positive association between hours cooking at home and diet satisfaction — but this is an observational study. Participants were not randomly assigned to cook more or less; they were simply observed as they naturally behaved. When an association is observed without random assignment, a third (confounding) variable could explain both the predictor and the outcome. In this case, a person with high general health consciousness might both choose to cook more at home and independently report higher diet satisfaction — not because cooking causes satisfaction, but because the same underlying motivation drives both. The study design cannot rule out this possibility, so concluding that cooking causes satisfaction goes beyond what the data supports. The finding is better characterized as: there is an association between cooking frequency and diet satisfaction among fitness app users. This is an error of conflating correlation with causation, the most critical limitation of the study's conclusion.",
+  "distractorRationale": {
+    "A": "Error type 6 (sample size misapplication): A sample of 350 randomly selected individuals is generally sufficient to detect a strong association — statistical power depends on the effect size and sample size, and 350 is a reasonable size for detecting a strong relationship. Rejecting the conclusion purely on sample size grounds, without addressing the study design flaw, reflects a misunderstanding of what makes inference valid.",
+    "B": "Error type 5 (overgeneralizing scope — valid concern but not the primary limitation of this specific conclusion): The fitness app sample is indeed a potential limitation for generalizing to all adults, and this is a real, distinct concern (coverage bias). However, the question asks for the primary limitation of the causal conclusion. Even if the sample perfectly represented all adults, an observational study still could not support a causal claim. The scope limitation is a secondary concern that does not address the fundamental design flaw. Students who focus on representativeness rather than causation reasoning will choose this.",
+    "C": "Correct answer: The study is observational, not experimental. Observational studies can identify associations but cannot establish causation because confounding variables — such as general health consciousness — may independently influence both variables. The causal claim ('cooking causes diet satisfaction') requires ruling out such confounders, which cannot be done without random assignment.",
+    "D": "Error type 2 (wrong confidence interpretation — focusing on measurement reliability rather than causal inference): Self-report bias is a legitimate concern in survey research, but it applies to many studies and is not the primary limitation here. More importantly, even if diet satisfaction were measured perfectly, an observational design still could not establish causation. The core issue is the study design, not the measurement instrument. This distractor targets students who identify a real but secondary methodological concern as if it were the fatal flaw."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4f8b2e6a-9c3d-4f1e-b5a7-2c6d9e3f8b40"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "a6b7c8d9-e0f1-4a2b-3c4d-5e6f7a8b9c0e",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- CRISPR-Cas9 is a gene-editing technology that allows scientists to make precise changes to DNA sequences in living organisms.\n- In 2018, a Chinese researcher used CRISPR to edit the genes of human embryos, resulting in the birth of twin girls with modified DNA.\n- The experiment was widely condemned by the scientific community because it was performed without adequate safety testing or ethical oversight.\n- Somatic gene therapy, which edits genes in non-reproductive cells, affects only the treated individual.\n- Germline editing, which modifies reproductive cells or embryos, passes changes to all future generations.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 110,
+    "source": "Student research notes on CRISPR gene editing ethics"
+  },
+  "stem": "The student wants to explain why germline editing raises more ethical concerns than somatic gene therapy. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "CRISPR-Cas9 enables precise DNA editing, but its 2018 use on human embryos was condemned because the experiment lacked adequate safety testing and ethical oversight.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Unlike somatic gene therapy, which affects only the treated patient, germline editing alters reproductive cells and passes those changes to all future generations -- a permanence that amplifies the consequences of any errors.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Somatic gene therapy edits genes in non-reproductive cells and affects only the individual being treated, while germline editing modifies embryos or reproductive cells.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The 2018 CRISPR experiment on human embryos demonstrated the risks of germline editing, as the scientific community condemned the researcher for proceeding without proper oversight.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it makes a direct comparison between somatic therapy (affects only the patient) and germline editing (changes pass to all future generations), then articulates why that difference raises more ethical concern: the permanence amplifies consequences of mistakes. This explains why one raises more concerns than the other. Choice C describes the factual difference but does not explain why it matters ethically. Choice A and D focus on the 2018 incident rather than the structural ethical difference.",
+  "distractorRationale": {
+    "A": "This choice describes the 2018 controversy but explains the ethical problem in terms of inadequate oversight rather than the inherent difference between germline and somatic approaches.",
+    "C": "This choice accurately distinguishes between somatic and germline editing but states the difference factually without explaining why germline editing raises greater ethical concerns.",
+    "D": "This choice uses the 2018 case to illustrate risks but treats it as an instance of poor oversight rather than explaining the fundamental ethical issue with germline changes being heritable."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:23.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1f"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

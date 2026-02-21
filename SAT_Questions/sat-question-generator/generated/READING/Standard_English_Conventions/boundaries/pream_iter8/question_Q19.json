@@ -1,0 +1,58 @@
+{
+  "id": "e2d5f8a3-71c4-4e56-a093-4f6b1d2e8c70",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "Researchers studying urban heat islands have found that certain design choices consistently worsen thermal retention in densely built environments. Their 2023 meta-analysis identified three interventions with the strongest cooling effect [4]expanding urban tree canopy, increasing the albedo of rooftop surfaces, and installing permeable pavements that absorb and dissipate heat. Each of these strategies reduces peak summer temperatures by measurable amounts when implemented at scale.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 69,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries and punctuation conventions?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "strongest cooling effect: expanding urban tree canopy,",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "strongest cooling effect, expanding urban tree canopy,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "strongest cooling effect. Expanding urban tree canopy,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion immediately follows a complete independent clause — 'Their 2023 meta-analysis identified three interventions with the strongest cooling effect' — which announces that a specific list will follow. The items in that list are 'expanding urban tree canopy, increasing the albedo of rooftop surfaces, and installing permeable pavements.' When a complete independent clause introduces a list, explanation, or elaboration that directly answers what is being announced, a colon is required. Choice A uses a semicolon, which is incorrect: a semicolon joins two independent clauses of roughly equivalent weight, but 'expanding urban tree canopy, increasing the albedo...' is not an independent clause — it is a list of noun phrases. Choice B correctly uses a colon after the complete independent clause to introduce the list. Choice C inserts only a comma before the list, which is insufficient to signal the formal introduction of an enumerated list following a complete announcing clause. Choice D places a period, turning 'Expanding urban tree canopy, increasing the albedo of rooftop surfaces, and installing permeable pavements that absorb and dissipate heat' into a standalone sentence fragment, since this string of noun phrases lacks a main verb.",
+  "distractorRationale": {
+    "A": "The semicolon is incorrect because what follows it ('expanding urban tree canopy, increasing the albedo of rooftop surfaces, and installing permeable pavements') is a list of noun phrases, not an independent clause. Semicolons must connect two independent clauses; they cannot introduce a list.",
+    "B": "Correct. A colon is the proper punctuation when a complete independent clause formally announces or introduces a list, explanation, or elaboration that directly fulfills the announcement. 'Their 2023 meta-analysis identified three interventions with the strongest cooling effect' is a complete announcing clause, making the colon grammatically required here.",
+    "C": "A comma alone is insufficient after a complete announcing clause that introduces a formal list. This usage blurs the sentence structure and does not clearly signal the introduction of the enumerated items.",
+    "D": "Placing a period after 'strongest cooling effect' severs the list from its announcing clause, turning 'Expanding urban tree canopy, increasing the albedo of rooftop surfaces, and installing permeable pavements that absorb and dissipate heat' into a fragment — a string of noun phrases with no main verb."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a4c6d8b1-92e3-4f77-b560-3e8a0c1d7f29"
+  },
+  "hasImage": false
+}

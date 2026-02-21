@@ -1,0 +1,54 @@
+{
+  "id": "e9d2a7f4-3b8c-4e1a-9f6d-7c2b5a8e4d1f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "A consumer advocacy group surveyed 400 randomly selected shoppers at a large suburban mall on a Tuesday afternoon and found that 68% reported spending more than $50 per shopping trip. The group concluded that the majority of American shoppers spend more than $50 per shopping trip. Which of the following most accurately identifies the flaw in this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The sample of 400 shoppers is too small to support any conclusion about shopping behavior.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Shoppers at a suburban mall on a Tuesday afternoon may not represent all American shoppers, making the generalization to the broader population unjustified.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The survey only measured self-reported spending, which may differ from actual spending behavior, invalidating any conclusion about spending amounts.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Because shoppers were selected at random, the conclusion overstates the certainty of the finding — the result should be described as a possibility, not a majority.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The core flaw is that the sample was drawn from a specific, non-representative location and time: a suburban mall on a Tuesday afternoon. People who shop at large suburban malls on weekday afternoons are not representative of all American shoppers — they may be more affluent, retired, or part-time workers with flexible schedules, all of whom may spend differently than the general shopping population. Although the 400-person sample was randomly selected from those present, the sampling frame itself (mall shoppers on Tuesday afternoon) excludes major segments of the population. Generalizing from this narrow subgroup to \"all American shoppers\" is an overgeneralization of scope. The sample size of 400 is actually quite adequate for a well-designed study, self-reporting concerns are secondary to the fundamental sampling frame problem, and randomness within a biased sampling frame does not fix the bias.",
+  "distractorRationale": {
+    "A": "Error type 6 (sample size misapplication): A sample of 400 is a standard and adequate size for population inference when collected properly. Citing sample size as the primary flaw ignores the much more significant issue of who was sampled.",
+    "B": "Correct. The sampling frame — mall shoppers on a Tuesday afternoon — is systematically unrepresentative of the broader American shopping population, making the generalization unjustified (error type 5: overgeneralizing scope).",
+    "C": "Error type 3 (ignoring sampling method): Self-report bias is a real methodological concern in some studies, but it is not the primary flaw here. The fundamental problem is the non-representative sampling frame, not the measurement instrument. A student who focuses on self-reporting is misidentifying which flaw matters most.",
+    "D": "Error type 2 (wrong confidence interpretation): This choice confuses the role of random selection within the sample. Random selection within a biased sampling frame does not mean the result is unreliable for the sample — it means the sample itself does not represent the population being generalized to. Saying randomness causes overclaiming gets the logic backwards."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a3c5e7-9b2d-4f8a-3c6e-8d1b5a7f2e9c"
+  }
+}

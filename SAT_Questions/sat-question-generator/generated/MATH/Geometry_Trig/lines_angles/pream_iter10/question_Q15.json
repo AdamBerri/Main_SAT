@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-000f-4aaa-b00f-000000000015",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "Two parallel lines are cut by a transversal. One angle is $(7x - 4)°$ and its co-interior angle is $(3x + 14)°$. What is the measure of the larger angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$115°$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$65°$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$17°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$119°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Co-interior angles sum to $180°$: $(7x-4)+(3x+14)=180$. Simplify: $10x+10=180$, $10x=170$, $x=17$. Angles: $7(17)-4=115°$ and $3(17)+14=65°$. Larger is $115°$.",
+  "distractorRationale": {
+    "A": "Correct. $7(17) - 4 = 115°$.",
+    "B": "Found the smaller angle: $3(17) + 14 = 65°$.",
+    "C": "Reported $x = 17$ instead of the angle.",
+    "D": "Computed $7(17) = 119$ but forgot to subtract $4$."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.339Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-000f-4000-a00f-000000000015"
+  }
+}

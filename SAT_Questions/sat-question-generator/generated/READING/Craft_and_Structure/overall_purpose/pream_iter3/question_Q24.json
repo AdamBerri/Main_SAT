@@ -1,0 +1,57 @@
+{
+  "id": "e6f1b4c8-2d9a-4e3f-8b7c-1a5d9e2f4b8c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "In seventeenth-century England, the word 'news' designated not a genre but a claim—a claim that the information being conveyed was recent, relevant, and reliable. Early newsbooks and gazettes competed fiercely on exactly these grounds, with publishers advertising the freshness of their reports and the trustworthiness of their correspondents in terms that now read as transparently promotional. The audience for these publications was not passive; readers scrutinized sources, circulated competing accounts, and sometimes annotated copies with their own corrections and doubts. What made this environment distinct from later press cultures was not the presence of misinformation—false reports have always circulated—but the degree to which the criteria for evaluating information were themselves publicly contested. Different political factions advanced different standards for what counted as credible testimony, and those standards shifted as the fortunes of factions shifted. Royalist newsbooks and Parliamentary ones did not merely disagree about facts; they disagreed about which facts were facts. To read these publications closely is to encounter an information environment in which the very concept of news was being actively negotiated rather than taken for granted—a negotiation whose terms were shaped by every dimension of the social conflicts from which the publications emerged.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 196,
+    "source": "Adapted from a historical study of early modern English print culture"
+  },
+  "stem": "Which choice best describes the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Trace how political conflict between Royalists and Parliamentarians shaped the content of early English newspapers",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Argue that early English news culture was defined by active public contestation over the criteria for credible information",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Compare the role of readers in seventeenth-century news culture with their role in later press environments",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Explain why misinformation was more widespread in early modern England than in subsequent historical periods",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage's central claim is that what made seventeenth-century English news culture distinctive was not merely the presence of false information but 'the degree to which the criteria for evaluating information were themselves publicly contested.' Every element of the passage develops this argument: the etymology of 'news' as a contested claim establishes the evaluative stakes; the description of active readers scrutinizing sources establishes public participation; the contrast with other press cultures specifies what is distinctive; the observation that factions disagreed not just about facts but about what counted as facts sharpens the point; and the final sentence names the process explicitly as a 'negotiation' of 'the very concept of news.' The purpose is argumentative—asserting a specific characterization of a historical environment—not merely descriptive or comparative.",
+  "distractorRationale": {
+    "A": "The Royalist-Parliamentary conflict is referenced as an important contextual factor, and the passage does note that the two sides disagreed about what counted as facts. But tracing the content of newspapers is a supporting detail, not the organizing purpose; the passage uses this conflict to illustrate a broader point about contested evaluative criteria.",
+    "B": "Correct. The passage argues that the defining feature of this news environment was the public contestation of the very standards by which information was evaluated, not simply the disagreement over particular facts or the volume of misinformation.",
+    "C": "The passage does contrast seventeenth-century readers with 'later press cultures,' but this comparison appears in a single sentence as support for the main claim about contested criteria, not as the organizing goal of the passage.",
+    "D": "The passage explicitly states that 'false reports have always circulated' and specifically distinguishes the period not by the prevalence of misinformation but by the contested nature of evaluative standards. The passage thus rejects the premise of this choice rather than advancing it."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e"
+  }
+}

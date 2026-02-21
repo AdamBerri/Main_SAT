@@ -1,0 +1,80 @@
+{
+  "id": "442c6ab9-2a9f-4f38-afc8-41218a317740",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "An agricultural study compared crop yields of four grain types grown in the Midwest during 2023. The researchers concluded that wheat produced the lowest yield per acre among the grains tested.",
+  "stem": "Which choice most effectively uses data from the figure to support the researchers' conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Wheat yielded 42 bushels per acre, which was less than corn (178 bushels), soybeans (51 bushels), and oats (64 bushels).",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Soybeans yielded 51 bushels per acre, which was less than oats at 64 bushels per acre.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Corn yielded 178 bushels per acre, making it the highest-yielding grain in the study.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Oats yielded 64 bushels per acre, which was higher than soybeans at 51 bushels per acre but lower than corn at 178 bushels per acre.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that wheat had the lowest yield per acre. Choice A directly supports this by showing wheat at 42 bushels per acre, which is lower than all other grains listed (corn 178, soybeans 51, oats 64). The other choices cite accurate data but discuss comparisons between other grains without establishing that wheat is the lowest.",
+  "distractorRationale": {
+    "A": "Correct: shows wheat at 42 bushels per acre and compares to all others, confirming it is the lowest.",
+    "B": "Wrong (misread value): accurately compares soybeans to oats but does not mention wheat or address the claim about the lowest yield.",
+    "C": "Wrong (wrong comparison): discusses corn being the highest, not wheat being the lowest.",
+    "D": "Wrong (irrelevant data): compares oats to soybeans and corn but never mentions wheat, which is the subject of the claim."
+  },
+  "hasImage": true,
+  "imageDescription": "Bar chart titled 'Crop Yields in the Midwest, 2023.' X-axis: Grain Type (Corn, Soybeans, Oats, Wheat). Y-axis: Yield (bushels per acre), range 0-200. Bars: Corn = 178, Soybeans = 51, Oats = 64, Wheat = 42. Source: Midwest Agricultural Research Center, 2023.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Crop Yields in the Midwest, 2023",
+    "data": {
+      "categories": [
+        "Corn",
+        "Soybeans",
+        "Oats",
+        "Wheat"
+      ],
+      "values": [
+        178,
+        51,
+        64,
+        42
+      ],
+      "unit": "bushels per acre",
+      "yAxisLabel": "Yield (bushels per acre)",
+      "xAxisLabel": "Grain Type"
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 50,
+    "source": "Adapted from Midwest Agricultural Research Center annual study"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.373Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "92bb9115-1fad-402b-9557-1175ebce2bc3"
+  }
+}

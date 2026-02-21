@@ -88,8 +88,8 @@
             "category": "mathematical_correctness_errors",
             "frequency": 10,
             "exampleErrors": [
-              "The correct simplification yields x\u00b2 - 14, but the designated answer A (x\u00b2 - 2x - 14) includes an erroneous -2x term that cannot appear since -5x + 5x = 0",
-              "None of the provided answer choices match the correct answer of x\u00b2 - 14, making the question invalid",
+              "The correct simplification yields x² - 14, but the designated answer A (x² - 2x - 14) includes an erroneous -2x term that cannot appear since -5x + 5x = 0",
+              "None of the provided answer choices match the correct answer of x² - 14, making the question invalid",
               "The explanation calculates b + c = 1 + (-6) = -3, but this is arithmetically incorrect: 1 + (-6) = -5"
             ]
           },
@@ -159,23 +159,23 @@
             "category": "answer_key_mismatch",
             "frequency": 3,
             "exampleErrors": [
-              "The explanation correctly calculates answer as x\u00b2 - 14 (x terms cancel: -5x + 5x = 0), but designated correct answer is A) x\u00b2 - 2x - 14, which contains an unexplained -2x term that has no mathematical basis",
+              "The explanation correctly calculates answer as x² - 14 (x terms cancel: -5x + 5x = 0), but designated correct answer is A) x² - 2x - 14, which contains an unexplained -2x term that has no mathematical basis",
               "The correct simplification of (x+3)(x-2) - (x-1)(x+4) equals -2x - 2, but designated answer is A) -2x - 10, which would require a completely different expression to be correct",
-              "The explanation's own work produces x\u00b2 - 14 and correctly shows that x terms cancel, yet still selects answer choice A) x\u00b2 - 2x - 14, directly contradicting its own calculation"
+              "The explanation's own work produces x² - 14 and correctly shows that x terms cancel, yet still selects answer choice A) x² - 2x - 14, directly contradicting its own calculation"
             ]
           },
           {
             "category": "distractor_analysis",
             "frequency": 1,
             "exampleErrors": [
-              "Distractor choice C targets sign-distribution errors but requires multiple independent errors (both wrong x\u00b2 coefficient AND wrong constant term -10 vs -14), making it lack pedagogical clarity; Distractor D has similarly vague rationale stating 'another error leading to +8x' without specifying what went wrong, reducing discriminative value"
+              "Distractor choice C targets sign-distribution errors but requires multiple independent errors (both wrong x² coefficient AND wrong constant term -10 vs -14), making it lack pedagogical clarity; Distractor D has similarly vague rationale stating 'another error leading to +8x' without specifying what went wrong, reducing discriminative value"
             ]
           },
           {
             "category": "explanation_clarity",
             "frequency": 1,
             "exampleErrors": [
-              "The explanation states 'Wait, let me recalculate...' suggesting recognition of an inconsistency between the calculated work (x\u00b2 - 14) and the selected answer (x\u00b2 - 2x - 14), but then fails to resolve the contradiction properly, leaving the mathematical error unaddressed"
+              "The explanation states 'Wait, let me recalculate...' suggesting recognition of an inconsistency between the calculated work (x² - 14) and the selected answer (x² - 2x - 14), but then fails to resolve the contradiction properly, leaving the mathematical error unaddressed"
             ]
           },
           {
@@ -191,11 +191,85 @@
       },
       "improvementMade": "Addressed: difficulty_calibration, answer_key_mismatch, distractor_analysis",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.867,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_medium",
+            "frequency": 5,
+            "exampleErrors": [
+              "Q11-Q15: distractor_quality scored 4, could be more psychometrically refined at d3"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.967,
+        "passRate": 1
+      },
+      "improvementMade": "No significant errors — refinement only. Added distractor refinement guidelines.",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.775,
+        "passRate": 0.95,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_d1",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q3 distractor A has flawed rationale - choice doesnt equal original expression"
+            ]
+          },
+          {
+            "category": "distractor_rationale_clarity",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q8 distractor rationale confusing mid-description"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.833,
+        "passRate": 1
+      },
+      "improvementMade": "Final iteration: 95% pass rate, one question (Q3) failed on distractor quality",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.833,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.833,
+        "passRate": 1
+      },
+      "improvementMade": "Converged: <2% improvement",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.1.0",
-  "converged": false,
+  "currentBestVersion": "1.3.0",
+  "converged": true,
   "startedAt": "2026-01-08T19:49:18.366Z",
-  "completedAt": null,
-  "bestTestScore": 0
+  "completedAt": "2026-02-20T22:27:20.392Z",
+  "bestTestScore": 4.967
 }

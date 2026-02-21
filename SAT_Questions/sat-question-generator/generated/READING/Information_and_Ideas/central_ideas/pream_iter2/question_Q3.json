@@ -1,0 +1,57 @@
+{
+  "id": "d5e9a3b4-8c2f-4d1e-9b3a-7f4c6e8a2d1b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "Sunscreen works by blocking or absorbing ultraviolet (UV) radiation from the sun before it can damage skin cells. Chemical sunscreens contain ingredients that absorb UV rays and convert them into heat, while mineral sunscreens use zinc oxide or titanium dioxide to reflect UV rays away from the skin. Both types prevent the DNA damage that can lead to sunburn and, over time, skin cancer. Dermatologists recommend applying sunscreen every day, even on cloudy days, because UV rays can penetrate clouds. Regular use is the most effective way to reduce the long-term risk of skin cancer.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 98,
+    "source": "Original passage on health and science"
+  },
+  "stem": "Which choice best states the main idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Chemical and mineral sunscreens use different methods to protect skin from ultraviolet radiation.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "UV rays from the sun can penetrate clouds, which is why sunscreen should be worn every day.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Sunscreen protects skin from UV damage, and using it regularly is the best way to reduce the risk of skin cancer.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Dermatologists recommend sunscreen as the primary tool for preventing both sunburn and long-term skin conditions.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage opens by explaining how sunscreen works to block UV radiation and protect skin cells, then describes the two types of sunscreens, explains the health risks UV rays pose (sunburn and skin cancer), and concludes that 'regular use is the most effective way to reduce the long-term risk of skin cancer.' Choice C captures both parts of this argument: sunscreen blocks UV damage, and regular use reduces skin cancer risk. This encompasses the full scope and emphasis of the passage.",
+  "distractorRationale": {
+    "A": "The comparison of chemical versus mineral sunscreens is a supporting detail that explains how sunscreen works, not the passage's main idea. The passage discusses both types to illustrate that sunscreen in general is effective, not to compare the types.",
+    "B": "The fact that UV rays penetrate clouds is mentioned as the reason daily use is recommended. It is a supporting detail, not the central claim. This choice also leaves out the broader point about skin cancer prevention.",
+    "D": "This choice captures the recommendation but frames the passage as being primarily about dermatologists' advice rather than about how and why sunscreen works. It also introduces 'primary tool,' a comparative claim the passage does not make."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3e6b9d2-4f1a-4c8e-a7b2-5d9f3c6e1b8a"
+  },
+  "hasImage": false
+}

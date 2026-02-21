@@ -1,0 +1,54 @@
+{
+  "id": "c5d8e1f2-37a4-4c60-b2e9-1a7f5d3c8b90",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "What is the value of $x$ in the equation $\\sqrt{x - 3} = 4$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$7$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$13$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$16$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$19$",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Starting with $\\sqrt{x - 3} = 4$, square both sides to eliminate the radical:\n$$x - 3 = 16$$\n$$x = 19$$\n\nVerification in the original equation:\n$$\\sqrt{19 - 3} = \\sqrt{16} = 4 \\quad \\checkmark$$\n\nThe LHS equals $4$ and the RHS equals $4$, so $x = 19$ is valid.",
+  "distractorRationale": {
+    "A": "Choice A = 7: Results from failing to square both sides and instead treating the equation as $x - 3 = 4$ (setting the expression under the radical equal to $4$ without squaring). This gives $x = 7$. Verification of error: $x - 3 = 4 \\Rightarrow x = 7$.",
+    "B": "Choice B = 13: Results from correctly squaring both sides to get $x - 3 = 16$, but then subtracting instead of adding: $x = 16 - 3 = 13$. Verification of error: $16 - 3 = 13$, not $16 + 3 = 19$.",
+    "C": "Choice C = 16: Results from correctly squaring both sides to find $x - 3 = 16$, but then reporting $16$ as the answer instead of solving $x = 16 + 3$. The student stops at $x - 3 = 16$ and records $x = 16$.",
+    "D": "Choice D = 19: Correct. Squaring both sides gives $x - 3 = 16$, so $x = 19$. Verified: $\\sqrt{19 - 3} = \\sqrt{16} = 4$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e4a1b7d3-5f92-4c08-a6e0-2b8c1d9f3e57"
+  }
+}

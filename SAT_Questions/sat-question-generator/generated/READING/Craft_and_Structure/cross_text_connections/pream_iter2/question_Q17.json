@@ -1,0 +1,57 @@
+{
+  "id": "e9f2a4b7-3c1d-4e6f-9b8a-5d7c2e1f4a3b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "Text 1\nEcologists studying coral reef systems have noted a troubling pattern: reefs that survive mass bleaching events often exhibit lower biodiversity in subsequent decades, even after water temperatures stabilize. The survivors tend to be fast-growing, thermally tolerant species that outcompete more diverse but heat-sensitive organisms during recovery. This competitive displacement creates reef assemblages that are structurally intact but ecologically impoverished—capable of persisting in a warmer ocean but providing diminished services to the thousands of species that depend on complex coral architecture.\n\nText 2\nMarine biologists have documented that post-bleaching reefs in certain regions of the Indo-Pacific show unexpected resilience, with species richness recovering to near-baseline levels within fifteen to twenty years. Crucially, recovery rates correlate with the presence of intact adjacent ecosystems: seagrass beds and mangrove forests buffer thermal and chemical stress, while providing larval nursery habitat for the reef fish communities that facilitate coral recruitment and accelerate the return of structural complexity.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 168,
+    "source": "Adapted from academic essays on coral reef ecology and climate resilience"
+  },
+  "stem": "Which choice best describes the relationship between the two texts' accounts of coral reef recovery after bleaching events?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 2 reverses the causal sequence proposed in Text 1 by arguing that ecological impoverishment precedes rather than follows bleaching events in vulnerable reef systems.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 2 identifies the contextual conditions under which the trajectory described in Text 1 may be averted, suggesting that adjacent ecosystem integrity mediates long-term recovery outcomes.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 2 contradicts Text 1's finding that thermally tolerant species dominate post-bleaching reefs by demonstrating that heat-sensitive species recover equally well in the Indo-Pacific.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 and Text 2 reach the same conclusion about reef resilience but draw on different geographic regions to show that recovery timelines vary significantly across ocean basins.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 describes a concerning pattern: post-bleaching reefs trend toward ecological impoverishment because thermally tolerant species displace biodiverse but heat-sensitive ones. Text 2 does not dispute this mechanism but specifies conditions under which a different outcome occurs—in regions where intact adjacent ecosystems (seagrass, mangroves) exist, species richness recovers to near-baseline within 15-20 years. Text 2 thus identifies a moderating variable (adjacent ecosystem integrity) that can redirect the trajectory Text 1 documents. This is a conditional qualification, not a flat contradiction: Text 2 implicitly accepts that without those adjacent buffers, the pattern in Text 1 would likely prevail.",
+  "distractorRationale": {
+    "A": "Neither text argues that ecological impoverishment precedes bleaching. Text 1's argument runs in the opposite direction—bleaching causes competitive displacement, which then causes impoverishment. Text 2 does not address pre-bleaching conditions.",
+    "B": "Correct. Text 2 specifies that intact adjacent ecosystems mediate recovery, providing a contextual condition under which Text 1's trajectory of impoverishment can be avoided.",
+    "C": "Text 2 does not address thermally tolerant versus heat-sensitive species dynamics at all; its focus is on adjacent ecosystem support and larval recruitment mechanisms, not species thermal tolerance competition.",
+    "D": "The texts do not reach the same conclusion. Text 1 predicts ecological impoverishment persists even as structure recovers; Text 2 documents near-baseline species richness recovery under certain conditions. These are distinct outcomes, not the same conclusion expressed through different geographic examples."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a3c5e7-9b2d-4e8f-a6c4-3d7e1b9f5a2c"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "d3400a00-e75b-4f75-b530-fd03261a7bc4",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "A consumer research firm tracked monthly smartphone sales for three major brands during the first quarter of 2024. The firm reported that Brand X outsold both Brand Y and Brand Z in every month of the quarter.",
+  "stem": "Which choice most effectively uses data from the figure to support the firm's report?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Brand X sold 2.4 million units in January, 2.7 million in February, and 3.1 million in March, while Brand Y's highest monthly total was 1.9 million and Brand Z's was 1.6 million.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Brand Y sold 1.7 million units in January, 1.8 million in February, and 1.9 million in March, showing steady growth throughout the quarter.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Brand Z sold 1.6 million units in March, which was higher than its January total of 1.2 million units.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "In March, Brand X sold 3.1 million units, Brand Y sold 1.9 million units, and Brand Z sold 1.6 million units.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that Brand X outsold both competitors in every month. Choice A supports this by showing Brand X's monthly totals (2.4M, 2.7M, 3.1M) all exceed the highest totals of Brand Y (1.9M) and Brand Z (1.6M). Choice B discusses only Brand Y's growth pattern. Choice C discusses only Brand Z. Choice D only shows March data, which doesn't demonstrate that Brand X led in every month.",
+  "distractorRationale": {
+    "A": "Correct: cites Brand X's sales for all three months and shows they exceed the peak sales of both competitors.",
+    "B": "Wrong (irrelevant data): discusses Brand Y's growth trend but does not compare Brand Y to Brand X.",
+    "C": "Wrong (misread value): compares Brand Z's January and March figures but does not address the claim about Brand X outselling competitors.",
+    "D": "Wrong (incomplete evidence): shows only one month (March) where Brand X leads, but the claim asserts Brand X led in every month of the quarter."
+  },
+  "hasImage": true,
+  "imageDescription": "Line graph titled 'Monthly Smartphone Sales by Brand, Q1 2024.' X-axis: Month (January, February, March). Y-axis: Units Sold (millions), range 0-3.5. Three lines: Brand X: 2.4, 2.7, 3.1. Brand Y: 1.7, 1.8, 1.9. Brand Z: 1.2, 1.4, 1.6. Source: Consumer Research Firm, 2024.",
+  "chartData": {
+    "type": "line_graph",
+    "title": "Monthly Smartphone Sales by Brand, Q1 2024",
+    "data": {
+      "months": [
+        "January",
+        "February",
+        "March"
+      ],
+      "series": {
+        "Brand X": [
+          2.4,
+          2.7,
+          3.1
+        ],
+        "Brand Y": [
+          1.7,
+          1.8,
+          1.9
+        ],
+        "Brand Z": [
+          1.2,
+          1.4,
+          1.6
+        ]
+      },
+      "unit": "millions of units",
+      "yAxisLabel": "Units Sold (millions)",
+      "xAxisLabel": "Month"
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 54,
+    "source": "Adapted from Global Consumer Research Firm quarterly sales report"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.590Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c1f8d382-e574-4ac0-b84b-1527346fcaf0"
+  }
+}

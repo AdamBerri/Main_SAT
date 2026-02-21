@@ -1,0 +1,38 @@
+{
+  "id": "a1b2c3d4-4444-4a6b-8c7d-9e0f1a2b3c04",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "computational": 1.2
+  },
+  "stem": "A cone-shaped party hat has a radius of 3 inches and a height of 8 inches. What is the volume, in cubic inches, of the party hat?",
+  "choices": [
+    { "label": "A", "text": "$72\\pi$", "isCorrect": false },
+    { "label": "B", "text": "$24\\pi$", "isCorrect": true },
+    { "label": "C", "text": "$8\\pi$", "isCorrect": false },
+    { "label": "D", "text": "$96\\pi$", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The volume of a cone is $V = \\frac{1}{3}\\pi r^2 h$. Substituting $r = 3$ and $h = 8$: $V = \\frac{1}{3}\\pi(3)^2(8) = \\frac{1}{3}\\pi(9)(8) = \\frac{72\\pi}{3} = 24\\pi$ cubic inches. The answer is B.",
+  "distractorRationale": {
+    "A": "Omits the $\\frac{1}{3}$ coefficient: $\\pi(3)^2(8) = 72\\pi$ instead of $\\frac{1}{3}(72\\pi)$.",
+    "B": "Correct. $\\frac{1}{3}\\pi(3)^2(8) = 24\\pi$.",
+    "C": "Omits the exponent on $r$: $\\frac{1}{3}\\pi(3)(8) = 8\\pi$ instead of $\\frac{1}{3}\\pi(9)(8)$.",
+    "D": "Uses the diameter (6) instead of the radius: $\\frac{1}{3}\\pi(6)^2(8) = \\frac{1}{3}(288\\pi) = 96\\pi$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:04.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-4444-4d5e-8f9a-0b1c2d3e4f04"
+  }
+}

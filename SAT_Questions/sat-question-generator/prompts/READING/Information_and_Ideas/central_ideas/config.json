@@ -4,7 +4,7 @@
     "domain": "Information_and_Ideas",
     "subtopic": "central_ideas"
   },
-  "currentVersion": "1.4.0",
+  "currentVersion": "1.5.0",
   "versions": [
     {
       "version": "1.0.0",
@@ -13,6 +13,18 @@
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.5.0",
+      "createdAt": "2026-02-19T21:16:05.811Z",
+      "parentVersion": "1.4.0",
+      "preamIteration": 1,
+      "performanceMetrics": {
+        "trainAvgScore": 4.296,
+        "trainPassRate": 0.95,
+        "testAvgScore": 4.583,
+        "testPassRate": 1
+      }
     }
   ],
   "temperatureConfig": {

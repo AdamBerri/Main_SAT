@@ -1,0 +1,38 @@
+{
+  "id": "f2a3b4c5-d6e7-4f8a-9b0c-1d2e3f4a5b6c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "A taxi ride costs a base fare of $3 plus $2 for each mile. If a passenger has at most $19 for the ride, what is the greatest number of whole miles the passenger can travel?",
+  "choices": [
+    { "label": "A", "text": "10", "isCorrect": false },
+    { "label": "B", "text": "9", "isCorrect": false },
+    { "label": "C", "text": "7", "isCorrect": false },
+    { "label": "D", "text": "8", "isCorrect": true }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Set up the inequality: $3 + 2m \\leq 19$. Subtract 3: $2m \\leq 16$. Divide by 2: $m \\leq 8$. The greatest number of whole miles is 8.",
+  "distractorRationale": {
+    "A": "Cluster D error: Ignored the base fare and solved $2m \\leq 19$, getting $m \\leq 9.5$, rounded up to 10.",
+    "B": "Cluster B error: Subtracted the base fare incorrectly as $19 - 3 = 16$, then divided $16 \\div 2 = 8$, but added 1 thinking the base fare includes the first mile, getting 9.",
+    "C": "Cluster C error: Used strict inequality $3 + 2m < 19$, got $2m < 16$, $m < 8$, and chose 7.",
+    "D": "Correct. $3 + 2m \\leq 19$ gives $m \\leq 8$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:07.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3b4c5d6-e7f8-4a9b-0c1d-2e3f4a5b6c7d"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "a7b1e5f4-2c8d-4a3b-e9f0-4d6c2a7b8e1f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "Text 1\nArtificial intelligence tools now perform many routine legal research tasks—locating precedents, summarizing case holdings, flagging relevant statutes—faster and more comprehensively than first-year associates can. Law firms adopting these systems report substantial reductions in billable hours for foundational research tasks. If the trend continues, the profession will need fewer entry-level attorneys, and law schools should prepare graduates for roles centered on judgment and client counseling rather than document-intensive research.\n\nText 2\nThe assumption that AI can replace junior attorneys in legal research overlooks what actually happens when a new lawyer learns to find and evaluate cases: they develop judgment. The errors junior associates make while conducting research—and the corrections senior attorneys provide—constitute the apprenticeship through which legal reasoning is formed. Removing that stage does not simply automate a task; it eliminates the training ground on which professional competence is built.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 145,
+    "source": "Adapted from discussions of artificial intelligence and legal education"
+  },
+  "stem": "Based on the passages, how do the two authors' views on AI in legal research most clearly relate to each other?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 predicts that AI will reduce demand for junior attorneys, and Text 2 argues that this prediction is inaccurate because AI tools are not yet reliable enough to replace human researchers.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 advocates for using AI to shift attorney roles toward higher-level work, while Text 2 argues that the process of doing lower-level work is itself essential to developing that higher-level capability.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 1 and Text 2 both acknowledge that AI will reduce billable hours for legal research, but they disagree about whether this reduction benefits clients.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 2 supports Text 1's conclusion about attorney roles by explaining the mechanism through which AI improves legal reasoning over time.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 welcomes AI-driven automation of routine legal research as an opportunity for attorneys to concentrate on judgment and client counseling—the higher-order skills. Text 2 accepts that AI can handle those tasks but disputes the value of removing junior attorneys from the process, arguing that performing research and making mistakes is precisely how legal judgment is formed. Choice B accurately captures this tension: Text 1 sees the redirection to judgment as the goal, while Text 2 argues that the lower-level work is the pathway to developing that judgment in the first place.",
+  "distractorRationale": {
+    "A": "Text 2 does not dispute AI reliability or claim AI tools make errors. Its argument is about what junior attorneys lose developmentally when AI performs the work—a pedagogical concern, not a technical one about AI accuracy.",
+    "B": "Correct. Text 1 frames routine research as something best delegated to AI so lawyers can focus on judgment; Text 2 counters that performing routine research is the very activity through which judgment is developed, undermining Text 1's implied separation of tasks from skills.",
+    "C": "Text 2 never mentions billable hours or client benefits. Only Text 1 references billing reductions. The two texts do not share a common position on billable hours from which to disagree about client impact.",
+    "D": "Text 2 does not support Text 1's conclusion; it directly challenges the premise that automating research is unambiguously beneficial. Text 2 also does not claim AI improves legal reasoning—it argues that removing junior attorneys from research tasks harms professional development."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b"
+  },
+  "hasImage": false
+}

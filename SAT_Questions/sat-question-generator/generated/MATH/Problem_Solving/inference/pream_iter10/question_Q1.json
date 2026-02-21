@@ -1,0 +1,53 @@
+{
+  "id": "b3f7e2a1-4c09-4d5e-8f61-2a0d9c3b7e14",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "computational": 1.3
+  },
+  "stem": "A school principal surveyed 40 students selected at random from the 800 students enrolled at her school. Of those surveyed, 30 said they preferred a longer lunch period. Based on this survey, which of the following is the best estimate of the number of students in the school who prefer a longer lunch period?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "30",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "300",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "600",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "750",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Because the 40 students were selected at random, the sample is representative of the full school population of 800. The proportion who prefer a longer lunch period in the sample is 30/40 = 3/4. Applying this proportion to the full population: (3/4) × 800 = 600. The best estimate is 600 students.",
+  "distractorRationale": {
+    "A": "Confusing sample with population — treating the sample count of 30 as if it directly represents the whole school, ignoring that the sample is only 40 of 800 students.",
+    "B": "Overgeneralizing scope — a student might divide 800 by 40 to get 20 groups, then multiply 20 by the wrong reference number (perhaps guessing 15 as half of 30), arriving at 300; or they may only scale by a factor of 10 instead of 20.",
+    "D": "Sample size misapplication — a student might reason that since 30 out of 40 is a high proportion, nearly all of the 800 students must prefer it, and approximate 750 (i.e., 800 × 30/32 or simply guessing a high number without careful proportion work)."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1c4f9e2-3b07-4d8a-9e52-6f0b1d3c7a25"
+  }
+}

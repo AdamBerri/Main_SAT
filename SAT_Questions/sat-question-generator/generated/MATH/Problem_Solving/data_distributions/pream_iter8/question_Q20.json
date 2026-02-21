@@ -1,0 +1,54 @@
+{
+  "id": "477893ce-e292-417b-bffd-19533b62ef60",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "Data set $P$ contains the values $8, 14, 20, 26, 32$, and data set $Q$ contains the values $4, 12, 20, 28, 36$. Both data sets have the same mean. The minimum value is removed from each data set. By how much does the new mean of $Q$ exceed the new mean of $P$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$0$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$1$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$4$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$8$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "STEP A — Sort the original data sets.\nData set $P$: $8, 14, 20, 26, 32$.\nData set $Q$: $4, 12, 20, 28, 36$.\n\nSTEP B — Compute the original means.\n$P$: $\\frac{8+14+20+26+32}{5} = \\frac{100}{5} = 20$.\n$Q$: $\\frac{4+12+20+28+36}{5} = \\frac{100}{5} = 20$.\nBoth means equal $20$. ✓\n\nSTEP E — Original ranges: $P$: $32-8=24$. $Q$: $36-4=32$.\n\nSTEP G (after removing minimums) — Remove $8$ from $P$ and $4$ from $Q$.\n\nNew $P$: $14, 20, 26, 32$ ($n=4$, sum $= 100 - 8 = 92$).\nNew mean of $P$: $\\frac{92}{4} = 23$.\n\nNew $Q$: $12, 20, 28, 36$ ($n=4$, sum $= 100 - 4 = 96$).\nNew mean of $Q$: $\\frac{96}{4} = 24$.\n\nDifference: $24 - 23 = \\mathbf{1}$.\n\nKey insight: The general formula for the new mean after removing the minimum is $\\frac{\\text{old sum} - \\text{min}}{n-1}$. Since both data sets have the same old sum ($100$) and the same new $n$ ($4$), the data set with the smaller minimum ($Q$, min $= 4$) produces a larger new mean. The difference equals $\\frac{8-4}{4} = 1$.\n\nSTEP H — New mean of $Q$ exceeds new mean of $P$ by $1$. This matches choice B.\n\nSTEP I — Distractor analysis:\n- Choice A ($0$): Symmetry misconception — student reasons that since both data sets have the same mean and both lose their minimum values, the effect must be identical and the new means must remain equal. This ignores that the minimums being removed are different ($8$ vs. $4$), producing different new sums.\n- Choice C ($4$): Difference-of-minimums error — student correctly identifies that the minimums differ by $4-8 = -4$ (in absolute value, $4$) and reports this raw difference as the difference in new means, without dividing by the new count.\n- Choice D ($8$): Range-difference error — student computes the difference in original ranges ($32 - 24 = 8$) and reports this as the answer, confusing the spread of the two distributions with the effect of removing the minimum on the mean.",
+  "distractorRationale": {
+    "A": "Symmetry misconception: the student reasons that since both datasets have the same original mean and both lose their minimum value, the new means must also be equal. This ignores that the two minimums being removed (8 and 4) differ, yielding different new sums (92 vs. 96) and therefore different new means (23 vs. 24).",
+    "B": "Correct. New mean of P = (100 - 8) / 4 = 23. New mean of Q = (100 - 4) / 4 = 24. Difference = 24 - 23 = 1.",
+    "C": "Difference-of-minimums error: the student correctly identifies that Q's minimum (4) is 4 less than P's minimum (8) and reports the raw difference between the removed values (4) as the difference in new means, without accounting for the division by the new count of 4.",
+    "D": "Range-difference error: the student computes the difference in the original ranges of P and Q (32 - 24 = 8) and reports this value as the answer, confusing the change in spread with the effect of removing the minimum on the mean."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "028d997f-717c-4e31-80b2-6705f1e54173"
+  }
+}

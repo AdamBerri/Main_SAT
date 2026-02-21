@@ -1,0 +1,54 @@
+{
+  "id": "a5b6c7d8-e9f0-1a2b-3c4d-5e6f7a8b9c0d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.2,
+    "computational": 3
+  },
+  "stem": "A car dealership is offering a promotion where customers receive a $3,000 rebate on a car that originally costs $25,000. What percent of the original price does the rebate represent?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "8%",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "12%",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "15%",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "3%",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Percent = ($3,000 / $25,000) × 100 = 12%.",
+  "distractorRationale": {
+    "A": "Student divided the rebate by an incorrect base of $37,500: $3,000 / $37,500 = 0.08, so 8%.",
+    "B": "Correct answer.",
+    "C": "Student divided $3,000 by $20,000 (the post-rebate price): $3,000 / $20,000 = 0.15, so 15%.",
+    "D": "Student dropped a zero and computed $3,000 / $100,000 = 0.03, so 3%."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:12.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b6c7d8e9-f0a1-2b3c-4d5e-6f7a8b9c0d1e"
+  }
+}

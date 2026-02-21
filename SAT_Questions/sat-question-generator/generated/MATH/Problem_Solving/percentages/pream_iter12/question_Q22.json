@@ -1,0 +1,54 @@
+{
+  "id": "a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A city's population grew by 25% in the first decade and then declined by 20% in the second decade, ending at 600,000 residents. A city planner claims the population returned to its original level. Is the planner correct, and what was the original population?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Yes; the original population was 600,000.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "No; the original population was 480,000.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "No; the original population was 500,000.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "No; the original population was 750,000.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let $x$ = original population. After 25% growth: $1.25x$. After 20% decline: $1.25x \\times 0.80 = 1.00x$. So $x = 600{,}000$. The planner is correct: 25% up then 20% down returns to the original.",
+  "distractorRationale": {
+    "A": "Correct answer.",
+    "B": "Student applied a net 5% increase (25% − 20%): 600,000 / 1.25 = 480,000.",
+    "C": "Student reversed only the 20% decline: 600,000 / 1.20 = 500,000.",
+    "D": "Student reversed only the 25% growth: 600,000 / 0.80 = 750,000."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:21.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b4c5d6e7-f8a9-0b1c-2d3e-4f5a6b7c8d9e"
+  }
+}

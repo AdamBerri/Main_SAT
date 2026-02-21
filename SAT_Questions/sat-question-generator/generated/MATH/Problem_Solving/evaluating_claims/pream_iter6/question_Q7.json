@@ -1,0 +1,54 @@
+{
+  "id": "b5e9d1c3-7a24-4f8b-ae56-3d0c9f2e1b78",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "A city recreation department randomly selected 200 residents from its official list of all city residents and asked them whether they supported building a new public pool. Of the 200 residents selected, 160 responded to the survey. Of those who responded, 75% said they supported building the pool. A city council member claimed that 75% of all city residents support building the pool. Is this claim valid?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Yes, because 200 residents is a large enough sample to represent the entire city.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Yes, because the residents were randomly selected from the official city list.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "No, because only those who responded are represented, and residents who chose not to respond may have different opinions.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "No, because 75% is too high a percentage to be believable for a whole city.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Although the initial selection of 200 residents was random — which is a strong design feature — only 160 of the 200 actually responded. The 75% figure is based only on those 160 respondents, not the full random sample of 200. People who chose not to respond (40 residents, or 20% of the sample) may have different views on the pool. This non-response creates a potential bias: the 75% result reflects only those motivated to reply, which may not represent all city residents. The claim about all city residents is therefore not fully supported because the effective sample is not the original random group.",
+  "distractorRationale": {
+    "A": "This distractor targets the misconception that sample size alone validates a generalization. The random selection method is actually more relevant than size, but the non-response problem is the key flaw here — size does not fix the bias introduced when 40 selected people chose not to respond.",
+    "B": "This is a tempting distractor because random selection IS an important requirement. However, it overlooks that the 75% result is based on the 160 who responded, not the 200 who were randomly selected. The non-response bias undermines the otherwise good design.",
+    "C": "Correct. The 75% figure reflects only the 160 residents who chose to respond. The 40 non-respondents were part of the random sample but are not represented in the result, potentially biasing the conclusion.",
+    "D": "This distractor introduces a non-statistical, subjective criterion. The size of a percentage does not determine whether a statistical claim is valid. This is not a legitimate statistical reason to doubt the claim."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e2f3a4b5-6c7d-8e9f-0a1b-2c3d4e5f6a7b"
+  }
+}

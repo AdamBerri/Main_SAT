@@ -1,0 +1,54 @@
+{
+  "id": "e5f6a7b8-c9d0-1234-efab-567890123456",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "Student A scored 70, 70, 70, 70, and 70 on five tests. Student B scored 50, 60, 70, 80, and 90 on the same five tests. Which of the following correctly compares the standard deviations of the two students' scores?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Student A's standard deviation is greater than Student B's standard deviation.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Student A's standard deviation equals Student B's standard deviation.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Student B's standard deviation is greater than Student A's standard deviation.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The standard deviations cannot be compared without performing calculations.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "STEP F — Standard deviation measures how spread out the data values are around the mean. A larger spread from the mean means a larger standard deviation; values that are all identical have a standard deviation of 0.\n\nSTEP A (Student A) — Data: 70, 70, 70, 70, 70. Every value is identical.\nSTEP B (Student A) — Mean = (70 × 5) / 5 = 70. Every value equals the mean exactly; there is no deviation from the mean. Standard deviation = 0.\n\nSTEP A (Student B) — Sorted data: 50, 60, 70, 80, 90.\nSTEP B (Student B) — Mean = (50 + 60 + 70 + 80 + 90) / 5 = 350 / 5 = 70. The values range from 20 below the mean to 20 above the mean, showing substantial spread. Standard deviation > 0.\n\nSTEP H — Since Student A's scores are all identical (no spread) and Student B's scores are spread across a 40-point range, Student B's standard deviation is greater. Correct answer: C.\n\nSTEP I — Distractor analysis:\n- Choice A: Misconception — direction reversal. The student knows standard deviation relates to spread but incorrectly concludes that consistent scores represent more deviation.\n- Choice B: Misconception — statistic confusion. Both students have the same mean (70), so the student incorrectly infers that equal means imply equal standard deviations. Standard deviation depends on spread, not on the mean.\n- Choice D: Misconception — wrong operation. The student believes standard deviation can only be compared numerically after full calculation, not recognizing that the concept of spread allows direct visual comparison.",
+  "distractorRationale": {
+    "A": "Direction reversal: the student recognizes that standard deviation relates to variability but reverses the relationship, incorrectly concluding that Student A's perfectly consistent scores reflect higher deviation.",
+    "B": "Statistic confusion: the student notices that both data sets have the same mean (70) and incorrectly concludes that equal means imply equal standard deviations, failing to recognize that standard deviation measures spread, not central tendency.",
+    "C": "Correct answer: Student A's scores are all identical (zero spread, SD = 0), while Student B's scores range from 50 to 90 (substantial spread). Student B has the larger standard deviation.",
+    "D": "Wrong operation: the student believes standard deviations can only be compared after arithmetic calculation, not recognizing that conceptual comparison of spread (all-same vs. widely varying) is sufficient."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5f6a7b8-c9d0-1234-efab-567890123457"
+  }
+}

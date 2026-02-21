@@ -1,0 +1,58 @@
+{
+  "id": "c7b4e9a2-1f3d-4c8b-9e5a-3f7d2b8c1e4a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "When Jane Goodall arrived at Gombe Stream in Tanzania in 1960, she brought an approach that differed sharply from standard scientific practice. Rather than assigning her chimpanzee subjects numbered codes, she gave them names—David Greybeard, Flo, Goliath. Her colleagues objected: naming implied individuality, and individuality was supposed to be a human trait. To attribute it to animals, they argued, was to commit the sin of anthropomorphism.\n\nGoodall's detailed field observations eventually silenced many critics. She documented tool use among chimpanzees—watching David Greybeard strip leaves from twigs to probe termite mounds—a behavior previously thought exclusive to humans. She also recorded complex social bonds, mourning behaviors, and what appeared to be rudimentary political alliances. The accumulated evidence suggested that the boundary between human and animal cognition was far less sharp than scientists had assumed.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 148,
+    "source": "Adapted from a scientific biography of Jane Goodall"
+  },
+  "stem": "Which choice best states the central idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Jane Goodall's unconventional method of naming her chimpanzee subjects led other scientists to question whether animal individuality could be studied objectively.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Goodall's discovery that chimpanzees use tools was the most significant finding of her career because it forced scientists to redefine what it means to be human.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Goodall's unorthodox methods and her subsequent field observations together challenged the prevailing scientific assumption that humans are cognitively distinct from other animals.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Scientists initially dismissed Goodall's research because she violated established protocols by treating chimpanzees as individuals rather than as research subjects.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage has two complementary parts: Goodall's unconventional methods (naming chimps, defying anthropomorphism norms) and her field observations (tool use, social bonds, mourning). Both parts serve the same argument—that the assumed cognitive divide between humans and animals was not as sharp as science believed. Choice C connects both parts to this central claim. The other choices isolate one element while ignoring the other.",
+  "distractorRationale": {
+    "A": "This focuses only on the naming controversy and mischaracterizes the outcome—the passage says Goodall's observations eventually silenced critics, not that scientists merely questioned objectivity.",
+    "B": "Tool use is one of several discoveries cited as evidence; the passage does not single it out as the most significant finding. This choice also adds a claim about redefining humanity that, while implied, is presented as the conclusion drawn from multiple findings, not from tool use alone.",
+    "C": "Correct. Integrates both the methodological challenge (naming, rejecting anthropomorphism restrictions) and the observational findings (tool use, social bonds) under the single claim that the human-animal cognitive boundary was overstated.",
+    "D": "Scientists' initial dismissal is accurately represented, but this choice focuses only on the first paragraph and ignores the observational evidence that forms the second half of the passage and the broader conclusion about cognitive boundaries."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3e9c1f7-4b2d-4e8a-9f5c-7d1b3a5c8e2f"
+  },
+  "hasImage": false
+}

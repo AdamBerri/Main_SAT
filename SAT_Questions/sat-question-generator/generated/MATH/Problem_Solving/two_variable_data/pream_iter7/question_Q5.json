@@ -1,0 +1,54 @@
+{
+  "id": "8b0e3d6f-1c47-4a92-b5f9-4d2a7e0c6b31",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "A scatterplot shows the relationship between the outside temperature in degrees Fahrenheit ($x$) and the number of cold drinks sold per hour at a food stand ($y$). The line of best fit passes through the points $(60, 10)$ and $(80, 30)$. Which of the following equations best represents this line of best fit?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$y = 2x - 110$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$y = x - 50$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$y = x + 10$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$y = x - 10$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To find the equation of the line passing through $(60, 10)$ and $(80, 30)$, first calculate the slope:\n$$m = \\frac{30 - 10}{80 - 60} = \\frac{20}{20} = 1$$\nNext, use point-slope form with point $(60, 10)$ to find the y-intercept $b$:\n$$10 = 1(60) + b \\Rightarrow b = 10 - 60 = -50$$\nThe equation is $y = x - 50$. Verify with $(80, 30)$: $y = 80 - 50 = 30$. This confirms the equation is correct.",
+  "distractorRationale": {
+    "A": "Incorrect. A slope of 2 is wrong; the correct slope is $\\frac{20}{20} = 1$. A student who mistakenly computed the slope as $\\frac{20}{10} = 2$ (dividing by the y-value instead of the change in x) and then solved for $b$ using $(60, 10)$: $10 = 2(60) + b \\Rightarrow b = -110$, arriving at $y = 2x - 110$.",
+    "B": "Correct. Slope $= 1$, y-intercept $= -50$, giving $y = x - 50$. Both given points satisfy this equation.",
+    "C": "Incorrect. The y-intercept is wrong. A student who correctly found slope = 1 but used the y-value from the first point (10) as the y-intercept without solving the full equation would get $y = x + 10$. Checking: at $x = 60$, $y = 70 \\neq 10$.",
+    "D": "Incorrect. A student who found slope = 1 but subtracted only 10 (the y-coordinate of the first point) from a rounded or incorrect calculation would arrive at $y = x - 10$. Checking: at $x = 60$, $y = 50 \\neq 10$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3f8d2a5c-7e14-4b96-c0a1-9d4f7b2e5c80"
+  }
+}

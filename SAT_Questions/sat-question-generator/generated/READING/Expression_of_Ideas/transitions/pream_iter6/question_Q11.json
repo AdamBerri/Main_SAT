@@ -1,0 +1,58 @@
+{
+  "id": "a1b2c3d4-1111-4a7b-8c9d-0e1f2a3b4c5d",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "linguistic": 3.3
+  },
+  "passage": "Historians have long credited the invention of the printing press with democratizing access to written knowledge across Europe. Recent scholarship, though, has revealed that manuscript copying networks in medieval monasteries distributed texts far more widely than previously assumed. _______ some scholars now argue that the printing press accelerated an existing trend rather than initiating a new one.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 68,
+    "source": "Adapted from a history of publishing article"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Nevertheless,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Consequently,",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Similarly,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Meanwhile,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The second sentence presents new evidence (manuscript networks distributed texts widely). The third sentence draws a conclusion from that evidence (the printing press accelerated rather than initiated the trend). 'Consequently' correctly signals that the scholars' argument is a result of the new evidence presented in the preceding sentence.",
+  "distractorRationale": {
+    "A": "'Nevertheless' signals a contrast or concession, but the third sentence follows logically from the second rather than contradicting it. The scholars' argument is built upon the evidence about manuscript networks.",
+    "B": "Correct. 'Consequently' signals that the scholars' reinterpretation follows as a logical result of the new evidence about widespread manuscript copying.",
+    "C": "'Similarly' signals a parallel between two comparable points, but the third sentence draws a conclusion from the second rather than presenting a parallel observation.",
+    "D": "'Meanwhile' signals simultaneous but separate events, but the scholars' argument is directly derived from the evidence rather than occurring independently."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:02:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1111111-b2c3-4d4e-5f6a-7b8c9d0e1f23"
+  },
+  "hasImage": false
+}

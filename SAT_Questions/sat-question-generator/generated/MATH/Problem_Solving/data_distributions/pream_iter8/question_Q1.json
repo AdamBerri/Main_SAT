@@ -1,0 +1,54 @@
+{
+  "id": "3a7f2c1d-84e5-4b6a-9c0f-d1e2a3b4c5d6",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "computational": 1.3
+  },
+  "stem": "The five quiz scores for a student are 4, 7, 9, 12, and 18. What is the median score?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "7",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "8",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "9",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "10",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "STEP A — Sort the data in ascending order: 4, 7, 9, 12, 18.\n\nSTEP B — Compute the mean: (4 + 7 + 9 + 12 + 18) / 5 = 50 / 5 = 10.\n\nSTEP C — Identify the median: For n = 5 values, the median is at position (5 + 1) / 2 = 3. The 3rd value in the sorted list is 9.\n\nSTEP D — Mode: Each value appears once; no mode.\n\nSTEP E — Range: 18 - 4 = 14.\n\nSTEP H — Correct answer: The median is 9, which matches choice C.\n\nSTEP I — Distractor analysis:\n- Choice A (7): Misconception — median position error. The student uses position 2 (the value just below center) instead of position 3, selecting 7.\n- Choice B (8): Misconception — median position error using an even-count formula. The student incorrectly applies the even-list rule (n/2 and n/2+1) to an odd-count list, averaging the 2nd and 3rd values: (7 + 9) / 2 = 8.\n- Choice D (10): Misconception — statistic confusion. The student computes the mean (50 / 5 = 10) and reports it as the median.",
+  "distractorRationale": {
+    "A": "Median position error: the student selects the 2nd value (7) instead of the 3rd value (9), using position (n-1)/2 rather than (n+1)/2.",
+    "B": "Median position error using an even-count formula: the student incorrectly applies the even-list averaging rule to an odd-count list, averaging the 2nd and 3rd values: (7 + 9) / 2 = 8.",
+    "C": "Correct answer: the 3rd value in the sorted list of 5 is 9.",
+    "D": "Statistic confusion: the student computes the mean (4 + 7 + 9 + 12 + 18 = 50; 50 / 5 = 10) and reports it instead of the median."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "e5f6a7b8-5555-4e1f-2a3b-4c5d6e7f80a2",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.1,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "A team of engineers designed a solar-powered water purification system intended for use in regions without reliable electricity. The prototype worked well under controlled laboratory conditions, filtering contaminants at the target rate. _______ when tested in the field, the system's output dropped by sixty percent on overcast days, revealing a critical vulnerability to variable weather.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 70,
+    "source": "Adapted from an engineering research report"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Furthermore,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "As expected,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "However,",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Accordingly,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage contrasts successful lab performance with poor field performance. The prototype worked well in the lab (positive), but its output dropped dramatically in real conditions (negative). 'However' correctly signals this contrast between the two outcomes.",
+  "distractorRationale": {
+    "A": "'Furthermore' adds supporting information in the same direction, but the field test results contradict rather than extend the lab findings.",
+    "B": "'As expected' signals that the outcome was anticipated, but a sixty percent drop in output is presented as a problem (a 'critical vulnerability'), not a predicted result.",
+    "C": "Correct. 'However' signals the contrast between the prototype's success in the lab and its poor performance in field conditions.",
+    "D": "'Accordingly' signals a logical consequence, but the field failure is not a logical extension of the lab success; it contradicts it."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:02:04.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5555555-f6a7-4b8c-9d0e-1f2a3b4c5d67"
+  },
+  "hasImage": false
+}

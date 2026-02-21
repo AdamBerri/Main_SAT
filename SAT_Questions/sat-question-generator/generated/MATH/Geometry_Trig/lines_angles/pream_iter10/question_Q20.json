@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0014-4aaa-b014-000000000020",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "Each interior angle of a regular polygon measures $144°$. How many sides does the polygon have?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$8$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$9$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$10$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$12$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Each interior angle of a regular $n$-gon is $\\frac{(n-2) \\times 180}{n}$ degrees. Setting this equal to $144$: $(n-2) \\times 180 = 144n$. Expanding: $180n - 360 = 144n$, so $36n = 360$, $n = 10$.",
+  "distractorRationale": {
+    "A": "Used exterior angle $36°$ but divided $360/36$ incorrectly or confused with $360/45=8$.",
+    "B": "Off by one error: $n = 9$.",
+    "C": "Correct. $n = 10$.",
+    "D": "Divided $360/30 = 12$ (wrong exterior angle)."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T03:28:52.372Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0014-4000-a014-000000000020"
+  }
+}

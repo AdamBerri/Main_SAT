@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c821-4e09-4b2d-9d1f-8c56e2a03b74",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "computational": 4.3
+  },
+  "stem": "A courier drives 60 miles from City A to City B at a speed of 30 miles per hour, then immediately drives 60 miles from City B to City C at a speed of 60 miles per hour. What is the courier's average speed, in miles per hour, for the entire trip from City A to City C?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "20",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "40",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "45",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "60",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Average speed is total distance divided by total time — not the arithmetic mean of the two speeds.\n\nStep 1: Find the time for each leg.\n- Leg 1 time: $\\frac{60 \\text{ mi}}{30 \\text{ mph}} = 2$ hours\n- Leg 2 time: $\\frac{60 \\text{ mi}}{60 \\text{ mph}} = 1$ hour\n\nStep 2: Find total distance and total time.\n- Total distance: $60 + 60 = 120$ miles\n- Total time: $2 + 1 = 3$ hours\n\nStep 3: Compute average speed.\n$$\\text{Average speed} = \\frac{120 \\text{ miles}}{3 \\text{ hours}} = 40 \\text{ mph}$$\n\nVerification (working backwards): At 40 mph for 3 hours, total distance = $40 \\times 3 = 120$ miles ✓",
+  "distractorRationale": {
+    "A": "Error type: 'Ignored unit conversion entirely' — student counts only one leg's distance (60 miles) as the total instead of both legs. Wrong step: student uses 60 miles as total distance instead of 120. Wrong calculation: $\\frac{60}{3} = 20$ mph. This produces 20.",
+    "B": "This is the correct answer. Average speed = total distance ÷ total time = 120 miles ÷ 3 hours = 40 mph.",
+    "C": "Error type: 'Direct vs inverse proportion confusion' — student arithmetically averages the two speeds rather than computing the harmonic mean through total distance and total time. Wrong step: student computes $\\frac{30 + 60}{2}$ instead of $\\frac{\\text{total distance}}{\\text{total time}}$. Wrong calculation: $\\frac{30 + 60}{2} = \\frac{90}{2} = 45$ mph. This produces 45.",
+    "D": "Error type: 'Rate applied to wrong quantity' — student divides total distance by only the first leg's travel time. Wrong step: student uses 2 hours (Leg 1 time only) instead of 3 hours total. Wrong calculation: $\\frac{120 \\text{ miles}}{2 \\text{ hours}} = 60$ mph. This produces 60."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b1d4e7f0-23a5-4c8e-b6d9-f012345678ab"
+  }
+}

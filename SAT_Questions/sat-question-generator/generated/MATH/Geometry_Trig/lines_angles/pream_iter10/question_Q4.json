@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0004-4aaa-b004-000000000004",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "computational": 1.2
+  },
+  "stem": "A straight angle is divided by a ray into two angles. If one angle measures $110°$, what is the measure of the other angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$80°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$60°$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$70°$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$90°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "A straight angle measures $180°$. The other angle is $180° - 110° = 70°$.",
+  "distractorRationale": {
+    "A": "Arithmetic error: computed $180 - 110 = 80$.",
+    "B": "Subtracted from $170°$: $170 - 110 = 60$.",
+    "C": "Correct. $180° - 110° = 70°$.",
+    "D": "Assumed the other angle is a right angle."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.338Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0004-4000-a004-000000000004"
+  }
+}

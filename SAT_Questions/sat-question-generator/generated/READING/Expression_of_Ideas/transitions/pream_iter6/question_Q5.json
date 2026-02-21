@@ -1,0 +1,58 @@
+{
+  "id": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f80a2",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "The school wanted to encourage healthier eating habits among students. _______ the cafeteria replaced sugary drinks with water and fruit juice options.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 50,
+    "source": "Adapted from a school nutrition report"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To that end,",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "By contrast,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Surprisingly,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Previously,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage describes a goal (encouraging healthier eating) and an action taken to achieve it (replacing sugary drinks). 'To that end' correctly signals that the cafeteria changes were made in pursuit of the stated goal.",
+  "distractorRationale": {
+    "A": "Correct. 'To that end' signals that the action in the second sentence was taken to achieve the goal stated in the first sentence.",
+    "B": "'By contrast' signals opposition, but the cafeteria changes support the goal rather than contradicting it.",
+    "C": "'Surprisingly' signals an unexpected outcome, but replacing unhealthy options to promote health is a predictable and logical action.",
+    "D": "'Previously' signals a chronological shift to an earlier time, but the passage is describing a purposeful action, not referencing past events."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:00:04.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8091a3"
+  },
+  "hasImage": false
+}

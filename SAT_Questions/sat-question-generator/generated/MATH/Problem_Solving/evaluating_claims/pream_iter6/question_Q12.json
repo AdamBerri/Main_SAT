@@ -1,0 +1,54 @@
+{
+  "id": "c7e2b5f0-3a8d-4c61-9e4f-6b0d2a7c5e13",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "A city has 12,000 registered voters. A campaign researcher randomly selected 400 registered voters from the city's official voter rolls and asked whether they supported a proposed tax measure. Of those surveyed, 220 said they supported the measure. The researcher concluded that more than half of all 12,000 registered voters in the city support the tax measure. Which of the following best evaluates this conclusion?\n\n(A) The conclusion is not valid because a survey of 400 people cannot represent 12,000 people.\n(B) The conclusion is valid because the sample was randomly drawn from the voter rolls, and $\\frac{220}{400} = 55\\%$ of the sample supported the measure, which is more than half.\n(C) The conclusion is not valid because only registered voters were surveyed, not all city residents.\n(D) The conclusion is valid because 220 out of 400 is a large enough number to confirm the claim.",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The conclusion is not valid because a survey of 400 people cannot represent 12,000 people.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The conclusion is valid because the sample was randomly drawn from the voter rolls, and $\\frac{220}{400} = 55\\%$ of the sample supported the measure, which is more than half.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The conclusion is not valid because only registered voters were surveyed, not all city residents.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is valid because 220 out of 400 is a large enough number to confirm the claim.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Step 1: Identify the population of interest. The claim is about all 12,000 registered voters in the city.\n\nStep 2: Evaluate the sampling method. The researcher randomly selected 400 voters from the official voter rolls — the same list that defines the population of interest. This is a valid random sample of the target population.\n\nStep 3: Calculate the sample proportion. $\\frac{220}{400} = 0.55 = 55\\%$ of those surveyed support the measure.\n\nStep 4: Assess whether the inference is appropriate. Because the sample was randomly drawn from the population of registered voters, the 55% rate in the sample can be used to make an inference about all registered voters. Since 55% > 50%, the conclusion that more than half support the measure is supported.\n\nAnswer B is correct because it correctly identifies random sampling from the right population as the key reason the inference is valid, and it accurately computes the sample proportion.",
+  "distractorRationale": {
+    "A": "Incorrect. Sample size alone does not determine validity. A randomly selected sample of 400 from 12,000 is sufficient to make inferences about the population. Rejecting valid inferences based only on relative sample size is a common misconception.",
+    "B": "Correct. Random selection from the voter rolls (the exact target population) and a sample proportion of 55% together support the conclusion.",
+    "C": "Incorrect. The claim is specifically about registered voters — not all city residents. Since the survey sampled from the registered voter rolls to draw a conclusion about registered voters, the population and the sample are correctly aligned. Introducing city residents is an irrelevant concern.",
+    "D": "Incorrect. The conclusion is valid, but for the wrong reason stated here. Simply saying 220 is a 'large enough number' without reference to random selection is insufficient. The size of the count matters less than how the sample was selected."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a9c4e7f1-2d6b-4f53-8a1e-5c3b0d8e2f96"
+  }
+}

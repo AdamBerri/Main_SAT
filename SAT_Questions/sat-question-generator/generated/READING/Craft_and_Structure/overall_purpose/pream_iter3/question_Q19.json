@@ -1,0 +1,56 @@
+{
+  "id": "7d3e58a1-6f20-4c84-b192-0a5e3d7c9b16",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "When psychologists study memory, they often rely on laboratory tasks that have participants memorize lists of unrelated words or nonsense syllables under controlled conditions. These methods produce reliable, replicable data and have generated foundational insights into encoding, storage, and retrieval. The findings, however, reflect performance in conditions that share almost nothing with ordinary human remembering. People rarely need to recall arbitrary word lists; they remember events, skills, faces, and stories embedded in emotional and social contexts that laboratory paradigms deliberately strip away. Research conducted in naturalistic settings — studying how surgeons remember procedural steps, how children acquire language, how witnesses recall crimes — consistently shows memory operating through mechanisms that standard laboratory tests do not capture well. Critics of lab-based research often point to this as a simple flaw, but the issue runs deeper: the quest for experimental control has defined what counts as memory worth studying, effectively excluding the kinds of remembering that matter most in everyday life. Methods shape not only what researchers find but what they think to look for.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 172,
+    "source": "Adapted from a cognitive science review"
+  },
+  "stem": "Which choice best describes the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Compare the reliability of laboratory memory studies with the reliability of naturalistic memory research",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Argue that laboratory methods have constrained memory research by defining the field around what is easiest to control",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Explain how surgeons, children, and crime witnesses demonstrate memory processes that differ from lab findings",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Advocate for replacing controlled laboratory experiments with naturalistic observation as the standard for memory research",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage acknowledges that laboratory methods produce reliable data and foundational insights — a concession that prevents the purpose from being dismissed as mere criticism. The argument deepens when the author states the issue runs deeper than a simple flaw: experimental control has determined what counts as memory worth studying, not just how it is studied. The final sentence — that methods shape what researchers think to look for — generalizes this critique beyond any single study. The organizing purpose is to argue that a methodological choice has had a limiting effect on the entire field, a more nuanced claim than simply comparing methods or advocating for an alternative.",
+  "distractorRationale": {
+    "A": "The passage does draw a contrast between lab conditions and naturalistic settings, and it notes that lab findings differ from naturalistic research outcomes. This contrast, however, is a rhetorical move within a larger argument about how methods shape inquiry. The passage does not systematically evaluate the reliability of both approaches; it uses the contrast to build a critique of laboratory dominance.",
+    "C": "Surgeons, children, and witnesses are listed as examples of naturalistic research contexts where memory operates differently from lab predictions. These examples are supporting evidence for the author's broader claim about methodological constraints, not the subject the passage is primarily explaining. Selecting C mistakes a supporting illustration for the passage's purpose.",
+    "D": "The passage criticizes laboratory methods but does not call for their replacement. The author's final point — that methods shape what researchers think to look for — is a diagnosis, not a prescription. The passage stops short of advocating a specific alternative standard, making D an overreach of what the text actually claims."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e9c27b40-1d53-4e68-a074-3f6a0b2c8d47"
+  }
+}

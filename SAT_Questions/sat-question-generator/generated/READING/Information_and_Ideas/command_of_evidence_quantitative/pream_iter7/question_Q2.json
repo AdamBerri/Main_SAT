@@ -1,0 +1,98 @@
+{
+  "id": "65f9d16d-cabf-4424-b9af-9c7da8785909",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "linguistic": 1.1
+  },
+  "passage": "Researchers at a national health organization tracked vaccination rates among children under five in several countries. According to their report, vaccination rates in Country A increased steadily from 2019 to 2023.",
+  "stem": "Which choice most effectively uses data from the figure to support the researchers' claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "In Country A, vaccination rates rose from 62% in 2019 to 71% in 2020, then to 79% in 2021, 85% in 2022, and 93% in 2023.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "In Country B, vaccination rates were 88% in 2019 and 91% in 2023, indicating a modest increase over the same period.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "In Country A, the vaccination rate was 93% in 2023, which was higher than Country B's rate of 91% that same year.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "In Country C, vaccination rates declined from 75% in 2019 to 68% in 2023, showing an opposite pattern to other countries.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim states that vaccination rates in Country A increased steadily from 2019 to 2023. Choice A directly supports this by listing every year's rate for Country A, showing a consistent upward trend from 62% to 93% with no reversals. Choice B discusses Country B, not Country A. Choice C only provides a single-year snapshot comparison rather than showing the trend. Choice D discusses Country C's decline.",
+  "distractorRationale": {
+    "A": "Correct: cites Country A's vaccination rates for all five years, demonstrating a steady increase from 62% to 93%.",
+    "B": "Wrong (irrelevant data): accurately cites Country B data but does not address the claim about Country A.",
+    "C": "Wrong (incomplete evidence): cites only the 2023 endpoint for Country A without showing the trend over time, which is what the claim asserts.",
+    "D": "Wrong (opposite trend): cites Country C data showing a decline, which is unrelated to the claim about Country A's steady increase."
+  },
+  "hasImage": true,
+  "imageDescription": "Line graph titled 'Childhood Vaccination Rates by Country (2019-2023).' X-axis: Year (2019, 2020, 2021, 2022, 2023). Y-axis: Vaccination Rate (0-100%). Three lines: Country A: 62%, 71%, 79%, 85%, 93%. Country B: 88%, 89%, 90%, 90%, 91%. Country C: 75%, 73%, 72%, 70%, 68%. Source: National Health Organization, 2024.",
+  "chartData": {
+    "type": "line_graph",
+    "title": "Childhood Vaccination Rates by Country (2019-2023)",
+    "data": {
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "series": {
+        "Country A": [
+          62,
+          71,
+          79,
+          85,
+          93
+        ],
+        "Country B": [
+          88,
+          89,
+          90,
+          90,
+          91
+        ],
+        "Country C": [
+          75,
+          73,
+          72,
+          70,
+          68
+        ]
+      },
+      "unit": "percentage",
+      "yAxisLabel": "Vaccination Rate (%)",
+      "xAxisLabel": "Year"
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 55,
+    "source": "Adapted from National Health Organization global immunization report"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.329Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "05c8d3ce-d16b-43d1-bcc9-340e9f4f4309"
+  }
+}

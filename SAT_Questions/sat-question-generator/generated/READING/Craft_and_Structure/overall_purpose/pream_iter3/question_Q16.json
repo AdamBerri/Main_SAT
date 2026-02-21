@@ -1,0 +1,56 @@
+{
+  "id": "a3f7c281-5e14-4b29-8d62-9f1a0e3c7b54",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "linguistic": 4.3
+  },
+  "passage": "Urban planners in the mid-twentieth century championed the demolition of dense residential neighborhoods as a necessary step toward modernizing American cities. Elevated highways sliced through communities that had housed working-class families for generations, and large public housing towers replaced blocks of small, mixed-use buildings. Residents who depended on corner stores, neighborhood churches, and informal support networks suddenly found those connections severed without warning or recourse. The planners documented their projects in glossy reports filled with efficiency metrics: units of housing per acre, miles of road constructed, commute times projected. What those reports omitted was equally telling — no column measured social cohesion, no chart tracked displacement of longtime residents. Decades later, the same communities targeted for renewal recorded some of the country's highest rates of poverty and unemployment, outcomes planners' models had not anticipated. The towers built to replace tenements deteriorated rapidly, while the tenements that survived in other districts remained occupied and relatively stable. Efficiency, it turned out, was not the same thing as livability, and the tools planners used had been far better suited to counting what could be measured than to preserving what mattered most.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 183,
+    "source": "Adapted from a journal of urban studies"
+  },
+  "stem": "Which choice best describes the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Describe the planning methods that mid-century urban renewal programs used to increase housing density",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Argue that mid-century urban planning failed communities by prioritizing measurable efficiency over human livability",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Explain how public housing towers deteriorated faster than the buildings they were designed to replace",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Contrast the intentions of urban planners with the concerns of the residents whose neighborhoods were affected",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage uses specific historical details — efficiency metrics that omitted social cohesion, rapid deterioration of towers versus stable surviving tenements, and subsequent poverty in targeted communities — not merely to describe or inform, but to build a case that urban renewal's reliance on measurable data came at the expense of livability. The final sentence makes the argumentative thrust explicit: efficiency and livability are not equivalent, and planners' tools were poorly matched to what mattered most. The purpose is to argue a critical position, not simply to recount events.",
+  "distractorRationale": {
+    "A": "The passage does mention planning methods such as demolition and tower construction, but those details serve as evidence for a larger critique rather than as the focus of a descriptive account. The passage's rhetorical goal is to indict those methods, not to document them.",
+    "C": "The deterioration of towers compared to surviving tenements is a key piece of evidence in the passage, but it functions as one data point supporting the broader argument about flawed planning priorities. The passage does not center on explaining why towers deteriorated; it uses that fact to critique the planning framework.",
+    "D": "The passage draws an implicit contrast between planners' data-driven outlook and residents' loss of social networks, but this contrast is a rhetorical strategy within a larger argument rather than the passage's organizing goal. The purpose is to argue against the planning philosophy, not to map opposing viewpoints."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2d8e419-7c30-4f61-a153-0e5f2c8d6a91"
+  }
+}

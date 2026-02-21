@@ -1,0 +1,58 @@
+{
+  "id": "c4d8e9f0-a1b2-4c5d-8e6f-7a8b9c0d1e2f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "Marine biologists studying bioluminescence in deep-sea organisms have noted a puzzling pattern: species that inhabit the mesopelagic zone—roughly 200 to 1,000 meters below the surface—deploy light-producing chemicals far more frequently than species in the completely lightless bathypelagic zone below. Because the mesopelagic zone receives faint but detectable solar radiation during daylight hours, researchers hypothesized that bioluminescence functions primarily as a form of counterillumination: by emitting light downward from their ventral surfaces, organisms can match the dim glow filtering from above, rendering their silhouettes invisible to predators looking upward. Supporting this, mesopelagic organisms typically produce blue-green light, precisely the wavelengths that penetrate to these depths most efficiently. Bathypelagic species, by contrast, sometimes produce red light—a wavelength invisible to most deep-sea predators—suggesting that when camouflage is no longer the governing constraint, organisms may redirect bioluminescence toward other functions such as luring prey.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 158,
+    "source": "Adapted from a review article on deep-sea optical ecology"
+  },
+  "stem": "Which conclusion about bioluminescence is most reasonably supported by the evidence presented in the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Bioluminescence evolved independently in mesopelagic and bathypelagic species for unrelated reasons.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The primary selective pressure shaping bioluminescence varies by depth zone.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Organisms in total darkness do not benefit from bioluminescence and use it rarely.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Counterillumination is a more sophisticated adaptation than prey luring in deep-sea fish.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage presents two distinct depth zones where bioluminescence serves different dominant functions: in the mesopelagic zone, counterillumination camouflage is the governing constraint (evidenced by blue-green light matching ambient wavelengths); in the bathypelagic zone, the absence of ambient light removes that camouflage pressure, and organisms redirect bioluminescence toward prey attraction (evidenced by red light production). The logical inference is that the primary evolutionary pressure acting on bioluminescence differs between zones, making B the most supported conclusion. This requires synthesizing the contrasting behaviors and their functional explanations across both zones.",
+  "distractorRationale": {
+    "A": "The passage does not address evolutionary origins or whether bioluminescence evolved independently. Inferring separate evolutionary histories from functional differences is an over-inference the passage does not support.",
+    "B": "Correct. The passage explicitly contrasts the governing constraints in each zone and links different light colors to different functions, supporting the inference that selective pressures differ by depth.",
+    "C": "The passage states bathypelagic species 'sometimes produce red light' and suggests they use it for prey luring—demonstrating that total-darkness species do use bioluminescence actively. This choice misreads 'less frequently' as 'rarely' and conflates frequency data with functional data.",
+    "D": "The passage describes both counterillumination and prey luring as functional adaptations but makes no comparative evaluative claim about which is more sophisticated. Introducing a hierarchy of sophistication requires a value judgment unsupported by the text."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f5a6b7c8-d9e0-4f1a-b2c3-d4e5f6a7b8c9"
+  },
+  "hasImage": false
+}

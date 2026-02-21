@@ -1,0 +1,54 @@
+{
+  "id": "f7a4c2e8-1b3d-4f6a-c8e0-2d4f6a8c0e2f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "In an agricultural study, the concentrations of nitrogen ($x$) and phosphorus ($y$), each measured in milligrams per kilogram of soil, are found to satisfy both of the following equations:\n\n$$7x + 3y = 27$$\n$$2x - 5y = -4$$\n\nWhat is the value of $x - 3y$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-3$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$1$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$7$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$9$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To find $x - 3y$, first solve the system for $x$ and $y$.\n\n**Step 1:** Multiply equation 1 by 5 and equation 2 by 3 to create opposite $y$-coefficients:\n$$5 \\times (7x + 3y = 27) \\Rightarrow 35x + 15y = 135$$\n$$3 \\times (2x - 5y = -4) \\Rightarrow 6x - 15y = -12$$\n\n**Step 2:** Add the two resulting equations to eliminate $y$:\n$$35x + 15y + 6x - 15y = 135 + (-12)$$\n$$41x = 123 \\Rightarrow x = 3$$\n\n**Step 3:** Back-substitute $x = 3$ into equation 2:\n$$2(3) - 5y = -4 \\Rightarrow 6 - 5y = -4 \\Rightarrow -5y = -10 \\Rightarrow y = 2$$\n\n**Checking both original equations:**\n- Equation 1: $7(3) + 3(2) = 21 + 6 = 27$ ✓\n- Equation 2: $2(3) - 5(2) = 6 - 10 = -4$ ✓\n\n**Computing the target expression:**\n$$x - 3y = 3 - 3(2) = 3 - 6 = -3$$",
+  "distractorRationale": {
+    "A": "Correct. Eliminating $y$ by multiplying equations by 5 and 3 gives $41x = 123$, so $x = 3$; back-substituting gives $y = 2$; and $x - 3y = 3 - 6 = -3$.",
+    "B": "Computes $3y - x$ instead of $x - 3y$: with $x = 3$ and $y = 2$, calculates $3(2) - 3 = 6 - 3 = 3$; then confuses sign and reports $1$ — more precisely, computes $y - x = 2 - 3 = -1$ and drops the negative sign to report $1$.",
+    "C": "Computes $3x - y$ instead of $x - 3y$: with $x = 3$ and $y = 2$, calculates $3(3) - 2 = 9 - 2 = 7$.",
+    "D": "Makes a sign error when back-substituting: writes $6 - 5y = -4$ as $6 + 5y = -4$, getting $5y = -10$ and then $y = -2$; computes $x - 3y = 3 - 3(-2) = 3 + 6 = 9$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d"
+  }
+}

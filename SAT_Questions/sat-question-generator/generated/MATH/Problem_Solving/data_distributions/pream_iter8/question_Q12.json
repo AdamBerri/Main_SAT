@@ -1,0 +1,54 @@
+{
+  "id": "c4d8f1a3-5b9e-4c2a-9d1f-6e3b7a2c8f4d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "A small grocery store tracked its daily number of customer complaints for five days: 4, 8, 12, 16, and 20. On a sixth day, the store received 0 complaints. Which of the following correctly describes the effect on the mean, median, and range after including the sixth day's data?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The mean decreases, the median decreases, and the range increases.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The mean decreases, the median remains the same, and the range increases.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The mean decreases, the median decreases, and the range remains the same.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The mean remains the same, the median decreases, and the range increases.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "STEP A — Sort original data (5 values): {4, 8, 12, 16, 20}.\n\nSTEP B — Original mean: sum = 4 + 8 + 12 + 16 + 20 = 60; mean = 60 ÷ 5 = 12.\n\nSTEP C — Original median: n = 5, position = (5 + 1) / 2 = 3rd value. Sorted: {4, 8, 12, 16, 20}. Median = 12.\n\nSTEP D — Mode: no value repeats.\n\nSTEP E — Original range: 20 − 4 = 16.\n\nSTEP G — After adding 0, sort new data (6 values): {0, 4, 8, 12, 16, 20}.\n\nNew mean: sum = 0 + 4 + 8 + 12 + 16 + 20 = 60; mean = 60 ÷ 6 = 10. Mean decreased from 12 to 10.\n\nNew median: n = 6, so the median is the average of the 3rd and 4th values. Sorted: {0, 4, 8, 12, 16, 20}. 3rd value = 8, 4th value = 12. Median = (8 + 12) ÷ 2 = 10. Median decreased from 12 to 10.\n\nNew range: 20 − 0 = 20. Range increased from 16 to 20.\n\nSTEP H — Mean decreases (12 → 10), median decreases (12 → 10), range increases (16 → 20). This matches choice A.\n\nSTEP I — Distractor analysis:\n- Choice B (median remains same): Misconception type (b) — median position error. A student might use the old median formula for n = 5 (position 3) on the new 6-value list, looking at the 3rd value {0, 4, 8, 12, 16, 20} which is 8, but then forget to average it with the 4th value — or use the wrong position entirely and incorrectly conclude the median is 12.\n- Choice C (range remains same): Misconception type (c) — statistic confusion. A student might reason that since 0 is simply a new minimum, the maximum (20) and minimum (4) of the original set are 'still there,' forgetting that the new minimum is now 0, which extends the range.\n- Choice D (mean remains same): Misconception type (e) — partial computation error. A student might note that the sum did not change (still 60) and conclude the mean is unchanged, neglecting to account for the increased count from 5 to 6 in the denominator.",
+  "distractorRationale": {
+    "A": "Correct. Adding 0 does not change the sum (still 60), but the count increases from 5 to 6, so the mean drops from 12 to 10. The new median is the average of the 3rd and 4th values in the 6-element sorted list, which is (8 + 12) / 2 = 10, down from 12. The range extends from 16 to 20 because 0 is the new minimum.",
+    "B": "Median position error: the student either applies the old n = 5 median formula to the new 6-value list, or forgets to average the two middle values in the even-length list, leading to the incorrect conclusion that the median is unchanged.",
+    "C": "Statistic confusion: the student correctly identifies the mean and median changes but confuses the range formula — perhaps thinking the range is determined by the original minimum (4) and maximum (20) regardless of newly added values, when in fact the new minimum is 0.",
+    "D": "Partial computation error: the student observes that the total number of complaints is still 60 (since 0 adds nothing to the sum) and incorrectly concludes the mean is therefore unchanged, failing to divide by the new count of 6 instead of 5."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2e5a9c1-4f8d-4b3e-9c2a-7d1f6b4e8a3c"
+  }
+}

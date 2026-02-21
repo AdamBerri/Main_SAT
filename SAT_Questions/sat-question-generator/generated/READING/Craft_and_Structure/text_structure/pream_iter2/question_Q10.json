@@ -1,0 +1,57 @@
+{
+  "id": "f7b2d5e8-3a9c-4f1b-8e4d-5c2a7f9b1e3d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "Rosa Parks is remembered primarily for refusing to give up her seat on a Montgomery, Alabama, bus in December 1955, an act of defiance that sparked the Montgomery Bus Boycott. However, her role in the civil rights movement began long before that moment. Throughout the 1940s, Parks worked as secretary for the Montgomery chapter of the NAACP, investigating cases of racial violence and voter suppression. She attended training sessions at the Highlander Folk School in Tennessee, where she studied nonviolent protest tactics alongside other activists.\n\nBy the time she refused to move from her seat, Parks was not acting impulsively. She was a trained, experienced organizer who understood the significance of her action. Civil rights leaders quickly recognized that her calm, dignified response to arrest made her an ideal figure around whom to build a legal and public challenge to segregation laws. The boycott that followed lasted more than a year and ultimately led to a Supreme Court ruling that bus segregation was unconstitutional.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 174,
+    "source": "Original passage"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A well-known event is introduced, then its lesser-known background is provided.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "A historical figure is compared to other activists of the same period.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A cause-and-effect chain explains how one event led to a court ruling.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "A biographical account follows Rosa Parks's life in chronological order.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage opens with the famous event — Parks's refusal to give up her seat — as the starting point, then immediately uses 'however' to pivot to her earlier, less-publicized history as an NAACP organizer and activist trainee. The second paragraph returns to the 1955 event with greater context, showing how her background shaped that moment and its aftermath. The dominant structure is to introduce a well-known moment and then reveal the background that explains it, matching choice A.",
+  "distractorRationale": {
+    "B": "Although Parks is mentioned alongside 'other activists' at the Highlander Folk School, no comparison between Parks and any specific fellow activist is developed. The passage focuses entirely on Parks, and no other individual is described in enough detail to constitute a comparison.",
+    "C": "The passage does describe a causal chain within the second paragraph — Parks's arrest led to the boycott, which led to the Supreme Court ruling. However, this causal sequence is one element within the larger structure. The overall organization of the passage is to contextualize a famous event with background information, not to trace a cause-and-effect chain from start to finish.",
+    "D": "The passage does not follow Parks's life from birth or early childhood to the end of her life. It begins with the 1955 event, steps back to the 1940s, and then returns to 1955 and its aftermath. This back-and-forth movement is the opposite of a straightforward chronological account, even though time references are present throughout."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c8e4f7a1-5d2b-4c9f-b3e8-7a1d4c6f2e9b"
+  },
+  "hasImage": false
+}

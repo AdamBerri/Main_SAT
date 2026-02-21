@@ -1,0 +1,57 @@
+{
+  "id": "e9b2c7f4-1a3d-4e8c-9f5b-2d6a8c3e7f1b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "Epidemiologists studying infectious disease transmission have long distinguished between two modes of outbreak containment: source control, which interrupts transmission at its origin, and population-level immunity, which reduces transmission rates by diminishing the proportion of susceptible individuals in a community. The two strategies are not symmetrical in their effects on disease dynamics. Source control, when effective, reduces transmission rates multiplicatively: each prevented infection eliminates not only that case but all downstream infections that would have stemmed from it. Population-level immunity, by contrast, operates through a threshold effect—transmission rates fall only once the proportion of immune individuals reaches or exceeds the herd immunity threshold, and reductions below that threshold produce proportionally smaller epidemiological benefits. This asymmetry has a counterintuitive implication for resource allocation. When a pathogen has a high basic reproduction number—meaning each infected individual infects many others on average—the herd immunity threshold rises steeply, rendering population-level immunity strategies increasingly costly and uncertain relative to source control. Paradoxically, it is precisely in high-transmission outbreaks, where the intuitive appeal of rapid vaccine deployment is greatest, that source-control measures targeting transmission chains may offer disproportionate comparative advantage over population immunity strategies—assuming, critically, that sufficient contact tracing infrastructure exists to identify and interrupt those chains.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 202,
+    "source": "Adapted from a review in an epidemiological methods journal on outbreak response strategy"
+  },
+  "stem": "Which of the following can most reasonably be inferred from the passage about disease control priorities in outbreaks with very high basic reproduction numbers?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Vaccination campaigns become ineffective when a pathogen's basic reproduction number exceeds a critical threshold.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Contact tracing infrastructure is the most important single determinant of outbreak control success.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Source control may be strategically preferable to population immunity despite its relative neglect during high-transmission outbreaks.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "High transmission rates make source control unreliable because rapid spread overwhelms contact tracing capacity.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage argues that in high-transmission outbreaks, the herd immunity threshold rises steeply, making population immunity 'increasingly costly and uncertain.' Yet it also notes that the 'intuitive appeal of rapid vaccine deployment is greatest' in precisely these situations—implying that the dominant public health instinct favors population immunity when source control may be comparatively superior. The passage concludes that source control 'may offer disproportionate comparative advantage over population immunity strategies' in high-transmission settings. Inferring C requires synthesizing the asymmetric dynamics of the two strategies, the threshold-dependence of population immunity, and the passage's explicit statement that intuitive preferences and strategic superiority diverge in high-reproduction-number scenarios. The word 'neglect' in C is inferential—the passage implies neglect by noting that the intuitive appeal of vaccination is greatest precisely when source control may be superior, suggesting source control risks being underutilized.",
+  "distractorRationale": {
+    "A": "The passage states that population immunity becomes 'costly and uncertain,' not that it becomes 'ineffective.' This distractor overstates the passage's claim: the passage never says vaccination fails above a threshold, only that achieving herd immunity becomes more resource-intensive. Students who conflate 'costly and uncertain' with 'ineffective' will select this option.",
+    "B": "The passage flags contact tracing infrastructure as a critical caveat ('assuming, critically, that sufficient contact tracing infrastructure exists'), but this conditional framing does not make it the 'most important single determinant' of outbreak success overall. The passage treats it as a necessary condition for source control's comparative advantage, not as the dominant factor across all outbreak contexts—an overgeneralization the passage does not support.",
+    "D": "This distractor exploits a superficially plausible intuition—that high transmission rates overwhelm contact tracing—but the passage argues the opposite: that source control may be comparatively more advantageous in high-transmission outbreaks, not less. The passage's caveat about infrastructure concerns capacity, not a general claim that high transmission rates render source control unreliable."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b3f8a2e7-4d1c-4b9a-8e3f-2a6c5d7f8b9e"
+  },
+  "hasImage": false
+}

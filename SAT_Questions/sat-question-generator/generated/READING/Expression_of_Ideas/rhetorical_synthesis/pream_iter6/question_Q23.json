@@ -1,0 +1,59 @@
+{
+  "id": "e4f5a6b7-c8d9-4e0f-1a2b-3c4d5e6f7a8c",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- The minimum wage in the United States has been $7.25 per hour since 2009.\n- Adjusted for inflation, the purchasing power of $7.25 in 2009 is equivalent to approximately $5.40 in 2024 dollars.\n- Proponents of raising the minimum wage argue that it would reduce poverty and increase consumer spending.\n- Opponents argue that a higher minimum wage would force small businesses to cut jobs or raise prices.\n- A 2019 Congressional Budget Office report estimated that raising the minimum wage to $15 would lift 1.3 million people out of poverty but could result in 1.3 million job losses.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 116,
+    "source": "Student research notes on minimum wage policy"
+  },
+  "stem": "The student wants to present the complexity of the minimum wage debate by showing that a proposed increase involves significant tradeoffs. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The federal minimum wage has been $7.25 since 2009, but inflation has reduced its purchasing power to roughly $5.40 in today's dollars.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Proponents say raising the minimum wage would reduce poverty and boost spending, while opponents warn it could force businesses to cut jobs or raise prices.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A Congressional Budget Office report projected that a $15 minimum wage would lift 1.3 million people out of poverty but could also eliminate 1.3 million jobs, underscoring the significant tradeoffs in the debate.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Opponents of a minimum wage increase argue that small businesses would be forced to cut jobs or raise prices to offset higher labor costs.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Choice C is correct because it uses a single authoritative source (CBO report) to present a concrete, quantified tradeoff: the same policy that would lift 1.3 million from poverty could eliminate 1.3 million jobs. This specific parallel vividly illustrates the debate's complexity. Choice B presents the general arguments but lacks the concrete data that makes the tradeoff tangible. Choice A addresses only the status quo, and D presents only one side.",
+  "distractorRationale": {
+    "A": "This choice describes the current minimum wage's eroded purchasing power but does not discuss any tradeoffs of raising it.",
+    "B": "This choice summarizes both sides of the debate in general terms but lacks the specific data that would make the tradeoffs concrete and compelling. It reads more as a summary of positions than a demonstration of complexity.",
+    "D": "This choice presents only the opponents' argument, showing one side of the debate rather than the tradeoffs involved."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:22.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f5a6b7c8-d9e0-4f1a-2b3c-4d5e6f7a8b9d"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

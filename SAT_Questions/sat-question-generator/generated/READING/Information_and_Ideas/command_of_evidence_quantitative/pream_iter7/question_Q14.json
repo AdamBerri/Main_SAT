@@ -1,0 +1,84 @@
+{
+  "id": "f8ba4eac-0c66-4e82-a0f8-8f8a5d6014a4",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.2
+  },
+  "passage": "A nutrition research team surveyed dietary habits across four age groups and measured average daily sodium intake. The researchers argue that sodium consumption tends to increase with age, posing greater cardiovascular risks for older populations.",
+  "stem": "Which choice most effectively uses data from the figure to weaken the researchers' argument about sodium and age?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The 50-64 age group consumed an average of 3,800 mg of sodium daily, but the 65+ group consumed only 3,100 mg, suggesting that sodium intake actually decreases among the oldest adults.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The 18-34 age group consumed 2,400 mg of sodium daily, while the 35-49 group consumed 3,200 mg, showing an increase from the youngest to the middle-aged group.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The 35-49 age group consumed 3,200 mg of sodium daily, which exceeded the recommended daily limit of 2,300 mg by nearly 900 mg.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The 65+ age group consumed 3,100 mg of sodium daily, which was still above the recommended limit of 2,300 mg.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that sodium consumption increases with age. To weaken this, one must show it does NOT consistently increase. Choice A points out that the oldest group (65+) consumed less sodium (3,100 mg) than the 50-64 group (3,800 mg), demonstrating a decrease in the oldest cohort and breaking the claimed upward trend. Choice B actually supports the claim by showing an increase. Choice C discusses a health threshold irrelevant to the age-trend claim. Choice D notes the 65+ group exceeds the recommended limit but doesn't compare it to other age groups.",
+  "distractorRationale": {
+    "A": "Correct: shows a decrease from the 50-64 group to the 65+ group, directly contradicting the claim that intake increases with age.",
+    "B": "Wrong (opposite trend): shows sodium increasing from younger to middle-aged groups, which supports rather than weakens the claim.",
+    "C": "Wrong (irrelevant data): compares one age group's intake to a health recommendation rather than examining the age-related trend.",
+    "D": "Wrong (incomplete evidence): mentions only the 65+ group's intake relative to a health benchmark without comparing it to other age groups to challenge the trend."
+  },
+  "hasImage": true,
+  "imageDescription": "Bar chart titled 'Average Daily Sodium Intake by Age Group.' X-axis: Age Group (18-34, 35-49, 50-64, 65+). Y-axis: Sodium Intake (mg/day), range 0-4500. Bars: 18-34 = 2,400 mg; 35-49 = 3,200 mg; 50-64 = 3,800 mg; 65+ = 3,100 mg. Dashed horizontal line at 2,300 mg labeled 'Recommended Daily Limit.' Source: National Nutrition Survey, 2024.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Average Daily Sodium Intake by Age Group",
+    "data": {
+      "categories": [
+        "18-34",
+        "35-49",
+        "50-64",
+        "65+"
+      ],
+      "values": [
+        2400,
+        3200,
+        3800,
+        3100
+      ],
+      "unit": "mg/day",
+      "yAxisLabel": "Sodium Intake (mg/day)",
+      "xAxisLabel": "Age Group",
+      "referenceLine": {
+        "value": 2300,
+        "label": "Recommended Daily Limit"
+      }
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 56,
+    "source": "Adapted from National Nutrition Research Institute dietary survey"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.850Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4ed6b6d5-5f81-441d-9cc8-14e385b89d65"
+  }
+}

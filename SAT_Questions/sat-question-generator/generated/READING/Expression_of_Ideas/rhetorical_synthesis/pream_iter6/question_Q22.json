@@ -1,0 +1,60 @@
+{
+  "id": "c2d3e4f5-a6b7-4c8d-9e0f-1a2b3c4d5e6a",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- In urban areas, impervious surfaces like concrete and asphalt prevent rainwater from being absorbed into the ground.\n- During heavy rainfall, stormwater runoff carries pollutants from roads and parking lots into rivers and lakes.\n- Green infrastructure such as rain gardens, permeable pavements, and green roofs allows rainwater to be filtered and absorbed on-site.\n- A 2021 study in Philadelphia found that neighborhoods with green infrastructure reduced stormwater runoff by 40% compared to those relying solely on traditional drainage systems.\n- Traditional gray infrastructure, such as concrete pipes and storm drains, channels water away quickly but does not filter pollutants.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 114,
+    "source": "Student research notes on urban stormwater management"
+  },
+  "stem": "The student wants to argue that green infrastructure is more effective than traditional drainage for managing urban stormwater. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Unlike traditional storm drains that channel polluted runoff directly into waterways, green infrastructure filters and absorbs rainwater on-site -- reducing runoff by 40% in one Philadelphia study.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Green infrastructure such as rain gardens and permeable pavements allows rainwater to be filtered and absorbed, while impervious surfaces like concrete prevent absorption.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A 2021 Philadelphia study found that neighborhoods with green infrastructure reduced stormwater runoff by 40% compared to those with only traditional drainage.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "In cities, impervious surfaces cause stormwater runoff that carries road pollutants into rivers and lakes during heavy rainfall events.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A is correct because it makes a direct comparison between the two approaches: traditional drainage channels polluted water away without filtering, while green infrastructure filters and absorbs it, supported by quantitative evidence (40% reduction). This builds the strongest argument for green infrastructure's superiority. Choice B compares green infrastructure to impervious surfaces rather than traditional drainage, C provides the data point without the comparative argument, and D describes the problem without proposing any solution.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This choice contrasts green infrastructure with impervious surfaces generally, but the goal calls for a comparison with traditional drainage systems specifically. It also lacks the quantitative evidence.",
+    "C": "This choice presents the 40% statistic but does not explain why green infrastructure is more effective -- it reports a finding without building an argument about how green infrastructure addresses limitations of traditional systems.",
+    "D": "This choice describes the stormwater problem in urban areas but does not mention green infrastructure or traditional drainage, making no argument about which approach is more effective."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:21.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d3e4f5a6-b7c8-4d9e-0f1a-2b3c4d5e6f7b"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

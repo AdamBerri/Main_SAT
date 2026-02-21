@@ -25,16 +25,16 @@
             "category": "implausible_distractors",
             "frequency": 7,
             "exampleErrors": [
-              "Distractor D (265\u00b0) exceeds 180\u00b0 which is impossible for any interior angle of a triangle, creating fatal plausibility flaw that even weak students should recognize",
-              "Distractor C (180\u00b0) represents a degenerate triangle (straight line) that violates basic geometric intuition, too easily eliminated",
-              "Distractor rationales are mathematically incoherent: claims '180\u00b0 - 70\u00b0 - 55\u00b0' leads to 55\u00b0 or '180\u00b0 - 45\u00b0 - 125\u00b0' explains 125\u00b0, which are circular and don't represent actual student work"
+              "Distractor D (265°) exceeds 180° which is impossible for any interior angle of a triangle, creating fatal plausibility flaw that even weak students should recognize",
+              "Distractor C (180°) represents a degenerate triangle (straight line) that violates basic geometric intuition, too easily eliminated",
+              "Distractor rationales are mathematically incoherent: claims '180° - 70° - 55°' leads to 55° or '180° - 45° - 125°' explains 125°, which are circular and don't represent actual student work"
             ]
           },
           {
             "category": "difficulty_miscalibration",
             "frequency": 6,
             "exampleErrors": [
-              "Question rated 5/5 difficulty requires only basic subtraction (180\u00b0 - 95\u00b0 = 85\u00b0) and is too elementary for SAT, actual difficulty closer to 2/5",
+              "Question rated 5/5 difficulty requires only basic subtraction (180° - 95° = 85°) and is too elementary for SAT, actual difficulty closer to 2/5",
               "Problem rated 4/5 difficulty is actually 3/5 (Medium) - uses standard altitude-to-hypotenuse relationship with clean arithmetic and perfect squares",
               "Question marked 5/5 across all dimensions is inflated by ~2 levels; straightforward Pythagorean theorem application twice with simple integers is actually 2.5-3/5 difficulty"
             ]
@@ -44,7 +44,7 @@
             "frequency": 5,
             "exampleErrors": [
               "Mixed answer choice formats (integers 10, 12 alongside complex fractions 481/24, 481/18) is inconsistent with SAT style which maintains uniform formatting",
-              "Question too simple for SAT difficulty 1/5 - pure middle-school computation (180\u00b0 - 45\u00b0 - 70\u00b0) lacks context, multi-step reasoning, or diagram typical of modern SAT",
+              "Question too simple for SAT difficulty 1/5 - pure middle-school computation (180° - 45° - 70°) lacks context, multi-step reasoning, or diagram typical of modern SAT",
               "Excessive computational complexity using Heron's formula and yielding non-intuitive numbers like 481 deviates from modern SAT's emphasis on conceptual understanding over calculation"
             ]
           },
@@ -63,7 +63,7 @@
             "exampleErrors": [
               "Question designates answer D (481/18) as correct when mathematical proof shows answer B (25) is unambiguously correct through Pythagorean theorem, Stewart's Theorem, and Heron's formula",
               "Answer choices B (12) and D (84/7) are mathematically identical since 84/7 = 12, creating two correct answers where only one should exist",
-              "Designated answer C (20) is incorrect; the correct answer through Law of Sines is B (10\u221a3), and the explanation itself arrives at 10\u221a3 before inexplicably claiming answer is 20"
+              "Designated answer C (20) is incorrect; the correct answer through Law of Sines is B (10√3), and the explanation itself arrives at 10√3 before inexplicably claiming answer is 20"
             ]
           }
         ]
@@ -89,26 +89,26 @@
             "frequency": 4,
             "exampleErrors": [
               "Designated correct answer (A: 12 inches) is mathematically incorrect; explanation confuses angle DBC with angle ABC",
-              "Answer key states B (6\u221a3) is correct, but calculation clearly shows A (4\u221a3) is the correct answer based on multiple verification methods",
-              "Designated answer A (5\u221a6) doesn't match the mathematics from the question stem; using Law of Sines correctly yields approximately 8.16, not 5\u221a6"
+              "Answer key states B (6√3) is correct, but calculation clearly shows A (4√3) is the correct answer based on multiple verification methods",
+              "Designated answer A (5√6) doesn't match the mathematics from the question stem; using Law of Sines correctly yields approximately 8.16, not 5√6"
             ]
           },
           {
             "category": "distractor_quality",
             "frequency": 4,
             "exampleErrors": [
-              "Distractor C has internally inconsistent rationale: calculation yields 4\u221a3 (which is answer D), not 8, making the distractor design contradictory",
+              "Distractor C has internally inconsistent rationale: calculation yields 4√3 (which is answer D), not 8, making the distractor design contradictory",
               "Distractors B and D have unclear or convoluted rationales that don't represent systematic student misconceptions; appear arbitrary rather than reflecting authentic thinking",
-              "Answer choice A duplicates given angle (55\u00b0), making the question solvable through pattern recognition rather than genuine mathematical reasoning"
+              "Answer choice A duplicates given angle (55°), making the question solvable through pattern recognition rather than genuine mathematical reasoning"
             ]
           },
           {
             "category": "difficulty_accuracy",
             "frequency": 4,
             "exampleErrors": [
-              "Stated difficulty 5/5 is significantly overestimated; actual difficulty is 2-2.3/5 with straightforward Pythagorean theorem application and memorable sin(30\u00b0) = 1/2",
+              "Stated difficulty 5/5 is significantly overestimated; actual difficulty is 2-2.3/5 with straightforward Pythagorean theorem application and memorable sin(30°) = 1/2",
               "Claimed difficulty 5/5 contradicted by problem using recognizable 3-4-5 Pythagorean triple, reducing actual difficulty to 2.5-3/5",
-              "Stated 2/5 difficulty underestimated because question requires special angle trigonometry (sin 75\u00b0) and angle addition formulas beyond basic geometry"
+              "Stated 2/5 difficulty underestimated because question requires special angle trigonometry (sin 75°) and angle addition formulas beyond basic geometry"
             ]
           },
           {
@@ -165,8 +165,8 @@
             "category": "computational_simplicity_underestimation",
             "frequency": 2,
             "exampleErrors": [
-              "Computational difficulty rated 5/5 for problem with perfect squares and clean arithmetic (\u221a256 = 16, \u221a81 = 9) requiring only basic operations",
-              "Computational difficulty rated 3/5 for 30-60-90 triangle when actual computation is trivial (8 \u00d7 2 = 16), reducing to 1/5 complexity"
+              "Computational difficulty rated 5/5 for problem with perfect squares and clean arithmetic (√256 = 16, √81 = 9) requiring only basic operations",
+              "Computational difficulty rated 3/5 for 30-60-90 triangle when actual computation is trivial (8 × 2 = 16), reducing to 1/5 complexity"
             ]
           },
           {
@@ -192,11 +192,78 @@
       },
       "improvementMade": "Addressed: difficulty_overestimation, procedural_vs_conceptual_mismatch, computational_simplicity_underestimation",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.571,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_d2",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q6/Q7: distractor rationales lack clarity at difficulty 2"
+            ]
+          },
+          {
+            "category": "faithfulness_d3",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q13/Q15: minor SAT format deviations at medium difficulty",
+              "Q9: style slightly off from typical SAT"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.438,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_quality_d2, faithfulness_d3, added SAT authenticity guidelines",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.571,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.438,
+        "passRate": 1
+      },
+      "improvementMade": "Converged - no new prompt needed",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.646,
+        "passRate": 0.95,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.497,
+        "passRate": 1
+      },
+      "improvementMade": "Converged: <2% improvement",
+      "newPromptVersion": null
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": false,
+  "converged": true,
   "startedAt": "2026-01-08T20:32:05.208Z",
-  "completedAt": null,
+  "completedAt": "2026-02-20T22:27:22.127Z",
   "bestTestScore": 4.763392857142858
 }

@@ -1,0 +1,58 @@
+{
+  "id": "e7f1a5b4-3c6d-4e9f-1a4b-5d8c2e3f7a9b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "The following passage is accompanied by a graph description.\n\nHistorians of technology have noted that major inventions often go through a long period of slow adoption before widespread use. Early adopters tend to be wealthier individuals and large institutions, which can afford the high initial costs of new technologies. Over time, manufacturing improvements and competition drive prices down, enabling broader adoption across economic groups. This pattern, sometimes called the \"adoption curve,\" has been observed with technologies ranging from household refrigerators in the 1920s to personal computers in the 1980s.\n\nFigure: Percentage of U.S. Households Owning a Refrigerator, 1920–1960\n\n1920: 1%\n1930: 8%\n1940: 44%\n1950: 80%\n1960: 98%",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 148,
+    "source": "Adapted from technology adoption history literature"
+  },
+  "stem": "Which statement best describes how the figure illustrates the adoption curve discussed in the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Ownership rose slowly at first, then accelerated to near-universal adoption.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Refrigerator ownership grew at a steady, consistent rate each decade.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Wealthy households adopted refrigerators decades before poorer ones did.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The fastest growth occurred in the earliest phase of adoption.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage describes an adoption curve in which technologies start with slow uptake before accelerating to widespread use as prices fall. The figure shows exactly this pattern for refrigerators: ownership was only 1% in 1920 and grew modestly to 8% by 1930 (slow early phase), then accelerated sharply to 44% by 1940, 80% by 1950, and 98% by 1960. This S-curve shape — slow beginning followed by rapid growth — directly illustrates the adoption curve the passage describes. Choice A accurately synthesizes both sources.",
+  "distractorRationale": {
+    "A": "Correct. The figure's data (1%, 8%, 44%, 80%, 98%) shows slow initial growth followed by rapid acceleration, which matches the passage's description of the adoption curve pattern.",
+    "B": "The figure shows highly uneven growth: just 7 percentage points from 1920 to 1930, then 36 points from 1930 to 1940, and 36 more from 1940 to 1950. This is the opposite of steady, consistent growth.",
+    "C": "While the passage mentions wealthy individuals as early adopters, the figure shows only aggregate household percentages — it does not break down ownership by income level or allow comparison between wealthy and poorer households.",
+    "D": "This inverts the pattern shown in the figure. The earliest phase (1920 to 1930) showed only 7% growth, which was the slowest decade. The fastest growth occurred in the middle phase (1930 to 1950)."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2c5d8e9-4f3a-4b6c-9d2e-7f1a4b8c3d5e"
+  },
+  "hasImage": false
+}

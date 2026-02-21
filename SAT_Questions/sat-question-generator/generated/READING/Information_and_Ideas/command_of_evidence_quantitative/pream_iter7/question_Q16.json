@@ -1,0 +1,82 @@
+{
+  "id": "b5b1fd32-73d8-46e1-8d50-387fbe1341b2",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4,
+    "linguistic": 4.3
+  },
+  "passage": "Researchers at an agricultural institute investigated whether organic farming methods could match the productivity of conventional methods while reducing environmental impact. Their analysis suggests that while organic farms in temperate regions produce lower yields per hectare, the gap between organic and conventional yields narrows considerably for crops grown in tropical climates.",
+  "stem": "Which choice most effectively uses data from the figure to support the researchers' analysis?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "In temperate regions, conventional farms produced 6.8 tonnes per hectare compared to organic farms' 4.2 tonnes (a 38% gap), while in tropical regions conventional farms produced 5.1 tonnes versus organic farms' 4.6 tonnes (a 10% gap).",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Organic farms in tropical regions produced 4.6 tonnes per hectare, which was higher than organic farms in temperate regions at 4.2 tonnes per hectare.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Conventional farms in temperate regions produced 6.8 tonnes per hectare, making them the highest-yielding category in the study, while conventional tropical farms produced 5.1 tonnes.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "In tropical regions, organic farms produced 4.6 tonnes per hectare while conventional farms produced 5.1 tonnes, a difference of only 0.5 tonnes per hectare.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim has two parts: (1) organic yields are lower in temperate regions, and (2) the yield gap narrows in tropical climates. Choice A addresses both by showing the temperate gap is 38% while the tropical gap is only 10%. Choice B compares organic yields across regions without addressing the organic-conventional gap. Choice C discusses conventional yields only. Choice D shows the tropical gap alone without comparing it to the temperate gap, so the reader cannot verify the 'narrowing' claim.",
+  "distractorRationale": {
+    "A": "Correct: quantifies both the temperate and tropical yield gaps, showing the tropical gap (10%) is much smaller than the temperate gap (38%).",
+    "B": "Wrong (wrong comparison): compares organic farms across regions rather than comparing organic to conventional within each region.",
+    "C": "Wrong (irrelevant data): discusses only conventional farm yields without addressing the organic-conventional yield gap.",
+    "D": "Wrong (incomplete evidence): shows only the tropical gap (0.5 tonnes) without comparing it to the temperate gap, so the claim about narrowing cannot be verified."
+  },
+  "hasImage": true,
+  "imageDescription": "Grouped bar chart titled 'Crop Yields by Farming Method and Climate Region (tonnes/hectare).' X-axis: Climate Region (Temperate, Tropical). Two bars per region: Conventional (blue) and Organic (green). Temperate: Conventional = 6.8, Organic = 4.2. Tropical: Conventional = 5.1, Organic = 4.6. Source: International Agricultural Research Institute, 2024.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Crop Yields by Farming Method and Climate Region (tonnes/hectare)",
+    "data": {
+      "categories": [
+        "Temperate",
+        "Tropical"
+      ],
+      "series": {
+        "Conventional": [
+          6.8,
+          5.1
+        ],
+        "Organic": [
+          4.2,
+          4.6
+        ]
+      },
+      "unit": "tonnes per hectare",
+      "yAxisLabel": "Yield (tonnes/hectare)",
+      "xAxisLabel": "Climate Region"
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 65,
+    "source": "Adapted from International Agricultural Research Institute comparative study"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.938Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "0a6805c1-6e08-429c-b082-6c565e559270"
+  }
+}

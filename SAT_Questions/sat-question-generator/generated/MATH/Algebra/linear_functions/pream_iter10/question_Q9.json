@@ -1,0 +1,54 @@
+{
+  "id": "e6b1c4d5-7f3a-4b2e-d9c5-1a4f8b3e6c2d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "A parking garage charges a one-time entry fee of $\\$5$ plus $\\$2$ for each hour a car is parked. Which of the following functions gives the total cost $C$, in dollars, to park a car for $h$ hours?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$C(h) = 2h + 5$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$C(h) = 5h + 2$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$C(h) = 2h - 5$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$C(h) = 7h$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The total cost has two components:\n- A fixed one-time entry fee of $\\$5$ (this does not depend on $h$, so it is the constant term)\n- A charge of $\\$2$ per hour, so for $h$ hours the variable cost is $2h$\n\nAdding these components: $C(h) = 2h + 5$.\n\nThis can be verified: parking for 3 hours costs $2(3) + 5 = 6 + 5 = \\$11$, which matches $\\$5$ entry fee plus $3 \\times \\$2 = \\$6$ per-hour charge.",
+  "distractorRationale": {
+    "A": "Correct. The $\\$2$ hourly rate is the slope and the $\\$5$ entry fee is the constant: $C(h) = 2h + 5$.",
+    "B": "Swaps the slope and the y-intercept: uses the entry fee $\\$5$ as the hourly rate and the hourly rate $\\$2$ as the fixed fee, giving $C(h) = 5h + 2$.",
+    "C": "Uses the correct slope but subtracts the entry fee instead of adding it, writing $C(h) = 2h - 5$ as if the entry fee reduces the cost.",
+    "D": "Adds the two rates together ($\\$5 + \\$2 = \\$7$) and treats the combined sum as a single hourly charge, losing the distinction between the fixed fee and the per-hour rate: $C(h) = 7h$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4a8f6e3-9c5b-4d2f-e7a4-2b6c9f4d8e1a"
+  }
+}

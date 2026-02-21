@@ -1,0 +1,54 @@
+{
+  "id": "91788133-5c5a-42e2-8cef-282e993ce9b5",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3.0,
+    "computational": 3.3
+  },
+  "stem": "The table shows selected values of a linear function $f$.\n\n| $x$ | $f(x)$ |\n|-----|--------|\n| 2   | 11     |\n| 5   | 20     |\n\nWhat is $f(0)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$5$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$8$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$14$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Since $f$ is a linear function, find the slope using the two given points $(2, 11)$ and $(5, 20)$:\n$$m = \\frac{20 - 11}{5 - 2} = \\frac{9}{3} = 3$$\n\nNow write the equation $f(x) = 3x + b$ and use one point to solve for $b$. Using $(2, 11)$:\n$$11 = 3(2) + b \\implies 11 = 6 + b \\implies b = 5$$\n\nSo $f(x) = 3x + 5$. Therefore:\n$$f(0) = 3(0) + 5 = 5$$",
+  "distractorRationale": {
+    "A": "Uses the $x$-value of the first table entry as the answer: reads $x = 2$ from the table and reports $2$ instead of evaluating $f(0)$.",
+    "B": "Correct. The slope is $3$ and the $y$-intercept is $b = 11 - 3(2) = 5$, so $f(0) = 5$.",
+    "C": "Subtracts the slope from $f(2)$ only once instead of twice: $f(0) = f(2) - 1 \\times 3 = 11 - 3 = 8$, forgetting that moving from $x = 2$ to $x = 0$ is a change of $-2$, not $-1$.",
+    "D": "Adds the slope to $f(2)$ instead of subtracting: $f(0) = 11 + 3 = 14$, moving in the wrong direction along the line."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a5047a2a-42dc-42a3-9f7b-2d28e28482f4"
+  }
+}

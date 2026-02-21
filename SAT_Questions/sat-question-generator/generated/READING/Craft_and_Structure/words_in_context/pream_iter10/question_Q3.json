@@ -1,0 +1,58 @@
+{
+  "id": "f1b5c8d3-9e2a-4f7b-8c4d-5e1a3f9b2c7d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "The documentary filmmaker spent three years traveling to remote villages to capture the traditions of communities rarely seen on screen. She interviewed elders, attended ceremonies, and filmed daily life with the goal of preserving these practices for future generations. Her work was driven by a desire to record what she feared might otherwise vanish.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 58,
+    "source": "Original"
+  },
+  "stem": "As used in the passage, \"capture\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "record",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "seize",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "attract",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "occupy",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage describes a filmmaker using video and interviews to document traditions she feared might disappear. The word \"capture\" in this context means to record or document on film, which aligns with the actions described: filming daily life, interviewing elders, and preserving practices. The closing sentence explicitly references her desire to 'record' what might vanish, confirming this meaning.",
+  "distractorRationale": {
+    "A": "Correct. 'Record' fits because the filmmaker is using a camera to document traditions, and the passage explicitly uses 'record' in the final sentence as the filmmaker's stated goal.",
+    "B": "'Seize' is a meaning of 'capture' in military or law enforcement contexts (e.g., 'capture a fugitive'), but the passage is about documentary filmmaking, not apprehension or conquest.",
+    "C": "'Attract' reflects the meaning of capture when something draws attention (e.g., 'capture the audience's interest'), but the passage focuses on what the filmmaker is doing with her camera, not on what is drawing viewers in.",
+    "D": "'Occupy' relates to capture in the sense of taking physical possession of a place (e.g., 'capture a city'), but the passage involves no physical takeover — it is about documenting traditions on film."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2b7c4d9-1e5f-4a8b-9c3d-7e2f5a1b4c8d"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,58 @@
+{
+  "id": "d4b8e3f2-7c1a-4d9b-8e5f-3a6c9d2e1b7f",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "The James Webb Space Telescope has fundamentally altered our understanding of the early universe. Its primary mirror, composed of eighteen gold-coated beryllium hexagonal segments, measures 6.5 meters in diameter[; which allows it to collect] vastly more infrared light than the Hubble Space Telescope could gather in a comparable observing period. Astronomers have already used this capability to image galaxies that formed within the first few hundred million years after the Big Bang.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 81,
+    "source": "Original composition based on astronomy and space science"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "; which allows it to collect",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": ", which allows it to collect",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": ". Which allows it to collect",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": ": which allows it to collect",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion connects the main clause to a relative clause. The LEFT side, 'Its primary mirror, composed of eighteen gold-coated beryllium hexagonal segments, measures 6.5 meters in diameter,' is a complete independent clause. The RIGHT side, 'which allows it to collect vastly more infrared light than the Hubble Space Telescope could gather in a comparable observing period,' is a non-restrictive relative clause introduced by the relative pronoun 'which,' making it a dependent clause that modifies 'primary mirror.' Choice B correctly uses a comma to attach the non-restrictive relative clause to the independent clause. Choice A incorrectly uses a semicolon before the relative clause; semicolons must join two fully independent clauses, and a 'which' clause is inherently dependent. Choice C places a period before 'Which,' creating an illegal sentence fragment — 'Which allows it to collect...' has no antecedent as the start of a new sentence and no independent clause structure. Choice D uses a colon before a dependent relative clause, which violates the rule that colons may only introduce independent clauses, lists, or explanatory phrases — not relative clauses beginning with 'which.'",
+  "distractorRationale": {
+    "A": "NO CHANGE — Semicolon before a dependent relative clause. Students who associate semicolons with 'strong pauses' may use one here, failing to recognize that 'which allows...' is a dependent clause that cannot follow a semicolon.",
+    "B": "CORRECT — A comma correctly introduces the non-restrictive relative clause ('which allows it to collect...'), which modifies the mirror and is properly attached to the independent clause with a comma in Standard English.",
+    "C": "Period creating a fragment — Students may treat 'Which allows it to collect...' as a complete thought, not recognizing that a relative clause beginning with 'which' cannot stand as an independent sentence and lacks the independent structure required after a period.",
+    "D": "Colon before a dependent clause — Students may treat the colon as a multi-purpose connector, but a colon cannot precede a dependent relative clause. Colons introduce elaborating or clarifying elements after a complete independent clause, and a 'which' clause is grammatically dependent."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2e9f4a1-8c3d-4f7b-9a6e-1c4d8f2b5e9a"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "b7c4e1f3-2d9a-4b8c-e7f2-1a5c3d8e9f4b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "The following passage is adapted from a 2023 analysis of urban heat island mitigation strategies.\n\nThe urban heat island (UHI) effect — in which densely built cities can be 3 to 10°C warmer than surrounding rural areas — poses significant public health and energy challenges. Municipalities have pursued two primary mitigation strategies: increasing urban tree canopy and deploying high-albedo (reflective) surface materials on rooftops and pavements. Researchers have questioned whether these strategies produce comparable thermal benefits per unit of urban area treated.\n\nA comprehensive thermal monitoring study tracked surface and ambient air temperatures across 12 North American cities from May through September 2019 and 2020. Urban parcels with tree canopy coverage exceeding 40 percent maintained mean afternoon surface temperatures of 28.3°C, compared to 41.6°C for unvegetated impervious surfaces. Adjacent parcels where cool-roof retrofits had raised surface albedo to 0.65 measured 34.1°C — a reduction relative to conventional dark roofs (albedo 0.08, mean temperature 46.2°C) but substantially warmer than tree-covered areas.\n\nAn economic analysis accompanying the thermal study calculated cost-per-degree-cooling per hectare over a 20-year horizon: tree planting and maintenance averaged $4,200 per hectare per 1°C reduction achieved, while cool-roof installation totaled $1,100 per hectare per 1°C reduction, giving cool roofs a 3.8-to-1 cost advantage.\n\nCritics of surface albedo approaches, however, note a spatial limitation. Because high-albedo surfaces increase the reflection of shortwave radiation, they can inadvertently redirect thermal energy toward adjacent low-rise buildings and street-level pedestrians, raising ambient temperatures at ground level even as rooftop surfaces cool. Field measurements in Phoenix, Arizona, found that streets flanked by cool-roof buildings registered ambient air temperatures 0.8°C higher than control streets lined with conventionally surfaced buildings, whereas streets shaded by mature tree canopies were 2.1°C cooler than both comparison groups.\n\nA modeling study projecting outcomes under a scenario in which 30 percent of urban surfaces in a mid-sized U.S. city were converted to either tree canopy or cool rooftops estimated that the tree canopy scenario would reduce peak afternoon air temperature by 1.7°C citywide, while the equivalent cool-roof deployment would produce only 0.4°C of city-scale cooling, even though surface temperatures beneath the roofs would be dramatically lower.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 330,
+    "source": "Adapted from a 2023 policy analysis on urban heat mitigation cost-effectiveness"
+  },
+  "stem": "A city planner argues that deploying reflective roofing materials across a significant share of urban surfaces produces substantially smaller improvements to the temperature experienced by pedestrians at street level than an equivalent deployment of tree canopy would. Which evidence from the passage most directly supports this argument?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Urban parcels with tree canopy coverage exceeding 40 percent maintained mean afternoon surface temperatures of 28.3°C, compared to 41.6°C for unvegetated impervious surfaces",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "streets flanked by cool-roof buildings registered ambient air temperatures 0.8°C higher than control streets lined with conventionally surfaced buildings, whereas streets shaded by mature tree canopies were 2.1°C cooler than both comparison groups",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "the tree canopy scenario would reduce peak afternoon air temperature by 1.7°C citywide, while the equivalent cool-roof deployment would produce only 0.4°C of city-scale cooling, even though surface temperatures beneath the roofs would be dramatically lower",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Adjacent parcels where cool-roof retrofits had raised surface albedo to 0.65 measured 34.1°C — a reduction relative to conventional dark roofs (albedo 0.08, mean temperature 46.2°C) but substantially warmer than tree-covered areas",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The claim contains three specific elements: (1) a significant urban area conversion (30 percent in the modeling study), (2) the outcome metric is temperature experienced at the city or pedestrian scale (not rooftop surface temperature), and (3) the comparison shows substantially smaller improvement for cool roofs than for equivalent tree canopy. Choice C satisfies all three: it specifies the 30 percent conversion scenario, uses 'peak afternoon air temperature' as the metric (the air temperature relevant to pedestrians), reports 1.7°C versus 0.4°C reduction (a substantial gap favoring trees), and explicitly notes that cool roofs produce far less city-scale cooling 'even though surface temperatures beneath the roofs would be dramatically lower' — a clause that directly acknowledges that the weakness is not in rooftop surface cooling but in its limited translation to pedestrian-level conditions. No inferential step is needed to connect the evidence to the claim. Choice B is a strong distractor because it directly compares street-level ambient temperatures for cool-roof versus tree-shaded blocks, showing cool roofs actually worsen pedestrian conditions (+0.8°C) while trees improve them (−2.1°C). However, B reflects conditions in a single city (Phoenix) under existing (not equivalent-area-deployed) conditions, making it specific to a redistribution effect rather than an equivalent-coverage scenario. Choice C, by modeling equivalent deployment at city scale, is the more precise match for the planner's argument about a deliberate policy choice between two strategies at the same coverage level. Choices A and D address surface temperatures (not ambient pedestrian air temperatures) and do not compare equivalent-area scenarios, requiring additional inferential steps.",
+  "distractorRationale": {
+    "A": "Choice A compares surface temperatures of tree-covered versus unvegetated impervious areas — not cool-roof areas — and reports surface temperature rather than the ambient air temperature experienced by pedestrians. It does not pit trees against cool roofs under equivalent deployment conditions, so it addresses only one side of the comparison the claim requires.",
+    "B": "Choice B is the most competitive distractor: it provides a direct street-level ambient temperature comparison between cool-roof blocks (+0.8°C relative to control) and tree-shaded blocks (−2.1°C relative to control), explicitly showing that cool roofs worsen pedestrian conditions while trees improve them. However, the argument specifies a significant share of urban surfaces deployed equivalently as a policy scenario. Choice B describes field conditions in Phoenix under organic, non-equivalent coverage patterns. Choice C, using modeled equivalent deployment, more precisely matches the policy framing of the argument. B is valid secondary support but not the most direct match to the specific claim about 'equivalent deployment producing substantially smaller improvements.'",
+    "C": "Correct. Choice C provides a controlled model comparison of equivalent (30 percent) cool-roof versus tree-canopy deployment at city scale, using air temperature — the pedestrian-relevant metric — and shows a 4.25-to-1 advantage for tree canopy (1.7°C vs. 0.4°C reduction). The clause acknowledging dramatic rooftop cooling that nonetheless fails to translate to city-scale air temperature directly addresses why reflective roofing underperforms trees at the scale the argument concerns.",
+    "D": "Choice D reports that cool-roof parcels (34.1°C) are warmer than tree-covered ones (28.3°C) in surface temperature — but surface temperatures are not the metric the argument concerns (pedestrian/ambient air temperatures). The comparison also does not use equivalent deployment areas, and it measures the wrong thermal metric for the argument's specific claim about what pedestrians experience."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3f8e2b1-7c4d-4a9e-b3f2-6c5d8e1a7b4c"
+  }
+}

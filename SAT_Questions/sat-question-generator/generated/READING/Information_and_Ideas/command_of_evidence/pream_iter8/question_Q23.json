@@ -1,0 +1,57 @@
+{
+  "id": "e9f2b3c4-1a7d-4e8b-9c3f-5d2a7e1f4b8c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "The following passage is adapted from a 2021 paper on immune system responses to repeated antigen exposure.\n\nThe adaptive immune system generates memory B cells following initial exposure to a pathogen, enabling faster and more potent antibody responses upon subsequent encounters. Immunologists have debated whether the magnitude of this secondary response is governed primarily by the quantity of circulating memory B cells present at the time of re-exposure or by the activation threshold of those cells — that is, how readily each cell responds to antigen stimulation.\n\nA longitudinal cohort study tracked 840 adults for three years following a primary vaccination series against influenza. At 6 months post-vaccination, participants had a geometric mean of 1,240 memory B cells per milliliter of peripheral blood targeting the hemagglutinin antigen. At 18 months, cell counts had declined to a geometric mean of 390 per milliliter. When participants received a booster dose at 24 months, those with higher residual memory B cell counts (above 500 per milliliter) mounted antibody titers that were 3.1 times baseline within 7 days, whereas those with lower counts (below 200 per milliliter) achieved only 1.4-fold elevation over the same interval.\n\nA separate research group used single-cell RNA sequencing to profile memory B cells isolated from vaccinated donors. Cells sampled at 6 months post-vaccination expressed activation-associated transcription factors at levels 4.8-fold higher than naive B cells, whereas cells sampled at 18 months showed only 2.1-fold elevation — a difference the authors attributed to gradual epigenetic silencing of activation-readiness programs rather than numerical attrition alone.\n\nAn experimental study resolved part of the debate by depleting memory B cell populations to equivalent low counts in two groups of mice: one group had cells with high activation-threshold readiness (recently primed cells transferred from recently immunized donors), the other with low readiness (cells from donors immunized 14 months prior). Upon antigen challenge, the high-readiness group produced peak antibody titers 5.4-fold above those of the low-readiness group despite identical cell counts, demonstrating that the functional state of individual cells, independent of their number, governs the secondary response magnitude.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 305,
+    "source": "Adapted from a 2021 immunology research synthesis on memory B cell dynamics"
+  },
+  "stem": "An immunologist proposes that the vigor of an individual's secondary antibody response depends more on the functional preparedness of memory B cells than on how many such cells are present in the bloodstream. Which finding from the passage most directly supports this proposal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "those with higher residual memory B cell counts (above 500 per milliliter) mounted antibody titers that were 3.1 times baseline within 7 days, whereas those with lower counts (below 200 per milliliter) achieved only 1.4-fold elevation over the same interval",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "cells sampled at 6 months post-vaccination expressed activation-associated transcription factors at levels 4.8-fold higher than naive B cells, whereas cells sampled at 18 months showed only 2.1-fold elevation",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "the high-readiness group produced peak antibody titers 5.4-fold above those of the low-readiness group despite identical cell counts, demonstrating that the functional state of individual cells, independent of their number, governs the secondary response magnitude",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "memory B cell populations to equivalent low counts in two groups of mice: one group had cells with high activation-threshold readiness (recently primed cells transferred from recently immunized donors), the other with low readiness (cells from donors immunized 14 months prior)",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The proposal has two components: (1) functional preparedness (not cell count) drives secondary response vigor, and (2) this is a comparison that establishes preparedness as more influential than quantity. Choice C directly satisfies both by reporting an experiment in which cell counts were held constant (identical low numbers in both groups) while functional readiness varied, and the high-readiness group generated 5.4-fold greater antibody titers. The phrase 'independent of their number' in the choice explicitly states that cell count was controlled, isolating functional state as the operative variable. This is the most direct evidence because the experimental design eliminates quantity as a confound, leaving only preparedness to explain the outcome difference. Choice A appears to support a count-based explanation by showing that higher counts correlate with stronger responses — it actually provides evidence for the alternative hypothesis the proposal contests. Choice B shows that functional markers (transcription factors) decline over time, which is relevant background but does not demonstrate that functional state governs response magnitude independent of cell number. Choice D describes the experimental setup (cell depletion to equal counts, two readiness levels) but does not report the outcome — it is the methodological premise, not the finding that supports the proposal.",
+  "distractorRationale": {
+    "A": "Choice A is the most dangerous distractor: it shows a strong correlation between memory B cell counts and antibody response magnitude (3.1x vs. 1.4x elevation), which appears to validate a count-based mechanism and actually counters the proposal. Students who read superficially may select A because it quantifies the secondary response, but A supports the opposing view — that cell quantity matters — not the proposal that functional preparedness is the decisive factor.",
+    "B": "Choice B demonstrates that functional markers decline over time (4.8-fold to 2.1-fold elevation in transcription factor expression), establishing that preparedness degrades separately from cell loss. This is relevant circumstantial support, but it does not show that functional state governs response magnitude while controlling for cell number, which is what the proposal requires to be directly supported.",
+    "C": "Correct. By equalizing cell counts and varying only functional readiness, then measuring a 5.4-fold difference in antibody titers, Choice C provides the most direct, controlled evidence that functional preparedness — not quantity — governs secondary response magnitude.",
+    "D": "Choice D describes the experimental conditions (depleted populations with differing readiness) but omits the outcome data. Without the result (the 5.4-fold titer difference), this excerpt cannot support the proposal; it merely describes a setup in which the relevant question could be answered. It requires the reader to supply the outcome from Choice C to become meaningful, making it incomplete as standalone evidence."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4b7c2e1-9f3a-4d8b-c4e2-7a5f6d3b9c1e"
+  }
+}

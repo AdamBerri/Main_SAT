@@ -1,0 +1,54 @@
+{
+  "id": "d5f9b2a8-6c41-4e7d-8f3a-1b0e9c5d2f67",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "A rectangular garden has a perimeter of 56 meters. The length of the garden is 4 meters more than twice its width. What is the area of the garden, in square meters?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$144$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$160$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$192$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$196$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $l$ = the length of the garden and $w$ = the width, both in meters.\n\nThe two conditions give the system:\n$$2l + 2w = 56 \\implies l + w = 28 \\quad (1)$$\n$$l = 2w + 4 \\quad (2)$$\n\n**Step 1 — Substitute equation (2) into equation (1):**\n$$(2w + 4) + w = 28 \\implies 3w + 4 = 28 \\implies 3w = 24$$\n\n**Step 2 — Solve for $w$:**\n$$w = \\frac{24}{3} = 8 \\text{ meters}$$\n\n**Step 3 — Back-substitute to find $l$:**\n$$l = 2(8) + 4 = 16 + 4 = 20 \\text{ meters}$$\n\n**Checking:** Equation (1): $20 + 8 = 28$ ✓ (perimeter $= 56$ m ✓). Equation (2): $20 = 2(8) + 4 = 20$ ✓.\n\n**Area:**\n$$A = l \\times w = 20 \\times 8 = 160 \\text{ square meters}$$",
+  "distractorRationale": {
+    "A": "Makes a substitution arithmetic error: correctly finds $w = 8$, then computes $l = 2(8) + 4$ but evaluates $2 \\times 8 = 14$ (arithmetic slip), giving $l = 14 + 4 = 18$; computes area $= 18 \\times 8 = 144$.",
+    "B": "Correct. Finds $w = 8$ and $l = 20$, giving area $= 160$ square meters.",
+    "C": "Misreads the relationship as $l = w + 4$ (reads $2w$ as $w$), giving $(w + 4) + w = 28 \\implies 2w = 24 \\implies w = 12$ and $l = 12 + 4 = 16$; computes area $= 12 \\times 16 = 192$.",
+    "D": "Uses only the perimeter equation and ignores the length-width relationship, assuming instead that $l = w$ (a square garden): $2w = 28 \\implies w = 14$; computes area $= 14 \\times 14 = 196$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e3f4a5b6-c7d8-9012-cdef-345678901234"
+  }
+}

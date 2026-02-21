@@ -1,0 +1,54 @@
+{
+  "id": "3c9f7d64-1e52-4b8a-e803-5f27a0b14c29",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "In a $30°$-$60°$-$90°$ triangle, the hypotenuse has length $14$. What is the length of the longer leg?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$7$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$7\\sqrt{2}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$7\\sqrt{3}$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$14\\sqrt{3}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "In a $30°$-$60°$-$90°$ triangle, the sides are in the ratio $1 : \\sqrt{3} : 2$ (shorter leg : longer leg : hypotenuse). If the hypotenuse is $14$, then the scale factor is $14 \\div 2 = 7$. The shorter leg (opposite $30°$) is $7 \\times 1 = 7$, and the longer leg (opposite $60°$) is $7 \\times \\sqrt{3} = 7\\sqrt{3}$.",
+  "distractorRationale": {
+    "A": "The student correctly halves the hypotenuse to get $7$, but reports the shorter leg (opposite $30°$) instead of the longer leg (opposite $60°$).",
+    "B": "The student applies the $45°$-$45°$-$90°$ ratio instead of the $30°$-$60°$-$90°$ ratio, dividing the hypotenuse by $\\sqrt{2}$ to get $\\dfrac{14}{\\sqrt{2}} = 7\\sqrt{2}$.",
+    "C": "Correct.",
+    "D": "The student correctly identifies that the longer leg equals (half-hypotenuse)$\\times \\sqrt{3}$ but forgets to halve the hypotenuse first, computing $14 \\times \\sqrt{3} = 14\\sqrt{3}$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f6e83c40-2b17-4d9e-c7a5-8d94f2e57b30"
+  }
+}

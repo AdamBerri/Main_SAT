@@ -1,0 +1,57 @@
+{
+  "id": "b3c7e9f1-2a4d-4e8b-9c1a-5f3d7e2b8a6c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1.3
+  },
+  "passage": "Honeybees are remarkable navigators. When a scout bee discovers a food source, it returns to the hive and performs a waggle dance to communicate the location to other bees. The dance encodes the direction and distance of the food: the angle of the dance relative to vertical indicates the direction relative to the sun, while the duration of the waggle run signals how far away the food is. Researchers have decoded this dance language and confirmed that bees use it accurately to direct nestmates to flowers up to several miles away. Through this sophisticated communication system, honeybee colonies efficiently coordinate foraging across wide areas.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 104,
+    "source": "Original passage on animal behavior"
+  },
+  "stem": "Which choice best states the main idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Honeybees perform a waggle dance in which the angle and duration of movement encode information about food sources.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Honeybees use a sophisticated dance-based communication system to coordinate foraging across large distances.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Researchers have succeeded in decoding the meaning of the honeybee waggle dance by studying hive behavior.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Scout bees are responsible for locating food and returning to the hive to alert the rest of the colony.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage opens by calling honeybees 'remarkable navigators' and concludes by describing how their communication system allows colonies to 'efficiently coordinate foraging across wide areas.' Every other sentence in the passage supports this central claim: the waggle dance description, the encoding of direction and distance, and the confirmation by researchers all serve to illustrate how sophisticated this coordination system is. Choice B captures both the system (dance-based communication) and its function (coordinating foraging), which is the overarching point of the passage.",
+  "distractorRationale": {
+    "A": "This choice accurately describes a detail from the passage — the mechanics of the waggle dance — but it is a supporting detail, not the main idea. The passage uses the dance mechanics to illustrate the broader point about colony coordination.",
+    "C": "The passage does mention that researchers decoded the dance, but this is presented as evidence supporting the claim about the dance's accuracy and function, not as the central focus of the passage.",
+    "D": "The role of scout bees is mentioned in the opening sentence as context, but it is not the main idea. The passage is primarily about the communication system itself and what it accomplishes for the colony."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1c4e7f2-9b3d-4a8e-c6f1-2d5b8e3a9c7f"
+  },
+  "hasImage": false
+}

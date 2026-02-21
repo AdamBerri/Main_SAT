@@ -1,0 +1,54 @@
+{
+  "id": "d5e9b2c4-6a1f-4d8b-a3e2-8c4f7b1d9e5a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "Two groups of students took the same standardized test. Group A scored: 55, 65, 75, 85, 95. Group B scored: 71, 73, 75, 77, 79. A teacher claims that because both groups have the same median score, their performance was equally consistent. Which of the following statements best evaluates the teacher's claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The claim is correct because both groups have a median of 75 and the same number of students.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The claim is incorrect because Group A has a greater range and greater standard deviation than Group B, indicating Group A's scores are more spread out.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The claim is incorrect because Group B has a greater range than Group A, indicating Group B's scores are more spread out.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The claim is correct because the mean of both groups is 75, so the average performance is the same.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "STEP A — Sort Group A: {55, 65, 75, 85, 95}. Sort Group B: {71, 73, 75, 77, 79}. Both are already sorted.\n\nSTEP B — Mean of Group A: sum = 55 + 65 + 75 + 85 + 95 = 375; mean = 375 ÷ 5 = 75. Mean of Group B: sum = 71 + 73 + 75 + 77 + 79 = 375; mean = 375 ÷ 5 = 75. Both groups have mean 75.\n\nSTEP C — Median of Group A: n = 5, position = 3rd value = 75. Median of Group B: n = 5, position = 3rd value = 75. Both have median 75.\n\nSTEP E — Range of Group A: 95 − 55 = 40. Range of Group B: 79 − 71 = 8.\n\nSTEP F — Standard deviation (conceptual): Standard deviation measures how far values typically lie from the mean. Group A's values (55, 65, 75, 85, 95) are 20 units apart from each other and span 40 units. Group B's values (71, 73, 75, 77, 79) are only 2 units apart and span 8 units. Because Group A has a much larger spread around the same mean (75), Group A has a substantially larger standard deviation. Larger spread = larger standard deviation.\n\nSTEP H — The teacher's claim that equal medians implies equal consistency is incorrect. Consistency is measured by spread (range, standard deviation), not center (median or mean). Group A has range 40 vs. Group B's range 8, so Group A is far less consistent. This matches choice B.\n\nSTEP I — Distractor analysis:\n- Choice A (claim is correct based on same median): Misconception type (c) — statistic confusion. The student confuses a measure of center (median) with a measure of spread (consistency/variability). Same median does not imply the same spread.\n- Choice C (Group B has greater range): Misconception type (d) — direction reversal. A student who understands that range measures spread but calculates or recalls ranges incorrectly might swap the two groups, assigning the larger range to Group B.\n- Choice D (claim is correct based on same mean): Misconception type (c) — statistic confusion. The student recognizes that both groups happen to have the same mean (75) and conflates average performance with consistent performance, ignoring how spread out the values are around that mean.",
+  "distractorRationale": {
+    "A": "Statistic confusion: the student treats a measure of center (median) as if it were a measure of consistency (spread), not recognizing that two datasets can share the same median while differing dramatically in how spread out their values are.",
+    "B": "Correct. Both groups share the same median (75) and the same mean (75), but Group A has a range of 40 compared to Group B's range of 8. Because Group A's values are much more spread out from the center, Group A has a larger standard deviation and is less consistent. Equal medians do not imply equal variability.",
+    "C": "Direction reversal: the student correctly identifies that range is the relevant measure of spread but swaps the two groups, incorrectly stating that Group B has the greater range. Group A's range (40) is five times Group B's range (8).",
+    "D": "Statistic confusion: the student notices that both groups share the same mean (75) and equates average performance with consistency, not recognizing that a mean describes the center of a distribution, not how tightly clustered the values are around that center."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3f6b1d8-5e2a-4c9f-b4d1-9a7e3c2f8b6d"
+  }
+}

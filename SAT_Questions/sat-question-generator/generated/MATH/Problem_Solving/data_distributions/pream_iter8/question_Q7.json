@@ -1,0 +1,54 @@
+{
+  "id": "c4e8b1f2-5d96-4e0b-9a23-2f7c4b0e6d58",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "A data set contains five values: 3, 7, 11, 15, and 19. If the value 9 is added to the data set, what is the median of the new six-value data set?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "8",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "9",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "10",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "11",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "STEP A — Sort the original data set: 3, 7, 11, 15, 19.\n\nSTEP B — Original mean: sum = 3 + 7 + 11 + 15 + 19 = 55; mean = 55/5 = 11.\n\nSTEP C — Original median: position = (5+1)/2 = 3rd value = 11.\n\nSTEP D — No mode.\n\nSTEP E — Original range: 19 − 3 = 16.\n\nSTEP G — After adding 9, re-sort the data set: 3, 7, 9, 11, 15, 19 (6 values).\nFor an even count, the median equals the average of the two middle values.\nMiddle positions: 3rd value and 4th value.\n3rd value = 9; 4th value = 11.\nMedian = (9 + 11) / 2 = 20 / 2 = 10.\n\nSTEP H — The correct answer is 10, which matches choice C.\n\nSTEP I — Distractor analysis:\nA (8): Off-by-one position error. The student identifies that an even-count list requires averaging two middle values, but uses positions 2 and 3 of the new sorted list instead of positions 3 and 4: (7 + 9) / 2 = 8. This targets students who are unsure of the exact position formula for even-count medians.\nB (9): Odd-count formula applied to even-count list. The student re-sorts correctly to get {3, 7, 9, 11, 15, 19} but then uses the formula for an odd number of values — taking the single value at position (6+1)/2 = 3.5, which they round down to position 3 — and reports the 3rd value, 9, as the median.\nD (11): Statistic-unchanged misconception. The student recalls that the original median is 11 and reasons that since 9 is less than 11, adding it below the current median cannot raise the median. They conclude the median stays at 11, failing to account for the change in list length from 5 to 6 values that shifts the median's position.",
+  "distractorRationale": {
+    "A": "Off-by-one position error: student averages the 2nd and 3rd values of the new sorted list {3, 7, 9, 11, 15, 19} instead of the 3rd and 4th, computing (7+9)/2 = 8.",
+    "B": "Odd-count formula on even-count list: student re-sorts correctly but applies the odd-list median rule, taking the single value at position (6+1)/2 rounded to 3, giving the 3rd value = 9.",
+    "C": "Correct: new sorted set is {3, 7, 9, 11, 15, 19}; median = (9 + 11)/2 = 10.",
+    "D": "Statistic-unchanged misconception: student reasons that inserting a value below the current median (11) cannot change the median, so they report 11. This ignores the shift in median position caused by increasing n from 5 to 6."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2b3c4d5-e6f7-8901-bcde-f23456789012"
+  }
+}

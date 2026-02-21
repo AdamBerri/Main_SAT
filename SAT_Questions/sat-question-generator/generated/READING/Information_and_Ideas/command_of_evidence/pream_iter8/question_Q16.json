@@ -1,0 +1,57 @@
+{
+  "id": "b3e7f2a1-4c8d-4b9e-a3f1-7d5c2e8a9b4f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "linguistic": 4.3
+  },
+  "passage": "Researchers studying the cognitive effects of urban noise pollution have long debated whether prolonged exposure impairs executive function or merely disrupts short-term attention. A 2021 longitudinal study tracked 340 adults living within 500 meters of major traffic arteries in three European cities over a five-year period. Participants completed annual assessments of working memory, inhibitory control, and sustained attention. By the third year of the study, participants in the highest noise-exposure quartile showed a 14% decline in working memory scores relative to their own baseline, compared to a 3% decline in the lowest-exposure quartile. Inhibitory control scores, however, diverged less sharply: the highest-exposure group declined 9% while the lowest-exposure group declined 6%. The authors noted that traffic noise levels above 65 decibels were particularly associated with working memory degradation, with each additional 5-decibel increment above that threshold correlating with an approximately 2.1% additional decline. Participants who reported habitual use of hearing protection or white-noise masking devices showed attenuated declines across all measures, though the effect was most pronounced for working memory. A separate analysis controlling for socioeconomic status and baseline cognitive reserve found that the working memory divergence between exposure quartiles persisted, while the inhibitory control gap diminished to statistical non-significance.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 198,
+    "source": "Adapted from a synthesis of urban environmental health research, 2022"
+  },
+  "stem": "A researcher argues that chronic exposure to high levels of traffic noise specifically degrades working memory rather than executive function broadly. Which quotation from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Inhibitory control scores, however, diverged less sharply: the highest-exposure group declined 9% while the lowest-exposure group declined 6%.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"By the third year of the study, participants in the highest noise-exposure quartile showed a 14% decline in working memory scores relative to their own baseline, compared to a 3% decline in the lowest-exposure quartile.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"A separate analysis controlling for socioeconomic status and baseline cognitive reserve found that the working memory divergence between exposure quartiles persisted, while the inhibitory control gap diminished to statistical non-significance.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "\"Participants who reported habitual use of hearing protection or white-noise masking devices showed attenuated declines across all measures, though the effect was most pronounced for working memory.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The claim asserts that traffic noise specifically degrades working memory rather than executive function broadly. Choice C is the most direct support because it presents a controlled analysis that simultaneously confirms working memory degradation persists AND shows that the inhibitory control effect (another component of executive function) disappears — directly establishing the specificity the claim requires. This single excerpt provides the complete comparative picture: working memory is selectively affected while broader executive function deficits are not sustained under rigorous controls. No other choice accomplishes this with equal directness: Choice B shows only that working memory declines with exposure, without comparing it to other executive function components. Choice A shows inhibitory control diverges less sharply but does not show whether that divergence is meaningful after controls. Choice D addresses mitigation rather than the comparative specificity of the effect.",
+  "distractorRationale": {
+    "A": "This choice does show that inhibitory control is less affected than working memory, which partially supports the claim. However, it does not confirm whether the inhibitory control difference is statistically meaningful or merely smaller — without that context, it cannot establish that noise specifically degrades working memory rather than executive function broadly.",
+    "B": "This choice provides strong quantitative evidence that working memory is substantially impaired by noise exposure, but it speaks only to working memory in isolation. It does not address whether other components of executive function are similarly or less affected, so it does not establish the 'specific' degradation the claim asserts.",
+    "C": "Correct. The controlled analysis simultaneously shows that the working memory effect persists while the inhibitory control gap disappears — directly demonstrating that noise specifically impairs working memory, not executive function as a whole.",
+    "D": "This choice notes that protective interventions most benefit working memory, which is consistent with the claim but does not directly prove specificity. The phrase 'attenuated declines across all measures' actually suggests broad effects exist, making this a weaker support for the narrower claim."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4f8e1a3-7d2b-4e9f-8c1a-5b3d7e2f9a6c"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "d4a8f2c6-9e3b-4d1f-8a7c-2b5e9f3a1d8c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "What separates a genuinely transformative work of art from one that merely rehearses existing aesthetic conventions is often difficult to specify in advance of the transformation itself. Critics and artists alike have noted that truly radical departures in form tend to appear, at first, as violations rather than innovations — their governing logic is visible only in retrospect, once the work has reorganized the perceptual habits of its audience. The art object, in this view, does not so much communicate a meaning as it constitutes one, producing the very criteria by which it must eventually be assessed.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 100,
+    "source": "Adapted from an essay in aesthetic theory"
+  },
+  "stem": "As used in the passage, \"constitutes\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "forms",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "represents",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "authorizes",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "comprises",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage argues that the art object does not merely transmit a pre-existing meaning but actually brings a meaning into existence — 'producing the very criteria by which it must eventually be assessed.' The word 'constitutes' appears in the claim that the work 'constitutes' a meaning rather than communicating one, meaning it actively creates or forms that meaning. The contrast drawn is between communication (transmitting something already existing) and constitution (actively generating or forming something new). 'Forms' captures this generative, creative act: the work brings the meaning into being. 'Represents' would suggest the work stands in for something that already exists; 'authorizes' would suggest the work gives permission or legal standing; 'comprises' means to be made up of component parts, which misrepresents the passage's causal, generative claim about what the art object does.",
+  "distractorRationale": {
+    "A": "Correct. 'Forms' captures the passage's claim that the art object actively brings a meaning into existence, rather than transmitting or representing one that pre-exists it.",
+    "B": "'Represents' is a standard meaning of 'constitute' in some contexts (e.g., 'this constitutes evidence'), but in the passage it is explicitly contrasted with 'communicate' — the point is that the work does not merely stand in for or point to a meaning, it produces one.",
+    "C": "'Authorizes' — meaning to give official permission or legal sanction — is not a standard meaning of 'constitute' and has no support from the passage context, which is concerned with meaning-making, not permission or legality.",
+    "D": "'Comprises' means to consist of or be made up of parts (e.g., 'the committee comprises five members'). While related to constitution in a loose sense, it describes composition of existing elements, not the active creation of something new, which is what the passage argues the work does."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4c8b2f6-1e9a-4d7c-8f3b-5a2e1c9d4f7b"
+  },
+  "hasImage": false
+}

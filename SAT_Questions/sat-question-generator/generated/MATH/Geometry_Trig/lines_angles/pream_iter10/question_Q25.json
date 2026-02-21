@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0019-4aaa-b019-000000000025",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 4.8
+  },
+  "stem": "Five angles meet at a point: $(2x + 10)°$, $(3x - 20)°$, $(x + 40)°$, $(4x - 30)°$, and $y°$. Two of these angles are vertical angles: $(2x + 10)°$ and $(x + 40)°$. What is the value of $y$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$30$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$60$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$90$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$70$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Since $(2x+10)°$ and $(x+40)°$ are vertical angles, they are equal: $2x + 10 = x + 40$, so $x = 30$. The five angles around a point sum to $360°$: $(2(30)+10) + (3(30)-20) + (30+40) + (4(30)-30) + y = 360$. This gives $70 + 70 + 70 + 90 + y = 360$, so $300 + y = 360$, thus $y = 60$.",
+  "distractorRationale": {
+    "A": "Reported $x = 30$ instead of $y$.",
+    "B": "Correct. $y = 60$.",
+    "C": "Found the angle $4(30)-30 = 90$ instead of $y$.",
+    "D": "Found one of the other angles ($70°$) instead of $y$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T03:28:52.372Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0019-4000-a019-000000000025"
+  }
+}

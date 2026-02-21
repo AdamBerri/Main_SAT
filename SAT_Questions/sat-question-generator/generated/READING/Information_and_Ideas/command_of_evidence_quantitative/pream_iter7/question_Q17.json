@@ -1,0 +1,82 @@
+{
+  "id": "12308a37-5821-4892-998c-a55249c8cc78",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "A public health study tracked hospital readmission rates for patients who participated in post-discharge follow-up programs compared to those who did not. The researchers contend that structured follow-up care is most beneficial for patients with chronic conditions, producing a larger reduction in readmissions for this group than for patients without chronic conditions.",
+  "stem": "Which choice most effectively uses data from the figure to support the researchers' contention?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Among chronic-condition patients, those in follow-up programs had a 12% readmission rate versus 31% for non-participants (a 19-point reduction), while among non-chronic patients, participants had a 7% rate versus 14% for non-participants (a 7-point reduction).",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Non-chronic patients in follow-up programs had a readmission rate of 7%, which was lower than the 12% rate for chronic-condition patients in the same programs.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Chronic-condition patients who did not participate in follow-up programs had a 31% readmission rate, the highest of any group in the study.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Follow-up program participants had lower readmission rates than non-participants in both the chronic group (12% vs. 31%) and non-chronic group (7% vs. 14%).",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that follow-up care produces a LARGER reduction for chronic-condition patients than for non-chronic patients. Choice A quantifies the reduction for both groups (19 points vs. 7 points), directly showing the chronic group benefits more. Choice B compares the two program-participant groups but doesn't address the magnitude of reduction. Choice C only highlights one statistic. Choice D shows both groups benefit but doesn't compare the magnitude of the reductions.",
+  "distractorRationale": {
+    "A": "Correct: calculates and compares the readmission reduction for both patient groups, showing the chronic group's 19-point drop exceeds the non-chronic group's 7-point drop.",
+    "B": "Wrong (wrong comparison): compares chronic vs. non-chronic patients within the follow-up group, showing non-chronic patients have lower rates overall, which doesn't address the relative benefit of the program.",
+    "C": "Wrong (incomplete evidence): cites only the highest readmission rate without comparing it to the follow-up group or to non-chronic outcomes.",
+    "D": "Wrong (incomplete evidence): shows the program helps both groups but fails to compare the magnitude of reduction, which is the specific claim being tested."
+  },
+  "hasImage": true,
+  "imageDescription": "Grouped bar chart titled 'Hospital Readmission Rates by Patient Type and Follow-Up Status.' X-axis: Patient Type (Chronic Conditions, Non-Chronic). Two bars per category: Follow-Up Program (green) and No Follow-Up (red). Chronic Conditions: Follow-Up = 12%, No Follow-Up = 31%. Non-Chronic: Follow-Up = 7%, No Follow-Up = 14%. Source: National Health Services Research Institute, 2024.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Hospital Readmission Rates by Patient Type and Follow-Up Status",
+    "data": {
+      "categories": [
+        "Chronic Conditions",
+        "Non-Chronic"
+      ],
+      "series": {
+        "Follow-Up Program": [
+          12,
+          7
+        ],
+        "No Follow-Up": [
+          31,
+          14
+        ]
+      },
+      "unit": "percentage",
+      "yAxisLabel": "Readmission Rate (%)",
+      "xAxisLabel": "Patient Type"
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 68,
+    "source": "Adapted from National Health Services Research Institute outcomes study"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.983Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "20bec83c-47ce-42a9-97aa-e0e17a113195"
+  }
+}

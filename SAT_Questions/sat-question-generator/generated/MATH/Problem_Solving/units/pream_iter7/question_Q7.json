@@ -1,0 +1,54 @@
+{
+  "id": "c4d8e2f3-0a95-4b67-bf23-1d4e9c6f8a01",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "A specialty grocery store sells imported olive oil at $8.80 per liter. A customer wants to purchase 500 milliliters of olive oil. What is the cost of 500 milliliters? (1 liter = 1,000 milliliters)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2.20",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$4.40",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$8.80",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$17.60",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To find the cost of 500 mL, first convert 500 mL to liters, then multiply by the price per liter.\n\nStep 1: Convert milliliters to liters.\n$$500 \\text{ mL} \\times \\frac{1 \\text{ L}}{1{,}000 \\text{ mL}} = 0.5 \\text{ L}$$\n\nStep 2: Multiply by the price per liter.\n$$0.5 \\text{ L} \\times \\frac{\\$8.80}{1 \\text{ L}} = \\$4.40$$\n\nThe cost is **$4.40**.",
+  "distractorRationale": {
+    "A": "Choice A ($2.20) results from using an incorrect conversion of 1 L = 2,000 mL, so the student calculates $500 \\div 2{,}000 = 0.25$ L, then $0.25 \\times \\$8.80 = \\$2.20$. The student doubled the correct denominator, treating 500 mL as one-quarter of a liter instead of one-half.",
+    "B": "Choice B ($4.40) is the correct answer.",
+    "C": "Choice C ($8.80) results from using the incorrect conversion 1 L = 500 mL, leading the student to treat 500 mL as exactly 1 full liter: $1 \\text{ L} \\times \\$8.80 = \\$8.80$. The student uses the purchased volume as the conversion denominator, effectively making no conversion.",
+    "D": "Choice D ($17.60) results from inverting the conversion factor — the student treats 500 mL as 2 liters (dividing 1,000 by 500 instead of 500 by 1,000): $2 \\text{ L} \\times \\$8.80 = \\$17.60$. This is a reciprocal error in the unit conversion."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2b3c4d5-6e7f-8091-a2b3-c4d5e6f7a8b9"
+  }
+}

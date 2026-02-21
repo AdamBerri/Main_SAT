@@ -1,0 +1,58 @@
+{
+  "id": "b8c9d0e1-8888-4b4c-5d6e-7f8a9b0c1d23",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "Archaeological evidence from a site in Turkey indicates that residents of the ancient settlement cultivated barley and lentils as early as 8000 BCE. Tools for grinding grain have been found alongside storage vessels capable of holding several months' supply of dried food. _______ the discovery of elaborate clay figurines and wall paintings in the same settlement layers suggests that these early farmers had already developed sufficient surplus to devote time to activities beyond subsistence.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 88,
+    "source": "Adapted from an archaeological research paper"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Moreover,",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "However,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "For instance,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Instead,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage builds a case about the settlement's sophistication: first, evidence of agriculture and food storage, then evidence of artistic production that extends the argument further. The figurines and paintings are not merely another example of farming activity but represent an additional, stronger line of evidence that the settlement had advanced beyond mere subsistence. 'Moreover' correctly signals this escalation of evidence.",
+  "distractorRationale": {
+    "A": "Correct. 'Moreover' signals that the discovery of artistic artifacts adds to and strengthens the evidence of the settlement's agricultural surplus and development beyond subsistence.",
+    "B": "'However' signals contrast, but the artistic discoveries support and extend the evidence of agricultural sophistication rather than contradicting it.",
+    "C": "'For instance' introduces a specific example of a general claim. The figurines are not an example of grain tools or storage vessels; they represent a different category of evidence that deepens the argument.",
+    "D": "'Instead' signals replacement or substitution, but the artistic evidence supplements rather than replaces the agricultural evidence."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:03:02.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b8888888-c9d0-4e1f-2a3b-4c5d6e7f8a90"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,38 @@
+{
+  "id": "a1b2c3d4-a010-4a6b-8c7d-9e0f1a2b3c10",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "A circular patio has a diameter of 14 feet. What is the area, in square feet, of the patio?",
+  "choices": [
+    { "label": "A", "text": "$196\\pi$", "isCorrect": false },
+    { "label": "B", "text": "$14\\pi$", "isCorrect": false },
+    { "label": "C", "text": "$49\\pi$", "isCorrect": true },
+    { "label": "D", "text": "$7\\pi$", "isCorrect": false }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The area of a circle is $A = \\pi r^2$. The diameter is 14 feet, so the radius is $r = 7$ feet. $A = \\pi(7)^2 = 49\\pi$ square feet. The answer is C.",
+  "distractorRationale": {
+    "A": "Uses the diameter instead of the radius: $\\pi(14)^2 = 196\\pi$.",
+    "B": "Uses the circumference formula with the radius: $2\\pi(7) = 14\\pi$.",
+    "C": "Correct. $\\pi(7)^2 = 49\\pi$.",
+    "D": "Omits the exponent on $r$: $\\pi(7) = 7\\pi$ instead of $\\pi(7)^2$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:10.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-a010-4d5e-8f9a-0b1c2d3e4f10"
+  }
+}

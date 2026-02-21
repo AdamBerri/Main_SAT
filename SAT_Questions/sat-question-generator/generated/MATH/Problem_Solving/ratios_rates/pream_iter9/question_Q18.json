@@ -1,0 +1,54 @@
+{
+  "id": "e7a2d056-8b3f-4c15-92e7-3d0f1b589c34",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "A café blends two types of coffee beans in a ratio of 3 to 5 by weight. Beans from Region A cost $12 per pound and beans from Region B cost $8 per pound. The region-A beans are the smaller portion of the blend. If the café needs 48 pounds of this blend, what is the total cost of the beans?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$216",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$456",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$480",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$504",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The blend uses Region A to Region B beans in a 3:5 ratio, so Region A is the smaller portion.\n\nStep 1: Find the total number of parts.\n$$3 + 5 = 8 \\text{ parts total}$$\n\nStep 2: Find the weight of each type in 48 pounds of blend.\n- Region A beans: $\\frac{3}{8} \\times 48 = 18$ pounds\n- Region B beans: $\\frac{5}{8} \\times 48 = 30$ pounds\n\nVerification: $18 + 30 = 48$ pounds ✓\n\nStep 3: Calculate the cost of each type.\n- Region A cost: $18 \\times \\$12 = \\$216$\n- Region B cost: $30 \\times \\$8 = \\$240$\n\nStep 4: Find total cost.\n$$\\$216 + \\$240 = \\$456$$\n\nVerification: $216 + 240 = 456$ ✓",
+  "distractorRationale": {
+    "A": "Error type: 'Stopped at intermediate value' — student correctly calculates the cost of Region A beans ($216) but stops there, reporting this as the total cost rather than adding Region B's cost. Wrong step: student computes $18 \\times \\$12 = \\$216$ and reports this as the final answer instead of adding $30 \\times \\$8 = \\$240$. Wrong calculation: $18 \\times 12 = 216$, reported as total. This produces $216.",
+    "B": "This is the correct answer. Region A: $\\frac{3}{8} \\times 48 = 18$ lbs at $12/lb = $216. Region B: $\\frac{5}{8} \\times 48 = 30$ lbs at $8/lb = $240. Total = $456.",
+    "C": "Error type: 'Used ratio of totals instead of ratio of rates' — student computes a simple average of the two prices and applies it uniformly to all 48 pounds, ignoring the 3:5 weighting. Wrong step: student uses $\\frac{12 + 8}{2} = \\$10$ per pound instead of the ratio-weighted cost. Wrong calculation: $48 \\times 10 = \\$480$. This produces $480.",
+    "D": "Error type: 'Wrong term selected from ratio' — student correctly determines the total weight of each type (18 lbs and 30 lbs) but assigns the higher-cost price to the larger quantity instead of the smaller one. Wrong step: student uses 30 lbs × $12 and 18 lbs × $8 instead of 18 lbs × $12 and 30 lbs × $8. Wrong calculation: $30 \\times 12 + 18 \\times 8 = 360 + 144 = \\$504$. This produces $504."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3a6c910-49d8-4f27-a0b5-2e91c0145678"
+  }
+}

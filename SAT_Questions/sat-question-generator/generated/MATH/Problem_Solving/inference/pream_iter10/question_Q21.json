@@ -1,0 +1,54 @@
+{
+  "id": "b3e7f9a2-1c4d-4e8b-9f3a-5d2c6b8e1a7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A university researcher randomly selected 400 students from a college of 8,000 and surveyed them about weekly study hours. The sample had a mean of 18.5 hours and a standard deviation of 6.2 hours. The researcher then randomly selected 100 of these 400 students for a follow-up interview. Of the 100 interviewed, 64 reported that their study hours had increased since the start of the semester. The researcher concludes that approximately 5,120 students in the college increased their study hours since the start of the semester. Which of the following identifies the most significant flaw in this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The follow-up inference is based on only 100 students drawn from a subgroup of the original sample, so the population being represented is the 400-student sample, not the full college of 8,000.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The original sample of 400 students is too small relative to the college population of 8,000 to support any generalizations about study habits.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Calculating 64% of 8,000 requires assumptions about the distribution of students across different majors, making the arithmetic unreliable.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The standard deviation of 6.2 hours indicates that study hours vary too widely across students to draw conclusions about the proportion who increased their hours.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The researcher's error is a subtle but critical misidentification of the relevant population. The 100 students interviewed in the follow-up were randomly selected from the 400-student original sample — not from the entire college of 8,000. A random subsample from a sample is representative of that sample, not necessarily of the broader population. Scaling 64% (64 out of 100) up to 8,000 treats the 100-student group as if it were drawn directly from the college population, but it was drawn from the 400-student pool. While the 400-student sample itself was randomly drawn from the college, the inference chain here introduces a second sampling step that breaks the direct link from the 100 interviewed to the 8,000 students. To validly generalize to 8,000, the 100 interviewees would need to have been randomly selected from the full college population. Choice A correctly identifies this flaw: the second-stage sample represents the original 400-student pool, not the 8,000-student college.",
+  "distractorRationale": {
+    "A": "Correct. The 100-student follow-up subsample was drawn from the 400-person sample, not directly from the 8,000-student population. Scaling to 8,000 misidentifies the population that the subsample represents.",
+    "B": "Incorrect. This invokes sample size misapplication — a 5% sample (400 out of 8,000) is statistically adequate for generalizations. The flaw is not that the original sample is too small but that the second-stage subsample is being misapplied to the wrong population.",
+    "C": "Incorrect. The arithmetic (64% × 8,000 = 5,120) is internally consistent. The problem is not computational; it is a methodological error about which population the 100-student subsample actually represents.",
+    "D": "Incorrect. This conflates distributional spread (standard deviation of study hours) with the validity of a proportion estimate. The standard deviation describes variation in continuous study hours, not the reliability of the binary proportion who increased their hours. These are separate statistical quantities."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4f8a1e3-7b2d-4c9e-8f5a-1d3b6e9c2a4f"
+  }
+}

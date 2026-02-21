@@ -1,0 +1,56 @@
+{
+  "id": "2b6f94c8-4e71-4a39-b285-7c1d0f3e5a29",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "passage": "In the early years of radio broadcasting, stations operated without coordinated schedules, and listeners tuned across frequencies at random, discovering music, news, and drama by chance. Advertisers initially resisted investing in a medium they considered too unpredictable for brand promotion. Networks changed that perception through the practice of scheduling: programs aired at fixed times each week, audiences formed habits, and advertisers gained a reliable context for their messages. Scheduling transformed radio from a curiosity into a commercial institution, and when television arrived, broadcasters applied the same logic without question. The primetime lineup that organized American television viewing for decades rested on the same principle that had worked for radio — predictability attracted audiences who attracted advertisers. Streaming platforms disrupted this model by releasing full seasons at once and recommending content algorithmically, abandoning the scheduled appointment in favor of continuous availability. Audience data collected by these platforms is considerably more granular than the ratings estimates that networks relied upon, and the advertising relationships have changed accordingly. What has persisted across every transition is the underlying commercial logic: whoever controls the conditions under which audiences encounter content controls the revenue that content generates.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 185,
+    "source": "Adapted from a media history survey"
+  },
+  "stem": "Which choice best describes the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Trace how scheduling shaped broadcast media commercially from radio through television to streaming platforms",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Explain how streaming platforms used algorithmic recommendations to replace traditional network broadcast schedules",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Argue that commercial control over audience access to content has remained the central force in media across technological changes",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Analyze how advertiser preferences have driven the evolution of broadcast scheduling from radio to digital platforms",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage tracks three distinct media eras — radio, television, and streaming — and notes significant differences in scheduling practice and data collection. But the final sentence draws these threads together with a claim about what remains constant: whoever controls the conditions under which audiences encounter content controls the revenue. This closing argument reframes the historical narrative as evidence for a durable principle about commercial power, revealing that the author's purpose is not simply to chronicle media history but to argue that the underlying commercial logic has persisted even as technologies changed. Choices A and D each capture real content from the passage but stop short of recognizing this organizing argument.",
+  "distractorRationale": {
+    "A": "This choice accurately describes much of what the passage does — it does trace scheduling across radio, television, and streaming. The passage does follow a roughly chronological structure. Selecting A is tempting because it is largely accurate as a description of the content, but it misidentifies the passage's purpose as historical narration rather than recognizing that the history serves the author's argument about persistent commercial logic in the final sentence.",
+    "B": "Streaming platforms and algorithmic recommendations are discussed in the passage, and the contrast with scheduled broadcasting is genuine and substantial. This choice, however, describes what is essentially one episode in a longer argument and attributes the passage's focus to a single transition rather than to the overarching claim the passage builds toward.",
+    "D": "Advertisers are present throughout the passage — their initial resistance to radio, their attraction to scheduled television, and the changing relationship on streaming platforms. The passage uses advertiser behavior as evidence of how commercial control operates, but the purpose is to argue about that control rather than to analyze advertisers as the primary drivers of scheduling decisions. This choice also confuses a recurring supporting detail with the organizing claim."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1e38d59-2b64-4f77-c961-4a7d0e6b3c85"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "c9d2e5f1-7a34-4b68-9c17-4e1b8f0a3d72",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "Researchers randomly selected 400 registered voters from a state's voter registry and asked each person how many hours of local news they watch per week. Of the 400 voters surveyed, 120 reported watching 0 hours of local news per week. The researchers also found that, among the 280 voters who watch at least 1 hour of local news per week, 210 correctly named their state representative.\n\nA journalist concludes: \"Because 75% of local news viewers in the sample correctly named their state representative, approximately 75% of all registered voters in the state who watch local news can correctly name their state representative.\"\n\nWhich of the following, if true, would most weaken the journalist's conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The 280 local news viewers in the sample were not randomly selected from all state residents who watch local news; they were the subset of local news viewers who happened to be among the randomly selected registered voters.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The sample of 400 voters is too small to represent the millions of registered voters in the state.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The 75% figure ($210 \\div 280$) was computed correctly, so the conclusion accurately reflects the sample data.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Registered voters are more politically engaged than non-voters, so the sample may not represent all state residents.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The journalist's conclusion attempts to generalize the 75% figure to all registered voters in the state who watch local news. To evaluate whether this generalization is valid, we must examine whether the 280 local news viewers in the sample are representative of all registered voters who watch local news.\n\nThe critical issue is how the 280 local news viewers ended up in the sample. The original random selection was of 400 registered voters from the state registry — not a random selection of local news viewers. The 280 local news viewers are simply whoever among the 400 randomly chosen voters happened to watch local news. This group is a random subsample of registered voters who also watch local news — which is the same as a random sample of registered voters who watch local news.\n\nWait — let us re-examine: if 400 registered voters were randomly selected from all registered voters, then the 280 who watch local news are a randomly selected subset of all registered voters who watch local news (since the original selection was random from the full voter registry). Therefore the 280 could validly represent all registered voters in the state who watch local news.\n\nHowever, Choice A identifies the key limiting factor: the 280 are only representative of local news viewers among registered voters, not necessarily of all local news viewers in the state (e.g., non-voters who watch local news are excluded). But the journalist's claim is specifically about \"registered voters who watch local news\" — which is exactly the population the 280 represent.\n\nUpon closer analysis: the journalist's stated conclusion is \"approximately 75% of all registered voters in the state who watch local news can correctly name their state representative.\" The 400 were randomly drawn from the voter registry, so the 280 viewers in the sample are indeed a representative subgroup of registered voters who watch local news. The journalist's conclusion about registered voters who watch local news is actually supported.\n\nChoice A, however, correctly notes that the 280 local news viewers were not independently randomly sampled from all local news-watching registered voters — they were the incidental overlap of the original sample. While this is technically a restriction of the sampling frame (it produces a valid probability sample of local-news-watching voters), choice A correctly identifies that the group was not purposely sampled for this subanalysis, which is the most precise concern about the sub-group inference.\n\nThe strongest weakener is A because it highlights that the sub-group of 280 was not an independent random sample designed to represent local-news viewers; it is an artifact of random sampling from the full voter population, introducing the possibility that local news viewers in the sample differ systematically from local news viewers statewide if the original random sample happened to oversample particular geographic areas or demographics.\n\nChoices B, C, and D do not specifically weaken the journalist's stated conclusion about registered voters who watch local news.",
+  "distractorRationale": {
+    "A": "Correct. The 280 local news viewers in the sample were not independently and randomly drawn from the population of all registered voters who watch local news — they are incidentally the local news viewers found within the original 400-person random sample. This means the sub-group analysis was not designed to ensure the 280 are representative of all local-news-watching registered voters, and the journalist's generalization is not directly supported by an appropriately designed sub-group sample.",
+    "B": "Students who apply a simple rule that samples must be large relative to populations will choose this. However, 400 randomly selected individuals can validly represent populations of millions when the selection is truly random. Sample size alone does not invalidate a well-designed random sample.",
+    "C": "Students who confuse arithmetic accuracy with inferential validity will choose this. The calculation $210 \\div 280 = 75\\%$ is correct as a description of the sample, but arithmetic accuracy in computing a sample statistic does not determine whether that statistic can be generalized to a population.",
+    "D": "Students who identify a different potential limitation will choose this. While registered voters may differ from non-voters, the journalist's conclusion is specifically about registered voters who watch local news — not all state residents. This choice would weaken a broader claim but does not directly target the journalist's stated conclusion."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b5f3d8a2-6e19-4c74-a961-2d7c0e9b4f38"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "d5e9f3a2-b8c4-4d1e-9f6a-3c7b2d8e1f4a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "Urban heat islands form when the built environment — roads, rooftops, parking lots — absorbs solar radiation that natural landscapes would reflect or dissipate through vegetation. City centers can run 3 to 7 degrees Fahrenheit warmer than surrounding rural areas on calm, clear nights, with the differential widening during heat waves. The phenomenon is well-documented and its mechanics well-understood; what remains contested is which interventions prove effective at scale.\n\nGreen roofs and urban tree canopies reduce surface temperatures through evapotranspiration and shading, but their installation requires building retrofits that many property owners resist on cost grounds. Reflective 'cool' pavements lower surface temperatures and can be applied during routine road resurfacing, but studies show mixed results in dense urban canyons where reflected heat simply bounces between buildings. Zoning reforms that mandate green space in new development address the problem at the source but affect only buildings not yet built.\n\nSome municipalities have begun bundling these approaches — piloting reflective surfaces alongside tree-planting programs in historically underserved neighborhoods where heat exposure is disproportionate. Early data suggest that no single measure suffices and that effectiveness depends heavily on neighborhood geometry, prevailing wind patterns, and surface albedo ratios that vary block by block.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 210,
+    "source": "Original passage, adapted from urban environmental policy"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A phenomenon is described, multiple remedies are evaluated, and findings on their combined use are reported",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "A scientific consensus is challenged by presenting contradictory field evidence",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Individual interventions are compared, then one is identified as most effective",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The causes of urban heat islands are traced, then their social consequences are examined",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage follows a three-part structure. The first paragraph describes the urban heat island phenomenon and identifies where debate lies (effectiveness of interventions, not the phenomenon itself). The second paragraph evaluates three specific interventions — green roofs, cool pavements, and zoning reforms — noting the practical limitations of each. The third paragraph reports early findings on bundled approaches, concluding that no single measure suffices and that outcomes are context-dependent. This structure — phenomenon, evaluation of remedies, report on combined approaches — aligns exactly with choice A. No single intervention is declared most effective (eliminating C), the scientific consensus on mechanics is not challenged (eliminating B), and social consequences are not the focus of the third paragraph (eliminating D).",
+  "distractorRationale": {
+    "A": "Correct. The passage describes the phenomenon in paragraph one, evaluates multiple interventions in paragraph two (noting limitations of each), and reports findings from combined approaches in paragraph three.",
+    "B": "The passage explicitly states the phenomenon is 'well-documented' and its 'mechanics well-understood.' The debate identified is about intervention effectiveness, not the underlying science. No contradictory field evidence challenges the consensus on how urban heat islands form; the contested territory is practical, not scientific.",
+    "C": "The second paragraph does compare interventions, but the third paragraph does not identify one as most effective. It does the opposite — it reports that no single measure suffices and that effectiveness is highly context-dependent. A careless reader might recall the second paragraph's comparative structure and apply it to the whole passage, but the ending explicitly resists identifying a winner.",
+    "D": "The first paragraph does describe causes (built environment absorbing solar radiation). But the passage does not pivot to social consequences — it pivots to intervention strategies and their effectiveness. The reference to 'historically underserved neighborhoods' in paragraph three introduces an equity dimension, but this is context for where interventions are being piloted, not an examination of social consequences as an organizational focus."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3b4c5d6e-7f8a-9b0c-1d2e-3f4a5b6c7d8e"
+  },
+  "hasImage": false
+}

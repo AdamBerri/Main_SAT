@@ -1,0 +1,59 @@
+{
+  "id": "a4b5c6d7-e8f9-4a0b-1c2d-3e4f5a6b7c8d",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- Electric vehicles (EVs) produce zero tailpipe emissions.\n- The average American drives about 13,500 miles per year.\n- Charging an EV costs roughly one-third as much as fueling a gasoline car for the same distance.\n- EV batteries typically last 200,000 miles or more before needing replacement.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 56,
+    "source": "Student research notes on electric vehicles"
+  },
+  "stem": "The student wants to argue that electric vehicles save drivers money over time. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Electric vehicles produce no tailpipe emissions, making them better for the environment than gasoline cars.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "With charging costs roughly one-third of gasoline fueling and batteries lasting over 200,000 miles, electric vehicles offer significant savings for drivers over the life of the car.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The average American drives about 13,500 miles per year, and EV batteries last at least 200,000 miles.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Electric vehicles are becoming more popular because they have long-lasting batteries and are cheaper to charge.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it combines two specific cost-related facts from the notes -- lower charging costs and long battery life -- to build a clear argument that EVs save drivers money over time. The other choices focus on emissions (A), list facts without making an argument (C), or make a vague claim about popularity (D).",
+  "distractorRationale": {
+    "A": "This choice focuses on environmental benefits rather than cost savings, which does not match the stated goal.",
+    "C": "This choice presents two facts side by side but does not connect them to form an argument about saving money.",
+    "D": "This choice asserts popularity and mentions relevant features but does not use specific data to argue for cost savings."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:07.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b5c6d7e8-f9a0-4b1c-2d3e-4f5a6b7c8d9e"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

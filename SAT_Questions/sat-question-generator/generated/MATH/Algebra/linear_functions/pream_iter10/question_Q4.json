@@ -1,0 +1,54 @@
+{
+  "id": "d7a2e4b9-1c5f-4e83-b0d6-7f9a3c2e5b81",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "computational": 1.2
+  },
+  "stem": "A swimming pool initially contains 200 gallons of water. Water is pumped into the pool at a constant rate of 50 gallons per minute. Which of the following functions $P$ gives the total number of gallons of water in the pool after $t$ minutes?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$P(t) = 200t + 50$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$P(t) = 50t + 200$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$P(t) = 50t - 200$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$P(t) = 200 - 50t$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "A linear function of the form $P(t) = mt + b$ is needed, where $m$ is the rate of change and $b$ is the initial value. The pool starts with 200 gallons, so the initial value (y-intercept) is 200. Water is added at 50 gallons per minute, so the rate of change (slope) is $+50$ (positive because water is increasing). Therefore, $P(t) = 50t + 200$.",
+  "distractorRationale": {
+    "A": "Swaps the slope and y-intercept: uses 200 as the rate of change and 50 as the initial amount, giving $P(t) = 200t + 50$.",
+    "B": "Correct: slope $= 50$ (gallons per minute added) and y-intercept $= 200$ (initial gallons), giving $P(t) = 50t + 200$.",
+    "C": "Uses the correct rate of 50 gallons per minute but subtracts the initial amount instead of adding it: $P(t) = 50t - 200$, which would give a negative initial value at $t = 0$.",
+    "D": "Interprets the situation as the pool draining rather than filling, reversing the sign of the slope: $P(t) = 200 - 50t$, which incorrectly decreases over time."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b5c6d7e8-9f0a-1b2c-3d4e-5f6a7b8c9d0e"
+  }
+}

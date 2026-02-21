@@ -1,0 +1,54 @@
+{
+  "id": "f7a2d4c6-8e1b-4f3d-c6a2-2b5e9f1c4d8a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "A school has two math classes. The morning class has 15 students with an average (mean) score of 72 on a recent exam. The afternoon class has 10 students with an average (mean) score of 87 on the same exam. What is the mean score of all 25 students combined?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "78",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "79.5",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "81",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "75",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "STEP A — The two data sets are the morning class (15 students, mean 72) and the afternoon class (10 students, mean 87).\n\nSTEP B — To find the combined mean, first find the total score for each class, then divide the combined total by the total number of students.\n\nMorning class total: 15 × 72 = 1,080.\nAfternoon class total: 10 × 87 = 870.\nCombined total: 1,080 + 870 = 1,950.\nCombined number of students: 15 + 10 = 25.\nCombined mean: 1,950 ÷ 25 = 78.\n\nSTEP C — No single median is requested; this is a mean problem only.\n\nSTEP F — Standard deviation is not relevant here.\n\nSTEP H — The combined mean is 78, which matches choice A.\n\nSTEP I — Distractor analysis:\n- Choice B (79.5): Misconception type (e) — partial computation. A student might average the two class totals (1,080 + 870 = 1,950) and then divide by 2 instead of 25, or compute (1,080 + 870) ÷ 2 × something intermediate. More likely: the student computes (72 + 87) / 2 = 79.5, treating the two means as equally weighted despite the different class sizes.\n- Choice C (81): Misconception type (a) — wrong operation on the statistic. A student might weight by the wrong group — for instance, taking 10 × 72 = 720 and 15 × 87 = 1,305, summing to 2,025, then dividing by 25 = 81. This error swaps the two class sizes, applying the smaller weight to the larger class and vice versa.\n- Choice D (75): Misconception type (e) — partial computation. A student might subtract the two means and halve the difference: 87 − 72 = 15, half of 15 = 7.5, then add it to 72 to get 79.5 (also leading to choice B), or might estimate 'somewhere between 72 and 87 but closer to 72' and land on 75 as a rough midpoint that ignores the actual class sizes entirely.",
+  "distractorRationale": {
+    "A": "Correct. The combined mean requires weighting each class mean by its size: (15 × 72 + 10 × 87) ÷ 25 = (1,080 + 870) ÷ 25 = 1,950 ÷ 25 = 78.",
+    "B": "Unweighted average error: the student computes (72 + 87) ÷ 2 = 79.5, treating both class means as equally important regardless of class size. This approach is valid only when both groups are the same size.",
+    "C": "Swapped weights error: the student correctly attempts a weighted average but accidentally assigns the morning class size (15) to the afternoon class and the afternoon class size (10) to the morning class, computing (10 × 72 + 15 × 87) ÷ 25 = (720 + 1,305) ÷ 25 = 2,025 ÷ 25 = 81.",
+    "D": "Estimation without weighting: the student estimates the combined mean as a rough midpoint between 72 and 87, arriving at approximately 79 or 75 without performing the weighted calculation. The answer 75 corresponds to adding 3 to 72, perhaps because 3/15 of the gap between the means was informally subtracted without a clear procedure."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5b8d3f2-7a4c-4e1b-d3f6-1c9b2e5a8d4f"
+  }
+}

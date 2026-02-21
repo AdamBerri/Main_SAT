@@ -1,0 +1,54 @@
+{
+  "id": "8d4f1e9a-6b3c-4a7e-c2f5-0e8b4d7f2c1a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "In triangle $ABC$, the angle bisector from vertex $A$ meets side $\\overline{BC}$ at point $D$, dividing it so that $BD = 6$ and $DC = 9$. If the area of triangle $ABD$ is $24$, what is the area of triangle $ABC$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$60$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$78$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$36$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$72$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Key insight: Triangles $ABD$ and $ACD$ share the same altitude drawn from vertex $A$ perpendicular to line $BC$. Let this altitude equal $h$.\n\nStep 1: Express the areas in terms of $h$.\n$$[\\triangle ABD] = \\tfrac{1}{2} \\cdot BD \\cdot h = \\tfrac{1}{2}(6)h = 3h$$\n$$[\\triangle ACD] = \\tfrac{1}{2} \\cdot DC \\cdot h = \\tfrac{1}{2}(9)h = \\tfrac{9h}{2}$$\n\nStep 2: Solve for $h$ using the given area.\n$$3h = 24 \\implies h = 8$$\n\nStep 3: Find the area of triangle $ACD$.\n$$[\\triangle ACD] = \\tfrac{9}{2} \\cdot 8 = 36$$\n\nStep 4: Find the area of triangle $ABC$.\n$$[\\triangle ABC] = [\\triangle ABD] + [\\triangle ACD] = 24 + 36 = 60$$\n\nNote: The ratio of the sub-triangle areas equals the ratio of the segments: $[ABD]/[ACD] = BD/DC = 6/9 = 2/3$, confirming $[ACD] = 24 \\cdot (3/2) = 36$.",
+  "distractorRationale": {
+    "A": "Correct. The two sub-triangles share height $h$ from $A$, so their areas are proportional to their bases: $[ACD] = [ABD] \\cdot (DC/BD) = 24 \\cdot (9/6) = 36$, giving $[ABC] = 60$.",
+    "B": "The student confuses the area-ratio property with the similar-triangle area ratio: using the Angle Bisector Theorem to find $AB/AC = BD/DC = 2/3$ and then (incorrectly) applying $[ACD]/[ABD] = (AC/AB)^2 = (3/2)^2 = 9/4$, giving $[ACD] = 24 \\cdot 9/4 = 54$ and $[ABC] = 24 + 54 = 78$.",
+    "C": "The student correctly computes $[ACD] = 24 \\cdot (DC/BD) = 24 \\cdot (9/6) = 36$ but then reports the area of $\\triangle ACD$ alone instead of the total area of $\\triangle ABC$.",
+    "D": "The student correctly finds $[ACD] = 36$ but then computes $[ABC] = 2 \\times [ACD] = 72$, doubling the larger sub-triangle instead of adding both sub-triangle areas together."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4a7e2f1-9c5b-4d3e-b8f0-6a1c4e7d2b9f"
+  }
+}

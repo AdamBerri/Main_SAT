@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "1697e214-23ec-45e4-8f66-616fc1522f0f",
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "The World Health Organization's 2023 report on antimicrobial resistance painted a grim picture of the future of infectious disease treatment. The report warned that if current trends continued, drug-resistant infections [1]_____ an estimated 10 million deaths per year by 2050, surpassing cancer as a leading cause of mortality worldwide.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 55,
+    "source": "Adapted from a global health policy analysis"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "would cause",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "will cause",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "caused",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "have caused",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "This question tests conditional mood in reported speech. The sentence contains a conditional structure within past-tense reported speech: 'warned that if current trends continued [past subjunctive]...infections [blank].' The conditional 'if + past tense' in the protasis requires 'would + base verb' in the apodosis: 'would cause.' This is a second conditional (hypothetical future) embedded in reported speech, requiring both the 'if' clause backshift and the correct modal in the result clause.",
+  "distractorRationale": {
+    "A": "Correct. 'Would cause' is the conditional appropriate for the 'if...continued' structure in reported speech.",
+    "B": "'Will cause' uses future rather than conditional. In the reported speech frame ('warned that if...continued'), the conditional 'would' is required, not the future 'will.'",
+    "C": "'Caused' is simple past, which doesn't create a proper conditional result clause. The 'if...continued' construction needs a modal in the result.",
+    "D": "'Have caused' is present perfect, which connects past to present and doesn't belong in a future-projecting conditional within past reported speech."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "fec089fd-4ee2-4ce0-af4b-e456e9ac9d11"
+  }
+}

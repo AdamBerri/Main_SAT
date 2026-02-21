@@ -1,0 +1,59 @@
+{
+  "id": "e4f5a6b7-c8d9-4e0f-1a2b-3c4d5e6f7a8b",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- In the 1930s, aggressive farming practices and prolonged drought turned large areas of the Great Plains into a dust bowl.\n- Massive dust storms stripped topsoil from millions of acres of farmland.\n- The ecological disaster displaced hundreds of thousands of families, many of whom migrated to California.\n- In response, the federal government established the Soil Conservation Service in 1935 to promote sustainable farming techniques such as crop rotation and contour plowing.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 78,
+    "source": "Student research notes on the Dust Bowl"
+  },
+  "stem": "The student wants to show how the Dust Bowl led to changes in agricultural policy. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The Dust Bowl displaced hundreds of thousands of families from the Great Plains, with many migrating to California in search of work.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Aggressive farming and drought in the 1930s caused massive dust storms that stripped topsoil from millions of acres across the Great Plains.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "After dust storms caused by aggressive farming destroyed millions of acres of topsoil, the federal government created the Soil Conservation Service in 1935 to promote sustainable techniques like crop rotation.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The Soil Conservation Service promoted sustainable farming techniques such as crop rotation and contour plowing on the Great Plains.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Choice C is correct because it connects the cause (dust storms from aggressive farming destroying topsoil) to the policy response (creation of the Soil Conservation Service to promote sustainable techniques), directly showing how the Dust Bowl led to changes in agricultural policy. Choice A focuses on human displacement, B describes only the disaster, and D describes only the policy without linking it to the disaster.",
+  "distractorRationale": {
+    "A": "This choice describes the human impact of the Dust Bowl but does not address changes in agricultural policy.",
+    "B": "This choice explains the causes and effects of the Dust Bowl but stops short of connecting the disaster to any policy change.",
+    "D": "This choice describes what the Soil Conservation Service did but does not explain that it was created in response to the Dust Bowl, missing the causal link."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:12.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f5a6b7c8-d9e0-4f1a-2b3c-4d5e6f7a8b9c"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

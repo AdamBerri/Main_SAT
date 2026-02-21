@@ -1,0 +1,57 @@
+{
+  "id": "5f2a8d4c-93b7-4e61-a148-6d0f3c9b2e57",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "The Sun is a medium-sized star at the center of our solar system. It generates energy through nuclear fusion hydrogen atoms in its core combine to produce helium and release tremendous heat. This energy eventually reaches Earth as light and warmth.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 49,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": ". Hydrogen atoms",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": ", hydrogen atoms",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "; and hydrogen atoms",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage as written is a fused (run-on) sentence: two independent clauses — 'It generates energy through nuclear fusion' and 'hydrogen atoms in its core combine to produce helium and release tremendous heat' — are run together with no punctuation between them. Choice B corrects this by placing a period after 'fusion,' which properly ends the first independent clause and begins the second as a new sentence.",
+  "distractorRationale": {
+    "A": "NO CHANGE leaves the sentence as a fused run-on. The two independent clauses ('It generates energy through nuclear fusion' and 'hydrogen atoms in its core combine to produce helium and release tremendous heat') require punctuation between them; omitting all punctuation is a fundamental sentence boundary error.",
+    "C": "Inserting only a comma between the two independent clauses creates a comma splice. A comma alone is insufficient to join two independent clauses; it must be paired with a coordinating conjunction or replaced by stronger punctuation such as a period or semicolon.",
+    "D": "A semicolon followed by the coordinating conjunction 'and' is a non-standard pairing. In Standard English, a semicolon connects two independent clauses on its own, without a coordinating conjunction following it. Using both together is redundant and incorrect."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "8b3d1f7e-5c42-4a89-9f06-1e8c7d4b2a63"
+  },
+  "hasImage": false
+}

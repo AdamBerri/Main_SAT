@@ -1,0 +1,57 @@
+{
+  "id": "a1f3c2d4-5e67-4b89-a012-bc3d4e5f6a7b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1.3
+  },
+  "passage": "Monarch butterflies (Danaus plexippus) undertake one of the most remarkable migrations in the animal kingdom. Each autumn, millions of monarchs travel up to 3,000 miles from their summer breeding grounds in the northern United States and Canada to overwintering sites in the oyamel fir forests of central Mexico. Unlike most migratory animals, no individual butterfly completes the round trip; it takes three to five generations to complete a full annual cycle.\n\nScientists have long sought to understand how monarchs navigate with such precision. Research published in the journal Current Biology found that monarchs use a time-compensated sun compass located in their antennae to orient their flight direction. When researchers covered the antennae of captive monarchs with black paint, the butterflies lost the ability to orient correctly and flew in random directions. Monarchs with uncovered antennae, by contrast, consistently oriented toward the southwest during the autumn migration period.\n\nHabitat loss poses a serious threat to monarch populations. Milkweed (Asclepias spp.), the only plant on which monarchs lay their eggs and that their caterpillars can eat, has declined dramatically across the United States. Agricultural expansion and herbicide use have eliminated an estimated 165 million acres of milkweed habitat since 1996. Monarch population counts at the Mexican overwintering sites dropped from approximately one billion individuals in the mid-1990s to fewer than 60 million in 2014.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 204,
+    "source": "Adapted from an overview of monarch butterfly biology and conservation"
+  },
+  "stem": "The passage states that monarch butterfly populations have declined significantly in recent decades. Which quotation from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Each autumn, millions of monarchs travel up to 3,000 miles from their summer breeding grounds in the northern United States and Canada to overwintering sites in the oyamel fir forests of central Mexico.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"When researchers covered the antennae of captive monarchs with black paint, the butterflies lost the ability to orient correctly and flew in random directions.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Agricultural expansion and herbicide use have eliminated an estimated 165 million acres of milkweed habitat since 1996.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"Monarch population counts at the Mexican overwintering sites dropped from approximately one billion individuals in the mid-1990s to fewer than 60 million in 2014.\"",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The claim is that monarch butterfly populations have declined significantly in recent decades. Choice D directly states that population counts dropped from approximately one billion in the mid-1990s to fewer than 60 million in 2014—a dramatic numerical decline that explicitly and directly supports the claim. No inference is required; the population decline is stated in concrete figures.",
+  "distractorRationale": {
+    "A": "This choice describes the distance and route of the monarch migration, which is about the behavior of the migration, not about population decline.",
+    "B": "This choice discusses an experimental finding about navigation, showing that antennae are essential for orientation—a different topic from population decline.",
+    "C": "This choice addresses a cause of the decline (milkweed habitat loss) rather than the decline in monarch populations itself. While related, it does not directly state that monarch populations have fallen."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2c4d6e8-1a3f-4c5d-8e7f-9a0b1c2d3e4f"
+  },
+  "hasImage": false
+}

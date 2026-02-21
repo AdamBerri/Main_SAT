@@ -1,0 +1,58 @@
+{
+  "id": "e8f1c3a7-2d5b-4e9c-8a4f-3b7d1c9e5a2b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "Most people assume that sleep is simply a time when the body rests. In fact, the sleeping brain is highly active. During slow-wave sleep, the brain replays the day's experiences, strengthening memories of what was learned. During REM sleep—the stage associated with vivid dreaming—the brain processes emotions and makes unexpected connections between stored information.\n\nResearchers have found that people who sleep after learning a new skill perform significantly better on tests of that skill than people who stay awake. A full night's sleep appears to consolidate learning in ways that waking practice cannot replicate. Sleep deprivation, by contrast, impairs not only attention but also the brain's ability to store and retrieve memories. Far from being idle, sleep actively supports the mental processes people depend on while awake.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 137,
+    "source": "Adapted from a neuroscience overview of sleep research"
+  },
+  "stem": "What is the passage mainly about?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Sleep deprivation harms memory and attention, making adequate sleep essential for academic and professional performance.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "REM sleep, the stage associated with dreaming, plays a more important role in brain function than slow-wave sleep.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Rather than a period of rest, sleep is an active process that consolidates learning and supports essential mental functions.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Research on sleep and skill learning shows that sleeping after practice leads to better performance than additional waking practice.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage opens by correcting a common misconception (sleep as mere rest) and then explains that the sleeping brain actively consolidates memories, processes emotions, and supports cognition. This correction of the rest misconception and the demonstration that sleep actively serves mental functions is the central claim the passage builds from beginning to end. Choice C captures both the corrective framing and the positive claim about sleep's active role.",
+  "distractorRationale": {
+    "A": "Sleep deprivation is mentioned in the second paragraph as supporting evidence, not as the passage's main subject. The passage emphasizes what sleep does, not primarily what its absence causes.",
+    "B": "The passage describes both slow-wave sleep and REM sleep as serving distinct functions; it never ranks one as more important than the other. This choice introduces a comparison not made in the passage.",
+    "C": "Correct. Captures the passage's corrective claim (sleep is not mere rest) and its substantive argument (sleep is an active process that consolidates learning and supports mental function).",
+    "D": "The skill-learning experiment is one piece of supporting evidence in the second paragraph. This choice accurately describes that detail but represents only a fraction of the passage's overall argument."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b6d4f8c2-1a5e-4b7f-9c3d-2e8a4f6b1c9d"
+  },
+  "hasImage": false
+}

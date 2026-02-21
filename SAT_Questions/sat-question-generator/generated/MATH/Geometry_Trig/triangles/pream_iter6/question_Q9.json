@@ -1,0 +1,54 @@
+{
+  "id": "71c3e048-8b5d-4d9a-a152-6e49f3c2b87a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "In triangle $XYZ$, an exterior angle at vertex $Z$ measures $115°$. If the measure of angle $X$ is $48°$, what is the measure of angle $Y$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$48°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$65°$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$67°$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$132°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "By the Exterior Angle Theorem, an exterior angle of a triangle equals the sum of the two non-adjacent interior angles. The exterior angle at $Z$ is $115°$, so: $$\\angle X + \\angle Y = 115°$$ $$48° + \\angle Y = 115°$$ $$\\angle Y = 67°$$",
+  "distractorRationale": {
+    "A": "The student assumes the triangle is isosceles and incorrectly states that $\\angle Y = \\angle X = 48°$, without using either the exterior angle or the angle-sum relationship.",
+    "B": "The student first finds the interior angle at $Z$ by computing $180° - 115° = 65°$, then reports this interior angle at $Z$ as the measure of angle $Y$, confusing the two angles.",
+    "C": "Correct.",
+    "D": "The student applies the triangle angle-sum property incorrectly, computing $\\angle Y = 180° - \\angle X = 180° - 48° = 132°$, as if the triangle had only two interior angles."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a8b6c291-3d47-4e5f-b0a8-9f63e4d82c54"
+  }
+}

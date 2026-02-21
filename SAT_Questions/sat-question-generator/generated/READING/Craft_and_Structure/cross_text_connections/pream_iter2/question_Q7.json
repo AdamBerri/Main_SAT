@@ -1,0 +1,58 @@
+{
+  "id": "c4d8a1e2-7f3b-4c9e-8d2a-1f5e7b3c6d9a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "Text 1\nUrban green spaces—parks, community gardens, and tree-lined streets—play a vital role in residents' physical health. Studies consistently find that people living within walking distance of parks engage in more regular exercise and report lower rates of obesity and cardiovascular disease. City planners increasingly recognize that investing in green infrastructure is, at its core, an investment in public health.\n\nText 2\nThe mental health benefits of access to nature in cities deserve equal attention alongside the well-documented physical advantages. Exposure to greenery reduces cortisol levels, alleviates symptoms of anxiety and depression, and promotes cognitive restoration in people who perform mentally demanding work. Urban green spaces serve as restorative environments that replenish psychological resources depleted by the constant stimulation of city life.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 136,
+    "source": "Original passages"
+  },
+  "stem": "Which choice best describes the relationship between the two texts?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 2 disputes the claim made in Text 1 that urban green spaces are beneficial to city residents.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 and Text 2 reach identical conclusions about the primary reason cities should invest in parks.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Text 2 extends the case for urban green spaces by addressing a dimension of their value that Text 1 does not cover.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Text 1 presents a problem with city planning that Text 2 proposes a solution to address.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Text 1 establishes that urban green spaces improve physical health—exercise rates, obesity, and cardiovascular disease. Text 2 does not disagree with this; instead, it broadens the argument by focusing on mental health benefits (stress reduction, alleviation of anxiety and depression, cognitive restoration) that Text 1 does not address. The two texts are complementary, with Text 2 adding a new dimension—psychological wellbeing—to the case already made by Text 1 about physical health.",
+  "distractorRationale": {
+    "A": "Text 2 does not dispute Text 1's claims; it agrees that green spaces are beneficial and adds further support from a different angle.",
+    "B": "The texts do not reach identical conclusions. Text 1 focuses on physical health justifications for investment, while Text 2 focuses on mental health benefits—these are related but distinct rationales.",
+    "C": "Correct. Text 2 supplements rather than contradicts Text 1, introducing mental and psychological health as additional benefits not mentioned in Text 1's focus on physical outcomes.",
+    "D": "Text 1 does not identify a problem with city planning; it praises city planners for recognizing the value of green infrastructure. Text 2 does not propose a solution to any problem Text 1 raises."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1c3e5f7-9b2d-4f6a-8e1c-3d7b9f2e5a8c"
+  },
+  "hasImage": false
+}

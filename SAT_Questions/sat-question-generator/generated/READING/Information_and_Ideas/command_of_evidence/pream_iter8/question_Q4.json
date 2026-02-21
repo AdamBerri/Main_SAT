@@ -1,0 +1,57 @@
+{
+  "id": "07c9d1e3-6f8a-0b2c-f456-127d8e9f0a1b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "linguistic": 1.2
+  },
+  "passage": "The Prairie Pothole Region, spanning parts of the Dakotas, Minnesota, Iowa, and the Canadian provinces of Alberta, Saskatchewan, and Manitoba, contains millions of small, shallow wetlands formed by glacial activity thousands of years ago. These wetlands, called potholes or prairie ponds, are among the most productive duck-breeding habitats in North America. The region has been called the \"duck factory\" of the continent, as it produces an estimated 50 to 80 percent of all North American ducks in years with favorable water conditions.\n\nThe ecological value of prairie potholes extends well beyond waterfowl. These wetlands filter agricultural runoff, reducing the amount of nitrogen and phosphorus that reaches rivers and lakes. A study by the Environmental Defense Fund estimated that prairie potholes in the Dakotas alone prevent approximately 1.2 billion pounds of sediment from entering waterways each year. The wetlands also store significant quantities of water during heavy precipitation events, reducing downstream flood peaks by up to 58 percent according to research published in Water Resources Research.\n\nDespite their importance, prairie potholes face severe pressure from agricultural conversion. More than half of the original wetland area in the Prairie Pothole Region has been drained since European settlement to create farmland. The rate of drainage accelerated dramatically in the 1970s following changes to federal agricultural policy, and many converted wetlands have been tiled or drained so thoroughly that restoration is no longer feasible without substantial investment.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 222,
+    "source": "Adapted from an overview of Prairie Pothole Region ecology and conservation"
+  },
+  "stem": "The passage argues that prairie potholes provide important water-quality benefits. Which quotation from the passage most directly supports this argument?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"The region has been called the 'duck factory' of the continent, as it produces an estimated 50 to 80 percent of all North American ducks in years with favorable water conditions.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"These wetlands filter agricultural runoff, reducing the amount of nitrogen and phosphorus that reaches rivers and lakes.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"The wetlands also store significant quantities of water during heavy precipitation events, reducing downstream flood peaks by up to 58 percent.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"More than half of the original wetland area in the Prairie Pothole Region has been drained since European settlement to create farmland.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The claim is that prairie potholes provide important water-quality benefits. Choice B directly states that the wetlands filter agricultural runoff and reduce nitrogen and phosphorus reaching rivers and lakes—a clear, direct water-quality benefit. The language in the choice (filtering, reducing pollutants) maps directly onto the claim about water quality with no inference required.",
+  "distractorRationale": {
+    "A": "This choice addresses waterfowl production—an ecological benefit related to wildlife, not water quality. Duck breeding is a distinct benefit from filtering water contaminants.",
+    "C": "This choice describes a flood-control benefit (reducing downstream flood peaks), which is a water-quantity benefit rather than a water-quality benefit. While it involves water, it does not address the cleanliness or chemical composition of water.",
+    "D": "This choice describes the loss of wetland area to agricultural conversion—relevant to the threats facing prairie potholes, not to the water-quality benefits they provide."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "18e0f2a4-7a9b-1c3d-0567-238e9f0a1b2c"
+  },
+  "hasImage": false
+}

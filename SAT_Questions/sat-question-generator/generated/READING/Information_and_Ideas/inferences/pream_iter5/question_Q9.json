@@ -1,0 +1,57 @@
+{
+  "id": "c7d9e1f3-a5b7-4c2d-8e4f-6a8b0c2d4e6f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "In the decades following the Civil War, many formerly enslaved people in the American South participated in an institution known as sharecropping. Under this system, a landowning family would allow a tenant—often a Black family with little or no capital—to farm a portion of land in exchange for a share of the crop at harvest, typically between one-third and one-half of the yield. On the surface, sharecropping appeared to offer formerly enslaved people a path to economic independence. In practice, however, tenants were required to purchase seeds, tools, and food on credit from the landowner's store at inflated prices. At the end of each harvest season, when accounts were settled, many tenants found that the value of their crop share barely covered—or did not cover—what they owed. Families who fell into debt were often legally bound to remain on the land until the debt was paid, a condition that critics compared to a new form of bondage.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 157,
+    "source": "Adapted from a survey of Reconstruction-era economic history"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the sharecropping system?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It was designed by landowners to maintain economic control over tenants.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "It was equally disadvantageous to both Black and white tenant farmers.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "It succeeded in providing most tenants with modest financial security.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It was outlawed by the federal government before the end of Reconstruction.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage describes a system in which the structure itself—inflated store prices, settlement of accounts controlled by the landowner, and debt that legally bound tenants to the land—consistently prevented tenants from achieving genuine economic independence. The phrase \"on the surface\" signals a deliberate contrast between the apparent promise of the system and its actual outcome. By connecting the systemic features (credit at inflated prices, legal debt bondage) with the observation that critics compared the outcome to \"a new form of bondage,\" a reader can reasonably infer that the system was structured to maintain economic control over tenants rather than to enable their independence.",
+  "distractorRationale": {
+    "B": "The passage specifies that tenants were \"often a Black family with little or no capital\" and situates the practice in the post-Civil War South in the context of formerly enslaved people. The passage does not describe white tenant farmers or claim equal disadvantage across racial groups, making this an inference beyond the text.",
+    "C": "The passage states that many tenants found their crop share barely covered or did not cover their debts. The overall picture presented is one of financial entrapment, not modest financial security. This choice contradicts the passage's clear characterization of the system's outcomes.",
+    "D": "The passage makes no mention of federal legislation regarding sharecropping or its legal status. Inferring that it was outlawed requires information entirely absent from the text."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b5c7d9e1-f3a5-4b7c-9d1e-3f5a7b9c1d3e"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,54 @@
+{
+  "id": "c5a8d3f6-71e2-4c19-a0b4-3d9e7f2c5a18",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "A city council member wants to know whether residents of his city support building a new park. He surveys 50 people attending a nature and gardening fair held in the city and finds that 46 of them support building the new park. He concludes that the majority of all city residents support building the new park. Which of the following best explains why this conclusion may NOT be valid?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "46 out of 50 is too large a percentage to be accurate.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The council member should have surveyed at least 100 people to draw a valid conclusion.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "People who attend a nature and gardening fair are more likely to support a park than typical city residents, so the sample does not represent all city residents.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The survey question may have been phrased in a confusing way.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The council member surveyed attendees of a nature and gardening fair, which is a convenience sample drawn from a specific group with a known interest in outdoor and natural spaces. People who choose to attend such an event are far more likely than the general city population to favor a new park. This means the sample is biased — it over-represents people with pro-park preferences. Because the 50 respondents were not randomly selected from all city residents, the result cannot be generalized to support a conclusion about what the majority of all residents want.",
+  "distractorRationale": {
+    "A": "A high percentage (92%) is not by itself a reason to doubt accuracy. The flaw is in who was sampled, not in the magnitude of the result.",
+    "B": "Doubling the sample size would not fix the underlying bias. Even 100 or 1,000 fair attendees would still over-represent people interested in nature and parks.",
+    "C": "Correct. The fair attendees are not representative of all city residents — they have a pre-existing interest in nature and gardens that makes them disproportionately likely to support a park. This selection bias invalidates the conclusion.",
+    "D": "Question phrasing could be a concern in some situations, but the scenario gives no evidence that the question was confusing. The primary flaw is clearly the biased sample, not the wording of the survey."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f7b2e9d5-4a16-4f84-c028-9e3b1d7a6f42"
+  }
+}

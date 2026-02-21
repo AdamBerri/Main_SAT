@@ -1,0 +1,54 @@
+{
+  "id": "139e9d5c-a92b-4343-8b2d-f41cf6094dd2",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1.0,
+    "computational": 1.3
+  },
+  "stem": "A rectangle has a perimeter of 28 centimeters. The length of the rectangle is 4 centimeters more than its width. What is the width of the rectangle, in centimeters?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$4$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$5$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$9$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$12$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $l$ be the length and $w$ be the width in centimeters. The two conditions give the system:\n$$l + w = 14 \\quad (\\text{perimeter } 2l + 2w = 28 \\Rightarrow l + w = 14)$$\n$$l = w + 4$$\n\nSubstituting $l = w + 4$ into the first equation:\n$$(w + 4) + w = 14$$\n$$2w + 4 = 14$$\n$$2w = 10$$\n$$w = 5$$\n\nBack-substituting: $l = 5 + 4 = 9$.\n\nChecking: $l + w = 9 + 5 = 14$ ✓ and $l - w = 9 - 5 = 4$ ✓\n\nThe width is $\\boxed{5}$ centimeters.",
+  "distractorRationale": {
+    "A": "Confuses the difference (4 cm) with the width: a student who sees \"4 centimeters more\" may report the difference itself (4) as the smaller dimension, skipping the setup entirely.",
+    "B": "Correct answer.",
+    "C": "Wrong-variable error: the student correctly solves the system ($w = 5$, $l = 9$) but reports the length (9) instead of the width.",
+    "D": "Forgot-to-halve error: the student uses the perimeter directly as $l + w = 28$ instead of dividing by 2, giving $(w + 4) + w = 28 \\Rightarrow 2w = 24 \\Rightarrow w = 12$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "db7d67d1-2663-470c-a532-f6233d18045d"
+  }
+}

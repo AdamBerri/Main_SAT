@@ -1,0 +1,54 @@
+{
+  "id": "3c6d9e4f-7a2b-4e8c-b1f5-9d3e6a0b7c2d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "Two analysts each propose a linear model for the relationship between average daily temperature ($x$, in °F) and daily ice cream sales ($y$, in units) at a local shop. Analyst 1 proposes $\\hat{y} = 4x - 80$, and Analyst 2 proposes $\\hat{y} = 3.5x - 55$. On a particular day, the temperature was 70°F and actual sales were 215 units. Which analyst's model gives a more accurate prediction for that day, and what is the absolute value of the residual for that model?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Analyst 1's model; the residual has absolute value 15.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Analyst 1's model; the residual has absolute value 25.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Analyst 2's model; the residual has absolute value 15.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Analyst 2's model; the residual has absolute value 25.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Step 1: Compute each model's predicted value at $x = 70$.\n- Analyst 1: $\\hat{y} = 4(70) - 80 = 280 - 80 = 200$.\n- Analyst 2: $\\hat{y} = 3.5(70) - 55 = 245 - 55 = 190$.\n\nStep 2: Compute the residual for each model. Residual $=$ actual $-$ predicted.\n- Analyst 1: $215 - 200 = 15$. Absolute value: $|15| = 15$.\n- Analyst 2: $215 - 190 = 25$. Absolute value: $|25| = 25$.\n\nStep 3: Determine which model is more accurate. A smaller absolute residual means the prediction is closer to the actual value. Analyst 1's model has the smaller residual ($15 < 25$), so it gives the more accurate prediction.\n\nThe answer is Analyst 1's model with absolute residual $\\boxed{15}$.",
+  "distractorRationale": {
+    "A": "Correct. Analyst 1 predicts 200 (residual 15) and Analyst 2 predicts 190 (residual 25). Since 15 < 25, Analyst 1's model is more accurate.",
+    "B": "Analyst 1's model; residual 25: The student correctly identifies that Analyst 1's model is more accurate but reports the wrong residual. This error occurs when the student computes Analyst 1's predicted value correctly (200) but then pairs it with Analyst 2's residual (25) rather than Analyst 1's own residual (15). This could happen if the student compares models but then accidentally reads the residual from the wrong row of their work.",
+    "C": "Analyst 2's model; residual 15: The student correctly computes both residuals (15 for Analyst 1 and 25 for Analyst 2) but then confuses which residual belongs to which model when stating the conclusion, attributing the residual of 15 to Analyst 2 and (incorrectly) declaring Analyst 2 the better model.",
+    "D": "Analyst 2's model; residual 25: The student correctly computes both predicted values and residuals but chooses the wrong model. This could occur if the student believes a higher predicted value means a worse model (since 200 > 190, the student might reason Analyst 1 overestimates more), or if the student inadvertently selects the model with the larger residual rather than the smaller one."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4d7e0f1a-2b3c-4d5e-6f7a-8b9c0d1e2f3a"
+  }
+}

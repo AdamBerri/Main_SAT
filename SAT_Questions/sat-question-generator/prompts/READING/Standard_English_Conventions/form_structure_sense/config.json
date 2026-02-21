@@ -4,7 +4,7 @@
     "domain": "Standard_English_Conventions",
     "subtopic": "form_structure_sense"
   },
-  "currentVersion": "1.4.0",
+  "currentVersion": "1.5.0",
   "versions": [
     {
       "version": "1.0.0",
@@ -13,6 +13,18 @@
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.5.0",
+      "createdAt": "2026-02-21T02:51:21.533Z",
+      "parentVersion": "1.4.0",
+      "preamIteration": 6,
+      "performanceMetrics": {
+        "trainAvgScore": 4.664,
+        "trainPassRate": 1,
+        "testAvgScore": 4.943,
+        "testPassRate": 1
+      }
     }
   ],
   "temperatureConfig": {

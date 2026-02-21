@@ -1,0 +1,58 @@
+{
+  "id": "a6c2d9f4-8e3b-4a7c-9f1d-4b8e2a5c7f3d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "The nonprofit's annual report showed that donations had risen significantly over the previous year. Staff attributed the increase to a targeted outreach campaign that reached thousands of new donors through social media. The organization's ability to draw in first-time contributors had proven essential to its financial health.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 52,
+    "source": "Original"
+  },
+  "stem": "As used in the passage, \"draw\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "attract",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "sketch",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "pull",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "tie",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage describes an organization bringing in new donors through an outreach campaign. The phrase \"draw in first-time contributors\" refers to the ability to attract or bring new people to donate. The context of a fundraising campaign reaching new donors makes clear that 'draw' means to attract people toward the organization.",
+  "distractorRationale": {
+    "A": "Correct. 'Attract' fits because the outreach campaign was designed to bring new donors to the organization, which is exactly what 'draw in' means in this context.",
+    "B": "'Sketch' is a meaning of 'draw' in an artistic context (e.g., 'draw a portrait'), but the passage is about fundraising and donor acquisition, not visual art.",
+    "C": "'Pull' captures the physical action sense of 'draw' (e.g., 'draw a cart'), but the passage is about bringing people in through a campaign, not exerting a physical pulling force on objects.",
+    "D": "'Tie' reflects the meaning of 'draw' in a competitive context where a game ends without a winner (e.g., 'the match ended in a draw'), but the passage has no reference to a competition or equal outcome."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b7d4e9f2-3a8c-4b5d-9e1f-6c3a7b2d8e4f"
+  },
+  "hasImage": false
+}

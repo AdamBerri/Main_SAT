@@ -5,163 +5,59 @@
     "subtopic": "cross_text_connections"
   },
   "config": {
-    "maxIterations": 5,
+    "maxIterations": 10,
     "trainTestSplit": 0.8,
     "convergenceThreshold": 0.02,
-    "minSamplesPerIteration": 20,
+    "minSamplesPerIteration": 25,
     "errorCategoryCount": 5
   },
   "iterations": [
     {
       "iteration": 1,
-      "promptVersionUsed": "1.0.0",
-      "trainSetSize": 16,
-      "testSetSize": 4,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
       "trainMetrics": {
-        "avgScore": 0,
-        "passRate": 0,
-        "errorCategories": []
-      },
-      "testMetrics": {
-        "avgScore": 0,
-        "passRate": 0
-      },
-      "improvementMade": "No significant errors found",
-      "newPromptVersion": "1.1.0"
-    },
-    {
-      "iteration": 2,
-      "promptVersionUsed": "1.1.0",
-      "trainSetSize": 16,
-      "testSetSize": 4,
-      "trainMetrics": {
-        "avgScore": 0,
-        "passRate": 0,
-        "errorCategories": []
-      },
-      "testMetrics": {
-        "avgScore": 0,
-        "passRate": 0
-      },
-      "improvementMade": "No significant errors found",
-      "newPromptVersion": "1.2.0"
-    },
-    {
-      "iteration": 3,
-      "promptVersionUsed": "1.1.0",
-      "trainSetSize": 8,
-      "testSetSize": 2,
-      "trainMetrics": {
-        "avgScore": 4.072916666666667,
+        "avgScore": 4.471,
         "passRate": 1,
         "errorCategories": [
           {
-            "category": "distractor_quality",
-            "frequency": 2,
+            "category": "answer_validity_medium_hard",
+            "frequency": 5,
             "exampleErrors": [
-              "Distractors lack genuine conceptual challenge and don't test understanding of the actual argument; they rely on surface-level keyword matching rather than nuanced comprehension",
-              "Weak discrimination between reader levels\u2014strong readers eliminate distractors by direct textual matching, while weak readers pick them for wrong reasons (missing keywords), not genuine conceptual misunderstanding"
-            ]
-          },
-          {
-            "category": "difficulty_calibration",
-            "frequency": 2,
-            "exampleErrors": [
-              "Procedural difficulty overstated at 3.9/5 when cross-text contrast is relatively explicit; actual difficulty ~3.5/5 due to straightforward comparative reading rather than multi-step synthesis",
-              "Question rated 3/5 but assessed as 2.5/5; correct answer directly supported by text with minimal inference required, and weak distractors reduce cognitive demand to simple text-to-answer mapping"
-            ]
-          },
-          {
-            "category": "answer_clarity",
-            "frequency": 1,
-            "exampleErrors": [
-              "Correct answer mirrors source text too closely, allowing trivial elimination through verbatim matching rather than requiring genuine analytical reasoning or synthesis"
-            ]
-          },
-          {
-            "category": "textual_support",
-            "frequency": 1,
-            "exampleErrors": [
-              "Distractor relies on textual evidence that is too easily eliminable; e.g., Text 2 explicitly omits a topic (social benefits), making distractor trivially removable without understanding nuance"
-            ]
-          },
-          {
-            "category": "conceptual_design",
-            "frequency": 1,
-            "exampleErrors": [
-              "Question lacks a compelling fourth option that would test genuine conceptual understanding; missing a distractor that requires students to distinguish between related but distinct positions (e.g., complement vs. opposition)"
+              "Q11,Q13,Q16,Q17,Q18 all scored answer_validity:4 — correct answers slightly imprecise in characterizing relationship"
             ]
           }
         ]
       },
       "testMetrics": {
-        "avgScore": 4.25,
+        "avgScore": 5,
         "passRate": 1
       },
-      "improvementMade": "Addressed: distractor_quality, difficulty_calibration, answer_clarity",
-      "newPromptVersion": "1.2.0"
+      "improvementMade": "Addressed: answer_validity (added CRITICAL answer validity section with precise relationship characterization requirements and common validity errors to avoid)",
+      "newPromptVersion": "1.4.0"
     },
     {
-      "iteration": 4,
-      "promptVersionUsed": "1.2.0",
-      "trainSetSize": 8,
-      "testSetSize": 2,
+      "iteration": 2,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
       "trainMetrics": {
-        "avgScore": 4.053571428571429,
-        "passRate": 0.8571428571428571,
-        "errorCategories": [
-          {
-            "category": "difficulty_calibration_mismatch",
-            "frequency": 2,
-            "exampleErrors": [
-              "Question rated 5/5 difficulty but actual difficulty is 3.5-4/5 due to explicit textual signals and straightforward answer alignment with clear passage content",
-              "Question rated 4/5 difficulty but actual difficulty is 3.2/5 because central contrast is highly explicit and requires minimal inference despite linguistic complexity"
-            ]
-          },
-          {
-            "category": "reasoning_demand_overstatement",
-            "frequency": 2,
-            "exampleErrors": [
-              "Procedural difficulty overstated at 3.8/5 when actual procedural steps are only 3-4 compared to 5-6 for genuine Level 4 questions, with straightforward answer elimination process",
-              "Cross-text reasoning difficulty overstated when disagreement is signaled explicitly rather than requiring synthesis of compatible ideas, reducing genuine interpretive complexity"
-            ]
-          },
-          {
-            "category": "conceptual_clarity_inflation",
-            "frequency": 2,
-            "exampleErrors": [
-              "Conceptual difficulty stated as 3.8/5 but actually ~3.0/5 because central contrast between 'detachment' and 'deliberate advocacy' is explicitly stated in texts rather than requiring deep inference",
-              "Text 2's oppositional stance is clearly signaled ('challenge mechanistic accounts') rather than embedded implicitly, reducing the interpretive ambiguity typical of high-difficulty questions"
-            ]
-          },
-          {
-            "category": "answer_validity_concerns",
-            "frequency": 1,
-            "exampleErrors": [
-              "Designated answer B is defensibly correct but problematically close to alternative answers (C and D), creating ambiguity about whether the correct answer is unambiguous enough for high-confidence SAT questions",
-              "Choice C represents a dangerously close distractor that could be argued as a reasonable synthesis by knowledgeable readers, narrowing the gap between correct and incorrect options"
-            ]
-          },
-          {
-            "category": "assessment_inconsistency",
-            "frequency": 1,
-            "exampleErrors": [
-              "Disconnect between linguistic complexity rating (appropriately 4.1/5) and overall calibration (4/5), where elevated vocabulary difficulty is emphasized as justification for difficulty level despite conceptual and procedural demands being significantly lower"
-            ]
-          }
-        ]
+        "avgScore": 4.463,
+        "passRate": 1,
+        "errorCategories": []
       },
       "testMetrics": {
-        "avgScore": 0,
-        "passRate": 0
+        "avgScore": 4.967,
+        "passRate": 1
       },
-      "improvementMade": "Addressed: difficulty_calibration_mismatch, reasoning_demand_overstatement, conceptual_clarity_inflation",
-      "newPromptVersion": "1.3.0"
+      "improvementMade": "Converged at -0.7%. No significant errors.",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.2.0",
-  "converged": false,
-  "startedAt": "2026-01-08T15:11:05.988Z",
-  "completedAt": null,
-  "bestTestScore": 4.25
+  "currentBestVersion": "1.4.0",
+  "bestTestScore": 5,
+  "converged": true,
+  "startedAt": "2026-02-20T15:58:47.904Z",
+  "completedAt": "2026-02-20T16:16:11.588Z"
 }

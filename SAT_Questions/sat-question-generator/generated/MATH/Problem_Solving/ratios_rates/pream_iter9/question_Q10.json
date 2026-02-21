@@ -1,0 +1,54 @@
+{
+  "id": "5d1b9e3f-6a4c-4c11-f3c5-f6a7b8c9d0e1",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "A garden hose fills a pool at a rate of 5 gallons per minute. At this rate, how many hours will it take to fill a pool that holds 1,800 gallons?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3.6$ hours",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$6$ hours",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$150$ hours",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$360$ hours",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "First, find the time in minutes to fill the pool at 5 gallons per minute: $\\frac{1800}{5} = 360$ minutes. Then convert minutes to hours by dividing by 60: $\\frac{360}{60} = 6$ hours.",
+  "distractorRationale": {
+    "A": "Error type: Wrong unit conversion factor. The student correctly computes 360 minutes but then divides by 100 instead of 60 to convert to hours. Wrong calculation: $\\frac{1800}{5} = 360$ minutes; $\\frac{360}{100} = 3.6$ hours. This produces 3.6 hours.",
+    "B": "This is the correct answer: $\\frac{1800}{5} = 360$ minutes; $\\frac{360}{60} = 6$ hours.",
+    "C": "Error type: Inverted ratio. The student divides the rate (5) by the pool size (1800) instead of dividing the pool size by the rate, yielding a very small minutes value, then converts incorrectly. Specifically, the student multiplies 5 by 1800 to get 9000, then divides by 60: $\\frac{5 \\times 1800}{60} = \\frac{9000}{60} = 150$ hours. This produces 150 hours.",
+    "D": "Error type: Ignored unit conversion entirely. The student correctly computes the fill time in minutes but reports that value directly as hours without converting. Wrong calculation: $\\frac{1800}{5} = 360$ minutes — student reports 360 as the answer in hours. This produces 360 hours."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c9e5f3b7-1d4f-4b12-a4d6-a7b8c9d0e1f2"
+  }
+}

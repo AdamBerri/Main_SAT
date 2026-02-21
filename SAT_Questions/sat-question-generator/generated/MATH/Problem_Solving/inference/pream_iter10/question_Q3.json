@@ -1,0 +1,53 @@
+{
+  "id": "f1b8d4e6-2c37-4a09-b582-3e7f0a5c1d29",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "A researcher studied a random sample of 200 teenagers from a city and found that those who slept more than 8 hours per night scored higher on a memory test than those who slept 8 hours or fewer. The researcher concluded that getting more than 8 hours of sleep causes teenagers to have better memory. Which of the following best describes a flaw in this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The sample of 200 teenagers is not large enough to draw any conclusions.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The study shows an association between sleep and memory scores, but does not establish that sleep caused the higher scores.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The conclusion should only apply to teenagers in the specific city studied, not all teenagers.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Memory tests are not a reliable way to measure the effects of sleep.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The study is observational — the researcher measured sleep habits and memory scores without randomly assigning teenagers to sleep more or less. Even though the two variables are associated (teens who sleep more scored higher), many other factors (e.g., overall health, stress levels, screen time) could explain both longer sleep and better memory scores. Without an experiment that controls for these variables, the researcher cannot conclude that sleep caused the improvement. This is the classic correlation vs. causation error.",
+  "distractorRationale": {
+    "A": "Sample size misapplication — a student might assume 200 is inherently too small, without recognizing that sample size is not the issue here; the flaw is the causal claim made from observational data, not the size of the sample.",
+    "C": "Overgeneralizing scope — while limiting conclusions to the sampled city is sometimes a valid concern, the primary flaw identified in the stem is the causal claim, not geographic overgeneralization. A student who picks this is identifying a secondary issue rather than the main logical error.",
+    "D": "Misidentifying the population — a student might redirect attention to the measurement instrument rather than the reasoning structure, incorrectly assuming the problem is with how memory was tested rather than with the causal inference drawn."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5a0c7b2-1f38-4d6e-9a04-2b8d1e3f7c50"
+  }
+}

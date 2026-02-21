@@ -44,7 +44,7 @@
             "frequency": 2,
             "exampleErrors": [
               "Question miscategorized as 'Advanced Math - nonlinear functions' difficulty 1/5 when it's actually basic function substitution more appropriate for 'Heart of Algebra' at 0.5/5 difficulty",
-              "Lacks SAT sophistication - even easy SAT questions typically require multi-step reasoning or conceptual understanding, not just trivial mechanical computation like f(2) = 2\u00b2 + 3"
+              "Lacks SAT sophistication - even easy SAT questions typically require multi-step reasoning or conceptual understanding, not just trivial mechanical computation like f(2) = 2² + 3"
             ]
           },
           {
@@ -159,7 +159,7 @@
             "frequency": 2,
             "exampleErrors": [
               "Final arithmetic error in explanation: computation shows 2 - 16 + 29 = 15, but designated answer is 1; correct answer (15) does not appear in provided choices",
-              "Designated answer (-8) contradicts correct calculation: 2 \u00d7 5 \u00d7 (-1) = -10, not -8; correct answer (-10) is not among the provided choices"
+              "Designated answer (-8) contradicts correct calculation: 2 × 5 × (-1) = -10, not -8; correct answer (-10) is not among the provided choices"
             ]
           },
           {
@@ -185,11 +185,95 @@
       },
       "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, answer_validity",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.687,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_explanation_clarity",
+            "frequency": 4,
+            "exampleErrors": [
+              "Q16/Q17: distractor explanations lack clear derivation steps",
+              "Q12/Q14: distractor rationale convoluted or imprecise"
+            ]
+          },
+          {
+            "category": "faithfulness_at_d4",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q18/Q20: minor SAT format deviations at difficulty 4"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.933,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_explanation_clarity, faithfulness_at_d4",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.717,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_d2",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q10 distractor D doubling rationale unclear",
+              "Q12 distractor B error path imprecise"
+            ]
+          },
+          {
+            "category": "faithfulness_minor",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q15 faithfulness slightly low",
+              "Q14 minor faithfulness deduction"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.816,
+        "passRate": 1
+      },
+      "improvementMade": "Final iteration: 100% pass rate, minor distractor and faithfulness refinements needed at d2-d3",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.6,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.833,
+        "passRate": 1
+      },
+      "improvementMade": "Converged: <2% improvement",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.1.0",
-  "converged": false,
+  "currentBestVersion": "1.3.0",
+  "converged": true,
   "startedAt": "2026-01-08T19:49:18.422Z",
-  "completedAt": null,
-  "bestTestScore": 4.572916666666667
+  "completedAt": "2026-02-20T22:27:21.166Z",
+  "bestTestScore": 4.933
 }

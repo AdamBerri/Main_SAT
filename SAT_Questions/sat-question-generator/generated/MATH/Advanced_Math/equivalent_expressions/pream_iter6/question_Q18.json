@@ -1,0 +1,54 @@
+{
+  "id": "f6a9b3c4-d2e1-4f7a-8c5b-3e1d9f2a4c7b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "Which of the following is a factor of $6x^2 + x - 12$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$(2x + 3)$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$(2x - 3)$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$(3x + 4)$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$(6x - 4)$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To factor $6x^2 + x - 12$, use the $ac$-method.\n\n**Step 1:** Find $ac$: $a = 6$, $c = -12$, so $ac = 6 \\times (-12) = -72$.\n\n**Step 2:** Find two integers that multiply to $-72$ and add to $b = 1$:\n$$9 \\times (-8) = -72 \\quad \\text{and} \\quad 9 + (-8) = 1 \\checkmark$$\n\n**Step 3:** Rewrite the middle term and factor by grouping:\n$$6x^2 + 9x - 8x - 12$$\n$$= 3x(2x + 3) - 4(2x + 3)$$\n$$= (3x - 4)(2x + 3)$$\n\n**Verification:** $(3x-4)(2x+3) = 6x^2 + 9x - 8x - 12 = 6x^2 + x - 12$ ✓\n\nTherefore $(2x + 3)$ is a factor.",
+  "distractorRationale": {
+    "A": "Correct. Using the $ac$-method: $9 \\times (-8) = -72$ and $9+(-8)=1$, yielding $(3x-4)(2x+3)$. The factor $(2x+3)$ appears in the complete factorization.",
+    "B": "Incorrect. A student who makes a sign error when finding the factor pair—using $-9$ and $8$ instead of $9$ and $-8$—would incorrectly factor as $(3x+4)(2x-3)$. Checking: $(3x+4)(2x-3) = 6x^2-9x+8x-12 = 6x^2-x-12 \\neq 6x^2+x-12$.",
+    "C": "Incorrect. A student who incorrectly reverses the coefficients, pairing $3x$ with $+4$ instead of $-4$, might write $(3x+4)$ as a factor. Checking: if $(3x+4)$ were a factor, then $x = -4/3$ would be a root. Substituting: $6(16/9) + (-4/3) - 12 = 32/3 - 4/3 - 36/3 = -8/3 \\neq 0$.",
+    "D": "Incorrect. A student who attempts to factor out $2$ from the original expression improperly as $(6x-4)$—essentially confusing the grouping step—arrives at this answer. $(6x-4) = 2(3x-2)$, but $3x-2$ is not a factor of $6x^2+x-12$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d"
+  }
+}

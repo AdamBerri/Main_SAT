@@ -1,0 +1,54 @@
+{
+  "id": "b6e2a9f0-c173-4d8b-a542-1e9d7c3f0b25",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A nonprofit organization surveyed employees at two companies — Company A and Company B — to compare job satisfaction rates. At Company A, all 200 employees were surveyed and 130 (65%) reported being satisfied. At Company B, 50 volunteers from among 800 employees responded to an open online survey, and 40 (80%) reported being satisfied. The nonprofit concluded: \"Employees at Company B have a higher job satisfaction rate than employees at Company A.\" Which of the following best evaluates this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The conclusion is valid because 80% is greater than 65%, and both percentages were calculated from actual survey responses at each company.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The conclusion is invalid because the Company B sample is far too small — with only 50 respondents out of 800 employees, no comparison to Company A can be made.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The conclusion is invalid because Company B's data comes from a voluntary online survey, which likely overrepresents satisfied employees and makes the 80% figure an unreliable estimate of all Company B employees' satisfaction.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is invalid because the total number of employees at the two companies is different, so the percentages cannot be directly compared.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To evaluate the conclusion that Company B employees have higher satisfaction than Company A employees, we must assess the validity of both data sources. Company A's data comes from a census — all 200 employees were surveyed — so the 65% figure accurately represents all Company A employees with no sampling concerns. Company B's data, however, comes from an open voluntary online survey in which only 50 of 800 employees chose to respond. Voluntary response surveys suffer from a well-known form of bias: people with strong opinions — especially strong positive feelings — are more likely to respond. This means the 80% figure almost certainly overestimates the true satisfaction rate among all 800 Company B employees, because neutral or dissatisfied employees were less likely to participate. Because the Company B estimate is based on biased, non-random data, the comparison is invalid — you cannot reliably conclude that Company B's overall satisfaction rate exceeds Company A's.\n\nChoice A is wrong because it treats the raw percentages as equivalent without recognizing that the methods of data collection are fundamentally different in quality. Choice B is wrong because it focuses on sample size as the problem. While 50/800 is a low response rate, the core flaw is not size but selection bias — even a larger voluntary sample would suffer from the same directional bias. A random sample of 50 from 800 would be far more reliable than 750 voluntary responders. Choice D is wrong because percentages can be compared across groups of different sizes — this is a common but incorrect reasoning error.",
+  "distractorRationale": {
+    "A": "This choice falls into the trap of accepting reported percentages at face value without evaluating the quality of the data collection method. The 80% figure is not a valid estimate of Company B's overall satisfaction because the sampling method was biased.",
+    "B": "This choice identifies the wrong flaw. The problem is not that 50 is too small a sample; a randomly selected sample of 50 from 800 can support valid conclusions. The actual problem is that these 50 were self-selected volunteers, introducing systematic bias regardless of how many responded.",
+    "C": "Correct. Voluntary response surveys are prone to overrepresentation of people with strong opinions, typically those who are very satisfied or very dissatisfied. In this context, the 80% figure is likely inflated and cannot be used to reliably represent all 800 Company B employees.",
+    "D": "This choice applies a false mathematical principle. Percentages are specifically designed to allow comparisons across groups of different sizes. The different employee counts at the two companies are not a barrier to comparing percentages."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c29a4e71-6b38-4f1d-8d07-5a3c2e9f1b60"
+  }
+}

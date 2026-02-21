@@ -1,0 +1,54 @@
+{
+  "id": "c5d6e7f8-a9b0-1c2d-3e4f-5a6b7c8d9e0f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A retailer buys a product for $\\$800$. The retailer applies a 50% markup to set the retail price. A customer receives a 20% discount off the retail price, and then a 10% sales tax is applied to the discounted amount. What total does the customer pay?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$960",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$1,056",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$1,320",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$1,080",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Retail price = $800 \\times 1.50 = \\$1{,}200$. After 20% discount: $1{,}200 \\times 0.80 = \\$960$. After 10% tax: $960 \\times 1.10 = \\$1{,}056$.",
+  "distractorRationale": {
+    "A": "Student applied the markup and discount but forgot the tax: $800 × 1.50 × 0.80 = $960.",
+    "B": "Correct answer.",
+    "C": "Student skipped the discount entirely: $800 × 1.50 × 1.10 = $1,320.",
+    "D": "Student applied a 10% discount instead of 20%: $800 × 1.50 × 0.90 = $1,080."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:22.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c6d7e8f9-a0b1-2c3d-4e5f-6a7b8c9d0e1f"
+  }
+}

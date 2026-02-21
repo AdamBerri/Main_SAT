@@ -4,7 +4,7 @@
     "domain": "Advanced_Math",
     "subtopic": "nonlinear_functions"
   },
-  "currentVersion": "1.2.0",
+  "currentVersion": "1.3.0",
   "versions": [
     {
       "version": "1.0.0",
@@ -13,6 +13,18 @@
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.3.0",
+      "createdAt": "2026-02-20T18:50:29.639Z",
+      "parentVersion": "1.2.0",
+      "preamIteration": 4,
+      "performanceMetrics": {
+        "trainAvgScore": 4.687,
+        "trainPassRate": 1,
+        "testAvgScore": 4.933,
+        "testPassRate": 1
+      }
     }
   ],
   "temperatureConfig": {

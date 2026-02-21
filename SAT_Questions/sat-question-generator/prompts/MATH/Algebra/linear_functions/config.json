@@ -4,7 +4,7 @@
     "domain": "Algebra",
     "subtopic": "linear_functions"
   },
-  "currentVersion": "1.2.0",
+  "currentVersion": "1.6.0",
   "versions": [
     {
       "version": "1.0.0",
@@ -13,6 +13,54 @@
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.3.0",
+      "createdAt": "2026-02-20T16:21:12.712Z",
+      "parentVersion": "1.2.0",
+      "preamIteration": 4,
+      "performanceMetrics": {
+        "trainAvgScore": 4.658,
+        "trainPassRate": 1,
+        "testAvgScore": 5,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.4.0",
+      "createdAt": "2026-02-20T22:30:01.864Z",
+      "parentVersion": "1.3.0",
+      "preamIteration": 7,
+      "performanceMetrics": {
+        "trainAvgScore": 4.617,
+        "trainPassRate": 1,
+        "testAvgScore": 4.933,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.5.0",
+      "createdAt": "2026-02-20T22:38:50.968Z",
+      "parentVersion": "1.4.0",
+      "preamIteration": 8,
+      "performanceMetrics": {
+        "trainAvgScore": 4.647,
+        "trainPassRate": 1,
+        "testAvgScore": 4.833,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.6.0",
+      "createdAt": "2026-02-20T22:57:20.579Z",
+      "parentVersion": "1.5.0",
+      "preamIteration": 9,
+      "performanceMetrics": {
+        "trainAvgScore": 4.683,
+        "trainPassRate": 1,
+        "testAvgScore": 4.734,
+        "testPassRate": 1
+      }
     }
   ],
   "temperatureConfig": {

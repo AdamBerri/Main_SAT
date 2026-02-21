@@ -1,0 +1,58 @@
+{
+  "id": "c6e1f8b4-3d2a-4c9e-8f7b-1a4d6c8e2f9b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "Text 1\nMicroplastics—tiny fragments of plastic less than 5 millimeters in size—have been detected in ocean water, freshwater, soil, and even the human body. Scientists are particularly concerned about their presence in drinking water sources. Municipal water treatment plants were designed to remove biological contaminants like bacteria and viruses, not synthetic particles. As a result, researchers warn that standard filtration processes may allow a significant portion of microplastics to pass through into treated water supplies. Some water utilities have begun piloting advanced filtration systems capable of capturing smaller particles, but these systems are expensive and not yet widely deployed.\n\nText 2\nResults from tests on treated drinking water samples collected from five U.S. cities:\n\nCity        | Microplastics per liter (before treatment) | Microplastics per liter (after treatment)\nCity A      | 340                                        | 210\nCity B      | 290                                        | 175\nCity C      | 180                                        | 108\nCity D      | 420                                        | 88\nCity E      | 310                                        | 195",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 190,
+    "source": "Adapted from environmental science literature and a hypothetical municipal water testing dataset"
+  },
+  "stem": "The data from City D in Text 2 most complicates which claim made in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "That microplastics have been detected in drinking water sources.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "That standard filtration allows a significant portion of microplastics to pass through.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "That water treatment plants were designed to remove biological contaminants.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "That advanced filtration systems are expensive and not widely deployed.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 warns that standard filtration may allow a \"significant portion\" of microplastics to pass through. For most cities in Text 2, this holds: Cities A, B, C, and E all retain roughly 60–75% of their pre-treatment microplastics after treatment. However, City D goes from 420 to 88 microplastics per liter—a reduction of nearly 79%, retaining only about 21% of the original amount. This relatively high removal rate complicates the claim that standard filtration lets a significant portion pass through, since City D's standard treatment appears considerably more effective. Students must compare City D's percentage reduction to the other cities' and to the claim in Text 1, rather than simply noting that some microplastics remain.",
+  "distractorRationale": {
+    "A": "All five cities show measurable microplastics in both pre- and post-treatment samples, which actually confirms rather than complicates this claim. City D is no exception—408 microplastics per liter before treatment, and 88 after, both confirm the presence of microplastics.",
+    "B": "Correct. City D's treatment removes roughly 79% of microplastics, which challenges the claim that standard filtration lets a significant portion pass. While the other cities retain 60–75%, City D's treated water retains only about 21% of the original load—suggesting standard treatment can be substantially more effective than Text 1 implies.",
+    "C": "This is a factual background statement in Text 1, not a contested claim. City D's data says nothing about what the plant was designed to do; it only shows what the plant achieved. Students who confuse design intent with measured performance may choose this.",
+    "D": "Text 1 claims advanced systems are expensive and not widely deployed, but City D's data does not indicate whether City D uses standard or advanced filtration. The data alone cannot confirm or complicate claims about system costs or deployment rates."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4a7e2c9f-8b1d-4a3e-9f6b-2c5d1e8a4f7c"
+  },
+  "hasImage": false
+}

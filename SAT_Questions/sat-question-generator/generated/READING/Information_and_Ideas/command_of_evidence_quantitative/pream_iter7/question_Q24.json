@@ -1,0 +1,100 @@
+{
+  "id": "07149857-ab8b-4c4c-8c09-be96a76f65cc",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "Neuroscientists studying sleep and cognitive performance measured reaction times in participants after different sleep durations over a five-day study. They claim that cognitive impairment from sleep restriction is cumulative: while a single night of 5-hour sleep produces modest slowing, the deficit compounds over successive restricted nights, and the cumulative impairment after five nights of restricted sleep exceeds what a single night of total sleep deprivation produces.",
+  "stem": "Which choice most effectively uses data from the figure to support the neuroscientists' claim about cumulative impairment?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Participants restricted to 5 hours of sleep showed average reaction times of 285 ms after night 1, 310 ms after night 3, and 362 ms after night 5, while a single night of total deprivation produced a reaction time of 340 ms -- lower than the 362 ms after five restricted nights.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "After one night of 5-hour sleep, reaction times averaged 285 ms compared to the 260 ms baseline, a modest 25 ms increase that suggests minimal initial impairment.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A single night of total sleep deprivation produced reaction times of 340 ms, which was 80 ms slower than the 260 ms baseline, demonstrating the severe impact of complete sleep loss.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The 8-hour control group maintained reaction times between 260 ms and 265 ms throughout the five-day study, showing no significant deterioration with adequate sleep.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim has three elements: (1) a single restricted night causes modest slowing, (2) the deficit compounds, and (3) five restricted nights exceed one night of total deprivation. Choice A addresses all three by showing the progression (285, 310, 362 ms) and comparing the final value (362) to total deprivation (340). Choice B only shows the first night's modest impact. Choice C discusses total deprivation in isolation. Choice D discusses the control group, which is irrelevant to the claim about restricted sleep.",
+  "distractorRationale": {
+    "A": "Correct: shows the compounding pattern across nights 1, 3, and 5 (285, 310, 362 ms) and demonstrates that night 5's impairment (362 ms) exceeds total deprivation (340 ms).",
+    "B": "Wrong (incomplete evidence): cites only the first night's modest slowing without showing the compounding effect or the comparison to total deprivation.",
+    "C": "Wrong (irrelevant data): discusses total deprivation's impact relative to baseline without comparing it to the cumulative restricted-sleep condition.",
+    "D": "Wrong (wrong comparison): describes the control group's stability, which is unrelated to the claim about cumulative impairment from sleep restriction."
+  },
+  "hasImage": true,
+  "imageDescription": "Line graph titled 'Average Reaction Time by Sleep Condition Over Five Nights.' X-axis: Study Day (Baseline, Night 1, Night 2, Night 3, Night 4, Night 5). Y-axis: Reaction Time (ms), range 240-380. Lines: 8-Hour Control: 260, 258, 261, 259, 263, 265. 5-Hour Restricted: 260, 285, 298, 310, 338, 362. Additional marker: Total Deprivation (1 night) = 340 ms. Source: Sleep and Cognition Research Laboratory, 2024.",
+  "chartData": {
+    "type": "line_graph",
+    "title": "Average Reaction Time by Sleep Condition Over Five Nights",
+    "data": {
+      "days": [
+        "Baseline",
+        "Night 1",
+        "Night 2",
+        "Night 3",
+        "Night 4",
+        "Night 5"
+      ],
+      "series": {
+        "8-Hour Control": [
+          260,
+          258,
+          261,
+          259,
+          263,
+          265
+        ],
+        "5-Hour Restricted": [
+          260,
+          285,
+          298,
+          310,
+          338,
+          362
+        ]
+      },
+      "additionalMarkers": [
+        {
+          "label": "Total Deprivation (1 night)",
+          "value": 340
+        }
+      ],
+      "unit": "milliseconds",
+      "yAxisLabel": "Reaction Time (ms)",
+      "xAxisLabel": "Study Day"
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 78,
+    "source": "Adapted from Sleep and Cognition Research Laboratory experimental findings"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:37.287Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e4d7503f-c1fd-4e99-b10b-b8388b62d3b3"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "a1e9c3f7-2d4b-4a8e-9c5f-7b3d1e6a8c2f",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "Researchers studying climate change have documented a significant rise in ocean temperatures over the past century. Which has led to widespread coral bleaching and the disruption of marine ecosystems. Conservation groups are now calling for immediate reductions in greenhouse gas emissions.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 48,
+    "source": "Original SAT practice question"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "century, which has led to widespread coral bleaching and the disruption of marine ecosystems.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "century; which has led to widespread coral bleaching and the disruption of marine ecosystems.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "century: which has led to widespread coral bleaching and the disruption of marine ecosystems.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The phrase 'which has led to widespread coral bleaching and the disruption of marine ecosystems' is a relative clause that modifies 'a significant rise in ocean temperatures.' It cannot stand alone as a sentence because it begins with the relative pronoun 'which,' making it a dependent clause with no independent main clause. The original punctuation (Choice A) creates a fragment by placing a period before this dependent clause. Choice B correctly attaches the relative clause to the preceding independent clause using a comma, producing a grammatically complete sentence: 'Researchers studying climate change have documented a significant rise in ocean temperatures over the past century, which has led to widespread coral bleaching and the disruption of marine ecosystems.'",
+  "distractorRationale": {
+    "A": "NO CHANGE places a period before 'Which has led to widespread coral bleaching and the disruption of marine ecosystems.' Because this clause begins with the relative pronoun 'which,' it is a dependent clause and cannot stand alone as a sentence. The result is an illegal fragment.",
+    "C": "A semicolon must join two independent clauses. 'Which has led to widespread coral bleaching and the disruption of marine ecosystems' is a dependent relative clause, not an independent clause, so a semicolon cannot correctly precede it. Students who know semicolons connect related ideas may be tempted by this choice but overlook the dependency created by 'which.'",
+    "D": "A colon must follow a complete independent clause. While a colon can introduce elaboration, using 'which' after a colon is non-standard and grammatically awkward in English. A relative clause beginning with 'which' refers back to a noun in the preceding clause and must be attached with a comma, not introduced after a colon."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3c8a1e9-4b2d-4f7a-9e6c-1d5b8f3a2e7c"
+  },
+  "hasImage": false
+}

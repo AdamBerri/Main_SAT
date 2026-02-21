@@ -1,0 +1,38 @@
+{
+  "id": "c3d4e5f6-2222-4a6b-8c7d-9e0f1a2b3c17",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "A hemisphere-shaped bowl has an outer radius of 10 centimeters and a uniform thickness of 1 centimeter. What is the volume of the material that makes up the bowl, in cubic centimeters?",
+  "choices": [
+    { "label": "A", "text": "$\\frac{542\\pi}{3}$", "isCorrect": true },
+    { "label": "B", "text": "$\\frac{2000\\pi}{3}$", "isCorrect": false },
+    { "label": "C", "text": "$\\frac{1458\\pi}{3}$", "isCorrect": false },
+    { "label": "D", "text": "$\\frac{1084\\pi}{3}$", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The outer hemisphere volume is $\\frac{1}{2} \\cdot \\frac{4}{3}\\pi(10)^3 = \\frac{2}{3}\\pi(1000) = \\frac{2000\\pi}{3}$. The inner hemisphere has radius $10 - 1 = 9$, so its volume is $\\frac{2}{3}\\pi(9)^3 = \\frac{2}{3}\\pi(729) = \\frac{1458\\pi}{3}$. Material volume: $\\frac{2000\\pi}{3} - \\frac{1458\\pi}{3} = \\frac{542\\pi}{3}$. The answer is A.",
+  "distractorRationale": {
+    "A": "Correct. $\\frac{2000\\pi}{3} - \\frac{1458\\pi}{3} = \\frac{542\\pi}{3}$.",
+    "B": "Computes only the outer hemisphere volume without subtracting the inner: $\\frac{2}{3}\\pi(10)^3 = \\frac{2000\\pi}{3}$.",
+    "C": "Computes only the inner hemisphere volume instead of the material: $\\frac{2}{3}\\pi(9)^3 = \\frac{1458\\pi}{3}$.",
+    "D": "Doubles the correct answer by computing full sphere shells instead of hemispheres: $2 \\times \\frac{542\\pi}{3} = \\frac{1084\\pi}{3}$."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:17.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-c222-4d5e-8f9a-0b1c2d3e4f17"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "b3e7a1c9-4f2d-4b8a-9c5e-1d3f7a9b2c4e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "linguistic": 3.3
+  },
+  "passage": "The discovery that migratory birds rely on Earth's magnetic field to orient themselves transformed decades of inconclusive research into a coherent framework. Scientists had long catalogued anomalies in avian navigation without understanding their source; the identification of magnetoreceptor cells in birds' beaks finally gave these scattered observations a common ground. Rather than discarding prior data, researchers were able to reconcile conflicting findings under a single explanatory model.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 75,
+    "source": "Adapted from ornithological research literature"
+  },
+  "stem": "As used in the passage, \"reconcile\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "harmonize",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "verify",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "accept",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "restore",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this passage, researchers are bringing together previously contradictory findings under a single explanatory model. 'Reconcile' here means to make different things compatible or consistent with each other — to harmonize them. The context explicitly describes \"conflicting findings\" being brought under a unified framework, which corresponds to the meaning of harmonizing or resolving discrepancies.",
+  "distractorRationale": {
+    "A": "Correct. 'Harmonize' captures the act of making conflicting findings consistent with one another under a new framework, which is precisely what the passage describes.",
+    "B": "'Verify' means to confirm or prove something is true. The passage does not say researchers confirmed the old findings — it says they integrated conflicting ones. Verification implies testing, not unification.",
+    "C": "'Accept' suggests simply agreeing with or tolerating something, but the passage emphasizes active integration of contradictory data, not mere acceptance.",
+    "D": "'Restore' means to return something to a prior condition. The passage describes creating a new explanatory model, not returning findings to a previous state."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4f8b2a7-3e9d-4c1a-8f5b-7d2e9a1c3f6b"
+  },
+  "hasImage": false
+}

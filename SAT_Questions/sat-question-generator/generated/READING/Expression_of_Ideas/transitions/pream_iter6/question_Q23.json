@@ -1,0 +1,58 @@
+{
+  "id": "a3b4c5d6-dddd-4a9b-0c1d-2e3f4a5b6c78",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "Art historians have traditionally interpreted the stark geometric forms in Kazimir Malevich's Suprematist paintings as a rejection of representational art, emphasizing their break from the figurative traditions that dominated European painting. Malevich himself, however, described these works not as a rejection of the visible world but as an attempt to access a higher spiritual reality that lay beyond what the eye could perceive. _______ recent scholars have proposed that Suprematism is best understood neither as pure negation of tradition nor as mystical pursuit alone, but as a synthesis in which formal abstraction served as the vehicle for metaphysical exploration.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 112,
+    "source": "Adapted from an art history scholarly article"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "In contrast,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Indeed,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Building on this tension,",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Nevertheless,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage presents two opposing interpretations: art historians' view (rejection of representation) versus Malevich's own view (spiritual pursuit). The third sentence synthesizes both perspectives into a unified interpretation. 'Building on this tension' correctly signals that recent scholars took the disagreement between the two prior views as their starting point and developed a new interpretation that reconciles both. 'In contrast' might tempt students who see a new competing view, but the synthesis incorporates rather than opposes the previous views. 'Indeed' might tempt those who see the synthesis as confirming Malevich's view, but it actually integrates both perspectives rather than confirming one.",
+  "distractorRationale": {
+    "A": "'In contrast' signals opposition, but the recent scholars' view synthesizes rather than contrasts with the two preceding views.",
+    "B": "'Indeed' intensifies or confirms a prior point, but the synthesis is a new interpretation that incorporates both views rather than confirming either one alone.",
+    "C": "Correct. 'Building on this tension' signals that recent scholars used the disagreement between art historians and Malevich as a foundation for developing a synthesis.",
+    "D": "'Nevertheless' signals concession, suggesting the new view holds despite something. The scholars' synthesis is not presented as holding despite opposition but as emerging from the productive tension between the two earlier interpretations."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:04:02.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3dddddd-b4c5-4d6e-7f8a-9b0c1d2e3f45"
+  },
+  "hasImage": false
+}

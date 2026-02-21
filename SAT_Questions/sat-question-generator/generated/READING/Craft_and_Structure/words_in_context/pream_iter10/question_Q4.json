@@ -1,0 +1,58 @@
+{
+  "id": "c8d3e7f1-4a2b-4c9e-8f5d-1b6a3c7e9d2f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "linguistic": 1.2
+  },
+  "passage": "Geologists studying the canyon walls found that each visible band of rock represented a distinct period in Earth's history. The layers nearest the surface were composed of relatively young limestone, while those at the base dated back hundreds of millions of years. Reading these strata allowed scientists to trace how the region's environment had shifted over time.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 60,
+    "source": "Original"
+  },
+  "stem": "As used in the passage, \"trace\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "follow",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "copy",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "sketch",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "detect",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage describes scientists reading rock strata to understand how a region's environment changed across geological time. \"Trace how the region's environment had shifted\" means to follow or track the progression of environmental change through the evidence in the rock layers. 'Follow' captures this meaning of tracking a development or sequence from one point to another.",
+  "distractorRationale": {
+    "A": "Correct. 'Follow' fits because the scientists are tracking the sequence of environmental changes through time, moving from one period to the next using the evidence in each rock layer.",
+    "B": "'Copy' is a meaning of 'trace' when reproducing an image (e.g., trace a drawing), but the passage involves scientists interpreting geological data, not reproducing a picture.",
+    "C": "'Sketch' shares the artistic/drawing meaning with 'copy' and is therefore not a distinctly different meaning of 'trace' in this context — more importantly, the passage has no reference to drawing or artistic reproduction.",
+    "D": "'Detect' is close to the correct answer in that scientists are finding evidence, but 'trace' in this context means to follow a sequence or path through time, not merely to find or notice something's presence. The passage emphasizes tracking change over time, not initial detection."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3a8d2c7-9e4b-4f1a-8c5d-2b9e3f7a1c4d"
+  },
+  "hasImage": false
+}

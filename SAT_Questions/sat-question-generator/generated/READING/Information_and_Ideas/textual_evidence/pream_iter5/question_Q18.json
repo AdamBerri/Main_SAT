@@ -1,0 +1,58 @@
+{
+  "id": "f1a3c7e9-2b4d-4f6a-8c2e-5d9b1f3a7c9e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "Text 1\n\nHistorians of technology have long debated whether innovations spread primarily through direct contact between populations or through independent invention. The diffusion model holds that most major technologies — writing, metallurgy, agriculture — originated in a small number of centers and were carried outward through trade, migration, and conquest. Proponents argue that the technical complexity of these innovations makes truly independent development highly unlikely: the probability that two cultures would separately converge on identical solutions is vanishingly small. Critics of the diffusion model, however, contend that this argument underestimates human cognitive universality — the tendency of people everywhere to arrive at similar solutions when facing similar problems.\n\nText 2\n\nArchaeological evidence from the Andes and Mesoamerica has revealed that writing systems emerged in these regions centuries after writing first appeared in Mesopotamia, yet the Andean and Mesoamerican scripts share no structural features with Mesopotamian cuneiform. Andean khipu encodes information through knotted strings; Mesoamerican glyphs use a logographic-syllabic system distinct from any Old World precedent. Trade contact between these civilizations and Mesopotamia during the relevant periods has not been established.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 197,
+    "source": "Adapted from historical and archaeological scholarship on technology diffusion"
+  },
+  "stem": "How does the evidence in Text 2 relate to the debate described in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It confirms that writing was too complex to develop independently more than once.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "It strengthens the critics' position by showing similar problems produced structurally different solutions.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "It supports the critics by showing writing emerged independently without shared structure.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "It undermines both positions by showing the timing of diffusion cannot be determined.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Text 1 presents two competing positions: the diffusion model (innovations spread from a few centers outward) and the critics' position (independent invention is plausible because of human cognitive universality). Text 2 provides evidence that writing appeared in the Andes and Mesoamerica without structural similarity to Mesopotamian writing, and without established trade contact. This combination — independent timing, no structural overlap, no documented contact — supports the critics' claim that independent invention is possible. Choice C correctly identifies which position Text 2 supports (critics) and accurately states the key evidence (independent emergence without shared structure). The key inferential step is recognizing that 'no structural features shared' and 'no established trade contact' together support independent invention rather than diffusion.",
+  "distractorRationale": {
+    "A": "This restates the diffusion model's core claim and would be supported only if the evidence showed structural similarities suggesting a shared origin. Text 2 says the opposite — the scripts share no structural features — so this choice inverts the correct inference.",
+    "B": "This is a subtle but incorrect reading. The critics argue that human cognitive universality leads to similar solutions; Text 2 actually shows structurally different solutions. While Text 2 does support the critics' position on independent invention, the reason it does so is not that 'similar problems produced different solutions' — that logic would complicate the universality argument rather than support it. The correct support comes from the lack of contact and structural divergence indicating independent origin.",
+    "C": "Correct. Text 2 shows writing arose in the Americas without shared structure with Old World writing and without established contact, directly supporting the critics' case for independent invention.",
+    "D": "Text 2 does not leave the timing question open; it states that Andean and Mesoamerican writing appeared 'centuries after' Mesopotamian writing, and that contact has not been established. The evidence does take a position relevant to the debate rather than remaining agnostic."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2b4c6d8-e1f3-4a5b-9c7d-2e4f6a8b0c1d"
+  },
+  "hasImage": false
+}

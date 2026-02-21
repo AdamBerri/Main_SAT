@@ -1,0 +1,57 @@
+{
+  "id": "d5e9f4a3-6b1c-4d2e-8a0f-3c7b4e9d6f2a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "Plastic pollution presents a serious threat to ocean ecosystems. Millions of tons of plastic enter the world's oceans every year, and once there, it breaks into smaller and smaller fragments called microplastics. These tiny particles are consumed by fish and other marine animals, entering the food chain and ultimately reaching humans who eat seafood.\n\nSeveral solutions have been proposed to address this problem. First, governments can reduce the amount of plastic produced by banning single-use items such as plastic bags and straws. Second, improved waste management systems can prevent plastic from reaching waterways in the first place. Third, cleanup technologies — including ocean-going vessels designed to collect floating debris — can remove plastic that has already entered the ocean. Together, these approaches offer a path toward healthier seas, though experts agree that prevention is far more effective than cleanup.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 148,
+    "source": "Original passage modeled on environmental policy writing"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A phenomenon is described, then steps in a process are listed in sequence.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Two opposing scientific views on plastic pollution are compared.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A problem is introduced, then multiple solutions are presented.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The causes of plastic pollution are examined, then its effects on humans are detailed.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage clearly follows a problem-solution structure. The first paragraph introduces the problem — plastic pollution threatening ocean ecosystems — and explains how it affects marine life and humans. The second paragraph then presents three distinct solutions (banning single-use plastics, improving waste management, and deploying cleanup technology). The transitional phrase 'Several solutions have been proposed to address this problem' explicitly signals the shift from problem to solution, making C the correct answer.",
+  "distractorRationale": {
+    "A": "The second paragraph does list numbered items (first, second, third), which could suggest a sequential process, but the items are alternative solutions that can be pursued simultaneously, not steps that must occur in order. The overall structure is problem-solution, not a sequence of stages in a single process.",
+    "B": "The passage presents no competing scientific views or debate. Only one perspective on plastic pollution and its solutions is offered. No opposing viewpoints are compared.",
+    "D": "While the first paragraph does mention both a cause (plastic entering oceans) and an effect (humans consuming microplastics), the passage does not organize itself primarily around causes and their effects. The dominant structure is problem (paragraph 1) followed by solutions (paragraph 2), not a cause-effect chain."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3b4c5d6-e7f8-4a9b-0c1d-2e3f4a5b6c7d"
+  },
+  "hasImage": false
+}

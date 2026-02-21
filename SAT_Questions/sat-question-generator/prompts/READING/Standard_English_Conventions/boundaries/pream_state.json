@@ -197,11 +197,159 @@
       },
       "improvementMade": "Addressed: context_incompleteness, grammar_authenticity, difficulty_accuracy",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.175,
+        "passRate": 0.75,
+        "errorCategories": [
+          {
+            "category": "answer_validity_easy_questions",
+            "frequency": 5,
+            "exampleErrors": [
+              "Q6 answer_validity:2",
+              "Q3 answer_validity:2",
+              "Q4 answer_validity:3"
+            ]
+          },
+          {
+            "category": "ambiguous_clause_boundaries",
+            "frequency": 4,
+            "exampleErrors": [
+              "Q5 answer_validity:3 - clause independence debatable",
+              "Q12 answer_validity:3"
+            ]
+          },
+          {
+            "category": "multiple_correct_answers",
+            "frequency": 3,
+            "exampleErrors": [
+              "Easy questions with more than one grammatically valid option"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.343,
+        "passRate": 0.6
+      },
+      "improvementMade": "Addressed: answer validity verification with sentence reconstruction, easy question requirements, ambiguous clause boundaries",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.518,
+        "passRate": 0.85,
+        "errorCategories": [
+          {
+            "category": "answer_validity_easy_questions",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q4, Q6, Q8 failed with answer_validity:3 at easy difficulty"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.743,
+        "passRate": 1
+      },
+      "improvementMade": "Final iteration (5/5). +9.2% improvement. 3 failing questions remain (easy difficulty answer validity). Best score 4.743 from v1.3.0.",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.403,
+        "passRate": 0.9,
+        "errorCategories": [
+          {
+            "category": "incorrect_answers",
+            "frequency": 3
+          },
+          {
+            "category": "implausible_distractors",
+            "frequency": 2
+          },
+          {
+            "category": "ambiguous_boundary_rules",
+            "frequency": 2
+          },
+          {
+            "category": "inconsistent_passage_quality",
+            "frequency": 2
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.814,
+        "passRate": 0.6
+      },
+      "improvementMade": "Addressed: answer correctness verification, distractor plausibility, boundary rule clarity, passage quality",
+      "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.528,
+        "passRate": 0.9,
+        "errorCategories": [
+          {
+            "category": "incorrect_answers",
+            "frequency": 2
+          },
+          {
+            "category": "answer_validity_failure",
+            "frequency": 1
+          },
+          {
+            "category": "difficulty_calibration",
+            "frequency": 1
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.657,
+        "passRate": 0.8
+      },
+      "improvementMade": "Addressed: answer correctness verification, answer validity, difficulty calibration",
+      "newPromptVersion": "1.5.0"
+    },
+    {
+      "iteration": 8,
+      "promptVersionUsed": "1.5.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.732,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.571,
+        "passRate": 1
+      },
+      "improvementMade": "Converged: testAvg=4.571, -1.8%",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.1.0",
-  "converged": false,
+  "currentBestVersion": "1.3.0",
+  "converged": true,
   "startedAt": "2026-01-08T20:55:29.442Z",
-  "completedAt": null,
-  "bestTestScore": 4.125
+  "completedAt": "2026-02-20T22:57:09.507Z",
+  "bestTestScore": 4.743
 }

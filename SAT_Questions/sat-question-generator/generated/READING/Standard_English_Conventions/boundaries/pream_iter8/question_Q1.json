@@ -1,0 +1,57 @@
+{
+  "id": "a3f7c2e1-84b6-4d29-9f01-2c8e5b1d7a44",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1.3
+  },
+  "passage": "The Roman Senate wielded enormous power during the early Republic. Senators debated laws and approved military campaigns, they also had the authority to declare war on foreign nations. This body remained influential for centuries before the emperors rose to power.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 52,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": ". They also had",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "; and they also had",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": " they also had",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The sentence as written contains a comma splice: two independent clauses — 'Senators debated laws and approved military campaigns' and 'they also had the authority to declare war on foreign nations' — are joined only by a comma. A comma alone cannot connect two independent clauses in Standard English. Choice B corrects this error by placing a period after 'campaigns' and beginning the second independent clause as a new sentence with 'They,' which properly separates the two complete thoughts.",
+  "distractorRationale": {
+    "A": "NO CHANGE creates a comma splice. The comma joins two independent clauses ('Senators debated laws and approved military campaigns' and 'they also had the authority to declare war'), which requires stronger punctuation than a comma alone.",
+    "C": "A semicolon followed by a coordinating conjunction ('and') is a non-standard and incorrect pairing. Either a semicolon alone OR a comma with a coordinating conjunction may join two independent clauses, but combining both creates an error.",
+    "D": "Removing all punctuation between the two independent clauses creates a fused (run-on) sentence. Two independent clauses must be separated by appropriate punctuation; they cannot simply be run together with no boundary marker."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d9e4a7b2-3c15-4f88-a062-7b9d2e5c1f30"
+  },
+  "hasImage": false
+}

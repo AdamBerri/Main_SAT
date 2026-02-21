@@ -1,0 +1,54 @@
+{
+  "id": "3f7a1d24-8c5e-4b90-a3f2-6e9d0c1b5a87",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "In triangle $ABC$, $AB = 8$, $AC = 7$, and $BC = 9$. The angle bisector from vertex $A$ meets side $BC$ at point $D$. What is the length of $AD$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\dfrac{8\\sqrt{14}}{5}$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\dfrac{\\sqrt{145}}{2}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\dfrac{5\\sqrt{7}}{2}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$2\\sqrt{14}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Step 1: Find BD and DC using the Angle Bisector Theorem.**\n\nThe angle bisector from $A$ divides $BC$ in the ratio $AB : AC = 8 : 7$. Therefore:\n$$BD = \\frac{8}{8+7} \\cdot 9 = \\frac{72}{15} = \\frac{24}{5}, \\quad DC = \\frac{7}{15} \\cdot 9 = \\frac{63}{15} = \\frac{21}{5}$$\n\n**Step 2: Apply Stewart's Theorem.**\n\nStewart's Theorem states that for cevian $AD$ with $BD = m$, $DC = n$, $BC = a = m+n$:\n$$AC^2 \\cdot BD + AB^2 \\cdot DC = BC\\left(AD^2 + BD \\cdot DC\\right)$$\n$$49 \\cdot \\frac{24}{5} + 64 \\cdot \\frac{21}{5} = 9\\left(AD^2 + \\frac{24}{5} \\cdot \\frac{21}{5}\\right)$$\n$$\\frac{1176}{5} + \\frac{1344}{5} = 9\\left(AD^2 + \\frac{504}{25}\\right)$$\n$$\\frac{2520}{5} = 9 \\cdot AD^2 + \\frac{4536}{25}$$\n$$504 = 9 \\cdot AD^2 + \\frac{4536}{25}$$\n\nMultiply through by 25:\n$$12600 = 225 \\cdot AD^2 + 4536$$\n$$8064 = 225 \\cdot AD^2$$\n$$AD^2 = \\frac{8064}{225} = \\frac{896}{25}$$\n\n**Step 3: Simplify.**\n\n$896 = 64 \\cdot 14$, so $AD = \\frac{\\sqrt{64 \\cdot 14}}{\\sqrt{25}} = \\dfrac{8\\sqrt{14}}{5}$.",
+  "distractorRationale": {
+    "A": "Correct answer obtained by applying the Angle Bisector Theorem to find BD and DC, then applying Stewart's Theorem to solve for AD.",
+    "B": "The student applies the **median length formula** $m_a = \\frac{1}{2}\\sqrt{2b^2 + 2c^2 - a^2}$ instead of Stewart's Theorem, computing $\\frac{1}{2}\\sqrt{2(49)+2(64)-81} = \\frac{1}{2}\\sqrt{145} = \\frac{\\sqrt{145}}{2}$.",
+    "C": "The student treats the angle bisector as an **altitude from $A$** to the midpoint of $BC$, computing $AD^2 = AB^2 - (BC/2)^2 = 64 - \\frac{81}{4} = \\frac{175}{4}$, giving $AD = \\frac{5\\sqrt{7}}{2}$.",
+    "D": "The student uses the incorrect formula $AD = \\sqrt{AB \\cdot AC} = \\sqrt{8 \\cdot 7} = \\sqrt{56} = 2\\sqrt{14}$, confusing the angle bisector length with the geometric mean of the two sides."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1c2e3f4-5b6d-7890-abcd-ef1234567890"
+  }
+}

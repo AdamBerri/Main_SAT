@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2e1-8b45-4d9a-b6f3-2c1e0d7a5f84",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3.0,
+    "computational": 3.3
+  },
+  "stem": "In right triangle $PQR$, the right angle is at $Q$. Point $S$ lies on $\\overline{PR}$ such that $\\overline{QS} \\perp \\overline{PR}$. If $PS = 4$ and $SR = 9$, what is the length of $QS$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$6$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\dfrac{13}{2}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\sqrt{97}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\dfrac{36}{13}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "When an altitude is drawn from the right angle of a right triangle to the hypotenuse, the altitude is the geometric mean of the two segments of the hypotenuse it creates. This is the Geometric Mean (Altitude) Theorem:\n$$QS^2 = PS \\cdot SR$$\n\nSubstituting the given values $PS = 4$ and $SR = 9$:\n$$QS^2 = 4 \\cdot 9 = 36$$\n$$QS = \\sqrt{36} = 6$$\n\nVerification: The full hypotenuse is $PR = PS + SR = 4 + 9 = 13$. The two legs satisfy $PQ^2 = PS \\cdot PR = 4 \\cdot 13 = 52$ and $QR^2 = SR \\cdot PR = 9 \\cdot 13 = 117$. Check: $PQ^2 + QR^2 = 52 + 117 = 169 = 13^2 = PR^2$. ✓",
+  "distractorRationale": {
+    "A": "Correct. Applies the Geometric Mean (Altitude) Theorem: $QS^2 = PS \\cdot SR = 4 \\cdot 9 = 36$, giving $QS = 6$.",
+    "B": "The student takes the arithmetic mean of $PS$ and $SR$ instead of the geometric mean, computing $QS = \\frac{PS + SR}{2} = \\frac{4 + 9}{2} = \\frac{13}{2}$.",
+    "C": "The student treats $PS$ and $SR$ as the two legs of the right triangle and applies the Pythagorean theorem to find the hypotenuse, computing $\\sqrt{4^2 + 9^2} = \\sqrt{16 + 81} = \\sqrt{97}$.",
+    "D": "The student uses the harmonic mean formula instead of the geometric mean, computing $QS = \\frac{PS \\cdot SR}{PS + SR} = \\frac{4 \\cdot 9}{4 + 9} = \\frac{36}{13}$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d9e4b1a7-3f28-4c56-8e12-7b0a5c3d9f61"
+  }
+}

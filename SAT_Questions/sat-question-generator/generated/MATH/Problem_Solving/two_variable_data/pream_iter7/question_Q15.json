@@ -1,0 +1,54 @@
+{
+  "id": "f7c3d6e5-8a2b-4f9c-9d4e-2b6a1c8f5d3e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "A researcher collected data on daily high temperature ($x$, in degrees Fahrenheit) and the number of ice cream cones sold per day ($y$) at a beachside stand. The line of best fit for the data is $y = 1.6x - 48$. On a day when the high temperature was $85°$F, the stand actually sold 98 ice cream cones. What is the residual for that day?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-38$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$-10$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$10$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$88$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The residual is defined as: residual $=$ actual value $-$ predicted value.\n\nStep 1: Use the line of best fit to find the predicted number of ice cream cones sold when $x = 85$.\n$$y = 1.6(85) - 48 = 136 - 48 = 88 \\text{ cones}$$\n\nStep 2: Calculate the residual.\n$$\\text{residual} = \\text{actual} - \\text{predicted} = 98 - 88 = 10$$\n\nThe residual is $10$, indicating the stand sold 10 more cones than the line of best fit predicted for that temperature.",
+  "distractorRationale": {
+    "A": "This results from computing only the slope term when finding the predicted value, then subtracting from the actual: $98 - 1.6(85) = 98 - 136 = -38$. The student applied the slope but forgot to subtract the constant $-48$ from the equation (i.e., did not complete the prediction step).",
+    "B": "Sign error. This results from reversing the residual formula, computing predicted minus actual instead of actual minus predicted: $88 - 98 = -10$.",
+    "C": "Correct. The predicted value is $1.6(85) - 48 = 88$, and the residual is $98 - 88 = 10$.",
+    "D": "Incomplete solution. This is the predicted number of cones from the line of best fit ($y = 88$). The student correctly computed the prediction but stopped before calculating the residual."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3e9a7b5-4f2d-4c8e-8a6b-1d7f5e3c9b2a"
+  }
+}

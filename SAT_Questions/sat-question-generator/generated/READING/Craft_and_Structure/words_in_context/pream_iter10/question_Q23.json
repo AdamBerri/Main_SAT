@@ -1,0 +1,58 @@
+{
+  "id": "f3c7a1e9-8b4d-4f2a-9c6e-5d1b8a3f7c2e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "Among the most vexing problems in developmental biology is how a single fertilized egg coordinates the expression of thousands of genes with the precision necessary to generate a fully differentiated organism. Recent work on morphogen gradients has begun to illuminate this process, revealing that the spatial concentration of certain signaling molecules effectively encodes positional information: a cell's fate is determined not by the presence of a morphogen alone, but by the exact threshold at which its receptors register the signal. Small perturbations to these thresholds, experiments have shown, can profoundly alter the body plan.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 102,
+    "source": "Adapted from a review article in developmental biology"
+  },
+  "stem": "As used in the passage, \"register\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "detect",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "record",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "enroll",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "convey",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this passage, 'register' describes what the receptors do with the morphogen signal: they perceive or detect the exact threshold of concentration. The passage explains that a cell's fate depends on 'the exact threshold at which its receptors register the signal' — that is, the precise concentration level at which receptors respond to or sense the signaling molecule. 'Detect' captures this active sensory function in biological systems, where receptors are molecular sensors that respond only when a stimulus reaches a sufficient level. 'Record' implies documentation or logging, which does not describe receptor function; 'enroll' has no relevant scientific meaning here; 'convey' means to transmit something to another party, which inverts the directional relationship — the signal arrives at the receptor, and the receptor detects it, rather than the receptor transmitting it.",
+  "distractorRationale": {
+    "A": "Correct. 'Detect' precisely describes receptor function in the passage: receptors respond to a morphogen when it crosses a specific concentration threshold, meaning they sense or detect it at that level.",
+    "B": "'Record' — as in to document or log — is a legitimate meaning of 'register' (e.g., a seismograph registers an earthquake by recording it), but the passage is not describing documentation; it describes the sensory threshold at which receptors respond to a molecular signal.",
+    "C": "'Enroll' is one common meaning of 'register' (to register for a course), but it has no relevance in a biological context describing receptor-signal interactions.",
+    "D": "'Convey' means to transmit or carry information to someone else. While receptors do pass along signals downstream after detection, 'register' in this sentence describes the initial act of sensing the signal, not the transmission of it onward."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3f7b9e1-4d2a-4c8f-9e5b-7a1d3c9f2b8e"
+  },
+  "hasImage": false
+}

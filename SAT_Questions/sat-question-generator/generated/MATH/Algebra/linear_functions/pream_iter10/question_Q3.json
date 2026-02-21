@@ -1,0 +1,54 @@
+{
+  "id": "c1e5f8a3-7b2d-4c6e-9f0a-3d8b1e4c7f20",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "A car rental company charges customers according to the function $C(d) = 35d + 15$, where $C(d)$ is the total cost in dollars and $d$ is the number of days the car is rented. What is the total cost, in dollars, to rent a car for 4 days?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$95",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$140",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$155",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$200",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To find the total cost for 4 days, substitute $d = 4$ into the function: $C(4) = 35(4) + 15 = 140 + 15 = 155$. The total cost to rent the car for 4 days is $\\$155$.",
+  "distractorRationale": {
+    "A": "Swaps the roles of slope and intercept before evaluating: computes $15(4) + 35 = 60 + 35 = 95$, treating 15 as the daily rate and 35 as the flat fee.",
+    "B": "Forgets to add the constant term (flat fee) after multiplying: computes only $35(4) = 140$, omitting the $+15$.",
+    "C": "Correct: $C(4) = 35(4) + 15 = 140 + 15 = 155$.",
+    "D": "Adds the slope and intercept together before multiplying by the number of days: $(35 + 15) \\times 4 = 50 \\times 4 = 200$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a4b5c6d7-8e9f-0a1b-2c3d-4e5f6a7b8c9d"
+  }
+}

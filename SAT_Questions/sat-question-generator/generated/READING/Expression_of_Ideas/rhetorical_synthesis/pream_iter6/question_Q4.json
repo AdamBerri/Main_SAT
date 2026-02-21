@@ -1,0 +1,59 @@
+{
+  "id": "f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "linguistic": 1.2
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- Solar panels convert sunlight into electricity.\n- The cost of solar panels has dropped by more than 80% since 2010.\n- Solar energy produces no greenhouse gas emissions during operation.\n- Many homeowners install solar panels to reduce their electricity bills.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 50,
+    "source": "Student research notes on solar energy"
+  },
+  "stem": "The student wants to present an advantage of solar energy for homeowners. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Solar panels turn sunlight into electricity and do not produce greenhouse gas emissions.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The cost of solar panels has decreased significantly, dropping by over 80% since 2010.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Solar panels have become much more affordable since 2010, making it easier for homeowners to install them and reduce their electricity bills.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Many homeowners are interested in renewable energy sources like solar panels.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Choice C is correct because it connects the declining cost of solar panels to the direct benefit for homeowners (reduced electricity bills), presenting a clear advantage from the homeowner's perspective. The other choices either focus on general facts (A), omit the homeowner angle (B), or lack specific information (D).",
+  "distractorRationale": {
+    "A": "This choice describes how solar panels work and their environmental benefit, but it does not specifically address an advantage for homeowners.",
+    "B": "This choice mentions the cost decrease but does not connect it to any benefit for homeowners specifically.",
+    "D": "This choice is vague and does not use specific information from the notes to present a concrete advantage."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:03.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

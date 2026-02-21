@@ -1,0 +1,54 @@
+{
+  "id": "0ebfca82-43c6-410a-a3e4-3a4af11e360c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "A gym charges a one-time registration fee plus a fixed monthly membership fee. After 2 months, a member has paid a total of $\\$110$. After 5 months, the same member has paid a total of $\\$200$. What is the monthly membership fee, in dollars?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$18$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$30$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$45$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$55$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $C(t) = mt + b$ be the total amount paid after $t$ months, where $m$ is the monthly fee and $b$ is the registration fee.\n\nUsing the two data points $(2, 110)$ and $(5, 200)$, find the slope (monthly fee):\n$$m = \\frac{200 - 110}{5 - 2} = \\frac{90}{3} = 30$$\n\nThe monthly membership fee is $\\$30$.\n\n(As a check: $b = 110 - 30(2) = 50$, so the registration fee is $\\$50$, and $C(5) = 30(5) + 50 = 200$ ✓.)",
+  "distractorRationale": {
+    "A": "Divides the total change in cost by the larger number of months instead of the change in months: $\\frac{200 - 110}{5} = \\frac{90}{5} = 18$.",
+    "B": "Correct. The monthly fee equals the slope: $\\frac{200 - 110}{5 - 2} = 30$.",
+    "C": "Divides the total change in cost by the smaller number of months (2) instead of the change in months (3): $\\frac{200 - 110}{2} = \\frac{90}{2} = 45$.",
+    "D": "Treats the total paid at 2 months as if there were no registration fee, dividing by the number of months: $\\frac{110}{2} = 55$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "54227ffa-e471-4e95-997a-a4b99c20637e"
+  }
+}

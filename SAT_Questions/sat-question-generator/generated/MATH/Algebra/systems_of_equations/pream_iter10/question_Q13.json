@@ -1,0 +1,54 @@
+{
+  "id": "d2c5a8b7-6e3f-4091-8d4a-f1c7b9e25a30",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "A rectangular swimming pool has a perimeter of 84 meters. The length of the pool is 6 meters more than twice its width. What is the length of the pool, in meters?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$12$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$26$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$30$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$34$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let $l$ = length of the pool (in meters) and $w$ = width of the pool (in meters).\n\nSet up the system:\n- Perimeter: $2l + 2w = 84 \\Rightarrow l + w = 42$ ... (1)\n- Length-width relationship: $l = 2w + 6$ ... (2)\n\nSubstitute equation (2) into equation (1):\n$$(2w + 6) + w = 42$$\n$$3w + 6 = 42$$\n$$3w = 36$$\n$$w = 12$$\n\nBack-substitute to find $l$:\n$$l = 2(12) + 6 = 24 + 6 = 30$$\n\nChecking equation (1): $30 + 12 = 42$ ✓ (perimeter $= 2(30) + 2(12) = 60 + 24 = 84$ ✓)\nChecking equation (2): $30 = 2(12) + 6 = 30$ ✓\n\nThe length of the pool is $\\mathbf{30}$ meters.",
+  "distractorRationale": {
+    "A": "Makes a wrong-variable error: solves the system correctly ($l = 30$, $w = 12$) but reports the width $w = 12$ instead of the length.",
+    "B": "Makes a sign error in the relationship equation: uses $l = 2w - 6$ instead of $l = 2w + 6$, giving $(2w - 6) + w = 42 \\Rightarrow 3w = 48 \\Rightarrow w = 16$, and $l = 2(16) - 6 = 26$.",
+    "C": "Correct answer: the length of the pool is 30 meters.",
+    "D": "Makes a substitution arithmetic error: after substituting $l = 2w + 6$ into $l + w = 42$, writes $3w = 42$ (forgetting to subtract 6), giving $w = 14$ and $l = 2(14) + 6 = 34$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "1f4e9c3b-8a72-4d05-b6c1-e3d7a2f50b96"
+  }
+}

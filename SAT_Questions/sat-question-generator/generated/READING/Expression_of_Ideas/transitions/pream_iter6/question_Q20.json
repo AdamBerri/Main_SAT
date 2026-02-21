@@ -1,0 +1,58 @@
+{
+  "id": "d0e1f2a3-aaaa-4d6e-7f8a-9b0c1d2e3f45",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.1,
+    "procedural": 4,
+    "linguistic": 4
+  },
+  "passage": "Advocates for urban green spaces have emphasized their role in reducing heat island effects and improving air quality. A recent economic analysis of park construction in three major cities found that property values within a half-mile radius of new parks increased by an average of twelve percent. _______ the analysis also showed that long-term residents in those areas experienced rising rents and displacement, complicating the narrative that parks benefit all community members equally.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 85,
+    "source": "Adapted from an urban planning policy paper"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Predictably,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "At the same time,",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "For this reason,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "In particular,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The second sentence describes a positive effect of parks (property values rise). The third sentence describes a simultaneous negative effect (displacement of residents). These are two concurrent but contrasting consequences of the same development. 'At the same time' correctly signals this juxtaposition of coexisting effects, highlighting that the positive and negative outcomes happened in parallel.",
+  "distractorRationale": {
+    "A": "'Predictably' signals an expected outcome, but the passage presents the displacement as a complication to the positive narrative, not as a foreseeable consequence.",
+    "B": "Correct. 'At the same time' captures the simultaneous occurrence of contrasting effects: property value increases alongside resident displacement.",
+    "C": "'For this reason' signals that the displacement was caused by the property value increase. While there may be a causal link, the passage frames the displacement as a complicating factor to the broader narrative, not as a direct consequence of property value gains specifically.",
+    "D": "'In particular' introduces a specific detail within a broader category, but the displacement is a contrasting effect, not a specific instance of property values rising."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:03:04.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d0aaaaaa-e1f2-4a3b-4c5d-6e7f8a9b0c12"
+  },
+  "hasImage": false
+}

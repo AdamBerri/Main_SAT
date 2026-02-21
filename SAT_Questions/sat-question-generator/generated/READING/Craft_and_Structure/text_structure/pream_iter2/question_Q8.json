@@ -1,0 +1,57 @@
+{
+  "id": "d5f9e2a4-8b3c-4d7f-9e1a-2c6b4f8d3e9a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "Public libraries serve communities in two main ways. First, they provide free access to books, digital media, and internet service, allowing people of all income levels to find information and entertainment. Without libraries, many residents — particularly in lower-income neighborhoods — would have no reliable way to access these resources.\n\nHowever, libraries today do far more than lend materials. They offer job training workshops, early childhood reading programs, tax preparation assistance, and meeting spaces for community groups. In some cities, library staff work directly with social service agencies to connect patrons with housing and healthcare resources. These expanded services transform libraries from simple lending institutions into vital community centers.\n\nBoth of these roles — resource access and community programming — are essential. Cuts to library funding therefore affect not only readers but also job seekers, parents, and residents who depend on social services.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 157,
+    "source": "Original passage"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A general claim is supported by two specific categories of evidence.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "A traditional view of libraries is challenged by a newer perspective.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A problem facing libraries is described, followed by proposed solutions.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Two groups that use libraries are compared to show their different needs.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage opens with the general claim that public libraries serve communities in two main ways. It then devotes one paragraph to the first category (access to materials) and another to the second category (expanded community services). A concluding paragraph ties both categories back to the general claim about libraries' importance. The overall structure is general-to-specific: a broad assertion is developed through two organized, specific categories of supporting detail.",
+  "distractorRationale": {
+    "B": "The passage does contrast a traditional view of libraries as lending institutions with their expanded modern role, and the word 'however' signals this shift. However, the contrast is used to elaborate the two ways libraries serve communities — it is a secondary structural element within the larger general-to-specific framework, not the dominant pattern of the whole passage.",
+    "C": "Funding cuts are mentioned only in the final sentence as a consequence of the argument, not as a problem that the passage then addresses with solutions. No solutions to underfunding are proposed; the closing sentence reinforces why both library roles matter. Problem-solution is therefore not the organizing structure.",
+    "D": "The passage mentions several groups — lower-income residents, job seekers, parents, and social service clients — but it does not compare these groups to each other or analyze their differing needs side by side. These groups are cited as beneficiaries supporting the argument, not as subjects of comparison."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a9c2f5e8-1b4d-4a7c-8f3e-6d1b9e4a2c7f"
+  },
+  "hasImage": false
+}

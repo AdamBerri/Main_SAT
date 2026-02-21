@@ -1,0 +1,59 @@
+{
+  "id": "a6b7c8d9-e0f1-4a2b-3c4d-5e6f7a8b9c0d",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.2
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- Telemedicine allows patients to consult with doctors remotely using video calls and messaging.\n- During the COVID-19 pandemic, telemedicine visits in the United States increased by over 150% compared to pre-pandemic levels.\n- Rural patients, who often live far from specialists, benefit from telemedicine because it eliminates long travel times.\n- Some critics argue that telemedicine cannot fully replace in-person exams for diagnosing certain conditions.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 71,
+    "source": "Student research notes on telemedicine"
+  },
+  "stem": "The student wants to present telemedicine as a valuable option for patients in rural areas. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Telemedicine use surged during the COVID-19 pandemic, with visits increasing by over 150% compared to pre-pandemic levels in the United States.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "By enabling remote consultations through video calls, telemedicine eliminates the long travel times that often prevent rural patients from seeing specialists.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "While telemedicine allows remote consultations, some critics argue it cannot fully replace in-person exams for certain conditions.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Telemedicine lets patients consult with doctors using video calls and messaging, and its use grew significantly during the pandemic.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it connects the technology (remote video consultations) to the specific benefit for rural patients (eliminating long travel times to see specialists), directly presenting telemedicine as valuable for this population. Choices A and D focus on pandemic growth, and C introduces criticism that undermines the stated goal.",
+  "distractorRationale": {
+    "A": "This choice focuses on the pandemic-driven surge in telemedicine use but does not specifically address its value for rural patients.",
+    "C": "This choice introduces criticism of telemedicine, which works against the goal of presenting it as a valuable option.",
+    "D": "This choice describes telemedicine generally and its pandemic growth but does not connect it to the specific needs of rural patients."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:13.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1e"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

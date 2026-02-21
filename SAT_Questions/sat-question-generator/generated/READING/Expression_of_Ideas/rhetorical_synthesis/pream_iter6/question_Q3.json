@@ -1,0 +1,59 @@
+{
+  "id": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- Honeybees communicate the location of food sources through a series of movements called the waggle dance.\n- The angle of the dance indicates the direction of the food relative to the sun.\n- The duration of the waggle portion signals the distance to the food source.\n- Austrian biologist Karl von Frisch discovered the meaning of the waggle dance in the 1940s.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 67,
+    "source": "Student research notes on honeybee communication"
+  },
+  "stem": "The student wants to describe how honeybees share information about food locations. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Karl von Frisch studied honeybees in the 1940s and made important discoveries about their behavior.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Honeybees perform a waggle dance to communicate the direction and distance of food sources, with the angle indicating direction and the duration signaling distance.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Honeybees are known for their waggle dance, which they perform for other bees in the hive.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The waggle dance was discovered by Karl von Frisch, an Austrian biologist who studied bees.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it explains the mechanism of how honeybees share food location information: the waggle dance uses angle for direction and duration for distance. This directly addresses the goal of describing how bees share information. The other choices focus on who discovered it (A, D) or provide only a vague reference to the dance (C).",
+  "distractorRationale": {
+    "A": "This choice focuses on the researcher rather than on how the bees communicate, which does not fulfill the stated goal.",
+    "C": "This choice mentions the waggle dance but does not explain how it communicates direction and distance, leaving the mechanism unclear.",
+    "D": "This choice focuses on the discovery of the dance rather than on how the dance conveys information about food locations."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:02.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

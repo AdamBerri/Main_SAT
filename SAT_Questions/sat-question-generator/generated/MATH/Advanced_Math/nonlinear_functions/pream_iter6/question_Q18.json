@@ -1,0 +1,54 @@
+{
+  "id": "c1d4e7f0-25a8-4b31-8c62-3d9e0f1a2b53",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "Let $f(x) = x^2 - 6x + k$ for some constant $k$, and let $g(x) = f(x + 2) - 5$. If $g$ has exactly one real zero, what is the value of $k$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$1$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$9$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$14$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$22$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "First, compute $f(x + 2)$ by substituting $x + 2$ for $x$: $f(x+2) = (x+2)^2 - 6(x+2) + k = x^2 + 4x + 4 - 6x - 12 + k = x^2 - 2x + (k - 8)$. Then $g(x) = f(x+2) - 5 = x^2 - 2x + (k-8) - 5 = x^2 - 2x + (k - 13)$. For exactly one real zero the discriminant equals zero: $(-2)^2 - 4(1)(k-13) = 0 \\Rightarrow 4 - 4(k-13) = 0 \\Rightarrow 4 - 4k + 52 = 0 \\Rightarrow 56 = 4k \\Rightarrow k = 14$.",
+  "distractorRationale": {
+    "A": "Error: setting the discriminant of $g(x) = x^2 - 2x + (k-13)$ as $4 - 4k = 0$ by treating the constant term as simply $k$ (dropping the $-13$). This yields $k = 1$.",
+    "B": "Error: omitting the $-5$ shift when forming $g$, so working with $f(x+2) = x^2 - 2x + (k-8)$ and setting its discriminant to zero: $4 - 4(k-8) = 0 \\Rightarrow 4 - 4k + 32 = 0 \\Rightarrow k = 9$.",
+    "C": "This is the correct answer: $k = 14$.",
+    "D": "Error: expanding $(x+2)^2$ as $x^2 + 4$ (dropping the middle term $4x$), giving $f(x+2) = x^2 + 4 - 6x - 12 + k = x^2 - 6x + (k-8)$. Then $g(x) = x^2 - 6x + (k-13)$. Setting discriminant to zero: $36 - 4(k-13) = 0 \\Rightarrow 36 - 4k + 52 = 0 \\Rightarrow k = 22$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d2e3f4a5-b6c7-8901-dcef-123456789012"
+  }
+}

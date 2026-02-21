@@ -1,0 +1,58 @@
+{
+  "id": "a8c1d4e5-6f2a-4c7b-d3e8-9f4a1b2c5d6e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.2
+  },
+  "passage": "The paintings of Vermeer have long puzzled art historians because of their extraordinary luminosity—a quality that distinguishes them sharply from the work of his contemporaries in seventeenth-century Delft. For decades, scholars assumed that Vermeer's unique light effects resulted purely from his mastery of observation and technique. In 1995, however, art historian Philip Steadman published research suggesting that Vermeer may have used a camera obscura, a device that projects an inverted image of the external scene onto an interior surface through a pinhole or lens. Steadman demonstrated through architectural reconstruction that Vermeer's studio had precisely the proportions and window placements required for effective camera obscura projection. Critics noted that a camera obscura does not paint for you—it only projects an image for the artist to trace or observe—and that operating such a device requires considerable artistic skill in itself. Nevertheless, subsequent technical analyses of Vermeer's canvases have found that his perspective constructions are virtually free of the minor distortions that even skilled freehand artists introduce, a consistency more characteristic of mechanical optical assistance than unaided observation.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 185,
+    "source": "Adapted from an art history essay on Vermeer's technique and the camera obscura debate"
+  },
+  "stem": "What can most reasonably be inferred from the passage about the camera obscura hypothesis?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Vermeer's luminosity would have been impossible to achieve without optical assistance.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The hypothesis, while not proving Vermeer used a camera obscura, is supported by multiple independent lines of evidence.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The debate has been conclusively settled in favor of Vermeer having used mechanical optical aids.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Vermeer's artistic skill was inferior to that of his contemporaries because he relied on mechanical devices.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage presents multiple independent lines of evidence supporting the camera obscura hypothesis without claiming it is proven: architectural reconstruction showing the studio had the correct proportions, and technical analysis finding perspective constructions virtually free of the distortions typical of unaided artists. The passage also acknowledges a counterargument (a camera obscura still requires skill), which the author implicitly addresses through the technical analysis findings. The accumulation of corroborating evidence from different methods—architectural and technical—supports inferring that the hypothesis has a substantive evidentiary basis, but the hedged language throughout ('suggesting,' 'may have used,' 'more characteristic of') indicates it remains a hypothesis rather than a certainty.",
+  "distractorRationale": {
+    "A": "The passage attributes Vermeer's luminosity to 'mastery of observation and technique' in the initial scholarly view, and never claims camera obscura was essential to it specifically. The hypothesis concerns perspective accuracy, not luminosity.",
+    "B": "Correct. Architectural reconstruction and canvas technical analysis provide two distinct, converging forms of evidence, and the passage's hedged language makes clear this is strong support rather than conclusive proof.",
+    "C": "The passage uses consistently hedged language—'suggesting,' 'may have used,' 'more characteristic of'—indicating the hypothesis remains contested. No authoritative resolution is claimed.",
+    "D": "The passage explicitly states that critics acknowledged operating a camera obscura 'requires considerable artistic skill in itself,' and critics never argue Vermeer was less skilled. The passage consistently treats Vermeer as extraordinarily skilled regardless of whether he used optical aids."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b3c6d9e2-4f1a-4b7c-8d5e-2a9f1b4c7d8e"
+  },
+  "hasImage": false
+}

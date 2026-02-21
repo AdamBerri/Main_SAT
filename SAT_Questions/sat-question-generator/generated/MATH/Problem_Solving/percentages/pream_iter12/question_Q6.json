@@ -1,0 +1,54 @@
+{
+  "id": "e1f2a3b4-c5d6-7e8f-9a0b-1c2d3e4f5a6b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "A company's revenue increased from $200,000 last year to $230,000 this year. What is the percent increase in revenue?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "13%",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "15%",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "30%",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "87%",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Increase = $230,000 − $200,000 = $30,000. Percent increase = ($30,000 / $200,000) × 100 = 15%.",
+  "distractorRationale": {
+    "A": "Student divided the increase by the new amount instead of the original: $30,000 / $230,000 ≈ 0.13, so 13%.",
+    "B": "Correct answer.",
+    "C": "Student used $30,000 directly as the percentage without dividing by the base: reported 30%.",
+    "D": "Student divided the original by the new amount: $200,000 / $230,000 ≈ 0.87, so 87%."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:05.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f2a3b4c5-d6e7-8f9a-0b1c-2d3e4f5a6b7c"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "e5d9eed9-11f7-49e5-aad5-38bdf1aaa334",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A data set contains the six values 2, 4, 6, 8, 10, and 22. The value 2 is removed from the data set. Which of the following correctly describes the effect on the mean and median of the data set after this removal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Both the mean and the median decrease.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The mean decreases and the median increases.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The mean increases and the median stays the same.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Both the mean and the median increase.",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "STEP A — Sort the original data set in ascending order: 2, 4, 6, 8, 10, 22.\n\nSTEP B — Compute the original mean:\n  Sum = 2 + 4 + 6 + 8 + 10 + 22 = 52\n  Mean = 52 ÷ 6 ≈ 8.67\n\nSTEP C — Identify the original median (n = 6, even):\n  Position: average of the 3rd and 4th values = (6 + 8) ÷ 2 = 7\n\nSTEP D — Mode: no repeated values.\n\nSTEP E — Range = 22 − 2 = 20.\n\nSTEP F — Standard deviation: not required.\n\nSTEP G — After removing 2, the new data set is: 4, 6, 8, 10, 22 (n = 5).\n  New mean: Sum = 4 + 6 + 8 + 10 + 22 = 50; Mean = 50 ÷ 5 = 10\n  New median (n = 5, odd): middle value is the 3rd value = 8\n  Comparison — Mean: 8.67 → 10 (INCREASES). Median: 7 → 8 (INCREASES).\n\nSTEP H — Both increase. Correct answer = D. ✓\n\nKey insight: The value 2 is below the original mean (2 < 8.67). Removing a value below the mean always raises the mean. The median effect is subtler: with 6 values, the median was the average of the 3rd and 4th items (6 and 8), giving 7. After removing 2, there are only 5 values, and the median is now the single 3rd item = 8. The shift from an even-count list to an odd-count list repositions the median upward.\n\nSTEP I — Distractor analysis:\n  Choice A (both decrease): MISCONCEPTION — direction reversal on the mean. A student who thinks 'removing a small value makes the data set smaller, so the mean must decrease' reverses the direction of the mean. They may also incorrectly apply the same logic to the median.\n  Choice B (mean decreases, median increases): MISCONCEPTION — correct direction on median but direction reversal on mean. The student correctly reasons about the median's positional shift but erroneously concludes that removing a small value lowers the mean.\n  Choice C (mean increases, median stays the same): MISCONCEPTION — statistic confusion applied to median. The student correctly identifies that removing a below-mean value raises the mean, but incorrectly reasons that because 2 is also below the original median (2 < 7), its removal cannot affect the median. This ignores the change in list length from even n to odd n, which shifts the median position.",
+  "distractorRationale": {
+    "A": "Direction reversal on both statistics: the student incorrectly reasons that removing a small value makes the data 'smaller overall,' lowering both the mean and median.",
+    "B": "Direction reversal on mean only: the student correctly identifies that removing 2 shifts the median upward due to the positional change, but incorrectly concludes that removing the smallest value lowers the mean.",
+    "C": "Statistic confusion on median: the student correctly determines the mean increases (removing a below-mean value raises it) but wrongly concludes the median is unchanged, failing to account for the positional shift caused by the change from n=6 (even) to n=5 (odd).",
+    "D": "Correct answer: mean increases from 52/6 ≈ 8.67 to 50/5 = 10; median increases from (6+8)/2 = 7 to the 3rd value of the new list = 8."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "486ccf29-b324-4c7e-a04a-83222e9e441f"
+  }
+}

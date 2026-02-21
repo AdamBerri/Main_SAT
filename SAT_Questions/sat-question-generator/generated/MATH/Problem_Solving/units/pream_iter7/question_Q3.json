@@ -1,0 +1,54 @@
+{
+  "id": "c9e4f5a6-0d7b-4c2f-d3e8-4f1b9a205e69",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "A bag of flour weighs 4 pounds. There are 16 ounces in 1 pound. How many ounces does the bag of flour weigh?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "4",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "48",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "64",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "80",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To convert pounds to ounces, multiply the number of pounds by 16 ounces per pound.\n\n$$4 \\text{ lb} \\times \\frac{16 \\text{ oz}}{1 \\text{ lb}} = 64 \\text{ oz}$$\n\nThe pounds unit cancels, leaving ounces. The bag of flour weighs 64 ounces.",
+  "distractorRationale": {
+    "A": "Stops one step early: reports only the weight in pounds (4) without applying the conversion to ounces. The student records the given value instead of converting it.",
+    "B": "Wrong conversion factor: uses 12 ounces per pound instead of 16, giving $4 \\times 12 = 48$ oz. A student may confuse avoirdupois ounces (16 per pound) with the troy system (12 troy ounces per troy pound), which is used for precious metals.",
+    "C": "Correct: $4 \\times 16 = 64$ ounces.",
+    "D": "Wrong conversion factor: uses 20 ounces per pound instead of 16, giving $4 \\times 20 = 80$ oz. The student misremembers the conversion factor as 20 rather than the correct 16."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d2e3f4a5-bc67-4d89-e012-3f4a5b6c7d8e"
+  }
+}

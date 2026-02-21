@@ -1,0 +1,57 @@
+{
+  "id": "c1e4f7a9-2b5d-4c8e-a1f3-6b9d2e5f8a1c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "The career of Harriet Powers, a formerly enslaved Georgia quilter working in the late nineteenth century, has been absorbed into the American folk art canon in ways that tell us more about the institutions doing the absorbing than about Powers herself. Her two surviving quilts—housed at the Smithsonian and the Museum of Fine Arts, Boston—have been celebrated for their narrative complexity, their roots in West African appliqué traditions, and their Biblical iconography. Museums have reproduced them on postcards, in catalogs, and in traveling exhibitions, each reproduction adding curatorial frames that stabilize and authorize meaning.\n\nYet the documentary record of Powers's own relationship to her work is fragmentary. She sold the first quilt reluctantly, under economic duress, and later spoke of the Biblical stories it depicted with a specificity and emotional register that curatorial language struggles to render. What remains of her words comes filtered through a buyer's notes, a local newspaper account, and a folklorist's transcription—all documents shaped by their collectors' interests.\n\nThe quilts are now legible as art objects. Whether the conditions of their legibility preserve or transform what Powers intended them to mean is a question the museum catalog cannot ask of itself.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 205,
+    "source": "Adapted from an essay on material culture and archival representation"
+  },
+  "stem": "The passage is structured to accomplish which of the following?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Examine an artist's institutional reception to expose the gap between curatorial framing and the artist's own perspective.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Trace the biographical arc of a folk artist from obscurity to canonical recognition.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Contrast two museum institutions' differing interpretive frameworks for the same artworks.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Argue that archival documents are unreliable sources for recovering historical voices.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage is organized around two parallel tracks: the institutional reception of Powers's quilts (paragraph 1, detailing curatorial framing and museum reproduction) and the fragmentary, mediated evidence of Powers's own relationship to her work (paragraph 2). The final paragraph does not resolve the tension between these tracks but instead crystallizes it into a pointed question about whether legibility preserves or transforms intended meaning. Choice A accurately describes this two-track structure and its ultimate purpose—exposing the gap between institutional framing and the artist's perspective.",
+  "distractorRationale": {
+    "A": "Correct. The passage sets the institutional narrative of the quilts alongside the fragmentary documentary record of Powers's own words, then closes by articulating the unresolved tension between the two—exposing the gap rather than bridging it.",
+    "B": "The passage does trace Powers's movement from enslaved quilter to canonized folk artist, which creates a surface biographical arc. However, this arc is subordinate to the critical argument about institutional absorption; the passage's purpose is analytical interrogation of that canonization, not biographical narration of it. Readers who follow the biographical thread without attending to the argument's direction will select this distractor.",
+    "C": "Both the Smithsonian and the Museum of Fine Arts, Boston, are mentioned, which could suggest an institutional comparison. However, the passage treats these two museums as instances of a single phenomenon—institutional absorption—and draws no distinction between their interpretive frameworks. The comparison is between institutions and Powers, not between the two museums.",
+    "D": "The second paragraph does detail how Powers's words survive only through mediated documents shaped by collectors' interests, which genuinely supports the idea that archival documents are unreliable. However, this is a supporting observation within the argument, not the argument's organizing claim. The passage's primary structure is not a general argument about archives but a specific examination of how one artist's institutional reception obscures her perspective."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b3c5d7e9-f1a2-4b4c-d6e8-f9a1b3c5d7e9"
+  }
+}

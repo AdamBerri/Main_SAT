@@ -1,0 +1,57 @@
+{
+  "id": "b3f7a2c8-1d4e-4b9a-8c5f-6e2d9a1b3c7f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2.0,
+    "linguistic": 2.3
+  },
+  "passage": "The history of the bicycle reflects a series of gradual improvements made over more than a century. The earliest ancestor of the bicycle, the draisine, appeared in the early nineteenth century. It had no pedals; riders pushed themselves along the ground with their feet. This design, while novel, was tiring and impractical for long distances.\n\nOver the following decades, inventors added pedals and gears, and the machine became increasingly efficient. By the 1880s, the safety bicycle — with two wheels of equal size and a chain drive — had largely replaced its predecessors. This design closely resembles the bicycle we know today.\n\nAs a result of these mechanical advances, cycling became a popular leisure activity and a practical form of transportation across Europe and North America. Cities began constructing dedicated cycling paths, and bicycle clubs formed in communities large and small. The technology that began as a curiosity had, by the century's end, transformed everyday life.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 158,
+    "source": "Original passage"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A problem with early bicycles is identified, then a solution is proposed.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "A series of inventions is described in the order they occurred.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Two competing bicycle designs are compared and evaluated.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Causes of cycling's popularity are examined through multiple examples.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage traces the development of the bicycle from the draisine in the early nineteenth century, through the addition of pedals and gears over the following decades, to the safety bicycle of the 1880s, and finally to the social effects at the century's end. The organizing principle is chronological: events and inventions are presented in the order they occurred. Explicit time markers such as 'early nineteenth century,' 'over the following decades,' 'by the 1880s,' and 'by the century's end' confirm this sequential structure.",
+  "distractorRationale": {
+    "A": "Although the first paragraph does describe the draisine's shortcomings and subsequent paragraphs describe improvements, the passage does not frame one problem and propose a single solution. Instead it traces multiple successive developments over time, making chronological sequence the dominant pattern rather than problem-solution.",
+    "C": "The passage mentions several bicycle designs — the draisine, pedaled versions, and the safety bicycle — but it does not set up a direct side-by-side comparison of two competing designs. The designs are arranged sequentially as stages of development, not as rivals being weighed against each other.",
+    "D": "The final paragraph does describe social effects of cycling's rise, including cycling paths and clubs, but these are presented as consequences of technological progress, not as the organizing framework of the whole passage. Examining causes of popularity is a feature of the last paragraph only, not the overall structure."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e1a4c7f2-8b3d-4e9a-b6c1-5f8d2a9e3c7b"
+  },
+  "hasImage": false
+}

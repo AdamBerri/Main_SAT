@@ -1,0 +1,56 @@
+{
+  "id": "e6b0c4d3-9a5f-4e2c-d8b7-5f4e2c1d0b9a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "Economists studying labor markets have long used wage data to measure the value of skills. A worker who commands a higher wage is assumed to possess skills that employers find scarce or difficult to substitute. This logic underlies most analyses of the returns to education: if college graduates earn more than high school graduates, the earnings gap represents the market's valuation of skills acquired in college. Sociologists have raised a different set of questions. Some of the wage premium attached to a college degree, they argue, may reflect not the skills diplomas signal but the social networks graduates enter—connections to hiring managers, access to informal referrals, proximity to professional communities. In cities with concentrated elite institutions, the network effect appears particularly pronounced, with graduates from highly selective schools entering labor markets that operate through relationships largely invisible to those without institutional affiliation. Wages, in this account, encode not only skill differentials but also differential access to the social infrastructure of employment.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 168,
+    "source": "Adapted from an interdisciplinary essay on education and labor economics"
+  },
+  "stem": "Which choice best states the main claim of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Wage data is an unreliable measure of worker productivity because it fails to account for educational background and prior work experience.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The earnings advantage associated with college degrees may reflect access to social networks as much as the acquisition of marketable skills.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Sociologists have largely discredited the economists' framework for measuring the returns to education by demonstrating that social networks drive hiring decisions.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Graduates of elite institutions earn more than their peers primarily because selective schools attract students who already possess strong professional connections.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage presents the economists' framework—wage premiums reflect skill acquisition—and then develops the sociological complication: some of that premium may encode social network access rather than skills. The final sentence, which states that wages encode 'not only skill differentials but also differential access to the social infrastructure of employment,' presents this as a synthesis of both frameworks rather than a refutation of one by the other. The passage's structure requires the reader to track both frameworks and recognize that the main claim is about the composite, contested nature of what wages measure—not that sociologists have won the debate, nor that economists are simply wrong. Choice B captures this nuanced, both/and framing accurately.",
+  "distractorRationale": {
+    "A": "The passage does not argue that wage data is generally unreliable. It focuses specifically on whether the college wage premium reflects skills or networks—a narrower, more targeted argument about what wages encode in that specific context.",
+    "C": "The passage presents sociological arguments as raising 'a different set of questions,' not as having discredited the economists' framework. The passage allows both frameworks to stand as partial explanations, which is the key inferential demand.",
+    "D": "The passage discusses network access as something graduates enter after obtaining degrees from selective institutions—not as a quality students possess before enrollment. This distractor distorts the causal direction of the network argument."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4a0f6c3-8b5e-4f3d-c9a8-6f5e3d2c1b0a"
+  }
+}

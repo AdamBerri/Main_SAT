@@ -1,0 +1,54 @@
+{
+  "id": "e6f1c3b5-7d2a-4e9c-b5f3-1a8d4c6e2b7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "computational": 3.2
+  },
+  "stem": "Five friends recorded the number of miles they walked in a week: 10, 20, 30, 40, and 50. One friend who walked 10 miles decides to walk 30 miles instead in the following week, while all others keep the same mileage. Which of the following correctly describes the effect on the mean and median of the group's mileage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The mean increases and the median increases.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The mean increases and the median remains the same.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The mean remains the same and the median increases.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Both the mean and the median remain the same.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "STEP A — Sort original data: {10, 20, 30, 40, 50}.\n\nSTEP B — Original mean: sum = 10 + 20 + 30 + 40 + 50 = 150; mean = 150 ÷ 5 = 30.\n\nSTEP C — Original median: n = 5, median position = (5 + 1) / 2 = 3rd value. Sorted: {10, 20, 30, 40, 50}. Median = 30.\n\nSTEP D — Mode: no value repeats.\n\nSTEP E — Original range: 50 − 10 = 40.\n\nSTEP G — After replacing 10 with 30, the new data is: {20, 30, 30, 40, 50}. Already sorted.\n\nNew mean: sum = 20 + 30 + 30 + 40 + 50 = 170; mean = 170 ÷ 5 = 34. Mean increased from 30 to 34.\n\nNew median: n = 5, position = 3rd value. Sorted: {20, 30, 30, 40, 50}. 3rd value = 30. Median is still 30. Median is unchanged.\n\nNew range: 50 − 20 = 30. Range decreased from 40 to 30.\n\nSTEP H — Mean increases (30 → 34), median is unchanged (30 → 30). This matches choice B.\n\nSTEP I — Distractor analysis:\n- Choice A (mean increases AND median increases): Misconception type (b) — median position error. A student might reason that since the smallest value (10) increased to 30, all values 'shift up,' pulling the median upward. In reality, the median depends on the ordered position of values, and the 3rd position in the new sorted list {20, 30, 30, 40, 50} is still 30.\n- Choice C (mean same, median increases): Misconception type (a) — wrong operation on the statistic. A student might believe that since 30 (the replacement value) equals the original mean, 'the mean cannot change,' while simultaneously thinking that inserting a second 30 shifts the median position upward. Both conclusions are incorrect.\n- Choice D (both unchanged): Misconception type (e) — partial computation. A student might observe that the new value (30) equals the original mean (30) and conclude that 'replacing a value with the mean leaves everything unchanged.' This is true only for the mean after re-averaging — but here the original value replaced was 10, not 30, so the sum does change: 150 − 10 + 30 = 170, giving a new mean of 34.",
+  "distractorRationale": {
+    "A": "Median position error: the student reasons that removing the smallest value (10) and replacing it with a larger value (30) must shift all statistics upward, including the median. However, the median is determined by the value at the 3rd position in the sorted list, which remains 30 in both the original and new datasets.",
+    "B": "Correct. Replacing 10 with 30 increases the sum from 150 to 170, raising the mean from 30 to 34. The sorted new list is {20, 30, 30, 40, 50}, and the 3rd position (the median position for n = 5) is still 30, so the median is unchanged.",
+    "C": "Wrong operation on the statistic: the student incorrectly believes that because the replacement value (30) equals the original mean, the mean must stay at 30. In reality, what matters is the change to the sum: the sum increases by 30 − 10 = 20, raising the mean by 4. Separately, the student misjudges the median's behavior.",
+    "D": "Partial computation error: the student notices the replacement value (30) matches the original mean (30) and concludes both statistics are unchanged. This overlooks that the original value being replaced was 10 (not 30), so the sum increases from 150 to 170, and the mean rises from 30 to 34. The median happens to be unchanged, but not for this reason."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4a7e2f1-6c3b-4d8a-c2e5-0b9f1d4a7c2e"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "5ffdb953-7df1-4f5d-878c-85f1e4689365",
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4,
+    "linguistic": 4.3
+  },
+  "passage": "The Renaissance artist Leonardo da Vinci is perhaps best known for 'The Last Supper' and the 'Mona Lisa,' but his notebooks reveal interests extending far beyond painting. These manuscripts, filled with detailed sketches and observations, show Leonardo designing flying machines, analyzing water flow patterns, and [1]_____ the workings of the human circulatory system with remarkable accuracy centuries before modern anatomy established the same principles.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 68,
+    "source": "Adapted from an art history analysis"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "diagrammed",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "diagramming",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "to diagram",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "diagrams",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests parallel structure within an object complement construction. The sentence uses 'show Leonardo' followed by a series of present participles: 'designing,' 'analyzing,' and the blank. All three must share the same gerund/participle form. 'Diagramming' maintains the parallel: designing, analyzing, diagramming. The difficulty arises from the lengthy prepositional phrase after the blank that separates it from the parallel series, requiring students to track the structure across a long distance.",
+  "distractorRationale": {
+    "A": "Past tense—breaks the present participle pattern of 'designing' and 'analyzing.'",
+    "B": "Correct. Present participle parallel with 'designing' and 'analyzing.'",
+    "C": "Infinitive—breaks the participle pattern; mixing infinitives with participles violates parallelism.",
+    "D": "Present indicative—introduces a finite verb, breaking the participial construction entirely."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "ad43e818-6981-4d8f-a3ca-76b2822da361"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "c2d3e4f5-a6b7-4c8d-9e0f-1a2b3c4d5e6f",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- The microbiome is the community of trillions of microorganisms living in the human digestive tract.\n- These microorganisms help break down complex carbohydrates that human enzymes cannot digest.\n- Research has linked imbalances in the gut microbiome to conditions such as obesity, depression, and autoimmune disorders.\n- A diverse microbiome, supported by a varied diet rich in fiber, is associated with better overall health.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 68,
+    "source": "Student research notes on the gut microbiome"
+  },
+  "stem": "The student wants to explain why maintaining a healthy microbiome matters. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The human gut contains trillions of microorganisms that help digest complex carbohydrates human enzymes cannot break down on their own.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "A diverse microbiome supported by a fiber-rich diet is linked to better health, while microbiome imbalances have been connected to obesity, depression, and autoimmune disorders.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Research has connected gut microbiome imbalances to several health conditions, including obesity and depression.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Eating a varied diet rich in fiber supports a diverse microbiome, which is the community of microorganisms in the digestive tract.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it presents both the positive outcome of a healthy microbiome (better health from diversity) and the negative consequences of an unhealthy one (links to obesity, depression, autoimmune disorders), making a complete case for why microbiome health matters. Choices C and D each capture only one side of this relationship.",
+  "distractorRationale": {
+    "A": "This choice describes what the microbiome does (digestion) but does not explain why maintaining its health matters in terms of broader health outcomes.",
+    "C": "This choice mentions the negative consequences of imbalance but omits the positive outcomes of a healthy, diverse microbiome, providing only half the picture.",
+    "D": "This choice explains how to support a diverse microbiome but does not articulate why doing so matters in terms of health consequences."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:11.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d3e4f5a6-b7c8-4d9e-0f1a-2b3c4d5e6f7a"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

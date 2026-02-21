@@ -1,0 +1,54 @@
+{
+  "id": "e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "A garden irrigation system delivers water at a constant rate of 4.5 liters per minute. How many gallons of water does the system deliver in 20 minutes? (1 gallon = 3.785 liters)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "22.5 gallons",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "23.8 gallons",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "90 gallons",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "341 gallons",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Step 1: Find the total volume delivered in 20 minutes.\n$$4.5 \\frac{\\text{L}}{\\text{min}} \\times 20 \\text{ min} = 90 \\text{ liters}$$\n\nStep 2: Convert liters to gallons by dividing by the given conversion factor.\n$$90 \\text{ L} \\div \\frac{3.785 \\text{ L}}{1 \\text{ gal}} = 90 \\times \\frac{1 \\text{ gal}}{3.785 \\text{ L}} = \\frac{90}{3.785} \\approx 23.78 \\approx 23.8 \\text{ gallons}$$\n\nThe system delivers approximately **23.8 gallons** in 20 minutes.",
+  "distractorRationale": {
+    "A": "Uses a wrong conversion factor: student substitutes 1 gallon = 4 liters instead of 3.785. $90 \\div 4 = 22.5$ gallons.",
+    "B": "Correct answer: $4.5 \\times 20 = 90$ liters; $90 \\div 3.785 \\approx 23.78 \\approx 23.8$ gallons.",
+    "C": "Stops one step early: student correctly computes $4.5 \\times 20 = 90$ liters but reports liters as the final answer without converting to gallons.",
+    "D": "Inverts the conversion: student multiplies by 3.785 instead of dividing. $90 \\times 3.785 = 340.65 \\approx 341$ gallons."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3a4b5c6-d7e8-4f9a-8b0c-1d2e3f4a5b6c"
+  }
+}

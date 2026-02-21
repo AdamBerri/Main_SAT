@@ -1,0 +1,38 @@
+{
+  "id": "e8f9a0b1-c2d3-4e4f-5a6b-7c8d9e0f1a2b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "A school club is selling candles for $7 each to raise money. The club needs to raise more than $150 to cover expenses. What is the least number of candles the club must sell?",
+  "choices": [
+    { "label": "A", "text": "22", "isCorrect": true },
+    { "label": "B", "text": "21", "isCorrect": false },
+    { "label": "C", "text": "20", "isCorrect": false },
+    { "label": "D", "text": "23", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Set up the inequality: $7c > 150$. Divide both sides by 7: $c > 21.43$. Since $c$ must be a whole number and strictly greater than 21.43, the least number of candles is 22.",
+  "distractorRationale": {
+    "A": "Correct. $7c > 150$ gives $c > 21.43$, so the minimum whole number is 22.",
+    "B": "Cluster B error: Computed $150 \\div 7 \\approx 21.43$ and rounded down to 21, not noticing that $7 \\times 21 = 147 < 150$.",
+    "C": "Cluster C error: Misread 'more than $150' as 'at least $150' and then rounded $150 \\div 7 \\approx 21.43$ down further to 20 as a rough estimate.",
+    "D": "Cluster D error: Added a safety margin, computing $150 \\div 7 \\approx 21.43$, rounded up to 22, then added 1 more for certainty, getting 23."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:10.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f9a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c"
+  }
+}

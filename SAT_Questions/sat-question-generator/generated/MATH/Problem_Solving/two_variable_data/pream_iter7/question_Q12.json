@@ -1,0 +1,54 @@
+{
+  "id": "c4f8a3e2-7d5b-4c9f-8e1a-6b2d7c9f3e5a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "A marketing analyst plotted data comparing monthly advertising spend ($x$, in thousands of dollars) and monthly sales revenue ($y$, in thousands of dollars) for a retail company over several months. The line of best fit for the data is $y = 3.8x + 12.4$. According to the line of best fit, by how much does the predicted monthly sales revenue increase when advertising spend increases from $5,000 to $9,000?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3.8$ thousand dollars",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$15.2$ thousand dollars",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$31.4$ thousand dollars",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$46.6$ thousand dollars",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The line of best fit is $y = 3.8x + 12.4$, where $x$ is advertising spend in thousands of dollars.\n\nStep 1: Find the predicted sales revenue when $x = 5$ (spend of $5,000).\n$$y = 3.8(5) + 12.4 = 19.0 + 12.4 = 31.4 \\text{ thousand dollars}$$\n\nStep 2: Find the predicted sales revenue when $x = 9$ (spend of $9,000).\n$$y = 3.8(9) + 12.4 = 34.2 + 12.4 = 46.6 \\text{ thousand dollars}$$\n\nStep 3: Find the increase.\n$$46.6 - 31.4 = 15.2 \\text{ thousand dollars}$$\n\nAlternatively, since the slope is $3.8$, each additional thousand dollars of advertising increases predicted sales by $3.8$ thousand. The increase in spending is $9 - 5 = 4$ thousand dollars, so the increase in predicted sales is $3.8 \\times 4 = 15.2$ thousand dollars.",
+  "distractorRationale": {
+    "A": "This is the slope of the line of best fit, which represents the predicted increase in sales for every 1 thousand dollar increase in advertising spend — not for a 4 thousand dollar increase.",
+    "B": "Correct. The slope of $3.8$ applied over a 4 thousand dollar increase gives $3.8 \\times 4 = 15.2$ thousand dollars.",
+    "C": "This is the predicted sales revenue when advertising spend is $5,000 ($x = 5$), not the change in predicted revenue.",
+    "D": "This is the predicted sales revenue when advertising spend is $9,000 ($x = 9$), not the change in predicted revenue."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3b8e2c7-4a9d-4f6b-9e1c-5d2a8f7c3b1e"
+  }
+}

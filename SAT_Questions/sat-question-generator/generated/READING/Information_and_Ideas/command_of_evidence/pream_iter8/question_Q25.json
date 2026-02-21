@@ -1,0 +1,57 @@
+{
+  "id": "f4c2e8b1-3d7a-4f9c-e1b4-8a6d2c5f3e7b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "The following passage is adapted from a 2022 analysis of ancient trade network collapse.\n\nThe Late Bronze Age collapse, occurring roughly between 1200 and 1150 BCE, witnessed the near-simultaneous disintegration of several palace-based polities across the eastern Mediterranean — including the Hittite Empire, Mycenaean Greece, and the city-states of the Levantine coast. Historians have proposed a range of causes, including 'Sea Peoples' invasions, internal social upheaval, and climatic shifts. A growing body of archaeometric evidence has shifted attention toward the fragility of the interconnected trade networks that supplied these polities with essential raw materials.\n\nIsotopic analysis of bronze artifacts from Ugarit, a major Levantine trading hub destroyed around 1185 BCE, reveals that tin constituents in late-period bronzes derived predominantly from sources in modern-day Afghanistan, approximately 4,000 kilometers distant. The supply chain for this tin ran through at least four intermediary polities before reaching Ugarit's workshops, each representing a potential point of disruption. Lead isotope ratios in copper ingots recovered from the Uluburun shipwreck, sunk approximately 1305 BCE off the Turkish coast, indicate that the copper originated in Cyprus while the ship's cargo additionally included ebony from sub-Saharan Africa, glass from Egypt, and Canaanite amphorae — material evidence of multi-hub supply chains spanning the entire eastern Mediterranean.\n\nPalaeoclimatic proxy records from lake sediments in Cyprus and northern Syria show a succession of drought years between 1200 and 1150 BCE, with precipitation during peak drought years falling to 40 percent of the long-term regional average. Agricultural shortfalls during this period are corroborated by Linear B tablets from Pylos, dated to the final decade of Mycenaean administration, which record redistributive allocations of grain at levels 35 percent below those documented in administrative texts from preceding decades.\n\nA computational network model reconstructed the trade topology of the eastern Mediterranean circa 1250 BCE and simulated the cascading effects of removing individual nodes. The model found that the simultaneous failure of just two or three high-centrality nodes — trading hubs through which the majority of commodity flows passed — was sufficient to fragment the entire network into isolated sub-clusters within five simulated trade cycles, whereas the sequential loss of up to eight low-centrality peripheral sites produced no fragmentation of core connectivity.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 328,
+    "source": "Adapted from a 2022 historical-archaeometric review of Late Bronze Age network collapse"
+  },
+  "stem": "A historian argues that the Late Bronze Age trade networks were structured in a way that made them acutely vulnerable to rapid, systemic collapse if a small number of strategically positioned hubs failed, regardless of the resilience of the broader network periphery. Which passage evidence most directly supports this argument?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "tin constituents in late-period bronzes derived predominantly from sources in modern-day Afghanistan, approximately 4,000 kilometers distant, with the supply chain running through at least four intermediary polities before reaching Ugarit's workshops",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "the simultaneous failure of just two or three high-centrality nodes — trading hubs through which the majority of commodity flows passed — was sufficient to fragment the entire network into isolated sub-clusters within five simulated trade cycles, whereas the sequential loss of up to eight low-centrality peripheral sites produced no fragmentation of core connectivity",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "the ship's cargo additionally included ebony from sub-Saharan Africa, glass from Egypt, and Canaanite amphorae — material evidence of multi-hub supply chains spanning the entire eastern Mediterranean",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "precipitation during peak drought years falling to 40 percent of the long-term regional average",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The argument has three components: (1) the networks were structured in a specific way (concentrated, hub-dependent topology); (2) failure of a small number of strategically placed hubs was sufficient to cause systemic collapse; and (3) this vulnerability existed regardless of peripheral network resilience. Choice B addresses all three: it reports the computational model's finding that losing just two or three high-centrality nodes fragmented the entire network, and — crucially — that losing up to eight peripheral sites caused no fragmentation. The second clause directly addresses the 'regardless of periphery resilience' qualifier that is the most discriminating element of the argument. No inferential step is required between Choice B and the argument. Choice A demonstrates that supply chains were long and passed through multiple intermediaries, which shows geographic vulnerability but does not demonstrate the hub-based topology or the finding that peripheral loss is inconsequential. The argument concerns structural properties of the network, not just supply chain length. Choice C shows the diversity of goods and multi-hub character of individual shipments, which is circumstantial evidence for network complexity but not for the specific claim that concentrated hub failure causes collapse while peripheral failure does not. Choice D provides evidence of climatic stress that might trigger disruption but does not address network topology or the comparative consequences of hub versus peripheral node loss.",
+  "distractorRationale": {
+    "A": "Choice A shows that Ugarit's tin supply depended on a chain of at least four intermediary polities across 4,000 kilometers — demonstrating geographic extension and chain length, which implies vulnerability. However, the argument's key claim is about topological structure (concentration at high-centrality hubs versus distribution across periphery) and the differential impact of hub versus peripheral failure. Choice A does not establish high-centrality nodes, does not compare hub to peripheral loss, and does not demonstrate that systemic collapse follows from a small number of failures. It supports a general fragility argument but not the specific structural vulnerability the historian describes.",
+    "B": "Correct. The computational model result in Choice B directly tests exactly the claim the historian makes: it quantifies the failure threshold (two or three hubs), describes the structural property (high centrality, meaning commodity flow concentration), establishes the outcome (network fragmentation), and provides the explicit contrast showing peripheral node loss does not fragment core connectivity — addressing all three components of the argument with no inferential gap.",
+    "C": "Choice C provides material evidence that individual vessels carried goods from geographically dispersed origins, suggesting multi-hub supply chains. This demonstrates that the network existed and was extensive, but it does not address the specific structural vulnerability the argument concerns: the disproportionate consequence of high-centrality hub failure compared to peripheral site loss. It requires inferential steps from network diversity to network fragility topology.",
+    "D": "Choice D describes the severity of a climatic stressor (drought reducing precipitation to 40 percent of baseline) that may have triggered node failures, but it does not address the network structure that made those failures propagate systemically. The argument is about topological vulnerability, not about the external stressor that activated it. A network could be resilient or fragile for reasons unrelated to precipitation levels, so this choice requires multiple inferential steps to connect to the claim."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c2e7f4b1-8a3d-4c9f-e2b7-4d6a5c1f8e3b"
+  }
+}

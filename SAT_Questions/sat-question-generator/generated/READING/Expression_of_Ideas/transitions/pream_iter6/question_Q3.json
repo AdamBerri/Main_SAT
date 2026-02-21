@@ -1,0 +1,58 @@
+{
+  "id": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e70",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "The local library was closed for renovations throughout the summer. _______ residents used the mobile book lending service that operated from a van parked in the town square.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 55,
+    "source": "Adapted from a community news report"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Furthermore,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "In contrast,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Therefore,",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Regardless,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The library being closed created a need, and the mobile service was the direct result of that need. 'Therefore' correctly indicates that residents turned to the mobile service because the library was unavailable.",
+  "distractorRationale": {
+    "A": "'Furthermore' adds information to a list of related points, but the second sentence is a consequence of the first, not an additional parallel fact.",
+    "B": "'In contrast' signals opposition between two ideas, but the mobile service is a response to the closure, not a contrasting situation.",
+    "C": "Correct. 'Therefore' correctly signals the cause-effect relationship where the library closure led residents to use an alternative.",
+    "D": "'Regardless' signals that something happens despite a previous condition, but the mobile service use was caused by the closure, not independent of it."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:00:02.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f80"
+  },
+  "hasImage": false
+}

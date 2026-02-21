@@ -1,0 +1,54 @@
+{
+  "id": "3edcdbca-2500-48da-af5c-c5950c4c35d5",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "A data set consists of the five values 6, 9, 12, 15, and 18. A sixth value is added to the data set so that the mean of the six values equals 13. What is the median of the six values?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "12",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "13",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "13.5",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "15",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "STEP A — Sort the original data set in ascending order: 6, 9, 12, 15, 18.\n\nSTEP B — Compute the original mean:\n  Sum = 6 + 9 + 12 + 15 + 18 = 60\n  Mean = 60 ÷ 5 = 12\n\nSTEP C — Identify the original median (n = 5, odd):\n  Position = (5 + 1) ÷ 2 = 3rd value = 12\n\nSTEP D — Mode: no repeated values.\n\nSTEP E — Range = 18 − 6 = 12.\n\nSTEP F — Standard deviation: not involved.\n\nSTEP G — Find the sixth value needed to achieve a mean of 13:\n  Required total sum for 6 values with mean 13: 13 × 6 = 78\n  Sixth value = 78 − 60 = 18\n  New data set (sorted): 6, 9, 12, 15, 18, 18\n\n  New mean verification: (6 + 9 + 12 + 15 + 18 + 18) ÷ 6 = 78 ÷ 6 = 13 ✓\n\n  New median (n = 6, even): average of the 3rd and 4th values\n    Position of 3rd value: 12\n    Position of 4th value: 15\n    New median = (12 + 15) ÷ 2 = 13.5\n\nSTEP H — Correct answer = 13.5, which is choice C. ✓\n\nSTEP I — Distractor analysis:\n  Choice A (12): MISCONCEPTION — median position error. The student identifies the correct median position formula for odd n (the 3rd value) but applies the old odd-n formula to the new even-n list. Taking the 3rd value of {6, 9, 12, 15, 18, 18} gives 12, not the correct average of the 3rd and 4th values.\n  Choice B (13): MISCONCEPTION — statistic confusion. The student confuses the target mean (13) with the resulting median, treating the two statistics as equal. A student who does not complete the median computation step may default to the newly computed mean.\n  Choice D (15): MISCONCEPTION — off-by-one median position error. The student uses the wrong median position for an even-n list, taking the 4th value (15) instead of averaging the 3rd and 4th values. This arises from applying the formula for the median position in an odd-n list [(n+1)/2 = 3.5, rounded up to 4] rather than the even-n procedure.",
+  "distractorRationale": {
+    "A": "Median position error: the student applies the odd-n median rule to the new 6-value list, taking the single middle (3rd) value = 12 instead of averaging the 3rd and 4th values.",
+    "B": "Statistic confusion: the student conflates the target mean (13) with the median of the new data set, stopping after computing the required mean without proceeding to find the median.",
+    "C": "Correct answer: the sixth value needed is 78 − 60 = 18, giving the sorted set {6, 9, 12, 15, 18, 18}; the median of this even-n set is (12 + 15) ÷ 2 = 13.5.",
+    "D": "Off-by-one median position error: the student rounds the even-n median position up to the 4th value (15) instead of averaging the 3rd and 4th values, misapplying the odd-n position formula."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3afd010-7c1a-4c5f-8612-ded4e384fd59"
+  }
+}

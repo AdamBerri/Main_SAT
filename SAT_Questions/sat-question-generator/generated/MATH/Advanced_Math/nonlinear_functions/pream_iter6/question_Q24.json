@@ -1,0 +1,54 @@
+{
+  "id": "7b9d1f3a-5c7e-4b8d-a2f4-c6e8a0b2d4f6",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "The polynomial $p(x) = 2x^3 + ax^2 + bx + c$ satisfies all three of the following conditions: $p(1) = 0$, $p(-1) = 10$, and the sum of all three roots of $p(x)$ equals $3$. What is the value of $p(2)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-15$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$-11$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$1$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$25$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Step 1: Use Vieta's formulas. For $p(x) = 2x^3 + ax^2 + bx + c$, the sum of the roots equals $-\\frac{a}{2}$. Setting this equal to $3$:\n$$-\\frac{a}{2} = 3 \\implies a = -6$$\n\nStep 2: Apply the conditions $p(1) = 0$ and $p(-1) = 10$ to find $b$ and $c$.\n$$p(1) = 2(1) + (-6)(1) + b + c = 0 \\implies -4 + b + c = 0 \\implies b + c = 4$$\n$$p(-1) = 2(-1) + (-6)(1) + b(-1) + c = 10 \\implies -8 - b + c = 10 \\implies -b + c = 18$$\n\nStep 3: Solve the system $b + c = 4$ and $-b + c = 18$. Adding the two equations:\n$$2c = 22 \\implies c = 11 \\implies b = 4 - 11 = -7$$\n\nStep 4: Compute $p(2)$.\n$$p(2) = 2(8) + (-6)(4) + (-7)(2) + 11 = 16 - 24 - 14 + 11 = -11$$\n\nVerification: $p(1) = 2 - 6 - 7 + 11 = 0$ ✓; $p(-1) = -2 - 6 + 7 + 11 = 10$ ✓.",
+  "distractorRationale": {
+    "A": "Error: The student correctly finds $a = -6$, $b = -7$, $c = 11$, but makes a single arithmetic error when evaluating $p(2)$: computes $2^3 = 6$ instead of $8$. This gives $p(2) = 2(6) + (-6)(4) + (-7)(2) + 11 = 12 - 24 - 14 + 11 = -15$.",
+    "B": "Correct. $p(2) = 16 - 24 - 14 + 11 = -11$.",
+    "C": "Error: The student correctly finds $a = -6$, $b = -7$, $c = 11$, but when computing $p(2)$ evaluates the $ax^2$ term as $ax$ (omitting the square): $(-6)(2)$ instead of $(-6)(4)$. This gives $p(2) = 2(8) + (-6)(2) + (-7)(2) + 11 = 16 - 12 - 14 + 11 = 1$.",
+    "D": "Error: The student applies Vieta's formula with the wrong sign, setting $\\frac{a}{2} = 3$ (instead of $-\\frac{a}{2} = 3$), obtaining $a = 6$. Using this incorrect value: $p(1) = 2 + 6 + b + c = 0 \\Rightarrow b + c = -8$; $p(-1) = -2 + 6 - b + c = 10 \\Rightarrow -b + c = 6$; solving gives $c = -1$, $b = -7$. Then $p(2) = 16 + 24 - 14 - 1 = 25$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1c3e5f7-b9d1-4e2f-8a4c-6e0b2d4f6a8c"
+  }
+}

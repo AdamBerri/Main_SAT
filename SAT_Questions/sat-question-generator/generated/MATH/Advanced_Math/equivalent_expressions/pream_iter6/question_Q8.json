@@ -1,0 +1,54 @@
+{
+  "id": "2a3b4c5d-6e7f-8091-a2b3-c4d5e6f7a8b9",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "computational": 1.9
+  },
+  "stem": "Which of the following is equivalent to $x^2 + 7x + 12$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$(x + 2)(x + 6)$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$(x + 3)(x + 4)$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$(x - 3)(x - 4)$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$(x + 3)(x - 4)$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To factor $x^2 + 7x + 12$, find two numbers that multiply to $12$ and add to $7$.\n\nFactor pairs of 12:\n- $1 \\times 12 = 12$, $1 + 12 = 13$ (no)\n- $2 \\times 6 = 12$, $2 + 6 = 8$ (no)\n- $3 \\times 4 = 12$, $3 + 4 = 7$ (yes!)\n\nTherefore: $x^2 + 7x + 12 = (x + 3)(x + 4)$\n\nVerification by expanding: $(x+3)(x+4) = x^2 + 4x + 3x + 12 = x^2 + 7x + 12$ ✓",
+  "distractorRationale": {
+    "A": "Coefficient error: the student chose the factor pair $2 \\times 6 = 12$ which multiplies to 12 correctly but sums to 8, not 7, so the middle term would be $8x$ instead of $7x$.",
+    "B": "Correct answer.",
+    "C": "Sign error: the student used the correct factor pair (3 and 4) but assigned both negative signs, yielding $(x-3)(x-4) = x^2 - 7x + 12$, which changes the sign of the middle term.",
+    "D": "Sign error: the student used the correct factor pair but assigned opposite signs (one positive, one negative), yielding $(x+3)(x-4) = x^2 - x - 12$, which changes both the middle term and the constant."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "9c8b7a6f-5e4d-3c2b-1a0f-9e8d7c6b5a4f"
+  }
+}

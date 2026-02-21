@@ -1,0 +1,102 @@
+{
+  "id": "7b635e55-6839-4063-8571-50fcc164a20d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "An economics research group analyzed income inequality across six countries using the Gini coefficient, where higher values indicate greater inequality. The group's report claims that among the surveyed nations, those with universal healthcare systems exhibit lower income inequality than those without such systems.",
+  "stem": "Which choice most effectively uses data from the figure to weaken the research group's claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Country E, which has universal healthcare, has a Gini coefficient of 0.41, which is higher than Country B's 0.34 despite Country B lacking a universal healthcare system.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Country A, which has universal healthcare, has the lowest Gini coefficient at 0.28, while Country F, which lacks universal healthcare, has the highest at 0.47.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Countries with universal healthcare (A, C, E) have an average Gini coefficient of 0.33, compared to 0.40 for countries without universal healthcare (B, D, F).",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Country D, which lacks universal healthcare, has a Gini coefficient of 0.39, placing it between Country C (0.31) and Country E (0.41).",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To weaken the claim that universal healthcare countries have lower inequality, one needs a counterexample. Choice A provides exactly this: Country E has universal healthcare but a higher Gini (0.41) than Country B (0.34), which lacks universal healthcare. This directly contradicts the pattern. Choice B supports the claim. Choice C shows the averages support the claim. Choice D places Country D between two countries but doesn't clearly contradict the claim.",
+  "distractorRationale": {
+    "A": "Correct: provides a direct counterexample where a universal healthcare country (E, 0.41) has higher inequality than a non-universal country (B, 0.34).",
+    "B": "Wrong (opposite trend): cites the most extreme example supporting the claim (lowest universal = 0.28 vs. highest non-universal = 0.47).",
+    "C": "Wrong (wrong comparison): calculates group averages that actually support the claim by showing universal healthcare countries average lower inequality.",
+    "D": "Wrong (incomplete evidence): places Country D between two others but doesn't clearly pair a universal healthcare country against a non-universal one to challenge the pattern."
+  },
+  "hasImage": true,
+  "imageDescription": "Data table titled 'Gini Coefficient and Healthcare System Type, 2023.' Columns: Country, Universal Healthcare, Gini Coefficient. Rows: Country A - Yes - 0.28; Country B - No - 0.34; Country C - Yes - 0.31; Country D - No - 0.39; Country E - Yes - 0.41; Country F - No - 0.47. Source: International Economics Research Group, 2024.",
+  "chartData": {
+    "type": "data_table",
+    "title": "Gini Coefficient and Healthcare System Type, 2023",
+    "data": {
+      "columns": [
+        "Country",
+        "Universal Healthcare",
+        "Gini Coefficient"
+      ],
+      "rows": [
+        [
+          "Country A",
+          "Yes",
+          0.28
+        ],
+        [
+          "Country B",
+          "No",
+          0.34
+        ],
+        [
+          "Country C",
+          "Yes",
+          0.31
+        ],
+        [
+          "Country D",
+          "No",
+          0.39
+        ],
+        [
+          "Country E",
+          "Yes",
+          0.41
+        ],
+        [
+          "Country F",
+          "No",
+          0.47
+        ]
+      ]
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 62,
+    "source": "Adapted from International Economics Research Group inequality report"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:37.070Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3f63aa56-5ced-4296-a312-41e5d17331d9"
+  }
+}

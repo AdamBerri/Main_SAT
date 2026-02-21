@@ -1,0 +1,54 @@
+{
+  "id": "e6a0d3f4-7b18-6g2d-1c45-4h9e6d2g8f70",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "A data set contains five values: 5, 9, 13, 17, and 21. The value 5 is replaced by the value 25. What is the mean of the data set after this replacement?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "13",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "15",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "17",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "21",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "STEP A — Sort the original data set: 5, 9, 13, 17, 21.\n\nSTEP B — Original mean: sum = 5 + 9 + 13 + 17 + 21 = 65; mean = 65 / 5 = 13.\n\nSTEP C — Original median: position = (5+1)/2 = 3rd value = 13.\n\nSTEP D — No mode.\n\nSTEP E — Original range: 21 − 5 = 16.\n\nSTEP G — After replacing 5 with 25, the new data set is: 9, 13, 17, 21, 25 (still 5 values).\nNew sum = 65 − 5 + 25 = 85.\nNew mean = 85 / 5 = 17.\n\nAlternative approach: the net change in the sum is 25 − 5 = +20. Spread over 5 values, the mean increases by 20/5 = 4. New mean = 13 + 4 = 17.\n\nSTEP H — The correct answer is 17, which matches choice C.\n\nSTEP I — Distractor analysis:\nA (13): Statistic-unchanged misconception. The student knows the original mean is 13, and reasons (incorrectly) that replacing the smallest value with a larger one only affects the range, not the mean — a confusion between how replacement affects the mean versus the median. They report the original mean of 13.\nB (15): Average-of-two-values error. The student focuses only on the two values involved in the swap (5 and 25) and computes their average: (5 + 25) / 2 = 15, treating this as the new mean of the entire data set.\nD (21): Maximum-for-mean confusion. The student replaces 5 with 25, identifies the new sorted list {9, 13, 17, 21, 25}, and reports the second-largest value (21), possibly confusing it with the mean or median of the new set.",
+  "distractorRationale": {
+    "A": "Statistic-unchanged error: student believes replacing only the minimum value affects the range but not the mean, so they report the original mean of 13.",
+    "B": "Average-of-two-values error: student focuses only on the replaced and replacement values, computing (5 + 25)/2 = 15 and treating this as the new mean.",
+    "C": "Correct: new sum = 65 − 5 + 25 = 85; new mean = 85/5 = 17.",
+    "D": "Maximum-for-mean confusion: student re-sorts the new set {9, 13, 17, 21, 25} and reports 21 (the second-largest value), confusing a data point with the computed mean."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4d5e6f7-a8b9-0123-defa-456789012345"
+  }
+}

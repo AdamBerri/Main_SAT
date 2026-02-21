@@ -1,0 +1,38 @@
+{
+  "id": "a1b2c3d4-1111-4a6b-8c7d-9e0f1a2b3c01",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "computational": 1.3
+  },
+  "stem": "A circular garden has a radius of 5 feet. What is the area, in square feet, of the garden?",
+  "choices": [
+    { "label": "A", "text": "$10\\pi$", "isCorrect": false },
+    { "label": "B", "text": "$25\\pi$", "isCorrect": true },
+    { "label": "C", "text": "$5\\pi$", "isCorrect": false },
+    { "label": "D", "text": "$100\\pi$", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The area of a circle is $A = \\pi r^2$. Substituting $r = 5$: $A = \\pi(5)^2 = 25\\pi$ square feet. The answer is B.",
+  "distractorRationale": {
+    "A": "Uses the circumference formula $2\\pi r = 2\\pi(5) = 10\\pi$ instead of the area formula.",
+    "B": "Correct. $\\pi r^2 = \\pi(5)^2 = 25\\pi$.",
+    "C": "Omits the exponent: $\\pi r = \\pi(5) = 5\\pi$ instead of $\\pi r^2$.",
+    "D": "Uses the diameter instead of radius: $\\pi(10)^2 = 100\\pi$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:01.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-1111-4d5e-8f9a-0b1c2d3e4f01"
+  }
+}

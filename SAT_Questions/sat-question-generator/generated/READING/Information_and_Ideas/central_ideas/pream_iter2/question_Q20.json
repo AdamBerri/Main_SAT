@@ -1,0 +1,56 @@
+{
+  "id": "f7c1d5e4-0b6a-4f3d-e9c8-6a5f4e3d2c1b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "passage": "Before refrigeration, urban residents across North America and Europe depended on a vast commercial ice trade. Workers cut blocks from frozen lakes and rivers each winter, packed them in sawdust, and shipped them to warehouses in distant cities, where the ice would last through summer. Boston's Frederic Tudor built a transatlantic operation in the 1830s, sending ice to Havana, Calcutta, and London—demonstrating that natural ice could survive journeys of weeks when properly insulated. The trade was labor-intensive and geographically constrained: mild winters could eliminate an entire season's harvest, and a city without nearby frozen water sources remained dependent on expensive long-distance shipments. When mechanical refrigeration became commercially available in the 1880s, it displaced natural ice not only because it was cheaper or more reliable, but because it severed the dependence on local climate and geography that had always defined the industry's limits. Breweries and meatpacking plants—industries whose scaling had been capped by the variability of natural ice supplies—adopted mechanical refrigeration within a decade.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 174,
+    "source": "Adapted from a history of commercial refrigeration in the nineteenth century"
+  },
+  "stem": "Which choice best describes what the passage is mainly about?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Frederic Tudor's transatlantic ice trade demonstrated that perishable commodities could survive long shipping journeys when properly handled, laying the groundwork for modern cold chains.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The commercial ice trade thrived in the nineteenth century because cities lacked the technological capacity to produce artificial cold, leaving natural ice as the only available option.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Mechanical refrigeration displaced the natural ice trade by eliminating the geographic and climatic constraints that had always limited the industry's reach and reliability.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The transition from natural ice to mechanical refrigeration in the late nineteenth century enabled industries like brewing and meatpacking to expand beyond previously fixed capacity limits.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage builds toward an explanation of why mechanical refrigeration prevailed over a well-established commercial ice trade. The key passage states that mechanical refrigeration displaced natural ice 'not only because it was cheaper or more reliable, but because it severed the dependence on local climate and geography that had always defined the industry's limits.' This framing requires the reader to synthesize the earlier portrait of natural ice's constraints—mild winters eliminating harvests, cities without local frozen water depending on expensive shipments—with the explanation of why mechanical refrigeration solved specifically those problems. The main idea is not about Tudor's entrepreneurship, nor primarily about industrial expansion; it is about what mechanical refrigeration changed structurally about the ice supply system. Choice C captures this accurately.",
+  "distractorRationale": {
+    "A": "Tudor's operation is a supporting example illustrating what natural ice could do under optimal conditions—it is not the passage's central argument. The passage does not develop the theme of cold chains or Tudor's legacy beyond this illustrative role.",
+    "B": "The passage does not argue that the ice trade existed because no alternative was available. It describes the trade as a functioning commercial system with real infrastructure, and the shift to mechanical refrigeration as a transformation driven by specific advantages, not by necessity filling a void.",
+    "D": "Industrial expansion by breweries and meatpacking plants appears in the final sentence as a consequence of mechanical refrigeration's adoption—it is an outcome, not the passage's main focus. Privileging this detail as the central idea misidentifies a supporting conclusion for the overall argument."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5b1a7d4-9c6f-4e4e-d0b9-7a6f5e4d3c2b"
+  }
+}

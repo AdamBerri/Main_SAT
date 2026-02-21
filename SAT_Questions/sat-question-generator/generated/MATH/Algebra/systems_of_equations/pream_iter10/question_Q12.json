@@ -1,0 +1,54 @@
+{
+  "id": "e8b4f961-3a7c-4e2d-b509-67d1c0a23f85",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "During a basketball game, a team scored points exclusively through 2-point field goals and 3-point field goals. The team made a total of 24 field goals and scored 58 points. How many 3-point field goals did the team make?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$6$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$8$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$10$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$14$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let $t$ = number of 2-point field goals and $h$ = number of 3-point field goals.\n\nSet up the system:\n- Total field goals: $t + h = 24$ ... (1)\n- Total points: $2t + 3h = 58$ ... (2)\n\nMultiply equation (1) by 2:\n$$2t + 2h = 48 \\quad \\text{...(3)}$$\n\nSubtract equation (3) from equation (2):\n$$(2t + 3h) - (2t + 2h) = 58 - 48$$\n$$h = 10$$\n\nBack-substitute into equation (1):\n$$t = 24 - 10 = 14$$\n\nChecking equation (1): $14 + 10 = 24$ ✓\nChecking equation (2): $2(14) + 3(10) = 28 + 30 = 58$ ✓\n\nThe team made $\\mathbf{10}$ three-point field goals.",
+  "distractorRationale": {
+    "A": "Uses a misread-coefficient error: reads the total points as 54 instead of 58, giving $2t + 2h = 48$ subtracted from $2t + 3h = 54$, so $h = 6$.",
+    "B": "Makes a subtraction arithmetic slip: after correctly forming $2t + 2h = 48$, computes $58 - 48 = 8$ (instead of 10) when subtracting, giving $h = 8$.",
+    "C": "Correct answer: the team made 10 three-point field goals.",
+    "D": "Makes a wrong-variable error: solves the system correctly ($h = 10$, $t = 14$) but reports the number of 2-point field goals ($t = 14$) instead of 3-point field goals."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "7c9e1a4d-f2b3-4861-a508-29b6e7c30d14"
+  }
+}

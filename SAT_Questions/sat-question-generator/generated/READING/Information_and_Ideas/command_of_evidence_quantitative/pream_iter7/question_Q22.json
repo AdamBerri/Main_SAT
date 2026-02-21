@@ -1,0 +1,85 @@
+{
+  "id": "ab2202ba-0413-482b-97f1-0921dcfddcee",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Social scientists studying voter turnout analyzed participation rates across demographic groups in the 2024 national election. Their analysis challenges the conventional assumption that higher education uniformly predicts higher turnout, arguing instead that the effect of education on turnout is moderated by age, with the education-turnout gap being substantially wider among younger voters than among older voters.",
+  "stem": "Which choice most effectively uses data from the figure to support the social scientists' argument?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Among voters aged 18-29, college graduates turned out at 58% compared to 29% for non-graduates (a 29-point gap), while among voters aged 60+, college graduates turned out at 79% versus 71% for non-graduates (an 8-point gap).",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "College graduates aged 60+ turned out at 79%, the highest rate in the study, while non-graduates aged 18-29 turned out at 29%, the lowest rate.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Among voters aged 30-59, college graduates turned out at 67% compared to 52% for non-graduates, a gap of 15 percentage points that was larger than the gap among 60+ voters.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Non-graduate voter turnout increased with age, rising from 29% among 18-29 year-olds to 52% among 30-59 year-olds and 71% among those 60+, while graduate turnout also increased from 58% to 67% to 79%.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that the education-turnout gap is wider among younger voters than older voters. Choice A directly demonstrates this by comparing the gap in the youngest group (29 points) to the oldest group (8 points). Choice B cites the extreme values but doesn't calculate or compare gaps. Choice C discusses the middle and oldest groups but omits the youngest group where the gap is largest. Choice D describes how turnout increases with age for both groups but doesn't compare the education gap across age groups.",
+  "distractorRationale": {
+    "A": "Correct: quantifies the education-turnout gap for both the youngest (29 points) and oldest (8 points) age groups, directly showing the gap narrows with age.",
+    "B": "Wrong (wrong comparison): cites the highest and lowest individual data points without computing or comparing the education-related gaps within each age group.",
+    "C": "Wrong (incomplete evidence): compares the 30-59 gap to the 60+ gap but omits the 18-29 group, which shows the widest gap and is critical to the claim.",
+    "D": "Wrong (irrelevant data): describes the age-related increase in turnout for both education levels but does not compare the size of the education gap across age groups."
+  },
+  "hasImage": true,
+  "imageDescription": "Grouped bar chart titled 'Voter Turnout by Age Group and Education Level, 2024.' X-axis: Age Group (18-29, 30-59, 60+). Two bars per group: College Graduate (blue) and Non-Graduate (orange). 18-29: Graduate = 58%, Non-Graduate = 29%. 30-59: Graduate = 67%, Non-Graduate = 52%. 60+: Graduate = 79%, Non-Graduate = 71%. Source: National Election Studies Program, 2024.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Voter Turnout by Age Group and Education Level, 2024",
+    "data": {
+      "categories": [
+        "18-29",
+        "30-59",
+        "60+"
+      ],
+      "series": {
+        "College Graduate": [
+          58,
+          67,
+          79
+        ],
+        "Non-Graduate": [
+          29,
+          52,
+          71
+        ]
+      },
+      "unit": "percentage",
+      "yAxisLabel": "Voter Turnout (%)",
+      "xAxisLabel": "Age Group"
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 70,
+    "source": "Adapted from National Election Studies Program demographic analysis"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:37.200Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e2b64cf6-2abe-4d6b-aff9-81e89c870b5c"
+  }
+}

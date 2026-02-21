@@ -83,8 +83,8 @@
             "category": "answer_validity",
             "frequency": 3,
             "exampleErrors": [
-              "Designated answer B (k < 12) is mathematically equivalent to choice C (k \u2264 11), but explanation proves C is correct - contradiction between stated answer and derived logic",
-              "Designated answer D (44) contradicts the constraint mathematics - labor constraint gives d \u2264 30 which is binding, making answer A (30) correct, not D",
+              "Designated answer B (k < 12) is mathematically equivalent to choice C (k ≤ 11), but explanation proves C is correct - contradiction between stated answer and derived logic",
+              "Designated answer D (44) contradicts the constraint mathematics - labor constraint gives d ≤ 30 which is binding, making answer A (30) correct, not D",
               "System of inequalities has no value of k that produces no solution - both inequalities impose lower bounds on x, so solution always exists regardless of k, making all answer choices incorrect"
             ]
           },
@@ -93,7 +93,7 @@
             "frequency": 3,
             "exampleErrors": [
               "Answer choices A and D both listed as '44' - duplicate answer choices violate test construction principles and create ambiguity about correct answer",
-              "Distractor C (27) targets implausible arithmetic error - 220 \u00f7 5 cannot plausibly yield 27, so error path is unclear and misconception is not properly targeted",
+              "Distractor C (27) targets implausible arithmetic error - 220 ÷ 5 cannot plausibly yield 27, so error path is unclear and misconception is not properly targeted",
               "Distractors fail to target major misconceptions - no distractors address coefficient confusion, inequality direction errors, or constraint interpretation failures despite these being predictable errors"
             ]
           },
@@ -108,7 +108,7 @@
             "category": "internal_consistency",
             "frequency": 1,
             "exampleErrors": [
-              "Explanation contradicts itself - correctly identifies binding constraint as d \u2264 30 from labor constraint but then concludes answer is 44 from non-binding material constraint without justifying why non-binding constraint should be selected"
+              "Explanation contradicts itself - correctly identifies binding constraint as d ≤ 30 from labor constraint but then concludes answer is 44 from non-binding material constraint without justifying why non-binding constraint should be selected"
             ]
           }
         ]
@@ -133,8 +133,8 @@
             "category": "answer_validity",
             "frequency": 3,
             "exampleErrors": [
-              "Designated correct answer (B) mathematically incorrect; solving 5x \u2265 25 yields x \u2265 5, not x = 4. With x = 4, student scores only 80 points, below required 85.",
-              "Problem infeasible under stated constraints. Minimum standard s \u2265 15 with p \u2265 2s requires labor 3(15) + 5(30) = 195, exceeding limit of 180. No answer choice satisfies all constraints.",
+              "Designated correct answer (B) mathematically incorrect; solving 5x ≥ 25 yields x ≥ 5, not x = 4. With x = 4, student scores only 80 points, below required 85.",
+              "Problem infeasible under stated constraints. Minimum standard s ≥ 15 with p ≥ 2s requires labor 3(15) + 5(30) = 195, exceeding limit of 180. No answer choice satisfies all constraints.",
               "Designated answer C is not unambiguously correct due to constraint violation. Answer validity compromised by infeasible problem design."
             ]
           },
@@ -192,7 +192,7 @@
             "category": "distractor_quality",
             "frequency": 3,
             "exampleErrors": [
-              "Distractor B ($30) lacks clear conceptual grounding\u2014the rationale 'adding an extra $5' is vague and doesn't represent a systematic misconception",
+              "Distractor B ($30) lacks clear conceptual grounding—the rationale 'adding an extra $5' is vague and doesn't represent a systematic misconception",
               "Distractors A and D both target reciprocal errors, creating redundancy rather than distinct misconception categories",
               "Distractor C's sign error explanation doesn't clearly trace how a student arrives at exactly k = -3/2; the connection between the misconception and numerical answer is tenuous"
             ]
@@ -209,8 +209,8 @@
             "category": "answer_validity",
             "frequency": 2,
             "exampleErrors": [
-              "Designated answer (k = 24) is mathematically incorrect; the system has solutions when k = 24. The correct answer should be k \u2264 -24, which doesn't match any choice given",
-              "Explanation contains logical contradiction\u2014acknowledges that solutions DO exist when k = 3/2 but still affirms the answer as correct, indicating a fundamental error in the answer key"
+              "Designated answer (k = 24) is mathematically incorrect; the system has solutions when k = 24. The correct answer should be k ≤ -24, which doesn't match any choice given",
+              "Explanation contains logical contradiction—acknowledges that solutions DO exist when k = 3/2 but still affirms the answer as correct, indicating a fundamental error in the answer key"
             ]
           },
           {
@@ -235,11 +235,106 @@
       },
       "improvementMade": "Addressed: distractor_quality, difficulty_accuracy, answer_validity",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.808,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_d1",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q1 distractor rationales convoluted",
+              "Q4 minor faithfulness issue with comparative framing"
+            ]
+          },
+          {
+            "category": "no_significant_errors",
+            "frequency": 0,
+            "exampleErrors": [
+              "All questions pass, minor refinement only"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.866,
+        "passRate": 1
+      },
+      "improvementMade": "Final iteration: +29.8% improvement, 100% pass rate, strong scores across all difficulty levels",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 5.129,
+        "passRate": 1,
+        "errorCategories": {
+          "distractor_quality": "Q22 had weak distractors for abstract parameter problem (score 3/7)",
+          "faithfulness": "Q17,Q21,Q23 scored 4/7 on faithfulness - difficulty 4-5 questions felt too abstract/olympiad-like rather than SAT-authentic"
+        }
+      },
+      "testMetrics": {
+        "avgScore": 4.667,
+        "passRate": 1
+      },
+      "improvementMade": "Added detailed guidance for difficulty 4-5 SAT authenticity, expanded distractor quality checklist with concrete computation requirements, added self-check items for high-difficulty faithfulness",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.85,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "faithfulness",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q21 lattice-point counting in abstract system feels more like AMC than SAT",
+              "Q23 integer constraint maximization with a+b objective lacks real-world framing",
+              "Q25 compound fraction inequalities with integer counting lacks SAT-typical context"
+            ]
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q9 distractor rationale vague about exact arithmetic slip",
+              "Q19 sign-flip distractor explanation does not trace step-by-step to wrong value"
+            ]
+          },
+          {
+            "category": "no_critical_failures",
+            "frequency": 0,
+            "exampleErrors": [
+              "All 25 questions pass all critical dimensions"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.716,
+        "passRate": 1
+      },
+      "improvementMade": "Converged iteration: addressed remaining faithfulness issues at difficulty 4-5 (lattice counting, abstract optimization feel too competition-like) and improved distractor quality requirements (added step-by-step tracing mandate). Test score 4.716, 100% pass rate.",
+      "newPromptVersion": "1.4.0"
     }
   ],
-  "currentBestVersion": "1.1.0",
-  "bestTestScore": 4.458333333333334,
-  "converged": false,
+  "currentBestVersion": "1.2.0",
+  "bestTestScore": 4.866,
+  "converged": true,
   "startedAt": "2026-01-09T19:33:25.392Z",
-  "completedAt": null
+  "completedAt": "2026-02-21T03:09:06.359Z"
 }

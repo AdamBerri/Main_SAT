@@ -1,0 +1,54 @@
+{
+  "id": "5e9b3f7c-2a1d-4c8e-b6f0-4a7d1e3c9b5f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "Triangle $ABC$ has vertices $A(0, 0)$, $B(6, 0)$, and $C(4, 12)$. Point $G$ is the centroid of triangle $ABC$. What is the distance from vertex $A$ to the centroid $G$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\dfrac{2\\sqrt{61}}{3}$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\dfrac{\\sqrt{61}}{3}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\sqrt{61}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\dfrac{4\\sqrt{61}}{3}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Step 1: Find the centroid $G$.\nThe centroid has coordinates equal to the average of the three vertices:\n$$G = \\left(\\frac{0+6+4}{3},\\ \\frac{0+0+12}{3}\\right) = \\left(\\frac{10}{3},\\ 4\\right)$$\n\nStep 2: Compute the distance $AG$.\n$$AG = \\sqrt{\\left(\\frac{10}{3} - 0\\right)^2 + (4 - 0)^2} = \\sqrt{\\frac{100}{9} + 16} = \\sqrt{\\frac{100}{9} + \\frac{144}{9}} = \\sqrt{\\frac{244}{9}} = \\frac{\\sqrt{244}}{3}$$\n\nStep 3: Simplify $\\sqrt{244}$.\n$$\\sqrt{244} = \\sqrt{4 \\cdot 61} = 2\\sqrt{61}$$\n$$AG = \\frac{2\\sqrt{61}}{3}$$\n\nVerification using the median property: $M =$ midpoint of $BC = (5, 6)$. $AM = \\sqrt{25 + 36} = \\sqrt{61}$. Since the centroid divides each median in ratio $2:1$ from the vertex, $AG = \\frac{2}{3} \\cdot AM = \\frac{2\\sqrt{61}}{3}$ \\checkmark",
+  "distractorRationale": {
+    "A": "Correct. The centroid is at $(10/3, 4)$, and the distance from $A(0,0)$ is $\\sqrt{(10/3)^2 + 4^2} = \\sqrt{244/9} = \\frac{2\\sqrt{61}}{3}$.",
+    "B": "The student correctly identifies the centroid and finds the median length $AM = \\sqrt{61}$, but then applies the ratio $1:3$ (one-third from the opposite side) instead of $2:3$ from the vertex, giving $AG = \\frac{1}{3}\\sqrt{61}$.",
+    "C": "The student correctly locates the midpoint $M = (5, 6)$ of $BC$ and computes $AM = \\sqrt{61}$, but confuses the distance to the centroid with the full median length, reporting $\\sqrt{61}$ without applying the $2:3$ centroid ratio.",
+    "D": "The student applies the ratio $4:3$ instead of $2:3$, computing $AG = \\frac{4}{3} \\cdot AM = \\frac{4\\sqrt{61}}{3}$, perhaps misremembering that the centroid divides the median in a $4:1$ ratio."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3f5a8e4-7b2d-4f1c-9e0a-5b8d3e6c1f2a"
+  }
+}

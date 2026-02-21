@@ -1,0 +1,57 @@
+{
+  "id": "e5a7b9c1-4d6f-8a0b-d234-f05b6c7d8e9f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "Sleep plays a critical role in memory consolidation, the process by which newly acquired information is stabilized and integrated into long-term memory. During sleep, the brain replays experiences from the waking day, a phenomenon researchers have observed by recording electrical activity in the hippocampus of sleeping animals. This replay occurs most prominently during slow-wave sleep, the deepest stage of non-REM sleep.\n\nA study conducted at the University of Lubeck asked participants to learn a mathematical task before either sleeping or staying awake for eight hours. Those who slept were nearly three times more likely to discover a hidden shortcut in the task compared to those who remained awake. Participants in the sleep group showed an 59% success rate in finding the shortcut, while those who stayed awake achieved only a 23% success rate.\n\nREM sleep, the stage associated with vivid dreaming, also contributes to memory processing, particularly for emotionally charged memories. Researchers at the University of California, Berkeley found that people who were awakened during REM sleep and prevented from completing it showed reduced ability to recognize subtle facial expressions of emotion the following day. People who completed normal REM sleep cycles, by contrast, retained their emotional recognition ability without measurable impairment.\n\nChronic sleep deprivation compounds these effects. Adults who slept fewer than six hours per night for two weeks showed cognitive deficits equivalent to those seen after two full nights of total sleep loss, yet most of these participants reported feeling only slightly sleepy—suggesting they had lost accurate awareness of their own impairment.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 230,
+    "source": "Adapted from a review of sleep and cognitive function research"
+  },
+  "stem": "The passage claims that sleep improves the ability to find solutions to problems. Which quotation from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"During sleep, the brain replays experiences from the waking day, a phenomenon researchers have observed by recording electrical activity in the hippocampus of sleeping animals.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"Those who slept were nearly three times more likely to discover a hidden shortcut in the task compared to those who remained awake.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"People who were awakened during REM sleep and prevented from completing it showed reduced ability to recognize subtle facial expressions of emotion the following day.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"Adults who slept fewer than six hours per night for two weeks showed cognitive deficits equivalent to those seen after two full nights of total sleep loss.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The claim is that sleep improves the ability to find solutions to problems. Choice B directly states that participants who slept were nearly three times more likely to discover a hidden shortcut (a problem-solving outcome) compared to those who stayed awake. This provides the most direct evidence that sleep improved problem-solving ability, with no inferential steps required.",
+  "distractorRationale": {
+    "A": "This choice describes a neural mechanism (hippocampal replay) that occurs during sleep but does not directly demonstrate improved problem-solving ability as an outcome.",
+    "C": "This choice addresses the effect of REM sleep deprivation on recognizing emotional facial expressions—a different cognitive outcome from problem-solving or finding solutions.",
+    "D": "This choice addresses the negative cognitive consequences of chronic sleep deprivation rather than demonstrating that sleep improves problem-solving ability."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f6b8c0d2-5e7a-9b1c-e345-016c7d8e9f0a"
+  },
+  "hasImage": false
+}

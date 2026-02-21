@@ -1,0 +1,58 @@
+{
+  "id": "f7a1b2c3-d4e5-4f6a-b7c8-9d0e1f2a3b4c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "passage": "Economists studying the diffusion of agricultural technologies have long puzzled over why beneficial innovations—improved seed varieties, efficient irrigation methods, soil conservation practices—often spread slowly even when farmers have clear access to information about them. Early explanations emphasized capital constraints: farmers simply lacked the money to invest. More recent research, however, complicates this picture. Studies across sub-Saharan Africa and South Asia find that adoption rates increase substantially when farmers can observe neighbors using a technology on adjacent plots over multiple growing seasons, even when those farmers already received demonstration trials and informational materials years earlier. The effect is most pronounced for technologies with outcomes that vary meaningfully across soil types and local microclimates, and weakest for technologies with uniform outcomes regardless of context. Researchers interpret this pattern as reflecting rational uncertainty management: farmers may trust aggregate data less than locally observed outcomes when their own land conditions diverge from study conditions.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 152,
+    "source": "Adapted from a development economics review on technology adoption in smallholder agriculture"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about why peer observation accelerates technology adoption more than informational materials alone?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Farmers distrust researchers and government agencies that distribute informational materials.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Locally observed outcomes reduce uncertainty about whether aggregate results apply to a farmer's specific conditions.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Social pressure from neighbors adopting a technology overrides farmers' own cost-benefit calculations.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Informational materials are poorly designed and fail to communicate relevant technical details clearly.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage's key explanatory claim is that the observation effect is 'most pronounced for technologies with outcomes that vary meaningfully across soil types and local microclimates'—contexts where aggregate study data is least predictive of what will happen on a specific farm. Researchers interpret this as 'rational uncertainty management': farmers distrust aggregate data when their local conditions diverge from study conditions. The logical inference is that watching a neighbor's adjacent plot over multiple seasons supplies precisely the locally specific outcome data that resolves the mismatch between aggregate evidence and individual farm conditions. Choice B synthesizes this reasoning. Reaching it requires connecting the pattern (effect strongest where local variability is high), the mechanism (rational uncertainty), and the implication (peer observation resolves location-specific uncertainty that materials cannot).",
+  "distractorRationale": {
+    "A": "The passage does not mention distrust of researchers or government agencies. It instead frames farmers' behavior as 'rational uncertainty management' about contextual applicability—a different mechanism that does not require attributing distrust to any particular source.",
+    "B": "Correct. The passage links the strength of the peer-observation effect to local variability in outcomes, and interprets the pattern through rational uncertainty management about local applicability—directly supporting this inference.",
+    "C": "The passage describes farmers as engaging in 'rational uncertainty management,' framing adoption decisions as information-driven rather than socially coercive. The text provides no support for a social-pressure mechanism; introducing it requires an assumption the passage does not make.",
+    "D": "The passage explicitly states that increased adoption follows peer observation 'even when those farmers already received demonstration trials and informational materials years earlier,' implying the materials were received and presumably understood. The issue is not communication quality but the materials' inability to resolve locally specific uncertainty."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c8d9e0f1-a2b3-4c4d-e5f6-a7b8c9d0e1f2"
+  },
+  "hasImage": false
+}

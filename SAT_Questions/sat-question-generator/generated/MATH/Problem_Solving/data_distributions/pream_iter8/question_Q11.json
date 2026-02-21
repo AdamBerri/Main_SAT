@@ -1,0 +1,54 @@
+{
+  "id": "b3c7e2a1-4f9d-4b8e-a2c1-7d3f6e9b1a5c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3.0,
+    "computational": 3.3
+  },
+  "stem": "A biology class recorded the following seven plant heights (in centimeters): 2, 5, 7, 9, 12, 15, 20. After reviewing the data, the researcher discovered that the measurement of 20 cm was incorrectly recorded and the actual height was 13 cm. Which of the following correctly describes how the mean and median change when 20 is replaced by 13?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The mean decreases and the median decreases.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The mean decreases and the median remains the same.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The mean remains the same and the median decreases.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Both the mean and the median remain the same.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "STEP A — Sort original data: {2, 5, 7, 9, 12, 15, 20}.\n\nSTEP B — Original mean: sum = 2 + 5 + 7 + 9 + 12 + 15 + 20 = 70; mean = 70 ÷ 7 = 10.\n\nSTEP C — Original median: n = 7, so median position = (7 + 1) / 2 = 4th value. Sorted list: {2, 5, 7, 9, 12, 15, 20}. The 4th value is 9. Median = 9.\n\nSTEP D — Mode: all values appear once, no mode.\n\nSTEP E — Range: 20 − 2 = 18.\n\nSTEP G — After replacing 20 with 13, sort the new data: {2, 5, 7, 9, 12, 13, 15}.\n\nNew mean: sum = 2 + 5 + 7 + 9 + 12 + 13 + 15 = 63; mean = 63 ÷ 7 = 9. The mean decreased from 10 to 9.\n\nNew median: n = 7, median position = 4th value. Sorted: {2, 5, 7, 9, 12, 13, 15}. The 4th value is still 9. The median is unchanged at 9.\n\nSTEP H — Mean decreased (10 → 9); median stayed the same (9 → 9). This matches choice B.\n\nSTEP I — Distractor analysis:\n- Choice A (mean decreases AND median decreases): Misconception type (b) — median position error. A student might observe that 13 < 20 and assume removing a large value shifts everything down, including the median. However, the 4th position in the re-sorted 7-element list remains 9 regardless of whether the last value is 20 or 13, because the change only affects the 6th and 7th positions.\n- Choice C (mean same, median decreases): Misconception type (c) — statistic confusion. A student may incorrectly apply the rule 'the mean changes when you swap a value' to the median instead, believing the median always mirrors the direction of mean movement, while thinking the mean formula is somehow unaffected by the swap.\n- Choice D (both unchanged): Misconception type (e) — partial computation. A student might notice that both lists have 7 values and the median position formula gives position 4, then stop without actually checking whether position 4 yields the same value after re-sorting — and separately neglect to recompute the sum for the mean.",
+  "distractorRationale": {
+    "A": "Median position error: the student assumes that replacing the largest value with a smaller value shifts all statistics downward, including the median. In reality, re-sorting the list shows the 4th position still holds the value 9, so the median is unchanged.",
+    "B": "Correct. The mean decreases from 10 to 9 (new sum = 63, divided by 7), and the median remains 9 because the 4th value in the re-sorted list is still 9.",
+    "C": "Statistic confusion: the student mistakenly applies directional reasoning about the mean to the median, believing both statistics must change in the same direction when a data value is corrected. The mean does change, but the median's value depends on list position, not on the magnitude of values far from the center.",
+    "D": "Partial computation error: the student recognizes that the count remains 7 and the median position formula still gives position 4, but fails to recompute the actual sum (and thus the mean) and also fails to verify which value occupies position 4 in the re-sorted list."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1f4c8d2-3e7b-4c9a-8f2d-5b6e1a3c7d9f"
+  }
+}

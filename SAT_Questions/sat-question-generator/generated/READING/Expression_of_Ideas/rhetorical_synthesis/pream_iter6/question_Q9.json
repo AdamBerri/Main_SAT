@@ -1,0 +1,59 @@
+{
+  "id": "c6d7e8f9-a0b1-4c2d-3e4f-5a6b7c8d9e0f",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- Sleep plays a critical role in memory consolidation, the process by which short-term memories become long-term ones.\n- During deep sleep, the brain replays and strengthens neural connections formed during waking hours.\n- Studies show that students who sleep at least 7 hours before an exam perform better than those who stay up late studying.\n- Sleep deprivation impairs attention, decision-making, and emotional regulation.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 69,
+    "source": "Student research notes on sleep and learning"
+  },
+  "stem": "The student wants to persuade classmates that getting enough sleep before exams is more beneficial than staying up late to study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Sleep deprivation can impair attention, decision-making, and emotional regulation, affecting many areas of daily life.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Because the brain strengthens memories during deep sleep, students who sleep at least 7 hours before an exam tend to perform better than those who sacrifice sleep to study longer.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "During deep sleep, the brain replays neural connections that were formed during waking hours.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Sleep helps with memory consolidation, which is the process of turning short-term memories into long-term ones.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it connects the biological mechanism (brain strengthening memories during deep sleep) to the practical outcome (better exam performance with 7+ hours of sleep), directly supporting the persuasive goal. The other choices either focus on negative effects without the exam connection (A), describe the mechanism alone (C), or define a term without persuading (D).",
+  "distractorRationale": {
+    "A": "This choice describes negative effects of sleep deprivation generally but does not specifically connect sleep to exam performance or compare it with staying up to study.",
+    "C": "This choice explains what happens during deep sleep but does not connect it to exam outcomes or make a persuasive case.",
+    "D": "This choice defines memory consolidation but does not use it to argue that sleeping is better than late-night studying."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:08.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d7e8f9a0-b1c2-4d3e-4f5a-6b7c8d9e0f1a"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

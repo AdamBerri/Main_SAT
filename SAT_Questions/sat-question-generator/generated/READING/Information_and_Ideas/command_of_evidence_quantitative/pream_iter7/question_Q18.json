@@ -1,0 +1,82 @@
+{
+  "id": "7a6f931d-7d53-48dc-9247-9a55eae5bfd8",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "Climate scientists modeled sea ice extent in the Arctic over five decades. They argue that the rate of decline in summer sea ice has accelerated since 2000, with the most recent decade showing a faster annual loss than any previous period.",
+  "stem": "Which choice most effectively uses data from the figure to support the scientists' argument?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "From 2010 to 2020, summer sea ice declined by an average of 0.13 million square kilometers per year, compared to 0.07 million per year from 2000 to 2010 and 0.03 million per year from 1980 to 2000.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Summer sea ice extent was 7.8 million square kilometers in 1980, 7.2 million in 2000, 6.5 million in 2010, and 5.2 million in 2020, showing a continuous decline.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The 2020 measurement of 5.2 million square kilometers represents a 33% reduction from the 1980 baseline of 7.8 million square kilometers.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Between 1980 and 2000, summer sea ice decreased from 7.8 to 7.2 million square kilometers, a loss of 0.6 million square kilometers over 20 years.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is specifically about the rate of decline accelerating, with the most recent decade being fastest. Choice A directly compares annual rates across three periods (0.03, 0.07, 0.13 million km^2/year), showing clear acceleration. Choice B shows declining values but doesn't calculate rates. Choice C gives total cumulative change but not the rate per period. Choice D discusses only the earliest period's change.",
+  "distractorRationale": {
+    "A": "Correct: compares annual loss rates across three time periods, showing 2010-2020 had the fastest decline at 0.13M km^2/year.",
+    "B": "Wrong (incomplete evidence): lists raw measurements showing continuous decline but does not compute or compare the rate of decline across periods, which is the specific claim.",
+    "C": "Wrong (wrong comparison): calculates cumulative percentage loss over the full 40-year span rather than comparing rates across periods.",
+    "D": "Wrong (irrelevant data): discusses only the 1980-2000 period's total loss without comparing to more recent periods' rates."
+  },
+  "hasImage": true,
+  "imageDescription": "Line graph titled 'Arctic Summer Sea Ice Extent, 1980-2020.' X-axis: Year (1980, 1990, 2000, 2010, 2020). Y-axis: Sea Ice Extent (million km^2), range 4-8. Data points: 1980 = 7.8, 1990 = 7.5, 2000 = 7.2, 2010 = 6.5, 2020 = 5.2. Source: Arctic Climate Research Center, 2024.",
+  "chartData": {
+    "type": "line_graph",
+    "title": "Arctic Summer Sea Ice Extent, 1980-2020",
+    "data": {
+      "years": [
+        1980,
+        1990,
+        2000,
+        2010,
+        2020
+      ],
+      "values": [
+        7.8,
+        7.5,
+        7.2,
+        6.5,
+        5.2
+      ],
+      "unit": "million square kilometers",
+      "yAxisLabel": "Sea Ice Extent (million km²)",
+      "xAxisLabel": "Year"
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 58,
+    "source": "Adapted from Arctic Climate Research Center decadal assessment"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:37.026Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "ca00cebf-dd1f-4b76-a0bc-de82df36ebc1"
+  }
+}

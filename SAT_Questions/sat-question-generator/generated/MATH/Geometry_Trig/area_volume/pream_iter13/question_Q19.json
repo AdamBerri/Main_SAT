@@ -1,0 +1,38 @@
+{
+  "id": "c3d4e5f6-4444-4a6b-8c7d-9e0f1a2b3c19",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "A cone and a cylinder have the same radius $r$ and the same height $h$. If the volume of the cylinder is $150\\pi$ cubic centimeters, what is the volume, in cubic centimeters, of the space inside the cylinder but outside the cone?",
+  "choices": [
+    { "label": "A", "text": "$100\\pi$", "isCorrect": true },
+    { "label": "B", "text": "$50\\pi$", "isCorrect": false },
+    { "label": "C", "text": "$450\\pi$", "isCorrect": false },
+    { "label": "D", "text": "$200\\pi$", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "A cone inscribed in a cylinder with the same radius and height has volume $\\frac{1}{3}$ of the cylinder. Cone volume: $\\frac{1}{3}(150\\pi) = 50\\pi$. Remaining space: $150\\pi - 50\\pi = 100\\pi$ cubic centimeters. The answer is A.",
+  "distractorRationale": {
+    "A": "Correct. $150\\pi - \\frac{1}{3}(150\\pi) = 150\\pi - 50\\pi = 100\\pi$.",
+    "B": "Reports the cone volume itself instead of the remaining space: $\\frac{1}{3}(150\\pi) = 50\\pi$.",
+    "C": "Multiplies the cylinder volume by 3 instead of dividing: $150\\pi \\times 3 = 450\\pi$.",
+    "D": "Adds the cone volume to the cylinder volume instead of subtracting: $150\\pi + 50\\pi = 200\\pi$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:19.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-c444-4d5e-8f9a-0b1c2d3e4f19"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "a1b2c3d4-7777-4a6b-8c7d-9e0f1a2b3c07",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "A sphere-shaped exercise ball has a diameter of 12 inches. What is the volume, in cubic inches, of the ball?",
+  "choices": [
+    { "label": "A", "text": "$288\\pi$", "isCorrect": true },
+    { "label": "B", "text": "$216\\pi$", "isCorrect": false },
+    { "label": "C", "text": "$2{,}304\\pi$", "isCorrect": false },
+    { "label": "D", "text": "$48\\pi$", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The volume of a sphere is $V = \\frac{4}{3}\\pi r^3$. The diameter is 12 inches, so the radius is $r = 6$ inches. $V = \\frac{4}{3}\\pi(6)^3 = \\frac{4}{3}\\pi(216) = 288\\pi$ cubic inches. The answer is A.",
+  "distractorRationale": {
+    "A": "Correct. $\\frac{4}{3}\\pi(6)^3 = 288\\pi$.",
+    "B": "Omits the $\\frac{4}{3}$ coefficient: $\\pi(6)^3 = 216\\pi$.",
+    "C": "Uses the diameter instead of the radius: $\\frac{4}{3}\\pi(12)^3 = 2{,}304\\pi$.",
+    "D": "Uses $r^2$ instead of $r^3$: $\\frac{4}{3}\\pi(6)^2 = \\frac{4}{3}(36\\pi) = 48\\pi$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:07.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-7777-4d5e-8f9a-0b1c2d3e4f07"
+  }
+}

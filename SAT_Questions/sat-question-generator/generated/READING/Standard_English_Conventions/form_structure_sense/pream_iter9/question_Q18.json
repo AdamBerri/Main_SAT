@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "f8b3aecb-bed0-4851-a2f6-e8982ab50714",
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "The city's transportation authority has proposed a controversial plan to convert two major downtown streets into pedestrian-only zones. Business owners worry that reduced vehicle access will hurt their revenue, while environmental groups argue that the change will improve air quality and encourage walking. The authority insists that the plan [1]_____ economic activity by attracting more foot traffic, reduce vehicle emissions by thirty percent, and create safer conditions for pedestrians and cyclists.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 72,
+    "source": "Adapted from an urban planning debate summary"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "boost",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "boosts",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "boosted",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "will boost",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "This question tests the mandative subjunctive combined with parallel structure. 'Insists that' triggers the subjunctive, requiring the base form. The sentence lists three parallel subjunctive predicates: 'boost economic activity,' 'reduce vehicle emissions,' and 'create safer conditions.' All three must be in the base form. The confirmation comes from the parallel verbs 'reduce' and 'create,' which are clearly base forms.",
+  "distractorRationale": {
+    "A": "Correct. Base form (subjunctive) parallel with 'reduce' and 'create.'",
+    "B": "Indicative singular—wrong mood for subjunctive, and would break parallelism with base-form 'reduce' and 'create.'",
+    "C": "Past tense—violates subjunctive and breaks parallelism.",
+    "D": "Future modal—standard subjunctive uses bare base form, and 'will boost...reduce...create' would break parallelism."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "41c872c0-2111-4b49-85ac-dd11fc001c31"
+  }
+}

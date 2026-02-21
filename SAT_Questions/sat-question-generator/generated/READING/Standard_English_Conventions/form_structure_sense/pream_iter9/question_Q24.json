@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "ad355ad1-b13b-41aa-a27e-d80399bc304e",
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "Researchers studying bilingualism have found that the cognitive benefits of speaking two languages extend well beyond improved communication skills. A longitudinal study tracking bilingual individuals over thirty years revealed that the mental flexibility required to switch between languages, suppress one language system while activating another, and maintain two separate vocabularies [1]_____ measurably delayed the onset of age-related cognitive decline compared to monolingual control subjects.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 72,
+    "source": "Adapted from a cognitive science journal"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "have",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "has",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "having",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "had",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "This question tests subject-verb agreement combined with tense selection across extreme structural complexity. The subject is 'the mental flexibility' (singular), separated from the verb by three parallel infinitive phrases ('to switch...suppress...and maintain') totaling 20+ words. The singular subject requires a singular auxiliary. The past tense is required because 'revealed' in the main clause establishes a past-tense reported finding. The study 'revealed that the mental flexibility...had measurably delayed'—past perfect indicates the delay was observed before or at the time of the study's conclusion. However, this is a close call; 'has' would also be defensible if the finding is presented as ongoing. The key discriminator is that 'revealed' (past) + 'that' introduces a reported finding, and the delay was already measured at the time of revelation, favoring past perfect 'had.'",
+  "distractorRationale": {
+    "A": "'Have' is plural—disagrees with singular 'flexibility.'",
+    "B": "'Has' is present perfect singular—agrees in number but uses present tense within a past-tense reported finding frame ('revealed that').",
+    "C": "'Having' is a participle that cannot function as the auxiliary, creating a fragment.",
+    "D": "Correct. Past perfect singular 'had,' agreeing with 'flexibility' and placing the measured delay appropriately within the past-tense 'revealed that' frame."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "658a9762-a211-4bcc-a10a-8c3c7b3056a7"
+  }
+}

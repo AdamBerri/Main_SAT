@@ -1,0 +1,54 @@
+{
+  "id": "b5d9e3f7-2a14-4c60-8b2d-3e7f1a9c5d08",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "computational": 1.1
+  },
+  "stem": "What is the value of $x$ if $\\sqrt{x} = 9$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$18$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$81$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$9$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "We are given $\\sqrt{x} = 9$ and need to solve for $x$.\n\nSquare both sides of the equation:\n$$\\left(\\sqrt{x}\\right)^2 = 9^2$$\n$$x = 81$$\n\n**Verification:** Substitute $x = 81$ back into the original equation:\n$$\\sqrt{81} = 9 \\quad \\checkmark$$\nLHS $= 9$, RHS $= 9$. Equal. The answer is $\\boxed{81}$.",
+  "distractorRationale": {
+    "A": "Choice A = 3: Results from taking the square root of 9 instead of squaring it. The student applies $\\sqrt{9} = 3$, moving in the wrong direction (applying another square root rather than squaring both sides).",
+    "B": "Choice B = 18: Results from multiplying 9 by 2 instead of squaring. The student confuses squaring with doubling: $9 \\times 2 = 18$.",
+    "C": "Choice C = 81: Correct. Squaring both sides gives $x = 9^2 = 81$, and $\\sqrt{81} = 9$ ✓",
+    "D": "Choice D = 9: Results from not performing any operation — the student reads $\\sqrt{x} = 9$ and writes $x = 9$, forgetting to undo the square root by squaring both sides."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4a8d2f1-6b35-4e97-9c3a-2f0e8b7d1a54"
+  }
+}

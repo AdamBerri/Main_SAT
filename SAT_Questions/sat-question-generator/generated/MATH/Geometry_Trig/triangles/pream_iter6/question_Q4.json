@@ -1,0 +1,54 @@
+{
+  "id": "f6e0a5b2-9c34-4d78-1e6f-4a7b0c3d8f58",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "computational": 1.2
+  },
+  "stem": "Triangle $DEF$ is similar to triangle $GHI$, with $DE$ corresponding to $GH$ and $EF$ corresponding to $HI$. If $DE = 4$, $EF = 6$, and $GH = 10$, what is the length of $HI$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$12$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$15$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$\\ \\frac{12}{5}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$24$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Because triangle $DEF \\sim$ triangle $GHI$ with $DE$ corresponding to $GH$ and $EF$ corresponding to $HI$, the ratios of corresponding sides are equal:\n\n$$\\frac{GH}{DE} = \\frac{HI}{EF}$$\n\nSubstitute the known values:\n$$\\frac{10}{4} = \\frac{HI}{6}$$\n\nSolve for $HI$:\n$$HI = 6 \\times \\frac{10}{4} = \\frac{60}{4} = 15$$\n\nThe length of $HI$ is $15$.",
+  "distractorRationale": {
+    "A": "The student uses an additive relationship instead of a multiplicative ratio: they note that $GH - DE = 10 - 4 = 6$ and add that same difference to $EF$, computing $6 + 6 = 12$.",
+    "B": "Correct answer: $HI = EF \\times \\frac{GH}{DE} = 6 \\times \\frac{10}{4} = 15$.",
+    "C": "The student inverts the scale factor and sets up $\\frac{DE}{GH} = \\frac{HI}{EF}$, giving $\\frac{4}{10} = \\frac{HI}{6}$, and solves to get $HI = \\frac{24}{10} = \\frac{12}{5}$.",
+    "D": "The student multiplies the two sides of the smaller triangle together ($DE \\times EF = 4 \\times 6 = 24$), ignoring the given side $GH = 10$ of the larger triangle entirely."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e4b27f06-5a8c-4d30-1f6a-7b9c2d4e0f69"
+  }
+}

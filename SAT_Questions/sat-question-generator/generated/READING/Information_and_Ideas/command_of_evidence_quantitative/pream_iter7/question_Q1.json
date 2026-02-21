@@ -1,0 +1,80 @@
+{
+  "id": "b4df89cb-24a6-4f2a-8441-bb416069ac01",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1.3
+  },
+  "passage": "A team of marine biologists studied coral reef health across four ocean regions. Their findings indicate that the Pacific Ocean region has the highest percentage of healthy coral cover among all regions surveyed.",
+  "stem": "Which choice most effectively uses data from the figure to support the marine biologists' finding?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The Pacific Ocean region had 78% healthy coral cover, which was higher than the Atlantic (52%), Indian (61%), and Caribbean (44%) regions.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The Indian Ocean region had 61% healthy coral cover, while the Atlantic region had 52% healthy coral cover.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The Caribbean region had the lowest healthy coral cover at 44%, compared to the Atlantic region's 52%.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The Atlantic Ocean region had 52% healthy coral cover, which was more than the Caribbean region's 44%.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage claims that the Pacific Ocean region has the highest percentage of healthy coral cover. Choice A directly supports this by showing the Pacific at 78%, which is clearly higher than all other regions (Atlantic 52%, Indian 61%, Caribbean 44%). The other choices cite accurate data but fail to address the specific claim about the Pacific having the highest cover.",
+  "distractorRationale": {
+    "A": "Correct: directly cites Pacific's 78% and compares it to all other regions, confirming it is the highest.",
+    "B": "Wrong (irrelevant data): cites accurate values for Indian and Atlantic oceans but never mentions the Pacific, which is the subject of the claim.",
+    "C": "Wrong (wrong comparison): compares Caribbean to Atlantic, which doesn't address the claim about the Pacific being highest.",
+    "D": "Wrong (incomplete evidence): only compares Atlantic to Caribbean without referencing the Pacific region at all."
+  },
+  "hasImage": true,
+  "imageDescription": "Bar chart titled 'Healthy Coral Cover by Ocean Region.' X-axis: Ocean Region (Pacific, Atlantic, Indian, Caribbean). Y-axis: Percentage of Healthy Coral Cover (0-100%). Bars: Pacific = 78%, Atlantic = 52%, Indian = 61%, Caribbean = 44%. Source: Marine Biology Research Institute, 2024.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Healthy Coral Cover by Ocean Region",
+    "data": {
+      "categories": [
+        "Pacific",
+        "Atlantic",
+        "Indian",
+        "Caribbean"
+      ],
+      "values": [
+        78,
+        52,
+        61,
+        44
+      ],
+      "unit": "percentage",
+      "yAxisLabel": "Percentage of Healthy Coral Cover (%)",
+      "xAxisLabel": "Ocean Region"
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 52,
+    "source": "Adapted from Marine Biology Research Institute annual report"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.286Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "0d0c1c91-5cdc-4112-8bf1-b18c7af8e8f1"
+  }
+}

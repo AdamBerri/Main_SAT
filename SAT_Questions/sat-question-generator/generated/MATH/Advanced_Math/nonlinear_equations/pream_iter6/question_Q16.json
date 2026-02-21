@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2e1-84b0-4d6a-9e15-2c8f0b3d7a41",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "computational": 4.3
+  },
+  "stem": "A system of equations is defined by $y = x + 2$ and $y = x^2 - 4$. What is the sum of all values of $x$ that satisfy both equations simultaneously?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$5$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$1$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$-1$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$3$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To find the $x$-values where both equations are satisfied simultaneously, set the two expressions for $y$ equal to each other:\n\n$$x + 2 = x^2 - 4$$\n\nRearrange to set equal to zero:\n$$0 = x^2 - x - 6$$\n\nFactor the quadratic:\n$$0 = (x - 3)(x + 2)$$\n\nSetting each factor equal to zero gives $x = 3$ or $x = -2$.\n\n**Verification:**\n- $x = 3$: $y = 3 + 2 = 5$. Check: $x^2 - 4 = 9 - 4 = 5$. LHS $= 5$, RHS $= 5$. ✓\n- $x = -2$: $y = -2 + 2 = 0$. Check: $x^2 - 4 = 4 - 4 = 0$. LHS $= 0$, RHS $= 0$. ✓\n\nThe sum of all $x$-values is $3 + (-2) = \\mathbf{1}$.",
+  "distractorRationale": {
+    "A": "Choice A = 5: Results from incorrect factoring. Student sets up $x^2 - x - 6 = 0$ correctly but factors as $(x-3)(x-2) = 0$, yielding $x = 3$ and $x = 2$. Verification of error: $(x-3)(x-2) = x^2 - 5x + 6 \\neq x^2 - x - 6$. Sum $= 3 + 2 = 5$.",
+    "B": "Correct answer. Sum of solutions is $3 + (-2) = 1$.",
+    "C": "Choice C = -1: Results from a sign error when rearranging. Student writes $x + 2 = x^2 - 4$ as $x^2 + x - 6 = 0$ (incorrectly changing the sign of $x$), then factors as $(x+3)(x-2) = 0$, yielding $x = -3$ and $x = 2$. Verification of error: $(x+3)(x-2) = x^2 + x - 6$ ✓ (consistent with wrong setup). Sum $= -3 + 2 = -1$.",
+    "D": "Choice D = 3: Results from taking only the positive solution $x = 3$ and ignoring the second solution $x = -2$. Student finds one intersection point but fails to identify the second."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e9d2a1f4-73c8-4b0e-8a62-5f1d9c0e7b23"
+  }
+}

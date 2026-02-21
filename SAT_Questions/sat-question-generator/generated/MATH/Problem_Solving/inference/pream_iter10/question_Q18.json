@@ -1,0 +1,54 @@
+{
+  "id": "f2a9b3c5-7d1e-4f8a-b6c2-3e5d8a1b4c70",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "Two universities each conducted a study on whether a new tutoring program improved students' exam scores. University A randomly assigned 60 students to either the tutoring program or a control group and found that tutored students scored, on average, 8 points higher. University B analyzed existing records for 600 students and compared the 210 who had voluntarily enrolled in the tutoring program with those who had not; tutored students scored, on average, 11 points higher. A policy analyst wants to recommend the tutoring program for adoption district-wide based on the evidence that tutoring improves scores. Which study provides stronger justification for the analyst's recommendation, and why?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "University B's study, because its larger sample of 600 students makes the 11-point advantage more statistically reliable than University A's finding.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "University A's study, because random assignment allows a causal conclusion that the tutoring program itself caused the score improvement, whereas University B's voluntary enrollment introduces self-selection bias.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "University B's study, because the 11-point improvement is larger than the 8-point improvement found by University A, indicating a stronger effect of the tutoring program.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "University A's study, because a smaller study is easier to control for outside variables, making its results less likely to be influenced by confounding factors than a large observational study.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "University A used a randomized controlled design: students were randomly assigned to the tutoring or control group. Random assignment ensures that the two groups are comparable in all other characteristics (motivation, prior ability, etc.) on average, so any observed difference in scores can be attributed to the tutoring program itself. This allows a causal conclusion. University B's study, despite its larger sample, is observational: students self-selected into the tutoring program. Students who voluntarily seek out extra help may already be more motivated, higher-achieving, or have other traits that independently improve their scores. This self-selection bias means the 11-point difference cannot be attributed solely to the tutoring program — motivated students might have scored higher regardless. For a policy recommendation that the program causes improvement, University A's causal design is more appropriate even though the effect size (8 points) is smaller and the sample is smaller. The analyst needs evidence that the program itself works, not just that students who use it tend to do better.",
+  "distractorRationale": {
+    "A": "Error type 6 (sample size misapplication): This choice correctly identifies that larger samples give more reliable estimates, but misapplies this principle by treating sample size as the primary criterion for which study is more useful. A larger sample in an observational study still cannot establish causation, which is what the policy recommendation requires. Sample size improves precision within a study design; it does not repair a fundamental design flaw like self-selection bias.",
+    "B": "Correct answer: Random assignment in University A's study is the key feature that enables a causal conclusion. The policy recommendation requires evidence that the tutoring program itself improves scores, not merely that students who choose tutoring score higher. University B's self-selection bias makes it impossible to disentangle the program's effect from pre-existing differences between the two groups.",
+    "C": "Error type 4 (conflating correlation with causation — here, treating effect size as evidence of causal strength): A larger observed difference (11 points vs. 8 points) does not mean the program is more effective if the study design cannot support causal claims. University B's 11-point gap may reflect pre-existing differences between voluntary enrollees and non-enrollees, not the program's impact. Choosing the study with the bigger number without evaluating study design reflects a failure to reason about inference validity.",
+    "D": "Error type 3 (misidentifying what controls for confounds — attributing confound control to sample size rather than study design): The reason University A controls for confounding is not because it is smaller, but because it used random assignment. Smaller studies do not inherently control outside variables better — in fact, very small samples have more random variation. The key methodological feature is randomization, not study size. This distractor captures students who arrive at the right answer (University A) but for entirely the wrong statistical reason."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3c7e1a9f-4b2d-4e8c-a5f6-9b1d3e6c2a08"
+  }
+}

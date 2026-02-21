@@ -1,0 +1,57 @@
+{
+  "id": "d9f1b4e7-3a5c-4d8e-b2f6-8c1a9e7d3b5f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Grief counselors in the 1960s formalized what became known as stage theory: the bereaved move through denial, anger, bargaining, depression, and acceptance in a recognizable sequence. Clinicians found the framework useful for validating patients' experiences—naming a stage could reassure a grieving person that their feelings were expected, survivable, predictable.\n\nThe empirical research published over the following four decades told a different story. Longitudinal studies found no consistent sequence; some individuals skipped stages entirely, others revisited them cyclically, and a substantial minority showed minimal distress throughout. The stages persisted in clinical training not because evidence supported them but because they gave practitioners a legible map of an otherwise illegible territory.\n\nPracticing therapists who know the research nonetheless report that introducing stage theory to a newly bereaved patient can materially reduce acute distress—not because the stages are real, but because the idea of progression through suffering toward resolution provides what researchers now call a temporal scaffold: a structure that makes endurance imaginable.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 171,
+    "source": "Adapted from a review of bereavement research in clinical psychology"
+  },
+  "stem": "Which choice best describes the central concern of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The ways in which a clinically useful framework can retain practical value even when the empirical evidence underlying it has been substantially disconfirmed",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The argument that grief stage theory should be abandoned in clinical training because decades of longitudinal research have shown it to be empirically invalid",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The claim that grief stages were originally developed to serve the institutional needs of therapists rather than to accurately describe the experience of bereaved individuals",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "An explanation of why the concept of temporal scaffolding has replaced stage theory as the dominant framework in contemporary bereavement research",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage develops a three-part argument without explicitly stating its synthesis. The first paragraph establishes that stage theory was adopted because it provided clinical utility—validation and reassurance. The second paragraph details that empirical research failed to support the theory's sequential structure. The third paragraph introduces the paradox that therapists who know the research still deploy the theory because it functions as a 'temporal scaffold,' making endurance imaginable even absent empirical grounding. The main idea requires integrating these three elements: the original utility was real, the empirical basis was discredited, and the utility survives the discrediting. Answer A is the only choice that captures this three-way tension between clinical effectiveness and empirical disconfirmation without resolving it artificially in either direction.",
+  "distractorRationale": {
+    "A": "Correct. This answer holds together the passage's genuine complexity: stage theory works therapeutically without being empirically valid, and practitioners continue using it for that reason—a fact the passage presents without either endorsing abandonment or dismissing the research.",
+    "B": "The passage does not recommend abandonment. The third paragraph explicitly presents evidence that the theory retains measurable clinical utility, and the passage ends with the concept of temporal scaffolding as an explanation for why the framework persists despite disconfirmation—not a call to eliminate it.",
+    "C": "The passage says the stages persisted in clinical training because they gave practitioners a 'legible map,' but it does not claim the theory was originally designed to serve institutional rather than patient-centered needs. The first paragraph presents the initial rationale as validating patients' experiences, not serving therapists' convenience.",
+    "D": "Temporal scaffolding is introduced in the final sentence as an explanatory concept coined by researchers, not as a replacement framework that has achieved dominance in the field. The passage does not describe temporal scaffolding as a competing theory or trace a historical transition from one framework to the other."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5a2c8f4-1d7b-4e9c-a3f6-9b2d4e8c1f5a"
+  }
+}

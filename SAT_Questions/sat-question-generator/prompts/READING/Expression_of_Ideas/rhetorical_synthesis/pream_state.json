@@ -5,7 +5,7 @@
     "subtopic": "rhetorical_synthesis"
   },
   "config": {
-    "maxIterations": 5,
+    "maxIterations": 10,
     "trainTestSplit": 0.8,
     "convergenceThreshold": 0.02,
     "minSamplesPerIteration": 20,
@@ -159,11 +159,76 @@
       },
       "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
       "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 5,
+        "passRate": 1,
+        "errorCategories": {
+          "faithfulness_high_difficulty": {
+            "count": 5,
+            "description": "Difficulty 4-5 questions have answer choices that are too long and analytical, resembling evaluative commentary rather than concise student-written sentences. This reduces faithfulness to authentic SAT format."
+          }
+        }
+      },
+      "testMetrics": {
+        "avgScore": 4.45,
+        "passRate": 1
+      },
+      "improvementMade": "Added SAT authenticity requirements: answer choices must be concise (under 50 words), written as student prose not analytical commentary; difficulty should come from subtle distinctions not sentence length; prohibited analytical framing phrases in answer choices",
+      "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.775,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "answer_validity_high_difficulty",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q23: Choice B presents general pro/con positions that could arguably address debate complexity, weakening the gap between it and the correct answer C which uses concrete CBO data",
+              "Q19: Choice C (historian characterization) could be seen as illustrating the positive outcome through academic framing, though less effectively than the narrative arc in choice B"
+            ]
+          },
+          {
+            "category": "faithfulness_format_drift",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q14: Telemedicine question answer choices slightly exceed typical SAT length for rhetorical synthesis questions",
+              "Q18: Voyager 1 answer choice B at 37 words approaches the upper bound of conciseness for this format",
+              "Q21: Placebo effect question uses a debate-framing structure less common in standard SAT rhetorical synthesis items"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy_overestimate",
+            "frequency": 5,
+            "exampleErrors": [
+              "Most difficulty 4-5 questions scored 4/5 on difficulty_accuracy because correct answers remain fairly distinguishable through a single key feature",
+              "Distractors at high difficulty levels sometimes fail to partially address the rhetorical goal, making elimination too straightforward"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.533,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed answer_validity gaps at difficulty 4-5 by requiring at least two distractors that partially satisfy the rhetorical goal; added validation step to ensure clear gap between correct answer and strongest distractor; strengthened high-difficulty answer defensibility requirements",
+      "newPromptVersion": "1.5.0"
     }
   ],
-  "currentBestVersion": "1.2.0",
-  "converged": false,
+  "currentBestVersion": "1.5.0",
+  "converged": true,
   "startedAt": "2026-01-08T15:11:51.744Z",
-  "completedAt": null,
-  "bestTestScore": 4.229166666666667
+  "completedAt": "2026-02-21T03:08:10.927Z",
+  "bestTestScore": 4.533
 }

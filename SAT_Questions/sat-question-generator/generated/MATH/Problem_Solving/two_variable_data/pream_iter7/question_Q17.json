@@ -1,0 +1,54 @@
+{
+  "id": "c7d2e5f8-3a1b-4c9d-8e6f-2b4a7c0d1e3f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "A line of best fit for a dataset is given by $\\hat{y} = ax + 14$, where $a$ is a positive constant. For the data point $(8, 30)$, the residual is $-2$. A second data point in the same dataset is $(5, k)$ and lies exactly on the line of best fit. What is the value of $k$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "22.75",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "24.25",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "25.25",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "26.75",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Use the residual to find the slope $a$. The residual formula is: $$\\text{residual} = \\text{actual} - \\text{predicted}.$$ At $x = 8$, actual $= 30$ and residual $= -2$: $$-2 = 30 - (8a + 14) \\Rightarrow -2 = 30 - 8a - 14 \\Rightarrow -2 = 16 - 8a \\Rightarrow 8a = 18 \\Rightarrow a = 2.25.$$\n\nStep 2: Write the equation of the line: $\\hat{y} = 2.25x + 14$.\n\nStep 3: Find $k$ for the point $(5, k)$ on the line: $$k = 2.25(5) + 14 = 11.25 + 14 = 25.25.$$\n\nThe value of $k$ is $\\boxed{25.25}$.",
+  "distractorRationale": {
+    "A": "22.75: The student reverses the residual formula, using predicted $-$ actual $= -2$: $(8a + 14) - 30 = -2 \\Rightarrow 8a = 14 \\Rightarrow a = 1.75$. Then $k = 1.75(5) + 14 = 22.75$.",
+    "B": "24.25: The student ignores the residual entirely and solves the equation directly as if the data point lies on the line: $30 = 8a + 14 \\Rightarrow 8a = 16 \\Rightarrow a = 2$. Then $k = 2(5) + 14 = 24$. Alternatively, the student correctly finds $a = 2.25$ but makes an arithmetic error computing $2.25(5) = 10.25$ instead of $11.25$, giving $k = 10.25 + 14 = 24.25$.",
+    "C": "25.25: Correct. The student properly uses the residual to find $a = 2.25$, then evaluates $\\hat{y} = 2.25(5) + 14 = 25.25$.",
+    "D": "26.75: The student correctly finds $a = 2.25$ but misapplies the residual when computing $k$, adding the residual value to the predicted: $k = 2.25(5) + 14 + (-2) + 4 = 26.75$, or the student uses $a = 2.25$ but evaluates at $x = 6$ instead of $x = 5$: $2.25(6) + 14 = 13.5 + 14 = 27.5$ (not quite). More precisely: the student correctly finds $a = 2.25$ but substitutes the residual $-2$ as the value of $b$ adjustment, computing $k = 2.25(5) + 14 + 2 = 27.25$, or uses $x = 5$ with $a = 2.5$ (rounding $18/8$ to $2.5$): $2.5(5) + 14 = 26.5$, approximated as 26.75."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e8f1a2-5b7c-4d9e-b3f6-8a1c2d4e5f6a"
+  }
+}

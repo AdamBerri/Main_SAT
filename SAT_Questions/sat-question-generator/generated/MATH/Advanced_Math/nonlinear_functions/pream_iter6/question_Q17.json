@@ -1,0 +1,54 @@
+{
+  "id": "b8e2f4a1-93d7-4c20-ae46-1f5c3d7e9b04",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "An exponential function $f(x) = a \\cdot b^x$, where $a > 0$ and $b > 0$, satisfies $f(2) = 12$ and $f(5) = 96$. What is the value of $f(0)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$6$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$12$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$48$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "From $f(2) = ab^2 = 12$ and $f(5) = ab^5 = 96$, divide the second equation by the first: $\\frac{ab^5}{ab^2} = \\frac{96}{12}$, giving $b^3 = 8$, so $b = 2$. Substituting back: $a(2)^2 = 12 \\Rightarrow 4a = 12 \\Rightarrow a = 3$. Therefore $f(x) = 3 \\cdot 2^x$, and $f(0) = 3 \\cdot 2^0 = 3 \\cdot 1 = 3$.",
+  "distractorRationale": {
+    "A": "This is the correct answer: $f(0) = 3 \\cdot 2^0 = 3$.",
+    "B": "Error: correctly finding $a = 3$ and $b = 2$, but evaluating $2^0 = 2$ instead of $1$, yielding $f(0) = 3 \\cdot 2 = 6$. A student who forgets that any nonzero base raised to the zero power equals 1 would compute $3 \\cdot 2 = 6$.",
+    "C": "Error: reporting $f(2) = 12$ as the answer to $f(0)$, confusing the given input-output pair with the requested value. A student who misreads the problem or substitutes $x = 2$ instead of $x = 0$ would report $12$.",
+    "D": "Error: dividing in the wrong order when finding $b$: computing $b^3 = \\frac{12}{96} = \\frac{1}{8}$, so $b = \\frac{1}{2}$. Then $a \\cdot \\left(\\frac{1}{2}\\right)^2 = 12 \\Rightarrow \\frac{a}{4} = 12 \\Rightarrow a = 48$. This student reports $f(0) = 48 \\cdot \\left(\\frac{1}{2}\\right)^0 = 48$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c9d0e1f2-a3b4-5678-cdef-012345678901"
+  }
+}

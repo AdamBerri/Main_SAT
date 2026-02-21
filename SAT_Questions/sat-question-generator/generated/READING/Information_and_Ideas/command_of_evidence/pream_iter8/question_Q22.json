@@ -1,0 +1,57 @@
+{
+  "id": "a1d4f7e2-9c3b-4a8f-b6d2-3e5c9a7f1b4d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "The following passage is adapted from a 2022 article on monetary policy transmission.\n\nCentral banks adjust short-term interest rates to influence broader economic conditions, but the effectiveness of this tool depends critically on how rate changes propagate through the financial system — a process known as monetary policy transmission. Economists have long debated whether transmission operates primarily through the cost of borrowing for firms and households or through its effects on bank balance sheets.\n\nA Federal Reserve staff study examining quarterly data from 1994 to 2019 found that a one-percentage-point increase in the federal funds rate reduced business investment by an average of 1.8 percent over the subsequent four quarters, while household consumption fell by only 0.4 percent over the same period. The authors attributed the asymmetry to the prevalence of variable-rate commercial loans among small and mid-sized businesses: because 67 percent of outstanding commercial loans to firms with fewer than 500 employees carried variable rates, those borrowers immediately faced higher debt service costs when policy rates rose.\n\nA parallel research program examined the balance-sheet channel specifically: when interest rates rise, the market value of longer-duration assets on bank balance sheets declines, compressing net worth and tightening the conditions under which banks extend new credit. An analysis of 2,400 U.S. commercial banks between 2015 and 2022 documented that a 100-basis-point rate increase corresponded with a 6.2 percent average reduction in new commercial loan originations among banks in the lowest quartile of capital adequacy ratios, compared to a 1.1 percent reduction among the most well-capitalized banks.\n\nMore recent research has complicated both accounts by demonstrating that the two channels interact rather than operate in isolation. When the Federal Reserve raised rates by 525 basis points between March 2022 and July 2023, firms that had locked in long-term fixed-rate financing before the cycle began reduced capital expenditures by only 0.6 percent, whereas firms reliant on short-term revolving credit contracted capital spending by 4.1 percent — a gap economists argued reflected the cost-of-borrowing channel. Yet among firms in the fixed-rate group, those whose primary lenders fell into the lowest capital-adequacy quartile still curtailed investment by 2.3 percent, suggesting that tighter bank balance sheets independently constrained credit supply even when borrowing costs were insulated from the rate increase.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 330,
+    "source": "Adapted from a 2022 review article on interest rate transmission mechanisms"
+  },
+  "stem": "A monetary economist contends that rising policy interest rates can restrict business investment even among firms whose own debt-servicing costs are shielded from the rate increase. Which quotation from the passage provides the most direct evidence for this contention?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "a one-percentage-point increase in the federal funds rate reduced business investment by an average of 1.8 percent over the subsequent four quarters, while household consumption fell by only 0.4 percent over the same period",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "firms that had locked in long-term fixed-rate financing before the cycle began reduced capital expenditures by only 0.6 percent, whereas firms reliant on short-term revolving credit contracted capital spending by 4.1 percent",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "among firms in the fixed-rate group, those whose primary lenders fell into the lowest capital-adequacy quartile still curtailed investment by 2.3 percent, suggesting that tighter bank balance sheets independently constrained credit supply even when borrowing costs were insulated from the rate increase",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "a 100-basis-point rate increase corresponded with a 6.2 percent average reduction in new commercial loan originations among banks in the lowest quartile of capital adequacy ratios, compared to a 1.1 percent reduction among the most well-capitalized banks",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The claim has two precise requirements: (1) business investment falls, and (2) this happens among firms whose own borrowing costs are shielded from rate increases. Choice C is the only option that satisfies both simultaneously: it specifies 'firms in the fixed-rate group' — whose debt-service costs are explicitly insulated from the rate hike — and documents a 2.3 percent investment curtailment, attributing it to 'tighter bank balance sheets independently constrained credit supply even when borrowing costs were insulated.' No inferential step bridges the claim to the evidence because the choice repeats the claim's exact logical structure. Choice B contrasts fixed-rate versus variable-rate firms but focuses on showing how fixed-rate firms fare better than variable-rate ones; it does not isolate investment restriction among firms whose costs are shielded from rate increases. Choice A shows aggregate investment decline but does not distinguish firms by their borrowing cost exposure. Choice D documents bank-level lending reduction rather than firm-level investment behavior, requiring an additional inferential step to connect bank lending contraction to the investment decisions of cost-insulated firms.",
+  "distractorRationale": {
+    "A": "Choice A shows that rising rates reduced business investment overall, but it does not address the claim's key qualifier — that the investment restriction occurs specifically among firms whose own debt costs are shielded from the rate increase. It cannot distinguish the cost-of-borrowing channel from the balance-sheet channel, so it does not isolate the scenario the claim describes.",
+    "B": "Choice B is a strong distractor: it directly compares fixed-rate firms (cost-shielded) to variable-rate firms. However, it actually undermines the claim by showing that shielded firms reduced investment by only 0.6 percent — a modest figure interpreted as evidence they were largely protected. The choice describes the contrast rather than demonstrating investment restriction among shielded firms. Only in combination with Choice C (which shows that even shielded firms curtailed investment when their lenders were undercapitalized) does the full picture emerge; B alone does not provide direct support.",
+    "C": "Correct. Choice C specifies the fixed-rate (cost-shielded) subgroup, documents a meaningful 2.3 percent investment curtailment within that group, and explicitly attributes the restriction to bank balance-sheet constraints independent of borrowing-cost effects. This is the precise logical structure of the claim.",
+    "D": "Choice D provides evidence for the balance-sheet channel at the bank level — showing that undercapitalized banks originated fewer loans after rate increases — but does not directly document investment behavior among firms whose debt costs are rate-insulated. An additional inferential step (from reduced originations to investment curtailment among shielded borrowers) is required."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b3c7e2f1-8a4d-4b9e-c3a2-7f6d5e8b1c4a"
+  }
+}

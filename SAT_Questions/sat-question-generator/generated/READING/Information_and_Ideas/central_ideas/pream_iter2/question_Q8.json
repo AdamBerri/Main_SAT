@@ -1,0 +1,58 @@
+{
+  "id": "a5c2e8f1-4d7b-4a3c-9e6f-8b1d5c3a7e9b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "The first bicycles, introduced in the 1860s, had pedals attached directly to the front wheel. Riders had to push the pedals in large circles to move forward, making the bikes tiring to ride and difficult to control. Inventors responded by enlarging the front wheel: a bigger wheel covered more ground per pedal stroke. By the 1880s, the \"ordinary\" bicycle featured a front wheel as tall as a rider's waist—sometimes taller. These high-wheelers were fast, but mounting them required athletic skill, and a fall from the saddle could be dangerous.\n\nThe problem was solved by adding a chain drive that connected pedals to the rear wheel. This design, called the safety bicycle, allowed for smaller, equal-sized wheels without sacrificing speed. The safety bicycle was easier to mount, safer to ride, and within a decade it had replaced the high-wheeler entirely. Its basic design remains the foundation of bicycles today.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 153,
+    "source": "Adapted from a history of transportation technology"
+  },
+  "stem": "What is the passage mainly about?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The dangers of high-wheel bicycles led inventors to abandon early bicycle designs in favor of safer alternatives.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Early bicycle designers faced the challenge of achieving speed without sacrificing safety, a problem ultimately solved by the chain-drive safety bicycle.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The chain drive was the most important mechanical innovation in transportation history because it made bicycles accessible to ordinary riders.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "High-wheel bicycles were fast machines that required significant athletic skill to ride safely.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage traces the evolution of the bicycle from direct-pedal designs through high-wheelers to the safety bicycle. The central problem throughout is how to achieve adequate speed while keeping the bicycle safe and controllable. Choice B captures both the problem (speed vs. safety) and its solution (the chain-drive safety bicycle), matching the passage's full scope. The other choices each emphasize only one part of the story.",
+  "distractorRationale": {
+    "A": "Danger is only one dimension of the high-wheeler's limitations; the deeper problem was achieving speed without requiring large wheels. This choice also implies the high-wheeler was abandoned primarily for safety reasons, while the passage presents speed efficiency and ease of use as equally important factors.",
+    "B": "Correct. Identifies the core design challenge (speed without sacrificing safety) and the solution (the chain-drive safety bicycle), spanning the full passage.",
+    "C": "The chain drive's importance is supported by the passage, but calling it \"the most important mechanical innovation in transportation history\" goes well beyond anything the passage claims. The passage is limited to bicycle history.",
+    "D": "This accurately describes the high-wheeler but represents only one detail from the middle of the passage, ignoring both the earlier design problem and the eventual safety bicycle solution."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f2d8a1c4-5b9e-4f3a-8c7d-1e4b6a2c8f5e"
+  },
+  "hasImage": false
+}

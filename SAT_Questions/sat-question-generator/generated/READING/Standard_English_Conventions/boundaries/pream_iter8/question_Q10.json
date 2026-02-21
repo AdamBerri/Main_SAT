@@ -1,0 +1,58 @@
+{
+  "id": "b8c3d4e5-f6a7-4b8c-d0e9-5f6a7b8c9d0e",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "The human brain contains approximately 86 billion neurons, each capable of connecting with thousands of others. These cells communicate through electrical and chemical signals[, the speed of these signals can reach up to 120 meters per second]. Neuroscientists continue to investigate how such rapid communication enables complex thought and behavior.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 61,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": ", the speed of these signals can reach up to 120 meters per second",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "; the speed of these signals can reach up to 120 meters per second",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": " the speed of these signals can reach up to 120 meters per second",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "; and the speed of these signals can reach up to 120 meters per second",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion connects two independent clauses: 'These cells communicate through electrical and chemical signals' (subject 'These cells,' verb 'communicate') and 'the speed of these signals can reach up to 120 meters per second' (subject 'the speed,' verb 'can reach'). In Standard English, two independent clauses cannot be joined by a comma alone (Choice A — comma splice), nor can they be run together with no punctuation (Choice C — fused sentence). Choice B correctly uses a semicolon to join the two independent clauses, which is a proper sentence boundary mark when the clauses are closely related in meaning.",
+  "distractorRationale": {
+    "A": "Choice A is a comma splice: two independent clauses are connected by only a comma. A comma alone is not a sufficient boundary marker between two complete sentences in Standard English.",
+    "B": "Choice B is correct. A semicolon properly connects the two independent clauses, signaling that they are complete but closely related thoughts. This is a standard and grammatically correct use of the semicolon.",
+    "C": "Choice C creates a fused (run-on) sentence by placing no punctuation between the two independent clauses. Without any boundary marker, the two complete thoughts are illegally merged into one unbroken string.",
+    "D": "Choice D pairs a semicolon with the coordinating conjunction 'and.' This combination is nonstandard in English: a semicolon already functions as a sentence boundary, making the conjunction redundant. The correct construction is either a semicolon alone or a comma paired with a coordinating conjunction, not both."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f"
+  },
+  "hasImage": false
+}

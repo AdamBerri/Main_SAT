@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0006-4aaa-b006-000000000006",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "Two parallel lines are cut by a transversal. One of the alternate interior angles measures $65°$. What is the measure of the co-interior angle on the same side as the $65°$ angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$65°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$115°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$25°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$130°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Co-interior angles (same-side interior angles) are supplementary when formed by parallel lines and a transversal. The co-interior angle is $180° - 65° = 115°$.",
+  "distractorRationale": {
+    "A": "Confused co-interior with alternate interior (which are equal).",
+    "B": "Correct. $180° - 65° = 115°$.",
+    "C": "Computed complement: $90° - 65° = 25°$.",
+    "D": "Doubled the angle: $65° \\times 2 = 130°$."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.338Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0006-4000-a006-000000000006"
+  }
+}

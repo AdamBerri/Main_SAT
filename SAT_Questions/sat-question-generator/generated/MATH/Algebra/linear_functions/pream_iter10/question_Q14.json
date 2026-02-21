@@ -1,0 +1,54 @@
+{
+  "id": "a506c2cf-41e9-482b-bccc-2f81fa7b5612",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "computational": 3.2
+  },
+  "stem": "A car rental company charges a fixed daily fee plus a per-mile rate. One customer drives 20 miles in a day and pays a total of $\\$35$. Another customer drives 50 miles in that same day and pays a total of $\\$50$. What is the per-mile rate, in dollars per mile?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$0.30$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$0.50$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$0.75$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$1.75$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $C(d) = rd + f$ represent the total daily cost, where $r$ is the per-mile rate and $f$ is the fixed daily fee.\n\nThe per-mile rate is the slope of this linear function. Using the two data points $(20, 35)$ and $(50, 50)$:\n$$r = \\frac{50 - 35}{50 - 20} = \\frac{15}{30} = 0.50$$\n\nThe per-mile rate is $\\$0.50$ per mile.\n\n(As a check: $f = 35 - 0.50(20) = 35 - 10 = 25$, so the fixed fee is $\\$25$, and $C(50) = 0.50(50) + 25 = 50$ ✓.)",
+  "distractorRationale": {
+    "A": "Divides the change in cost by the larger mileage value instead of the change in mileage: $\\frac{50 - 35}{50} = \\frac{15}{50} = 0.30$.",
+    "B": "Correct. The per-mile rate is the slope: $\\frac{50 - 35}{50 - 20} = \\frac{15}{30} = 0.50$.",
+    "C": "Divides the change in cost by the smaller mileage value instead of the change in mileage: $\\frac{50 - 35}{20} = \\frac{15}{20} = 0.75$.",
+    "D": "Divides the first customer's total charge by the first customer's mileage, treating it as a simple rate with no fixed fee: $\\frac{35}{20} = 1.75$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3ad74ce1-3b62-4560-b2e3-d230d1758eef"
+  }
+}

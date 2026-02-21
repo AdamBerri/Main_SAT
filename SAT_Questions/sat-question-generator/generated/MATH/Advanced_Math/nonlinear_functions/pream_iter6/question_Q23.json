@@ -1,0 +1,54 @@
+{
+  "id": "f1a3c5e7-b9d1-4f2a-8e6c-3b5d7f9a1c3e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "A population is modeled by $P(t) = P_0 \\cdot b^t$, where $t$ is time in years and $P_0$ and $b$ are positive constants. At time $t = 2$, the population is $20$. At time $t = 5$, the population is $160$. What is the population at time $t = 8$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$320$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$640$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$1{,}280$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$2{,}560$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Set up equations using the two given data points.\n$$P(2) = P_0 \\cdot b^2 = 20 \\quad \\text{and} \\quad P(5) = P_0 \\cdot b^5 = 160$$\n\nStep 2: Divide the second equation by the first to eliminate $P_0$.\n$$\\frac{P_0 \\cdot b^5}{P_0 \\cdot b^2} = \\frac{160}{20} \\implies b^3 = 8 \\implies b = 2$$\n\nStep 3: Solve for $P_0$ using $P(2) = 20$.\n$$P_0 \\cdot 2^2 = 20 \\implies P_0 \\cdot 4 = 20 \\implies P_0 = 5$$\n\nStep 4: Compute $P(8)$.\n$$P(8) = 5 \\cdot 2^8 = 5 \\cdot 256 = 1{,}280$$\n\nVerification: $P(2) = 5 \\cdot 4 = 20$ ✓ and $P(5) = 5 \\cdot 32 = 160$ ✓.",
+  "distractorRationale": {
+    "A": "Error: The student correctly finds $b = 2$ and $P_0 = 5$, but then computes $P(8) = 5 \\cdot 2^6 = 5 \\cdot 64 = 320$. The single error is using $6$ as the exponent (the number of years from $t = 2$ to $t = 8$) instead of $8$ (the actual value of $t$). The correct formula requires substituting $t = 8$ directly: $P_0 \\cdot b^8$.",
+    "B": "Error: The student correctly finds $b = 2$ and $P_0 = 5$, but evaluates $P(8) = 5 \\cdot 2^7 = 5 \\cdot 128 = 640$, using exponent $7$ instead of $8$. This is an off-by-one error in writing the exponent when substituting $t = 8$.",
+    "C": "Correct. $P(8) = 5 \\cdot 2^8 = 1{,}280$.",
+    "D": "Error: The student correctly finds $b^3 = 8$ so $b = 2$, but makes a single error when solving for $P_0$: divides $P(2)$ by $b$ instead of $b^2$, writing $P_0 = 20 \\div 2 = 10$. Then $P(8) = 10 \\cdot 2^8 = 10 \\cdot 256 = 2{,}560$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e2f4a6b8-c0e2-4d1f-9b3a-6c8e0f2a4b6c"
+  }
+}

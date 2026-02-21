@@ -1,0 +1,54 @@
+{
+  "id": "c1d2e3f4-a5b6-7c8d-9e0f-1a2b3c4d5e6f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "computational": 3.3
+  },
+  "stem": "A store offers a 20% discount on a laptop originally priced at $800. After the discount, a 10% sales tax is applied to the discounted price. What is the total amount the customer pays?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$704",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$720",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$640",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$880",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Discounted price = $800 × 0.80 = $640. Tax = $640 × 0.10 = $64. Total = $640 + $64 = $704.",
+  "distractorRationale": {
+    "A": "Correct answer.",
+    "B": "Student netted the discount and tax (20% − 10% = 10% net discount): $800 × 0.90 = $720.",
+    "C": "Student applied only the discount and forgot to add the tax: $800 × 0.80 = $640.",
+    "D": "Student applied the tax first to the original price then added: $800 × 1.10 = $880."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:10.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d2e3f4a5-b6c7-8d9e-0f1a-2b3c4d5e6f7a"
+  }
+}

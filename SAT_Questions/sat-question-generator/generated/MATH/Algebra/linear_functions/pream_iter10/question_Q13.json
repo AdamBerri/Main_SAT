@@ -1,0 +1,54 @@
+{
+  "id": "55b6799d-979d-4894-9c2c-ee4beeaa7019",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "The table shows selected values of a linear function $g$.\n\n| $x$ | $g(x)$ |\n|-----|--------|\n| 1   | 7      |\n| 4   | 16     |\n\nThe function $g$ is written in the form $g(x) = mx + b$. What is the value of $b$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$1$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$4$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$7$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$10$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "First, find the slope $m$ using the two points $(1, 7)$ and $(4, 16)$:\n$$m = \\frac{16 - 7}{4 - 1} = \\frac{9}{3} = 3$$\n\nNext, substitute one point and the slope into $g(x) = mx + b$ to find $b$. Using $(1, 7)$:\n$$7 = 3(1) + b \\implies 7 = 3 + b \\implies b = 4$$\n\nTherefore $b = 4$.",
+  "distractorRationale": {
+    "A": "Misreads the first $x$-value in the table as the $x$-value to use, but then subtracts the slope from the wrong starting point: uses $x = 2$ instead of $x = 1$, giving $b = 7 - 3(2) = 1$.",
+    "B": "Correct. The slope is $m = 3$ and the $y$-intercept is $b = 7 - 3(1) = 4$.",
+    "C": "Reads the $y$-value at $x = 1$ directly as the $y$-intercept: reports $g(1) = 7$ as $b$, without accounting for the fact that $x = 1 \\neq 0$.",
+    "D": "Adds $m \\times x_1$ instead of subtracting when solving for $b$: $b = 7 + 3(1) = 10$ instead of $b = 7 - 3(1) = 4$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e300893d-4ced-4e28-8914-dfc1e5f595b7"
+  }
+}

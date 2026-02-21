@@ -1,0 +1,38 @@
+{
+  "id": "a6b7c8d9-e0f1-4a2b-3c4d-5e6f7a8b9c0e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "A clothing store orders shirts and pants from a supplier. Shirts cost $12 each and pants cost $20 each. The store has a budget of at most $960. The store's storage room can hold at most 60 items total. The store owner wants at least twice as many shirts as pants. What is the greatest number of pants the store can order?",
+  "choices": [
+    { "label": "A", "text": "18", "isCorrect": false },
+    { "label": "B", "text": "20", "isCorrect": true },
+    { "label": "C", "text": "24", "isCorrect": false },
+    { "label": "D", "text": "15", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $s$ = shirts, $p$ = pants. Constraints: $12s + 20p \\leq 960$, $s + p \\leq 60$, $s \\geq 2p$. To maximize $p$, set $s = 2p$ (minimum shirts). Storage: $2p + p \\leq 60$, $3p \\leq 60$, $p \\leq 20$. Budget: $12(2p) + 20p \\leq 960$, $24p + 20p \\leq 960$, $44p \\leq 960$, $p \\leq 21.8$. The binding constraint is storage: $p \\leq 20$. The greatest number of pants is 20.",
+  "distractorRationale": {
+    "A": "Cluster B error: Set $s = 2p$ correctly but made an arithmetic error in the budget: $12(2p) + 20p = 44p \\leq 960$, $p \\leq 21.8$, then applied storage $3p \\leq 60$ getting $p = 20$, but subtracted 2 thinking 'at least twice' means strictly more than twice, getting 18.",
+    "B": "Correct. With $s = 2p$, storage gives $3p \\leq 60$, so $p \\leq 20$. Budget: $44p \\leq 960$, $p \\leq 21.8$. Binding constraint is storage: $p = 20$.",
+    "C": "Cluster D error: Ignored the shirt ratio constraint and used only the budget: $20p \\leq 960$, $p \\leq 48$, then applied storage $p \\leq 60$, chose $p = 24$ as a round number near budget midpoint.",
+    "D": "Cluster C error: Misread 'at least twice as many shirts as pants' as 'at least twice as many pants as shirts,' setting $p \\geq 2s$. With $p = 2s$: $3s \\leq 60$, $s = 20$, $p = 40$. Budget: $240 + 800 = 1040 > 960$. Reduced to $s = 15, p = 30$. Budget: $180 + 600 = 780$. But then realized error and chose $p = 15$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:24.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b7c8d9e0-f1a2-4b3c-4d5e-6f7a8b9c0d1f"
+  }
+}

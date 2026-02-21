@@ -1,0 +1,57 @@
+{
+  "id": "b3e1d7f2-4a9c-4f8e-b2d5-6c7a8f9e1b3d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2.0,
+    "linguistic": 2.3
+  },
+  "passage": "Bioluminescence—the production of light by living organisms—occurs in a remarkable variety of marine creatures, from bacteria and jellyfish to squid and deep-sea fish. Unlike the light produced by a lightbulb, bioluminescent light generates almost no heat, earning it the name \"cold light.\" The chemical reaction responsible for bioluminescence requires two key components: a light-emitting molecule called luciferin and an enzyme called luciferase. When oxygen interacts with luciferin in the presence of luciferase, light is released. Scientists have found that different marine species have evolved their own unique versions of luciferin and luciferase, suggesting that bioluminescence arose independently multiple times throughout evolutionary history rather than descending from a single common ancestor. In the deep ocean, where sunlight cannot penetrate, more than 75 percent of all marine organisms are bioluminescent. These creatures use light for a variety of purposes, including attracting prey, communicating with potential mates, and confusing or deterring predators.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 152,
+    "source": "Adapted from a marine biology overview on deep-sea organisms"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about bioluminescence in deep-ocean environments?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "It evolved primarily as a defense mechanism against predators.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "It serves as a functional substitute for absent sunlight.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "It depends on sunlight to trigger the necessary chemical reactions.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "It is most common in organisms that share a recent common ancestor.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage states that sunlight cannot penetrate the deep ocean and that more than 75 percent of deep-ocean organisms are bioluminescent. It also describes how these creatures use their light for essential biological functions—finding food, reproducing, and avoiding predators. Connecting these details, one can infer that bioluminescence fills the role that sunlight plays in shallower environments: enabling organisms to carry out key life functions in an otherwise lightless zone. The inference that bioluminescence serves as a functional substitute for absent sunlight is thus strongly supported without being directly stated.",
+  "distractorRationale": {
+    "A": "While the passage does mention deterring predators as one use of bioluminescence, it lists multiple purposes (attracting prey, communicating with mates, confusing predators) with no textual emphasis indicating that defense is the primary driver. Selecting this requires assuming priority that the passage does not establish.",
+    "C": "This directly contradicts the passage, which explains that bioluminescence results from a chemical reaction between luciferin, luciferase, and oxygen—not from sunlight. The passage further emphasizes that bioluminescence is especially prevalent where sunlight is absent.",
+    "D": "The passage explicitly states the opposite: different species have evolved their own unique versions of luciferin and luciferase, suggesting bioluminescence arose independently multiple times rather than from a single common ancestor."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c2d4f8a1-7b3e-4c9d-a5f2-8e1b6c3d7f9a"
+  },
+  "hasImage": false
+}

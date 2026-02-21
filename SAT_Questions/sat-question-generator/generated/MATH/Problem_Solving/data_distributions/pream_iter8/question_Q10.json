@@ -1,0 +1,54 @@
+{
+  "id": "f7b1e4a5-8c29-7h3e-2d56-5i0f7e3h9g81",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "The five values in a data set are 10, 14, 16, 20, and 25. What is the mean of the data set?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "15",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "16",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "17",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "20",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "STEP A — Sort the data set: 10, 14, 16, 20, 25.\n\nSTEP B — Compute the mean:\nsum = 10 + 14 + 16 + 20 + 25\n= 24 + 16 + 20 + 25\n= 40 + 20 + 25\n= 60 + 25\n= 85\nmean = 85 / 5 = 17.\n\nSTEP C — Identify the median: position = (5+1)/2 = 3rd value = 16.\n\nSTEP D — No mode (all values appear once).\n\nSTEP E — Range = 25 − 10 = 15.\n\nSTEP F — Standard deviation is not relevant here.\n\nSTEP H — The correct answer is 17, which matches choice C.\n\nSTEP I — Distractor analysis:\nA (15): Partial-computation error. The student adds only the four lowest values (10 + 14 + 16 + 20 = 60) and divides by 4, obtaining 60/4 = 15. They omit the largest value (25) and use a count of 4 rather than 5.\nB (16): Statistic-confusion error. The student finds the middle value of the sorted list (position 3 = 16) and reports it as the mean, confusing the median with the mean.\nD (20): Position-confusion error. The student counts to the 4th value of the sorted list (20) — perhaps thinking the mean corresponds to a position near the upper middle — and reports 20 instead of computing the arithmetic average.",
+  "distractorRationale": {
+    "A": "Partial-computation error: student sums only the four lowest values (10+14+16+20 = 60) and divides by 4, yielding 60/4 = 15, omitting 25 from both the sum and the count.",
+    "B": "Statistic-confusion error: student finds the middle (3rd) value of the sorted list, which is 16, and reports it as the mean, confusing median with mean.",
+    "C": "Correct: sum = 10 + 14 + 16 + 20 + 25 = 85; mean = 85/5 = 17.",
+    "D": "Position-confusion error: student selects the 4th value of the sorted list (20), mistaking a data point's position for the mean."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d5e6f7a8-b9c0-1234-efab-567890123456"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "e107564c-0125-403c-95e7-6f38d94e379c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "A data set consists of the five values $4, 8, 12, 16, 20$. A researcher multiplies every value in the data set by $3$ to create a new data set. Which of the following correctly describes the mean and the range of the new data set?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Mean $= 36$ and range $= 16$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Mean $= 12$ and range $= 48$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Mean $= 36$ and range $= 48$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Mean $= 36$ and range $= 36$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "STEP A — Sort the original data: $4, 8, 12, 16, 20$.\n\nSTEP B — Original mean: $\\frac{4+8+12+16+20}{5} = \\frac{60}{5} = 12$.\n\nSTEP E — Original range: $20 - 4 = 16$.\n\nSTEP G (after multiplying each value by $3$) — New data set: $12, 24, 36, 48, 60$.\n\nNew mean: $\\frac{12+24+36+48+60}{5} = \\frac{180}{5} = 36$.\n\nNew range: $60 - 12 = 48$.\n\nKey concept: When every value in a data set is multiplied by a constant $k$, the mean, median, and range are all multiplied by $k$. Here $k=3$, so new mean $= 3 \\times 12 = 36$ and new range $= 3 \\times 16 = 48$.\n\nSTEP H — Mean $= 36$ and range $= 48$ matches choice C.\n\nSTEP I — Distractor analysis:\n- Choice A (mean $=36$, range $=16$): Range-invariance misconception — student correctly scales the mean but believes the range is unaffected by multiplication because range is a \"difference\" that they assume cancels out the multiplier. However, $\\text{new range} = (3 \\times 20) - (3 \\times 4) = 60 - 12 = 48$.\n- Choice B (mean $=12$, range $=48$): Mean-invariance misconception — student correctly scales the range but believes multiplying all values leaves the mean unchanged because the mean is already a kind of \"representative\" value. The student may reason that \"the center does not move\" without realizing that scaling shifts every value, including the center.\n- Choice D (mean $=36$, range $=36$): Statistic confusion — student correctly computes the new mean but then sets range $=$ mean, either confusing the two statistics or erroneously computing range as the new maximum minus the new mean ($60-24=36$ or similar off-by-one reasoning).",
+  "distractorRationale": {
+    "A": "Range-invariance misconception: the student scales the mean correctly (12 x 3 = 36) but believes that the range, being a difference, is unaffected by multiplying all values by a constant. In fact, range also scales by the same factor: 16 x 3 = 48.",
+    "B": "Mean-invariance misconception: the student scales the range correctly (16 x 3 = 48) but believes the mean is unchanged when all values are multiplied by a constant, reasoning incorrectly that the 'center' of the data does not move.",
+    "C": "Correct. Multiplying every value by 3 multiplies both the mean and the range by 3: new mean = 36 and new range = 48.",
+    "D": "Statistic confusion: the student correctly computes the new mean (36) but then equates the range to the mean, or erroneously subtracts the new mean from the new maximum (60 - 24 = 36) rather than computing max minus min (60 - 12 = 48)."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d424aa01-3066-467f-9bb3-171175d06dfc"
+  }
+}

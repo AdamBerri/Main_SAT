@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "8e41f6ef-9208-4cd6-9a9b-8c7ead85ee0a",
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "The urban sociologist Jane Jacobs, whose 1961 book 'The Death and Life of Great American Cities' challenged the dominant urban planning orthodoxy of her era, argued that the vitality of city neighborhoods depended not on grand architectural visions but on the organic interactions of diverse residents. Jacobs demanded that city planners [1]_____ their top-down approach to urban renewal, listen to the communities they claimed to serve, and recognize that the apparent disorder of thriving neighborhoods was in fact a complex, self-sustaining order.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 88,
+    "source": "Adapted from an urban studies analysis"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "abandoned",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "abandon",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "abandons",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "would abandon",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests the mandative subjunctive with parallel structure across a three-element series. 'Demanded that' triggers the subjunctive. The sentence lists three parallel demands: 'abandon their top-down approach,' 'listen to the communities,' and 'recognize that...' All three verbs must be in the base form. The parallel verbs 'listen' and 'recognize' (both clearly base forms) confirm the pattern. The difficulty is compounded by the 'not X but Y' construction in the prior sentence, the lengthy relative clause modifying Jacobs, and the need to track the subjunctive requirement across the entire multi-clause sentence.",
+  "distractorRationale": {
+    "A": "Past tense—violates subjunctive and breaks parallelism with 'listen' and 'recognize.'",
+    "B": "Correct. Base form (subjunctive), parallel with 'listen' and 'recognize.'",
+    "C": "Indicative singular—wrong mood and breaks parallelism.",
+    "D": "Conditional modal—standard subjunctive requires bare base form; also breaks parallelism with 'listen' and 'recognize.'"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "04dcc602-657e-46d5-a5dc-b3925ef9f703"
+  }
+}

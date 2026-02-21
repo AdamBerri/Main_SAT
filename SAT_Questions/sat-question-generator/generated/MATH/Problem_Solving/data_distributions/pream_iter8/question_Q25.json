@@ -1,0 +1,54 @@
+{
+  "id": "4f68ceb6-23b3-4129-992b-5001540e42c8",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 4.8
+  },
+  "stem": "A data set contains the eight values 4, 7, 9, 12, 14, 17, 19, and 22. The two smallest values, 4 and 7, are removed from the data set. What is the interquartile range (IQR) of the remaining six values?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "5",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "7",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "10",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "11",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "STEP A — Sort the original data set in ascending order: 4, 7, 9, 12, 14, 17, 19, 22.\n\nSTEP B — Compute the original mean (for reference):\n  Sum = 4 + 7 + 9 + 12 + 14 + 17 + 19 + 22 = 104\n  Mean = 104 ÷ 8 = 13\n\nSTEP C — Identify the original median (n = 8, even):\n  Average of 4th and 5th values = (12 + 14) ÷ 2 = 13\n\nSTEP E — Compute the original IQR:\n  Lower half (first 4 values): 4, 7, 9, 12 → Q1 = (7 + 9) ÷ 2 = 8\n  Upper half (last 4 values): 14, 17, 19, 22 → Q3 = (17 + 19) ÷ 2 = 18\n  Original IQR = 18 − 8 = 10\n\nSTEP G — After removing 4 and 7, the new data set is: 9, 12, 14, 17, 19, 22 (n = 6).\n  Re-sort (already sorted): 9, 12, 14, 17, 19, 22\n\n  New median (n = 6, even): average of 3rd and 4th values = (14 + 17) ÷ 2 = 15.5\n\n  New IQR:\n    Lower half (first 3 values): 9, 12, 14 → Q1 = middle value = 12\n    Upper half (last 3 values): 17, 19, 22 → Q3 = middle value = 19\n    New IQR = 19 − 12 = 7\n\nSTEP H — Correct answer = 7, which is choice B. ✓\n\nKey insight: Although both removed values (4 and 7) were below the original Q1 = 8, removing them changes the positions of Q1 and Q3 in the new list. With n = 6, the lower half is {9, 12, 14} and the upper half is {17, 19, 22}, giving Q1 = 12 and Q3 = 19, so IQR = 7 (not 10).\n\nSTEP I — Distractor analysis:\n  Choice A (5): MISCONCEPTION — wrong quartile positions. The student takes Q1 and Q3 as the 2nd and 4th values of the new 6-item list respectively: Q1 = 12 (2nd value), Q3 = 17 (4th value), IQR = 17 − 12 = 5. This error arises from using the formula for the quartile positions in an odd-n list (positions ⌈n/4⌉ and ⌊3n/4⌋) incorrectly applied to the new list.\n  Choice C (10): MISCONCEPTION — IQR-unchanged error. The student recognizes that 4 and 7 are both below the original Q1 = 8 and incorrectly concludes that removing values outside the IQR does not affect the IQR itself. The student reports the original IQR = 10 without recomputing Q1 and Q3 on the new data set.\n  Choice D (11): MISCONCEPTION — old Q1 with new Q3. The student correctly recomputes Q3 on the new data set as 19 (the median of {17, 19, 22}) but fails to update Q1, keeping the original Q1 = 8. The student then computes IQR = 19 − 8 = 11, applying a partial update that preserves only the upper quartile.",
+  "distractorRationale": {
+    "A": "Wrong quartile positions: the student takes the 2nd value as Q1 (= 12) and the 4th value as Q3 (= 17) in the new 6-item list, computing IQR = 17 − 12 = 5 instead of using the correct lower and upper half medians.",
+    "B": "Correct answer: after removing 4 and 7, the new set is {9, 12, 14, 17, 19, 22}; Q1 = median of lower half {9, 12, 14} = 12 and Q3 = median of upper half {17, 19, 22} = 19, giving IQR = 19 − 12 = 7.",
+    "C": "IQR-unchanged error: the student notes that both removed values (4 and 7) are below the original Q1 = 8 and incorrectly concludes that removing values outside the IQR leaves the IQR at 10, without recomputing Q1 and Q3 on the modified data set.",
+    "D": "Partial-update error: the student correctly recomputes Q3 = 19 on the new data set but retains the original Q1 = 8, computing IQR = 19 − 8 = 11 rather than fully recalculating both quartiles."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "7d97f0c6-dfed-4591-b5da-b71dde5c76ec"
+  }
+}

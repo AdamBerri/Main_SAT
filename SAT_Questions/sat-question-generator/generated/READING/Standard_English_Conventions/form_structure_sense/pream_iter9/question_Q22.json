@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "4c62263e-1a39-44bc-ad63-82b4e5d84e72",
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "The epidemiologist John Snow, working decades before the germ theory of disease was widely accepted, demonstrated through careful mapping of cholera cases in 1854 London that contaminated water, not miasma or bad air as the prevailing medical establishment believed, [1]_____ the primary vector for the spread of the disease—a finding that fundamentally altered public health practices and laid the groundwork for modern epidemiology.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 68,
+    "source": "Adapted from a history of public health"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "were",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "was",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "is",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "had been",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement through a highly complex sentence with multiple intervening structures. The subject is 'contaminated water' (singular/uncountable), separated from the verb by a long parenthetical phrase 'not miasma or bad air as the prevailing medical establishment believed.' Despite the plural nouns 'miasma' and 'air' in the parenthetical, the verb agrees with 'water' (singular): 'was.' The past tense matches the historical narrative ('demonstrated,' 'believed'). The difficulty comes from: (1) the 20+ word gap between subject and verb, (2) the 'not X but Y' construction that might confuse students about the subject, (3) the intervening clause 'as the medical establishment believed,' and (4) the em-dash parenthetical that follows.",
+  "distractorRationale": {
+    "A": "'Were' is past plural, which students might choose if they identify 'miasma or bad air' as the subject. But the 'not...as' phrase is parenthetical; 'contaminated water' is the true singular subject.",
+    "B": "Correct. 'Was' is past singular, agreeing with 'contaminated water.'",
+    "C": "'Is' is present singular—agrees in number but breaks the past-tense narrative of historical events in 1854.",
+    "D": "'Had been' is past perfect, which would imply the water's role as a vector was established before Snow's demonstration. But the sentence describes Snow's demonstration as establishing this fact, not confirming something already known."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "69392d99-d478-4158-bfdd-e09b6972904d"
+  }
+}

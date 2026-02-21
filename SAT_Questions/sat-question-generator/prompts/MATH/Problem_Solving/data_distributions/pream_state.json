@@ -155,7 +155,7 @@
             "category": "faithfulness",
             "frequency": 1,
             "exampleErrors": [
-              "Question includes excessive hand-holding with explicit notation about ordered data (a\u2081 \u2264 a\u2082...) that is atypical for SAT; feels like teaching scaffolding rather than assessment; also fails to provide actual data values needed to determine median uniquely"
+              "Question includes excessive hand-holding with explicit notation about ordered data (a₁ ≤ a₂...) that is atypical for SAT; feels like teaching scaffolding rather than assessment; also fails to provide actual data values needed to determine median uniquely"
             ]
           },
           {
@@ -189,7 +189,7 @@
             "exampleErrors": [
               "Designated correct answer is mathematically incorrect - calculated answer should be A (mean decreases, median stays same) but answer key shows C",
               "Arithmetic error in explanation - states 360 - 301 = 59 but answer given is 57, which doesn't satisfy the mean constraint of 43",
-              "Designated answer D (14) is correct but explanation lacks rigorous justification for why a\u2084 must equal 14 rather than a smaller value satisfying a\u2084 + a\u2085 = 28"
+              "Designated answer D (14) is correct but explanation lacks rigorous justification for why a₄ must equal 14 rather than a smaller value satisfying a₄ + a₅ = 28"
             ]
           },
           {
@@ -232,11 +232,116 @@
       },
       "improvementMade": "Addressed: answer_validity, distractor_quality, difficulty_accuracy",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.433,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "mathematical_contradiction",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q24 self-contradictory constraints making question unsolvable"
+            ]
+          },
+          {
+            "category": "weak_distractors",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q1 and Q4 had moderately effective but unrefined distractors"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 3.817,
+        "passRate": 0.8
+      },
+      "improvementMade": "Final iteration (5/5). 1 failed question (Q24 math contradiction). Best score from v1.1.0.",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.4,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 1
+          },
+          {
+            "category": "answer_validity_d2",
+            "frequency": 4
+          },
+          {
+            "category": "uniform_weakness_pattern",
+            "frequency": 5
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.833,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty calibration, d2 answer quality, statistical calculation verification",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.492,
+        "passRate": 0.95,
+        "errorCategories": [
+          {
+            "category": "weak_d1_distractors",
+            "frequency": 3
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 1
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.933,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: d1 distractor quality, difficulty calibration",
+      "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 8,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.575,
+        "passRate": 0.95,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 5,
+        "passRate": 1
+      },
+      "improvementMade": "Converged: testAvg=5.0, all pass",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.1.0",
-  "converged": false,
+  "currentBestVersion": "1.4.0",
+  "converged": true,
   "startedAt": "2026-01-08T20:32:05.223Z",
-  "completedAt": null,
-  "bestTestScore": 4.458333333333333
+  "completedAt": "2026-02-20T22:57:09.458Z",
+  "bestTestScore": 5
 }

@@ -1,0 +1,54 @@
+{
+  "id": "a5c8f2d1-6e3b-4a9f-8d7c-1b4e7f2a9c5d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "A university health center surveyed a random sample of 250 students and found that students who reported exercising at least 3 times per week had a mean GPA of 3.42, while students who reported exercising fewer than 3 times per week had a mean GPA of 3.18. The health center concluded that regular exercise causes higher academic performance. Which of the following best describes a reason the conclusion may not be valid?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The sample size of 250 is insufficient to detect a meaningful difference in GPA between the two groups.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The difference in mean GPAs (3.42 vs. 3.18) is too small to be educationally significant.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Students who exercise regularly may differ from students who don't in other ways — such as time management or socioeconomic background — that could explain the GPA difference.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Because the survey relied on self-reported exercise frequency, students who exercise less may have overestimated their exercise, making the two groups indistinguishable.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The health center's conclusion — that exercise causes higher GPA — cannot be established from an observational survey. The study shows an association between exercise frequency and GPA, but association does not imply causation. Students who exercise regularly may differ from non-exercising students in many other ways (confounding variables) such as better time management habits, lower stress levels, higher motivation, or more financial resources that allow leisure time for exercise. Any of these factors could independently raise GPA, making it impossible to isolate exercise as the cause. To establish causation, the study would need to be a controlled experiment where students were randomly assigned to exercise or not-exercise conditions. The answer to this question requires recognizing correlation vs. causation, not just noting a flaw in sample design or measurement.",
+  "distractorRationale": {
+    "A": "Error type 6 (sample size misapplication): A sample of 250 is a reasonable size for comparing two groups. This distractor incorrectly implies sample size is the obstacle to validity, when the real issue is the study design (observational vs. experimental) that prevents causal conclusions.",
+    "B": "Error type 2 (wrong confidence interpretation): This distractor introduces the concept of \"educational significance\" as a criterion for valid inference — a non-statistical judgment that conflates practical importance with statistical validity. The GPA difference could be meaningful; the real flaw is causal reasoning from observational data.",
+    "C": "Correct. The presence of confounding variables — other characteristics that differ between exercisers and non-exercisers — means the observed GPA difference cannot be attributed to exercise alone. This is the core error type 4 (conflating correlation with causation).",
+    "D": "Error type 3 (ignoring sampling method): Self-report bias is a legitimate concern in health research, but the question asks why the causal conclusion may not be valid. Even if exercise data were perfectly accurate, the observational design would still prevent a causal conclusion. This distractor misidentifies the type of flaw."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d2e7b4f9-1c8a-4d3e-9f5b-6a2c4e8b1d7f"
+  }
+}

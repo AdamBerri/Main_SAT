@@ -1,0 +1,57 @@
+{
+  "id": "e1f6a9c3-8d2b-4e7f-9a4c-3b5d8f1e6a9c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "The philosopher's later writings *qualify* the bold universalism of his early work, introducing a series of distinctions that depend heavily on the particular institutional arrangements of any given society. A claim that had once been advanced as a categorical truth about human rationality became, in his revised framework, a conditional assertion whose validity was contingent on historically specific configurations of civic life.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 68,
+    "source": "Adapted from a survey of contemporary political philosophy"
+  },
+  "stem": "As used in the passage, \"qualify\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "restrict",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "certify",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "describe",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "entitle",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage describes a philosopher whose later work modifies and limits the scope of his earlier bold universalism by introducing conditions and distinctions. The result is that a formerly categorical truth becomes a conditional assertion—one that holds only under specific circumstances. 'Restrict' captures this narrowing or limiting function: the later writings place conditions on what the earlier work claimed without condition. The passage's language of 'conditional,' 'contingent,' and 'distinctions that depend' all reinforce this limiting, scope-narrowing meaning.",
+  "distractorRationale": {
+    "A": "Correct. 'Restrict' means to limit or constrain, which fits the passage's description of later writings that introduce conditions on a previously categorical claim, narrowing its applicability.",
+    "B": "'Certify' means to formally validate or confirm, which is a well-established meaning of 'qualify' in credentialing contexts. This is the opposite of what the passage describes: the later writings challenge and condition the earlier claim rather than validate it.",
+    "C": "'Describe' is a possible meaning of 'qualify' in the sense of characterizing something (as in 'qualifying a noun'), but the passage is not about characterization. The later writings functionally change the status of earlier claims rather than provide a characterization of them.",
+    "D": "'Entitle' means to give someone a right or claim, which is how 'qualify' functions in phrases like 'This qualifies you for the position.' The passage is about philosophical argumentation and scope, not about conferring rights or eligibility."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b7d3f1a9-2c5e-4b8d-9f6a-4e1c7b3d5f9a"
+  }
+}

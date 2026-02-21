@@ -1,0 +1,57 @@
+{
+  "id": "c5a9e3f7-1b4d-4c8a-9e2f-6d8b5a1c3e7f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "Although the pharmaceutical compound showed early efficacy in animal trials, the research team remained cautious about *projecting* these results to human populations. The metabolic pathways involved in rodent models diverge sharply from those in primates at precisely the stage where the drug's interaction with cellular receptors becomes most consequential, and such divergence has historically invalidated even the most promising pre-clinical data.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 71,
+    "source": "Adapted from a biomedical research commentary"
+  },
+  "stem": "As used in the passage, \"projecting\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "forecasting",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "extrapolating",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "broadcasting",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "attributing",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage describes the team's hesitation about applying findings from one biological system (rodents) to a different one (humans). This is the scientific process of extrapolation—drawing inferences about an untested case by extending known data from a related but distinct case. The passage's emphasis on the divergence between rodent and primate metabolic pathways explains why such extension is risky. 'Extrapolating' precisely captures this act of inferential extension across systems, as opposed to simply predicting future events, publicizing information, or assigning a cause.",
+  "distractorRationale": {
+    "A": "'Forecasting' means predicting future outcomes, and while extrapolation sometimes involves prediction, the specific concern in the passage is about applying findings across biological populations, not about making temporal predictions.",
+    "B": "Correct. 'Extrapolating' means applying conclusions drawn from one data set to a different but related context, which is exactly what the researchers are cautious about doing when considering animal trial results in relation to human populations.",
+    "C": "'Broadcasting' refers to widely disseminating information and is a legitimate meaning of 'project' in audiovisual contexts, but the passage involves no act of public communication—the concern is analytical and inferential.",
+    "D": "'Attributing' means assigning a cause or quality to something, which is a different cognitive operation. The researchers are not assigning a property; they are trying to determine whether findings from one system apply to another."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f9c3b7e2-5a1d-4f8c-9b4e-2d6a8f1c5e9b"
+  }
+}

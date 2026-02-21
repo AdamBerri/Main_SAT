@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "a795f2d4-9e7b-4a8c-b277-9630891c508b",
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "linguistic": 2.3
+  },
+  "passage": "The university's writing center offers free tutoring to all enrolled students. Trained peer tutors help with everything from brainstorming ideas to polishing final drafts. The center's director, along with a team of graduate assistants, [1]_____ workshops on academic writing skills throughout the semester.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 50,
+    "source": "Adapted from a university services guide"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "offer",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "offers",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "offered",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "have offered",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement with the phrase 'along with.' Unlike 'and,' the phrase 'along with' does not create a compound subject. The true subject remains 'The center's director' (singular). The parenthetical 'along with a team of graduate assistants' does not change the subject's number. Present tense 'offers' matches the ongoing, habitual activity.",
+  "distractorRationale": {
+    "A": "Base form/plural—disagrees with singular 'director.' Students might be misled by 'assistants' nearby.",
+    "B": "Correct. Singular present agreeing with 'The center's director.'",
+    "C": "Past tense—conflicts with present-tense description of ongoing services.",
+    "D": "Present perfect plural—disagrees with singular subject and implies a completed timeframe rather than an ongoing pattern."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f80bb3f5-517c-4011-a29c-0b9cb8da591c"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "b98bce31-5e04-4632-8a74-6a99b2cdef48",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "A data set consists of the five values $5, 10, 15, 25, 30$. The value $20$ is added to the data set, creating a new six-value data set. What is the median of the new data set?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$15$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$17.5$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$20$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$22.5$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "STEP A — Sort the original data: $5, 10, 15, 25, 30$. Note: there is a gap between $15$ and $25$.\n\nSTEP B — Original mean: $\\frac{5+10+15+25+30}{5} = \\frac{85}{5} = 17$.\n\nSTEP C — Original median: $n=5$, position $\\frac{5+1}{2} = 3$. The third value is $\\mathbf{15}$.\n\nSTEP G (after adding $20$) — Insert $20$ into the sorted list. New sorted data: $5, 10, 15, 20, 25, 30$.\n\nNew $n = 6$. For an even number of values, the median is the average of the values at positions $\\frac{6}{2} = 3$ and $\\frac{6}{2}+1 = 4$.\n\nPosition 3 value: $\\mathbf{15}$. Position 4 value: $\\mathbf{20}$.\n\nNew median $= \\frac{15+20}{2} = \\frac{35}{2} = \\mathbf{17.5}$.\n\nNew mean $= \\frac{85+20}{6} = \\frac{105}{6} = 17.5$. (Note: the mean increases by only $0.5$ while the median increases by $2.5$ — a non-obvious result because $20$ falls squarely between the old middle values, dramatically shifting the median position.)\n\nSTEP H — Median $= 17.5$ matches choice B.\n\nSTEP I — Distractor analysis:\n- Choice A ($15$): Statistic confusion — student believes that because $20$ is greater than the current median ($15$), and adding a value above the median cannot lower it, the median must stay at $15$. This fails to account for the fact that $n$ increased from $5$ to $6$, so the median is now the average of two middle values, neither of which is $15$ alone.\n- Choice C ($20$): Partial computation — student correctly inserts $20$ into the sorted list and identifies $20$ as \"the value that was added near the middle,\" then reports the inserted value as the new median without averaging the two middle values.\n- Choice D ($22.5$): Median position error — student correctly sorts the new list as $5, 10, 15, 20, 25, 30$ but incorrectly identifies the two middle values as $20$ and $25$ (positions 4 and 5 rather than 3 and 4), computing $\\frac{20+25}{2} = 22.5$.",
+  "distractorRationale": {
+    "A": "Statistic confusion: the student reasons that since 20 is above the old median of 15, adding it cannot change the median. This ignores that n increased from 5 to 6, so the new median is the average of positions 3 and 4, not just position 3.",
+    "B": "Correct. The new sorted list is {5, 10, 15, 20, 25, 30}. With n=6, the median is the average of positions 3 and 4: (15 + 20) / 2 = 17.5.",
+    "C": "Partial computation: the student correctly identifies 20 as the newly inserted value near the center of the sorted list but reports the inserted value itself as the new median rather than averaging the two middle values.",
+    "D": "Median position error: the student correctly re-sorts the list but identifies positions 4 and 5 (values 20 and 25) as the two middle values instead of positions 3 and 4 (values 15 and 20), computing (20 + 25) / 2 = 22.5."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "8fc17cba-86ea-4642-b227-88d0433a31f0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "c9d5f1e3-2b4a-5c7d-e8f0-3a1b5c7d9e1f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "What is the sum of all values of $x$ that satisfy the equation $|3x - 6| = 9$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-1$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$4$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$5$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$6$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "An absolute value equation $|A| = k$ (with $k > 0$) has two cases: $A = k$ or $A = -k$.\n\n**Case 1:** $3x - 6 = 9$\n$$3x = 15 \\implies x = 5$$\n\n**Case 2:** $3x - 6 = -9$\n$$3x = -3 \\implies x = -1$$\n\n**Verification:**\n- $x = 5$: $|3(5) - 6| = |15 - 6| = |9| = 9$ ✓\n- $x = -1$: $|3(-1) - 6| = |-3 - 6| = |-9| = 9$ ✓\n\nBoth solutions are valid. The sum is $5 + (-1) = 4$.",
+  "distractorRationale": {
+    "A": "Choice A ($-1$) results from solving only Case 2 and reporting that single value as the answer, ignoring the solution $x = 5$ from Case 1.",
+    "B": "Choice B ($4$) is correct: the two solutions are $x = 5$ and $x = -1$, and their sum is $5 + (-1) = 4$.",
+    "C": "Choice C ($5$) results from solving only Case 1 ($3x-6=9$) and reporting that single value as the answer, ignoring the solution $x = -1$ from Case 2.",
+    "D": "Choice D ($6$) results from a sign error when summing the two solutions: treating $x = -1$ as positive and computing $5 + 1 = 6$ instead of $5 + (-1) = 4$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d3e4f5a6-b7c8-9012-cdef-345678901234"
+  }
+}

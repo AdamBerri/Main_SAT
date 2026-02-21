@@ -1,0 +1,57 @@
+{
+  "id": "e5f6a7b8-c9d0-4e1f-9a2b-3c4d5e6f7a8b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "The following passage is adapted from a journal article on migratory bird navigation published in 2021.\n\nFor decades, scientists assumed that migratory birds relied primarily on the Earth's magnetic field to navigate across thousands of kilometers. Research published in the past fifteen years, however, has revealed that avian navigation is a multi-modal system that integrates several sensory cues depending on conditions.\n\nExperiments using European robins (Erithacus rubecula) demonstrated the magnetic sense's limitations in isolation. When researchers placed robins in magnetic-shielding cages that preserved the direction of the magnetic field but eliminated its inclination angle — the angle at which field lines intersect the Earth's surface — the birds became disoriented and showed no consistent migratory direction. The inclination angle, not merely the field's horizontal compass direction, proved essential for accurate orientation.\n\nVisual landmarks also play a critical role, particularly during the final stages of migration. Tracking data from white storks (Ciconia ciconia) equipped with GPS loggers showed that birds flying the final 200 km to their breeding grounds relied heavily on learned landscape features — rivers, coastlines, and mountain ridges — rather than magnetic cues. Storks that had made the journey before navigated more directly than first-year birds, suggesting that visual memory of landmarks accumulates with experience.\n\nStar patterns provide yet another cue. Captive indigo buntings (Passerina cyanea) exposed to a rotating planetarium sky oriented themselves according to the center of rotation — a proxy for true north — rather than any particular constellation. Young buntings that observed a sky rotating around a point other than Polaris calibrated their compass to that artificial center, demonstrating that star-map learning occurs during a sensitive developmental period.\n\nScientists now recognize that no single cue dominates across all species and contexts. Birds appear to cross-reference multiple sources and weight them according to reliability under prevailing conditions.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 285,
+    "source": "Adapted from a 2021 article in Behavioral Ecology and Sociobiology"
+  },
+  "stem": "A researcher claims that young birds do not arrive with a fixed star compass but instead calibrate it based on what they observe during early development. Which finding from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Captive indigo buntings (Passerina cyanea) exposed to a rotating planetarium sky oriented themselves according to the center of rotation — a proxy for true north — rather than any particular constellation.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"Young buntings that observed a sky rotating around a point other than Polaris calibrated their compass to that artificial center, demonstrating that star-map learning occurs during a sensitive developmental period.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"Storks that had made the journey before navigated more directly than first-year birds, suggesting that visual memory of landmarks accumulates with experience.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"Birds appear to cross-reference multiple sources and weight them according to reliability under prevailing conditions.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The claim specifies two elements: (1) young birds do not have a fixed, innate star compass, and (2) they calibrate it based on what they observe during early development. Choice B directly addresses both elements. It states that young buntings calibrated their compass to an artificial rotation center (showing the compass is not fixed/innate) and explicitly identifies this as occurring during 'a sensitive developmental period' (directly supporting the observation-based learning during early development). The evidence requires one logical step — connecting 'sensitive developmental period' with 'early development' — which places it squarely at medium difficulty. Choice A describes adult-like orientation behavior but does not mention development or the non-fixed nature of the compass.",
+  "distractorRationale": {
+    "A": "Choice A shows that buntings orient to the rotation center rather than a specific constellation, but describes behavior without specifying whether subjects are young birds or whether this reflects learning versus innate ability. It lacks the developmental component essential to the claim.",
+    "B": "This is the correct answer. See explanation above.",
+    "C": "Choice C addresses experience-based improvement in navigation accuracy (storks using visual landmarks) but involves a different sensory modality (visual landmarks, not star patterns) and a different species. It supports experience-dependent navigation generally but does not address star-compass calibration during early development.",
+    "D": "Choice D is an author's general summary about multi-modal navigation weighting. It does not provide specific evidence about star-compass calibration or developmental learning, making it too vague to support the precise claim about early developmental calibration."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f6a7b8c9-d0e1-4f2a-8b3c-4d5e6f7a8b9c"
+  }
+}

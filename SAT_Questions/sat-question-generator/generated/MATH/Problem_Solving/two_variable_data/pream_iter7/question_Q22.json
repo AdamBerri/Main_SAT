@@ -1,0 +1,54 @@
+{
+  "id": "a4c8e2f1-7b3d-4f9a-8e5c-6d2b1a9c3e7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A line of best fit is calculated for a dataset of 5 points relating a student's hours of weekly practice ($x$) to their competition score ($y$). The residuals for 4 of the 5 data points are $+5.0$, $-2.0$, $-1.5$, and $+0.5$. The fifth data point has $x = 5$. The line of best fit equation is $\\hat{y} = 6x + 4$.\n\nFor a least-squares regression line, the sum of all residuals equals 0. What is the $y$-value of the fifth data point?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$32$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$33$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$34$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$36$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Step 1: Find the fifth residual using the sum-of-residuals property.**\n\nFor a least-squares regression line, the sum of all residuals = 0.\n\nLet $r_5$ be the fifth residual:\n$$5.0 + (-2.0) + (-1.5) + 0.5 + r_5 = 0$$\n$$2.0 + r_5 = 0$$\n$$r_5 = -2.0$$\n\n**Step 2: Find the predicted value at $x = 5$.**\n$$\\hat{y} = 6(5) + 4 = 30 + 4 = 34$$\n\n**Step 3: Use residual = actual $-$ predicted to find the actual $y$-value.**\n$$r_5 = y_5 - \\hat{y}_5$$\n$$-2.0 = y_5 - 34$$\n$$y_5 = 32$$\n\nThe $y$-value of the fifth data point is $\\boxed{32}$.",
+  "distractorRationale": {
+    "A": "Correct. The student correctly sums the four known residuals to get $+2.0$, sets $r_5 = -2.0$, computes the predicted value as 34, and applies residual = actual $-$ predicted to get $y_5 = 32$.",
+    "B": "The student makes a sign error when summing the four residuals. They compute $5.0 - 2.0 - 1.5 - 0.5 = 1.0$ (treating $+0.5$ as $-0.5$), so $r_5 = -1.0$, and $y_5 = 34 - 1.0 = 33$. This reflects an arithmetic error on the residual signs.",
+    "C": "The student correctly computes the predicted value $\\hat{y} = 34$ but ignores the residual property entirely, concluding that the actual $y$-value equals the predicted value. This conflates the data point with the line of best fit prediction.",
+    "D": "The student correctly identifies $r_5 = -2.0$ but reverses the residual formula, applying residual = predicted $-$ actual: $-2.0 = 34 - y_5 \\Rightarrow y_5 = 36$. This is a sign error in the residual definition."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c1e5a7f3-9b2d-4c8e-8a4f-3d6b1e9c5a7f"
+  }
+}

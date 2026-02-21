@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0015-4aaa-b015-000000000021",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "Three lines intersect at a single point, forming six angles. The six angles can be grouped into three pairs of vertical angles: $a°$, $b°$, and $c°$ (each appearing twice). If $a + b = 130$ and $a + c = 145$, what is the value of $b$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$35$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$50$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$95$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$85$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Three lines through a point create six angles in vertical pairs. The three distinct angles sum to $180°$: $a + b + c = 180$. From $a + b = 130$, we get $c = 50$. From $a + c = 145$, we get $a = 95$. Therefore $b = 180 - 95 - 50 = 35$.",
+  "distractorRationale": {
+    "A": "Correct. $b = 35$.",
+    "B": "Found $c = 50$ instead of $b$.",
+    "C": "Found $a = 95$ instead of $b$.",
+    "D": "Computed $130 + 145 - 180 = 95$, then $180 - 95 = 85$ (wrong manipulation)."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T03:28:52.372Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0015-4000-a015-000000000021"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "0419eb34-9865-45ac-9655-08f45adec81e",
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "Monarch butterflies undertake one of the most remarkable migrations in the animal kingdom, traveling up to 3,000 miles between their summer breeding grounds in the northern United States and their winter habitats in central Mexico. Scientists have tracked individual butterflies using tiny radio transmitters. The survival of each generation of monarchs [1]_____ on the availability of milkweed plants along the migration route.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 62,
+    "source": "Adapted from a wildlife biology report"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "depend",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "depends",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "depended",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "have depended",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement with intervening prepositional phrases. The subject is 'The survival' (singular), not 'generation' or 'monarchs' from the intervening phrases. The singular subject requires 'depends.' Present tense describes an ongoing ecological fact.",
+  "distractorRationale": {
+    "A": "Base form/plural—disagrees with singular 'survival.'",
+    "B": "Correct. Third-person singular present, agreeing with 'The survival.'",
+    "C": "Past tense—implies the dependency no longer exists, contradicting the present-tense ecological description.",
+    "D": "Present perfect plural—disagrees with singular subject and implies a past-to-present timeframe rather than a general truth."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "df58207f-f1e8-46cb-be30-a7c3c776446e"
+  }
+}

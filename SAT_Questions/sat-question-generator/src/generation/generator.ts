@@ -118,7 +118,7 @@ export class QuestionGenerator {
     }
 
     // Add metadata if not present
-    rawQuestion.id = rawQuestion.id || uuidv4();
+    rawQuestion.id = uuidv4();
     rawQuestion.metadata = {
       generatedAt: new Date().toISOString(),
       promptVersion: promptVersion || this.promptManager.getPromptConfig(topic).currentVersion,
@@ -133,6 +133,11 @@ export class QuestionGenerator {
       domain: topic.domain,
       subtopic: topic.subtopic,
     };
+
+    // Auto-correct passage wordCount metadata to match actual passage
+    if (rawQuestion.passage && rawQuestion.passageMetadata) {
+      rawQuestion.passageMetadata.wordCount = rawQuestion.passage.split(/\s+/).length;
+    }
 
     // Validate
     const validation = fullValidation(rawQuestion, topic);

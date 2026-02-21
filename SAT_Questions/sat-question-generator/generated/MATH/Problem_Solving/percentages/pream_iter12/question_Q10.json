@@ -1,0 +1,54 @@
+{
+  "id": "a9b0c1d2-e3f4-5a6b-7c8d-9e0f1a2b3c4d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.1,
+    "computational": 2
+  },
+  "stem": "An electronics store sells a tablet for $250. The state charges a 10% sales tax on the purchase. What is the total cost of the tablet including tax?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$225",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$260",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$275",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$25",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Sales tax = $250 × 0.10 = $25. Total cost = $250 + $25 = $275.",
+  "distractorRationale": {
+    "A": "Student subtracted the tax instead of adding: $250 − $25 = $225.",
+    "B": "Student calculated 10% of $100 = $10 and added that: $250 + $10 = $260.",
+    "C": "Correct answer.",
+    "D": "Student found only the tax amount ($250 × 0.10 = $25) and reported it as the total."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:09.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b0c1d2e3-f4a5-6b7c-8d9e-0f1a2b3c4d5e"
+  }
+}

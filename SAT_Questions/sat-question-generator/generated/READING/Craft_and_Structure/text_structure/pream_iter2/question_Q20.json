@@ -1,0 +1,58 @@
+{
+  "id": "f7a2b5c4-d1e8-4f3a-b9c6-5d4e3f2a1b8c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "passage": "Antibiotic resistance was identified as a clinical concern within years of penicillin's widespread deployment in the late 1940s. Bacteria that survived exposure passed on resistance mechanisms to offspring and, through horizontal gene transfer, to unrelated strains. By the 1960s, resistance patterns had become complex enough that clinicians were rotating through antibiotic classes to stay ahead of bacterial adaptation.\n\nThe pharmaceutical industry responded with a period of intensive drug discovery that produced most of the antibiotic classes still in clinical use today. Discovery rates began declining in the 1980s, partly because the easiest-to-find compounds had already been found, and partly because the economics of antibiotic development — short treatment courses, downward pricing pressure, mandatory stewardship programs limiting use — made the sector less attractive to investors seeking returns from chronic-disease medications requiring lifetime prescriptions.\n\nResearch programs that might have filled the gap have faced their own structural barriers. Academic laboratories can identify candidate compounds but typically lack the resources to move them through clinical trials. Public-private partnerships and international incentive funds have been proposed to bridge this gap, with some pilot programs now in operation. The resistant organisms, meanwhile, accumulate in hospital environments and agricultural settings where antibiotic use remains high, continually selecting for strains that newly developed drugs will eventually face.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 212,
+    "source": "Original passage, adapted from public health and pharmaceutical policy"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A recurring problem is traced across multiple systems, each with its own structural obstacles",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "A historical timeline of antibiotic development from discovery to present crisis",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A cause-and-effect chain linking bacterial mutation to pharmaceutical market decline",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "A problem is identified, solutions are proposed, and one is evaluated as most promising",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Each paragraph of the passage traces how the problem of antibiotic resistance manifests differently across different systems — the clinical-epidemiological system (bacteria adapting and spreading resistance), the pharmaceutical industry system (declining discovery rates and economic disincentives), and the research-policy system (academic resource constraints and incomplete public-private solutions). The dominant structural logic is not a linear timeline, not a single cause-effect chain, and not a problem-solution evaluation — it is the repeated encounter of the same underlying problem (the resistance gap) across distinct institutional domains, each with its own barriers. This cumulative cross-system structure is what choice A captures.",
+  "distractorRationale": {
+    "A": "Correct. The passage follows antibiotic resistance as a recurring problem through three distinct systems — clinical epidemiology, pharmaceutical development, and research-policy infrastructure — showing that each system has its own structural obstacles to addressing the same underlying gap.",
+    "B": "The passage does move chronologically (1940s to present), and it does trace the history of antibiotic development, so this distractor is well-grounded in textual evidence. But the passage is not organized primarily as a timeline — it does not march through dates and events in sequence. Instead, it moves across systems, using history within each section to explain current structural barriers. A reader who focuses on the chronological movement while missing the system-by-system structure will choose this option.",
+    "C": "The first paragraph does establish a causal relationship between bacterial survival and resistance spread. The second paragraph does connect pharmaceutical economics to declining discovery. But these are not links in a single chain running from bacterial mutation to market decline — they are parallel explanations of different systems. The passage does not present a unified causal argument connecting bacteria directly to pharmaceutical investment patterns; each paragraph addresses a distinct institutional domain.",
+    "D": "The third paragraph does mention proposed solutions (public-private partnerships, incentive funds, pilot programs), which grounds this distractor in real textual content. But the passage does not evaluate one solution as most promising — it ends by noting that resistant organisms continue accumulating while the solutions remain partial. The closing image of bacteria 'continually selecting for strains' is not an endorsement of any solution; it underscores the ongoing nature of the problem."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "5d6e7f8a-9b0c-1d2e-3f4a-5b6c7d8e9f0a"
+  },
+  "hasImage": false
+}

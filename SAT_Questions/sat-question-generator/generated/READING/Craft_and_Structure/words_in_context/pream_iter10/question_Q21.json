@@ -1,0 +1,58 @@
+{
+  "id": "c9f4a2e8-3d7b-4e1a-9f6c-2b8d5a7e1c3f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Historians of early modern finance have long sought to explain how Italian merchant banks of the fourteenth century managed to extend credit across vast distances without any formal legal recourse. The answer lies partly in reputation: a merchant's standing in his home city served as a kind of implicit collateral, one that his counterparts in distant ports could invoke against him through networks of mutual correspondence. What made this system work was not law but the capacity of trading communities to discipline wayward members — to effectively quarantine a defaulter from future commerce until his debts were acknowledged.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 105,
+    "source": "Adapted from a scholarly article on medieval credit systems"
+  },
+  "stem": "As used in the passage, \"invoke\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "call upon",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "cite legally",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "summon spiritually",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "officially declare",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this passage, the merchant's reputation functions as implicit collateral — something that counterparts in distant ports could draw upon or activate against a defaulter. The passage explicitly contrasts this mechanism with formal legal recourse, which has been ruled out as unavailable. 'Call upon' captures this sense of leveraging or activating something (the merchant's standing and the community's social power) as a resource to apply pressure. The passage describes reputation as something that can be wielded by distant trading partners within correspondence networks, making 'call upon' — meaning to draw on or use as a resource — the only choice that fits this functional, social dynamic.",
+  "distractorRationale": {
+    "A": "Correct. 'Call upon' fits the passage's depiction of reputation as a resource that distant counterparts could activate or leverage through social and commercial networks.",
+    "B": "'Cite legally' is incompatible because the passage explicitly states there was no formal legal recourse available; the system operated outside legal channels.",
+    "C": "'Summon spiritually' refers to the religious or occult sense of invoke (conjuring a spirit or deity), which has no relevance to this commercial and reputational context.",
+    "D": "'Officially declare' suggests a formal proclamation or pronouncement, but the passage describes an informal, implicit mechanism based on reputation — not official declarations."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1f9c3e7-2b8d-4a6f-9e1c-5d3b7a8e2f4c"
+  },
+  "hasImage": false
+}

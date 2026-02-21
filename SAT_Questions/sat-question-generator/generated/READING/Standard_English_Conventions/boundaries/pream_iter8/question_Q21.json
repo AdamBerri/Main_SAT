@@ -1,0 +1,58 @@
+{
+  "id": "c3a7f2e1-8b4d-4e9c-a6f1-2d5e8b7c3a9f",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Seismologists once assumed that the distribution of earthquakes across Earth's crust was largely unpredictable. Early field surveys seemed to support this view, [. Although more systematic analysis later revealed] that the vast majority of seismic events cluster along well-defined fault lines and tectonic plate boundaries. This discovery transformed earthquake risk assessment and led directly to the modern practice of probabilistic seismic hazard analysis.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 68,
+    "source": "Original composition based on geophysics and seismology"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": ". Although more systematic analysis later revealed",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": ", although more systematic analysis later revealed",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "; although more systematic analysis later revealed",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": ": although more systematic analysis later revealed",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion connects two parts of the same sentence. The LEFT side, 'Early field surveys seemed to support this view,' is a complete independent clause. The RIGHT side, 'more systematic analysis later revealed that the vast majority of seismic events cluster along well-defined fault lines and tectonic plate boundaries,' is an adverbial clause introduced by the subordinating conjunction 'although,' making the entire right-side clause dependent. Choice B correctly uses a comma to attach the dependent adverbial clause to the independent clause. Choice A creates an illegal fragment by placing a period before the 'Although' clause, leaving 'Although more systematic analysis later revealed...' as a dependent clause with no main clause of its own. Choice C incorrectly uses a semicolon before a dependent clause; semicolons must join two independent clauses. Choice D incorrectly uses a colon before a dependent clause; colons introduce elaborating words, phrases, or clauses but cannot precede a clause introduced by a subordinating conjunction that makes it dependent.",
+  "distractorRationale": {
+    "A": "NO CHANGE — Places a period before the subordinating conjunction 'Although,' creating a dependent-clause fragment: 'Although more systematic analysis later revealed that...' has no main clause and cannot stand alone as a sentence.",
+    "B": "CORRECT — A comma properly attaches the dependent adverbial clause ('although more systematic analysis later revealed...') to the preceding independent clause, following Standard English conventions for subordinating conjunctions.",
+    "C": "Semicolon before a dependent clause — Students who know semicolons join independent clauses may incorrectly apply one here, not recognizing that 'although' transforms the right side into a dependent clause that cannot follow a semicolon.",
+    "D": "Colon before a dependent clause — Students may mistake the colon for a flexible connector, but a colon must follow a complete independent clause and can only introduce a word, phrase, or independent clause as elaboration — not a dependent clause introduced by a subordinating conjunction."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1f7c3e2-9b4d-4e8a-b6c1-2d5e9f7a3c8b"
+  },
+  "hasImage": false
+}

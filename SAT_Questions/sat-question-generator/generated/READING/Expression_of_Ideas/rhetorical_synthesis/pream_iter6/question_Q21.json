@@ -1,0 +1,60 @@
+{
+  "id": "a0b1c2d3-e4f5-4a6b-7c8d-9e0f1a2b3c4e",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- The placebo effect occurs when patients experience real improvements in symptoms after receiving an inert treatment they believe to be active.\n- Neuroimaging studies have shown that placebos can trigger the release of endorphins and dopamine in the brain, mimicking the effects of actual painkillers.\n- In clinical trials, the placebo effect is typically treated as a confounding variable that must be controlled for through double-blind study designs.\n- Some medical ethicists argue that the placebo effect could be harnessed ethically in treatment plans to complement actual medications.\n- Critics counter that deliberately inducing placebo responses requires some degree of deception, which conflicts with the principle of informed consent.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 117,
+    "source": "Student research notes on the placebo effect in medicine"
+  },
+  "stem": "The student wants to present the tension between the placebo effect's therapeutic potential and the ethical concerns it raises. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "While some ethicists believe the placebo effect could complement real medications, critics argue that harnessing it would require deception that conflicts with informed consent.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Neuroimaging shows placebos trigger endorphins and dopamine in the brain, and clinical trials use double-blind designs to control for this confounding variable.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The placebo effect causes real symptom improvements even when patients receive inert treatments, as neuroimaging studies have confirmed that placebos activate pain-relief pathways.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Some ethicists argue the placebo effect could be harnessed in treatment plans, since placebos can trigger endorphin and dopamine release similar to actual painkillers.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Choice A is correct because it captures both sides of the tension: the therapeutic potential (ethicists suggesting placebo effects could complement medications) and the ethical concern (critics noting the deception conflicts with informed consent). This directly presents the tension. Choice B pairs neuroscience with trial design without addressing ethics, C focuses entirely on the effect's reality, and D presents only the pro-side of the argument without the ethical counterpoint.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "This choice pairs neurological findings with clinical trial methodology but does not address either the therapeutic potential argument or the ethical concerns, missing the tension entirely.",
+    "C": "This choice focuses on demonstrating that the placebo effect is real but does not engage with any ethical debate about harnessing it.",
+    "D": "This choice presents the argument for using placebos therapeutically but omits the ethical objection about deception and informed consent, showing only one side of the tension."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:20.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b1c2d3e4-f5a6-4b7c-8d9e-0f1a2b3c4d5f"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

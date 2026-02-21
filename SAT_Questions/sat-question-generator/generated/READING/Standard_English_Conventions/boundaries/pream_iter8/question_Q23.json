@@ -1,0 +1,58 @@
+{
+  "id": "e5c9a4f3-2b8d-4a1c-9f7e-4b6d1f3c8a2e",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "Population geneticists have long investigated the mechanisms underlying speciation in geographically complex regions. Their most recent work explores how[: isolated mountain ranges] prevent gene flow between populations of the same ancestral species. Over thousands of generations, these separated populations accumulate distinct mutations that eventually render them reproductively incompatible, producing two distinct species from one.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 65,
+    "source": "Original composition based on evolutionary biology and population genetics"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": ": isolated mountain ranges",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": " isolated mountain ranges",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "; isolated mountain ranges",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": ", isolated mountain ranges",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion falls within an embedded indirect question introduced by 'how.' The LEFT side of the boundary is 'Their most recent work explores how,' which is not a complete independent clause — 'how' begins an embedded noun clause that serves as the object of 'explores,' and the clause is grammatically unfinished without what follows. The RIGHT side is 'isolated mountain ranges prevent gene flow between populations of the same ancestral species,' which functions as the completing content of the embedded 'how' clause. Because the LEFT side is not a complete independent clause, no punctuation mark that signals a sentence boundary or clause division (colon, semicolon, or comma) is appropriate. Choice B correctly inserts no punctuation, allowing the noun clause to flow naturally as part of the larger sentence. Choice A incorrectly places a colon after 'how,' but a colon can only follow a complete independent clause — 'explores how' is not complete. Choice C incorrectly places a semicolon within an embedded clause, fracturing the grammatical unity of the noun clause. Choice D places a comma between 'how' and its complement 'isolated mountain ranges,' which disrupts the embedded clause and produces an ungrammatical sentence.",
+  "distractorRationale": {
+    "A": "NO CHANGE — Colon after an incomplete clause. Students who recognize 'how' as a signal word may treat the preceding text as a complete clause and attempt to use a colon to introduce what follows, not realizing that 'explores how' is itself incomplete and cannot precede a colon.",
+    "B": "CORRECT — No punctuation is needed between 'how' and the embedded noun clause it introduces. The sentence flows without interruption: 'Their most recent work explores how isolated mountain ranges prevent gene flow...'",
+    "C": "Semicolon within an embedded clause — Students who associate semicolons with complex sentences may insert one here, not recognizing that 'how isolated mountain ranges prevent gene flow' is a single embedded noun clause that must not be split by a semicolon.",
+    "D": "Comma disrupting embedded clause — Students may insert a comma after 'how' as a reflex pause marker, not realizing that no comma should separate 'how' from the noun clause it governs; doing so creates an ungrammatical interruption in the middle of the object clause."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3f1d7b2-5a9e-4c8d-b4f6-2e7a9c1d5f3b"
+  },
+  "hasImage": false
+}

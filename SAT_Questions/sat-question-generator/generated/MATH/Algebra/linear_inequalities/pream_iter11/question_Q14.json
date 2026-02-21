@@ -1,0 +1,38 @@
+{
+  "id": "a6b7c8d9-e0f1-4a2b-3c4d-5e6f7a8b9c0d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "computational": 3.2
+  },
+  "stem": "A farmer has 100 acres of land. He plants corn on some acres and wheat on the rest. Each acre of corn requires 3 workers and each acre of wheat requires 2 workers. The farmer has at most 240 workers available. If the farmer wants to plant corn on at least 20 acres, what is the greatest number of acres he can plant with corn?",
+  "choices": [
+    { "label": "A", "text": "40", "isCorrect": true },
+    { "label": "B", "text": "50", "isCorrect": false },
+    { "label": "C", "text": "80", "isCorrect": false },
+    { "label": "D", "text": "35", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let $c$ = acres of corn. Then wheat = $100 - c$ acres. Worker constraint: $3c + 2(100 - c) \\leq 240$. Expand: $3c + 200 - 2c \\leq 240$. Simplify: $c + 200 \\leq 240$, so $c \\leq 40$. The greatest number of corn acres is 40.",
+  "distractorRationale": {
+    "A": "Correct. $3c + 2(100 - c) \\leq 240$ simplifies to $c \\leq 40$.",
+    "B": "Cluster B error: Set up the equation incorrectly as $3c + 2c \\leq 240$ (adding both labor rates to corn only, ignoring that wheat takes the remaining land), getting $5c \\leq 240$, $c \\leq 48$, rounded to 50.",
+    "C": "Cluster D error: Divided total workers by corn workers per acre: $240 \\div 3 = 80$, ignoring that the total land is only 100 acres and that wheat also requires workers.",
+    "D": "Cluster C error: Correctly derived $c \\leq 40$ but then misinterpreted the 'at least 20 acres' constraint as meaning the answer should be near 20, so split the difference: $(20 + 40)/2 \\approx 35$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:14.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b7c8d9e0-f1a2-4b3c-4d5e-6f7a8b9c0d1e"
+  }
+}

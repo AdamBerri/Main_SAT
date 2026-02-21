@@ -1,0 +1,58 @@
+{
+  "id": "a0b9c8d7-e6f5-4a3b-1c2d-3e4f5a6b7c8d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "Coral reefs are among the most diverse ecosystems on Earth, supporting roughly 25 percent of all marine species despite covering less than one percent of the ocean floor. A coral reef is built from the skeletons of tiny animals called coral polyps, which secrete calcium carbonate to form hard structures that accumulate over hundreds or thousands of years. These structures provide shelter, breeding grounds, and feeding areas for fish, crabs, sea turtles, and countless other creatures. Reefs also protect coastlines by absorbing wave energy that would otherwise erode beaches and damage coastal communities. Beyond their ecological roles, coral reefs support commercial fisheries and tourism industries that many coastal populations depend on for their livelihoods. Scientists study coral reefs to better understand their biology and to find ways to help reefs survive rising water temperatures and increased ocean acidity, both of which are linked to climate change.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 141,
+    "source": "Adapted from a marine science educational article on coral reef ecosystems"
+  },
+  "stem": "What is the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To argue that governments must take immediate action to stop ocean acidification",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "To explain what coral reefs are and why they are important to ocean and human life",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "To describe current scientific research methods used to study coral reef biology",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "To compare coral reef ecosystems to other diverse ocean environments such as kelp forests",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage covers two main areas: what coral reefs are (built from coral polyp skeletons, rich in marine biodiversity) and why they matter (habitat for marine species, coastal protection, support for fisheries and tourism, subjects of scientific research). Every sentence either describes the reef's structure or explains one of its ecological or economic functions. The passage is organized to give readers a clear overview of coral reefs and their significance. No policy argument is made, no specific research methods are described, and no comparison to other ecosystems is drawn.",
+  "distractorRationale": {
+    "A": "The passage mentions that rising water temperatures and ocean acidity threaten reefs, but it does not call on governments to take action or make any policy argument. Climate change is referenced as context, not as a call to action.",
+    "B": "Correct. The passage explains what coral reefs are made of, how diverse they are, and then lists their ecological roles (habitat, coastal protection) and economic roles (fisheries, tourism), fulfilling an informative purpose about the nature and importance of reefs.",
+    "C": "The final sentence mentions that scientists study coral reefs, but the passage does not describe any specific research methods. The reference to scientific study is brief and serves to acknowledge that conservation efforts are underway, not to explain how research is conducted.",
+    "D": "The passage opens by comparing coral reefs to other ocean environments in terms of biodiversity coverage, but this comparison is a single introductory detail to establish significance. The passage does not systematically compare reefs to kelp forests or any other ecosystem."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5f6a7b8-c9d0-1234-efab-345678901234"
+  },
+  "hasImage": false
+}

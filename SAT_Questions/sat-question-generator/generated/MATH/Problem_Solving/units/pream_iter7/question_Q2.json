@@ -1,0 +1,54 @@
+{
+  "id": "b8d3e4f5-9c6a-4b1e-c2d7-3e0a8f194d58",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "computational": 1.1
+  },
+  "stem": "A community center is open for 150 minutes each day. How many hours per day is the community center open?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "0.4",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "1.5",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "2.5",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "3.0",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To convert minutes to hours, divide the number of minutes by 60 (since there are 60 minutes in 1 hour).\n\n$$150 \\text{ minutes} \\times \\frac{1 \\text{ hour}}{60 \\text{ minutes}} = \\frac{150}{60} = 2.5 \\text{ hours}$$\n\nThe minutes unit cancels, leaving hours. The community center is open for 2.5 hours per day.",
+  "distractorRationale": {
+    "A": "Inverted conversion: divides 60 by 150 instead of 150 by 60 ($60 \\div 150 = 0.4$). The student uses the reciprocal of the correct conversion fraction.",
+    "B": "Wrong conversion factor: divides by 100 instead of 60 ($150 \\div 100 = 1.5$). The student may have confused \"divide by 100\" with the correct \"divide by 60.\"",
+    "C": "Correct: $150 \\div 60 = 2.5$ hours.",
+    "D": "Wrong conversion factor: divides by 50 instead of 60 ($150 \\div 50 = 3.0$). The student may have misremembered 1 hour = 50 minutes rather than 60 minutes."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c1d2e3f4-ab56-4c78-d901-2e3f4a5b6c7d"
+  }
+}

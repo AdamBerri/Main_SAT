@@ -1,0 +1,58 @@
+{
+  "id": "a7b8c9d0-7777-4a3b-4c5d-6e7f8a9b0c12",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "Political theorists have generally argued that voter turnout declines when citizens perceive that candidates offer meaningfully different policy platforms, since the perceived stakes of the election decrease. The 2020 municipal elections in several midsize cities appeared to confirm this: candidates ran on nearly identical platforms, and turnout dropped to historic lows. _______ a closer analysis revealed that the turnout decline coincided with a redistricting process that had eliminated many convenient polling locations, making physical access to voting the more likely explanation.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 95,
+    "source": "Adapted from a political science journal"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "That said,",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Furthermore,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Indeed,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Consequently,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The second sentence seems to confirm the theorists' argument. The third sentence then introduces evidence that challenges the initial interpretation by offering an alternative explanation (redistricting, not platform similarity, caused the decline). 'That said' correctly signals a qualification or reversal: acknowledging the apparent confirmation but pivoting to evidence that undermines it.",
+  "distractorRationale": {
+    "A": "Correct. 'That said' signals a qualification, pivoting from the apparent confirmation of the theory to evidence that challenges it with an alternative explanation.",
+    "B": "'Furthermore' adds supporting evidence, but the closer analysis undermines the initial interpretation rather than reinforcing it.",
+    "C": "'Indeed' intensifies or confirms a previous claim, but the third sentence introduces a competing explanation that weakens rather than strengthens the apparent confirmation.",
+    "D": "'Consequently' signals a logical result, but the alternative explanation is not a consequence of the initial findings; it challenges them."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:03:01.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a7777777-b8c9-4d0e-1f2a-3b4c5d6e7f89"
+  },
+  "hasImage": false
+}

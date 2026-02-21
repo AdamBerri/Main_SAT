@@ -1,0 +1,59 @@
+{
+  "id": "b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2a",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- Language extinction occurs when the last fluent speaker of a language dies without having passed it to younger generations.\n- Linguists estimate that one language disappears roughly every two weeks, and nearly half of the world's approximately 7,000 languages are endangered.\n- Each language encodes unique knowledge systems, including specialized ecological vocabulary that reflects centuries of environmental observation.\n- Digital archiving projects can preserve recordings and grammars of endangered languages for future study.\n- Language revitalization programs, such as immersion schools and community workshops, have successfully increased the number of speakers for some languages, including Hawaiian and Maori.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 115,
+    "source": "Student research notes on language endangerment and preservation"
+  },
+  "stem": "The student wants to argue that preserving endangered languages requires active community engagement, not just documentation. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Nearly half of the world's 7,000 languages are endangered, and linguists estimate one language disappears roughly every two weeks.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "While digital archiving can record endangered languages for study, revitalization programs like immersion schools have actually increased speaker populations for languages such as Hawaiian and Maori.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Each endangered language contains unique knowledge systems, including ecological vocabulary built from centuries of environmental observation by native speakers.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Digital archiving projects preserve recordings and grammars of endangered languages, ensuring that future researchers can study them even after the last speakers are gone.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it contrasts documentation alone (digital archiving for study) with active community engagement (revitalization programs), then provides evidence that the latter has produced measurable results (increased speakers of Hawaiian and Maori). This directly argues that preservation requires more than documentation. Choice A describes the scope of the problem, C explains why languages matter but not how to save them, and D advocates for documentation -- the very approach the goal says is insufficient.",
+  "distractorRationale": {
+    "A": "This choice quantifies the threat to languages but does not address how to preserve them or argue for community engagement over documentation.",
+    "C": "This choice explains the value of endangered languages but does not discuss any strategy for preservation, whether documentation or community-based.",
+    "D": "This choice advocates for digital archiving, which is the documentation-only approach that the student's goal explicitly argues is insufficient on its own."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:24.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3b"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

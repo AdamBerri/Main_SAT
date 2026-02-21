@@ -1,0 +1,54 @@
+{
+  "id": "d8c5e2f1-4a73-4c96-b082-7e3d1f9a0c45",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "computational": 1.1
+  },
+  "stem": "A scatterplot shows the relationship between the number of months a plant has been growing and its height in centimeters. The line of best fit for the data is $y = 2.5x + 10$, where $x$ is the number of months and $y$ is the predicted height in centimeters. According to this equation, what is the predicted height, in centimeters, of the plant after 4 months?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "12.5",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "20",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "10",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "17.5",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To find the predicted height after 4 months, substitute $x = 4$ into the equation $y = 2.5x + 10$:\n$$y = 2.5(4) + 10 = 10 + 10 = 20$$\nThe predicted height after 4 months is 20 centimeters.",
+  "distractorRationale": {
+    "A": "Incorrect. This results from computing only $2.5 \\times 4 = 10$... wait — a student may have computed $2.5 \\times 5 = 12.5$, confusing $x = 4$ with $x = 5$, or misread the months value.",
+    "B": "Correct. Substituting $x = 4$: $y = 2.5(4) + 10 = 10 + 10 = 20$.",
+    "C": "Incorrect. This is the y-intercept of the equation. A student who skipped the multiplication step and read only the constant term would get this answer.",
+    "D": "Incorrect. This results from computing $2.5 \\times 4 + 10$ but making an arithmetic error: $2.5 \\times 4 = 7.5$ (instead of 10), giving $7.5 + 10 = 17.5$. This error comes from treating $2.5 \\times 4$ as $2.5 + 5 = 7.5$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e9a2b3c7-1d54-4f87-a3e6-8b0f2c5d9e16"
+  }
+}

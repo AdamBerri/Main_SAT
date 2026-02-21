@@ -1,0 +1,92 @@
+{
+  "id": "9ed9fd74-3163-4865-8155-71995eba52b9",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "A state energy commission tracked the share of electricity generated from renewable sources in four states from 2020 to 2023. The commission's report highlighted that State D more than doubled its renewable energy share during this period.",
+  "stem": "Which choice most effectively uses data from the figure to support the commission's claim about State D?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "State D's renewable energy share rose from 12% in 2020 to 28% in 2023, representing more than a twofold increase.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "State A's renewable energy share increased from 22% in 2020 to 31% in 2023, a gain of 9 percentage points.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "State D had the lowest renewable energy share among all four states in 2020 at 12%, while State C led at 35%.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "By 2023, State C had a renewable energy share of 41%, which was higher than State D's 28% that same year.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that State D more than doubled its renewable energy share from 2020 to 2023. Choice A directly supports this by showing State D went from 12% to 28%, which is more than double (12% x 2 = 24%, and 28% > 24% by a comfortable margin). Choice B discusses State A. Choice C mentions State D's 2020 value but doesn't show the growth to demonstrate doubling. Choice D compares State C to State D in 2023 only.",
+  "distractorRationale": {
+    "A": "Correct: cites State D's 12% in 2020 and 28% in 2023, confirming more than a twofold increase (28/12 = 2.33x).",
+    "B": "Wrong (irrelevant data): cites State A's figures, which are unrelated to the claim about State D.",
+    "C": "Wrong (incomplete evidence): mentions State D's 2020 starting point but does not cite its 2023 value, so the reader cannot verify the doubling claim.",
+    "D": "Wrong (wrong comparison): compares State C to State D in a single year rather than showing State D's growth over time."
+  },
+  "hasImage": true,
+  "imageDescription": "Data table titled 'Renewable Energy Share by State (% of Total Electricity Generation).' Columns: State, 2020, 2023. Rows: State A - 22% - 31%; State B - 18% - 24%; State C - 35% - 41%; State D - 12% - 28%. Source: State Energy Commission, 2024.",
+  "chartData": {
+    "type": "data_table",
+    "title": "Renewable Energy Share by State (% of Total Electricity Generation)",
+    "data": {
+      "columns": [
+        "State",
+        "2020",
+        "2023"
+      ],
+      "rows": [
+        [
+          "State A",
+          "22%",
+          "31%"
+        ],
+        [
+          "State B",
+          "18%",
+          "24%"
+        ],
+        [
+          "State C",
+          "35%",
+          "41%"
+        ],
+        [
+          "State D",
+          "12%",
+          "28%"
+        ]
+      ]
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 55,
+    "source": "Adapted from State Energy Commission renewable energy progress report"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.677Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "6062dec5-cfd8-47db-9f9f-295e39ca4706"
+  }
+}

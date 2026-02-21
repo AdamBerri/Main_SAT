@@ -1,0 +1,57 @@
+{
+  "id": "f9c3e7a1-2b8d-4f4e-9a5c-3d7b1e9f2c8a",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "The Venus flytrap is a carnivorous plant it captures insects using specialized leaves that snap shut when triggered. This adaptation allows the plant to obtain nutrients from prey rather than soil, which is particularly important given the nitrogen-poor wetlands where it typically grows.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 50,
+    "source": "Original SAT practice question"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "carnivorous plant; it captures insects using specialized leaves that snap shut when triggered.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "carnivorous plant, it captures insects using specialized leaves that snap shut when triggered.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "carnivorous plant; and it captures insects using specialized leaves that snap shut when triggered.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The original sentence is a fused (run-on) sentence: two independent clauses—'The Venus flytrap is a carnivorous plant' and 'it captures insects using specialized leaves that snap shut when triggered'—are written with no punctuation between them. Both clauses have their own subject and verb, so a boundary marker is required. Choice B inserts a semicolon between the two independent clauses, which is the correct way to join two closely related independent clauses without a coordinating conjunction. A semicolon is appropriate here because the second clause elaborates directly on the first.",
+  "distractorRationale": {
+    "A": "NO CHANGE leaves the two independent clauses—'The Venus flytrap is a carnivorous plant' and 'it captures insects using specialized leaves that snap shut when triggered'—with no punctuation between them. This is a fused (run-on) sentence, which violates sentence boundary rules.",
+    "C": "Using only a comma to join two independent clauses creates a comma splice. While a comma alone can separate items in a list or set off an introductory phrase, it cannot by itself join two independent clauses. Students who recognize that some boundary is needed may reach for a comma, making this a tempting but incorrect choice.",
+    "D": "Pairing a semicolon with a coordinating conjunction ('and') is a common misconception. In standard written English, a semicolon replaces the comma-plus-conjunction construction; they should not be used together. The correct forms are either 'plant; it captures' (semicolon alone) or 'plant, and it captures' (comma plus conjunction), not both combined."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4a7f2c9e-1d3b-4e8a-9f6c-2b5d8a1e4c7f"
+  },
+  "hasImage": false
+}

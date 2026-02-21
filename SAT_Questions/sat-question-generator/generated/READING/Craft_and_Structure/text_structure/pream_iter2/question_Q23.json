@@ -1,0 +1,57 @@
+{
+  "id": "f6a1c3e8-2d4b-4f7a-b9c2-3e5d7f9a1b4c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "Urban heat islands form when natural vegetation is replaced by roads, rooftops, and facades that absorb and retain solar radiation. In dense city centers, nighttime temperatures can exceed those of surrounding rural areas by several degrees Celsius. The effect compounds during heat waves, when prolonged elevated temperatures prevent nocturnal cooling and accelerate physiological stress in vulnerable populations.\n\nMunicipal governments have piloted numerous mitigation strategies: green roofs reduce building surface temperatures, reflective pavements lower solar absorption, and urban tree canopy provides shade and evapotranspiration cooling. Each intervention addresses a discrete mechanism of heat retention. Yet implementation studies reveal persistent inconsistencies—green roofs perform well in humid climates and less reliably in arid ones, while urban trees demand irrigation that may strain water supplies already taxed by drought.\n\nThe friction between intervention efficacy and contextual constraint means that no portfolio of solutions transfers cleanly across cities. Planners in Phoenix and planners in Houston face the same aggregate problem but must work within incompatible physical, ecological, and fiscal parameters. The relevant question is not which intervention is superior but which assemblage of interventions is adaptive to a given city's constraints.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 196,
+    "source": "Adapted from a policy brief on urban climate adaptation"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A phenomenon and its mitigation strategies are introduced, then their context-dependent limitations redirect toward a nuanced planning framework.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Competing municipal strategies are compared to determine which is most effective across climate types.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The causes of urban heat islands are traced chronologically from land conversion to heat wave intensification.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "A problem is defined, solutions are enumerated, and an overarching solution is identified as superior.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage first defines the urban heat island phenomenon and its mechanisms (paragraph 1), then surveys the mitigation strategies available and notes their discrete functions (paragraph 2), and finally pivots when implementation evidence reveals contextual limitations, concluding that the central planning question must be reframed around adaptive assemblage rather than selecting a single best intervention (paragraph 3). Choice A accurately captures this three-part movement: phenomenon introduction, strategy survey, and a reframing that emerges from the strategies' limitations.",
+  "distractorRationale": {
+    "A": "Correct. The passage's arc moves from defining the problem to reviewing solutions to reframing the planning question based on those solutions' limitations—a structure that goes beyond simple problem-solution by incorporating contextual qualification.",
+    "B": "The passage does compare interventions across climate types (green roofs in humid vs. arid climates), making this distractor grounded in actual textual content. However, the comparison is not aimed at determining superiority; the passage explicitly rejects the 'which intervention is superior' framing in its final sentence. Mistaking the comparison's purpose for its conclusion is a sophisticated structural misreading.",
+    "C": "The first paragraph does present a sequence—vegetation replaced by infrastructure, heat retained, heat waves compound the effect—which could appear chronological. But the passage is organized around mechanisms and policy responses, not temporal progression; the sequential logic of paragraph 1 serves causal explanation rather than historical narration.",
+    "D": "The passage's structure superficially resembles problem-solution, and it does enumerate solutions. However, the final paragraph does not identify an overarching superior solution—it argues that no single solution transfers cleanly and reframes the question. A reader who treats the final paragraph as a solution-identification rather than a reframing will select this distractor."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a9b2c4d6-e8f1-4a3b-c5d7-e9f1a3b5c7d9"
+  }
+}

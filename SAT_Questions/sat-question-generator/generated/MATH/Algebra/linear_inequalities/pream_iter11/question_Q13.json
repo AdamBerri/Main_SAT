@@ -1,0 +1,38 @@
+{
+  "id": "e4f5a6b7-c8d9-4e0f-1a2b-3c4d5e6f7a8b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "A phone plan charges $0.10 per text message and $0.25 per minute of calls. A customer has a monthly budget of at most $30 for texts and calls combined. If the customer sends 80 text messages in a month, what is the greatest number of whole minutes of calls the customer can make?",
+  "choices": [
+    { "label": "A", "text": "88", "isCorrect": true },
+    { "label": "B", "text": "120", "isCorrect": false },
+    { "label": "C", "text": "92", "isCorrect": false },
+    { "label": "D", "text": "80", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Text cost: $0.10 \\times 80 = $8. Remaining budget for calls: $30 - $8 = $22. Set up $0.25m \\leq 22$. Divide by 0.25: $m \\leq 88$. The greatest number of whole minutes is 88.",
+  "distractorRationale": {
+    "A": "Correct. $0.10(80) + 0.25m \\leq 30$ gives $8 + 0.25m \\leq 30$, so $m \\leq 88$.",
+    "B": "Cluster D error: Ignored the text message cost entirely and solved $0.25m \\leq 30$, getting $m \\leq 120$.",
+    "C": "Cluster B error: Calculated text cost as $0.10 \\times 80 = $8$ correctly, but then set up $0.25m \\leq 30 - 8 = 22$ and made an arithmetic error dividing $22 \\div 0.25$, getting 92 instead of 88 (computing $22 \\div 0.24$ by mistake).",
+    "D": "Cluster C error: Confused text messages and call minutes, assuming that the number of call minutes must equal or be less than the number of texts, and chose 80."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:13.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f5a6b7c8-d9e0-4f1a-2b3c-4d5e6f7a8b9c"
+  }
+}

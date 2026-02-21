@@ -1,0 +1,58 @@
+{
+  "id": "e5b3f9a1-8c4d-4e2f-9b7a-1c5d8e3f9a7b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "The foundation's annual report outlined a series of initiatives intended to address food insecurity in rural communities. Chief among them was a pilot program designed to cultivate partnerships between local farmers and regional food banks, with the goal of channeling surplus produce to households that lacked consistent access to fresh goods. Program officers emphasized that building such relationships would require sustained effort over several years.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 73,
+    "source": "Original"
+  },
+  "stem": "As used in the passage, \"cultivate\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "develop",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "grow",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "farm",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "refine",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this passage, 'cultivate' is used in the sense of building or fostering relationships between organizations — specifically between local farmers and food banks. This is the figurative, relational meaning of 'cultivate' (to develop through care and effort), not the literal agricultural meaning. The passage explicitly states this requires 'sustained effort over several years,' reinforcing the idea of deliberate, ongoing development rather than physical farming or polishing of a skill.",
+  "distractorRationale": {
+    "A": "Correct. 'Develop' captures the figurative meaning of 'cultivate' as it applies to building relationships through deliberate, sustained effort over time.",
+    "B": "'Grow' is closely associated with cultivation and might seem appealing, but it is the literal botanical sense and does not convey the deliberate, relational effort that 'cultivate' implies in this organizational context. It also overlaps semantically with the agricultural setting of the passage (local farmers), making it a plausible but contextually inaccurate choice.",
+    "C": "'Farm' is a literal agricultural activity. While the passage mentions farmers, the object of 'cultivate' here is 'partnerships' between organizations — not crops or land — so the literal agricultural sense is incompatible.",
+    "D": "'Refine' means to improve quality through careful adjustment. While one can 'cultivate' in the sense of polishing social graces, 'refine' implies iteration on something existing, whereas the passage describes building new organizational relationships from scratch."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b7a4e9c2-3f8d-4b1e-9a5c-6d2f8b4e7c1a"
+  },
+  "hasImage": false
+}

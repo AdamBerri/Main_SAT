@@ -1,0 +1,57 @@
+{
+  "id": "f4c8d2b9-7e1a-4f3c-8b5d-2a9e4c7f1b3d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "passage": "The urban planning commission found itself unable to *reconcile* the neighborhood association's demand for a reduced building height cap with the developer's contractual rights, which had been established by a zoning variance granted three years prior. The two positions, each internally coherent and legally grounded, created an impasse that procedural compromise alone could not resolve.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 64,
+    "source": "Adapted from a municipal governance case study"
+  },
+  "stem": "As used in the passage, \"reconcile\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "harmonize",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "verify",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "restore",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "accept",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage presents two positions that are each internally coherent but in direct conflict with each other. The commission's inability to 'reconcile' them refers to its failure to bring these competing claims into a coherent, compatible relationship. 'Harmonize' captures this meaning: making things consistent or compatible with one another. The passage's structure—two opposing, legally grounded positions creating an impasse—establishes that the challenge is one of making incompatible things coexist, not of confirming facts, restoring a prior state, or coming to accept a condition.",
+  "distractorRationale": {
+    "A": "Correct. 'Harmonize' means to bring into agreement or make compatible, which fits the commission's failed attempt to make the neighborhood association's demand and the developer's rights coexist without contradiction.",
+    "B": "'Verify' means to confirm the accuracy of something, which is a legitimate meaning of 'reconcile' in accounting or record-keeping contexts (as in reconciling bank statements). The passage is not about checking facts or confirming accuracy; it is about resolving a conflict between two incompatible positions.",
+    "C": "'Restore' means to return something to a prior state, which is part of 'reconcile' in interpersonal contexts (reconciling a friendship). However, the passage does not describe a prior harmonious state to which the parties might return—the conflict arises from a recently granted variance, and no prior relationship is mentioned.",
+    "D": "'Accept' means to come to terms with or receive, which might fit phrases like 'reconcile oneself to a difficult outcome.' The passage, however, is about an external, procedural challenge of making two parties' positions compatible, not about any party coming to terms with an undesirable situation."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c9e5b1f4-3a7d-4c2e-8f9b-6d1a4c8e2f7b"
+  }
+}

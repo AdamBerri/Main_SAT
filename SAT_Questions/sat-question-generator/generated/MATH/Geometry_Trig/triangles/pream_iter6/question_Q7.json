@@ -1,0 +1,54 @@
+{
+  "id": "f2b8a354-9c61-4e07-b3d1-8a47e925c610",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "In triangle $ABC$, $AB = BC$. If the measure of angle $ACB$ is $28°$, what is the measure of angle $ABC$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$28°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$56°$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$76°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$124°$",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Because $AB = BC$, the angles opposite these equal sides are equal. The side opposite angle $ACB$ is $AB$, and the side opposite angle $BAC$ is $BC$. Since $AB = BC$, we get $\\angle ACB = \\angle BAC = 28°$. By the triangle angle-sum property: $\\angle ABC = 180° - 28° - 28° = 124°$.",
+  "distractorRationale": {
+    "A": "The student incorrectly identifies angle $ABC$ as one of the equal base angles, stating $\\angle ABC = \\angle ACB = 28°$, without recognizing that $\\angle ACB$ is opposite $AB$ and $\\angle BAC$ is opposite $BC$.",
+    "B": "The student doubles the given angle, computing $2 \\times 28° = 56°$, incorrectly believing the apex angle equals twice one base angle.",
+    "C": "The student treats $28°$ as the apex angle (at $B$) instead of a base angle, computing the base angle as $\\dfrac{180° - 28°}{2} = 76°$, then reports this base angle value as the answer.",
+    "D": "Correct."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c7e31a90-4d52-4f8b-b6e3-2d58a07f14c8"
+  }
+}

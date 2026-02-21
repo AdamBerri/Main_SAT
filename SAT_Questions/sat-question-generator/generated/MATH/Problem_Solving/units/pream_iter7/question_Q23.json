@@ -1,0 +1,54 @@
+{
+  "id": "d6e3f9a2-4b8c-4d1e-8f7a-3c5b2d1e9f0a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "A racing car records a top speed of 198.8 miles per hour during qualifying. Race officials need to express this speed in meters per second for physics calculations. Using 1 mile = 1,609.34 meters, what is the car's top speed in meters per second, rounded to the nearest tenth?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "55.2 m/s",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "66.3 m/s",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "88.9 m/s",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "444.7 m/s",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Converting miles per hour to meters per second requires two simultaneous unit conversions: distance (miles → meters) and time (hours → seconds).**\n\n$$198.8 \\frac{\\text{mi}}{\\text{hr}} \\times \\frac{1{,}609.34 \\text{ m}}{1 \\text{ mi}} \\times \\frac{1 \\text{ hr}}{3{,}600 \\text{ s}}$$\n\n$$= \\frac{198.8 \\times 1{,}609.34}{3{,}600} \\frac{\\text{m}}{\\text{s}}$$\n\n$$= \\frac{319{,}936.79}{3{,}600} \\approx 88.87 \\frac{\\text{m}}{\\text{s}} \\approx 88.9 \\text{ m/s}$$\n\nThe key is recognizing that hours must be converted to seconds ($\\times \\frac{1}{3600}$), not to minutes, and that the distance conversion multiplies (not divides) by 1,609.34. The correct answer is **C: 88.9 m/s**.",
+  "distractorRationale": {
+    "A": "**Error: Treats 198.8 mph as if it were 198.8 km/h (metric/imperial mix-up), then converts km/h to m/s correctly.** The student uses 1 km = 1,000 m instead of 1 mile = 1,609.34 m: $198.8 \\times 1{,}000 \\div 3{,}600 = 55.2$ m/s. This confuses miles with kilometers in the original speed.",
+    "B": "**Error: Uses an incorrect mile-to-meter conversion factor (1 mile = 1,200 meters instead of 1,609.34 meters).** While 1,200 might be confused with 1,200 meters as an approximation, the actual conversion is 1,609.34 m: $198.8 \\times 1{,}200 \\div 3{,}600 = 66.3$ m/s.",
+    "C": "**Correct answer.** Both conversions are applied in the correct direction: multiply by 1,609.34 to convert miles to meters, and divide by 3,600 to convert hours to seconds, yielding $\\approx 88.9$ m/s.",
+    "D": "**Error: Inverts both conversion factors simultaneously.** The student divides by 1,609.34 (instead of multiplying) and multiplies by 3,600 (instead of dividing), applying both conversions as reciprocals: $198.8 \\times 3{,}600 \\div 1{,}609.34 = 444.7$ m/s. This results from not tracking which direction each conversion should go."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2b3c4d5-e6f7-8901-2345-6789abcdef02"
+  }
+}

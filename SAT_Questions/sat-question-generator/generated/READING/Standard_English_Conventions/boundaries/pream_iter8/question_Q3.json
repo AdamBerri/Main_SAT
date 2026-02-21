@@ -1,0 +1,57 @@
+{
+  "id": "e2c9b4a6-50d3-4e81-9c27-3f1a8d6e4b05",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "The Great Wall of China stretches thousands of miles across northern China. It was built over many centuries different dynasties added new sections to strengthen the northern defenses. Today the wall attracts millions of visitors each year.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 48,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": ", different dynasties added",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "; different dynasties added",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "; and different dynasties added",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The original sentence is a fused (run-on) sentence: two independent clauses — 'It was built over many centuries' and 'different dynasties added new sections to strengthen the northern defenses' — are run together with no punctuation between them. Choice C correctly separates these two closely related independent clauses with a semicolon, which is the appropriate punctuation when no coordinating conjunction is used.",
+  "distractorRationale": {
+    "A": "NO CHANGE leaves the sentence as a fused run-on. Two independent clauses cannot be joined without any punctuation or conjunction; omitting all punctuation between them violates Standard English sentence boundary rules.",
+    "B": "Adding only a comma between two independent clauses creates a comma splice, which is a punctuation error. A comma alone is insufficient to join two independent clauses; it must be paired with a coordinating conjunction or replaced by stronger punctuation.",
+    "D": "A semicolon followed by the coordinating conjunction 'and' is an incorrect pairing. A semicolon already serves as the connector between two independent clauses; adding a conjunction after it is redundant and creates a non-standard construction."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f4d2c8a1-6b39-4f07-9e15-2a7c5d1b8e93"
+  },
+  "hasImage": false
+}

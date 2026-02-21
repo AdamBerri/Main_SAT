@@ -1,0 +1,54 @@
+{
+  "id": "f669cdc0-fe5a-416a-ae84-cf6c6eb3052b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.0,
+    "procedural": 1.2,
+    "computational": 1.0
+  },
+  "stem": "A biologist models the cell counts (in millions) of two bacterial species growing in separate lab dishes. Species A starts with 10 million cells and grows by 5 million cells per day. Species B starts with 40 million cells and grows by 2 million cells per day. The system below models the cell counts $d$ days from now:\n$$A = 5d + 10$$\n$$B = 2d + 40$$\n\nWhich of the following equations can be used to find the number of days until the two species have the same cell count?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$5d + 10 = 40$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$2d + 10 = 5d + 40$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$5d + 10 = 2d + 40$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$5d + 2d = 40 + 10$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The two species have the same cell count when $A = B$. Substituting the given expressions:\n$$5d + 10 = 2d + 40$$\n\nThis equation can be solved to find $d$:\n$$3d = 30$$\n$$d = 10$$\n\nChecking: $A = 5(10) + 10 = 60$ million and $B = 2(10) + 40 = 60$ million ✓\n\nBoth species reach 60 million cells after 10 days, confirming that choice C is the correct equation.",
+  "distractorRationale": {
+    "A": "Sets Species A's expression equal to Species B's initial value (40) instead of Species B's full expression ($2d + 40$), ignoring that Species B also grows over time.",
+    "B": "Swaps the growth rates: assigns the rate of 2 (which belongs to Species B) to Species A's expression and the rate of 5 (which belongs to Species A) to Species B's expression.",
+    "C": "Correct answer.",
+    "D": "Incorrectly separates variables from constants across both equations before setting them equal, combining all $d$-terms on the left and all constant terms on the right rather than setting the two complete expressions equal to each other."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "01cf370a-961f-43a2-9e08-3230087ba79b"
+  }
+}

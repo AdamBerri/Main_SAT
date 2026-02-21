@@ -1,0 +1,54 @@
+{
+  "id": "c3b8e1f6-5a29-4d74-9c0b-7e4d2a8f1c39",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "What is the value of $x$ if $x^2 - 49 = 0$ and $x > 0$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-7$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$7$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$24.5$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$49$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "We need to solve $x^2 - 49 = 0$ with $x > 0$.\n\nAdd 49 to both sides:\n$$x^2 = 49$$\n\nTake the square root of both sides:\n$$x = \\pm\\sqrt{49} = \\pm 7$$\n\nSince $x > 0$, we take the positive solution: $x = 7$.\n\n**Verification:** Substitute $x = 7$ back into the original equation:\n$$7^2 - 49 = 49 - 49 = 0 \\quad \\checkmark$$\nLHS $= 0$, RHS $= 0$. Equal. The answer is $\\boxed{7}$.",
+  "distractorRationale": {
+    "A": "Choice A = -7: Results from correctly solving the equation to get $x = \\pm 7$ but then choosing the negative solution despite the constraint $x > 0$. The student ignores or misreads the condition $x > 0$.",
+    "B": "Choice B = 7: Correct. Adding 49 to both sides gives $x^2 = 49$, then $x = 7$ (taking positive root as required). Verified: $7^2 - 49 = 0$ ✓",
+    "C": "Choice C = 24.5: Results from dividing 49 by 2 instead of taking the square root. The student interprets $x^2 = 49$ as $x = 49/2 = 24.5$, confusing squaring with doubling and applying its inverse incorrectly.",
+    "D": "Choice D = 49: Results from not completing the solution — the student adds 49 to both sides to get $x^2 = 49$, then writes $x = 49$ without taking the square root."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b6f3d1e8-2c47-4a95-8d7b-9a0e5c3f4b72"
+  }
+}

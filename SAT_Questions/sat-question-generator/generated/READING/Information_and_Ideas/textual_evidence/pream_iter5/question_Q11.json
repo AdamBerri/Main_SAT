@@ -1,0 +1,58 @@
+{
+  "id": "b3f7a2c1-9e4d-4b8a-8c1f-5d2e9a7b3c6f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "linguistic": 3.3
+  },
+  "passage": "Text 1\nUrban heat islands form when cities replace natural land cover with pavement, buildings, and other surfaces that absorb and retain heat. Researchers have found that urban temperatures can exceed those of surrounding rural areas by as much as 7°F during the day and up to 12°F at night. One well-documented strategy for reducing this effect is increasing urban tree canopy coverage. Trees provide shade, which directly reduces surface temperatures, and release water vapor through a process called transpiration, which cools the surrounding air. Studies in multiple cities have shown that neighborhoods with higher canopy coverage consistently report lower ambient temperatures compared to neighborhoods with minimal tree cover.\n\nText 2\nA study conducted in Phoenix, Arizona examined temperature differences across neighborhoods with varying levels of tree canopy. Researchers recorded average summer afternoon temperatures in three neighborhood categories:\n\nTree Canopy Coverage | Average Afternoon Temperature\nLess than 5%         | 103°F\n5%–20%               | 98°F\nMore than 20%        | 93°F",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 198,
+    "source": "Adapted from urban climate research literature and a hypothetical Phoenix neighborhood temperature study"
+  },
+  "stem": "Which finding from Text 2 most directly supports the claim made in Text 1 about tree canopy and temperature?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Neighborhoods with over 20% canopy were 10°F cooler than those with under 5%.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Phoenix temperatures exceeded 100°F only in the least-forested neighborhoods.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Transpiration was measured in all three Phoenix neighborhood categories.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The temperature gap between rural and urban areas reached 12°F at night.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Text 1 claims that neighborhoods with higher canopy coverage consistently report lower ambient temperatures. The data in Text 2 shows a clear, step-wise decrease in temperature as canopy coverage increases: from 103°F (under 5%) to 98°F (5–20%) to 93°F (over 20%). The comparison between the lowest and highest canopy categories—a difference of exactly 10°F—most directly and quantitatively supports the claim that more tree cover means lower temperatures. Choice A correctly synthesizes the data to identify this relationship.",
+  "distractorRationale": {
+    "A": "Correct. The 10°F difference between neighborhoods with less than 5% canopy (103°F) and more than 20% canopy (93°F) directly supports Text 1's claim.",
+    "B": "This is a true statement about the data (103°F > 100°F; the other categories are below 100°F), but it focuses on a single threshold rather than showing the relationship between canopy and temperature that Text 1 claims. It doesn't support the claim about canopy causing cooling.",
+    "C": "Transpiration is mentioned in Text 1 as a mechanism, but Text 2 contains no information about transpiration measurements. This distractor introduces content from Text 1 into a claim about Text 2's findings, which is a cross-source misattribution error.",
+    "D": "The 12°F figure comes from Text 1 and refers to urban-rural temperature differences at night, not from the Phoenix study in Text 2. This distractor confuses which text contains which data."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c1e7f3a2-4b9d-4c8e-9f1a-2d5b8c3e7f4a"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,54 @@
+{
+  "id": "a7c3e5f9-4b2d-4f10-d7a1-d4e5f6a7b8c9",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "A driver travels 60 miles at 30 miles per hour, then immediately travels another 60 miles at 60 miles per hour. What is the driver's average speed, in miles per hour, for the entire trip?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3$ miles per hour",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$40$ miles per hour",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$45$ miles per hour",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$60$ miles per hour",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Average speed equals total distance divided by total time. Total distance $= 60 + 60 = 120$ miles. Time for the first segment: $\\frac{60}{30} = 2$ hours. Time for the second segment: $\\frac{60}{60} = 1$ hour. Total time $= 2 + 1 = 3$ hours. Average speed $= \\frac{120}{3} = 40$ miles per hour.",
+  "distractorRationale": {
+    "A": "Error type: Stopped at intermediate value. The student correctly computes the total time of 3 hours but then reports that value as the answer instead of using it to compute the average speed. Wrong calculation: time for segment 1 $= \\frac{60}{30} = 2$ hr; time for segment 2 $= \\frac{60}{60} = 1$ hr; total time $= 3$ hours — student stops here and reports 3. This produces 3.",
+    "B": "This is the correct answer: total distance $= 120$ miles; total time $= 2 + 1 = 3$ hours; average speed $= \\frac{120}{3} = 40$ mph.",
+    "C": "Error type: Used ratio of totals instead of ratio of rates. The student averages the two given speeds arithmetically instead of computing the harmonic mean via total distance and total time. Wrong calculation: $\\frac{30 + 60}{2} = \\frac{90}{2} = 45$ miles per hour. This produces 45 mph.",
+    "D": "Error type: Rate applied to wrong quantity. The student divides the total distance by only the time from the second (faster) segment, ignoring the time spent in the first segment. Wrong calculation: $\\frac{120}{1} = 60$ miles per hour (where 1 hour is the time for segment 2 only). This produces 60 mph."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b8d4f2a6-0c3e-4a09-e2b3-e5f6a7b8c9d0"
+  }
+}

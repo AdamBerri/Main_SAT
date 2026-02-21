@@ -4,7 +4,7 @@
     "domain": "Problem_Solving",
     "subtopic": "percentages"
   },
-  "currentVersion": "1.3.0",
+  "currentVersion": "3.0.0",
   "versions": [
     {
       "version": "1.0.0",
@@ -13,6 +13,54 @@
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.4.0",
+      "createdAt": "2026-02-21T02:57:10.472Z",
+      "parentVersion": "1.3.0",
+      "preamIteration": 5,
+      "performanceMetrics": {
+        "trainAvgScore": 5.113,
+        "trainPassRate": 0.95,
+        "testAvgScore": 4.817,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.5.0",
+      "createdAt": "2026-02-21T03:07:56.803Z",
+      "parentVersion": "1.4.0",
+      "preamIteration": 6,
+      "performanceMetrics": {
+        "trainAvgScore": 4.662,
+        "trainPassRate": 1,
+        "testAvgScore": 4.567,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.6.0",
+      "createdAt": "2026-02-21T03:12:32.612Z",
+      "parentVersion": "1.5.0",
+      "preamIteration": 7,
+      "performanceMetrics": {
+        "trainAvgScore": 4.962,
+        "trainPassRate": 1,
+        "testAvgScore": 4.85,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.6.0",
+      "createdAt": "2026-02-21T03:16:02.987Z",
+      "parentVersion": "1.6.0",
+      "preamIteration": 8,
+      "performanceMetrics": {
+        "trainAvgScore": 4.983,
+        "trainPassRate": 1,
+        "testAvgScore": 4.9,
+        "testPassRate": 1
+      }
     }
   ],
   "temperatureConfig": {

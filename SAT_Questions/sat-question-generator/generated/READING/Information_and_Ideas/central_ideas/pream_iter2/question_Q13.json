@@ -1,0 +1,58 @@
+{
+  "id": "8c9b9cac-1a00-46d1-9342-20a6097d621b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "Wolves were reintroduced to Yellowstone National Park in 1995 after a seventy-year absence, and scientists soon noticed changes that extended far beyond the wolf population itself. Elk, which had previously grazed freely along riverbanks, began avoiding open areas where they were vulnerable to predators. With fewer elk stripping vegetation from stream edges, willows and aspens grew back. These recovering plants stabilized stream banks, reduced erosion, and created habitat for beavers, songbirds, and fish.\n\nEcologists call this sequence a trophic cascade—a chain of ecological effects triggered by the presence or removal of a top predator. The Yellowstone example became a landmark study because it showed how profoundly a single species can reshape an entire ecosystem, even altering the physical geography of rivers. What changed the park was not the wolves' direct impact on elk numbers alone, but the behavioral changes the wolves inspired.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 148,
+    "source": "Original passage"
+  },
+  "stem": "Which choice best states the main idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The reintroduction of wolves to Yellowstone in 1995 demonstrates how a top predator can transform an ecosystem through behavioral and ecological ripple effects, not just by reducing prey numbers.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Trophic cascades are ecological processes in which the removal of top predators allows prey populations to expand unchecked, damaging plant communities and altering waterways.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Wolves were reintroduced to Yellowstone to control the elk population, which had grown too large during the wolves' seventy-year absence and was damaging the park's vegetation.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The recovery of willows, aspens, and stream banks in Yellowstone shows that plant restoration is the most important outcome of successful predator reintroduction programs.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage uses the Yellowstone wolf reintroduction as a case study to illustrate the concept of a trophic cascade, ultimately concluding that what mattered was not just the wolves' effect on elk numbers but their impact on elk behavior, which cascaded through the ecosystem. Choice A captures both the specific case (Yellowstone wolf reintroduction) and the broader lesson (ecosystem transformation through behavioral ripple effects, not population reduction alone), which is what the closing sentence emphasizes as the key insight.",
+  "distractorRationale": {
+    "A": "Correct. This choice accurately synthesizes the specific example and the conceptual point the passage develops, including the crucial distinction between behavioral effects and direct predation.",
+    "B": "This describes trophic cascades in general terms and in reverse (removal rather than reintroduction), missing the specific Yellowstone case and the behavioral mechanism the passage emphasizes. It also partially contradicts the passage by describing a scenario of removal rather than reintroduction.",
+    "C": "The passage does not state that controlling elk population was the reason for wolf reintroduction, nor does it claim elk numbers had grown 'too large.' This introduces a motivation not stated in the passage.",
+    "D": "Plant and stream recovery are examples of outcomes in the cascade, not the central point. The passage uses these to illustrate a broader argument about predator influence on ecosystems, and it does not rank plant restoration as 'the most important outcome.'"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f7ae5127-feb7-4cec-845b-f739f89cece9"
+  },
+  "hasImage": false
+}

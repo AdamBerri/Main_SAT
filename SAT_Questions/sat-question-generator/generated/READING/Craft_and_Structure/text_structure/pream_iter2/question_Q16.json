@@ -1,0 +1,58 @@
+{
+  "id": "b3e7a1f4-9c2d-4e8b-a5f1-7d3c6e9b2a4f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "linguistic": 4.3
+  },
+  "passage": "The salmon's journey from ocean to spawning ground is a feat of physiological reinvention. At sea, the fish is a silver-scaled predator, its kidneys calibrated to expel the excess salt that ocean water continuously forces into its tissues. As it enters the river mouth, a cascade of hormonal signals begins retuning its entire osmoregulatory system — kidneys shift from producing sparse, concentrated urine to generating copious dilute fluid, gills redirect ion transport proteins, and the fish's coloration darkens as metabolic priorities reorganize.\n\nBy the time the salmon reaches its natal stream, weeks or months upstream, it has consumed no food for the entire transit. The body systematically breaks down muscle tissue to fuel the continuous swimming against current, rerouting proteins that once served locomotion into gonadal development. The jaw elongates, the body deepens, and behavior — once governed by the stimulus of prey — becomes oriented entirely toward the chemical signature of home water.\n\nAt the spawning site, the female fans a redd into gravel with powerful tail strokes while the male defends territory with displays that escalate to combat. Both fish, spawning complete, die within days — their decomposing bodies releasing marine-derived nutrients that fertilize the streamside vegetation and ultimately feed the juvenile salmon that will emerge months later from the gravel.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 218,
+    "source": "Original passage, adapted from ecological biology"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A biological process traced through sequential physical stages",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "A series of environmental challenges paired with adaptive responses",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A contrast between the salmon's marine and freshwater behaviors",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "A cause-and-effect chain explaining the salmon's reproductive failure",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage traces the salmon's life cycle through distinct sequential stages: the ocean phase, the river transition, the upstream journey, and the spawning and death phase. Each paragraph advances the organism through a new phase of the same continuous biological process — physiological transformation at the river mouth, consumption of muscle tissue during migration, and reproductive behavior culminating in death. The dominant organizing logic is chronological progression through stages, not primarily a challenge-response pairing or a contrast between environments. The stages are ordered in time, not by the problems each presents.",
+  "distractorRationale": {
+    "A": "Correct. The passage moves through sequential stages of one continuous biological process, with each paragraph advancing the salmon to a new phase.",
+    "B": "The passage does describe physical challenges (salt load, lack of food, upstream current) alongside biological responses, but this framing imposes a paired structure that is subordinate to the dominant sequential progression through life stages. The challenges are not presented as discrete problems each requiring a solution; they are integrated into the narrative of transformation.",
+    "C": "The passage does contrast the ocean-phase salmon with the river-phase salmon, but this contrast is not the dominant organizational logic. It appears primarily in the first paragraph and serves to establish the starting point of the transformation, not to structure the entire passage around two environments being compared.",
+    "D": "The salmon's death is presented as the conclusion of the life cycle, not as a reproductive failure. The passage frames spawning and death as the completed arc of the organism's purpose. There is no cause-and-effect explanation of failure; the death is ecologically productive, not a breakdown."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c"
+  },
+  "hasImage": false
+}

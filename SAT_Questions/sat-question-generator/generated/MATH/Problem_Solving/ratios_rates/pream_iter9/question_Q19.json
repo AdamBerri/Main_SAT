@@ -1,0 +1,54 @@
+{
+  "id": "09b4e637-5c1a-4d83-b8f2-7e025a3c9d12",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "A bag contains only red and blue marbles. The ratio of red marbles to blue marbles is 4 to 7. After 6 red marbles are removed from the bag, the ratio of red marbles to blue marbles becomes 1 to 7. How many blue marbles are in the bag?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "2",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "8",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "14",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "42",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let the initial number of red marbles be $4k$ and the initial number of blue marbles be $7k$, where $k$ is a positive integer.\n\nStep 1: Set up an equation using the new ratio after 6 red marbles are removed.\n$$\\frac{4k - 6}{7k} = \\frac{1}{7}$$\n\nStep 2: Cross-multiply to solve for $k$.\n$$7(4k - 6) = 1 \\cdot 7k$$\n$$28k - 42 = 7k$$\n$$21k = 42$$\n$$k = 2$$\n\nStep 3: Find the number of blue marbles.\n$$\\text{Blue marbles} = 7k = 7 \\times 2 = 14$$\n\nVerification: Initially, red $= 4(2) = 8$, blue $= 14$. Ratio $= 8{:}14 = 4{:}7$ ✓. After removing 6 red: red $= 2$, blue $= 14$. Ratio $= 2{:}14 = 1{:}7$ ✓",
+  "distractorRationale": {
+    "A": "Error type: 'Stopped at intermediate value' — student correctly solves $21k = 42$ to get $k = 2$, but reports $k = 2$ as the final answer rather than computing the number of blue marbles $7k$. Wrong step: student reports the scale factor $k = 2$ instead of $7k = 14$. Wrong calculation: $k = 2$, reported as the answer. This produces 2.",
+    "B": "Error type: 'Wrong term selected from ratio' — student correctly finds $k = 2$ and correctly computes $7k = 14$ blue marbles, but then reports the number of red marbles $4k$ instead of blue marbles $7k$. Wrong step: student reports $4k = 4 \\times 2 = 8$ (red marbles) instead of $7k = 14$ (blue marbles). Wrong calculation: $4 \\times 2 = 8$. This produces 8.",
+    "C": "This is the correct answer. Setting $4k - 6$ to $7k$ gives $21k = 42$, so $k = 2$ and blue marbles $= 7(2) = 14$.",
+    "D": "Error type: 'Scaling error' — student uses the number of removed marbles (6) as the scale factor $k$ directly, without solving the equation. Wrong step: student sets $k = 6$ instead of solving $21k = 42 \\Rightarrow k = 2$. Wrong calculation: blue marbles $= 7k = 7 \\times 6 = 42$. This produces 42. (Check: with $k = 6$, original red $= 24$, after removing 6: red $= 18$, blue $= 42$; ratio $18{:}42 = 3{:}7 \\neq 1{:}7$, confirming this is incorrect.)"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "1a7d3f85-6b2e-4c49-9e0a-3f14b2c56789"
+  }
+}

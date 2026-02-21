@@ -1,0 +1,57 @@
+{
+  "id": "c6d9a2e4-8f1b-4c7d-b5e3-1a9f4c2d8b6e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "passage": "Text 1\nThe global spread of English has frequently been theorized as a form of linguistic imperialism—a process through which politically and economically dominant nations impose their language, displacing indigenous tongues and homogenizing expressive culture. Proponents of this view point to the correlation between English proficiency and economic mobility in former colonial territories, arguing that this correlation reflects structural coercion: communities adopt English not out of preference but because their own languages have been systematically devalued in employment, education, and governance.\n\nText 2\nSociolinguists studying language contact in postcolonial contexts have found that speakers rarely experience English adoption as displacement. Communities routinely develop dynamic bilingual and multilingual practices that preserve heritage languages for intimate and communal domains while deploying English strategically in formal and commercial settings. Far from eroding expressive culture, this code-switching often generates hybrid linguistic forms—creoles, pidgins, and mixed registers—that speakers treat as authentic markers of local identity.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 165,
+    "source": "Adapted from academic debates on global English and postcolonial sociolinguistics"
+  },
+  "stem": "Based on the two texts, how do the authors' accounts of English adoption in postcolonial contexts differ?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 argues that English spread displaces indigenous languages through structural coercion, while Text 2 finds that speakers actively shape multilingual practices that preserve heritage languages and generate new hybrid forms.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Text 1 argues that economic mobility depends on English proficiency, while Text 2 argues that code-switching and hybrid languages disqualify speakers from formal employment.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Text 1 and Text 2 both acknowledge that English has spread through colonial power structures, but Text 2 goes further by advocating for institutional policies that would reverse heritage language decline.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 treats linguistic imperialism as a historically completed process, while Text 2 argues that ongoing contact dynamics continue to reshape both English and indigenous languages in unpredictable ways.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Text 1 presents English adoption through the framework of linguistic imperialism: communities are coerced into English because their own languages have been structurally devalued in employment, education, and governance. Agency is constrained; adoption reflects coercion, not preference. Text 2 offers a contrasting account grounded in empirical sociolinguistic observation: speakers in postcolonial contexts develop bilingual and multilingual practices rather than experiencing displacement, preserving heritage languages in intimate domains and using English strategically. Hybrid forms like creoles and mixed registers emerge and become markers of local identity. The key difference is that Text 1 emphasizes structural constraint eliminating meaningful choice, while Text 2 emphasizes speaker agency producing creative adaptation. These are genuinely opposed accounts of the same phenomenon.",
+  "distractorRationale": {
+    "A": "Correct. Text 1 emphasizes structural coercion as the mechanism of English spread; Text 2 documents active multilingual agency and the creation of hybrid forms, directly contrasting with Text 1's displacement narrative.",
+    "B": "Text 2 does not argue that code-switching disqualifies speakers from formal employment—this misrepresents Text 2 entirely. Text 2 describes code-switching as a competent, strategic practice. Text 1 makes the connection between English proficiency and economic mobility, but as evidence of coercion, not as a prescription.",
+    "C": "Text 2 does not advocate for policies to reverse heritage language decline; it describes what speakers actually do (preserve heritage languages in communal domains) rather than prescribing what institutions should do. Neither text is policy-focused in the way this choice implies.",
+    "D": "Text 1 does not treat linguistic imperialism as historically completed; it frames the correlation between English proficiency and mobility as an ongoing structural condition. Text 2 does not argue that English itself is being reshaped unpredictably—its focus is on how speakers navigate and creatively use multiple languages."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b7f3e1d9-4a2c-4b8e-9f6d-5c3a1e7f2b4d"
+  }
+}

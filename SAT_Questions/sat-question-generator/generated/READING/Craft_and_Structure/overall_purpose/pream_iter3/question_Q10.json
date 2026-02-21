@@ -1,0 +1,56 @@
+{
+  "id": "8d3a7f2b-1c9e-4b6d-9f4a-2e5c8a1b3d7f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "Sleep researchers have learned a great deal in recent decades about what happens in the body and brain during a full night of rest. In the early stages of sleep, the body temperature drops and the heart rate slows as the body prepares for deeper rest. During deep sleep, the body releases growth hormone, repairs damaged tissue, and strengthens the immune system. The final stage of the sleep cycle, known as REM sleep, is when most dreaming occurs and the brain processes emotional memories from the day. Adults typically cycle through these stages four or five times each night, spending different amounts of time in each phase. Researchers have found that consistently skipping the deep or REM stages—which happens when people cut their total sleep short—leads to problems with memory, mood, and physical recovery. Getting enough uninterrupted sleep allows each stage to play its full role in keeping the body and mind functioning well.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 155,
+    "source": "Adapted from a health science overview of sleep research"
+  },
+  "stem": "What is the primary purpose of this passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To explain the stages of sleep and why each one matters for health",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "To argue that people in modern society do not get enough sleep each night",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "To describe the role of growth hormone in physical recovery during deep sleep",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "To compare how REM sleep and deep sleep differ in their effects on the brain",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage describes each stage of the sleep cycle—early sleep, deep sleep, and REM sleep—and explains what each stage does for the body and brain. It then notes the consequences of missing these stages and closes by connecting adequate sleep to overall health. The passage is organized around explaining what the stages are and why they matter, which is a straightforward informative purpose about sleep science.",
+  "distractorRationale": {
+    "B": "The passage does mention that people can cut sleep short and suffer consequences, but this is a single supporting observation, not an argument about modern society's sleep habits. The passage does not make a broader social or behavioral argument.",
+    "C": "Growth hormone release during deep sleep is one detail in a sentence listing several functions of deep sleep. Describing this single physiological mechanism is not the passage's primary focus; covering the full cycle of sleep stages is.",
+    "D": "The passage discusses both deep sleep and REM sleep separately and notes their different functions, but it does not frame this as a direct comparison between the two stages. The passage covers all stages of sleep, not just those two in relation to each other."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3f7b9d1e-5a2c-4e8f-9b4d-6c1a8e3f2b7d"
+  }
+}

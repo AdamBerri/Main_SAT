@@ -1,0 +1,57 @@
+{
+  "id": "d6b2f8e4-3a9c-4d1b-8f7e-5c1a9d3f6b2e",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.2
+  },
+  "passage": "Ancient Roman engineers were particularly skilled at: constructing aqueducts, roads, and bridges that have withstood thousands of years of use. Their infrastructure projects reflect an advanced understanding of physics and materials science that was remarkable for the era.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 46,
+    "source": "Original SAT practice question"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "skilled at constructing aqueducts, roads, and bridges that have withstood thousands of years of use.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "skilled at; constructing aqueducts, roads, and bridges that have withstood thousands of years of use.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "skilled at, constructing aqueducts, roads, and bridges that have withstood thousands of years of use.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "A colon must follow a complete independent clause—one that can stand alone as a grammatically correct sentence. The clause 'Ancient Roman engineers were particularly skilled at' is incomplete because the preposition 'at' requires an object; the sentence has no grammatical conclusion without what follows. Inserting a colon after 'at' (Choice A) therefore violates the rule that a colon must be preceded by a complete independent clause. Choice B removes the colon entirely, allowing the gerund phrase 'constructing aqueducts, roads, and bridges' to serve as the direct object of 'skilled at' without any interrupting punctuation. This produces a smooth, grammatically correct sentence.",
+  "distractorRationale": {
+    "A": "NO CHANGE places a colon after 'skilled at,' but a colon must follow a complete independent clause. The phrase 'Ancient Roman engineers were particularly skilled at' ends with a preposition that requires an object and is therefore not a complete clause. Placing a colon here is a colon misuse error.",
+    "C": "A semicolon must join two independent clauses. Placing a semicolon after 'skilled at' interrupts the preposition 'at' from its object. Additionally, 'constructing aqueducts, roads, and bridges that have withstood thousands of years of use' is a gerund phrase, not an independent clause, so a semicolon is doubly inappropriate here.",
+    "D": "Inserting a comma between a preposition ('at') and its object ('constructing aqueducts...') is non-standard and incorrect in English. Commas do not separate prepositions from their objects. Students may find this tempting because commas often appear near long phrases, but no punctuation is needed between 'at' and the gerund phrase that follows."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "8e4c1f9a-3b7d-4a2e-9c5f-6d1b8e3c7a4f"
+  },
+  "hasImage": false
+}

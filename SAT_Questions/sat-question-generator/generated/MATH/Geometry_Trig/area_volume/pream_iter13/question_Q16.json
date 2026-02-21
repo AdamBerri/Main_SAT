@@ -1,0 +1,38 @@
+{
+  "id": "c3d4e5f6-1111-4a6b-8c7d-9e0f1a2b3c16",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4,
+    "computational": 4.3
+  },
+  "stem": "A spherical ball with a radius of 3 inches is placed inside a cylindrical container with a radius of 3 inches and a height of 6 inches. What is the volume, in cubic inches, of the space inside the cylinder that is NOT occupied by the ball?",
+  "choices": [
+    { "label": "A", "text": "$18\\pi$", "isCorrect": true },
+    { "label": "B", "text": "$54\\pi$", "isCorrect": false },
+    { "label": "C", "text": "$36\\pi$", "isCorrect": false },
+    { "label": "D", "text": "$90\\pi$", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Cylinder volume: $\\pi r^2 h = \\pi(3)^2(6) = 54\\pi$. Sphere volume: $\\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi(3)^3 = \\frac{4}{3}\\pi(27) = 36\\pi$. Remaining space: $54\\pi - 36\\pi = 18\\pi$ cubic inches. The answer is A.",
+  "distractorRationale": {
+    "A": "Correct. $54\\pi - 36\\pi = 18\\pi$.",
+    "B": "Computes only the cylinder volume without subtracting the sphere: $\\pi(3)^2(6) = 54\\pi$.",
+    "C": "Computes only the sphere volume instead of the remaining space: $\\frac{4}{3}\\pi(3)^3 = 36\\pi$.",
+    "D": "Adds the two volumes instead of subtracting: $54\\pi + 36\\pi = 90\\pi$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:16.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-c111-4d5e-8f9a-0b1c2d3e4f16"
+  }
+}

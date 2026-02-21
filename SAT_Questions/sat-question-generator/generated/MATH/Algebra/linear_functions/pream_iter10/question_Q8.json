@@ -1,0 +1,54 @@
+{
+  "id": "d5a9b3c4-6e2f-4a1d-c8b4-9f3e7a2d8b5c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "computational": 1.9
+  },
+  "stem": "The function $V(t) = -5t + 80$ gives the volume of water, in gallons, remaining in a tank $t$ minutes after it begins draining. According to this function, how many gallons of water remain in the tank after 6 minutes of draining?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$30$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$50$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$74$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$110$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To find the volume remaining after 6 minutes, substitute $t = 6$ into the function:\n$$V(6) = -5(6) + 80 = -30 + 80 = 50$$\n\nAfter 6 minutes of draining, $50$ gallons of water remain in the tank.",
+  "distractorRationale": {
+    "A": "Computes only the amount drained ($5 \\times 6 = 30$) without subtracting from the initial volume of 80: answers 30 instead of $80 - 30 = 50$.",
+    "B": "Correct. $V(6) = -5(6) + 80 = -30 + 80 = 50$ gallons.",
+    "C": "Subtracts $t = 6$ from 80 directly instead of computing $5t$: $80 - 6 = 74$, treating the number of minutes as gallons drained.",
+    "D": "Adds $5t$ to 80 instead of subtracting, ignoring the negative sign: $5(6) + 80 = 30 + 80 = 110$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3f9e5d2-8b4a-4c7f-d6e3-9a2b8f5c1d7e"
+  }
+}

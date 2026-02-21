@@ -1,0 +1,54 @@
+{
+  "id": "b6d4f9e2-3c81-4a57-e8b5-7f2a0c9d1e63",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "An isosceles triangle has two equal sides of length $13$ and a base of length $10$. What is the length of the altitude drawn from the vertex angle to the base?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$12$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$8$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$5$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\sqrt{69}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The altitude drawn from the vertex angle of an isosceles triangle to the base bisects the base. This creates two congruent right triangles.\n\nEach right triangle has:\n- Hypotenuse $= 13$ (the equal side of the isosceles triangle)\n- One leg $= \\frac{10}{2} = 5$ (half the base)\n- Other leg $= h$ (the altitude, to be found)\n\nApplying the Pythagorean theorem:\n$$h^2 + 5^2 = 13^2$$\n$$h^2 + 25 = 169$$\n$$h^2 = 144$$\n$$h = 12$$",
+  "distractorRationale": {
+    "A": "Correct. The altitude bisects the base into two segments of $5$, and the Pythagorean theorem gives $h = \\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$.",
+    "B": "The student subtracts half the base from the equal side instead of using the Pythagorean theorem, computing $h = 13 - 5 = 8$.",
+    "C": "The student reports half the base length ($\\frac{10}{2} = 5$) as the altitude, confusing the segment produced by the bisection with the altitude itself.",
+    "D": "The student applies the Pythagorean theorem using the full base length $10$ instead of half the base, computing $h = \\sqrt{13^2 - 10^2} = \\sqrt{169 - 100} = \\sqrt{69}$, forgetting that the altitude bisects the base."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4e7c1b9f-5d23-4a86-f3c7-9a2e0b8d5f14"
+  }
+}

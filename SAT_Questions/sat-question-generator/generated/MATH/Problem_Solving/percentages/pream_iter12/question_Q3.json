@@ -1,0 +1,54 @@
+{
+  "id": "e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "A school has 300 students. If 60% of the students participate in at least one extracurricular activity, how many students participate in at least one extracurricular activity?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "120",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "180",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "240",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "360",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Number of participating students = 300 × 0.60 = 180.",
+  "distractorRationale": {
+    "A": "Student used the complement (40%) instead of 60%: 300 × 0.40 = 120.",
+    "B": "Correct answer.",
+    "C": "Student used 80% instead of 60%: 300 × 0.80 = 240.",
+    "D": "Student multiplied by 1.20 instead of 0.60: 300 × 1.20 = 360."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:02.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c"
+  }
+}

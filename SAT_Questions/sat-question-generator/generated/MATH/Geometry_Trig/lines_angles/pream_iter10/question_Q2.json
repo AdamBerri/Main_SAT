@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0002-4aaa-b002-000000000002",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "computational": 1.1
+  },
+  "stem": "Two lines intersect, forming four angles. If one of the angles measures $72°$, what is the measure of the angle directly opposite it?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$108°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$72°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$18°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$144°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "When two lines intersect, vertical angles are equal. The opposite angle is also $72°$.",
+  "distractorRationale": {
+    "A": "Computed supplement $180° - 72° = 108°$.",
+    "B": "Correct. Vertical angles are congruent.",
+    "C": "Computed complement $90° - 72° = 18°$.",
+    "D": "Doubled the angle: $72° \\times 2 = 144°$."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.337Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0002-4000-a002-000000000002"
+  }
+}

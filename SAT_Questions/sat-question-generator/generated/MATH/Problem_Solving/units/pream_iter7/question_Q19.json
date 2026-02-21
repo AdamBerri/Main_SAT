@@ -1,0 +1,54 @@
+{
+  "id": "9d1a6e4b-3c8f-5b2e-d7a4-0f3c9b1e5d2a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "A market in France sells imported cheese at a price of 0.85 euros per 100 grams. A buyer in the United States wants to compare this to domestic prices, which are listed in dollars per pound. What is the French cheese's price in dollars per pound? (Use 1 euro = 1.12 dollars and 1 pound = 453.6 grams)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3.44",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$3.86",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$4.32",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$4.76",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "This problem requires two independent unit conversions applied to a rate: (1) converting euros to dollars, and (2) converting per-100-grams to per-pound. The student must recognize the correct direction for each conversion.\n\nStart with the given rate: $\\dfrac{0.85 \\text{ \u20ac}}{100 \\text{ g}}$\n\nStep 1 — Convert euros to dollars (multiply by \\$1.12/\u20ac):\n$$\\frac{0.85 \\text{ \u20ac}}{100 \\text{ g}} \\times \\frac{\\$1.12}{1 \\text{ \u20ac}} = \\frac{\\$0.952}{100 \\text{ g}}$$\n\nStep 2 — Convert grams to pounds. Since 1 lb = 453.6 g, we need $\\frac{453.6 \\text{ g}}{1 \\text{ lb}}$ in the numerator to cancel grams and introduce pounds:\n$$\\frac{\\$0.952}{100 \\text{ g}} \\times \\frac{453.6 \\text{ g}}{1 \\text{ lb}} = \\frac{0.952 \\times 453.6}{100} \\text{ \u00a7/lb}$$\n\nStep 3 — Calculate:\n$$\\frac{0.952 \\times 453.6}{100} = \\frac{431.8}{100} = \\$4.318 \\approx \\$4.32 \\text{ per pound}$$\n\nThe price is approximately $\\boxed{\\$4.32}$ per pound.",
+  "distractorRationale": {
+    "A": "Inverted currency conversion error: the student divides by the exchange rate instead of multiplying, treating the rate as 1 dollar = 1.12 euros rather than 1 euro = 1.12 dollars. Calculation: $(0.85 \\div 1.12) \\times (453.6 \\div 100) = 0.7589 \\times 4.536 = \\$3.44$/lb.",
+    "B": "Forgotten currency conversion error: the student converts grams to pounds correctly but omits the euro-to-dollar conversion, treating euros as equivalent to dollars. Calculation: $0.85 \\times (453.6 \\div 100) = 0.85 \\times 4.536 = \\$3.86$/lb.",
+    "C": "Correct answer. Multiplies by 1.12 \\$/\u20ac to convert currency and by 453.6 g/lb to convert the per-gram rate to a per-pound rate.",
+    "D": "Wrong weight conversion factor error: the student uses 1 pound = 500 grams (a rounded approximation) instead of 453.6 grams. Calculation: $0.85 \\times 1.12 \\times (500 \\div 100) = 0.952 \\times 5 = \\$4.76$/lb."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e5f6a7-b8c9-0123-defa-234567890123"
+  }
+}

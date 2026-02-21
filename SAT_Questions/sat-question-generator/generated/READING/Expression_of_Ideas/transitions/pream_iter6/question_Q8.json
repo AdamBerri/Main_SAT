@@ -1,0 +1,58 @@
+{
+  "id": "c8d9e0f1-a2b3-4c4d-5e6f-7a8b9c0d1e24",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "The town's original bridge, built in 1932, could accommodate only one lane of traffic in each direction. _______ the new bridge, completed last year, features four lanes and a dedicated bicycle path.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 56,
+    "source": "Adapted from a municipal infrastructure report"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Consequently,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "By contrast,",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Additionally,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "For this reason,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage juxtaposes the old bridge's limited capacity (one lane each direction) with the new bridge's greater capacity (four lanes plus a bicycle path). This is a clear contrast between two different things. 'By contrast' correctly signals this comparison highlighting differences.",
+  "distractorRationale": {
+    "A": "'Consequently' signals cause-effect, but the new bridge's features are being compared to the old bridge, not presented as a result of the old bridge's limitations.",
+    "B": "Correct. 'By contrast' signals the comparison between the old bridge's limited capacity and the new bridge's expanded features.",
+    "C": "'Additionally' adds information in the same direction, but the passage is highlighting differences between two bridges, not adding similar details.",
+    "D": "'For this reason' signals causation, but the new bridge's features are being contrasted with the old bridge, not caused by it."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:01:02.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d9e0f1a2-b3c4-4d5e-6f7a-8b9c0d1e2f34"
+  },
+  "hasImage": false
+}

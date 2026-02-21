@@ -1,0 +1,54 @@
+{
+  "id": "e9a2c5f7-4d81-4e03-b7f2-8c1e9d3a0b47",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "Two ride-sharing companies charge different rates for a trip. Company X charges a base fare of $18 plus $3 per mile. Company Y charges a base fare of $6 plus $6 per mile. For what trip distance, in miles, do the two companies charge the same total fare?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "2 miles",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "4 miles",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "6 miles",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "8 miles",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $m$ be the trip distance in miles. Write the total fare for each company as a linear function of $m$. Company X: $F_X(m) = 3m + 18$. Company Y: $F_Y(m) = 6m + 6$. Set the two fares equal and solve: $$3m + 18 = 6m + 6$$ $$18 - 6 = 6m - 3m$$ $$12 = 3m$$ $$m = 4$$ Verification: $F_X(4) = 3(4) + 18 = 12 + 18 = 30$ and $F_Y(4) = 6(4) + 6 = 24 + 6 = 30$. Both companies charge $30 for a 4-mile trip. ✓",
+  "distractorRationale": {
+    "A": "Ignores Company X's base fare: solves $3m = 6m + 6$, giving $-3m = 6$, so $m = -2$; takes the absolute value to get $m = 2$.",
+    "B": "Correct answer.",
+    "C": "Ignores Company Y's base fare: solves $3m + 18 = 6m$, giving $18 = 3m$, so $m = 6$.",
+    "D": "Adds both base fares instead of subtracting, then divides by the difference in per-mile rates: $(18 + 6) \\div (6 - 3) = 24 \\div 3 = 8$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a7b8c9d0-e1f2-4a3b-8c4d-5e6f7a8b9c0d"
+  }
+}

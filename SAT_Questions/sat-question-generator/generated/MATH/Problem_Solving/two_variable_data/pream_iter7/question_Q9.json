@@ -1,0 +1,54 @@
+{
+  "id": "a9b0c1d2-e3f4-4a5b-c6d7-8e9f0a1b2c3d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "A food vendor analyzed the relationship between daily high temperature (in degrees Fahrenheit) and daily ice cream sales (in dollars) at a summer festival. The line of best fit for the data is $y = 12x - 95$, where $x$ is the temperature in degrees Fahrenheit and $y$ is the predicted daily sales in dollars. What is the best interpretation of the slope of this line of best fit?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The predicted daily sales are $-95 when the temperature is 0°F.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "For each additional degree increase in temperature, predicted daily ice cream sales increase by $12.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "For each additional $12 in sales, the temperature increases by 1°F.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The temperature at which predicted sales equal zero is $12°F.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In the equation $y = 12x - 95$, the slope is $12$. The slope of a line of best fit represents the rate of change: how much the predicted $y$-value changes for each one-unit increase in $x$.\n\nSince $x$ is the temperature in degrees Fahrenheit and $y$ is the predicted daily sales in dollars, the slope of $12$ means that for each additional 1°F increase in temperature, the predicted daily ice cream sales increase by $\\$12$.",
+  "distractorRationale": {
+    "A": "This describes the y-intercept ($-95$), not the slope. The y-intercept is the predicted value when $x = 0$, not the rate of change.",
+    "B": "This is the correct answer. The slope $= 12$ means each 1°F increase corresponds to a $\\$12$ increase in predicted sales.",
+    "C": "This inverts the relationship between $x$ and $y$. The slope describes how $y$ changes per unit increase in $x$, not the reverse. The correct interpretation runs from temperature to sales, not from sales to temperature.",
+    "D": "This describes the x-intercept (where $y = 0$), not the slope. Solving $12x - 95 = 0$ gives $x \\approx 7.9$, not $12$. Choosing $12$ here confuses the slope value with an intercept value."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b4c5d6e7-f8a9-0b1c-2d3e-4f5a6b7c8d9e"
+  }
+}

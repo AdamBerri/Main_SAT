@@ -1,0 +1,54 @@
+{
+  "id": "d1a6f3c8-7e2b-4d9a-b5f1-8c4e2a7d3b6f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "A university surveyed 150 randomly selected students from its College of Engineering and found that 90 of them planned to pursue graduate school. The university's president cited this survey to claim that 60% of all students at the university plan to pursue graduate school. Which of the following identifies the most significant weakness in the president's conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The percentage, 60%, is too high to be credible as a university-wide figure.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The sample size of 150 is not large enough to represent a university population.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Engineering students may have different graduate school plans than students in other colleges, so the sample does not represent the full university population.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The survey only asked about graduate school and did not account for students who planned to attend professional school instead.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The sample was drawn only from the College of Engineering, not from all students at the university. Engineering students as a group are likely to have graduate school plans at rates that differ systematically from students in other colleges (e.g., arts, business, education). Generalizing a result from one college to the entire university violates the requirement that a sample be representative of the population being described. The president's conclusion overgeneralizes the scope of a sample that only represents engineering students.",
+  "distractorRationale": {
+    "A": "Error type 2 (Wrong confidence interpretation): A student might assume the result is flawed simply because 60% seems like a high number, but the magnitude of a result is not itself a statistical flaw — the validity of the inference depends on how the sample was collected, not whether the number seems large.",
+    "B": "Error type 6 (Sample size misapplication): A student might focus on the sample size of 150, but 150 randomly selected students is a reasonable sample; the core problem is not the count but rather which students were included — all from a single college rather than drawn across the whole university.",
+    "C": "This is the correct answer. The sample consists entirely of engineering students, who are not representative of the broader university population. This is an error of overgeneralizing scope (Error type 5): applying a conclusion beyond the group that was actually sampled.",
+    "D": "Error type 7 (Misidentifying the population): A student might focus on the question wording — 'graduate school' vs. 'professional school' — as if an incomplete survey question is the main flaw. While this could introduce some measurement issue, it does not explain why a sample of engineering students cannot represent the full university; the sampling method is the dominant flaw."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c8f4a2e6-1b7d-4c3a-9f5b-2e8a4c6f1d3b"
+  }
+}

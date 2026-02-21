@@ -1,0 +1,53 @@
+{
+  "id": "c5f9e4a3-06d2-4b8c-9e3f-4a1f0c2d6b7e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "A granola recipe calls for oats and nuts in a ratio of 4:2. A baker wants to use 6 cups of nuts. How many cups of oats does the baker need?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "3",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "4",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "12",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "18",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Determine the ratio of oats to nuts. The ratio of oats to nuts is 4:2, which simplifies to $\\frac{4}{2} = 2$ cups of oats for every 1 cup of nuts.\n\nStep 2: Multiply the unit ratio by the given amount of nuts. $6 \\text{ cups of nuts} \\times 2 = 12$ cups of oats.\n\nThe baker needs 12 cups of oats.",
+  "distractorRationale": {
+    "A": "Error type: Inverted ratio. The student inverted the oats-to-nuts ratio, using $\\frac{2}{4}$ (nuts per oat) instead of $\\frac{4}{2}$ (oats per nut). Wrong calculation: $6 \\times \\frac{2}{4} = 6 \\times 0.5 = 3$ cups. Result: 3.",
+    "B": "Error type: Part-to-whole vs. part-to-part confusion. The student treated the oats portion (4) as a fraction of the total ratio parts (4 + 2 = 6), then applied that fraction to the 6 cups of nuts. Wrong step: used $\\frac{4}{6}$ as the ratio instead of $\\frac{4}{2}$. Wrong calculation: $\\frac{4}{6} \\times 6 = 4$ cups. Result: 4.",
+    "D": "Error type: Wrong term selected from ratio. The student solved the problem correctly but reported the total amount of oats plus nuts instead of just the oats. Wrong step: added oats and nuts together. Wrong calculation: $12 \\text{ oats} + 6 \\text{ nuts} = 18$ cups. Result: 18."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d3e5g7b9-c1f3-4d6f-8b2d-2c4e6a8b0d1e"
+  }
+}

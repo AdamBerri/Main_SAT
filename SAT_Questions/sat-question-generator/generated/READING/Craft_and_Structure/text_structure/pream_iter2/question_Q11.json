@@ -1,0 +1,57 @@
+{
+  "id": "b3f7a9c2-4d8e-4b1f-9a6c-5e2d8f3b7c9a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3.0,
+    "linguistic": 3.3
+  },
+  "passage": "The domestication of wheat transformed human civilization in ways that extended far beyond agriculture itself. Before settled farming, nomadic groups followed seasonal food sources across vast territories, developing intricate knowledge of migration patterns and animal behavior. The shift to cultivating wheat changed not only what people ate but where and how they lived. Permanent settlements emerged around reliable harvests, and with them came entirely new social structures.\n\nThese fixed communities required coordination that nomadic life rarely demanded. Surplus grain needed to be stored, allocated, and protected, which meant some individuals had to specialize in administration rather than food production. Record-keeping systems emerged to track harvests and distributions. In Mesopotamia, early writing developed not from a desire to preserve literature or law but from the practical need to account for grain stores. The administrative demands of agriculture, in other words, laid the groundwork for literacy itself.\n\nYet the benefits of wheat cultivation were unevenly distributed. Those who controlled storage facilities accumulated influence over those who did not, generating social hierarchies that nomadic societies had little reason to maintain. The same grain surplus that freed some individuals for intellectual and administrative work simultaneously bound others to grueling cycles of planting, harvesting, and tribute.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 197,
+    "source": "Original passage"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A historical event is introduced, then its wide-ranging consequences are traced across multiple domains.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Two contrasting ways of life are compared, then reconciled through a shared outcome.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A problem is identified, then a sequence of attempted solutions is evaluated.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "A general claim is made, then a single detailed example is used to confirm it.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage opens by introducing wheat domestication as a transformative historical event, then traces its consequences across multiple domains: settlement patterns, social organization, administrative specialization, literacy, and social hierarchy. Each paragraph extends the chain of effects rather than simply describing nomadic versus farming life or evaluating solutions. The dominant pattern is a single cause radiating outward into broad, interconnected consequences across human civilization.",
+  "distractorRationale": {
+    "A": "Correct. The passage introduces wheat domestication and systematically traces its effects across social structure, administration, writing, and inequality.",
+    "B": "The passage does contrast nomadic and settled life, but it never reconciles the two ways of life or arrives at a shared outcome. The contrast serves to illustrate consequences of wheat cultivation, not to balance competing lifestyles.",
+    "C": "No problem is identified and no sequence of solutions is presented. The passage describes consequences, including inequitable ones, but never frames wheat cultivation as a problem to be solved or evaluates responses to it.",
+    "D": "The passage makes a general claim, but it is supported by multiple examples across several paragraphs (writing, administration, social hierarchy), not by a single confirming example."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c1e9f4a7-3b8d-4c2e-9f5a-7b3d1e8c4f9a"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "b3e7f1a2-9c4d-4e8b-a2f6-1d5c8b9e3a7f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4,
+    "linguistic": 4.3
+  },
+  "passage": "Text 1\nThe domestication of fire fundamentally reorganized human social life. By concentrating groups around hearths, fire created predictable gathering points that structured daily rhythms and facilitated collective decision-making. Anthropologists have documented how fire-centered camps enabled extended kinship networks to coordinate resource allocation, transmit cultural knowledge across generations, and develop increasingly sophisticated symbolic communication—preconditions for the emergence of language as we understand it.\n\nText 2\nCognitive scientists have grown skeptical of single-cause accounts of language origins. While environmental pressures—access to protein-rich cooked foods, nighttime safety—undeniably shaped early hominin neural development, the capacity for recursive syntax appears to have predated consistent hearth use by several hundred thousand years. The anatomical prerequisites for complex vocalization were present long before archaeological evidence for controlled fire becomes reliable.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 148,
+    "source": "Adapted from academic essays on human evolution and language origins"
+  },
+  "stem": "Based on the two texts, how do the authors' positions on the relationship between fire use and language development differ?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 treats fire as a sufficient condition for language emergence, whereas Text 2 argues that language development required multiple environmental pressures acting simultaneously.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 identifies fire's social reorganizing effects as foundational preconditions for language, whereas Text 2 presents anatomical and cognitive evidence that language capacity preceded reliable fire use.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 1 focuses on the neurological changes caused by fire use, whereas Text 2 disputes the archaeological record's reliability in establishing any connection between fire and cognition.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 argues that collective decision-making at hearths produced language, whereas Text 2 concedes that fire may have accelerated language development without being its primary cause.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 argues that fire created social structures—hearth-centered camps, extended kinship networks, coordinated resource allocation—that served as 'preconditions' for language. The causal arrow runs from fire's social reorganization to language emergence. Text 2, drawing on cognitive science, pushes back specifically against 'single-cause accounts': recursive syntax predated consistent hearth use, and the anatomical prerequisites for complex vocalization existed before reliable archaeological evidence for controlled fire. Thus Text 1 positions fire's social effects as essential groundwork for language, while Text 2 marshals evidence that language capacity was already forming before fire became a stable factor—a direct challenge to Text 1's developmental sequence.",
+  "distractorRationale": {
+    "A": "Text 1 does not argue fire alone was sufficient; it frames fire as creating 'preconditions,' which implies fire is necessary but not presented as fully sufficient. Text 2 acknowledges environmental pressures plural but does not argue they must act simultaneously—it argues that language predated those pressures.",
+    "B": "Correct. Text 1 establishes fire's social role as foundational precondition; Text 2 presents anatomical and cognitive evidence placing language capacity before controlled fire.",
+    "C": "Text 1 focuses on social reorganization, not neurology. Text 2 does note that archaeological evidence for fire becomes reliable only late, but its main claim is about the timeline of cognitive capacity, not a wholesale dispute of archaeological methods.",
+    "D": "Text 1 frames hearth-based social coordination as a precondition, not the direct producer of language. Text 2 does not 'concede' any accelerating role for fire; it argues language capacity predated fire, which is a stronger rebuttal than the 'acceleration' framing implies."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4d8e2f1-7a3b-4c9e-8d1f-2b5a7c9e3d6f"
+  }
+}

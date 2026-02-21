@@ -1,0 +1,58 @@
+{
+  "id": "e5f9a3b4-0c6d-4e1f-b8a7-3f4e5d6c7b8a",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "The printing press revolutionized the spread of knowledge across Europe. [Before Gutenberg's invention books were laboriously copied by hand this process could take many months and kept literacy rates extremely low.] Within decades of the press's introduction, printed texts became accessible to a far wider segment of the population.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 59,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Before Gutenberg's invention books were laboriously copied by hand this process could take many months and kept literacy rates extremely low.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Before Gutenberg's invention, books were laboriously copied by hand. This process could take many months and kept literacy rates extremely low.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Before Gutenberg's invention, books were laboriously copied by hand, this process could take many months and kept literacy rates extremely low.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Before Gutenberg's invention, books were laboriously copied by hand; and this process could take many months and kept literacy rates extremely low.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion contains two independent clauses: 'Before Gutenberg's invention, books were laboriously copied by hand' (subject 'books,' verb 'were copied') and 'This process could take many months and kept literacy rates extremely low' (subject 'This process,' verb 'could take'). In Choice A (NO CHANGE), these two independent clauses are run together with no punctuation — a fused sentence. Choice B correctly places a period between the two complete thoughts, separating them into two properly bounded sentences and also adding a comma after the introductory prepositional phrase, as Standard English requires.",
+  "distractorRationale": {
+    "A": "Choice A is a fused (run-on) sentence. Two fully independent clauses — 'books were laboriously copied by hand' and 'this process could take many months' — are joined with no punctuation at all, which violates Standard English sentence boundary rules.",
+    "B": "Choice B is correct. A period separates the two independent clauses into distinct sentences, and a comma correctly follows the introductory prepositional phrase 'Before Gutenberg's invention.'",
+    "C": "Choice C creates a comma splice: two independent clauses are connected only by a comma, which is insufficient to join two complete sentences. A comma alone cannot substitute for a period or semicolon between independent clauses.",
+    "D": "Choice D combines a semicolon with the coordinating conjunction 'and.' This pairing is nonstandard: a semicolon already marks a full sentence boundary, making the conjunction redundant. The correct form would be either a semicolon alone or a comma with 'and,' not both together."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3a4b5c6-d7e8-9f0a-1b2c-3d4e5f6a7b8c"
+  },
+  "hasImage": false
+}

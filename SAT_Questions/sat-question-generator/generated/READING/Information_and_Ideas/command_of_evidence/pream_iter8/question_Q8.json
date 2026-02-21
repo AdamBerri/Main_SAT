@@ -1,0 +1,57 @@
+{
+  "id": "e2a5c8f1-4b7d-4c3e-9a6f-8d1b5e7c2a9f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "The following passage is adapted from a 2020 article on the benefits of public libraries.\n\nPublic libraries serve communities in ways that extend well beyond lending books. In many neighborhoods, they function as community anchors, offering free internet access, job assistance programs, and safe gathering spaces. A 2020 report by the American Library Association found that over 90 percent of public libraries provide free Wi-Fi to patrons, making them a critical resource in areas where home broadband access is limited.\n\nLibraries also support economic mobility. According to the same report, more than 60 percent of public libraries offer job search assistance, including resume workshops and computer access for online job applications. These services are particularly valuable to low-income residents who may lack the resources to search for employment independently.\n\nBeyond economic services, libraries play an educational role for all age groups. Programs for young children, such as story hours and early literacy workshops, have been linked to improved school readiness. A study by the Urban Libraries Council reported that children who participated in summer reading programs at public libraries were significantly less likely to experience summer learning loss compared to those who did not participate. Library programs for adults, including ESL classes and financial literacy workshops, further extend the institution's educational reach.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 193,
+    "source": "Adapted from a 2020 American Library Association report summary"
+  },
+  "stem": "A student claims that public libraries help children maintain academic skills over the summer. Which quotation from the passage best supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Over 90 percent of public libraries provide free Wi-Fi to patrons, making them a critical resource in areas where home broadband access is limited.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"Programs for young children, such as story hours and early literacy workshops, have been linked to improved school readiness.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Children who participated in summer reading programs at public libraries were significantly less likely to experience summer learning loss compared to those who did not participate.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "\"Library programs for adults, including ESL classes and financial literacy workshops, further extend the institution's educational reach.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Choice C is correct. The claim is that public libraries help children maintain academic skills over the summer. Choice C directly addresses this: children in library summer reading programs were significantly less likely to experience summer learning loss, which is the loss of academic skills during summer break. This is the most direct match, using near-identical language (summer, children, learning) and requiring no inferential steps.",
+  "distractorRationale": {
+    "A": "Choice A addresses Wi-Fi access for patrons in general, which has no direct connection to children maintaining academic skills over the summer.",
+    "B": "Choice B mentions children's programs linked to improved school readiness, which is a related educational benefit but applies to readiness for school entry—not maintaining skills during the summer, which is what the claim specifies.",
+    "D": "Choice D describes adult library programs, not children's programs, and says nothing about summer skill retention."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c8d3f7a2-5e1b-4f6c-b9a4-2e7d9c3f1b8a"
+  },
+  "hasImage": false
+}

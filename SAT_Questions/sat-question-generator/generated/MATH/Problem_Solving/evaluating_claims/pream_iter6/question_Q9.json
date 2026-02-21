@@ -1,0 +1,54 @@
+{
+  "id": "d7a1f3e5-9c46-4b0d-c178-5f2e1b4a3d90",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "A researcher randomly selected 150 customers from a grocery store's loyalty program and asked them how many times per week they shop for groceries. The average was 2.4 times per week. The researcher concluded that the average grocery shopper in the country shops 2.4 times per week. Which of the following best identifies a limitation of this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The researcher should have asked more questions to get a reliable average.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Loyalty program members may shop more frequently than typical grocery shoppers in the country, so the sample may not represent all shoppers.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "A sample of 150 customers is always too small to calculate a meaningful average.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is invalid because 2.4 times per week seems too high for an average.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Although the researcher used random selection within the loyalty program — which is good practice — the population sampled (loyalty program members) is not the same as the population described in the conclusion (all grocery shoppers in the country). Loyalty program members are customers who signed up to track their purchases, which suggests they shop at that store frequently. This means they likely shop more than the typical American grocery shopper, who may use multiple stores or shop less regularly. Because the sample is drawn from a specific subgroup that differs in a relevant way from the target population, the conclusion about all shoppers nationally is not fully supported.",
+  "distractorRationale": {
+    "A": "This distractor introduces an irrelevant criterion. The number of questions asked does not affect whether the sample represents the target population. The flaw is in who was sampled, not what was asked.",
+    "B": "Correct. Loyalty program members are a specific subgroup — they shop regularly enough at one store to join its program — and are likely to shop more frequently than the average national grocery shopper. The sample is therefore not representative of the intended population.",
+    "C": "This distractor targets the misconception that small sample size is always the main issue. The question states the sample was randomly selected, which is important. The problem here is not size but the non-representative nature of the specific group sampled. Saying 150 is 'always too small' is also an absolute claim that is not supported.",
+    "D": "This distractor introduces a subjective, non-statistical judgment. Whether 2.4 times per week 'seems' high is a matter of opinion and is not a valid statistical reason to reject the conclusion. The actual flaw is about sample representativeness."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a4b5c6d7-8e9f-0a1b-2c3d-4e5f6a7b8c9d"
+  }
+}

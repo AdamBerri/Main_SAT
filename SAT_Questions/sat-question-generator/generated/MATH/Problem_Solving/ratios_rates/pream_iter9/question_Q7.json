@@ -1,0 +1,54 @@
+{
+  "id": "9b1d5e7a-2c4f-4b8e-a3d7-e6f0c1b2d3a4",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "Printer A prints 12 pages per minute and Printer B prints 8 pages per minute. If both printers work together without stopping, how many minutes will it take to print a document that is 300 pages long?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$15$ minutes",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$25$ minutes",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$37.5$ minutes",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$62.5$ minutes",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "When both printers work together, their rates add: $12 + 8 = 20$ pages per minute. To print 300 pages at a combined rate of 20 pages per minute, the time required is $\\frac{300}{20} = 15$ minutes.",
+  "distractorRationale": {
+    "A": "This is the correct answer: combined rate $= 12 + 8 = 20$ pages/min; time $= \\frac{300}{20} = 15$ minutes.",
+    "B": "Error type: Rate applied to wrong quantity. The student applies only Printer A's rate to the entire job, ignoring Printer B's contribution. Wrong calculation: $\\frac{300}{12} = 25$ minutes. This produces 25 minutes.",
+    "C": "Error type: Wrong term selected from ratio. The student uses only Printer B's rate instead of the combined rate. Wrong calculation: $\\frac{300}{8} = 37.5$ minutes. This produces 37.5 minutes.",
+    "D": "Error type: Direct vs. inverse proportion confusion. Instead of adding the two rates and dividing, the student adds the individual times (treating the problem as additive in time rather than in rate). Wrong calculation: $\\frac{300}{12} + \\frac{300}{8} = 25 + 37.5 = 62.5$ minutes. This produces 62.5 minutes."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d5f9b3c2-8e1a-4c06-a0f7-b2c3d4e5f6a7"
+  }
+}

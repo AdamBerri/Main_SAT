@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2e1-84b0-4d6e-9f12-3c8a5b7e0d94",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "computational": 3.3
+  },
+  "stem": "Which of the following is equivalent to $(3x - 2)(x + 4) - (x^2 - 5x + 1)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2x^2 + 15x - 9$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$2x^2 + 5x - 9$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$2x^2 + 15x - 7$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$4x^2 + 5x - 9$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Step 1: Expand $(3x - 2)(x + 4)$ using FOIL.\n$$3x \\cdot x + 3x \\cdot 4 + (-2) \\cdot x + (-2) \\cdot 4 = 3x^2 + 12x - 2x - 8 = 3x^2 + 10x - 8$$\n\nStep 2: Distribute the negative sign across $(x^2 - 5x + 1)$.\n$$-(x^2 - 5x + 1) = -x^2 + 5x - 1$$\n\nStep 3: Combine the two results.\n$$3x^2 + 10x - 8 + (-x^2 + 5x - 1)$$\n\nStep 4: Collect like terms.\n- $x^2$ terms: $3x^2 - x^2 = 2x^2$\n- $x$ terms: $10x + 5x = 15x$\n- Constants: $-8 - 1 = -9$\n\nThe simplified expression is $2x^2 + 15x - 9$.",
+  "distractorRationale": {
+    "A": "Correct answer: properly expanded and combined all terms including the distributed negative sign.",
+    "B": "Sign error: the student did not distribute the negative sign to $-5x$, treating it as $+(-5x)$ subtracted, giving $10x - 5x = 5x$ instead of $10x + 5x = 15x$.",
+    "C": "Constant error: the student correctly computed $10x + 5x = 15x$ but added the constants as $-8 + 1 = -7$ instead of $-8 - 1 = -9$, failing to apply the negative sign to the $+1$.",
+    "D": "Incomplete factoring: the student did not subtract the $x^2$ term, adding instead of subtracting, giving $3x^2 + x^2 = 4x^2$, and also missed distributing the negative sign to $-5x$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b9d14f30-2c7a-4e85-a631-7f0e3d912c58"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "e5b8d3c7-1a94-4f20-8e67-2b0f9c4a1d83",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "For $x \\neq 3$, which of the following is equivalent to $\\dfrac{x^2 - 9}{x - 3} + 2x$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3x + 3$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$3x - 3$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$x + 3$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$2x^2 - 9$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Step 1: Factor the numerator $x^2 - 9$ as a difference of squares.\n$$x^2 - 9 = (x - 3)(x + 3)$$\n\nStep 2: Simplify the fraction by canceling the common factor $(x - 3)$, valid since $x \\neq 3$.\n$$\\frac{(x-3)(x+3)}{x-3} = x + 3$$\n\nStep 3: Add the remaining term $2x$.\n$$x + 3 + 2x = 3x + 3$$\n\nThe simplified expression is $3x + 3$.",
+  "distractorRationale": {
+    "A": "Correct answer: recognized the difference of squares, canceled correctly, and combined like terms.",
+    "B": "Sign error: the student correctly simplified the fraction to $(x + 3)$ and added $2x$, but made an arithmetic sign error on the constant, writing $3x - 3$ instead of $3x + 3$.",
+    "C": "Incomplete simplification: the student correctly simplified $\\frac{x^2 - 9}{x - 3} = x + 3$ but forgot to add the $2x$ term.",
+    "D": "Failed to factor: the student did not simplify the fraction and instead substituted $\\frac{x^2 - 9}{x - 3} \\approx x^2 - 9$ (ignoring the denominator) and added $2x$ as a combined expression without simplifying."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4e82f71-5b3d-4a09-9d15-8a2c6f047e19"
+  }
+}

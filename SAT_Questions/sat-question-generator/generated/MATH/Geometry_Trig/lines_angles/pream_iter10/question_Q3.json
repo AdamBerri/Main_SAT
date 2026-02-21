@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0003-4aaa-b003-000000000003",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "Two angles are complementary. If one angle measures $27°$, what is the measure of the other angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$153°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$73°$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$63°$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$37°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Complementary angles sum to $90°$. The other angle is $90° - 27° = 63°$.",
+  "distractorRationale": {
+    "A": "Confused complementary with supplementary: $180° - 27° = 153°$.",
+    "B": "Subtracted from $100°$ instead of $90°$.",
+    "C": "Correct. $90° - 27° = 63°$.",
+    "D": "Added $10°$ to the given angle."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.338Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0003-4000-a003-000000000003"
+  }
+}

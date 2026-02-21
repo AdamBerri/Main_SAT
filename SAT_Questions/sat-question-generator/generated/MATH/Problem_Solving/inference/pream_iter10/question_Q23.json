@@ -1,0 +1,54 @@
+{
+  "id": "f2a8d3c1-6e9b-4f7a-8c5d-3b1e4a9f2d6c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "A health nonprofit mailed surveys to 5,000 randomly selected adults from a national voter registration database. Of the 800 adults who returned surveys, 560 reported exercising at least 3 times per week. The nonprofit concludes that approximately 70% of all adults in the country exercise at least 3 times per week. The voter registration database contains 180 million registered voters. A statistician argues that the nonprofit's conclusion is flawed. Which of the following best supports the statistician's concern?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Only 800 of the 5,000 mailed surveys were returned, and adults who voluntarily respond to health surveys likely exercise more than those who did not respond, biasing the sample toward higher exercise rates.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The voter registration database excludes many adults, such as non-citizens and felons, so the population sampled does not represent all American adults.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The sample of 800 respondents represents only 0.00044% of the 180 million registered voters, which is far too small a fraction to support any generalization.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Because the surveys were mailed rather than administered in person, respondents may have answered dishonestly, making the reported exercise rates unreliable.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The nonprofit's critical error is treating the 800 voluntary respondents as a representative random sample from the national population. The original 5,000 were randomly selected from the voter database, but only 800 (16%) chose to return the survey. This creates non-response bias: adults who take the time to complete and return a health survey are likely more health-conscious — and more likely to exercise regularly — than those who did not respond. The 560/800 = 70% figure reflects the exercise rate among self-selected health-survey responders, not among the general adult population. The generalization to all adults is therefore invalid not because of the sample's size relative to the population, but because the 800 respondents are a biased subgroup of the original random sample. Choice A precisely identifies this non-response bias mechanism and explains why it inflates the observed exercise rate.",
+  "distractorRationale": {
+    "A": "Correct. The 800 respondents are a self-selected subset of those mailed surveys. People who choose to return health surveys tend to be more health-conscious, introducing non-response bias that likely overstates the true exercise rate.",
+    "B": "Incorrect. While the voter registration database does exclude some adults (non-citizens, some felons depending on state), this is a secondary concern. The dominant flaw is the non-response bias in the 800 voluntary returns. Even if the database perfectly represented all adults, the 16% response rate would still create a biased sample.",
+    "C": "Incorrect. This applies sample size misapplication. A sample's validity does not depend on what fraction of the population it represents, but on how it was collected. An 800-person random sample from 180 million can be representative; the problem here is not sample size but non-response bias in who returned the survey.",
+    "D": "Incorrect. While self-report bias in surveys is a real concern in general, the question asks for the most significant flaw in the specific inference. Social desirability bias in self-reported exercise might cause some overstatement, but the more fundamental problem — that only 16% of those contacted returned surveys — creates a far more severe and systematic distortion through non-response bias."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d6e3a1f9-8b4c-4d7e-a2f5-9c1b3e8f4a2d"
+  }
+}

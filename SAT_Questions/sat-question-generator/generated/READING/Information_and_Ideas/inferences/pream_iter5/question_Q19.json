@@ -1,0 +1,58 @@
+{
+  "id": "e6f0a1b2-c3d4-4e5f-a6b7-8c9d0e1f2a3b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "Virginia Woolf's essay 'Mr. Bennett and Mrs. Brown' (1924) opens an attack on the Edwardian novelists—Bennett, Galsworthy, Wells—by arguing that they had developed formidable technical tools for describing the external conditions of their characters' lives: the social class structure, the economic arrangements, the architectural features of houses. What they could not do, Woolf contends, was capture Mrs. Brown herself—the real, interior woman sitting across from her in a railway carriage, elusive and inexhaustible. For Woolf, the Edwardians' exhaustive social documentation was not a virtue but a limitation: the scaffolding had become the building. Their novels created the impression that human character could be adequately rendered through its social surround, that knowing a person's income, profession, and neighborhood was equivalent to knowing the person. Woolf's generation, she implies, inherited not techniques but a crisis—the tools fit the old purposes but left the most important thing unwritten.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 155,
+    "source": "Adapted from a critical introduction to Modernist fiction"
+  },
+  "stem": "Which statement about the relationship between Edwardian and Modernist fiction can most reasonably be inferred from Woolf's argument as described in the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Modernist writers rejected social realism entirely in favor of pure psychological exploration.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Edwardian novelists lacked technical skill and produced artistically inferior works.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Modernist fiction arose partly from the perceived inadequacy of inherited novelistic conventions.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Woolf believed that interior psychology and social circumstance are fundamentally incompatible subjects.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage describes Woolf's position that her generation 'inherited not techniques but a crisis'—the existing tools, though sophisticated, left 'the most important thing unwritten.' This framing—skilled predecessors, capable tools, but a fundamental gap in what those tools could accomplish—implies that Modernist writers turned to new approaches precisely because the received conventions were recognized as inadequate for capturing interior human experience. Choice C captures this causal inference: Modernism emerged in response to perceived limitations in inherited forms. This requires the student to synthesize Woolf's critique of Edwardian method, her sense of what was left undone, and the implication that her generation needed to develop different approaches.",
+  "distractorRationale": {
+    "A": "Woolf's criticism targets the Edwardians' exclusive emphasis on social conditions, but the passage does not say Modernists 'rejected social realism entirely.' Woolf's complaint is about imbalance and omission, not a call for complete rejection of the social world—that inference overstates the argument.",
+    "B": "The passage explicitly credits the Edwardians with 'formidable technical tools' and 'exhaustive social documentation,' characterizing them as technically accomplished. Woolf's critique is a critique of purpose and scope, not of craft or artistic quality.",
+    "C": "Correct. The passage frames Woolf's generation as inheritors of a 'crisis' produced by tools that could not accomplish what fiction most needed to do, directly supporting the inference that Modernism emerged from perceived inadequacy in those conventions.",
+    "D": "The passage presents Woolf lamenting that the Edwardians treated social circumstance as a substitute for interior knowledge, implying she believes both are legitimate but that interiority had been neglected. Nothing in the passage suggests she viewed them as fundamentally incompatible—only that the Edwardians treated the former as sufficient."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b7c8d9e0-f1a2-4b3c-d4e5-f6a7b8c9d0e1"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "c4e7a1b9-3f2d-4e8a-9b5c-1d6f8a2e4c7b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "linguistic": 2.3
+  },
+  "passage": "The following passage is adapted from a 2022 article on urban heat islands.\n\nCities tend to be significantly warmer than surrounding rural areas, a phenomenon known as the urban heat island effect. This temperature difference results primarily from the replacement of natural vegetation with heat-absorbing surfaces such as asphalt and concrete. Researchers at the National Oceanic and Atmospheric Administration found that urban centers in the United States recorded average summer temperatures 2 to 5 degrees Fahrenheit higher than nearby rural regions.\n\nOne major factor driving this warming is the reduction in tree canopy cover. Trees provide shade and release water vapor through a process called evapotranspiration, which cools the air. A study published in the journal Urban Forestry & Urban Greening reported that neighborhoods with at least 30 percent tree canopy cover experienced daytime temperatures up to 4 degrees cooler than treeless neighborhoods in the same city.\n\nAnother contributing factor is the buildup of waste heat from vehicles, air conditioning units, and industrial equipment. This anthropogenic heat can raise local temperatures by an additional 1 to 2 degrees in densely populated urban cores. However, city planners have begun introducing green infrastructure strategies—such as green roofs, expanded parks, and reflective pavements—to reduce heat absorption and improve air circulation.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 192,
+    "source": "Adapted from a 2022 NOAA research summary on urban climate"
+  },
+  "stem": "A student is researching how tree cover affects urban temperatures and wants to find evidence that increasing tree canopy in cities directly lowers local air temperatures. Which quotation from the passage best supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Cities tend to be significantly warmer than surrounding rural areas, a phenomenon known as the urban heat island effect.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"Urban centers in the United States recorded average summer temperatures 2 to 5 degrees Fahrenheit higher than nearby rural regions.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Neighborhoods with at least 30 percent tree canopy cover experienced daytime temperatures up to 4 degrees cooler than treeless neighborhoods in the same city.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "\"Anthropogenic heat can raise local temperatures by an additional 1 to 2 degrees in densely populated urban cores.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Choice C is correct. The claim is that increasing tree canopy in cities directly lowers local air temperatures. Choice C provides direct quantified evidence: neighborhoods with at least 30 percent tree canopy cover were up to 4 degrees cooler than treeless neighborhoods in the same city. This directly compares areas with and without tree cover and gives a specific temperature difference, making it the most direct and complete support for the claim.",
+  "distractorRationale": {
+    "A": "Choice A introduces the urban heat island concept in general terms but says nothing specifically about tree cover or its effect on local temperatures.",
+    "B": "Choice B gives temperature data comparing urban centers to rural areas overall, not specifically attributing any temperature difference to tree canopy cover.",
+    "D": "Choice D addresses a different mechanism—waste heat from vehicles and equipment—and shows it raises temperatures rather than lowers them, which is the opposite direction from the claim."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3e7f1b2-8c4d-4e9a-b5f6-2d1c8a7e3f9b"
+  },
+  "hasImage": false
+}

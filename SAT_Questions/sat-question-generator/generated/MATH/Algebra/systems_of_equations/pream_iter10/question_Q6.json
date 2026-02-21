@@ -1,0 +1,54 @@
+{
+  "id": "a02f81d9-ae91-4cac-a33d-d67fde8108d6",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "A rectangular garden has a perimeter of 52 feet. The length of the garden is 6 feet more than its width. What is the width, in feet, of the garden?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$10$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$13$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$16$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$23$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let $w$ = width and $l$ = length, both in feet.\n\nThe perimeter of a rectangle is $2(l + w)$, so:\n$$2(l + w) = 52 \\implies l + w = 26 \\quad (1)$$\n\nThe length is 6 feet more than the width:\n$$l = w + 6 \\quad (2)$$\n\nSubstitute equation (2) into equation (1):\n$$(w + 6) + w = 26$$\n$$2w + 6 = 26$$\n$$2w = 20$$\n$$w = 10$$\n\nBack-substituting: $l = 10 + 6 = 16$.\n\nChecking both equations:\n- Equation (1): $16 + 10 = 26$ ✓\n- Equation (2): $16 = 10 + 6$ ✓\n\nThe width of the garden is $\\boxed{10}$ feet.",
+  "distractorRationale": {
+    "A": "Correct answer: substituting $l = w + 6$ into $l + w = 26$ gives $2w + 6 = 26$, so $w = 10$.",
+    "B": "Single-equation error: the student uses only $l + w = 26$ and incorrectly assumes equal dimensions ($l = w$), giving $2w = 26$ and $w = 13$, ignoring the constraint that $l$ is 6 more than $w$.",
+    "C": "Wrong-variable error: the student correctly solves the system and finds $l = 16$ and $w = 10$, but reports the length $l = 16$ instead of the width.",
+    "D": "Forgot to halve the perimeter: the student skips dividing the perimeter by 2, using $l + w = 52$ instead of $l + w = 26$; substituting $l = w + 6$ gives $2w + 6 = 52 \\Rightarrow 2w = 46 \\Rightarrow w = 23$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "69a5c35c-7fc3-413d-aba4-616e853fe6c1"
+  }
+}

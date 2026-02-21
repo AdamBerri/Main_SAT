@@ -1,0 +1,102 @@
+{
+  "id": "1eb0413f-9242-4e6c-8c67-13b24c7dcf01",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "linguistic": 2.3
+  },
+  "passage": "A team of environmental scientists compared air quality index (AQI) readings across six monitoring stations in a metropolitan area during summer 2024. They concluded that industrial zones consistently recorded worse air quality than residential zones.",
+  "stem": "Which choice most effectively uses data from the figure to support the scientists' conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The three industrial-zone stations recorded average AQI readings of 142, 137, and 128, while the three residential-zone stations recorded averages of 68, 74, and 81.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Station 3, located in a residential zone, recorded an average AQI of 81, which was higher than Station 6's residential reading of 68.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Station 1, in an industrial zone, recorded an average AQI of 142, which was the highest reading among all six stations.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The average AQI across all six stations was 105, placing the metropolitan area's overall air quality in the 'unhealthy for sensitive groups' category.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that industrial zones consistently had worse air quality than residential zones. Choice A supports this by showing all three industrial stations (142, 137, 128) recorded higher AQI values than all three residential stations (68, 74, 81), demonstrating a consistent pattern. Choice B compares two residential stations to each other. Choice C only highlights the single highest station without comparing zones. Choice D provides an overall average that doesn't distinguish between zones.",
+  "distractorRationale": {
+    "A": "Correct: compares all industrial stations to all residential stations, showing every industrial reading exceeds every residential reading.",
+    "B": "Wrong (misread value): compares two residential stations to each other rather than comparing industrial to residential zones.",
+    "C": "Wrong (incomplete evidence): mentions only one industrial station's reading without comparing it to the residential zone pattern.",
+    "D": "Wrong (extrapolation error): calculates an overall average that doesn't appear in the raw data and doesn't distinguish between the two zone types."
+  },
+  "hasImage": true,
+  "imageDescription": "Data table titled 'Summer 2024 Average AQI Readings by Monitoring Station.' Columns: Station, Zone Type, Average AQI. Rows: Station 1 - Industrial - 142; Station 2 - Industrial - 137; Station 4 - Industrial - 128; Station 3 - Residential - 81; Station 5 - Residential - 74; Station 6 - Residential - 68. Source: Metropolitan Air Quality Commission, 2024.",
+  "chartData": {
+    "type": "data_table",
+    "title": "Summer 2024 Average AQI Readings by Monitoring Station",
+    "data": {
+      "columns": [
+        "Station",
+        "Zone Type",
+        "Average AQI"
+      ],
+      "rows": [
+        [
+          "Station 1",
+          "Industrial",
+          142
+        ],
+        [
+          "Station 2",
+          "Industrial",
+          137
+        ],
+        [
+          "Station 4",
+          "Industrial",
+          128
+        ],
+        [
+          "Station 3",
+          "Residential",
+          81
+        ],
+        [
+          "Station 5",
+          "Residential",
+          74
+        ],
+        [
+          "Station 6",
+          "Residential",
+          68
+        ]
+      ]
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 56,
+    "source": "Adapted from Metropolitan Air Quality Commission seasonal report"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.503Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b0fadc34-89e1-488b-af80-beb93246d67e"
+  }
+}

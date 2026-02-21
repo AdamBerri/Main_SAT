@@ -1,0 +1,57 @@
+{
+  "id": "e8a3c7f2-1b9d-4e5a-9f4c-6d2b0a8e7f3c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "Before the interstate highway system reshaped American geography in the mid-twentieth century, many small towns served as vital links in regional trade networks. Merchants in these communities handled goods passing between larger cities, taking a percentage of transactions and reinvesting profits locally. Once bypass roads and trucking routes made it possible to skip these towns entirely, many lost their economic purpose almost overnight.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 68,
+    "source": "Original passage"
+  },
+  "stem": "As used in the passage, \"handled\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "transported",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "processed",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "controlled",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "managed",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In the passage, 'handled' describes what merchants did with goods moving through their communities — they took a percentage of transactions, indicating they acted as intermediaries who received, dealt with, and passed on the goods as part of a commercial operation. 'Processed' best captures this sense of goods moving through a commercial intermediary point where transactions were completed. The merchants were not physically transporting the goods themselves (that was done by others), nor did they control or manage the goods in a governing sense.",
+  "distractorRationale": {
+    "A": "'Transported' implies physically moving goods from one place to another, but the passage describes merchants taking a percentage of transactions, which indicates a commercial intermediary role rather than physical transportation.",
+    "C": "'Controlled' implies authority or power over the goods, but the passage emphasizes the transactional, intermediary nature of the merchants' role — they processed commerce rather than exercising ownership or authority over the goods.",
+    "D": "'Managed' suggests ongoing administration or oversight of goods or operations, but the passage focuses on the transactional moment when goods passed through these towns, not sustained management over time."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b3c9d5e1-4f7a-4b2c-8e6d-1a0f3c8b9e4d"
+  },
+  "hasImage": false
+}

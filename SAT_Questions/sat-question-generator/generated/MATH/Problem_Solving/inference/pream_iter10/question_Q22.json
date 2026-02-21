@@ -1,0 +1,54 @@
+{
+  "id": "e9d1f4a7-3c8b-4e2f-9a5d-7b1c3e6f8d2a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "Two separate studies examined the relationship between daily screen time and sleep duration in teenagers. Study 1 randomly sampled 600 teenagers from a single urban school district and found that teenagers with more than 4 hours of daily screen time slept an average of 1.2 fewer hours per night than those with 4 hours or less. Study 2 randomly sampled 150 teenagers from a national database of households and found no statistically meaningful difference in sleep duration between the two groups. A school board member cites Study 1 to argue that limiting screen time across the country would improve teen sleep nationwide. Which of the following best explains why Study 1 provides weaker support for a nationwide policy than Study 2?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Study 1 sampled more teenagers than Study 2, making its result less reliable because larger samples are more susceptible to variability in the data.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Study 1's sample was drawn from a single urban district, so its results may reflect conditions specific to that district rather than the national teen population.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Study 1 found a correlation between screen time and sleep duration, but because it showed only an association, it cannot be used to support any conclusion about the teen population.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Study 1 involved a random sample within its district, which means its results are only representative of the students in that sample, not even the district as a whole.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The key issue is the scope of the population sampled. Study 1 randomly sampled from a single urban school district — a geographically and demographically narrow population. Urban teenagers may have systematically different screen-time patterns, sleep environments, socioeconomic conditions, and parental oversight compared to suburban or rural teenagers. As a result, Study 1's findings are valid for generalizing within that district but cannot reliably be extended to all teenagers nationwide. Study 2, by contrast, drew from a national household database, giving it a sample whose scope matches the population of interest (national teens). Even though Study 2's sample size (150) is smaller than Study 1's (600), its sampling frame better matches the target population for a national policy. The school board member's error is overgeneralizing Study 1's scope — applying results to a broader population than the one actually sampled.",
+  "distractorRationale": {
+    "A": "Incorrect. This inverts the relationship between sample size and reliability. Larger random samples generally yield more reliable estimates, not less. A student who confuses precision with variability might choose this.",
+    "B": "Correct. Study 1's sampling frame (a single urban district) does not represent the national teen population, making it a weaker basis for a nationwide policy than Study 2, which used a national sample.",
+    "C": "Incorrect. This overstates the limitation of observational/correlational studies. While Study 1's design limits causal claims, the question asks about the basis for a nationwide inference, not about causation vs. correlation. Both studies observe an association; the issue is which study's sample better represents the national population.",
+    "D": "Incorrect. This misidentifies the population that a random sample represents. A random sample from a district does generalize to the district (that is the point of random sampling within that frame). The flaw is not that the sample fails to represent the district, but that the district itself is not representative of the nation."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2f7c9e4-5d1b-4a8f-b3e6-9c2d4f8a1e5b"
+  }
+}

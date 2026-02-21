@@ -1,0 +1,54 @@
+{
+  "id": "f7b1d3a5-2c84-4e17-8a90-3d5f6e2c9b08",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "A scatterplot displays data from a study comparing the number of hours of sunlight per day ($x$) and the daily energy output, in kilowatt-hours, of a set of solar panels ($y$). The points in the scatterplot show that as the number of hours of sunlight increases, the daily energy output also increases. Which of the following best describes the association shown in the scatterplot?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A negative linear association",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "No association",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "A positive linear association",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "A nonlinear association",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The problem states that as the number of hours of sunlight increases, the daily energy output also increases. When both variables increase together, this is a positive association. Because the relationship is described as a consistent directional trend (not curved or irregular), it is best described as a positive linear association.",
+  "distractorRationale": {
+    "A": "Incorrect. A negative association would mean that as one variable increases, the other decreases. The scatterplot shows the opposite pattern.",
+    "B": "Incorrect. No association would mean there is no consistent pattern between the two variables. The scatterplot clearly shows that as sunlight increases, energy output also increases.",
+    "C": "Correct. When both variables increase together in a consistent pattern, the association is positive and linear.",
+    "D": "Incorrect. A nonlinear association describes a curved or non-straight-line pattern. Nothing in the description indicates the relationship is curved; the consistent directional trend is characteristic of a linear association."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4d7e9f2-5a18-4b63-9c32-1e6a0b8d4f27"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "2d7f9a1b-4c83-4e6d-b8f2-5a1c3e7d9b04",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 4.8
+  },
+  "stem": "A manufacturing plant models its total daily cost $C(n)$ in dollars as a linear function of $n$, the number of units produced per day. When daily output increases from 40 units to 60 units, the total daily cost increases by $\\$500$. When 50 units are produced, the total daily cost is $\\$3{,}200$.\n\nThe plant manager proposes a cost-reduction plan that would lower the fixed daily cost (the $y$-intercept of $C$) by $\\$400$, while keeping the per-unit cost the same. Let $C'$ denote the new cost function. For what value of $k$ does $C'(k)$ equal the original cost $C(30)$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$30$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$46$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$56$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$62$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Step 1: Find the per-unit cost (slope).**\nWhen output increases from 40 to 60 units ($\\Delta n = 20$), cost increases by $\\$500$:\n$$\\text{slope} = \\frac{500}{60 - 40} = \\frac{500}{20} = 25 \\text{ dollars per unit}$$\n\n**Step 2: Find the fixed daily cost (y-intercept).**\nUsing $C(n) = 25n + b$ and $C(50) = 3{,}200$:\n$$25(50) + b = 3{,}200 \\Rightarrow 1{,}250 + b = 3{,}200 \\Rightarrow b = 1{,}950$$\nSo $C(n) = 25n + 1{,}950$.\n\n**Step 3: Write the new cost function $C'$.**\nThe fixed cost is reduced by $\\$400$:\n$$C'(n) = 25n + (1{,}950 - 400) = 25n + 1{,}550$$\n\n**Step 4: Find $C(30)$.**\n$$C(30) = 25(30) + 1{,}950 = 750 + 1{,}950 = 2{,}700$$\n\n**Step 5: Solve $C'(k) = 2{,}700$.**\n$$25k + 1{,}550 = 2{,}700 \\Rightarrow 25k = 1{,}150 \\Rightarrow k = 46$$\n\n**Verify:** $C'(46) = 25(46) + 1{,}550 = 1{,}150 + 1{,}550 = 2{,}700 = C(30)$. ✓",
+  "distractorRationale": {
+    "A": "Uses $C(k) = C(30)$ with the original function (ignores the cost reduction entirely): since $C$ is linear with positive slope, $C(k) = C(30)$ implies $k = 30$.",
+    "B": "Correct: $C(n)=25n+1{,}950$, $C'(n)=25n+1{,}550$, $C(30)=2{,}700$; solves $25k+1{,}550=2{,}700 \\Rightarrow k=46$.",
+    "C": "Misreads the problem and computes the original cost of 40 units (instead of 30 units): $C(40) = 25(40)+1{,}950 = 2{,}950$; solves $25k+1{,}550=2{,}950 \\Rightarrow 25k=1{,}400 \\Rightarrow k=56$.",
+    "D": "Adds the $\\$400$ reduction to the target cost instead of subtracting it from the fixed cost: sets $C'(k) = C(30)+400 = 2{,}700+400 = 3{,}100$; solves $25k+1{,}550=3{,}100 \\Rightarrow 25k=1{,}550 \\Rightarrow k=62$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3e6b8c4f-7a92-4d1e-b5c0-8f2a4d6e9b17"
+  }
+}

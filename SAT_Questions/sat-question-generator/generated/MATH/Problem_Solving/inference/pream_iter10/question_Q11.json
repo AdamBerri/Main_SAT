@@ -1,0 +1,54 @@
+{
+  "id": "b3f7a2e9-4c1d-4f8a-9e5b-2d6c8a1f3b7e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "computational": 3.3
+  },
+  "stem": "A school district wants to estimate the average number of hours per week students spend on homework. A researcher randomly selects 80 students from Jefferson High School and finds that the average is 9.4 hours per week. A second researcher randomly selects 80 students from the same school and finds an average of 8.8 hours per week. Which of the following best explains the difference between the two sample averages?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "One of the researchers must have made an error in data collection, since two random samples from the same population should yield identical averages.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Natural sampling variability means that two random samples from the same population will typically produce somewhat different results.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The sample size of 80 is too small to produce consistent estimates, so results from samples this size cannot be compared meaningfully.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The difference indicates that the true population average is exactly halfway between the two values, at 9.1 hours per week.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "When two researchers each take separate random samples from the same population, they will almost certainly obtain different sample means — this is expected and is called sampling variability (or sampling error). Each random sample captures a slightly different subset of students, and different subsets will have different averages even when drawn from the same population. The two averages of 9.4 and 8.8 hours differ by only 0.6 hours, which is consistent with normal sampling variation. This does not indicate an error, a problem with sample size, or that the true mean is the midpoint. Sampling variability is a fundamental concept: no two random samples will produce identical statistics, and this is normal, expected behavior — not a flaw in methodology.",
+  "distractorRationale": {
+    "A": "Error type 2 (wrong confidence interpretation): This choice reflects the misconception that random samples must produce identical results, misunderstanding that variability across samples is expected and normal, not a sign of error.",
+    "B": "Correct. Sampling variability is the natural, expected phenomenon where different random samples from the same population produce different statistics.",
+    "C": "Error type 6 (sample size misapplication): This choice incorrectly suggests that n = 80 is inherently too small for valid comparisons. It conflates small sample size (a real concern in some contexts) with the entirely different phenomenon of sampling variability, which occurs regardless of sample size.",
+    "D": "Error type 1 (confusing sample with population): This choice incorrectly treats the two sample means as if they bracket the true population mean with certainty, and concludes that averaging them yields the exact true mean — a fundamental misunderstanding of how sample statistics relate to population parameters."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4e8b1f2-7d3a-4e9f-8c2b-5a6d1e4f9c3b"
+  }
+}

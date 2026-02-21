@@ -5,7 +5,7 @@
     "subtopic": "command_of_evidence"
   },
   "config": {
-    "maxIterations": 5,
+    "maxIterations": 10,
     "trainTestSplit": 0.8,
     "convergenceThreshold": 0.02,
     "minSamplesPerIteration": 20,
@@ -209,7 +209,7 @@
             "frequency": 2,
             "exampleErrors": [
               "Distractor C is too easy to eliminate (timing vs. resources are conceptually distant) and distractor D requires domain knowledge, creating uneven discrimination across answer choices",
-              "Distractors C and D are too weak\u2014C is obviously supporting data rather than explicit claims, and D doesn't mention the core actor (sea otters) at all, making them trivially eliminable"
+              "Distractors C and D are too weak—C is obviously supporting data rather than explicit claims, and D doesn't mention the core actor (sea otters) at all, making them trivially eliminable"
             ]
           }
         ]
@@ -220,11 +220,123 @@
       },
       "improvementMade": "Addressed: difficulty_accuracy, answer_validity, distractor_quality",
       "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.321,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "weak_distractors_easy_difficulty",
+            "frequency": 4,
+            "exampleErrors": [
+              "Q1,Q3,Q4,Q5 d1 scored 2 on distractor_quality — distractors address entirely different aspects"
+            ]
+          },
+          {
+            "category": "weak_distractors_medium",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q15 d3 distractor asserts claim without quantified data"
+            ]
+          },
+          {
+            "category": "low_difficulty_distractor_ceiling",
+            "frequency": 5,
+            "exampleErrors": [
+              "All bottom 5 share distractor_quality as weakest dimension"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.833,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: weak_distractors_easy_difficulty (explicit d1-2 distractor rules requiring passage evidence), weak_distractors_medium (require quantified evidence in all d3 distractors), low_difficulty_distractor_ceiling (added critical distractor quality section)",
+      "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.383,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_easy",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q1,Q2,Q3 d1 still scoring 3 on distractor_quality despite guidance"
+            ]
+          },
+          {
+            "category": "distractor_quality_hard",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q18 d4 uses authors interpretive conclusion as distractor instead of evidence"
+            ]
+          },
+          {
+            "category": "difficulty_accuracy_medium",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q14 d3 combined-quote structure borders on d4 reasoning"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.734,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor_quality_easy (require same variable/outcome), distractor_quality_hard (ban interpretive summaries at d4-5), difficulty_accuracy_medium (require self-contained excerpts at d3)",
+      "newPromptVersion": "1.5.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.5.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.417,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.775,
+        "passRate": 1
+      },
+      "improvementMade": "Converged at +0.9%. 100% pass rate on both sets.",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 8,
+      "promptVersionUsed": "1.5.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.642,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.766,
+        "passRate": 1
+      },
+      "improvementMade": "Converged: <2% improvement",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.2.0",
-  "converged": false,
+  "currentBestVersion": "1.4.0",
+  "converged": true,
   "startedAt": "2026-01-08T18:49:18.644Z",
-  "completedAt": null,
-  "bestTestScore": 3.9375
+  "completedAt": "2026-02-20T22:27:19.364Z",
+  "bestTestScore": 4.833
 }

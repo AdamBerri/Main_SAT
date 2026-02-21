@@ -1,0 +1,58 @@
+{
+  "id": "e6a1c3d4-9f2b-4a8e-8b1c-3d7f9a2e5c1b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "linguistic": 2.2
+  },
+  "passage": "Text 1\nMandatory community service requirements for high school graduation have gained traction across many school districts. Proponents argue that requiring students to volunteer instills civic responsibility, exposes young people to community needs they might not otherwise encounter, and builds empathy through direct engagement with diverse populations. Many educators believe these experiences shape students into more active and informed citizens.\n\nText 2\nWhen communities compel young people to volunteer, they risk undermining the very values such programs aim to cultivate. Psychological research on motivation suggests that mandatory participation erodes intrinsic interest: once an activity becomes obligatory, individuals no longer associate it with personal choice or genuine commitment. Students who resent being required to serve are unlikely to develop authentic civic engagement beyond the minimum required hours.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 138,
+    "source": "Original passages"
+  },
+  "stem": "Which choice best describes the relationship between the two texts?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 and Text 2 agree that mandatory service programs benefit students but disagree about whether schools should administer them.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 2 argues that making community service compulsory may defeat the goal that Text 1 claims such programs achieve.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 2 supports Text 1 by providing psychological evidence that confirms service programs build civic responsibility.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 identifies a flaw in mandatory service programs that Text 2 attempts to resolve through psychological research.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 argues that mandatory community service programs successfully cultivate civic responsibility and empathy in students. Text 2 does not dispute the desirability of civic engagement; instead, it argues that the mandatory nature of such programs is self-defeating—psychological research shows that compulsion erodes intrinsic motivation, making it less likely students will develop genuine commitment to civic life. Text 2 thus challenges Text 1 not by rejecting the goal but by arguing that the mandatory format of the programs Text 1 endorses is likely to undermine the very outcome Text 1 values.",
+  "distractorRationale": {
+    "A": "The texts do not agree that mandatory programs benefit students. Text 2 explicitly disputes whether mandatory participation produces the civic benefits Text 1 attributes to such programs.",
+    "B": "Correct. Text 2 uses psychological research to argue that mandatory service is counterproductive, directly challenging the claim in Text 1 that required volunteering builds genuine civic responsibility.",
+    "C": "Text 2 does not confirm Text 1's claims. The psychological evidence it cites is used to argue against the effectiveness of mandatory programs, not to support Text 1's optimistic view.",
+    "D": "Text 1 does not identify any flaw in mandatory service programs; it endorses them. Text 2 is the one raising a critical concern, and it does not attempt to resolve a problem—it argues that the mandatory format is itself the problem."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c8e1a3f5-7d2b-4c9e-8f4a-1b6d3e7c9a2f"
+  },
+  "hasImage": false
+}

@@ -25,7 +25,7 @@
             "category": "difficulty_overestimation",
             "frequency": 5,
             "exampleErrors": [
-              "Question rated 5/5 difficulty but actually 3.5-4/5 due to single-concept application and straightforward calculation (400 \u00d7 4 = 1,600)",
+              "Question rated 5/5 difficulty but actually 3.5-4/5 due to single-concept application and straightforward calculation (400 × 4 = 1,600)",
               "Computational difficulty rated 5/5 when actual computation is simply basic arithmetic (2.5/5 actual)",
               "Overall difficulty 3/5 overstated as 2.3-2.5/5 due to minimal computational burden and standard statistics concept"
             ]
@@ -44,7 +44,7 @@
             "frequency": 3,
             "exampleErrors": [
               "Tests confidence intervals and margin of error calculations which are AP Statistics content, not SAT Math curriculum",
-              "SAT deliberately excludes inferential statistics and hypothesis testing - this question requires understanding ME \u221d 1/\u221an",
+              "SAT deliberately excludes inferential statistics and hypothesis testing - this question requires understanding ME ∝ 1/√n",
               "Uses technical statistical terminology like '95% confidence level' and 'margin of error' inappropriate for SAT vocabulary"
             ]
           },
@@ -143,7 +143,7 @@
             "frequency": 5,
             "exampleErrors": [
               "Question stated as 5/5 difficulty but actual difficulty is 3.5-4/5 due to explicit guidance in stem and straightforward elimination strategy without requiring deep conceptualization",
-              "Question marked 4/5 difficulty but actual difficulty is 2.5-3/5 because calculation is basic proportion scaling (68/200 \u00d7 8,000) requiring only elementary arithmetic",
+              "Question marked 4/5 difficulty but actual difficulty is 2.5-3/5 because calculation is basic proportion scaling (68/200 × 8,000) requiring only elementary arithmetic",
               "Question rated 5/5 difficulty but actual difficulty is 3.5-4/5 because confidence interval is provided explicitly with zero computation required; students only interpret given information"
             ]
           },
@@ -160,7 +160,7 @@
             "category": "answer_key_logic_flaw",
             "frequency": 2,
             "exampleErrors": [
-              "Answer choice A is marked correct but logically incomplete\u2014the arithmetic is correct (68/200 \u00d7 8,000 = 2,720) but doesn't validate the inference as statistically sound; authentic SAT questions differentiate between 'math works' and 'inference is valid'",
+              "Answer choice A is marked correct but logically incomplete—the arithmetic is correct (68/200 × 8,000 = 2,720) but doesn't validate the inference as statistically sound; authentic SAT questions differentiate between 'math works' and 'inference is valid'",
               "Answer key accepts choice A without acknowledging that correct arithmetic alone doesn't establish statistical validity; should require qualifying the claim as a 'reasonable estimate' rather than definitive proof"
             ]
           },
@@ -188,11 +188,207 @@
       },
       "improvementMade": "Addressed: difficulty_overestimation, computational_vs_conceptual_mismatch, answer_key_logic_flaw",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 4,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.625,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "difficulty_miscalibration_medium",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q13 difficulty_accuracy:3"
+            ]
+          },
+          {
+            "category": "answer_validity_medium_difficulty",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q11 answer_validity:4",
+              "Q15 answer_validity:4",
+              "Q20 answer_validity:4"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.95,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: difficulty accuracy at medium level, answer validity mandatory checks",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.554,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "minor_answer_validity",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q19, Q20, Q25 had answer_validity:4"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.733,
+        "passRate": 1
+      },
+      "improvementMade": "Final iteration (5/5). 100% pass. Best score 5.194 from v1.1.0 (iter 5 declined -4.4%).",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.492,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "weak_distractors",
+            "frequency": 2
+          },
+          {
+            "category": "difficulty_mismatch",
+            "frequency": 2
+          },
+          {
+            "category": "topic_faithfulness",
+            "frequency": 1
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.85,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor quality for inference, difficulty calibration, topic faithfulness",
+      "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.667,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "test_answer_validity",
+            "frequency": 3
+          },
+          {
+            "category": "distractor_quality",
+            "frequency": 1
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.45,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: test set answer validity, distractor quality",
+      "newPromptVersion": "1.5.0"
+    },
+    {
+      "iteration": 8,
+      "promptVersionUsed": "1.5.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.646,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_d2",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q9 distractor:3"
+            ]
+          },
+          {
+            "category": "answer_validity_d2",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q6,Q7,Q10 answer_validity:4"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: d2 answer_validity and distractor quality",
+      "newPromptVersion": "1.6.0"
+    },
+    {
+      "iteration": 9,
+      "promptVersionUsed": "1.6.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.642,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_d1",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q3 distractor:3"
+            ]
+          },
+          {
+            "category": "faithfulness_d2",
+            "frequency": 4,
+            "exampleErrors": [
+              "Q6-Q9 faithfulness:4"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.867,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: d1 distractor, d2 faithfulness",
+      "newPromptVersion": "1.7.0"
+    },
+    {
+      "iteration": 10,
+      "promptVersionUsed": "1.7.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.475,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.3,
+        "passRate": 1
+      },
+      "improvementMade": "Converged with 100% pass rate",
+      "newPromptVersion": null
     }
   ],
   "currentBestVersion": "1.1.0",
-  "converged": false,
+  "converged": true,
   "startedAt": "2026-01-08T20:32:05.145Z",
-  "completedAt": null,
+  "completedAt": "2026-02-21T02:26:27.983Z",
   "bestTestScore": 5.194444444444444
 }

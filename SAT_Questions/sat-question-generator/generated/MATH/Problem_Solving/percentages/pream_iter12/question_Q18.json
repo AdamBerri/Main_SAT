@@ -1,0 +1,54 @@
+{
+  "id": "e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.2,
+    "computational": 4
+  },
+  "stem": "An investor deposits $10,000 into an account that earns 8% annual interest compounded once per year. After 2 years, the investor withdraws all the money. How much does the investor withdraw?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$11,600",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$11,664",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$12,000",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$10,800",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "After year 1: $10,000 × 1.08 = $10,800. After year 2: $10,800 × 1.08 = $11,664.",
+  "distractorRationale": {
+    "A": "Student used simple interest instead of compound: $10,000 × 0.08 × 2 = $1,600, total = $11,600.",
+    "B": "Correct answer.",
+    "C": "Student used 10% per year instead of 8%: $10,000 × 1.10 × 1.10 = $12,100, but more likely doubled the rate: $10,000 × 1.20 = $12,000.",
+    "D": "Student computed only one year of interest: $10,000 × 1.08 = $10,800."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:17.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c6d7e8f9-a0b1-2c3d-4e5f-6a7b8c9d0e1f"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "c5d6e7f8-ffff-4c1d-2e3f-4a5b6c7d8e90",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "Sociologists studying the effects of remote work on professional relationships found that employees who transitioned to fully remote arrangements reported weaker connections with colleagues after six months. Those same employees, however, also reported higher job satisfaction and greater autonomy. _______ the researchers argued that organizations should not interpret the weakening of social bonds as evidence that remote work is harmful overall, since the gains in satisfaction and autonomy may themselves foster a different but equally valuable form of workplace engagement.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 95,
+    "source": "Adapted from a workplace sociology journal"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "In light of these competing findings,",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Surprisingly,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Therefore,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "On the contrary,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage presents two contrasting findings: weaker colleague connections (negative) alongside higher satisfaction and autonomy (positive). The third sentence then synthesizes these mixed results into a nuanced conclusion. 'In light of these competing findings' correctly signals that the researchers' argument responds to and accounts for both the positive and negative results. 'Therefore' might tempt students who see the conclusion as following from one set of findings, but it fails to capture the tension between the two competing results. 'On the contrary' might tempt students who see the researchers pushing back against a negative interpretation, but the researchers are not contradicting either finding; they are synthesizing both.",
+  "distractorRationale": {
+    "A": "Correct. 'In light of these competing findings' signals that the researchers' argument takes both the negative (weaker bonds) and positive (higher satisfaction) findings into account.",
+    "B": "'Surprisingly' signals an unexpected result, but the researchers' argument is a deliberate interpretation of evidence, not an unexpected finding.",
+    "C": "'Therefore' signals a logical consequence of one direction of evidence, but the argument explicitly weighs both positive and negative findings, not just one.",
+    "D": "'On the contrary' signals a direct contradiction, but the researchers are not contradicting either finding; they are proposing a nuanced interpretation that incorporates both."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:04:04.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c5ffffff-d6e7-4f8a-9b0c-1d2e3f4a5b67"
+  },
+  "hasImage": false
+}

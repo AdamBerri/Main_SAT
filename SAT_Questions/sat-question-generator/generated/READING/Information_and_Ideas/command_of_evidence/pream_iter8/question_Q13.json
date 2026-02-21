@@ -1,0 +1,57 @@
+{
+  "id": "f7a8b9c0-d1e2-4f3b-8c4d-5e6f7a8b9c0d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "The following passage is adapted from a 2023 article on antibiotic resistance in agricultural settings.\n\nThe widespread use of antibiotics in livestock production has generated substantial concern among public health experts, who warn that agricultural antibiotic use may be accelerating the development of drug-resistant bacterial strains capable of infecting humans.\n\nIn the United States, approximately 65% of medically important antibiotics sold are used in food-animal production, according to FDA sales data. Many of these drugs are administered not to treat sick animals but as growth promoters — low doses given to healthy animals to improve feed efficiency and weight gain. This subtherapeutic dosing is of particular concern because it creates conditions that favor the survival and proliferation of bacteria with existing resistance genes, without reaching the concentrations needed to eliminate even resistant strains.\n\nResearchers sampling soil and water near large-scale hog operations in North Carolina detected tetracycline-resistant bacteria at concentrations 100 to 1,000 times higher than in samples collected from fields not associated with livestock farming. A separate study published in Environmental Health Perspectives found that farm workers at antibiotic-treated operations carried methicillin-resistant Staphylococcus aureus (MRSA) at four times the rate of workers at operations that did not use antibiotics.\n\nNot all uses of agricultural antibiotics are equivalent in their resistance risk. Therapeutic treatment of clinically ill animals — administering a full curative dose for a defined period — is considered substantially lower-risk than subtherapeutic use, because proper dosing eliminates susceptible and resistant bacteria alike rather than selecting for resistant variants.\n\nSeveral countries, including Denmark and the Netherlands, phased out subtherapeutic antibiotic use in livestock during the 1990s and 2000s. Monitoring data from Denmark showed that within five years of the ban, resistant enterococcal bacteria in broiler chickens declined by more than 60%.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 276,
+    "source": "Adapted from a 2023 public health policy article"
+  },
+  "stem": "A public health advocate argues that agricultural antibiotic use creates environments near farms where resistant bacteria are present at far higher levels than in non-agricultural areas. Which evidence from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"approximately 65% of medically important antibiotics sold are used in food-animal production, according to FDA sales data\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"subtherapeutic dosing is of particular concern because it creates conditions that favor the survival and proliferation of bacteria with existing resistance genes\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Researchers sampling soil and water near large-scale hog operations in North Carolina detected tetracycline-resistant bacteria at concentrations 100 to 1,000 times higher than in samples collected from fields not associated with livestock farming.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "\"farm workers at antibiotic-treated operations carried methicillin-resistant Staphylococcus aureus (MRSA) at four times the rate of workers at operations that did not use antibiotics\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The claim asserts that agricultural antibiotic use creates environments near farms with far higher levels of resistant bacteria compared to non-agricultural areas. Choice C directly addresses all key elements: it specifies the environment near farms (soil and water near hog operations), it quantifies the resistance bacteria levels (100 to 1,000 times higher), and it explicitly compares those levels to non-agricultural fields. The evidence requires no inferential steps — it is a direct match for each element of the claim. Choice D is a strong distractor because it also involves resistant bacteria connected to antibiotic use, but it measures resistance in farm workers (people), not in the environment near farms.",
+  "distractorRationale": {
+    "A": "Choice A shows the scale of antibiotic use in agriculture but does not measure resistant bacteria levels in the environment near farms. It addresses how much antibiotics are used, not where resistant bacteria appear or at what concentrations.",
+    "B": "Choice B explains the mechanism by which subtherapeutic dosing promotes resistance but provides no measurement of resistant bacteria in any environment, agricultural or otherwise. It supports the 'why' but not the comparative concentration claim.",
+    "C": "This is the correct answer. See explanation above.",
+    "D": "Choice D provides quantified evidence of antibiotic resistance differences (four times the MRSA rate) associated with antibiotic use. However, it measures resistance in farm workers — people occupationally exposed to farms — rather than in soil or water environments near farms, which is what the claim specifies."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a8b9c0d1-e2f3-4a4b-9c5d-6e7f8a9b0c1d"
+  }
+}

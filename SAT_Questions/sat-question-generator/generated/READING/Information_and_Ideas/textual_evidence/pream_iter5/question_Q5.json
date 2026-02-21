@@ -1,0 +1,58 @@
+{
+  "id": "f7c2d5e6-8a3b-4c4d-e5f6-a7b8c9d00005",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "Text 1\nA community garden program in a mid-sized city allows residents to rent small garden plots for growing vegetables and herbs. Program coordinators report that participants often share surplus produce with neighbors, which strengthens community bonds. Coordinators also note that residents who tend garden plots consistently report feeling more satisfied with their neighborhood than those who do not participate.\n\nNote from a city survey conducted after the program's second year:\nResidents were asked to rate their neighborhood satisfaction on a scale of 1 to 5 (5 = most satisfied). Average ratings by participation status were:\n\n| Participation | Average Satisfaction Rating |\n|---|---|\n| Non-participants | 2.9 |\n| Garden participants | 4.2 |",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 131,
+    "source": "Adapted from a municipal community garden program report"
+  },
+  "stem": "What do Text 1 and the note together most directly support?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Garden participants reported higher neighborhood satisfaction than non-participants.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Non-participants were more satisfied with their neighborhood than garden participants.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Both participants and non-participants gave identical satisfaction ratings.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The program had no measurable effect on neighborhood satisfaction.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Text 1 states that residents who tend garden plots \"consistently report feeling more satisfied with their neighborhood\" than non-participants. The note's survey data directly confirms this: garden participants averaged a satisfaction rating of 4.2 compared to 2.9 for non-participants. Both sources align clearly to support choice A.",
+  "distractorRationale": {
+    "A": "This is the correct answer.",
+    "B": "The survey data shows the opposite: non-participants averaged 2.9 while garden participants averaged 4.2. This distractor reverses the actual relationship shown in the note.",
+    "C": "The note shows distinct ratings of 4.2 and 2.9 for the two groups — a difference of 1.3 points on a 5-point scale. This distractor directly contradicts the numerical data.",
+    "D": "Both Text 1's qualitative observation and the note's quantitative data indicate a clear difference between participants and non-participants in satisfaction. This distractor contradicts both sources."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f0005"
+  },
+  "hasImage": false
+}

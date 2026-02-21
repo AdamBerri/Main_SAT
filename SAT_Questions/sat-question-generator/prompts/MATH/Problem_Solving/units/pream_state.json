@@ -34,8 +34,8 @@
             "category": "distractor_rationale_inconsistency",
             "frequency": 5,
             "exampleErrors": [
-              "Distractor rationale claims students 'divide by 8 without proper consideration' but calculation 24,346\u00f78=3,043 is actually the CORRECT step",
-              "States distractor A results from formula '216,000\u00f72.5\u00f729.5735\u00f78' but this yields ~365, not stated value of 4,100",
+              "Distractor rationale claims students 'divide by 8 without proper consideration' but calculation 24,346÷8=3,043 is actually the CORRECT step",
+              "States distractor A results from formula '216,000÷2.5÷29.5735÷8' but this yields ~365, not stated value of 4,100",
               "Rationale says 'multiplying by 10' produces distractor but mathematical path to reach that value is unclear and implausible"
             ]
           },
@@ -113,7 +113,7 @@
             "category": "implausible_distractor_design",
             "frequency": 2,
             "exampleErrors": [
-              "Distractor 4,320 lacks obvious procedural misconception that yields it naturally - the relationship 4,320 = 12 \u00d7 360 doesn't arise from realistic student error patterns",
+              "Distractor 4,320 lacks obvious procedural misconception that yields it naturally - the relationship 4,320 = 12 × 360 doesn't arise from realistic student error patterns",
               "Distractor A (20) targets stopping before unit conversion and division but is implausibly small given production rate context - eliminable through reasonableness check without demonstrating conceptual understanding"
             ]
           },
@@ -149,7 +149,7 @@
               "Question exceeds typical SAT complexity with 5-6 sequential steps and stacked unit conversions; authentic SAT problems limit to 2-4 steps maximum",
               "Ambiguous language ('approximately') contradicts exact answer choices without justification or range specification consistent with SAT format",
               "Distractors do not reflect typical SAT error patterns; missing obvious intermediate wrong answers like forgetting specific conversion steps",
-              "Over-reliance on calculator-dependent arithmetic (270,336,000 \u00f7 150) exceeds typical non-calculator SAT item complexity",
+              "Over-reliance on calculator-dependent arithmetic (270,336,000 ÷ 150) exceeds typical non-calculator SAT item complexity",
               "Answer choice magnitude imbalances (795 disproportionately large compared to 13.2, 55.5, 210) suggest artificial construction rather than organic error patterns"
             ]
           },
@@ -185,7 +185,7 @@
             "category": "mathematical_or_calculation_errors",
             "frequency": 2,
             "exampleErrors": [
-              "Calculation verification shows 3.5 \u00d7 3.785 \u00d7 60 = 794.85, not exactly 794; rounding inconsistency creates answer key ambiguity",
+              "Calculation verification shows 3.5 × 3.785 × 60 = 794.85, not exactly 794; rounding inconsistency creates answer key ambiguity",
               "Working backward from answer D (880,000) yields required production rate of 1.171875 kg/hr, not the stated 2.4 kg/hr, exposing fundamental parameter mismatch"
             ]
           }
@@ -228,16 +228,16 @@
             "category": "difficulty_miscalibration",
             "frequency": 2,
             "exampleErrors": [
-              "Question stated as 4/5 difficulty but actual difficulty is 3/5 (medium) because formula is straightforward (Rate \u00d7 Time \u00f7 Container Size) with provided conversion factor and well-separated answer choices",
-              "Question rated 3/5 (medium) but contains fatal mathematical inconsistency making it unsolvable\u2014students following correct procedures arrive at contradictory results"
+              "Question stated as 4/5 difficulty but actual difficulty is 3/5 (medium) because formula is straightforward (Rate × Time ÷ Container Size) with provided conversion factor and well-separated answer choices",
+              "Question rated 3/5 (medium) but contains fatal mathematical inconsistency making it unsolvable—students following correct procedures arrive at contradictory results"
             ]
           },
           {
             "category": "missing_distractor_plausibility",
             "frequency": 2,
             "exampleErrors": [
-              "Distractors A (2,400) and B (4,880) are magnitude implausible\u2014students reject them on reasonableness checks alone rather than mathematical understanding, failing to discriminate between guessing and competence",
-              "No distractor targets common computational error where students correctly convert units but make arithmetic mistakes (e.g., 12 \u00d7 150 = 1,500), leaving a gap in error-trapping"
+              "Distractors A (2,400) and B (4,880) are magnitude implausible—students reject them on reasonableness checks alone rather than mathematical understanding, failing to discriminate between guessing and competence",
+              "No distractor targets common computational error where students correctly convert units but make arithmetic mistakes (e.g., 12 × 150 = 1,500), leaving a gap in error-trapping"
             ]
           },
           {
@@ -255,11 +255,83 @@
       },
       "improvementMade": "Addressed: answer_key_error, distractor_incoherence, difficulty_miscalibration",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.867,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "weak_distractor_rationales",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q21 and Q24 had distractors with multiple conflicting error explanations"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.733,
+        "passRate": 1
+      },
+      "improvementMade": "Final iteration (5/5). 100% pass rate. Best score 4.733 from this iteration.",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.771,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "very_weak_distractors",
+            "frequency": 2
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 1
+          },
+          {
+            "category": "minor_faithfulness",
+            "frequency": 1
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.833,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor realism for unit conversion, difficulty calibration, faithfulness",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.81,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 4.9,
+        "passRate": 1
+      },
+      "improvementMade": "Converged: <2% improvement",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.1.0",
-  "converged": false,
+  "currentBestVersion": "1.3.0",
+  "converged": true,
   "startedAt": "2026-01-08T20:55:29.457Z",
-  "completedAt": null,
-  "bestTestScore": 4.65625
+  "completedAt": "2026-02-20T22:38:49.071Z",
+  "bestTestScore": 4.9
 }

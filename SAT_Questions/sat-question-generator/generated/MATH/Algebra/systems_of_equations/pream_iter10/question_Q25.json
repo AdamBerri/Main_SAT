@@ -1,0 +1,54 @@
+{
+  "id": "e8f1a5c3-2b4d-4e6f-a0b2-c4d6e8f0a2b4",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 4.8
+  },
+  "stem": "A data analyst combines measurements from two datasets. Dataset X has $m$ measurements with a mean of 35, and Dataset Y has $n$ measurements with a mean of 20. Together, the combined dataset of 60 measurements has a mean of 26. How many more measurements does Dataset Y have than Dataset X?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$0$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$12$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$20$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$36$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Set up a system of two equations. Let $m$ = number of measurements in Dataset X and $n$ = number of measurements in Dataset Y.\n\n**Equation 1** (total count):\n$$m + n = 60$$\n\n**Equation 2** (combined mean condition — total sum equals combined mean times total count):\n$$35m + 20n = 26 \\times 60 = 1560$$\n\n**Step 1:** Solve equation 1 for $m$: $m = 60 - n$.\n\n**Step 2:** Substitute into equation 2:\n$$35(60 - n) + 20n = 1560$$\n$$2100 - 35n + 20n = 1560$$\n$$-15n = -540$$\n$$n = 36$$\n\n**Step 3:** Find $m$: $m = 60 - 36 = 24$.\n\n**Checking both equations:**\n- Equation 1: $24 + 36 = 60$ ✓\n- Equation 2: $35(24) + 20(36) = 840 + 720 = 1560$ ✓\n\n**Answer:** Dataset Y has $n - m = 36 - 24 = \\mathbf{12}$ more measurements than Dataset X.",
+  "distractorRationale": {
+    "A": "Assumes the combined mean must be the simple average of the two individual means $\\left(\\frac{35+20}{2} = 27.5\\right)$, then forces equal group sizes ($m = n = 30$) to explain the discrepancy, giving $n - m = 0$.",
+    "B": "Correct. Setting up $m + n = 60$ and $35m + 20n = 1560$, then solving gives $n = 36$, $m = 24$, and $n - m = 12$.",
+    "C": "Divides 360 by 18 instead of 15 when simplifying $-15n = -540$ (a computation error), getting $n = 20$; then $m = 40$ and $n - m = -20$, and reports the absolute value $20$.",
+    "D": "Correctly finds $n = 36$ but reports the count of Dataset Y measurements rather than the difference $n - m = 12$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "d2a9f5c3-8e1b-4d7a-9f2c-6b4e8a1d3c7f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "In the nineteenth century, public libraries were sometimes called \"palaces for the people\"—grand buildings meant to signal that civic knowledge belonged to everyone, not just the wealthy. But access alone was never the full story. Early librarians spent considerable energy on reader guidance: recommending titles, curating collections, and deciding which books were suitable for different patrons. These gatekeeping practices were often paternalistic, shaped by assumptions about class, gender, and moral fitness.\n\nOver time, the profession shifted toward intellectual freedom. The American Library Association adopted its Library Bill of Rights in 1939, asserting that libraries should provide materials representing all points of view. Today's librarians generally see their role as facilitating access rather than directing what people read. Yet recent debates over book challenges in school and public libraries suggest that questions about curation, community values, and professional judgment have never been fully resolved.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 152,
+    "source": "Adapted from a history of American public libraries"
+  },
+  "stem": "Which choice best states the main idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The American Library Association's 1939 Library Bill of Rights transformed the library profession by prioritizing intellectual freedom over reader guidance.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Public libraries have shifted from directing what patrons read toward facilitating open access, though tensions over curation and community values persist.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Early librarians controlled library collections in ways that reflected biases related to class, gender, and morality.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Modern book challenges in public and school libraries threaten the intellectual freedom that librarians have long championed.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage traces a historical arc: early libraries promised open access but exercised paternalistic gatekeeping; the profession then shifted toward intellectual freedom; yet contemporary book challenges show the underlying tensions remain unresolved. Choice B captures both the shift and the persistence of tension, matching the passage's full arc. The other choices each focus on only one stage or detail of this larger story.",
+  "distractorRationale": {
+    "A": "The Library Bill of Rights is mentioned as evidence of the profession's shift, not as the passage's central claim. This choice overstates the significance of a single event while ignoring both the earlier gatekeeping era and the unresolved contemporary tensions.",
+    "B": "Correct. Captures the historical shift from directive to facilitative librarianship and notes that the underlying tensions have persisted into the present.",
+    "C": "The biases of early librarians are a supporting detail illustrating the gatekeeping era—not the passage's main point, which spans from the nineteenth century to current debates.",
+    "D": "Contemporary book challenges appear only in the final sentence as an example of unresolved tension. Framing modern challenges as a threat to intellectual freedom adds a evaluative tone not present in the passage and ignores the historical development that precedes this point."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e1c7b4f2-3a9d-4e8c-b5f1-2d6a8c4e7b9f"
+  },
+  "hasImage": false
+}

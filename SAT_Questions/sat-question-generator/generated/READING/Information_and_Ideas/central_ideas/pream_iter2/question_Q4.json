@@ -1,0 +1,57 @@
+{
+  "id": "e6f1b4c5-9d3a-4e2f-8b4c-1a7e9d3b5f2c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "linguistic": 1.2
+  },
+  "passage": "Urban heat islands occur when cities become significantly warmer than the surrounding rural areas. Dark surfaces like asphalt roads and rooftops absorb heat during the day and release it slowly at night, keeping urban areas warmer around the clock. Dense buildings reduce wind flow, trapping heat between structures. Cities also generate heat through traffic, industrial activity, and air conditioning units. The result is that a city center can be several degrees warmer than nearby countryside. This temperature difference affects energy use, human health, and local weather patterns, making urban heat islands one of the more consequential side effects of city development.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 102,
+    "source": "Original passage on environmental science"
+  },
+  "stem": "Which choice best states the main idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Dark surfaces such as roads and rooftops are the primary cause of elevated temperatures in urban areas.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Air conditioning units and industrial activity generate significant amounts of heat within city centers.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Cities are warmer than surrounding areas because of how they are built and used, and this temperature difference has meaningful consequences.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Urban heat islands alter local weather patterns by trapping warm air between buildings and reducing wind circulation.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage defines urban heat islands, explains multiple causes (dark surfaces, dense buildings, heat-generating activities), and then explicitly states that the resulting temperature difference 'affects energy use, human health, and local weather patterns,' calling it 'one of the more consequential side effects of city development.' Choice C captures both the cause (how cities are built and used) and the significance (meaningful consequences), which is the full scope of the passage's argument.",
+  "distractorRationale": {
+    "A": "Dark surfaces are one of several causes discussed in the passage. This choice incorrectly identifies them as the 'primary cause' and ignores both other causes and the consequences that the passage emphasizes.",
+    "B": "Air conditioning units and industrial activity are listed as contributing causes, but they represent only one part of the explanation. This choice selects two items from a list and presents them as the main point while ignoring the consequences discussed.",
+    "D": "Altered weather patterns are one of the consequences mentioned in the final sentence, but the passage discusses a broader range of effects (energy use and health as well). This choice also conflates a cause (trapping air between buildings) with a consequence, partially misreading the passage."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4f7c1e3-8a2b-4d6f-b9e1-3c5a8d2f7b4e"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,59 @@
+{
+  "id": "a4b5c6d7-e8f9-4a0b-1c2d-3e4f5a6b7c8e",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- The Voyager 1 spacecraft, launched in 1977, is the most distant human-made object from Earth.\n- In 2012, Voyager 1 entered interstellar space, crossing the boundary where the sun's influence ends.\n- Voyager 1 carries a Golden Record containing sounds, images, and greetings in 55 languages intended as a message to any extraterrestrial civilization.\n- The spacecraft's nuclear power source is expected to provide enough energy for limited scientific instruments until approximately 2025.\n- Even after its instruments go silent, Voyager 1 will continue traveling through interstellar space for millions of years.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 106,
+    "source": "Student research notes on the Voyager 1 mission"
+  },
+  "stem": "The student wants to convey that Voyager 1's significance extends beyond its original scientific mission. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Voyager 1, launched in 1977, became the most distant human-made object from Earth when it entered interstellar space in 2012.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Although Voyager 1's instruments will lose power around 2025, the spacecraft will continue drifting through interstellar space for millions of years, carrying a Golden Record of human sounds, images, and greetings meant for other civilizations.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The Golden Record on Voyager 1 contains sounds, images, and greetings in 55 languages that represent human culture and civilization.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Voyager 1's nuclear power source will sustain its scientific instruments until around 2025, after which the spacecraft will go silent.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it shows that even after the scientific mission ends (instruments losing power), Voyager 1 carries lasting significance as a cultural artifact traveling through space with the Golden Record. This directly conveys significance beyond the scientific mission. Choice A focuses on distance achievements (part of the mission), C describes the Record without connecting it to the mission's broader legacy, and D focuses on the end of scientific capability without mentioning the enduring significance.",
+  "distractorRationale": {
+    "A": "This choice highlights a scientific milestone (entering interstellar space) but does not address any significance beyond the spacecraft's original scientific mission.",
+    "C": "This choice describes the Golden Record's contents but does not frame it in terms of extending beyond the scientific mission or continuing after the instruments fail.",
+    "D": "This choice focuses on the end of the scientific instruments but does not mention the Golden Record or any significance that persists beyond the mission's technical conclusion."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:17.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b5c6d7e8-f9a0-4b1c-2d3e-4f5a6b7c8d9f"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

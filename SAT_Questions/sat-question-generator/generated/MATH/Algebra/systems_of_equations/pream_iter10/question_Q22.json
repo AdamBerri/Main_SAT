@@ -1,0 +1,54 @@
+{
+  "id": "c5e8b1d3-6f2a-4c7e-b9d1-2f4a6c8e0b3d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "In a chemical analysis, the concentrations of two compounds, $x$ and $y$ (in milligrams per liter), satisfy both of the following equations derived from two separate measurements:\n\n$$5x + 2y = 23$$\n$$3x + 4y = 25$$\n\nWhat is the value of $2x - 2y$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-9$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$-2$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$-1$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$2$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The key insight is to recognize that the expression $2x - 2y$ can be obtained directly by subtracting the second equation from the first, without solving for $x$ and $y$ individually.\n\n**Strategic combination:**\n$$(5x + 2y) - (3x + 4y) = 23 - 25$$\n$$2x - 2y = -2$$\n\nThe answer is $\\mathbf{-2}$.\n\n**Verification by solving the full system:**\n\nMultiply equation 1 by 2: $10x + 4y = 46$\n\nSubtract equation 2: $(10x + 4y) - (3x + 4y) = 46 - 25$\n$$7x = 21 \\Rightarrow x = 3$$\n\nBack-substitute into equation 2: $3(3) + 4y = 25 \\Rightarrow 9 + 4y = 25 \\Rightarrow 4y = 16 \\Rightarrow y = 4$\n\nChecking: $5(3) + 2(4) = 15 + 8 = 23$ ✓ and $3(3) + 4(4) = 9 + 16 = 25$ ✓\n\nTherefore $2x - 2y = 2(3) - 2(4) = 6 - 8 = -2$ ✓",
+  "distractorRationale": {
+    "A": "Makes an arithmetic error when back-substituting $x = 3$ into equation 1, writing $5 + 3 + 2y = 23$ instead of $15 + 2y = 23$, getting $2y = 15$ so $y = 7.5$, and then computing $2(3) - 2(7.5) = -9$.",
+    "B": "Correct. Subtracting equation 2 from equation 1 gives $(5x + 2y) - (3x + 4y) = 23 - 25$, so $2x - 2y = -2$ directly.",
+    "C": "Correctly finds $2x - 2y = -2$ by direct subtraction of the equations but then divides by 2 unnecessarily, reporting $x - y = -1$ instead of the requested expression $2x - 2y$.",
+    "D": "Computes $2y - 2x$ instead of $2x - 2y$: with $x = 3$ and $y = 4$, calculates $2(4) - 2(3) = 8 - 6 = 2$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5f0a1b2-c3d4-4e5f-a6b7-c8d9e0f1a2b3"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "e8f9a0b1-c2d3-4e4f-5a6b-7c8d9e0f1a2b",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- Community gardens are shared plots of land where residents grow fruits, vegetables, and flowers.\n- A 2019 study found that neighborhoods with community gardens had 15% lower crime rates than comparable neighborhoods without them.\n- Community gardens provide fresh produce to residents who may lack access to grocery stores.\n- Participants in community gardens report higher levels of social connection with their neighbors.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 66,
+    "source": "Student research notes on community gardens"
+  },
+  "stem": "The student wants to present the social benefits of community gardens. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Community gardens are shared plots where residents grow fruits, vegetables, and flowers together.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Community gardens provide fresh produce to residents who might not have easy access to grocery stores.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Community gardens strengthen neighborhoods: participants report greater social connection with neighbors, and areas with gardens have 15% lower crime rates.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "A 2019 study found that neighborhoods with community gardens had lower crime rates than those without.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Choice C is correct because it synthesizes two social benefits from the notes: increased social connection among participants and lower crime rates in neighborhoods with gardens. Together, these points effectively present the social benefits. The other choices define gardens (A), focus on food access rather than social benefits (B), or mention only one data point without the broader social framing (D).",
+  "distractorRationale": {
+    "A": "This choice defines community gardens but does not address any social benefits.",
+    "B": "This choice highlights food access, which is a practical benefit rather than a social one.",
+    "D": "This choice mentions crime rates but presents only a single statistic without connecting it to broader social benefits like community connection."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:09.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f9a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

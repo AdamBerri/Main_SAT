@@ -1,0 +1,103 @@
+{
+  "id": "e7d5fe1c-4db3-46ea-a854-bfa2469fec01",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "A labor economics study examined changes in employment rates across five industries between 2019 and 2023. The study concluded that the technology sector experienced the largest absolute increase in employment among all industries surveyed.",
+  "stem": "Which choice most effectively uses data from the figure to support the study's conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Technology employment rose from 8.2 million to 10.7 million jobs (an increase of 2.5 million), while healthcare added 1.8 million, manufacturing lost 0.4 million, retail added 0.6 million, and finance added 1.1 million.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Healthcare employment increased from 16.4 million to 18.2 million jobs, the second-largest gain after technology, adding 1.8 million positions.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Technology employment reached 10.7 million in 2023, but healthcare remained the larger sector overall at 18.2 million jobs.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Manufacturing employment declined from 12.8 million to 12.4 million jobs between 2019 and 2023, while retail grew from 15.1 million to 15.7 million.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that technology had the largest absolute employment increase. Choice A shows technology added 2.5 million jobs and compares this to all other sectors' changes, confirming it was the largest gain. Choice B highlights healthcare's second-place gain without showing technology's figure. Choice C compares sector sizes rather than growth. Choice D discusses manufacturing's decline and retail's modest gain without mentioning technology.",
+  "distractorRationale": {
+    "A": "Correct: compares technology's 2.5M job gain to all other sectors, confirming it had the largest absolute increase.",
+    "B": "Wrong (misread value): focuses on healthcare's gain and calls it second-largest, but does not cite technology's actual figure for direct comparison.",
+    "C": "Wrong (wrong comparison): compares 2023 sector sizes rather than changes in employment, conflating total size with growth.",
+    "D": "Wrong (irrelevant data): discusses manufacturing and retail trends without mentioning technology, the sector central to the claim."
+  },
+  "hasImage": true,
+  "imageDescription": "Data table titled 'Employment by Industry (Millions of Jobs), 2019 vs. 2023.' Columns: Industry, 2019, 2023, Change. Rows: Technology - 8.2 - 10.7 - +2.5; Healthcare - 16.4 - 18.2 - +1.8; Manufacturing - 12.8 - 12.4 - -0.4; Retail - 15.1 - 15.7 - +0.6; Finance - 9.3 - 10.4 - +1.1. Source: Bureau of Labor Economics, 2024.",
+  "chartData": {
+    "type": "data_table",
+    "title": "Employment by Industry (Millions of Jobs), 2019 vs. 2023",
+    "data": {
+      "columns": [
+        "Industry",
+        "2019",
+        "2023",
+        "Change"
+      ],
+      "rows": [
+        [
+          "Technology",
+          8.2,
+          10.7,
+          2.5
+        ],
+        [
+          "Healthcare",
+          16.4,
+          18.2,
+          1.8
+        ],
+        [
+          "Manufacturing",
+          12.8,
+          12.4,
+          -0.4
+        ],
+        [
+          "Retail",
+          15.1,
+          15.7,
+          0.6
+        ],
+        [
+          "Finance",
+          9.3,
+          10.4,
+          1.1
+        ]
+      ]
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 54,
+    "source": "Adapted from Bureau of Labor Economics industry employment analysis"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.893Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3f327289-3d33-4a15-bed7-c359ba3440b1"
+  }
+}

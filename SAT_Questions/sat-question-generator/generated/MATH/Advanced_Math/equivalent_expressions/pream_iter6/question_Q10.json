@@ -1,0 +1,54 @@
+{
+  "id": "5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "Which of the following is equivalent to $(2x - 3)^2$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$4x^2 + 9$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$4x^2 - 12x - 9$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$2x^2 - 12x + 9$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$4x^2 - 12x + 9$",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Expand $(2x - 3)^2$ by writing it as $(2x - 3)(2x - 3)$ and using FOIL:\n\nFirst: $(2x)(2x) = 4x^2$\nOuter: $(2x)(-3) = -6x$\nInner: $(-3)(2x) = -6x$\nLast: $(-3)(-3) = +9$\n\nCombining all terms: $4x^2 - 6x - 6x + 9$\nCombining the $x$ terms: $-6x + (-6x) = -12x$\n\nThe equivalent expression is $4x^2 - 12x + 9$.",
+  "distractorRationale": {
+    "A": "Incomplete expansion: the student only squared the first and last terms of the binomial ($4x^2$ and $9$), forgetting the middle cross-term $-12x$ entirely.",
+    "B": "Sign error on the constant: the student correctly computed the $4x^2$ and $-12x$ terms but treated the last term as $(-3)(+3) = -9$ instead of $(-3)(-3) = +9$.",
+    "C": "Coefficient error: the student forgot to square the coefficient 2 on the first term, writing $2x^2$ instead of $(2x)^2 = 4x^2$.",
+    "D": "Correct answer."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d"
+  }
+}

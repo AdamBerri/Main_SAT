@@ -1,0 +1,54 @@
+{
+  "id": "2c5f8b14-9e3d-4a72-b1c6-4d07e8f23456",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "Machine A produces parts at a rate of 75 parts per hour and Machine B produces parts at a rate of 45 parts per hour. Both machines run simultaneously for $t$ hours. Then Machine A shuts down, and Machine B continues alone for 4 more hours. If the total number of parts produced is 540, what is the value of $t$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "3",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "4.5",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "4.8",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "8",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Step 1: Find the combined production rate when both machines run simultaneously.\n$$75 + 45 = 120 \\text{ parts per hour}$$\n\nStep 2: Find the number of parts Machine B produces during its 4 additional hours alone.\n$$45 \\times 4 = 180 \\text{ parts}$$\n\nStep 3: Set up an equation for total production.\n$$120t + 180 = 540$$\n\nStep 4: Solve for $t$.\n$$120t = 540 - 180 = 360$$\n$$t = \\frac{360}{120} = 3 \\text{ hours}$$\n\nVerification: Both machines for 3 hours: $120 \\times 3 = 360$ parts. Machine B alone for 4 hours: $45 \\times 4 = 180$ parts. Total: $360 + 180 = 540$ parts ✓",
+  "distractorRationale": {
+    "A": "This is the correct answer. Combined rate = 120 parts/hr; Machine B alone contributes 45 × 4 = 180 parts; so 120t = 360, giving t = 3 hours.",
+    "B": "Error type: 'Ignored unit conversion entirely' — student ignores the parts produced by Machine B during its 4 solo hours and applies the combined rate to the full 540 total. Wrong step: student uses $120t = 540$ instead of $120t + 180 = 540$. Wrong calculation: $t = \\frac{540}{120} = 4.5$ hours. This produces 4.5.",
+    "C": "Error type: 'Rate applied to wrong quantity' — student uses only Machine A's rate (75 parts/hour) for the simultaneous phase instead of the combined rate (120 parts/hour). Wrong step: student writes $75t + 180 = 540$ instead of $120t + 180 = 540$. Wrong calculation: $75t = 360 \\Rightarrow t = \\frac{360}{75} = 4.8$ hours. This produces 4.8.",
+    "D": "Error type: 'Direct vs inverse proportion confusion' — student divides the total output by Machine B's rate to find total time for B, then subtracts the 4 solo hours to find $t$. Wrong step: student computes $\\frac{540}{45} = 12$ hours total for B, then $12 - 4 = 8$ hours for $t$, ignoring that Machine A was also running and producing parts during the first phase. Wrong calculation: $\\frac{540}{45} - 4 = 12 - 4 = 8$. This produces 8."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3b6e9c27-0f4a-4d85-c2d7-5e18f3a01234"
+  }
+}

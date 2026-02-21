@@ -1,0 +1,54 @@
+{
+  "id": "c6f0e2d4-8b35-4a9c-bf67-4e1d0a3f2c89",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "computational": 1.9
+  },
+  "stem": "A health magazine posted an online poll on its website asking readers: \"Do you exercise at least 5 days per week?\" Of the 3,200 readers who chose to respond, 68% said yes. The magazine published the headline: \"Most Americans exercise at least 5 days per week.\" Which of the following identifies the main problem with this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The survey did not ask enough questions about exercise habits.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The sample size of 3,200 is too small to represent all Americans.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Only health magazine readers who chose to respond were surveyed, so the sample is unlikely to represent all Americans.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "68% is not a large enough majority to say \"most\" Americans exercise that often.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "This survey has two major selection problems that make the conclusion invalid. First, the respondents are all readers of a health magazine — a group that is likely more health-conscious than the general American public. Second, the poll is a voluntary response survey: only those who chose to respond are counted, and people with strong opinions (such as those who exercise frequently) are more likely to respond than those who do not. Both factors mean the sample is not representative of all Americans. The conclusion \"Most Americans...\" requires a representative sample of all Americans, which this poll does not provide.",
+  "distractorRationale": {
+    "A": "This distractor introduces an irrelevant criterion. The number or type of questions asked does not affect whether the sample is representative of all Americans. The flaw is in who was sampled, not what was asked.",
+    "B": "This distractor exploits the misconception that sample size is the primary concern. While 3,200 seems small relative to all Americans, the more fundamental problem is that the sample consists only of health magazine readers who self-selected to respond — not a random cross-section of Americans. Even a sample of 10,000 health magazine volunteers would have the same bias.",
+    "C": "Correct. Health magazine readers are not representative of all Americans (they are more likely to be health-focused), and the voluntary nature of the poll means results reflect only those motivated to respond, further skewing the data.",
+    "D": "This distractor targets a misunderstanding about what 'most' means. 'Most' simply means more than 50%, and 68% qualifies mathematically. The problem is not the percentage value but the non-representative sampling method."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3a4b5c6-7d8e-9f0a-1b2c-3d4e5f6a7b8c"
+  }
+}

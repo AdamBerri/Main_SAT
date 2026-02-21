@@ -1,0 +1,54 @@
+{
+  "id": "e5d9f4a1-8b23-4c67-0d5e-3f6a9b2c7e05",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "Triangle $ABC$ is isosceles with $AB = AC$. If angle $A = 40°$, what is the measure of angle $B$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$40°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$70°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$100°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$140°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In an isosceles triangle where $AB = AC$, the base angles are equal, so $\\angle B = \\angle C$.\n\nThe angle sum property gives:\n$$\\angle A + \\angle B + \\angle C = 180°$$\n$$40° + \\angle B + \\angle B = 180°$$\n$$40° + 2\\angle B = 180°$$\n$$2\\angle B = 140°$$\n$$\\angle B = 70°$$",
+  "distractorRationale": {
+    "A": "The student incorrectly assumes all three angles are equal in an isosceles triangle and reports angle $A = 40°$ as angle $B$, confusing isosceles with equilateral.",
+    "B": "Correct answer: the base angles each measure $\\frac{180° - 40°}{2} = 70°$.",
+    "C": "The student subtracts only angle $A$ from $180°$ ($180° - 40° = 140°$) and then forgets to divide by 2, reporting half of $140°$ incorrectly as $100°$ — i.e., they compute $180° - 40° = 140°$ but then subtract $40°$ again instead of dividing by 2, giving $100°$.",
+    "D": "The student subtracts angle $A$ from $180°$ ($180° - 40° = 140°$) and reports that value as angle $B$, forgetting to divide by 2 to account for both base angles."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d3a16e95-4f7b-4c29-0e5f-6a8c1b3d2f47"
+  }
+}

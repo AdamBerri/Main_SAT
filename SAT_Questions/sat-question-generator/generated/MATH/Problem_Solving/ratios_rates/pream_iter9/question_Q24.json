@@ -1,0 +1,53 @@
+{
+  "id": "7e2d9c4a-b163-4f85-a037-1d5c8b6e3a29",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "Alloy X contains copper and zinc in the ratio 7:3 by weight. Alloy Y contains copper and zinc in the ratio 3:2 by weight. A metallurgist melts some amount of Alloy X with 500 grams of Alloy Y to produce a mixture in which the ratio of copper to zinc is 9:5. How many grams of Alloy X are used?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "300",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "375",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "875",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "2,125",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Step 1: Let $x$ = grams of Alloy X.\n\nAlloy X contributes: copper $= \\frac{7}{10}x$, zinc $= \\frac{3}{10}x$.\n\nAlloy Y (500 g, ratio 3:2) contributes: copper $= \\frac{3}{5}(500) = 300$ g, zinc $= \\frac{2}{5}(500) = 200$ g.\n\nStep 2: Set up the ratio equation for the mixture.\n$$\\frac{\\frac{7x}{10} + 300}{\\frac{3x}{10} + 200} = \\frac{9}{5}$$\n\nStep 3: Cross-multiply.\n$$5\\!\\left(\\frac{7x}{10} + 300\\right) = 9\\!\\left(\\frac{3x}{10} + 200\\right)$$\n$$\\frac{35x}{10} + 1500 = \\frac{27x}{10} + 1800$$\n\nStep 4: Solve for $x$.\n$$\\frac{8x}{10} = 300 \\implies x = 300 \\times \\frac{10}{8} = 375 \\text{ grams}$$\n\nVerification: Alloy X (375 g) gives Cu $= 262.5$ g, Zn $= 112.5$ g. Total Cu $= 562.5$, Zn $= 312.5$. Ratio $= 562.5 : 312.5 = 9:5$. ✓",
+  "distractorRationale": {
+    "A": "Error type: Stopped at intermediate value. The student correctly sets up the equation and reaches $\\frac{8x}{10} = 300$, but then reads off $x = 300$ directly from the right-hand side without completing the division: $x = 300 \\times \\frac{10}{8} = 375$. The student treats 300 as the final answer.",
+    "C": "Error type: Wrong term selected from ratio. The student solves correctly for $x = 375$ grams of Alloy X, but then reports the total mixture mass ($375 + 500 = 875$ grams) rather than the mass of Alloy X alone.",
+    "D": "Error type: Inverted ratio. The student inverts the ratio of Alloy Y, treating it as zinc:copper = 3:2 instead of copper:zinc = 3:2. This gives Alloy Y copper $= \\frac{2}{5}(500) = 200$ g and zinc $= \\frac{3}{5}(500) = 300$ g. Setting up: $\\frac{\\frac{7x}{10} + 200}{\\frac{3x}{10} + 300} = \\frac{9}{5}$. Cross-multiplying: $\\frac{35x}{10} + 1000 = \\frac{27x}{10} + 2700$, so $\\frac{8x}{10} = 1700$, giving $x = 2{,}125$ grams."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "9f3e6c1b-7d4a-4b2e-8051-2c5a8d0f6b14"
+  }
+}

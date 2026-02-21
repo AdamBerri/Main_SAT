@@ -1,0 +1,54 @@
+{
+  "id": "c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "percentages"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.1,
+    "computational": 4
+  },
+  "stem": "A university's enrollment increased by 20% from 2020 to 2021 and then decreased by 15% from 2021 to 2022. If the enrollment in 2022 was 5,100, what was the enrollment in 2020?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "4,250",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "5,000",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "5,362",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "6,000",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $x$ be the 2020 enrollment. After 20% increase: $1.20x$. After 15% decrease: $1.20x \\times 0.85 = 1.02x$. Setting $1.02x = 5{,}100$: $x = 5{,}000$.",
+  "distractorRationale": {
+    "A": "Student reversed only the 20% increase: 5,100 / 1.20 = 4,250, ignoring the 15% decrease step.",
+    "B": "Correct answer.",
+    "C": "Student applied a net 5% increase (20% − 15% = 5%): 5,100 / 0.95 ≈ 5,368, rounded to 5,362.",
+    "D": "Student reversed only the 15% decrease: 5,100 / 0.85 = 6,000 and stopped."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T18:30:19.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e9f0a1b2-c3d4-5e6f-7a8b-9c0d1e2f3a4b"
+  }
+}

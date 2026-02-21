@@ -1,0 +1,58 @@
+{
+  "id": "9e6d66c2-9c72-4c10-87ce-36c3d7936c18",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "Historians have long debated whether the Black Death of the fourteenth century was purely catastrophic or whether it also generated unexpected social transformations. The plague killed roughly one-third of Europe's population within a few years, devastating families and economies. Yet the sudden scarcity of labor that followed gave surviving peasants unprecedented bargaining power. Landlords who had previously dictated wages and working conditions were forced to compete for workers, leading to higher pay and greater personal freedoms for the rural poor.\n\nThis shift did not occur uniformly. In England, where labor markets were relatively flexible, wages rose sharply in the decades after the plague. In Eastern Europe, by contrast, landlords successfully lobbied for laws that actually tightened restrictions on peasant movement, deepening serfdom rather than eroding it. The plague's social effects, it turns out, depended heavily on the legal and economic structures already in place.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 153,
+    "source": "Original passage"
+  },
+  "stem": "What is the central claim of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The Black Death was the most transformative event in medieval European history, fundamentally reshaping social hierarchies across the continent.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Although the Black Death killed enormous numbers of people, it created labor shortages that ultimately benefited surviving peasants by increasing their wages.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The social consequences of the Black Death varied significantly depending on the institutional conditions present in different regions of Europe.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Eastern European landlords responded to the Black Death by imposing stricter laws on peasants, while English landlords were forced to raise wages to retain workers.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage moves from the general claim that the Black Death had social effects beyond mere devastation, to the complication that these effects were not uniform. The England-versus-Eastern-Europe contrast is presented as evidence for the concluding argument that existing legal and economic structures determined outcomes. Choice C captures this main argument: the plague's social consequences depended on regional institutions. The passage's entire second paragraph exists to establish this point, making it the central claim rather than a supporting detail.",
+  "distractorRationale": {
+    "A": "The passage does not argue the Black Death was the 'most transformative event' in medieval history, nor does it claim the effects were uniform across the continent—the second paragraph directly contradicts this.",
+    "B": "This captures only the first paragraph's argument about labor scarcity benefiting peasants. The passage then immediately complicates this by showing it did not apply everywhere, making this an incomplete representation of the main claim.",
+    "C": "Correct. The passage builds toward showing that the plague's social effects depended on pre-existing institutional structures, illustrated by the divergent outcomes in England and Eastern Europe.",
+    "D": "This accurately describes a specific example from the second paragraph, but it is a supporting detail used to illustrate the broader point about regional variation—not the passage's central claim itself."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "0eee0075-3f27-45ac-86e4-bb33b43a079c"
+  },
+  "hasImage": false
+}

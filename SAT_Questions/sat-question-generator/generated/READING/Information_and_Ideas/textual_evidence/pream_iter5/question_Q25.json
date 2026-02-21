@@ -1,0 +1,53 @@
+{
+  "id": "f7a1d5e4-0b6c-4f3a-e9d0-6c5b7a1f4d3e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "Text 1\nPublic health researchers have debated whether sodium reduction programs succeed primarily by changing consumer behavior directly—shoppers reading labels and choosing lower-sodium products—or indirectly through reformulation pressure on manufacturers who anticipate regulatory action. The behavioral pathway requires that consumers have both the motivation and literacy to act on nutritional information; research consistently shows that only about 30% of shoppers regularly read sodium labels. The reformulation pathway requires no change in consumer behavior at all: if manufacturers preemptively reduce sodium to avoid future regulation, population-level sodium intake falls regardless of individual choices.\n\nText 2\nData from three cities that implemented voluntary sodium reduction awareness campaigns:\n\n| City | Campaign Type | Low-Sodium Product Market Share Change | Avg. Sodium Per Product (mg change) | Population Sodium Intake Change (mg/day) |\n|---|---|---|---|---|\n| Riverside | Label literacy only | +4% | -18 mg | -31 mg/day |\n| Clearfield | Label literacy only | +3% | -22 mg | -28 mg/day |\n| Harborview | Retailer partnership | +11% | -89 mg | -142 mg/day |\n| Westmont | Retailer partnership | +9% | -94 mg | -137 mg/day |",
+  "stem": "The relationship between the three data columns in Text 2 creates a tension with one of Text 1's implicit assumptions. Which assumption does the data most directly challenge?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "That the reformulation pathway operates independently of any consumer behavior shift",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "That market share change and product reformulation are equally effective intake levers",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "That population intake gains primarily follow from consumer choice, not reformulation",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "That the two pathways contribute additively to population-level intake reduction",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Text 1 frames the behavioral and reformulation pathways as two distinct routes, each capable of reducing population intake independently. This framing implicitly assumes that if both pathways are active simultaneously, their contributions to intake reduction would add together in a roughly proportional way. The data in Text 2, however, reveal a non-additive pattern: in label literacy cities, market share rose by 3–4% AND product sodium fell by ~18–22 mg, producing population intake reductions of ~28–31 mg/day. In retailer partnership cities, market share rose by 9–11% (roughly 3x larger) AND product sodium fell by ~89–94 mg (roughly 4x larger), but population intake fell by ~137–142 mg/day (roughly 4.5x larger). Crucially, the population intake reduction in retailer partnership cities is disproportionately large relative to simply multiplying the effects seen in label literacy cities. This suggests that the two changes (market share shift and product reformulation) interact: when consumers shift to already-reformulated products, the intake reduction is multiplicative, not additive. Text 1's implicit assumption is that the pathways are independent and additive—the data challenge this by implying interaction effects where consumer behavior change and product reformulation amplify each other's impact beyond what simple addition would predict.",
+  "distractorRationale": {
+    "A": "Text 1 explicitly describes the reformulation pathway as requiring 'no change in consumer behavior at all.' The data show that retailer partnership cities had both larger market share changes AND larger reformulation—so consumer behavior did change in those cities alongside reformulation. A student might interpret this as challenging Text 1's claim that reformulation is independent of behavior. However, Text 1 does not say reformulation never co-occurs with behavior change; it says reformulation CAN work without behavior change. The co-occurrence in the data is not a contradiction. This is the most dangerous distractor because it references real content from both texts and represents a genuine but insufficient reading of the tension.",
+    "B": "The data do show that product sodium reduction (reformulation) produces far larger intake reductions than market share increases alone—in label literacy cities, a 3–4% market share shift yields only 28–31 mg/day intake change, while product reformulation of ~20 mg per product contributes significantly. The claim that they are 'equally effective' is not found in Text 1; Text 1 never asserts equivalence. This distractor introduces a comparison that Text 1 does not make, making it eliminable by careful readers who recognize the assumption was never present in Text 1.",
+    "C": "Text 1 describes the behavioral pathway as requiring consumer motivation and literacy (only ~30% read labels), implying it is the weaker pathway. If anything, Text 1's own framing suggests reformulation is more powerful. The data reinforce this (reformulation changes dominate intake outcomes), so the data actually align with Text 1's implied hierarchy rather than challenging it. Students who misread Text 1 as asserting behavioral primacy may select C, but this reverses Text 1's actual skepticism about the behavioral pathway.",
+    "D": "Correct. See explanation."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c5e6f7a8-d9b0-1234-efab-345678901235"
+  },
+  "hasImage": false
+}

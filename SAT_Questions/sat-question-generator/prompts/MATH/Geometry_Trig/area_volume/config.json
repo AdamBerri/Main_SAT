@@ -4,7 +4,7 @@
     "domain": "Geometry_Trig",
     "subtopic": "area_volume"
   },
-  "currentVersion": "1.3.0",
+  "currentVersion": "3.0.0",
   "versions": [
     {
       "version": "1.0.0",
@@ -13,6 +13,54 @@
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.4.0",
+      "createdAt": "2026-02-21T02:45:50.388Z",
+      "parentVersion": "1.3.0",
+      "preamIteration": 6,
+      "performanceMetrics": {
+        "trainAvgScore": 4.5,
+        "trainPassRate": 1,
+        "testAvgScore": 4.65,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.5.0",
+      "createdAt": "2026-02-21T03:09:50.926Z",
+      "parentVersion": "1.4.0",
+      "preamIteration": 7,
+      "performanceMetrics": {
+        "trainAvgScore": 4.714,
+        "trainPassRate": 1,
+        "testAvgScore": 4.485,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.6.0",
+      "createdAt": "2026-02-21T03:15:26.984Z",
+      "parentVersion": "1.5.0",
+      "preamIteration": 8,
+      "performanceMetrics": {
+        "trainAvgScore": 4.955,
+        "trainPassRate": 1,
+        "testAvgScore": 4.762,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.6.0",
+      "createdAt": "2026-02-21T03:17:33.277Z",
+      "parentVersion": "1.6.0",
+      "preamIteration": 9,
+      "performanceMetrics": {
+        "trainAvgScore": 4.955,
+        "trainPassRate": 1,
+        "testAvgScore": 4.847,
+        "testPassRate": 1
+      }
     }
   ],
   "temperatureConfig": {

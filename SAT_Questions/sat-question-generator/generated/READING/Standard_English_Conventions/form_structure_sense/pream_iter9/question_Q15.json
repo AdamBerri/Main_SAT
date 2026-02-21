@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "de7b0d11-3e46-46b1-a1dd-7a69831c5c93",
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "The renovation of the city's oldest theater has sparked debate among preservationists and developers. Some argue that the building's original Victorian facade should be maintained exactly as it is, while others advocate for a modern glass addition. The committee overseeing the project requires that the final design [1]_____ the building's historical character while also meeting current safety codes.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 62,
+    "source": "Adapted from an architectural preservation report"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "preserves",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "preserve",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "preserved",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "will preserve",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests the mandative subjunctive after 'requires that.' The construction triggers the subjunctive mood, which uses the base form of the verb regardless of the subject's number. 'Requires that the final design preserve' is correct even though 'the final design' is singular.",
+  "distractorRationale": {
+    "A": "Indicative singular—correct number but wrong mood. The subjunctive is required.",
+    "B": "Correct. Base form (subjunctive) after 'requires that.'",
+    "C": "Past tense—not appropriate in a subjunctive construction.",
+    "D": "Future modal—standard American English subjunctive uses the bare base form without modals."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "37745942-6072-4e12-bfc9-1b31b63b8e21"
+  }
+}

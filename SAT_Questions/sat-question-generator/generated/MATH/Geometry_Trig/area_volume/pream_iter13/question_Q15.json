@@ -1,0 +1,38 @@
+{
+  "id": "b2c3d4e5-5555-4a6b-8c7d-9e0f1a2b3c15",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "A circular pond has a radius of 6 meters. A walking path of uniform width 2 meters surrounds the pond. What is the area, in square meters, of the walking path only?",
+  "choices": [
+    { "label": "A", "text": "$28\\pi$", "isCorrect": true },
+    { "label": "B", "text": "$64\\pi$", "isCorrect": false },
+    { "label": "C", "text": "$4\\pi$", "isCorrect": false },
+    { "label": "D", "text": "$24\\pi$", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The outer circle has radius $6 + 2 = 8$ meters. The path area is the difference: $\\pi(8)^2 - \\pi(6)^2 = 64\\pi - 36\\pi = 28\\pi$ square meters. The answer is A.",
+  "distractorRationale": {
+    "A": "Correct. $\\pi(8)^2 - \\pi(6)^2 = 64\\pi - 36\\pi = 28\\pi$.",
+    "B": "Computes only the outer circle area without subtracting the pond: $\\pi(8)^2 = 64\\pi$.",
+    "C": "Computes the area using only the path width as the radius: $\\pi(2)^2 = 4\\pi$.",
+    "D": "Multiplies the circumference of the inner circle by the path width (treats path as a rectangle): $2\\pi(6)(2) = 24\\pi$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:15.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-b555-4d5e-8f9a-0b1c2d3e4f15"
+  }
+}

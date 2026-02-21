@@ -1,0 +1,57 @@
+{
+  "id": "e7b1c5d4-0f3a-4e9b-c4d6-8a2f0e3b5c9d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "A local bakery posted a sign in its window: \"Due to high demand, we now sell out of croissants by 9:00 a.m. every day. We are baking as many as our ovens allow.\" A customer who arrived at the bakery at 9:30 a.m. on a Wednesday found the display case where the croissants were usually kept completely empty. The bakery staff offered her a variety of other pastries, including muffins, scones, and Danish rolls. She purchased two muffins and left. Later that day, she called the bakery to ask whether she could pre-order croissants for pickup the following morning.",
+  "passageMetadata": {
+    "genre": "literary",
+    "wordCount": 110,
+    "source": "Original passage"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the customer's experience at the bakery?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "She was disappointed that the bakery no longer sold croissants.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "She arrived too late to purchase the croissants she wanted.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "She preferred muffins to croissants as a general rule.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "She was unaware that the bakery had posted a sign about croissants.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The bakery's sign states that croissants sell out by 9:00 a.m. daily. The customer arrived at 9:30 a.m. and found the croissant display case empty. She then bought muffins instead and later called to pre-order croissants for the next morning. These details together clearly support the inference that she arrived after the croissants were already sold out and was trying to ensure she could get them on a future visit by ordering ahead.",
+  "distractorRationale": {
+    "A": "The passage does not suggest the bakery stopped selling croissants. The sign and empty case both indicate croissants sell out quickly due to high demand, not that they are discontinued.",
+    "C": "Nothing in the passage indicates the customer prefers muffins. She bought muffins only after the croissants she presumably wanted were unavailable, and she called to pre-order croissants—suggesting croissants were her preferred choice.",
+    "D": "The passage does not indicate whether or not the customer saw the sign. Her later phone call to pre-order croissants is consistent with her having learned about the sell-out situation, but the passage provides no evidence about whether she read the sign."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"
+  },
+  "hasImage": false
+}

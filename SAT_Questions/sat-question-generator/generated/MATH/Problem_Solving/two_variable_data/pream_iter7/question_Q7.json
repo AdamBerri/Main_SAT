@@ -1,0 +1,54 @@
+{
+  "id": "c4e7a1b2-3f56-4d89-a0b1-2c3d4e5f6a7b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "A school counselor created a scatterplot showing the relationship between the number of hours students studied per week and their scores on a standardized exam. The line of best fit for the data is $y = 4.5x + 30$, where $x$ is the number of hours studied per week and $y$ is the predicted exam score. According to the line of best fit, what is the predicted exam score for a student who studies 10 hours per week?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$30$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$45$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$75$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$80$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To find the predicted exam score, substitute $x = 10$ into the line of best fit equation.\n\n$$y = 4.5(10) + 30 = 45 + 30 = 75$$\n\nThe predicted exam score for a student who studies 10 hours per week is $75$.",
+  "distractorRationale": {
+    "A": "This is the y-intercept value ($30$) only, obtained by ignoring the slope term entirely. A student who plugs in $x = 0$ or forgets to include the slope contribution would get this.",
+    "B": "This is the slope term only: $4.5 \\times 10 = 45$. A student who forgets to add the y-intercept would stop here and choose this answer.",
+    "C": "This is the correct answer: $4.5(10) + 30 = 45 + 30 = 75$.",
+    "D": "This results from a multiplication error, treating $4.5 \\times 10 = 50$ instead of $45$, then computing $50 + 30 = 80$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d2e3f4a5-b6c7-8d9e-0f1a-2b3c4d5e6f7a"
+  }
+}

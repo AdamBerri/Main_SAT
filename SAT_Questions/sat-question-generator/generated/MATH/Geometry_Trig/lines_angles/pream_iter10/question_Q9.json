@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0009-4aaa-b009-000000000009",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "The sum of the interior angles of a polygon is $720°$. How many sides does the polygon have?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$5$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$6$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$7$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$8$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The sum of interior angles of an $n$-sided polygon is $(n-2) \\times 180°$. Setting $(n-2) \\times 180 = 720$: $n - 2 = 4$, so $n = 6$.",
+  "distractorRationale": {
+    "A": "Off by one: $n - 2 = 4$ but then said $n = 5$.",
+    "B": "Correct. $(6-2) \\times 180 = 720$.",
+    "C": "Off by one in the other direction: said $n = 7$.",
+    "D": "Divided $720 / 90 = 8$ (used $90°$ instead of $180°$)."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.338Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0009-4000-a009-000000000009"
+  }
+}

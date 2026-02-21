@@ -1,0 +1,54 @@
+{
+  "id": "1a4b7c2d-8e5f-4b3a-9c6d-0e7f2a1b4c5d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "A data scientist fits a line of best fit to a dataset and obtains the equation $\\hat{y} = 3x + 5$. After collecting five additional data points, each with an $x$-value greater than the mean $x$-value of the original dataset and each with a $y$-value below the corresponding value predicted by the original line of best fit, the data scientist refits the line to include all the data. Which of the following best describes what will happen to the slope and $y$-intercept of the new line of best fit compared to the original?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The slope will increase and the $y$-intercept will decrease.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The slope will decrease and the $y$-intercept will increase.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Both the slope and the $y$-intercept will decrease.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The slope will decrease and the $y$-intercept will remain unchanged.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The new data points all have $x$-values greater than the mean of the original data and $y$-values below the original line of best fit. This means these points lie in the lower-right region relative to the original line.\n\nEffect on slope: Adding points that fall below the line on the right side pulls the right end of the line downward. Since slope $=$ rise/run, pulling the right side down decreases the slope. The new slope will be less than 3.\n\nEffect on $y$-intercept: A line of best fit must pass through the centroid (mean of $x$, mean of $y$) of the dataset. Adding points at high $x$ but low $y$ lowers the mean $y$ (since the new $y$-values are below the predicted line) while raising the mean $x$. The new centroid shifts right and downward. With a smaller slope, for the new line to pass through this new centroid, the $y$-intercept must increase. (Formally: if the slope decreases by $\\Delta m$ and the line passes through the new centroid $(\\bar{x}_{new}, \\bar{y}_{new})$, the intercept adjusts upward to compensate for the rightward shift of the centroid.)\n\nTherefore, the slope decreases and the $y$-intercept increases.",
+  "distractorRationale": {
+    "A": "The slope will increase and the y-intercept will decrease: This reflects backward reasoning. A student might think that because the new points are below the line (negative residuals), the line must tilt upward to try to fit them, increasing the slope. In fact, points below the line at high x-values pull the right side of the line down, reducing the slope.",
+    "B": "Correct. The new points are in the lower-right region relative to the original line. They pull the right end of the line downward (decreasing slope) while the constraint that the line passes through the dataset centroid forces the y-intercept upward to compensate.",
+    "C": "Both the slope and y-intercept will decrease: A student may correctly reason that the slope decreases (the right side of the line is pulled down) but then incorrectly conclude that the y-intercept also drops because the new y-values are below the original line. This ignores the centroid constraint: as slope decreases, the line must pivot so that it still passes through the (shifted) centroid, which pushes the y-intercept up, not down.",
+    "D": "The slope will decrease and the y-intercept will remain unchanged: A student may correctly identify that the slope decreases but assume the y-intercept is unaffected because the added points have high x-values far from the y-axis. In reality, because the line must pass through the dataset centroid and the centroid itself shifts, the y-intercept cannot remain fixed when the slope changes."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "2b5c8d1e-f4a7-4c3b-d9e6-8f0a1b2c3d4e"
+  }
+}

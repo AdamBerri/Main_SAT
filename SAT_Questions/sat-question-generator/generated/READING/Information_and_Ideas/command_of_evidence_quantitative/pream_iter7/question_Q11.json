@@ -1,0 +1,97 @@
+{
+  "id": "e580fbc9-c27f-4442-80d1-0731072b5829",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "linguistic": 3.3
+  },
+  "passage": "Economists studying urban development have observed that cities investing heavily in public transit infrastructure tend to experience greater growth in median household income. A recent analysis of five metropolitan areas between 2015 and 2023 suggests that transit investment of at least $500 million is associated with income growth exceeding 20%.",
+  "stem": "Which choice most effectively uses data from the figure to support the economists' claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Metro areas that invested over $500 million in transit -- Portland ($620M, 24% income growth) and Denver ($780M, 27% income growth) -- both saw income growth above 20%, while areas investing less than $500 million saw growth below 15%.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Denver invested $780 million in public transit and experienced 27% median income growth, the highest of any metro area in the study.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Nashville invested $310 million in transit and experienced 14% income growth, while Tampa invested $180 million and saw only 8% growth.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Portland's transit investment of $620 million was lower than Denver's $780 million, yet Portland's 24% income growth was only 3 percentage points below Denver's 27%.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim links transit investment of $500M+ to income growth over 20%. Choice A shows both high-investment cities (Portland $620M/24% and Denver $780M/27%) exceeded the 20% threshold, while lower-investment areas stayed below 15%, establishing the pattern. Choice B focuses on only one city. Choice C discusses low-investment cities without connecting them to the high-investment threshold. Choice D compares two high-investment cities to each other rather than demonstrating the association between investment level and income growth.",
+  "distractorRationale": {
+    "A": "Correct: cites both high-investment cities exceeding 20% growth and notes low-investment cities fell short, establishing the claimed association.",
+    "B": "Wrong (incomplete evidence): mentions only Denver without showing the broader pattern across investment levels needed to support a general association.",
+    "C": "Wrong (irrelevant data): cites two below-threshold cities that don't directly address whether the $500M+ threshold is linked to 20%+ growth.",
+    "D": "Wrong (wrong comparison): compares two high-investment cities to each other rather than comparing high-investment to low-investment outcomes."
+  },
+  "hasImage": true,
+  "imageDescription": "Data table titled 'Transit Investment and Median Household Income Growth, 2015-2023.' Columns: Metro Area, Transit Investment ($ millions), Income Growth (%). Rows: Denver - $780M - 27%; Portland - $620M - 24%; Nashville - $310M - 14%; Tampa - $180M - 8%; Tucson - $95M - 6%. Source: Urban Economics Research Group, 2024.",
+  "chartData": {
+    "type": "data_table",
+    "title": "Transit Investment and Median Household Income Growth, 2015-2023",
+    "data": {
+      "columns": [
+        "Metro Area",
+        "Transit Investment ($ millions)",
+        "Income Growth (%)"
+      ],
+      "rows": [
+        [
+          "Denver",
+          780,
+          27
+        ],
+        [
+          "Portland",
+          620,
+          24
+        ],
+        [
+          "Nashville",
+          310,
+          14
+        ],
+        [
+          "Tampa",
+          180,
+          8
+        ],
+        [
+          "Tucson",
+          95,
+          6
+        ]
+      ]
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 62,
+    "source": "Adapted from Urban Economics Research Group policy brief"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.720Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "6674be9d-bb0a-4c6b-a9d4-c7f2800c1ea7"
+  }
+}

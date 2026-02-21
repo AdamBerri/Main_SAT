@@ -1,0 +1,57 @@
+{
+  "id": "e9f2a3b7-5c4d-4e8f-9a1b-2c3d4e5f6a7b",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "In the early nineteenth century, the city of London faced a mounting public health crisis. Waste from homes, factories, and slaughterhouses drained directly into the River Thames, which also served as the city's primary source of drinking water. Outbreaks of cholera killed tens of thousands of Londoners in 1832, 1848, and 1854. For decades, officials attributed the disease to \"miasma\"—foul air rising from decomposing matter—and focused their responses on ventilating buildings and removing visible filth from streets. It was not until physician John Snow meticulously traced a cluster of cholera deaths in Soho to a single contaminated water pump in 1854 that the connection between waterborne contamination and cholera began to gain traction. Snow's findings eventually prompted city officials to invest in a comprehensive sewer system that rerouted waste away from the Thames. Following the system's completion in 1865, cholera outbreaks in London became dramatically less frequent.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 148,
+    "source": "Adapted from a historical account of public health reform in Victorian London"
+  },
+  "stem": "Which conclusion is most reasonably supported by the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "London officials were indifferent to the suffering caused by cholera.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Miasma theory delayed identification of cholera's actual cause.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "John Snow's 1854 findings immediately changed official health policy.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The Thames was cleaner in 1865 than in any previous decade.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage describes multiple decades of cholera outbreaks (1832, 1848, 1854) during which officials incorrectly attributed the disease to miasma and responded by ventilating buildings and removing street filth—none of which addressed the actual waterborne cause. By connecting the long timeline of misguided responses to the eventual discovery by Snow in 1854, the reader can reasonably infer that the widespread belief in miasma theory actively delayed recognition of contaminated water as the true cause. This inference requires synthesizing the chronology and the description of official responses rather than simply restating any single sentence.",
+  "distractorRationale": {
+    "A": "The passage indicates officials did respond to the outbreaks by ventilating buildings and removing filth, suggesting they were engaged with the crisis—just pursuing the wrong solution. There is no textual evidence of indifference.",
+    "C": "The passage uses qualified language: Snow's findings caused the waterborne theory to \"begin to gain traction,\" and the sewer system was not completed until 1865—eleven years after Snow's research. This suggests a gradual, not immediate, policy shift.",
+    "D": "While the sewer system rerouted waste away from the Thames and cholera declined after 1865, the passage makes no direct claim about relative water quality across different decades, making this an over-inference beyond what the text supports."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d3e5f7a9-2b4c-4d6e-8f1a-3b5c7d9e1f2a"
+  },
+  "hasImage": false
+}

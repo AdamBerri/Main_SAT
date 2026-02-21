@@ -1,0 +1,54 @@
+{
+  "id": "f2e9a7d3-6c14-4b81-a5f8-9d2e0c7b3a56",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "Triangle $RST$ is similar to triangle $UVW$, where $R$ corresponds to $U$, $S$ corresponds to $V$, and $T$ corresponds to $W$. The side lengths of triangle $RST$ are $RS = 12$, $ST = 9$, and $RT = 15$. If $UW = 20$, what is the perimeter of triangle $UVW$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$48$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$27$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$60$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$80$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Since triangle $RST \\sim$ triangle $UVW$ with $T$ corresponding to $W$, the side $RT$ corresponds to $UW$.\n\nThe similarity ratio is:\n$$\\frac{UW}{RT} = \\frac{20}{15} = \\frac{4}{3}$$\n\nFor similar triangles, the ratio of perimeters equals the similarity ratio. First, find the perimeter of triangle $RST$:\n$$P_{RST} = RS + ST + RT = 12 + 9 + 15 = 36$$\n\nThen, the perimeter of triangle $UVW$:\n$$P_{UVW} = P_{RST} \\cdot \\frac{4}{3} = 36 \\cdot \\frac{4}{3} = 48$$\n\nAlternatively, find each side of $UVW$ individually:\n- $UV$ corresponds to $RS$: $UV = 12 \\cdot \\frac{4}{3} = 16$\n- $VW$ corresponds to $ST$: $VW = 9 \\cdot \\frac{4}{3} = 12$\n- $UW = 20$ (given)\n- Perimeter $= 16 + 12 + 20 = 48$ ✓",
+  "distractorRationale": {
+    "A": "Correct. The similarity ratio is $\\frac{UW}{RT} = \\frac{20}{15} = \\frac{4}{3}$, and multiplying the perimeter of $RST$ ($=36$) by $\\frac{4}{3}$ gives $48$.",
+    "B": "The student inverts the similarity ratio, using $\\frac{RT}{UW} = \\frac{15}{20} = \\frac{3}{4}$, and computes the perimeter as $36 \\cdot \\frac{3}{4} = 27$, scaling down instead of up.",
+    "C": "The student incorrectly identifies $RS = 12$ as the side corresponding to $UW = 20$ (instead of $RT = 15$), computes the ratio as $\\frac{20}{12} = \\frac{5}{3}$, and finds perimeter $= 36 \\cdot \\frac{5}{3} = 60$.",
+    "D": "The student incorrectly identifies $ST = 9$ as the side corresponding to $UW = 20$, computes the ratio as $\\frac{20}{9}$, and finds perimeter $= 36 \\cdot \\frac{20}{9} = 80$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c7a4e2f8-1b36-4d95-8c70-5e3d9a1f6b48"
+  }
+}

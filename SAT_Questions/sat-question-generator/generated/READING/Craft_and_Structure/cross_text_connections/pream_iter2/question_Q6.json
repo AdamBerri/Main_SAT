@@ -1,0 +1,58 @@
+{
+  "id": "b3e7c2d1-4a9f-4b8e-9c1d-5f3a2e7b6c4d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2.0,
+    "linguistic": 2.3
+  },
+  "passage": "Text 1\nSocial media platforms have made it easier than ever for people to connect with others who share their interests and experiences. Users can find communities built around hobbies, professions, or shared identities, forging relationships that would have been impossible before the digital age. These connections often provide emotional support and a sense of belonging, particularly for individuals in isolated or underserved communities.\n\nText 2\nDespite the apparent convenience of online social networks, many researchers argue that digital interactions lack the depth of face-to-face relationships. Studies on loneliness consistently show that heavy social media use correlates with increased feelings of isolation, not reduced ones. Scrolling through curated highlight reels of others' lives fosters comparison rather than genuine connection, leaving users more disconnected than before they logged on.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 142,
+    "source": "Original passages"
+  },
+  "stem": "Which choice best describes the relationship between Text 1 and Text 2?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 2 provides evidence that supports the optimistic view of social media presented in Text 1.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 2 calls into question the benefits of online connection that Text 1 claims social media provides.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 1 acknowledges the same limitations of social media that Text 2 identifies as harmful.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 and Text 2 both conclude that social media is primarily responsible for modern loneliness.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 argues that social media enables meaningful connection and belonging, especially for isolated individuals. Text 2 directly disputes this by citing research showing that heavy social media use actually increases feelings of isolation and that digital interactions lack the genuine depth of in-person relationships. Text 2 thus challenges the core claim of Text 1 by presenting evidence that the promised social benefits do not materialize in practice.",
+  "distractorRationale": {
+    "A": "Text 2 does not support Text 1's optimistic view; it presents contradictory evidence from loneliness research and argues the opposite conclusion.",
+    "B": "Correct. Text 2 directly counters the premise of Text 1 by citing studies and mechanisms (comparison culture, curated content) that undermine the claim that social media fosters genuine belonging.",
+    "C": "Text 1 does not acknowledge any drawbacks of social media; it presents only benefits. The limitations Text 2 raises are absent from Text 1.",
+    "D": "Text 1 does not conclude that social media causes loneliness at all—it argues the opposite. Only Text 2 associates social media use with increased isolation."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f2a9e3c7-1b5d-4e8f-9c2a-7d3b5e1f8a4c"
+  },
+  "hasImage": false
+}

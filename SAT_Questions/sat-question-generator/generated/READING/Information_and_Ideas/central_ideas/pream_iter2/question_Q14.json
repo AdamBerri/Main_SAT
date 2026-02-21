@@ -1,0 +1,58 @@
+{
+  "id": "de2af7ba-2016-4290-8ae4-f16467281b76",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.2
+  },
+  "passage": "For centuries, Western medicine treated the human body as a largely self-contained system, with disease arising from internal imbalances or invading pathogens. This framework produced remarkable successes—vaccines, antibiotics, and surgical techniques that extended life expectancy dramatically. Yet it also encouraged physicians to focus narrowly on the biological body while overlooking the social circumstances that shape health outcomes.\n\nResearchers now refer to social determinants of health: factors like income, housing quality, education, and neighborhood safety that predict illness and longevity as powerfully as genetics or access to medical care. Studies consistently show that patients discharged from hospitals to unstable living situations recover more slowly and return to emergency departments at higher rates. A physician who prescribes medication without addressing a patient's food insecurity or unsafe housing is treating symptoms rather than the conditions that generate them.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 151,
+    "source": "Original passage"
+  },
+  "stem": "What is the central argument of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Traditional Western medicine has been highly effective at treating disease through vaccines, antibiotics, and surgery, but these advances have come at the cost of neglecting patients' social needs.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Social determinants of health such as income, housing, and education are more important predictors of health outcomes than genetic factors or access to medical care.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Medicine's traditional focus on the biological body is insufficient because social conditions profoundly affect health and must be part of effective patient care.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Patients who are discharged to unstable living situations recover more slowly, demonstrating that hospital readmission rates are driven by social factors rather than medical ones.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage opens by acknowledging traditional medicine's successes, then pivots to its limitation: the neglect of social circumstances. It introduces social determinants of health as a concept, cites evidence about discharge outcomes, and closes with an illustration showing that treating only biological symptoms while ignoring social conditions is inadequate. Choice C accurately captures the full arc of the argument—that biological medicine alone is insufficient and social conditions must be integrated into care—without overstating or understating any element.",
+  "distractorRationale": {
+    "A": "While the passage acknowledges traditional medicine's successes and its neglect of social factors, it does not frame those successes as coming 'at the cost of' social needs—a causal relationship not stated in the passage. This choice also misses the passage's constructive argument about integrating social determinants into care.",
+    "B": "The passage states that social determinants predict health 'as powerfully as' genetics and medical access, not that they are 'more important.' This choice introduces a comparative claim that overstates what the passage actually says.",
+    "C": "Correct. This choice captures the passage's core argument: traditional medicine's biological focus is limited, and social conditions must be incorporated into effective care.",
+    "D": "The hospital discharge statistic is a supporting example cited to illustrate the relevance of social determinants; it is not the passage's main claim. This choice also adds a contrast ('rather than medical ones') that the passage does not assert."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d6348fe8-41ac-4647-bc22-812c8d06a210"
+  },
+  "hasImage": false
+}

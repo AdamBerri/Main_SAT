@@ -1,0 +1,53 @@
+{
+  "id": "2c9e7b4d-0a35-4f18-d627-1b3e5f8c0a46",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "A grocery store posted a survey link on its website and asked customers to rate their checkout experience. Of the 150 people who responded, 130 gave a rating of \"excellent.\" The store manager claimed this shows that most customers are very satisfied with the checkout experience. Which of the following identifies the most significant limitation of this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A rating of \"excellent\" is too vague to measure customer satisfaction accurately.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Only customers who felt strongly enough to seek out and complete the survey responded, so the sample likely does not represent all customers.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The store should have collected at least 500 responses before drawing any conclusion.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The survey only asked about checkout, so it cannot reflect overall satisfaction with the store.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The survey was voluntary and self-selected — only customers who visited the website and chose to respond participated. Customers who are highly satisfied (or highly dissatisfied) are more likely to seek out a survey than those with neutral feelings. This means the 150 respondents are not a random or representative sample of all customers, so the high satisfaction rate cannot be generalized to all shoppers. The core flaw is the biased sampling method, not the sample size or the question wording.",
+  "distractorRationale": {
+    "A": "Misidentifying the population — a student might focus on the rating label itself as the problem, incorrectly thinking the measurement instrument is flawed rather than recognizing that the issue is who chose to respond.",
+    "C": "Sample size misapplication — a student might assume the problem is that 150 responses is too few, without recognizing that even 500 self-selected responses from a website survey would have the same bias problem. The flaw is how the sample was collected, not how many responded.",
+    "D": "Overgeneralizing scope — a student might identify a real but secondary issue (the survey only asked about checkout), which is a scope mismatch concern. However, the manager's claim specifically refers to checkout satisfaction, so this concern does not directly challenge the manager's stated conclusion. The primary flaw remains the self-selected sample."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "8f4b2d0e-6c19-4a37-9e71-3d5a1f7b0c82"
+  }
+}

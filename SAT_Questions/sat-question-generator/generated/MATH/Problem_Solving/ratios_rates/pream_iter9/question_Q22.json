@@ -1,0 +1,53 @@
+{
+  "id": "c5d9e3f6-71a2-4b8c-9e04-3a1f5d7b2c80",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "Workers A and B together can complete a job in 12 days. Worker A alone can complete the same job in 20 days. They work together for 4 days, after which Worker A leaves and Worker B finishes the job alone. What is the total number of days the job takes from start to finish?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "12",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "20",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "24",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "28",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Find Worker B's individual rate. Combined rate $= \\frac{1}{12}$ job/day. Worker A's rate $= \\frac{1}{20}$ job/day. Worker B's rate $= \\frac{1}{12} - \\frac{1}{20} = \\frac{5}{60} - \\frac{3}{60} = \\frac{2}{60} = \\frac{1}{30}$ job/day.\n\nStep 2: Find the fraction of the job completed in the first 4 days. $4 \\times \\frac{1}{12} = \\frac{4}{12} = \\frac{1}{3}$ of the job.\n\nStep 3: Find the remaining fraction. $1 - \\frac{1}{3} = \\frac{2}{3}$ of the job remains.\n\nStep 4: Find the time for Worker B to finish alone. $\\frac{2}{3} \\div \\frac{1}{30} = \\frac{2}{3} \\times 30 = 20$ days.\n\nStep 5: Total days $= 4 + 20 = 24$ days.",
+  "distractorRationale": {
+    "A": "Error type: Rate applied to wrong quantity. The student correctly finds $\\frac{2}{3}$ of the job remains after 4 days, but then applies the combined rate ($\\frac{1}{12}$ job/day) to the remaining work instead of Worker B's individual rate ($\\frac{1}{30}$). Time for remaining work $= \\frac{2}{3} \\div \\frac{1}{12} = \\frac{2}{3} \\times 12 = 8$ days. Total $= 4 + 8 = 12$ days.",
+    "B": "Error type: Stopped at intermediate value. The student correctly finds Worker B's solo time for the remaining $\\frac{2}{3}$ of the job: $\\frac{2}{3} \\times 30 = 20$ days, but reports this value as the total duration without adding the initial 4 days of joint work.",
+    "D": "Error type: Rate applied to wrong quantity. The student uses only Worker A's rate ($\\frac{1}{20}$ job/day) to calculate work done during the 4-day joint period, instead of the combined rate ($\\frac{1}{12}$). Work in 4 days $= 4 \\times \\frac{1}{20} = \\frac{1}{5}$. Remaining $= \\frac{4}{5}$. Worker B's time $= \\frac{4}{5} \\times 30 = 24$ days. Total $= 4 + 24 = 28$ days."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e2a7b5c9-4f1d-48e3-b602-7c3e9d0a1f56"
+  }
+}

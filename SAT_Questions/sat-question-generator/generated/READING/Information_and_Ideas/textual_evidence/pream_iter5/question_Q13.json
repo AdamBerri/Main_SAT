@@ -1,0 +1,58 @@
+{
+  "id": "f1c8b3e5-2a7d-4f9c-8b4e-3d6a1c9f2b7e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "Text 1\nSleep researchers have long debated whether napping during the day helps or hurts nighttime sleep quality. Proponents of napping argue that short rest periods—typically 20 to 30 minutes—can restore alertness and improve performance without interfering with the longer sleep cycle at night. Critics counter that any daytime sleep reduces what is called \"sleep pressure,\" the biological drive to sleep that builds throughout the day. Lowering sleep pressure too early, they argue, makes it harder to fall asleep at night and reduces overall sleep duration. The debate has been difficult to resolve because individual responses to napping vary considerably based on age, sleep patterns, and work schedules.\n\nText 2\nResults from a two-week study tracking participants' sleep:\n\nGroup               | Avg. Nighttime Sleep | Avg. Time to Fall Asleep\nNo nap              | 7.4 hours            | 14 minutes\n20-minute nap       | 7.1 hours            | 18 minutes\n60-minute nap       | 6.5 hours            | 27 minutes",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 185,
+    "source": "Adapted from sleep research literature and a hypothetical napping study"
+  },
+  "stem": "Which statement best describes how the data in Text 2 relates to the debate in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The data supports napping proponents because all groups averaged over 6 hours of sleep.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The data supports napping critics by showing longer naps reduce nighttime sleep and delay onset.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The data is inconclusive because individual variation was not measured.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The data shows that 20-minute naps have no effect on nighttime sleep duration.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 describes a debate: napping proponents say short naps restore alertness without harming nighttime sleep, while critics argue that napping reduces sleep pressure and disrupts nighttime sleep. The data in Text 2 shows a clear trend: as nap length increases, both nighttime sleep duration decreases (7.4 → 7.1 → 6.5 hours) and time to fall asleep increases (14 → 18 → 27 minutes). Both trends align with the critics' prediction that napping lowers sleep pressure and makes nighttime sleep harder. Choice B correctly identifies which position in Text 1 is supported by the pattern in Text 2.",
+  "distractorRationale": {
+    "A": "While it is technically true that all groups averaged over 6 hours, this observation misreads the direction of support. The declining trend in nighttime sleep contradicts the proponents' claim that napping does not interfere with nighttime sleep. A student who notices only that the numbers are all positive (above 6 hours) without considering the trend might choose this.",
+    "B": "Correct. Both metrics—shorter nighttime sleep and longer time to fall asleep—increase with nap length, directly supporting the critics' claim about reduced sleep pressure.",
+    "C": "Text 1 does mention that individual variation makes the debate hard to resolve, but the study in Text 2 shows consistent group-level trends. Claiming the data is inconclusive because individual variation wasn't measured goes beyond what the data says and misapplies Text 1's caveat to Text 2's findings.",
+    "D": "The 20-minute nap group did sleep slightly less than the no-nap group (7.1 vs. 7.4 hours) and took slightly longer to fall asleep (18 vs. 14 minutes). Saying it has \"no effect\" overstates the case; the effect is smaller than for 60-minute naps, but it exists in the data."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3d9f7b2-1c4e-4a8f-9b2d-5e7c1a3f8b9d"
+  },
+  "hasImage": false
+}

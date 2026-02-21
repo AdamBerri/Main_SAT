@@ -1,0 +1,54 @@
+{
+  "id": "f8a5b1c4-6d0e-4f3a-9b7c-5e8d4f3a2b1c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 4.8
+  },
+  "stem": "A factory produces 3,400 circuit boards per hour. Each board weighs 180 grams. The factory ships the boards in cargo containers, each rated to hold exactly 2.2 metric tons (1 metric ton = 1,000 kg = 1,000,000 grams). The factory operates 16 hours per day, 6 days per week. How many complete containers can the factory fill in one week?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "22",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "26",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "27",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "29",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Step 1: Find the total number of boards produced per week.**\n\n$$3{,}400 \\frac{\\text{boards}}{\\text{hr}} \\times 16 \\frac{\\text{hr}}{\\text{day}} \\times 6 \\frac{\\text{days}}{\\text{week}} = 326{,}400 \\text{ boards/week}$$\n\n**Step 2: Find the total weight in grams.**\n\n$$326{,}400 \\text{ boards} \\times 180 \\frac{\\text{g}}{\\text{board}} = 58{,}752{,}000 \\text{ g}$$\n\n**Step 3: Convert to metric tons.**\n\n$$58{,}752{,}000 \\text{ g} \\times \\frac{1 \\text{ metric ton}}{1{,}000{,}000 \\text{ g}} = 58.752 \\text{ metric tons}$$\n\n**Step 4: Find the number of complete containers.**\n\n$$\\frac{58.752 \\text{ metric tons}}{2.2 \\text{ metric tons/container}} = 26.705 \\text{ containers}$$\n\nSince only **complete** containers count, take the floor: $\\lfloor 26.705 \\rfloor = \\mathbf{26}$ containers.\n\nThe correct answer is **B: 26**.",
+  "distractorRationale": {
+    "A": "**Error: Uses 5 days per week instead of 6 days per week.** The student computes $3{,}400 \\times 16 \\times 5 = 272{,}000$ boards, giving $272{,}000 \\times 180 = 48{,}960{,}000$ g $= 48.96$ metric tons, then $48.96 \\div 2.2 = 22.25 \\rightarrow 22$ complete containers. The factory operates 6 days per week, not 5.",
+    "B": "**Correct answer.** All four conversion steps are applied correctly: boards per week ($326{,}400$), total grams ($58{,}752{,}000$), metric tons ($58.752$), and containers after dividing by 2.2 and taking the floor ($26$).",
+    "C": "**Error: Rounds 26.705 up to 27 instead of taking the floor.** The student correctly arrives at 26.705 containers but uses standard rounding (since $.705 > .5$) instead of recognizing that a partially filled container is not a complete container. The problem asks for complete containers, which requires the floor function.",
+    "D": "**Error: Uses an incorrect container capacity of 2.0 metric tons instead of 2.2 metric tons.** The student correctly finds 58.752 metric tons but divides by 2.0: $58.752 \\div 2.0 = 29.376 \\rightarrow 29$ complete containers. Using the given capacity of 2.2 metric tons is essential."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4d5e6f7-a8b9-0123-4567-89abcdef0124"
+  }
+}

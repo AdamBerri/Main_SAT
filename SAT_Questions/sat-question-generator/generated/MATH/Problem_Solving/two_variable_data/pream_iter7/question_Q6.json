@@ -1,0 +1,54 @@
+{
+  "id": "a3f8e2c1-7d45-4b09-8e6f-1c2d3a4b5e6f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "A biologist studying plant growth recorded the height (in centimeters) of several seedlings after a given number of days. The line of best fit for the data is $\\hat{y} = 3.2x + 5$, where $x$ is the number of days and $\\hat{y}$ is the predicted height in centimeters. One seedling had an actual height of 20 centimeters on day 4. What is the residual for this data point?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-2.2$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$2.2$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$17.8$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$37.8$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The residual is calculated as: residual = actual value $-$ predicted value.\n\nStep 1: Find the predicted height when $x = 4$.\n$$\\hat{y} = 3.2(4) + 5 = 12.8 + 5 = 17.8 \\text{ cm}$$\n\nStep 2: Calculate the residual.\n$$\\text{residual} = \\text{actual} - \\text{predicted} = 20 - 17.8 = 2.2$$\n\nThe residual is $2.2$ centimeters. Since the residual is positive, the actual height is greater than the predicted height.",
+  "distractorRationale": {
+    "A": "This results from computing predicted $-$ actual instead of actual $-$ predicted: $17.8 - 20 = -2.2$. This is the sign error version of the residual formula.",
+    "B": "This is the correct answer. Residual $= 20 - 17.8 = 2.2$.",
+    "C": "This is the predicted value, $\\hat{y} = 3.2(4) + 5 = 17.8$. A student who stops after finding the predicted value without completing the residual calculation would choose this.",
+    "D": "This results from adding the actual and predicted values instead of subtracting: $20 + 17.8 = 37.8$. This reflects confusion about the residual formula."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"
+  }
+}

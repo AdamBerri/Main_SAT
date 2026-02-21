@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "34be99d9-a1d3-4e81-8567-e8b4f9903a71",
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "The pottery class at the community arts center meets every Tuesday and Thursday evening. Students learn to shape clay on a wheel, apply glazes, and fire their pieces in a kiln. The instructor, a professional ceramicist with over twenty years of experience, [1]_____ each student's progress individually and provides personalized feedback.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 55,
+    "source": "Adapted from a community education catalog"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "monitor",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "monitors",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "monitored",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "are monitoring",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement with an appositive phrase. The subject is 'The instructor' (singular), and the appositive 'a professional ceramicist with over twenty years of experience' renames the subject but does not change its number. The verb 'monitors' agrees with the singular subject. Present tense describes the instructor's habitual practice.",
+  "distractorRationale": {
+    "A": "Base form/plural—disagrees with singular 'instructor.'",
+    "B": "Correct. Third-person singular present, agreeing with 'The instructor.'",
+    "C": "Past tense—conflicts with present-tense description ('meets,' 'learn,' 'provides').",
+    "D": "Present progressive plural—disagrees with singular subject and uses progressive for a habitual action, which is non-standard."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c671e2c5-5a3b-4a79-b61d-9b0947953e69"
+  }
+}

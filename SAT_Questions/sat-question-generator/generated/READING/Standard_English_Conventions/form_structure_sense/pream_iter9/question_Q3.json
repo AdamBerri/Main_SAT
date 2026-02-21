@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "e535da00-b481-433b-bfd4-d5d8819fee8a",
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "linguistic": 1
+  },
+  "passage": "The school board approved a plan to install solar panels on the roofs of all elementary schools in the district. The project, funded by a federal grant, will reduce the district's energy costs significantly. Once completed, the panels [1]_____ enough electricity to power all classroom lighting and computer labs.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 52,
+    "source": "Adapted from a school district newsletter"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "will generate",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "generated",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "generates",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "would have generated",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "This question tests future tense selection. 'Once completed' signals a future event, and the passage establishes future orientation with 'will reduce.' The plural subject 'the panels' takes 'will generate,' maintaining future tense consistency.",
+  "distractorRationale": {
+    "A": "Correct. Future tense consistent with 'Once completed' and 'will reduce.'",
+    "B": "Simple past—contradicts the future context of panels not yet completed.",
+    "C": "Present singular—disagrees with plural 'panels' and wrong tense.",
+    "D": "Past conditional perfect—implies a hypothetical past scenario, not a future plan."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "2b21cd64-6dfb-4863-9684-60851f76d83b"
+  }
+}

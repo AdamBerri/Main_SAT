@@ -103,7 +103,7 @@
             "frequency": 2,
             "exampleErrors": [
               "Distractor A requires two independent errors (inverting ratio AND making unit conversion error) simultaneously, violating SAT principles. This is too contrived and less discriminative than single-error distractors, and magnitude is so far removed (0.27 vs 0.75) that students can eliminate it through estimation.",
-              "Distractor spacing shows consecutive 100-unit intervals (200, 300, 400, 500) creating arithmetic symmetry. Options are equidistant from correct answer (\u00b1200 mL), allowing weak students to guess the middle value or detect a pattern rather than demonstrate conceptual understanding."
+              "Distractor spacing shows consecutive 100-unit intervals (200, 300, 400, 500) creating arithmetic symmetry. Options are equidistant from correct answer (±200 mL), allowing weak students to guess the middle value or detect a pattern rather than demonstrate conceptual understanding."
             ]
           },
           {
@@ -117,7 +117,7 @@
             "category": "distractor_conceptual_targeting",
             "frequency": 1,
             "exampleErrors": [
-              "Distractor C (2.7) lacks coherent error pathway\u2014rationale describes 'realizing the error is too large and arbitrarily dividing by some factor,' which represents fixing an error rather than making a consistent misconception. This doesn't reflect genuine student thinking and lacks a clear, reproducible error strategy."
+              "Distractor C (2.7) lacks coherent error pathway—rationale describes 'realizing the error is too large and arbitrarily dividing by some factor,' which represents fixing an error rather than making a consistent misconception. This doesn't reflect genuine student thinking and lacks a clear, reproducible error strategy."
             ]
           }
         ]
@@ -213,7 +213,7 @@
             "category": "answer_validity",
             "frequency": 3,
             "exampleErrors": [
-              "Designated correct answer (B: 200 mL) is mathematically incorrect; correct answer should be A: 100 mL based on ratio calculations (3/8 \u00d7 2.4 = 0.9L needed, minus 0.8L available = 0.1L = 100mL)",
+              "Designated correct answer (B: 200 mL) is mathematically incorrect; correct answer should be A: 100 mL based on ratio calculations (3/8 × 2.4 = 0.9L needed, minus 0.8L available = 0.1L = 100mL)",
               "Designated answer (A: 720 pages) contains arithmetic error in explanation; shows '500 + 420 = 720' which is false; correct answer should be 920 pages, which doesn't appear in answer choices",
               "Answer key contains direct contradiction: lists B (200) as correct but distractor A rationale states 'This is the correct answer... 100 mL is required,' creating impossible situation"
             ]
@@ -249,11 +249,145 @@
       },
       "improvementMade": "Addressed: distractor_quality, answer_validity, difficulty_accuracy",
       "newPromptVersion": "1.2.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.696,
+        "passRate": 0.95,
+        "errorCategories": [
+          {
+            "category": "constraint_violation",
+            "frequency": 1,
+            "exampleErrors": [
+              "Q18 tea blending problem has constraint a>=2b violated by correct answer"
+            ]
+          },
+          {
+            "category": "weak_distractor_rationales",
+            "frequency": 3,
+            "exampleErrors": [
+              "Q1, Q2, Q10 had distractors with unclear error path explanations"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.833,
+        "passRate": 1
+      },
+      "improvementMade": "Final iteration (5/5). 1 failed question (Q18 constraint violation). Best score 4.833.",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.2.0",
+      "trainSetSize": 20,
+      "testSetSize": 4,
+      "trainMetrics": {
+        "avgScore": 4.604,
+        "passRate": 0.95,
+        "errorCategories": [
+          {
+            "category": "faithfulness_failure",
+            "frequency": 2
+          },
+          {
+            "category": "weak_distractors",
+            "frequency": 3
+          },
+          {
+            "category": "context_drift",
+            "frequency": 2
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.271,
+        "passRate": 0.75
+      },
+      "improvementMade": "Addressed: faithfulness to ratios/rates, distractor plausibility, context drift prevention",
+      "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.554,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "incorrect_answer",
+            "frequency": 1
+          },
+          {
+            "category": "faithfulness_drift",
+            "frequency": 2
+          },
+          {
+            "category": "difficulty_calibration",
+            "frequency": 1
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.383,
+        "passRate": 0.8
+      },
+      "improvementMade": "Addressed: answer correctness, faithfulness to ratios/rates, difficulty calibration",
+      "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 8,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.688,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality_low",
+            "frequency": 4,
+            "exampleErrors": [
+              "Q8 distractor:2, Q6,Q7,Q10 distractor:3"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5,
+        "passRate": 1
+      },
+      "improvementMade": "Addressed: distractor quality weakness in d2 questions",
+      "newPromptVersion": "1.5.0"
+    },
+    {
+      "iteration": 9,
+      "promptVersionUsed": "1.5.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.804,
+        "passRate": 0.95,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 5,
+        "passRate": 1
+      },
+      "improvementMade": "Converged: testAvg=5.0, perfect test",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.1.0",
-  "converged": false,
+  "currentBestVersion": "1.5.0",
+  "converged": true,
   "startedAt": "2026-01-08T20:55:29.421Z",
-  "completedAt": null,
-  "bestTestScore": 4.71875
+  "completedAt": "2026-02-20T23:12:33.216Z",
+  "bestTestScore": 5
 }

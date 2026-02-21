@@ -1,0 +1,53 @@
+{
+  "id": "7e3a1f09-d5b8-4c26-a074-8f2c0e4b9d31",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "computational": 1.2
+  },
+  "stem": "A national polling organization randomly sampled 500 registered voters across the country and asked whether they supported a new transportation bill. Of those sampled, 310 said they supported it. A reporter wrote that the poll shows a majority of all registered voters in the country support the bill. Is the reporter's conclusion appropriate?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "No, because 310 out of 500 is not a large enough majority to draw any conclusion.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Yes, because the sample was randomly selected, so the majority support in the sample can reasonably be extended to the full population of registered voters.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "No, because the sample only included registered voters, so the conclusion cannot apply to all voters.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Yes, because 500 people is always enough to represent any national population accurately.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The poll used a random sample of registered voters nationwide, which makes it a valid basis for drawing conclusions about the population of registered voters. Since 310 out of 500 (62%) supported the bill, it is appropriate to infer that a majority of registered voters nationally support the bill. The reporter's conclusion matches the population actually sampled (registered voters) and is supported by a properly conducted random sample.",
+  "distractorRationale": {
+    "A": "Wrong confidence interpretation — a student might feel that 62% is not a convincing enough majority, misapplying a threshold idea (e.g., thinking you need a supermajority) rather than recognizing that any majority proportion from a random sample supports a majority inference.",
+    "C": "Confusing sample with population — a student might misread the reporter's claim as applying to all eligible voters or all citizens, when the reporter specifically said 'registered voters,' which matches the sampled population exactly. This distractor targets the error of thinking a mismatch exists when it does not.",
+    "D": "Sample size misapplication — this choice states the conclusion is valid but for the wrong reason. Saying '500 is always enough' is an overgeneralization; the reason the inference is valid is that the sample was randomly selected, not simply because of its size."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3b6d9e0a-7f14-4c58-b2e1-5a0c8d1f4e72"
+  }
+}

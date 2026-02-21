@@ -1,0 +1,54 @@
+{
+  "id": "56684018-acfb-456a-abc0-bebc1648162a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "computational": 1.9
+  },
+  "stem": "A grocery store sells small cereal boxes for $3 each and large cereal boxes for $5 each. A shopper buys a total of 10 boxes and spends $38. How many large boxes did the shopper buy?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$4$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$5$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$6$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$8$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let $s$ = number of small boxes and $l$ = number of large boxes.\n\nTotal boxes:\n$$s + l = 10 \\quad (1)$$\n\nTotal cost:\n$$3s + 5l = 38 \\quad (2)$$\n\nFrom equation (1): $s = 10 - l$. Substitute into equation (2):\n$$3(10 - l) + 5l = 38$$\n$$30 - 3l + 5l = 38$$\n$$30 + 2l = 38$$\n$$2l = 8$$\n$$l = 4$$\n\nBack-substituting: $s = 10 - 4 = 6$.\n\nChecking both equations:\n- Equation (1): $6 + 4 = 10$ ✓\n- Equation (2): $3(6) + 5(4) = 18 + 20 = 38$ ✓\n\nThe shopper bought $\\boxed{4}$ large boxes.",
+  "distractorRationale": {
+    "A": "Correct answer: substituting $s = 10 - l$ into the cost equation and simplifying gives $2l = 8$, so $l = 4$.",
+    "B": "Single-equation error: the student uses only the total-boxes equation $s + l = 10$ and ignores the price constraint, assuming equal numbers of each type and reporting $l = 5$.",
+    "C": "Wrong-variable error: the student correctly solves the system, finding $l = 4$ and $s = 6$, but reports the number of small boxes $s = 6$ instead of large boxes.",
+    "D": "Forgot to divide by 2: the student correctly reaches $2l = 8$ but omits the final division step and reports $l = 8$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e48b4931-85fa-491f-9ee7-57e87e8745d5"
+  }
+}

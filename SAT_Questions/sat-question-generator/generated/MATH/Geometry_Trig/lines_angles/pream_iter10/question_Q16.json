@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0010-4aaa-b010-000000000016",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4,
+    "computational": 4.3
+  },
+  "stem": "In triangle $ABC$, angle $A = (2x+10)°$ and angle $B = (3x-20)°$. The exterior angle at vertex $C$ is $(6x-25)°$. What is the measure of angle $A$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$40°$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$25°$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$65°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$15°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Exterior angle = sum of non-adjacent interior angles: $6x-25 = (2x+10)+(3x-20) = 5x-10$. So $x-25=-10$, $x=15$. Angle $A = 2(15)+10 = 40°$. Verify: angle $B = 3(15)-20 = 25°$. Exterior at C = $6(15)-25 = 65°$. Check: $40+25 = 65$. Correct.",
+  "distractorRationale": {
+    "A": "Correct. $2(15) + 10 = 40°$.",
+    "B": "Found angle $B = 3(15) - 20 = 25°$ instead of angle $A$.",
+    "C": "Found the exterior angle at $C$: $6(15) - 25 = 65°$.",
+    "D": "Reported $x = 15$ as the answer."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.339Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0010-4000-a010-000000000016"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "c6a1f9d4-b2e7-4c8a-9d30-7f2b1e4a8c05",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "What is the value of $x$ that satisfies $\\sqrt{x + 7} - \\sqrt{x - 2} = 1$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$6$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$11$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$18$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$2$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Starting with $\\sqrt{x+7} - \\sqrt{x-2} = 1$, isolate one radical:\n\n**Step 1:** Isolate $\\sqrt{x+7}$:\n$$\\sqrt{x+7} = 1 + \\sqrt{x-2}$$\n\n**Step 2:** Square both sides:\n$$x + 7 = 1 + 2\\sqrt{x-2} + (x - 2)$$\n$$x + 7 = x - 1 + 2\\sqrt{x-2}$$\n\n**Step 3:** Simplify by subtracting $x$ from both sides:\n$$7 = -1 + 2\\sqrt{x-2}$$\n$$8 = 2\\sqrt{x-2}$$\n$$4 = \\sqrt{x-2}$$\n\n**Step 4:** Square both sides again:\n$$16 = x - 2$$\n$$x = 18$$\n\n**Verification in original equation:**\n$$\\sqrt{18+7} - \\sqrt{18-2} = \\sqrt{25} - \\sqrt{16} = 5 - 4 = 1$$\nLHS $= 1$, RHS $= 1$. ✓",
+  "distractorRationale": {
+    "A": "Choice A = 6: Results from treating $\\sqrt{x-2} = 4$ as $x - 2 = 4$ (i.e., taking the square root of 4 rather than squaring 4). This gives $x - 2 = 4$, so $x = 6$. Verification of error: $\\sqrt{6+7} - \\sqrt{6-2} = \\sqrt{13} - 2 \\approx 1.61 \\neq 1$. Confirmed incorrect.",
+    "B": "Choice B = 11: Results from an arithmetic error when simplifying after squaring. The student correctly reaches $x + 7 = x - 1 + 2\\sqrt{x-2}$ but mistakenly writes $x - 1$ as $x + 1$, yielding $x + 7 = x + 1 + 2\\sqrt{x-2}$, then $6 = 2\\sqrt{x-2}$, $3 = \\sqrt{x-2}$, $9 = x - 2$, $x = 11$. Verification of error: $\\sqrt{11+7} - \\sqrt{11-2} = \\sqrt{18} - 3 \\approx 4.24 - 3 = 1.24 \\neq 1$. Confirmed incorrect.",
+    "C": "Correct answer. Verified: $\\sqrt{25} - \\sqrt{16} = 5 - 4 = 1$.",
+    "D": "Choice D = 2: Results from setting the expression under the second radical equal to zero, $x - 2 = 0$, which gives $x = 2$. This is the boundary of the domain for $\\sqrt{x-2}$, not a solution. Verification: $\\sqrt{2+7} - \\sqrt{2-2} = \\sqrt{9} - 0 = 3 \\neq 1$. Confirmed incorrect."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d2e5b8a1-40f6-4c7d-8e92-1a3f6d9b0c47"
+  }
+}

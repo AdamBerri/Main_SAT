@@ -1,0 +1,57 @@
+{
+  "id": "c4d8f2a3-7b1e-4c9d-8a2f-6e3b5c9d1f7a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "linguistic": 1.1
+  },
+  "passage": "Libraries have changed significantly over the past two decades. Where libraries once focused almost entirely on lending books, many now offer a wide variety of services: free internet access, meeting rooms for community groups, after-school tutoring programs, and even tool-lending collections. Some libraries loan musical instruments or seed packets to local gardeners. This expansion reflects a deliberate effort by librarians to make their institutions useful to as many people as possible. Rather than serving only those who want to read, today's libraries aim to function as community centers that address a broad range of needs.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 99,
+    "source": "Original passage on public institutions"
+  },
+  "stem": "What is the main idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Libraries now offer unusual items such as musical instruments and seed packets for community members to borrow.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Libraries have intentionally expanded their services beyond book lending in order to serve their communities more broadly.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Free internet access and meeting rooms have become the most important services that modern libraries provide.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Librarians have worked to update their profession by adopting new technologies and programs over the past two decades.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage explicitly states that libraries' expansion of services reflects 'a deliberate effort by librarians to make their institutions useful to as many people as possible,' and the final sentence directly states that today's libraries 'aim to function as community centers that address a broad range of needs.' Choice B accurately synthesizes the passage's central claim: libraries have intentionally expanded their services (beyond book lending) to serve communities more broadly. This is supported by the entire passage, which moves from describing the past focus on books to cataloging new services to explaining the purpose behind the change.",
+  "distractorRationale": {
+    "A": "Musical instruments and seed packets are mentioned as examples of the new, unusual services libraries offer, but they are supporting details used to illustrate the broader change, not the main idea of the passage.",
+    "C": "Free internet access and meeting rooms are listed among the new services, but the passage does not rank them as most important. This choice also misses the key point about why libraries expanded their services.",
+    "D": "While updating the profession is implied, the passage is specifically about expanding services to serve communities — not about technology adoption or professional identity. This choice also adds an unsupported emphasis on 'new technologies.'"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2d5f8a1-3c6e-4b9d-7f2a-1e4c8b3d6f9a"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,54 @@
+{
+  "id": "b3e7f2a1-4c9d-4e8b-a2f5-6d1c8b9e3a7f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2.0,
+    "computational": 2.3
+  },
+  "stem": "A streaming service charges a monthly base fee plus an additional charge for each premium channel a customer adds. The total monthly cost $C$, in dollars, for a customer who adds $p$ premium channels is given by the function $C(p) = 3p + 12$. What does the value 12 represent in this context?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The additional charge, in dollars, for each premium channel",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The monthly base fee, in dollars, before any premium channels are added",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The total number of premium channels available",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The total monthly cost, in dollars, when 3 premium channels are added",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In the linear function $C(p) = 3p + 12$, the function is in slope-intercept form $f(x) = mx + b$, where $m$ is the rate of change and $b$ is the initial value. Here, the coefficient $3$ is the slope, representing the cost per premium channel ($3 per channel). The constant $12$ is the y-intercept, which corresponds to $C(0) = 3(0) + 12 = 12$. Since $p = 0$ means no premium channels are added, the value $12$ represents the monthly base fee of $\\$12$ that every customer pays before adding any premium channels.",
+  "distractorRationale": {
+    "A": "Confuses the constant 12 with the slope: the additional charge per premium channel is the coefficient of $p$, which is 3, not 12.",
+    "B": "Correct. The constant term 12 is the y-intercept, representing the fixed monthly base fee when $p = 0$ premium channels are added.",
+    "C": "Misinterprets the constant as a count of items rather than a dollar amount; 12 is a cost in dollars, not a quantity of channels.",
+    "D": "Evaluates $C(3) = 3(3) + 12 = 21$, not 12; this error involves computing the function at $p = 3$ and mistakenly associating the coefficient 3 (the number of channels) with the output."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1f7e3c2-9b4d-4c8e-b6a2-3d5f8c1e7a9b"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "b2e7f4a1-3c9d-4e8b-a5f2-6d1c0e9b8a7f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2.0,
+    "linguistic": 2.3
+  },
+  "passage": "When the city council finally adopted the new zoning regulations, local business owners who had long lobbied for clearer development guidelines expressed relief. The revised code would govern everything from building heights to parking requirements, giving investors the predictability they needed to move forward with projects that had stalled for years.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 57,
+    "source": "Original passage"
+  },
+  "stem": "As used in the passage, \"govern\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "rule",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "regulate",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "restrain",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "manage",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In the passage, 'govern' is used to describe what the revised zoning code would do to building heights, parking requirements, and other development specifics — setting formal standards and specifications. 'Regulate' best captures this meaning of establishing rules that determine how something is controlled or administered. The code is not exercising political rule over a territory, not physically restraining anything, and not actively managing ongoing operations — it is prescribing the standards to which development must conform.",
+  "distractorRationale": {
+    "A": "'Rule' can be a meaning of 'govern' in the political sense (to rule over a country or people), but the passage describes a code applying to specific technical criteria like building heights and parking, not political authority over persons.",
+    "C": "'Restrain' is a meaning of 'govern' in the sense of holding back impulses or emotions, but nothing in the passage suggests limitation of an active force — the context is about setting specifications for future projects.",
+    "D": "'Manage' implies hands-on, ongoing administration or oversight, but a written zoning code does not actively manage anything — it establishes the standards that others must follow."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3a8f2e1-7b4d-4f9a-8e6c-2d5b1a0c9f3e"
+  },
+  "hasImage": false
+}

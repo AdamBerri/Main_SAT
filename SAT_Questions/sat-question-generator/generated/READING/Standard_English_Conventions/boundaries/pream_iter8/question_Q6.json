@@ -1,0 +1,58 @@
+{
+  "id": "a3f7c2d1-8e4b-4f9a-b6c5-1d2e3f4a5b6c",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2.0,
+    "linguistic": 2.3
+  },
+  "passage": "Volcanic eruptions have profoundly shaped the physical geography of many regions. Mount Vesuvius erupted in 79 CE. [The explosion buried the Roman city of Pompeii under meters of ash and pumice, archaeologists have since excavated the site and uncovered remarkably preserved buildings and artifacts.] This discovery transformed scholars' understanding of daily life in the ancient Roman world.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 68,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The explosion buried the Roman city of Pompeii under meters of ash and pumice, archaeologists have since excavated the site and uncovered remarkably preserved buildings and artifacts.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The explosion buried the Roman city of Pompeii under meters of ash and pumice. Archaeologists have since excavated the site and uncovered remarkably preserved buildings and artifacts.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The explosion buried the Roman city of Pompeii under meters of ash and pumice; and archaeologists have since excavated the site and uncovered remarkably preserved buildings and artifacts.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The explosion buried the Roman city of Pompeii under meters of ash and pumice archaeologists have since excavated the site and uncovered remarkably preserved buildings and artifacts.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion contains two independent clauses: 'The explosion buried the Roman city of Pompeii under meters of ash and pumice' (subject 'The explosion,' verb 'buried') and 'archaeologists have since excavated the site and uncovered remarkably preserved buildings and artifacts' (subject 'archaeologists,' verb 'have excavated'). These two complete thoughts must be separated by a period, a semicolon, or a comma followed by a coordinating conjunction. Choice B correctly uses a period to create two separate, complete sentences, which is the clearest and most conventional fix for this boundary error.",
+  "distractorRationale": {
+    "A": "Choice A is a comma splice: two independent clauses are joined only by a comma, which is insufficient to connect two complete sentences. A comma alone cannot join two independent clauses in Standard English.",
+    "B": "Choice B is correct. A period properly separates the two independent clauses into two complete sentences, eliminating the boundary error.",
+    "C": "Choice C pairs a semicolon with the coordinating conjunction 'and.' A semicolon already functions as a sentence boundary marker; adding 'and' after it is redundant and nonstandard. Either a semicolon alone or a comma with 'and' is correct, but combining them produces an error.",
+    "D": "Choice D is a fused (run-on) sentence: the two independent clauses are joined with no punctuation whatsoever. Standard English requires some mark of separation between two independent clauses."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,54 @@
+{
+  "id": "e2d5b1a8-94c7-4e38-f3b0-6a8c1e5d9f47",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "A store manager asked the 15 employees working on a Saturday to rate their job satisfaction on a scale from 1 to 10. The average rating from these 15 employees was 8. The manager concludes that all employees at the store have an average job satisfaction rating of 8. The store has 60 total employees. Which of the following best explains why the manager's conclusion may NOT be valid?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A rating scale of 1 to 10 is not an accurate way to measure job satisfaction.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Only 15 out of 60 employees were surveyed, so the sample is too small.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Employees who work on Saturdays may have different job satisfaction levels than those who do not, so the sample may not represent all employees.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "An average of 8 out of 10 is too high to be a realistic rating.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The manager surveyed only employees scheduled to work on a particular Saturday. Employees who work on weekends may differ systematically from those who do not — for example, they might be part-time employees, employees who volunteered for weekend shifts, or employees with particular scheduling preferences. Any of these factors could make their job satisfaction different from that of employees who work other shifts. Because the 15 employees were not randomly selected from all 60 employees, the sample may not represent the full workforce, and the conclusion about all employees may not be valid.",
+  "distractorRationale": {
+    "A": "Using a numerical scale from 1 to 10 is a widely accepted and reasonable method for measuring satisfaction. The rating scale itself is not the source of the flaw.",
+    "B": "While sample size can matter, the core flaw here is not the number of people surveyed but who was selected. A sample of 15 randomly chosen employees from the full 60 could support a valid conclusion; the problem is that only Saturday workers were asked.",
+    "C": "Correct. Saturday workers are a specific subgroup of all employees and may not represent the entire staff. Without random selection from all 60 employees, the sample could be systematically biased in a direction that skews the satisfaction average higher or lower than the true overall average.",
+    "D": "Whether 8 out of 10 seems high or low is subjective and is not a statistical basis for questioning the conclusion. The issue is the sampling method, not the value of the result."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b3f6d0e9-7c52-4b19-e4a1-2d9f5a8c7b06"
+  }
+}

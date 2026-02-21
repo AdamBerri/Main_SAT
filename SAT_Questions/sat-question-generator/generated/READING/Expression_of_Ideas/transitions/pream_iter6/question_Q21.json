@@ -1,0 +1,58 @@
+{
+  "id": "e1f2a3b4-bbbb-4e7f-8a9b-0c1d2e3f4a56",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Neuroscientists have documented that prolonged sleep deprivation impairs the prefrontal cortex, the brain region most responsible for impulse control and long-term planning. Studies in clinical settings confirm that sleep-deprived individuals consistently make riskier financial decisions than their well-rested counterparts. _______ a longitudinal study of emergency-room physicians found that doctors working extended overnight shifts did not show measurably worse diagnostic accuracy, though they reported feeling significantly less confident in their judgments.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 90,
+    "source": "Adapted from a neuroscience review article"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Paradoxically,",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Consequently,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "In fact,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Likewise,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The first two sentences establish that sleep deprivation impairs decision-making. The third sentence then presents a finding that appears to contradict this: sleep-deprived doctors maintained diagnostic accuracy. This is not simply a contrast but a genuine paradox -- the finding defies the expectation set up by the preceding evidence. 'Paradoxically' precisely captures this tension between established scientific consensus and a seemingly contradictory finding. 'In fact' might seem tempting, but it would imply the doctors' finding intensifies or confirms the prior claim, when it actually contradicts it. 'Likewise' might tempt students who focus on the medical context, but the doctors' results oppose rather than parallel the financial decision studies.",
+  "distractorRationale": {
+    "A": "Correct. 'Paradoxically' signals that the doctors' maintained accuracy is a finding that apparently contradicts the established evidence about sleep deprivation impairing cognition.",
+    "B": "'Consequently' signals a logical result, but the doctors' maintained accuracy is the opposite of what would be expected from the sleep deprivation research.",
+    "C": "'In fact' intensifies or confirms a prior claim. The doctors' finding does not confirm that sleep deprivation impairs decision-making; it presents a case where the expected impairment was not observed.",
+    "D": "'Likewise' signals a parallel finding, but the doctors' results (no measurable accuracy decline) contradict rather than mirror the financial decision studies (riskier decisions)."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:04:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e1bbbbbb-f2a3-4b4c-5d6e-7f8a9b0c1d23"
+  },
+  "hasImage": false
+}

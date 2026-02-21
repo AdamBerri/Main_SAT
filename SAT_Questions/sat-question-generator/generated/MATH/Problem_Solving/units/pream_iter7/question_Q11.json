@@ -1,0 +1,54 @@
+{
+  "id": "b3f7a2e1-5c8d-4a9b-8e6f-1d2c3b4a5e6f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "computational": 3.3
+  },
+  "stem": "A fuel pump fills a storage tank at a constant rate of 12 gallons per minute. How many liters will the pump deliver in 45 minutes? (1 gallon = 3.785 liters)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "143 liters",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "540 liters",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "2,044 liters",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "2,160 liters",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Find the total gallons pumped in 45 minutes.\n$$12 \\text{ gal/min} \\times 45 \\text{ min} = 540 \\text{ gallons}$$\n\nStep 2: Convert gallons to liters using the given conversion factor.\n$$540 \\text{ gal} \\times \\frac{3.785 \\text{ L}}{1 \\text{ gal}} = 2{,}043.9 \\text{ L} \\approx 2{,}044 \\text{ liters}$$\n\nThe pump delivers approximately **2,044 liters** in 45 minutes.",
+  "distractorRationale": {
+    "A": "Inverted conversion: student divides by 3.785 instead of multiplying. $540 \\div 3.785 \\approx 143$ liters. This error treats the conversion factor upside-down, dividing when the factor should be multiplied.",
+    "B": "Stops one step early: student correctly computes $12 \\times 45 = 540$ gallons but reports gallons as the final answer without converting to liters.",
+    "C": "Correct answer: $12 \\times 45 = 540$ gallons, then $540 \\times 3.785 = 2{,}043.9 \\approx 2{,}044$ liters.",
+    "D": "Uses wrong conversion factor: student substitutes $1 \\text{ gal} = 4 \\text{ L}$ (a rounded approximation) instead of the given 3.785 L/gal. $540 \\times 4 = 2{,}160$ liters."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c4d5e6f7-a8b9-4c0d-8e1f-2a3b4c5d6e7f"
+  }
+}

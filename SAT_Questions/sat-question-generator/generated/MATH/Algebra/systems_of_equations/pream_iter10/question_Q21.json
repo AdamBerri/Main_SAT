@@ -1,0 +1,54 @@
+{
+  "id": "b3f7a2c1-4d8e-4f9b-a6c2-1e5d3b7f8a04",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "Consider the system of equations below, where $k$ is a constant.\n\n$$3x + ky = 9$$\n$$2x + 6y = 11$$\n\nFor what value of $k$ does the system have no solution?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-9$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$6$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$9$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$27$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "A system of two linear equations has no solution when the two lines are parallel — that is, when they have equal slopes but different $y$-intercepts (so the equations are inconsistent).\n\nWrite both equations in the form $Ax + By = C$ and compare coefficient ratios.\n\n**Equation 1:** $3x + ky = 9$\n**Equation 2:** $2x + 6y = 11$\n\nFor the lines to be parallel, the ratios of the $x$-coefficients and the $y$-coefficients must be equal, but the ratio of the constants must differ:\n$$\\frac{3}{2} = \\frac{k}{6} \\quad \\text{(slope condition)}$$\n\nCross-multiplying: $3 \\cdot 6 = 2k \\Rightarrow 18 = 2k \\Rightarrow k = 9$.\n\nNow verify the constants are NOT in the same ratio:\n$$\\frac{9}{11} \\neq \\frac{3}{2}$$\n\nSince $9/11 \\neq 3/2$, the lines are parallel but not identical, confirming there is no solution.\n\n**Checking:** With $k = 9$, equation 1 becomes $3x + 9y = 9$, which simplifies (dividing by 3) to $x + 3y = 3$. Equation 2 becomes $2x + 6y = 11$, which simplifies (dividing by 2) to $x + 3y = 5.5$. Both equations have the same left-hand side but different right-hand sides — a contradiction — confirming no solution.",
+  "distractorRationale": {
+    "A": "Includes a spurious negative sign in the slope comparison, setting $3/k = -2/6 = -1/3$, which gives $k = -9$.",
+    "B": "Equates the $y$-coefficients directly ($k = 6$) rather than using the slope-ratio condition $3/2 = k/6$.",
+    "C": "Correct. Cross-multiplying the slope-ratio condition $3/2 = k/6$ gives $k = 9$, and the constant ratios $9/11 \\neq 3/2$ confirm the lines are parallel but not identical.",
+    "D": "Sets up the coefficient ratio inverted as $k/9 = 6/2$, giving $k/9 = 3$, so $k = 27$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e9f1a2-b3c7-4d8e-9f0a-1b2c3d4e5f6a"
+  }
+}

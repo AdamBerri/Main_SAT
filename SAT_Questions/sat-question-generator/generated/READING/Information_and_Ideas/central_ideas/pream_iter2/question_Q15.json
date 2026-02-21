@@ -1,0 +1,58 @@
+{
+  "id": "2d2ff933-bcef-4ad1-9ff5-c969dbd6d1a0",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "Public libraries have always adapted to the needs of the communities they serve. In the nineteenth century, libraries were among the few places where working-class people could access books and newspapers without paying. As literacy rates rose and printed materials became cheaper, libraries shifted their focus, adding periodicals, reference collections, and eventually multimedia resources.\n\nToday many libraries offer services that have little to do with books: job-search assistance, tax preparation help, digital literacy classes, and even social workers on staff. Critics sometimes argue that these expansions dilute the library's core mission. But advocates counter that the mission has always been access—not access to books specifically, but access to whatever information and resources people need most at a given moment. From this perspective, a library that helps a patron file for unemployment benefits is doing exactly what libraries have always done.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 151,
+    "source": "Original passage"
+  },
+  "stem": "Which choice best describes what the passage is mainly about?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Libraries have expanded their services dramatically in recent decades, offering programs like job-search assistance and tax preparation that go far beyond their traditional book-lending role.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The evolution of library services across history reflects a consistent underlying mission of providing communities access to whatever resources they most need.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Critics and advocates disagree about whether modern libraries have stayed true to their original purpose, with critics arguing that new services undermine the library's core identity.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Libraries became important institutions for working-class communities in the nineteenth century because they provided free access to books and newspapers.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage traces libraries' evolution from nineteenth-century reading rooms to today's multi-service institutions, then uses the critic-versus-advocate debate to arrive at a central argument: libraries' mission has always been access to needed resources, not books specifically. The historical examples and the contemporary debate both serve to support this argument. Choice B captures the full scope of the passage—historical continuity, adaptation, and the underlying constant mission—rather than focusing on any single period or detail.",
+  "distractorRationale": {
+    "A": "This choice accurately describes content from the second paragraph but focuses only on modern expansions, omitting the historical context and the passage's argument about a continuous underlying mission. It describes what libraries do now without explaining the passage's point about why.",
+    "B": "Correct. This choice encompasses the historical arc and the passage's core argument that the mission of access has remained constant even as the specific resources offered have changed.",
+    "C": "The critic-advocate debate is a rhetorical structure the passage uses to develop its argument, not the passage's main subject. The passage ultimately resolves the debate in favor of the advocates' view, making the debate itself a means rather than the end.",
+    "D": "The nineteenth-century example is an introductory illustration of the historical pattern, not the passage's central point. This choice captures only the opening detail and ignores the passage's broader argument about adaptive mission continuity."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "8f2f501d-3281-452c-b6e7-1643f3a576df"
+  },
+  "hasImage": false
+}

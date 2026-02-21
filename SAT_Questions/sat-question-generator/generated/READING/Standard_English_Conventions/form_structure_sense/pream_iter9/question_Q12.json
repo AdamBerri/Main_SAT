@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "11444c99-d572-449e-bbd1-f7548769e999",
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "The practice of forest bathing, known in Japan as shinrin-yoku, involves slowly walking through a forested area while mindfully engaging with the natural environment. Proponents claim that the practice reduces stress, lowers blood pressure, and strengthens the immune system. The medical community suggests that every person experiencing chronic stress [1]_____ at least two hours per week in a natural setting.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 62,
+    "source": "Adapted from a health and wellness publication"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "spends",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "spend",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "spent",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "would spend",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests the mandative subjunctive. 'Suggests that' triggers the subjunctive mood, requiring the base form of the verb regardless of the subject's number: 'suggests that every person...spend.' Even though 'every person' is singular and would normally take 'spends' in the indicative mood, the subjunctive requires the base form.",
+  "distractorRationale": {
+    "A": "Indicative present singular—correct in number but wrong mood. The subjunctive after 'suggests that' requires the base form.",
+    "B": "Correct. Base form (subjunctive) required after 'suggests that.'",
+    "C": "Past tense—incorrect in a subjunctive construction.",
+    "D": "Conditional modal—standard American English subjunctive uses the bare base form without modals."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "ef8eba14-cfbd-4288-9d12-434baf10811b"
+  }
+}

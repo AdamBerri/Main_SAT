@@ -1,0 +1,58 @@
+{
+  "id": "b5e8d3c4-92f1-4a07-8e16-3d9c2f1b0a57",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "linguistic": 4.1
+  },
+  "passage": "The Harlem Renaissance fundamentally reshaped American artistic identity, producing poets, novelists, and visual artists whose work challenged prevailing cultural assumptions. Langston Hughes, one of its most celebrated voices, published his debut collection in 1926. [2]Although critics initially dismissed his vernacular style as unsophisticated; his emphasis on everyday Black experience soon earned widespread recognition across literary circles. Later scholars would regard his innovations as essential to the development of American poetry.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 72,
+    "source": "Original passage for SAT practice"
+  },
+  "stem": "Which choice best maintains sentence boundaries and punctuation conventions?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "NO CHANGE",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Although critics initially dismissed his vernacular style as unsophisticated, his emphasis",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Although critics initially dismissed his vernacular style as unsophisticated. His emphasis",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Critics initially dismissed his vernacular style as unsophisticated, his emphasis",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion begins with the subordinating conjunction 'Although,' which makes the first clause dependent: 'Although critics initially dismissed his vernacular style as unsophisticated.' This dependent (subordinate) clause must be attached to an independent clause — it cannot stand alone. Choice A uses a semicolon after the dependent clause, which is incorrect: a semicolon must connect two independent clauses, not a dependent clause to an independent clause. Choice B correctly places a comma after the subordinate clause ('Although critics initially dismissed his vernacular style as unsophisticated,') and connects it to the independent clause 'his emphasis on everyday Black experience soon earned widespread recognition.' This is the standard punctuation for an introductory adverbial clause. Choice C places a period after the subordinate clause, creating a fragment: 'Although critics initially dismissed his vernacular style as unsophisticated' cannot stand alone as a sentence. Choice D removes 'Although,' turning the first clause into an independent clause and creating a comma splice — two independent clauses joined only by a comma.",
+  "distractorRationale": {
+    "A": "The semicolon incorrectly joins a dependent adverbial clause ('Although critics initially dismissed his vernacular style as unsophisticated') to an independent clause. Semicolons must connect two independent clauses. This is a semicolon-misuse error.",
+    "B": "Correct. When an introductory adverbial clause beginning with a subordinating conjunction precedes the main clause, Standard English requires a comma at the boundary. 'Although critics initially dismissed his vernacular style as unsophisticated, his emphasis...' is grammatically correct.",
+    "C": "Placing a period after 'Although critics initially dismissed his vernacular style as unsophisticated' creates an illegal sentence fragment. A clause introduced by 'Although' is dependent and cannot end a sentence with a period.",
+    "D": "Removing 'Although' turns the first clause into a full independent clause ('Critics initially dismissed his vernacular style as unsophisticated'), creating a comma splice when it is joined to the second independent clause by only a comma."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c7d2e5f8-44a1-4b99-a702-8e3f0b1c9d25"
+  },
+  "hasImage": false
+}

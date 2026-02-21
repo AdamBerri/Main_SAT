@@ -1,0 +1,54 @@
+{
+  "id": "d5f9c2e3-6a07-5f1c-0b34-3g8d5c1f7e69",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "computational": 1.9
+  },
+  "stem": "A data set contains five values: 4, 7, 10, 13, and 20. If the value 7 is removed from the data set, what is the range of the remaining four values?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "10",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "13",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "16",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "20",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "STEP A — Sort the original data set: 4, 7, 10, 13, 20.\n\nSTEP B — Original mean: sum = 4 + 7 + 10 + 13 + 20 = 54; mean = 54/5 = 10.8.\n\nSTEP C — Original median: position = (5+1)/2 = 3rd value = 10.\n\nSTEP D — No mode.\n\nSTEP E — Original range: max − min = 20 − 4 = 16.\n\nSTEP G — After removing 7, the new data set is: 4, 10, 13, 20 (4 values).\nNew maximum = 20; new minimum = 4.\nNew range = 20 − 4 = 16.\n\nKey insight: The range depends only on the maximum and minimum values. Since 7 is neither the maximum nor the minimum of the original data set, removing it leaves both the maximum (20) and the minimum (4) unchanged. Therefore the range is unchanged at 16.\n\nSTEP H — The correct answer is 16, which matches choice C.\n\nSTEP I — Distractor analysis:\nA (10): Wrong-minimum misconception. The student removes 7 and incorrectly treats 10 as the new minimum (the next value after 7 in the sorted list), forgetting that 4 is still in the data set. They compute 20 − 10 = 10.\nB (13): Statistic-confusion error. The student computes the range as max minus the removed value: 20 − 7 = 13, incorrectly using the removed value as if it were the minimum.\nD (20): Maximum-for-range confusion. The student reports the maximum value (20) instead of computing max − min, confusing the range statistic with the maximum of the data set.",
+  "distractorRationale": {
+    "A": "Wrong-minimum error: student removes 7 and treats the next value (10) as the new minimum, computing 20 − 10 = 10, forgetting that 4 remains in the data set.",
+    "B": "Removed-value-as-minimum error: student computes max minus the removed value (20 − 7 = 13), incorrectly treating the removed value as though it were the minimum.",
+    "C": "Correct: 7 is neither the max nor the min, so removing it leaves both endpoints unchanged; range = 20 − 4 = 16.",
+    "D": "Maximum-for-range confusion: student reports the maximum value (20) instead of computing the difference between max and min."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b3c4d5e6-f7a8-9012-cdef-345678901234"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "computational": 1.1
+  },
+  "stem": "A shipping company requires that a package weigh no more than 30 pounds. If a box already weighs 6 pounds, and each book placed in the box weighs 3 pounds, what is the greatest number of books that can be placed in the box?",
+  "choices": [
+    { "label": "A", "text": "9", "isCorrect": false },
+    { "label": "B", "text": "8", "isCorrect": true },
+    { "label": "C", "text": "7", "isCorrect": false },
+    { "label": "D", "text": "10", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Set up the inequality: $6 + 3b \\leq 30$. Subtract 6 from both sides: $3b \\leq 24$. Divide both sides by 3: $b \\leq 8$. The greatest number of books is 8.",
+  "distractorRationale": {
+    "A": "Cluster B error: Forgot to subtract the weight of the box. Solved $3b \\leq 30$, getting $b \\leq 10$, then rounded to 9 due to uncertainty.",
+    "B": "Correct. $6 + 3b \\leq 30$ gives $b \\leq 8$.",
+    "C": "Cluster C error: Used strict inequality $6 + 3b < 30$, getting $3b < 24$, and chose 7 to stay strictly under the limit.",
+    "D": "Cluster D error: Ignored the box weight entirely and divided $30 \\div 3 = 10$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:02.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f"
+  }
+}

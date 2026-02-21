@@ -1,0 +1,59 @@
+{
+  "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "linguistic": 1.1
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- The Eiffel Tower was built for the 1889 World's Fair in Paris.\n- Gustave Eiffel's engineering company designed and constructed the tower.\n- The tower stands approximately 330 meters tall.\n- It was the tallest man-made structure in the world until 1930.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 53,
+    "source": "Student research notes on the Eiffel Tower"
+  },
+  "stem": "The student wants to introduce the Eiffel Tower to an audience unfamiliar with it. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Gustave Eiffel's company built a tower that was the tallest structure until 1930.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The Eiffel Tower, which stands about 330 meters tall, held the record as the tallest man-made structure for over 40 years.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Built for the 1889 World's Fair in Paris, the Eiffel Tower stands approximately 330 meters tall and was designed by Gustave Eiffel's engineering company.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Paris hosted the 1889 World's Fair, which featured many impressive exhibits and structures.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Choice C is correct because it provides a well-rounded introduction by combining the tower's origin (built for the 1889 World's Fair), location (Paris), physical characteristic (330 meters tall), and creator (Gustave Eiffel's company). This gives an unfamiliar audience the most essential information about the tower.",
+  "distractorRationale": {
+    "A": "This choice names the builder and mentions the height record but omits when and why the tower was built, making it an incomplete introduction.",
+    "B": "This choice provides the height and the record but lacks information about the tower's origin and purpose, which would be important for an unfamiliar audience.",
+    "D": "This choice mentions the World's Fair but says nothing specific about the Eiffel Tower itself, failing to introduce it."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:01.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

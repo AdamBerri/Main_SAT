@@ -1,0 +1,58 @@
+{
+  "id": "d5f8a2b3-4c9e-4a7f-b1c6-7d2e8f9a4b5c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "Botanists studying tropical rainforests have long observed that the forest floor receives less than two percent of the sunlight that reaches the canopy. This extreme light scarcity has driven remarkable adaptations in understory plants. Many species have evolved oversized leaves with large surface areas to capture scarce photons, while others have developed unusually high concentrations of chlorophyll, producing the deep, saturated greens characteristic of shade-tolerant species. Some plants, such as certain Calathea species, exhibit a phenomenon called solar tracking in reverse: rather than orienting leaves toward direct sunlight as most plants do, they angle their leaves away from any gaps in the canopy, preventing the cellular damage that even brief exposure to intense light can cause. When researchers transplant shade-adapted understory species to open clearings, the plants often experience bleaching and necrosis within days, even when watered and fertilized appropriately.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 148,
+    "source": "Adapted from a botanical ecology research summary on tropical understory plant adaptations"
+  },
+  "stem": "What can most reasonably be inferred from the passage about shade-adapted understory plants?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Their adaptations make them superior competitors to canopy trees in all environments.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "They have become so specialized for low light that increased sunlight becomes harmful rather than beneficial.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "They would thrive if the forest canopy were thinned to allow moderate additional sunlight through.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Their deep green coloration is the primary mechanism by which they avoid cellular damage.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage presents a converging set of evidence that understory plants have adapted so thoroughly to low light that sunlight becomes a threat rather than a resource. The reverse solar tracking in Calathea species—actively orienting leaves away from canopy gaps to avoid intense light—directly demonstrates this. The transplantation experiment confirms it: plants die from bleaching and necrosis even with adequate water and fertilizer, meaning light excess is the cause of failure. Synthesizing these two pieces of evidence, the reader can infer that these plants' extreme specialization has inverted the normal plant-light relationship, making surplus light harmful.",
+  "distractorRationale": {
+    "A": "The passage discusses adaptations to the understory environment only; it never compares understory plants to canopy trees as competitors, and the word 'superior' far exceeds what the text supports.",
+    "B": "Correct. Both the reverse solar tracking behavior and the transplantation experiment, read together, support the inference that sunlight excess—not deficiency—is damaging to these specialized plants.",
+    "C": "The transplantation experiment shows that even moving plants to fully open clearings causes rapid death. The passage gives no basis for concluding that 'moderate' additional light would be beneficial rather than harmful—this requires an assumption the text does not support.",
+    "D": "Deep green coloration is described as a result of high chlorophyll concentrations for capturing scarce photons, not as a mechanism for avoiding cellular damage. The passage attributes damage avoidance to reverse solar tracking in specific species, not to coloration generally."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e4a7b1c2-8d3f-4e9a-b5c6-1f2a3b4c5d6e"
+  },
+  "hasImage": false
+}

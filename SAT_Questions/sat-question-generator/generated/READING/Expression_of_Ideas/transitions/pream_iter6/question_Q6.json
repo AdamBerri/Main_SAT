@@ -1,0 +1,58 @@
+{
+  "id": "a6b7c8d9-e0f1-4a2b-3c4d-5e6f7a8b9c01",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "linguistic": 2.3
+  },
+  "passage": "The city council approved funding to widen the main highway by two lanes, a project that transportation planners said would reduce commute times by up to fifteen minutes during peak hours. _______ several neighborhood associations voiced concerns that the expanded road would increase noise levels and reduce property values for homes along the route.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 62,
+    "source": "Adapted from a local government report"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Therefore,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "However,",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Subsequently,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "For example,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The first sentence presents a positive outcome (reduced commute times), while the second introduces negative reactions (noise and property value concerns). This is a contrast relationship: the benefits of the highway expansion are set against the drawbacks. 'However' correctly signals this opposition.",
+  "distractorRationale": {
+    "A": "'Therefore' signals cause-effect, but the neighborhood concerns are not caused by the commute reduction; they represent an opposing viewpoint.",
+    "B": "Correct. 'However' signals the contrast between the positive effects of the highway project and the negative concerns raised by residents.",
+    "C": "'Subsequently' signals chronological sequence, but the passage contrasts two perspectives rather than describing events that follow one another in time.",
+    "D": "'For example' introduces a specific illustration of a general point, but the neighborhood concerns are not examples of reduced commute times."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:01:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b7c8d9e0-f1a2-4b3c-4d5e-6f7a8b9c0d12"
+  },
+  "hasImage": false
+}

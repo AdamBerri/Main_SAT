@@ -1,0 +1,54 @@
+{
+  "id": "b3e7a1c2-9f4d-4b6e-8a2c-1d5e9f3b7a4c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "computational": 3.3
+  },
+  "stem": "A quadratic function has a vertex at $(-1, 9)$ and passes through the point $(2, 0)$. What is the leading coefficient of this quadratic?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-3$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$-1$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$1$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$3$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Write the quadratic in vertex form: $f(x) = a(x - h)^2 + k$, where $(h, k)$ is the vertex.\n\nWith vertex $(-1, 9)$: $f(x) = a(x + 1)^2 + 9$.\n\nSubstitute the known point $(2, 0)$:\n$$0 = a(2 + 1)^2 + 9$$\n$$0 = a(3)^2 + 9$$\n$$0 = 9a + 9$$\n$$9a = -9$$\n$$a = -1$$\n\nThe leading coefficient is $\\boxed{-1}$.",
+  "distractorRationale": {
+    "A": "Error: Student does not square $(2+1)$, instead writes $a(2+1) + 9 = 0$, giving $3a + 9 = 0$, so $a = -3$.",
+    "B": "Correct. Substituting $(2,0)$ into vertex form gives $9a + 9 = 0$, so $a = -1$.",
+    "C": "Error: Student makes a sign error when isolating $a$, writing $9a + 9 = 0$ as $9a = 9$ instead of $9a = -9$, giving $a = 1$.",
+    "D": "Error: Student both omits the square on $(2+1)$ AND makes a sign error: writes $3a + 9 = 0$ as $3a = 9$, giving $a = 3$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e2a7b3c4-1f9d-4e6a-8b5c-2d3f7a9e1b4c"
+  }
+}

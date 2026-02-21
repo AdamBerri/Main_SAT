@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "3fb7fe77-17c8-4952-a83c-197fba670ebc",
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "The hiking trail along the river was closed for three months last summer due to flood damage. Crews worked to repair washed-out sections and reinforce eroded banks. The trail [1]_____ to the public in September, just in time for the fall foliage season.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 48,
+    "source": "Adapted from a parks department update"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "reopens",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "reopened",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "reopen",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "has reopened",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests verb tense with a definite past time marker. 'In September' combined with the past-tense narrative ('was closed,' 'worked') requires simple past. The singular 'trail' takes 'reopened.'",
+  "distractorRationale": {
+    "A": "Present singular—conflicts with the past narrative.",
+    "B": "Correct. Simple past matching 'in September' and the established past tense.",
+    "C": "Base form/plural—wrong tense and disagrees with singular subject.",
+    "D": "Present perfect—connects past to present, but the 'last summer' context establishes a purely past narrative."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a7418c61-1e34-46ca-b3d3-f771dffcab23"
+  }
+}

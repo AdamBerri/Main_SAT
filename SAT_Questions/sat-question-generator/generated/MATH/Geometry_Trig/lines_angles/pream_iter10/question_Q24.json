@@ -1,0 +1,55 @@
+{
+  "id": "a1b2c3d4-0018-4aaa-b018-000000000024",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "Lines $p$ and $q$ are parallel. A transversal crosses line $p$ at point $A$, making a $48°$ angle with line $p$. The transversal crosses line $q$ at point $B$. Point $C$ lies between the parallel lines, forming triangle $ABC$ with angle $ACB = (2x + 6)°$. The exterior angle of the triangle at vertex $B$ is $(4x - 10)°$. What is the measure of the interior angle of the triangle at vertex $B$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$62°$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$70°$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$118°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$32°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "By alternate interior angles, the angle at $A$ inside the triangle is $48°$. By the exterior angle theorem: $4x - 10 = 48 + (2x + 6)$, so $4x - 10 = 2x + 54$, giving $2x = 64$, $x = 32$. The exterior angle at $B$ is $4(32) - 10 = 118°$. The interior angle at $B$ is $180° - 118° = 62°$.",
+  "distractorRationale": {
+    "A": "Correct. $180° - 118° = 62°$.",
+    "B": "Found angle $C = 2(32)+6 = 70°$ instead of angle $B$.",
+    "C": "Found the exterior angle $118°$ instead of the interior angle.",
+    "D": "Reported $x = 32$ as the answer."
+  },
+  "hasImage": true,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T03:28:52.372Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0018-4000-a018-000000000024"
+  },
+  "imageDescription": "Two horizontal parallel lines labeled p (top) and q (bottom). A transversal crosses both lines. The angle at the intersection with p is labeled 48°. Point C is between the two parallel lines forming a triangle with the intersection points A and B."
+}

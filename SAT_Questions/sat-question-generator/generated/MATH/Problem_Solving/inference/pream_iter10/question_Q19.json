@@ -1,0 +1,54 @@
+{
+  "id": "d5b8e2f4-1c3a-4d7e-9f2b-6a4c8e1d3b50",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "A city transportation department randomly sampled 400 of its 25,000 registered commuters and asked whether they used public transit as their primary mode of commuting. Of the 400 sampled, 140 said yes. A department analyst used this data to estimate that 8,750 registered commuters primarily use public transit. A city council member challenged the estimate, arguing that because the survey was conducted online and sent only to commuters with registered email addresses, the estimate is unreliable. The analyst responded that the sampling fraction — 400 out of 25,000 — is large enough to make the estimate valid. Which of the following best evaluates the exchange between the analyst and the council member?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The analyst is correct because the calculation $\\frac{140}{400} \\times 25{,}000 = 8{,}750$ is arithmetically accurate and the 1.6% sampling fraction is an accepted standard for large-population surveys.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The council member is correct because online surveys always produce biased results, making any estimate from such a survey invalid regardless of sample size.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The council member raises a valid concern: if commuters without email addresses are systematically different in their transit use, the sample may not represent all 25,000 registered commuters, and the analyst's defense based on sampling fraction does not address this bias.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The analyst is correct because the sample was drawn randomly from the list of commuters with email addresses, so all members of that group had an equal chance of selection, making the estimate valid for the full population.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The analyst's arithmetic is correct: $\\frac{140}{400} \\times 25{,}000 = 8{,}750$. However, the sample was drawn from commuters with registered email addresses, not from all 25,000 registered commuters. If commuters without email addresses — who were excluded from the possible sample — use public transit at a different rate than those with email addresses, then the 35% rate ($\\frac{140}{400}$) from the email-accessible group does not represent the full population of 25,000. For example, older commuters or lower-income commuters may be less likely to have registered email addresses and may use transit at higher or lower rates. The analyst's defense — that the sampling fraction is large enough — addresses precision (how variable the estimate is within the sampled group) but does not address representativeness (whether the sampled group reflects the full population). The council member's concern is about coverage bias: the population from which the sample was drawn differs from the population about which the estimate is made. This is a valid statistical objection that the analyst's response does not refute.",
+  "distractorRationale": {
+    "A": "Error type 6 (sample size misapplication — confusing arithmetic correctness with inferential validity): The arithmetic is indeed correct, and a 1.6% sampling fraction is not inherently too small. However, a correct calculation and an adequate sampling fraction do not resolve whether the sampled group represents the full population. A student who focuses only on the numbers and does not evaluate the coverage of the sampling frame will choose this option.",
+    "B": "Error type 3 (overgeneralizing a limitation — treating any methodological concern as automatically fatal): While online surveys can introduce bias in some circumstances, stating that online surveys 'always' produce invalid results is an overstatement. The concern is specifically about whether those without email addresses differ systematically, not about online delivery per se. This distractor captures the council member's general spirit while overstating the case to an indefensible absolute.",
+    "C": "Correct answer: The council member's concern is about coverage bias — commuters without email addresses were excluded from the sampling frame, and if they differ systematically in transit use, the estimate is biased. The analyst's response about sampling fraction is a non-sequitur: sampling fraction relates to precision within the sampled group, not to whether that group is representative of the full population. The analyst conflates a large-enough sample size with a representative sample.",
+    "D": "Error type 1 (confusing sample with population — treating a random sample from a subset as equivalent to a random sample from the full population): The sample was random within the email-registered subgroup, which means every email-registered commuter had an equal chance of being selected. But randomness within a subset does not make the subset representative of a larger population that includes members not in the subset. A student who understands that randomness is necessary for valid inference but does not recognize that the sampling frame must match the target population would select this choice."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "9a2e6c4b-8f1d-4a3e-b7c5-4d8f2a6b1e30"
+  }
+}

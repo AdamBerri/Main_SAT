@@ -1,0 +1,59 @@
+{
+  "id": "c6d7e8f9-a0b1-4c2d-3e4f-5a6b7c8d9e0a",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- In the early 20th century, the boll weevil destroyed cotton crops across the American South, devastating the region's economy.\n- Farmers in Enterprise, Alabama, responded by diversifying their crops and shifting to peanut farming.\n- Peanut farming proved more profitable than cotton had been in the years before the boll weevil arrived.\n- In 1919, the city of Enterprise erected a monument to the boll weevil, crediting the insect with forcing beneficial economic change.\n- Agricultural historians cite Enterprise's diversification as an early example of adaptive resilience in farming communities.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 103,
+    "source": "Student research notes on the boll weevil's impact on Southern agriculture"
+  },
+  "stem": "The student wants to illustrate how an agricultural disaster led to an unexpected positive outcome. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The boll weevil devastated cotton crops across the American South in the early 20th century, causing severe economic hardship for farming communities.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "When the boll weevil destroyed Enterprise's cotton crops, farmers switched to peanuts, which proved even more profitable -- prompting the city to erect a monument thanking the very insect that had caused the crisis.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Agricultural historians consider Enterprise's shift from cotton to peanut farming an early example of adaptive resilience in farming communities.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Farmers in Enterprise, Alabama, began growing peanuts after the boll weevil made cotton farming impossible in the region.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it traces the full arc from disaster (boll weevil destroying cotton) through adaptation (switching to peanuts) to unexpected positive outcome (greater profitability, monument to the pest). The monument detail vividly illustrates the ironic positive outcome. Choice A covers only the disaster, C offers an analytical label without showing the arc, and D describes the adaptation without noting its positive result.",
+  "distractorRationale": {
+    "A": "This choice describes only the destructive phase and does not mention any positive outcome that followed.",
+    "C": "This choice uses a historian's characterization but does not tell the story of how the disaster led to a positive outcome, merely labeling it.",
+    "D": "This choice describes the crop switch but omits that peanuts proved more profitable and that the city erected a monument, failing to convey the unexpected positive outcome."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:18.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d7e8f9a0-b1c2-4d3e-4f5a-6b7c8d9e0f1b"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

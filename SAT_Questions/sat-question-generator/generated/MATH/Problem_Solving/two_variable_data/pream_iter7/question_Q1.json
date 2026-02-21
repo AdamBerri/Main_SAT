@@ -1,0 +1,54 @@
+{
+  "id": "a3f2c1d4-7e85-4b29-9f16-2c4e8a0d3b57",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "computational": 1.3
+  },
+  "stem": "A researcher collected data on the number of hours students studied per week and their scores on a math exam. The line of best fit for the data is given by the equation $y = 3x + 52$, where $x$ is the number of hours studied per week and $y$ is the predicted exam score. According to this equation, for each additional hour studied per week, by how many points is the exam score predicted to increase?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "3",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "52",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "55",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "17",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The equation of the line of best fit is $y = 3x + 52$. This is in slope-intercept form $y = mx + b$, where $m$ is the slope and $b$ is the y-intercept. The slope $m = 3$ tells us that for each 1-unit increase in $x$ (hours studied per week), the predicted exam score $y$ increases by 3 points. Therefore, the exam score is predicted to increase by 3 points for each additional hour studied.",
+  "distractorRationale": {
+    "A": "Correct. The slope of the line of best fit is 3, which represents the predicted increase in exam score per additional hour studied.",
+    "B": "Incorrect. This is the y-intercept (52), which represents the predicted exam score when a student studies 0 hours per week, not the rate of change.",
+    "C": "Incorrect. This is the sum of the slope and y-intercept ($3 + 52 = 55$), which has no direct meaning in this context. A student may have incorrectly added the two coefficients.",
+    "D": "Incorrect. This value ($52 \\div 3 \\approx 17$) results from dividing the y-intercept by the slope, which is not a meaningful operation in this context."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b1e4f7c2-3a96-4d08-8e21-5f0c9d2a7b34"
+  }
+}

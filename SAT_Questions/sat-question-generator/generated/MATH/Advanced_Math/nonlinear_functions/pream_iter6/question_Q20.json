@@ -1,0 +1,54 @@
+{
+  "id": "d3c2b1a0-9e8f-4d56-7c89-0b1a2d3e4f56",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "A colony of bacteria triples in population every 4 hours. The population at time $t = 0$ hours is $400$ bacteria. The population is modeled by $P(t) = 400 \\cdot 3^{t/4}$. After how many complete hours will the population first reach at least $32{,}400$ bacteria?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$4$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$12$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$16$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$20$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Set $P(t) \\geq 32{,}400$: $400 \\cdot 3^{t/4} \\geq 32{,}400$. Dividing both sides by 400: $3^{t/4} \\geq 81$. Since $81 = 3^4$, we need $t/4 \\geq 4$, so $t \\geq 16$. Verification: $P(16) = 400 \\cdot 3^{16/4} = 400 \\cdot 3^4 = 400 \\cdot 81 = 32{,}400 \\geq 32{,}400$. $\\checkmark$ The population first reaches at least $32{,}400$ after $16$ complete hours.",
+  "distractorRationale": {
+    "A": "Error: setting $3^{t/4} = 3^4$ and concluding $t = 4$ by reading off the exponent directly without accounting for the factor of $\\frac{1}{4}$ in the exponent. A student who writes $\\frac{t}{4} = 4$ but then reports $t = 4$ (the right-hand exponent) instead of solving $t = 4 \\times 4 = 16$ would get $4$.",
+    "B": "Error: using a tripling period of 3 hours instead of 4 hours. A student who misreads the model and writes $3^{t/3} = 81 = 3^4$ obtains $t/3 = 4$, giving $t = 12$.",
+    "C": "This is the correct answer: $P(16) = 400 \\cdot 3^4 = 32{,}400$.",
+    "D": "Error: solving $3^{t/4} = 3^4 \\Rightarrow t/4 = 4$ correctly, but then computing $t = 4 + 4 + 4 + 4 + 4 = 20$ (adding 4 five times) instead of $t = 4 \\times 4 = 16$. This arithmetic error of adding 4 one extra time gives $t = 20$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a0b1c2d3-e4f5-6789-0123-456789abcdef"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "a3f8c1d2-7e45-4b9a-8f2c-3d6e1a0b5c47",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "computational": 4.3
+  },
+  "stem": "A researcher models the relationship between hours of daily exercise ($x$) and resting heart rate ($y$, in beats per minute) using a line of best fit that passes through the point $(2, 74)$ and has a slope of $-3.5$. For a participant in the study who exercises 6 hours per day, the residual is $-6$. What is the participant's actual resting heart rate?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "46",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "52",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "54",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "66",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Find the equation of the line of best fit. The line passes through $(2, 74)$ with slope $-3.5$: $$74 = -3.5(2) + b \\Rightarrow 74 = -7 + b \\Rightarrow b = 81.$$ So the line is $\\hat{y} = -3.5x + 81$.\n\nStep 2: Find the predicted value at $x = 6$: $$\\hat{y} = -3.5(6) + 81 = -21 + 81 = 60.$$\n\nStep 3: Use the residual formula. Residual $=$ actual $-$ predicted: $$-6 = \\text{actual} - 60 \\Rightarrow \\text{actual} = 60 + (-6) = 54.$$\n\nThe participant's actual resting heart rate is $\\boxed{54}$ beats per minute.",
+  "distractorRationale": {
+    "A": "46: The student correctly computes the predicted value of 60 but then subtracts 14 (treating the residual as if it were $-6$ applied twice or confusing the computation), arriving at 46. Alternatively, the student may have used an incorrect y-intercept of 67 (by not subtracting the slope contribution from the given point), gotten $\\hat{y} = 52$, then subtracted 6 to get 46.",
+    "B": "52: The student finds the predicted value correctly as 60, then subtracts 8 instead of 6 due to an arithmetic error, getting 52. Alternatively, the student ignores the residual entirely and simply reports the predicted value after computing $\\hat{y}$ at $x = 6$ with an incorrect intercept of 67 (forgetting to subtract slope $\\times$ x from 74, using $b = 74$): $\\hat{y} = -3.5(6) + 74 = -21 + 74 = 53$, rounding to 52.",
+    "C": "54: Correct. The student finds the line $\\hat{y} = -3.5x + 81$, computes the predicted value 60 at $x = 6$, and correctly applies residual $= $ actual $-$ predicted to find actual $= 54$.",
+    "D": "66: The student correctly finds the predicted value of 60 but interprets the residual with the wrong sign, computing actual $= 60 + 6 = 66$ instead of $60 + (-6) = 54$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2e9f4a7-1c3d-4e8f-a5b6-7c8d9e0f1a2b"
+  }
+}

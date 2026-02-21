@@ -1,0 +1,54 @@
+{
+  "id": "f6a1d3e9-5c82-4b7f-a204-8e9f1b3c7d02",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "computational": 3.2
+  },
+  "stem": "Consider the following system of equations, where $k$ is a constant.\n$$6x + 4y = 9$$\n$$3x + ky = 5$$\nFor what value of $k$ does this system have no solution?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$4$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$6$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$8$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "A system of two linear equations has no solution when the two lines are parallel — that is, when the ratios of the $x$-coefficients and $y$-coefficients are equal, but the ratio of the constants is different.\n\nSet the coefficient ratios equal:\n$$\\frac{6}{3} = \\frac{4}{k}$$\n$$2 = \\frac{4}{k}$$\n$$k = 2$$\n\nVerify the constant ratio: $\\frac{9}{5} = 1.8$, which does not equal $2$. Since the coefficient ratios are proportional but the constant ratio is not, the lines are parallel and the system has no solution when $k = 2$.\n\nCheck: With $k = 2$, the second equation $3x + 2y = 5$ is equivalent to multiplying the first equation $6x + 4y = 9$ by $\\frac{1}{2}$, which would give $3x + 2y = 4.5 \\neq 5$. The lines are parallel. ✓\n\nThe value of $k$ is $\\mathbf{2}$.",
+  "distractorRationale": {
+    "A": "Correct answer: $k = 2$ makes the coefficient ratios proportional ($6/3 = 4/k = 2$) while the constant ratio $9/5 \\neq 2$, so the lines are parallel.",
+    "B": "Makes a wrong-variable error by setting $k$ equal to the $y$-coefficient of the first equation ($k = 4$), mistakenly believing parallel lines must share the identical $y$-coefficient rather than proportional $y$-coefficients.",
+    "C": "Sets $k$ equal to the $x$-coefficient of the first equation ($k = 6$), confusing which coefficient requires the proportionality condition and ignoring that the $x$-coefficient ratio $6/3 = 2$ must equal $4/k$.",
+    "D": "Reverses the coefficient ratio: uses $\\frac{4}{k} = \\frac{3}{6} = \\frac{1}{2}$ (taking the reciprocal of the correct ratio $6/3$) instead of $\\frac{4}{k} = \\frac{6}{3} = 2$, giving $k = 8$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3e8b2c4a-7f1d-4956-8b30-a5c9e6f70d18"
+  }
+}

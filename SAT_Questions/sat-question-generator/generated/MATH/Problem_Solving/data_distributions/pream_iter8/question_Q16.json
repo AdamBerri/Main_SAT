@@ -1,0 +1,54 @@
+{
+  "id": "a5a69a57-bbfd-492f-b50c-b1dc39fe926e",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "computational": 4.3
+  },
+  "stem": "A data set contains the five values $5, 10, 15, 20, 50$. The value $50$ is replaced by $15$. Which of the following correctly describes the effect of this replacement on the mean and the median of the data set?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The mean decreases by $7$ and the median decreases by $5$.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The mean decreases by $7$ and the median remains unchanged.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The mean decreases by $5$ and the median remains unchanged.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The mean remains unchanged and the median decreases by $5$.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "STEP A — Sort the original data in ascending order: $5, 10, 15, 20, 50$.\n\nSTEP B — Compute the original mean: $\\frac{5+10+15+20+50}{5} = \\frac{100}{5} = 20$.\n\nSTEP C — Identify the original median: $n=5$, so the median is at position $\\frac{5+1}{2} = 3$. The third value in the sorted list is $\\mathbf{15}$.\n\nSTEP D — Mode: no value repeats, so no mode.\n\nSTEP E — Original range: $50 - 5 = 45$.\n\nSTEP G (after change) — Replace $50$ with $15$. The new sorted data set is: $5, 10, 15, 15, 20$.\n\nNew mean: $\\frac{5+10+15+15+20}{5} = \\frac{65}{5} = 13$.\n\nNew median: $n=5$, position 3. The third value is $\\mathbf{15}$. The median is still $15$.\n\nSTEP H — Mean changed from $20$ to $13$: a decrease of $\\mathbf{7}$. Median remained at $15$: no change. This matches choice B.\n\nSTEP I — Distractor analysis:\n- Choice A ($\\text{mean} \\downarrow 7$, $\\text{median} \\downarrow 5$): Median position error. A student using position $2$ instead of position $3$ in the new list reads the value $10$, giving a median of $10$ — a decrease of $5$. This error arises from using $\\lfloor n/2 \\rfloor$ instead of $\\lceil n/2 \\rceil$ as the median position.\n- Choice C ($\\text{mean} \\downarrow 5$, $\\text{median unchanged}$): Wrong operation on mean. A student computes the change as $\\text{old mean} - \\text{new value} = 20 - 15 = 5$ instead of recalculating the mean from the new sum.\n- Choice D ($\\text{mean unchanged}$, $\\text{median} \\downarrow 5$): Statistic confusion. A student reverses the roles of mean and median, incorrectly believing the mean (not the median) is resistant to replacement of an extreme value.",
+  "distractorRationale": {
+    "A": "Median position error: the student selects position 2 of the new 5-value sorted list rather than the correct position 3, reading 10 instead of 15 and computing a median decrease of 5.",
+    "B": "Correct. The new mean is (5+10+15+15+20)/5 = 13, a decrease of 7. The median remains 15 because the third-position value in the new sorted list is still 15.",
+    "C": "Wrong operation on the mean: the student computes the mean change as old_mean minus the replacement value (20 - 15 = 5) rather than recalculating (100 - 50 + 15)/5 = 13, which is a decrease of 7.",
+    "D": "Statistic confusion: the student swaps the roles of mean and median, incorrectly believing that the median (not the mean) is the statistic that shifts when an extreme value is replaced."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "db586d28-7760-4345-8e81-b33ee97aaf1e"
+  }
+}

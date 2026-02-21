@@ -1,0 +1,54 @@
+{
+  "id": "b5e9a174-6c32-4d8e-a7f0-29b3c6d84e51",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "A water tank is draining at a constant rate. The table below shows the volume of water $V$, in gallons, remaining in the tank at time $t$, in hours.\n\n| $t$ (hours) | $V$ (gallons) |\n|---|---|\n| 2 | 620 |\n| 6 | 380 |\n\nAssuming $V$ is a linear function of $t$, at what time $t$ will the tank contain exactly 140 gallons?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$t = 4$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$t = 8$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$t = 10$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$t = 14$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Find the slope (rate of change). Using the two table values: $$m = \\frac{380 - 620}{6 - 2} = \\frac{-240}{4} = -60 \\text{ gallons per hour}$$ Step 2: Find the $V$-intercept $b$ using the point $(2, 620)$: $$620 = -60(2) + b \\implies 620 = -120 + b \\implies b = 740$$ So $V(t) = -60t + 740$. Step 3: Solve for $t$ when $V = 140$: $$-60t + 740 = 140 \\implies -60t = -600 \\implies t = 10$$ The tank contains 140 gallons at $t = 10$ hours.",
+  "distractorRationale": {
+    "A": "Uses the total change in volume (240) as the rate without dividing by the time interval, giving slope $-240$; sets $-240t + 1100 = 140$, yielding $-240t = -960$, so $t = 4$.",
+    "B": "Uses the $t = 2$ table reading as the $V$-intercept directly ($b = 620$ instead of computing the true intercept of 740): solves $-60t + 620 = 140$, giving $-60t = -480$, so $t = 8$.",
+    "C": "Correct answer.",
+    "D": "Computes the slope as $-240 \\div 6 = -40$ (divides by $t = 6$ rather than the time difference $6 - 2 = 4$); finds $b = 620 - (-40)(2) = 700$; solves $-40t + 700 = 140$, giving $-40t = -560$, so $t = 14$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e2a74f03-9b51-4c68-b5d7-1f0c8e3a9d62"
+  }
+}

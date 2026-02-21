@@ -1,0 +1,53 @@
+{
+  "id": "e6f0c4d3-9a5b-4e2f-d8c9-5b4a6f0e3c2d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "textual_evidence"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "Text 1\nLinguists studying language change have proposed that prestige dialects—those associated with economic or social power—spread not through direct imitation but through what William Labov termed the \"golden age\" effect: speakers unconsciously adopt features of a dialect they associate with a valued past rather than with present authority figures. This mechanism, Labov argued, explains why certain phonological features persist in regions long after the economic conditions that initially conferred prestige on them have dissolved. Crucially, the golden age effect operates below conscious awareness; speakers who adopt prestige features typically deny doing so.\n\nText 2\nSurvey results from a study of dialect feature adoption in four post-industrial cities:\n\n| City | Economic Decline Started | Prestige Feature Retention Rate | Speakers Who Consciously Identify the Feature | Speakers Who Report Local Pride |\n|---|---|---|---|---|\n| Milltown | 1975 | 78% | 12% | 81% |\n| Coalburg | 1962 | 71% | 9% | 76% |\n| Ironport | 1988 | 44% | 38% | 49% |\n| Steelham | 1991 | 39% | 41% | 44% |",
+  "stem": "The data in Text 2 most strongly suggest a qualification to the golden age effect as Text 1 describes it. What is that qualification?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The golden age effect strengthens when economic decline is more prolonged",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Conscious awareness of dialect features may suppress rather than support their retention",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Local pride, not unconscious prestige, may drive high retention in some cities",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The golden age effect may depend on low conscious awareness paired with high local pride",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Text 1 describes the golden age effect as operating below conscious awareness (speakers deny adoption) and as persisting because of an association with a valued past. The data in Text 2 reveal that high retention cities (Milltown 78%, Coalburg 71%) share two features simultaneously: very low conscious identification of the feature (12%, 9%) AND very high local pride (81%, 76%). Low retention cities (Ironport 44%, Steelham 39%) show the opposite pattern: higher conscious identification (38%, 41%) AND lower local pride (49%, 44%). Text 1 emphasizes only the below-conscious-awareness aspect of the golden age effect—it does not mention local pride as a prerequisite. The data suggest that local pride and low conscious awareness together may be necessary for high retention, qualifying Text 1's account by adding a second condition. Choice D correctly identifies both elements (low conscious awareness AND high local pride) as jointly necessary, whereas Text 1 implies unconscious operation alone is the key mechanism. Choice B is tempting because it correctly observes that high conscious awareness correlates with lower retention, but it frames this as 'suppression' rather than recognizing that the critical factor is the conjunction of both variables. Choice C isolates local pride as the sole driver, ignoring the conscious awareness dimension. Choice A reads the temporal dimension (earlier decline = higher retention) plausibly from the data, but decline timing alone does not explain the relationship—Ironport's decline started later than Milltown's yet has far lower retention, suggesting other factors (conscious awareness, pride) are more explanatory.",
+  "distractorRationale": {
+    "A": "The two high-retention cities did experience earlier economic decline (1975, 1962) than the two low-retention cities (1988, 1991). A student who focuses solely on the timing column might infer that longer elapsed time since decline correlates with higher retention—and this is not contradicted by the numbers. However, this interpretation ignores the conscious awareness and local pride columns entirely, which show stronger correlations with retention. The qualification would be a narrowing of mechanism (time since decline matters), but the data don't isolate time as the variable; awareness and pride covary.",
+    "B": "The negative correlation between conscious identification and retention rate is real in the data (high awareness cities have lower retention). However, framing this as 'suppression' implies that awareness directly causes lower retention, which is a causal claim the data cannot support—it could be that cities with strong golden age effects naturally produce low awareness (as Text 1 predicts), and the causality runs the other direction. More importantly, this choice omits local pride entirely, missing the conjunction that D captures.",
+    "C": "Local pride does correlate strongly with retention rate (high pride cities have higher retention), and this represents a genuine addition to Text 1's framework (which does not mention pride). However, selecting C alone misses that conscious awareness also varies across the cities and correlates with retention. The true qualification requires both variables, not just pride. Students who focus on the pride column without examining the awareness column will find C plausible.",
+    "D": "Correct. See explanation."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b4d5e6f7-c8a9-0123-defa-234567890124"
+  },
+  "hasImage": false
+}

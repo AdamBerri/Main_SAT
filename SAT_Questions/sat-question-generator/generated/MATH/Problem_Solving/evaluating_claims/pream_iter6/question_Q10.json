@@ -1,0 +1,54 @@
+{
+  "id": "e8b2a4c6-0d57-4e1f-8b89-623f2c5b4e01",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "A company wanted to know if employees preferred working from home or in the office. The company sent an email survey to all 400 employees; 90 employees responded. Of those who responded, 60 said they preferred working from home, and 30 said they preferred the office. A manager concluded that twice as many company employees prefer working from home as prefer working in the office. Is the manager's conclusion valid based on this survey?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Yes, because 60 is exactly twice 30, which directly supports the conclusion.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Yes, because the survey was sent to all 400 employees, making it a complete census.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "No, because only 90 out of 400 employees responded, and employees who did not respond may have different preferences.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "No, because the survey needed to include more than two answer options to be valid.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Although the survey was sent to all 400 employees, only 90 chose to respond — a response rate of $\\frac{90}{400} = 22.5\\%$. The manager's conclusion is about ALL company employees, but the data comes only from the 90 who voluntarily replied. The remaining 310 employees who did not respond are excluded from the results. Employees who feel strongly about one option may be more likely to respond than those who are indifferent, creating a voluntary response bias. Because only 22.5% of employees are represented and self-selected to respond, the 2-to-1 ratio observed in the sample cannot be reliably applied to all 400 employees.",
+  "distractorRationale": {
+    "A": "This is the most tempting distractor because 60 is indeed exactly twice 30 — the arithmetic is correct within the sample. However, this confuses a description of the sample results with a valid conclusion about all employees. The 2:1 ratio holds only among the 90 respondents, not necessarily among all 400 employees.",
+    "B": "This distractor exploits the fact that all 400 employees were invited to participate, which students might confuse with a census. A census requires that responses are collected from the entire population — not just that everyone was asked. Since only 90 of 400 responded, this is not a census but a voluntary response survey with a low response rate.",
+    "C": "Correct. With only 22.5% of employees responding and no mechanism to ensure the non-respondents' preferences are captured, the data does not represent all 400 employees. The voluntary nature of the response means those with strong preferences are more likely to reply, potentially distorting the ratio.",
+    "D": "This distractor introduces an irrelevant criterion. Whether the survey offered two or more answer choices does not affect whether the respondents represent all employees. The flaw is the low and voluntary response rate, not the structure of the answer options."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b5c6d7e8-9f0a-1b2c-3d4e-5f6a7b8c9d0e"
+  }
+}

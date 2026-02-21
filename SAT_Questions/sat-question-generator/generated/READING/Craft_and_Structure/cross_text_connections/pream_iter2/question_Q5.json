@@ -1,0 +1,58 @@
+{
+  "id": "8e1b4c7d-3f2a-4d9e-b6c4-5a7f2e1b8c3d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "linguistic": 1
+  },
+  "passage": "Text 1\nUrban gardens give city residents the opportunity to grow their own food, reducing dependence on grocery stores and providing fresh produce in areas that may lack nearby markets. Community plots bring neighbors together around a shared purpose, building social connections that strengthen neighborhoods. Participants also gain practical knowledge about plant care, soil health, and seasonal growing cycles. These gardens transform unused city land into productive green spaces that benefit both people and the environment.\n\nText 2\nCommunity gardens flourish in some neighborhoods but struggle to take root in others. Successful programs typically depend on reliable access to water, durable fencing, and volunteers willing to maintain the space through all seasons. In lower-income areas, where residents often work multiple jobs, finding consistent volunteers is especially difficult. Without dedicated leadership and resources, even well-intentioned garden projects fall into disrepair, leaving once-promising spaces abandoned.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 150,
+    "source": "Adapted from urban planning and community development literature"
+  },
+  "stem": "Which choice best describes the relationship between the two texts?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 argues against community gardens, while Text 2 presents evidence that they succeed when properly funded.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 outlines the benefits of community gardens, while Text 2 identifies practical challenges that can prevent those benefits from being realized.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 1 and Text 2 both argue that community gardens are only viable in wealthy urban neighborhoods.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 2 builds on Text 1 by providing additional examples of the social benefits community gardens produce.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 presents community gardens in a consistently positive light, describing the food access, social connections, and environmental benefits they offer. Text 2 accepts that gardens can produce these outcomes but shifts focus to the conditions under which they fail — specifically, the resource and volunteer constraints that make sustained success difficult, especially in lower-income areas. The two texts form a problem-solution gap: Text 1 describes the ideal, and Text 2 identifies the real-world obstacles to achieving it.",
+  "distractorRationale": {
+    "A": "Text 1 does not argue against community gardens — it advocates for them. Text 2 does not argue that funding alone ensures success; it identifies volunteers and leadership as key factors that can be especially scarce in lower-income communities.",
+    "B": "Correct. Text 1 presents the potential benefits of community gardens; Text 2 explains the logistical and resource challenges that can prevent those benefits from materializing.",
+    "C": "Neither text argues that gardens are only viable in wealthy neighborhoods. Text 1 does not address wealth disparities. Text 2 identifies challenges in lower-income areas but does not conclude that gardens cannot work there.",
+    "D": "Text 2 does not add examples of social benefits. It shifts the discussion toward challenges and failure modes, which is a contrast to — not an extension of — Text 1's focus on benefits."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "3b7e2d4f-9c1a-4f8b-a5e7-6c2d1f4b9e3a"
+  },
+  "hasImage": false
+}

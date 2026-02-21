@@ -1,0 +1,97 @@
+{
+  "id": "7ff56ba7-7dfc-452c-84d3-5e6ace7ffb1e",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "Urban planners assessed the impact of green infrastructure investments on property values and flood damage costs in four neighborhoods with varying levels of investment. They argue that while green infrastructure increases property values in all neighborhoods, its cost-effectiveness as a flood mitigation strategy -- measured by the ratio of flood damage reduction to investment cost -- is highest in areas with moderate investment levels rather than the highest investment levels.",
+  "stem": "Which choice most effectively uses data from the figure to support the urban planners' argument about cost-effectiveness?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Neighborhood C, with a moderate $8 million investment, achieved a flood damage reduction of $32 million (a 4:1 return ratio), while Neighborhood D, with the highest investment of $15 million, achieved only a $42 million reduction (a 2.8:1 ratio).",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Neighborhood D had the largest total flood damage reduction at $42 million and the highest property value increase at 18%, making it the neighborhood that benefited most from green infrastructure.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Neighborhood A, with the smallest investment of $2 million, saw property values increase by 4% and flood damage reduced by $5 million, while Neighborhood B's $5 million investment yielded a 9% increase and $16 million reduction.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "All four neighborhoods saw property values increase after green infrastructure investment: Neighborhood A by 4%, B by 9%, C by 14%, and D by 18%, confirming that green infrastructure raises property values at every investment level.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is specifically about cost-effectiveness (return ratio) being highest at moderate investment, not at the highest. Choice A computes the ratio for both moderate (C: 4:1) and high (D: 2.8:1) investments, showing the moderate neighborhood has a better return. Choice B highlights total benefits for D without computing the cost-effectiveness ratio. Choice C discusses A and B (low investments) without comparing to C or D. Choice D discusses property value increases across all neighborhoods but doesn't address flood mitigation cost-effectiveness.",
+  "distractorRationale": {
+    "A": "Correct: compares the cost-effectiveness ratios of moderate (C: 4:1) and high (D: 2.8:1) investment neighborhoods, showing moderate investment yields a higher return per dollar.",
+    "B": "Wrong (wrong comparison): cites total flood reduction and property value increase for the highest-investment neighborhood, conflating total benefit with cost-effectiveness.",
+    "C": "Wrong (irrelevant data): discusses the two lowest-investment neighborhoods without addressing the moderate-versus-high comparison central to the cost-effectiveness claim.",
+    "D": "Wrong (incomplete evidence): shows property value increases across all neighborhoods but does not address the flood damage cost-effectiveness ratio that the claim is about."
+  },
+  "hasImage": true,
+  "imageDescription": "Data table titled 'Green Infrastructure Investment Outcomes by Neighborhood.' Columns: Neighborhood, Investment ($ millions), Property Value Increase (%), Flood Damage Reduction ($ millions). Rows: A - $2M - 4% - $5M; B - $5M - 9% - $16M; C - $8M - 14% - $32M; D - $15M - 18% - $42M. Source: Urban Planning and Resilience Research Center, 2024.",
+  "chartData": {
+    "type": "data_table",
+    "title": "Green Infrastructure Investment Outcomes by Neighborhood",
+    "data": {
+      "columns": [
+        "Neighborhood",
+        "Investment ($ millions)",
+        "Property Value Increase (%)",
+        "Flood Damage Reduction ($ millions)"
+      ],
+      "rows": [
+        [
+          "A",
+          2,
+          4,
+          5
+        ],
+        [
+          "B",
+          5,
+          9,
+          16
+        ],
+        [
+          "C",
+          8,
+          14,
+          32
+        ],
+        [
+          "D",
+          15,
+          18,
+          42
+        ]
+      ]
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 75,
+    "source": "Adapted from Urban Planning and Resilience Research Center policy evaluation"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:37.331Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "7b0a208d-ea33-4dac-a5d6-7d4d7dd99a97"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "6c4e2a9f-1b7d-4e3f-a8c5-9d1f4b2e7c3a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "linguistic": 1.2
+  },
+  "passage": "Text 1\nMany educators argue that handwriting instruction in elementary school should be preserved even as technology becomes more prevalent in classrooms. Research suggests that the physical act of forming letters by hand helps students encode information more deeply than typing does. When children write by hand, the slower pace encourages them to process and organize ideas before committing them to paper. These cognitive benefits make handwriting a valuable tool for learning, not simply a relic of pre-digital education.\n\nText 2\nSome school districts have eliminated dedicated handwriting instruction to make room for typing skills and digital literacy, which students will rely on throughout their academic and professional lives. Critics of this shift argue that handwriting offers unique cognitive advantages, but proponents note that strong keyboard proficiency enables students to produce written work more efficiently and at greater length. Schools must weigh which skills prepare students most effectively for the world they will actually inhabit.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 152,
+    "source": "Adapted from education policy discussions"
+  },
+  "stem": "How does Text 2 relate to the argument made in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 2 refutes the claim made in Text 1 that handwriting has any cognitive benefit for students.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 2 presents the same conclusion as Text 1 but supports it with different evidence.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Text 2 acknowledges the cognitive case for handwriting made in Text 1 but frames it as one consideration among competing educational priorities.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Text 2 argues that schools have already resolved the debate over handwriting in favor of digital instruction.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Text 1 makes a focused argument in favor of handwriting instruction by emphasizing its cognitive benefits. Text 2 does not deny these benefits — it acknowledges them through 'critics of this shift argue that handwriting offers unique cognitive advantages' — but situates them within a broader decision schools must make about competing priorities. Text 2 reframes the debate rather than rejecting Text 1's core claim, making the relationship one of acknowledgment followed by qualification within a larger context.",
+  "distractorRationale": {
+    "A": "Text 2 does not refute the claim that handwriting has cognitive benefits. It explicitly references critics who argue for those benefits, without dismissing them as false.",
+    "B": "Text 2 does not reach the same conclusion as Text 1. Text 1 concludes that handwriting should be preserved; Text 2 presents the debate as unresolved and weighs handwriting against competing digital literacy needs.",
+    "C": "Correct. Text 2 acknowledges the cognitive benefits cited in Text 1 but presents them as one factor in a broader educational trade-off, qualifying rather than endorsing Text 1's conclusion.",
+    "D": "Text 2 does not claim the debate has been resolved. It describes the decision as something 'schools must weigh,' indicating the question remains open and contested."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "1f8d3e7b-4c2a-4b9f-9e6d-3a5c8f1e2b4d"
+  },
+  "hasImage": false
+}

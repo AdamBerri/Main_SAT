@@ -1,0 +1,54 @@
+{
+  "id": "d6c9e4b7-28f3-4d5a-b1e7-4f0a2c8d5b63",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "computational": 1.2
+  },
+  "stem": "A researcher randomly selected 200 students from all students enrolled at a large university and asked each one how many hours of sleep they get on a typical school night. The researcher found that, in this sample, students slept an average of 6.5 hours per night. Which of the following conclusions is best supported by the researcher's data?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "All college students in the country sleep an average of 6.5 hours per night.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Students at this university likely sleep an average of about 6.5 hours per night.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Getting 6.5 hours of sleep causes students at this university to perform poorly on exams.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Exactly 6.5 hours is the sleep amount for every student at this university.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The researcher randomly selected 200 students from the university's full enrollment. Because the selection was random, this sample is representative of the students at that university, and it is appropriate to generalize the finding to the broader population of students at that university. The sample average of 6.5 hours per night supports an estimate that students at this university, on average, sleep approximately 6.5 hours per night. The conclusion is limited to the university studied because the sample was drawn only from that institution, not from all colleges in the country.",
+  "distractorRationale": {
+    "A": "The sample was drawn only from one university, so the conclusion can be generalized only to that university's students — not to all college students nationwide. Generalizing beyond the population that was sampled is an overreach.",
+    "B": "Correct. A randomly selected sample from the university's student body supports an inference about the average sleep of all students at that university. The wording 'likely' and 'about' appropriately reflect that this is an estimate from a sample.",
+    "C": "This conclusion claims a cause-and-effect relationship. The study only measured reported sleep hours — it did not measure exam performance or manipulate sleep in any way. An observational survey cannot establish causation.",
+    "D": "An average does not mean every individual has exactly that value. Students will have varying sleep amounts; 6.5 hours is the mean of the sample, not a fixed value for each person."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1c3f8e2-6b94-4a07-d259-5e7b0f4c2d38"
+  }
+}

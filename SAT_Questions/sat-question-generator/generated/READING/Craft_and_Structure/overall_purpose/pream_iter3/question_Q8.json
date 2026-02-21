@@ -1,0 +1,56 @@
+{
+  "id": "2e5c8a1d-9f3b-4a7e-8d2c-4b9f1e6c3a8d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "The history of the pencil is longer and more interesting than most people expect. Graphite was discovered in Borrowdale, England, in the 1560s, and local people quickly found it useful for marking sheep. Because pure graphite is soft and breaks easily, craftsmen in Nuremberg, Germany, began encasing thin rods of graphite in wood during the 1600s, producing the first recognizable pencils. By the 1800s, pencil factories had spread across Europe, and manufacturers discovered they could mix graphite with clay to control hardness—a technique that remains in use today. The letter H on a pencil indicates a harder lead that makes lighter marks, while the letter B indicates more graphite and a darker line. Artists favor soft pencils for shading, engineers prefer hard pencils for precise technical drawings, and students typically use a middle grade that works well for ordinary writing. From a lump of mineral found in a sheep meadow to the tool on millions of desks, the pencil has traveled a surprisingly long road.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 168,
+    "source": "Adapted from a general history of everyday objects"
+  },
+  "stem": "What is the primary purpose of this passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To trace the historical development of the pencil from its origins to modern use",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "To explain how artists and engineers choose the correct pencil grade for their work",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "To argue that the pencil deserves more recognition as an important invention",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "To describe the chemistry of how graphite and clay are combined in pencil manufacturing",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage moves chronologically from the 1560s discovery of graphite through the early wooden casing of pencils, the spread of pencil factories in the 1800s, and the development of the graphite-clay mixture, ending with a reflection on the pencil's long journey from raw mineral to everyday tool. This narrative arc—covering origins, development, and current use across centuries—identifies historical tracing as the passage's primary purpose.",
+  "distractorRationale": {
+    "B": "The passage does explain the H and B grading system and who prefers each grade, but this information appears near the end as supplementary detail. The organizational spine of the passage is chronological history, not a guide to selecting pencil grades.",
+    "C": "The passage's closing sentence notes the pencil's 'surprisingly long road,' which could suggest admiration, but the author never explicitly argues that pencils deserve more credit. The tone is informative throughout rather than persuasive.",
+    "D": "The graphite-clay mixture is mentioned in one sentence as a historical development, not as the subject of a detailed chemical explanation. Describing the chemistry is not the passage's focus."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "1a4d7c9e-2f5b-4e8a-9c1d-3b6f8e2c5a9d"
+  }
+}

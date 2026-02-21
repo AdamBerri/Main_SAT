@@ -1,0 +1,56 @@
+{
+  "id": "3a7f9b2c-1d4e-4f8a-9c3b-6e2d5a8f1c7b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2.0,
+    "linguistic": 2.3
+  },
+  "passage": "Monarch butterflies complete one of the most remarkable migrations in the animal kingdom, traveling up to three thousand miles between their summer breeding grounds in North America and their overwintering sites in the mountains of central Mexico. Unlike birds that can learn migration routes from experienced adults, monarchs navigate by instinct alone, relying on a combination of the sun's position and an internal magnetic compass. A single butterfly that emerges from its chrysalis in late summer has never made the journey south, yet it finds the correct mountain forests where generations of its ancestors sheltered. Scientists studying this phenomenon have tagged millions of butterflies and tracked their routes through the continent. Their data reveal that monarchs travel along consistent corridors, often resting in the same trees year after year despite no individual butterfly making the round trip more than once. The precision of this navigation continues to puzzle researchers who have not yet fully explained how such small creatures can carry enough information to accomplish what no map could make clearer.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 162,
+    "source": "Adapted from a natural science feature article"
+  },
+  "stem": "What is the main purpose of this passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To argue that monarchs are the most impressive navigators in the animal kingdom",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "To explain the remarkable and still-puzzling navigation abilities of monarch butterflies",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "To describe the threats facing monarch butterfly populations during migration",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "To summarize research findings on how scientists tag and track butterfly routes",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage devotes its full length to describing how monarch butterflies navigate their long migration using instinct, the sun, and an internal compass—and notes that even after extensive scientific study, the phenomenon remains puzzling. The author's goal is to inform readers about both what is known and what remains unexplained about this navigation ability. This is a fundamentally informative purpose with a clear thread of wonder running through the description of unanswered questions.",
+  "distractorRationale": {
+    "A": "The passage never directly claims monarchs are the best navigators among all animals. While it calls the migration 'remarkable,' its purpose is to explain the behavior and the science around it, not to rank monarchs above other species.",
+    "C": "The passage makes no mention of threats or dangers facing monarch populations. This choice introduces content entirely absent from the passage.",
+    "D": "Tagging and tracking research is mentioned in two sentences as supporting evidence, but summarizing that research is not the passage's primary goal. The focus is on explaining the navigation phenomenon itself, not on describing scientific methodology."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "7b2c4d9e-1f3a-4e8b-9c5d-2a6f8b3c1d4e"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "a1c5e7f3-9d2b-4a8c-b6e4-3f1d9a7c2e5b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "A city's parks department randomly selected 250 park visitors on weekday mornings over a two-week period and asked whether they supported a proposed expansion of a downtown park. Of those surveyed, 190 said they supported the expansion. The parks director uses this result to conclude that 76% of city residents support the expansion. A city council member argues that this conclusion overstates public support. Which of the following provides the strongest basis for the council member's concern?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A sample of 250 residents cannot reliably represent a city population, because the margin of error for such a small sample makes the 76% figure meaningless.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "People who visit downtown parks on weekday mornings are not representative of all city residents, since residents who work full-time on weekdays are systematically excluded from the sample.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Because the survey was conducted in a downtown park, residents who dislike parks were unlikely to be present, meaning supporters and opponents had equal probability of being sampled.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The survey asked about support for a specific expansion, so results cannot be used to draw conclusions about residents' general attitudes toward park funding or city spending.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The fundamental flaw is that the sampling location and timing systematically exclude important segments of the city's population. Surveying only weekday morning park visitors means that adults who work full-time between 9 a.m. and 5 p.m. on weekdays — a large fraction of the working-age resident population — were never eligible to be sampled. Additionally, park visitors are disproportionately likely to value parks and outdoor spaces, which would bias responses toward supporting a park expansion. The sample thus over-represents park users and leisure-time visitors while systematically excluding working adults who might have different views. This is not a sample size problem — even a larger sample from the same pool of weekday morning park visitors would reproduce the same bias. Choice B correctly identifies both the excluded group (full-time weekday workers) and the mechanism (systematic exclusion, not random variation), which is why it provides the strongest basis for the council member's concern.",
+  "distractorRationale": {
+    "A": "Incorrect. This invokes sample size misapplication. The problem is not that 250 is inherently too small — random samples of 250 can reliably estimate proportions in large populations. The flaw is who is included in the sampling frame, not the count of people sampled. Additionally, the prompt instructs students not to perform margin-of-error calculations.",
+    "B": "Correct. Weekday morning park visitors systematically exclude full-time workers and over-represent park enthusiasts, making the sample unrepresentative of city residents and biasing the 76% figure upward.",
+    "C": "Incorrect. This distractor contains an internal contradiction: it correctly notes that park-dislikers were unlikely to be present, but then claims supporters and opponents had equal probability of being sampled. A student who carefully reads the choice will recognize that these two claims are inconsistent. The real flaw is that the sampling pool excludes an entire demographic (weekday workers), not just park opponents.",
+    "D": "Incorrect. This overgeneralizes a limitation by shifting the topic of the inference. The survey asked specifically about the park expansion, which is exactly what the director is drawing conclusions about. Scope creep to 'general attitudes toward park funding' is not relevant to the stated conclusion. This distractor confuses the question's subject with an unstated broader inference."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5b2f8c4-1a9d-4e3b-c7f6-8d4a2e1b9c3f"
+  }
+}

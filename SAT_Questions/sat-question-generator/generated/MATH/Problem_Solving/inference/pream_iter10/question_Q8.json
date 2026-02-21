@@ -1,0 +1,54 @@
+{
+  "id": "e8f1c4a7-3b5d-4f2e-9c8a-6d3b1e7f4c2a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "computational": 1.9
+  },
+  "stem": "A city planner randomly surveyed 200 of the city's 5,000 registered businesses and found that 36 of them had experienced a break-in during the past year. Based on this sample, approximately how many of the city's registered businesses experienced a break-in during the past year?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "36",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "180",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "900",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "4,800",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The sample proportion of businesses that experienced a break-in is 36/200 = 0.18, or 18%. Since the survey used a random sample of the city's registered businesses, this proportion can reasonably be applied to the full population. Estimated businesses with break-ins = 0.18 × 5,000 = 900. Arithmetic check: 36 ÷ 200 = 0.18; 0.18 × 5,000 = 900. Answer C is correct.",
+  "distractorRationale": {
+    "A": "Error type 1 (Confusing sample with population): A student who does not recognize the need to scale the sample result to the full population might simply report the raw count of 36 from the survey as the city-wide total.",
+    "B": "Error type 5 (Overgeneralizing scope): A student might multiply 36 by 5 (thinking there are five groups of 200 in the 5,000 total, but miscounting — 5,000 ÷ 200 = 25, not 5), arriving at 180 by using an incorrect scaling factor.",
+    "C": "This is the correct answer. Scaling the sample proportion (36/200 = 18%) to the full population gives 0.18 × 5,000 = 900.",
+    "D": "Error type 2 (Wrong confidence interpretation): A student might subtract rather than scale — computing 5,000 − 200 = 4,800 and reporting that number as the businesses with break-ins, conflating 'the rest of the population' with 'the rest who had break-ins.'"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f2a9c3e7-4d1b-4f8c-a5e2-9b6d3c1a7f5e"
+  }
+}

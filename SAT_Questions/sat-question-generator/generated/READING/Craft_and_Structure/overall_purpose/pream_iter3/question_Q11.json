@@ -1,0 +1,56 @@
+{
+  "id": "c3d4e5f6-a7b8-4c9d-8e1f-2a3b4c5d6e7f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3.0,
+    "linguistic": 3.3
+  },
+  "passage": "Urban food deserts—neighborhoods where residents lack reasonable access to affordable, nutritious food—are often discussed as though they arise inevitably from market forces. Grocery retailers cite low profit margins and high operating costs in low-income areas, framing their absence as a rational business calculation rather than a choice with consequences. Residents of these neighborhoods, meanwhile, pay higher prices for lower-quality food at convenience stores and fast-food outlets, spending a larger share of their income on nutrition than their wealthier counterparts. Studies have documented that children in food deserts consume fewer vegetables and more processed foods, with measurable effects on concentration and academic performance. Local governments and community advocates have tested various interventions: mobile markets, corner store conversions, and zoning incentives for full-service grocers. Some of these efforts have produced genuine improvements in food access, while others have faltered due to inadequate funding or limited community participation. What the evidence increasingly suggests is that food deserts persist not because solutions are unavailable, but because the communities most affected lack sufficient political and economic leverage to demand them.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 176,
+    "source": "Adapted from a policy journal article on urban food access"
+  },
+  "stem": "What is the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To describe the daily challenges faced by residents who live in urban food deserts",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "To argue that food deserts persist because affected communities lack the power to force change",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "To evaluate the effectiveness of specific government interventions in improving food access",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "To explain why grocery retailers choose not to operate in low-income neighborhoods",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage builds toward the claim stated in its final sentence: food deserts persist not because solutions are unavailable but because affected communities lack sufficient political and economic leverage. Every earlier element—the retailers' framing of absence as rational, the residents' higher costs, the health data on children, the mixed results of interventions—collectively supports this structural argument about power rather than simply describing hardship or evaluating programs. The author's primary goal is to challenge the assumption that food deserts are inevitable by arguing that they are sustained by a lack of community leverage.",
+  "distractorRationale": {
+    "A": "While the passage does describe residents' experiences (higher prices, lower-quality food, health effects on children), this description functions as supporting evidence for the structural argument rather than as the primary purpose. The passage moves beyond describing hardship to explaining why conditions persist.",
+    "C": "The passage mentions that some interventions have succeeded while others have faltered, but this observation supports the broader argument about leverage and political will. The passage does not systematically evaluate specific programs; it uses the mixed record of interventions to build toward its concluding claim.",
+    "D": "The passage presents retailers' reasoning—citing low profit margins and operating costs—but immediately frames this as a 'choice with consequences' rather than a neutral explanation. The author's purpose is not to explain the retailers' perspective but to challenge the framing that treats their absence as inevitable."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4e5f6a7-b8c9-4d1e-9f2a-3b4c5d6e7f8a"
+  }
+}

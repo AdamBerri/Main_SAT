@@ -1,0 +1,54 @@
+{
+  "id": "b3f7a1c2-8e4d-4b9a-9c5f-2d6e0a3b7f18",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A submarine descends at a constant rate of 12 fathoms per minute, where 1 fathom equals 6 feet. The submarine descends for 2.5 hours. Given that 1 meter equals 3.281 feet, what is the total vertical distance descended, in meters, rounded to the nearest whole number?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "549 meters",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "1,317 meters",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "1,646 meters",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "3,292 meters",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Step 1: Convert fathoms per minute to feet per minute.**\n\n$$12 \\frac{\\text{fathoms}}{\\text{min}} \\times 6 \\frac{\\text{ft}}{\\text{fathom}} = 72 \\frac{\\text{ft}}{\\text{min}}$$\n\n**Step 2: Convert feet per minute to feet per hour.**\n\n$$72 \\frac{\\text{ft}}{\\text{min}} \\times 60 \\frac{\\text{min}}{\\text{hr}} = 4{,}320 \\frac{\\text{ft}}{\\text{hr}}$$\n\n**Step 3: Find total feet descended in 2.5 hours.**\n\n$$4{,}320 \\frac{\\text{ft}}{\\text{hr}} \\times 2.5 \\text{ hr} = 10{,}800 \\text{ ft}$$\n\n**Step 4: Convert feet to meters.**\n\n$$10{,}800 \\text{ ft} \\times \\frac{1 \\text{ m}}{3.281 \\text{ ft}} = \\frac{10{,}800}{3.281} \\approx 3{,}291.7 \\text{ m} \\approx 3{,}292 \\text{ m}$$\n\nThe correct answer is **D: 3,292 meters**.",
+  "distractorRationale": {
+    "A": "**Error: Treats fathom as equivalent to 1 foot.** The student skips the fathom-to-feet conversion and uses 12 ft/min directly: $12 \\frac{\\text{ft}}{\\text{min}} \\times 60 \\times 2.5 = 1{,}800 \\text{ ft}$, then $1{,}800 \\div 3.281 \\approx 549$ m. This omits the fathom conversion factor entirely.",
+    "B": "**Error: Stops one step early — uses 1 hour instead of 2.5 hours.** The student correctly converts to $4{,}320 \\text{ ft/hr}$ but then converts to meters without multiplying by 2.5: $4{,}320 \\div 3.281 \\approx 1{,}317$ m. The student finds the descent rate per hour rather than the total distance.",
+    "C": "**Error: Uses wrong fathom conversion factor (1 fathom = 3 feet instead of 6 feet).** The student computes $12 \\times 3 = 36 \\text{ ft/min}$, then $36 \\times 60 \\times 2.5 = 5{,}400 \\text{ ft}$, then $5{,}400 \\div 3.281 \\approx 1{,}646$ m. A fathom is 6 feet, not 3.",
+    "D": "**Correct answer.** Four conversions are chained correctly: fathoms to feet ($\\times 6$), minutes to hours ($\\times 60$), hours to total feet ($\\times 2.5$), then feet to meters ($\\div 3.281$), yielding $\\approx 3{,}292$ m."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e4a1b7c3-2d8f-4e9a-b5c6-7f0d1e2a3b4c"
+  }
+}

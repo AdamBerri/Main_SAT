@@ -1,0 +1,57 @@
+{
+  "id": "d5a9e2f7-3b1c-4d8a-9e4f-2c6b7a8d1e3c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "The phenomenon known as the \"resource curse\" describes the paradox whereby countries with abundant natural resources—particularly oil, gas, and minerals—tend to exhibit slower economic growth, weaker institutions, and greater political instability than resource-poor nations. Economists have proposed competing explanations: Dutch disease, in which export earnings from resource extraction appreciate a nation's currency, rendering its manufacturing sector globally uncompetitive; rent-seeking behavior, in which powerful actors capture resource revenues rather than investing them productively; and volatility effects, in which boom-bust commodity cycles prevent the stable investment environment necessary for diversified growth. What the academic literature has gradually clarified, however, is that the curse operates not uniformly but conditionally. Nations with pre-existing institutional quality—functioning rule of law, bureaucratic independence, enforced property rights—tend to benefit from resource wealth rather than suffer its pathologies. The causal arrow, then, may run in a direction that confounds initial intuition: institutional weakness does not merely fail to buffer resource wealth's distorting effects; it may itself be the primary mechanism through which those effects become damaging, with resource abundance serving primarily as an amplifier of pre-existing vulnerabilities rather than a source of entirely new ones.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 188,
+    "source": "Adapted from a review article in a comparative political economy journal"
+  },
+  "stem": "Which of the following can most reasonably be inferred about the relationship between institutional quality and the resource curse, based on the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Countries that discover natural resources will develop stronger institutions over time as they manage extraction revenues.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The detrimental effects of resource wealth are more accurately attributed to existing governance failures than to resource abundance itself.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Dutch disease is the primary mechanism by which institutional weakness transforms resource wealth into economic harm.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Resource-poor nations develop stronger institutions because economic necessity forces them to diversify their governance capacities.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage's concluding argument is that the causal arrow may run contrary to intuition: institutional weakness is not merely insufficient to buffer resource wealth's distortions but 'may itself be the primary mechanism through which those effects become damaging.' The passage further states that resource abundance may serve 'primarily as an amplifier of pre-existing vulnerabilities rather than a source of entirely new ones.' Synthesizing these two claims yields the inference in B: the harmful outcomes associated with resource wealth are properly attributed to pre-existing institutional failures, with resource abundance functioning as an amplifier rather than an independent cause. This requires recognizing the passage's reorientation of causality and applying it to derive an unstated but logically entailed conclusion.",
+  "distractorRationale": {
+    "A": "The passage describes resource wealth as an 'amplifier of pre-existing vulnerabilities,' not as a force that develops institutions. This distractor inverts the passage's causal logic and is directly contradicted by the text's conditional framing.",
+    "C": "Dutch disease is listed as one of several competing explanations in the passage, but the passage's main analytical move is precisely to transcend these specific mechanisms and identify institutional quality as the conditional factor. Singling out Dutch disease as the 'primary mechanism' contradicts the passage's framing, which treats all three mechanisms as parallel candidates rather than elevating one.",
+    "D": "The passage never attributes strong institutions in resource-poor nations to economic necessity or diversification pressures. This distractor requires assumptions about causal processes in non-resource countries that the passage does not establish and does not even imply."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e6b3a7f2-1d4c-4e9b-8f3a-2c5d6e7f8a9b"
+  },
+  "hasImage": false
+}

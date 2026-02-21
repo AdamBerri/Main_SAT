@@ -1,0 +1,58 @@
+{
+  "id": "5b3d9e1f-2c7a-4b8e-9f4d-1a6c3e5f7b9d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.3,
+    "linguistic": 1.1
+  },
+  "passage": "Text 1\nRegular physical exercise strengthens the heart muscle, improving its ability to pump blood throughout the body. People who exercise consistently have lower resting heart rates and lower blood pressure than those who are sedentary. Studies show that moderate aerobic activity — such as brisk walking for thirty minutes most days of the week — significantly reduces the risk of cardiovascular disease. Doctors frequently recommend exercise as a primary strategy for maintaining heart health and preventing chronic illness.\n\nText 2\nWhile physical activity benefits the heart, diet plays an equally important role in cardiovascular health. Foods high in saturated fats and sodium contribute to arterial plaque buildup and elevated blood pressure, conditions that exercise alone cannot fully reverse. Nutritionists point out that a person who exercises regularly but eats a diet high in processed foods still faces elevated cardiovascular risk. Heart health depends on both what the body does and what it consumes.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 157,
+    "source": "Adapted from health and wellness educational materials"
+  },
+  "stem": "Which choice best describes the relationship between the two texts?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 2 contradicts Text 1 by arguing that exercise has no meaningful effect on cardiovascular health.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 and Text 2 present identical recommendations, differing only in the populations they address.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Text 2 expands on Text 1's focus by introducing diet as an additional factor necessary for cardiovascular health.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "Text 1 disputes the value of diet, while Text 2 argues that diet is the only meaningful factor in heart health.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Text 1 establishes that exercise is a primary strategy for maintaining heart health, presenting a focused case for physical activity. Text 2 accepts this premise — it does not dispute that exercise helps — but broadens the picture by arguing that diet is an equally important and independent factor. Text 2 extends Text 1's discussion rather than contradicting it, making 'expands on' the most accurate characterization of the relationship.",
+  "distractorRationale": {
+    "A": "Text 2 does not claim that exercise has no effect; it explicitly acknowledges that physical activity benefits the heart. It only argues that exercise alone is insufficient.",
+    "B": "The two texts do not present identical recommendations. Text 1 focuses on exercise; Text 2 focuses on diet as a complementary but distinct factor. They differ in content, not merely in audience.",
+    "C": "Correct. Text 2 accepts the role of exercise established in Text 1 and then introduces diet as an additional necessary component, expanding the scope of what cardiovascular health requires.",
+    "D": "Text 1 does not address diet at all — it neither endorses nor disputes it. Text 2 does not argue that diet is the only meaningful factor; it argues that diet must be considered alongside exercise."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "7a4c2e8f-3b1d-4f9a-b6c5-2e7d8f1a4b3c"
+  },
+  "hasImage": false
+}

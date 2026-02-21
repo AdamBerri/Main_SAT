@@ -1,0 +1,58 @@
+{
+  "id": "a7e3c1d9-4f8b-4a6e-b2c7-9d1f5e3a8b4c",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "linguistic": 4.8
+  },
+  "passage": "The discovery of the Higgs boson at CERN in 2012 represented one of the most celebrated confirmations in the history of physics. Decades of experimental work had finally identified this cornerstone of particle physics[; the Standard Model's long-predicted final piece], which theorists had described mathematically nearly five decades before its detection. The confirmation required the construction of the Large Hadron Collider, the most complex scientific instrument ever assembled by human hands.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 79,
+    "source": "Original composition based on particle physics and the history of science"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "; the Standard Model's long-predicted final piece",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": ", the Standard Model's long-predicted final piece,",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": ". The Standard Model's long-predicted final piece",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": ": the Standard Model's long-predicted final piece",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion introduces an appositive noun phrase that renames and specifies 'this cornerstone of particle physics.' The LEFT side, 'Decades of experimental work had finally identified this cornerstone of particle physics,' is a complete independent clause (subject: work; verb: had identified). The RIGHT side of the appositive, 'which theorists had described mathematically nearly five decades before its detection,' is a non-restrictive relative clause modifying 'the Standard Model's long-predicted final piece.' The phrase 'the Standard Model's long-predicted final piece' is itself an appositive — a noun phrase, not an independent clause (it has no finite verb). Choice B correctly uses a comma before the appositive and, because the sentence continues with 'which theorists had described...,' a closing comma after it to set off the appositive as a non-restrictive parenthetical. Choice A incorrectly places a semicolon before the appositive noun phrase; a semicolon must join two independent clauses, and 'the Standard Model's long-predicted final piece' has no finite verb and is therefore not an independent clause. Choice C creates an illegal sentence fragment: 'The Standard Model's long-predicted final piece, which theorists had described mathematically nearly five decades before its detection' has no finite predicate and cannot function as an independent sentence after a period. Choice D incorrectly places a colon before an appositive that modifies a specific noun within the main clause; Standard English convention requires that a colon follow a complete independent clause and introduce material that elaborates on the clause as a whole — not an appositive embedded within a sentence that continues with an additional relative clause.",
+  "distractorRationale": {
+    "A": "NO CHANGE — Semicolon before an appositive noun phrase. Students who recognize that the material on both sides seems substantial may insert a semicolon, not recognizing that 'the Standard Model's long-predicted final piece' is a noun phrase with no finite verb and therefore cannot follow a semicolon, which requires a full independent clause on both sides.",
+    "B": "CORRECT — Commas on both sides of the appositive ('the Standard Model's long-predicted final piece') correctly set it off as a non-restrictive, parenthetical modifier. The closing comma before 'which' is required because the sentence continues with an additional relative clause rather than ending.",
+    "C": "Period creating an appositive fragment — Students may treat the long noun phrase and relative clause as a complete thought, not recognizing that 'The Standard Model's long-predicted final piece, which theorists had described mathematically nearly five decades before its detection' lacks a finite predicate and cannot stand as an independent sentence.",
+    "D": "Colon before a mid-sentence appositive — Students may reason that the colon introduces the 'explanation' of what the cornerstone is. However, this appositive modifies only the direct object within the sentence (not the entire preceding clause), and the sentence continues after it with 'which theorists had described...,' making a colon — which functions as a terminal mark within a sentence — structurally illogical and contrary to Standard English conventions for mid-sentence appositives."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5b3f9d1-7a2c-4e8f-b1d6-4c9a2e7f5b3d"
+  },
+  "hasImage": false
+}

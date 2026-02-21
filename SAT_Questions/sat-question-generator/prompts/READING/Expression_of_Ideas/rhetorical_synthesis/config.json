@@ -4,7 +4,7 @@
     "domain": "Expression_of_Ideas",
     "subtopic": "rhetorical_synthesis"
   },
-  "currentVersion": "1.3.0",
+  "currentVersion": "1.5.0",
   "versions": [
     {
       "version": "1.0.0",
@@ -13,6 +13,30 @@
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.4.0",
+      "createdAt": "2026-02-21T02:43:47.251Z",
+      "parentVersion": "1.3.0",
+      "preamIteration": 5,
+      "performanceMetrics": {
+        "trainAvgScore": 5,
+        "trainPassRate": 1,
+        "testAvgScore": 4.45,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.5.0",
+      "createdAt": "2026-02-21T03:08:10.928Z",
+      "parentVersion": "1.4.0",
+      "preamIteration": 6,
+      "performanceMetrics": {
+        "trainAvgScore": 4.775,
+        "trainPassRate": 1,
+        "testAvgScore": 4.533,
+        "testPassRate": 1
+      }
     }
   ],
   "temperatureConfig": {

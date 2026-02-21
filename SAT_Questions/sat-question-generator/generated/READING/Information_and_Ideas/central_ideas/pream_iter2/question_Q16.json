@@ -1,0 +1,56 @@
+{
+  "id": "b3e7f1a2-9c4d-4e8b-a5f6-2d1c8e9b7a3f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "linguistic": 4.3
+  },
+  "passage": "When the city of Pompeii was excavated in the eighteenth century, scholars celebrated the ruins as a window into antiquity. What they found, though, confounded expectations: the walls were covered in ordinary graffiti—insults, declarations of love, advertisements for gladiatorial matches. Pliny the Elder had written at length about Rome's grand monuments, yet he left no account of the casual inscriptions that covered nearly every public surface. The graffiti documented disputes between neighbors, election endorsements by local tradespeople, and crude jokes that would not be out of place in any modern city. Scholars trained to read Latin literature found themselves parsing language that bore little resemblance to Cicero or Virgil—vocabulary that existed in no lexicon, abbreviations with no clear referent. The archive that Pompeii offered was not a portrait of Roman civilization as it had been written, but a record of how its inhabitants actually spoke to one another across a courtyard wall.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 162,
+    "source": "Adapted from a scholarly essay on classical archaeology and epigraphy"
+  },
+  "stem": "Which choice best describes what the passage is mainly about?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The excavation of Pompeii challenged scholars' methods because ancient Latin dialects are largely incompatible with the classical texts used to teach the language.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Pompeii's graffiti revealed a dimension of Roman life that the literary record, by its nature, was unable to preserve.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Ancient Roman society was less formally structured than scholars had assumed, as evidenced by the prevalence of humor and informal communication in public spaces.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Eighteenth-century archaeologists were unprepared for Pompeii because their training emphasized monumental architecture rather than everyday artifacts.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage traces a contrast between what the literary record preserved—grand monuments and polished prose—and what the graffiti at Pompeii actually documented: disputes, endorsements, jokes, and vernacular language absent from any lexicon. The final sentence crystallizes this contrast without stating it as a thesis: Pompeii offered 'a record of how its inhabitants actually spoke to one another,' not the civilization 'as it had been written.' The main idea emerges from synthesizing the gap between Pliny's silences and the graffiti's abundance—what official literature omitted, walls preserved. Choice B captures this synthesis: the graffiti revealed a dimension of Roman life that the literary record could not, by its selective and elite nature, preserve.",
+  "distractorRationale": {
+    "A": "The passage mentions that scholars found vocabulary in no lexicon, but this is a detail illustrating the gap between literary and vernacular Latin—not the passage's central concern. The passage does not argue that ancient dialects are 'incompatible' with classical texts used for instruction.",
+    "C": "The passage uses informal content (jokes, insults) as evidence of what graffiti preserved, not as evidence about Roman social structure. The passage makes no argument about how formally or informally Roman society was organized.",
+    "D": "The passage mentions scholars 'trained to read Latin literature' struggling with graffiti, but it does not characterize their training as focused on architecture, nor does it critique their preparation as a central point. This distractor misidentifies a passing detail as the main argument."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1f7e3b2-9c4d-4e8a-b5f6-2d1c8e9b7a3f"
+  }
+}

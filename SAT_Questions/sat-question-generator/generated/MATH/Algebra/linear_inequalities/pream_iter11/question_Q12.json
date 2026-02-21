@@ -1,0 +1,38 @@
+{
+  "id": "c2d3e4f5-a6b7-4c8d-9e0f-1a2b3c4d5e6f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "A company pays its employees a base salary of $200 per week plus $15 for each unit produced. An employee wants to earn at least $500 in a week. The employee can produce at most 25 units per week. What is the least number of units the employee must produce to meet the earning goal?",
+  "choices": [
+    { "label": "A", "text": "18", "isCorrect": false },
+    { "label": "B", "text": "20", "isCorrect": true },
+    { "label": "C", "text": "21", "isCorrect": false },
+    { "label": "D", "text": "34", "isCorrect": false }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Set up the inequality: $200 + 15u \\geq 500$. Subtract 200: $15u \\geq 300$. Divide by 15: $u \\geq 20$. The employee must produce at least 20 units. Since $20 \\leq 25$, this is achievable.",
+  "distractorRationale": {
+    "A": "Cluster B error: Subtracted the base salary incorrectly as $500 - 200 = 300$, then divided $300 \\div 15 = 20$, but subtracted 2 thinking the base salary covers the first 2 units, getting 18.",
+    "B": "Correct. $200 + 15u \\geq 500$ gives $u \\geq 20$.",
+    "C": "Cluster C error: Interpreted 'at least $500' as 'more than $500,' solved $200 + 15u > 500$, got $u > 20$, and chose 21.",
+    "D": "Cluster D error: Ignored the base salary entirely and solved $15u \\geq 500$, getting $u \\geq 33.3$, rounded up to 34, ignoring the 25-unit capacity constraint."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:12.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d3e4f5a6-b7c8-4d9e-0f1a-2b3c4d5e6f7a"
+  }
+}

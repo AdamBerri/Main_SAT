@@ -1,0 +1,55 @@
+{
+  "id": "a1b2c3d4-0017-4aaa-b017-000000000023",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "Two parallel lines are cut by two transversals that intersect between the lines. The first transversal makes a $55°$ angle with the first parallel line. The angle between the two transversals at their intersection point is $60°$. What angle does the second transversal make with the second parallel line?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$55°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$60°$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$65°$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$5°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The first transversal makes $55°$ with the first parallel line, so by alternate interior angles it makes $55°$ at the intersection point (measured from the direction of the second parallel line). The triangle formed between the two parallel lines and the two transversals has angles $55°$, $60°$ (at the intersection), and the angle at the second parallel line. Since angles in a triangle sum to $180°$: $55 + 60 + \\theta = 180$, so $\\theta = 65°$. By alternate interior angles, the second transversal makes $65°$ with the second parallel line.",
+  "distractorRationale": {
+    "A": "Assumed both transversals make the same angle.",
+    "B": "Reported the intersection angle instead.",
+    "C": "Correct. $180° - 55° - 60° = 65°$.",
+    "D": "Subtracted: $60° - 55° = 5°$."
+  },
+  "hasImage": true,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T03:28:52.372Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0017-4000-a017-000000000023"
+  },
+  "imageDescription": "Two horizontal parallel lines with two non-parallel transversals crossing between them. The angle between the first transversal and the top line is labeled 55°. The angle at the intersection of the two transversals is labeled 60°."
+}

@@ -1,0 +1,54 @@
+{
+  "id": "659013b6-1e51-412c-b3ca-ba3fa9ceccb7",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "computational": 3.3
+  },
+  "stem": "Pipe A fills a storage tank at a rate of 15 gallons per minute. Pipe B fills the same tank at a rate of 9 gallons per minute. If both pipes operate simultaneously and the tank holds 360 gallons, how many seconds will it take to completely fill the empty tank?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "15",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "900",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "1,440",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "1,800",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Step 1: Find the combined fill rate of both pipes. $$15 + 9 = 24 \\text{ gallons per minute}$$\n\nStep 2: Find the time in minutes to fill the 360-gallon tank. $$\\text{Time} = \\frac{360}{24} = 15 \\text{ minutes}$$\n\nStep 3: Convert minutes to seconds. $$15 \\times 60 = 900 \\text{ seconds}$$\n\nThe tank will be completely filled in 900 seconds.",
+  "distractorRationale": {
+    "A": "Stopped at intermediate value — the student correctly combines the rates ($15 + 9 = 24$ gal/min) and computes the fill time ($360 \\div 24 = 15$ minutes), but reports 15 as the final answer without converting to seconds.",
+    "B": "Correct answer. Combined rate = 24 gal/min; time = $360 \\div 24 = 15$ min; $15 \\times 60 = 900$ seconds.",
+    "C": "Rate applied to wrong quantity — the student ignores Pipe B and uses only Pipe A's rate to fill the tank, then converts to seconds. Wrong calculation: $360 \\div 15 = 24$ minutes; $24 \\times 60 = 1{,}440$ seconds.",
+    "D": "Wrong unit conversion factor — the student correctly finds 15 minutes but converts to seconds using a factor of 120 instead of 60 (perhaps confusing seconds per minute with some other factor). Wrong calculation: $15 \\times 120 = 1{,}800$ seconds."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "fb1d6f17-c731-49f8-a226-07b7b93710b4"
+  }
+}

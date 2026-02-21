@@ -1,0 +1,78 @@
+{
+  "id": "e58ec1fb-a950-4ee7-b6e7-f96bbe1e8c35",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "An education nonprofit analyzed standardized test scores across school districts grouped by per-pupil spending levels. The organization reported that districts with higher per-pupil spending tended to have higher average test scores.",
+  "stem": "Which choice most effectively uses data from the figure to support the organization's report?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Districts spending over $15,000 per pupil averaged a score of 82, compared to 71 for districts spending $10,000-$15,000 and 58 for those spending under $10,000.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Districts spending under $10,000 per pupil had an average score of 58, which was the lowest among all spending categories.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Districts spending $10,000-$15,000 per pupil averaged a score of 71, which was 13 points higher than the lowest-spending category.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The highest-spending districts averaged a score of 82, while the middle-spending districts averaged 71, a difference of 11 points.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is that higher spending is associated with higher scores. Choice A supports this by showing the full progression: under $10K = 58, $10K-$15K = 71, over $15K = 82 -- a clear positive association across all three levels. Choice B only mentions the lowest group. Choice C compares only two of three categories and focuses on a point difference rather than the overall trend. Choice D omits the lowest group, failing to show the full correlation.",
+  "distractorRationale": {
+    "A": "Correct: cites all three spending levels and their corresponding scores, demonstrating a consistent positive association.",
+    "B": "Wrong (incomplete evidence): only cites the lowest spending group's score without showing how it compares across the full range of spending levels.",
+    "C": "Wrong (misread value): compares only two groups and focuses on a point difference rather than the overall trend across all categories.",
+    "D": "Wrong (incomplete evidence): omits the lowest spending group, so the reader cannot see whether the positive trend holds across all levels."
+  },
+  "hasImage": true,
+  "imageDescription": "Bar chart titled 'Average Test Scores by Per-Pupil Spending Level.' X-axis: Spending Category (Under $10,000; $10,000-$15,000; Over $15,000). Y-axis: Average Test Score (0-100). Bars: Under $10,000 = 58, $10,000-$15,000 = 71, Over $15,000 = 82. Source: National Education Research Nonprofit, 2024.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Average Test Scores by Per-Pupil Spending Level",
+    "data": {
+      "categories": [
+        "Under $10,000",
+        "$10,000-$15,000",
+        "Over $15,000"
+      ],
+      "values": [
+        58,
+        71,
+        82
+      ],
+      "unit": "score",
+      "yAxisLabel": "Average Test Score",
+      "xAxisLabel": "Per-Pupil Spending Level"
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 53,
+    "source": "Adapted from National Education Research Nonprofit annual findings"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.546Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "10d5c6ae-63be-47c7-b303-7a8433604aac"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "be87fda2-3ac9-46e2-a871-7e3ffb478a54",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Epidemiologists investigating antibiotic resistance tracked the percentage of bacterial infections resistant to first-line antibiotics across hospital settings of varying sizes. Their research suggests that the relationship between hospital size and resistance rates is not linear: while resistance rates increase from small to mid-size hospitals, the largest hospitals show a reversal of this trend, likely due to more rigorous stewardship programs.",
+  "stem": "Which choice most effectively uses data from the figure to support the epidemiologists' claim about the non-linear relationship?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Resistance rates rose from 18% in small hospitals (under 100 beds) to 34% in mid-size hospitals (100-300 beds), but then dropped to 24% in large hospitals (over 300 beds), creating a pattern where the largest facilities had lower resistance than mid-size ones.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Small hospitals had an 18% resistance rate while large hospitals had a 24% rate, indicating that resistance generally increases with hospital size across the full range of facilities studied.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Mid-size hospitals had the highest resistance rate at 34%, which was nearly double the 18% rate observed in small hospitals, suggesting that increasing hospital capacity dramatically raises resistance.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Large hospitals had a resistance rate of 24%, which was 10 percentage points lower than the 34% rate in mid-size hospitals but still 6 points higher than the 18% rate in small hospitals.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim is about a non-linear pattern: resistance increases from small to mid-size, then decreases from mid-size to large. Choice A captures both directions -- the rise from 18% to 34% and the drop to 24% -- explicitly describing the non-linear pattern. Choice B omits the mid-size peak and implies a simple linear increase. Choice C focuses only on the small-to-midsize increase without addressing the reversal. Choice D presents the same numbers as A but frames them neutrally without explicitly identifying the non-linear pattern, and it could be read as weakening the claim since large hospitals still exceed small ones.",
+  "distractorRationale": {
+    "A": "Correct: cites all three data points and explicitly describes the rise-then-fall pattern that constitutes the non-linear relationship.",
+    "B": "Wrong (wrong comparison): compares only small to large hospitals, omitting the mid-size peak, which makes the relationship appear linear rather than non-linear.",
+    "C": "Wrong (incomplete evidence): shows only the upward portion of the trend (small to mid-size) without addressing the reversal at large hospitals, which is central to the non-linear claim.",
+    "D": "Wrong (misread value): presents the data points accurately but frames them in a way that emphasizes large hospitals still having higher rates than small ones, which could undermine rather than support the non-linear claim."
+  },
+  "hasImage": true,
+  "imageDescription": "Bar chart titled 'Antibiotic Resistance Rates by Hospital Size.' X-axis: Hospital Size Category (Small: <100 beds, Mid-size: 100-300 beds, Large: >300 beds). Y-axis: Percentage of Infections Resistant to First-Line Antibiotics (0-40%). Bars: Small = 18%, Mid-size = 34%, Large = 24%. Source: National Epidemiology Surveillance Network, 2024.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Antibiotic Resistance Rates by Hospital Size",
+    "data": {
+      "categories": [
+        "Small (<100 beds)",
+        "Mid-size (100-300 beds)",
+        "Large (>300 beds)"
+      ],
+      "values": [
+        18,
+        34,
+        24
+      ],
+      "unit": "percentage",
+      "yAxisLabel": "Resistance Rate (%)",
+      "xAxisLabel": "Hospital Size Category"
+    }
+  },
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 72,
+    "source": "Adapted from National Epidemiology Surveillance Network annual report"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:37.157Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "cee832f8-d7d7-46cc-b63e-bcc57c17e582"
+  }
+}

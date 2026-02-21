@@ -1,0 +1,57 @@
+{
+  "id": "d9b2f4a7-1e3c-4f8b-a6d2-7c5e9f1b3a8d",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "The following passage is adapted from a 2021 review article on sleep and academic performance.\n\nAdequate sleep is widely recognized as essential for cognitive functioning, particularly for adolescents whose brains are still developing. The American Academy of Pediatrics recommends that teenagers aged 13 to 18 sleep between eight and ten hours per night. Despite this guidance, surveys consistently show that many high school students sleep fewer than seven hours on school nights.\n\nThe consequences of insufficient sleep for academic outcomes are well documented. A 2019 study published in Sleep Medicine Reviews analyzed data from over 50,000 students across twelve countries and found that students who reported sleeping fewer than seven hours per night earned grade point averages an average of 0.3 points lower than students who met recommended sleep guidelines.\n\nResearchers have proposed several mechanisms to explain this relationship. Sleep deprivation impairs working memory, making it harder for students to retain information taught during the school day. Additionally, sleep-deprived students show reduced ability to concentrate during lectures, which compounds the memory deficit. Some districts have responded by delaying school start times, a policy that researchers at the University of Washington found increased average student sleep by 34 minutes per night and corresponded with a 4.5 percent improvement in median grades.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 201,
+    "source": "Adapted from a 2021 review article in Sleep Medicine Reviews"
+  },
+  "stem": "A student argues that students who get insufficient sleep earn lower grades than those who meet sleep recommendations. Which quotation from the passage best supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"The American Academy of Pediatrics recommends that teenagers aged 13 to 18 sleep between eight and ten hours per night.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"Students who reported sleeping fewer than seven hours per night earned grade point averages an average of 0.3 points lower than students who met recommended sleep guidelines.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"Sleep deprivation impairs working memory, making it harder for students to retain information taught during the school day.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"Delaying school start times increased average student sleep by 34 minutes per night and corresponded with a 4.5 percent improvement in median grades.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct. The claim is that students who get insufficient sleep (fewer than the recommended amount) earn lower grades than those who meet sleep recommendations. Choice B states precisely this: students sleeping fewer than seven hours earned GPAs 0.3 points lower than students who met guidelines. This directly compares the two groups (insufficient vs. sufficient sleepers) and quantifies the grade difference, making it the most direct support for the claim with no inferential steps required.",
+  "distractorRationale": {
+    "A": "Choice A states official sleep recommendations but does not address grades or compare students who meet versus fail to meet those recommendations.",
+    "C": "Choice C explains a proposed mechanism (impaired working memory) that could link sleep to grades, but it does not directly show that insufficient sleepers earn lower grades—it requires an additional inferential step connecting memory to grades.",
+    "D": "Choice D supports a related claim—that delaying start times improves grades—but it addresses an intervention rather than directly comparing insufficient sleepers to sufficient sleepers, as the claim requires."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b1f4e8a3-7c2d-4b9f-a5e1-3d6c8f2a7b4e"
+  },
+  "hasImage": false
+}

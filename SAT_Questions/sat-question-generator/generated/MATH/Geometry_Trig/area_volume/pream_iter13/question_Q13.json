@@ -1,0 +1,38 @@
+{
+  "id": "b2c3d4e5-3333-4a6b-8c7d-9e0f1a2b3c13",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "A sphere has a volume of $36\\pi$ cubic centimeters. What is the radius, in centimeters, of the sphere?",
+  "choices": [
+    { "label": "A", "text": "$3$", "isCorrect": true },
+    { "label": "B", "text": "$6$", "isCorrect": false },
+    { "label": "C", "text": "$27$", "isCorrect": false },
+    { "label": "D", "text": "$9$", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The volume of a sphere is $V = \\frac{4}{3}\\pi r^3$. Setting $36\\pi = \\frac{4}{3}\\pi r^3$ and dividing both sides by $\\pi$: $36 = \\frac{4}{3}r^3$. Multiplying both sides by $\\frac{3}{4}$: $r^3 = 27$. Taking the cube root: $r = 3$ centimeters. The answer is A.",
+  "distractorRationale": {
+    "A": "Correct. $r^3 = 27$, so $r = 3$.",
+    "B": "Correctly finds $r = 3$ but reports the diameter $2r = 6$ instead.",
+    "C": "Stops at $r^3 = 27$ without taking the cube root, reporting 27 as the answer.",
+    "D": "Omits the $\\frac{4}{3}$ coefficient, solving $36 = r^3$ then $r = \\sqrt[3]{36} \\approx 3.3$, but instead misapplies by dividing $36 \\div 4 = 9$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:13.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-b333-4d5e-8f9a-0b1c2d3e4f13"
+  }
+}

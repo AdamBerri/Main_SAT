@@ -1,0 +1,54 @@
+{
+  "id": "5b7c0e2f-4a9d-3e8b-f1c6-8d0a5e3b7f2c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "A car's fuel efficiency is rated at 32 miles per gallon. What is this fuel efficiency, in kilometers per liter, rounded to the nearest tenth? (Use 1 mile = 1.609 kilometers and 1 gallon = 3.785 liters)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "5.3",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "12.9",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "13.6",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "75.3",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The given rate is 32 miles per gallon. Both the distance unit (miles) and the volume unit (gallons) must be converted simultaneously — miles to kilometers and gallons to liters. The student must recognize the correct direction for each: multiply to convert miles to km (since 1 mile > 1 km, more km than miles), and divide to convert gallons to liters (since 1 gallon contains multiple liters).\n\nStep 1 — Set up the unit chain:\n$$\\frac{32 \\text{ mi}}{1 \\text{ gal}} \\times \\frac{1.609 \\text{ km}}{1 \\text{ mi}} \\times \\frac{1 \\text{ gal}}{3.785 \\text{ L}}$$\n\nStep 2 — Cancel units (mi cancels, gal cancels):\n$$= \\frac{32 \\times 1.609}{3.785} \\text{ km/L}$$\n\nStep 3 — Calculate:\n$$= \\frac{51.488}{3.785} \\approx 13.6 \\text{ km/L}$$\n\nThe fuel efficiency is approximately $\\boxed{13.6}$ km/L.",
+  "distractorRationale": {
+    "A": "Inverted distance conversion error: the student divides by 1.609 instead of multiplying, treating the conversion as miles per kilometer rather than kilometers per mile. Calculation: $32 \\div 1.609 \\div 3.785 = 19.888 \\div 3.785 \\approx 5.3$ km/L. This reflects confusion about which direction to apply the conversion factor when going from miles to kilometers.",
+    "B": "Wrong volume conversion factor error: the student uses 1 gallon = 4 liters (a rounded approximation) instead of 3.785 liters. Calculation: $32 \\times 1.609 \\div 4 = 51.488 \\div 4 = 12.9$ km/L.",
+    "C": "Correct answer. Multiplies by 1.609 km/mi to convert the distance unit and divides by 3.785 L/gal to convert the volume unit.",
+    "D": "Swapped conversion factors error: the student multiplies by the volume conversion factor and divides by the distance conversion factor, reversing the roles of the two factors in the chain. Calculation: $32 \\times 3.785 \\div 1.609 = 121.12 \\div 1.609 \\approx 75.3$ km/L. This represents applying the gallon-to-liter ratio where the mile-to-km ratio belongs, and vice versa."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e5f6a7b8-c9d0-1234-efab-345678901234"
+  }
+}

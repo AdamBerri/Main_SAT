@@ -1,0 +1,53 @@
+{
+  "id": "b6d4f0a8-3c5e-4912-b7f2-9e1d7c3b5a06",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 4.8
+  },
+  "stem": "A factory has three production lines. Line 1 produces 60 units per hour. The ratio of Line 1's production rate to Line 2's production rate is 4:3. The combined production rate of Lines 1 and 2 together is in the ratio 7:5 to Line 3's production rate. All three lines run simultaneously for 8 hours, after which Line 3 shuts down. Lines 1 and 2 continue running together until total production reaches 2,700 units. How many additional minutes do Lines 1 and 2 run after Line 3 shuts down?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "12",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "420",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "720",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "1,680",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Step 1: Find Line 2's rate using the ratio 4:3. $\\frac{\\text{Rate}_1}{\\text{Rate}_2} = \\frac{4}{3}$, so Rate$_2 = \\frac{3}{4} \\times 60 = 45$ units/hr.\n\nStep 2: Find the combined rate of Lines 1 and 2. $60 + 45 = 105$ units/hr.\n\nStep 3: Find Line 3's rate using the ratio 7:5. $\\frac{105}{\\text{Rate}_3} = \\frac{7}{5}$, so Rate$_3 = \\frac{5}{7} \\times 105 = 75$ units/hr.\n\nStep 4: Find total production during the first 8 hours (all three lines). Total rate $= 60 + 45 + 75 = 180$ units/hr. Production $= 8 \\times 180 = 1{,}440$ units.\n\nStep 5: Find remaining production after Line 3 shuts down. $2{,}700 - 1{,}440 = 1{,}260$ units.\n\nStep 6: Find the additional time in hours. $\\frac{1{,}260}{105} = 12$ hours.\n\nStep 7: Convert to minutes. $12 \\times 60 = 720$ minutes.",
+  "distractorRationale": {
+    "A": "Error type: Ignored unit conversion entirely. The student correctly finds that Lines 1 and 2 need $\\frac{1{,}260}{105} = 12$ additional hours, but reports 12 as the answer in minutes, skipping the required conversion of $12 \\times 60 = 720$ minutes.",
+    "B": "Error type: Rate applied to wrong quantity. After Line 3 shuts down, $1{,}260$ units remain. The student mistakenly applies the full three-line combined rate ($180$ units/hr) to the remaining work instead of only Lines 1 and 2's rate ($105$ units/hr). Additional time $= \\frac{1{,}260}{180} = 7$ hours $= 7 \\times 60 = 420$ minutes.",
+    "D": "Error type: Wrong term selected from ratio. The student correctly finds Line 2's individual rate ($45$ units/hr) but then uses that rate alone for the additional Phase 2 production, ignoring Line 1's continued contribution. Additional time $= \\frac{1{,}260}{45} = 28$ hours $= 28 \\times 60 = 1{,}680$ minutes."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "4a9f2e7c-1b3d-4c8a-b056-7d2e5f9a3c81"
+  }
+}

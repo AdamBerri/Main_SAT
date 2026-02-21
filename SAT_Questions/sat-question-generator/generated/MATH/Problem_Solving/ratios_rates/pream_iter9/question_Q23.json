@@ -1,0 +1,53 @@
+{
+  "id": "f4b8a1e7-29c3-4d6f-8b05-5e2c7a9d3f01",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "Station A and Station B fill containers with liquid. The ratio of Station A's fill rate to Station B's fill rate is 3:4. Station A fills a 240-liter tank in 20 minutes. Both stations run simultaneously for 2 hours. What is the total number of liters filled by both stations combined?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "1,440",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "1,920",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "2,520",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "3,360",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "Step 1: Find Station A's fill rate. Station A fills 240 liters in 20 minutes, so its rate $= \\frac{240}{20} = 12$ liters per minute.\n\nStep 2: Find Station B's fill rate using the ratio 3:4. $\\frac{\\text{Rate A}}{\\text{Rate B}} = \\frac{3}{4}$, so Rate B $= \\frac{4}{3} \\times 12 = 16$ liters per minute.\n\nStep 3: Convert 2 hours to minutes. $2 \\times 60 = 120$ minutes.\n\nStep 4: Calculate Station A's total output. $120 \\times 12 = 1{,}440$ liters.\n\nStep 5: Calculate Station B's total output. $120 \\times 16 = 1{,}920$ liters.\n\nStep 6: Total combined output $= 1{,}440 + 1{,}920 = 3{,}360$ liters.",
+  "distractorRationale": {
+    "A": "Error type: Stopped at intermediate value. The student correctly computes Station A's total output ($120 \\times 12 = 1{,}440$ liters) but reports only Station A's contribution without adding Station B's output.",
+    "B": "Error type: Wrong term selected from ratio. The student correctly computes both outputs (A: 1,440 liters, B: 1,920 liters) but reports only Station B's output instead of the combined total.",
+    "C": "Error type: Inverted ratio. The student inverts the ratio, using $\\frac{3}{4}$ instead of $\\frac{4}{3}$ to find Station B's rate: Rate B $= \\frac{3}{4} \\times 12 = 9$ liters per minute. Station A output $= 120 \\times 12 = 1{,}440$ liters. Station B output $= 120 \\times 9 = 1{,}080$ liters. Total $= 1{,}440 + 1{,}080 = 2{,}520$ liters."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d1c6f3b0-58e4-4a7d-9c12-8b4e2f7a5d93"
+  }
+}

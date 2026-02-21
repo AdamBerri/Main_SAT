@@ -1,0 +1,57 @@
+{
+  "id": "f1a3b5c7-d9e2-4f4a-8b6c-1d3e5f7a9b2c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "Maria had worked at the bakery for three years, arriving before dawn each morning to mix dough while the rest of the neighborhood still slept. She prided herself on knowing the regulars by name and remembering their usual orders. On the morning Mr. Hendricks walked in looking pale and distracted, she had his black coffee and blueberry scone ready before he reached the counter. He managed a weak smile but left the scone untouched, his eyes fixed on the newspaper tucked under his arm. When she asked if something was wrong, he simply folded the paper face-down on the counter and said he had not slept well. Maria glanced at the headline visible through the back page—something about the steel mill—and said nothing more. She quietly wrapped the scone in a paper bag and told him she hoped his day improved. He thanked her and walked out, leaving the coffee half-finished on the counter.",
+  "passageMetadata": {
+    "genre": "literary",
+    "wordCount": 155,
+    "source": "Original short fiction for SAT practice"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about Mr. Hendricks?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "He is troubled by news related to his employment.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "He has decided to stop visiting the bakery regularly.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "He is upset with Maria for asking a personal question.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "He prefers reading the newspaper to making conversation.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage provides two closely linked details: Mr. Hendricks arrives pale, distracted, and unwilling to eat or finish his coffee, and he turns the newspaper face-down—suggesting he does not want to discuss or look at the headline. Maria then glimpses a headline \"about the steel mill.\" The steel mill headline, combined with his distressed behavior, strongly implies that he is worried about news connected to the mill—a plausible place of employment in the community. The inference connects his emotional state to a probable cause without the passage making it explicit.",
+  "distractorRationale": {
+    "B": "Nothing in the passage indicates he intends to stop coming to the bakery. His behavior on this particular morning reflects distress, not dissatisfaction with the bakery. Inferring a permanent change from a single unusual visit requires assumptions beyond the text.",
+    "C": "Mr. Hendricks thanks Maria and responds civilly when she asks if something is wrong. His face-down placement of the newspaper suggests discomfort with the news itself, not with Maria's question. There is no textual signal of annoyance toward her.",
+    "D": "Mr. Hendricks actively turns the newspaper face-down and does not read it during his visit. His distraction is not presented as a preference for reading but as avoidance—suggesting the opposite of a preference for newspaper over conversation."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a4b6c8d0-e2f4-4a6b-8c0d-2e4f6a8b0c2d"
+  },
+  "hasImage": false
+}

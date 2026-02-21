@@ -1,0 +1,54 @@
+{
+  "id": "f6b1d4a8-2e9c-4f7b-3a5d-9c8e2f1a7b4d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "inference"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "computational": 3.2
+  },
+  "stem": "A marketing firm wants to estimate how many of the city's 120,000 registered voters support a new ballot measure. They contact 600 randomly selected registered voters and find that 312 support the measure. Based on this, a campaign manager claims that approximately 62,400 registered voters in the city support the measure. Which of the following best evaluates the campaign manager's claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The claim is not valid because the sample must include at least 1,000 voters to make reliable estimates about a city of 120,000.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The claim is not valid because the survey only contacted registered voters, not all city residents, so it cannot be used to estimate support among the city's full population.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The claim is a reasonable estimate because $\\frac{312}{600} = 52\\%$ of the random sample support the measure, and $52\\% \\times 120{,}000 = 62{,}400$.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The claim is not valid because registered voters who respond to phone or mail surveys tend to be more politically engaged, making the sample unrepresentative.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The campaign manager's reasoning is statistically sound. First, check the arithmetic: $\\frac{312}{600} = 0.52$, or 52%. Scaling this to the full population: $0.52 \\times 120{,}000 = 62{,}400$. The arithmetic is correct. Second, evaluate the inference: the sample of 600 was randomly selected from registered voters, and the population being generalized to is registered voters — the same group. This is a valid application of proportional reasoning from a random sample to the target population. There is no sampling frame mismatch here. The required minimum sample size of 1,000 is not a real statistical rule — 600 is a standard and adequate sample size for a population of this type. The question specifically states the sample was randomly selected, so the concern about survey non-response bias in choice D, while sometimes relevant in practice, contradicts the premise that the sample was randomly selected.",
+  "distractorRationale": {
+    "A": "Error type 6 (sample size misapplication): There is no statistical rule requiring a sample of 1,000 for populations of 120,000. This distractor exploits a common misconception that sample size must scale with population size or meet a specific threshold.",
+    "B": "Error type 7 (misidentifying the population): The survey was conducted among registered voters, and the claim is specifically about registered voters — there is no mismatch. A student who selects this choice incorrectly perceives a scope problem where none exists, confusing \"all city residents\" with the actual target population stated in the problem.",
+    "C": "Correct. The arithmetic ($312/600 = 52\\%$; $52\\% \\times 120{,}000 = 62{,}400$) is verified and correct. The inference is valid: a random sample from registered voters can be used to estimate the proportion among all registered voters.",
+    "D": "Error type 3 (ignoring sampling method): Non-response bias is a legitimate concern in real surveys, but the question states the sample was randomly selected, establishing valid random sampling. This distractor introduces a concern that contradicts the premise of the problem — a student who selects D is importing an assumption not supported by the scenario."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "8a3f1e7d-5b2c-4a9e-6d4f-2c7b9e1a3f5d"
+  }
+}

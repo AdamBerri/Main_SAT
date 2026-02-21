@@ -1,0 +1,38 @@
+{
+  "id": "d4e5f6a7-4444-4a6b-8c7d-9e0f1a2b3c24",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "area_volume"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "A solid metal sphere with a radius of 6 centimeters is melted down and recast into a solid cylinder with a radius of 6 centimeters. What is the height, in centimeters, of the resulting cylinder?",
+  "choices": [
+    { "label": "A", "text": "$8$", "isCorrect": true },
+    { "label": "B", "text": "$12$", "isCorrect": false },
+    { "label": "C", "text": "$6$", "isCorrect": false },
+    { "label": "D", "text": "$\\frac{4}{3}$", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Sphere volume: $\\frac{4}{3}\\pi(6)^3 = \\frac{4}{3}\\pi(216) = 288\\pi$. Set equal to cylinder volume: $288\\pi = \\pi(6)^2 h = 36\\pi h$. Solving: $h = \\frac{288}{36} = 8$ centimeters. The answer is A.",
+  "distractorRationale": {
+    "A": "Correct. $h = \\frac{288\\pi}{36\\pi} = 8$.",
+    "B": "Uses the diameter of the sphere as the height, assuming height equals diameter: $h = 2(6) = 12$.",
+    "C": "Assumes the height equals the radius of the sphere without computing: $h = r = 6$.",
+    "D": "Cancels $\\pi r^3$ from both sides of $\\frac{4}{3}\\pi r^3 = \\pi r^2 h$ to get $h = \\frac{4}{3}$, forgetting that one factor of $r$ remains."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:24.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-d444-4d5e-8f9a-0b1c2d3e4f24"
+  }
+}

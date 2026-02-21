@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0016-4aaa-b016-000000000022",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A hexagon has interior angles measuring $100°$, $110°$, $(3x + 10)°$, $(2x + 20)°$, $120°$, and $(4x)°$. What is the measure of the largest angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$130°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$160°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$120°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$100°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The sum of interior angles of a hexagon is $(6-2) \\times 180 = 720°$. Setting up: $100 + 110 + (3x+10) + (2x+20) + 120 + 4x = 720$. Combine: $360 + 9x = 720$, so $9x = 360$, $x = 40$. The angles are $100°$, $110°$, $130°$, $100°$, $120°$, $160°$. The largest is $160°$.",
+  "distractorRationale": {
+    "A": "Found $3(40)+10 = 130°$ but missed the $160°$ angle.",
+    "B": "Correct. $4(40) = 160°$.",
+    "C": "Picked the given $120°$ angle.",
+    "D": "Picked the given $100°$ angle."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T03:28:52.372Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0016-4000-a016-000000000022"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "e7a3c8b0-d514-4f2e-9a73-6b1f4d0e8c25",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 4.8
+  },
+  "stem": "A clinical research team randomly assigned 200 patients with high blood pressure into two groups of 100. Group 1 received a new medication for 6 months; Group 2 received no treatment. After 6 months, 72% of Group 1 patients had blood pressure in the normal range, compared to 48% of Group 2 patients. The researchers concluded: \"The new medication causes blood pressure to normalize in high-blood-pressure patients.\" A critic argues that the study cannot support a causal conclusion because patients knew which group they were in. Which of the following best evaluates both the study's conclusion and the critic's argument?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The critic is correct. Because patients knew their group assignment, their behavior (such as diet or exercise) may have changed differently between groups, meaning the medication's effect cannot be separated from behavioral changes — so the causal conclusion is not supported.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The critic is incorrect. The patients were randomly assigned to groups, which controls for all confounding variables and fully supports the causal conclusion that the medication normalizes blood pressure.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The critic is incorrect. The 24 percentage-point difference between groups (72% vs. 48%) is large enough that behavioral changes alone could not account for the entire gap, so the medication must have had a causal effect.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The critic is correct. Because patients were not randomly selected from the general population of people with high blood pressure, the results cannot be generalized and no causal conclusion can be drawn.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "This question requires evaluating a randomized experiment against a specific methodological critique. Random assignment of patients to groups is a strong design feature: it distributes known and unknown confounding variables evenly between groups at the start of the study, which is why randomized experiments can support causal claims. However, the critic raises a distinct and valid concern: because patients knew whether they were receiving the medication or not (the study was not blinded), patients in Group 1 may have been more motivated to make healthy lifestyle changes (improved diet, more exercise, better sleep) while patients in Group 2 may have continued previous habits or even become less motivated to manage their health. If this occurred, the 24 percentage-point difference in outcomes could be partly or wholly due to these behavioral differences rather than the medication itself. This is the well-known \"unblinded experiment\" problem, or the confound of patient behavior change driven by treatment awareness. The critic's argument is therefore valid: the absence of blinding means the causal effect cannot be cleanly attributed to the medication alone.\n\nChoice B is wrong because it overstates what random assignment accomplishes. Random assignment controls for pre-existing differences between groups at baseline, but it does not control for differential behavioral changes that occur during the study when patients know their assignment. Choice C is wrong because the size of the observed difference cannot by itself rule out confounding. There is no threshold at which a percentage difference is \"too large\" to be explained by behavioral effects — particularly for blood pressure, which is highly responsive to lifestyle changes. Choice D is wrong because it conflates random assignment (used here to assign treatment, which enables causal inference within the study) with random selection from a broader population (which affects generalizability). The population studied is high-blood-pressure patients, and while the results may not generalize beyond this study's population, that is a separate issue from the causal inference question. The critic's actual argument is about blinding, not random selection.",
+  "distractorRationale": {
+    "A": "Correct. The lack of blinding means patients in each group were aware of their treatment status and could have responded by changing other health behaviors differently. This creates a behavioral confound that undermines the causal claim, even though random assignment was used.",
+    "B": "This choice overgeneralizes the power of random assignment. While randomization balances baseline differences between groups, it does not prevent differential behavioral changes during the study that arise because patients know their treatment status. This is precisely why blinding is a standard component of well-designed medical trials.",
+    "C": "This choice introduces a false quantitative threshold argument. There is no numerical rule establishing that a difference large enough cannot be explained by behavior. Blood pressure is extremely sensitive to lifestyle factors — diet, exercise, stress, and medication adherence — any of which could plausibly account for a substantial portion of a 24-point percentage difference.",
+    "D": "This choice confuses two distinct methodological concepts. Random assignment (used in this study) controls for confounding and enables causal inference within the study's population. Random selection from a broader population is a separate consideration that affects external generalizability. The critic's argument is specifically about blinding, not about whether the 200 patients represent all people with high blood pressure."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b94e7a31-2c58-4d0f-a8e6-1d7c5f3b0e82"
+  }
+}

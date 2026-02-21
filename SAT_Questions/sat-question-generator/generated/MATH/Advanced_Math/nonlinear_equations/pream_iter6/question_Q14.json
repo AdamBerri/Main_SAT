@@ -1,0 +1,54 @@
+{
+  "id": "d1e2f3a4-b5c6-7d8e-f9a0-4b5c6d7e8f90",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "computational": 3.2
+  },
+  "stem": "The equation $x^2 + bx + 9 = 0$ has exactly one real solution. What is the positive value of $b$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$3$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$6$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$18$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$36$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "A quadratic $ax^2 + bx + c = 0$ has exactly one real solution when its discriminant equals zero: $b^2 - 4ac = 0$.\n\nFor $x^2 + bx + 9 = 0$, we have $a = 1$, $c = 9$:\n$$b^2 - 4(1)(9) = 0$$\n$$b^2 - 36 = 0$$\n$$b^2 = 36$$\n$$b = \\pm 6$$\n\nThe positive value is $b = 6$.\n\n**Verification:** With $b = 6$: $x^2 + 6x + 9 = (x+3)^2 = 0$, giving the single repeated solution $x = -3$. LHS $= (-3+3)^2 = 0 =$ RHS ✓",
+  "distractorRationale": {
+    "A": "Choice A ($3$) results from using the incorrect discriminant condition $b^2 - c = 0$ (omitting the factor of 4 in the term $4ac$). This gives $b^2 = 9$, so $b = 3$. Verification of error: $3^2 - 9 = 0$ ✓ (using the wrong formula), but the actual discriminant is $3^2 - 4(1)(9) = 9 - 36 = -27 \\neq 0$.",
+    "B": "Choice B ($6$) is correct. The discriminant $b^2 - 4ac = 36 - 36 = 0$, confirming exactly one real solution.",
+    "C": "Choice C ($18$) results from treating the discriminant as a linear expression in $b$: incorrectly writing $2b - 4c = 0$, which gives $2b = 36$, so $b = 18$. Verification of error: $2(18) - 4(9) = 36 - 36 = 0$ ✓ (wrong formula), but the actual discriminant with $b=18$ is $18^2 - 36 = 324 - 36 = 288 \\neq 0$.",
+    "D": "Choice D ($36$) results from misreading the discriminant condition as $b = 4ac$, giving $b = 4(1)(9) = 36$. Verification of error: $4(1)(9) = 36$ ✓ (wrong formula), but with $b = 36$, the discriminant is $36^2 - 36 = 1296 - 36 \\neq 0$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f4a5b6c7-d8e9-0123-defa-456789012345"
+  }
+}

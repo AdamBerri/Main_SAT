@@ -1,0 +1,57 @@
+{
+  "id": "f2e8c5a9-4b1d-4f7e-9c3a-6d8b2f1e5c7a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "In the eighteenth century, natural philosophers called comets \"prodigies\"—signs whose meaning exceeded their material composition. When Edmund Halley calculated that three previously distinct comet sightings were a single body returning on a predictable orbit, the announcement was received not merely as an advance in celestial mechanics but as a reclassification of an entire category of experience. Comets had been harbingers; they became periodic visitors.\n\nThe reclassification carried consequences that Halley's mathematics could not have specified. Religious authorities who had interpreted cometary appearances as divine messages found their interpretive authority transferred to astronomers who spoke a language of elliptical orbits. Communities that had organized collective rituals around unpredictable celestial events now received advance notice, which altered the social function of those events entirely.\n\nWhat Halley changed was less the comet than the frame within which comets existed as objects of human attention—a frame that included not only physical theory but the institutions and practices through which people had related to the sky.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 177,
+    "source": "Adapted from a history of science essay on the cultural dimensions of astronomical discovery"
+  },
+  "stem": "Which choice best states the main idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Halley's identification of periodic cometary orbits undermined religious authority by demonstrating that celestial events previously treated as miraculous could be explained through mathematical calculation",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "A scientific reclassification can alter not only theoretical understanding but also the social and institutional practices through which a phenomenon is experienced and interpreted",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The social disruption caused by Halley's comet discovery illustrates why scientific advances often encounter resistance from religious and community institutions invested in older frameworks",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The transformation of comets from omens into predictable objects reveals that scientific progress depends as much on reclassifying phenomena as on discovering new ones",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage uses the specific case of Halley's orbital calculation to develop a broader argument about what scientific reclassification actually changes. The first paragraph establishes that the discovery was not just a technical achievement but a transformation of an entire experiential category. The second paragraph maps the downstream consequences: interpretive authority shifted from religious to scientific institutions, and the predictability of cometary events altered their social function. The third paragraph explicitly reframes what Halley changed as 'the frame within which comets existed as objects of human attention,' encompassing physical theory alongside institutions and practices. Answer B captures this full scope by recognizing that the main idea concerns the category of scientific reclassification generally—using Halley as its illustrative case—and that the consequences span both theoretical understanding and social practice.",
+  "distractorRationale": {
+    "A": "This answer captures one consequence described in the second paragraph—the transfer of interpretive authority from religious figures to astronomers—but treats it as if it were the main point. The passage does not frame the episode as primarily a conflict between science and religion; it uses that shift as one of several examples of broader institutional change. The word 'undermined' also imports an adversarial tone the passage does not sustain.",
+    "B": "Correct. This answer synthesizes the passage's movement from the specific case (Halley) to the general insight (reclassification reshapes social and institutional practices) without reducing the argument to any single consequence such as religious decline or advance notice.",
+    "C": "The passage does not mention resistance to Halley's discovery. The second paragraph describes consequences of the reclassification's acceptance, not its reception or opposition. Introducing 'resistance' misreads the passage's emphasis on the transformation of practices rather than conflicts over their adoption.",
+    "D": "This answer contains a plausible-sounding claim about scientific progress depending on reclassification, but the passage makes no such comparative argument about reclassification versus discovery. The final paragraph focuses on what the reclassification changed within existing frameworks, not on a general epistemology of scientific progress."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3d7f1b9-5e2c-4a8d-b6f4-1c9e3a7b2d5f"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "e7423b07-b9e6-4638-a949-db89fe95a2de",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "linguistic": 4.9
+  },
+  "passage": "Environmental economists evaluated the cost-effectiveness of three carbon reduction strategies across different industrial sectors. They contend that while direct carbon capture is the most cost-effective strategy in the energy sector, its advantage diminishes in manufacturing, where process efficiency upgrades become comparably effective.",
+  "stem": "Which choice most effectively uses data from the figure to support the economists' contention?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "In the energy sector, carbon capture costs $42 per tonne of CO2 reduced compared to $78 for efficiency upgrades (a $36 difference), while in manufacturing, carbon capture costs $65 per tonne versus $71 for efficiency upgrades (only a $6 difference).",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Carbon capture costs $42 per tonne in the energy sector and $65 per tonne in manufacturing, a $23 increase that reflects the greater technical challenges of deploying capture technology in manufacturing environments.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Renewable transition costs were $58 per tonne in the energy sector and $89 per tonne in manufacturing, making it the most expensive strategy in both sectors.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "In manufacturing, efficiency upgrades cost $71 per tonne while carbon capture cost $65 per tonne, confirming that carbon capture remains the cheaper option even outside the energy sector.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim has two parts: (1) carbon capture is most cost-effective in energy, and (2) the advantage diminishes in manufacturing where efficiency upgrades become comparable. Choice A supports both by showing the energy-sector gap ($36) shrinks to just $6 in manufacturing. Choice B discusses carbon capture costs across sectors but doesn't compare to alternatives. Choice C discusses renewable transition, which is not the focus. Choice D shows carbon capture is still cheaper in manufacturing, which might seem to weaken the 'diminishes' claim since it focuses on carbon capture still winning rather than the narrowing gap.",
+  "distractorRationale": {
+    "A": "Correct: quantifies the cost advantage of carbon capture in both sectors, showing the gap narrows from $36 (energy) to $6 (manufacturing).",
+    "B": "Wrong (wrong comparison): compares carbon capture's cost across sectors but does not compare it to the efficiency upgrade alternative, which is needed to assess relative cost-effectiveness.",
+    "C": "Wrong (irrelevant data): discusses renewable transition costs, which are not the strategies being compared in the claim about carbon capture versus efficiency upgrades.",
+    "D": "Wrong (incomplete evidence): shows carbon capture is cheaper in manufacturing but doesn't compare the magnitude of its advantage to the energy sector, so the 'diminishing advantage' claim is not addressed."
+  },
+  "hasImage": true,
+  "imageDescription": "Data table titled 'Cost per Tonne of CO2 Reduced by Strategy and Sector.' Columns: Strategy, Energy Sector ($/tonne), Manufacturing ($/tonne). Rows: Carbon Capture - $42 - $65; Efficiency Upgrades - $78 - $71; Renewable Transition - $58 - $89. Source: Environmental Economics Institute, 2024.",
+  "chartData": {
+    "type": "data_table",
+    "title": "Cost per Tonne of CO2 Reduced by Strategy and Sector",
+    "data": {
+      "columns": [
+        "Strategy",
+        "Energy Sector ($/tonne)",
+        "Manufacturing ($/tonne)"
+      ],
+      "rows": [
+        [
+          "Carbon Capture",
+          42,
+          65
+        ],
+        [
+          "Efficiency Upgrades",
+          78,
+          71
+        ],
+        [
+          "Renewable Transition",
+          58,
+          89
+        ]
+      ]
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 60,
+    "source": "Adapted from Environmental Economics Institute policy analysis"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:37.244Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "41273133-1463-4a36-b548-04db07c0494a"
+  }
+}

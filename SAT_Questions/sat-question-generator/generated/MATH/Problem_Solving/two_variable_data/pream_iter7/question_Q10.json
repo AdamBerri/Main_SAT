@@ -1,0 +1,54 @@
+{
+  "id": "c5d6e7f8-a9b0-4c1d-e2f3-4a5b6c7d8e9f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "two_variable_data"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "A small business owner created a scatterplot showing monthly advertising spend (in hundreds of dollars) and monthly revenue (in thousands of dollars). The line of best fit for the data is $y = 3.5x + 6.4$, where $x$ is the advertising spend in hundreds of dollars and $y$ is the predicted monthly revenue in thousands of dollars. According to this model, what is the predicted monthly revenue, in thousands of dollars, when the advertising spend is $800?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$6.4$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$28.0$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$34.4$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$35.4$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The advertising spend of $\\$800$ must first be converted to the units used in the equation. Since $x$ is measured in hundreds of dollars:\n$$x = \\frac{800}{100} = 8$$\n\nNow substitute $x = 8$ into the line of best fit:\n$$y = 3.5(8) + 6.4 = 28 + 6.4 = 34.4$$\n\nThe predicted monthly revenue is $\\$34.4$ thousand.",
+  "distractorRationale": {
+    "A": "This is the y-intercept value ($6.4$) only. A student who ignores the slope term and uses only the constant would get this answer.",
+    "B": "This is the slope term only: $3.5 \\times 8 = 28$. A student who forgets to add the y-intercept of $6.4$ would stop here.",
+    "C": "This is the correct answer: $3.5(8) + 6.4 = 28 + 6.4 = 34.4$.",
+    "D": "This results from a multiplication error: computing $3.5 \\times 8 = 29$ (off by 1) instead of $28$, then adding $6.4$ to get $35.4$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e6f7a8b9-c0d1-2e3f-4a5b-6c7d8e9f0a1b"
+  }
+}

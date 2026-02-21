@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2d1-84b5-4e9a-b631-2dc08f1e5a74",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A university researcher randomly selected 400 students from the 12,000 undergraduates enrolled at a large public university to study the relationship between hours of sleep and grade point average (GPA). The selected students were asked to self-report their average nightly sleep and their current GPA. The data showed that students sleeping 7 or more hours had an average GPA of 3.4, compared to 2.9 for students sleeping fewer than 7 hours. The researcher concluded that \"increasing sleep to at least 7 hours per night causes GPA to improve among all undergraduates at the university.\" Which of the following best evaluates this conclusion?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The conclusion is valid because the sample of 400 was randomly selected from the full population of 12,000 undergraduates, making the GPA difference generalizable to all students.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The conclusion is invalid because self-reported sleep data is unreliable, so no conclusion about sleep and GPA can be drawn from this study.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The conclusion is invalid because the study is observational — it cannot establish that more sleep causes higher GPA, since unmeasured variables (such as workload or stress) could explain the association in both the sample and the population.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "The conclusion is invalid because 400 students is too small a sample from a population of 12,000 to generalize any finding to all undergraduates at the university.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The researcher's conclusion makes two claims: (1) that the GPA difference generalizes to all undergraduates, and (2) that sleep causally improves GPA. The random selection of 400 from 12,000 students addresses the first concern — a randomly chosen sample of this size from this population supports generalizing the association to all undergraduates. However, the fatal flaw is the causal language (\"causes GPA to improve\"). This is an observational study, not a randomized experiment. Students were not randomly assigned to sleep more or less — they self-selected their sleep habits. Confounding variables such as course difficulty, personal stress, extracurricular obligations, or socioeconomic status could independently affect both sleep and GPA. Because the study cannot control for these variables, no causal claim is justified. Choice A is wrong because it defends a causal conclusion based solely on random sampling — random sampling supports generalization of associations, not causal claims. Choice B is wrong because measurement imprecision (self-report) is a secondary concern that does not entirely invalidate the study; the primary and decisive flaw is the causal inference from observational data. Choice D is wrong because 400 out of 12,000 is approximately a 3.3% sample drawn randomly, which is more than sufficient to support population-level generalizations — the issue is not sample size.",
+  "distractorRationale": {
+    "A": "This choice correctly identifies that random sampling supports generalization but makes the error of treating generalizability as sufficient to validate a causal claim. Random sampling allows associations to be generalized; it does not permit causal conclusions from observational data.",
+    "B": "This choice identifies a real limitation (self-report bias) but overstates its impact by concluding that no conclusion at all can be drawn. Self-report limitations weaken the study but do not render it entirely uninformative. More importantly, this choice misses the central flaw: the causal inference from a non-experimental design.",
+    "C": "Correct. The study is observational — participants were not randomly assigned to sleep conditions. Without random assignment, confounding variables make causal claims unjustifiable, regardless of how well the sample represents the population.",
+    "D": "This choice applies a common misconception: that sample size alone determines generalizability. A randomly selected sample of 400 from 12,000 is statistically adequate for generalizations; the problem is not the sample size but the causal language used in the conclusion."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f84c10b2-3a57-4d6e-9c1f-7e2b05d8a391"
+  }
+}

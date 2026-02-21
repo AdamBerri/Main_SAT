@@ -4,7 +4,7 @@
     "domain": "Standard_English_Conventions",
     "subtopic": "boundaries"
   },
-  "currentVersion": "1.2.0",
+  "currentVersion": "1.5.0",
   "versions": [
     {
       "version": "1.0.0",
@@ -13,6 +13,42 @@
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.3.0",
+      "createdAt": "2026-02-20T21:28:12.723Z",
+      "parentVersion": "1.2.0",
+      "preamIteration": 4,
+      "performanceMetrics": {
+        "trainAvgScore": 4.175,
+        "trainPassRate": 0.75,
+        "testAvgScore": 4.343,
+        "testPassRate": 0.6
+      }
+    },
+    {
+      "version": "1.4.0",
+      "createdAt": "2026-02-20T22:30:14.035Z",
+      "parentVersion": "1.3.0",
+      "preamIteration": 6,
+      "performanceMetrics": {
+        "trainAvgScore": 4.403,
+        "trainPassRate": 0.9,
+        "testAvgScore": 3.814,
+        "testPassRate": 0.6
+      }
+    },
+    {
+      "version": "1.5.0",
+      "createdAt": "2026-02-20T22:38:58.740Z",
+      "parentVersion": "1.4.0",
+      "preamIteration": 7,
+      "performanceMetrics": {
+        "trainAvgScore": 4.528,
+        "trainPassRate": 0.9,
+        "testAvgScore": 4.657,
+        "testPassRate": 0.8
+      }
     }
   ],
   "temperatureConfig": {

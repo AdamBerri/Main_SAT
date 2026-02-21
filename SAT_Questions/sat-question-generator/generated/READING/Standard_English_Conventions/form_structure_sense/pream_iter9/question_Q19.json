@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "e04ed8f4-4c93-4bfc-8a82-d3c6092b1038",
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "The novelist Toni Morrison, whose works explored the complexities of Black identity in America, received both the Pulitzer Prize and the Nobel Prize in Literature. Morrison's novels frequently depicted characters whose personal histories, shaped by the legacies of slavery and systemic racism, [1]_____ as metaphors for the broader American experience, challenging readers to confront uncomfortable truths about the nation's past.",
+  "passageMetadata": {
+    "genre": "literary",
+    "wordCount": 65,
+    "source": "Adapted from a literary criticism essay"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "served",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "serves",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "serving",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "has served",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "This question tests subject-verb agreement and tense selection in a sentence with nested relative clauses and participial phrases. The subject of the blank is 'histories' (plural), embedded within the relative clause 'whose personal histories...served.' The main clause verb 'depicted' establishes past tense. 'Served' is simple past plural (agreeing with 'histories') and maintains tense consistency with 'depicted.' The difficulty comes from tracking the subject through the intervening participial phrase 'shaped by the legacies of slavery and systemic racism' and correctly identifying 'histories' (not 'characters' or 'racism') as the subject.",
+  "distractorRationale": {
+    "A": "Correct. Past tense, agreeing with plural 'histories' and consistent with 'depicted.'",
+    "B": "Present singular—wrong tense and number. Disagrees with plural 'histories' and the past-tense narrative.",
+    "C": "Participle—cannot serve as main verb of the relative clause, creating a fragment.",
+    "D": "Present perfect singular—wrong number (singular 'has' vs. plural 'histories') and shifts to present tense from the established past narrative."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a974a0bd-6ce9-4988-bba2-62548271470d"
+  }
+}

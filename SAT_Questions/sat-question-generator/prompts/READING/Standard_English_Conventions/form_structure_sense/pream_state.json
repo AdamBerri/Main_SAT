@@ -89,7 +89,7 @@
             "frequency": 5,
             "exampleErrors": [
               "Question rated 5/5 difficulty tests basic subject-verb agreement that should be 2.5-3/5; requires only 2-3 linear reasoning steps with straightforward error patterns",
-              "Stated difficulty 3/5 for 'organization' singular agreement is actually 2/5\u2014the subject is proximate and unambiguous with low cognitive demand",
+              "Stated difficulty 3/5 for 'organization' singular agreement is actually 2/5—the subject is proximate and unambiguous with low cognitive demand",
               "Difficulty 4/5 for inverted structure agreement question overstated by ~0.8 points; once subject identified, answer is relatively clear (actual: 3.5/5)"
             ]
           },
@@ -97,9 +97,9 @@
             "category": "missing_context",
             "frequency": 4,
             "exampleErrors": [
-              "Complete sentence not provided\u2014cannot verify subject-verb pairing, proper antecedent identification, or whether answer choice actually fits natural phrasing",
+              "Complete sentence not provided—cannot verify subject-verb pairing, proper antecedent identification, or whether answer choice actually fits natural phrasing",
               "No full passage context given; tense consistency relative to surrounding sentences cannot be evaluated without complete sentence",
-              "Question stem references 'the text' but provides only answer choices\u2014impossible to assess grammatical validity without seeing actual sentence",
+              "Question stem references 'the text' but provides only answer choices—impossible to assess grammatical validity without seeing actual sentence",
               "Subject-verb agreement verification impossible without complete sentence structure showing intervening clauses and true subject position"
             ]
           },
@@ -107,15 +107,15 @@
             "category": "answer_validity",
             "frequency": 2,
             "exampleErrors": [
-              "Designated correct answer (B) violates subject-verb agreement rules\u2014plural subject 'findings' paired with singular verb 'has transformed' cannot be justified by semantic 'unified impact'",
-              "Answer choice A (bioaccumulate) may have tense ambiguity\u2014present progressive form (are bioaccumulating) could be equally defensible for describing ongoing processes"
+              "Designated correct answer (B) violates subject-verb agreement rules—plural subject 'findings' paired with singular verb 'has transformed' cannot be justified by semantic 'unified impact'",
+              "Answer choice A (bioaccumulate) may have tense ambiguity—present progressive form (are bioaccumulating) could be equally defensible for describing ongoing processes"
             ]
           },
           {
             "category": "explanation_inconsistency",
             "frequency": 2,
             "exampleErrors": [
-              "Explanation claims 'findings' is plural subject but then justifies singular verb by appealing to 'unified body of work'\u2014contradicts standard grammar rules that don't permit semantic interpretation to override grammatical number",
+              "Explanation claims 'findings' is plural subject but then justifies singular verb by appealing to 'unified body of work'—contradicts standard grammar rules that don't permit semantic interpretation to override grammatical number",
               "Tense justification invokes 'timeless, general nature' to defend simple present, but present progressive could equally describe ongoing biological processes with equivalent validity"
             ]
           },
@@ -292,7 +292,7 @@
             "category": "grammar_authenticity",
             "frequency": 4,
             "exampleErrors": [
-              "Missing complete sentence context; question provides only explanation, not the actual sentence with blank\u2014SAT always presents full context upfront for evaluation",
+              "Missing complete sentence context; question provides only explanation, not the actual sentence with blank—SAT always presents full context upfront for evaluation",
               "Explanation contains internal contradiction claiming collective nouns take singular verbs, then justifying plural verb choice without proper grammatical justification",
               "Subject-verb agreement issue is textbook-level (singular subject + prepositional phrase), not authentic SAT complexity which tests collective nouns and less obvious constructions",
               "Awkward sentence construction 'director _____ planning to expand' creates incomplete predicate regardless of verb choice; authentic SAT ensures all answer options create grammatically coherent sentences"
@@ -324,11 +324,82 @@
       },
       "improvementMade": "Addressed: answer_validity, distractor_quality, grammar_authenticity",
       "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.664,
+        "passRate": 1,
+        "errorCategories": {
+          "distractor_quality": 4,
+          "faithfulness": 1
+        }
+      },
+      "testMetrics": {
+        "avgScore": 4.943,
+        "passRate": 1
+      },
+      "improvementMade": "Improved distractor quality requirements for easy questions - added explicit prohibition against broken verb constructions (has demonstrate, has receiving), required all distractors to be properly conjugated English forms, added positive and negative examples of good vs bad distractors, emphasized that difficulty should come from concept simplicity not weak distractors",
+      "newPromptVersion": "1.5.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.5.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 5.593,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 5.443,
+        "passRate": 1
+      },
+      "improvementMade": "No improvement description provided",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 8,
+      "promptVersionUsed": "1.5.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 5.768,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 5.857,
+        "passRate": 1
+      },
+      "improvementMade": "No improvement description provided",
+      "newPromptVersion": null
+    },
+    {
+      "iteration": 9,
+      "promptVersionUsed": "1.5.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 5.943,
+        "passRate": 1,
+        "errorCategories": []
+      },
+      "testMetrics": {
+        "avgScore": 5.886,
+        "passRate": 1
+      },
+      "improvementMade": "No improvement description provided",
+      "newPromptVersion": null
     }
   ],
-  "currentBestVersion": "1.3.0",
-  "converged": false,
+  "currentBestVersion": "1.5.0",
+  "converged": true,
   "startedAt": "2026-01-08T20:55:29.385Z",
-  "completedAt": null,
-  "bestTestScore": 4.1607142857142865
+  "completedAt": "2026-02-21T03:16:30.834Z",
+  "bestTestScore": 5.886
 }

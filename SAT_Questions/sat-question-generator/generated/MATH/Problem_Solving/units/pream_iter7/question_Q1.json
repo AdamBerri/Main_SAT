@@ -1,0 +1,54 @@
+{
+  "id": "a3f2c1d4-8e5b-4a09-b7c6-2d1f9e083c47",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "computational": 1.3
+  },
+  "stem": "A hiking trail is 3 miles long. There are 5,280 feet in 1 mile. What is the length of the trail in feet?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "1,760",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "5,280",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "15,840",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "15,900",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To convert miles to feet, multiply the number of miles by 5,280 feet per mile.\n\n$$3 \\text{ miles} \\times \\frac{5{,}280 \\text{ ft}}{1 \\text{ mile}} = 15{,}840 \\text{ ft}$$\n\nThe miles unit cancels, leaving feet. The trail is 15,840 feet long.",
+  "distractorRationale": {
+    "A": "Wrong conversion direction: divides 5,280 by 3 instead of multiplying ($5{,}280 \\div 3 = 1{,}760$). This inverts the operation, as if the student tried to find how many miles are in 5,280 feet split among 3 equal parts.",
+    "B": "Stops one step early: reports only the conversion factor (5,280 feet per mile) without multiplying by the given distance of 3 miles.",
+    "C": "Correct: $3 \\times 5{,}280 = 15{,}840$ feet.",
+    "D": "Uses a wrong conversion factor: substitutes 5,300 ft per mile (rounding 5,280 up to the nearest hundred) giving $3 \\times 5{,}300 = 15{,}900$ ft. This reflects a student who misremembers the conversion as approximately 5,300 feet per mile."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f7a1e2b3-cd45-4f89-a012-3b4c5d6e7f80"
+  }
+}

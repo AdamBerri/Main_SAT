@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "a9d13243-2266-452f-aa67-4993719cdad7",
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "linguistic": 1.8
+  },
+  "passage": "The public library system in the county has expanded its digital lending program to include e-books, audiobooks, and streaming video content. The initiative aims to serve residents who lack easy access to physical library branches. Since the program launched last year, the library's collection of digital titles [1]_____ by over forty percent.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 55,
+    "source": "Adapted from a library system report"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "grew",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "has grown",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "have grown",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "grows",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement combined with tense selection. The subject is 'the library's collection' (singular). 'Since the program launched last year' requires present perfect tense (an action beginning in the past and continuing to the present). The singular 'collection' takes 'has grown.'",
+  "distractorRationale": {
+    "A": "Simple past—'since' requires present perfect, not simple past, to indicate a period extending to the present.",
+    "B": "Correct. Present perfect singular, agreeing with 'collection' and matching the 'since' construction.",
+    "C": "Present perfect plural—right tense but disagrees with singular 'collection.'",
+    "D": "Present simple singular—wrong tense; 'since last year' requires present perfect."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e3fae019-b53e-46ba-8761-818e66b1fe5c"
+  }
+}

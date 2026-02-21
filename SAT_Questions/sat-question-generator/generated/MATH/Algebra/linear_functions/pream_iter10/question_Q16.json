@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2e1-8b4d-4e9f-bc61-d05e2a3f71c8",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "computational": 4.3
+  },
+  "stem": "A manufacturer is comparing costs between two suppliers for producing custom parts. Supplier A charges a fixed fee of $150 plus $9 per part. Supplier B charges a fixed fee of $330 plus $6 per part. For what number of parts $x$ do the two suppliers charge the same total amount?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$x = 20$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$x = 60$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$x = 110$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$x = 160$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $x$ be the number of parts. The total cost for Supplier A is $C_A(x) = 9x + 150$ and for Supplier B is $C_B(x) = 6x + 330$. Setting them equal: $$9x + 150 = 6x + 330$$ Subtract $6x$ from both sides: $$3x + 150 = 330$$ Subtract 150 from both sides: $$3x = 180$$ Divide by 3: $$x = 60$$ Verification: $C_A(60) = 9(60) + 150 = 540 + 150 = 690$ and $C_B(60) = 6(60) + 330 = 360 + 330 = 690$. Both costs equal $690, confirming $x = 60$.",
+  "distractorRationale": {
+    "A": "Ignores Supplier B's variable component, treating B as a fixed charge of $330 only: solves $9x + 150 = 330$, giving $9x = 180$, so $x = 20$.",
+    "B": "Correct answer.",
+    "C": "Ignores Supplier A's fixed fee, setting $9x = 6x + 330$: gives $3x = 330$, so $x = 110$.",
+    "D": "Adds both fixed fees and divides by the difference in variable rates: $(150 + 330) \/ (9 - 6) = 480 \/ 3 = 160$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f8d21c94-3a57-4b62-ae04-7c9e5f081b33"
+  }
+}

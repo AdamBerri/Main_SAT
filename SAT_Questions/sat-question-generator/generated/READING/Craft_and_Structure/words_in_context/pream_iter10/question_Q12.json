@@ -1,0 +1,58 @@
+{
+  "id": "d7f2c9e4-8b3a-4e1f-9a5c-2b7d8e3f1a9c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "Urban planners in the nineteenth century sought to impose a rational order on cities that had grown organically for centuries. Their ambitions were sweeping: to draft comprehensive codes governing building heights, street widths, and land use across entire metropolitan regions. Critics argued that such schemes would arrest the natural dynamism of cities, locking neighborhoods into configurations that suited the planners' present vision but not the needs of future residents.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 72,
+    "source": "Adapted from urban history scholarship"
+  },
+  "stem": "As used in the passage, \"arrest\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "halt",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "capture",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "engage",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "detect",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this context, critics warn that rigid planning codes would 'arrest the natural dynamism of cities' — meaning they would stop or halt the organic processes by which cities change and evolve. The word functions here in its sense of checking or stopping movement or development, as in 'arresting a process.' The passage's reference to locking neighborhoods into fixed configurations confirms that the concern is about stopping change, not about capturing, engaging, or detecting anything.",
+  "distractorRationale": {
+    "A": "Correct. 'Halt' accurately captures the meaning: the critics fear planning codes would stop the ongoing, natural processes of urban change.",
+    "B": "'Capture' is the most common association with 'arrest,' but it refers to apprehending a person, not stopping a process. Nothing in the passage involves seizing or taking hold of something.",
+    "C": "'Engage' is one meaning of 'arrest' (as in 'arresting attention' means engaging it), but the context here is about stopping dynamism, not capturing interest or attention.",
+    "D": "'Detect' is not a standard meaning of 'arrest.' This choice is a weak distractor that a careful reader would quickly eliminate."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e8a3d1f7-5c2b-4a9e-8f4d-1c7b3e5a9f2d"
+  },
+  "hasImage": false
+}

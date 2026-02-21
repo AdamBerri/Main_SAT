@@ -1,0 +1,54 @@
+{
+  "id": "7d045072-1068-40d5-8818-23ad19bb176f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "A farmer plants two types of crops on a total of 10 acres. Field A yields 4 bushels per acre and Field B yields 7 bushels per acre. The total harvest is 58 bushels. How many more acres are planted with Field B than with Field A?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$4$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$6$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$8$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let $a$ = acres planted with Field A and $b$ = acres planted with Field B.\n\nTotal acreage:\n$$a + b = 10 \\quad (1)$$\n\nTotal harvest:\n$$4a + 7b = 58 \\quad (2)$$\n\nFrom equation (1): $a = 10 - b$. Substitute into equation (2):\n$$4(10 - b) + 7b = 58$$\n$$40 - 4b + 7b = 58$$\n$$40 + 3b = 58$$\n$$3b = 18$$\n$$b = 6$$\n\nBack-substituting: $a = 10 - 6 = 4$.\n\nChecking both equations:\n- Equation (1): $4 + 6 = 10$ ✓\n- Equation (2): $4(4) + 7(6) = 16 + 42 = 58$ ✓\n\nThe difference in acreage is $b - a = 6 - 4 = \\boxed{2}$ acres.",
+  "distractorRationale": {
+    "A": "Correct answer: solving gives $a = 4$ and $b = 6$, so Field B has $6 - 4 = 2$ more acres than Field A.",
+    "B": "Wrong-variable error: the student correctly solves the system finding $a = 4$ and $b = 6$, but reports the number of Field A acres ($a = 4$) rather than computing the difference $b - a$.",
+    "C": "Wrong-variable error: the student correctly solves the system finding $a = 4$ and $b = 6$, but reports the number of Field B acres ($b = 6$) rather than computing the difference $b - a$.",
+    "D": "Substitution arithmetic error: the student correctly reaches $3b = 18$ but divides by 2 instead of 3, getting $b = 9$ and $a = 10 - 9 = 1$; then reports $9 - 1 = 8$ as the difference."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "85ac41ce-6369-4e72-ae55-645e66fbedcf"
+  }
+}

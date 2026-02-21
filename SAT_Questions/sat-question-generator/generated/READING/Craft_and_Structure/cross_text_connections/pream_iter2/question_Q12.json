@@ -1,0 +1,58 @@
+{
+  "id": "d4e8b2c1-7f3a-4d9e-b6c5-1a8f2e7b3c9d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "Text 1\nMedieval European guilds have long been treated as precursors to modern labor unions, organizations devoted to protecting workers from exploitation. This reading is largely anachronistic. Guild membership was restricted to masters who owned workshops and controlled apprentices; the interests guilds defended were primarily those of established producers seeking to limit competition from outsiders. Their regulations governed product quality and market access far more than they addressed anything resembling worker welfare.\n\nText 2\nHistorians who reduce guilds to protectionist cartels overlook the extensive social functions these organizations performed. Guilds maintained charitable funds for members who fell ill or died, provided training infrastructure that transferred skilled knowledge across generations, and created communities of practice with shared professional identity. These roles, while distinct from collective bargaining, served genuine welfare functions for craft practitioners and their families.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 140,
+    "source": "Adapted from scholarly discussions of medieval economic history"
+  },
+  "stem": "Which choice best describes the relationship between the two texts' treatments of medieval guilds?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 1 argues that guilds were primarily commercial rather than social institutions, and Text 2 agrees but contends that their commercial functions benefited workers indirectly.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 1 disputes a common characterization of guilds by narrowing their function to market control, while Text 2 recovers dimensions of guild activity that Text 1's account does not address.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 2 challenges Text 1's central claim by arguing that guild regulations were primarily designed to protect apprentices rather than established masters.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 1 and Text 2 both reject the comparison between guilds and modern labor unions, though they offer different reasons for doing so.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 corrects what it sees as an anachronistic view of guilds as labor unions by arguing that guilds actually served masters' commercial interests rather than workers' welfare. Text 2 does not dispute this commercial dimension but adds that guilds also performed welfare and social functions historians often overlook. Choice B accurately describes this complementary relationship: Text 1 narrows the guild's role to market protection, and Text 2 expands the picture by recovering the social welfare activities Text 1's argument brackets out.",
+  "distractorRationale": {
+    "A": "Text 2 does not agree with Text 1 that guilds were purely commercial. Text 2 explicitly argues that guilds had social welfare dimensions beyond commercial functions, and does not frame those welfare activities as indirect commercial benefits.",
+    "B": "Correct. Text 1 rejects the labor-union analogy by emphasizing guilds' market-control role; Text 2 does not contradict this but supplies the social welfare functions Text 1 omits, producing a complementary expansion rather than a direct challenge.",
+    "C": "Text 2 never argues that guild regulations were primarily designed to protect apprentices. Text 2's welfare-function argument concerns sick members and their families, not apprentice protections, and Text 2 does not directly contest Text 1's claims about who controlled guilds.",
+    "D": "Only Text 1 explicitly addresses the guild-as-labor-union comparison. Text 2 does not mention labor unions at all; it focuses on recovering overlooked welfare functions without engaging the anachronism argument Text 1 makes."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e"
+  },
+  "hasImage": false
+}

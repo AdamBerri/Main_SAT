@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-0008-4aaa-b008-000000000008",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "computational": 1.9
+  },
+  "stem": "Two parallel lines are cut by a transversal. If one of the corresponding angles measures $118°$, what is the measure of the angle supplementary to the other corresponding angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$118°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$62°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$72°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$128°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Corresponding angles are equal, so the other corresponding angle is also $118°$. The supplementary angle is $180° - 118° = 62°$.",
+  "distractorRationale": {
+    "A": "Reported the corresponding angle itself instead of its supplement.",
+    "B": "Correct. $180° - 118° = 62°$.",
+    "C": "Subtracted from $190°$: $190 - 118 = 72$.",
+    "D": "Added $10°$: $118 + 10 = 128$."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.338Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-0008-4000-a008-000000000008"
+  }
+}

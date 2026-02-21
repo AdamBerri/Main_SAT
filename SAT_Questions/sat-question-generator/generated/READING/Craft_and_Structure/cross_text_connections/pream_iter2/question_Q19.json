@@ -1,0 +1,57 @@
+{
+  "id": "f5c1b8a3-2d7e-4f9c-b4e6-8a3d1f2c9b7e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "linguistic": 4.2
+  },
+  "passage": "Text 1\nHistorians of science have long treated the Scientific Revolution as a decisive rupture—a moment when empirical observation supplanted scholastic authority and mathematics became the language of natural philosophy. Yet recent scholarship complicates this narrative. Many of the figures we celebrate as revolutionaries drew extensively on Hermetic traditions, astrology, and alchemical practice. Newton's private manuscripts reveal an obsessive engagement with biblical prophecy and the transmutation of metals that occupied as much of his intellectual life as the Principia.\n\nText 2\nThe persistence of magical thinking among early modern natural philosophers does not destabilize the revolution's significance. What matters is not the psychological profile of individual practitioners but the institutional and methodological transformations that reshaped knowledge production: the rise of learned societies, peer correspondence networks, standardized experimental protocols, and the separation of natural philosophy from theological jurisdiction. These structural changes persisted regardless of whether Newton also believed in alchemy.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 162,
+    "source": "Adapted from academic debates on the historiography of the Scientific Revolution"
+  },
+  "stem": "How does the argument in Text 2 respond to the scholarly complication introduced in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 2 disputes the historical accuracy of Text 1's claims about Newton's manuscripts by arguing that alchemical interests were peripheral to his scientific methodology.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 2 accepts the biographical evidence presented in Text 1 and uses it to strengthen the case for the Scientific Revolution's significance by reframing what kind of evidence is relevant to that judgment.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 2 challenges Text 1's implicit claim that the Scientific Revolution was a gradual process by emphasizing the abruptness of institutional changes in the early modern period.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 2 narrows the scope of Text 1's argument by conceding that individual scientists retained pre-modern beliefs while insisting that the revolution's outcomes were nevertheless scientifically valid.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 introduces a complication to the 'decisive rupture' narrative: many celebrated figures of the Scientific Revolution—including Newton—engaged deeply with Hermetic traditions, alchemy, and biblical prophecy. The implication is that if these revolutionaries were not purely empiricist, the 'rupture' narrative may be overstated. Text 2 does not challenge the biographical facts; it explicitly grants that 'magical thinking' persisted among practitioners. Its strategic move is to reframe what evidence is relevant to evaluating the revolution: significance lies not in individuals' psychological profiles but in structural changes—learned societies, experimental protocols, separation from theological jurisdiction. By accepting Text 1's evidence while arguing it is simply irrelevant to the evaluative question at hand, Text 2 preserves the revolution's significance through a methodological pivot rather than a factual dispute.",
+  "distractorRationale": {
+    "A": "Text 2 does not dispute the accuracy of claims about Newton's manuscripts, nor does it argue alchemical interests were peripheral to his methodology. Text 2 explicitly concedes the persistence of magical thinking and argues it simply does not matter to the revolution's significance.",
+    "B": "Correct. Text 2 accepts Text 1's biographical evidence and redirects the evaluative frame from individual psychology to institutional structure, thereby preserving the revolution's significance while absorbing the complication Text 1 raises.",
+    "C": "Neither text argues about whether the revolution was gradual or abrupt. Text 1 questions the 'rupture' narrative based on intellectual continuities; Text 2 responds by shifting the evaluative criterion, not by defending the revolution's abruptness.",
+    "D": "Text 2's point is not about scientific validity of outcomes but about which criteria—individual beliefs or institutional transformations—should determine how we assess the revolution. 'Scientific validity' is not the frame Text 2 uses; it invokes structural and institutional changes, not validation of results."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a9b3c7e1-5d2f-4a8b-9c6e-3f1d7a5b2c8e"
+  }
+}

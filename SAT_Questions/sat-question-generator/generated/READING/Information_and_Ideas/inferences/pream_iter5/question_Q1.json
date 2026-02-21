@@ -1,0 +1,57 @@
+{
+  "id": "3a7f1c2e-8b4d-4e9a-bc5f-1d6e7f8a9b0c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "inferences"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1.3
+  },
+  "passage": "Every morning, Maya walked the same path through the neighborhood park on her way to school. She noticed the groundskeeping crew arrive at 7:00 a.m. sharp, always beginning with the same routine: first raking the gravel paths, then trimming the hedges along the fence, and finally collecting any litter near the benches. One Tuesday, Maya arrived at the park at 7:45 a.m. and found the paths already raked and the hedges neatly trimmed. The crew's truck was still parked near the entrance, and one worker was filling a large garbage bag near the bench area. Maya quickened her pace, knowing she only had fifteen minutes to reach school before the first bell.",
+  "passageMetadata": {
+    "genre": "literary",
+    "wordCount": 118,
+    "source": "Original passage"
+  },
+  "stem": "Based on the passage, what can most reasonably be inferred about the groundskeeping crew when Maya passes through the park on Tuesday?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The crew arrived earlier than usual that morning.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The crew is nearly finished with its daily routine.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The crew has added new tasks to its regular schedule.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The crew is short-staffed and working more slowly.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage describes the crew's routine in order: raking gravel paths, then trimming hedges, then collecting litter. When Maya arrives at 7:45 a.m., the paths are already raked and the hedges are already trimmed, and one worker is filling a garbage bag near the benches—which is the final step. This sequence of completed and in-progress tasks directly supports the inference that the crew is nearly done with its routine.",
+  "distractorRationale": {
+    "A": "The passage does not indicate the crew arrived earlier than 7:00 a.m. Maya's later arrival time (7:45 vs. her usual time) explains why more tasks are completed, not an earlier crew arrival.",
+    "C": "No new tasks are mentioned. The worker collecting litter near the benches is the final step of the established routine, not an additional task.",
+    "D": "Nothing in the passage suggests understaffing or slower work. The crew appears to be progressing through its routine at a normal pace."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "9c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f"
+  },
+  "hasImage": false
+}

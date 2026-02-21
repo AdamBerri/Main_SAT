@@ -1,0 +1,58 @@
+{
+  "id": "e5f9c3d2-8a4b-4e0f-c7d6-2b9a3f8c4d0e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "Text 1\nUrban green spaces provide well-documented psychological benefits: lower cortisol levels, reduced attentional fatigue, and improved mood have all been recorded in people who regularly spend time in parks and gardens. City planners who prioritize infrastructure spending over greenery are trading measurable public health gains for concrete. The evidence connecting urban nature access to mental wellness is robust enough to inform policy, and jurisdictions that ignore it do so at their residents' expense.\n\nText 2\nThe research linking urban parks to mental health improvements draws heavily on self-reported well-being measures and cross-sectional survey data. These methodological choices introduce significant confounds: residents who choose to visit green spaces may differ systematically from those who do not in ways that correlate independently with better mental health outcomes. Establishing whether park access causes improved wellness, or simply attracts already-healthier individuals, requires longitudinal experimental designs that remain rare in this literature.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 145,
+    "source": "Adapted from discussions of urban planning and public health research"
+  },
+  "stem": "How does Text 2 respond to the position advanced in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Text 2 disagrees with Text 1's claim that parks lower cortisol levels, arguing that laboratory studies yield different results than field observations.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Text 2 questions whether the research Text 1 treats as settled actually demonstrates a causal relationship, because the studies may not distinguish correlation from causation.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Text 2 agrees that parks benefit mental health but argues that economic constraints make it impractical for cities to expand green space.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Text 2 contends that Text 1 overstates the extent of residents' access to urban parks in most cities.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 characterizes the evidence connecting urban nature to mental wellness as robust and policy-ready. Text 2 challenges this characterization not by disputing individual findings but by raising methodological concerns: the reliance on self-reported data and cross-sectional designs means the studies may be capturing selection effects rather than causal effects of park access. Choice B accurately captures this methodological challenge to Text 1's confidence in the research base.",
+  "distractorRationale": {
+    "A": "Text 2 does not dispute specific findings like cortisol reduction or cite laboratory versus field distinctions. Its critique is about study design methodology, not about contesting particular measured outcomes.",
+    "B": "Correct. Text 1 treats the evidence as sufficiently robust for policy decisions; Text 2 argues the evidence base uses designs that cannot establish causality, directly challenging the confidence Text 1 places in those findings.",
+    "C": "Text 2 raises no economic arguments and takes no position on whether parks benefit mental health. Its argument is entirely about whether existing research methods can support causal claims, not about feasibility of park expansion.",
+    "D": "Text 2 says nothing about the physical availability or geographic distribution of parks. Its focus is entirely on research methodology and the interpretation of existing study results."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f"
+  },
+  "hasImage": false
+}

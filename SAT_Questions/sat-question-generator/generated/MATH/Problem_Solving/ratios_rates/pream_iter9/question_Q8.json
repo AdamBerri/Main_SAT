@@ -1,0 +1,54 @@
+{
+  "id": "e2c6a4b8-3f1d-4d07-b5e9-a1b2c3d4e5f6",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "ratios_rates"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "computational": 1.9
+  },
+  "stem": "A cyclist rides at a constant speed of 15 miles per hour. How far, in miles, does she travel in 40 minutes?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$6$ miles",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$10$ miles",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$22.5$ miles",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$600$ miles",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The speed is given in miles per hour, so the time must also be expressed in hours. Convert 40 minutes to hours: $\\frac{40}{60} = \\frac{2}{3}$ hour. Apply the rate: distance $= 15 \\times \\frac{2}{3} = 10$ miles.",
+  "distractorRationale": {
+    "A": "Error type: Wrong unit conversion factor. The student incorrectly converts minutes to hours using 100 instead of 60 (perhaps thinking of percentages or using a decimal shortcut). Wrong calculation: $\\frac{40}{100} = 0.4$ hours; $15 \\times 0.4 = 6$ miles. This produces 6 miles.",
+    "B": "This is the correct answer: $15 \\times \\frac{40}{60} = 15 \\times \\frac{2}{3} = 10$ miles.",
+    "C": "Error type: Unit inversion. The student inverts the time conversion, dividing 60 by 40 instead of 40 by 60, treating 40 minutes as more than one hour. Wrong calculation: $\\frac{60}{40} = 1.5$ hours; $15 \\times 1.5 = 22.5$ miles. This produces 22.5 miles.",
+    "D": "Error type: Ignored unit conversion entirely. The student multiplies the speed directly by the number of minutes without converting to hours. Wrong calculation: $15 \\times 40 = 600$ miles. This produces 600 miles."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f6a0b4c8-9e2d-4e08-c1f0-c3d4e5f6a7b8"
+  }
+}

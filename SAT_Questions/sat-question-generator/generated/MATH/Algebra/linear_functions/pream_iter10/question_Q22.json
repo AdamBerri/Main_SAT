@@ -1,0 +1,54 @@
+{
+  "id": "c7b4e9f2-1a56-4d8c-b3e7-9f20a1c6d8e5",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "A taxi company charges a flat fee plus a per-mile rate. The table below shows the total fare $F(d)$, in dollars, for a trip of $d$ miles.\n\n| $d$ (miles) | $F(d)$ (dollars) |\n|-------------|------------------|\n| $4$ | $11$ |\n| $10$ | $23$ |\n\nA ride-share service charges no flat fee and $\\$2.50$ per mile, so its fare is $G(d) = 2.5d$ dollars. For what distance, in miles, do the two services charge the same total fare?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$1.5$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$3$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$6$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$10$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Step 1: Find the taxi's linear fare function $F(d) = md + b$.**\nUsing the two data points $(4, 11)$ and $(10, 23)$:\n$$m = \\frac{23 - 11}{10 - 4} = \\frac{12}{6} = 2$$\nUsing point $(4, 11)$: $11 = 2(4) + b \\Rightarrow 11 = 8 + b \\Rightarrow b = 3$.\nSo $F(d) = 2d + 3$.\n\n**Step 2: Set $F(d) = G(d)$ and solve.**\n$$2d + 3 = 2.5d$$\n$$3 = 0.5d$$\n$$d = \\frac{3}{0.5} = 6$$\n\n**Verify:** $F(6) = 2(6)+3 = 15$ and $G(6) = 2.5(6) = 15$. ✓\n\nThe two services charge the same total fare at $\\mathbf{6}$ miles.",
+  "distractorRationale": {
+    "A": "After correctly setting up $0.5d = 3$, multiplies instead of divides: $d = 0.5 \\times 3 = 1.5$.",
+    "B": "Misreads the ride-share rate as $\\$3.00$ per mile instead of $\\$2.50$, giving $G(d)=3d$; then solves $2d+3=3d \\Rightarrow d=3$.",
+    "C": "Correct: derives $F(d)=2d+3$ from the table and solves $2d+3=2.5d \\Rightarrow d=6$.",
+    "D": "Computes the taxi's $y$-intercept incorrectly by adding $2$ and $4$ instead of multiplying ($2 \\times 4 = 8$): uses $b = 11 - 2 - 4 = 5$, giving $F(d)=2d+5$; then solves $2d+5=2.5d \\Rightarrow 5=0.5d \\Rightarrow d=10$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d2f6a8b3-5c79-4e1d-a7f4-1b8c3d9e6f02"
+  }
+}

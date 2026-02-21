@@ -1,0 +1,57 @@
+{
+  "id": "f1c8b2e9-4d7a-4f3e-9a5c-8b2d0e6f1c3a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "linguistic": 1.9
+  },
+  "passage": "Scientists studying the Amazon River basin have found that seasonal flooding plays a central role in the ecosystem. Each year, rising waters carry nutrients from the forest floor into the river, where they feed aquatic plants and fish populations that millions of people across the region depend on for food.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 56,
+    "source": "Original passage"
+  },
+  "stem": "As used in the passage, \"feed\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "nourish",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "supply",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "fuel",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "satisfy",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In the passage, 'feed' describes what nutrients carried by floodwaters do for aquatic plants and fish — they provide biological sustenance that allows living organisms to grow and thrive. 'Nourish' is the most precise match because it refers specifically to providing nutrients that sustain living things. The passage is describing a biological relationship between nutrient input and living organisms, which is the core meaning of 'nourish.'",
+  "distractorRationale": {
+    "B": "'Supply' is a meaning of 'feed' in industrial or mechanical contexts (e.g., feed materials into a machine), but the passage describes nutrients supporting living organisms, which points more specifically to 'nourish' than the generic act of supplying.",
+    "C": "'Fuel' suggests providing energy for a process or mechanism, but it carries a mechanical or combustion connotation that is less appropriate for the biological relationship between nutrients and living aquatic organisms described here.",
+    "D": "'Satisfy' implies meeting a need or desire to the point of sufficiency, but the passage does not describe a state of sufficiency or completion — it describes an ongoing ecological process of nutrient provision."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2b7c4d8-3e9f-4a1b-8c5e-7d0f2b6c4a1e"
+  },
+  "hasImage": false
+}

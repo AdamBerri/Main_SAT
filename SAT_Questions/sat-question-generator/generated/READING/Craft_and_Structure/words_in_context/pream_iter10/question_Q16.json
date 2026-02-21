@@ -1,0 +1,57 @@
+{
+  "id": "b2e7f4a1-3c9d-4f8b-a5e2-7d1c6b9f3e8a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4,
+    "linguistic": 4.3
+  },
+  "passage": "The historian's account of the failed coup did not merely chronicle events but sought to *excavate* the ideological fractures that had been accumulating within the officer corps for decades. Where prior scholars had taken the conspirators' public declarations at face value, she argued that these statements functioned as a kind of sedimentary deposit, concealing far older grievances beneath a veneer of principled dissent.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 72,
+    "source": "Adapted from a review of contemporary historiography"
+  },
+  "stem": "As used in the passage, \"excavate\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "unearth",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "hollow out",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "catalogue",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "erode",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this passage, the historian is not literally digging but pursuing something hidden beneath the surface of the historical record. The metaphor of sedimentary layers and concealed grievances frames the scholarly work as recovering what has been buried beneath misleading appearances. 'Unearth' captures this sense of bringing hidden material into view through investigative effort. The surrounding language—'concealing,' 'sedimentary deposit,' 'beneath a veneer'—all reinforce a meaning tied to discovery of what lies hidden, not to physical removal of earth or material.",
+  "distractorRationale": {
+    "A": "Correct. 'Unearth' means to bring something hidden to light through investigation, which precisely fits the historian's work of recovering concealed ideological fractures.",
+    "B": "'Hollow out' is a literal, physical meaning of 'excavate'—creating a cavity or void—but the passage describes an intellectual act of investigation and discovery, not the creation of emptiness.",
+    "C": "'Catalogue' means to systematically list or classify, but the passage emphasizes revealing what was hidden, not organizing what is already known. The historian's work is forensic, not taxonomic.",
+    "D": "'Erode' can describe a gradual wearing away, and while erosion is sometimes associated with excavation contexts, the passage frames the historian's work as purposeful retrieval, not an incremental, unintentional wearing-down process."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e4f1a8c3-7b2d-4e9f-8c5a-1d3b6e9f2a7c"
+  }
+}

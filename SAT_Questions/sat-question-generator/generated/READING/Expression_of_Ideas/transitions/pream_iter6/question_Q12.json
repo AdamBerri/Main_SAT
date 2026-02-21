@@ -1,0 +1,58 @@
+{
+  "id": "b2c3d4e5-2222-4b8c-9d0e-1f2a3b4c5d6e",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "Marine biologists expected that coral reefs near coastal cities would show the most severe bleaching, since urban runoff and pollution have long been identified as primary stressors. _______ their survey data revealed that remote reefs hundreds of miles from any city displayed bleaching rates nearly identical to those of urban reefs, pointing to ocean temperature as the dominant factor.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 72,
+    "source": "Adapted from a marine ecology study"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "In addition,",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "As a result,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "In fact,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Surprisingly,",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The first sentence establishes a clear expectation: reefs near cities should be worst affected. The second sentence reveals data that contradicts this expectation: remote reefs showed similar bleaching. 'Surprisingly' correctly signals that the findings were unexpected given the initial assumption, emphasizing the contradiction between prediction and reality.",
+  "distractorRationale": {
+    "A": "'In addition' adds a supporting or related point, but the survey findings contradict the initial expectation rather than adding to it.",
+    "B": "'As a result' signals that the second event was caused by the first, but the survey findings were not caused by the expectation; they contradicted it.",
+    "C": "'In fact' typically intensifies or confirms a prior claim. Here the findings undermine rather than confirm the expectation about urban reefs, making 'In fact' logically misleading.",
+    "D": "Correct. 'Surprisingly' signals that the findings were unexpected, accurately capturing the contrast between the biologists' prediction and the actual data."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:02:01.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2222222-c3d4-4e5f-6a7b-8c9d0e1f2a34"
+  },
+  "hasImage": false
+}

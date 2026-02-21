@@ -4,7 +4,7 @@
     "domain": "Craft_and_Structure",
     "subtopic": "overall_purpose"
   },
-  "currentVersion": "1.4.0",
+  "currentVersion": "1.6.0",
   "versions": [
     {
       "version": "1.0.0",
@@ -13,6 +13,42 @@
       "parentVersion": null,
       "preamIteration": 0,
       "performanceMetrics": null
+    },
+    {
+      "version": "1.5.0",
+      "createdAt": "2026-02-20T18:42:47.342Z",
+      "parentVersion": "1.4.0",
+      "preamIteration": 1,
+      "performanceMetrics": {
+        "trainAvgScore": 4.425,
+        "trainPassRate": 1,
+        "testAvgScore": 4.733,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.6.0",
+      "createdAt": "2026-02-20T21:19:32.090Z",
+      "parentVersion": "1.5.0",
+      "preamIteration": 2,
+      "performanceMetrics": {
+        "trainAvgScore": 4.304,
+        "trainPassRate": 1,
+        "testAvgScore": 4.833,
+        "testPassRate": 1
+      }
+    },
+    {
+      "version": "1.6.0",
+      "createdAt": "2026-02-21T02:48:11.279Z",
+      "parentVersion": "1.6.0",
+      "preamIteration": 3,
+      "performanceMetrics": {
+        "trainAvgScore": 4.304,
+        "trainPassRate": 1,
+        "testAvgScore": 4.833,
+        "testPassRate": 1
+      }
     }
   ],
   "temperatureConfig": {

@@ -1,0 +1,56 @@
+{
+  "id": "e5f6a7b8-c9d0-4e1f-9a2b-3c4d5e6f7a8b",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.0,
+    "procedural": 3.3,
+    "linguistic": 3.1
+  },
+  "passage": "When the first national parks were established in the United States during the late nineteenth century, their designers imagined them as sanctuaries set apart from human activity. The ideal was a landscape untouched by commerce, agriculture, or settlement—preserved in perpetuity for the enjoyment of future generations. Achieving this vision required the displacement of Indigenous communities who had managed, hunted, and lived within these landscapes for centuries. Their removal was often accomplished through legal maneuvering and force, and their traditional ecological practices—controlled burns, selective harvesting, intentional planting—were halted along with their presence. As a result, the ecosystems now hailed as pristine wilderness were in many cases profoundly shaped by Indigenous stewardship, not by the absence of human influence. Recent collaborations between park agencies and tribal nations have begun to reintroduce traditional burning practices, with documented benefits for biodiversity and fire risk reduction. These partnerships suggest a different model of conservation—one that treats Indigenous knowledge as a resource rather than an obstacle, and that acknowledges the human histories woven into landscapes once declared empty.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 183,
+    "source": "Adapted from an essay on conservation history and Indigenous land rights"
+  },
+  "stem": "The main purpose of the passage is to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "document the legal methods used to displace Indigenous communities from national park lands",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "challenge the founding assumptions of national parks by showing their human and ecological costs",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "advocate for expanding tribal sovereignty over federally managed wilderness areas",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "explain how traditional ecological practices can reduce wildfire risk in national parks",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage systematically dismantles the founding vision of national parks as untouched wilderness by showing that this ideal required displacing Indigenous peoples and suppressing their land management practices—and that the resulting 'pristine' landscapes were actually shaped by human stewardship all along. The recent partnerships mentioned at the end reinforce this critique by demonstrating that Indigenous knowledge improves ecological outcomes, undercutting the original premise that protecting nature meant excluding people. The author's primary purpose is to challenge the assumptions behind early conservation, not merely to document displacement or advocate for expanded tribal sovereignty.",
+  "distractorRationale": {
+    "A": "The passage mentions legal maneuvering and force used in displacement, but these details serve the broader critique of conservation philosophy rather than constituting a documentary account of legal mechanisms. The passage does not provide a detailed or systematic account of the legal methods involved.",
+    "C": "The passage endorses collaboration between park agencies and tribal nations, and the final sentence suggests a model that treats Indigenous knowledge as a resource. However, the author stops short of advocating for expanded tribal sovereignty as a specific policy; the purpose is to reframe conservation history, not to advance a particular legal or political position.",
+    "D": "The passage cites reduced fire risk as one benefit of reintroducing traditional burning practices, and this detail is genuinely present and specific. However, explaining fire risk reduction is a supporting example within the broader argument about conservation's flawed assumptions, not the primary purpose of the passage."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f6a7b8c9-d0e1-4f2a-8b3c-4d5e6f7a8b9c"
+  }
+}

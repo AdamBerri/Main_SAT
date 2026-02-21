@@ -1,0 +1,58 @@
+{
+  "id": "e7a3b9f2-4c1d-4e8a-9b6f-3d5c8a2e1b7d",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "The philosopher's account of moral agency has met with considerable resistance, particularly from those who regard her conception of rational autonomy as too thin to bear the weight she places on it. Critics contend that she has stripped the choosing self of every contingent attachment — history, community, embodied need — leaving behind a bare will whose decisions float free of anything that might ground them. Her defenders reply that this very bareness is the point: a self encumbered by particular loyalties cannot adjudicate impartially between competing claims, and impartiality, they argue, is the precondition of genuine moral judgment.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 105,
+    "source": "Adapted from a journal article in moral philosophy"
+  },
+  "stem": "As used in the passage, \"ground\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "anchor",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "justify",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "instruct",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "restrict",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In this passage, the critics argue that the philosopher has removed from the choosing self all contingent attachments — history, community, embodied need — leaving a 'bare will whose decisions float free.' The phrase 'float free of anything that might ground them' uses 'ground' in opposition to this floating, untethered quality. 'Ground' here means to anchor — to give the will something stable it is connected to and held by. The metaphor of floating versus being grounded makes 'anchor' uniquely appropriate: the decisions have nothing to fix them to any stable foundation. 'Justify' would suggest logical reasoning support, not the stabilizing, anchoring function described; 'instruct' implies direction or teaching; 'restrict' suggests limitation, which contradicts the critics' concern that the will is too free, not too constrained.",
+  "distractorRationale": {
+    "A": "Correct. 'Anchor' fits the metaphorical structure of the passage: the bare will's decisions 'float free,' and 'ground' functions as the stabilizing force that would fix or anchor them to something concrete (history, community, embodied need).",
+    "B": "'Justify' refers to providing rational warrant or logical support for a decision. While this is a common meaning of 'ground' in philosophical discourse, the passage's metaphor of floating versus being grounded, combined with the list of concrete things (history, community, embodied need) rather than arguments, points toward the stabilizing/anchoring meaning.",
+    "C": "'Instruct' — meaning to teach or direct — is not a standard meaning of 'ground' in this context, and nothing in the passage suggests a pedagogical or directive relationship between the attachments and the will's decisions.",
+    "D": "'Restrict' would suggest that history and community limit or constrain the will. While the passage does contrast a 'bare will' with an 'encumbered' self, the specific phrase 'ground them' is about connection and stability, not about limitation. The critics want the will anchored, not restricted."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b2e8d4f6-9a1c-4b7e-8f3d-1c9a5e7b2d4f"
+  },
+  "hasImage": false
+}

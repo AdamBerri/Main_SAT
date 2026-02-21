@@ -1,0 +1,54 @@
+{
+  "id": "3f7a2c91-84e6-4b1d-9f3a-2c5d8e0f6b4a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "triangles"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "computational": 4.3
+  },
+  "stem": "In triangle $ABC$, $AB = 15$, $AC = 10$, and $BC = 18$. The angle bisector from vertex $A$ meets $BC$ at point $D$. What is the length of $BD$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\dfrac{54}{5}$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$\\dfrac{36}{5}$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\dfrac{27}{2}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$9$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "By the Angle Bisector Theorem, the bisector from $A$ divides the opposite side $BC$ in the ratio of the two adjacent sides:\n$$\\frac{BD}{DC} = \\frac{AB}{AC} = \\frac{15}{10} = \\frac{3}{2}$$\nSince $BD + DC = BC = 18$, we write $BD = \\frac{3}{5} \\cdot 18$ and $DC = \\frac{2}{5} \\cdot 18$.\n\nStep 1: Express $BD$ in terms of the ratio.\n$$BD = \\frac{3}{3+2} \\cdot 18 = \\frac{3}{5} \\cdot 18 = \\frac{54}{5}$$\n\nVerification: $DC = \\frac{2}{5} \\cdot 18 = \\frac{36}{5}$, and $\\frac{54}{5} + \\frac{36}{5} = \\frac{90}{5} = 18$ \\checkmark\n\nAlso check ratio: $\\frac{BD}{DC} = \\frac{54/5}{36/5} = \\frac{54}{36} = \\frac{3}{2} = \\frac{AB}{AC}$ \\checkmark",
+  "distractorRationale": {
+    "A": "Correct. Applies the Angle Bisector Theorem to find $BD = \\frac{AB}{AB+AC} \\cdot BC = \\frac{15}{25} \\cdot 18 = \\frac{54}{5}$.",
+    "B": "The student reverses the Angle Bisector Theorem ratio, using $BD/DC = AC/AB = 10/15 = 2/3$ instead of $AB/AC = 3/2$, giving $BD = \\frac{2}{5} \\cdot 18 = \\frac{36}{5}$.",
+    "C": "The student correctly identifies the ratio $BD:DC = 3:2$ but then multiplies the ratio by half the base rather than the full base: $BD = \\frac{3}{2} \\cdot \\frac{18}{2} = \\frac{27}{2}$.",
+    "D": "The student ignores the Angle Bisector Theorem and assumes $D$ is the midpoint of $BC$, giving $BD = 18/2 = 9$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1f3c8e2-9b4d-4c7a-8f2e-3d5a9c1e7b6f"
+  }
+}

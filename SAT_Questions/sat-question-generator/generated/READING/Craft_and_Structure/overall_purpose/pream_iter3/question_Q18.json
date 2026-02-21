@@ -1,0 +1,56 @@
+{
+  "id": "f8b42e65-3c97-4a58-b071-6d2f0e9c1a83",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "overall_purpose"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "Global plastic production reached 400 million metric tons in 2022, a figure that environmental advocates cite frequently in calls for regulatory action. Less frequently cited is the distribution of that figure: roughly 40 percent of all plastic produced is packaging, designed to be used once and discarded within minutes or hours of purchase. Bottle caps, produce trays, and shrink wrap accumulate in landfills at rates that recycling infrastructure in most countries cannot absorb. Industry representatives have long promoted voluntary recycling programs as the appropriate response, commissioning public awareness campaigns and placing recycling symbols on materials that processing facilities rarely accept. Municipalities that invested in curbside recycling found that markets for collected materials collapsed after 2018, when China stopped accepting the low-quality plastics that dominated residential recycling bins. Cities across the United States quietly began diverting recyclables to landfills, often without notifying residents. The gap between the promise of recycling and its actual outcomes has widened precisely as plastic production has increased — a pattern that suggests consumer behavioral change alone cannot close the distance between what the industry produces and what existing systems can process.",
+  "passageMetadata": {
+    "genre": "argumentative",
+    "wordCount": 183,
+    "source": "Adapted from an environmental policy review"
+  },
+  "stem": "Which choice best describes the main purpose of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Demonstrate that recycling infrastructure has failed to keep pace with rising plastic production, undermining industry-promoted solutions",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Describe how changes in international markets disrupted municipal recycling programs in the United States",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Argue that consumers bear primary responsibility for reducing plastic waste through better recycling habits",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Explain the categories of plastic that make up global production to help readers understand recycling challenges",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage moves through a series of linked observations — high production rates, a packaging-dominated breakdown, recycling infrastructure limitations, industry-promoted voluntary programs, and the collapse of recycling markets — all converging on the final sentence's claim that behavioral change alone cannot address the gap between production and processing capacity. This accumulation of evidence is designed to discredit the sufficiency of industry-led voluntary recycling as a response to plastic waste, making the primary purpose an argument that existing solutions are inadequate rather than a simple description of market disruptions or consumer roles.",
+  "distractorRationale": {
+    "B": "The passage does specifically discuss China's 2018 decision and its effect on U.S. municipalities, including the quiet diversion of recyclables to landfills. This is real and substantial passage content, but it functions as a pivotal piece of evidence within a larger argument rather than as the author's main focus. Selecting B mistakes a key supporting detail for the organizing purpose.",
+    "C": "The passage explicitly argues the opposite — its final sentence states that consumer behavioral change alone is insufficient. This choice gets the passage's rhetorical direction exactly wrong, making it a trap for readers who invert the author's claim.",
+    "D": "The passage does note that 40 percent of plastic is packaging and that recycling symbols appear on materials facilities rarely accept, providing categorical detail. This information grounds the argument but serves to expose the gap between what industry claims and what systems can handle, rather than constituting an explanatory overview of plastic categories."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d6a91c74-0e42-4b17-8f35-2c4b7d1e9f50"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "c4e8d1f3-7a2b-4c9e-8d5f-1b6e3a9c2d8f",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.0,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "Coral reefs support roughly a quarter of all marine species, yet they cover less than one percent of the ocean floor. Scientists have identified several threats that are steadily damaging these ecosystems. Rising ocean temperatures cause coral bleaching, a process in which corals expel the algae that give them color and nutrients, leaving them white and vulnerable to disease. Similarly, ocean acidification — caused by the absorption of excess carbon dioxide — weakens the calcium carbonate structures that corals build. Pollution from agricultural runoff introduces nutrients that promote algae growth, which can smother coral. Finally, destructive fishing practices physically break apart reef structures.\n\nConservation organizations are responding to each of these threats. Restoration programs transplant coral fragments grown in nurseries back onto damaged reefs. Marine protected areas limit human activities that cause physical harm. Researchers are also developing heat-resistant coral varieties through selective breeding, hoping to give reefs a better chance of surviving in warming oceans.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 163,
+    "source": "Original passage"
+  },
+  "stem": "The passage is structured to",
+  "choices": [
+    {
+      "label": "A",
+      "text": "describe a phenomenon, then present efforts to address it.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "compare the effectiveness of different conservation strategies.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "explain a sequence of events that led to coral reef decline.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "present a scientific debate and then argue for one position.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage divides into two clear sections. The first paragraph identifies and explains multiple threats to coral reefs — bleaching, acidification, pollution, and destructive fishing. The second paragraph describes the conservation responses to those threats: restoration programs, marine protected areas, and selective breeding. The overall structure is problem-solution (or phenomenon followed by response): threats are introduced, then efforts to address them are presented. This matches choice A precisely.",
+  "distractorRationale": {
+    "B": "The second paragraph does mention multiple conservation strategies, but the passage never evaluates or ranks their effectiveness against one another. The strategies are listed as complementary responses, not as competitors being compared, so comparison of effectiveness is not the organizing principle.",
+    "C": "The passage lists multiple simultaneous threats to reefs rather than arranging events in a time sequence. Words like 'similarly' and 'finally' signal a list of co-existing causes, not a chain of events unfolding one after another. Chronological sequence is therefore not the dominant structure.",
+    "D": "The passage presents no debate between competing scientific viewpoints. All the information offered about threats and conservation is presented as established fact. There is no advocacy for one position over another, so argument structure does not apply."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f2b5e8a1-3c9d-4f7e-a2b8-6d4c1e9f3a5b"
+  },
+  "hasImage": false
+}

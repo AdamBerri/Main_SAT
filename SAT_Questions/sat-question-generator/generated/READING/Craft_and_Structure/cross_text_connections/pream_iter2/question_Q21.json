@@ -1,0 +1,57 @@
+{
+  "id": "3f8a1c2d-7b4e-4f9a-8c3d-2e1b5a6f9d0c",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "cross_text_connections"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "linguistic": 5
+  },
+  "passage": "Text 1\nEpigenetic inheritance—the transmission of phenotypic traits through mechanisms other than DNA sequence changes—has compelled biologists to revisit foundational assumptions of neo-Darwinian synthesis. When organisms experience environmental stressors, chromatin modifications and small RNA molecules may persist across multiple generations, conferring heritable advantages without altering the underlying genome. This phenomenon suggests that the boundary between acquired and inherited characteristics is more porous than classical genetics acknowledged, reopening theoretical questions that dominated nineteenth-century naturalist debates.\n\nText 2\nThe enthusiasm surrounding transgenerational epigenetic inheritance warrants careful scrutiny. While chromatin-based modifications demonstrably propagate between generations in model organisms such as Caenorhabditis elegans, mammalian systems have demonstrated robust mechanisms for erasing these marks during gametogenesis and early embryonic development. The persistence of epigenetic signals across generations in humans therefore remains an extraordinary empirical claim requiring commensurate evidential support—evidence that current experimental literature has yet to furnish conclusively.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 155,
+    "source": "Adapted from academic discussions on epigenetics and evolutionary theory"
+  },
+  "stem": "Based on the texts, how would the author of Text 2 most likely respond to the central claim advanced in Text 1?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "By conceding that chromatin modifications are heritable but contending that their evolutionary significance is negligible compared to genomic mutations",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "By acknowledging that epigenetic transmission occurs in some organisms while arguing that the biological mechanisms humans possess make Text 1's broader theoretical implication premature",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "By disputing that environmental stressors produce any lasting molecular changes and reaffirming the completeness of neo-Darwinian explanatory frameworks",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "By endorsing Text 1's revision of classical genetics while redirecting attention from chromatin modifications to RNA-based inheritance mechanisms",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Text 1 argues that epigenetic inheritance challenges neo-Darwinian synthesis by demonstrating that acquired characteristics can be heritably transmitted, reopening theoretical debates. Text 2's author would respond by partially conceding Text 1's empirical premise—explicitly acknowledging that epigenetic marks do propagate in organisms like C. elegans—but then undermining Text 1's broader theoretical claim by pointing out that mammals, and by extension humans, have robust epigenetic erasure mechanisms during reproduction. This means the grand theoretical revision Text 1 advocates is not yet supported by sufficient evidence for human systems. Choice B captures this precise two-step move: partial empirical concession followed by challenge to the theoretical generalization. The reasoning requires (1) identifying Text 1's claim, (2) recognizing Text 2 does not wholesale deny epigenetic inheritance, (3) noting Text 2's species-specific distinction, (4) understanding that Text 2 targets the sufficiency of evidence for the broader claim, (5) recognizing this is a qualification rather than a contradiction, (6) distinguishing this from endorsement, and (7) selecting the answer that captures qualified acceptance paired with theoretical skepticism.",
+  "distractorRationale": {
+    "A": "Text 2 never addresses evolutionary significance or compares epigenetic effects to genomic mutations; its argument is about whether the phenomenon is sufficiently established in humans, not about relative importance.",
+    "B": "Correct. Text 2 acknowledges epigenetic transmission in C. elegans (partial concession) but argues that mammalian erasure mechanisms make Text 1's theoretical revision of neo-Darwinian synthesis premature and unsubstantiated.",
+    "C": "Text 2 explicitly acknowledges that chromatin-based modifications demonstrably propagate between generations in model organisms, so it does not dispute that environmental stressors produce lasting molecular changes. This choice overstates Text 2's skepticism.",
+    "D": "Text 2 does not endorse Text 1's revision of classical genetics; rather, it challenges whether the evidence justifies that revision. Text 2 also does not redirect attention to RNA mechanisms—it focuses on the erasure of epigenetic marks during development."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1f3b2c8-9d4e-4a7f-8b3c-1e2d5f6a9b0c"
+  }
+}

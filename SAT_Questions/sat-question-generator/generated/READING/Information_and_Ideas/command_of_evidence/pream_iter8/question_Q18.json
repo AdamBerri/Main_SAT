@@ -1,0 +1,57 @@
+{
+  "id": "f1c3a8e4-9d7b-4f2e-8c5a-3b1d6e9f4a7c",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "Deep-sea hydrothermal vent communities were once considered extreme outliers in the study of marine biodiversity — curiosities sustained entirely by chemosynthesis in the absence of sunlight. Subsequent research has complicated that isolation narrative. A 2018 survey of larval dispersal patterns at seventeen vent fields across the Pacific and Atlantic revealed that 23 species present at geographically distant vents shared mitochondrial haplotypes with less than 0.8% sequence divergence, indicating recent common ancestry. The survey identified deep-water current systems as the most likely transport mechanism, with larvae surviving transit periods modeled at 40–60 days. Separate isotopic analysis of vent-community organisms showed that between 12% and 31% of the carbon incorporated into vent food webs derived from photosynthetically produced organic material settling from surface waters, challenging the assumption that vent ecosystems are metabolically self-contained. Abundance data further revealed that vent sites located beneath high-productivity surface zones — characterized by seasonal phytoplankton blooms — supported 1.8 times the biomass of vent sites beneath oligotrophic surface waters, even when vent fluid chemistry was held approximately constant. Species richness followed a similar but weaker pattern, with high-productivity-zone vents hosting on average 11% more species. Researchers have subsequently proposed that deep-sea vents exist along a continuum of surface connectivity rather than as fully isolated systems.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 196,
+    "source": "Adapted from a review of hydrothermal vent ecology, 2020"
+  },
+  "stem": "A marine biologist argues that hydrothermal vent ecosystems receive substantial energetic input from surface photosynthetic production, making them less metabolically self-contained than previously assumed. Which quotation from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"Abundance data further revealed that vent sites located beneath high-productivity surface zones — characterized by seasonal phytoplankton blooms — supported 1.8 times the biomass of vent sites beneath oligotrophic surface waters, even when vent fluid chemistry was held approximately constant.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"Separate isotopic analysis of vent-community organisms showed that between 12% and 31% of the carbon incorporated into vent food webs derived from photosynthetically produced organic material settling from surface waters, challenging the assumption that vent ecosystems are metabolically self-contained.\"",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "\"A 2018 survey of larval dispersal patterns at seventeen vent fields across the Pacific and Atlantic revealed that 23 species present at geographically distant vents shared mitochondrial haplotypes with less than 0.8% sequence divergence, indicating recent common ancestry.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"Species richness followed a similar but weaker pattern, with high-productivity-zone vents hosting on average 11% more species.\"",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The claim asserts two things: (1) vent ecosystems receive energetic input from surface photosynthetic production, and (2) this makes them less metabolically self-contained than previously assumed. Choice B satisfies both elements directly. It quantifies the carbon contribution from photosynthetically produced organic material (12–31%), explicitly identifies settling from surface waters as the pathway, and the sentence itself states this finding challenges the assumption of metabolic self-containment — addressing both the evidence and the prior-assumption dimension of the claim without requiring additional inference. Choice A shows a correlation between surface productivity and vent biomass, which implies surface energy input but does not directly measure energetic input to vent food webs. Choice C addresses larval gene flow between distant vents, which relates to connectivity but not metabolic energy input. Choice D shows a weak species richness correlation with surface productivity, but species richness is not the same as energetic input.",
+  "distractorRationale": {
+    "A": "This is a strong distractor. The 1.8x biomass difference beneath high-productivity zones implies that surface photosynthetic production is energetically significant. However, the correlation between surface productivity and vent biomass could reflect indirect mechanisms, and the excerpt does not directly measure the proportion of vent food-web carbon derived from surface sources. Choice B provides the direct isotopic measurement of carbon sourcing.",
+    "B": "Correct. Isotopic tracing directly measures the carbon contribution of photosynthetically produced material to vent food webs (12–31%), and the passage itself frames this as challenging the metabolic self-containment assumption — addressing both elements of the claim with the fewest inferential steps.",
+    "C": "Genetic similarity across distant vent populations addresses biological connectivity and dispersal, not energetic or metabolic inputs from surface production. This excerpt is entirely about larval transport and shared ancestry, not food-web carbon sourcing.",
+    "D": "An 11% species richness difference is both a weak pattern (as the passage explicitly notes) and addresses biodiversity rather than energetic input. This does not support the claim about metabolic self-containment."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a2e8f4c6-5b3d-4f1e-9c7a-4d8b2e6f1c3a"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "b3c7d2e1-4f8a-4b9c-8e6d-1a5f2c9b7d3e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.2,
+    "procedural": 1,
+    "linguistic": 1.3
+  },
+  "passage": "Monarch butterflies undertake one of the most remarkable migrations in the animal kingdom. Each autumn, millions of monarchs leave their summer breeding grounds in Canada and the northern United States and travel up to 3,000 miles to reach their overwintering sites in the oyamel fir forests of central Mexico. The journey takes several weeks and requires precise navigation, as the butterflies must locate a specific mountain range they have never visited before.\n\nIn spring, the process reverses. As temperatures rise and days grow longer, the monarchs begin flying northward. However, the same individuals that flew south do not complete the return trip. Instead, successive generations take over the journey. The first generation lays eggs in the southern United States; their offspring continue north; and a final generation reaches Canada to start the cycle again. Scientists have long wondered how each new generation instinctively knows where to go, and recent research suggests that a time-compensated sun compass built into the butterflies' antennae provides critical guidance.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 163,
+    "source": "Original passage modeled on scientific reporting"
+  },
+  "stem": "How is the passage organized?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "A problem with monarch migration is identified, then solutions are proposed.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The southward migration is described, then the northward migration is described.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Two competing scientific theories about navigation are compared.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Causes of monarch population decline are followed by their effects.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage is organized by following the two legs of the monarch butterfly migration in sequence. The first paragraph describes the autumn southward journey from Canada and the northern United States to Mexico. The second paragraph then describes the spring northward return. The transitional phrase 'In spring, the process reverses' signals this two-part sequential structure, making B the correct description of the overall organization.",
+  "distractorRationale": {
+    "A": "While the final sentence raises a scientific question about navigation, the passage does not propose solutions to a problem — it describes two migration phases and briefly mentions one research finding. Problem-solution is not the dominant structure.",
+    "B": "Correct. The passage divides into two clearly labeled sections — the southward autumn migration and the northward spring migration — connected by an explicit transitional sentence.",
+    "C": "The passage mentions only one navigational mechanism (the sun compass in the antennae) and does not present competing theories. There is no compare-contrast of scientific explanations.",
+    "D": "Monarch population decline is never mentioned in the passage. The passage describes migration behavior, not decline or its causes and effects."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b"
+  },
+  "hasImage": false
+}

@@ -1,0 +1,58 @@
+{
+  "id": "c9e4a2f8-7d3b-4c5a-9f1e-8b2d6a4c9f3e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.2
+  },
+  "passage": "Although the committee initially welcomed the consultant's report, enthusiasm waned once members began to scrutinize its projections. Several figures appeared to draw on dated demographic models that did not account for recent shifts in the region's workforce composition. The chair noted that before any recommendations could be adopted, the underlying assumptions would need to be interrogated far more rigorously than the report itself suggested.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 71,
+    "source": "Original"
+  },
+  "stem": "As used in the passage, \"interrogated\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "questioned",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "challenged",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "cross-examined",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "rejected",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The chair calls for the 'underlying assumptions' to be 'interrogated far more rigorously' — meaning subjected to careful, probing inquiry. In this academic and deliberative context, 'interrogate' means to examine or question analytically. The passage does not suggest outright opposition to the assumptions (which would suggest 'challenged' or 'rejected'), nor does it invoke the adversarial legal procedure of cross-examination. The neutral intellectual sense of inquiry — questioning — is what fits.",
+  "distractorRationale": {
+    "A": "Correct. 'Questioned' captures the analytical, inquiry-based meaning of 'interrogate' as used here — subjecting assumptions to probing examination.",
+    "B": "'Challenged' implies active opposition or disputation, a stronger and more adversarial stance than the passage warrants. The chair calls for rigorous inquiry before adoption, not outright opposition.",
+    "C": "'Cross-examined' is a legal term referring to questioning a witness in court. While related to 'interrogate,' it implies a specific adversarial legal context that the passage does not invoke.",
+    "D": "'Rejected' means to dismiss or refuse entirely. The passage asks for rigorous examination of assumptions before decisions are made — it does not call for discarding them outright."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f4d1b8c7-2a9e-4c3f-8b7d-5e1a9c2f4b8d"
+  },
+  "hasImage": false
+}

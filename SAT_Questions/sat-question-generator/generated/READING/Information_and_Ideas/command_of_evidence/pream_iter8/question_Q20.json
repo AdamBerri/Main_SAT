@@ -1,0 +1,57 @@
+{
+  "id": "a4f7c2e9-1b8d-4a3f-9e6c-7d5b3f1e8c2a",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "linguistic": 3.8
+  },
+  "passage": "Attention to the microbiome's role in mental health has grown considerably over the past decade, with investigators examining potential links between gut bacterial composition and mood regulation. A pivotal area of inquiry concerns whether dietary interventions can produce measurable changes in depressive symptom severity through gut-mediated pathways. A 2019 randomized controlled trial enrolled 67 adults with moderate depression, randomly assigning them to either a Mediterranean-style dietary intervention or a social support control condition for 12 weeks. Participants in the dietary group received coaching sessions and meal plans emphasizing vegetables, legumes, whole grains, fish, and olive oil, while reducing processed foods and refined sugars. At the 12-week assessment, 32% of dietary group participants met the criteria for remission, compared to 8% of the social support group. The dietary group also showed significantly greater reductions on the Montgomery-Åsberg Depression Rating Scale (MADRS), with an average score reduction of 11.0 points versus 4.7 points in the control group. Fecal microbiome sampling revealed that dietary group participants showed significant increases in Lactobacillus and Bifidobacterium genera relative to baseline, while the control group showed no significant microbiome shift. The investigators noted that MADRS score improvements correlated positively with the degree of Lactobacillus abundance increase (r = 0.41), though they cautioned that correlation does not establish that microbiome changes mediated the clinical outcomes. Adherence rates were 83% in the dietary group and 79% in the control group, suggesting comparable engagement across conditions.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 220,
+    "source": "Adapted from a clinical nutrition and psychiatry research review, 2021"
+  },
+  "stem": "A researcher claims that dietary change produces improvements in depressive symptoms that are linked to, but not conclusively explained by, shifts in gut microbiome composition. Which quotation from the passage most directly supports this claim?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "\"At the 12-week assessment, 32% of dietary group participants met the criteria for remission, compared to 8% of the social support group.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "\"The dietary group also showed significantly greater reductions on the Montgomery-Åsberg Depression Rating Scale (MADRS), with an average score reduction of 11.0 points versus 4.7 points in the control group.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "\"Fecal microbiome sampling revealed that dietary group participants showed significant increases in Lactobacillus and Bifidobacterium genera relative to baseline, while the control group showed no significant microbiome shift.\"",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "\"MADRS score improvements correlated positively with the degree of Lactobacillus abundance increase (r = 0.41), though they cautioned that correlation does not establish that microbiome changes mediated the clinical outcomes.\"",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The claim has two distinct and inseparable parts: (1) dietary change improves depressive symptoms and those improvements are linked to microbiome shifts, AND (2) the link does not conclusively establish that microbiome changes caused the improvements. Only Choice D addresses both parts simultaneously. It presents the correlation between MADRS improvement and Lactobacillus increase (the 'linked to' element) and explicitly states that correlation does not establish mediation (the 'not conclusively explained by' element). Choice A and Choice B each demonstrate that the dietary intervention improved depressive symptoms, but neither mentions microbiome composition at all — they address only the first half of the two-part claim. Choice C shows that the dietary group experienced microbiome shifts while the control did not, which is relevant but establishes only that microbiome changes co-occurred with the dietary intervention — it does not show any link between the microbiome changes and symptom severity improvements, nor does it address causation vs. correlation.",
+  "distractorRationale": {
+    "A": "This excerpt shows that dietary intervention led to substantially higher remission rates (32% vs. 8%), which establishes that dietary change improves depressive symptoms. However, it contains no information about microbiome composition or any link between gut changes and symptom outcomes, so it satisfies only one element of the two-part claim.",
+    "B": "This excerpt provides quantitative MADRS data showing that the dietary group improved more than the control group (11.0 vs. 4.7 points). Like Choice A, this addresses only symptom improvement and says nothing about microbiome changes or the causal ambiguity regarding gut-mediated pathways.",
+    "C": "This excerpt documents that the dietary group's microbiome shifted significantly while the control group's did not, establishing a connection between diet and gut composition. However, it does not connect those microbiome changes to symptom outcomes, and it contains no acknowledgment of the causal uncertainty that is central to the claim's 'not conclusively explained by' qualifier.",
+    "D": "Correct. This excerpt reports the correlation between MADRS improvements and Lactobacillus increases (establishing the link between symptom improvement and microbiome change) and explicitly states that the investigators cautioned against interpreting correlation as mediation — directly encoding both the association and its interpretive limitation that together constitute the claim."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b7e3a1f9-4c6d-4b8e-9f2a-3d5c7e1b9f4a"
+  }
+}

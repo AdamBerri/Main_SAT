@@ -1,0 +1,54 @@
+{
+  "id": "87f1da60-b240-486e-be0c-e9be6a739df2",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "Two bacteria cultures are being observed in a lab. Culture A begins with 8 million bacteria and increases by 3 million bacteria per day. Culture B begins with 2 million bacteria and increases by 5 million bacteria per day. After how many days will the two cultures have the same number of bacteria?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$3$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$6$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$10$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Let $d$ = the number of days until the two cultures are equal.\n\nAfter $d$ days:\n- Culture A has $8 + 3d$ million bacteria\n- Culture B has $2 + 5d$ million bacteria\n\nSet the two expressions equal:\n$$8 + 3d = 2 + 5d$$\n$$8 - 2 = 5d - 3d$$\n$$6 = 2d$$\n$$d = 3$$\n\nChecking: After 3 days, Culture A has $8 + 3(3) = 8 + 9 = 17$ million and Culture B has $2 + 5(3) = 2 + 15 = 17$ million. ✓\n\nThe two cultures will have the same population after $\\boxed{3}$ days.",
+  "distractorRationale": {
+    "A": "Substitution arithmetic error: the student correctly reaches $6 = 2d$ but then divides the wrong way, computing $d = 6 \\div 3 = 2$ (dividing 6 by 3 instead of by 2).",
+    "B": "Correct answer: setting $8 + 3d = 2 + 5d$ and solving gives $6 = 2d$, so $d = 3$.",
+    "C": "Single-equation error: the student subtracts the starting values to find the difference $8 - 2 = 6$ and reports 6 as the number of days, ignoring the difference in growth rates.",
+    "D": "Coefficient misread error: the student reads Culture B's growth rate as 3 instead of 5 (same as Culture A's rate), making the cultures grow at identical rates, and then adds the starting values $8 + 2 = 10$ to report a nonsensical answer of 10."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c141dc9c-2f25-4ba0-9871-d9d900cddd20"
+  }
+}

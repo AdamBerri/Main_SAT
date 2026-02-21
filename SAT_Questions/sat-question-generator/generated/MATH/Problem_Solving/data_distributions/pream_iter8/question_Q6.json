@@ -1,0 +1,54 @@
+{
+  "id": "b3f7a2e1-4c85-4d9a-8f12-1e6b3a9d5c47",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "data_distributions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "A student recorded the following five quiz scores: 4, 8, 12, 16, and 20. If the score of 20 is removed from the data set, what is the mean of the remaining four scores?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "8",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "10",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "12",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "16",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "STEP A — Sort the original data set in ascending order: 4, 8, 12, 16, 20.\n\nSTEP B — Compute the original mean: sum = 4 + 8 + 12 + 16 + 20 = 60; mean = 60 / 5 = 12.\n\nSTEP C — Original median: position = (5+1)/2 = 3rd value = 12.\n\nSTEP D — No mode (all values appear once).\n\nSTEP E — Original range: 20 − 4 = 16.\n\nSTEP G — After removing 20, the new data set is: 4, 8, 12, 16 (4 values).\nNew sum = 4 + 8 + 12 + 16 = 40.\nNew mean = 40 / 4 = 10.\n\nSTEP H — The correct answer is 10, which matches choice B.\n\nSTEP I — Distractor analysis:\nA (8): Wrong-denominator misconception — the student correctly subtracts 20 from the sum to get 40, but divides by the original count of 5 rather than the new count of 4: 40 / 5 = 8. This error arises from forgetting to reduce n after removing a value.\nC (12): Statistic-unchanged misconception — the student reports the original mean of 12, believing that removing one value from a symmetric-looking data set leaves the mean unchanged.\nD (16): Partial-computation misconception — the student identifies the largest remaining value (16) and reports it as the mean, confusing the maximum with the average of the remaining set.",
+  "distractorRationale": {
+    "A": "Wrong-denominator error: student computes the correct new sum (40) but divides by the original count of 5 instead of the new count of 4, giving 40/5 = 8.",
+    "B": "Correct: new sum = 40, new count = 4, new mean = 40/4 = 10.",
+    "C": "Statistic-unchanged error: student assumes the mean does not change when one value is removed, and reports the original mean of 12.",
+    "D": "Partial-computation error: student identifies the largest value remaining in the new set (16) and mistakes it for the mean."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a2b3c4-d5e6-7890-abcd-ef1234567890"
+  }
+}

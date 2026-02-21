@@ -1,0 +1,54 @@
+{
+  "id": "f3a2c1d4-8b5e-4f9a-a3c7-2e1d0b6f4c8a",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "computational": 4.3
+  },
+  "stem": "A racecar is traveling at 176 feet per second on a closed circuit. What is the car's speed, in miles per hour? (Use 1 mile = 5,280 feet)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "120",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "126.7",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "258.1",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "360.0",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "To convert feet per second to miles per hour, two independent unit conversions must be applied simultaneously — one for distance (feet to miles) and one for time (seconds to hours). This is a compound rate conversion requiring the student to track both unit dimensions at once.\n\nStep 1 — Identify the required conversion chain:\n$$\\frac{176 \\text{ ft}}{1 \\text{ s}} \\times \\frac{1 \\text{ mi}}{5{,}280 \\text{ ft}} \\times \\frac{3{,}600 \\text{ s}}{1 \\text{ hr}}$$\n\nStep 2 — Cancel units:\n$$= \\frac{176 \\times 3{,}600}{5{,}280} \\text{ mi/hr}$$\n\nStep 3 — Calculate:\n$$= \\frac{633{,}600}{5{,}280} = 120 \\text{ mi/hr}$$\n\nThe car's speed is $\\boxed{120}$ miles per hour.",
+  "distractorRationale": {
+    "A": "Correct answer. Applies both conversions properly: multiplies by 3,600 s/hr and divides by 5,280 ft/mi.",
+    "B": "Wrong conversion factor error: uses 1 mile = 5,000 feet instead of 5,280 feet. Calculation: $176 \\times 3{,}600 \\div 5{,}000 = 126.7$ mph. This represents a plausible rounding error for a student who misremembers or estimates the conversion factor.",
+    "C": "Inverted distance conversion error: multiplies by 5,280 instead of dividing (treats the factor as feet per mile in the wrong direction). Calculation: $176 \\times 5{,}280 \\div 3{,}600 = 258.1$ mph. The student correctly inverts the time conversion but inverts the distance conversion in the wrong direction.",
+    "D": "Inverted time conversion error: divides by 3,600 and multiplies by 5,280 in the wrong arrangement, effectively using 1 mile = 1,760 feet (yards per mile). Calculation: $176 \\times 3{,}600 \\div 1{,}760 = 360.0$ mph. This arises from a student confusing 1,760 yards/mile with 5,280 feet/mile and then inverting the time factor."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "f4a8b3e6-9c21-4d57-a163-8e5b7f2d0c19",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "evaluating_claims"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "A university randomly assigned 200 first-year students to one of two groups. Group 1 (100 students) attended a weekly 1-hour study skills workshop throughout the semester. Group 2 (100 students) did not attend any workshop. At the end of the semester, the average GPA of Group 1 was 3.2, and the average GPA of Group 2 was 2.9.\n\nA faculty member concludes: \"The study skills workshop caused students to earn higher GPAs.\"\n\nA second faculty member argues that the study skills workshop also caused students to be better prepared for future semesters.\n\nWhich of the following best evaluates both faculty members' conclusions?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The first faculty member's conclusion is valid because students were randomly assigned; the second faculty member's conclusion is not supported because the study only measured GPA during one semester.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Neither conclusion is valid because the study only included 200 students, which is too small a sample to draw causal conclusions.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Both conclusions are valid because the random assignment eliminates all possible confounding variables for any outcome.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The first faculty member's conclusion is not valid because the 0.3 GPA difference could be due to chance; the second faculty member's conclusion is valid because higher GPA implies better future preparation.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "This question requires evaluating two separate conclusions about the same experiment using different principles.\n\n**Evaluating the first conclusion (workshop caused higher GPA):**\nThis is a randomized controlled experiment: 200 students were randomly assigned to treatment (workshop) and control (no workshop) groups. Random assignment is specifically designed to distribute confounding variables — motivation, prior academic performance, study habits — evenly between the two groups on average. Because of random assignment, observed differences in average GPA ($3.2$ vs. $2.9$, a difference of $0.3$) can reasonably be attributed to the workshop itself, not to pre-existing differences between the groups. The first faculty member's causal conclusion is valid.\n\n**Evaluating the second conclusion (workshop caused better preparation for future semesters):**\nThe study only measured GPA during the one semester in which the workshop occurred. No data was collected about students' performance in future semesters. Even though the experiment's design supports causal claims about what was measured (this semester's GPA), random assignment does not allow extending causal conclusions to outcomes that were never observed. The second conclusion goes beyond what the study data can support.\n\nThe critical distinction is: random assignment supports causal inference for the outcomes actually measured in the study; it does not automatically validate causal claims about unmeasured or future outcomes.\n\nChoice B is wrong because random assignment (not just sample size) is the key feature that enables causal conclusions; 100 students per group is an adequate size for a controlled experiment.\nChoice C is wrong because random assignment eliminates confounding for the measured outcome, but does not provide data about unmeasured future outcomes.\nChoice D is wrong on both counts: (1) the 0.3 difference is a real result of the experiment, and in a randomized experiment we can attribute it to the treatment; (2) higher GPA in one semester does not automatically imply a measured benefit in future semesters.",
+  "distractorRationale": {
+    "A": "Correct. Random assignment justifies the causal claim for the measured outcome (this semester's GPA). The second conclusion about future semesters is unsupported because the study collected no data on future performance.",
+    "B": "Students who apply a rule that small samples prevent causal conclusions will choose this. However, random assignment — not sample size — is the mechanism that enables causal inference in experiments. The sample size (100 per group) is appropriate for a controlled experiment.",
+    "C": "Students who overapply the principle of random assignment will choose this. Random assignment controls for confounding in the measured outcomes, but it cannot validate conclusions about outcomes that were not measured in the study.",
+    "D": "Students who misapply the concept of chance variation to dismiss experimental results, while accepting an unsupported extrapolation, will choose this. In a properly randomized experiment, the observed difference is attributable to the treatment. Separately, the assumption that higher GPA implies future preparation is an inference not tested by the study."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a1e7c9f3-4b25-4d68-b952-3f8d0a6c2e47"
+  }
+}

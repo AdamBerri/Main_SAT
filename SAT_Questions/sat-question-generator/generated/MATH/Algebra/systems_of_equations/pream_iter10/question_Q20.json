@@ -1,0 +1,54 @@
+{
+  "id": "e7b3d9f1-4a08-4c2e-b6d5-8f1a3c7e9b25",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "systems_of_equations"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "Two athletes are tracking their cumulative training miles over several weeks. Athlete A has already logged 30 miles and plans to run 8 miles per week going forward. Athlete B has already logged 6 miles and plans to run 14 miles per week going forward. In a coordinate plane where the horizontal axis represents the number of weeks of training and the vertical axis represents cumulative miles logged, at what point do the graphs of the two athletes' cumulative mileage intersect?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$(3, 48)$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$(4, 58)$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$(4, 62)$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$(62, 4)$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let $x$ = the number of weeks of training and $y$ = the cumulative miles logged.\n\nThe two athletes' cumulative mileage equations are:\n$$y = 30 + 8x \\quad \\text{(Athlete A)} \\quad (1)$$\n$$y = 6 + 14x \\quad \\text{(Athlete B)} \\quad (2)$$\n\nThe graphs intersect when both equations are satisfied simultaneously.\n\n**Step 1 — Set the expressions equal:**\n$$30 + 8x = 6 + 14x$$\n$$30 - 6 = 14x - 8x$$\n$$24 = 6x$$\n\n**Step 2 — Solve for $x$:**\n$$x = \\frac{24}{6} = 4 \\text{ weeks}$$\n\n**Step 3 — Find $y$ by substituting into equation (1):**\n$$y = 30 + 8(4) = 30 + 32 = 62 \\text{ miles}$$\n\n**Checking:** Equation (1): $y = 30 + 8(4) = 62$ ✓. Equation (2): $y = 6 + 14(4) = 6 + 56 = 62$ ✓.\n\nThe two graphs intersect at the point $(4, 62)$.",
+  "distractorRationale": {
+    "A": "Uses a coefficient misread: reads Athlete A's rate as 6 miles per week instead of 8, setting $30 + 6x = 6 + 14x \\implies 24 = 8x \\implies x = 3$; then computes $y = 30 + 6(3) = 30 + 18 = 48$, giving the point $(3, 48)$.",
+    "B": "Finds $x = 4$ correctly but makes an arithmetic error when computing $y$: evaluates $8 \\times 4 = 28$ instead of $32$, giving $y = 30 + 28 = 58$ and reporting the point $(4, 58)$.",
+    "C": "Correct. Solves the system to find $x = 4$ and $y = 62$, giving the intersection point $(4, 62)$.",
+    "D": "Solves the system correctly (finding $x = 4$ and $y = 62$) but writes the coordinates in reversed order, reporting $(62, 4)$ instead of $(4, 62)$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a5b6c7d8-e9f0-1234-ef01-567890123456"
+  }
+}

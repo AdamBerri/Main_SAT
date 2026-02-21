@@ -1,0 +1,54 @@
+{
+  "id": "a3f8b2c1-4d7e-4a9f-b6c2-8e1d3f5a7b9c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "nonlinear_equations"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "computational": 3.3
+  },
+  "stem": "What is the sum of all values of $x$ that satisfy the equation $\\dfrac{2}{x-1} + \\dfrac{3}{x+2} = 2$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-1$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$\\dfrac{3}{2}$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$\\dfrac{5}{2}$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$\\dfrac{7}{2}$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "To solve $\\dfrac{2}{x-1} + \\dfrac{3}{x+2} = 2$, multiply every term by $(x-1)(x+2)$:\n\n$$2(x+2) + 3(x-1) = 2(x-1)(x+2)$$\n\nExpand each side:\n- Left: $2x + 4 + 3x - 3 = 5x + 1$\n- Right: $2(x^2 + x - 2) = 2x^2 + 2x - 4$\n\nSet equal and rearrange:\n$$5x + 1 = 2x^2 + 2x - 4$$\n$$0 = 2x^2 - 3x - 5$$\n\nApply the quadratic formula with $a=2$, $b=-3$, $c=-5$:\n$$x = \\frac{3 \\pm \\sqrt{9 + 40}}{4} = \\frac{3 \\pm \\sqrt{49}}{4} = \\frac{3 \\pm 7}{4}$$\n\nSo $x = \\dfrac{10}{4} = \\dfrac{5}{2}$ or $x = \\dfrac{-4}{4} = -1$.\n\nCheck $x = \\dfrac{5}{2}$: $\\dfrac{2}{\\frac{5}{2}-1} + \\dfrac{3}{\\frac{5}{2}+2} = \\dfrac{2}{\\frac{3}{2}} + \\dfrac{3}{\\frac{9}{2}} = \\dfrac{4}{3} + \\dfrac{2}{3} = 2$ ✓\n\nCheck $x = -1$: $\\dfrac{2}{-1-1} + \\dfrac{3}{-1+2} = \\dfrac{2}{-2} + \\dfrac{3}{1} = -1 + 3 = 2$ ✓\n\nNeither value makes a denominator zero, so both solutions are valid. The sum is $\\dfrac{5}{2} + (-1) = \\dfrac{5}{2} - \\dfrac{2}{2} = \\dfrac{3}{2}$.",
+  "distractorRationale": {
+    "A": "Choice A ($-1$) results from finding only the negative solution and reporting it as the final answer, ignoring the other solution $x = \\frac{5}{2}$.",
+    "B": "Choice B ($\\frac{3}{2}$) is the correct sum of both solutions: $\\frac{5}{2} + (-1) = \\frac{3}{2}$.",
+    "C": "Choice C ($\\frac{5}{2}$) results from finding only the positive solution $x = \\frac{5}{2}$ and reporting it as the sum, ignoring the other solution $x = -1$.",
+    "D": "Choice D ($\\frac{7}{2}$) results from a sign error when summing: treating both roots as positive ($\\frac{5}{2} + 1 = \\frac{7}{2}$) rather than correctly using $x = -1$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1e2d3c4-b5a6-7890-abcd-ef1234567890"
+  }
+}

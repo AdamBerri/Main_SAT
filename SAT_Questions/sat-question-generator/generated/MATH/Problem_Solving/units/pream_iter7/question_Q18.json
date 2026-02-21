@@ -1,0 +1,54 @@
+{
+  "id": "2e8f5a3c-9b1d-4e7f-c6a0-3d5b2f8e1a9c",
+  "topic": {
+    "section": "MATH",
+    "domain": "Problem_Solving",
+    "subtopic": "units"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "A water pump fills a storage tank at a rate of 45 gallons per minute. The tank has a capacity of 2,000 liters. Approximately how many minutes will it take the pump to fill the tank completely? (Use 1 gallon = 3.785 liters)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "11.1",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "11.7",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "44.4",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "168.2",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The tank capacity is in liters but the pump rate is in gallons per minute. The student must convert the tank capacity to gallons before dividing by the pump rate.\n\nStep 1 — Convert tank capacity from liters to gallons:\n$$2{,}000 \\text{ L} \\times \\frac{1 \\text{ gal}}{3.785 \\text{ L}} = \\frac{2{,}000}{3.785} \\approx 528.4 \\text{ gal}$$\n\nStep 2 — Divide by the pump rate to find time:\n$$\\frac{528.4 \\text{ gal}}{45 \\text{ gal/min}} \\approx 11.74 \\text{ min}$$\n\nFull chain with unit cancellation:\n$$2{,}000 \\text{ L} \\times \\frac{1 \\text{ gal}}{3.785 \\text{ L}} \\times \\frac{1 \\text{ min}}{45 \\text{ gal}} = \\frac{2{,}000}{3.785 \\times 45} = \\frac{2{,}000}{170.325} \\approx 11.7 \\text{ min}$$\n\nThe pump will fill the tank in approximately $\\boxed{11.7}$ minutes.",
+  "distractorRationale": {
+    "A": "Wrong conversion factor error: uses 1 gallon = 4 liters (a plausible rounded value) instead of 3.785 liters. Calculation: $2{,}000 \\div 4 \\div 45 = 500 \\div 45 \\approx 11.1$ min. A student who approximates 1 gallon as exactly 4 liters produces this answer.",
+    "B": "Correct answer. Divides 2,000 liters by 3.785 L/gal to get gallons, then divides by 45 gal/min.",
+    "C": "Forgotten unit conversion error (stops one step early): the student divides the tank capacity in liters directly by the pump rate in gallons per minute, without converting liters to gallons. Calculation: $2{,}000 \\div 45 \\approx 44.4$ min. The unit mismatch (liters vs. gallons) is never addressed.",
+    "D": "Inverted conversion error: the student multiplies by 3.785 instead of dividing, converting liters to a larger number of units rather than a smaller number of gallons. Calculation: $2{,}000 \\times 3.785 \\div 45 = 7{,}570 \\div 45 \\approx 168.2$ min."
+  },
+  "hasImage": false,
+  "requiresCalculator": true,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3d4e5f6-a7b8-9012-cdef-123456789012"
+  }
+}

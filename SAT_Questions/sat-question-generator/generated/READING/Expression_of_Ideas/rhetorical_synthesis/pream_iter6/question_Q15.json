@@ -1,0 +1,59 @@
+{
+  "id": "b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2f",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "linguistic": 2.8
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- The monarch butterfly migrates up to 3,000 miles from Canada and the United States to central Mexico each fall.\n- Monarchs navigate using a combination of the sun's position and an internal magnetic compass.\n- Milkweed is the only plant on which monarch caterpillars feed, and it is essential for reproduction.\n- Herbicide use on farms has greatly reduced milkweed growth across the monarch's migration route.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 74,
+    "source": "Student research notes on monarch butterfly migration"
+  },
+  "stem": "The student wants to explain how agricultural practices have affected monarch butterfly populations. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Monarch butterflies travel up to 3,000 miles each fall, navigating with the sun and an internal magnetic compass.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Because monarch caterpillars depend entirely on milkweed for food, the widespread reduction of milkweed from herbicide use on farms has threatened monarch populations along the migration route.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Milkweed is the only plant monarch caterpillars eat, making it essential to their survival and reproduction.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Herbicide use on farms has reduced milkweed growth, and monarchs migrate from Canada to Mexico each fall.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it traces a clear causal chain: monarchs depend on milkweed, herbicide use on farms has reduced milkweed, and therefore monarch populations are threatened. This directly explains how agricultural practices have affected the butterflies. Choices A and C omit the agricultural connection, and D lists facts without linking them causally.",
+  "distractorRationale": {
+    "A": "This choice describes the migration itself and how monarchs navigate but says nothing about agricultural practices or their effect on the population.",
+    "C": "This choice establishes milkweed's importance to monarchs but does not connect it to agricultural practices or herbicide use.",
+    "D": "This choice mentions herbicide use and migration as separate facts but fails to explain the causal relationship between them."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:14.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3a"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

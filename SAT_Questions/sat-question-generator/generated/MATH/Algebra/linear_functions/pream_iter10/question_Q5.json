@@ -1,0 +1,54 @@
+{
+  "id": "e9b3f6c2-4d1a-4e87-a5c8-2f0b9d7e3a54",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "The function $T(h) = 3h + 62$ gives the temperature in degrees Fahrenheit in a town $h$ hours after midnight. What does the value 62 represent?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The temperature, in degrees Fahrenheit, at midnight",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "The rate at which the temperature increases, in degrees Fahrenheit per hour",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "The temperature, in degrees Fahrenheit, after 62 hours",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The total increase in temperature, in degrees Fahrenheit, over $h$ hours",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "In the function $T(h) = 3h + 62$, the value 62 is the y-intercept (the constant term). In context, the y-intercept gives the value of $T$ when $h = 0$: $T(0) = 3(0) + 62 = 62$. Since $h = 0$ corresponds to midnight, the value 62 represents the temperature at midnight, which is $62^\\circ$F.",
+  "distractorRationale": {
+    "A": "Correct: $T(0) = 3(0) + 62 = 62$, so 62 is the temperature at $h = 0$, which is midnight.",
+    "B": "Confuses the constant term 62 with the slope 3: the rate of change (degrees per hour) is the coefficient of $h$, which is 3, not 62.",
+    "C": "Misreads 62 as an input value for $h$ rather than as an output value, treating the constant term as a time rather than a temperature.",
+    "D": "Confuses the y-intercept with the total change term: the total increase in temperature over $h$ hours is given by $3h$ (the slope times the input), not by the constant 62."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c6d7e8f9-0a1b-2c3d-4e5f-6a7b8c9d0e1f"
+  }
+}

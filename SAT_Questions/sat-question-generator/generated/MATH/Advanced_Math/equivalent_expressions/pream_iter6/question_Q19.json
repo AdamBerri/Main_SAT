@@ -1,0 +1,54 @@
+{
+  "id": "c8e2f4a1-b9d3-4c7e-a6f5-3b1d8a2c6e9f",
+  "topic": {
+    "section": "MATH",
+    "domain": "Advanced_Math",
+    "subtopic": "equivalent_expressions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "Which of the following is equivalent to $x^2 - 6x + 11$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$(x - 3)^2 + 11$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$(x + 3)^2 + 2$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$(x - 3)^2 + 2$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$(x - 3)^2 - 2$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Rewrite $x^2 - 6x + 11$ in vertex form by completing the square.\n\n**Step 1:** Identify the coefficient of $x$: it is $-6$. Half of $-6$ is $-3$, and $(-3)^2 = 9$.\n\n**Step 2:** Add and subtract $9$ inside the expression:\n$$x^2 - 6x + 11 = x^2 - 6x + 9 - 9 + 11$$\n\n**Step 3:** Factor the perfect square trinomial and combine the constants:\n$$= (x - 3)^2 + 2$$\n\n**Verification:** $(x-3)^2 + 2 = x^2 - 6x + 9 + 2 = x^2 - 6x + 11$ ✓",
+  "distractorRationale": {
+    "A": "Incorrect. A student who identifies the correct square $(x-3)^2$ but forgets to subtract $9$ to compensate for adding it—leaving the constant as $11$ unchanged—gets $(x-3)^2 + 11$. This is an incomplete application of the completing the square process.",
+    "B": "Incorrect. A student who uses $+3$ instead of $-3$ inside the parentheses—forgetting that $-6x$ requires $-3$ in $(x-3)^2$—arrives at $(x+3)^2 + 2$. Expanding: $(x+3)^2+2 = x^2+6x+9+2 = x^2+6x+11$, which has the wrong sign on the $x$-term.",
+    "C": "Correct. Completing the square: half of $-6$ is $-3$, so $(x-3)^2 = x^2-6x+9$. Then $x^2-6x+11 = (x-3)^2 - 9 + 11 = (x-3)^2 + 2$.",
+    "D": "Incorrect. A student who subtracts instead of adds when adjusting the constant—computing $9 - 11 = -2$ instead of $-9 + 11 = +2$—arrives at $(x-3)^2 - 2$. This results from reversing the arithmetic when reconciling the added and original constants."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.3.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f7a8b9c0-d1e2-4f3a-b4c5-6d7e8f9a0b1c"
+  }
+}

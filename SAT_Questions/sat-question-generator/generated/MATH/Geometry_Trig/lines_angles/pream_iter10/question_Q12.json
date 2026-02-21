@@ -1,0 +1,54 @@
+{
+  "id": "a1b2c3d4-000c-4aaa-b00c-000000000012",
+  "topic": {
+    "section": "MATH",
+    "domain": "Geometry_Trig",
+    "subtopic": "lines_angles"
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "In a triangle, the angles measure $(2x + 10)°$, $(3x - 5)°$, and $(x + 25)°$. What is the measure of the largest angle?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$60°$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$70°$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$50°$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$75°$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Triangle angle sum: $(2x+10)+(3x-5)+(x+25)=180$. Simplify: $6x+30=180$, so $6x=150$, $x=25$. Angles: $60°$, $70°$, $50°$. Largest is $70°$.",
+  "distractorRationale": {
+    "A": "Found the first angle ($60°$) not the largest.",
+    "B": "Correct. $3(25) - 5 = 70°$.",
+    "C": "Found the smallest angle ($50°$).",
+    "D": "Computed $3(25) + 0 = 75$ (forgot to subtract 5)."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:26:57.339Z",
+    "promptVersion": "2.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1a1b1c1-000c-4000-a00c-000000000012"
+  }
+}

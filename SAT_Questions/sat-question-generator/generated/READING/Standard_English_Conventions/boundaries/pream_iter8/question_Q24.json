@@ -1,0 +1,58 @@
+{
+  "id": "f6d1b5e4-3c9a-4b2d-8f4e-5c7a2d9f1b6e",
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "boundaries"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "linguistic": 5
+  },
+  "passage": "Medieval Islamic scholars made extraordinary contributions to the preservation of classical knowledge during a period when many original Greek texts had been lost in Western Europe. These scholars preserved and expanded the mathematical legacy of ancient Greece and India[. Translating Euclid's Elements and Ptolemy's Almagest into Arabic and adding] original commentary that would shape European intellectual life for centuries. Their efforts ensured the survival of mathematical and astronomical knowledge that formed the foundation of the later Scientific Revolution.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 86,
+    "source": "Original composition based on history of science and medieval scholarship"
+  },
+  "stem": "Which choice best maintains sentence boundaries?",
+  "choices": [
+    {
+      "label": "A",
+      "text": ". Translating Euclid's Elements and Ptolemy's Almagest into Arabic and adding",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": ", translating Euclid's Elements and Ptolemy's Almagest into Arabic and adding",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "; translating Euclid's Elements and Ptolemy's Almagest into Arabic and adding",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": ": translating Euclid's Elements and Ptolemy's Almagest into Arabic and adding",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The underlined portion connects the main clause to a participial phrase. The LEFT side, 'These scholars preserved and expanded the mathematical legacy of ancient Greece and India,' is a complete independent clause (subject: scholars; verb: preserved and expanded). The RIGHT side, 'original commentary that would shape European intellectual life for centuries,' completes the participial phrase 'translating Euclid's Elements and Ptolemy's Almagest into Arabic and adding [original commentary].' The participial phrase 'translating...and adding...' is not an independent clause — it has no subject and no finite verb; 'translating' and 'adding' are present participles, not conjugated verbs. Choice B correctly uses a comma to attach the participial phrase as a modifier of 'scholars.' Choice A creates an illegal fragment: 'Translating Euclid's Elements and Ptolemy's Almagest into Arabic and adding original commentary...' has no subject or finite verb and cannot stand as a sentence. Choice C incorrectly uses a semicolon before a participial phrase; semicolons must join two fully independent clauses. Choice D incorrectly uses a colon before a participial phrase; Standard English requires that what follows a colon be a word, list, or independent clause — not a participial phrase functioning as an adverbial modifier.",
+  "distractorRationale": {
+    "A": "NO CHANGE — Period creating a participial-phrase fragment. The sentence 'Translating Euclid's Elements and Ptolemy's Almagest into Arabic and adding original commentary that would shape European intellectual life for centuries' has no subject or finite verb, making it an illegal fragment that cannot follow a period. Students may mistake the long, complex phrase for a complete sentence.",
+    "B": "CORRECT — A comma correctly introduces the participial phrase ('translating...and adding...') as a modifier attached to the preceding independent clause. Participial phrases that follow and elaborate on the action of the main subject are attached with a comma in Standard English.",
+    "C": "Semicolon before a participial phrase — Students who associate semicolons with long or elaborate constructions may place one here, not recognizing that 'translating...and adding...' is a participial phrase (not an independent clause) and therefore cannot follow a semicolon.",
+    "D": "Colon before a participial phrase — Students may reason that the scholars' work is being 'explained' by what follows and therefore use a colon. However, a colon in Standard English must be followed by a noun, list, or independent clause — not a participial phrase functioning as an adverbial modifier."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4a2e8f3-6b1c-4d9e-a7f5-3c8b1e6d4a2f"
+  },
+  "hasImage": false
+}

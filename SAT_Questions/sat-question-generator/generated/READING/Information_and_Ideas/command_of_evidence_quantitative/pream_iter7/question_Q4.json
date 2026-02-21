@@ -1,0 +1,82 @@
+{
+  "id": "6fab7c15-a9b7-4567-be0c-78a2828f91f1",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "command_of_evidence_quantitative"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "linguistic": 1.2
+  },
+  "passage": "A transportation department survey measured average commute times in five major U.S. cities. The survey found that Houston residents spent more time commuting than residents of any other city in the study.",
+  "stem": "Which choice most effectively uses data from the figure to support the survey's finding?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Houston's average commute time was 54 minutes, compared to 47 minutes in Los Angeles, 41 minutes in Chicago, 38 minutes in Phoenix, and 33 minutes in Denver.",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Los Angeles had an average commute time of 47 minutes, which was longer than Chicago's 41 minutes and Phoenix's 38 minutes.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "Denver had the shortest average commute time at 33 minutes, while Phoenix had an average commute of 38 minutes.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Chicago's average commute time of 41 minutes was shorter than that of Los Angeles, which had an average of 47 minutes.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The claim states Houston had the longest commute time. Choice A directly supports this by listing Houston at 54 minutes, which is higher than all other cities. The distractors cite accurate data about other cities but never reference Houston's commute time.",
+  "distractorRationale": {
+    "A": "Correct: cites Houston at 54 minutes and compares to all other cities, confirming it is the highest.",
+    "B": "Wrong (irrelevant data): compares Los Angeles to Chicago and Phoenix but does not mention Houston.",
+    "C": "Wrong (opposite trend): discusses the shortest commute rather than the longest, and does not mention Houston.",
+    "D": "Wrong (misread value): compares Chicago to Los Angeles but does not address Houston's position as highest."
+  },
+  "hasImage": true,
+  "imageDescription": "Bar chart titled 'Average Commute Times in Selected U.S. Cities.' X-axis: City (Houston, Los Angeles, Chicago, Phoenix, Denver). Y-axis: Average Commute Time (minutes), range 0-60. Bars: Houston = 54, Los Angeles = 47, Chicago = 41, Phoenix = 38, Denver = 33. Source: U.S. Department of Transportation, 2024.",
+  "chartData": {
+    "type": "bar_chart",
+    "title": "Average Commute Times in Selected U.S. Cities",
+    "data": {
+      "categories": [
+        "Houston",
+        "Los Angeles",
+        "Chicago",
+        "Phoenix",
+        "Denver"
+      ],
+      "values": [
+        54,
+        47,
+        41,
+        38,
+        33
+      ],
+      "unit": "minutes",
+      "yAxisLabel": "Average Commute Time (minutes)",
+      "xAxisLabel": "City"
+    }
+  },
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 50,
+    "source": "Adapted from U.S. Department of Transportation commuter survey"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:14:36.416Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "7cb32fa1-a06c-461e-a9dc-e8ac0a3da5da"
+  }
+}

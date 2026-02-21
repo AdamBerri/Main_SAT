@@ -1,0 +1,59 @@
+{
+  "id": "f2a3b4c5-d6e7-4f8a-9b0c-1d2e3f4a5b6c",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "rhetorical_synthesis"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "linguistic": 2.1
+  },
+  "passage": "While researching a topic, a student has taken the following notes:\n- Marie Curie was the first woman to win a Nobel Prize, receiving the Physics prize in 1903.\n- She won a second Nobel Prize in Chemistry in 1911 for her discovery of radium and polonium.\n- Curie's research on radioactivity laid the groundwork for modern cancer treatments using radiation therapy.\n- She remains the only person to have won Nobel Prizes in two different sciences.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 70,
+    "source": "Student research notes on Marie Curie"
+  },
+  "stem": "The student wants to convey the lasting impact of Marie Curie's scientific work. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "Marie Curie won the Nobel Prize in Physics in 1903, becoming the first woman to receive a Nobel Prize.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Curie's research on radioactivity not only earned her Nobel Prizes in two different sciences but also laid the groundwork for modern radiation therapy used in cancer treatment.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Marie Curie is the only person to have won Nobel Prizes in two different scientific disciplines.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Marie Curie discovered radium and polonium, which are radioactive elements she studied extensively.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Choice B is correct because it connects Curie's accomplishments (Nobel Prizes in two sciences) to the lasting real-world impact of her work (modern radiation therapy for cancer), effectively conveying both the significance and enduring influence of her scientific contributions.",
+  "distractorRationale": {
+    "A": "This choice mentions her first Nobel Prize but does not address the lasting impact of her scientific work beyond the award itself.",
+    "C": "This choice highlights a unique achievement but frames it as a record rather than explaining its lasting impact on science or medicine.",
+    "D": "This choice names her discoveries but does not connect them to any lasting impact or application."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:06.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3b4c5d6-e7f8-4a9b-0c1d-2e3f4a5b6c7d"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": ""
+}

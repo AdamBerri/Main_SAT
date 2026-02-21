@@ -1,0 +1,57 @@
+{
+  "id": "e6f0a5b4-7c2d-4e3f-9b1a-4d8c5f0e7b3a",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "text_structure"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1.3,
+    "procedural": 1,
+    "linguistic": 1.2
+  },
+  "passage": "Traditional medicine and modern medicine approach illness in fundamentally different ways. Traditional medicine, practiced across cultures for thousands of years, treats the patient as a whole person. Healers consider a patient's physical condition, emotional state, diet, and social environment before recommending herbs, acupuncture, or other remedies. The goal is to restore balance to the entire body rather than to eliminate a specific disease.\n\nModern medicine, by contrast, focuses on identifying and targeting the precise biological cause of an illness. Physicians rely on diagnostic tests, controlled clinical trials, and pharmaceutical drugs or surgery to treat specific conditions. This approach has produced extraordinary results, including vaccines that have eliminated deadly diseases and surgical techniques that repair injuries previously considered fatal.\n\nDespite their differences, the two systems are increasingly used together. Many hospitals now offer integrative medicine programs that combine conventional treatments with practices such as meditation and herbal supplements, recognizing that patients benefit when both approaches are applied thoughtfully.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 168,
+    "source": "Original passage modeled on comparative health writing"
+  },
+  "stem": "The passage is structured to—",
+  "choices": [
+    {
+      "label": "A",
+      "text": "argue that integrative medicine is more effective than either system alone.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "trace the historical development of modern medicine from traditional roots.",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "contrast two medical approaches, then note their convergence.",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "present a problem with traditional medicine and explain how modern medicine solved it.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The passage is organized in three sections that follow a compare-contrast-then-synthesis pattern. The first paragraph describes traditional medicine's holistic approach; the second paragraph, introduced by 'by contrast,' describes modern medicine's targeted approach; and the third paragraph notes that 'Despite their differences,' the two are now combined in integrative medicine programs. The overall structure moves from contrast to convergence, making C the most accurate description.",
+  "distractorRationale": {
+    "A": "While the final paragraph mentions that patients 'benefit when both approaches are applied thoughtfully,' the passage does not argue that integrative medicine is superior to either system individually. The passage describes convergence without making a comparative effectiveness claim.",
+    "B": "The passage does not present modern medicine as having developed from traditional medicine. The two systems are introduced as distinct approaches with different philosophical foundations; no historical lineage connecting them is described.",
+    "D": "The passage does not frame traditional medicine as having a problem that modern medicine solved. Both systems are presented with their own strengths, and the final paragraph shows them working together rather than one replacing or correcting the other."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e"
+  },
+  "hasImage": false
+}

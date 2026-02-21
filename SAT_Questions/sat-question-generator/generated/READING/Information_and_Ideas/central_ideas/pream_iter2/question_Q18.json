@@ -1,0 +1,56 @@
+{
+  "id": "d5a9b3c2-8f4e-4d1b-c7a6-4e3d0a9c8b5f",
+  "topic": {
+    "section": "READING",
+    "domain": "Information_and_Ideas",
+    "subtopic": "central_ideas"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "In the 1950s, American cities began replacing their old-growth street trees with a narrow selection of fast-growing species. City managers prized uniformity: trees of identical height simplified pruning contracts, and identical canopies gave neighborhoods a tidy appearance. By the 1970s, Dutch elm disease had eliminated nearly all the American elms that had once lined city boulevards across the Midwest and Northeast, leaving block after block of bare pavement. Municipalities replanted almost exclusively with green ash trees, drawn again by their rapid growth and visual consistency. When the emerald ash borer arrived from Asia in the early 2000s, it found an almost unbroken food supply across urban canopies. Cities that had planted the most ash trees suffered the greatest losses. Those that had maintained diverse plantings—sometimes dismissed as untidy or inconsistent—retained functioning canopies and were spared the cost of mass removal and replanting that fell on their more uniform neighbors.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 158,
+    "source": "Adapted from an article on urban forestry policy"
+  },
+  "stem": "Which choice best describes the central idea of the passage?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The destruction caused by Dutch elm disease and the emerald ash borer demonstrates that invasive pests pose the greatest threat to urban green infrastructure.",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "Cities that prioritized the visual uniformity of their street trees repeatedly made themselves vulnerable to catastrophic losses from single pest outbreaks.",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "Municipal tree-planting decisions in the twentieth century reflected a preference for administrative convenience over ecological considerations.",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The emerald ash borer's spread through North American cities illustrates how globalized trade routes enable invasive species to devastate local ecosystems.",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The passage traces two episodes—Dutch elm disease eliminating elms planted for uniformity, then emerald ash borers devastating monoculture ash plantings—to show that uniformity-driven decisions repeatedly created concentrated vulnerabilities. The contrasting detail about diverse plantings being 'dismissed as untidy' but surviving with functioning canopies anchors the inference: aesthetic and administrative preferences for uniformity, applied across two different eras and two different species, produced the same catastrophic outcome each time. The main idea must be inferred from the pattern across both episodes rather than drawn from any single sentence. Choice B captures this recurring dynamic accurately.",
+  "distractorRationale": {
+    "A": "The passage uses Dutch elm disease and the emerald ash borer as evidence, but its argument is not that invasive pests are the greatest threat—it is that uniformity-based planting amplified the damage those pests could cause. The same pests did comparatively little damage in cities with diverse plantings.",
+    "C": "The passage does identify administrative convenience as a motive for planting decisions, but this is the cause, not the central idea. The passage's concern is with the consequences of those decisions—repeated vulnerability—not with analyzing the motivations behind them.",
+    "D": "The passage mentions that the emerald ash borer arrived from Asia but does not develop any argument about globalized trade routes or mechanisms of species introduction. This distractor introduces content not present in the passage."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-19T00:00:00.000Z",
+    "promptVersion": "1.5.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c3f9e5b2-8d4a-4f2c-b7a6-5e4d1b0c9a8f"
+  }
+}

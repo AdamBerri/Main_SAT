@@ -62,7 +62,7 @@
             "frequency": 7,
             "exampleErrors": [
               "Explanation attempts multiple solution approaches, gets different results, then settles on answer without rigorous justification showing uncertainty",
-              "Arithmetic in rationale doesn't match claimed result (e.g., '5(23.75) - 25 = 93.75\u00b0' but distractor claims 105\u00b0)",
+              "Arithmetic in rationale doesn't match claimed result (e.g., '5(23.75) - 25 = 93.75°' but distractor claims 105°)",
               "Explanation uses phrases like 'depending on interpretation' and 're-examining' which signal fundamental ambiguity in problem construction"
             ]
           }
@@ -97,10 +97,10 @@
             "category": "distractor_quality",
             "frequency": 4,
             "exampleErrors": [
-              "Distractor D (295\u00b0) has incoherent rationale with unexplained '+50\u00b0' component; distractor implausibly exceeds 180\u00b0 and doesn't represent plausible student error pathway",
+              "Distractor D (295°) has incoherent rationale with unexplained '+50°' component; distractor implausibly exceeds 180° and doesn't represent plausible student error pathway",
               "Distractor A lacks documented error chain; rationale describes path yielding 23.75 but answer is 10, suggesting arbitrary distractor unrelated to genuine misconception",
-              "Distractors C and D rely on arbitrary multiplication/division operations (22\u00b0 from dividing by 3; 136\u00b0 from doubling) lacking geometric justification and not reflecting recognizable misconceptions",
-              "Distractor D has unclear pathway (23.75 \u2192 35); rationale mentions 'rounding or computing incorrectly' without specifying exact arithmetic error; possible redundancy with distractor B both using x = 37"
+              "Distractors C and D rely on arbitrary multiplication/division operations (22° from dividing by 3; 136° from doubling) lacking geometric justification and not reflecting recognizable misconceptions",
+              "Distractor D has unclear pathway (23.75 → 35); rationale mentions 'rounding or computing incorrectly' without specifying exact arithmetic error; possible redundancy with distractor B both using x = 37"
             ]
           },
           {
@@ -149,7 +149,7 @@
             "exampleErrors": [
               "Provided explanation yields y = 32.5, but designated answer is C (52.5); no answer choice matches the calculated value",
               "Mathematical solution produces y = 47.5, which does not appear in any of the four answer choices",
-              "When x = 25 (making answer 90\u00b0), the stated alternate interior angle relationships are not satisfied"
+              "When x = 25 (making answer 90°), the stated alternate interior angle relationships are not satisfied"
             ]
           },
           {
@@ -167,7 +167,7 @@
             "frequency": 3,
             "exampleErrors": [
               "Alternate interior angles are equal, but problem requires them to be supplementary, creating mathematical contradiction",
-              "States ABC and BCD are alternate interior angles while also treating them as supplementary (180\u00b0), which cannot both be true",
+              "States ABC and BCD are alternate interior angles while also treating them as supplementary (180°), which cannot both be true",
               "Over-constrained problem where three simultaneous angle relationships cannot all be satisfied (yields x = 40, x = 17.5, and x = -5)"
             ]
           },
@@ -175,8 +175,8 @@
             "category": "distractor_quality_issues",
             "frequency": 3,
             "exampleErrors": [
-              "Distractor B (90\u00b0) has internally contradictory rationale claiming 180\u00b0 - 65\u00b0 = 90\u00b0, which is arithmetically false",
-              "Distractor D (125\u00b0) rationale is convoluted with non-intuitive error pattern; doesn't represent a coherent student misconception",
+              "Distractor B (90°) has internally contradictory rationale claiming 180° - 65° = 90°, which is arithmetically false",
+              "Distractor D (125°) rationale is convoluted with non-intuitive error pattern; doesn't represent a coherent student misconception",
               "Distractor B offers multiple competing explanations without committing to single misconception, reducing discriminatory power"
             ]
           },
@@ -262,18 +262,18 @@
             "category": "answer_validity",
             "frequency": 4,
             "exampleErrors": [
-              "Designated correct answer (C: 90\u00b0) contradicts the mathematical explanation which correctly solves to 105\u00b0",
-              "Problem setup yields non-integer solution (x \u2248 26.14) but all answer choices are integers, with answer B being closest but technically incorrect",
-              "Mathematical discrepancy: consecutive interior angles sum to 179\u00b0 instead of 180\u00b0 when x=26, violating the geometric constraint"
+              "Designated correct answer (C: 90°) contradicts the mathematical explanation which correctly solves to 105°",
+              "Problem setup yields non-integer solution (x ≈ 26.14) but all answer choices are integers, with answer B being closest but technically incorrect",
+              "Mathematical discrepancy: consecutive interior angles sum to 179° instead of 180° when x=26, violating the geometric constraint"
             ]
           },
           {
             "category": "distractor_quality",
             "frequency": 3,
             "exampleErrors": [
-              "Distractor A lacks coherent misconception targeting\u2014rationale jumps from correctly finding angle B (94\u00b0) to selecting 70\u00b0 without clear logical error pathway",
+              "Distractor A lacks coherent misconception targeting—rationale jumps from correctly finding angle B (94°) to selecting 70° without clear logical error pathway",
               "Internal inconsistency: Choice D labeled as correct in rationale explanation while C is listed as the answer key, creating confusion about proper answer",
-              "Distractor C (125\u00b0) is trivially eliminable by verification (125\u00b0 + 65\u00b0 = 190\u00b0), failing to discriminate meaningful conceptual misunderstanding"
+              "Distractor C (125°) is trivially eliminable by verification (125° + 65° = 190°), failing to discriminate meaningful conceptual misunderstanding"
             ]
           },
           {
@@ -306,11 +306,73 @@
       },
       "improvementMade": "Addressed: answer_validity, distractor_quality, difficulty_accuracy",
       "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.585,
+        "passRate": 0.95,
+        "errorCategories": {
+          "faithfulness": 2,
+          "distractor_quality": 3
+        }
+      },
+      "testMetrics": {
+        "avgScore": 4.193,
+        "passRate": 0.8
+      },
+      "improvementMade": "Added ban on pure definition questions (must require computation), required clean linear explanations without false starts, mandated exact step-by-step distractor calculations instead of vague error descriptions, added guidance for Level 5 self-contained solvable systems",
+      "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 7,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.504,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "distractor_quality",
+            "frequency": 4,
+            "exampleErrors": [
+              "Distractor rationales are vague or contain compound errors instead of single identifiable mistakes",
+              "Multiple distractors share similar error pathways reducing discriminatory power",
+              "Rationales use hedging language like perhaps or might instead of definitive error chains"
+            ]
+          },
+          {
+            "category": "difficulty_miscalibration",
+            "frequency": 2,
+            "exampleErrors": [
+              "Q24 rated level 5 but is actually a simple subtraction problem (140-50=90)",
+              "Higher difficulty questions sometimes use overly complex setups that mask simple underlying computations"
+            ]
+          },
+          {
+            "category": "faithfulness_at_high_difficulty",
+            "frequency": 1,
+            "exampleErrors": [
+              "Level 5 questions sometimes have overly convoluted setups with unnecessary information that departs from clean SAT style"
+            ]
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 4.183,
+        "passRate": 0.8
+      },
+      "improvementMade": "Strengthened distractor design requirements with MANDATORY EXECUTION TEST (must show complete wrong calculation for every distractor), added FORBIDDEN rationale patterns, added CRITICAL level-5 difficulty guard requiring genuinely distinct reasoning steps and time check, ensured all answer choices must be distinct values",
+      "newPromptVersion": "1.5.0"
     }
   ],
   "currentBestVersion": "1.2.0",
-  "converged": false,
+  "converged": true,
   "startedAt": "2026-01-08T20:32:05.322Z",
-  "completedAt": null,
+  "completedAt": "2026-02-21T03:12:27.504Z",
   "bestTestScore": 4.208333333333333
 }

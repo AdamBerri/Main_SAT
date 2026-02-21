@@ -1,0 +1,57 @@
+{
+  "id": "d8b4f2e1-9c7a-4d3b-8f5e-1a2c6d9f4b8e",
+  "topic": {
+    "section": "READING",
+    "domain": "Craft_and_Structure",
+    "subtopic": "words_in_context"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "linguistic": 3.9
+  },
+  "passage": "To secure the agreement, the negotiators had to *satisfy* a set of preconditions so stringent that earlier delegations had simply walked away from the table. The conditions required not merely formal acknowledgment of the disputed territories but legally binding commitments that would survive changes in government, a standard that no signatory had previously been willing to meet.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 66,
+    "source": "Adapted from a political science analysis of multilateral negotiations"
+  },
+  "stem": "As used in the passage, \"satisfy\" most nearly means",
+  "choices": [
+    {
+      "label": "A",
+      "text": "fulfill",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "appease",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "convince",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "content",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The passage describes the negotiators needing to meet specific, formally articulated preconditions—legally binding commitments with defined standards. This framing treats 'satisfying' the conditions as a matter of concrete compliance: the conditions specify what must be done, and the negotiators must accomplish that. 'Fulfill' captures this meaning of meeting a defined requirement or standard. The passage's emphasis on stringency, formal acknowledgment, and legally binding terms points toward a technical, objective sense of meeting criteria, not toward the relational or emotional dimensions present in 'appease,' 'convince,' or 'content.'",
+  "distractorRationale": {
+    "A": "Correct. 'Fulfill' means to meet a requirement or carry out what is demanded, which precisely fits the context of negotiators meeting formally specified preconditions.",
+    "B": "'Appease' means to pacify or placate someone, typically by conceding to demands, and it is a legitimate meaning of 'satisfy' in relational contexts. However, the passage focuses on meeting defined criteria, not on managing the emotional state of the other party.",
+    "C": "'Convince' means to persuade someone to believe something, which is a different act. The negotiators are not making arguments; they are meeting specific formal conditions. The conditions are the standard, not a party that must be persuaded.",
+    "D": "'Content' in this context means to make someone satisfied or at ease, a relational and subjective meaning. While this is a valid use of 'satisfy,' the passage frames the preconditions as objective legal and procedural requirements, not as the emotional state of any party."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T00:00:00.000Z",
+    "promptVersion": "1.8.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a3c7e9f1-4b5d-4a2c-8f6e-9d1b3c5e7a9f"
+  }
+}

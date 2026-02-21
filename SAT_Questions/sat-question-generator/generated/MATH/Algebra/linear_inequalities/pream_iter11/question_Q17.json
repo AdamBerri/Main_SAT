@@ -1,0 +1,38 @@
+{
+  "id": "a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_inequalities"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "A delivery truck can carry at most 1,200 pounds. Large boxes weigh 50 pounds each and small boxes weigh 20 pounds each. The truck must deliver at least 10 large boxes and at least 15 small boxes on each trip. If the driver loads exactly 10 large boxes, what is the greatest number of additional small boxes (beyond the required 15) that can be loaded?",
+  "choices": [
+    { "label": "A", "text": "20", "isCorrect": true },
+    { "label": "B", "text": "35", "isCorrect": false },
+    { "label": "C", "text": "25", "isCorrect": false },
+    { "label": "D", "text": "15", "isCorrect": false }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Weight used by 10 large boxes: $50 \\times 10 = 500$ lbs. Weight used by required 15 small boxes: $20 \\times 15 = 300$ lbs. Total committed: $500 + 300 = 800$ lbs. Remaining capacity: $1200 - 800 = 400$ lbs. Additional small boxes: $400 \\div 20 = 20$. The greatest number of additional small boxes is 20.",
+  "distractorRationale": {
+    "A": "Correct. After 10 large ($500$ lbs) and 15 small ($300$ lbs), $400$ lbs remain, fitting $400 \\div 20 = 20$ additional small boxes.",
+    "B": "Cluster D error: Computed total small boxes (required + additional) as $700 \\div 20 = 35$, forgetting to subtract the 15 already required. Reported 35 instead of the additional 20.",
+    "C": "Cluster B error: Forgot to account for the required 15 small boxes' weight. Computed remaining after large boxes: $1200 - 500 = 700$, then $700 \\div 20 = 35$, subtracted 10 (confused with large box count) instead of 15, getting 25.",
+    "D": "Cluster C error: Misread the question as asking for the total number of additional boxes of any type, then computed $400 \\div 20 = 20$ but subtracted 5 (thinking some capacity is reserved), getting 15."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-20T12:00:17.000Z",
+    "promptVersion": "3.2.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b3c4d5e6-f7a8-4b9c-0d1e-2f3a4b5c6d7e"
+  }
+}

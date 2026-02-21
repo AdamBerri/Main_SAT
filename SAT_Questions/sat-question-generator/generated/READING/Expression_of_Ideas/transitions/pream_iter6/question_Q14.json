@@ -1,0 +1,58 @@
+{
+  "id": "d4e5f6a7-4444-4d0e-1f2a-3b4c5d6e7f80",
+  "topic": {
+    "section": "READING",
+    "domain": "Expression_of_Ideas",
+    "subtopic": "transitions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.2
+  },
+  "passage": "The museum's new exhibit featured paintings from an era when artists rarely received public recognition for their work. _______ the curator included personal letters and diary entries alongside the canvases to show visitors the human stories behind the art.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 58,
+    "source": "Adapted from an art exhibition review"
+  },
+  "stem": "Which choice most logically completes the text?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "To address this,",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "Conversely,",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "For example,",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "Simultaneously,",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "The first sentence identifies a problem: artists from this era lacked public recognition. The second sentence describes the curator's solution: including personal documents to reveal the artists' identities. 'To address this' correctly signals that the curator's action was a deliberate response to the problem of anonymity.",
+  "distractorRationale": {
+    "A": "Correct. 'To address this' signals that the curator's inclusion of personal letters was a purposeful response to the problem of artists' lack of recognition.",
+    "B": "'Conversely' signals an opposite situation, but the curator's action responds to the problem rather than presenting its opposite.",
+    "C": "'For example' introduces a specific illustration of a general claim, but the curator's action is a response to the situation, not an example of artists lacking recognition.",
+    "D": "'Simultaneously' signals events happening at the same time, but the curator's decision was a purposeful reaction to the historical context, not a coincidental parallel event."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-20T10:02:03.000Z",
+    "promptVersion": "1.4.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4444444-e5f6-4a7b-8c9d-0e1f2a3b4c56"
+  },
+  "hasImage": false
+}

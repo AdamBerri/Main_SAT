@@ -125,7 +125,7 @@
             "frequency": 2,
             "exampleErrors": [
               "High linguistic complexity (sophisticated vocabulary, complex syntax) conflated with high question difficulty despite straightforward transition task",
-              "Dense prose and technical terminology (86\u00b0F, algae populations) inflate perceived difficulty without matching actual cognitive demand of transition identification"
+              "Dense prose and technical terminology (86°F, algae populations) inflate perceived difficulty without matching actual cognitive demand of transition identification"
             ]
           },
           {
@@ -148,7 +148,7 @@
             "category": "insufficient_procedural_complexity",
             "frequency": 2,
             "exampleErrors": [
-              "Single-step decision making (recognize contrast \u2192 match transition word) without multi-step reasoning or synthesis required",
+              "Single-step decision making (recognize contrast → match transition word) without multi-step reasoning or synthesis required",
               "No complex inference, subtle distinctions between answer choices, or need to weigh multiple valid interpretations"
             ]
           }
@@ -160,11 +160,70 @@
       },
       "improvementMade": "Addressed: difficulty_overestimation, linguistic_vs_task_complexity_confusion, weak_distractor_design",
       "newPromptVersion": "1.3.0"
+    },
+    {
+      "iteration": 5,
+      "promptVersionUsed": "1.3.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.696,
+        "passRate": 1,
+        "errorCategories": {
+          "distractor_quality": {
+            "count": 1,
+            "description": "Near-synonymous transition pairs (While vs Although) used as answer choices at medium difficulty, making distractor differentiation weak"
+          },
+          "answer_validity": {
+            "count": 4,
+            "description": "Some passages supported multiple plausible transitions (e.g., In fact vs Furthermore, At the same time vs Nonetheless), creating ambiguity in correct answer"
+          }
+        }
+      },
+      "testMetrics": {
+        "avgScore": 5,
+        "passRate": 1
+      },
+      "improvementMade": "Added ANSWER VALIDITY section requiring passages to definitively support only one transition. Added rule against near-synonymous transition pairs at difficulty 1-3. Added re-read validation check requiring each answer choice to be tested by insertion. Strengthened distractor design to require distinct transition categories at lower difficulties.",
+      "newPromptVersion": "1.4.0"
+    },
+    {
+      "iteration": 6,
+      "promptVersionUsed": "1.4.0",
+      "trainSetSize": 20,
+      "testSetSize": 5,
+      "trainMetrics": {
+        "avgScore": 4.741,
+        "passRate": 1,
+        "errorCategories": [
+          {
+            "category": "answer_validity_medium_difficulty",
+            "frequency": 3,
+            "description": "At difficulty 3-4, passages allowed minor ambiguity in transition type selection"
+          },
+          {
+            "category": "faithfulness_low_difficulty",
+            "frequency": 2,
+            "description": "Low difficulty passages too simple and short compared to authentic SAT format"
+          },
+          {
+            "category": "distractor_quality_low_difficulty",
+            "frequency": 5,
+            "description": "Level 1 distractors adequately differentiated but not optimally calibrated to SAT patterns"
+          }
+        ]
+      },
+      "testMetrics": {
+        "avgScore": 5,
+        "passRate": 1
+      },
+      "improvementMade": "Minor refinements: added passage authenticity guidelines for low-difficulty questions, strengthened answer validity checks at medium difficulty (3-4), added explicit relationship identification validation step, improved distractor design guidance for level 1",
+      "newPromptVersion": "1.5.0"
     }
   ],
-  "currentBestVersion": "1.2.0",
-  "converged": false,
+  "currentBestVersion": "1.4.0",
+  "converged": true,
   "startedAt": "2026-01-08T15:12:15.198Z",
-  "completedAt": null,
-  "bestTestScore": 4.1875
+  "completedAt": "2026-02-21T03:06:23.772Z",
+  "bestTestScore": 5
 }

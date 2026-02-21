@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "f4f64e82-0d82-41e1-8288-4ffd69d06079",
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "linguistic": 3.2
+  },
+  "passage": "By the end of the nineteenth century, the expansion of railroads across the American West had transformed the region's economy and demographics. Small farming communities grew into bustling towns almost overnight as rail connections brought new settlers and commerce. Before the transcontinental railroad [1]_____ in 1869, a journey from the East Coast to California took several months by wagon or ship.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 62,
+    "source": "Adapted from an American history textbook"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "is completed",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "was completed",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "had been completed",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "has been completed",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests tense selection in a temporal clause with 'before.' The sentence describes two past events: the railroad's completion (1869) and the difficulty of cross-country travel. In a 'before' clause, simple past is standard when the main clause also uses simple past ('took'). Past perfect in the 'before' clause is unnecessary because 'before' already establishes the temporal sequence.",
+  "distractorRationale": {
+    "A": "Present passive—wrong tense for a historical event in 1869.",
+    "B": "Correct. Simple past passive, appropriate in the 'before' clause with past-tense main clause.",
+    "C": "Past perfect passive—while seemingly logical (completion before the journey), standard usage with 'before' clauses uses simple past since 'before' already clarifies the sequence.",
+    "D": "Present perfect passive—connects to present, but this describes a purely historical event."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a9700e4a-38e2-4226-a848-cff348188960"
+  }
+}

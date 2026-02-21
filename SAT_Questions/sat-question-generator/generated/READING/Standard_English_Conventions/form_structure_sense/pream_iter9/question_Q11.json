@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "05ba833d-daa7-41f2-bd32-29df20b5529b",
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.2,
+    "procedural": 3,
+    "linguistic": 3.3
+  },
+  "passage": "The documentary filmmaker Ken Burns is renowned for his ability to bring historical events to life through a combination of archival photographs, personal letters, and expert interviews. His most recent project, which took over five years to research and produce, examines the history of country music in America. Burns expects that the series, consisting of sixteen episodes and [1]_____ more than a hundred interviews with musicians and historians, will attract an audience well beyond the genre's traditional fan base.",
+  "passageMetadata": {
+    "genre": "informational",
+    "wordCount": 80,
+    "source": "Adapted from a film industry publication"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "feature",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "features",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "featuring",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "featured",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "This question tests parallel structure within a participial phrase. The phrase 'consisting of sixteen episodes and [blank] more than a hundred interviews' uses two parallel present participles joined by 'and.' Since 'consisting' is a present participle, the parallel element must also be a present participle: 'featuring.' Both modify 'the series.'",
+  "distractorRationale": {
+    "A": "Base form—breaks parallelism with 'consisting' (a present participle).",
+    "B": "Third-person singular present indicative—breaks parallelism and would introduce a finite verb into a participial phrase.",
+    "C": "Correct. Present participle parallel with 'consisting.'",
+    "D": "Past tense/participle—breaks parallelism with the present participle 'consisting.'"
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "9f81f0a6-ca38-42e2-8088-d701ae36fa7b"
+  }
+}

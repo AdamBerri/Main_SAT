@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "section": "READING",
+    "domain": "Standard_English_Conventions",
+    "subtopic": "form_structure_sense"
+  },
+  "hasImage": false,
+  "imageDescription": "",
+  "imagePath": "",
+  "id": "0b718ff1-bc0b-46e3-a4d2-3cec145e87e4",
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "linguistic": 2.9
+  },
+  "passage": "Astronomers have long wondered whether planets orbiting red dwarf stars could support liquid water on their surfaces. A team of researchers at the European Southern Observatory recently analyzed the atmospheric composition of a rocky exoplanet in the habitable zone of Proxima Centauri. Neither the spectral analysis of the planet's atmosphere nor the computer simulations of its climate [1]_____ ruled out the possibility of surface water, giving scientists cautious optimism about the planet's habitability.",
+  "passageMetadata": {
+    "genre": "scientific",
+    "wordCount": 72,
+    "source": "Adapted from an astrophysics research summary"
+  },
+  "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "has",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "have",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "having",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "had",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "This question tests subject-verb agreement with 'neither...nor.' When 'neither...nor' connects two subjects, the verb agrees with the nearer subject. The nearer subject is 'the computer simulations' (plural), requiring the plural auxiliary 'have.' Present perfect is appropriate because the research has been conducted and the conclusion remains current.",
+  "distractorRationale": {
+    "A": "Singular auxiliary—would agree with 'analysis' but not the nearer subject 'simulations.'",
+    "B": "Correct. Plural auxiliary agreeing with the nearer subject 'simulations.'",
+    "C": "Participle—cannot function as auxiliary verb in present perfect construction.",
+    "D": "Past auxiliary—would create past perfect, implying the ruling-out was completed before some other past event, which is not the intended meaning."
+  },
+  "metadata": {
+    "generatedAt": "2026-02-21T03:15:54.818Z",
+    "promptVersion": "1.7.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "2ee1f16b-bd49-47af-af33-6044edb84f83"
+  }
+}
