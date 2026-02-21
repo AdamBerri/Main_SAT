@@ -45,15 +45,12 @@
     "import:prod-stats": "npx convex run questionImport:getImportStats",
     "test": "vitest",
     "test:run": "vitest run",
-    "validate:import": "node scripts/validate-import-data.mjs",
-    "postinstall": "node scripts/fix-lockfile.cjs"
+    "validate:import": "node scripts/validate-import-data.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
     "@clerk/nextjs": "^6.36.5",
     "@google/genai": "^1.34.0",
-    "@next/swc-darwin-arm64": "^16.1.6",
-    "@tailwindcss/oxide-darwin-arm64": "^4.1.18",
     "@tailwindcss/postcss": "^4.1.18",
     "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^25.0.3",
@@ -66,7 +63,6 @@
     "jspdf": "^3.0.4",
     "katex": "^0.16.27",
     "lightningcss": "^1.30.2",
-    "lightningcss-darwin-arm64": "^1.30.2",
     "lucide-react": "^0.562.0",
     "next": "^16.1.0",
     "next-mdx-remote": "^5.0.0",
@@ -95,8 +91,11 @@
     "vitest": "^2.1.9"
   },
   "optionalDependencies": {
+    "@next/swc-darwin-arm64": "^16.1.6",
     "@rollup/rollup-darwin-arm64": "^4.55.1",
+    "@tailwindcss/oxide-darwin-arm64": "^4.1.18",
     "@tailwindcss/oxide-linux-x64-gnu": "^4.1.18",
+    "lightningcss-darwin-arm64": "^1.30.2",
     "lightningcss-linux-x64-gnu": "^1.30.2"
   }
 }
