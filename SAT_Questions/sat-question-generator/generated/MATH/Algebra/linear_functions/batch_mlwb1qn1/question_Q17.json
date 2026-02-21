@@ -1,0 +1,54 @@
+{
+  "id": "c2e8a5f3-71d4-4b9c-a037-2e4f9c1d8b56",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.0,
+    "procedural": 4.3,
+    "computational": 4.1
+  },
+  "stem": "Two hikers begin walking along a straight trail at the same time. Hiker A starts at mile marker 3 and walks toward higher mile markers at a constant speed of 4 miles per hour. Hiker B starts at mile marker 27 and walks toward lower mile markers at a constant speed of 2 miles per hour. At what mile marker will the two hikers meet?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "4",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "15",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "19",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "23",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Model each hiker's position as a linear function of time $t$ (in hours).\n\nHiker A's position: $A(t) = 4t + 3$\nHiker B's position: $B(t) = 27 - 2t$\n\nStep 1: Set the two functions equal and solve for $t$:\n$$4t + 3 = 27 - 2t$$\n$$6t = 24$$\n$$t = 4 \\text{ hours}$$\n\nStep 2: Find the mile marker by substituting $t = 4$ into either equation:\n$$A(4) = 4(4) + 3 = 16 + 3 = 19$$\n\nVerify with Hiker B: $B(4) = 27 - 2(4) = 27 - 8 = 19$. ✓\n\nThe two hikers meet at mile marker 19.",
+  "distractorRationale": {
+    "A": "Stops after finding the meeting time: solves $6t = 24$ to get $t = 4$ hours, then reports 4 as the answer instead of substituting back to find the mile marker.",
+    "B": "Swaps the two hikers' speeds: sets up $A(t) = 2t + 3$ and $B(t) = 27 - 4t$, solves $2t + 3 = 27 - 4t$ to get $t = 4$, then computes $A(4) = 2(4) + 3 = 15$.",
+    "C": "Correct answer: sets $4t + 3 = 27 - 2t$, finds $t = 4$ hours, then evaluates $A(4) = 19$.",
+    "D": "Makes an arithmetic error when dividing: solves $6t = 24$ but computes $24 \\div 6 = 5$ instead of 4, then evaluates $A(5) = 4(5) + 3 = 23$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d5a1c9e3-6f4b-4817-b042-3c7e2a9d1f08"
+  }
+}

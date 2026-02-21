@@ -1,0 +1,54 @@
+{
+  "id": "a3f7c2e1-84b5-4d09-9e6f-1c2b3d4e5f60",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.2,
+    "procedural": 2,
+    "computational": 2.3
+  },
+  "stem": "A plumber charges a flat fee for each service visit plus an additional charge for each hour of work. The total charge $C$, in dollars, for a service visit lasting $h$ hours is given by the function $C(h) = 85h + 60$. What does the value 60 represent in this context?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "The plumber's hourly rate, in dollars per hour",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "The flat fee, in dollars, charged for each service visit",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "The total charge, in dollars, for a 1-hour visit",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "The number of hours after which the total charge equals $85",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "In the function $C(h) = 85h + 60$, this is a linear function of the form $f(x) = mx + b$, where $m$ is the rate of change (slope) and $b$ is the initial value (y-intercept). The coefficient $85$ is multiplied by $h$ (the number of hours), so it represents the cost per hour: $\\$85$ per hour. The constant $60$ is added regardless of the number of hours worked — it is the value of $C$ when $h = 0$, meaning it is the charge even before any hours are worked. This is the flat fee charged for each service visit: $C(0) = 85(0) + 60 = \\$60$.",
+  "distractorRationale": {
+    "A": "Confuses the constant term with the slope: reads $60$ as the hourly rate rather than $85$, which is the coefficient of $h$.",
+    "B": "Correct: $60$ is the y-intercept, representing the flat fee charged regardless of hours worked.",
+    "C": "Evaluates $C(1) = 85(1) + 60 = 145$, not 60; confuses the y-intercept with the value of the function at $h = 1$.",
+    "D": "Attempts to solve $85h = 60 \\Rightarrow h \\approx 0.71$, misreading the constant as representing a time value rather than a dollar amount."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b1c2d3e4-f5a6-7890-bcde-f01234567890"
+  }
+}

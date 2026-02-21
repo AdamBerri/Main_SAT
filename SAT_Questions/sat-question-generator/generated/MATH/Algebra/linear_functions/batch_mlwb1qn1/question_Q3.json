@@ -1,0 +1,53 @@
+{
+  "id": "e5b8d2f4-91a3-4c7e-b6d9-2f4a6c8e0b1d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.2,
+    "computational": 1
+  },
+  "stem": "A fitness studio charges members according to the function $F(m) = 30m + 50$, where $F(m)$ is the total amount paid, in dollars, after $m$ months of membership. How much will a member have paid in total after 4 months?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\$120$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$\\$150$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\$170$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$\\$200$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Substitute $m = 4$ into $F(m) = 30m + 50$: $F(4) = 30(4) + 50 = 120 + 50 = 170$. After 4 months, the member will have paid a total of $\\$170$.",
+  "distractorRationale": {
+    "A": "Computes only the variable portion $30 \\times 4 = 120$, forgetting to add the initial fee of $50$.",
+    "B": "Adds the monthly rate and the flat fee before multiplying: $(30 + 50) \\times \\frac{4}{\\text{something}}$; specifically, computes $30 \\times 4 = 120$ and then adds only $30$ instead of $50$: $120 + 30 = 150$.",
+    "D": "Uses $m = 5$ instead of $m = 4$: $30(5) + 50 = 150 + 50 = 200$, an off-by-one substitution error."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3a4b5c6-d7e8-9f0a-1b2c-3d4e5f6a7b8c"
+  }
+}

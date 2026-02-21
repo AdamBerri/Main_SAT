@@ -1,0 +1,54 @@
+{
+  "id": "e5f9a4b3-a6d7-4f2b-b081-3e4f5a6b7c82",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.8,
+    "procedural": 2.2,
+    "computational": 1.9
+  },
+  "stem": "An online bookstore charges a fixed shipping fee plus a per-book rate. The total shipping cost $S$, in dollars, for ordering $n$ books is given by $S(n) = 1.50n + 4$. A customer orders 6 books. What is the total shipping cost, in dollars, for this order?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\$9.00$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$\\$10.00$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\$13.00$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$\\$33.00$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "To find the total shipping cost for 6 books, substitute $n = 6$ into the function $S(n) = 1.50n + 4$:\n\n$$S(6) = 1.50(6) + 4 = 9.00 + 4 = 13.00$$\n\nThe total shipping cost is $\\$13.00$.",
+  "distractorRationale": {
+    "A": "Computes only the per-book portion and ignores the fixed fee: $1.50 \\times 6 = \\$9.00$, forgetting to add the $\\$4$ shipping base.",
+    "B": "Adds the number of books to the fixed fee instead of computing the per-book charge: $6 + 4 = 10$, treating $n$ as a dollar amount to add to the constant.",
+    "C": "Correct: $S(6) = 1.50(6) + 4 = 9.00 + 4 = \\$13.00$.",
+    "D": "Multiplies the per-book rate by the sum of books and fixed fee: $1.50 \\times (6 + 4) = 1.50 \\times 10 = \\$15.00$... alternatively, mistakenly uses $n = 6$ as the per-book rate: $6(4) + 1.50 = \\$25.50$; or adds 6 and 4 then multiplies by 1.50 then adds 4: no — most likely computes $1.50 \\times 6 \\times 4 - 3 = 33$; the simplest single error yielding $\\$33$ is using the fixed fee as the multiplier: $4 \\times 6 + 1.50 \\times (6-1) = 24 + 7.50 = 31.50 \\approx 33$... More directly: student multiplies $n = 6$ by the sum of the coefficients $(1.50 + 4) = 5.50$: $6 \\times 5.50 = \\$33.00$, treating both the rate and fixed fee as per-book charges."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d3e4f5a6-b7c8-9012-defa-123456789012"
+  }
+}

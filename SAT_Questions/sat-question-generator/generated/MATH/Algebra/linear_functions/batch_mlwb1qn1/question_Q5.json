@@ -1,0 +1,53 @@
+{
+  "id": "1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 1,
+    "conceptual": 1,
+    "procedural": 1.1,
+    "computational": 1
+  },
+  "stem": "A bookstore sells used paperbacks at a fixed price per book. Kenji buys several books and pays $\\$5$ for every book he selects, plus a one-time $\\$3$ membership fee. Which of the following functions gives the total amount $T$, in dollars, that Kenji pays for $n$ books?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$T(n) = 3n + 5$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$T(n) = 5n + 3$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$T(n) = 8n$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$T(n) = 5n$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The cost increases by $\\$5$ for each book purchased, so the variable part is $5n$. The $\\$3$ membership fee is a one-time fixed charge that does not depend on the number of books, so it is added as a constant: $T(n) = 5n + 3$. For example, buying 2 books costs $5(2) + 3 = 10 + 3 = \\$13$, which matches paying $\\$5$ per book plus the $\\$3$ fee.",
+  "distractorRationale": {
+    "A": "Swaps the roles of the two numbers, using 3 as the per-book rate and 5 as the flat fee: $T(n) = 3n + 5$.",
+    "C": "Adds the per-book price and the membership fee together and uses their sum as a single per-book rate, treating the flat fee as if it also scales with each book: $T(n) = (5 + 3)n = 8n$.",
+    "D": "Ignores the one-time membership fee entirely and writes only the variable cost: $T(n) = 5n$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "6f7a8b9c-0d1e-4f2a-3b4c-5d6e7f8a9b0c"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "f6a0b5c4-b7e8-4a3c-c192-4f5a6b7c8d93",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2.3,
+    "procedural": 1.8,
+    "computational": 2.2
+  },
+  "stem": "The table below shows the amount of money $A$, in dollars, in a savings account after $w$ weeks, where $A$ is a linear function of $w$.\n\n| $w$ (weeks) | $A$ (dollars) |\n|-------------|---------------|\n| 0           | 120           |\n| 3           | 174           |\n| 6           | 228           |\n\nWhat is the amount of money in the account before any weeks have passed?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$\\$18$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$\\$54$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$\\$120$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$\\$174$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "The question asks for the amount of money before any weeks have passed, which means the value of $A$ when $w = 0$. Reading directly from the table, when $w = 0$, $A = 120$. This is the initial value (y-intercept) of the linear function. The amount in the account before any weeks have passed is $\\$120$.\n\nNote: the rate of change (amount deposited per week) can also be computed as $\\dfrac{174 - 120}{3 - 0} = \\dfrac{54}{3} = \\$18$ per week, but the question asks for the initial amount, not the weekly deposit.",
+  "distractorRationale": {
+    "A": "Computes the weekly rate of change instead of reading the initial value: $\\dfrac{174 - 120}{3 - 0} = \\dfrac{54}{3} = \\$18$ per week, then reports the slope as if it were the starting amount.",
+    "B": "Reports the total increase over the first 3 weeks ($174 - 120 = \\$54$) as the initial amount, confusing the change in $A$ with the starting value.",
+    "C": "Correct: when $w = 0$, the table directly shows $A = \\$120$, which is the initial amount in the account.",
+    "D": "Reads the value at $w = 3$ (the second row of the table) instead of $w = 0$, confusing the first non-zero week entry with the starting value."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e4f5a6b7-c8d9-0123-efab-234567890123"
+  }
+}

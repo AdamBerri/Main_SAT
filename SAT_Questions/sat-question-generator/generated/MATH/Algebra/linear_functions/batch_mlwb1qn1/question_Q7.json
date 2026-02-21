@@ -1,0 +1,54 @@
+{
+  "id": "d4e8f3a2-95c6-4e1a-af70-2d3e4f5a6b71",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 2,
+    "procedural": 2.3,
+    "computational": 2.1
+  },
+  "stem": "The table below shows selected values of the linear function $g$.\n\n| $x$ | $g(x)$ |\n|-----|--------|\n| 2   | 11     |\n| 5   | 20     |\n| 8   | 29     |\n\nWhat is the slope of the graph of $g$ in the $xy$-plane?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$2$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$3$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$5$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$9$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "The slope of a linear function is the constant rate of change, calculated as $m = \\dfrac{\\Delta g}{\\Delta x}$. Using any two rows from the table:\n\nUsing $x = 2$ and $x = 5$: $m = \\dfrac{20 - 11}{5 - 2} = \\dfrac{9}{3} = 3$\n\nWe can verify with $x = 5$ and $x = 8$: $m = \\dfrac{29 - 20}{8 - 5} = \\dfrac{9}{3} = 3$\n\nThe slope is $3$.",
+  "distractorRationale": {
+    "A": "Divides the change in $x$ by the change in $g(x)$ (inverts the slope formula): $\\dfrac{5 - 2}{20 - 11} = \\dfrac{3}{9} \\approx 0.33$, then rounds or confuses; alternatively, takes $\\dfrac{\\Delta x}{2} = \\dfrac{6}{3} = 2$, treating the $x$-spacing as the slope.",
+    "B": "Correct: slope $= \\dfrac{20 - 11}{5 - 2} = \\dfrac{9}{3} = 3$.",
+    "C": "Reads the first $x$-value from the table ($x = 5$ in the middle row) as the slope, confusing the input with the rate of change.",
+    "D": "Computes only the numerator of the slope formula without dividing: $\\Delta g = 20 - 11 = 9$, treating the raw change in output as the slope."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "c2d3e4f5-a6b7-8901-cdef-012345678901"
+  }
+}

@@ -6,7 +6,7 @@
  * Pure file I/O and math. No LLM calls. Uses only Node.js builtins.
  */
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'fs';
 import { join, dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -154,6 +154,7 @@ function ensureDir(p) { mkdirSync(p, { recursive: true }); }
 function clamp(v) { return Math.max(1, Math.min(5, +v.toFixed(1))); }
 
 function qStart(diffLevel) { return (diffLevel - 1) * 5 + 1; }
+function qStartBatch(diffLevel, n) { return (diffLevel - 1) * n + 1; }
 
 function makeDiffParams(level, idx, section) {
   const [c, p, x] = SUB_OFFSETS[idx % 5];
@@ -742,6 +743,318 @@ function handleSummary(args) {
 }
 
 // ═══════════════════════════════════════════════════════════════
+// prep-batch <topic> [count-per-difficulty] [version]
+// ═══════════════════════════════════════════════════════════════
+
+function handlePrepBatch(args) {
+  const topic = parseTopic(args[0]);
+  const countPerDiff = parseInt(args[1] || '5', 10);
+  const version = args[2] || resolveVersion(topic);
+  const batchId = Date.now().toString(36);
+  const dir = pDir(topic);
+  const outDir = join(BASE_DIR, 'generated', topic.section, topic.domain, topic.subtopic, `batch_${batchId}`);
+  const tmp = tmpD(topic);
+
+  ensureDir(outDir);
+  ensureDir(tmp);
+
+  const promptPath = join(dir, `prompt_v${version}.md`);
+  if (!existsSync(promptPath)) {
+    console.error(`Prompt not found: ${promptPath}`);
+    process.exit(1);
+  }
+  const promptText = readFileSync(promptPath, 'utf-8');
+
+  const sPath = schemaFile(topic.section);
+  if (!existsSync(sPath)) {
+    console.error(`Schema not found: ${sPath}`);
+    process.exit(1);
+  }
+  const schema = readFileSync(sPath, 'utf-8');
+
+  const contextFiles = [];
+
+  for (let d = 1; d <= 5; d++) {
+    const start = qStartBatch(d, countPerDiff);
+    const questions = [];
+    for (let i = 0; i < countPerDiff; i++) {
+      const qNum = start + i;
+      const params = makeDiffParams(d, i, topic.section);
+      const diffBlock = fmtDiffBlock(params, topic.section);
+      const diffJSON = JSON.stringify(params);
+      questions.push(`### Q${qNum} -> Write to: ${outDir}/question_Q${qNum}.json
+Difficulty parameters (use in the JSON difficulty field): ${diffJSON}
+
+${diffBlock}`);
+    }
+
+    const promptForLevel = promptText.replace(
+      '{DIFFICULTY_DESCRIPTION}',
+      `[Use the specific DIFFICULTY CALIBRATION from each question slot below]`
+    );
+
+    const content = `# Batch Generation - Difficulty Level ${d} (Questions Q${start}-Q${start + countPerDiff - 1})
+
+## Your Role
+${SYSTEM_PROMPTS[topic.section]}
+
+## Generation Prompt
+${promptForLevel}
+
+## Topic
+- Section: ${topic.section}
+- Domain: ${topic.domain}
+- Subtopic: ${topic.subtopic}
+
+## Output Schema
+\`\`\`json
+${schema}
+\`\`\`
+
+## Required Field Values for Every Question
+- topic.section: "${topic.section}"
+- topic.domain: "${topic.domain}"
+- topic.subtopic: "${topic.subtopic}"
+- metadata.promptVersion: "${version}"
+- metadata.modelUsed: "claude-sonnet-4-6"
+- metadata.generatedAt: current ISO datetime
+- id: unique UUID v4
+- metadata.generationId: unique UUID v4
+- Exactly one choice must have isCorrect: true
+- correctAnswer must match the label of the correct choice
+${topic.section === 'MATH' ? '- hasImage: false (unless the question genuinely requires a figure)\n- requiresCalculator: set appropriately\n- answerType: "multiple_choice"' : ''}
+
+## Questions to Generate (${countPerDiff} total)
+
+Generate ${countPerDiff} unique, distinct SAT questions. Write each as a SEPARATE valid JSON file to the path shown.
+
+${questions.join('\n\n')}
+
+## Important
+- Output ONLY valid JSON in each file, no markdown, no explanation
+- Each question must be completely different in scenario/context
+- All JSON string values must be properly escaped
+`;
+
+    const filePath = join(tmp, `gen_d${d}.md`);
+    writeFileSync(filePath, content);
+    contextFiles.push(filePath);
+  }
+
+  out({ batchId, prepared: 5, totalQuestions: countPerDiff * 5, countPerDiff, outputDir: outDir, contextFiles, version });
+}
+
+// ═══════════════════════════════════════════════════════════════
+// prep-batch-eval <topic> <batchId> [count-per-difficulty] [version]
+// ═══════════════════════════════════════════════════════════════
+
+function handlePrepBatchEval(args) {
+  const topic = parseTopic(args[0]);
+  const batchId = args[1];
+  const countPerDiff = parseInt(args[2] || '5', 10);
+  const version = args[3] || resolveVersion(topic);
+  const dir = pDir(topic);
+  const outDir = join(BASE_DIR, 'generated', topic.section, topic.domain, topic.subtopic, `batch_${batchId}`);
+  const tmp = tmpD(topic);
+
+  ensureDir(tmp);
+
+  const promptPath = join(dir, `prompt_v${version}.md`);
+  const promptText = existsSync(promptPath) ? readFileSync(promptPath, 'utf-8') : '(prompt not available)';
+
+  const isGrammar = topic.section === 'READING' && topic.domain === 'Standard_English_Conventions';
+
+  const stdDims = ['answer_validity', 'faithfulness', 'distractor_quality', 'difficulty_accuracy', 'frontend_convertibility'];
+  const allDims = [...stdDims];
+  if (isGrammar) allDims.push('grammar_authenticity');
+
+  let dimText = '';
+  for (const dim of allDims) {
+    const w = WEIGHTS[dim];
+    const critical = CRITICAL_DIMS.includes(dim) ? ' (CRITICAL - must score >= 3.5)' : '';
+    dimText += `### ${dim} (weight: ${w}${critical})\n`;
+    for (let s = 1; s <= 5; s++) {
+      dimText += `- ${s}: ${ANCHOR_TEXT[dim][s]}\n`;
+    }
+    dimText += '\n';
+  }
+
+  dimText += `### image_quality (weight: 1.0) — ONLY evaluate if the question has hasImage: true\n`;
+  for (let s = 1; s <= 5; s++) {
+    dimText += `- ${s}: ${ANCHOR_TEXT.image_quality[s]}\n`;
+  }
+  dimText += '\n';
+
+  let totalQuestions = 0;
+  const contextFiles = [];
+
+  for (let d = 1; d <= 5; d++) {
+    const start = qStartBatch(d, countPerDiff);
+    let questionsBlock = '';
+    let qCount = 0;
+
+    for (let i = 0; i < countPerDiff; i++) {
+      const qNum = start + i;
+      const qPath = join(outDir, `question_Q${qNum}.json`);
+      if (!existsSync(qPath)) {
+        questionsBlock += `### Q${qNum}\n(MISSING - file not found at ${qPath})\n\n`;
+        continue;
+      }
+      const qJSON = readFileSync(qPath, 'utf-8');
+      questionsBlock += `### Q${qNum}\n\`\`\`json\n${qJSON}\n\`\`\`\n\n`;
+      qCount++;
+    }
+    totalQuestions += qCount;
+
+    const content = `# Evaluation Context - Difficulty Level ${d} (Questions Q${start}-Q${start + countPerDiff - 1})
+
+You are evaluating SAT question quality. Score each question on every applicable dimension.
+
+## Scoring Scale
+Score each dimension from 1 to 7:
+- 1-5: Use the anchor descriptions below as calibration points
+- 6: Exceptional quality, exceeds all anchor-5 criteria
+- 7: Perfect, publication-ready, indistinguishable from official SAT
+
+## Scoring Dimensions and Anchors
+
+${dimText}
+
+## Pass Criteria
+- Weighted average score >= ${PASS_THRESHOLD}
+- Both critical dimensions (answer_validity, faithfulness) must individually score >= ${PASS_THRESHOLD}
+
+## Generation Prompt Used (for faithfulness reference)
+\`\`\`
+${promptText}
+\`\`\`
+
+## Questions to Evaluate
+
+${questionsBlock}
+
+## Output Instructions
+Write your scores as JSON to: ${join(tmp, `scores_d${d}.json`)}
+
+Format:
+\`\`\`json
+{
+  "Q${start}": {
+    "answer_validity": <score>,
+    "faithfulness": <score>,
+    "distractor_quality": <score>,
+    "difficulty_accuracy": <score>,
+    "frontend_convertibility": <score>
+  },
+  "Q${start + 1}": { ... },
+  ...
+}
+\`\`\`
+
+If a question has hasImage: true, also include "image_quality": <score>.
+${isGrammar ? 'Include "grammar_authenticity": <score> for all questions (Standard English Conventions topic).' : ''}
+
+Output ONLY the JSON file. No other text or explanation.
+`;
+
+    const filePath = join(tmp, `eval_d${d}.md`);
+    writeFileSync(filePath, content);
+    contextFiles.push(filePath);
+  }
+
+  out({ prepared: 5, questions: totalQuestions, contextFiles });
+}
+
+// ═══════════════════════════════════════════════════════════════
+// finalize-batch <topic> <batchId> [count-per-difficulty]
+// ═══════════════════════════════════════════════════════════════
+
+function handleFinalizeBatch(args) {
+  const topic = parseTopic(args[0]);
+  const batchId = args[1];
+  const countPerDiff = parseInt(args[2] || '5', 10);
+  const outDir = join(BASE_DIR, 'generated', topic.section, topic.domain, topic.subtopic, `batch_${batchId}`);
+  const parentDir = join(BASE_DIR, 'generated', topic.section, topic.domain, topic.subtopic);
+  const tmp = tmpD(topic);
+
+  if (!existsSync(outDir)) {
+    console.error(`Batch directory not found: ${outDir}`);
+    process.exit(1);
+  }
+
+  // Read all score files
+  const allScores = {};
+  for (let d = 1; d <= 5; d++) {
+    const scorePath = join(tmp, `scores_d${d}.json`);
+    if (!existsSync(scorePath)) {
+      console.error(`Score file missing: ${scorePath}`);
+      process.exit(1);
+    }
+    Object.assign(allScores, readJSON(scorePath));
+  }
+
+  const results = { passed: 0, failed: 0, total: 0, errors: 0 };
+  const totalQ = countPerDiff * 5;
+
+  for (let qNum = 1; qNum <= totalQ; qNum++) {
+    const qKey = `Q${qNum}`;
+    const filePath = join(outDir, `question_${qKey}.json`);
+
+    if (!existsSync(filePath)) {
+      results.errors++;
+      continue;
+    }
+
+    try {
+      const question = readJSON(filePath);
+      const scores = allScores[qKey];
+
+      if (!scores) {
+        results.errors++;
+        continue;
+      }
+
+      let weightedSum = 0;
+      let totalWeight = 0;
+      let criticalPass = true;
+
+      for (const [dim, score] of Object.entries(scores)) {
+        const w = WEIGHTS[dim];
+        if (w === undefined) continue;
+        weightedSum += score * w;
+        totalWeight += w;
+        if (CRITICAL_DIMS.includes(dim) && score < PASS_THRESHOLD) {
+          criticalPass = false;
+        }
+      }
+
+      const weightedAvg = totalWeight > 0 ? +(weightedSum / totalWeight).toFixed(2) : 0;
+      const pass = criticalPass && weightedAvg >= PASS_THRESHOLD;
+      const status = pass ? 'pass' : 'fail';
+
+      question._evaluation = {
+        status,
+        score: weightedAvg,
+        evaluatedAt: new Date().toISOString(),
+      };
+
+      const uuid = question.id || `unknown_${qNum}`;
+      const newFilename = `${uuid}_${status}_${weightedAvg.toFixed(2)}.json`;
+      writeJSON(join(parentDir, newFilename), question);
+
+      results.total++;
+      if (pass) results.passed++;
+      else results.failed++;
+    } catch (e) {
+      results.errors++;
+    }
+  }
+
+  results.passRate = results.total > 0 ? +(results.passed / results.total).toFixed(2) : 0;
+  out(results);
+}
+
+// ═══════════════════════════════════════════════════════════════
 // Helpers
 // ═══════════════════════════════════════════════════════════════
 
@@ -778,9 +1091,12 @@ switch (cmd) {
   case 'compute-metrics': handleComputeMetrics(rest); break;
   case 'update-state': handleUpdateState(rest); break;
   case 'summary': handleSummary(rest); break;
+  case 'prep-batch': handlePrepBatch(rest); break;
+  case 'prep-batch-eval': handlePrepBatchEval(rest); break;
+  case 'finalize-batch': handleFinalizeBatch(rest); break;
   default:
     console.error('Usage: pream-cc-helper.mjs <command> <topic> [args]');
-    console.error('Commands: init, prep-gen, prep-eval, compute-metrics, update-state, summary');
+    console.error('Commands: init, prep-gen, prep-eval, compute-metrics, update-state, summary, prep-batch, prep-batch-eval, finalize-batch');
     console.error('Topic format: SECTION/Domain/subtopic (e.g., MATH/Geometry_Trig/right_triangles)');
     process.exit(1);
 }

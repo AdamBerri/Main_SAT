@@ -1,0 +1,54 @@
+{
+  "id": "a7b1c6d5-c8f9-4b4d-d203-5a6b7c8d9e04",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 2,
+    "conceptual": 1.9,
+    "procedural": 2.1,
+    "computational": 1.8
+  },
+  "stem": "A car rental company charges customers based on the number of miles driven. The daily rental cost starts at $\\$30$ and increases by $\\$0.20$ for each mile driven. Which of the following functions gives the total daily rental cost $C$, in dollars, for driving $m$ miles in one day?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$C(m) = 30m + 0.20$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$C(m) = 0.20m - 30$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$C(m) = 30 - 0.20m$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$C(m) = 0.20m + 30$",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "The problem describes a linear relationship with two components:\n- A starting (fixed) cost of $\\$30$, which is charged regardless of miles driven. This is the y-intercept: $b = 30$.\n- A per-mile rate of $\\$0.20$, which is multiplied by the number of miles $m$. This is the slope: $m_{\\text{rate}} = 0.20$.\n\nThe total cost is the fixed amount plus the per-mile charge:\n$$C(m) = 0.20m + 30$$\nThis matches choice D.",
+  "distractorRationale": {
+    "A": "Swaps the roles of the slope and y-intercept: places $30$ (the fixed cost) as the coefficient of $m$ and $0.20$ (the per-mile rate) as the constant, giving $C(m) = 30m + 0.20$.",
+    "B": "Uses subtraction instead of addition for the fixed cost, producing a function that decreases from zero (no starting charge) and subtracts the base fee: $C(m) = 0.20m - 30$, which would give a negative cost for small values of $m$.",
+    "C": "Incorrectly models the cost as decreasing with more miles driven: $C(m) = 30 - 0.20m$, subtracting the per-mile charge from the fixed cost rather than adding it.",
+    "D": "Correct: the fixed daily cost $\\$30$ is the constant term and the per-mile rate $\\$0.20$ is the coefficient of $m$, giving $C(m) = 0.20m + 30$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f5a6b7c8-d9e0-1234-fabc-345678901234"
+  }
+}

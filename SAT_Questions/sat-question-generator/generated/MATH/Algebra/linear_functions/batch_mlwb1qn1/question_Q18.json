@@ -1,0 +1,54 @@
+{
+  "id": "e7b3d6a2-95c8-4f1e-b074-4a5d8e3c7f21",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.8,
+    "procedural": 4.2,
+    "computational": 3.9
+  },
+  "stem": "A small company produces and sells handmade candles. The company's total revenue from selling $u$ candles is given by $R(u) = 45u$ dollars, and its total cost is given by $C(u) = 28u + 510$ dollars. If the company produces and sells 50 candles in a month, what is the profit, in dollars, for that month?\n\n(Profit = Total Revenue $-$ Total Cost)",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$850",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$30",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$340",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$510",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Profit is defined as Total Revenue minus Total Cost.\n\nStep 1: Identify the break-even point to verify the problem makes sense. Set $R(u) = C(u)$:\n$$45u = 28u + 510 \\implies 17u = 510 \\implies u = 30 \\text{ candles}$$\nSince 50 > 30, the company is profitable at 50 units.\n\nStep 2: Calculate profit at $u = 50$:\n$$\\text{Profit} = R(50) - C(50) = 45(50) - [28(50) + 510]$$\n$$= 2250 - [1400 + 510]$$\n$$= 2250 - 1910$$\n$$= 340$$\n\nThe profit is $\\$340$.",
+  "distractorRationale": {
+    "A": "Ignores the fixed cost entirely: computes profit as the per-unit margin times quantity, $(45 - 28) \\times 50 = 17 \\times 50 = 850$, omitting the $510 fixed cost.",
+    "B": "Reports the break-even quantity instead of the profit: correctly finds that break-even occurs at $u = 30$ candles but answers 30 as if it were the profit in dollars.",
+    "C": "Correct answer: evaluates $R(50) - C(50) = 2250 - 1910 = 340$.",
+    "D": "Reports the fixed cost as the profit: reads $510$ directly from the cost function $C(u) = 28u + 510$ and gives it as the answer without performing any subtraction."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f1c6b4d8-2e9a-4753-a085-9b3f7c1e4d62"
+  }
+}

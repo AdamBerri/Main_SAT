@@ -1,0 +1,54 @@
+{
+  "id": "a3f7e2c1-84b6-4d9e-b021-6f3c2a8e5d47",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.2,
+    "procedural": 4.0,
+    "computational": 4.3
+  },
+  "stem": "A municipal water utility charges each household a fixed monthly connection fee plus a rate per unit of water consumed. In March, one household used 20 units of water and paid a total of $55. In July, the same household used 45 units of water and paid a total of $105. What is the fixed monthly connection fee, in dollars?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$15",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$2",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$25",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$55",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "Let $C(u) = ru + b$, where $r$ is the per-unit rate and $b$ is the fixed connection fee.\n\nStep 1: Find the per-unit rate using the two data points $(20, 55)$ and $(45, 105)$:\n$$r = \\frac{105 - 55}{45 - 20} = \\frac{50}{25} = 2 \\text{ dollars per unit}$$\n\nStep 2: Substitute back to find the connection fee using the March data:\n$$55 = 2(20) + b$$\n$$55 = 40 + b$$\n$$b = 15$$\n\nThe fixed monthly connection fee is $\\$15$.",
+  "distractorRationale": {
+    "A": "Correct answer: computes slope as (105-55)/(45-20) = $2/unit, then solves 55 = 2(20) + b to get b = $15.",
+    "B": "Confuses the per-unit rate with the connection fee: correctly computes the rate as $2 per unit but reports the rate instead of solving for the fixed fee.",
+    "C": "Makes an arithmetic error when computing the variable cost: uses $2 \\times 20 = 30$ instead of $40$, yielding $b = 55 - 30 = 25$.",
+    "D": "Uses the first month's total bill ($55) directly as the connection fee, without recognizing that $55 includes both the fixed fee and the variable cost for 20 units."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "b9d4f1e7-3a2c-4085-9e61-7f8d3b6c2a94"
+  }
+}
