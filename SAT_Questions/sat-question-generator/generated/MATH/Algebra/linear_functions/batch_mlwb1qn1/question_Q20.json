@@ -1,0 +1,54 @@
+{
+  "id": "3c9f1d7e-6a4b-4e82-b059-8f2c5a4d9e31",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 3.9,
+    "procedural": 4.1,
+    "computational": 3.8
+  },
+  "stem": "In the $xy$-plane, line $f$ passes through the points $(-2, 7)$ and $(4, -5)$. Line $g$ passes through the points $(0, -9)$ and $(3, 3)$. What is the $x$-coordinate of the point where line $f$ and line $g$ intersect?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-2$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$2$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$-1$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$4$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Step 1: Find the equation of line $f$ through $(-2, 7)$ and $(4, -5)$.\n$$\\text{slope} = \\frac{-5 - 7}{4 - (-2)} = \\frac{-12}{6} = -2$$\nUsing point $(-2, 7)$: $7 = -2(-2) + b \\implies 7 = 4 + b \\implies b = 3$\nSo $f(x) = -2x + 3$.\n\nStep 2: Find the equation of line $g$ through $(0, -9)$ and $(3, 3)$.\n$$\\text{slope} = \\frac{3 - (-9)}{3 - 0} = \\frac{12}{3} = 4$$\nThe $y$-intercept is $-9$ (given by the point $(0, -9)$), so $g(x) = 4x - 9$.\n\nStep 3: Set $f(x) = g(x)$ and solve:\n$$-2x + 3 = 4x - 9$$\n$$12 = 6x$$\n$$x = 2$$\n\nThe $x$-coordinate of the intersection is $2$.",
+  "distractorRationale": {
+    "A": "Reports the slope of line $f$ as the answer: correctly computes the slope of $f$ as $-2$ but gives $-2$ as the final answer instead of using it to build and solve the system of equations.",
+    "B": "Correct answer: finds $f(x) = -2x + 3$ and $g(x) = 4x - 9$, then solves $-2x + 3 = 4x - 9$ to get $x = 2$.",
+    "C": "Finds the $y$-coordinate of the intersection instead of the $x$-coordinate: correctly solves $x = 2$ but then evaluates $f(2) = -2(2) + 3 = -1$ and reports $-1$ as the answer.",
+    "D": "Reports the slope of line $g$ as the answer: correctly computes the slope of $g$ as $4$ but gives $4$ as the final answer instead of continuing to find the intersection."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "9e2d7f4c-1b6a-4c58-b037-5a8f3d2c6e19"
+  }
+}

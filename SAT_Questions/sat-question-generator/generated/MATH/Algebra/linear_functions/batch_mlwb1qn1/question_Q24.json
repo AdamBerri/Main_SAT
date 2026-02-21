@@ -1,0 +1,54 @@
+{
+  "id": "d25f8e14-63b7-4c0a-9d5e-1a7f3b092c46",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 4.8,
+    "computational": 5
+  },
+  "stem": "At time $t = 0$ hours, Tank A contains 60 liters of water and drains at a constant rate. At $t = 3$ hours, Tank A contains 48 liters. Tank B is empty at $t = 0$ and fills at a constant rate; at $t = 2$ hours, Tank B contains 12 liters. After how many hours will the two tanks contain the same volume of water?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$12$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$15$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$6$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$30$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Step 1: Find Tank A's drain rate.**\nAt $t = 0$: 60 liters. At $t = 3$: 48 liters.\n$$\\text{Rate}_A = \\frac{48 - 60}{3 - 0} = \\frac{-12}{3} = -4 \\text{ liters/hr}$$\nSo $f(t) = 60 - 4t$.\n\n**Step 2: Find Tank B's fill rate.**\nAt $t = 0$: 0 liters. At $t = 2$: 12 liters.\n$$\\text{Rate}_B = \\frac{12 - 0}{2 - 0} = 6 \\text{ liters/hr}$$\nSo $g(t) = 6t$.\n\n**Step 3: Set the volumes equal.**\n$$60 - 4t = 6t$$\n$$60 = 10t$$\n$$t = 6$$\n\n**Verification:** $f(6) = 60 - 24 = 36$ liters; $g(6) = 36$ liters. ✓",
+  "distractorRationale": {
+    "A": "Sets up the equation so that the difference between the two volumes equals 60 (the initial volume of Tank A) instead of 0: solves g(t) - f(t) = 60, i.e., 6t - (60 - 4t) = 60, giving 10t - 60 = 60, 10t = 120, and t = 12.",
+    "B": "Solves for when Tank A is empty rather than when both tanks hold equal volumes: sets 60 - 4t = 0 giving 4t = 60 and t = 15.",
+    "C": "Correct: derives Tank A's drain rate as 4 liters/hr giving f(t) = 60 - 4t, derives Tank B's fill rate as 6 liters/hr giving g(t) = 6t, then solves 60 - 4t = 6t to get t = 6.",
+    "D": "Treats Tank A's drain rate as positive (reads the rate of change as +4 instead of -4): writes f(t) = 60 + 4t; sets 60 + 4t = 6t giving 60 = 2t and t = 30."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3a9c6b1-2e47-4d80-8c5f-0b7e1d924a53"
+  }
+}

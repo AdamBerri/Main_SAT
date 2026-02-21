@@ -1,0 +1,54 @@
+{
+  "id": "d6a0f3b4-15e9-4c32-e854-3i6h1f4d0a78",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3.3,
+    "procedural": 2.8,
+    "computational": 3.2
+  },
+  "stem": "A scientist records the temperature $T$ (in degrees Celsius) of a cooling solution at two different times $t$ (in minutes) after the start of an experiment. The data are shown in the table below.\n\n| $t$ (minutes) | $T$ (°C) |\n|---------------|----------|\n| 5             | 62       |\n| 15            | 42       |\n\nAssuming the temperature decreases at a constant rate, what is the temperature, in degrees Celsius, at $t = 0$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$12$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$52$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$62$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$72$",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Step 1: Find the rate of temperature change (slope).**\n$$m = \\frac{42 - 62}{15 - 5} = \\frac{-20}{10} = -2 \\text{ °C per minute}$$\n\n**Step 2: Write the linear function and find $T(0)$.**\nUsing point-slope form with $(5, 62)$:\n$$T = -2t + b$$\n$$62 = -2(5) + b = -10 + b \\implies b = 72$$\n\nSo $T(t) = -2t + 72$, and at $t = 0$:\n$$T(0) = 72 \\text{ °C}$$\n\nThe temperature at the start of the experiment was $\\mathbf{72}$ °C.",
+  "distractorRationale": {
+    "A": "Extrapolates backward from $t = 15$ in the wrong direction, adding the change rather than reversing it: $42 + (-2)(15) = 42 - 30 = 12$.",
+    "B": "Extrapolates from $t = 5$ in the wrong direction by subtracting rather than adding back 5 minutes of cooling: $62 + (-2)(5) = 62 - 10 = 52$.",
+    "C": "Reads the temperature recorded at $t = 5$ as the initial temperature at $t = 0$, confusing the first data point with the starting condition.",
+    "D": "Correct. Slope $= -2$ °C/min; using $T = -2t + b$ with $(5, 62)$ gives $b = 72$, so $T(0) = 72$ °C."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "g4h5i6j7-k8l9-0123-defg-hi4567890123"
+  }
+}

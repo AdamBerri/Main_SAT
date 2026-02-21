@@ -1,0 +1,54 @@
+{
+  "id": "b4e8d1f2-93c7-4a10-c632-1g4f9d2b8e56",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 3,
+    "procedural": 3.3,
+    "computational": 3.1
+  },
+  "stem": "A catering company charges a flat setup fee plus a fixed cost per guest. The function $C(n)$, where $n$ is the number of guests, gives the total charge in dollars. The table below shows two values of $C(n)$.\n\n| $n$ (guests) | $C(n)$ (dollars) |\n|--------------|------------------|\n| 20           | 580              |\n| 50           | 940              |\n\nFor how many guests will the total charge be $\\$1{,}120$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$45$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$55$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$65$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$93$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Step 1: Find the cost per guest (slope).**\n$$m = \\frac{940 - 580}{50 - 20} = \\frac{360}{30} = 12 \\text{ dollars per guest}$$\n\n**Step 2: Find the flat setup fee (y-intercept).**\nUsing $C(n) = 12n + b$ with the point $(20, 580)$:\n$$580 = 12(20) + b = 240 + b \\implies b = 340$$\n\nSo $C(n) = 12n + 340$.\n\n**Step 3: Solve for $n$ when $C(n) = 1120$.**\n$$1120 = 12n + 340$$\n$$12n = 780$$\n$$n = 65$$\n\nThe total charge will be $\\$1{,}120$ for $\\mathbf{65}$ guests.",
+  "distractorRationale": {
+    "A": "Uses the first y-value as the flat fee instead of solving for it: sets $C(n) = 12n + 580$, then solves $1120 = 12n + 580 \\Rightarrow n = 45$.",
+    "B": "Makes an arithmetic error computing $12 \\times 20 = 120$ instead of $240$, getting $b = 580 - 120 = 460$, then solves $1120 = 12n + 460 \\Rightarrow n = 55$.",
+    "C": "Correct. $C(n) = 12n + 340$; solving $1120 = 12n + 340$ gives $n = 65$.",
+    "D": "Ignores the flat setup fee entirely, dividing the total charge by the cost per guest: $1120 \\div 12 \\approx 93$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e2f3g4h5-i6j7-8901-bcde-fg2345678901"
+  }
+}

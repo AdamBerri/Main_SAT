@@ -1,0 +1,54 @@
+{
+  "id": "c5f9e2a3-04d8-4b21-d743-2h5g0e3c9f67",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.8,
+    "procedural": 3.2,
+    "computational": 2.9
+  },
+  "stem": "Two friends, Alex and Jordan, are each saving money toward a goal. Alex currently has $\\$50$ saved and adds $\\$15$ to savings each week. Jordan currently has $\\$230$ saved and adds $\\$3$ to savings each week. After how many weeks will Alex and Jordan have saved the same total amount?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$10$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$12$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$15$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$60$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "Let $w$ be the number of weeks.\n\nAlex's total savings: $A(w) = 50 + 15w$\n\nJordan's total savings: $J(w) = 230 + 3w$\n\nSet the two functions equal and solve for $w$:\n$$50 + 15w = 230 + 3w$$\n$$12w = 180$$\n$$w = 15$$\n\nAfter $\\mathbf{15}$ weeks, both Alex and Jordan will have saved the same amount.\n\n**Check:** Alex: $50 + 15(15) = 50 + 225 = \\$275$. Jordan: $230 + 3(15) = 230 + 45 = \\$275$. Confirmed.",
+  "distractorRationale": {
+    "A": "Divides the difference in starting amounts by the sum of the weekly savings rates instead of the difference: $\\dfrac{230 - 50}{15 + 3} = \\dfrac{180}{18} = 10$.",
+    "B": "Divides the difference in starting amounts by Alex's weekly savings rate alone instead of the difference of the rates: $\\dfrac{180}{15} = 12$.",
+    "C": "Correct. Setting $50 + 15w = 230 + 3w$ and solving gives $12w = 180$, so $w = 15$.",
+    "D": "Divides the difference in starting amounts by Jordan's weekly savings rate alone instead of the difference of the rates: $\\dfrac{180}{3} = 60$."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "f3g4h5i6-j7k8-9012-cdef-gh3456789012"
+  }
+}

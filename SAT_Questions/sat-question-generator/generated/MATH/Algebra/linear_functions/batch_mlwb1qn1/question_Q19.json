@@ -1,0 +1,54 @@
+{
+  "id": "84a2f9c5-3d7e-4b61-a018-5c9e3f2d7a83",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 4,
+    "conceptual": 4.3,
+    "procedural": 3.8,
+    "computational": 4.2
+  },
+  "stem": "A fitness center offers two membership plans. Plan A requires a one-time initiation fee plus a fixed monthly dues payment. A member on Plan A paid a total of $190 after 1 month and a total of $390 after 5 months. Plan B has no initiation fee and charges $70 per month. After how many months will the total amount paid under Plan A equal the total amount paid under Plan B?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "1",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "7",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "10",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "5",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "Step 1: Find Plan A's monthly dues (slope) using the two data points $(1, 190)$ and $(5, 390)$:\n$$\\text{Monthly dues} = \\frac{390 - 190}{5 - 1} = \\frac{200}{4} = 50 \\text{ dollars per month}$$\n\nStep 2: Find Plan A's initiation fee (y-intercept):\n$$190 = 50(1) + b \\implies b = 140$$\n\nSo Plan A's total cost after $m$ months is $A(m) = 50m + 140$.\n\nStep 3: Plan B's total cost is $B(m) = 70m$. Set the two equal:\n$$50m + 140 = 70m$$\n$$140 = 20m$$\n$$m = 7$$\n\nAfter 7 months, the total cost under both plans is equal: $B(7) = 70(7) = \\$490$ and $A(7) = 50(7) + 140 = 350 + 140 = \\$490$.",
+  "distractorRationale": {
+    "A": "Uses the number of months from the first data point as the answer: reads that the first data point is at month 1 and reports 1 as the answer without solving the equation.",
+    "B": "Correct answer: finds Plan A's slope as $200/4 = 50$, initiation fee as $140$, then solves $50m + 140 = 70m$ to get $m = 7$.",
+    "C": "Makes an arithmetic error when solving $140 = 20m$: computes $140 \\div 20 = 10$ instead of 7 (confuses $140 \\div 14 = 10$ with $140 \\div 20$).",
+    "D": "Uses the number of months from the second data point as the answer: reads that the second data point is at month 5 and reports 5 as the answer without solving the equation."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "71e5c8a4-9b2d-4f36-b063-6d8a1c3e5f97"
+  }
+}

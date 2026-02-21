@@ -1,0 +1,54 @@
+{
+  "id": "b74e9c03-52a1-4fd8-ae17-6830d9c1f25b",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 5,
+    "procedural": 5,
+    "computational": 5
+  },
+  "stem": "The linear function $f$ is defined so that $f(3) = 2$ and $f(9) = 14$. The linear function $g$ satisfies $g(0) = f(6)$ and has a slope equal to the negative of $f$'s slope. What is the $x$-value where $g(x) = 0$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$4$",
+      "isCorrect": true
+    },
+    {
+      "label": "B",
+      "text": "$7$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$-4$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$5$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "A",
+  "explanation": "**Step 1: Find the slope of $f$.**\n$$m_f = \\frac{14 - 2}{9 - 3} = \\frac{12}{6} = 2$$\n\n**Step 2: Find $f(x)$ explicitly.**\nUsing point $(3, 2)$: $2 = 2(3) + b \\implies b = -4$. So $f(x) = 2x - 4$.\n\n**Step 3: Compute $f(6)$.**\n$$f(6) = 2(6) - 4 = 12 - 4 = 8$$\n\n**Step 4: Write $g(x)$.**\n$g(0) = 8$ means $g$'s $y$-intercept is $8$. $g$'s slope $= -m_f = -2$.\n$$g(x) = -2x + 8$$\n\n**Step 5: Solve $g(x) = 0$.**\n$$-2x + 8 = 0 \\implies 2x = 8 \\implies x = 4$$",
+  "distractorRationale": {
+    "A": "Correct: computes f's slope as 2, finds f(6) = 8, writes g(x) = -2x + 8, then solves -2x + 8 = 0 to get x = 4.",
+    "B": "Uses f(9) = 14 as g's y-intercept instead of computing f(6): writes g(x) = -2x + 14 = 0, giving 2x = 14 and x = 7.",
+    "C": "Correctly computes g(x) = -2x + 8 but uses f's slope (positive 2) instead of its negative: writes g(x) = 2x + 8 = 0, giving x = -4.",
+    "D": "Computes f's slope as (14 - 2)/(9 + 3) = 12/12 = 1 instead of 12/6 = 2; then f(3) = 2 gives 2 = 3 + b so b = -1; f(6) = 6 - 1 = 5; g(x) = -x + 5 = 0 gives x = 5."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "e81b3f27-9c40-4a58-bd6e-7f150c2a4098"
+  }
+}

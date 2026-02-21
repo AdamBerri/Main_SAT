@@ -1,0 +1,54 @@
+{
+  "id": "e7b1a4c5-26f0-4d43-f965-4j7i2g5e1b89",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 3,
+    "conceptual": 2.9,
+    "procedural": 3.1,
+    "computational": 2.8
+  },
+  "stem": "The graph of a linear function $g$ passes through the points $(-1, 9)$ and $(2, 3)$ in the $xy$-plane. What is the $x$-intercept of the graph of $g$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$-1$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$2$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$3.5$",
+      "isCorrect": true
+    },
+    {
+      "label": "D",
+      "text": "$7$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "C",
+  "explanation": "**Step 1: Find the slope using the two given points.**\n$$m = \\frac{3 - 9}{2 - (-1)} = \\frac{-6}{3} = -2$$\n\n**Step 2: Write the equation of the line.**\nUsing point-slope form with $(2, 3)$:\n$$y - 3 = -2(x - 2)$$\n$$y = -2x + 4 + 3 = -2x + 7$$\n\n**Step 3: Find the $x$-intercept by setting $y = 0$.**\n$$0 = -2x + 7$$\n$$2x = 7$$\n$$x = 3.5$$\n\nThe $x$-intercept of the graph of $g$ is $\\mathbf{3.5}$.",
+  "distractorRationale": {
+    "A": "Confuses a given point with the $x$-intercept, reading the $x$-coordinate $-1$ of the point $(-1, 9)$ as the $x$-intercept of the graph.",
+    "B": "Confuses a given point with the $x$-intercept, reading the $x$-coordinate $2$ of the point $(2, 3)$ as the $x$-intercept of the graph.",
+    "C": "Correct. Slope $= -2$; equation $y = -2x + 7$; setting $y = 0$ gives $x = 3.5$.",
+    "D": "Reports the $y$-intercept of the line instead of the $x$-intercept: the $y$-intercept is $7$, but the question asks for the $x$-intercept."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "h5i6j7k8-l9m0-1234-efgh-ij5678901234"
+  }
+}

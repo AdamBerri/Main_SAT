@@ -18,6 +18,7 @@ import {
   Zap,
   BarChart,
   CheckCircle2,
+  Shield,
 } from "lucide-react";
 import {
   captureEvent,
@@ -269,6 +270,18 @@ export default function LandingPage({ onStartPractice }: LandingPageProps) {
                   <CheckCircle2 className="w-4 h-4 text-[var(--grass-dark)]" />
                   <span className="font-body text-xs font-bold text-[var(--ink-black)]">Math (Calc & No Calc)</span>
                 </div>
+              </div>
+            </div>
+
+            {/* Bento 4: Money-Back Guarantee */}
+            <div className="col-span-2 bg-white/50 p-6 rounded-3xl border border-[var(--grass-dark)]/20 flex flex-col sm:flex-row items-center sm:items-start gap-4 shadow-sm hover:shadow-md transition-shadow text-center sm:text-left relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[var(--grass-light)]/20 to-transparent rounded-bl-full group-hover:scale-125 transition-transform duration-500 ease-out" />
+              <div className="w-12 h-12 bg-gradient-to-br from-[var(--grass-light)] to-[var(--grass-dark)] rounded-2xl flex items-center justify-center flex-shrink-0 relative z-10 shadow-sm">
+                <Shield className="w-6 h-6 text-white" />
+              </div>
+              <div className="relative z-10">
+                <h3 className="font-display text-lg font-bold text-[var(--ink-black)] mb-1">Our Ironclad Guarantee</h3>
+                <p className="font-body text-[var(--ink-faded)] text-sm">If you somehow run out of questions, we'll give you your money back. <span className="font-semibold text-[var(--grass-dark)]">No questions asked.</span></p>
               </div>
             </div>
 

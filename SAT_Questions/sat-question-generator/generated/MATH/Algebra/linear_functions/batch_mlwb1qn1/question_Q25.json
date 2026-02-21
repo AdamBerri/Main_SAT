@@ -1,0 +1,54 @@
+{
+  "id": "e47a1c95-8d30-4f62-b1e7-3c0d5a871f29",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.9,
+    "procedural": 5,
+    "computational": 4.8
+  },
+  "stem": "A company offers two annual software licensing plans. Under Plan X, the total annual cost $C$ (in dollars) for $n$ users satisfies $C(3) = 620$ and $C(8) = 820$. Under Plan Y, the total annual cost is $C(n) = 70n + 200$ dollars. For how many users $n$ does Plan Y cost exactly $\\$90$ more per year than Plan X?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$7$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$17$",
+      "isCorrect": false
+    },
+    {
+      "label": "C",
+      "text": "$10$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$13$",
+      "isCorrect": true
+    }
+  ],
+  "correctAnswer": "D",
+  "explanation": "**Step 1: Find the linear function for Plan X.**\n$$m_X = \\frac{820 - 620}{8 - 3} = \\frac{200}{5} = 40$$\nUsing point $(3, 620)$: $620 = 40(3) + b \\implies 620 = 120 + b \\implies b = 500$.\nSo $X(n) = 40n + 500$.\n\n**Step 2: Write Plan Y.**\n$$Y(n) = 70n + 200$$\n\n**Step 3: Set Plan Y exactly $\\$90$ more than Plan X.**\n$$Y(n) - X(n) = 90$$\n$$(70n + 200) - (40n + 500) = 90$$\n$$30n - 300 = 90$$\n$$30n = 390$$\n$$n = 13$$\n\n**Verification:** $X(13) = 40(13) + 500 = 520 + 500 = 1020$; $Y(13) = 70(13) + 200 = 910 + 200 = 1110$; $1110 - 1020 = 90$. ✓",
+  "distractorRationale": {
+    "A": "Sets up the difference in the wrong direction, computing X(n) - Y(n) = 90 instead of Y(n) - X(n) = 90: solves (40n + 500) - (70n + 200) = 90, giving -30n + 300 = 90, -30n = -210, and n = 7.",
+    "B": "Uses the given data point C(3) = 620 as the y-intercept of Plan X instead of computing it: writes X(n) = 40n + 620; then Y(n) - X(n) = 30n - 420 = 90 giving 30n = 510 and n = 17.",
+    "C": "Solves for when both plans cost the same (difference = 0) instead of when the difference is $90: sets Y(n) = X(n), giving 70n + 200 = 40n + 500, 30n = 300, and n = 10.",
+    "D": "Correct: finds Plan X's slope as 40 and y-intercept as 500 giving X(n) = 40n + 500, then solves Y(n) - X(n) = 90, i.e., 30n - 300 = 90, to get n = 13."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "a8e2d5f0-4b71-4c89-9a3e-6c1f0b748d92"
+  }
+}

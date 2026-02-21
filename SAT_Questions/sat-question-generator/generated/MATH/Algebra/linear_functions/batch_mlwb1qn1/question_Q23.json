@@ -1,0 +1,54 @@
+{
+  "id": "c91d4f82-7e53-4a1b-b0c3-8d2e6f047a59",
+  "topic": {
+    "section": "MATH",
+    "domain": "Algebra",
+    "subtopic": "linear_functions"
+  },
+  "difficulty": {
+    "overall": 5,
+    "conceptual": 4.8,
+    "procedural": 5,
+    "computational": 4.9
+  },
+  "stem": "The table below shows two values of the linear function $f$.\n\n| $x$ | $f(x)$ |\n|-----|--------|\n| $1$ | $8$    |\n| $4$ | $17$   |\n\nA second linear function $g$ passes through the point $(3,\\ f(3))$ and has a slope of $-2$. What is the $x$-intercept of $g$?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "$11.5$",
+      "isCorrect": false
+    },
+    {
+      "label": "B",
+      "text": "$10$",
+      "isCorrect": true
+    },
+    {
+      "label": "C",
+      "text": "$7$",
+      "isCorrect": false
+    },
+    {
+      "label": "D",
+      "text": "$-4$",
+      "isCorrect": false
+    }
+  ],
+  "correctAnswer": "B",
+  "explanation": "**Step 1: Find the slope of $f$.**\n$$m_f = \\frac{17 - 8}{4 - 1} = \\frac{9}{3} = 3$$\n\n**Step 2: Find $f(x)$ explicitly.**\nUsing point $(1, 8)$: $8 = 3(1) + b \\implies b = 5$. So $f(x) = 3x + 5$.\n\n**Step 3: Compute $f(3)$.**\n$$f(3) = 3(3) + 5 = 9 + 5 = 14$$\n\n**Step 4: Write $g(x)$.**\n$g$ passes through $(3, 14)$ with slope $-2$:\n$$14 = -2(3) + b \\implies 14 = -6 + b \\implies b = 20$$\n$$g(x) = -2x + 20$$\n\n**Step 5: Find the $x$-intercept of $g$.**\n$$0 = -2x + 20 \\implies 2x = 20 \\implies x = 10$$",
+  "distractorRationale": {
+    "A": "Uses the nearest table value f(4) = 17 as f(3): writes g through (3, 17) with slope -2: 17 = -6 + b giving b = 23; then solves -2x + 23 = 0 to get x = 23/2 = 11.5.",
+    "B": "Correct: finds f's slope as 3, computes f(3) = 14, writes g(x) = -2x + 20, then solves 0 = -2x + 20 to get x = 10.",
+    "C": "Uses the first table entry f(1) = 8 in place of f(3) = 14: writes g through (3, 8) with slope -2: 8 = -6 + b giving b = 14; then solves -2x + 14 = 0 to get x = 7.",
+    "D": "Correctly computes f(3) = 14 but uses a slope of +2 instead of -2 for g: writes g(x) = 2x + b; 14 = 6 + b gives b = 8; then solves 2x + 8 = 0 to get x = -4."
+  },
+  "hasImage": false,
+  "requiresCalculator": false,
+  "answerType": "multiple_choice",
+  "metadata": {
+    "generatedAt": "2026-02-21T00:00:00.000Z",
+    "promptVersion": "1.6.0",
+    "modelUsed": "claude-sonnet-4-6",
+    "generationId": "d4c7b2e5-1f8a-4d93-a6e0-9b3c5f162d78"
+  }
+}
