@@ -45,7 +45,8 @@
     "import:prod-stats": "npx convex run questionImport:getImportStats",
     "test": "vitest",
     "test:run": "vitest run",
-    "validate:import": "node scripts/validate-import-data.mjs"
+    "validate:import": "node scripts/validate-import-data.mjs",
+    "postinstall": "node scripts/fix-lockfile.cjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
