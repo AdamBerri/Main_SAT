@@ -5,6 +5,7 @@ import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import LandingPage from "@/components/LandingPage";
 import { Leaf } from "lucide-react";
+import { captureEvent } from "@/lib/analytics";
 
 export default function HomePage() {
   const { user, isLoaded } = useUser();
@@ -12,6 +13,12 @@ export default function HomePage() {
 
   useEffect(() => {
     if (isLoaded && user) {
+      captureEvent("cta_clicked", {
+        page: "landing",
+        cta_id: "auto_redirect_dashboard",
+        destination: "/dashboard",
+        auth_state: "signed_in",
+      });
       router.replace("/dashboard");
     }
   }, [isLoaded, user, router]);

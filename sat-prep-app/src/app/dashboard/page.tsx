@@ -1,7 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 import { useQuery } from "convex/react";
+import { useSearchParams } from "next/navigation";
 import { api } from "../../../convex/_generated/api";
 import Link from "next/link";
 import {
@@ -19,9 +21,31 @@ import {
   Zap,
   Trophy,
 } from "lucide-react";
+import { captureEventOnce } from "@/lib/analytics";
 
 export default function DashboardPage() {
   const { user } = useUser();
+  const searchParams = useSearchParams();
+  const subscriptionStatus = searchParams.get("subscription");
+  const checkoutSessionId = searchParams.get("session_id");
+
+  useEffect(() => {
+    if (subscriptionStatus !== "success" || !user?.id) {
+      return;
+    }
+
+    captureEventOnce(
+      "subscription_checkout_completed",
+      checkoutSessionId ?? `subscription-user-${user.id}`,
+      {
+        checkout_type: "subscription",
+        status: "success",
+        session_id: checkoutSessionId ?? null,
+        user_id: user.id,
+      }
+    );
+  }, [checkoutSessionId, subscriptionStatus, user?.id]);
+
   const stats = useQuery(api.scores.getUserStats, {
     visitorId: user?.id ?? "",
   });

@@ -6,8 +6,9 @@ import { api } from "../../../../convex/_generated/api";
 import { useUser } from "@clerk/nextjs";
 import Link from "next/link";
 import { CheckCircle, Download, FileText, ArrowRight, Loader2 } from "lucide-react";
-import { Suspense, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Id } from "../../../../convex/_generated/dataModel";
+import { captureEventOnce } from "@/lib/analytics";
 
 type PDFTest = {
   _id: Id<"pdfTests">;
@@ -47,6 +48,22 @@ function SuccessContent() {
   const purchasedTests = tests?.filter((test: PDFTest) =>
     testIds.includes(test._id)
   ) || [];
+
+  useEffect(() => {
+    if (!sessionId || !purchase || purchase.paymentStatus === "pending") {
+      return;
+    }
+
+    captureEventOnce("checkout_completed", sessionId, {
+      checkout_type: "pdf_tests",
+      status: "success",
+      session_id: sessionId,
+      purchase_type: purchase.purchaseType,
+      amount_cents: purchase.amountPaid,
+      test_count: purchase.testIds.length,
+      user_id: user?.id ?? null,
+    });
+  }, [purchase, sessionId, user?.id]);
 
   const handleDownload = async (
     testId: Id<"pdfTests">,

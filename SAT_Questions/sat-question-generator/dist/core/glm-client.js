@@ -56,9 +56,20 @@ function createGLMClientFromEnv() {
     return createGLMClient(resolveLLMApiKey());
 }
 /**
+ * Strip reasoning/thinking tokens from model output.
+ * MiniMax-M1 and other reasoning models wrap their chain-of-thought
+ * in <think>...</think> tags before the actual response.
+ */
+function stripThinkingTokens(text) {
+    // Remove all <think>...</think> blocks (greedy, handles newlines)
+    const stripped = text.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
+    return stripped || text;
+}
+/**
  * Extract text content from an OpenAI chat completion response
  */
 function extractText(response) {
-    return response.choices[0]?.message?.content || '';
+    const raw = response.choices[0]?.message?.content || '';
+    return stripThinkingTokens(raw);
 }
 //# sourceMappingURL=glm-client.js.map

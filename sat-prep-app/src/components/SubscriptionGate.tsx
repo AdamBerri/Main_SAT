@@ -1,10 +1,13 @@
 "use client";
 
+import { useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Lock, Sparkles, ArrowRight, Loader2 } from "lucide-react";
+import { captureEventOnce } from "@/lib/analytics";
 
 interface SubscriptionGateProps {
   children: React.ReactNode;
@@ -13,11 +16,28 @@ interface SubscriptionGateProps {
 
 export function SubscriptionGate({ children, fallback }: SubscriptionGateProps) {
   const { user, isLoaded } = useUser();
+  const pathname = usePathname();
 
   const hasSubscription = useQuery(
     api.subscriptions.hasActiveSubscription,
     user?.id ? { userId: user.id } : "skip"
   );
+
+  useEffect(() => {
+    if (!isLoaded || hasSubscription === undefined || hasSubscription) {
+      return;
+    }
+
+    captureEventOnce(
+      "paywall_viewed",
+      `${user?.id ?? "anonymous"}:${pathname}:${fallback ? "custom" : "default"}`,
+      {
+        path: pathname,
+        paywall_variant: fallback ? "custom" : "default",
+        user_id: user?.id ?? null,
+      }
+    );
+  }, [fallback, hasSubscription, isLoaded, pathname, user?.id]);
 
   // Loading state
   if (!isLoaded || hasSubscription === undefined) {

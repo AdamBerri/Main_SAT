@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { api } from "../../../convex/_generated/api";
 import { Id } from "../../../convex/_generated/dataModel";
+import { captureEvent } from "@/lib/analytics";
 
 type PDFTest = {
   _id: Id<"pdfTests">;
@@ -87,6 +88,15 @@ function StorePageContent() {
 
     setIsCheckingOut(true);
     setError(null);
+
+    const amountCents = purchaseType === "single" ? 2000 : 5000;
+    captureEvent("checkout_started", {
+      checkout_type: "pdf_tests",
+      purchase_type: purchaseType,
+      test_count: testIds.length,
+      amount_cents: amountCents,
+      user_id: user.id,
+    });
 
     try {
       const response = await fetch("/api/checkout/pdf", {

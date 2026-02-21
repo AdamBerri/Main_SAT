@@ -1,11 +1,12 @@
 "use client";
 
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { useQuery } from "convex/react";
 import { api } from "../../../../../convex/_generated/api";
 import { CheckCircle, Calendar, Clock, Video, Download, ArrowRight, Loader2 } from "lucide-react";
 import Link from "next/link";
+import { captureEventOnce } from "@/lib/analytics";
 
 function BookingSuccessContent() {
   const searchParams = useSearchParams();
@@ -15,6 +16,21 @@ function BookingSuccessContent() {
     api.tutoring.getBookingByStripeSession,
     sessionId ? { stripeCheckoutSessionId: sessionId } : "skip"
   );
+
+  useEffect(() => {
+    if (!sessionId || !booking || booking.paymentStatus !== "completed") {
+      return;
+    }
+
+    captureEventOnce("checkout_completed", sessionId, {
+      checkout_type: "tutoring",
+      status: "success",
+      session_id: sessionId,
+      booking_id: booking._id,
+      amount_cents: booking.amountPaid,
+      user_id: booking.studentId,
+    });
+  }, [booking, sessionId]);
 
   const formatDate = (timestamp: number): string => {
     return new Date(timestamp).toLocaleDateString("en-US", {

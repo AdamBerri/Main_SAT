@@ -16,6 +16,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { PRICING_TIERS, type PricingTier } from "@/lib/pricing";
+import { captureEvent } from "@/lib/analytics";
 
 export default function BillingPage() {
   const { user } = useUser();
@@ -34,6 +35,11 @@ export default function BillingPage() {
       });
       const data = await response.json();
       if (data.portalUrl) {
+        captureEvent("subscription_portal_opened", {
+          user_id: user?.id ?? null,
+          subscription_plan: subscription?.plan ?? null,
+          subscription_status: subscription?.status ?? null,
+        });
         window.location.href = data.portalUrl;
       }
     } catch (err) {

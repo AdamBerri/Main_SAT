@@ -1,22 +1,19 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import { Id } from "./_generated/dataModel";
-import { QueryCtx, MutationCtx } from "./_generated/server";
+import { MutationCtx } from "./_generated/server";
 import { internal } from "./_generated/api";
 
 // ─────────────────────────────────────────────────────────
 // CONSTANTS
 // ─────────────────────────────────────────────────────────
 
-const MASTERY_LEVELS = {
-  novice: { min: 0, max: 99 },
-  beginner: { min: 100, max: 299 },
-  intermediate: { min: 300, max: 599 },
-  advanced: { min: 600, max: 899 },
-  expert: { min: 900, max: 1000 },
-} as const;
-
-type MasteryLevel = keyof typeof MASTERY_LEVELS;
+type MasteryLevel =
+  | "novice"
+  | "beginner"
+  | "intermediate"
+  | "advanced"
+  | "expert";
 
 function getMasteryLevel(points: number): MasteryLevel {
   if (points >= 900) return "expert";
@@ -120,14 +117,143 @@ function calculateMasteryPointChange(
 // QUESTION SELECTION ALGORITHM
 // ─────────────────────────────────────────────────────────
 
+const MS_PER_MINUTE = 60 * 1000;
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+const RECENT_SESSION_WINDOW = 6;
+const TOP_CANDIDATE_POOL = 5;
+const FRUSTRATION_WINDOW_SIZE = 6;
+const LATE_REVIEW_CHANCE = 0.65;
+const HEAVY_BACKLOG_REVIEW_CHANCE = 0.8;
+const LAPSE_RECOVERY_CHANCE = 0.45;
+const WEAK_SKILL_CHANCE = 0.7;
+const MASTERED_REFRESH_CHANCE = 0.35;
+const STRETCH_CHALLENGE_CHANCE = 0.45;
+const MODERATE_FRUSTRATION_RECOVERY_CHANCE = 0.7;
+const HIGH_FRUSTRATION_RECOVERY_CHANCE = 0.9;
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.max(min, Math.min(max, value));
+}
+
+function clamp01(value: number): number {
+  return clamp(value, 0, 1);
+}
+
+function getNormalizedQuestionDifficulty(question: {
+  overallDifficulty?: number;
+  difficulty: number;
+}): number {
+  if (typeof question.overallDifficulty === "number") {
+    return clamp01(question.overallDifficulty);
+  }
+
+  // Legacy difficulty is 1-3, convert to 0-1
+  return clamp01((question.difficulty - 1) / 2);
+}
+
+function getTargetDifficulty(globalAccuracy: number): number {
+  if (globalAccuracy < 0.55) return 0.35;
+  if (globalAccuracy < 0.7) return 0.5;
+  if (globalAccuracy < 0.82) return 0.65;
+  return 0.78;
+}
+
+function getSkillRefreshIntervalDays(masteryPoints: number): number {
+  if (masteryPoints >= 900) return 7;
+  if (masteryPoints >= 600) return 4;
+  if (masteryPoints >= 300) return 2;
+  return 1;
+}
+
+function pickFromTopCandidates<T extends { score: number }>(
+  sortedCandidates: T[]
+): T | null {
+  if (sortedCandidates.length === 0) return null;
+
+  const top = sortedCandidates.slice(
+    0,
+    Math.min(TOP_CANDIDATE_POOL, sortedCandidates.length)
+  );
+
+  // Weighted random pick from top candidates to keep variation while
+  // still strongly favoring highest-priority items.
+  const baseline = top[top.length - 1].score;
+  const weights = top.map((candidate) =>
+    Math.max(1, candidate.score - baseline + 1)
+  );
+  const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
+
+  let threshold = Math.random() * totalWeight;
+  for (let i = 0; i < top.length; i++) {
+    threshold -= weights[i];
+    if (threshold <= 0) {
+      return top[i];
+    }
+  }
+
+  return top[top.length - 1];
+}
+
+interface SelectionSignals {
+  recentIncorrectStreak?: number;
+  recentWindowAccuracy?: number;
+}
+
+interface RecentPerformanceSignals {
+  recentIncorrectStreak: number;
+  recentWindowAccuracy: number;
+}
+
+async function getRecentPerformanceSignals(
+  ctx: MutationCtx,
+  attemptId: Id<"examAttempts">
+): Promise<RecentPerformanceSignals> {
+  const answers = await ctx.db
+    .query("userAnswers")
+    .withIndex("by_attempt", (q) => q.eq("attemptId", attemptId))
+    .collect();
+
+  const gradedAnswers = answers
+    .filter(
+      (answer) =>
+        answer.status === "graded" && typeof answer.isCorrect === "boolean"
+    )
+    .sort(
+      (a, b) =>
+        (b.submittedAt ?? b.lastModifiedAt) - (a.submittedAt ?? a.lastModifiedAt)
+    );
+
+  let recentIncorrectStreak = 0;
+  for (const answer of gradedAnswers) {
+    if (answer.isCorrect === false) {
+      recentIncorrectStreak++;
+    } else {
+      break;
+    }
+  }
+
+  const recentWindow = gradedAnswers.slice(0, FRUSTRATION_WINDOW_SIZE);
+  const recentCorrect = recentWindow.filter((answer) => answer.isCorrect).length;
+  const recentWindowAccuracy =
+    recentWindow.length > 0 ? recentCorrect / recentWindow.length : 1;
+
+  return {
+    recentIncorrectStreak,
+    recentWindowAccuracy,
+  };
+}
+
 async function selectNextQuestion(
   ctx: MutationCtx,
   visitorId: string,
   answeredQuestionIds: Id<"questions">[],
   category?: "reading_writing" | "math",
-  domain?: string
+  domain?: string,
+  signals?: SelectionSignals
 ): Promise<Id<"questions"> | null> {
-  // Step 1: Get all questions
+  const now = Date.now();
+
+  // Step 1: Get the candidate pool
   let allQuestions = await ctx.db.query("questions").collect();
 
   // Filter by category if specified
@@ -162,8 +288,9 @@ async function selectNextQuestion(
   }
 
   // Filter out already answered questions in this session
+  const answeredSet = new Set(answeredQuestionIds.map((id) => id.toString()));
   let eligibleQuestions = allQuestions.filter(
-    (q) => !answeredQuestionIds.includes(q._id)
+    (q) => !answeredSet.has(q._id.toString())
   );
 
   // If all questions exhausted, reset pool (allow repeats)
@@ -171,78 +298,289 @@ async function selectNextQuestion(
     eligibleQuestions = allQuestions;
   }
 
-  // Step 2: Score each question
-  const scoredQuestions = await Promise.all(
-    eligibleQuestions.map(async (question) => {
-      let score = 0;
+  // Step 2: Preload user state once (avoids N+1 queries per candidate)
+  const [reviewSchedules, skillMasteries] = await Promise.all([
+    ctx.db
+      .query("questionReviewSchedule")
+      .withIndex("by_visitor", (q) => q.eq("visitorId", visitorId))
+      .collect(),
+    ctx.db
+      .query("skillMastery")
+      .withIndex("by_visitor", (q) => q.eq("visitorId", visitorId))
+      .collect(),
+  ]);
 
-      // 2a. Spaced Repetition Score (0-40 points)
-      const reviewSchedule = await ctx.db
-        .query("questionReviewSchedule")
-        .withIndex("by_visitor_and_question", (q) =>
-          q.eq("visitorId", visitorId).eq("questionId", question._id)
-        )
-        .first();
-
-      if (reviewSchedule) {
-        const now = Date.now();
-        const daysSinceReview =
-          (now - reviewSchedule.lastReviewedAt) / (24 * 60 * 60 * 1000);
-        const daysOverdue = daysSinceReview - reviewSchedule.interval;
-
-        if (daysOverdue > 0) {
-          // Overdue for review - high priority
-          score += Math.min(40, 20 + daysOverdue * 5);
-        } else if (daysOverdue > -1) {
-          // Due soon
-          score += 15;
-        }
-        // Questions not due yet get 0 SR score
-      } else {
-        // Never seen - moderate priority for new questions
-        score += 25;
-      }
-
-      // 2b. Adaptive Difficulty Score (0-40 points)
-      const skillMastery = await ctx.db
-        .query("skillMastery")
-        .withIndex("by_visitor_and_skill", (q) =>
-          q.eq("visitorId", visitorId).eq("skill", question.skill)
-        )
-        .first();
-
-      if (skillMastery && skillMastery.totalQuestions > 0) {
-        const accuracy =
-          skillMastery.correctAnswers / skillMastery.totalQuestions;
-        // Prioritize weak skills (low accuracy = high score)
-        score += Math.round((1 - accuracy) * 40);
-      } else {
-        // Untested skill - high priority
-        score += 35;
-      }
-
-      // 2c. Recency Penalty (0-20 points penalty)
-      if (skillMastery && skillMastery.lastPracticedAt) {
-        const minutesSincePractice =
-          (Date.now() - skillMastery.lastPracticedAt) / 60000;
-        if (minutesSincePractice < 5) {
-          score -= 20;
-        } else if (minutesSincePractice < 15) {
-          score -= 10;
-        }
-      }
-
-      // 2d. Randomization factor (0-10 points)
-      score += Math.random() * 10;
-
-      return { question, score };
-    })
+  const reviewScheduleByQuestion = new Map(
+    reviewSchedules.map((schedule) => [schedule.questionId.toString(), schedule])
   );
 
-  // Step 3: Sort by score and select top question
-  scoredQuestions.sort((a, b) => b.score - a.score);
+  const skillMasteryBySkill = new Map(
+    skillMasteries.map((mastery) => [mastery.skill, mastery])
+  );
 
-  return scoredQuestions[0].question._id;
+  // Derive global target difficulty from user history
+  const totalTrackedQuestions = skillMasteries.reduce(
+    (sum, mastery) => sum + mastery.totalQuestions,
+    0
+  );
+  const totalTrackedCorrect = skillMasteries.reduce(
+    (sum, mastery) => sum + mastery.correctAnswers,
+    0
+  );
+  const globalAccuracy =
+    totalTrackedQuestions > 0
+      ? totalTrackedCorrect / totalTrackedQuestions
+      : 0.6;
+  const targetDifficulty = getTargetDifficulty(globalAccuracy);
+
+  // Anti-frustration signal: if recent performance dips, ease difficulty slightly
+  // to rebuild confidence while still keeping practice productive.
+  const recentIncorrectStreak = signals?.recentIncorrectStreak ?? 0;
+  const recentWindowAccuracy = signals?.recentWindowAccuracy ?? globalAccuracy;
+  const frustrationFromStreak = clamp01((recentIncorrectStreak - 1) / 4);
+  const frustrationFromAccuracy =
+    recentWindowAccuracy < 0.55
+      ? clamp01((0.55 - recentWindowAccuracy) / 0.55)
+      : 0;
+  const frustrationLevel = clamp01(
+    Math.max(frustrationFromStreak, frustrationFromAccuracy)
+  );
+  const recoveryDifficultyTarget = clamp01(
+    targetDifficulty -
+      frustrationLevel * 0.28 -
+      (recentIncorrectStreak >= 3 ? 0.08 : 0)
+  );
+
+  // Short-memory diversity: avoid drilling the same skill/domain repeatedly.
+  const recentAnsweredIds = answeredQuestionIds.slice(-RECENT_SESSION_WINDOW);
+  const recentAnsweredQuestions = await Promise.all(
+    recentAnsweredIds.map((id) => ctx.db.get(id))
+  );
+  const recentSkillCounts = new Map<string, number>();
+  const recentDomainCounts = new Map<string, number>();
+  for (const question of recentAnsweredQuestions) {
+    if (!question) continue;
+    recentSkillCounts.set(
+      question.skill,
+      (recentSkillCounts.get(question.skill) ?? 0) + 1
+    );
+    recentDomainCounts.set(
+      question.domain,
+      (recentDomainCounts.get(question.domain) ?? 0) + 1
+    );
+  }
+
+  // Step 3: Score each candidate
+  const scoredQuestions = eligibleQuestions.map((question) => {
+    let score = 0;
+    let weakSkill = false;
+    let masteredRefresh = false;
+    const schedule = reviewScheduleByQuestion.get(question._id.toString());
+    const mastery = skillMasteryBySkill.get(question.skill);
+
+    const dueForReview = Boolean(schedule && schedule.nextReviewAt <= now);
+    const lapseRecovery = Boolean(schedule && schedule.repetitions === 0);
+
+    // 3a. Question-level spaced repetition urgency
+    if (schedule) {
+      const overdueMs = now - schedule.nextReviewAt;
+      if (overdueMs >= 0) {
+        const overdueDays = overdueMs / MS_PER_DAY;
+        score += 120 + Math.min(80, overdueDays * 18);
+      } else {
+        const daysUntilDue = -overdueMs / MS_PER_DAY;
+        if (daysUntilDue <= 0.5) {
+          score += 24;
+        } else if (daysUntilDue <= 1.5) {
+          score += 12;
+        }
+      }
+
+      // If this exact question is still error-prone, reinforce it more.
+      if (schedule.totalAttempts >= 2) {
+        const questionAccuracy = schedule.correctAttempts / schedule.totalAttempts;
+        if (questionAccuracy < 0.8) {
+          const instability = clamp01((0.8 - questionAccuracy) / 0.8);
+          score += instability * 30;
+        }
+      }
+
+      // Lapse recovery: after an incorrect answer, bring it back soon,
+      // but not immediately to avoid short-term memorization.
+      if (schedule.repetitions === 0) {
+        const minutesSinceReview = (now - schedule.lastReviewedAt) / MS_PER_MINUTE;
+        if (minutesSinceReview < 3) {
+          score -= 90;
+        } else if (minutesSinceReview < 25) {
+          score += 55;
+        } else {
+          score += 30;
+        }
+      }
+    } else {
+      // Unseen questions remain important, especially for coverage.
+      score += 36;
+    }
+
+    // 3b. Skill weakness + mastery-gap targeting
+    if (mastery) {
+      const skillAccuracy =
+        mastery.totalQuestions > 0
+          ? mastery.correctAnswers / mastery.totalQuestions
+          : 0.5;
+
+      weakSkill = mastery.masteryPoints < 600 || skillAccuracy < 0.75;
+
+      const masteryGap = clamp01((750 - mastery.masteryPoints) / 750);
+      const accuracyGap = clamp01((0.85 - skillAccuracy) / 0.85);
+      score += Math.max(masteryGap, accuracyGap) * 70;
+
+      // Keep mastered skills alive via periodic refresh (spaced by level).
+      const daysSinceSkillPractice = (now - mastery.lastPracticedAt) / MS_PER_DAY;
+      const refreshIntervalDays = getSkillRefreshIntervalDays(mastery.masteryPoints);
+      const refreshOverdueDays = daysSinceSkillPractice - refreshIntervalDays;
+      if (mastery.masteryPoints >= 600 && refreshOverdueDays > 0) {
+        masteredRefresh = true;
+        score += Math.min(45, 15 + refreshOverdueDays * 6);
+      }
+
+      // Short-term anti-repetition penalty.
+      const minutesSinceSkillPractice =
+        (now - mastery.lastPracticedAt) / MS_PER_MINUTE;
+      if (minutesSinceSkillPractice < 2) {
+        score -= 35;
+      } else if (minutesSinceSkillPractice < 7) {
+        score -= 20;
+      } else if (minutesSinceSkillPractice < 20) {
+        score -= 8;
+      }
+    } else {
+      // New/untested skill discovery is considered weak by default.
+      weakSkill = true;
+      score += 45;
+    }
+
+    // 3c. Difficulty targeting ("just-right" difficulty + recovery when frustrated)
+    const normalizedDifficulty = getNormalizedQuestionDifficulty(question);
+    const effectiveTargetDifficulty =
+      frustrationLevel > 0 ? recoveryDifficultyTarget : targetDifficulty;
+    const stretchCandidate =
+      frustrationLevel < 0.25 &&
+      normalizedDifficulty > targetDifficulty + 0.08;
+    const confidenceRecoveryCandidate =
+      frustrationLevel > 0 &&
+      normalizedDifficulty <= recoveryDifficultyTarget + 0.08 &&
+      normalizedDifficulty >= Math.max(0, recoveryDifficultyTarget - 0.22);
+
+    const difficultyDelta = Math.abs(
+      normalizedDifficulty - effectiveTargetDifficulty
+    );
+    score += Math.max(0, 24 - difficultyDelta * 44);
+    if (globalAccuracy >= 0.8 && normalizedDifficulty > targetDifficulty + 0.1) {
+      score += 10;
+    }
+    if (frustrationLevel > 0) {
+      if (normalizedDifficulty > recoveryDifficultyTarget + 0.12) {
+        // Temporarily de-prioritize hard items after a miss streak.
+        score -= 30 * frustrationLevel;
+      } else if (confidenceRecoveryCandidate) {
+        score += 26 * frustrationLevel;
+      }
+    }
+
+    // 3d. Session-level diversity (avoid long same-skill/domain runs)
+    const recentSkillCount = recentSkillCounts.get(question.skill) ?? 0;
+    if (recentSkillCount >= 2) {
+      score -= (recentSkillCount - 1) * 12;
+    }
+
+    const recentDomainCount = recentDomainCounts.get(question.domain) ?? 0;
+    if (recentDomainCount >= 3) {
+      score -= (recentDomainCount - 2) * 8;
+    } else if (recentDomainCount === 0) {
+      score += 8;
+    }
+
+    // 3e. Controlled randomness for variety
+    score += Math.random() * 6;
+
+    return {
+      question,
+      score,
+      dueForReview,
+      lapseRecovery,
+      weakSkill,
+      masteredRefresh,
+      stretchCandidate,
+      confidenceRecoveryCandidate,
+    };
+  });
+
+  // Step 4: Policy-based pool selection for better learning dynamics
+  const dueCandidates = scoredQuestions.filter((candidate) => candidate.dueForReview);
+  const lapseCandidates = scoredQuestions.filter(
+    (candidate) => candidate.lapseRecovery
+  );
+  const weakSkillCandidates = scoredQuestions.filter(
+    (candidate) => candidate.weakSkill
+  );
+  const masteredRefreshCandidates = scoredQuestions.filter(
+    (candidate) => candidate.masteredRefresh
+  );
+  const stretchCandidates = scoredQuestions.filter(
+    (candidate) => candidate.stretchCandidate
+  );
+  const frustrationRecoveryCandidates = scoredQuestions.filter(
+    (candidate) =>
+      candidate.confidenceRecoveryCandidate &&
+      (candidate.weakSkill || candidate.dueForReview || candidate.lapseRecovery)
+  );
+
+  const frustrationRecoveryChance =
+    frustrationLevel >= 0.6
+      ? HIGH_FRUSTRATION_RECOVERY_CHANCE
+      : frustrationLevel >= 0.3
+        ? MODERATE_FRUSTRATION_RECOVERY_CHANCE
+        : 0;
+
+  let candidatePool = scoredQuestions;
+  if (
+    frustrationRecoveryCandidates.length > 0 &&
+    Math.random() < frustrationRecoveryChance
+  ) {
+    candidatePool = frustrationRecoveryCandidates;
+  } else if (lapseCandidates.length > 0 && Math.random() < LAPSE_RECOVERY_CHANCE) {
+    candidatePool = lapseCandidates;
+  } else if (
+    dueCandidates.length > 0 &&
+    Math.random() <
+      (dueCandidates.length > 5
+        ? HEAVY_BACKLOG_REVIEW_CHANCE
+        : LATE_REVIEW_CHANCE)
+  ) {
+    candidatePool = dueCandidates;
+  } else if (
+    weakSkillCandidates.length > 0 &&
+    Math.random() < WEAK_SKILL_CHANCE
+  ) {
+    candidatePool = weakSkillCandidates;
+  } else if (
+    masteredRefreshCandidates.length > 0 &&
+    Math.random() < MASTERED_REFRESH_CHANCE
+  ) {
+    candidatePool = masteredRefreshCandidates;
+  } else if (
+    globalAccuracy >= 0.75 &&
+    stretchCandidates.length > 0 &&
+    Math.random() < STRETCH_CHALLENGE_CHANCE
+  ) {
+    candidatePool = stretchCandidates;
+  }
+
+  candidatePool.sort((a, b) => b.score - a.score);
+  const selected = pickFromTopCandidates(candidatePool);
+
+  return selected?.question._id ?? null;
 }
 
 // ─────────────────────────────────────────────────────────
@@ -517,13 +855,15 @@ export const submitEndlessAnswer = mutation({
     }
 
     // 6. Select next question
+    const recentSignals = await getRecentPerformanceSignals(ctx, args.attemptId);
     const answeredIds = [...session.questionIdsAnswered, args.questionId];
     const nextQuestionId = await selectNextQuestion(
       ctx,
       args.visitorId,
       answeredIds,
       session.category,
-      session.domain
+      session.domain,
+      recentSignals
     );
 
     // 7. Update endless session
@@ -553,6 +893,8 @@ export const submitEndlessAnswer = mutation({
       masteryLevel: newMasteryLevel,
       masteryPoints: newMasteryPoints,
       pointChange,
+      recentIncorrectStreak: recentSignals.recentIncorrectStreak,
+      recentWindowAccuracy: recentSignals.recentWindowAccuracy,
     };
   },
 });
@@ -801,14 +1143,6 @@ export const getStreakStats = query({
       .query("endlessSession")
       .withIndex("by_visitor", (q) => q.eq("visitorId", args.visitorId))
       .collect();
-
-    // Find the current in-progress session
-    const currentSession = sessions.find(
-      async (s) => {
-        const attempt = await ctx.db.get(s.attemptId);
-        return attempt?.status === "in_progress";
-      }
-    );
 
     // Calculate overall best streak
     const overallBestStreak = sessions.reduce(

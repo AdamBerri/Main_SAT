@@ -10,6 +10,7 @@ import TimeSlotPicker from "@/components/tutoring/TimeSlotPicker";
 import { ArrowLeft, Loader2, User, DollarSign, Clock, AlertCircle } from "lucide-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { captureEvent } from "@/lib/analytics";
 
 function BookTutoringContent() {
   const { user } = useUser();
@@ -77,6 +78,13 @@ function BookTutoringContent() {
 
     setIsCheckingOut(true);
     setError(null);
+
+    captureEvent("checkout_started", {
+      checkout_type: "tutoring",
+      slot_id: selectedSlotId,
+      session_price_cents: tutor?.sessionPrice ?? null,
+      user_id: user.id,
+    });
 
     try {
       const response = await fetch("/api/checkout", {

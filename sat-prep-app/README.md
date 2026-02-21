@@ -42,7 +42,20 @@ NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
 CLERK_SECRET_KEY=sk_test_...
 ```
 
-### 3. Set Up Convex (Database)
+### 3. Set Up PostHog (Analytics + A/B Testing)
+
+1. Create a project at [PostHog](https://posthog.com)
+2. Copy your project API key (`phc_...`)
+3. Add these values to `.env.local`:
+
+```
+NEXT_PUBLIC_POSTHOG_KEY=phc_...
+NEXT_PUBLIC_POSTHOG_HOST=https://us.i.posthog.com
+```
+
+See [`docs/analytics-tracking-plan.md`](./docs/analytics-tracking-plan.md) for the initial event taxonomy and experiment setup.
+
+### 4. Set Up Convex (Database)
 
 Run Convex in development mode:
 
@@ -63,7 +76,7 @@ While `npx convex dev` is running, you can view your data in the local dashboard
 
 This gives you a web UI to browse tables, run queries, and inspect your data.
 
-### 4. Generate Questions
+### 5. Generate Questions
 
 In a new terminal (keep `convex dev` running):
 
@@ -80,7 +93,7 @@ npm run generate:math
 
 See [SEEDING.md](./SEEDING.md) for full documentation on question generation.
 
-### 5. Start the Development Server
+### 6. Start the Development Server
 
 ```bash
 npm run dev

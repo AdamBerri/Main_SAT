@@ -1,697 +1,293 @@
 "use client";
 
-import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { useEffect, useRef, useState } from "react";
+import {
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+  useUser,
+} from "@clerk/nextjs";
 import Link from "next/link";
 import {
   Leaf,
-  BookOpen,
   Target,
-  TrendingUp,
-  RefreshCw,
-  Timer,
-  CheckCircle2,
-  Star,
   Sparkles,
   ArrowRight,
   Brain,
-  Heart,
   Zap,
-  Shield,
-  Clock,
-  DollarSign,
-  BookMarked,
-  GraduationCap,
-  ChevronDown,
-  Smartphone,
-  Video,
-  Calendar,
+  BarChart,
+  CheckCircle2,
 } from "lucide-react";
+import {
+  captureEvent,
+  getFeatureFlagVariant,
+  onFeatureFlagsLoaded,
+} from "@/lib/analytics";
 
 interface LandingPageProps {
   onStartPractice?: () => void;
 }
 
 export default function LandingPage({ onStartPractice }: LandingPageProps) {
+  const { user } = useUser();
+  const authState = user ? "signed_in" : "signed_out";
+  const [heroCtaLabel, setHeroCtaLabel] = useState("Unlock Access");
+  const trackedVariantRef = useRef<string | null>(null);
+
+  const trackLandingCta = (
+    ctaId: string,
+    destination: string,
+    authState: "signed_in" | "signed_out"
+  ) => {
+    captureEvent("cta_clicked", {
+      page: "landing",
+      cta_id: ctaId,
+      destination,
+      auth_state: authState,
+    });
+  };
+
+  useEffect(() => {
+    const updateCtaFromExperiment = () => {
+      const variant = getFeatureFlagVariant("landing_hero_cta_copy");
+      const normalizedVariant =
+        variant === "start_now"
+          ? "start_now"
+          : variant === "join_club"
+            ? "join_club"
+            : "control";
+
+      if (trackedVariantRef.current !== normalizedVariant) {
+        trackedVariantRef.current = normalizedVariant;
+
+        captureEvent("experiment_exposed", {
+          experiment: "landing_hero_cta_copy",
+          variant: normalizedVariant,
+        });
+      }
+
+      if (normalizedVariant === "start_now") {
+        setHeroCtaLabel("Start Raising My Score");
+        return;
+      }
+
+      if (normalizedVariant === "join_club") {
+        setHeroCtaLabel("Join the Club");
+        return;
+      }
+
+      setHeroCtaLabel("Unlock Access");
+    };
+
+    updateCtaFromExperiment();
+    const unsubscribe = onFeatureFlagsLoaded(updateCtaFromExperiment);
+
+    return () => {
+      unsubscribe?.();
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col items-center selection:bg-[var(--grass-light)] selection:text-[var(--forest)]">
       {/* ═══════════════════════════════════════════════════════════════
           NAVIGATION
           ═══════════════════════════════════════════════════════════════ */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--paper-cream)]/95 backdrop-blur-sm border-b border-[var(--paper-lines)]">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--paper-cream)]/80 backdrop-blur-md border-b border-[var(--paper-lines)]/50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-[var(--grass-medium)] to-[var(--forest)] rounded-lg flex items-center justify-center">
-              <Leaf className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 bg-[var(--forest)] rounded-xl flex items-center justify-center shadow-lg shadow-[var(--forest)]/20">
+              <Leaf className="w-5 h-5 text-[var(--paper-cream)]" />
             </div>
-            <span className="font-display text-2xl font-bold text-[var(--ink-black)]">
-              the1600club
+            <span className="font-display text-2xl font-bold text-[var(--ink-black)] tracking-tight">
+              the1600club<span className="text-[var(--grass-dark)]">.</span>
             </span>
           </div>
 
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/articles" className="font-body text-[var(--ink-faded)] hover:text-[var(--grass-dark)] transition-colors">Articles</Link>
-            <a href="#features" className="font-body text-[var(--ink-faded)] hover:text-[var(--grass-dark)] transition-colors">Features</a>
-            <a href="#pricing" className="font-body text-[var(--ink-faded)] hover:text-[var(--grass-dark)] transition-colors">Pricing</a>
-            <a href="#tutoring" className="font-body text-[var(--ink-faded)] hover:text-[var(--grass-dark)] transition-colors">Tutoring</a>
-            <a href="#coaching" className="font-body text-[var(--ink-faded)] hover:text-[var(--grass-dark)] transition-colors">Coaching</a>
+            <Link
+              href="/pricing"
+              onClick={() => {
+                trackLandingCta("nav_membership", "/pricing", authState);
+              }}
+              className="font-body text-[var(--ink-faded)] hover:text-[var(--ink-black)] transition-colors text-sm font-medium tracking-wide uppercase"
+            >
+              Membership
+            </Link>
+            <Link
+              href="/articles"
+              onClick={() => {
+                trackLandingCta("nav_manifesto", "/articles", authState);
+              }}
+              className="font-body text-[var(--ink-faded)] hover:text-[var(--ink-black)] transition-colors text-sm font-medium tracking-wide uppercase"
+            >
+              Manifesto
+            </Link>
           </div>
 
           <div className="flex items-center gap-4">
             <SignedOut>
               <SignInButton mode="modal">
-                <button className="btn-outline-wood">Sign In</button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    trackLandingCta("nav_log_in", "sign_in_modal", "signed_out");
+                  }}
+                  className="font-body text-sm font-semibold text-[var(--ink-black)] hover:text-[var(--grass-dark)] transition-colors px-4 py-2"
+                >
+                  Log In
+                </button>
               </SignInButton>
-            </SignedOut>
-            <SignedIn>
-              <UserButton
-                appearance={{
-                  elements: {
-                    avatarBox: "w-10 h-10",
-                  },
-                }}
-              />
-            </SignedIn>
-          </div>
-        </div>
-      </nav>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          HERO SECTION
-          ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute top-40 left-10 opacity-10">
-          <Leaf className="w-32 h-32 text-[var(--grass-dark)] sway-animation" />
-        </div>
-        <div className="absolute bottom-20 right-10 opacity-10">
-          <BookOpen className="w-24 h-24 text-[var(--wood-medium)] float-animation" />
-        </div>
-        <div className="absolute top-60 right-1/4 opacity-5">
-          <Star className="w-16 h-16 text-[var(--sunflower)]" />
-        </div>
-
-        <div className="max-w-5xl mx-auto text-center relative">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[var(--grass-light)]/20 border border-[var(--grass-medium)]/30 rounded-full px-4 py-2 mb-8">
-            <Sparkles className="w-4 h-4 text-[var(--grass-dark)]" />
-            <span className="font-body text-sm text-[var(--grass-dark)] font-medium">
-              Your path to the perfect score
-            </span>
-          </div>
-
-          {/* Main headline */}
-          <h1 className="font-display text-5xl md:text-7xl font-bold text-[var(--ink-black)] leading-tight mb-6">
-            Join the Club.{" "}
-            <span className="text-[var(--grass-dark)]">Get the Score.</span>
-          </h1>
-
-          <p className="font-body text-xl text-[var(--ink-faded)] max-w-2xl mx-auto mb-8 leading-relaxed">
-            Level up your SAT prep with gamified practice, adaptive learning, and
-            unlimited questions. Study in bed, on the bus home from practice, or
-            anywhere—every session brings you closer to 1600.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <SignedOut>
               <SignInButton mode="modal">
-                <button className="btn-grass text-lg px-8 py-4 flex items-center gap-2">
-                  <span>Start Your Journey to 1600</span>
-                  <ArrowRight className="w-5 h-5" />
+                <button
+                  type="button"
+                  onClick={() => {
+                    trackLandingCta("nav_join_club", "sign_in_modal", "signed_out");
+                  }}
+                  className="btn-grass text-sm px-6 py-2.5 shadow-none hover:shadow-lg transition-all duration-300"
+                >
+                  Join the Club
                 </button>
               </SignInButton>
             </SignedOut>
             <SignedIn>
               <Link
                 href="/dashboard"
-                className="btn-grass text-lg px-8 py-4 flex items-center gap-2"
+                onClick={() => {
+                  trackLandingCta("nav_dashboard", "/dashboard", "signed_in");
+                }}
+                className="font-body text-sm font-semibold text-[var(--ink-black)] hover:text-[var(--grass-dark)] transition-colors px-4 py-2 mr-2"
               >
-                <span>Go to Dashboard</span>
-                <ArrowRight className="w-5 h-5" />
+                Dashboard
               </Link>
+              <UserButton appearance={{ elements: { avatarBox: "w-10 h-10 rounded-xl" } }} />
             </SignedIn>
-            <a href="#coaching" className="btn-outline-wood text-lg px-8 py-4">
-              Learn Our Philosophy
-            </a>
-          </div>
-
-          {/* Trust indicators */}
-          <div className="flex flex-wrap items-center justify-center gap-8 text-[var(--ink-faded)]">
-            <div className="flex items-center gap-2">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[var(--sunflower)] fill-[var(--sunflower)]" />
-                ))}
-              </div>
-              <span className="font-body text-sm">5-Star Experience</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Target className="w-5 h-5 text-[var(--grass-dark)]" />
-              <span className="font-body text-sm">Unlimited Questions</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Shield className="w-5 h-5 text-[var(--grass-dark)]" />
-              <span className="font-body text-sm">Real SAT Simulation</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Smartphone className="w-5 h-5 text-[var(--grass-dark)]" />
-              <span className="font-body text-sm">Study Anywhere</span>
-            </div>
           </div>
         </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ChevronDown className="w-8 h-8 text-[var(--grass-medium)]" />
-        </div>
-      </section>
+      </nav>
 
       {/* ═══════════════════════════════════════════════════════════════
-          FEATURES GRID
+          HERO & VALUE PROP (Single screen layout)
           ═══════════════════════════════════════════════════════════════ */}
-      <section id="features" className="py-24 px-6 bg-[var(--paper-warm)]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-[var(--ink-black)] mb-4">
-              Everything You Need to Succeed
-            </h2>
-            <p className="font-body text-lg text-[var(--ink-faded)] max-w-2xl mx-auto">
-              We've planted the seeds of success. You just need to show up.
-            </p>
-          </div>
+      <main className="flex-1 w-full flex flex-col justify-center items-center pt-32 pb-16 px-6 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-8 items-center w-full mt-8 lg:mt-16">
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Feature 1 */}
-            <div className="card-paper p-8 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="feature-icon mb-6">
-                <BookMarked className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="font-display text-xl font-bold text-[var(--ink-black)] mb-3">
-                We Keep Track For You
-              </h3>
-              <p className="font-body text-[var(--ink-faded)] leading-relaxed">
-                Never lose your place. Every question answered, every topic mastered—we remember
-                it all so you can focus on learning, not logging.
-              </p>
-            </div>
-
-            {/* Feature 2 */}
-            <div className="card-paper p-8 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="feature-icon mb-6">
-                <Star className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="font-display text-xl font-bold text-[var(--ink-black)] mb-3">
-                Five-Star Experience
-              </h3>
-              <p className="font-body text-[var(--ink-faded)] leading-relaxed">
-                A beautiful, distraction-free environment that makes studying feel less like
-                work and more like progress. Clean, calm, focused.
-              </p>
-            </div>
-
-            {/* Feature 3 */}
-            <div className="card-paper p-8 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="feature-icon mb-6">
-                <RefreshCw className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="font-display text-xl font-bold text-[var(--ink-black)] mb-3">
-                Unlimited Questions
-              </h3>
-              <p className="font-body text-[var(--ink-faded)] leading-relaxed">
-                You'll never run out of practice. Our question bank keeps growing,
-                and so will your confidence. Practice until perfection.
-              </p>
-            </div>
-
-            {/* Feature 4 */}
-            <div className="card-paper p-8 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="feature-icon mb-6">
-                <Brain className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="font-display text-xl font-bold text-[var(--ink-black)] mb-3">
-                Smart Topic Recycling
-              </h3>
-              <p className="font-body text-[var(--ink-faded)] leading-relaxed">
-                Struggling with algebra? We notice. Keep practicing and we'll intelligently
-                resurface topics you're weak in until they become strengths.
-              </p>
-            </div>
-
-            {/* Feature 5 */}
-            <div className="card-paper p-8 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="feature-icon mb-6">
-                <Timer className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="font-display text-xl font-bold text-[var(--ink-black)] mb-3">
-                Real SAT Simulation
-              </h3>
-              <p className="font-body text-[var(--ink-faded)] leading-relaxed">
-                Go into test mode and experience the real thing. Timed sections,
-                authentic question formats, and actual scaled scores.
-              </p>
-            </div>
-
-            {/* Feature 6 */}
-            <div className="card-paper p-8 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="feature-icon mb-6">
-                <CheckCircle2 className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="font-display text-xl font-bold text-[var(--ink-black)] mb-3">
-                Easy Wrong Answer Review
-              </h3>
-              <p className="font-body text-[var(--ink-faded)] leading-relaxed">
-                Made a mistake? Good—that's where learning happens. Review every wrong
-                answer with clear explanations and never repeat it.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          COACHING / PHILOSOPHY SECTION
-          ═══════════════════════════════════════════════════════════════ */}
-      <section id="coaching" className="py-24 px-6 relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--forest)] to-[var(--grass-dark)] opacity-95" />
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20">
-            <Leaf className="w-40 h-40 text-white" />
-          </div>
-          <div className="absolute bottom-20 right-20">
-            <Heart className="w-32 h-32 text-white" />
-          </div>
-        </div>
-
-        <div className="max-w-4xl mx-auto relative text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-8">
-            <Heart className="w-4 h-4 text-white" />
-            <span className="font-body text-sm text-white font-medium">
-              Our Philosophy
-            </span>
-          </div>
-
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-8">
-            We Don't Believe in Tutoring.
-            <br />
-            <span className="text-[var(--grass-light)]">We Believe in You.</span>
-          </h2>
-
-          <div className="space-y-6 text-white/90 font-body text-lg leading-relaxed max-w-3xl mx-auto mb-12">
-            <p>
-              Here's the thing: you don't need someone holding your hand through every problem.
-              You don't need expensive tutors or counselors telling you what you already know deep down.
-            </p>
-            <p className="text-xl font-medium text-white">
-              You are capable of doing this on your own.
-            </p>
-            <p>
-              What you need is the right tools, the right practice, and a system that adapts to
-              <em> your </em> learning. That's exactly what we built. Not another tutoring platform—a
-              self-empowerment engine.
-            </p>
-            <p>
-              Every great achiever had to sit down, put in the work, and trust themselves.
-              We're just here to make that journey smoother.
-            </p>
-          </div>
-
-          <SignedOut>
-            <SignInButton mode="modal">
-              <button className="bg-white text-[var(--forest)] px-8 py-4 rounded-lg font-body font-semibold text-lg hover:bg-[var(--paper-cream)] transition-colors inline-flex items-center gap-2">
-                <Zap className="w-5 h-5" />
-                <span>Start Your Self-Guided Journey</span>
-              </button>
-            </SignInButton>
-          </SignedOut>
-          <SignedIn>
-            <Link
-              href="/practice"
-              className="bg-white text-[var(--forest)] px-8 py-4 rounded-lg font-body font-semibold text-lg hover:bg-[var(--paper-cream)] transition-colors inline-flex items-center gap-2"
-            >
-              <Zap className="w-5 h-5" />
-              <span>Start Your Self-Guided Journey</span>
-            </Link>
-          </SignedIn>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          WHY US / PRICING COMPARISON
-          ═══════════════════════════════════════════════════════════════ */}
-      <section id="pricing" className="py-24 px-6 bg-[var(--paper-cream)]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-[var(--ink-black)] mb-4">
-              Why We're the Smarter Choice
-            </h2>
-            <p className="font-body text-lg text-[var(--ink-faded)] max-w-2xl mx-auto">
-              Let's talk real numbers. Your success shouldn't cost a fortune.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {/* Competitor 1: Tutoring */}
-            <div className="card-paper p-8 rounded-xl border-2 border-[var(--paper-lines)]">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-[var(--barn-red)]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <GraduationCap className="w-8 h-8 text-[var(--barn-red)]" />
-                </div>
-                <h3 className="font-display text-xl font-bold text-[var(--ink-black)]">
-                  Private Tutoring
-                </h3>
-              </div>
-              <div className="text-center mb-6">
-                <span className="font-display text-4xl font-bold text-[var(--barn-red)]">$2,000+</span>
-                <p className="font-body text-sm text-[var(--ink-faded)]">for 3 months</p>
-              </div>
-              <ul className="space-y-3 text-[var(--ink-faded)] font-body text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-[var(--barn-red)]">✕</span>
-                  <span>Expensive hourly rates ($50-150/hr)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[var(--barn-red)]">✕</span>
-                  <span>Limited scheduling flexibility</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[var(--barn-red)]">✕</span>
-                  <span>Depends on tutor quality</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Our Solution */}
-            <div className="card-paper p-8 rounded-xl border-2 border-[var(--grass-dark)] relative scale-105 shadow-xl">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span className="bg-[var(--grass-dark)] text-white font-body text-sm font-semibold px-4 py-1 rounded-full">
-                  Best Value
-                </span>
-              </div>
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-[var(--grass-light)] to-[var(--grass-dark)] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Leaf className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-display text-xl font-bold text-[var(--ink-black)]">
-                  the1600club
-                </h3>
-              </div>
-              <div className="text-center mb-6">
-                <span className="font-display text-4xl font-bold text-[var(--grass-dark)]">$199</span>
-                <p className="font-body text-sm text-[var(--ink-faded)]">for 3 months ($66/mo)</p>
-              </div>
-              <ul className="space-y-3 text-[var(--ink-black)] font-body text-sm">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[var(--grass-dark)] mt-0.5 flex-shrink-0" />
-                  <span>Unlimited practice questions</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[var(--grass-dark)] mt-0.5 flex-shrink-0" />
-                  <span>Smart adaptive learning</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[var(--grass-dark)] mt-0.5 flex-shrink-0" />
-                  <span>Real SAT simulations</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[var(--grass-dark)] mt-0.5 flex-shrink-0" />
-                  <span>Progress tracking & analytics</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[var(--grass-dark)] mt-0.5 flex-shrink-0" />
-                  <span>Practice 24/7, your schedule</span>
-                </li>
-              </ul>
-              <Link href="/pricing" className="btn-grass w-full mt-6 block text-center">
-                View Plans
-              </Link>
-            </div>
-
-            {/* Competitor 2: Books */}
-            <div className="card-paper p-8 rounded-xl border-2 border-[var(--paper-lines)]">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-[var(--wood-light)]/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BookOpen className="w-8 h-8 text-[var(--wood-dark)]" />
-                </div>
-                <h3 className="font-display text-xl font-bold text-[var(--ink-black)]">
-                  Prep Books
-                </h3>
-              </div>
-              <div className="text-center mb-6">
-                <span className="font-display text-4xl font-bold text-[var(--wood-dark)]">$30-80</span>
-                <p className="font-body text-sm text-[var(--ink-faded)]">one-time purchase</p>
-              </div>
-              <ul className="space-y-3 text-[var(--ink-faded)] font-body text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-[var(--barn-red)]">✕</span>
-                  <span>Static, limited questions</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[var(--barn-red)]">✕</span>
-                  <span>No adaptive learning</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[var(--barn-red)]">✕</span>
-                  <span>No progress tracking</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[var(--barn-red)]">✕</span>
-                  <span>Quickly becomes outdated</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bottom CTA */}
-          <div className="text-center">
-            <p className="font-body text-[var(--ink-faded)] mb-6">
-              <span className="font-semibold text-[var(--grass-dark)]">$199 for 3 months</span> vs.
-              <span className="line-through ml-2">$2,000+ for tutoring</span>
-            </p>
-            <p className="font-display text-2xl text-[var(--ink-black)] mb-4">
-              Same results. 10x less cost. Your pace.
-            </p>
-            <Link href="/pricing" className="btn-grass inline-flex items-center gap-2">
-              See All Plans
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          MORE BENEFITS STRIP
-          ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-16 px-6 bg-[var(--paper-warm)] border-y border-[var(--paper-lines)]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-14 h-14 bg-[var(--grass-light)]/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Smartphone className="w-7 h-7 text-[var(--grass-dark)]" />
-              </div>
-              <h4 className="font-display text-lg font-bold text-[var(--ink-black)] mb-2">
-                Study Anywhere
-              </h4>
-              <p className="font-body text-sm text-[var(--ink-faded)]">
-                In bed, on the bus, between classes.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-14 h-14 bg-[var(--grass-light)]/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-7 h-7 text-[var(--grass-dark)]" />
-              </div>
-              <h4 className="font-display text-lg font-bold text-[var(--ink-black)] mb-2">
-                Track Progress
-              </h4>
-              <p className="font-body text-sm text-[var(--ink-faded)]">
-                Watch your scores grow over time.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-14 h-14 bg-[var(--grass-light)]/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="w-7 h-7 text-[var(--grass-dark)]" />
-              </div>
-              <h4 className="font-display text-lg font-bold text-[var(--ink-black)] mb-2">
-                Targeted Practice
-              </h4>
-              <p className="font-body text-sm text-[var(--ink-faded)]">
-                Focus on what matters most to you.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-14 h-14 bg-[var(--grass-light)]/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                <DollarSign className="w-7 h-7 text-[var(--grass-dark)]" />
-              </div>
-              <h4 className="font-display text-lg font-bold text-[var(--ink-black)] mb-2">
-                Money-Back Guarantee
-              </h4>
-              <p className="font-body text-sm text-[var(--ink-faded)]">
-                Not satisfied? Full refund, no questions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          TUTORING SECTION
-          ═══════════════════════════════════════════════════════════════ */}
-      <section id="tutoring" className="py-24 px-6 bg-[var(--paper-cream)]">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-[var(--grass-light)]/20 border border-[var(--grass-medium)]/30 rounded-full px-4 py-2 mb-6">
-              <Video className="w-4 h-4 text-[var(--grass-dark)]" />
-              <span className="font-body text-sm text-[var(--grass-dark)] font-medium">
-                1-on-1 Sessions Available
+          {/* Left Column: Copy */}
+          <div className="flex flex-col items-start max-w-2xl">
+            <div className="inline-flex items-center gap-2 bg-[var(--paper-warm)] border border-[var(--paper-lines)] rounded-full px-4 py-2 mb-8 fade-in-up" style={{ animationDelay: '0ms' }}>
+              <Sparkles className="w-4 h-4 text-[var(--grass-dark)]" />
+              <span className="font-body text-xs text-[var(--ink-black)] font-semibold tracking-widest uppercase">
+                The New Standard in SAT Prep
               </span>
             </div>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-[var(--ink-black)] mb-4">
-              Need Extra Help?
-            </h2>
-            <p className="font-body text-lg text-[var(--ink-faded)] max-w-2xl mx-auto">
-              While our platform is designed for self-study, sometimes you need personalized guidance.
-              Book a 1-on-1 session with an expert SAT tutor.
+
+            <h1 className="font-display text-5xl md:text-7xl font-bold text-[var(--ink-black)] leading-[1.1] mb-6 fade-in-up tracking-tight" style={{ animationDelay: '100ms' }}>
+              Tasteful prep. <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--forest)] to-[var(--grass-light)]">
+                Relentless results.
+              </span>
+            </h1>
+
+            <p className="font-body text-xl text-[var(--ink-faded)] mb-10 leading-relaxed fade-in-up max-w-lg" style={{ animationDelay: '200ms' }}>
+              We stripped away the noise, the expensive tutors, and the clunky platforms. What's left is a beautifully engineered system designed for one thing: getting you to 1600.
             </p>
-          </div>
 
-          <div className="max-w-2xl mx-auto">
-            <div className="card-paper p-8 rounded-2xl border-2 border-[var(--grass-medium)]/30 relative overflow-hidden">
-              {/* Decorative background */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[var(--grass-light)]/20 to-transparent rounded-bl-full" />
-
-              <div className="relative">
-                <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[var(--grass-light)] to-[var(--grass-dark)] rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <GraduationCap className="w-8 h-8 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-display text-2xl font-bold text-[var(--ink-black)] mb-1">
-                      1-on-1 SAT Tutoring
-                    </h3>
-                    <p className="font-body text-[var(--ink-faded)]">
-                      90-minute personalized Zoom sessions
-                    </p>
-                  </div>
-                  <div className="md:ml-auto text-left md:text-right">
-                    <span className="font-display text-3xl font-bold text-[var(--grass-dark)]">$300</span>
-                    <p className="font-body text-sm text-[var(--ink-faded)]">per session</p>
-                  </div>
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-4 mb-8">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-[var(--grass-light)]/30 rounded-lg flex items-center justify-center">
-                      <Video className="w-5 h-5 text-[var(--grass-dark)]" />
-                    </div>
-                    <div>
-                      <p className="font-body font-medium text-[var(--ink-black)]">Live on Zoom</p>
-                      <p className="font-body text-sm text-[var(--ink-faded)]">Face-to-face guidance</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-[var(--grass-light)]/30 rounded-lg flex items-center justify-center">
-                      <Clock className="w-5 h-5 text-[var(--grass-dark)]" />
-                    </div>
-                    <div>
-                      <p className="font-body font-medium text-[var(--ink-black)]">90 Minutes</p>
-                      <p className="font-body text-sm text-[var(--ink-faded)]">Deep dive into your needs</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-[var(--grass-light)]/30 rounded-lg flex items-center justify-center">
-                      <Target className="w-5 h-5 text-[var(--grass-dark)]" />
-                    </div>
-                    <div>
-                      <p className="font-body font-medium text-[var(--ink-black)]">Personalized</p>
-                      <p className="font-body text-sm text-[var(--ink-faded)]">Focus on your weak areas</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-[var(--grass-light)]/30 rounded-lg flex items-center justify-center">
-                      <Calendar className="w-5 h-5 text-[var(--grass-dark)]" />
-                    </div>
-                    <div>
-                      <p className="font-body font-medium text-[var(--ink-black)]">Flexible Scheduling</p>
-                      <p className="font-body text-sm text-[var(--ink-faded)]">Book times that work for you</p>
-                    </div>
-                  </div>
-                </div>
-
-                <SignedOut>
-                  <SignInButton mode="modal">
-                    <button className="btn-grass w-full py-4 text-lg flex items-center justify-center gap-2">
-                      <Calendar className="w-5 h-5" />
-                      <span>Sign In to Book a Session</span>
-                    </button>
-                  </SignInButton>
-                </SignedOut>
-                <SignedIn>
-                  <Link
-                    href="/dashboard/tutoring"
-                    className="btn-grass w-full py-4 text-lg flex items-center justify-center gap-2"
+            <div className="flex flex-col sm:flex-row items-center gap-5 w-full sm:w-auto fade-in-up" style={{ animationDelay: '300ms' }}>
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      onStartPractice?.();
+                      trackLandingCta("hero_primary", "sign_in_modal", "signed_out");
+                    }}
+                    className="btn-grass text-lg px-8 py-4 flex items-center justify-center gap-3 w-full sm:w-auto hover:scale-105 transition-transform"
                   >
-                    <Calendar className="w-5 h-5" />
-                    <span>Book a Session</span>
-                  </Link>
-                </SignedIn>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          FINAL CTA
-          ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-24 px-6 bg-[var(--paper-warm)]">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-[var(--ink-black)] mb-6">
-            Ready to Join the Club?
-          </h2>
-          <p className="font-body text-xl text-[var(--ink-faded)] mb-8">
-            Join thousands of students leveling up their SAT scores every day.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <SignedOut>
-              <SignInButton mode="modal">
-                <button className="btn-grass text-lg px-10 py-5 flex items-center gap-2">
-                  <span>Start Free Today</span>
+                    <span>{heroCtaLabel}</span>
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </SignInButton>
+              </SignedOut>
+              <SignedIn>
+                <Link
+                  href="/dashboard"
+                  onClick={() => {
+                    trackLandingCta("hero_dashboard", "/dashboard", "signed_in");
+                  }}
+                  className="btn-grass text-lg px-8 py-4 flex items-center justify-center gap-3 w-full sm:w-auto hover:scale-105 transition-transform"
+                >
+                  <span>Enter Dashboard</span>
                   <ArrowRight className="w-5 h-5" />
-                </button>
-              </SignInButton>
-            </SignedOut>
-            <SignedIn>
-              <Link
-                href="/practice"
-                className="btn-grass text-lg px-10 py-5 flex items-center gap-2"
-              >
-                <span>Continue Practicing</span>
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </SignedIn>
+                </Link>
+              </SignedIn>
+
+              <div className="flex items-center gap-3 text-[var(--ink-faded)] text-sm font-medium">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[var(--paper-warm)] border border-[var(--paper-lines)] shadow-sm">
+                  <Zap className="w-4 h-4 text-[var(--sunflower)] fill-[var(--sunflower)]" />
+                </span>
+                <span>Unlimited practice. <br />$199 for 3 months.</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Bento Box Value Display */}
+          <div className="grid grid-cols-2 gap-4 lg:pl-10 fade-in-up w-full" style={{ animationDelay: '400ms' }}>
+
+            {/* Bento 1: Adaptive Learning */}
+            <div className="col-span-2 sm:col-span-1 bg-white p-6 rounded-3xl border border-[var(--paper-lines)] shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+              <div className="absolute -right-4 -top-4 w-24 h-24 bg-[var(--grass-light)]/10 rounded-full group-hover:scale-150 transition-transform duration-500 ease-out" />
+              <Brain className="w-8 h-8 text-[var(--grass-dark)] mb-4 relative z-10" />
+              <h3 className="font-display text-xl font-bold text-[var(--ink-black)] mb-2 relative z-10">Smart Adaptive</h3>
+              <p className="font-body text-[var(--ink-faded)] text-sm relative z-10">Our algorithm learns your weaknesses and ruthlessly drills them until they become strengths.</p>
+            </div>
+
+            {/* Bento 2: Analytics */}
+            <div className="col-span-2 sm:col-span-1 bg-gradient-to-br from-[var(--forest)] to-[var(--grass-dark)] p-6 rounded-3xl shadow-lg relative overflow-hidden group">
+              <div className="absolute right-0 bottom-0 opacity-10 transform translate-x-4 translate-y-4">
+                <BarChart className="w-32 h-32 text-white" />
+              </div>
+              <BarChart className="w-8 h-8 text-white mb-4 relative z-10" />
+              <h3 className="font-display text-xl font-bold text-white mb-2 relative z-10">Granular Tracking</h3>
+              <p className="font-body text-white/80 text-sm relative z-10">Every question is logged. Watch your score rise with beautiful, actionable insights.</p>
+            </div>
+
+            {/* Bento 3: Unlimited & Infinite */}
+            <div className="col-span-2 bg-[var(--paper-warm)] p-6 rounded-3xl border border-[var(--paper-lines)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <Target className="w-6 h-6 text-[var(--ink-black)]" />
+                  <h3 className="font-display text-xl font-bold text-[var(--ink-black)]">Infinite Question Bank</h3>
+                </div>
+                <p className="font-body text-[var(--ink-faded)] text-sm max-w-sm">Never see the same question twice. Real SAT simulation, anytime, anywhere. Your pace, your schedule.</p>
+              </div>
+              <div className="bg-white px-4 py-3 rounded-2xl border border-[var(--paper-lines)] flex-shrink-0 shadow-sm">
+                <div className="flex items-center gap-2 mb-2">
+                  <CheckCircle2 className="w-4 h-4 text-[var(--grass-dark)]" />
+                  <span className="font-body text-xs font-bold text-[var(--ink-black)]">Reading & Writing</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-[var(--grass-dark)]" />
+                  <span className="font-body text-xs font-bold text-[var(--ink-black)]">Math (Calc & No Calc)</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </section>
+      </main>
 
       {/* ═══════════════════════════════════════════════════════════════
-          FOOTER
+          MINIMAL FOOTER
           ═══════════════════════════════════════════════════════════════ */}
-      <footer className="py-12 px-6 bg-[var(--forest)] text-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-white" />
-              </div>
-              <span className="font-display text-xl font-bold">the1600club</span>
-            </div>
-            <p className="font-body text-white/60 text-sm">
-              © 2024 the1600club. Every question brings you closer to 1600.
-            </p>
+      <footer className="w-full py-8 border-t border-[var(--paper-lines)] bg-[var(--paper-cream)] mt-12">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-2">
+            <Leaf className="w-4 h-4 text-[var(--grass-dark)]" />
+            <span className="font-display text-lg font-bold text-[var(--ink-black)]">the1600club.</span>
           </div>
+          <p className="font-body text-[var(--ink-faded)] text-xs font-medium uppercase tracking-widest">
+            © {new Date().getFullYear()} No Tutors. Just Results.
+          </p>
         </div>
       </footer>
     </div>

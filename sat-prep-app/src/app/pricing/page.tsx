@@ -15,6 +15,7 @@ import {
   Clock,
 } from "lucide-react";
 import { PRICING_TIERS, TIER_ORDER, type PricingTier } from "@/lib/pricing";
+import { captureEvent } from "@/lib/analytics";
 
 function PricingPageContent() {
   const { user, isLoaded } = useUser();
@@ -30,6 +31,15 @@ function PricingPageContent() {
 
     setIsCheckingOut(plan);
     setError(null);
+
+    captureEvent("subscription_checkout_started", {
+      checkout_type: "subscription",
+      plan,
+      billing_interval: PRICING_TIERS[plan].interval,
+      billing_interval_count: PRICING_TIERS[plan].intervalCount,
+      price_usd: PRICING_TIERS[plan].price,
+      user_id: user.id,
+    });
 
     try {
       const response = await fetch("/api/subscriptions/checkout", {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useMemo, Suspense } from "react";
+import { useState, useEffect, useCallback, useMemo, Suspense, useRef } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { useUser } from "@clerk/nextjs";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -22,6 +22,7 @@ import {
 import { MathText } from "@/components/MathText";
 import { QuestionFigure } from "@/components/QuestionFigure";
 import { getVisitorId } from "@/lib/visitor";
+import { captureEvent } from "@/lib/analytics";
 import {
   usePracticeStore,
   useNeedsAttemptCheck,
@@ -847,6 +848,18 @@ function ResultsScreen({
 // EXAM SCREEN (Mobile Responsive)
 // ─────────────────────────────────────────────────────────
 
+type PracticeCompletionMethod = "manual_submit" | "timer_expired";
+
+type PracticeCompletionSummary = {
+  completionMethod: PracticeCompletionMethod;
+  answeredCount: number;
+  correctCount: number;
+  totalQuestions: number;
+  elapsedSeconds: number;
+  remainingSeconds?: number;
+  lastQuestionIndex: number;
+};
+
 function ExamScreen({
   questions,
   mode,
@@ -856,7 +869,7 @@ function ExamScreen({
 }: {
   questions: Question[];
   mode: ExamMode;
-  onComplete: () => void;
+  onComplete: (summary: PracticeCompletionSummary) => void;
   onExit: () => void;
   attemptId: Id<"examAttempts">;
 }) {
@@ -868,10 +881,53 @@ function ExamScreen({
   const [isReviewMode, setIsReviewMode] = useState(false);
   const [showNav, setShowNav] = useState(false);
   const [showPassage, setShowPassage] = useState(false);
+  const sessionStartedAtRef = useRef(Date.now());
+  const hasCompletedRef = useRef(false);
 
   const saveAnswer = useMutation(api.answers.saveAnswer);
 
   const currentQuestion = questions[currentIndex];
+
+  const buildCompletionSummary = useCallback(
+    (completionMethod: PracticeCompletionMethod): PracticeCompletionSummary => {
+      let answeredCount = 0;
+      let correctCount = 0;
+
+      for (const question of questions) {
+        const answer = answers.get(question._id);
+        if (!answer?.selectedAnswer) {
+          continue;
+        }
+
+        answeredCount += 1;
+        if (answer.selectedAnswer === question.correctAnswer) {
+          correctCount += 1;
+        }
+      }
+
+      return {
+        completionMethod,
+        answeredCount,
+        correctCount,
+        totalQuestions: questions.length,
+        elapsedSeconds: Math.round((Date.now() - sessionStartedAtRef.current) / 1000),
+        remainingSeconds: mode === "sat" ? timeRemaining : undefined,
+        lastQuestionIndex: currentIndex + 1,
+      };
+    },
+    [answers, currentIndex, mode, questions, timeRemaining]
+  );
+
+  const triggerComplete = useCallback(
+    (completionMethod: PracticeCompletionMethod) => {
+      if (hasCompletedRef.current) {
+        return;
+      }
+      hasCompletedRef.current = true;
+      onComplete(buildCompletionSummary(completionMethod));
+    },
+    [buildCompletionSummary, onComplete]
+  );
 
   useEffect(() => {
     if (mode !== "sat" || isReviewMode) return;
@@ -879,7 +935,7 @@ function ExamScreen({
     const interval = setInterval(() => {
       setTimeRemaining((prev) => {
         if (prev <= 1) {
-          onComplete();
+          triggerComplete("timer_expired");
           return 0;
         }
         return prev - 1;
@@ -887,7 +943,7 @@ function ExamScreen({
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [mode, isReviewMode, onComplete]);
+  }, [mode, isReviewMode, triggerComplete]);
 
   const handleSaveAnswer = useCallback(
     async (questionId: Id<"questions">, answer: LocalUserAnswer) => {
@@ -924,8 +980,22 @@ function ExamScreen({
 
       setAnswers((prev) => new Map(prev).set(questionId, newAnswer));
       handleSaveAnswer(questionId, newAnswer);
+
+      captureEvent("question_answered", {
+        attempt_id: attemptId,
+        mode,
+        question_id: questionId,
+        question_index: currentIndex + 1,
+        question_category: currentQuestion.category,
+        question_domain: currentQuestion.domain,
+        selected_answer: optionKey,
+        previous_answer: existing?.selectedAnswer ?? null,
+        changed_answer: existing?.selectedAnswer
+          ? existing.selectedAnswer !== optionKey
+          : false,
+      });
     },
-    [currentQuestion, isReviewMode, answers, handleSaveAnswer]
+    [currentQuestion, isReviewMode, answers, handleSaveAnswer, attemptId, mode, currentIndex]
   );
 
   const handleToggleFlag = useCallback(() => {
@@ -990,9 +1060,9 @@ function ExamScreen({
     if (isReviewMode) {
       onExit();
     } else {
-      onComplete();
+      triggerComplete("manual_submit");
     }
-  }, [isReviewMode, onComplete, onExit]);
+  }, [isReviewMode, onExit, triggerComplete]);
 
   if (!currentQuestion) {
     return (
@@ -1390,6 +1460,19 @@ function PracticePageContent() {
           section: selectedSection,
         });
         sessionCreated(id, "practice", selectedSection);
+
+        const questionCount = allQuestions
+          ? allQuestions.filter((q) => q.category === selectedSection).length
+          : undefined;
+
+        captureEvent("practice_started", {
+          attempt_id: id,
+          mode: "practice",
+          section: selectedSection,
+          question_count: questionCount,
+          started_from: urlSection === selectedSection ? "direct_link" : "selector",
+          user_id: user?.id ?? null,
+        });
       } catch (error) {
         console.error("Failed to create attempt:", error);
         // Revert to selector on error
@@ -1398,7 +1481,17 @@ function PracticePageContent() {
         setIsStarting(false);
       }
     },
-    [visitorId, user, createAttempt, isStarting, startSection, sessionCreated, showSelector]
+    [
+      visitorId,
+      user?.id,
+      createAttempt,
+      isStarting,
+      startSection,
+      sessionCreated,
+      showSelector,
+      allQuestions,
+      urlSection,
+    ]
   );
 
   const handleStartFullTest = useCallback(async () => {
@@ -1414,13 +1507,33 @@ function PracticePageContent() {
         mode: "sat",
       });
       sessionCreated(id, "sat", null);
+
+      captureEvent("practice_started", {
+        attempt_id: id,
+        mode: "sat",
+        section: null,
+        question_count: allQuestions?.length ?? SAT_CONFIG.totalQuestions,
+        started_from:
+          urlMode === "timed" || urlMode === "sat" ? "direct_link" : "selector",
+        user_id: user?.id ?? null,
+      });
     } catch (error) {
       console.error("Failed to create attempt:", error);
       showSelector();
     } finally {
       setIsStarting(false);
     }
-  }, [visitorId, user, createAttempt, isStarting, startFullTest, sessionCreated, showSelector]);
+  }, [
+    visitorId,
+    user?.id,
+    createAttempt,
+    isStarting,
+    startFullTest,
+    sessionCreated,
+    showSelector,
+    allQuestions,
+    urlMode,
+  ]);
 
   const handleResume = useCallback(() => {
     resumeSession();
@@ -1430,6 +1543,14 @@ function PracticePageContent() {
     if (pendingAttempt) {
       try {
         await abandonAttempt({ attemptId: pendingAttempt.id });
+
+        captureEvent("practice_abandoned", {
+          attempt_id: pendingAttempt.id,
+          mode: pendingAttempt.mode,
+          section: pendingAttempt.section,
+          reason: "start_fresh_from_resume_prompt",
+          answered_count: pendingAttempt.answeredCount,
+        });
       } catch (error) {
         console.error("Failed to abandon attempt:", error);
       }
@@ -1437,18 +1558,48 @@ function PracticePageContent() {
     abandonAndStartFresh();
   }, [pendingAttempt, abandonAttempt, abandonAndStartFresh]);
 
-  const handleComplete = useCallback(async () => {
+  const handleComplete = useCallback(async (summary: PracticeCompletionSummary) => {
     if (!attemptId) return;
 
+    captureEvent("practice_submitted", {
+      attempt_id: attemptId,
+      mode,
+      section,
+      completion_method: summary.completionMethod,
+      answered_count: summary.answeredCount,
+      unanswered_count: summary.totalQuestions - summary.answeredCount,
+      total_questions: summary.totalQuestions,
+      elapsed_seconds: summary.elapsedSeconds,
+      remaining_seconds: summary.remainingSeconds,
+      last_question_index: summary.lastQuestionIndex,
+    });
+
     try {
-      await submitAnswers({ attemptId });
+      const submittedAnswerCount = await submitAnswers({ attemptId });
       await completeAttemptMutation({ attemptId });
+
+      captureEvent("practice_scored", {
+        attempt_id: attemptId,
+        mode,
+        section,
+        completion_method: summary.completionMethod,
+        total_questions: summary.totalQuestions,
+        answered_count: summary.answeredCount,
+        submitted_answer_count: submittedAnswerCount,
+        correct_count: summary.correctCount,
+        incorrect_count: summary.answeredCount - summary.correctCount,
+        accuracy_percent:
+          summary.answeredCount > 0
+            ? Math.round((summary.correctCount / summary.answeredCount) * 100)
+            : 0,
+      });
+
       completeSession();
     } catch (error) {
       console.error("Failed to complete attempt:", error);
       completeSession();
     }
-  }, [attemptId, submitAnswers, completeAttemptMutation, completeSession]);
+  }, [attemptId, mode, section, submitAnswers, completeAttemptMutation, completeSession]);
 
   const handleRestart = useCallback(() => {
     reset();
